@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.9, 7/18/2007--><!-- Changed entity files to txt rather than xml, don't suppose it matters which they are (?) -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="longfellow_hw" mainagencycode="NSyU">longfellow_hw</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Henry Wadsworth Longfellow Collection</titleproper>
+        <subtitle>An  inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">KM</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1996-12">Dec 1996</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2006-03-08">31 Mar 2008</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>31 Mar 2008 - converted to EAD (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Longfellow, Henry Wadsworth, 1807-1882</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Henry Wadsworth Longfellow Collection</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1852/1888" type="inclusive">1852-1888</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>24 items (SC)</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, manuscripts, miscellanea of the American poet.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2607308</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Henry Wadsworth Longfellow (1807-1882) was an American poet whose works include "Paul Revere's Ride", The Song of Hiawatha, and "Evangeline". He was also the first American to translate Dante Alighieri's 
+        
+        <emph render="italic">The Divine Comedy</emph>.  He studied at Bowdoin College and later became a professor there; he also taught at Harvard.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Henry Wadsworth Longfellow Collection</emph> constitutes  five letters and two  autograph poems by the American author and poet, as well as a small assortment of miscellany relating to Longfellow, his children, and one of his correspondents.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Letters are arranged chronologically.  Miscellany is arranged alphabetically by type.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Literature -- American Poetry</subject><persname encodinganalog="600" source="lcnaf">Longfellow, Henry Wadsworth, 1807-1882 -- Archives</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+      <title encodinganalog="630" source="lcnaf">Arrow and the song.</title>
+      <title encodinganalog="630" source="lcnaf">Psalm of life.</title>
+      <subject encodinganalog="650" source="lcsh">Poets, American -- 19th century.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Negatives (photographs)</genreform>
+      <genreform encodinganalog="655" source="aat">Business cards.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Henry Wadsworth Longfellow Collection, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of  
+        
+        <persname role="donor">John S. Mayfield</persname>; 
+        
+        <persname role="donor">Sol Feinstone</persname>.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unitdate normal="1852-12-09" type="inclusive">1852, Dec 9</unitdate>
+            <unittitle>Fred B. Page, M.D. ("My Dear Doctor," with parodies of Longfellow poems)</unittitle>
+            <container type="SC">138</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1865-11-16" type="inclusive">1865, Nov. 16</unitdate>
+            <unittitle>"My Dear Mr Street"</unittitle>
+            <container type="SC">138</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1871-11-21" type="inclusive">1871, Nov. 21</unitdate>
+            <unittitle>Charles Cottnam Hamilton ("My Dear Sir")</unittitle>
+            <container type="SC">138</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1872-03-14" type="inclusive">1872, Mar 14?</unitdate>
+            <unittitle>William Dean Howells ("Dear Mr Howells")</unittitle>
+            <container type="SC">138</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1877-04-26" type="inclusive">1877, Apr 26</unitdate>
+            <unittitle>Charles Cottnam Hamilton ("My Dear Sir")</unittitle>
+            <container type="SC">138</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Manuscripts</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>"The Arrow and the Song"</unittitle>
+            <unitdate normal="1852/1888" type="inclusive">undated</unitdate>
+            <container type="SC">138</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"A Psalm of Life" (last verse); gift of Sol Feinstone</unittitle>
+            <unitdate normal="1881-04-06" type="inclusive">6 Apr 1881</unitdate>
+            <container type="SC">138</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Miscellany</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Autograph of Henry Wadsworth Longfellow</unittitle>
+            <container type="SC">138</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Business card: Mr. H. W. Longfellow</unittitle>
+            <container type="SC">138</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cartes de visite</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Longfellow's children</unittitle>
+              <container type="SC">138</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Evangeline</unittitle>
+              <physdesc>
+                <extent>2 items</extent>
+              </physdesc>
+              <container type="SC">138</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Engravings</unittitle>
+            <physdesc>
+              <extent>2 items</extent>
+            </physdesc>
+            <container type="SC">138</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Letter (
+              
+              <unitdate normal="1852/1888" type="inclusive">undated</unitdate>) to Amy Bridgeman and receipt (
+              
+              <unitdate normal="1888-10-10" type="inclusive">1888 Oct 10</unitdate>) to Mary Bridgeman of Alice M. Longfellow</unittitle>
+            <container type="SC">138</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographic prints (4) and negative (1) of Charles Cottnam Hamilton (1813-1880), recipient of two of the letters, above</unittitle>
+            <physdesc>
+              <extent>5 items</extent>
+            </physdesc>
+            <container type="SC">138</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

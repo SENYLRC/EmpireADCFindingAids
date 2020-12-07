@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="morgan_wd">morgan_wd</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">William Duane Morgan Correspondence</titleproper>
+            <subtitle>A description of his correspondence at Syracuse University</subtitle>
+         <author encodinganalog="Creator">LMD</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2006-03-08" encodinganalog="Date">3 November 2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Laura Deal
+            <date normal="2006-03-08">3 November 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100" source="lcnaf">Morgan, William Duane, b. 1816 or 17.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">William Duane Morgan Correspondence</unittitle>
+         <unitdate encodinganalog="245$f" normal="1836/1840" type="inclusive" label="Inclusive Dates: ">1836-1840</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence of the American newspaper editor and Democrat. Approximately 30 incoming letters related to Morgan's business and political activities.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2721009</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>William Duane Morgan (1817-1887) was an American newspaper editor and politician. He was born to a prominent family in Washington County, Pennsylvania and later moved to Ohio. He was an active member of the Democratic Party and had a stake in various  newspapers throughout his life. In 1837, he and his brother, Thomas Jefferson Morgan, were both owner/editors of <emph render="italic">Our Country</emph>, a democratic newspaper in Washington, Pennsylvania. Later, Morgan moved to Ohio where he owned the <emph render="italic">Ohio Patriot</emph> of New Lisbon from  approximately 1840 to 1871 and the <emph render="italic">Newark Advocate</emph> of Newark from 1856 to 1880. He was also the Auditor of the State of Ohio from 1852 to 1856.  </p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         
+      <p>The <emph render="bold">William Duane Morgan Correspondence</emph> consists of letters written to or about William Duane Morgan between 1836 and 1840. Morgan  arranged the letters into three packages based on their subject matter. </p><p>The first set of correspondence contains letters of recommendation written for Morgan in 1837-1838 while he was applying for the position of clerk in the Post Office of Washington County, Pennsylvania. </p><p>The second set, also from 1837-1838, consists of correspondence sent to Morgan from various newspaper owners  who were interested in selling their businesses to him. The bulk of this correspondence is  from Daniel Blocher, owner of the <emph render="italic">Maryland Advocate</emph> of Cumberland, Maryland. </p><p>The third set consists of political correspondence received by Morgan from the Democratic Party's Central Committees of Pennsylvania (1836) and Ohio (1838-1840). The bulk of this correspondence is concerned with the 1840 Ohio gubernatorial election between the incumbent Democrat Wilson Shannon and the Whig candidate Thomas Corwin. It includes a number of printed circulars mailed by the Democratic Party Committees of Pennsylvania and Ohio, which contain details of their election strategies.</p></scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Letters are in chronological order within each subject.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p><p>&scrc_name; has made a concerted effort over the 
+years to ensure that its manuscript and rare books holdings complement each other.  
+As a result, many of our manuscript collections are supported by books, pamphlets, 
+serials and other items which are cataloged in the Rare Books Collection.  Please be 
+sure to search &summitref; for these related materials.</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Journalism</subject>
+			<subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+			<persname encodinganalog="600" source="lcnaf">Morgan, William Duane, b. 1816 or 17.</persname>
+         <persname encodinganalog="600" source="lcnaf">Blocher, Daniel, 1810-1880.</persname>
+			<persname encodinganalog="600" source="lcnaf">Corwin, Thomas, 1794-1865.</persname>
+			<persname encodinganalog="600" source="lcnaf">Shannon, Wilson, 1802-1877.</persname>
+			<subject encodinganalog="650" source="lcsh">Democratic Party (Ohio)</subject>
+         <subject encodinganalog="650" source="lcsh">Democratic Party (Pa.)</subject>
+         <subject encodinganalog="650" source="lcsh">Elections -- United States.</subject>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Circular letters.</genreform>
+			<occupation encodinganalog="656" source="lcsh">Newspaper editors.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> William Duane Morgan Correspondence, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchased, 1967.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+               <!--Permissible values for @TYPE for first CONTAINER are: Box, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+               <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+            <c02><did><unittitle><unitdate normal="1836/1840" type="inclusive">1836-1840</unitdate></unittitle><container type="SC">346</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="council_europe">council_europe</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Council of Europe Adult Education Collection</titleproper>
+            <subtitle>An  inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author><sponsor>The adult education holdings are collectively known as the <lb/><extptr title="Alexander N. Charters Library of Resources for Educators of Adults" href="https://library.syr.edu/scrc/collections/areas/adult-ed.php" show="new"/>.</sponsor></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2009-03-19" encodinganalog="Date">19 Mar 2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2009-03-19">19 Mar 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">Council of Europe.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Council of Europe Adult Education Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1966/1974" type="inclusive" label="Inclusive Dates: ">1966-1974</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.3 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Reports from various Council of Europe committees relating to adult and continuing education</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2668682</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>, 
+         <language langcode="fra">French</language></langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>"Founded in 1949, the Council of Europe seeks to develop throughout Europe common and democratic principles based on the European Convention on Human Rights and other reference texts on the protection of individuals." <lb/>[from the Council's website, <extref href="http://www.coe.int/T/e/Com/about_coe">http://www.coe.int/T/e/Com/about_coe</extref>]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The Council of Europe Adult Education Collection consists of reports from several different Council committees relating to adult and continuing education.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Reports are arranged in alphabetical order by title.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous collections of both individuals and organizations, relating to adult education.  Please refer to &subjindex; for a complete listing.  The library's circulating collection also has substantial adult education holdings; please refer to &summitref; for a complete listing of cataloged items.</p></relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+<subject encodinganalog="650" source="local">Adult education</subject>
+         <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Council of Europe. Committee for Higher Education and Research</corpname>
+			<corpname encodinganalog="610" source="lcnaf">Council of Europe. Committee for Out-of-School Education.</corpname>
+	<corpname encodinganalog="610" source="lcnaf">Council of Europe. Committee for Out-of-School Education and Cultural Development.</corpname>
+	<corpname encodinganalog="610" source="lcnaf">Council of Europe. Council for Cultural Co-operation.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Adult education -- Audio-visual aids.</subject>
+			<subject encodinganalog="650" source="lcsh">Adult education -- Research.</subject>
+			<subject encodinganalog="650" source="lcsh">Adult education -- Study and teaching.</subject>
+			<subject encodinganalog="650" source="lcsh">Degrees, Academic -- Research.</subject>
+			<subject encodinganalog="650" source="lcsh">Occupational training -- Europe.</subject>
+			<subject encodinganalog="650" source="lcsh">Television in education.</subject>
+			<subject encodinganalog="650" source="lcsh">Vocational training -- Europe.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Reports.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Adult educators.</occupation>
+         <function encodinganalog="657" source="lcsh">Research.</function></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Council of Europe Adult Education Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from circulating collection.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Reports</unittitle></did>
+            <c02><did><unittitle>Adult education theory and practice</unittitle><unitdate normal="1974" type="inclusive">1974</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Conceptual and technical problems of long-range educational planning</unittitle><unitdate normal="1974" type="inclusive">1974</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Equivalence of diplomas, degrees and certificates</unittitle><unitdate normal="1972" type="inclusive">1972</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Evaluation des systemes multi-media</unittitle><unitdate normal="1974" type="inclusive">1974</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Feasibility study in the collection of adult education statistics</unittitle><unitdate normal="1974" type="inclusive">1974</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>International exchange of television programmes for schools: Legal and economic problems</unittitle><unitdate normal="1966" type="inclusive">1966</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Polyvalent vocational training</unittitle><unitdate normal="1971" type="inclusive">1971</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Recension de recherches sur les media audiovisuels pour adultes</unittitle><unitdate normal="1974" type="inclusive">1974</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Le role d l'enseignement par correspondance dans les systemes de formation multi-media</unittitle><unitdate normal="1974" type="inclusive">1974</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.8, 7/18/2007-->
+<!-- Added comment about use of archref element, removed copyright statement -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="limited_ed">limited_ed</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Limited Editions Club Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2007-10-26" encodinganalog="Date">26 Oct 2007</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2007-10-26">26 Oct 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">Limited Editions Club.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Limited Editions Club Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1929/1968" type="inclusive" label="Inclusive Dates: ">1929-1968</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>.75 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Checklists, catalogs, prospectuses from the American publishing company.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2570339</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The Limited Editions Club was founded in 1929 by George Macy (1900-1956).  It published fine books, usually classics and illustrated by leading artists of the day, for its member/subscribers; membership was limited to 1500. After Macy's death, leadership of the company passed to Macy's wife (1956) and then to his son (1968).  In 1970 the Limited Editions Club was purchased by the Boise-Cascade Company and then in 1979 by Sidney Shiff, a Wall Street investor.  Shiff focused on enhancing the quality of book design, solicited work from a number of African-American artists, and expanded the firm's offerings to include signed artists' portfolios.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Limited Editions Club</emph> Collection consists of annual prospectuses, monthly letters and special items.  <emph render="bold">Annual prospectuses</emph> are the descriptive catalogs distributed each year to members, describing that year's books.  <emph render="bold">Monthly Letter</emph> contains more than 200 issues of the monthly newsletter sent to subscribers.  <emph render="bold">Special items</emph>  include the initial prospectus and description of the club (1929), a sample book from the sixth series (1934), a special wartime prospectus for the general public (1942), and the address by Sir Francis Meynell at the dedication of the George Macy Memorial Collection of books (1957).</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Items in both series are arranged in chronological order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Publishing, printing and book arts</subject><subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+         <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            
+         
+            <corpname encodinganalog="610" source="lcnaf">Limited Editions Club.</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Bibliography -- Catalogs.</subject><subject encodinganalog="650" source="lcsh">Bibliography -- Limited editions.</subject><subject encodinganalog="650" source="lcsh">Privately printed books.</subject><subject encodinganalog="650" source="lcsh">Publishers and publishing.</subject>
+         
+            <title encodinganalog="630" source="lcnaf">The address by Sir Francis Meynell at the dedication of the George Macy Memorial Collection of books published by the Limited Editions Club, with a list of the titles,  14 May 1957. </title><title encodinganalog="630" source="lcnaf">The monthly letter of the Limited Editions Club.</title><title encodinganalog="630" source="lcnaf">Samples: a book containing fine illustrations and fine pages from the books to be published by the Limited Editions Club in its sixth series.</title><title encodinganalog="630" source="lcnaf">Ten years and William Shakespeare: a survey of the publishing activities of the Limited editions club from October 1929 to October 1940</title><genreform encodinganalog="655" source="aat">Prospectuses.</genreform><genreform encodinganalog="655" source="aat">Catalogs (documents)</genreform><genreform encodinganalog="655" source="aat">Checklists.</genreform><genreform encodinganalog="655" source="aat">Sample books.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Publishers.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Limited Editions Club Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from Rare Books.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>Annual prospectuses</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Annual prospectuses</unittitle>
+                  
+                  <unitdate normal="1933/1939" type="inclusive">1933-1939</unitdate><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02>
+         <c02>
+               <did>
+                  <unittitle>Annual prospectuses</unittitle>
+                  
+                  <unitdate normal="1940/1944" type="inclusive">1940-1944</unitdate><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Annual prospectuses</unittitle>
+                  
+                  <unitdate normal="1953" type="inclusive">1953</unitdate><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Annual prospectuses</unittitle>
+                  
+                  <unitdate normal="1960/1968" type="inclusive">1960-1968</unitdate><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02></c01>
+      <c01 level="series">
+         
+            <did>
+               <unittitle>Newsletter </unittitle>
+            <abstract>issues of the <emph render="italic">Monthly Letter</emph></abstract></did>
+            <c02>
+               <did>
+                  <unittitle>No's 1-51</unittitle>
+                  
+                  <unitdate normal="1929-06/1933-12" type="inclusive">Jun 1929 - Dec 1933</unitdate><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02>
+         <c02>
+               <did>
+                  <unittitle>No's 52-103</unittitle>
+                  
+                  <unitdate normal="1934-01/1937-12" type="inclusive">Jan 1934 - Dec 1937</unitdate><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>No's 104-117</unittitle>
+                  
+                  <unitdate normal="1934-01/1937-12" type="inclusive">Jan 1938 - Feb 1939</unitdate><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>No's 186, 216, 229</unittitle>
+                  
+                  <unitdate normal="1947-12" type="inclusive">Dec 1947, </unitdate><unitdate normal="1950-07" type="inclusive">Jul 1950, </unitdate><unitdate normal="1952-04" type="inclusive">Apr 1952</unitdate><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>No's 323-369</unittitle>
+                  
+                  <abstract>some missing issues</abstract><unitdate normal="1960-10/1964-10" type="inclusive">Oct 1960 - Oct 1964</unitdate><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02></c01><c01 level="series">
+         
+            <did>
+               <unittitle>Special items</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>First prospectus</unittitle>
+                  <unitdate normal="1929" type="inclusive">1929</unitdate>
+                  <container type="Box">2</container>
+                  
+                  
+               </did>
+            </c02>
+         <c02>
+               <did>
+                  <unittitle>Sample book for sixth series</unittitle>
+                  <unitdate normal="1934" type="inclusive">1934</unitdate>
+                  <container type="Box">2</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">Ten years and William Shakespeare: a survey of the publishing activities of the Limited editions club from October 1929 to October 1940</emph></unittitle>
+                  <unitdate normal="1940" type="inclusive">1940</unitdate>
+                  <container type="Box">2</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">The address by Sir Francis Meynell at the dedication of the George Macy Memorial Collection of books published by the Limited Editions Club, with a list of the titles</emph></unittitle>
+                  <unitdate normal="1957-05-14" type="inclusive">14 May 1957</unitdate>
+                  <container type="Box">2</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  
+                  <container type="Box">2</container>
+                  
+                  
+               </did>
+            </c02></c01></dsc>
+   </archdesc>
+</ead>

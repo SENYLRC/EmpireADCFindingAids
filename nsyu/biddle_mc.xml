@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="biddle_mc">biddle_mc</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Meta C. Biddle Account Book</titleproper>
+            <subtitle>An  inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-07-26" encodinganalog="Date">26 Jul 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-07-26" encodinganalog="Date">26 Jul 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>5 Nov 2012 - updated bio (MRC)</item><item>17 Oct 2018 - dates corrected, rehoused (MS)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Biddle, Meta C.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Meta C. Biddle Account Book</unittitle>
+         <unitdate encodinganalog="245$f" normal="1868/1878" type="inclusive" label="Inclusive Dates: ">1868-1878</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 volume</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Account book of estate of Meta C. Biddle and trusts for Adele Biddle and Jane Biddle, all of Pennsylvania, probably Philadelphia, recording income from investments and expenses of each.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2989483</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Meta Craig Biddle (1825-1913) was the eldest daughter of Nicholas and Jane Craig Biddle; she had two younger sisters, Adele (1828-1909) and Jane (1830-1915).   Meta  married her cousin, Lt. James Stokes Biddle (1818-1900) of 
+		Philadelphia, with whome she had three children: Nicholas (1850-1888), Jane Craig (1847-1922), and Meta Craig (1853-1934).  According to the Philadelphia Social Register of 1904, the couple lived at 1714 Locust 
+		Street in Philadelphia.</p>
+		
+		<p>[Sources: gravestone transcriptions from St. Peter's Churchyard at 
+		4th and Pine St., Philadelphia, available online at 
+		<extref href="http://www.yankeecemetery.com/st_peters%20Philadelphia.htm">http://www.yankeecemetery.com/st_peters Philadelphia.htm</extref>; <emph render="italic">The life and works of Thomas Sully 1783-1872</emph> (Philadelphia:1921); researcher Connie Houchin.]</p>
+		</bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Meta C. Biddle Account Book</emph> consists of one volume, an account book of estate of Meta C. Biddle and trusts for Adele Biddle and Jane Biddle, recording income from investments and expenses of each.  The volume is handwritten and 144 pages.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Single bound volume.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Biddle, Adele, 1828-1909.</persname>
+         <persname encodinganalog="600" source="lcnaf">Biddle, Jane, 1830-1915.</persname>
+			<persname encodinganalog="600" source="lcnaf">Biddle, Meta C., 1825-1918.</persname>
+			<famname encodinganalog="600" source="lcnaf">Biddle family.</famname>
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Administration of estates -- United States -- 19th century.</subject>
+         <geogname encodinganalog="651" source="lcsh">Philadelphia (Pa.) -- History.</geogname>
+         <genreform encodinganalog="655" source="aat">Account books.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Meta C. Biddle Account Book, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 1966.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Financial records</unittitle></did>
+            <c02><did><unittitle>Account book</unittitle><unitdate normal="1868/1978" type="inclusive">1868-1878</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

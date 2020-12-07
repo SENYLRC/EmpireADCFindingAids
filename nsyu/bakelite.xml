@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="bakelite">bakelite</eadid>
+      <filedesc>
+         <titlestmt>
+                     <titleproper encodinganalog="Title">Bakelite Collection</titleproper>
+         <subtitle>A description of the collection at Syracuse University</subtitle>
+
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+               <date normal="2006" encodinganalog="Date">2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-12">Feb 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>Feb 2009 - converted to EAD (MRC)</item>
+            <item>July 2012 - added material (SDG)</item>
+            <item>25 Sep 2013 - adds, M13-086 (MRC)</item><item>5 Jun 2017 - bio update (MRC)</item><item>6 Feb 2020 - advertisements added, dates corrected, inventory expanded (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+               <corpname encodinganalog="110">National Plastics Center &amp; Museum.</corpname></origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Bakelite Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1912/2010" type="inclusive" label="Inclusive Dates: ">1912-2010</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection contains correspondence,  printed material, and technical reports related 
+			to the Bakelite Corporation.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2663962</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         <p>Bakelite was developed in 1907-1909 by a Belgian, Dr. Leo Baekeland (who also invented Velox photographic 
+			paper, bought by Kodak); shortly thereafter Baekeland founded the General Bakelite Company (1910) to produce
+			 and distribute his invention.  The material's ingredients are phenol and formaldehyde, often with a wood 
+			 flour filler.   Electrically nonconductive and heat-resistant, it has been used in everything from radio 
+			 and telephone casings and electrical insulators to kitchenware, jewellery, and children's toys.   In 1924 
+			 Baekeland, then president of the American Chemical Society, appeared on the cover of 
+			 <emph render="italic">Time</emph> magazine.  In 1993 the American Chemical Society named the "Bakelizer," 
+			 Baekeland's original steam  pressure vessel, a National Historical Chemical Landmark as "the world's first 
+			 completely synthetic plastic."</p>
+			 
+			 <p> The Bakelite Corporation was formed in 1922 by a merger of the General Bakelite Company, the Condensite 
+			 Company, and the Redmanol Chemical Products Company founded by L.V. Redman.  The patent on the Bakelite 
+			 formulas expired in 1927 and numerous companies began manufacturing Bakelite items. Another company, Bakelite 
+			 Limited, was formed in England in 1926 from three suppliers of phenol formaldehyde materials; in 1939 the 
+			 company was acquired by the Union Carbide and Carbon Corporation.</p>
+      </bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Bakelite Collection</emph> contains correspondence,  printed material, and technical reports. </p>
+				
+				<p><emph render="bold">Correspondence</emph> consists of a letter detailing two
+            of the Bakelite Company's standard testing methods. </p>
+				
+				<p><emph render="bold">Printed
+               material</emph> includes advertisements, books, clippings, and several issues of two company 
+					employee newsletters: <emph render="italic">The Trefoil</emph>, published
+            monthly by "the employees of the Bakelite Division, Union Carbide and Carbon
+            Corporation," and <emph render="italic">The Wyandotte Peace Pipe</emph>, published "by
+            and for the personnel of the Halowax Products Division" of Bakelite.</p>
+				
+				<p><emph render="bold">Technical reports</emph> contains printed reports on specific products 
+				such as Vinylite.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous holdings in the areas of plastics and industrial design. Please refer to &subjindex; for a complete listing.  There are also items made of Bakelite in the artifacts holdings.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+			<subject encodinganalog="650" source="local">Plastics</subject>
+         <persname encodinganalog="600" source="lcnaf">Baekeland, L. H. (Leo Hendrik), 1863-1944.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Bakelite Company.</corpname>
+			<corpname encodinganalog="610" source="lcnaf">Union Carbide and Carbon Corporation. -- Bakelite Company.</corpname>
+         <title encodinganalog="630" source="local" rules="aacr2">The Bakelite jewelry book -- Corinne Davidov and Ginny Redington Dawes.</title>
+			<title encodinganalog="630" source="local" rules="aacr2">Trefoil.</title>
+		   <title encodinganalog="630" source="local" rules="aacr2">Wyandotte Peace Pipe.</title>
+         <subject encodinganalog="650" source="lcsh">Bakelite -- History.</subject>
+		   <subject encodinganalog="650" source="lcsh">Plastics industry and trade.</subject>
+		   <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Advertisements.</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+		   <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+		   <genreform encodinganalog="655" source="aat">Newsletters.</genreform>
+		   <genreform encodinganalog="655" source="aat">Technical reports.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>-->
+		</controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Bakelite Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Original collection, transfer from National Plastics Center and Museum, 11/06/2008.</p><p>TIME magazine, gift of <persname role="donor">Dennis Paradise</persname>, 2013.</p><p>Advertisements, gift of <corpname role="donor">Plastics Pioneers Association</corpname>, 2020.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined"><head>Inventory</head>
+		   <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+			   <c02><did><unittitle>Miscellaneous</unittitle><abstract>letter to Westinghouse describing the Bakelite Company's testing methods</abstract><unitdate type="inclusive" normal="1958-07">1956</unitdate><container type="Box">1</container></did></c02>   </c01>
+		   <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+			   <c02><did><unittitle>Advertisements</unittitle></did>
+		         <c03><did><unittitle>Miscellaneous</unittitle><unitdate type="inclusive" normal="1924/1929">1924-1929</unitdate><container type="Oversize">1</container></did>
+					     <acqinfo><p>Gift of Plastics Pioneers Association, 2020.</p></acqinfo></c03></c02>
+			   <c02><did><unittitle>Booklets</unittitle></did>
+		         <c03><did><unittitle>The Bakelizer</unittitle><abstract>8-page booklet published by the American Chemical Society commemoratingthe designation of the original Bakelizer as a National Historic ChemicalLandmark</abstract><unitdate normal="1993" type="inclusive">1993</unitdate><container type="Box">1</container></did></c03>
+		         <c03><did><unittitle>Information No. 2</unittitle><abstract>44-page illustrated booklet about Bakelite published by the GeneralBakelite Company and printed by Rogers &amp; Company</abstract><unitdate normal="1912" type="inclusive">March 1912</unitdate><container type="Box">1</container></did></c03></c02>
+			   <c02><did><unittitle>Books</unittitle></did>
+		         <c03><did><unittitle>The Bakelite jewelry book, by Corinne Davidov and Ginny Redington Dawes ; photography by Steven Mark Needham</unittitle><unitdate type="inclusive" normal="1988">1988</unitdate><container type="Box">1</container></did></c03></c02>
+			   <c02><did><unittitle>Clippings</unittitle></did>
+		         <c03><did><unittitle>Miscellaneous</unittitle><unitdate normal="1960" type="inclusive">1960, </unitdate><unitdate normal="1995" type="inclusive">1995</unitdate><container type="Box">1</container></did>
+					     <scopecontent><list>
+						     <item>"Fifty Years of Phenolics," <emph render="italic">BakeliteReview</emph>, Nov 1960</item>
+							  <item>"Bakelite: The Material of a Thousand Uses," <emph render="italic">Antique Week</emph>, 13 Jul 1995</item></list></scopecontent></c03></c02>
+			   <c02><did><unittitle>Magazines</unittitle></did>
+		         <c03><did><unittitle><emph render="italic">Currents</emph></unittitle><unitdate type="inclusive" normal="2010">2010</unitdate><container type="Box">1</container></did></c03>
+		         <c03><did><unittitle><emph render="italic">TIME</emph>, with Leo Baekeland on thecover</unittitle><unitdate normal="1924-09-22" type="inclusive">22 Sep 1924</unitdate><container type="Box">1</container></did>
+					     <acqinfo><p>Gift of Dennis Paradise, 2013.</p></acqinfo></c03></c02>
+			   <c02><did><unittitle>Newsletters</unittitle></did>
+		         <c03><did><unittitle><emph render="italic">Trefoil</emph>, Bound Brook, New Jersey, by employees of Bakelite Corporation and the Halowax Products Division of Union Carbide and Carbon Corporation</unittitle><unitdate normal="1949/1950" type="inclusive">1949-1950</unitdate><container type="Box">1</container></did></c03>
+		         <c03><did><unittitle><emph render="italic">Wyandotte Peace Pipe</emph>, by employees of the Halowax Products Division of Union Carbide and Carbon Corporation</unittitle><unitdate normal="1944/1945" type="inclusive">1944-1945</unitdate><container type="Box">1</container></did></c03></c02></c01>
+		   <c01 level="series"><did><unittitle>Technical reports</unittitle></did>
+			   <c02><did><unittitle>Vinylite, miscellaneous</unittitle><abstract>reports printed by Bakelite Corporation and/or Union Carbide and Chemicals Corporation, with information about various products</abstract><unitdate type="inclusive" normal="1942">1942, </unitdate><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">1</container></did>
+				     <scopecontent><p><list>
+					     <item>Fabrication of Vinylite plastics byscrew extrusion (Carbide and Carbon Chemicals Corporation, 1942)</item>
+						  <item>Vinylite plastics: Screw extrusion of wire and cable compounds (Bakelite Corporation, 1944)</item>
+						  <item>Vinylite plastics: Bonding elastomericcompounds (Bakelite Corporation, 1944)</item>
+						  <item>Vinylite wire and cable compounds: Technical data (Bakelite Corporation, 1945)</item>
+						  <item>Vinylite plastics rigidsheets: Technical data and fabrication (Bakelite Corporation, 1945)</item></list></p></scopecontent></c02></c01></dsc>
+   
+   </archdesc>
+</ead>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="considine_m">considine_m</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Mildred Considine Papers</titleproper>
+            <subtitle>A description of her papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-04-07" encodinganalog="Date">7 Apr 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-04-07">7 Apr 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>14 Jun 2018 - processed (MS)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Considine, Mildred.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Mildred Considine Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1955/1967" type="inclusive" label="Inclusive Dates: ">1955-1967</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">American society and travel columnist, wife of Bob Considine.  Collection contains correspondence, manuscripts and clippings.  Bulk relates to her memoir, <emph render="italic">Just a Minute, Mrs. Gulliver: Being the Account of the Travels and Travails of Mrs. Bob Considine</emph>.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2744145</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Mildred Considine (nee Anderson) (1904 or 1908-1983) was an American columnist and author.  Born in Coyle, Oklahoma, she grew up in various small towns across that state and later moved to Kansas City.  In the early 1930s she married her husband, Hearst newspaper reporter and columnist Bob Considine.    Better known to everyone as Millie, she wrote her own columns on society and travel, had a radio show on the Mutual Broadcasting system for five years, and wrote about her life in <emph render="italic">Just a Minute, Mrs. Gulliver: Being the Account of the Travels and Travails of Mrs. Bob Considine</emph> (1967).</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Mildred Considine Papers</emph> consist of biographical material and writings.   The bulk of the material relates to her memoir, <emph render="italic">Just a Minute, Mrs. Gulliver</emph>.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection remains largely in original order, as donated.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the papers of her husband, <archref href="../c/considine_b.htm">Bob Considine</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+			<subject encodinganalog="650" source="local">Journalism</subject>
+			<subject encodinganalog="650" source="local">Women Authors</subject>
+			<persname encodinganalog="600" source="lcnaf">Considine, Bob, 1906-1975.</persname>         
+			<persname encodinganalog="600" source="lcnaf">Considine, Mildred.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <title encodinganalog="630" source="lcnaf">Just a minute, Mrs. Gulliver.</title>
+         <subject encodinganalog="650" source="lcsh">American newspapers -- Sections, columns, etc.</subject>
+         <subject encodinganalog="650" source="lcsh">Travel writing.</subject>
+			<subject encodinganalog="650" source="lcsh">Women journalists -- United States.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Journalists.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Mildred Considine Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Mildred Considine</persname>, 1968.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+			
+			
+<!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+<c01 level="series"><did><unittitle>Biographical material</unittitle></did>
+   <c02><did><unittitle>Biographical material</unittitle><container type="Box">1</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Writings</unittitle></did>
+   <c02><did><unittitle>Book, "Just a Minute, Mrs. Gulliver"</unittitle></did>
+      <c03><did><unittitle>Sketches of proposed book</unittitle><physdesc><extent>2 copies</extent></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Early version (working title: Memories of a Magpie)</unittitle><physdesc><extent>2 copies</extent></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Rough chapter crafts</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Hope Hampton</unittitle><abstract>drafts A and B</abstract><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Intermediate notations and sketches</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Title creation</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Draft A</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Draft B</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Draft C</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Draft D</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Draft E</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Draft F, chapters 1-14</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Draft F, chapter 15-end</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Draft G (final)</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Related correspondence, Prentice Hall</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Correspondence, general</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Book publicity</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Personal appearences</unittitle><abstract>includes related correspondence, photo stills</abstract><unitdate type="inclusive" normal="1967">1967</unitdate><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Book publication parties</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Reviews, articles and clippings about</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Miscellaneous story reflections</unittitle><container type="Box">2</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Columns</unittitle></did>
+      <c03><did><unittitle>Milling with Millie</unittitle><unitdate normal="1955/1957" type="inclusive">1955-1957</unitdate><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Helpful Hints for Housewives</unittitle><abstract>a collection of listener responses from Millie's radio show on the Mutual Radio Network</abstract><container type="Box">2</container></did></c03>
+   </c02>
+ </c01>
+ 
+ 
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="carden_m">carden_m</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Maren Lockwood Carden Papers on the Oneida Community</titleproper>
+            <subtitle>An inventory of her papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2014-01-29" encodinganalog="Date">29 Jan 2014</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>## name of encoder<date normal="2014-01-29">29 Jan 2014</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Carden, Maren Lockwood.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Maren Lockwood Carden Papers on the Oneida Community</unittitle>
+         <unitdate encodinganalog="245$f" normal="1960/2000" type="inclusive" label="Inclusive Dates: ">1960-2000</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Notes, drafts and research material created or collected by Carden for her book on the Oneida Community.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4123205</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Maren Lockwood Carden is an American author, sociologist and feminist.  Educated at the University of Maryland (M.A., 1957) and Harvard University (Ph.D., 1963), she is the author of numerous books, papers and articles on the Oneida Community, communal societies, and women's studies.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Maren Lockwood Carden Papers on the Oneida Community</emph> consists of research notes, correspondence, interview notes, conference papers, and drafts of papers and chapters, all relating to Carden's study of the Oneida Community.  Carden's original folders and folder titles were retained; in the few cases where items were not foldered, titles have been assigned.  These are indicated by square brackets [ ].</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Folders are in alphabetical order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="../o/oneida_comm.htm">Oneida Community Collection</archref> for more of Carden's research, including interviews with members of the community.</p><p>&scrc_name; has extensive holdings relating to the Oneida Community and to Utopian communities in general.    Please refer to &subjindex;to locate additional manuscript collections, and to  &summitref; to locate books, pamphlets, 
+serials and other items which are cataloged in the Rare Books Collection.</p><p>A larger collection of Carden's papers is held by Harvard University Library, accession number: 81-M210.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>One roll of microfilm, containing the A. J. Macdonald Papers, has been separately cataloged.</p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Activism and social reform</subject><subject encodinganalog="650" source="local">New York State</subject><subject encodinganalog="650" source="local">Religion and philosophy</subject><persname encodinganalog="600" source="lcnaf">Carden, Maren Lockwood.</persname><persname encodinganalog="600" source="lcnaf">Noyes, P. Geoffrey.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Branch Davidians.</corpname><corpname encodinganalog="610" source="lcnaf">Oneida Community.</corpname><corpname encodinganalog="610" source="lcnaf">Oneida, ltd.</corpname>
+            
+            
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Collective settlements -- United States.</subject><subject encodinganalog="650" source="lcsh">	Family-owned business enterprises.</subject><subject encodinganalog="650" source="lcsh">Intentional communities -- New York (State)</subject>
+         <geogname encodinganalog="651" source="lcsh">Oneida (N.Y.) -- History.</geogname>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Lectures.</genreform><genreform encodinganalog="655" source="aat">Interviews.</genreform><genreform encodinganalog="655" source="aat">Research notes.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Sociologists.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Maren Lockwood Carden Papers on the Oneida Community, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Maren Lockwood Carden</persname>, 2014.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>[Files]</unittitle></did>
+            <c02><did><unittitle>[Branch Davidians and Oneida - notes on similarities and differences]</unittitle><unitdate normal="1993/1994" type="inclusive">[circa 1993-1994?]</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Census of 1908 and 1961</unittitle><unitdate normal="1994" type="inclusive">1994</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Chap III rewritten Sept 68</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Communal Studies Association paper on Oneida</unittitle><unitdate normal="1994" type="inclusive">1994</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Conference on NYS History</unittitle><abstract>includes copy of paper presented</abstract><unitdate normal="1998-06" type="inclusive">Jun 1998</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>[Conference on NYS History]</unittitle><abstract>includes copy of paper presented</abstract><unitdate normal="1999" type="inclusive">1999</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Conference organized by Kathman</unittitle><abstract>includes copy of paper presented</abstract><unitdate normal="1993" type="inclusive">1993</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Conference</unittitle><unitdate normal="1993" type="inclusive">1993</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Conference Elderhostel paper</unittitle><unitdate normal="1996" type="inclusive">1996, </unitdate><unitdate normal="1997" type="inclusive">1997</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Correspondence</unittitle><abstract>includes Richard Kathmann, Mansion House</abstract><unitdate normal="1974/1977" type="inclusive">1974-1977, </unitdate><unitdate normal="1984" type="inclusive">1984, </unitdate><unitdate normal="1988" type="inclusive">1988, </unitdate><unitdate normal="1991/2000" type="inclusive">1991-2000, </unitdate><unitdate normal="1960/2000" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Data</unittitle><unitdate normal="1993" type="inclusive">1993</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>[Drafts, unidentified]</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Encycl. NYS</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Encyclopedia NYS Oneida</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Interviews by telephone</unittitle><unitdate normal="1993" type="inclusive">1993</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Interviews</unittitle><unitdate normal="1993" type="inclusive">1993</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Interviews compilation</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Interviews not typed up</unittitle><unitdate normal="1960/1970" type="inclusive">[1960s?]</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Management positions [in Oneida]</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>New Zealand</unittitle><abstract>includes correspondence, notes, drafts for conference presentation</abstract><unitdate normal="1996" type="inclusive">1996</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>[Notes]</unittitle><unitdate normal="1960/1969" type="inclusive">[1960s]</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Noyes, Geoff collection + notes, MLC</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Noyes, Hilda collection and notes, etc.</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>[Proposal for interpretive plan for Mansion House]</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Reviews/comments thesis &amp; book</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Statistical analyses</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Strays</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>[Miscellany]</unittitle><container type="Box">2</container></did></c02>
+            
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

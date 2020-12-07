@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.8, 7/18/2007-->
+<!-- Added comment about use of archref element, removed copyright statement -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="living_theatre">living_theatre</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Living Theatre Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2007-09-21" encodinganalog="Date">21 Sep 2007</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Rothenberger
+            <date normal="2007-09-21">21 Sep 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>Oct 2007 - additions (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">Living Theatre (New York, N.Y.)</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Living Theatre Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1951/1961" type="inclusive" label="Inclusive Dates: ">1951-1961</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Programs and prospectus from the Living Theatre in New York.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2563116</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The Living Theatre was founded in 1947 by actor and writer Judith Malina and painter/poet Julian Beck.  Intended as an experimental alternative to commercial theatre, it attracted the sponsorship of, and staged works by, important American writers including Kenneth Rexroth, Gertrude Stein, John Ashbery, and William Carlos Williams.  Also included were European writers such as Jean Cocteau (French), Bertolt Brecht (German), Federico García Lorca (Spanish), and Luigi Pirandello (Italian), many of whom were at that time rarely if ever produced in America.</p><p>Its reception by the established New York theatre world was not entirely positive, and between 1953 and 1963 three of its venues were shut down by the authorities.  The Living Theatre then turned to touring, travelling Europe and refining their vision of "a new form of nonfictional acting based on the actor's political and physical commitment to using the theatre as a medium for social change." ["Historical Notes," Living Theatre website]  Over the next twenty years their venues expanded to Brazilian prisons, Pittsburgh steel mills, Palermo slums, and New York City schools; their performances were free to all and included <emph render="italic">Six Public Acts</emph>, <emph render="italic">The Money Tower</emph>, <emph render="italic">Seven Meditations on Political Sado-Masochism</emph>, <emph render="italic">Turning the Earth</emph> and the <emph render="italic">Strike Support Oratorium</emph>.</p><p>In the 1980s the group began to focus on participatory theatre, involving the audience in rehearsals and performances; plays of this phase included <emph render="italic">Prometheus at the Winter Palace</emph>, <emph render="italic">The Yellow Methuselah</emph> and <emph render="italic">The Archaeology of Sleep</emph>.  When Julian Beck died in 1985 he was replaced by Hanon Reznikov, who brought the troupe to a new Third Street performance space on Manhattan's Lower East Side. Continuing its tradition of challenging authority, the theatre was closed by authorities in 1993.</p><p>In 1999, funded by the European Union, the troupe renovated Palazzo Spinola, a 17th century building in Rocchetta Ligure, Italy, and reopened it as Centro Living Europa.  One of their first productions from the new venue was <emph render="italic">Resistenza</emph>, a dramatization of the city's resistance to the German occupation in 1943-1945.  In 2006 they re-established a presence in New York City at 21 Clinton Street, where they continue to produce new plays, most with anarchist, pacifist, or anti-globalization themes.</p><p>The Living Theatre exerted a strong influence on other American experimental theatre companies, including The Open Theater (founded by Living Theatre member Joseph Chaikin) and Bread and Puppet Theater.  Over its history The Living Theatre has staged nearly a hundred productions performed in eight languages in 28 countries on five continents, and its productions have won four Obie Awards: <emph render="italic">The Connection</emph> (1959), <emph render="italic">The Brig</emph> (1963 and 2007), and <emph render="italic">Frankenstein</emph> (1968).</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Living Theatre Collection</emph> consists of two series.  Programs contains programs from several shows of the 1951-1952 and 1959-1960 season including <emph render="italic">Doctor Faustus Lights the Lights</emph> by Gertrude Stein, <emph render="italic">Beyond the Mountains</emph> by Kenneth Rexroth, and <emph render="italic">Faustina</emph> by Paul Goodman.  <emph render="bold">Miscellaneous</emph> contains a 1961 prospectus of the group, including a 1-page budget summary.</p>
+      </scopecontent>
+      
+      <!--<arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>## OPT (MARC 351$a)</p>
+      </arrangement>-->
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>See also the <archref href="../g/grove_press.htm">Grove Press Records</archref>' editorial files, under "Malina, Judith."</p>
+      </otherfindaid>
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Dance and theatre</subject>
+         <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Malina, Judith, 1926-</persname><persname encodinganalog="700" source="lcnaf">Rexroth, Kenneth, 1905-1982 -- Beyond the mountains.</persname><persname encodinganalog="700" source="lcnaf">Stein, Gertrude, 1874-1946 -- Doctor Faustus lights the lights.</persname><persname encodinganalog="700" source="lcnaf">Goodman, Paul,  1911-1972 -- Faustina.</persname>
+         
+            <persname encodinganalog="700" source="lcnaf">Williams, William Carlos, 1883-1963 -- Many loves.</persname><corpname encodinganalog="610" source="lcnaf">Living Theatre (New York, N.Y.)</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Experimental theater -- United States.</subject><subject encodinganalog="650" source="lcsh">Off-Broadway theater.</subject>
+         
+            <genreform encodinganalog="655" source="aat">Programs (documents)</genreform><genreform encodinganalog="655" source="aat">Prospectuses.</genreform>
+         
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Living Theatre Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Separated from Grove Press Records, 2007.   Purchase, various dates.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>Programs</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate normal="1951/1952" type="inclusive">1951-1952, </unitdate><unitdate normal="1959/1960" type="inclusive">1959-1960</unitdate>
+                  <container type="SC">205</container>
+                  
+                  
+               </did>
+            </c02>
+         </c01>
+      <c01 level="series">
+         
+            <did>
+               <unittitle>Prospectuses</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle><unitdate normal="1961" type="inclusive">1961</unitdate></unittitle>
+                  
+                  <container type="SC">205</container>
+                  
+                  
+               </did>
+            </c02>
+         </c01></dsc>
+   </archdesc>
+</ead>

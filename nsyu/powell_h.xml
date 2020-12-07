@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="powell_h">powell_h</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Harriet Powell Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-07-26" encodinganalog="Date">26 Jul 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-07-26">26 Jul 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Powell, Harriet, fl. 1839.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Harriet Powell Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1877" type="inclusive" label="Inclusive Dates: ">1877, 1941</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Material relating to Tom Leonard and the  1839 escape of Harriet Powell, "white lady fugitive."  Clippings from the <emph render="italic">Sunday Morning Times</emph> (Syracuse, New York), June 10, 1877, and a narrative explanation dated October 1941.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2989490</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Harriet Powell arrived in Syracuse in September of 1839 with wealthy Mississippi 
+		plantation owner J. Davenport and his wife.    Powell was evidently very fair-skinned, as 
+		she was referred to as "the white lady fugitive" and initially several visitors thought her a family member, only later discovering that she was in fact the Davenports' slave.</p><p>The Davenports and Powell stayed at a local hotel called The 
+		Syracuse House for some time.  During a reception on October 8, the night before their 
+		departure, Harriet escaped with the help of Tom Leonard,  then a waiter at the Syracuse 
+		House, and of Deputy County Clerk William M. Clarke (nephew of abolitionist Dr. John Clark) and local businessman John Owen.   
+		Although Leonard was subsequently arrested and questioned regarding Powell's escape, he 
+		gave no information regarding either Powell or his fellow conspirators.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Harriet Powell Collection</emph> consists of clippings and a 
+			personal narrative.  The lengthy clipping is from the 
+			<emph render="italic">Sunday Morning Times</emph> (Syracuse, New York) of June 10, 1877, and 
+			gives a detailed account of Powell's escape in 1839, in particular the role of Tom 
+			Leonard in organizing her escape.  The handwritten narrative, dated October 
+			1941, was written by the donor, Theodore W. Clarke, who was 
+			the grandson of William M. Clarke, also  involved in the escape.     Clarke's narrative gives some historical background for the story -- based in part on family tradition 
+			-- and the clipping.  A typed transcription of the narrative is included.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>No particular order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>Additional Harriet Powell material is available in our Rare Books holdings.  Please search &summitref; to locate these items.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">African Americans</subject>
+			<subject encodinganalog="650" source="local">Activism and social reform</subject>
+			<persname encodinganalog="600" source="lcnaf">Clarke, Theodore W.</persname><persname encodinganalog="600" source="lcnaf">Clarke, William M., fl. 1839-1877.</persname><persname encodinganalog="600" source="lcnaf">Leonard, Tom, d. 1877.</persname><persname encodinganalog="600" source="lcnaf">Powell, Harriet, fl. 1839.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Abolitionists -- United States.</subject><subject encodinganalog="650" source="lcsh">Slavery -- United States.</subject>
+         <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- History -- 19th century.</geogname>
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Memoirs.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Harriet Powell Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Theodore W. Clarke</persname>, 1978.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Clipping, manuscript narrative</unittitle><unitdate normal="1877" type="inclusive">1877, </unitdate><unitdate normal="1941" type="inclusive">1941</unitdate><container type="SC">548</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

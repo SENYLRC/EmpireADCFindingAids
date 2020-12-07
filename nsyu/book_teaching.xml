@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="book_teaching">book_teaching</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Bookbinding Teaching Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2019-09-18" encodinganalog="Date">18 Sep 2019</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2019-09-18">18 Sep 2019</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">Syracuse University. -- Libraries. -- Special Collections Research Center.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Bookbinding Teaching Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="2019" type="inclusive" label="Inclusive Dates: ">2019</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Teaching collection, with models and other materials for instruction on the history and techniques of book production.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">## Use our field 001</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Bookbinding is the process of physically assembling a book of codex format from an ordered stack of paper sheets.  The codex form was developed around the first century AD by the Romans, superseding earlier formats such as the scroll, tablet, or concertina.  A codex consists of folded written sheets ("quires") attached along one edge, and protected by some type of cover.   At first quires were  attached using a variety of sewing techniques; modern methods also include gluing, stapling, spiral binding and plastic comb binding.  Before the widespread availability of paper, books were usually written on papyrus, vellum or parchment.    Covers were originally of  leather or wood (hence the term "boards" for a rigid cover) and were sometimes elaborately decorated with gold, silver, paint, and gems; modern  book covers are typically of cardboard, fiberboard, or heavy glossy paper.  The quality of book's paper and binding directly affect its cost; limited and special editions may have particularly ornate or unusual bindings.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Bookbinding Teaching Collection</emph> contains models and other materials for instruction on the history and techniques of book production.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>No particular order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Publishing, printing and book arts</subject><!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Biblio Tech.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Bookbinding -- History.</subject><subject encodinganalog="650" source="lcsh">Bookbinding -- Specimens.</subject>
+         <subject encodinganalog="650" source="lcsh">Bookbinding -- Study and teaching.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Models (representations)</genreform><genreform encodinganalog="655" source="aat">Specimens.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Bookbinding Teaching Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2019.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Models</unittitle></did>
+               <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+               <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+            <c02><did><unittitle>Reverse Engineering Historical and Modern Binding Structures</unittitle><unitdate normal="2019" type="inclusive">2019</unitdate><container type="Oversize">1</container></did><scopecontent><p>Set of 12 models produced by Biblio Tech.  Set contains the following bindings: tacketed, Ethiopian, medieval, leather (fine), boarded, split board, simplified, German case, non-adhesive paper case, crossed structure, sewn boards, and scaleboard.  There is also an informational booklet with explanations of each binding type, and a bibliography.</p></scopecontent></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

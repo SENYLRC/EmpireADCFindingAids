@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="buchanan_j">buchanan_j</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">James Buchanan Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">Michele Combs</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2009-07-21" encodinganalog="Date">21 Jul 2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2009-07-21">21 Jul 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Buchanan, James, 1791-1868.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">James Buchanan Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1848/1862" type="inclusive" label="Inclusive Dates: ">1848-1862</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Letters, notes, and "An Act for the Relief of the Society for the Reformation of Juvenile Delinquents in the City of New York" with accompanying State Department certification and seal</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2691141</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>James Buchanan (1791-1868) was the 15th President of the United States, from 1857-1861.    His presidency coincided with increasing tensions between North and South over states' rights and slavery, with the outbreak of hostilities at Fort Sumter coming barely a month after his successor, Abraham Lincoln, took office.     Prior to his presidency Buchanan was elected five times to the United States Congress where he served as Representative for the state of Pennsylvania (1821-1831) and as Chairman of the House Committee on the Judiciary (1829-1831).  After a brief period as Minister to Russia (1832-1833), he was a U.S. Senator (1834-1845), Secretary of State (1845-1849), and Minister Plenipotentiary to the Court of St. James (1853-1856).</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">James Buchanan Collection</emph> consists of a transcribed copy of an Act of Congress and three  items of correspondence.    The Act concerns a court case involving the Society for the Reformation of Juvenile Delinquents in the City of New York, and is accompanied by  a State Department certificate of authenticity signed by Buchanan as Secretary of State.   One letter, from Buchanan in Edinburgh to a "D. S. Kennedy" of Wall Street, discusses the gold standard, including the potential impact of the discovery of gold in California; two incoming letters deal with a request for a Captain's commission and a donation to the Pennsylvania Soldiers Relief Association.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Items are in chronological order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Buchanan, James, 1791-1868.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Society for the Reformation of Juvenile Delinquents in the City of New-York.</corpname><corpname encodinganalog="610" source="lcnaf">United States. -- Department of State -- History.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Gold standard -- United States.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Legislative acts.</genreform><genreform encodinganalog="655" source="aat">Letters (correspondence)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Cabinet officers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>James Buchanan Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 1969.  Transfer from Rare Books, 1986.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Miscellaneous</unittitle></did>
+               
+               
+            <c02><did><unittitle>Act of Congress (authorized transcribed copy) and correspondence</unittitle><unitdate normal="1848" type="inclusive">1848, </unitdate><unitdate normal="1849" type="inclusive">1849, </unitdate><unitdate normal="1858" type="inclusive">1858, </unitdate><unitdate normal="1862" type="inclusive">1862</unitdate><container type="SC">332</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

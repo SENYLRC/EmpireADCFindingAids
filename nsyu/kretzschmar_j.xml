@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="kretzschmar_j">kretzschmar_j</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">John Kretzschmar Papers</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-03-27" encodinganalog="Date">27 Feb 2019</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2013-03-27">27 Feb 2019</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Kretzschmar, John.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">John Kretzschmar Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="2006/2018" type="inclusive" label="Inclusive Dates: ">2006-2018</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Clippings, correspondence, printed material relating to American engineer and to plastics generally.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">5203337</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>John Kretzschmar (1933-2018) was an American engineer in the field of plastics.  A graduate of the University of Missouri, he founded Blako Industries, a plastics extrusion firm, and was a long-time member of  the Society of Plastics Engineers, the Society of the Plastics Industry, Inc., and the Plastics Pioneers Association.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">John Kretzschmar Papers</emph> contains correspondence-subject files, memorabilia, and printed material.</p><p><emph render="bold">Correspondence-subject files</emph> includes correspondence with colleagues and organizations in the plastics field, as well as notes and outlines for a speech by JK (under "Polyethylene 75th Anniversary").</p><p><emph render="bold">Memorabilia</emph> contains clippings about Kretzschmar and several obituaries and remembrances from his funeral.</p><p><emph render="bold">Printed material</emph> contains issues of a number of newsletters and magazines from plastics-related organizations, as well as some miscellaneous items such as a laminated card "Engaging Our Customers: A New Dialogue About Plastics."</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetically by type or topic.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous collections and printed material related to the history and development of the plastics industry. Please &searchcoll; to locate related manuscript collections, and refer to &summitref; to locate printed material.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>Two books, <emph render="italic">Polymer Pioneers</emph> by Peter J.T. Morris (1989) and The Story of Erinoid by John Morgan (2008), were transferred to Rare Books for cataloging.    Six issues of <emph render="italic">Plastics News</emph> (Crain Communications Inc.) were transferred to the general collections for cataloging.</p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+			<subject encodinganalog="650" source="local">Plastics</subject>
+			<persname encodinganalog="600" source="lcnaf" authfilenumber="n86116775">Beall, Glenn.</persname><persname encodinganalog="600" source="lcnaf" authfilenumber="nr94007369">Judkins, Phillip.</persname><persname encodinganalog="600" source="lcnaf">Kretzschmar, John.</persname><persname encodinganalog="600" source="lcnaf">Russell, John George, 1940-</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Chemical Heritage Foundation.</corpname>
+			<corpname encodinganalog="610" source="lcnaf">Plastics Hall of Fame.</corpname>
+			<corpname encodinganalog="610" source="lcnaf">Plastics Historical Society.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Engineers -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Plastics -- Societies, etc.</subject>
+			<subject encodinganalog="650" source="lcsh">Plastics industry and trade -- Great Britain.</subject>
+			<subject encodinganalog="650" source="lcsh">Plastics industry and trade -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Polyethylene -- History.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Journals (periodicals)</genreform>
+			<genreform encodinganalog="655" source="aat">Newsletters.</genreform>
+			<genreform encodinganalog="655" source="aat">Research notes.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Engineers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>John Kretzschmar Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Leigh Kretzschmar</persname>, 2019.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         
+         <c01 level="series"><did><unittitle>Correspondence-subject files</unittitle></did>
+            <c02><did><unittitle>Bakelite 100 Years</unittitle><unitdate normal="2007/2008" type="inclusive">2007-2008</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Beall, Glenn</unittitle><unitdate normal="2008/2009" type="inclusive">2008-2009</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Chemical Heritage Foundation</unittitle><unitdate normal="2008" type="inclusive">2008</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Cruse, Jen</unittitle><unitdate normal="2009" type="inclusive">2009</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Goodey, Chris and Roy</unittitle><unitdate normal="2008" type="inclusive">2008</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>LDPE [Low Density Polyethylene] and radar</unittitle><abstract>includes paper by Phil Judkins</abstract><unitdate normal="2008/2009" type="inclusive">2008-2009</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Plastics Hall of Fame</unittitle><unitdate normal="2008" type="inclusive">2008, </unitdate><unitdate normal="2012" type="inclusive">2012</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Plastics Historical Society U.K.</unittitle><unitdate normal="2008/2010" type="inclusive">2008-2010</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Plastics and Rubber Weekly</unittitle><abstract>includes correspondence with Glenn Beall</abstract><unitdate normal="2007" type="inclusive">2007</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Plexiglas</unittitle><abstract>clippings and other material on the history of Plexiglas</abstract><unitdate normal="2008" type="inclusive">2008, </unitdate><unitdate normal="2012" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Polyethylene 75th Anniversary</unittitle></did>
+				   <c03><did><unittitle>Conference material</unittitle><unitdate normal="2008-10" type="inclusive">Oct 2008</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>Correspondence and notes</unittitle><unitdate normal="2008" type="inclusive">2008</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>Kretzschmar's talk</unittitle><abstract>notes and outline</abstract><unitdate normal="2008" type="inclusive">2008</unitdate><container type="Box">1</container></did></c03>
+            </c02>
+				<c02><did><unittitle><emph render="italic">Polymer Pioneers</emph> notes</unittitle><abstract>notes on various individuals mentioned in the book, with page numbers</abstract><unitdate normal="2010" type="inclusive">2010</unitdate><container type="Box">1</container></did><note><p>A copy of this book is available in the circulating collection.  Please &summitref; to locate.</p></note></c02>
+            <c02><did><unittitle>Russell, John George</unittitle><unitdate normal="2008/2009" type="inclusive">2008-2009</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Swallow bust</unittitle><abstract>discussion of bust of chemist and engineer John Swallow, by Fiore de Henriquez, found during excavation on a building site</abstract><unitdate normal="2009" type="inclusive">2009</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Clippings about JK</unittitle><unitdate normal="2009" type="inclusive">2009</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Obituaries and remembrances</unittitle><unitdate normal="2018" type="inclusive">2018</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle>BPF [British Plastics Federation] Plastics Timeline</unittitle><unitdate normal="2008" type="inclusive">2008</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Chemical Heritage</unittitle><abstract>journal of the Chemical Heritage Foundation</abstract> <physdesc><extent>2 items</extent></physdesc><unitdate normal="2008/2009" type="inclusive">2008-2009</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>PHS Newsletter</unittitle><abstract>publication of the Plastics Historical Society U.K.</abstract><physdesc><extent>3 items</extent></physdesc><unitdate normal="2009/2011" type="inclusive">2009-2011</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Plastiquarian</unittitle><abstract>journal of the Plastics Historical Society U.K.</abstract><unitdate normal="2006/2012" type="inclusive">2006-2012</unitdate><physdesc><extent>8 items</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Miscellaneous</unittitle><abstract>clippings, handouts, etc. from various plastics-related organizations</abstract><unitdate normal="2008" type="inclusive">2008, </unitdate><unitdate normal="2006/2018" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

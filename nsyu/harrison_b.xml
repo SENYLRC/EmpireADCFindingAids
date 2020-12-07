@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="harrison_b">harrison_b</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Benjamin Harrison Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-03-15" encodinganalog="Date">15 Mar 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2011-03-15">15 Mar 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Benjamin Harrison Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1863/1908" type="inclusive" label="Inclusive Dates: ">1863-1908</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.25 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, photographs and memorabilia of the 23rd president of the United States, his wife and family.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3263479</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Benjamin Harrison (1833-1901) was the 23rd President of the United States and a grandson 
+		of William Henry Harrison, 9th President of the United States.   Prior to his presidency, he 
+		attained the rank of Brigadier General during the American Civil War and served as United 
+		States Senator from Indiana.  His administration is most remembered for economic legislation, 
+		including the McKinley Tariff and the Sherman Antitrust Act.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Benjamin Harrison Collection</emph> consists of incoming 
+			correspondence and memorabilia.  </p>
+			<p> <emph render="bold">Correspondence</emph> includes a letter from Dr. Emma B. Ryder, 
+			a New York physician working in Bombay, India, concerning her work to improve the lot of 
+			women there, as well as a letter from a constituent 
+			criticising Mrs. Harrison for having danced at a dinner party.  There are also one or two unidentified letters.</p>
+			<p><emph render="bold">Memorabilia</emph> consists of a number of photographs and items of 
+			printed material.  Among the photographs are one of "Major Gen. Lee" reviewing troops on 31 
+			August 1898, one of an 1865 WANTED poster offering a $100,000 reward for "the murderer of 
+			our late beloved President Abraham Lincoln," and one of an unidentified man in a Rough Riders uniform, possibly 
+			Harrison, with his son.   The printed material includes a 
+			collection of "the extemporaneous speeches of Gen. Benjamin Harrison," a brief biography of 
+			Mrs. Harrison,  and  souvenir programs from various events including the inaugural ball.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Correspondence and printed memorabilia are arranged chronologically.  Photographs are in 
+			no particular order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+		<!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+		 <persname encodinganalog="600" source="lcnaf">Harrison, Benjamin, 1833-1901.</persname>
+         <persname encodinganalog="600" source="lcnaf">Harrison, Caroline Lavinia Scott, 1832-1892.</persname>
+         <persname encodinganalog="600" source="lcnaf">Ryder, Emma B.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Presidents -- United States -- History.</subject>
+         <subject encodinganalog="650" source="lcsh">Presidents' spouses -- United States.</subject>
+         <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <genreform encodinganalog="655" source="aat">Souvenir programs.</genreform>
+         <genreform encodinganalog="655" source="aat">Watercolors (paintings)</genreform>
+         
+         
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Benjamin Harrison Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><unitdate normal="1863" type="inclusive">1863, </unitdate><unitdate normal="1874" type="inclusive">1874, </unitdate><unitdate normal="1889/1892" type="inclusive">1889-1892, </unitdate><unitdate normal="1863/1908" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Photographs</unittitle><unitdate normal="1863/1908" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Printed material</unittitle><unitdate normal="1888/1891" type="inclusive">1888-1891, </unitdate><unitdate normal="1908" type="inclusive">1908</unitdate><container type="Box">1</container></did><scopecontent><p>Contains a collection of "the extemporaneous speeches of Gen. Benjamin Harrison" ; souvenir programs from the inaugural ball, a presidential tour of the Pacific Coast,   and the May 25, 1897 sailing of the steamship <emph render="italic">Fürst Bismarck</emph> (complete with menu, photos, and history of the line); and a biographical sketch of Mrs. Harrison published by the Daughters of the American Revolution of Indiana.</p></scopecontent></c02>
+            <c02><did><unittitle>Artwork</unittitle><abstract>watercolor of purple clover, artist unknown</abstract><unitdate normal="1863/1908" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

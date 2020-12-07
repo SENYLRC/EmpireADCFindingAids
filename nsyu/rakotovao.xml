@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="rakotovao">rakotovao</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Rakotovao Collection of Madagascar Photographs</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-01-29" encodinganalog="Date">29 Jan 2013</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2013-01-29">29 Jan 2013</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Rakotovao, Armand</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Rakotovao Collection of Madagascar Photographs</unittitle>
+         <unitdate encodinganalog="245$f" normal="1950/1970" type="inclusive" label="Inclusive Dates: ">circa 1960?</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection of photographs of items relating to Madagascar, including portraits, paintings, museum objects, prints from books or other publications, and so on.  The photographs were likely taken circa 1960, but the some of items in the photographs date back to the early 1800s.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4041753</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            Majority in <language langcode="fra">French</language>, a little <language langcode="eng">English</language> and <language langcode="mlg">Malagasy</language>.</langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Armand Rakotovao (fl. 1960-1979) was a magistrate in Madagascar and the author of at least three books on the country and its history: <emph render="italic">Ouvrages concernant Madagascar</emph> (1960?), <emph render="italic">Vocabulaire français-malagasy:
+mots juridiques et techniques avec des exemples</emph> (1976), and <emph render="italic">Histoire de Aristide Corroller:
+prince de Betanimena, gouverneur et commandant de Tamatave, secrétaire de Radama I, Généralissime de Ranavalona I</emph> (1974?).  His   French-Malagasy legal dictionary, created due to the requirement that legal judgements of indigenous courts be rendered in the native language rather than in French, was seen as an important work. (Denis Turcotte, <emph render="italic">La politique linguistique en Afrique francophone</emph>, p. 101)   According to the Library of Congress, he was a recipient of the French National Order of Merit (chevalier de l'Ordre national) and a member of the Malagasy Academy (l'Académie malgache).</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Rakotovao Collection of Madagascar Photographs</emph> consists of black and white photographs of a range of items relating to Madagascar, compiled into three albums by Armand Rakotovao.   The original red leatherette albums each had a "Bibliothèque Rakotovao" bookplate inside the front cover (a photocopy is provided in each box).</p><p>All of the photographs have typed captions in French, presumably added by Rakotovao.  In addition, some of the original items had captions in French or occasionally English which are captured in the photograph.  Subjects of the photographs include portraits of Madagascar rulers (e.g., Ranavalona I, Radama I); paintings, etchings or drawings of scenes or landscapes (e.g., "Audience de la Reine RANAVALONA I au Palais de Manjakamiadana"); papers and documents (e.g., "letter du Rev. Jones, premier missionarie de L.M.S. a RADAMA Ier"; "Diplôme de Radama II"); group portraits of notable individuals (ambassadors, governors); and so on.</p><p>The collection consists entirely of these photographic reproductions -- there are no actual paintings, illustrations, documents, or other original material.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Original order, as the albums were compiled by the collector.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Historians</subject><persname encodinganalog="600" source="lcnaf">Dussac, Paul.</persname><persname encodinganalog="600" source="lcnaf">Laborde, Jean, 1805-1878.</persname><persname encodinganalog="600" source="lcnaf">Radama, I, King of Madagascar, 1791-1828.</persname><persname encodinganalog="600" source="lcnaf">Radama II, King of Madagascar, 1830-1863.</persname><persname encodinganalog="600" source="lcnaf">Rakotovao, Armand.</persname><persname encodinganalog="600" source="lcnaf">Ranavalona I, Queen of Madagascar, ca. 1790-1861.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Ambassadors -- Madagascar.</subject><subject encodinganalog="650" source="lcsh">Churches -- Madagascar.</subject>
+         <subject encodinganalog="650" source="lcsh">Portraits -- Madagascar -- Reproductions.</subject><subject encodinganalog="650" source="lcsh">Soldiers -- Madagascar.</subject><geogname encodinganalog="651" source="lcsh">Madagascar -- History -- Hova rule, 1810-1885.</geogname><geogname encodinganalog="651" source="lcsh">Madagascar -- History -- 1885-1960.</geogname><geogname encodinganalog="651" source="lcsh">Madagascar -- Kings and rulers.</geogname>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Rakotovao Collection of Madagascar Photographs, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Photograph albums</unittitle></did>
+            <c02><did><unittitle>Madagascar hier et aujourd'hui [Madagascar yesterday and today] [Volume 1]</unittitle><abstract>primarily rulers of Madagascar; first item is a photograph of a painting of Andrianampoinimerina, who reigned from 1788-1810; last item is a photograph of an October 1900 photograph of prime minister Rainilarivony.</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>[Volume 2]</unittitle><abstract>notable individuals such as politicians (e.g. Paul Dussac), ambassadors, princes and rulers of other countries (e.g. Sultan Said Ali bin Said Omar of Grande Comore), academicians, etc.; includes  photograph of an 1897 letter from the rebel chieftain Rabezavana to General Hubert Lyautey, later Resident-General of French Morocco but then serving in Madagascar under General Joseph Gallieni.</abstract><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>[Volume 3] </unittitle><abstract>primarily  people and scenes related to churches and missions, including churches and their staff, Christian survivors of persecution ("Les survivants sous le règne de Rasoherina, des premiers chrétiens persecutés par Ranavalona I"), physicians, teachers; other subjects include Jean Laborde (engineer and French consul to Madagascar), Malagasy soldiers, General [Will?] Shervinton, and others.</abstract><container type="Box">3</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

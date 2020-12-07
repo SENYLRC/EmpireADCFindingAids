@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012--><!-- added altformavail section -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="bond_ih" mainagencycode="NSyU">bond_ih</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Ida H. Bond Papers</titleproper>
+        <subtitle>An inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2012-07-03">3 Jul 2012</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+        
+        <date normal="2012-07-03">3 Jul 2012</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Bond, Ida H.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Ida H. Bond Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1896/1931" type="inclusive">1896-1931</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>1.5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Papers of Ida Bond, resident of Skaneateles, New York; bulk of collection consists of papers written by Bond for presentation to the Portfolio Club, a women's study circle formed in 1875 in Syracuse, New York.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">3939418</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p> Ida Hopkins Bond (1851-1943) was the daughter of Barton Marsh Hopkins and Margaret MacDougall of Onondaga County, New York.  She was a teacher in the public school system and was for many years the principal of Jackson School, where "She was among the first educators to believe in discipline as a constructive rather than a punitive measure, and her work with difficult cases in the school is still recalled and warmly praised by older members of the school system." Her husband William H. Bond was a hardware merchant in Syracuse.  She retired to Skaneateles, where she lived in a home in East Genesee Street that was built by her grandfather, Dr. Judah B. Hopkins, in 1822.  At the time of he death in 1943 at age 92 she was the oldest member of the Portfolio Club (a women's study circle formed in 1875 in Syracuse, New York) and of the Plymouth Congregational Church in Syracuse. [Taken from Ida Bond's obituary in the Syracuse Herald-Journal, June 10, 1943.]</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Ida H. Bond Papers</emph> consists of papers written for the Portfolio Club,   a women's study circle formed in 1875 in Syracuse, New York, of which Bond was a long-time member, and a small amount of miscellaneous material.</p><p><emph render="bold">Portfolio Club papers</emph> span nearly thirty years and includes essays by Bond on topics ranging from the history of China to religious practices in New York City.  Most, though not all, are annotated with "read at the Portfolio Club" and the date.  Some include clippings related to the topic.</p><p><emph render="bold">Miscellaneous</emph> material includes papers written by Bond for other purposes, clippings, a commonplace book filled with poems and saying collected or hand-copied by Bond, a paper by "Florence" on attending the King and Queen's Garden Party in London in 1924, and assorted other items.</p>
+    </scopecontent>
+    <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Material is arranged alphabetically by title or topic.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>See also the 
+        
+        <archref href="../p/portfolio_club.htm">Portfolio Club Records</archref>.  Ida Bond was a member of the Portfolio Club for many years.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">New York State</subject>
+      <subject encodinganalog="650" source="local">Women Authors</subject>
+      <persname encodinganalog="600" source="lcnaf">Bond, Ida H.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf"> Portfolio Club (Syracuse, N.Y.)</corpname>
+      
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Women teachers -- New York (State) -- Syracuse.</subject><subject encodinganalog="650" source="lcsh">Elementary school principals -- New York (State) -- Syracuse.</subject><subject encodinganalog="650" source="lcsh">Women -- New York (State) -- Syracuse.</subject>
+      <subject encodinganalog="650" source="lcsh">Women -- Non-formal education.</subject>
+      <subject encodinganalog="650" source="lcsh">Women -- Recreation.</subject>
+      <subject encodinganalog="650" source="lcsh">Women -- Societies and clubs.</subject>
+      <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- History -- Sources.</geogname>
+      <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- Intellectual life.</geogname>
+      <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- Social life and customs.</geogname>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Commonplace books.</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Essays.</genreform>
+      <genreform encodinganalog="655" source="aat">Minutes (administrative records)</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Programs (documents)</genreform>
+      <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+      <!--<function encodinganalog="657">##</function>-->
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Ida H. Bond Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of <persname role="donor">Jean Graham</persname>, 2009.</p><p>Originally, gift of Arthur Bond to the Skaneateles Library, date unknown.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+      <head>Appraisal Information</head>
+      <p>## OPT (MARC 583)</p>
+    </appraisal>-->
+    <!--<accruals encodinganalog="584">
+      <head>Accruals</head>
+      <p>## OPT (MARC 584)</p>
+    </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+      <c01 level="series">
+        <did>
+          <unittitle>Portfolio Club papers</unittitle>
+        </did>
+        <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+               <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+        <c02>
+          <did>
+            <unittitle>American the Good Samaritan</unittitle>
+            <unitdate normal="1920-02-23" type="inclusive">23 Feb 1920</unitdate>
+            <abstract>YWCA, Red Cross, etc.</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ben Franklin and Others</unittitle>
+            <unitdate normal="1929-10-21" type="inclusive">21 Oct 1929</unitdate>
+            <abstract>Benjamin Franklin, Governeur Morris, John Jay</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Books and Boys</unittitle>
+            <unitdate normal="1896/1931" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Camouflage</unittitle>
+            <unitdate normal="1918-11" type="inclusive">Nov 1918</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>China: Geography and Early History</unittitle>
+            <unitdate normal="1923-10-01" type="inclusive">1 Oct 1923</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Condition of German Women of Earlier Centuries Compared with...Today</unittitle>
+            <unitdate normal="1905-02-07" type="inclusive">7 Feb 1905</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>David Lloyd George</unittitle>
+            <unitdate normal="1924-10-13" type="inclusive">13 Oct 1924</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dixie Land</unittitle>
+            <unitdate normal="1910-10-03" type="inclusive">3 Oct 1910</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ecumenical Councils</unittitle>
+            <unitdate normal="1914/1915" type="inclusive">1914-1915[?]</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Every Day in India</unittitle>
+            <unitdate normal="1903-02" type="inclusive">Feb 1903</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>From Forest to City</unittitle>
+            <unitdate normal="1907" type="inclusive">1907</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fur Companies</unittitle>
+            <unitdate normal="1896/1931" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>General Armstrong</unittitle>
+            <unitdate normal="1899-09" type="inclusive">Sep 1899</unitdate>
+            <abstract>"sketch, can be read in 15 minutes"</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>George Eliot and George Sand in Literature</unittitle>
+            <unitdate normal="1906-02-05" type="inclusive">5 Feb 1906</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Hamilton</unittitle>
+            <unitdate normal="1896/1931" type="inclusive">undated</unitdate>
+            <abstract>"not finished"</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Harnessing the Nile</unittitle>
+            <unitdate normal="1928-10-15" type="inclusive">15 Oct 1928</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Historical Background of Egypt</unittitle>
+            <unitdate normal="1912-10-14" type="inclusive">14 Oct 1912</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>History of William Penn</unittitle>
+            <unitdate normal="1896/1931" type="inclusive">undated</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Home Life and Club Life: Their Interdependence</unittitle>
+            <unitdate normal="1901-01-28" type="inclusive">28 Jan 1901</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Japan's Mission Work</unittitle>
+            <unitdate normal="1924-02" type="inclusive">Feb 1924</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kings of Israel</unittitle>
+            <unitdate normal="1913/1914" type="inclusive">1913-1914</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mormonism</unittitle>
+            <unitdate normal="1896/1931" type="inclusive">undated</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Negative [Negation?]</unittitle>
+            <unitdate normal="1896/1931" type="inclusive">undated</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New York City's Religious Life</unittitle>
+            <unitdate normal="1921-01-03" type="inclusive">3 Jan 1921</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Outdoor Students</unittitle>
+            <unitdate normal="1896-03-17" type="inclusive">17 Mar 1896</unitdate>
+            <abstract>naturalists: Audubon, Burroughs, etc.</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>People of the Long House</unittitle>
+            <unitdate normal="1906-10" type="inclusive">Oct 1906</unitdate>
+            <abstract>Iroquois</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Quietness</unittitle>
+            <unitdate normal="1896/1931" type="inclusive">undated</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>The Red Man and his White Neighbor</unittitle>
+            <unitdate normal="1898-11-25" type="inclusive">25 Nov 1898</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Round the World Tour</unittitle>
+            <unitdate normal="1903-10-12" type="inclusive">12 Oct 1903</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Saint Francis of Assissi</unittitle>
+            <unitdate normal="1927-10-17" type="inclusive">17 Oct 1927</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Social Interpretation of Religion</unittitle>
+            <unitdate normal="1931-10" type="inclusive">Oct 1931</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Socialism in Europe and Its Significance</unittitle>
+            <unitdate normal="1916-01-29" type="inclusive">29 Jan 1916</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>The Socialist and the War</unittitle>
+            <unitdate normal="1914" type="inclusive">1914</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Socrates: Missionary of the Human Spirit</unittitle>
+            <unitdate normal="1899-01" type="inclusive">Jan 1899</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Thomas Hardy</unittitle>
+            <unitdate normal="1926-10-15" type="inclusive">15 Oct 1926</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Virgil</unittitle>
+            <unitdate normal="1897-01" type="inclusive">Jan 1897</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wit and Humor of the Victorian Age</unittitle>
+            <unitdate normal="1902" type="inclusive">1902</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fragments</unittitle>
+            <unitdate normal="1896/1931" type="inclusive">undated</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Miscellaneous</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Art prints</unittitle>
+            <unitdate normal="1896/1931" type="inclusive">undated</unitdate>
+            <abstract>about 50 prints of assorted paintings, with descriptions</abstract>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Beautiful book for gifts</unittitle>
+            <unitdate normal="1896/1931" type="inclusive">
+            </unitdate>
+            <abstract>poems and sayings collected or copied by Ida Bond; includes numerous clippings laid in</abstract>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>English King and Queen's Garden Party...</unittitle>
+            <unitdate normal="1924" type="inclusive">1924</unitdate>
+            <abstract>handwritten on back, "Florence's paper n the English King's and Queen's Garden Party in London in 1924 given to the Bar Association.  Read at the Portfolio Club by Ida Bond, as Mrs. Geo. Bond was in Paris.  Mrs. Wiley asked for it.  Read in Nov. 1925</abstract>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pundita Ramabai and the Child Widows</unittitle>
+            <unitdate normal="1903-01-16" type="inclusive">16 Jan 1903</unitdate>
+            <abstract>"Written for the Women's Guild of Plymouth Church"</abstract>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Tribute to Mrs. H. C. Hooker on the Portfolio Club's 50th Anniversary, by Clara Munnson Smith</unittitle>
+            <unitdate normal="1925" type="inclusive">1925</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>What is Life</unittitle>
+            <unitdate normal="1896/1931" type="inclusive">undated</unitdate>
+            <abstract>unidentified paper, may or may not be Portfolio</abstract>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellanea</unittitle>
+            <abstract>list of papers by Ida Bond, no dates; numerous clippings on various topics, possibly related to Portfolio papers; calling card from Mrs. Donald Dey; letter; clipping, "Mrs. Bond going abroad," about Mrs. Bond sailing on the Montreal on June 22, 1922 for a trip to Europe.</abstract>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

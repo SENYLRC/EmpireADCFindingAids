@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="arents_postcards">arents_postcards</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Arents Postcard Collection</titleproper>
+            <subtitle>An inventoryof the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2019-01-10" encodinganalog="Date">10 Jan 2019</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2019-01-10">10 Jan 2019</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            
+            <persname encodinganalog="100">Arents, George, 1875-1960.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Arents Postcard Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1905/1920" type="inclusive" label="Inclusive Dates: ">circa 1910-1915</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Postcards, almost all from Europe; a few photographs and souvenir items</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">5182144</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>, <language langcode="fra">French</language>, <language langcode="ger">German</language>, <language langcode="ita">Italian</language>, <language langcode="spa">Spanish</language>, <language langcode="cro">Croatian</language>, <language langcode="rus">Russian</language>, 
+         <language langcode="por">Portuguese</language></langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>George Arents, Jr. (1875-1960) was an American businessman.  He studied at Columbia University and received his master's degree from 
+		Syracuse University at the age of 57.   His father and great-uncle were founders of the Allen &amp; Ginter Tobacco Company, which later 
+		became the American Tobacco Company.  In 1922 Arents became a director of the American Tobacco Company and from 1924 he was  the treasurer 
+		of both the American Machine and Foundry and International Cigar Machinery.  He was also a collector of books and other published material 
+		relating to tobacco.   He and his wife Lena made substantial gifts to Syracuse University; in recognition of their generosity, the 
+		department of rare books and special collections at Bird Library was for many years known as the George Arents Research Library.</p>
+		</bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Arents Postcard Collection</emph> consists of several hundred <emph render="bold">Postcards</emph> collected and/or sent by George and Lena Arents during their travels in Europe, possibly as part of their Grand Tour or possibly at other times.  Most are from European countries but there are a few from other regions, including South America and the Middle East.  The vast majority of the postcards were evidently bought as souvenirs and are unused, but a few were sent to friends and family in Syracuse.  These contain brief notes from the Arentses about their travels.</p><p>The collection also contains a few folders of <emph render="bold">Non-postcard items</emph>, including clippings, handwritten notes, black-and-white photographs, and stamps.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Postcards are arranged alphabetically by country and, within that, by city.  Non-postcard items are arranged alphabetically by type of material.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="arents_tour.htm">Arents Grand Tour Collection</archref> and the <archref href="arents_xmas.htm">Arents Christmas Card Collection</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+			<persname encodinganalog="600" source="lcnaf">Arents, George, 1875-1960.</persname>
+			<persname encodinganalog="600" source="lcnaf">Arents, Lena.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Voyages and travels.</subject>
+			
+			
+			
+			<geogname encodinganalog="651" source="lcsh">Europe -- Description and travel.</geogname>
+			
+			
+			
+			
+			
+			
+			<geogname encodinganalog="651" source="lcsh">Middle East -- Description and travel.</geogname>
+			<geogname encodinganalog="651" source="lcsh">South America -- Description and travel.</geogname>
+			<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Postage stamps.</genreform>
+			<genreform encodinganalog="655" source="aat">Postcards.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>-->
+	   </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Arents Postcard Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">George and Lena Arents</persname>.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+<c01 level="series"><did><unittitle>Postcards</unittitle></did>
+   <scopecontent><p>Most of these postcards are from countries in Europe (England, France, Germany, Switzerland, Austria, Spain, Italy), but there are a few from other countries including Morocco, Portugal, Croatia, and Cuba.  Some have text in multiple languages.  Images on the front include buildings, landscapes, artworks, statues, people, and items of "local color" such as the Procession de Tarasque in Provence (filed under France - Miscellaneous).  The images are a mix of black-and-white and color; some are photographs or photographic reproductions while others are artistic illustrations.</p></scopecontent><c02><did><unittitle>Austria</unittitle></did>
+      <c03><did><unittitle>Bad Ischl</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Hallstatt</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Hofgastein</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Innsbruck</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>St. Wolfgang</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Wien (Vienna)</unittitle><container type="Box">1</container></did></c03></c02>
+   <c02><did><unittitle>Belgium</unittitle></did>
+      <c03><did><unittitle>Brussels</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Malines (Mechelen; Mechlin)</unittitle><container type="Box">1</container></did></c03></c02>
+   <c02><did><unittitle>Croatia</unittitle></did>
+      <c03><did><unittitle>Split</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Trogir</unittitle><container type="Box">1</container></did></c03></c02>
+   <c02><did><unittitle>Cuba</unittitle></did>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">1</container></did></c03></c02>
+   <c02><did><unittitle>Denmark</unittitle></did>
+      <c03><did><unittitle>Oostende (Ostend)</unittitle><container type="Box">1</container></did></c03></c02>
+   <c02><did><unittitle>Egypt</unittitle></did>
+      <c03><did><unittitle>Cairo</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Thebes</unittitle><container type="Box">1</container></did></c03></c02>
+   <c02><did><unittitle>England</unittitle></did>
+      <c03><did><unittitle>Brighton</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Cambridge</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Chester</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Eastbourne</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Gibraltar</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Liverpool</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>London</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Oxford</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Stratford-on-Avon</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Wilton</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Windsor</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Worthing</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">1</container></did></c03></c02>
+   <c02><did><unittitle>France</unittitle></did>
+      <c03><did><unittitle>Cities</unittitle></did>
+         <c04><did><unittitle>Aigues-Mortes</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Albi</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Amboise</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Avignon</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Bagnères-de-Bigorre</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Berry-au-Bac</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Biarritz</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Blois</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Bourges</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Cahors</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Carcassonne</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Cherbourg</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Dijon</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Gavarnie</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Langeais</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Laon</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Le Puy</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Loches</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Lourdes</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Lyon</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Marseille</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Nancy</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Nîmes</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Paris</unittitle><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>Paris (cont.)</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Pyrenees</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Reims</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Rocamadour</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Rouen</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Saint-Gilles</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Saint-Malo</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Strasbourg</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Thiers</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Toulouse</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Tours</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Uzès</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Verdun</unittitle><container type="Box">2</container></did></c04></c03>
+      <c03><did><unittitle>Museums and Chateaux</unittitle></did>
+         <c04><did><unittitle>Château d'Azay-le-Rideau</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Château de Chambord</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Château de Chantilly</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Château de Chaumont</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Château de Chenonceau</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Château d'Ussé</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>L'Hôtel des Invalides</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Musée de l'Armée, Hôtel National des Invalides</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Historic Castels</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Musée des Arts Décoratifs</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Musée du Louvre</unittitle><container type="Box">2</container></did></c04></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">2</container></did></c03></c02>
+   <c02><did><unittitle>Germany</unittitle></did>
+      <c03><did><unittitle>Aachen</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Augsburg</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Bamberg</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Bayreuth</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Braunschweig</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Coblenz</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Dinkelsbühl</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Esslingen</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Freiberg</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Hannover</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Heidelberg</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Herrenchiemsee</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Hildesheim</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Köln (Cologne)</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Leipzig</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Mainz</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>München (Munich)</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Neuschwanstein</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Nördlingen</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Offenburg</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Rothenburg</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Ulm</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Weisbaden</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Worms</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Würzburg</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">3</container></did></c03></c02>
+   <c02><did><unittitle>Greece</unittitle></did>
+      <c03><did><unittitle>Athens</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Rodi (Rhodes)</unittitle><container type="Box">3</container></did></c03></c02>
+   <c02><did><unittitle>Holland</unittitle></did>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">3</container></did></c03></c02>
+   <c02><did><unittitle>Hungary</unittitle></did>
+      <c03><did><unittitle>Budapest</unittitle><container type="Box">3</container></did></c03></c02>
+   <c02><did><unittitle>Italy</unittitle></did>
+      <c03><did><unittitle>Agrigento</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Arezzo</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Assisi</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Bergamo</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Bologna</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Brescia</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Capri</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Cremona</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Faenza</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Firenze (Florence)</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Foligno</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Genova (Genoa)</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Lago di Como (Lake Como)</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Lago di Garda (Lake Garda)</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Mantova (Mantua)</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Milan</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Modena</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Monreale</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Napoli (Naples)</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Padova (Padua)</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Palermo</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Parma</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Piacenza</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Pompeii</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Ravello</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Ravenna</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Riva</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Roma (Rome)</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>San Remo</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Siena</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Siracusa (Syracuse)</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Spoleto</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Taormina</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Tivoli</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Torbole</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Torcello</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Trento</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Trieste</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Venezia (Venice)</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Vicenza</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">4</container></did></c03></c02>
+   <c02><did><unittitle>Luxembourg</unittitle></did>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">4</container></did></c03></c02>
+   <c02><did><unittitle>Morocco</unittitle></did>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">4</container></did></c03></c02>
+   <c02><did><unittitle>Netherlands</unittitle></did>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">4</container></did></c03></c02>
+   <c02><did><unittitle>Portugal</unittitle></did>
+      <c03><did><unittitle>Bussaco</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Cintra</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Madeira</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>São Miguel (San Miguel)</unittitle><container type="Box">4</container></did></c03></c02>
+   <c02><did><unittitle>Republic of San Marino</unittitle></did>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">4</container></did></c03></c02>
+   <c02><did><unittitle>Scotland</unittitle></did>
+      <c03><did><unittitle>Perth</unittitle><container type="Box">4</container></did></c03></c02>
+   <c02><did><unittitle>Spain</unittitle></did>
+      <c03><did><unittitle>Burgos</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Granada</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Madrid</unittitle><abstract>including the Prado Museum / Museo Nacional del Prado</abstract><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>San Sebastián</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Seville</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Toledo</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">4</container></did></c03></c02>
+   <c02><did><unittitle>Switzerland</unittitle></did>
+      <c03><did><unittitle>Bern</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Champéry</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Gemmi Pass</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Geneva</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Meyringen [Meiringen]</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Zürich</unittitle><abstract>includes the Swiss National Museum / Schweizer Landesmuseum</abstract><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">4</container></did></c03></c02>
+   <c02><did><unittitle>Miscellaneous</unittitle></did>
+      <c03><did><unittitle>Miscellaneous countries</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Miscellaneous unidentified</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Miscellaneous unidentified</unittitle><container type="Box">5</container></did></c03></c02></c01>
+<c01 level="series"><did><unittitle>Non-postcard items</unittitle></did>		
+   <note><p>This material was found intermingled with the postcards.</p></note><c02><did><unittitle>Clippings</unittitle><abstract>most stamped on back "Esthetics Society"</abstract><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Notes</unittitle><abstract>handwritten on scraps of paper</abstract><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Photographs, identified</unittitle><abstract>England, France, Germany, etc.</abstract><physdesc><extent>6 folders</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Photographs, unidentified</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Postage stamps from Libya</unittitle><container type="Box">5</container></did></c02>
+</c01>
+      </dsc>
+   </archdesc>
+</ead>

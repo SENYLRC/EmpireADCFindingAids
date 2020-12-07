@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.8, 7/18/2007--><!-- Added comment about use of archref element, removed copyright statement -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="nanking" mainagencycode="NSyU">nanking</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Nanking Incident Collection</titleproper>
+        <subtitle>An inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">-</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2006-03-08">March 2003</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2007-08-22">22 Aug 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        26 Jun 2017 - bioghist corrected (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <unittitle encodinganalog="245$a" label="Title: ">Nanking Incident Collection</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1927/1929" type="inclusive">1927-1929, undated</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>1 folder, approx. 20 items (SC)</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Collection of letters, statements, clippings relating to the March 1927 invasion of the city by the Kuomintang (Chinese Nationalist) troops.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2580665</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>, small amount of 
+        
+        <language langcode="chi">Chinese</language></langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>The Nanking Incident occurred on March 21-23, 1927 when Kuomintang (Chinese Nationalist) troops entered the city as part of their Northern Expedition military campaign (1926-1928).  Troops particularly targeted the city's foreign residents; several were killed or injured and their property looted, and the American, Japanese and British consulates were attacked. Western and Japanese warships on the river responded by shelling Chinese forces in an effort to stop the looting of the city.  The Nationalist Government blamed "communists and their evil influences" for the disturbance.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Nanking Incident Collection</emph> consists of clippings, statements, and letters.  Authors of the items include private citizens as well as the University of Nanking, the China Christian Educational Association, the acting president of Central China University, and Canton Union Theological College.</p>
+    </scopecontent>
+    <!-- <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>## OPT (MARC 351$a)</p>
+      </arrangement> -->
+      
+      <!-- <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial> -->
+      
+      <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Military history</subject><persname encodinganalog="600" source="lcnaf">Pryor, Helen (Brenton) 1897-</persname>
+      <persname encodinganalog="600" source="lcnaf">Brown, Fred R., 1888-1966.</persname>
+      <corpname encodinganalog="610" source="lcnaf">China Christian Educational Association.</corpname>
+      <subject encodinganalog="650" source="lcsh">Communism -- China.</subject>
+      
+      <subject encodinganalog="650" source="lcsh">Zhongguo guo min dang.</subject>
+      <geogname encodinganalog="651" source="lcsh">China -- History -- Military</geogname>
+      <geogname encodinganalog="651" source="lcsh">Nanjing (Jiangsu Sheng, China) -- History</geogname>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Letters (correspondence)</genreform>
+      <genreform encodinganalog="655" source="aat">Reports.</genreform>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Nanking Incident Collection, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <!-- <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>### (MARC 541 and/or  561)</p>
+      </acqinfo> -->
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Descriptions of the Nanking incident</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Newsclipping, 
+              
+              <emph render="italic">Shanghai Times</emph></unittitle>
+            <unitdate normal="1927-04-25" type="inclusive">25 April 1927</unitdate>
+            <container type="SC">203</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Statement by Helen Brenton Pryor, typescript carbon</unittitle>
+            <physdesc>
+              <extent>7 pp.</extent>
+            </physdesc>
+            <container type="SC">203</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Statement by Dr. Harry F. Rowe, typescript</unittitle>
+            <physdesc>
+              <extent>2 pp.</extent>
+            </physdesc>
+            <container type="SC">203</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Statement by R.J. Pryor, typescript</unittitle>
+            <physdesc>
+              <extent>8 pp.</extent>
+            </physdesc>
+            <container type="SC">203</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Statement by Dr. Brown, printed</unittitle>
+            <physdesc>
+              <extent>5 pp.</extent>
+            </physdesc>
+            <container type="SC">203</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Statement by Miss Golisch, printed</unittitle>
+            <physdesc>
+              <extent>6 pp.</extent>
+            </physdesc>
+            <container type="SC">203</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence and reports</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>University of Nanking</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>John H. Reisner</unittitle>
+              <abstract>letters no. 6-11, printed; discusses military and political situations, conditions on campus, soldiers in the buildings, budget, repairs, etc.</abstract>
+              <unitdate normal="1927/1928" type="inclusive">1927-1928</unitdate>
+              <physdesc>
+                <extent>66 pp.</extent>
+              </physdesc>
+              <container type="SC">203</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>A.J. Bowen (Reisner's successor)</unittitle>
+              <abstract>continuation of above letters, printed</abstract>
+              <unitdate normal="1928-10/1929-04" type="inclusive">October 1928-April 1929</unitdate>
+              <physdesc>
+                <extent>13 pp.</extent>
+              </physdesc>
+              <container type="SC">203</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>China Christian Educational Association, Shanghai</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Printed material</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>"A statement to Chinese friends," by a group of Nanking missionaries</unittitle>
+                <unitdate normal="1927-04-21" type="inclusive">April 21, 1927</unitdate>
+                <physdesc>
+                  <extent>4 pp.</extent>
+                </physdesc>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>"Christian education in Nanchang," by Fred R. Brown</unittitle>
+                <physdesc>
+                  <extent>3 pp.</extent>
+                </physdesc>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Correspondence and reports</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Sanford C. C. Chen, letter "Dear Friend..."</unittitle>
+                <abstract>lists and describes following reports</abstract>
+                <unitdate normal="1927-05-02" type="inclusive">May 2, 1927</unitdate>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>no. 348 Christian schools under the Nationalist government</unittitle>
+                <physdesc>
+                  <extent>4 pp.</extent>
+                </physdesc>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>no. 349 letter from acting president of Central China University</unittitle>
+                <physdesc>
+                  <extent>3 pp.</extent>
+                </physdesc>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>no. 355 Christian schools under the Nationalist government, by E. W. Wallace</unittitle>
+                <abstract>report of visit to Wuhan</abstract>
+                <physdesc>
+                  <extent>14 pp.</extent>
+                </physdesc>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>no. 367 Inter-Provincial Conference of the English Baptist Mission</unittitle>
+                <physdesc>
+                  <extent>2 pp.</extent>
+                </physdesc>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>no. 369 Extract from a letter by Mrs. J.R. Lingle, Fuh Siang Girls' School, Changsha</unittitle>
+                <physdesc>
+                  <extent>2 pp.</extent>
+                </physdesc>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>no. 371 Canton Union Theological College</unittitle>
+                <physdesc>
+                  <extent>1 pp.</extent>
+                </physdesc>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>no. 372 Conference with Dr. W.H. Kilpatrick</unittitle>
+                <physdesc>
+                  <extent>3 pp.</extent>
+                </physdesc>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>no. 374 H.C. Tsao</unittitle>
+                <abstract>report of visit to Wuhan</abstract>
+                <physdesc>
+                  <extent>11 pp.</extent>
+                </physdesc>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>no. 375 Conference of Missionary Educators, Shanghai</unittitle>
+                <physdesc>
+                  <extent>7 pp.</extent>
+                </physdesc>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Duplicate set of above letters and reports</unittitle>
+                <container type="SC">203</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

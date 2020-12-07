@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.5, 5/26/2006 -->
+<!--Added description of how to enter revisions-->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="us" mainagencycode="NSyU" identifier="cephoto">cephoto</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Continuing Education Photograph Collection</titleproper>
+				<subtitle>An inventory of the collection at Syracuse University</subtitle>
+			<author encodinganalog="Creator">EEA</author><sponsor>The adult education holdings are collectively known as the <lb/><extptr title="Alexander N. Charters Library of Resources for Educators of Adults" href="https://library.syr.edu/scrc/collections/areas/adult-ed.php" show="new"/>.</sponsor></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="1991-08" encodinganalog="Date">Aug 1991</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2006-06-01">1 Jun 2006</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+			<list>
+				<item>1 Jun 2006 - converted to EAD (MRR)</item><item>9 Mar 2016 - additions, rehousing (MRC)</item>
+			</list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<corpname encodinganalog="110">Alexander N. Charters Library of Resources for Educators of Adults</corpname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Continuing Education Photograph Collection</unittitle>
+			<unitdate encodinganalog="245$f" normal="1928/1983" type="inclusive" label="Inclusive Dates: ">1928-1983</unitdate><unitdate encodinganalog="245$g" normal="1950/1960" type="inclusive" label="Bulk Dates: ">1950s</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>4.5 linear ft.</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">Records consist of photographs and slides. Organizations represented in the collection include the Center for the Study of Liberal Education for Adults (CSLEA), the Fund for Adult Education (FAE), the National University Extension Association (NUEA), and Syracuse University. There are also portraits of important people in adult education such as Lyman Bryson, Alexander N. Charters, and A.A. Liveright.</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="us" repositorycode="NSyU">149427</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+			</langmaterial>
+		</did>
+				
+		<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>The photographs and slides in the collection have been gathered from a number of individuals and organizations in the field of adult education.</p></bioghist>
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>The photographs and slides in this collection have been collected from a number of individuals and organizations. Much of the material dates from the decade of the 1950s, best represented by the photographs pertaining to the programs of the Fund for Adult Education (FAE), coincidentally the largest single group of materials.
+
+</p>
+		</scopecontent>
+		
+		<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			
+		<p>The materials are arranged alphabetically by organization. A number of portraits are arranged alphabetically within the "Portraits" series.</p><p>A group of unidentified photographs follows the alphabetical sequence and, due to format, "Slides" follow the photographs. A folder of printed materials is at the end of the collection. The contents of these are not separately listed, since SEE and SEE ALSO references to them are present in the inventory.</p></arrangement>
+		
+		<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>The library holds a considerable number of collections related to adult and continuing education.  Please refer to &subjindex; for a complete listing.</p>
+		<p>In particular, see also the following:</p><list><item><extref href="../c/cslea.htm">Center for the Study of Liberal Education for Adults (CSLEA) Records</extref></item><item><extref href="../f/fae.htm">Fund for Adult Education (FAE)</extref></item><item><extref href="../n/nuea.htm">National University Extension Association (NUEA)</extref></item><item><extref href="../c/charters_an.htm">Alexander N. Charters Papers</extref></item><item><extref href="../l/liveright_aa.htm">A.A. Liveright Papers</extref></item></list></relatedmaterial>
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Adult education</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="local">Bryson, Lyman</persname><persname encodinganalog="600" source="lcnaf">Charters, Alexander N.</persname><persname encodinganalog="600" source="lcnaf">Liveright, A. A.  (Alexander Albert),  1907-</persname>
+			
+            <corpname encodinganalog="610" source="lcnaf">Center for the Study of Liberal Education for Adults</corpname><corpname encodinganalog="610" source="lcnaf">Fund for Adult Education (U.S.)</corpname><corpname encodinganalog="610" source="lcnaf">National University Extension Association</corpname><corpname encodinganalog="610" source="lcnaf">Syracuse University</corpname><corpname encodinganalog="610" source="lcnaf">University Council on Education for Public Responsibility</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Adult education</subject><subject encodinganalog="650" source="lcsh">Educators, United States</subject>
+			
+            <genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Slides (photographs)</genreform>
+			<occupation encodinganalog="656" source="lcsh">Adult education teachers.</occupation><occupation encodinganalog="656" source="lcsh">Educators.</occupation><occupation encodinganalog="656" source="lcsh">Teachers.</occupation>
+			
+			
+			
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p>Continuing Education Photograph Collection, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>Gift of various individuals and organizations over more than ten years</p>
+		</acqinfo>
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Photographs</unittitle>
+				</did>
+				<c02><did><unittitle>Adult Education Association of the United States (AEA)</unittitle></did>
+		<c03><did><unittitle>Annual conference</unittitle><unitdate type="inclusive" normal="1953">1953</unitdate><container type="Box">1</container></did></c03>
+		<c03><did><unittitle>Rural discussion groups, Bismark, N.D.</unittitle><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">1</container></did></c03>
+		<c03><did><unittitle>Survey</unittitle><unitdate type="inclusive" normal="1953">1953</unitdate><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>American Foundation for Political Education</unittitle></did>
+		<c03><did><unittitle>Discussion groups</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">1</container></did></c03>
+		<c03><did><unittitle>Executives' seminar</unittitle><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>American Labor Education Service</unittitle></did>
+		<c03><did><unittitle>Leadership training, St. Louis, Mo.</unittitle><unitdate type="inclusive" normal="1952">1952</unitdate><container type="Box">1</container></did></c03>
+		<c03><did><unittitle>School on World Affairs, New York</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>American Library Association</unittitle></did>
+		<c03><did><unittitle>Midwinter Conference, Chicago</unittitle><unitdate type="inclusive" normal="1953">1953</unitdate><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>Association of University Evening Colleges (AUEC)</unittitle></did>
+		<c03><did><unittitle>New Orleans Meeting</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">1</container></did></c03>
+		<c03><did><unittitle>Regional Meeting, R.I.T.</unittitle><unitdate type="inclusive" normal="1968">1968</unitdate><note><p>See Slides: <ref target="rit">AUEC Regional Meeting, R.I.T.</ref></p></note></did></c03></c02>
+
+<c02><did><unittitle>Association of University Summer Sessions</unittitle></did>
+		<c03><did><unittitle>Annual Meeting, Albuquerque, N.M.</unittitle><unitdate type="inclusive" normal="1968-10">Oct 1968</unitdate><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>California, University of, at Los Angeles (UCLA)</unittitle></did>
+		<c03><did><unittitle>University Extension, Liberal Arts</unittitle><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>Canadian Association for Adult Education</unittitle></did>
+		<c03><did><unittitle>[general]</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">1</container></did></c03>
+		<c03><did><unittitle>Discussion program</unittitle><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>Center for the Study of Liberal Education for Adults (CSLEA)</unittitle></did>
+		<c03><did><unittitle>Board members, Chicago</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">1</container></did></c03>
+		<c03><did><unittitle>Board members, Chicago (oversize)</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Oversize">1</container></did></c03><c03><did><unittitle>Educational facilities</unittitle><note><p>See Slides: <ref target="cslea">CSLEA Educational Facilities</ref></p></note></did></c03>
+		<c03><did><unittitle>Headquarters - Sara Schaffner House, Chicago</unittitle><unitdate type="inclusive" normal="1963">1963 </unitdate><container type="Box">1</container></did></c03>
+		<c03><did><unittitle>Headquarters - Sara Schaffner House, Chicago (oversize)</unittitle><container type="Oversize">1</container><unitdate type="inclusive" normal="1963">1963 </unitdate></did></c03><c03><did><unittitle>Leadership seminar</unittitle><unitdate type="inclusive" normal="1953">1953</unitdate><container type="Box">1</container></did></c03>
+		
+		<c03><did><unittitle>Memorabilia - news clips, photographs (oversize)</unittitle><unitdate type="inclusive" normal="1959/1960">1959-1960</unitdate><container type="Oversize">1</container></did></c03><c03><did><unittitle>Publications, discussion groups</unittitle><unitdate type="inclusive" normal="1954">1954 </unitdate><container type="Box">1</container></did></c03><c03><did><unittitle>Staff</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">1</container></did></c03>
+		<c03><did><unittitle>Staff - Clearinghouse and publications</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">1</container></did></c03>
+		<c03><did><unittitle>Staff - Clearinghouse and publications (oversize)</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Oversize">1</container></did></c03><c03><did><unittitle>[unidentified]</unittitle><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>Chicago, University of</unittitle></did>
+		<c03><did><unittitle>Alumni reunion</unittitle><unitdate type="inclusive" normal="1957">1957 </unitdate><container type="Box">1</container></did></c03>
+		<c03><did><unittitle>Seminar groups</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>College de Pont-Levoy</unittitle></did>
+		<c03><did><unittitle>Interiors, exteriors</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>College in the Country</unittitle></did>
+		<c03><did><unittitle>Activities (various states)</unittitle><unitdate type="inclusive" normal="1955/1956">1955-1956</unitdate><container type="Box">1</container></did></c03>
+		<c03><did><unittitle>Delbert Clarke Award</unittitle><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>Columbia University</unittitle></did>
+		<c03><did><unittitle>Arden House</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>Community Leadership Institute, Chattanooga, Tenn.</unittitle></did>
+		<c03><did><unittitle>[general]</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">1</container></did></c03></c02>
+
+<c02><did><unittitle>Cornell University / Syracuse University Adult Education Gathering, Syracuse, N.Y.</unittitle></did>
+		<c03><did><unittitle>[general]  </unittitle><unitdate type="inclusive" normal="1972">1972</unitdate><container type="Box">2</container></did></c03></c02>
+
+<c02><did><unittitle>Council of National Organizations</unittitle></did>
+		<c03><did><unittitle>Executive Committee</unittitle><unitdate type="inclusive" normal="1953">1953</unitdate><container type="Box">2</container></did></c03>
+		<c03><did><unittitle>Television Workshop</unittitle><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">2</container></did></c03></c02>
+
+<c02><did><unittitle>Encyclopaedia Britannica Films</unittitle></did>
+		<c03><did><unittitle>Audiovisual techniques in education</unittitle><unitdate type="inclusive" normal="1964-01">Jan 1964</unitdate><container type="Box">2</container></did></c03></c02>
+
+<c02><did><unittitle>English Language Institute, Tenn.</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">1</container></did></c02>
+
+<c02><did><unittitle>Film Council of America</unittitle></did>
+		<c03><did><unittitle>Appointment of President</unittitle><unitdate type="inclusive" normal="1952">1952</unitdate><container type="Box">2</container></did></c03></c02>
+
+<c02><did><unittitle>Ford Foundation</unittitle></did>
+		<c03><did><unittitle>Christmas party for staff</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">2</container></did></c03></c02>
+
+<c02><did><unittitle>Foreign Policy Association</unittitle></did><c03><did><unittitle>[general]</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">2</container></did></c03></c02>
+
+<c02><did><unittitle>Freedom Foundation</unittitle></did>
+		<c03><did><unittitle>Award, Sioux City, Iowa</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">2</container></did></c03></c02>
+
+<c02><did><unittitle>Fund for Adult Education (FAE)</unittitle></did>
+		<c03><did><unittitle>Annual report photographs</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">2</container></did></c03>
+		<c03><did><unittitle>Annual report photographs  </unittitle><unitdate type="inclusive" normal="1954/1955">1954-1955</unitdate><container type="Box">2</container></did></c03>
+		
+		<c03><did><unittitle>Annual report photographs</unittitle><unitdate type="inclusive">1955-57</unitdate><container type="Oversize">1</container></did></c03><c03><did><unittitle>Bigwin Conference</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><physdesc><extent>5 folders</extent></physdesc><container type="Box">2</container></did></c03>
+		<c03><did><unittitle>Bigwin Conference negatives</unittitle><unitdate type="inclusive" normal="1939/1949">1954?</unitdate><physdesc><extent>1 folder of 3</extent></physdesc><container type="Box">2</container></did></c03>
+				<c03><did><unittitle>Bigwin Conference negatives</unittitle><unitdate type="inclusive" normal="1939/1949">1954?</unitdate><physdesc><extent>2 folders of 3</extent></physdesc><container type="Box">3</container></did></c03><c03><did><unittitle>Board of Directors</unittitle></did>
+			<c04><did><unittitle>Meeting</unittitle><unitdate type="inclusive" normal="1951">1951</unitdate><container type="Box">3</container></did></c04>
+			<c04><did><unittitle>Meeting</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><physdesc><extent>5 folders</extent></physdesc><container type="Box">3</container></did></c04></c03>
+		<c03><did><unittitle>Business Executives Leadership Seminar, Pomona College</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">3</container></did></c03>
+		<c03><did><unittitle>Community Leadership Conference</unittitle></did>
+			<c04><did><unittitle>Estes Park, Colo.</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">3</container></did></c04>
+			<c04><did><unittitle>Washington University, Wildwood Springs Resort, Steelville, Mo.</unittitle><container type="Box">4</container></did></c04></c03>
+		<c03><did><unittitle>Community Leadership Institute, Rancho Santa Fe, N.M.</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">4</container></did></c03>
+		<c03><did><unittitle>Community Leadership Meeting, Colo.</unittitle><unitdate type="inclusive" normal="1952">1952</unitdate><container type="Box">4</container></did></c03>
+		<c03><did><unittitle>Conference for Executive Leadership, Memphis, Tenn.</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">4</container></did></c03>
+		<c03><did><unittitle>Conferences: Chapel Hill, N.C. and Ardsley-on-Hudson, N.Y.</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">4</container></did></c03>
+		<c03><did><unittitle>Denver Fact-finding Survey</unittitle><unitdate type="inclusive" normal="1952">1952</unitdate><container type="Box">4</container></did></c03>
+		<c03><did><unittitle>Discussion groups</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><physdesc><extent>4 folders</extent></physdesc><container type="Box">4</container></did>
+			
+			</c03><c03><did><unittitle>Discussion groups</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">4</container></did></c03>
+		<c03><did><unittitle>Discussion program - senior citizens</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">4</container></did></c03>
+		<c03><did><unittitle>Fellowship Selection Committee</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">4</container></did></c03>
+		<c03><did><unittitle>FAE Building, White Plains, N.Y. </unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">5</container></did></c03>
+		<c03><did><unittitle>Interns</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">5</container></did></c03>
+		<c03><did><unittitle>Little Rock, Ark., Study-Discussion groups</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">5</container></did></c03>
+		<c03><did><unittitle>Mass media</unittitle></did>
+			<c04><did><unittitle>CBS</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">5</container></did></c04>
+			<c04><did><unittitle>National Selection Committee and grantees</unittitle><unitdate type="inclusive" normal="1958/1959">1958-1959</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">5</container></did></c04></c03>
+		<c03><did><unittitle>Open House</unittitle><physdesc><extent>2 folders</extent></physdesc><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">5</container></did></c03><c03><did><unittitle>Participative art study</unittitle><physdesc><extent>2 folders</extent></physdesc><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">5</container></did></c03><c03><did><unittitle>Publications</unittitle><unitdate type="inclusive" normal="1952">1952, </unitdate><unitdate type="inclusive" normal="1954">1954</unitdate><container type="Box">5</container></did></c03>
+		<c03><did><unittitle>"Shape of our Cities" - Urbanism Discussion Group, Fall, New York?</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">5</container></did></c03>
+<c03><did><unittitle>Staff</unittitle><physdesc><extent>3 folders</extent></physdesc><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">5</container></did></c03>		<c03><did><unittitle>Test Cities</unittitle></did>
+			<c04><did><unittitle>Akron, Ohio</unittitle><unitdate type="inclusive" normal="1954">1954, </unitdate><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>Bridgeport, University of, Conn.</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>California, University of, at Los Angeles</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c04><c04><did><unittitle>Chattanooga, Tenn.</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>Chicago Conference</unittitle><unitdate type="inclusive" normal="1953">1953</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>Colorado Conference</unittitle><unitdate type="inclusive" normal="1952">1952</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>Kansas City, Mo. </unittitle></did>
+				<c05><did><unittitle>Miscellaneous</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c05>
+				<c05><did><unittitle>Coordinators' Meeting</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><container type="Box">6</container></did></c05></c04>
+			<c04><did><unittitle>Little Rock, Ark.</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>Louisville, Ky.</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>Memphis, Tenn.</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>Niagara Falls, N.Y.</unittitle><unitdate type="inclusive" normal="1953">1953, </unitdate><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>Racine, Wis.</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>Rancho Santa Fe Conference</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>Saint Paul, Minn.</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>Salt Lake City, Utah</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>San Bernardino, Cal.</unittitle><physdesc><extent>1 folder of 3</extent></physdesc><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">6</container></did></c04>
+			<c04><did><unittitle>San Bernardino, Cal.</unittitle><physdesc><extent>2 folders of 3</extent></physdesc><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">7</container></did></c04><c04><did><unittitle>Sioux City, Iowa</unittitle><unitdate type="inclusive" normal="1951/1961">ca. 1956</unitdate><container type="Box">7</container></did></c04>
+			<c04><did><unittitle>West Texas</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">7</container></did></c04>
+			<c04><did><unittitle>Whittier, Cal.</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">7</container></did></c04>
+			<c04><did><unittitle>York, Pa.</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">7</container></did></c04>
+			<c04><did><unittitle>Unidentified contact sheets</unittitle><container type="Box">7</container></did></c04></c03>
+</c02><c02 id="gaco"><did><unittitle>Galaxy Conference</unittitle></did>
+		<c03><did><unittitle>Wingspread Conference, Pre-Galaxy</unittitle><unitdate type="inclusive" normal="1969-11">Nov 1969</unitdate><container type="Box">7</container></did><note><p>See also <ref target="wico">Wingspread Conference</ref></p></note></c03></c02>
+
+<c02><did><unittitle>Georgia, University of</unittitle></did>
+		<c03><did><unittitle>Continuing Education Center</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">7</container></did></c03></c02>
+
+<c02><did><unittitle>Great Books Foundation</unittitle></did>
+		<c03><did><unittitle>Discussion groups</unittitle><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">7</container></did></c03></c02>
+
+<c02><did><unittitle>IBM</unittitle></did>
+		<c03><did><unittitle>Executive program, Poughkeepsie, N.Y.</unittitle><unitdate type="inclusive" normal="1965-02">Feb 1965</unitdate><container type="Box">7</container></did></c03></c02>
+
+<c02><did><unittitle>Indiana Commission on Aging and Aged, Fall 1975</unittitle><note><p>See Slides: <ref target="icaa">Indiana Commission on Aging and Aged, Fall 1975</ref></p></note></did></c02>
+
+<c02><did><unittitle>International Congress of University Adult Educators (ICUAE)</unittitle></did>
+		<c03><did><unittitle>Conference</unittitle><unitdate type="inclusive" normal="1960">1960</unitdate><container type="Box">7</container></did></c03></c02>
+
+<c02><did><unittitle>International Council for Adult Education (ICAE) </unittitle></did>
+		<c03><did><unittitle>Ottawa, University of</unittitle><unitdate type="inclusive" normal="1975-05">26-27 May 1975</unitdate><container type="Box">7</container></did></c03></c02>
+
+<c02><did><unittitle>International Seminar of Adult Education </unittitle></did>
+		<c03><did><unittitle>Pinebrook Conference Center</unittitle><unitdate type="inclusive" normal="1970-09">2-5 Sep 1970</unitdate><container type="Box">7</container></did></c03></c02>
+
+<c02><did><unittitle>Inter-University Labor Education Committee</unittitle><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">7</container></did></c02>
+
+<c02><did><unittitle>Michigan State University</unittitle></did>
+		<c03><did><unittitle>Cooperative Extension Services Project</unittitle><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">7</container></did></c03></c02>
+
+<c02><did><unittitle>National Association of Public School Adult Educators (NAPSAE)</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">8</container></did></c02>
+
+<c02><did><unittitle>National Education Association, Division of Adult Education Services</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">8</container></did></c02>
+
+<c02><did><unittitle>National University Extension Association (NUEA)</unittitle></did>
+		<c03><did><unittitle>Louisiana State University Caribbean Program</unittitle><unitdate type="inclusive" normal="1952">1952 </unitdate><container type="Box">8</container></did></c03>
+		<c03><did><unittitle>Meeting</unittitle><unitdate type="inclusive" normal="1966">1966</unitdate><container type="Box">8</container></did></c03>
+		<c03><did><unittitle>National Meeting, Miami Beach, 1968</unittitle><note><p>See Slides: <ref target="nuea">NUEA National Meeting, Miami Beach, 1968</ref></p></note></did></c03>
+		<c03><did><unittitle>Region II Meeting, Sagamore, N.Y.</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">8</container></did></c03>
+		<c03><did><unittitle>Seventeenth Annual Conference, University of Minnesota, Minneapolis, Minn.</unittitle><unitdate type="inclusive" normal="1932-05">May 1932</unitdate><container type="Map-Case">108</container></did></c03>
+		<c03><did><unittitle>Training Field Workers</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">8</container></did></c03>
+		<c03><did><unittitle>University of Michigan Extension Services</unittitle><unitdate type="inclusive" normal="1946/1956">ca. 1951</unitdate><container type="Box">8</container></did></c03>
+		<c03><did><unittitle>University of Michigan Extension Services</unittitle><abstract>oversize photo</abstract><container type="Map-Case">108</container></did></c03><c03><did><unittitle>University of Wisconsin</unittitle><unitdate type="inclusive" normal="1945/1955">ca. 1950</unitdate><container type="Box">8</container></did></c03></c02>
+
+<c02><did><unittitle>New York State Education Department, Division of Continuing Education</unittitle></did>
+		<c03><did><unittitle>I [LOVE] NY Innovations in Continuing Education </unittitle><unitdate type="inclusive" normal="1978-07-01/1979-06-30">July 1, 1978 - Jun 30, 1979</unitdate><container type="Box">8</container></did></c03></c02><c02><did><unittitle>New York State External High School Diploma Program </unittitle></did>
+		<c03><did><unittitle>Long Island Center</unittitle><unitdate type="inclusive" normal="1928/1983">undated</unitdate><container type="Box">8</container></did></c03></c02>
+
+<c02><did><unittitle>New York State Public School Adult Educators Association (NAPSAE)</unittitle></did>
+		<c03><did><unittitle>Sagamore, N.Y.</unittitle><unitdate type="inclusive" normal="1969-05"> May 1969</unitdate><container type="Box">8</container></did></c03></c02><c02><did><unittitle>New York State School of Industrial and Labor Relations</unittitle></did>
+		<c03><did><unittitle>Pre-Retirement Preparation Program</unittitle><unitdate type="inclusive" normal="1978">1978</unitdate><container type="Box">8</container></did><acqinfo><p>Gift of Helen Kowalski, 1978.</p></acqinfo></c03></c02><c02><did><unittitle>Portraits</unittitle></did><c03><did><unittitle>Blackwell, ?</unittitle>
+<unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>
+Blakely, Robert</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Bryson, Lyman
+</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><container type="Box">8</container></did></c03><c03 id="anc"><did><unittitle>Charters, Alexander N. 
+</unittitle><abstract>includes photograph of Charters with noted Brazilian educator Paolo Freire</abstract><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Decker, Floyd F.</unittitle><unitdate normal="1928" type="inclusive">1928</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Diekhoff, John S.
+</unittitle><unitdate type="inclusive" normal="1966">1966 </unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Eisenhower, Dwight David</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Flemming, Arthur S.
+</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">8</container></did></c03><c03 id="cffs"><did><unittitle>Francis, Clarence and Fletcher C. Scott</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Freire, Paolo</unittitle><note><p>See <ref target="anc">Charters, Alexander N.</ref></p></note></did></c03><c03><did><unittitle>Goldman, Freda</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Goldwin, Robert A.</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Grattan, C. Harley</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Hoover, Herbert</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Houle, Cyril O.</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Kallen, Horace</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Liveright, A. A.</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>McCallion, William</unittitle><unitdate type="inclusive" normal="1960">1960 </unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Nelson, Charles A.</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Norton, Dr. D. Walter
+</unittitle><unitdate type="inclusive" normal="1943">1943 </unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Osman, John</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Perkins, Dexter</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Randall, Clarence B.
+</unittitle><unitdate type="inclusive" normal="1956">1956 </unitdate><container type="Box">3</container></did></c03><c03><did><unittitle>Redfield, Robert</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Scott, Fletcher C.</unittitle><note><p>See <ref target="cffs">Francis, Clarence and Fletcher C. Scott</ref>.</p></note></did></c03><c03><did><unittitle>Spengler, Edwin H.</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Stewart, James</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Tough, Allen
+</unittitle><unitdate type="inclusive" normal="1983">1983</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>
+Truman, Harry S.</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03></c02>
+
+			<c02><did><unittitle>Syracuse University, Syracuse, N.Y.</unittitle></did>
+		<c03><did><unittitle>Chautauqua Center -- Film Series</unittitle><unitdate type="inclusive" normal="1964-07-11">11 Jul 1964 </unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>Commencement</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03>
+		<c03><did><unittitle>Credit management program</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03><c03><did><unittitle>ERIC/AE</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03>
+		<c03><did><unittitle>Finla Crawford Center for Continuing Education - Dedication</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">8</container></did></c03>
+		<c03><did><unittitle> Information Resources Seminar</unittitle><unitdate type="inclusive" normal="1975">1975</unitdate><container type="Box">8</container></did></c03>
+		<c03><did><unittitle>Publications in Continuing Education -- Conference</unittitle></did><c04><did><unittitle>Minnowbrook</unittitle><unitdate normal="1971-06" type="inclusive">Jun 1971</unitdate><container type="Box">9</container></did></c04><c04><did><unittitle>Sagamore</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">9</container></did></c04></c03>
+		
+		<c03><did><unittitle>Regional Police Academy dedication</unittitle><unitdate type="inclusive" normal="1971">1971</unitdate><container type="Box">9</container></did></c03>
+		<c03><did><unittitle>University College</unittitle></did>
+			<c04><did><unittitle>[general]</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">9</container></did></c04><c04><did><unittitle>Associate in Arts degree</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">9</container></did></c04>
+			<c04><did><unittitle>ERIC Advisory Group</unittitle><unitdate type="inclusive" normal="1964">1964</unitdate><container type="Box">9</container></did></c04>
+			<c04><did><unittitle>Minnowbrook Conferences</unittitle><unitdate type="inclusive" normal="1967/1968">1967-1968</unitdate><note><p>See Slides: Syracuse University, University College: <ref target="minn"> Minnowbrook Conferences</ref></p></note></did></c04>
+			<c04><did><unittitle>Paul Hoy Helms Memorial Collection</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><container type="Box">9</container></did></c04>
+			<c04><did><unittitle>Retirements</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">9</container></did></c04>
+			<c04><did><unittitle>Thursday morning roundtable - A. Charters, Sam Brightman</unittitle><container type="Box">9</container></did></c04>
+			<c04><did><unittitle>William Pearson Tolley Award Dinner</unittitle></did>
+				<c05><did><unittitle>Award to Dr. Moshan S. Mehta</unittitle><unitdate type="inclusive" normal="1969-05">May 1969</unitdate><container type="Box">9</container></did><note><p>See also Slides: Syracuse University, University College: <ref target="wpta">William Pearson Tolley Medal Award 2 - Moshan S. Mehta</ref></p></note></c05><c05><did><unittitle>Lalage Bown</unittitle><unitdate type="inclusive" normal="1975-05">23 May 1975</unitdate><container type="Box">9</container></did></c05><c05><did><unittitle>Paul Henry Bertelson ?</unittitle><unitdate type="inclusive" normal="1975/1985">11 Apr 1983?</unitdate><container type="Box">9</container></did></c05></c04></c03></c02>
+<c02><did><unittitle>UNESCO</unittitle></did>
+		<c03><did><unittitle>Regional Seminar, Sydney, Australia</unittitle><unitdate type="inclusive" normal="1964">1964 </unitdate><container type="Box">9</container></did></c03>
+		<c03><did><unittitle>U.S. National Commission</unittitle></did>
+			<c04><did><unittitle>Meeting, Washington, D.C.</unittitle><unitdate type="inclusive" normal="1968-10">Oct 1968</unitdate><container type="Box">9</container></did></c04>
+			<c04><did><unittitle>Meeting, Washington, D.C.</unittitle><unitdate type="inclusive" normal="1969-03-10">10 Mar 1969</unitdate><container type="Box">9</container></did></c04></c03>
+		<c03><did><unittitle>Workers Education Conference</unittitle><unitdate type="inclusive" normal="1950/1952">1950-1952</unitdate><container type="Box">9</container></did></c03></c02>
+<c02><did><unittitle>University Council on Education for Public Responsibility (UCEPR) </unittitle></did>
+		<c03><did><unittitle>University of Oklahoma</unittitle><unitdate type="inclusive" normal="1962">1962 </unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>University of Oklahoma (oversize)</unittitle><unitdate type="inclusive" normal="1962">1962 </unitdate><container type="Oversize">1</container></did></c03></c02>
+
+<c02 id="vll"><did><unittitle>Victorian Learning and Leisure</unittitle></did>
+		<c03><did><unittitle> #1: Mechanics Institutes</unittitle><abstract>packet of historical material, some photos; also includes some printed photographs related to the Workers Education Assocation (England)</abstract><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">9</container></did><acqinfo><p>Gift of Derek Legge, 1981.</p></acqinfo></c03></c02><c02><did><unittitle>Whittier College, Whittier, Cal. </unittitle></did>
+		<c03><did><unittitle>Liberal Arts Center for Adults</unittitle><unitdate normal="1925/1983" type="inclusive">undated</unitdate><container type="Box">9</container></did></c03></c02>
+
+<c02 id="wico"><did><unittitle>Wingspread Conference</unittitle><unitdate type="inclusive" normal="1969">1969</unitdate><container type="Box">9</container></did><note><p>See also <ref target="gaco">Galaxy Conference</ref></p></note></c02>
+
+<c02><did><unittitle>Women Trade Unionists </unittitle></did>
+		<c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1952">1952</unitdate><container type="Box">9</container></did></c03></c02>
+
+<c02><did><unittitle>Workers Education Assocation</unittitle><note><p>See <ref target="vll">Victorian Learning and Leisure</ref>.</p></note></did>
+		</c02><c02><did><unittitle>World Trade Fair, Milan, Italy </unittitle></did>
+		<c03><did><unittitle>U.S. Exhibit</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">9</container></did></c03></c02>
+
+<c02><did><unittitle>Unidentified photographs</unittitle><container type="Box">9</container></did></c02>
+</c01><c01 level="series">
+				<did>
+					<unittitle>Slides</unittitle>
+				</did>
+				<c02 id="rit"><did><unittitle>Association of University Evening Colleges (AUEC)</unittitle><abstract>regional meeting, R.I.T.</abstract><unitdate normal="1968" type="inclusive">1968</unitdate><physdesc><extent>34 slides</extent></physdesc><container type="Box">9</container></did></c02>
+<c02 id="cslea"><did><unittitle>Center for the Study of Liberal Education for Adults (CSLEA)</unittitle><abstract>educational facilities</abstract><physdesc><extent>19 slides</extent></physdesc><container type="Box">9</container></did></c02>
+<c02 id="icaa"><did><unittitle>Indiana Commission on Aging and Aged (ICOAA)</unittitle><unitdate normal="1975" type="inclusive"> Fall 1975</unitdate><physdesc><extent>38 slides</extent></physdesc><container type="Box">9</container></did></c02>
+<c02 id="nuea"><did><unittitle>National University Extension Association (NUEA)</unittitle><abstract>National Meeting, Miami Beach</abstract><physdesc><extent>26 slides</extent></physdesc><unitdate type="inclusive">1968</unitdate><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Syracuse University, University College</unittitle></did>
+<c03 id="minn"><did><unittitle>Minnowbrook Conference</unittitle><unitdate normal="1967" type="inclusive">Fall 1967</unitdate><physdesc><extent>6 slides</extent></physdesc><container type="Box">9</container></did>
+
+</c03><c03><did><unittitle>Minnowbrook Conference</unittitle><unitdate normal="1968" type="inclusive">1968</unitdate><physdesc><extent>10 slides</extent></physdesc><container type="Box">9</container></did></c03>
+<c03 id="wpta"><did><unittitle>William Pearson Tolley Medal Award</unittitle><abstract>Moshan S. Mehta, recipient</abstract><physdesc><extent>42 slides</extent></physdesc><container type="Box">9</container></did></c03></c02>
+
+			</c01><c01 level="series"><did><unittitle>Printed material</unittitle></did><c02><did><unittitle>Miscellaneous</unittitle><container type="Box">9</container></did></c02></c01>
+		</dsc>
+	</archdesc>
+</ead>

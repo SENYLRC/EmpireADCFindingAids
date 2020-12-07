@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.9, 7/18/2007-->
+<!-- Changed entity files to txt rather than xml, don't suppose it matters which they are (?) -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="macgrath_h">macgrath_h</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Harold MacGrath Collection</titleproper>
+            <subtitle>An inventory |of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">KM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1990-11" encodinganalog="Date">Nov 1990</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2007-12-13">13 Dec 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">MacGrath, Harold, 1871-1932</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Harold MacGrath Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1905/1926" type="inclusive" label="Inclusive Dates: ">1905-1926</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Letters, an illustration, a photograph, and writings of the Syracuse journalist and popular romance novelist, many of whose works were made into motion pictures.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149400</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Harold MacGrath (1871-1932) was an American novelist, short story writer, and screenwriter.  Born in Syracuse, New York, he worked on the <emph render="italic">Syracuse Herald</emph> newspaper until the late 1890s, when he published his first novel, <emph render="italic">Arms and the Woman</emph>.    His second book, <emph render="italic">Puppet Crown</emph>, spent a year on the best-seller list in 1907; by the end of his career he had written more than forty novels, sometimes more than one in a single year.     His stories were immensely popular, featuring love, adventure, mystery, spies, and other thrilling elements.</p><p>MacGrath was one of the first nationally-known authors to write directly for the movies when the American Film Company hired him in 1912 to do the screenplay for a short Western.  Eventually, eighteen of his novels and three short stories were made into films (three more were made into Broadway plays).</p><p>  Throughout his career MacGrath contonued to write short stories for major American magazines such as <emph render="italic">The Saturday Evening Post</emph>, <emph render="italic">Ladies Home Journal</emph>, and <emph render="italic">Red Book</emph> magazine.  </p><p>Although MacGrath's income from writing allowed him to travel extensively, Syracuse remained his home.  When he married in 1905 he brought his wife there, and eventually built a large English-style mansion (1618 James St.) known for its landscaped gardens.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Harold MacGrath Collection</emph> comprises letters, an illustration, a photograph, and writings.  The 5 items of outgoing correspondence include an acknowledgement of Mrs. Robert Haven Schauffler's invitation to participate in a charity event (14 Feb. 1921):</p><blockquote><p>The war has made us realize more keenly the importance of healthy citizens and good ones. The chance you are giving these little children will be of inestimable value to the country at large.</p><p>I am sending you an autographed copy of the Drums of Jeopardy which perhaps you can auction off for something toward your fund.</p></blockquote>
+      <p>Writings include "Guessing At It," a short piece on humor ("... my point of view relative to the comic misfortune of somebody else") and an 11 page holograph manuscript containing MacGrath's reminiscences of his newspaper days in Chicago.</p><p>In addition, the collection contains an inscribed copy of an illustration by J. Henry and an inscribed photograph of MacGrath bearing the date 1920.</p></scopecontent>
+      
+      <!--<arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>## OPT (MARC 351$a)</p>
+      </arrangement>-->
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <subject encodinganalog="650" source="local">Literature -- American Fiction</subject><subject encodinganalog="650" source="local">New York State</subject><!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">MacGrath, Harold, 1871-1932</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">American literature -- 20th century.</subject><subject encodinganalog="650" source="lcsh">Journalists -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Novelists, American.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Illustrations.</genreform><genreform encodinganalog="655" source="aat">Manuscripts (document genre)</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Journalists.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Novelists.</occupation><!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Harold MacGrath Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Single item of correspondence dated 1921, gift of <persname role="donor">Lyall Squair</persname>.
+ Illustration by J. Henry, gift of <persname role="donor">Mr. and Mrs. William H. Jennings</persname>.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Letters</unittitle>
+                  <unitdate normal="1905" type="inclusive">1905-1926,</unitdate><unitdate normal="1912" type="inclusive">1912, </unitdate><unitdate normal="1921" type="inclusive">1921, </unitdate><unitdate normal="1926" type="inclusive">1926, </unitdate><unitdate normal="1905/1926" type="inclusive">undated</unitdate>
+                  <container type="SC">107</container>
+                  
+                  
+               </did>
+            <scopecontent><p>Adams, Mr. undated<lb/>
+Pennock, J. W. 18 Dec. 1926<lb/>Schauffler, Robert Haven (Mrs.)14 Feb. 1921 
+<lb/>Scott, Charles14 June 1905
+<lb/>Starrett, Robert 17 Sept. 1912</p></scopecontent></c02>
+         </c01>
+      <c01 level="series">
+         
+            <did>
+               <unittitle>Writings</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>"Guessing At It"</unittitle>
+                  <abstract>single page typescript, autographed</abstract><container type="SC">107</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Untitled</unittitle>
+                  <abstract>11 p. holograph manuscript</abstract><container type="SC">107</container>
+                  
+                  
+               </did>
+            </c02>
+         </c01><c01 level="series">
+         
+            <did>
+               <unittitle>Miscellaneous</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Copy of portrait by J. Henry, inscribed </unittitle>
+                  <container type="SC">107</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Photograph, inscribed</unittitle>
+                  <unitdate type="inclusive" normal="1920">1920</unitdate><container type="SC">107</container>
+                  
+                  
+               </did>
+            </c02>
+         </c01></dsc>
+   </archdesc>
+</ead>

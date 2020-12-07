@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="walker_hab">walker_hab</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Harold Blake Walker Papers</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-10-31" encodinganalog="Date">31 Oct 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-10-31">31 Oct 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Walker, Harold Blake.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Harold Blake Walker Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1959/1966" type="inclusive" label="Inclusive Dates: ">1959-1966</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">American Presbyterian clergyman.  Collection contains manuscripts, memorabilia and published books.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3175653</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Harold Blake Walker (d. 2002) was an American Presbyterian clergyman and author.  He was was the senior pastor of the First Presbyterian Church of Evanston, Illinois for many years, and his column, "Living Faith," appeared in the Chicago Tribune and other newspapers from 1954 to 1975.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Harold Blake Walker Papers</emph> contains manuscripts, memorabilia and published books.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>No particular order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has extensive holdings relating to Presbyterian and Methodist church and clergy.  Please refer to &subjindex; for a complete listing.</p></relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         
+			
+			<subject encodinganalog="650" source="local">Church and clergy</subject><persname encodinganalog="600" source="lcnaf">Walker, Harold Blake.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Presbyterian Church -- Clergy.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Christian literature, American.</subject><subject encodinganalog="650" source="lcsh">Devotional literature, American.</subject><subject encodinganalog="650" source="lcsh">Clergy as authors -- United States. </subject>
+			<!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         
+			<genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+         <genreform encodinganalog="655" source="aat">Prayers.</genreform><genreform encodinganalog="655" source="aat">Sermons.</genreform><occupation encodinganalog="656" source="lcsh">Clergy.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Harold Blake Walker Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Harold Blake Walker</persname>, 1967.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Books</unittitle></did>
+            <c02><did><unittitle>Harold Blake Walker / <emph render="italic">Faith for Times of Tension</emph></unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Harold Blake Walker / <emph render="italic">Prayers to Live By</emph>, Chicago, Aspley House</unittitle><unitdate normal="1961/1971" type="inclusive">circa 1966</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Harold Blake Walker / <emph render="italic">Thirty Selected Sermons</emph>, reprinted from the <emph render="italic">Chicago Tribune Magazine</emph></unittitle><unitdate normal="1961/1971" type="inclusive">circa 1966</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Harold Blake Walker / <emph render="italic">To Conquer Loneliness</emph>, New York, Harper and Row</unittitle><unitdate normal="1961/1971" type="inclusive">circa 1966</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Harold Blake Walker / <emph render="italic">Venture of Faith: A Guide to Marriage and the Home</emph>, New York, Harper Bros.</unittitle><unitdate normal="1954/1964" type="inclusive">circa 1959</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Dedication of the Harold Blake Walker Chapel Youth Building  Music Room, First Presbyterian Church, Chicago</unittitle><unitdate normal="1962-06-03" type="inclusive">3 Jun 1962</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Manuscripts</unittitle></did>
+            <c02><did><unittitle>To conquer loneliness</unittitle><abstract>typescript</abstract><unitdate normal="1961/1971" type="inclusive">circa 1966</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

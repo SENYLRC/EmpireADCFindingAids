@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="mullen_ml">mullen_ml</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Marion L. Mullen Commemorative Coin and Medal Collection</titleproper>
+            <subtitle>An inventory  of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2009-05-01" encodinganalog="Date">1 May 2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2009-05-01">1 May 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Mullen, Marion L.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Marion L. Mullen Commemorative Coin and Medal Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1970/1990" type="inclusive" label="Inclusive Dates: ">circa 1970-1990</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection of commemorative coins and medallions from the Franklin Mint and other similar companies.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2677710</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Commemorative and thematic coins are coins issued to commemorate a particular person, place, or event, or highlight a particular issue or theme. They usually have an original and/or distinctive  design relating to the purpose of issuance.  Most serve as collectors items only, though on occasion some are put into regular circulation.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Marion L. Mullen Commemorative Coin and Medal Collection</emph> consists of more than two hundred coins and medals struck for various purposes.  Some fall into sets, others are single items.  Most are still in their original packaging or encapsulation as issued.  To assist in identifying items, the inventory below gives the number of items as well as the number and type of enclosure.  Incomplete albums or sheets are noted.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection is in no particular order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>Also of interest may be the merchants' scrip collection, found in the <archref href="cny_trade_cat.htm">Central New  York Trade Catalogs and Business Ephemera</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Art -- Sculptors</subject><!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Franklin Mint.</corpname>
+			<corpname encodinganalog="610" source="local">Lincoln Mint.</corpname>
+			<corpname encodinganalog="610" source="local">Wittnauer Precious Metals Society.</corpname>
+			<corpname encodinganalog="610" source="lcnaf">Longines Symphonette.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">American Revolution Bicentennial, 1976 -- Collectibles.</subject>
+			<subject encodinganalog="650" source="lcsh">Astronautics -- United States -- Collectibles.</subject>
+			<subject encodinganalog="650" source="lcsh">Commemorative coins.</subject>
+			<subject encodinganalog="650" source="lcsh">Presidents -- United States -- Collectibles.</subject>
+			<subject encodinganalog="650" source="lcsh">United States -- History  -- Collectibles.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         
+			<genreform encodinganalog="655" source="aat">Commemoratives.</genreform>
+			<genreform encodinganalog="655" source="aat">Medallions (medals)</genreform>
+			<genreform encodinganalog="655" source="aat">Proof coins.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Coin collectors.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+         <p>Access to the collection requires the supervision of a Librarian or Curator.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Marion L. Mullen Commemorative Coin and Medal Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Marion L. Mullen</persname>, 1990.</p>
+      </acqinfo>
+      
+      <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>See finding aids file.</p>
+      </appraisal>
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Franklin Mint</unittitle></did>
+            <c02><did><unittitle>America in Space</unittitle><physdesc><extent>1 album plus one additional page</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>America in Space</unittitle><physdesc><extent>17 items in 7 blue and 5 white packages</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>America's 10th Anniversary in Space</unittitle><physdesc><extent>1 item, boxed</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>American Bicentennial Medals</unittitle><physdesc><extent>1 sheet</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>American Heritage Medallic Treasury of American History</unittitle><physdesc><extent>10 items in 5 packages</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Bicentennial medal</unittitle><unitdate normal="1976" type="inclusive">1976</unitdate><physdesc><extent>1 item, boxed</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>East African Wildlife</unittitle><abstract>incomplete</abstract><physdesc><extent>4 sheets</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Eyewitness to History</unittitle><physdesc><extent>10 items in 10 plastic cases</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Fifty States Bicentennial Medals</unittitle><physdesc><extent>50 items in 50 packages</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Kennedy Memorial Medal</unittitle><physdesc><extent>1 item, in package</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Medallic Yearbook</unittitle><physdesc><extent>23 items in 23 packages</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>National Governor's Conference Official Statehood Medals: Pennsylvania</unittitle><physdesc><extent>1 item in package</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Panama Commemorative Coin</unittitle><physdesc><extent>1 item, in package</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Presidential Commemorative Medals</unittitle><abstract>incomplete</abstract><physdesc><extent>1 album</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Presidential Treasury of Commemorative medals</unittitle><abstract>incomplete</abstract><physdesc><extent>1 album</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Project Apollo</unittitle><physdesc><extent>1 sheet</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>States of the Union Mini-Coin Set</unittitle><physdesc><extent>50 items in one folder</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Thomason Medallic Bible</unittitle><unitdate normal="##" type="inclusive">1970</unitdate><physdesc><extent>1 album</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>United Nations Commemorative Medal, Namibia</unittitle><physdesc><extent>1 item, in package</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>United Nations Peace Medals</unittitle><unitdate normal="##" type="inclusive">1971-1978, </unitdate><unitdate normal="##" type="inclusive">1980-1983, </unitdate><unitdate normal="##" type="inclusive">1985-1987</unitdate><physdesc><extent>15 items in 15 plastic cases</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Zodiac medals</unittitle><physdesc><extent>1 album</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Unidentified sets</unittitle></did>
+               <c03><did><unittitle>American history, miscellaneous</unittitle><physdesc><extent>48 items in 48 blue packages</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>People, miscellaneous</unittitle><physdesc><extent>44 items in 44 gray packages</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>Space-related, miscellaneous</unittitle><physdesc><extent>8 items in 8 plastic cases</extent></physdesc><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>Stamps, miscellaneous</unittitle><physdesc><extent>4 items in 4 blue packages</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>U.S. Presidents, miscellaneous</unittitle><physdesc><extent>2 items in 2 packages</extent></physdesc><container type="Box">2</container></did></c03>
+            </c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Independence Hall Association</unittitle></did>
+            <c02><did><unittitle>Signing of the Declaration of Independence</unittitle><physdesc><extent>1 rectangular medal, framed</extent></physdesc><container type="Box">2</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Lincoln Mint</unittitle></did>
+            <c02><did><unittitle>John F. Kennedy commemorative medals</unittitle><physdesc><extent>36 items in 33 brown packages, 3 blue packages</extent></physdesc><container type="Box">2</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Longines Symphonette</unittitle></did>
+            <c02><did><unittitle>Great American Triumphs</unittitle><physdesc><extent>30 items in 5 boxes, 1 envelope, 2 plastic cases</extent></physdesc><container type="Box">2</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Royal Mint</unittitle></did>
+            <c02><did><unittitle>Coinage of Great Britain and Northern Ireland</unittitle><physdesc><extent>1 maroon box</extent></physdesc><container type="Box">2</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Wittnauer Precious Metals Guild</unittitle></did>
+            <c02><did><unittitle>American history, miscellaneous</unittitle><physdesc><extent>17 items in 15 boxes and 1 package</extent></physdesc><container type="Box">2</container></did></c02>
+         </c01>         
+         <c01 level="series"><did><unittitle>Unidentified</unittitle></did>
+            <c02><did><unittitle>Great Flags of America</unittitle><abstract>42 items, 22 in 2 large sheets and 20 in 10 packages</abstract><physdesc><extent>42 items</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Apollo-Soyuz Mission</unittitle><physdesc><extent>1 coin, 1 envelope with two cancelled stamps, packaged</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Miscellaneous</unittitle><physdesc><extent>2 items in  1 blue package and 1 white package</extent></physdesc><container type="Box">2</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

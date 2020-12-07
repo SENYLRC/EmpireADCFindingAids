@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="apha">apha</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">American Plastics History Association
+               Collection</titleproper>
+            <subtitle>An inventory of its collection at Syracuse University</subtitle>
+            <author encodinganalog="Creator">KD</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2019-01-14" encodinganalog="Date">14 Jan 2019</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Kelly Dwyer<date normal="2019-01-14">14 Jan 2019</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+            &su_name;
+            <lb/>
+            &su_address;
+         </repository>
+         <!--<origination label="Creator: "><persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname></origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">American Plastics History Association
+            Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1990/2007" type="inclusive" label="Inclusive Dates: ">1990-2007</unitdate>
+         <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 folders
+            (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Newsletters and miscellaneous material
+            related to the American Plastics History Association</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">5182142</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The American Plastics History Association (APHA) was founded by George Marshall Naul and
+            Keith Lauer in 1997 and operated until 2000.</p>
+         <p>George Marshall Naul was a chemical engineer who worked for General Electric, Celanese,
+            Owens Corning, and a number of other organizations. Naul also authored and edited a
+            couple of books on automobiles, especially related to their history. </p>
+         <p>Keith Lauer was a curator at the National Plastics Center and Museum in Leominster, MA.
+            He also published a book on celluloid, served as Leominster's Ward 3 Counselor for 14
+            years, and was the president of the Leominster Historical Society for 6 years.</p>
+         <p>The two men recognized a need to document the history of the plastics industry pioneers
+            and started the American Plastics History Association to collect member stories. The
+            association was based off of the British Plastics Historical Society, of which both men
+            were members. Though members were loyal to APHA, they could not be persuaded to submit
+            their stories to the newsletter, <emph render="italic">APHA Notes</emph>, and without
+            enough material to continue efforts, the association was subsequently disbanded in
+            2000.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">American Plastics History Association Collection</emph> consists
+            of newsletters and miscellaneous.</p>
+         <p><emph render="bold">Newsletters</emph> contains <emph render="italic">APHA
+            Notes</emph>.</p>
+         <p><emph render="bold">Miscellaneous</emph> contains biographical information, membership
+            lists, etc.</p>
+      </scopecontent>
+      <!--<altformavail encodinganalog="530"><head>Other Formats Available</head><p>## Use MARC 530 or comment out if not applicable</p></altformavail>-->
+      <!--<originalsloc encodinganalog="535"><head>Location of Originals</head><p>Originals are here and here and here.</p></originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Newsletters are arranged chronologically. Miscellaneous is in no particular order.</p>
+      </arrangement>
+      <!--<relatedmaterial encodinganalog="544 1"><head>Related Material</head><p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+      <!--<separatedmaterial encodinganalog="544 0"><head>Separated Material</head><p>## OPT (MARC 544 0)</p></separatedmaterial>-->
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Plastics</subject><persname encodinganalog="600" source="lcnaf">Lauer, Keith.</persname>
+         <persname encodinganalog="600" source="lcnaf">Naul, George Marshall, 1919-2015.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">American Plastics History
+            Association.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Plastics -- History.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics -- Societies, etc.</subject>
+         
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Newsletters.</genreform>
+         <genreform encodinganalog="655" source="aat">Obituaries.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Chemical engineers.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Historians.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require
+            advanced notice for retrieval. Researchers are encouraged to contact us in advance
+            concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>American Plastics History Association Collection<lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname>Glenn Beall</persname>, 2018.</p>
+      </acqinfo>
+      <!--<appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>-->
+      <!--<accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>APHA Records</unittitle></did>
+               <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+               <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+            <c02>
+               <did>
+                  <unittitle>Newsletters, <emph render="italic">APHA Notes</emph></unittitle>
+                  <unitdate normal="1997-10/2000-10" type="inclusive">Oct 1997-Oct 2000</unitdate>
+                  <physdesc><extent>16 issues</extent></physdesc>
+                  <container type="SC">837</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <abstract>includes obituaries, membership lists, etc.</abstract>
+                  <unitdate normal="1990/2007" type="inclusive">1990-2007, undated</unitdate>
+                  <container type="SC">837</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

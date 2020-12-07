@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.6, 9/12/2006 -->
+<!-- Fixed countrycode case -->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="US" mainagencycode="NSyU" identifier="cpae">cpae</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Commission of Professors of Adult Education (CPAE) Records</titleproper>
+				<subtitle>An inventory of its records at Syracuse University</subtitle>
+			<author encodinganalog="Creator">--</author><sponsor>The adult education holdings are collectively known as the <lb/><extptr title="Alexander N. Charters Library of Resources for Educators of Adults" href="https://library.syr.edu/scrc/collections/areas/adult-ed.php" show="new"/>.</sponsor></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="1986" encodinganalog="Date">1986?</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2006-03-08">17 Jan 2006</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+			<list>
+				<item>Jan 2006 - converted to EAD, additions processed and finding aid updated (MRC)</item>
+			</list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<corpname encodinganalog="110">Commission of Professors of Adult Education</corpname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Commission of Professors of Adult Education (CPAE) Records</unittitle>
+			<unitdate encodinganalog="245$f" normal="1950/2002" type="inclusive" label="Inclusive Dates: ">1950-2002</unitdate><unitdate encodinganalog="245$g" normal="1970/1985" type="bulk" label="Bulk Dates: ">1970-1985</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>9 linear ft.</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">Organizational records (correspondence, financial papers, legal papers, documentation of conferences and other meetings, membership files, reports, task force and committee papers, and printed material) of the Commission of Professors of Adult Education. Correspondents whose letters are of greatest depth and duration include Robert A. Carlson, Mary Jane Even, William Griffith, Cyril Orvin Houle, Roy John Ingham, Malcolm Shepherd Knowles, Alan Boyd Knox, Howard McClusky, Wayne Schroeder and Wilson B. Thiede. Also present are subject files for organizations including the Adult Education Association, the American Association for Adult and Continuing Education, the Association of University Evening Colleges, the Center for the Study of Liberal Education for Adults, the National Association for Public and Continuing Education, and the National University Extension Association. There are also general and regional printed materials as well as some audio-visual materials (film, slides, and tape recordings).</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149333</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+			</langmaterial>
+		</did>
+				
+		<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>The Commission of Professors of Adult Education (CPAE) was established in 1959 as a division of what is now the American Association of Adult and Continuing Education (AAACE). CPAE’s purposes are to support graduate professional adult education, to increase the relevance and quality of dissertations in the field, and to encourage and support professional adult education research. </p></bioghist>
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>The <emph render="bold">Commission of Professors of Adult Education (CPAE) Records</emph> contains material specific to the Commission and also material from other organizations in the adult education field.  The collection is divided into four series.  <emph render="bold">Organizational records</emph> includes correspondence, financial and legal papers, meetings documentation, membership files, reports, task force and committee papers, and printed material.  <emph render="bold">Subject files</emph>
+comprises material on various other organizations and institutions, ranging from the African Adult Education Association to Wayne State University.  <emph render="bold">Printed material</emph> (divided into
+General
+and Regional) contains studies, reports, brochures, directories, 
+and other similar material.  <emph render="bold">Audiovisual material</emph> contains a film, several trays of slides from conferences and workshops (one in China), 100 cassette tapes from the 1980 National Adult Education Conference, and a number of reel-to-reel tapes of interviews with deans and directors of 20 different adult education programs, both traditional and alternative.</p><p>Several well-known adult educators are strongly represented in both Correspondence and Printed material:
+Robert A. Carlson, Mary Jane Even, William Griffith, Cyril Houle,
+
+Ray Ingham,
+
+Malcolm S. Knowles,
+
+Alan Boyd Knox, Howard McClusky, Wayne Schroeder, and Wilson B. Thiede.</p>
+		</scopecontent>
+		
+		<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p><emph render="bold">Correspondence</emph> is arranged chronologically and is not sorted by correspondent.  <emph render="bold">Subject files</emph> are arranged alphabetically.  <emph render="bold">Printed material</emph> is further divided into <emph render="italic">General</emph>, arranged alphabetically by publication title,  and <emph render="italic">Regional</emph>, arranged alphabetically by name of region.  <emph render="bold">Audiovisual (AV) material</emph> -- cassette tapes, reel-to-reel tapes, and computer disks -- has been placed together in one box; AV items that have a logical location in the collection structure are listed there as well as under Audiovisual material.  For example, the audiotape of the 1999 CPAE business meeting is listed under Audiovisual material &gt; Tapes &gt; CPAE business meeting 1999  and also under Organizational Records &gt; Meetings &gt; Business &gt; Tape of business meeting, 1999.</p>
+		</arrangement>
+		
+		<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>The library holds a considerable number of collections related to adult and continuing education.  Please refer to &subjindex; for a complete listing of all adult education collections.</p>
+		</relatedmaterial>
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Adult education</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Carlson, Robert A.</persname>
+				<persname encodinganalog="600" source="lcnaf">Houle, Cyril Orvin, 1913-</persname>
+				<persname encodinganalog="600" source="local">Ingham, Roy John,  1925-</persname>
+				<persname encodinganalog="600" source="lcnaf">Knowles, Malcolm Shepherd,  1913-</persname>
+				<persname encodinganalog="600" source="lcnaf">Knox, Alan Boyd,  1931-</persname>
+				<persname encodinganalog="600" source="local">Even, Mary Jane.</persname>
+				<persname encodinganalog="600" source="local"> Griffith, William S.</persname>
+				<persname encodinganalog="600" source="local">McClusky, Howard, 1900-1982.</persname>
+				<persname encodinganalog="600" source="local">Schroeder, Wayne.</persname>
+				<persname encodinganalog="600" source="local">Thiede, Wilson B.</persname>
+			
+            <corpname encodinganalog="610" source="lcnaf">Adult Education Association.</corpname>
+				<corpname encodinganalog="610" source="lcnaf">American Association for Adult and Continuing Education.</corpname>
+				<corpname encodinganalog="610" source="lcnaf">American Association for Adult Education</corpname>
+				<corpname encodinganalog="610" source="lcnaf">Association of University Evening Colleges (U.S.)</corpname>
+				<corpname encodinganalog="610" source="lcnaf">Center for the Study of Liberal Education for Adults.</corpname>
+				<corpname encodinganalog="610" source="lcnaf">Commission of Professors of Adult Education -- Archives.</corpname>
+				<corpname encodinganalog="610" source="lcnaf">Commission of Professors of Adult Education -- Records and correspondence.</corpname>
+				<corpname encodinganalog="610" source="lcnaf">National University Extension Association.</corpname>
+				<corpname encodinganalog="610" source="lcnaf">National Association for Public Continuing &amp; Adult Education.</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Adult education.</subject>
+				<subject encodinganalog="650" source="lcsh">Adult education -- North America.</subject>
+			
+            <genreform encodinganalog="655" source="aat">Agendas (administrative records)</genreform>
+				<genreform encodinganalog="655" source="aat">Annual reports.</genreform>
+				<genreform encodinganalog="655" source="aat">Audiocassettes.</genreform>
+				<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+				<genreform encodinganalog="655" source="aat">Film reels.</genreform>
+				<genreform encodinganalog="655" source="aat">Minutes (administrative records)</genreform>
+				<genreform encodinganalog="655" source="aat">Newsletters.</genreform>
+				<genreform encodinganalog="655" source="aat">Reports.</genreform>
+				<genreform encodinganalog="655" source="aat">Slides (photographs)</genreform>
+			<occupation encodinganalog="656" source="lcsh">Educators.</occupation>
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p> Commission of Professors of Adult Education (CPAE) Records, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>Gift of the Commission of Professors of Adult Education, 1981-2006.</p>
+		</acqinfo>
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Organizational records</unittitle>
+				</did>
+				
+			<c02 level="subseries">
+				<did>
+					<unittitle>Correspondence</unittitle>
+				</did>
+				<c03 level="subseries">
+					<did>
+						<unittitle><unitdate normal="1963-01/1973-03" type="inclusive">Jan 1963 - Mar 1973</unitdate></unittitle>
+						
+						<physdesc><extent>9 folders</extent></physdesc><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c03>
+			<c03 level="subseries">
+					<did>
+						<unittitle><unitdate normal="1973-03/1978-06" type="inclusive">Apr 1973 - Jun 1978</unitdate></unittitle>
+						
+						<physdesc><extent>9 folders</extent></physdesc><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c03><c03 level="subseries">
+					<did>
+						<unittitle><unitdate normal="1978-07/1982-12" type="inclusive">Jul 1978 - Dec 1982</unitdate></unittitle>
+						
+						<physdesc><extent>9 folders</extent></physdesc><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c03><c03 level="subseries">
+					<did>
+						<unittitle><unitdate normal="1983-01/1996-12" type="inclusive">Jan 1983 - Dec 1996</unitdate></unittitle>
+						
+						<physdesc><extent>9 folders</extent></physdesc><container type="Box">4</container>
+						
+						
+						
+					</did>
+				</c03><c03 level="subseries">
+					<did>
+						<unittitle><unitdate normal="1997/2001" type="inclusive">1997 - 2001</unitdate></unittitle>
+						
+						<container type="Box">5</container>
+						
+						
+						
+					</did>
+				</c03></c02><c02><did><unittitle>Dissertation directory proposal</unittitle><unitdate normal="1989" type="inclusive">1989</unitdate><container type="Box">5</container></did></c02><c02 level="subseries"><did><unittitle>Financial papers</unittitle></did><c03><did><unittitle>Budgets</unittitle><unitdate normal="1978/1983" type="inclusive">1978-1983, </unitdate><unitdate normal="1992/1996" type="inclusive">1992-1996</unitdate><container type="Box">5</container></did></c03><c03><did><unittitle>Checking and savings accounts</unittitle><unitdate normal="1980/1984" type="inclusive">1980-1984</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">5</container></did></c03><c03><did><unittitle>Internal accounting records </unittitle><unitdate normal="1980/1983" type="inclusive">1980-1983, </unitdate><unitdate normal="1991/1995" type="inclusive">1991-1995</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">5</container></did></c03><c03><did><unittitle>Invoices</unittitle><unitdate normal="1979/1984" type="inclusive">1979-1984</unitdate><container type="Box">5</container></did></c03><c03><did><unittitle>Invoices</unittitle><unitdate normal="1979/1984" type="inclusive">1979-1984</unitdate><container type="Box">5</container></did></c03><c03><did><unittitle>Tax material</unittitle><unitdate normal="1984" type="inclusive">1984, </unitdate><unitdate normal="1992" type="inclusive">1992</unitdate><container type="Box">5</container></did></c03><c03><did><unittitle>Treasurer's reports</unittitle><unitdate normal="1984/1999" type="inclusive">1984-1999, </unitdate><unitdate normal="2001" type="inclusive">2001</unitdate><container type="Box">5</container></did></c03></c02><c02 level="subseries"><did><unittitle>Legal papers</unittitle></did><c03><did><unittitle>Constitutions and bylaws</unittitle><unitdate normal="1980" type="inclusive">1980, </unitdate><unitdate normal="1987" type="inclusive">1987, </unitdate><unitdate normal="1999/2001" type="inclusive">1999-2001, </unitdate><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">5</container></did></c03><c03><did><unittitle>Constitutions and ratification ballots</unittitle><unitdate normal="1976" type="inclusive">1976</unitdate><container type="Box">6</container></did></c03></c02><c02 level="subseries"><did><unittitle>Meetings</unittitle></did><c03><did><unittitle>Annual</unittitle></did><c04><did><unittitle><unitdate normal="1965/1977" type="inclusive">1965-1977</unitdate></unittitle><physdesc><extent>13 folders</extent></physdesc><container type="Box">6</container></did></c04><c04><did><unittitle><unitdate normal="1978/1985" type="inclusive">1978-1985, </unitdate><unitdate normal="1987/1993" type="inclusive">1987-1993</unitdate></unittitle><physdesc><extent>15 folders</extent></physdesc><container type="Box">7</container></did></c04><c04><did><unittitle><unitdate normal="1994/1996" type="inclusive">1994-1996, </unitdate><unitdate normal="1999/2002" type="inclusive">1999-2002</unitdate></unittitle><physdesc><extent>7 folders</extent></physdesc><container type="Box">8</container></did></c04><c04><did><unittitle>Audiotape of <unitdate normal="2000" type="inclusive">2000</unitdate> annual meeting</unittitle><physdesc><extent>2 audiocassettes</extent></physdesc><container type="Box">17</container></did></c04></c03><c03><did><unittitle>Business</unittitle></did><c04><did><unittitle><unitdate normal="1964/1966" type="inclusive">1964-1966, </unitdate><unitdate normal="1987/2001" type="inclusive">1987-2001</unitdate></unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">8</container></did></c04><c04><did><unittitle>Audiotape of <unitdate normal="1999" type="inclusive">1999</unitdate> business meeting</unittitle><physdesc><extent>1 audiocassette</extent></physdesc><container type="Box">17</container></did></c04></c03><c03><did><unittitle>Executive committee</unittitle><unitdate normal="1968" type="inclusive">1968, </unitdate><unitdate normal="1973" type="inclusive">1973, </unitdate><unitdate
+ normal="1979" type="inclusive">1979, </unitdate><unitdate normal="1984/1988" type="inclusive">1984-1988, </unitdate><unitdate normal="1991" type="inclusive">1991, </unitdate><unitdate normal="1994" type="inclusive">1994, </unitdate><unitdate normal="1999/2001" type="inclusive">1999-2001</unitdate><physdesc><extent>5 folders</extent></physdesc><container type="Box">8</container></did></c03></c02><c02 level="subseries"><did><unittitle>Membership files</unittitle></did><c03><did><unittitle>Directories</unittitle></did><c04><did><unittitle><unitdate normal="1960/1983" type="inclusive">1960-1683</unitdate></unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">8</container></did></c04><c04><did><unittitle><unitdate normal="1984/2002" type="inclusive">1984-2002, </unitdate><unitdate normal="1959/2002" type="inclusive">undated</unitdate></unittitle><physdesc><extent>4 folders</extent></physdesc><container type="Box">9</container></did></c04></c03><c03><did><unittitle>Forms and form letters</unittitle><container type="Box">9</container></did></c03><c03><did><unittitle>Membership reports</unittitle><unitdate normal="1980/1999" type="inclusive">1980s and 1990s</unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>Reminder letters</unittitle><unitdate normal="1989" type="inclusive">1989</unitdate><container type="Box">9</container></did></c03></c02><c02><did><unittitle>Photographs</unittitle><unitdate normal="1961" type="inclusive">1961, </unitdate><unitdate normal="1977" type="inclusive">1977</unitdate><container type="Box">9</container></did></c02><c02 level="subseries"><did><unittitle>Reports</unittitle></did><c03><did><unittitle>Annual
+</unittitle><unitdate normal="1975" type="inclusive">1975, </unitdate><unitdate normal="1982" type="inclusive">1982</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">9</container></did></c03><c03><did><unittitle>Doctorates conferred in adult education
+</unittitle><unitdate normal="1988/1989" type="inclusive">1988, 1989</unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>Progress</unittitle><unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate><container type="Box">9</container></did></c03></c02><c02 level="subseries"><did><unittitle>Task forces and committees</unittitle></did><c03><did><unittitle>Rosters
+</unittitle><unitdate normal="1978" type="inclusive">1978, </unitdate><unitdate normal="2000/2002" type="inclusive">2000-2002, </unitdate><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>Archives
+</unittitle><unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>Awards
+</unittitle><unitdate normal="1998" type="inclusive">1998, </unitdate><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>"Black Book" editor search committee
+</unittitle><unitdate normal="1988" type="inclusive">1988</unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>Certification</unittitle><unitdate normal="1976" type="inclusive">1976</unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>Community Education
+</unittitle><unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>Extension</unittitle><unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>External Degree
+</unittitle><unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>Field Experience
+</unittitle><unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>Future of CPAE
+</unittitle><unitdate normal="1992" type="inclusive">1992, </unitdate><unitdate normal="1995" type="inclusive">1995, </unitdate><unitdate normal="2002" type="inclusive">2002</unitdate><container type="Box">9</container></did></c03><c03><did><unittitle>Futures of adult education graduate programs</unittitle><unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>Instructional Improvement</unittitle><unitdate normal="1977/1978" type="inclusive">1977-1978, </unitdate><unitdate normal="1994/1995" type="inclusive">1994-1995</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>International
+</unittitle><unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>Lifelong Learning
+</unittitle><unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>Membership
+</unittitle><unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>Needed Research
+</unittitle><unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>Promotion and Tenure</unittitle><unitdate normal="1998" type="inclusive">1998</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>Theory Building</unittitle><unitdate normal="1967/1969" type="inclusive">1967-1969, </unitdate><unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>
+University Politics</unittitle><unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate><container type="Box">10</container></did></c03></c02><c02 level="subseries"><did><unittitle>Printed material</unittitle><abstract>material published or printed by CPAE</abstract></did><c03><did><unittitle>
+ Brochures</unittitle><unitdate normal="1977" type="inclusive">1977, </unitdate><unitdate normal="1979" type="inclusive">1979, </unitdate><unitdate normal="1982" type="inclusive">1982, </unitdate><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>
+ Development and Dissemination of Adult Education Knowledge Theory and Research
+</unittitle><abstract>grant proposal to National Institute of Education</abstract><unitdate normal="1978" type="inclusive">1978</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>
+ Directory of adult education graduate programs in North America</unittitle><unitdate normal="1998" type="inclusive">1998</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>
+ Directory of professional colleagues</unittitle><unitdate normal="1998" type="inclusive">1998, </unitdate><unitdate normal="2000" type="inclusive">2000, </unitdate><unitdate normal="2001" type="inclusive">2001</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>
+ From Movement to Profession: History of the Adult Education Profession in the United States with Emphasis on the Commission of Professors of Adult Education (Robert A. Carlson)</unittitle><unitdate normal="1972" type="inclusive">1972</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>
+ From Movement to Profession: Documentation of the Developing Professional Nature of Adult Education in North America (Robert A. Carlson)
+</unittitle><unitdate normal="1973" type="inclusive">1973</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>
+ Graduate programs in adult education in the Unied States and Canada</unittitle><unitdate normal="1986" type="inclusive">1986</unitdate><container type="Box">10</container></did></c03><c03><did><unittitle>
+ Newsletter</unittitle></did><c04><did><unittitle><unitdate normal="1975/1999" type="inclusive">1975-1999</unitdate></unittitle><physdesc><extent>5 folders</extent></physdesc><container type="Box">10</container></did></c04><c04><did><unittitle><unitdate normal="2000/2002" type="inclusive">2000-2002</unitdate></unittitle><container type="Box">11</container></did></c04></c03><c03><did><unittitle>
+ Problems of Graduate Education Designs (Wilson B. Thiede, John Ohliger, Clive C. Veri)
+</unittitle><unitdate normal="1973" type="inclusive">1973</unitdate><container type="Box">11</container></did></c03><c03><did><unittitle>
+ Professional Exchange Program Data
+</unittitle><unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">11</container></did></c03><c03><did><unittitle>
+ Registry of Professional and Research Interests
+</unittitle><unitdate normal="1982" type="inclusive">1982</unitdate><container type="Box">11</container></did></c03><c03><did><unittitle>Report of a survey of CPAE structure and member services</unittitle><unitdate normal="1992" type="inclusive">1992</unitdate><container type="Box">11</container></did></c03><c03><did><unittitle>
+ Skill Bank Report
+</unittitle><unitdate normal="1968" type="inclusive">1968</unitdate><container type="Box">11</container></did></c03><c03><did><unittitle>
+ Some Epistemotological Considerations for Adult Education
+</unittitle><unitdate normal="1968/1978" type="inclusive">ca. 1973</unitdate><container type="Box">11</container></did></c03><c03><did><unittitle>
+ Standards for graduate programs
+in adult education</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">11</container></did></c03><c03><did><unittitle>
+ Strategies for strengthening support for adult education graduate programs on university campuses</unittitle><unitdate normal="1994" type="inclusive">1994</unitdate><container type="Box">11</container></did></c03><c03><did><unittitle>
+ Strengthening universitysupport for adult education graduate programs on  campuses</unittitle><unitdate normal="1993" type="inclusive">1993</unitdate><container type="Box">11</container></did></c03><c03><did><unittitle>
+ Suggestions for Future Activities of the Commission</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">11</container></did></c03><c03><did><unittitle>
+ Trends and Issues in Graduate Programs in Adult Education (Mary Jane Even)
+</unittitle><unitdate normal="1975" type="inclusive">1975</unitdate><container type="Box">11</container></did></c03><c03><did><unittitle>
+ Tribute to Professor Robert M. Smith</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">11</container></did></c03><c03><did><unittitle>
+ What's New Newsletters</unittitle><unitdate normal="1972/1973" type="inclusive">1972-1973</unitdate><container type="Box">11</container></did></c03></c02><c02><did><unittitle>Miscellaneous</unittitle><container type="Box">11</container></did></c02></c01><c01 level="series"><did><unittitle>Subject files (non-CPAE)</unittitle></did><scopecontent><p>This series contains material related to organizations other than the CPAE.  The bulk consists of printed material (brochures, newsletters, pamphlets, papers, reports, etc).</p></scopecontent><c02><did><unittitle>Adult Education Association of the U.S.A.</unittitle><physdesc><extent>14 folders</extent></physdesc><container type="Box">11, 12</container></did></c02><c02><did><unittitle>Adult Education Association of Wisconsin</unittitle><unitdate normal="1971" type="inclusive">1971</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>Adult Education Foundation of Akron</unittitle><unitdate normal="1953/1956" type="inclusive">1953-1956, </unitdate><unitdate normal="1959/2002" type="inclusive">undated</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">12</container></did></c02><c02><did><unittitle>Adult Education Resource Center</unittitle><unitdate normal="1973" type="inclusive">1973</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>African Adult Education Association</unittitle><unitdate type="inclusive" normal="1983">1983</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>Akron Area Adult Education Council</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>American Association of Adult and Continuing Education</unittitle><physdesc><extent>2 folders</extent></physdesc><unitdate type="inclusive" normal="1982/1983">1982-1983</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>American Association of Junior Colleges</unittitle><unitdate type="inclusive" normal="1969">1969</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>American Foundation for Continuing Education</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>American Foundation for Political Education</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>American Pharmaceutical Association</unittitle><unitdate type="inclusive" normal="1973">1973</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>Association of University Evening Colleges</unittitle><abstract>newsletter, material from 27th annual meeting,  paper "Higher adult education: its present and
+future" (Philip E. Frandson)</abstract><unitdate type="inclusive" normal="1967/1969">1967-1969</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">12</container></did></c02><c02><did><unittitle>Brooklyn College</unittitle><unitdate type="inclusive" normal="1968/1969">1968-1969</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>Center for Studies of Leisure</unittitle><unitdate type="inclusive" normal="1971">1971</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>Center for the Study of Liberal Education for Adults</unittitle><abstract>newsletter, pamphlets</abstract><unitdate type="inclusive" normal="1958/1968">1958-1968</unitdate><physdesc><extent>7 folders</extent></physdesc><container type="Box">12</container></did></c02><c02><did><unittitle>Coalition of Adult Education Organizations</unittitle><unitdate type="inclusive" normal="1974">1974</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>Commission on Research</unittitle><unitdate type="inclusive" normal="1983">1983</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>Commission on the Humanities</unittitle><unitdate type="inclusive" normal="1980">1980</unitdate><container type="Box">12</container></did></c02><c02><did><unittitle>Committee of Adult Education Organizations</unittitle><unitdate type="inclusive" normal="1967/1969">1967-1969</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>Educational Resources Information Center/Adult Education (ERIC/AE)</unittitle><unitdate type="inclusive" normal="1968/1973">1968-1973, </unitdate><unitdate normal="1959/2002" type="inclusive">undated</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">13</container></did></c02><c02><did><unittitle>Fund for Adult Education</unittitle><abstract>annual reports, 1956 Perkins Lectures</abstract><unitdate type="inclusive" normal="1953/1956">1953-1956, </unitdate><unitdate normal="1959/2002" type="inclusive">undated</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">13</container></did></c02><c02><did><unittitle>Galaxy Conference, 31st Annual</unittitle><unitdate type="inclusive" normal="1969">1969</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>Institute for Administrative Advancement</unittitle><unitdate type="inclusive" normal="1975">1975</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>Institute for Civic Education</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>Institute for Research on Training</unittitle><unitdate type="inclusive" normal="1980">1980</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>International Congress of University Adult Education (ICUAE)</unittitle><unitdate type="inclusive" normal="1970">1970</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>Marquette University</unittitle><unitdate type="inclusive" normal="1961">1961</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>Metropolitan Museum of Art, Art Seminars in the Home</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>National Adult Education Conference</unittitle><unitdate type="inclusive" normal="1981/1982">1981, 1982</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>National Advisory Council on Adult Education</unittitle><unitdate type="inclusive" normal="1982">1982</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>National Association for Public and Continuing Adult Education (NAPCAE)</unittitle><unitdate type="inclusive" normal="1975/1976">1975-1976</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>National Board on Graduate Education</unittitle><unitdate type="inclusive" normal="
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1969/1979">ca. 1974</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>National Broadcasting Company, "Science and greasepaint"</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>National University Continuing Education Association (NUCEA)</unittitle><unitdate type="inclusive" normal="1982">1982</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>National University Extension Association</unittitle><abstract>newsletters, 1980 regional meeting</abstract><unitdate type="inclusive" normal="1970">1970, </unitdate><unitdate type="inclusive" normal="1972">1972, </unitdate><unitdate type="inclusive" normal="1979">1979, </unitdate><unitdate type="inclusive" normal="1980">1980, </unitdate><physdesc><extent>4 folders</extent></physdesc><container type="Box">13</container></did></c02><c02><did><unittitle>Northwest Adult Education Association</unittitle><unitdate type="inclusive" normal="1974">1974</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>Research Training Institute in Adult Education</unittitle><unitdate type="inclusive" normal="1967">1967</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>Resources for Educators of Adults</unittitle><unitdate type="inclusive" normal="1979">1979</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>SCUTREA</unittitle><unitdate type="inclusive" normal="1982">1982</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>Syracuse University, University College</unittitle><unitdate type="inclusive" normal="1960/1969">1960s</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>UNESCO</unittitle><abstract>adult education directories list</abstract><unitdate type="inclusive" normal="1981">1981</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>University of Akron</unittitle><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">14</container></did></c02><c02><did><unittitle>University of Chicago</unittitle><unitdate type="inclusive" normal="1957">1957, </unitdate><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">14</container></did></c02><c02><did><unittitle>University of Guelph</unittitle><unitdate type="inclusive" normal="1976">1976</unitdate><container type="Box">14</container></did></c02><c02><did><unittitle>University of Mid-America</unittitle><unitdate type="inclusive" normal="1973/1984">ca. 1978-1979</unitdate><container type="Box">14</container></did></c02><c02><did><unittitle>University of Saskatchewan</unittitle><unitdate type="inclusive" normal="1974">1974, </unitdate><unitdate type="inclusive" normal="1976">1976</unitdate><container type="Box">14</container></did></c02><c02><did><unittitle>University of Wisconsin, Madison</unittitle><unitdate type="inclusive" normal="1995">1995</unitdate><container type="Box">14</container></did></c02><c02><did><unittitle>University of Wyoming</unittitle><unitdate type="inclusive" normal="1974">1974</unitdate><container type="Box">14</container></did></c02><c02><did><unittitle>Virginia Tech</unittitle><abstract>College of Education restructuring proposal</abstract><unitdate type="inclusive" normal="1994">1994</unitdate><container type="Box">14</container></did></c02><c02><did><unittitle>Washington University</unittitle><unitdate type="inclusive" normal="1965">1965</unitdate><container type="Box">14</container></did></c02><c02><did><unittitle>Wayne State University</unittitle><unitdate type="inclusive" normal="1970">1970</unitdate><container type="Box">14</container></did></c02></c01><c01 level="series"><did><unittitle>Printed material (non-CPAE)</unittitle></did><c02 level="subseries"><did><unittitle>General</unittitle></did><c03><did><unittitle>Adult Basic Education National Teacher Training Study
+</unittitle><unitdate type="inclusive" normal="1972">1972</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Adult Education Publication Advertisements</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Adventure and the Emerging Roles of the Adult Education Leader (Howard McClusky)</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Careers in Adult and Continuing Education</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Comparative Adult Education Newsletter, v. 1, no. 1
+</unittitle><unitdate type="inclusive" normal="1982">1982</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Continuous and Integrated Education of the Adult as Observed in Industrial Education Programs (R. Rowray)</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Draper Fund Report, no. 9
+</unittitle><unitdate type="inclusive" normal="1980">1980</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Educational programs for educators of adults</unittitle><unitdate type="inclusive" normal="1981">1981</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Graduate Programs in Adult Education Directory
+
+</unittitle><unitdate type="inclusive" normal="1978">1978</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Graduate Programs in Adult Education Survey
+</unittitle><unitdate type="inclusive" normal="1976">1976</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>International Adult Education Exchange and Cooperation Directory
+</unittitle><unitdate type="inclusive" normal="1982">1982</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Part-Time Professors of Adult Education Directories
+</unittitle><unitdate type="inclusive" normal="1970/1979">1970s</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Projections of Extension-Adult Education into the Next Decade (J. Paul Leagans)</unittitle><unitdate type="inclusive" normal="1966">1966</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>RFD Delivery System Overview</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>What is "Research" in Adult Education?  Issues in Methodological Diversity (David C. Williams)</unittitle><unitdate type="inclusive" normal="1977">1977</unitdate><container type="Box">14</container></did></c03></c02><c02 level="subseries"><did><unittitle>Regional</unittitle></did><c03><did><unittitle>California
+</unittitle><unitdate type="inclusive" normal="1950/1969">1950s-1960s</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Colorado
+</unittitle><unitdate type="inclusive" normal="1980">1980</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Indiana</unittitle><unitdate type="inclusive" normal="1954/1964"> ca. 1959
+</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Massachusetts</unittitle><unitdate type="inclusive" normal="1970/1979">1970s</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>New York</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>Texas</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>United States</unittitle><unitdate type="inclusive" normal="1960/1969">1960s</unitdate><container type="Box">14</container></did></c03><c03><did><unittitle>
+Canada</unittitle><unitdate type="inclusive" normal="1978">1978, </unitdate><unitdate type="inclusive" normal="1987">1987, </unitdate><unitdate normal="1959/2002" type="inclusive">undated</unitdate><container type="Box">14</container></did></c03></c02></c01><c01 level="series"><did><unittitle>Audiovisual material</unittitle></did><c02><did><unittitle>Film (35mm?) -  "Quest for Peace"</unittitle><physdesc><extent>2 reels</extent></physdesc><unitdate type="inclusive" normal="1962">1962</unitdate><container type="Reel">1, 2</container></did></c02><c02><did><unittitle>Slides</unittitle><abstract>AEA/NAPCAE conference (1975); China; workshops</abstract><note><p>THIS BOX  MISSING AS OF JAN 2007 (MRC)</p></note><container type="Box">-</container></did></c02><c02 level="subseries"><did><unittitle>Tapes</unittitle></did><c03><did><unittitle>
+National Adult Education Conference</unittitle><unitdate type="inclusive" normal="1980">1980</unitdate><physdesc><extent>100 audiocassettes</extent></physdesc><container type="Box">15</container></did></c03><c03><did><unittitle>CPAE annual meeting</unittitle><unitdate normal="2000" type="inclusive">2000</unitdate><physdesc><extent>2 audiocassettes</extent></physdesc><container type="Box">17</container></did></c03><c03><did><unittitle>CPAE business meeting</unittitle><unitdate normal="1999" type="inclusive">1999</unitdate><physdesc><extent>1 audiocassette</extent></physdesc><container type="Box">17</container></did></c03><c03><did><unittitle>Account of Interview with Richard Poston and Dean Raymond Dey, Extension Division, Southern Illinois University
+</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Adrian, —, Community Development, University of Michigan
+</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Anderson, — and Koenig, —, Community Development Specialists, University of Washington
+</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Bentley, Harold, Dean, Extension Division, University of Utah
+</unittitle><unitdate type="inclusive" normal="1958-05-19">19 May 1958</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Bergevin, Paul, Professor of Adult Education, Indiana University</unittitle><unitdate type="inclusive" normal="1957-05-08">8 May 1957</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>(1) Career Counseling for Adults; (2) CEEB Session, S. Arbeiter and C. Aslanian</unittitle><unitdate type="inclusive" normal="1977-11-15">15 Nov 1977, </unitdate><unitdate normal="1959/2002" type="inclusive">undated</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Chamberland, Martin</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Child, Robert, Community Development Specialist, Southern Illinois University</unittitle><unitdate type="inclusive" normal="1957-04-06">6 Apr 1957
+</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Donohue, Maurice, Dean, University College, University of Chicago</unittitle><unitdate type="inclusive" normal="1957-05-15">15 May 1957</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Johnson, Eugene, Director of the Metroplex Assembly, Washington University</unittitle><unitdate type="inclusive" normal="1958-04-05">5 Apr 1958</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Johnson, Kermit, Director of Evening College, Bradley University
+</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Miller, Harry, CSLEA</unittitle><unitdate type="inclusive" normal="1958-04-22">22 Apr 1958</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Neville, Jake, Director of the Kellogg Center, Michigan State University
+</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Ogden, Jean, Co-author, <emph render="italic">These Things We've Tried</emph>, with Jess Ogden
+</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">16</container></did></c03><c03><did><unittitle>Pritchard, Carson, West Georgia College</unittitle><unitdate type="inclusive" normal="1955/1960">30 Apr [n.y.]</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">17</container></did></c03><c03><did><unittitle>Pritchard, Carson, Director of Community Education, Community Development, West Georgia College; Dr. Irvine S. Ingram, President of West Georgia College; and Miss English, associate of Mr. Pritchard</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">17</container></did></c03><c03><did><unittitle>Reed, Bernard, Administrator, Evening College, Cincinnati</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">17</container></did></c03><c03><did><unittitle>Schram, Wilbur, Dean, Extension Service, University of Washington</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">17</container></did></c03><c03><did><unittitle>Thiede, Wilson B., Professor of Adult Education, University of Wisconsin</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">17</container></did></c03><c03><did><unittitle>
+Zehmer, —, Dean, Extension Service, University of Virginia; and  Fernback, —, Community Services, University of Virginia
+</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><physdesc><extent>1 reel-to-reel tape</extent></physdesc><container type="Box">17</container></did></c03><c03><did><unittitle>
+Miscellaneous letters, electronic files</unittitle><unitdate normal="1959/2002" type="inclusive">undated</unitdate><physdesc><extent>2 3-1/2" floppy disks, unknown format</extent></physdesc><container type="Box">17</container></did></c03></c02></c01>
+		</dsc>
+	</archdesc>
+</ead>

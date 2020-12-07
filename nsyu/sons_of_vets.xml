@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="sons_of_vets">sons_of_vets</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Sons of Veterans, New York Division, Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2009-04-06" encodinganalog="Date">6 Apr 2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2009-04-06">6 Apr 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: "><corpname encodinganalog="110">Sons of Veterans, U.S.A. New York Division.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Sons of Veterans, New York Division, Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1895/1896" type="inclusive" label="Inclusive Dates: ">1895-1896</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>9 letters (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Letters to Col. L. J. Macy in Pulaski, New York, in his capacity as head of the New York Division of the Sons of Veterans.  Several are on the letterhead of the West Shore Railroad or the New York Central &amp; Hudson River R.R. Co.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2673302</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>In 1866, Union veterans of the Civil War formed a fraternal organization known as the Grand Army of the Republic (GAR), with both social and political goals, and with the stated principles of Fraternity, Charity and Loyalty.   Because membership was open only to those who saw active service in the Union army, the GAR's lifespan was necessarily limited.  During 1881 and 1882 the GAR formed  the Sons of Veterans, U.S.A. to carry on its traditions; some of the earliest divisions were in Pennsylvania, Ohio, Virginia, and New York (the New York Division was later renamed the New York Department).  </p><p>In 1925 the Sons of Veterans changed their name to Sons of Union Veterans of the Civil War, which is the name it uses at the present day.  Membership in the organization is open to anyone who can demonstrate descent from a GAR member (interested parties who are not descendants are admitted as Associate Members).  The SUVCW, along with the Daughters of Union Veterans of the Civil War and three other organizations, comprise the five Allied Orders of the GAR.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Sons of Veterans, New York Division, Collection</emph> consists of letters to Colonel L. J. Macy, commander of the New York Division, headquartered in Pulaski, New York.  The letters originate from "Camps" in Tarrytown, Dover Plains, Dobbs Ferry, Newark, and other towns and cities, and discuss internal business including installation of officers, receipt of "new rituals," meeting activities, and so on.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Letters are arranged in chronological order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous collections relating to the U.S. Civil War.  Please refer to &subjindex; for a complete listing.  Some Sons of Veterans material has also been cataloged; please search &summitref; with the subject heading "Sons of Veterans" for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+<subject encodinganalog="650" source="local">Civil War (U.S.)</subject>
+<subject encodinganalog="650" source="local">New York State</subject>
+         <persname encodinganalog="600" source="local" rules="aacr2">Macy, L. J.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Sons of Veterans, U.S.A. New York Division -- Archives.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Fraternal organizations -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Veterans -- Societies and clubs.</subject>
+         <geogname encodinganalog="651" source="lcsh">United States -- History -- Civil War, 1861-1865 -- Societies and clubs.</geogname>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Letters (correspondence)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Veterans.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Sons of Veterans, New York Division, Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase (P08-648), 2009.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+               
+               
+            <c02><did><unittitle>to Macy, L. J.</unittitle><unitdate normal="1895/1896" type="inclusive">1895-1896</unitdate><container type="SC">305</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

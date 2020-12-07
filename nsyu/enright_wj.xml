@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="enright_wj">enright_wj</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Walter J. Enright Artwork</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-11-29" encodinganalog="Date">29 Nov 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2011-11-29">29 Nov 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>14 Dec 2012 - box number revised (MBD)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Enright, Walter J. (Walter Joseph), 1879-1969.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Walter J. Enright Artwork</unittitle>
+         <unitdate encodinganalog="245$f" normal="1915/1925" type="inclusive" label="Inclusive Dates: ">circa 1920</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (12 items)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">12 pieces of original artwork, evidently for a calendar.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3733815</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Walter J. Enright (1879-1969) was an American artist, illustrator and political cartoonist.   A native of Chicago, he studied at the Chicago Art Institute.  In addition to his work for various newspapers he illustrated a number of children's books, including at least one by <emph render="italic">Wizard of Oz</emph> author L. Frank Baum.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Walter J. Enright Artwork</emph> consists of twelve pieces of original artwork, each approximately 12" by 15", created for a calendar.  Each page has the name of the month and an appropriate illustration (ice skating, fishing, etc.).</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Chronological.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; also has published works illustrated by Enright.  Please search &summitref; to locate these items.</p><!--Following is  boilerplate statement - delete this if you have specific related 
+material that you are listing.-->
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Art -- Illustrators</subject><persname encodinganalog="600" source="lcnaf">Enright, Walter J. (Walter Joseph), 1879-1969.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Artists -- United States.</subject><subject encodinganalog="650" source="lcsh">Art calendars.</subject><subject encodinganalog="650" source="lcsh">Calendars -- Caricatures and cartoons.</subject>
+         <subject encodinganalog="650" source="lcsh">Painters -- United States.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Paintings (visual works)</genreform><genreform encodinganalog="655" source="aat">Illustrations.</genreform><genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Artists.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Walter J. Enright Artwork, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Artwork</unittitle></did>
+               <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+               <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+            <c02><did><unittitle>Calendar illustrations</unittitle><unitdate normal="1915/1925" type="inclusive">circa 1920</unitdate><physdesc><extent>12 items</extent></physdesc><container type="Oversize">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

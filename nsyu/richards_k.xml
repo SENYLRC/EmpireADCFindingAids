@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+    <eadid countrycode="US" mainagencycode="NSyU" identifier="richards_k">richards_k</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Kenneth Richards Papers</titleproper>
+        <subtitle>An inventory of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">--</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>&su_address;
+                           <date normal="1968-02" encodinganalog="Date">Feb 1968</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           <date era="ce" calendar="gregorian" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language langcode="eng" encodinganalog="Language">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>2 Sep 2008 - converted to EAD (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name; <lb/>&su_address;
+               </repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Richards, Kenneth, 1902-</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Kenneth Richards Papers</unittitle>
+      <unitdate encodinganalog="245$f" type="inclusive" label="Inclusive Dates: " normal="1945/1961">1945-1961</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">4.5 linear feet</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the American sportsman, inventor, businessman. Correspondence, 1947-58; patents and 
+ideas for inventions, 1945-52; photographs; manuscript and published material. Papers relate primarily to Richard's 
+inventions for shotguns and fishing tackle.</abstract>
+      <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149541</unitid>
+      <langmaterial label="Language: " encodinganalog="546">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Kenneth Richards (1902-??) was an American sportsman and inventor.  He was an authority on guns and was the 
+inventor of the "Shooting Master" choke and the Richards method for checking shotgun and ammunition performance.  He 
+spent much of his life in Massachusetts where he owned several businesses, including Master Chokes, Inc., The Shooting-Master Corp., and the True Art Fly Co.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Kenneth Richards Papers</emph> consists of correspondence, business files, manuscripts, 
+patents and ideas, and a small amount of published material.</p>
+<p><emph render="bold">Correspondence</emph> is both incoming and outgoing and includes a small amount of correspondence 
+by others.</p>
+<p><emph render="bold">Business files</emph> contains material related to Richards' various gun and fishing tackle 
+businesses, and includes correspondence, photographs, publicity material, bills and receipts, and corporation records.</p>
+<p><emph render="bold">Manuscripts</emph> contains a typescript copy of Richards' pamphlet, "The Richards Quick Check 
+Method for Checking Shotgun Patterns and Chokes."</p>
+<p><emph render="bold">Patents and ideas</emph> includes correspondence, patent applications, and sketches.</p>
+<p><emph render="bold">Published material</emph> contains copies of Richards' pamphlet, "The Richards Method for Checking 
+Shotgun and Ammunication Performance."</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Richards' correspondence is arranged chronologically, correspondence by others is arranged alphabetically.  
+Business files contain companies owned by Richards first, arranged alphabetically; related material follows, listed 
+alphabetically by type.  Patents are listed first alphabetically by type, followed by ideas (one folder of sketches).</p>
+    </arrangement>
+
+    <!-- <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial>-->
+
+    <!-- <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial>-->
+
+<!--
+            <otherfindaid encodinganalog="555">
+<head>Other Related Finding Aids</head>
+<p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+			<subject encodinganalog="650" source="local">Science and medicine</subject>
+         <persname encodinganalog="600" source="lcnaf">Richards, Kenneth, 1902- -- Archives</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <corpname encodinganalog="610" source="lcnaf">Master Chokes, Inc.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">The Shooting-Master Corp.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">True Art Fly Co.</corpname>
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="lcsh">Archery -- Technological innovations.</subject>
+         <subject encodinganalog="650" source="lcsh">Fishing tackle -- Technological innovations.</subject>
+         <subject encodinganalog="650" source="lcsh">Shotguns -- Technological innovations.</subject>
+         <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Manuscripts (document genre)</genreform>
+         <genreform encodinganalog="655" source="aat">Pamphlets.</genreform>
+         <genreform encodinganalog="655" source="aat">Photoprints.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Inventors.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Sportsmen.</occupation>
+      </controlaccess>
+
+<accessrestrict encodinganalog="506">
+<head>Access Restrictions</head>
+<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p></accessrestrict>
+
+<userestrict encodinganalog="540">
+<head>Use Restrictions</head>
+<p>Written permission must be obtained from SCRC and 
+
+all relevant rights holders before publishing quotations, excerpts or images from any 
+
+materials in this collection. </p>
+</userestrict>
+
+<prefercite encodinganalog="524">
+<head>Preferred Citation</head>
+<p>Preferred citation for this material is as follows:</p>
+<p>Kenneth Richards Papers,<lb/>&su_name;
+                  </p></prefercite>
+
+<!--
+            <appraisal encodinganalog="583">
+<head>Appraisal Information</head>
+<p>## OPT (MARC 583)</p></appraisal>
+       -->
+<!--
+            <accruals encodinganalog="584">
+<head>Accruals</head>
+<p>## OPT (MARC 584)</p></accruals>
+       -->
+      <dsc type="combined">
+         <head>Inventory</head>
+
+<c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+   <c02 level="subseries"><did><unittitle>Of Richards</unittitle></did>
+      <c03><did><unittitle><unitdate type="inclusive" normal="1949/1958">1949-1958, </unitdate><unitdate type="inclusive" normal="1945/1961">undated</unitdate></unittitle><container type="Box">1</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Of others </unittitle></did>
+      <c03><did><unittitle>Richards, Mrs. Kenneth D. </unittitle><unitdate type="inclusive" normal="1957/1958">1957-1958</unitdate><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Richards, Paul C. </unittitle><unitdate type="inclusive" normal="1961">1961</unitdate><container type="Box">1</container></did></c03>
+   </c02>
+</c01>
+
+<c01 level="series"><did><unittitle>Business files</unittitle></did>
+   <c02><did><unittitle>Ken-Komp list of installations </unittitle><unitdate type="inclusive" normal="1947/1957">1947-1957</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Kenrich correspondence </unittitle><unitdate type="inclusive" normal="1947/1958">1947-1958</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Master Chokes, Inc.</unittitle></did>
+      <c03><did><unittitle>Bills and receipts</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Correspondence</unittitle></did>
+         <c04><did><unittitle><unitdate type="inclusive" normal="1950/1955">1950-1955</unitdate></unittitle><physdesc><extent>3 folders </extent></physdesc><container type="Box">2</container></did></c04>
+         <c04><did><unittitle><unitdate type="inclusive" normal="1956/1958">1956-1958, </unitdate><unitdate type="inclusive" normal="1945/1961">undated</unitdate> </unittitle><physdesc><extent>4 folders</extent></physdesc><container type="Box">3</container></did></c04>
+      </c03>
+      <c03><did><unittitle>Legal documents and corporation records</unittitle> <unitdate type="inclusive" normal="1948/1956">1948-1956, </unitdate><unitdate type="inclusive" normal="1945/1961">undated</unitdate><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Noble Manufacturing Company, Inc.</unittitle> <unitdate type="inclusive" normal="1955/1956">1955-1956</unitdate><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Publicity </unittitle><unitdate type="inclusive" normal="1956">1956, </unitdate><unitdate type="inclusive" normal="1945/1961">undated</unitdate><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Stock certificates</unittitle><container type="Box">4</container></did></c03>
+   </c02>
+   <c02><did><unittitle>The Shooting-Master Corp.</unittitle></did>
+      <c03><did><unittitle>Bills and receipts</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Contract (Shaughnessy, Richard)</unittitle><unitdate type="inclusive" normal="1948">1948</unitdate><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Corporation records</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Correspondence</unittitle> <unitdate type="inclusive" normal="1948/1958">1948-1958, </unitdate><unitdate type="inclusive" normal="1945/1961">undated</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Publicity </unittitle><unitdate type="inclusive" normal="1948/1949">1948-1949, </unitdate><unitdate type="inclusive" normal="1945/1961">undated</unitdate><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Stock certificates </unittitle><unitdate type="inclusive" normal="1948/1949">1948-1949</unitdate><container type="Box">4</container></did></c03>
+   </c02>
+   <c02><did><unittitle>True Art Fly Co. </unittitle></did>
+      <c03><did><unittitle>Bills and receipts</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Contract (Westerfors, Eric) </unittitle><unitdate type="inclusive" normal="1949">1949</unitdate><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Correspondence </unittitle><unitdate type="inclusive" normal="1949">1949</unitdate><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Photographs</unittitle><container type="Box">4</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Account books</unittitle></did>
+      <c03><did><unittitle>Bound</unittitle><unitdate type="inclusive" normal="1951/1957">1951-1957</unitdate><container type="Box">5</container></did></c03>
+      <c03><did><unittitle>Unbound</unittitle><unitdate type="inclusive" normal="1948/1952">1948-1952, </unitdate><unitdate type="inclusive" normal="1945/1961">undated</unitdate><container type="Box">5</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Bills and receipts </unittitle><unitdate type="inclusive" normal="1946/1958">1946-1958, </unitdate><unitdate type="inclusive" normal="1945/1961">undated</unitdate><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Employees payroll record </unittitle><unitdate type="inclusive" normal="1948/1952">1948-1952</unitdate><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Lures </unittitle><physdesc><extent>2 items</extent></physdesc><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Photographs (Gardiner's Sporting Goods Store) </unittitle><unitdate type="inclusive" normal="1945/1961">undated</unitdate><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Publicity </unittitle><unitdate type="inclusive" normal="1949/1956">1949-1956, </unitdate><unitdate type="inclusive" normal="1945/1961">undated</unitdate><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Reference material </unittitle><unitdate type="inclusive" normal="1950/1956">1950-1956, </unitdate><unitdate type="inclusive" normal="1945/1961">undated</unitdate><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Shooting master chokes </unittitle><physdesc><extent>2 items</extent></physdesc><container type="Box">6</container></did></c02>
+</c01>
+
+<c01 level="series"><did><unittitle>Manuscripts</unittitle></did>
+   <c02><did><unittitle>"The Richards Quick Check Method for Checking Shotgun Patterns and Chokes"</unittitle> <abstract>typescript</abstract><unitdate type="inclusive" normal="1945/1961">undated</unitdate><container type="Box">6</container></did></c02>
+</c01>
+
+<c01 level="series"><did><unittitle>Patents and ideas</unittitle></did>
+   <c02 level="subseries"><did><unittitle>Patents</unittitle></did>
+      <c03><did><unittitle>Archery equipment</unittitle></did>
+         <c04><did><unittitle>Arrow nock </unittitle><unitdate type="inclusive" normal="1949">1949, </unitdate><unitdate type="inclusive" normal="1945/1961">undated</unitdate><container type="Box">7</container></did></c04>
+      </c03>
+      <c03><did><unittitle>Fishing equipment</unittitle></did>
+         <c04><did><unittitle>Fish lure body </unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">7</container></did></c04>
+         <c04><did><unittitle>Fly box </unittitle><unitdate type="inclusive" normal="1948">1948</unitdate><container type="Box">7</container></did></c04>
+         <c04><did><unittitle>Signal device </unittitle><unitdate type="inclusive" normal="1948">1948</unitdate><container type="Box">7</container></did></c04>
+      </c03>
+      <c03><did><unittitle>Guns</unittitle></did>
+         <c04><did><unittitle>Shot patterning recoil compensator </unittitle><unitdate type="inclusive" normal="1948">1948</unitdate><container type="Box">7</container></did></c04>
+         <c04><did><unittitle>Interference claim, Powell v. Richards</unittitle><unitdate type="inclusive" normal="1944/1952">1944-1952, </unitdate><unitdate type="inclusive" normal="1945/1961">undated</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">7</container></did></c04>
+         <c04><did><unittitle>Miscellaneous </unittitle><unitdate type="inclusive" normal="1948/1952">1948-1952</unitdate><container type="Box">8</container></did></c04>
+         
+      </c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Ideas</unittitle></did>
+      <c03><did><unittitle>Sketch, floating internal baffle, adjustable shot tube, and gas diverter</unittitle><unitdate type="inclusive" normal="1952">1952</unitdate><container type="Oversize">1</container></did></c03>
+   </c02>
+</c01>
+
+<c01 level="series"><did><unittitle>Published material</unittitle></did>
+   <c02><did><unittitle> "The Richards Method for Checking Shotgun and Ammunition Performance" (pamphlet)</unittitle><unitdate type="inclusive" normal="1952">1952</unitdate><container type="Box">8</container></did>
+      
+   </c02>
+</c01>
+
+
+      </dsc>
+   </archdesc>
+</ead>

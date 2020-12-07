@@ -1,0 +1,1566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="washington_fam"
+         >washington_fam</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Washington Family Papers</titleproper>
+            <subtitle>A description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-10-31" encodinganalog="Date">31 Oct 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-10-31">31 Oct 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>2 October 2020 - rehoused, inventory and biographical history updated (ZEC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <famname encodinganalog="100">Washington family.</famname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Washington Family Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1818/1900" type="inclusive"
+            label="Inclusive Dates: ">1787-1925</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>3 linear
+            ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection consists of business
+            records, correspondence, financial material, and legal records.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3175654</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Augustine Washington (1694–1743) was a Virginia planter and the father of George Washington
+            (the first president of the United States) . He had a total of ten children by two
+            wives. His son Augustine II (1720-1762) had six children, one of which was William
+            Augustine (1757-1810). William Augustine had nine children by two of his three wives.
+            One of his children, Sarah Tayloe Washington (1800-1886) married a Lawrence Washington
+            (1791-1875), whose relationship to William Augustine's family is unknown.  Lawrence is
+            featured prominently in the collection, as is his and Sarah's son Henry Augustine (H.A.)
+            Washington (1820-1858). Several other Washingtons appear frequently in the collection,
+            such as Richard and Robert, however it is uncertain where they fall (if at all) in
+            Augustine Washington's lineage.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Washington Family Papers</emph> contain business records,
+            correspondence, miscellaneous financial materials, legal records, and subject files
+            relating to several members of the Washington family.</p>
+         <p><emph render="bold">Business records</emph> consist of general records, invoices,
+            receipts, and miscellaneous items. </p>
+         <p><emph render="bold">Correspondence</emph> consists of letters sent to members of the
+            Washington family, as well as individual members' outgoing correspondence (for example,
+            Lawrence Washington).  </p>
+         <p><emph render="bold">Financial materials</emph> consist of  vouchers, checks, and
+            receipts.</p>
+         <p><emph render="bold">Legal records</emph> consist of an administrator's bond, deeds/deeds
+            of sale, and miscellaneous items. </p>
+         <p><emph render="bold">Subject files</emph> include State Department documentation, an
+            account from Washington Irving, correspondence regarding the Freemasons from 1925, and a
+            photograph of Henry Clay Hines.</p>
+         <p>Most of the collection spans the 1800s, with a few exceptions from the late 1700s and
+            the 1920s.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Material is arranged in alphabetical order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         
+			
+			<!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <famname encodinganalog="600" source="lcnaf">Washington family.</famname>
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <!--<subject encodinganalog="650" source="lcsh">##</subject>-->
+			<geogname encodinganalog="651" source="lcsh">Virginia -- History.</geogname>
+         
+			<genreform encodinganalog="655" source="aat">Business records. </genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence. </genreform>
+         <genreform encodinganalog="655" source="aat">Deeds.</genreform><genreform encodinganalog="655" source="aat">Financial records. </genreform>
+         <genreform encodinganalog="655" source="aat">Invoices. </genreform>
+         <genreform encodinganalog="655" source="aat">Legal documents. </genreform>
+         <genreform encodinganalog="655" source="aat">Receipts (financial records)</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Washington Family Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 1966, 1969.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+   <head>Inventory</head>
+         <!--<note><p>The inventory for this collection has not yet been converted to electronic format. Please contact the Repository listed above for more information.</p></note>-->
+         <c01 level="series"><did><unittitle>Business records</unittitle></did>
+            <c02>
+               <did>
+                  <unittitle>General</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Washington, H.A.</unittitle>
+                     <unitdate normal="1842/1843" type="inclusive">1842-1843, </unitdate>
+                     <unitdate normal="1847" type="inclusive">1847</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Lawrence</unittitle>
+                     <unitdate normal="1818" type="inclusive">1818, </unitdate>
+                     <unitdate normal="1828/1832" type="inclusive">1828-1832</unitdate>
+                     <unitdate normal="1836/1844" type="inclusive">1836-1844</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Lawrence</unittitle>
+                     <unitdate normal="1810" type="inclusive">1810, </unitdate>
+                     <unitdate normal="1822" type="inclusive">1822, </unitdate>
+                     <unitdate normal="1829/1830" type="inclusive">1829-1830, </unitdate>
+                     <unitdate normal="1832" type="inclusive">1832, </unitdate>
+                     <unitdate normal="1836/1839" type="inclusive">1836-1839</unitdate>
+                     <container type="Box">3</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Lawrence</unittitle>
+                     <unitdate normal="1843" type="inclusive">1843, </unitdate>
+                     <unitdate normal="1846" type="inclusive">1846, </unitdate>
+                     <unitdate normal="1850/1854" type="inclusive">1850-1854, </unitdate>
+                     <unitdate normal="1858" type="inclusive">1858, </unitdate>
+                     <unitdate normal="1863" type="inclusive">1863, </unitdate>
+                     <unitdate normal="1870" type="inclusive">1870, </unitdate>
+                     <unitdate normal="1890" type="inclusive">1890, </unitdate>
+                     <unitdate normal="1898" type="inclusive">1898</unitdate>
+                     <container type="Box">3</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Richard</unittitle>
+                     <unitdate normal="1855" type="inclusive">1855, </unitdate>
+                     <unitdate normal="1861" type="inclusive">1861, </unitdate>
+                     <unitdate normal="1872" type="inclusive">1872, </unitdate>
+                     <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, R.J.</unittitle>
+                     <unitdate normal="1836" type="inclusive">1836, </unitdate>
+                     <unitdate normal="1846" type="inclusive">1846, </unitdate>
+                     <unitdate normal="1870/1871" type="inclusive">1870-1871, </unitdate>
+                     <unitdate normal="1880/1884" type="inclusive">1880-1884, </unitdate>
+                     <unitdate normal="1891" type="inclusive">1891</unitdate>
+                     <container type="Box">3</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Invoices</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Lawrence</unittitle>
+                     <unitdate normal="1839" type="inclusive">1839, </unitdate>
+                     <unitdate normal="1846" type="inclusive">1846, </unitdate>
+                     <unitdate normal="1853/1854" type="inclusive">1853-1854, </unitdate>
+                     <unitdate normal="1856" type="inclusive">1856, </unitdate>
+                     <unitdate normal="1859/1861" type="inclusive">1859-1861</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Lawrence</unittitle>
+                     <unitdate normal="1853" type="inclusive">1853</unitdate>
+                     <container type="Oversize">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Richard</unittitle>
+                     <unitdate normal="1853" type="inclusive">1853</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Robert</unittitle>
+                     <unitdate normal="1868" type="inclusive">1868, </unitdate>
+                     <unitdate normal="1871" type="inclusive">1871, </unitdate>
+                     <unitdate normal="1873" type="inclusive">1873, </unitdate>
+                     <unitdate normal="1879/1883" type="inclusive">1879-1883, </unitdate>
+                     <unitdate normal="1888/1892" type="inclusive">1888-1892, </unitdate>
+                     <unitdate normal="1895/1898" type="inclusive">1895-1898</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Receipts</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Washington, H.A.</unittitle>
+                     <unitdate normal="1840/1848" type="inclusive">1840-1848, </unitdate>
+                     <unitdate normal="1855" type="inclusive">1855, </unitdate>
+                     <unitdate normal="1871" type="inclusive">1871</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, H.A.</unittitle>
+                     <unitdate normal="1868" type="inclusive">1868, </unitdate>
+                     <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                     <container type="Box">3</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Lawrence</unittitle>
+                     <unitdate normal="1844/1858" type="inclusive">1844-1858, </unitdate>
+                     <unitdate normal="1861/1864" type="inclusive">1861-1864</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Richard</unittitle>
+                     <unitdate normal="1853" type="inclusive">1853, </unitdate>
+                     <unitdate normal="1861" type="inclusive">1861, </unitdate>
+                     <unitdate normal="1870/1872" type="inclusive">1870-1872, </unitdate>
+                     <unitdate normal="1879/1888" type="inclusive">1879-1888, </unitdate>
+                     <unitdate normal="1893/1898" type="inclusive">1893-1898</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, W.A.</unittitle>
+                     <unitdate normal="1787/1788" type="inclusive">1787-1788, </unitdate>
+                     <unitdate normal="1793" type="inclusive">1793, </unitdate>
+                     <unitdate normal="1798" type="inclusive">1798, </unitdate>
+                     <unitdate normal="1805/1806" type="inclusive">1805-1806</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Miscellaneous receipts</unittitle>
+                     <unitdate normal="1789" type="inclusive">1789,</unitdate>
+                     <unitdate normal="1838/1839" type="inclusive">1838-1839, </unitdate>
+                     <unitdate normal="1843/1845" type="inclusive">1843-1845, </unitdate>
+                     <unitdate normal="1849" type="inclusive">1849, </unitdate>
+                     <unitdate normal="1860" type="inclusive">1860, </unitdate>
+                     <unitdate normal="1867" type="inclusive">1867, </unitdate>
+                     <unitdate normal="1873" type="inclusive">1873, </unitdate>
+                     <unitdate normal="1881/1884" type="inclusive">1881-1884 </unitdate>
+                     <unitdate normal="1894" type="inclusive">1894, </unitdate>
+                     <unitdate normal="1787/1902" type="inclusive">undated</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Survey </unittitle>
+                  <unitdate normal="1803/1804" type="inclusive">1799</unitdate>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous </unittitle>
+                  <unitdate normal="1803/1804" type="inclusive">1803-1804, </unitdate>
+                  <unitdate normal="1828" type="inclusive">1828, </unitdate>
+                  <unitdate normal="1837" type="inclusive">1837, </unitdate>
+                  <unitdate normal="1840/1846" type="inclusive">1840-1846, </unitdate>
+                  <unitdate normal="1857" type="inclusive">1857, </unitdate>
+                  <unitdate normal="1867" type="inclusive">1867, </unitdate>
+                  <unitdate normal="1872" type="inclusive">1872, </unitdate>
+                  <unitdate normal="1885/1888" type="inclusive">1885-1888, </unitdate>
+                  <unitdate normal="1897/1898" type="inclusive">1897-1898, </unitdate>
+                  <unitdate normal="1787/1902" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02>
+               <did>
+                  <unittitle>Andrews, D.S.</unittitle>
+                  <unitdate normal="1887" type="inclusive">1887</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Armory of Company "F"</unittitle>
+                  <unitdate normal="1896" type="inclusive">1896</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Armstrong, H.S.</unittitle>
+                  <unitdate normal="1880" type="inclusive">1880</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Ashton, George D.</unittitle>
+                  <unitdate normal="1844" type="inclusive">1844, </unitdate>
+                  <unitdate normal="1848" type="inclusive">1848, </unitdate>
+                  <unitdate normal="1849" type="inclusive">1849</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Ashton, Roberta</unittitle>
+                  <unitdate normal="1853" type="inclusive">1853</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Atwater, J.</unittitle>
+                  <unitdate normal="1860/1861" type="inclusive">1860-1861</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Atwill, S.B.</unittitle>
+                  <unitdate normal="1891" type="inclusive">1891</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Baker, C.C.</unittitle>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Barker, J.A.</unittitle>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Barton, H.T.</unittitle>
+                  <unitdate normal="1870" type="inclusive">1870</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Bayne, William</unittitle>
+                  <unitdate normal="1854" type="inclusive">1854</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Beale, R.H.</unittitle>
+                  <unitdate normal="1896" type="inclusive">1896</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Beddoo, R.E.</unittitle>
+                  <unitdate normal="1902" type="inclusive">1902</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Bean, James</unittitle>
+                  <unitdate normal="1861" type="inclusive">1861</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Berry, Law. M.</unittitle>
+                  <unitdate normal="1838/1839" type="inclusive">1838-1839</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Bowcock, Henry P.</unittitle>
+                  <unitdate normal="1834" type="inclusive">1834</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Brayton, Charles</unittitle>
+                  <unitdate normal="1892" type="inclusive">1892</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Bruce, Edwin</unittitle>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Combs, R. Ford</unittitle>
+                  <unitdate normal="1893" type="inclusive">1893</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Conway, J.</unittitle>
+                  <unitdate normal="1832" type="inclusive">1832</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Cook, L.M.</unittitle>
+                  <unitdate normal="1893" type="inclusive">1893</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>C, misc</unittitle>
+                  <unitdate normal="1837" type="inclusive">1837, </unitdate>
+                  <unitdate normal="1847" type="inclusive">1847</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Daniel, William M.</unittitle>
+                  <unitdate normal="1899" type="inclusive">1899</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Davis, C.A.</unittitle>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Davis, J.H.</unittitle>
+                  <unitdate normal="1818" type="inclusive">1818</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Davis, Septimus</unittitle>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Dean, William</unittitle>
+                  <unitdate normal="1888" type="inclusive">1888</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Deatty, Henry</unittitle>
+                  <unitdate normal="1848" type="inclusive">1848</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>DeMotte, A. Hughes</unittitle>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Dinsmore and Kyle</unittitle>
+                  <unitdate normal="1848" type="inclusive">1848</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Elhart, Joyner and Co.</unittitle>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Ellason, J.</unittitle>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>E, misc</unittitle>
+                  <unitdate normal="1847" type="inclusive">1847, </unitdate>
+                  <unitdate normal="1858" type="inclusive">1858</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Forte, E.</unittitle>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Fox, Harris</unittitle>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Fox, V.B.</unittitle>
+                  <unitdate normal="1892" type="inclusive">1892</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Ficklen and Brown</unittitle>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Frothingham, O.B.</unittitle>
+                  <unitdate normal="1862" type="inclusive">1862</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Gant, B.E.</unittitle>
+                  <unitdate normal="1837" type="inclusive">1837</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Garnett, H.T.</unittitle>
+                  <unitdate normal="1846" type="inclusive">1846</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>George, Sam</unittitle>
+                  <unitdate normal="1851" type="inclusive">1851</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Gilmer, Thomas W.</unittitle>
+                  <unitdate normal="1893" type="inclusive">1893</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Goodwin, A.</unittitle>
+                  <unitdate normal="1847/1851" type="inclusive">1847-1851, </unitdate>
+                  <unitdate normal="1855" type="inclusive">1855, </unitdate>
+                  <unitdate normal="1857" type="inclusive">1857</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Griffith, D.H.</unittitle>
+                  <unitdate normal="1893" type="inclusive">1893</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hamlin, Edward O.</unittitle>
+                  <unitdate normal="1860/1861" type="inclusive">1860-1861</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Harrison, J.</unittitle>
+                  <unitdate normal="1836" type="inclusive">1836</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hayes, Josiah</unittitle>
+                  <unitdate normal="1890" type="inclusive">1890</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Heath, J.</unittitle>
+                  <unitdate normal="1838" type="inclusive">1838</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hillyer, Wm. P.</unittitle>
+                  <unitdate normal="1861" type="inclusive">1861, </unitdate>
+                  <unitdate normal="1864" type="inclusive">1864</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hindman, William</unittitle>
+                  <unitdate normal="1839" type="inclusive">1839</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hooper, Frank B.</unittitle>
+                  <unitdate normal="1899" type="inclusive">1899</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Horner, H.J.</unittitle>
+                  <unitdate normal="1902" type="inclusive">1902</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hughes, Sam</unittitle>
+                  <unitdate normal="1870" type="inclusive">1870</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hungerford, M.E.</unittitle>
+                  <unitdate normal="1830" type="inclusive">1830, </unitdate>
+                  <unitdate normal="1850" type="inclusive">1850, </unitdate>
+                  <unitdate normal="1896" type="inclusive">1896</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hunt, J. Warren</unittitle>
+                  <unitdate normal="1891" type="inclusive">1891,</unitdate>
+                  <unitdate normal="1902" type="inclusive">1902</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hunter, J.</unittitle>
+                  <unitdate normal="1840" type="inclusive">1840</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hunter, Warrin</unittitle>
+                  <unitdate normal="1900" type="inclusive">1900</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>H, misc</unittitle>
+                  <unitdate normal="1891" type="inclusive">1891</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Jackson, R.S.</unittitle>
+                  <unitdate normal="1848" type="inclusive">1848</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Jas. F. Carlin's Sons &amp; Company</unittitle>
+                  <unitdate normal="1900" type="inclusive">1900, </unitdate>
+                  <unitdate normal="1901" type="inclusive">1901</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Jett, John J.</unittitle>
+                  <unitdate normal="1870" type="inclusive">1870</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Johnston, J. E.</unittitle>
+                  <unitdate normal="1883" type="inclusive">1883, </unitdate>
+                  <unitdate normal="1889" type="inclusive">1889</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Jones, W.A.</unittitle>
+                  <unitdate normal="1891" type="inclusive">1891</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Killogg, Wm.</unittitle>
+                  <unitdate normal="1842" type="inclusive">1842</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>King, J.O.</unittitle>
+                  <unitdate normal="1894" type="inclusive">1894</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Kyle, D.</unittitle>
+                  <unitdate normal="1851" type="inclusive">1851</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Lambson, C.C.</unittitle>
+                  <unitdate normal="1899" type="inclusive">1899</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Latawe, William C.</unittitle>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Leigh, Wm.</unittitle>
+                  <unitdate normal="1894" type="inclusive">1894</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Lelance, L.A.M.</unittitle>
+                  <unitdate normal="1838" type="inclusive">1838</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Lewis, R.B.</unittitle>
+                  <unitdate normal="1837" type="inclusive">1837, </unitdate>
+                  <unitdate normal="1860" type="inclusive">1860, </unitdate>
+                  <unitdate normal="1880" type="inclusive">1880</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Lewis, U.</unittitle>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Lloyd, John</unittitle>
+                  <unitdate normal="1838/1839" type="inclusive">1838-1839, </unitdate>
+                  <unitdate normal="1849" type="inclusive">1849</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Lomax, Thomas</unittitle>
+                  <unitdate normal="1801" type="inclusive">1801</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Marbury, Leonard</unittitle>
+                  <unitdate normal="1895" type="inclusive">1895</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Marmaduke, Wm. M.</unittitle>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Marshall, Henry M.</unittitle>
+                  <unitdate normal="1899" type="inclusive">1899</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Mason, J.</unittitle>
+                  <unitdate normal="1870" type="inclusive">1870</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Mason, T.A.</unittitle>
+                  <unitdate normal="1832" type="inclusive">1832, </unitdate>
+                  <unitdate normal="1839" type="inclusive">1839, </unitdate>
+                  <unitdate normal="1846" type="inclusive">1846, </unitdate>
+                  <unitdate normal="1848" type="inclusive">1848</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Mayo, W.T.</unittitle>
+                  <unitdate normal="1858" type="inclusive">1858, </unitdate>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>McCulloh, James Wm.</unittitle>
+                  <unitdate normal="1835" type="inclusive">1835</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>McKenhee, Lambert</unittitle>
+                  <unitdate normal="1838" type="inclusive">1838</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Mercantile-Railway Building and Loan Association</unittitle>
+                  <unitdate normal="1894" type="inclusive">1894</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>M, misc</unittitle>
+                  <unitdate normal="1849" type="inclusive">1849, </unitdate>
+                  <unitdate normal="1868" type="inclusive">1868, </unitdate>
+                  <unitdate normal="1893" type="inclusive">1893</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Neall, W.</unittitle>
+                  <unitdate normal="1861" type="inclusive">1861</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Ninde, Frederick F.</unittitle>
+                  <unitdate normal="1834" type="inclusive">1834</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Norris, [illegible]</unittitle>
+                  <unitdate normal="1856" type="inclusive">1856</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Northern Central Railway</unittitle>
+                  <abstract>Glanville, R.B.</abstract>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Office of Virginia Sentinel</unittitle>
+                  <unitdate normal="1861" type="inclusive">1861</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Park, James</unittitle>
+                  <unitdate normal="1800" type="inclusive">1800</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Parker, P.</unittitle>
+                  <unitdate normal="1898" type="inclusive">1898</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Patton, Hugh M. </unittitle>
+                  <unitdate normal="1838/1839" type="inclusive">1838-1839</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Payne, C.N. </unittitle>
+                  <unitdate normal="1880" type="inclusive">1880</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Penniman, James H.</unittitle>
+                  <unitdate normal="1925" type="inclusive">1925</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Pope, J.S.</unittitle>
+                  <unitdate normal="1898" type="inclusive">1898</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Randall &amp; Randall</unittitle>
+                  <unitdate normal="1900" type="inclusive">1900</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Reardon, [illegible]</unittitle>
+                  <unitdate normal="1839" type="inclusive">1839</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Reed, W.B.</unittitle>
+                  <unitdate normal="1880" type="inclusive">1880</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Roberts, M.</unittitle>
+                  <unitdate normal="1836" type="inclusive">1836, </unitdate>
+                  <unitdate normal="1838" type="inclusive">1838, </unitdate>
+                  <unitdate normal="1844" type="inclusive">1844,</unitdate>
+                  <unitdate normal="1846/1847" type="inclusive">1846-1847</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Robinson's Sons</unittitle>
+                  <unitdate normal="1892" type="inclusive">1892</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Rollins, George</unittitle>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Rose, R.H.</unittitle>
+                  <unitdate normal="1861" type="inclusive">1861</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Ryland &amp; Brooks Lumber Co.</unittitle>
+                  <unitdate normal="1892" type="inclusive">1892</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Saughton, Lawrence</unittitle>
+                  <unitdate normal="1870" type="inclusive">1870</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Simms, [illegible] </unittitle>
+                  <unitdate normal="1797" type="inclusive">1797</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Spillman, C.B.</unittitle>
+                  <unitdate normal="1904" type="inclusive">1904</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Staff, W.W.</unittitle>
+                  <unitdate normal="1897" type="inclusive">1897</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Stewart, Wm. P.</unittitle>
+                  <unitdate normal="1836/1837" type="inclusive">1836-1837</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Storke, E.</unittitle>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>S, misc </unittitle>
+                  <unitdate normal="1836" type="inclusive">1836</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Taggart, [unknown] </unittitle>
+                  <unitdate normal="1895" type="inclusive">1895</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Tennent, Anna S.</unittitle>
+                  <unitdate normal="1838" type="inclusive">1838, </unitdate>
+                  <unitdate normal="1840" type="inclusive">1840, </unitdate>
+                  <unitdate normal="1842" type="inclusive">1842, </unitdate>
+                  <unitdate normal="1845" type="inclusive">1845</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Turner, George J.</unittitle>
+                  <unitdate normal="1808/1809" type="inclusive">1808-1809</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Unidentifiable</unittitle>
+                  <unitdate normal="1836/1839" type="inclusive">1836-1839, </unitdate>
+                  <unitdate normal="1843" type="inclusive">1843, </unitdate>
+                  <unitdate normal="1848/1850" type="inclusive">1848-1850</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Vausant, George</unittitle>
+                  <unitdate normal="1891" type="inclusive">1891</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Virginia Trust Company</unittitle>
+                  <unitdate normal="1894" type="inclusive">1894</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Wallace, Charles R.</unittitle>
+                  <unitdate normal="1888" type="inclusive">1888</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, Bushrod C.</unittitle>
+                  <unitdate normal="1907" type="inclusive">1907</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, George</unittitle>
+                  <abstract>Sent to G. Washington</abstract>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, George</unittitle>
+                  <unitdate normal="1832" type="inclusive">1832, </unitdate>
+                  <unitdate normal="1837/1839" type="inclusive">1837-1839, </unitdate>
+                  <unitdate normal="1848/1850" type="inclusive">1848-1850, </unitdate>
+                  <unitdate normal="1854/1858" type="inclusive">1854-1858, </unitdate>
+                  <unitdate normal="1861" type="inclusive">1861, </unitdate>
+                  <unitdate normal="1866" type="inclusive">1866</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, George</unittitle>
+                  <abstract>Photostat</abstract>
+                  <unitdate normal="1799" type="inclusive">1799</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, G.C.</unittitle>
+                  <unitdate normal="1825" type="inclusive">1825, </unitdate>
+                  <unitdate normal="1873" type="inclusive">1873, </unitdate>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, John</unittitle>
+                  <unitdate normal="1899" type="inclusive">1899</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, J.B.</unittitle>
+                  <unitdate normal="1889" type="inclusive">1889</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, J.E.</unittitle>
+                  <unitdate normal="1854" type="inclusive">1854</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, J.M.</unittitle>
+                  <unitdate normal="1830" type="inclusive">1830</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, Lawrence</unittitle>
+                  <unitdate normal="1815" type="inclusive">1815, </unitdate>
+                  <unitdate normal="1819" type="inclusive">1819, </unitdate>
+                  <unitdate normal="1838/1843" type="inclusive">1838-1843, </unitdate>
+                  <unitdate normal="1850/1854" type="inclusive">1850-1854, </unitdate>
+                  <unitdate normal="1857/1859" type="inclusive">1857-1859, </unitdate>
+                  <unitdate normal="1863" type="inclusive">1863, </unitdate>
+                  <unitdate normal="1891" type="inclusive">1891, </unitdate>
+                  <unitdate normal="1894" type="inclusive">1894, </unitdate>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, Lloyd</unittitle>
+                  <unitdate normal="1870" type="inclusive">1870, </unitdate>
+                  <unitdate normal="1896" type="inclusive">1896, </unitdate>
+                  <unitdate normal="1899" type="inclusive">1899</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, Richard</unittitle>
+                  <unitdate normal="1893" type="inclusive">1893</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, R.</unittitle>
+                  <unitdate normal="1852" type="inclusive">1852</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Washington, R.J.</unittitle>
+                  <unitdate normal="1892/1893" type="inclusive">1892-1893, </unitdate>
+                  <unitdate normal="1901/1902" type="inclusive">1901-1902</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>White, A.P.</unittitle>
+                  <unitdate normal="1853" type="inclusive">1853</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Whitehouse, E.B.</unittitle>
+                  <unitdate normal="1892" type="inclusive">1892</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Willink, John A.</unittitle>
+                  <unitdate normal="1818" type="inclusive">1818</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Wirt, D.C.</unittitle>
+                  <unitdate normal="1858/1859" type="inclusive">1858-1859</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Withers, Edmund</unittitle>
+                  <unitdate normal="1800" type="inclusive">1800</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>White &amp; Jacob</unittitle>
+                  <unitdate normal="1870" type="inclusive">1870</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Wilson, J.F.</unittitle>
+                  <unitdate normal="1860" type="inclusive">1860</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Zollickoffer, D.C.</unittitle>
+                  <unitdate normal="1892" type="inclusive">1892</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Misc, envelopes</unittitle>
+                  <unitdate normal="1898/1900" type="inclusive">1898-1900, </unitdate>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Misc, unidentifiable</unittitle>
+                  <unitdate normal="1837" type="inclusive">1837, </unitdate>
+                  <unitdate normal="1847" type="inclusive">1847, </unitdate>
+                  <unitdate normal="1851/1854" type="inclusive">1851-1854, </unitdate>
+                  <unitdate normal="1870" type="inclusive">1870, </unitdate>
+                  <unitdate normal="1892" type="inclusive">1892, </unitdate>
+                  <unitdate normal="1896" type="inclusive">1896, </unitdate>
+                  <unitdate normal="1898" type="inclusive">1898</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Financial materials</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate normal="1838" type="inclusive">1838, </unitdate>
+                  <unitdate normal="1846" type="inclusive">1846, </unitdate>
+                  <unitdate normal="1892" type="inclusive">1892, </unitdate>
+                  <unitdate normal="1896" type="inclusive">1896, </unitdate>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Legal records</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Administrators Bond</unittitle>
+                  <abstract>Richard Washington</abstract>
+                  <unitdate normal="1861" type="inclusive">1861</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Deeds</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Maiden, R.H.</unittitle>
+                     <unitdate normal="1895" type="inclusive">1895</unitdate>
+                     <container type="Box">2</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, H.T.</unittitle>
+                     <unitdate normal="1894" type="inclusive">1894</unitdate>
+                     <container type="Box">3</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Lawrence</unittitle>
+                     <unitdate normal="1883" type="inclusive">1883, </unitdate>
+                     <unitdate normal="1887" type="inclusive">1887</unitdate>
+                     <container type="Box">3</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Robert J.</unittitle>
+                     <unitdate normal="1883/1884" type="inclusive">1883-1884</unitdate>
+                     <container type="Box">3</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Pleas</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Stuart, R.H.</unittitle>
+                     <unitdate normal="1888" type="inclusive">1888, </unitdate>
+                     <unitdate normal="1893" type="inclusive">1893</unitdate>
+                     <container type="Box">3</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Washington, Law.</unittitle>
+                     <unitdate normal="1857" type="inclusive">1857</unitdate>
+                     <container type="Box">2</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate normal="1830" type="inclusive">1830, </unitdate>
+                  <unitdate normal="1843" type="inclusive">1843, </unitdate>
+                  <unitdate normal="1847" type="inclusive">1847, </unitdate>
+                  <unitdate normal="1854/1855" type="inclusive">1854-1855, </unitdate>
+                  <unitdate normal="1873" type="inclusive">1873, </unitdate>
+                  <unitdate normal="1894/1895" type="inclusive">1894-1895, </unitdate>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Subject files</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>State Department documentation</unittitle>
+                  <abstract>Jane B. Washington</abstract>
+                  <unitdate normal="1900" type="inclusive">1900 </unitdate>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Irving, Washington</unittitle>
+                  <abstract>a document addressing Washington Irving's account of a Washington's
+                     religious activities</abstract>
+                  <unitdate normal="1787/1925" type="inclusive">undated</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Masons</unittitle>
+                  <abstract>correspondence involving debates about President George Washington's
+                     alleged loyalty to the Freemasons </abstract>
+                  <unitdate normal="1925" type="inclusive">1925</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Photograph</unittitle>
+                  <abstract>a photograph of Henry Clay Hines and George Washington's
+                     check</abstract>
+                  <unitdate normal="1787/1925" type="inclusive">undated </unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

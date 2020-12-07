@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.--><eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+    <eadid countrycode="US" mainagencycode="NSyU" identifier="scovel_m">scovel_m</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Myra Scovel Manuscripts</titleproper>
+        <subtitle>An inventory of 
+                        her papers 
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">KM</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>&su_address;
+                           <date normal="1987-10" encodinganalog="Date">Oct 1987</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           <date era="ce" calendar="gregorian" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language langcode="eng" encodinganalog="Language">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>25 Jun 2010 - converted to EAD (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name; <lb/>&su_address;
+               </repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Scovel, Myra.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Myra Scovel Manuscripts</unittitle>
+      <unitdate encodinganalog="245$f" normal="1957/1962" type="inclusive" label="Inclusive Dates: ">before 1962</unitdate><physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">0.25 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the American author, missionary.  Collection contains undated typescript draft and final draft with revisions of <emph render="italic">The Chinese Ginger Jars</emph>, her autobiographical work on missionary life in China.</abstract>
+      <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149267</unitid>
+      <langmaterial label="Language: " encodinganalog="546">
+        <language langcode="eng">
+                          English
+                       </language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Myra Scovel (1905-1994) was an American nurse and missionary for the United 
+		Presbyterian Church for more than thirty years.    She and her  husband, Dr. 
+		Frederick Gilman Scovel, were assigned to missions in China (1930-1951) and India 
+		(1953-1961).  She was also a writer and poet.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Myra Scovel Manuscripts</emph> consists of undated 
+		typescript draft and final draft with revisions of 
+		<emph render="italic">The Chinese Ginger Jars</emph>, her autobiographical work on 
+		her experiences during her missionary life in China.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>No particular order.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>For other personal accounts of missionary life, see the <archref href="harding_fw.htm">Frederick Harding Manuscript</archref> (Garo mission in Assam, India), the <archref href="dodge_re.htm">Ralph E. Dodge Papers</archref> (Zimbabwe), and the <archref href="kingsley_m.htm">Marion Kingsley letters</archref> (Korea).</p>
+    </relatedmaterial>
+    <!--<separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial>--><!--
+            <otherfindaid encodinganalog="555">
+				<head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            --><controlaccess>
+				<head>Subject and Genre Headings</head>
+				<subject encodinganalog="650" source="local">Church and clergy</subject><subject encodinganalog="650" source="local">Women Authors</subject><persname encodinganalog="600" source="lcnaf">Scovel, Myra.</persname>
+            <corpname encodinganalog="610" source="lcnaf">Presbyterian Church in the U.S.A. -- Board of Foreign Missions.</corpname>
+            <corpname encodinganalog="610" source="lcnaf">United Presbyterian Church in the U.S.A. -- Commission on Ecumenical Mission and Relations.</corpname>
+				<title encodinganalog="630" source="lcnaf" rules="aacr2r">The Chinese ginger jars.</title>
+				<subject encodinganalog="650" source="lcsh">Missionaries.</subject>
+				<subject encodinganalog="650" source="lcsh">Missions -- Asia.</subject>
+				<genreform encodinganalog="655" source="aat">Autobiographies (literary works)</genreform>
+				<genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+				<occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+				<occupation encodinganalog="656" source="lcsh">Missionaries.</occupation>
+				</controlaccess>
+				
+				<accessrestrict encodinganalog="506">
+				<head>Access Restrictions</head>
+				<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p></accessrestrict>
+				
+				<userestrict encodinganalog="540">
+				<head>Use Restrictions</head>
+				<p>Written permission must be obtained from SCRC and 
+                       all relevant rights holders before publishing quotations, excerpts or images from any 
+                       materials in this collection. </p></userestrict>
+							  
+				<prefercite encodinganalog="524">
+							  <head>Preferred Citation</head>
+							  <p>Preferred citation for this material is as follows:</p>
+							  <p>Myra Scovel Manuscripts, <lb/>&su_name;
+                  </p></prefercite><acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Myra Scovel</persname>, 1962.</p>
+      </acqinfo><!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       --><dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Manuscripts</unittitle></did>
+            <c02><did><unittitle>Autobiography, <emph render="italic">The Chinese Ginger Jars</emph></unittitle><abstract>first draft, 135 pp.</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Autobiography, <emph render="italic">The Chinese Ginger Jars</emph></unittitle><abstract>author's manuscript, 155 pp.</abstract><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc></archdesc>
+</ead>

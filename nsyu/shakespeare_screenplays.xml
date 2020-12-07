@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="shakespeare_screenplays">shakespeare_screenplays</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Shakespeare Screenplays</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">AM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2009-04-28" encodinganalog="Date" type="Inclusive">28 Apr 2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>AM
+            <date normal="2009-04-28" type="Inclusive">28 Apr 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            
+         <persname><?xm-replace_text {persname}?></persname></origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Shakespeare Screenplays</unittitle>
+         <unitdate encodinganalog="245$f" normal="1939/1953" type="inclusive" label="Inclusive Dates: ">circa 1944-1948</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>3 mimeographed screenplays (SC).</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Typwritten, mimeographed treatments and screenplay from film versions of  William Shakespeare's <emph render="italic">Hamlet</emph> and <emph render="italic">Henry V.</emph></abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2677711</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>William Shakespeare's plays have been performed and recorded in many different mediums throughout the years.  These materials are from Laurence's Olivier's film versions <emph render="italic">Hamlet</emph> and <emph render="italic">Henry V.</emph>  Olivier's <emph render="italic">Hamlet</emph> won a total of four Oscars, including the Best Picture award and two for Roger Furse in Art Direction and Costume Design.  </p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Shakespeare Screenplays</emph> consists of two paperbound, mimeographed scenarios/treatments for <emph render="italic">Henry V (1944)</emph> and a screenplay for <emph render="italic">Hamlet (1948)</emph>.   Two of the scripts have Roger  Furse's name written or typed in them, and <emph render="italic">Hamlet</emph> also has a label with the name: "Theodore Bernstein."    </p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The bound scripts are arranged in alphabetical order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>Following is  boilerplate statement - delete this if you have specific related 
+material that you are listing.<p>&scrc_name; has made a concerted effort over the 
+years to ensure that its manuscript and rare books holdings complement each other.  
+As a result, many of our manuscript collections are supported by books, pamphlets, 
+serials and other items which are cataloged in the Rare Books Collection.  Please be 
+sure to search &summitref; for these related materials.</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Radio, television, film</subject><persname encodinganalog="600" source="local">Bernstein, Theodore.</persname>
+         <persname source="lcnaf" encodinganalog="600">Dent, Alan.</persname><persname source="lcnaf" encodinganalog="600">Olivier, Laurence, 1907-1989.</persname><persname source="lcnaf" encodinganalog="600">Furse, Roger.</persname>
+         
+         <title encodinganalog="630" source="lcnaf">Hamlet (Motion picture : 1948).</title>
+         <title source="lcnaf" encodinganalog="630">Henry V (Motion picture : 1944).</title><subject encodinganalog="650" source="lcsh">Hamlet (Legendary character) -- Drama.</subject>
+         <subject source="lcsh" encodinganalog="650">Henry V, King of England, 1387-1422 -- Drama.</subject><occupation source="aat" encodinganalog="656">Costume designers.</occupation>
+         <occupation source="aat" encodinganalog="656">Screen writers.</occupation><genreform encodinganalog="655" source="aat">Treatments (documents)</genreform>
+         <genreform source="aat" encodinganalog="655">Screenplays.</genreform>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Shakespeare Screenplays,  <lb/> &su_name; </p>
+      </prefercite>
+      
+      <!--<acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>### (MARC 541 and/or  561)</p>
+      </acqinfo>-->
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle> Screenplays</unittitle></did>
+               <!--Permissible values for @TYPE for first CONTAINER are 'Box' 'Oversize' 'Volume' 'Carton' or 'Map-Case'.-->
+               <!--Permissible values for @TYPE for second CONTAINER are 'Folder' 'Frame' 'Page'  or 'Reel'.-->
+            <c02><did><unittitle><emph render="italic">Hamlet  </emph></unittitle><abstract>146 p.</abstract><unitdate normal="1943/1953" type="inclusive">undated</unitdate><container type="SC">315</container></did></c02>
+         <c02><did><unittitle><emph render="italic">Henry V</emph></unittitle><abstract>"Eire sequence, scenes 136-258."</abstract><unitdate normal="1939/1949" type="inclusive">undated</unitdate><container type="SC">315</container></did></c02><c02><did><unittitle><emph render="italic">Henry V</emph></unittitle><abstract>"Revised treatment for Technicolor Film."</abstract><unitdate normal="1939/1949" type="inclusive">undated</unitdate><container type="SC">315</container></did></c02></c01>
+      </dsc>
+   </archdesc>
+</ead>

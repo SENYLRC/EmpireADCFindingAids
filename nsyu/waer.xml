@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012--><!-- added altformavail section -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="waer" mainagencycode="NSyU">waer</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">WAER Collection</titleproper>
+        <subtitle>A description of the Collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">BMF</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2015-03-19">19 Mar 2015</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Brandon Fess
+        
+        <date normal="2015-03-19">19 Mar 2015</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>21 July 2015 - updated biographical history (PJM)</item>
+		<item>38 Mar 2018 - alphabetized; added waer_000 (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <corpname encodinganalog="110">WAER (Radio station : Syracuse, N.Y.)</corpname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">WAER Collection</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates:" normal="1965/1979" type="inclusive">1965-1979</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>18 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Collection consists of non-commercial recordings, all off-air dubs on reel to reel tapes.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">4526484</unitid>
+      <langmaterial encodinganalog="546" label="Language: "> Material in this collection is in
+               
+        
+        <language langcode="eng">English</language></langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>WAER is a radio station in Syracuse, NY, broadcasting at 88.3 MHz FM. Located on
+        the campus of Syracuse University, it has been in operation since April 1, 1947. 
+        WAER was student-run until 1983, when operations were taken over by the university 
+        and the station became a member of National Public Radio (NPR). WAER currently serves 
+        the greater Syracuse area with NPR and local news, eclectic music, and Syracuse University sports.  
+        WAER is staffed by full-time professionals who train, educate, and supervise student volunteers 
+        interested in enhancing their experience in broadcast journalism and sports broadcasting. 
+        The station is best known for its sports programming, and the sports staff is made up entirely of students, 
+        broadcasting coverage of every football, men's basketball, and men's lacrosse game. WAER's sports staff has 
+        produced some of the biggest names in sports broadcasting, including Bob Costas, Marv Albert, Dick Stockton, 
+        and Mike Tirico.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">WAER collection</emph> consists of more than 250 reel to reel tapes. Few
+            of the tapes are dated, but those that are cover a span from 1965 to 1979. Announcers or
+            presenters are rarely identified. These tapes primarily hold topical broadcasts and live
+            concert recordings. The news items include a mix of national and local productions, but
+            there are relatively few in the collection compared to the concert recordings. Many
+            concerts were given by popular artists such as Pink Floyd, Bonnie Raitt, Canned Heat,
+            Niels Lofgren, and Commander Cody, taken from national broadcasts, mostly originating
+            from New York City or Boston. The collection contains recordings of only a handful of
+            concerts broadcast by Syracuse University student ensembles. 25 tapes are identified as
+            having been recorded on-campus at the Jabberwocky Café; surviving performances from this
+            intimate venue include those given by John Fahey, Taj Mahal, and David Bromberg.</p>
+    </scopecontent>
+    <!--<altformavail encodinganalog="530"><head>Other Formats Available</head><p>## Use MARC 530 or comment out if not applicable</p></altformavail>-->
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Items are arranged in order by ID number, but are listed in the inventory below in alphabetical order by title.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+			
+         <p>## (MARC 544 1)</p><p>&scrc_name; has made a concerted effort over the 
+years to ensure that its manuscript and rare books holdings complement each other.  
+As a result, many of our manuscript collections are supported by books, pamphlets, 
+serials and other items which are cataloged in the Rare Books Collection.  Please be 
+sure to search &summitref; for these related materials.</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+      <!--<separatedmaterial encodinganalog="544 0"><head>Separated Material</head><p>## OPT (MARC 544 0)</p></separatedmaterial>-->
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Music</subject>
+      <subject encodinganalog="650" source="local">Radio, television, film</subject>
+      <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">Syracuse University -- History.</corpname><corpname encodinganalog="610" source="lcnaf">WAER (Radio station : Syracuse,
+            N.Y.)</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      
+      <subject encodinganalog="650" source="lcsh">Radio broadcasting -- New York (State) -- Syracuse.</subject>
+      <subject encodinganalog="650" source="lcsh">FM broadcasting -- New York (State) -- Syracuse.</subject>
+      <subject encodinganalog="650" source="lcsh">Public radio -- New York (State) -- Syracuse.</subject>
+      <subject encodinganalog="650" source="lcsh">Radio broadcasting of sports.</subject>
+      <subject encodinganalog="650" source="lcsh">News radio stations -- New York (State) -- Syracuse.</subject>
+      <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- History.</geogname>
+      <genreform encodinganalog="655" source="aat">78 rpm records.</genreform>
+      <genreform encodinganalog="655" source="aat">Long-playing records.</genreform>
+      <genreform encodinganalog="655" source="aat"> Tape reels.</genreform>
+    
+    
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      <p>Researcher access to the recordings requires advance notice in order to produce a working copy.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.  </p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p> WAER Collection, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Unknown.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>-->
+      <!--<accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+<c01 level="series"><did><unittitle>Recordings</unittitle></did>
+<accessrestrict><p>Access to recordings requires advance notice to produce a use copy.</p></accessrestrict>
+   <c02><did><unittitle>1965 Year End Focus; Tolley Interview</unittitle><unitdate type="inclusive" normal="1965">1965</unitdate><unitid>waer_046</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>ABC Radio Network: Christmas Special </unittitle><unitid>waer_023</unitid><abstract>includes fill music at the end </abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>ABC Radio Network: Christmas Special </unittitle><unitid>waer_025</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>ABC Radio Network: Christmas Special, Special Events Department WAER Radio</unittitle><unitid>waer_024</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Aired conspiracy segments</unittitle><unitid>waer_152</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did></c02>
+   <c02><did><unittitle>All Go Our Own Way </unittitle><unitid>waer_097</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did><scopecontent><p>I Once Loved a Girl; Sunset; Sausilito Bay Suite Break; Ballad of a Man; All Go Our Own Way </p></scopecontent></c02>
+   <c02><did><unittitle>All University Council</unittitle><unitid>waer_130</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Art Ensemble of Chicago; Interview by Brian Auerbach</unittitle><unitid>waer_195</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>At Poorhour <unitdate type="inclusive" normal="1975-02-27">2-27-75</unitdate></unittitle><unitid>waer_172</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>Bat McGrath Jabberwocky<unitdate type="inclusive" normal="1977-02-11"> 2/11/77 </unitdate></unittitle><unitid>waer_081</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>Batsy Grand</unittitle><unitid>waer_237</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>BC 1648.08 Power Trip: "Murray Bookchin N The Energy Crisis"</unittitle><unitid>waer_176</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>BC 1838b Audi(o)ting the Internal Revenue Servicing</unittitle><unitid>waer_177</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>Beach Boys</unittitle><unitid>waer_102</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did></c02>
+   <c02><did><unittitle>Ben Sidran (Interview)</unittitle><unitid>waer_221</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Bengt Halberg / Gerry Mulligan</unittitle><abstract>track one Bengt Halberg; track two Gerry Mulligan</abstract><unitid>waer_133</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did><scopecontent><p>Limehouse Blues; Pink Lady; Whiskey Sour; Side Car; Bill Not Phil; You’re Blase; D’Anjou; Imagination; Bijou; Poogerini; Gloomy Sunday; Black Strap; I Can’t Believe That You’re In Love With Me; Sextet;Lover Men; Lady Be Good; Carson City Stage; Cherry; Makin’ Whoopee; Motel; Meet Mr. Gordon; Two Can Play; What a Difference a Day Makes; Onion Bottom;Tea for Two; Modus Operandi; For Sue; Love is Here to Stay; Jeru; Moon Dreams; Venus de Milo; Deception; Godchild; Rocker; Israel; Roove; Liberty Bell; Have You Met Miss Jones; Isn’t It Romantic; Traditional</p></scopecontent></c02>
+   <c02><did><unittitle>Best of Old Time Radio <unitdate type="inclusive" normal="1976-10-25">Oct 25, 1976</unitdate> Immigrant</unittitle><unitid>waer_247</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>Birth - live @ Studio C - <unitdate type="inclusive" normal="1975-02-20">2/20/75</unitdate></unittitle><unitid>waer_074</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did></c02>
+   <c02><did><unittitle>Birth in Studio C</unittitle><unitid>waer_076</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did></c02>
+   <c02><did><unittitle>Black Sheep Live</unittitle><unitid>waer_113</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did><scopecontent><p>The Hunter; Cruisin; Work to be Done; Shapes of Things; Paying Yer Dues; Let Me Stay; Freight Train; Stick Around;</p></scopecontent></c02>
+   <c02><did><unittitle>Bluegrass ‘78</unittitle><unitid>waer_127</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did><scopecontent><p>I Don’t Mean to Cry; I Just Got Wise; Wreck on the Highway; Windy Mountain; I’m Not Broke; When I Take My Vacation; Letters Have No Arms; Lorene; The Little Paper Boy; The Old Home Place; Pain In My Heart; Rambler’s Blues; Hello Stranger; The Great Atomic Power; ‘Til The End of the World; I Wonder How...; Chinquipire Pie; Midnight on the Water; Never See my Home Again; Way Out There</p></scopecontent></c02>
+   <c02><did><unittitle>Bobby Hamilton</unittitle><unitid>waer_158</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>Bonnie Raitt</unittitle><unitid>waer_236</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Box 6462 Stan Getz Radio Concert</unittitle><unitid>waer_164</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>Boz Scaggs at Manley</unittitle><unitid>waer_053</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">5</container></did><scopecontent><p>1. Instrumental 2. I will forever sing the blues 3. We were always sweet hearts 4. Look what I’ve got</p></scopecontent></c02>
+   <c02><did><unittitle>Brainwashing of American P.O.W.’s by Chinese Communists</unittitle><unitid>waer_153</unitid><abstract>address to Eastman Kodak officers and supervisors; Major William E. Mayer, U.S. Army at Eastman Kodak in Rochester; includes questions from the audience after main address</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did></c02>
+   <c02><did><unittitle>Broadway and All That Jazz</unittitle><unitid>waer_255</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>Canned Heat Interview by Louis Zellman: played with the turtles and spirit</unittitle><unitid>waer_101</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did></c02>
+   <c02><did><unittitle>Carlene Carter Live at Jab <unitdate type="inclusive" normal="1979-10-12">10/12/79</unitdate> Tape 2</unittitle><unitid>waer_184</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Carlene Carter Live at Jab <unitdate type="inclusive" normal="1979-10-12">10/12/79</unitdate> Tape 7 </unittitle><unitid>waer_183</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Carolyne Mas Live on WAER-Syracuse <unitdate type="inclusive" normal="1979-09-07">9/7/79</unitdate> Part 1</unittitle><unitid>waer_185</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Carolyne Mas Live on WAER-Syracuse <unitdate type="inclusive" normal="1979-09-07">9/7/79</unitdate> Part 2</unittitle><unitid>waer_186</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Cazenovia folk concert, part 1</unittitle><unitid>waer_007</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Cazenovia folk concert, part 2</unittitle><unitid>waer_008</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Cazenovia folk concert, part 3</unittitle><unitid>waer_009</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Chicago 7 Tape </unittitle><unitid>waer_147</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did></c02>
+   <c02><did><unittitle>Chogyam Trungpa, Rinpoche</unittitle><unitid>waer_244</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>Chris Williamson</unittitle><unitid>waer_092</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did><scopecontent><p>1. Frontier; 2. Mr. Frank Jones; 3. Lovesick Blues; 4. Is It Really Love At All; 5. The Rising of the Sun; 6. Sweet Slow Slider; 7. Lean On Me; 8. Can I Believe My Eyes; 9. Joanna; 10. Flying on Home to You; 11. Indian Sunset</p></scopecontent></c02>
+   <c02><did><unittitle>Citizen Corps politics; Max Lerner guest speaker</unittitle><unitid>waer_131</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did></c02>
+   <c02><did><unittitle>City Boy Station I.D.</unittitle><unitid>waer_253</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>Cleve Backster</unittitle><unitid>waer_246</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>Come Together</unittitle><unitid>waer_118</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Commander Cody Concert at Jab</unittitle><unitid>waer_144</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did></c02>
+   <c02><did><unittitle>Commander Cody Concert: Part 1</unittitle><unitid>waer_140</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did><scopecontent><p>Mama Tried; Lonely All the Time; Hot Rod Lincoln; First Look I look at the Purse; Lawdy Miss Clawdy; Gonna Hijack a Big Jet Plane; Diggy-Liggy Lie, Diggy Liggy Lo; Going Back to Birmingham; Little Sally Walker</p></scopecontent></c02>
+   <c02><did><unittitle>Commander Cody Concert: Part 2</unittitle><unitid>waer_142</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did><scopecontent><p>C-H-O-M-P Cheer; Riot Goin’ On in Cell Block Nine; Boppin’ the Blues; Be-Bop-A-Lula; Jailhouse Rock; Lost in the Ozone; Blue Suede Shoes.</p></scopecontent></c02>
+   <c02><did><unittitle>Conspiracy Tapes <unitdate type="inclusive" normal="1970-02-15">Feb 15, 1970</unitdate></unittitle><unitid>waer_245</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>Corbally interview<unitdate type="inclusive" normal="1971-02-01"> 2/1/71</unitdate></unittitle><unitid>waer_083</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>Country Granola, WAER Simulcast with Synapse Video </unittitle><unitid>waer_122</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did><scopecontent><p>Mind Your Own Business; Dead-Eye Bill; Football Medley; Satin Doll/ Player’s Intro; Slide Mountain Row; I Gave Her the Ring; B Minor Song; Morning Light; Nothing’s Forever; New York City Water Supply; Blue Feeling; Dixie Breakdown; The Lucy Song; Lady Me Donalds; People May Laugh.</p></scopecontent></c02>
+   <c02><did><unittitle>Country Granola: Part 1</unittitle><unitid>waer_123</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Country Granola: Part 2 </unittitle><unitid>waer_125</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Cris Williamson - remote c’cant Jab</unittitle><unitid>waer_105</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did></c02>
+   <c02><did><unittitle>Danny Douma Live at Jab </unittitle><unitid>waer_217</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>David Amram</unittitle><unitid>waer_219</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>David Bromberg and the Feb. Torpedoes </unittitle><unitid>waer_156</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did></c02>
+   <c02><did><unittitle>David Bromberg at Jabberwocky </unittitle><unitid>waer_093</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did><scopecontent><p>1. Six Days on the Road; 2. Good Mornin’ Little School Girl; 3. It Takes a Lot to Laugh, it Takes a Train to Cry; 4. Dig a Hole; 5. T for Texas; 6. The Jugband Song; 7. Wish Fiddle Tunes; 8. Blues; 9. Mr. Bojangles; 10. The Holdup; 11. Tryin to Get Home;</p></scopecontent></c02>
+   <c02><did><unittitle>David Bromberg on the Quad <unitdate type="inclusive" normal="1976-09-10">Sept. 10, 1976</unitdate></unittitle><unitid>waer_060</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">5</container></did><scopecontent><p>1. Driving Wheel w/ Tom Rush 1A. UTZ I.D. 2. You Treat Your Daddy So Damn Mean 3. Will Not Be Yo’ Foo 4. Danger Man 5. </p></scopecontent></c02>
+   <c02><did><unittitle>David Johansen, Jab tape 1</unittitle><unitid>waer_218</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Denny Hall</unittitle><unitid>waer_240</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Dick Sheridan Master</unittitle><unitid>waer_167</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>Donald Byrd live at the Roxy Theater - Los Angeles.</unittitle><unitid>waer_161</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>Down City Ramblers</unittitle><unitid>waer_226</unitid><abstract>tape reads "for radio spot; Thursday, January 31st at Jabberwocky The Down City Ramblers with Martha Trachtenberg (opening act)"</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did><scopecontent><p>1. Uncle Penn; 2. The Arab Bounce</p></scopecontent></c02>
+   <c02><did><unittitle>Dr. Bluem: L8 Class</unittitle><unitid>waer_048</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Dr. Short lecture on fats and oils, and poultry</unittitle><unitid>waer_151</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did></c02>
+   <c02><did><unittitle>Drugs Show #3 Public Forum</unittitle><unitid>waer_193</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Duke Jupiter @ Jab <unitdate type="inclusive" normal="1979-03-24">3/24/79</unitdate> Set 1</unittitle><unitid>waer_207</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Duke Jupiter @ Jab <unitdate type="inclusive" normal="1979-03-24">3/24/79</unitdate> Set 2 Part 1</unittitle><unitid>waer_206</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Duke Jupiter @ Jab <unitdate type="inclusive" normal="1979-03-24">3/24/79</unitdate> Set 2 Part 2</unittitle><unitid>waer_208</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Dylan </unittitle><unitid>waer_205</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Eastern Lights</unittitle><unitid>waer_189</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Ed Levine’s The Jock</unittitle><unitid>waer_222</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Edward Asner for the Great American Smokeout </unittitle><unitid>waer_259</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>Ellen McIlwaine </unittitle><unitid>waer_231</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Eric Andersen</unittitle><unitid>waer_141</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did><scopecontent><p>Hello Sun; Close the Door Lightly; Why Don’t You Love Me (Like You Used to Do); Lie With Me; Blue River (static); Something I Heard Love Called; Time Run Like a Freight Train; Thirsty Boots; Mama Tried; Florentine; </p></scopecontent></c02>
+   <c02><did><unittitle>Eric Kaz Heads Out</unittitle><unitid>waer_168</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>Eskimo Realities</unittitle><unitid>waer_234</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Festival Fan Fare <unitdate type="inclusive" normal="1965">1965</unitdate></unittitle><unitid>waer_045</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Festival of Arts: Stravinsky Concert Part 2</unittitle><unitid>waer_013</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Festival of the Arts: Catulli Carmina Part 1, Special Events Department WAER Radio </unittitle><unitid>waer_014</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Festival of the Arts: Catulli Carmina Part 2, Special Events Department WAER Radio </unittitle><unitid>waer_015</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Festival of the Arts: Catulli Carmina Part 3, Special Events Department WAER Radio</unittitle><unitid>waer_016</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Festival of the Arts: Catulli Carmina Part 4, Special Events Department WAER Radio</unittitle><unitid>waer_017</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Festival of the Arts: David Suskind Lecture recorded from LIVE broadcast </unittitle><unitid>waer_018</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Festival of the Arts: Shakespearian  anthology "The food of love" part 1 </unittitle><unitid>waer_010</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Festival of the Arts: Shakespearian anthology "The food of love" part 2</unittitle><unitid>waer_011</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Festival of the Arts: Stravinsky concert Part 1</unittitle><unitid>waer_012</unitid><abstract>last words on this tape: "...the man who is behind the Festival of Arts this year at Syracuse..."; also, there is no fanfare at the beginning</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Focus Community Action</unittitle><unitid>waer_050</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Folk Concert Series sponsored by Syracuse Peace Council and Salt City Song Miners</unittitle><unitid>waer_232</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Footprints ‘65 (Lecture of the Week)</unittitle><unitid>waer_037</unitid><unitdate type="inclusive" normal="1965-02-24">Feb 24, 1965</unitdate><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Footprints ‘65 Tape #1; Lecture on Academic Freedom in Amer. Univs.</unittitle><unitid>waer_038</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Freddie Hubbard</unittitle><unitid>waer_154</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did><scopecontent><p>1. Intrepid Fox; 2. Uncle Albert, Admiral Halsey; 3. Here’s That Rainy Day </p></scopecontent></c02>
+   <c02><did><unittitle>French 201: Tape 12, Side 2</unittitle><unitid>waer_223</unitid><abstract>Intermediate Conversational French/ Revised</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>French 201: Tape 3, Side 2</unittitle><unitid>waer_224</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Gap Mangione Live at Jab, <unitdate type="inclusive" normal="1977">Spring ‘77</unitdate></unittitle><unitid>waer_090</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>George Ade - First Take</unittitle><unitid>waer_251</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>Gil Scott Heron</unittitle><unitid>waer_062</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>Gilberto Gil @ Jab <unitdate type="inclusive" normal="1949-04-30">4/30/79</unitdate> Tape 1</unittitle><unitid>waer_187</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Gilberto Gil @ Jab <unitdate type="inclusive" normal="1979-04-30">4/30/79</unitdate> Tape 2</unittitle><unitid>waer_188</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Good Rats Live at the Brookside </unittitle><unitid>waer_120</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Gov. Ross Barnett (Footprints Address) Part 1</unittitle><unitid>waer_035</unitid><unitdate type="inclusive" normal="1964-03-10">March 10, 1964</unitdate><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Gov. Ross Barnett (Footprints Address) Part 2</unittitle><unitid>waer_036</unitid><unitdate type="inclusive" normal="1964-03-10">March 10, 1964</unitdate><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Great Society - Norton Long</unittitle><unitid>waer_138</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did></c02>
+   <c02><did><unittitle>Harriman Lecture</unittitle><unitid>waer_039</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Head <unitdate type="inclusive" normal="1975-03-02">3-2-75</unitdate> Tin Can Tin</unittitle><unitid>waer_169</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>Heading South at  Market House Music Hall, Oswego</unittitle><unitid>waer_114</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did><scopecontent><p>1. Over The Hill to the Poorhouse (Part of...); 2. You’re Sorry; 3. Long Black Veil; 4. Pig in the Pen; 5. Goodnight, Irene; 6. Follow the Leader; 7. House of the Rising Sun; 8. Send Me Papa’s Fiddle; 9. Dusty Miller; 1. Goin’ Honky-Tonkin’; 2. Dueling Banjos; 3. I Guess It Doesn’t Matter Anymore; 4. Grandfather’s Clock; 5. Panama Red; 6. Mr. Bojangles; 7. Roll In My Sweet Baby’s Arms; 8. Corinna</p></scopecontent></c02>
+   <c02><did><unittitle>Heller Lec. </unittitle><unitid>waer_041</unitid><unitdate type="inclusive" normal="1959-05-01">5/1/59</unitdate><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Hendrick’s Chapel Christmas Concert</unittitle><unitid>waer_042</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Hendrick’s Chapel Special: John F. Kennedy Memorial Service, Special Events Department</unittitle><unitid>waer_028</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Herbie Hancock at Kimmel Hall <unitdate type="inclusive" normal="1974-04-26">4/26/74</unitdate></unittitle><unitid>waer_067</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did><scopecontent><p>1. Watermelon man 2. Vein melter 3. Sly 4. Funk-a-Lee 5. Hornets 6. Chameleon</p></scopecontent></c02>
+   <c02><did><unittitle>Howard Guckert</unittitle><unitid>waer_209</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Humphrey Osmond - Psychedelic Memoirs</unittitle><unitid>waer_192</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Injuns, or, We Can’t Hold Out Much Longer Sir </unittitle><unitid>waer_215</unitid><abstract>ZBS Media, Inc. R.D. 1; Fort Edward, New York 12828</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Intercontinental Classroom; Story of ISO, produced specifically for ABC</unittitle><unitid>waer_043</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Jab Concert - James/Chris/Vinty</unittitle><unitid>waer_091</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>Jab concert; James and G.B.; Chris; Vinty</unittitle><unitid>waer_072</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did></c02>
+   <c02><did><unittitle>Jack Bruce</unittitle><unitid>waer_194</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Jam Factory  on the quad</unittitle><unitid>waer_096</unitid><unitdate type="inclusive" normal="1972-05-21">May 21, 1972</unitdate><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did></c02>
+   <c02><did><unittitle>Jean Houston</unittitle><unitid>waer_204</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Jesse Colins Young <unitdate type="inclusive" normal="1973-11-19">11/19/73</unitdate> Master</unittitle><unitid>waer_157</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>John Brown’s Body</unittitle><unitid>waer_052</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>John Fahey live at Jabberwocky <unitdate type="inclusive" normal="1972-07-15">July 15, 1972</unitdate></unittitle><unitid>waer_075</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did><scopecontent><p>1. piece #12. piece #23. piece #34. piece #4</p></scopecontent></c02>
+   <c02><did><unittitle>John Gardner Interview</unittitle><unitid>waer_191</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>John Houseman - Theatre and the Arts</unittitle><unitid>waer_198</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Johnson, Opening</unittitle><unitid>waer_241</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Joseph Spense <unitdate type="inclusive" normal="1972-11-09">11/9/72</unitdate> Jabberwocky</unittitle><unitid>waer_082</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>Keim J.E. Levine Interview</unittitle><unitid>waer_063</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>Keim on Film, Film Forum, Syracuse University - Rod Steiger Interview </unittitle><unitid>waer_000</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Ken Kesey #2 Tiller Tales</unittitle><unitid>waer_197</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Larry Coryell and the 11th House Crouse College <unitdate type="inclusive" normal="1974-03-13">3/13/74</unitdate> </unittitle><unitid>waer_059</unitid><abstract>late show</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">5</container></did><scopecontent><p>1. 2. The Funky Waltz 3. Lolitta 4. Untitled unaccompanied (keyboard solo) 5. Theme for a Dream 6. The Lover Girl 7. Joy Ride 8. Right-on-you-all</p></scopecontent></c02>
+   <c02><did><unittitle>Last "Night Call"</unittitle><unitid>waer_073</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did></c02>
+   <c02><did><unittitle>Laurent Lecture</unittitle><unitid>waer_040</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Lecture of the Week (From Morse) </unittitle><unitid>waer_019</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Lecture of the Week [unreadable]</unittitle><unitid>waer_020</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Lecture of the Week: "White/ Dennison"</unittitle><unitid>waer_022</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Lecture of the Week: Marvin Kalb</unittitle><unitid>waer_021</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Lecture: Teacher as ArtistSpeaker: Prof. Robert Inglhart</unittitle><unitid>waer_135</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did></c02>
+   <c02><did><unittitle>Legend of the West</unittitle><unitid>waer_126</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Live at the Palemino - KLAC Radio</unittitle><unitid>waer_129</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did><scopecontent><p>1. Honky Cat; 2. Never Finding Love; 3. Sally Goodin’; 4. Good Woman’s Love; 5. Uncle Pen; 6. Julius Finkbines Rag; 7. Down the Road; 8. Darle Hollow; 9. Teach Your Children; 10. Tell Me Why You’ve Been Gone So Long; 11. Black Mountain Rag; 12. Keep On Pushin’ - Swing Low; 13. You Can Pick Your Friends; 14. Bile et Cabbage Down; 15. Fallen Eagle; 16. Orange Blossom Special; 17. Listen to the Mockin’ Bird</p></scopecontent></c02>
+   <c02><did><unittitle>Livin’ End <unitdate type="inclusive" normal="1975-02-27">2-27-75</unitdate></unittitle><unitid>waer_171</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>Lkhz at Zero live at the Cellar Door Washington DC <unitdate type="inclusive" normal="1976-09-02">Sept 2/76</unitdate></unittitle><unitid>waer_163</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>Loggins and Messina</unittitle><unitid>waer_104</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did><scopecontent><p>Trilogy; Holyday Hotel; Vahevella; Your Mama Don’t Dance; Nobody but You </p></scopecontent></c02>
+   <c02><did><unittitle>Loose; Livin’ End; Sam and the Twisters Tape - 1</unittitle><unitid>waer_160</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>Loose; Livin’ Ennd; Sam and the Twisters</unittitle><unitid>waer_165</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>Mark Almond at Jabberwocky: Part 2</unittitle><unitid>waer_086</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did><scopecontent><p>Once I Loved A Girl; Sunset; Sausalito Bay Suite; Ballad of A Man </p></scopecontent></c02>
+   <c02><did><unittitle>Mark Almond at Jabberwocky: Part 3</unittitle><unitid>waer_087</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did><scopecontent><p>Last Set - Saturday Night; The City; All Go Our Own Way</p></scopecontent></c02>
+   <c02><did><unittitle>Mark-Almond at Jabberwocky <unitdate type="inclusive" normal="1972-02-24">2/24/72</unitdate> First Show</unittitle><unitid>waer_084</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did><scopecontent><p>1. Once I loved a girl2. Improvisation for flute guitars and cello</p></scopecontent></c02>
+   <c02><did><unittitle>Mark-Almond at Jabberwocky: Part 1</unittitle><unitid>waer_085</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>Max <unitdate type="inclusive" normal="1971-11-19">11/19/71</unitdate> Jabberwocky</unittitle><unitid>waer_058</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>McKendrie Spring #3</unittitle><unitid>waer_233</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Middle East Crisis, WAER; NCC II 215 University Place; Syracuse, NY 13210</unittitle><unitid>waer_227</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>More Rose Live in Studio 3, NCII <unitdate type="inclusive" normal="1975-02-09">Feb 9, 1975</unitdate> Reel One</unittitle><unitid>waer_069</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did></c02>
+   <c02><did><unittitle>More Rose Live in Studio 3, NCII <unitdate type="inclusive" normal="1975-02-09">Feb 9, 1975</unitdate> Reel Two</unittitle><unitid>waer_068</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did></c02>
+   <c02><did><unittitle>Neil Young at the Boston Music Hall</unittitle><unitid>waer_137</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did><scopecontent><p>On the Way Home; Tell Me Why; Old man; Journey Through the Past; Cowgirl in the Sand; Love in Mind; A Man Needs a Moud/ Heart of Gold; Don’t Let it Bring You Down; Sugar Mountain; Vancouver Rap; There’s A World; The Danger Done; Ohio; See the Sky About to Rain; Down by the River; Dance, Dance, Dance.</p></scopecontent></c02>
+   <c02><did><unittitle>New Riders of the Purple Sage Women’s Gym</unittitle><unitid>waer_148</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did><scopecontent><p>1. Working Man Blues; 2. Henry; 3. Unknown; 4. Down In The Boondocks; 5. Garden of Eden; 6. Hello Mary Lou; 7. My Lady and Me; 8. Somebody Robbed the Glendale Train (and made off with the gold); 9. All I Ever Wanted Was Your Loving; 10. Unknown; 11. Take a Load Off</p></scopecontent></c02>
+   <c02><did><unittitle>Next of Kin</unittitle><unitid>waer_057</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>Nils Lofgren</unittitle><unitid>waer_162</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>No Place To Hide</unittitle><unitid>waer_044</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Office Workers</unittitle><unitid>waer_190</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Open End interview program with music from promotion of "Monkey Grip" Album</unittitle><unitid>waer_249</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>Orleans - Salt City</unittitle><unitid>waer_143</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did><scopecontent><p>1. Time Passes On; 2. You’ve Given Me Something; 3. Cold Spell; 4. Live One Heart; 5. Please Be There; 6. Firefly Lover; 7. H; 8. Let There Be Music; 9. Sweet Johanna; 10. What You Gain to Do About Another; 11. If the Rabbit had a Bun; 12. Tongue Tied; 13. You Really Got Me/ Duke of Earl/ She Loves You; 14. I Found the Love</p></scopecontent></c02>
+   <c02><did><unittitle>Orleans</unittitle><unitid>waer_119</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did><scopecontent><p>1. It All Comes Back Again; 2. When It’s Over - Let’s Have a Good Time; 3. Please Be There; 4. Ready or Not; 5. If; 6. Two Faced World; 7. Tongue Tied; 8. Stoned; 9. I’m A Bum; 10. Called My Job; 11. Learnin’ To Be What I Want To; 12. Don’t Take Advantage; 13. Breakdown</p></scopecontent></c02>
+   <c02><did><unittitle>Orpheus</unittitle><unitid>waer_155</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did><scopecontent><p>Big Green Pearl; Monkey Demon; It Gets Worse Every Time; I Wanna Be Your Lover; Nummerity; By The Way.</p></scopecontent></c02>
+   <c02><did><unittitle>Paraquat, Lyrics Enclosed; Copyright 1978 by John Anderson </unittitle><unitid>waer_229</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Parish Blue: Part 1</unittitle><unitid>waer_030</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Parish Blue: Part 2</unittitle><unitid>waer_031</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Paul Goodman Guest Speaker; Footprints 65</unittitle><unitid>waer_132</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did></c02>
+   <c02><did><unittitle>Paul Sibiel Salt City Playhouse</unittitle><unitid>waer_079</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>Pete Townshend interview</unittitle><unitid>waer_139</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did></c02>
+   <c02><did><unittitle>Peter Pazer Trial Lawyer </unittitle><unitid>waer_230</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Pickled Herring </unittitle><unitid>waer_110</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did></c02>
+   <c02><did><unittitle>Pink Floyd concert Given for Net-TV</unittitle><unitid>waer_128</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did><scopecontent><p>no intro, fade up at beginning; Atom Heart Mother; Don’t Wake Me; Grantchester Meadows; Under A Canopy of Blue; Careful With That Axe, Eugene</p></scopecontent></c02>
+   <c02><did><unittitle>Poetry Anthology</unittitle><unitid>waer_201</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Proctor and Bergman</unittitle><unitid>waer_134</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did></c02>
+   <c02><did><unittitle>PSA’s - <unitdate type="inclusive" normal="1976-05">May to September 1976</unitdate></unittitle><unitid>waer_213</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did><scopecontent><p>See paper inside </p></scopecontent></c02>
+   <c02><did><unittitle>PSA’s <unitdate type="inclusive" normal="1974-11">November to January 1974</unitdate></unittitle><unitid>waer_214</unitid><abstract>WAER Spots, Novermber - December - January; Late/ Autumn Semester 1974</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Public Forum University College Education</unittitle><unitid>waer_238</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Rachel Faro and John Simon 2nd Set Jabberwocky <unitdate type="inclusive" normal="1973-08-31">8/31/73</unitdate></unittitle><unitid>waer_080</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>Ralph Ortiz - Piano Destruction</unittitle><unitid>waer_202</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Ray Frenchman </unittitle><unitid>waer_235</unitid><abstract>speech by William Kunstler at Univer. of Cinn. regarding the Chicago Conspiracy trials</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Ray Frenchman on the Quad</unittitle><unitid>waer_077</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did></c02>
+   <c02><did><unittitle>Richard Nixon vs. United States and United States vs. Richard Nixon Part 1</unittitle><unitid>waer_173</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>Richard Nixon vs. United States and United States vs. Richard Nixon Part 2</unittitle><unitid>waer_174</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>Richard Nixon vs. United States and United States vs. Richard Nixon Part 3</unittitle><unitid>waer_175</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>Rock and Roll</unittitle><unitid>waer_112</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did><scopecontent><p>Rock and Roll; Me and My Friends; In My Life; Come and Go; Hearted Small Business </p></scopecontent></c02>
+   <c02><did><unittitle>Rod Steiger interview with Keim</unittitle><unitid>waer_094</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did></c02>
+   <c02><did><unittitle>Rosalie Sorrels</unittitle><unitid>waer_216</unitid><abstract>ZBS Media, Inc. R.D. 1; Fort Edward, New York 12828</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Ruth Stout</unittitle><unitid>waer_220</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>S.U. Jazz Ensemble at Jab <unitdate type="inclusive" normal="1975-12-04">12/4/75</unitdate></unittitle><unitid>waer_252</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>S.U. Wind Ensemble: Part 1</unittitle><unitid>waer_032</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>S.U. Wind Ensemble: Part 2, TAD James</unittitle><unitid>waer_029</unitid><unitdate type="inclusive" normal="1965-02-07"> 2/7/65</unitdate><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Senator Goodell Speech at Hendrick’s Chapel on <unitdate type="inclusive" normal="1969-10-14">October 14, 1969</unitdate></unittitle><unitid>waer_095</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did></c02>
+   <c02><did><unittitle>Sergio Mendes and Brasil; The Journeymen</unittitle><unitid>waer_117</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did><scopecontent><p>Mais Que Nada; One Note Samba Spanish Flea; The Joker; Going Out of my Head; Tim Dom Dom; Daytripper; Aqua De Beber; Slow Hot Wind; O Pato; Berimbau; River come Down; Soft Blow the Summer Winds; Black Girl; Dunvya; Fennario; Ride, Ride, Ride; 500 Miles; Rock Me Lord; Make Me a Pallet; Chase the Rising Sun; Cumberland Moutain Deer Chase; Gilgara Mountain</p></scopecontent></c02>
+   <c02><did><unittitle>Simms Brothers Band </unittitle><unitid>waer_212</unitid><abstract>Simms Brothers Band recorded by WAER - Syracuse </abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>So Jazz Ensemble</unittitle><unitid>waer_070</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did></c02>
+   <c02><did><unittitle>Special Address: John Howard Griffin: Part 1, Special Events Department WAER Radio</unittitle><unitid>waer_026</unitid><abstract>Racial tension problems from racism</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Special Address: John Howard Griffin: Part 2, Hendrick’s Chapel </unittitle><unitid>waer_027</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Special of the Week: Masque of Angels</unittitle><unitid>waer_049</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Sri Shyam Bhatnagar Part 1</unittitle><unitid>waer_178</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>Sri Shyam Bhatnagar Part 2</unittitle><unitid>waer_179</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>Steam Plant show 2 Public Forum</unittitle><unitid>waer_210</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Stewart Brand #1 </unittitle><unitid>waer_225</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Stoneground: Set 1 and Set 2a </unittitle><unitid>waer_146</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did></c02>
+   <c02><did><unittitle>Stoneground: Set 2 </unittitle><unitid>waer_145</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did></c02>
+   <c02><did><unittitle>Sunner Sessions Concert</unittitle><unitid>waer_124</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Taj Mahal in Jabberwocky <unitdate type="inclusive" normal="1972-11-09">Nov. 9, 1972</unitdate></unittitle><unitid>waer_078</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did></c02>
+   <c02><did><unittitle>Take what you need, it’s yours; People fighting urban renewal</unittitle><unitid>waer_180</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>Tarika Blue #1 music, recorded at studio 3 WAER prefab.  </unittitle><unitid>waer_055</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">5</container></did><scopecontent><p>Povo; Black on Black; Ostinato for Angela; El Hajj; (Untitled); Little Sunflower</p></scopecontent></c02>
+   <c02><did><unittitle>Tarika Blue #2</unittitle><unitid>waer_056</unitid><abstract>duplicate of  waer_w055?</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>The Amazing Stan Lee</unittitle><unitid>waer_196</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>The Feast of Lanterns</unittitle><unitid>waer_248</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>The Financial Plight of the United Nations</unittitle><unitid>waer_150</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did><scopecontent><p>The DWI and Daniel Webster; Bookmark with Linda Malcom; Sillyness</p></scopecontent></c02>
+   <c02><did><unittitle>The Hot Dogs</unittitle><unitid>waer_115</unitid><unitdate type="inclusive" normal="1975-11-11">Nov. 11, 1975</unitdate><abstract>live broadcast Over WMC - FM from Ardent Studios</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did><scopecontent><p>Say What you Mean; I Can’t Take Anymore; Thanks; Look at the Sun; When I Come Home Again; Time Is All; Another Smile; I Believe When I Fall for Love It Will Be Forever; Waiting for the Bus; Way to Get to You; Lowdown</p></scopecontent></c02>
+   <c02><did><unittitle>The Investigation </unittitle><unitid>waer_033</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>The Investigation by Peter Weiss, adapted for broadcast by Ulu Grosbard</unittitle><unitid>waer_034</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>The New Riders of the Purple Sage at Stony Brook</unittitle><unitid>waer_149</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">12</container></did><scopecontent><p>Workingman Blues; Watcha Gonna Do; Truck Drivin’ Man; Here Come Trouble; Portland Town; My Sweet Lovin’ One; Dirty Business; Henry; On the Road With You; Louisiana Lady; Honkey-Tonk Women</p></scopecontent></c02>
+   <c02><did><unittitle>The New Riders of the Purple Sage: Tape 2</unittitle><unitid>waer_136</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">11</container></did><scopecontent><p>Brown Eyed Handsome Man; Truck Drivin’ Man; I’m Goin’ On My Way; All I Ever Wanted; Henry; Lool; Women Like a Dollar Bill; The Race is On; Mama Tried; Me and My Uncle; </p></scopecontent></c02>
+   <c02><did><unittitle>The New Riders of the Purple Sage</unittitle><unitid>waer_121</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">10</container></did><scopecontent><p>1. Six Days on the Road; 2. I Don’t Know You; 3. Down in the Boondocks; 4. Dirty Business; 5. Sing Me a Rainbow; 6. Garden of Eden; 7. Hello Mary Lou; 8. Henry </p></scopecontent></c02>
+   <c02><did><unittitle>The Rest of the News</unittitle><unitid>waer_239</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>The River</unittitle><unitid>waer_257</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>The Shirts Live at Jab <unitdate type="inclusive" normal="1979-09-27">9/27/79</unitdate> Reel 1</unittitle><unitid>waer_242</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>The Shirts Live at Jab <unitdate type="inclusive" normal="1979-09-27">9/27/79</unitdate> Reel 2</unittitle><unitid>waer_243</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>The Strangers</unittitle><unitid>waer_254</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>Theatre of the Air </unittitle><unitid>waer_003</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Theatre of the Air: Bathysphere </unittitle><unitid>waer_005</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Theatre of the Air: Crouse concert </unittitle><unitid>waer_001</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Theatre of the Air: Ghost of Benjamin Sweet</unittitle><unitid>waer_004</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Theatre of the Air: My Client Curley </unittitle><unitid>waer_002</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Theatre of the Air: The Bald Soprano </unittitle><unitid>waer_006</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Theodore H. White Writer Interviewed by VOA</unittitle><unitid>waer_047</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Thirsty Ear</unittitle><unitid>waer_111</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did></c02>
+   <c02><did><unittitle>This has been John Brown's Body</unittitle><unitid>waer_054</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>Todd Hobin Band - Rock Me To Your Music </unittitle><unitid>waer_228</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">17</container></did></c02>
+   <c02><did><unittitle>Tolley interview, newsmakers special</unittitle><unitid>waer_088</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>Tom Rush and David Bromberg on the S.U. Quad</unittitle><unitid>waer_061</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>Tom Rush Concert</unittitle><unitid>waer_099</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did><scopecontent><p>These Days; Can’t Judge a Book By It’s Cover; Colors of the Sun; Cool Clean Water; Sweet Rotunda; Sweet Baby James; Mint Tulip; Drop Down Mama; No Regrets/ Rockport Sunday; Child’s Song [poor quality]</p></scopecontent></c02>
+   <c02><did><unittitle>Tom Rush interview + concert</unittitle><unitid>waer_106</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did></c02>
+   <c02><did><unittitle>Uncle Vinty #1</unittitle><unitid>waer_065</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">5</container></did><scopecontent><p>I Feel So HighI’m In A Frenzy#9What Are You Going To Do About TomorrowLeigh Came the Long Way AroundNo Piano Like this Piano BeforeStory Telling Time (the Owl and the Pussy Cat)Ted and ValerieSo high, So high, So high</p></scopecontent></c02>
+   <c02><did><unittitle>Uncle Vinty #2</unittitle><unitid>waer_066</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did><scopecontent><p>1. Gonna Get it on Tonight2. Dixie Melody3. Just a Little Tune About the Moon4. Happy Home (Like the one you have in your eyes)5. Hey Brother Sun (you know I want to be cool)6. Story Telling Time (The Viper)7. The Heckler Song8. The Moon is Never Gonna Get Us Down9. What Are the Chances (when you’re going through changes)10. Mother Nature is Stalling me/Sing This All Together11. What Are You Going To Do About Tomorrow</p></scopecontent></c02>
+   <c02><did><unittitle>Uncle Vinty: Chris Williamson</unittitle><unitid>waer_071</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">6</container></did><scopecontent><p>"1. We’re on to no.92. What are you gonna do about tomorrow3. story time: the own and the pussy4. Animal noises5. Ted and Valerie (sweet mother earth)6. mother nature’s callin me/sing this song all together7. so high so high so high Chris Williamson1. Frontier2. Mr. Frank Jones3. Sometimes it takes a rainy day (waterfall)4. Shine on straight arrow"</p></scopecontent></c02>
+   <c02><did><unittitle>Underground Music - I’d Rather Die Happy </unittitle><unitid>waer_098</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did></c02>
+   <c02><did><unittitle>Unknown </unittitle><unitid>waer_100</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did></c02>
+   <c02><did><unittitle>Unknown </unittitle><unitid>waer_103</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">8</container></did></c02>
+   <c02><did><unittitle>Unknown</unittitle><unitid>waer_211</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Utah Phillips - How To Hop A Freight</unittitle><unitid>waer_203</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">16</container></did></c02>
+   <c02><did><unittitle>Voices of the Gods; Julian Jaynes</unittitle><unitid>waer_181</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>WAER production director</unittitle><unitid>waer_089</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>Walking Softly on a Dead Horse</unittitle><unitid>waer_200</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Weather Report: Part 1</unittitle><unitid>waer_109</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did></c02>
+   <c02><did><unittitle>Weather Report: Part 2</unittitle><unitid>waer_108</unitid><abstract>beginning of tape is another band played between set; tape ends in the middle of last tune</abstract><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did></c02>
+   <c02><did><unittitle>Winning The War: Politics, Myth, and the Reality in the US and S. Vietnam.</unittitle><unitid>waer_199</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">15</container></did></c02>
+   <c02><did><unittitle>Winter Consort</unittitle><unitid>waer_116</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did></c02>
+   <c02><did><unittitle>WW Today</unittitle><unitid>waer_051</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Youngbloods Interview </unittitle><unitid>waer_107</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">9</container></did></c02>
+   <c02><did><unittitle>[unknown]</unittitle><unitid>waer_159</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>[unknown]</unittitle><unitid>waer_166</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">13</container></did></c02>
+   <c02><did><unittitle>[unknown]</unittitle><unitid>waer_170</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>[unknown]</unittitle><unitid>waer_182</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">14</container></did></c02>
+   <c02><did><unittitle>[unknown]</unittitle><unitid>waer_250</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>[unknown]</unittitle><unitid>waer_256</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+   <c02><did><unittitle>[unknown]</unittitle><unitid>waer_258</unitid><physdesc><extent>1 reel tape</extent></physdesc><container type="Oversize">18</container></did></c02>
+</c01>
+
+
+
+
+
+
+
+
+    </dsc>
+  </archdesc>
+</ead>

@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="nat_car_int">nat_car_int</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">National Cartoonists Society Interviews</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-02-15" encodinganalog="Date">15 Feb 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2011-02-15">15 Feb 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>18 Jun 2012 - LCSH updates (MRC)</item>
+            <item>2 Feb 2016 - Inventory Update (PJM)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">National Cartoonists Society.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">National Cartoonists Society Interviews</unittitle>
+         <unitdate encodinganalog="245$f" normal="1959/1962" type="inclusive" label="Inclusive Dates: ">1959-1962</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>4 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Interviews with notable editorial and humor cartoonists, including Herblock, Rube Goldberg, Al Capp, Milton Caniff, Mort Walker and others.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3194826</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The National Cartoonists Society grew out of the so-called "chalk talks" that a number of cartoonists did for the 
+	  troops during World War II.  The Society was officially formed in March of 1946 with Rube Goldberg as its first president.  
+	  Within two weeks, the society had 32 members.   As of 2011, the Society has 16 regional chapters and continues  to foster 
+	  cartoonists' involvement in worthy causes.  See the NCS website at 
+	  <extref href="http://www.reuben.org">http://www.reuben.org</extref> for more information.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">National Cartoonists Society Interviews</emph> contains audio recordings of interviews with 
+		 more than twenty notable cartoonists, both individually and in panel formats.  The interviewers are subdivided by 
+		 interviewee; 25 tapes (plus 50 duplicates) contain interviews conducted by cartoonist <emph render="bold">Bill Crawford</emph> and 10 tapes 
+		 (plus 20 duplicates) contain interviews conducted by cartoonist <emph render="bold">Vernon Greene</emph>.</p>
+		 <p>Of particular interest are the panels on Pulitzer Prize winners and on Russian cartoonists.  In addition there 
+		 are individual interviews with Mort Walker (Beetle Bailey), Milt Caniff (Terry and the Pirates, Steve Canyon), 
+		 Otto Soglow (The Little King), Jimmy Hatlo (They'll Do It Every Time), sports cartoonist Willard Mullin, 
+		 and Pulitzer Prize winners Bill Mauldin, Herbert Block, Rube Goldberg, and many others.</p>
+      </scopecontent>
+      
+      <altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>Some of the collection has been digitized. Please contact the repository for more
+            information.</p>
+      </altformavail><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Tapes have been assigned identification numbers and are stored in numeric order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has the papers of more than 150 cartoonists.  Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Art -- Cartoonists</subject>
+		 <persname encodinganalog="600" source="lcnaf">Campbell, E. Simms (Elmer Simms), 1906-1971.</persname>
+         <persname encodinganalog="600" source="lcnaf">Patterson, Russell, 1893-1977.</persname>
+         <persname encodinganalog="600" source="lcnaf">Caniff, Milton Arthur, 1907-1988.</persname>
+         <persname encodinganalog="600" source="lcnaf">Capp, Al, 1909-1979.</persname>
+         <persname encodinganalog="600" source="lcnaf">Goldberg, Rube, 1883-1970.</persname>
+         <persname encodinganalog="600" source="lcnaf">Fitzpatrick, Daniel Robert, 1891-1969.</persname>
+         <persname encodinganalog="600" source="lcnaf">Illingworth, Leslie Gilbert, 1902-1979.</persname>
+         <persname encodinganalog="600" source="lcnaf">Hatlo, Jimmy, 1898-1963.</persname>
+         <persname encodinganalog="600" source="lcnaf">Hirschfeld, Al.</persname>
+         <persname encodinganalog="600" source="lcnaf">Block, Herbert, 1909-2001.</persname>
+         <persname encodinganalog="600" source="lcnaf">Holman, Bill, 1903-1987.</persname>
+         <persname encodinganalog="600" source="lcnaf">Lewis, Ross A. (Ross Aubrey), 1902-1977.</persname>
+         <persname encodinganalog="600" source="lcnaf">Little, Tom, b. 1898.</persname>
+         <persname encodinganalog="600" source="lcnaf">Low, David, 1891-1963.</persname>
+         <persname encodinganalog="600" source="lcnaf">Mauldin, Bill, 1921-2003.</persname>
+         <persname encodinganalog="600" source="lcnaf">Mullin, Willard, 1902-1978.</persname>
+         <persname encodinganalog="600" source="lcnaf">Searle, Ronald, 1920-2011.</persname>
+			<persname encodinganalog="600" source="lcnaf">Soglow, Otto, 1900-1975.</persname>
+			<persname encodinganalog="600" source="lcnaf">Walker, Mort.</persname>
+			<persname encodinganalog="600" source="lcnaf">D'Alessio, Gregory.</persname>
+			<persname encodinganalog="600" source="lcnaf">Greene, Vernon Van Atta.</persname>
+			<persname encodinganalog="600" source="lcnaf">Swinnerton, Jimmy, 1875-1974.</persname>
+			<persname encodinganalog="600" source="lcnaf">White, David Manning.</persname>
+			<persname encodinganalog="600" source="lcnaf">Gill, Tom.</persname>
+			<persname encodinganalog="600" source="lcnaf">Lichty, George Maurice, 1905-1983.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">National Cartoonists Society.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States..</subject>
+         <subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Comic books, strips, etc. -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Editorial cartoonists -- United States..</subject>
+         <subject encodinganalog="650" source="lcsh">Editorial cartoons -- United States.</subject>
+		 <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Interviews.</genreform>
+			<genreform encodinganalog="655" source="aat">Sound recordings.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+		 <occupation encodinganalog="656" source="lcsh">Editorial cartoonists.</occupation>
+         <!--<function encodinganalog="657">##</function>-->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>National Cartoonists Society, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unspecified.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Recordings, audio</unittitle></did>
+      <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+      <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+            <c02>
+               <did>
+                  <unitid>nci_001</unitid>
+                  <unittitle>E. Simms Campbell interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_002</unitid>
+                  <unittitle>Caniff and Patterson interviewed by Bill Crawford</unittitle>	
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_003</unitid>
+                  <unittitle>E. Simms Campbell interviewed by Bill Crawford</unittitle>	
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_004</unitid>
+                  <unittitle>E. Simms Campbell interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_005</unitid>
+                  <unittitle>Caniff and Patterson interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_006</unitid>
+                  <unittitle>Caniff and Patterson interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_007</unitid>
+                  <unittitle>Al Capp interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_008</unitid>
+                  <unittitle>Al Capp interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_009</unitid>
+                  <unittitle>Capp and Goldberg interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_010</unitid>
+                  <unittitle>Capp and Goldberg interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_011</unitid>
+                  <unittitle>Capp and Goldberg interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_012</unitid>
+                  <unittitle>Al Capp interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_013</unitid>
+                  <unittitle>Fitzpatrick and Dilliard 1962 interviewed by Bill Crawford	</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_014</unitid>
+                  <unittitle>Fitzpatrick and Dilliard 1962 interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_015</unitid>
+                  <unittitle>Fitzpatrick and Dilliard 3-20-? interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_016</unitid>
+                  <unittitle>Fitzpatrick and Dilliard 3-20-? interviewed by Bill Crawford	</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_017</unitid>
+                  <unittitle>Fitzpatrick and Dilliard 1962 interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_018</unitid>
+                  <unittitle>Fitzpatrick and Dilliard 3-20-? interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02><did>
+                  <unitid>nci_019</unitid>
+                  <unittitle>Rube Goldberg interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_020</unitid>
+                  <unittitle>Rube Goldberg interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_021</unitid>
+                  <unittitle>Leslie Illingworth interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_022</unitid>
+                  <unittitle>Leslie Illingworth interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_023</unitid>
+                  <unittitle>Rube Goldberg interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_024</unitid>
+                  <unittitle>Leslie Illingworth interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_025</unitid>
+                  <unittitle>Jimmy Hatlo interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_026</unitid>
+                  <unittitle>Jimmy Hatlo interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_027</unitid>
+                  <unittitle>Hatlo and Campbell interviewed by Bill Crawford</unittitle>	
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_028</unitid>
+                  <unittitle>Hatlo and Campbell interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_029</unitid>
+                  <unittitle>Hatlo and Campbell interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_030</unitid>
+                  <unittitle>Hatlo interviewed by Bill Crawford</unittitle>	
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_031</unitid>
+                  <unittitle>Herbert Block interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_032</unitid>
+                  <unittitle>Herbert Block interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_033</unitid>
+                  <unittitle>Al Heirsheld, n.d. [Al Hirschfeld] interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_034</unitid>
+                  <unittitle>Al Heirsheld, n.d. [Al Hirschfeld] interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_035</unitid>
+                  <unittitle>Herbert Block interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_036</unitid>
+                  <unittitle>Al Hirsheld [Al Hirschfeld] interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_037</unitid>
+                  <unittitle>Bill Holman interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_038</unitid>
+                  <unittitle>Bill Holman interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_039</unitid>
+                  <unittitle>Ross Lewis interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_040</unitid>
+                  <unittitle>Ross Lewis interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_041</unitid>
+                  <unittitle>Ross Lewis interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_042</unitid>
+                  <unittitle>Bill Holman interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_043</unitid>
+                  <unittitle>Tom Little interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_044</unitid>
+                  <unittitle>Tom Little interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_045</unitid>
+                  <unittitle>Low and Mauldin interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_046</unitid>
+                  <unittitle>Low and Mauldin interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_047</unitid>
+                  <unittitle>Tom Little interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_048</unitid>
+                  <unittitle>Low and Mauldin interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_049</unitid>
+                  <unittitle>Bill Mauldin interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_050</unitid>
+                  <unittitle>Bill Mauldin interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_051</unitid>
+                  <unittitle>Willard Mullin interviewed by Bill Crawford</unittitle>	
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_052</unitid>
+                  <unittitle>Willard Mullin interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_053</unitid>
+                  <unittitle>Bill Mauldin interviewed by Bill Crawford</unittitle>	
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_054</unitid>
+                  <unittitle>Willard Mullin interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_055</unitid>
+                  <unittitle>Mullin-Hershfeld interviewed by Bill Crawford</unittitle>	
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_056</unitid>
+                  <unittitle>Mullin-Hershfeld interviewed by Bill Crawford	</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_057</unitid>
+                  <unittitle>Mullin-Hershfeld interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_058</unitid>
+                  <unittitle>Pulitzer Prize Winners (Herbert Block (Herblock), Rube Goldberg, Edmund Duffy, Edmund Valtman, C. D. Batchelor, Bill Mauldin) interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_059</unitid>
+                  <unittitle>Pulitzer Prize Winners  (Herbert Block (Herblock), Rube Goldberg, Edmund Duffy, Edmund Valtman, C. D. Batchelor, Bill Mauldin) interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_060</unitid>
+                  <unittitle>Pulitzer Prize Winners  (Herbert Block (Herblock), Rube Goldberg, Edmund Duffy, Edmund Valtman, C. D. Batchelor, Bill Mauldin) interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_061</unitid>
+                  <unittitle>Pulitzer Prize Winners  (Herbert Block (Herblock), Rube Goldberg, Edmund Duffy, Edmund Valtman, C. D. Batchelor, Bill Mauldin) interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_062</unitid>
+                  <unittitle>Pulitzer Prize Winners  (Herbert Block (Herblock), Rube Goldberg, Edmund Duffy, Edmund Valtman, C. D. Batchelor, Bill Mauldin) interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_063</unitid>
+                  <unittitle>Russians (Vitali Goriaev, Ivan Semenov) interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_064</unitid>
+                  <unittitle>Russians (Vitali Goriaev, Ivan Semenov) interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_065</unitid>
+                  <unittitle>Russians (Vitali Goriaev, Ivan Semenov) interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_066</unitid>
+                  <unittitle>Pulitzer Prize Winners (Herbert Block (Herblock), Rube Goldberg, Edmund Duffy, Edmund Valtman, C. D. Batchelor, Bill Mauldin) interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_067</unitid>
+                  <unittitle>Searle and Illingworth interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_068</unitid>
+                  <unittitle>Searle and Illingworth interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_069</unitid>
+                  <unittitle>Solgon and Searle interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_070</unitid>
+                  <unittitle>Solgon and Searle interviewed by Bill Crawford</unittitle>	
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_071</unitid>
+                  <unittitle>Searle and Illingworth interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_072</unitid>
+                  <unittitle>Solgon and Searle interviewed by Bill Crawford</unittitle>	
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_073</unitid>
+                  <unittitle>Walker and Little interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_074</unitid>
+                  <unittitle>Walker and Little interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_075</unitid>
+                  <unittitle>Walker and Little interviewed by Bill Crawford</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_076</unitid>
+                  <unittitle>Stephen Becker interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_077</unitid>
+                  <unittitle>Stephen Becker interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_078</unitid>
+                  <unittitle>Berry and Goldberg interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_079</unitid>
+                  <unittitle>Berry and Goldberg interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_080</unitid>
+                  <unittitle>Greene and Becker interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_081</unitid>
+                  <unittitle>Berry and Goldberg interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_082</unitid>
+                  <unittitle>Dunn and D'Alessio and Terry interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_083</unitid>
+                  <unittitle>Gill and Kurzman interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_084</unitid>
+                  <unittitle>Dunn and D'Alessio and Terry interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_085</unitid>
+                  <unittitle>Dunn - D'Alessio and Terry interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_086</unitid>
+                  <unittitle>Gill and Kurzman interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_087</unitid><unittitle>Gill and Kurzman interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_088</unitid>
+                  <unittitle>Greene and Caniff interviewed by Vernon Greene</unittitle>	
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_089</unitid>
+                  <unittitle>Greene and Caniff interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_090</unitid>
+                  <unittitle>Hasen, Edson and Johnstone interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_091</unitid>
+                  <unittitle>Hasen, Edson and Johnstone interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_092</unitid>
+                  <unittitle>Hasen, Edson and Johnstone interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_093</unitid>
+                  <unittitle>Greene and Caniff interviewed by Vernon Greene</unittitle>	
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_094</unitid>
+                  <unittitle>Hirschfield and Terry interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_095</unitid>
+                  <unittitle>Hirschfield and Terry interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_096</unitid>
+                  <unittitle>Hirschfield and Terry interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Oversize">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_097</unitid>
+                  <unittitle>Lichty interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_098</unitid>
+                  <unittitle>Lichty interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_099</unitid>
+                  <unittitle>Swinnerton interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_100</unitid>
+                  <unittitle>Swinnerton interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_101</unitid>
+                  <unittitle>Lichty interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_102</unitid>
+                  <unittitle>Swinnerton interviewed by Vernon Greene</unittitle>	
+                  <physdesc>1/4 inch audio tape</physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_103</unitid>
+                  <unittitle>White and Kavanagh interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_104</unitid>
+                  <unittitle>White and Kavanagh interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unitid>nci_105</unitid>
+                  <unittitle>White and Kavanagh interviewed by Vernon Greene</unittitle>
+                  <physdesc>1/4 inch audio tape</physdesc>	
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="mason_np">mason_np</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Norman P. Mason Papers</titleproper>
+            <subtitle>An inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">-</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1963" encodinganalog="Date">1963</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-09-03">3 Sep 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>3 Sep 2010 - converted to EAD (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Mason, Norman P.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Norman P. Mason Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1953/1963" type="inclusive" label="Inclusive Dates: ">1953-1963</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>12 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Commissioner, Federal Housing Administration.  Collection contains 
+		 correspondence, subject files, printed material, clippings, photographs, press releases. </abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3164207</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Norman P. Mason (1897-?) was an American lumber dealer and government official from Chelmsford, Massachusetts.    In 1954 he was 
+	  appointed commissioner of the Federal Housing Administration (FHA), and in that position, according to an article in 
+	  <emph render="italic">Time</emph> magazine (26 Jan 1959), he "cleaned up the FHA, went on to speed up and expand its loan program, 
+	  started a housing program for old folks, worked hard for urban renewal and better quality houses for home buyers."   In 1959 he was 
+	  named by President Eisenhower to head the Housing and Home Finance Agency.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Norman P. Mason Papers</emph> contain correspondence, subject files, printed material, clippings, 
+		 photographs, press releases from Mason's years working for the government in various capacities related to housing.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection has received minimal processing and remains in original order.  The inventory below is a simple box list.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+			<persname encodinganalog="600" source="lcnaf">Mason, Norman P.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">United States. -- Federal Housing Administration.</corpname>
+		 <corpname encodinganalog="610" source="lcnaf">United States -- Officials and employees.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh"> Federal aid to housing -- United States.</subject>
+		 <subject encodinganalog="650" source="lcsh">Housing -- United States -- Finance.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Awards.</genreform>
+			<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Essays.</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Reports.</genreform>
+			<genreform encodinganalog="655" source="aat">Speeches (documents)</genreform>
+         <!--<geogname encodinganalog="651">##</geogname>-->
+			<occupation encodinganalog="656" source="lcsh">Government employees.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Norman P. Mason Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Norman P. Mason</persname>, 1963-1970.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Subejct files</unittitle></did>
+<c02><did><unittitle>Housing consultant</unittitle><abstract>letters, carbons, 2 pictures</abstract><unitdate type="inclusive" normal="1963">1963</unitdate><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Morris Milgram, Modern Community Developers Inc.</unittitle><abstract>correspondence</abstract><unitdate type="inclusive" normal="1961">1961</unitdate><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Gov. Charles Chaffee, R.I.</unittitle><abstract>correspondence</abstract><unitdate type="inclusive" normal="1963">1963</unitdate><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Brookings Institution</unittitle><abstract>correspondence</abstract><unitdate type="inclusive" normal="1962">1962</unitdate><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Chicago, Kent College of Law</unittitle><abstract>correspondence</abstract><unitdate type="inclusive" normal="1963">1963</unitdate><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Cleveland Metro. Housing Authority and other companies</unittitle><abstract>correspondence</abstract><unitdate type="inclusive" normal="1961/1963">1961-1963</unitdate><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Karl L. Falk</unittitle><abstract>correspondence</abstract><unitdate type="inclusive" normal="1962">1962</unitdate><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Correspondence relating to new position as housing consultant, incl. Alliance of Progress letter/reply</unittitle><abstract>correspondence</abstract><unitdate type="inclusive" normal="1961">1961</unitdate><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Manuals, "Housing and Home Finance Agency" and "Federal Housing Administration Organization, Programs and Operations"</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>HHFA Data Book</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Report on government housing policies and program hearings, study of international housing</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>FHA apopintment commission</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>"Housing record of the Eisenhower administration, 1953-1960"</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Central Savings Bank</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Clippings</unittitle><abstract>Mason's departure in 1961, misc. other topics</abstract><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Congratulations on position as housing consultant</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>National Civil Service League</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Address to Federal Savings League</unittitle><unitdate type="inclusive" normal="1963">1963</unitdate><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Monograph on housing financing, Senate Banking and Currency Commission</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Treatise, "The Total Enterprise Concept," by Donkeny and Daniels</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Guest register</unittitle><unitdate type="inclusive" normal="1955/1960">1955-1960</unitdate><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Fitness of American Youth, report by the President's Council</unittitle><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">2</container></did></c02>
+<c02><did><unittitle>U.S. Government Organization Manual</unittitle><unitdate type="inclusive" normal="1960/1962">1960-1961</unitdate><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Correspondence, outgoing, alpha by recipient</unittitle><abstract>carbons; most in response to letters of congratulation on appointment as FHA administrator</abstract><physdesc><extent>7 folders</extent></physdesc><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Personnel papers as FHA Commissioner</unittitle><abstract>copies of designation letters from Eisenhower, statement of acceptance, more</abstract><unitdate type="inclusive" normal="1954">1954, </unitdate><unitdate type="inclusive" normal="1960">1960, </unitdate><unitdate type="inclusive" normal="1953/1963">undated</unitdate><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Personal correspondence</unittitle><unitdate type="inclusive" normal="1960">1960</unitdate><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Mason, personal stories</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Mason, re. outside interests, resignation letters, etc.</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Addresses</unittitle><abstract>bound volume</abstract><unitdate type="inclusive" normal="1954/1955">1954-1955</unitdate><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Addresses</unittitle><abstract>bound volume</abstract><unitdate type="inclusive" normal="1959/1961">1956-1961</unitdate><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Public statements</unittitle><abstract>bound volume</abstract><unitdate type="inclusive" normal="1959/1961">1959-1961</unitdate><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Nomination as FHA administrator, HHFA</unittitle><abstract>carbons of replies</abstract><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Biographical sketch of Mason, U.S. Housing Administrator</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Mason, newspaper clippings</unittitle><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Mason, miscellaneous</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Congratulatory letters, carbons of replies</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><physdesc><extent>5 folders</extent></physdesc><container type="Box">5</container></did></c02>
+<c02><did><unittitle>F. Stuart FitzPatrick Memorial Award</unittitle><abstract>congratulatory letters and replies</abstract><unitdate type="inclusive" normal="1960">1960</unitdate><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Report, Mason to Gen. W. B. Persons, Assistant to the President, re. Dr. Weaver</unittitle><unitdate type="inclusive" normal="1961-01-05">5 Jan 1961</unitdate><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Congratulatory letters, carbons of replies</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Essay by Mason, "The Conquest of the Air"</unittitle><unitdate type="inclusive" normal="1912-06">Jun 1912</unitdate><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Congratulatory letters and a "Salute to Eisenhower"</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Miscellaneous clippings, formal dinner menus, copy of Time magazine</unittitle><unitdate type="inclusive" normal="1958-09-21">21 Sep 1958</unitdate><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Notebook, Mason, personnel file</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Tape recording, "Nationwide Capitol Assignment"</unittitle><unitdate type="inclusive" normal="1959-07-14">14 Jul 1959</unitdate><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Plaque, "Honorary Citizen of Jacksonville, Florida"</unittitle><unitdate type="inclusive" normal="1958-05">May 1958</unitdate><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Photo album, "A memento of N. Mason's years as Housing Commissioner and Labor Administrator in the U.S. Government Washington D.C. April 1954 - January 1966"</unittitle><unitdate type="inclusive" normal="1966">1966</unitdate><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Views and opinions on Norman P. Mason</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>"Housing record of the Eisenhower administration, 1953-1960"</unittitle><abstract>summary</abstract><container type="Box">7</container></did></c02>
+<c02><did><unittitle>"Platform Text of the GOP on Housing and Health: Approaches to the Problem" by N. Mason</unittitle><abstract>outline of Democratic platform in regards to housing</abstract><container type="Box">7</container></did></c02>
+<c02><did><unittitle>National Diary</unittitle><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">7</container></did></c02>
+<c02><did><unittitle>National Diary</unittitle><unitdate type="inclusive" normal="1960">1960</unitdate><container type="Box">7</container></did></c02>
+<c02><did><unittitle>FIABCI</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>A Study of Housing Programs and Policies</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Views on Reduction of Housing [illegible]</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>The FHA Story</unittitle><abstract>summary</abstract><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Reports to the Subcommittee on Housing of the Senate Banking and Currency Committee</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Book and correspondence relating to FHA appreciation party for Mason, held Feb. 5, 1959 at the Carlton Hotel</unittitle><container type="Box">8</container></did></c02>
+<c02><did><unittitle>Photographs and certificate of appreciation form the National Academy of Science and National Research Council</unittitle><container type="Box">8</container></did></c02>
+<c02><did><unittitle>Program, "Dinner with..."</unittitle><unitdate type="inclusive" normal="1960-01-27">27 Jan 1960</unitdate><container type="Box">8</container></did></c02>
+<c02><did><unittitle>"Tribute of Appreciation" from G. girls</unittitle><container type="Box">8</container></did></c02>
+<c02><did><unittitle>Appointments</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Swearing-in ceremonies</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>FHA 25th Anniversary</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Swearing-in ceremonies, retirement</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Miscellaneous</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>F. Stuart FitzPatrick Memorial Award</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>FHA top staff</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>FHA zone commissioners, field directors</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>HHFA, office of administrator</unittitle><abstract>VHMCP, CDP, CFA, URA, FNMA, FHA regions</abstract><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Meetings with groups</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Executive committee reservists and advisory committee</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Committee meetings</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Presentation of awards</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Book I</unittitle><abstract>citations and awards</abstract><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Book II</unittitle><abstract>citations and awards</abstract><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Awards</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>[untitled]</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Appointments</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Appointments BKI</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Mortgage credit hearings, Subcommittee on Housing, Senate Banking and Currency Committee</unittitle><container type="Box">9</container></did></c02>
+
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+<?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen.css" title="plastics product literature" alternate="no"?>
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="plas_prod_lit">plas_prod_lit</eadid>
+      <filedesc>
+         <titlestmt>
+                     <titleproper encodinganalog="Title">Plastics Product Literature Collection</titleproper>
+         <subtitle>A description of the collection at Syracuse University</subtitle>
+
+         <author encodinganalog="Creator">MM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+               <date normal="2006" encodinganalog="Date">2006</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-12">Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>Feb 2009 - converted to EAD (MRC)</item>
+            <item>25 Feb 2011 - reprocessed the collection, added material, and updated the finding
+               aid. (CEG)</item>
+            <item>4 April 2011 - added material, and updated the finding aid. (CEG)</item>
+            <item>15 Dec 2011 - added material, removed Union Products folders to Union Products
+               Collection, and updated the finding aid. (SDG)</item>
+            <item>12 Sep 2012 - added material from new donations and Plastics History Collection,
+               and updated the finding aid. (SDG)</item><item>8 Sep 2014 - additions M14-085 (MRC)</item><item>6 Oct 2015 - adds to GE material (MRC)</item><item>1 Oct 2019 - adds, misc (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+               <corpname encodinganalog="110">National Plastics Center &amp; Museum.</corpname></origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Plastics Product Literature Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1890/2012" type="inclusive" label="Inclusive Dates: ">1890-2012</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>9.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection consists of product
+            literature, catalogs, objects and technical bulletins on plastic products and plastic
+            applications by numerous plastic and chemical companies. Most emanate from American
+            companies but the collection includes some from Japanese companies, as well as a few
+            from France, Germany, Australia and the United Kingdom.</abstract>
+
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2663589</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>,<language langcode="fre">French</language>,
+               <language langcode="ger">German</language>, <language langcode="jpn">Japanese</language>, <language langcode="spa">Spanish</language></langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Founded in 1982, the National Plastics Center (NPC) was a non-profit institution dedicated
+            to preserving the past, addressing the present and promoting the future of plastics
+            through public education and awareness. The Center, which closed in 2008, had an
+            extensive museum collection of plastic parts, machinery and memorabilia and the archives
+            and library contain numerous books and collections on many subjects, companies and
+            people prominent in the industry. In 2011, much of the NPCM collection was donated to
+            Syracuse University.</p>
+</bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Plastics Product Literature Collection</emph> consists of
+            product literature, catalogs, objects and technical bulletins on plastic products and
+            plastic applications by numerous plastic and chemical companies. Most emanate from
+            American companies but the collection includes some from Japanese companies, as well as
+            a few from France, Germany, Australia and the United Kingdom.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by name of company and chronological within each company.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous holdings in the areas of plastics and industrial design. Please refer to &subjindex; for a complete listing.  In particular, see the <archref href="casper_coll.htm">Irwin Casper Collection of Brush Product Literature</archref> and the <archref href="kosy_wr.htm">Walter R. Kosy Papers</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+<subject encodinganalog="650" source="local">Industrial Design</subject><subject encodinganalog="650" source="local">Plastics</subject><!--<persname encodinganalog="600" source="local" rules="aacr2">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="local" rules="aacr2">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Manufacturing processes.</subject><subject encodinganalog="650" source="lcsh">Plastics -- Marketing.</subject><subject encodinganalog="650" source="lcsh">Plastics industry and trade -- Australia.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics industry and trade -- Germany.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics industry and trade -- Japan.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics industry and trade -- United Kingdom.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics industry and trade -- United States.</subject><subject encodinganalog="650" source="lcsh">Trade literature.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Brochures.</genreform><genreform encodinganalog="655" source="aat">Bulletins.</genreform><genreform encodinganalog="655" source="aat">Catalogs (documents)</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Technical manuals.</genreform><genreform encodinganalog="655" source="aat">Technical reports.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Plastics Product Literature Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Majority of collection, transfer from National Plastics Center and Museum, 11/06/2008.</p><p>Rogers Corporation binder on molding materials (1973) and United States Gasket Company book (1952-1953), gift of <persname role="donor">George Marshall Naul</persname>, 2011.</p><p>Industrial Plastics Products (IPP) material, gift of <persname role="donor">Veronika Thorne</persname>, 2012.</p><p>Plastics Packaging Corp. material, gift of <persname role="donor">Susan Weiss</persname>, 2012.</p><p>General Electric publicity material gift of <persname role="donor">James Albright</persname>, 2014.</p><p>Spirex material, gift of <persname role="donor">Timothy Womer</persname>, 2018.</p><p>Pro Corporation material, gift of <persname role="donor">Glenn Beall</persname>, 2018.</p>
+      <p>Celanese Celluloid Corporation book (1942), gift of <persname role="donor">James L. Throne</persname>, 2019.</p></acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      
+   <dsc type="combined">
+         <head>Inventory</head>
+         
+         <c01 level="series"><did><unittitle>Company literature</unittitle></did>
+   <c02><did><unittitle>Allied Chemical</unittitle><abstract>technical service report featuring data on the refrigerant, Genetron, and a booklet on the injection molding of rigid polyvinyl chloride</abstract><unitdate type="inclusive" normal="1964/1980">1964-1980</unitdate><container type="Box">1</container></did></c02>
+            
+            <c02>
+               <did>
+                  <unittitle>American Cyanamid Company</unittitle>
+                  <abstract>technical literature on CYMAC 400 polymethylstyrene molding
+                     compounds</abstract>
+                  <unitdate type="inclusive" normal="1957">1957</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>American Cystoscope Makers, Inc.</unittitle>
+                  <unitdate normal="1919/2009" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+                  <abstract>clipping from "Plastics World"</abstract>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>American Hoechst Corporation</unittitle>
+                  <abstract>brochure <emph render="italic">This is American
+                     Hoechst</emph></abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Amoco</unittitle>
+                  <abstract>technical bulletin on evaluating Isopolyester resins</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Anker-Steinbaukasten</unittitle>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1895-1905">circa 1900s</unitdate>
+                  <container type="Box">1</container>
+                  <abstract>various booklets of designs for Richter's building blocks</abstract>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Aquitaine</unittitle>
+                  <abstract>technical literature on Organico, Rilsan, Aquitane 72, and
+                     Lacqran</abstract>
+                  <unitdate type="inclusive" normal="1965/1975">[1970]</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Argus Chemical Corporation</unittitle>
+                  <abstract>technical booklets on mark stabilizers, pvc pipe, and conduit</abstract>
+                  <unitdate type="inclusive" normal="1969">1969</unitdate>
+                  <unitdate type="inclusive" normal="1975">1975</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Armstrong Products Company</unittitle><abstract>technical literature on epoxy resin adhesives</abstract><unitdate normal="1954" type="inclusive">1954</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Arthur Blank and Company</unittitle><abstract>purchaser catalog containing plastic products for both personal and office use</abstract><container type="Box">1</container></did></c02><c02><did><unittitle>Ashdee</unittitle><abstract>vinyl stickers "put it back where you found it!," advertisement for UV Cure Reactor machine</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Atlas Electric Devices Company</unittitle><abstract>technical literature and  instructions for the Fade-Ometer</abstract><unitdate type="inclusive" normal="1941">1941, </unitdate>
+                  <unitdate type="inclusive" normal="1971">1971, </unitdate>
+                  <unitdate type="inclusive" normal="1982">1982, </unitdate>
+                  <unitdate type="inclusive" normal="1985">1985</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Auto-Blow Corp (subsidiary of National Cleveland Corp)</unittitle><abstract>technical literature regarding automatic high production blow-molding machines</abstract><unitdate type="inclusive" normal="1960">1960</unitdate><container type="Box">1</container></did></c02>
+   
+   <c02><did><unittitle>BASF World Sales</unittitle><abstract>operation fundamentals book</abstract><unitdate normal="1973" type="inclusive">1973</unitdate><container type="Box">1</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Breton Plastics Catalog Fabrication Manual</unittitle>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02><c02><did><unittitle>Boonton Molding Company</unittitle><abstract>"a ready reference guide for plastics" book and technical literature regarding plastic materials molding </abstract><physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1955">1955</unitdate><unitdate normal="1958" type="inclusive">1958, </unitdate>
+                  <unitdate normal="1959/1968" type="inclusive">[1964], </unitdate>
+                  <unitdate normal="1973" type="inclusive">1973</unitdate><container type="Box">2</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Borden Chemical</unittitle>
+                  <abstract>technical booklet on pvc resins and compounds</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Borg Warner (Marbon)</unittitle></did><c03><did><unittitle>Technical data</unittitle><abstract>Cycoloy, Cyolac ABS, Cycolac high impact thermoplastic resin and various other plastic materials</abstract><unitdate normal="1957" type="inclusive">1957, </unitdate>
+                  <unitdate type="inclusive" normal="1965">1965</unitdate><container type="Box">2</container></did></c03><c03><did><unittitle>Technical data</unittitle><abstract>Cycoloy, Cyolac ABS, Cycolac high impact thermoplastic
+                     resin and various other plastic materials</abstract>
+                  <physdesc><extent>8 folders</extent></physdesc>
+                  <unitdate normal="1957" type="inclusive">1957, </unitdate>
+                  <unitdate normal="1964/1969" type="inclusive">1964-1969, </unitdate>
+                  <unitdate normal="1973/1976" type="inclusive">1973-1976,</unitdate>
+                  <unitdate normal="1912/2009" type="inclusive">undated</unitdate>
+                  <container type="Box">3</container>
+               </did></c03></c02>
+            <c02><did><unittitle>Branson Instruments		</unittitle><abstract>a guide to ultrasonic plastics assembly</abstract><unitdate normal="1973" type="inclusive">1973</unitdate><container type="Box">4</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Bush Keepsake </unittitle>
+                  <abstract>photostat pages pf catalog, mostly of wedding cake
+                     decorations</abstract>
+                  <unitdate normal="1912/2009" type="inclusive">undated</unitdate>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>California Electrotype and Stereotype Company</unittitle>
+                  <abstract>booklet for ordering electrotype stock cuts</abstract>
+                  <unitdate normal="1912/2009" type="inclusive">undated</unitdate>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Captive Plastics, inc.</unittitle>
+                  <abstract>Quarterly newsletter <emph render="italic">The Captivator</emph>, vol 3,
+                     no. 3 </abstract>
+                  <unitdate normal="1993" type="inclusive">1993</unitdate>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Celanese Plastics Company / Celanese Celluloid Corporation</unittitle><abstract>book on "fabricating methods for Lumarith, Celluloid and similar thermoplastic materials," technical literature on Celcon acetal copolymer, celanese nylon and celanex thermoplastic polyester</abstract><physdesc><extent>3 folders</extent></physdesc><unitdate normal="1942" type="inclusive">1942, </unitdate><unitdate normal="1945" type="inclusive">1945, </unitdate>
+                  <unitdate normal="1967" type="inclusive">1967, </unitdate>
+                  <unitdate normal="1973/1974" type="inclusive">1973-1974, </unitdate>
+                  <unitdate normal="1983/1985" type="inclusive">1983-1985</unitdate><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Cerro de Paseo Copper Corporation	</unittitle><abstract> "The Cerromatrix Manual, Methods of Using Cerromatrix a Low Temperature Melting Expanding Alloy"</abstract><unitdate normal="1939" type="inclusive">1939</unitdate><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Cincinnati Milacron Chemicals</unittitle><abstract>technical literature regarding the stabilization of polyvinyl chloride and various other plastic materials</abstract><unitdate type="inclusive" normal="1963/1973">1963-1973</unitdate>
+                  <unitdate type="inclusive" normal="1976">1976</unitdate><container type="Box">4</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Coca-Cola Company</unittitle>
+                  <abstract>catalog</abstract>
+                  <unitdate normal="1993" type="inclusive">1993</unitdate>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Commercial Plastics &amp; Supply Corp.</unittitle>
+                  <abstract>catalog for sheets, rods and tubes</abstract>
+                  <unitdate normal="1964" type="inclusive">1964</unitdate>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Continental-Diamond Fibre</unittitle><abstract>a booklet of technical information regarding Celoron</abstract><container type="Box">4</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Conwed Corp.</unittitle>
+                  <abstract>product brochure for Conwed plastic netting products with 1 page insert
+                     about rigid polypropylene tubes</abstract>
+                  <unitdate normal="1971" type="inclusive">1971</unitdate>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Danish Plastics</unittitle>
+                  <abstract>drawings and technical booklets related to the Blow-O-Matic</abstract>
+                  <unitdate normal="1959" type="inclusive">1959, </unitdate>
+                  <unitdate normal="1962/1963" type="inclusive">1962-1963, </unitdate>
+                  <unitdate normal="1912/2009" type="inclusive">undated</unitdate>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+
+   
+
+   
+
+   <c02><did><unittitle>Dartco (Dart &amp; Craft)</unittitle><abstract>technical information regarding injection molding XYDAR</abstract><unitdate normal="1985" type="inclusive">1985</unitdate><container type="Box">5</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>DeBell and Richardson, Inc.</unittitle>
+                  <abstract>booklet on the innovation in polymers</abstract>
+                  <unitdate normal="1912/2009" type="inclusive">undated</unitdate>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Detroit Mold Engineering</unittitle><abstract>dealer ordering books for standard mold bases, parts and supplies;  technical data
+                     regarding mold bases, injection molding machines, compression molding machines
+                     and die casting machines; <emph render="italic">DME News</emph>, Vol 10: 1, 3
+                     (1952) and Vol 11:1 (1953)</abstract><physdesc><extent>3 folders</extent></physdesc>
+                  <unitdate normal="1948" type="inclusive">1948, </unitdate>
+                  <unitdate normal="1952/1953" type="inclusive">1952-1953</unitdate>
+                  <unitdate normal="1957" type="inclusive">1957, </unitdate>
+                  <unitdate normal="1963" type="inclusive">1963, </unitdate>
+                  <unitdate normal="1975" type="inclusive">1975</unitdate><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Dow Chemical</unittitle>
+                  </did><c03><did><unittitle>Technical literature</unittitle><abstract>Styron, Polystyrene, Styrex, Ethocel,
+                     Saran, Polyethylene and PVC, as well as information regarding the design and
+                     properties of plastics</abstract>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1943">1943, </unitdate>
+                  <unitdate type="inclusive" normal="1951/1957">1951-1957 </unitdate><container type="Box">5</container></did></c03><c03><did><unittitle>Technical literature</unittitle><abstract>Styron, Polystyrene, Styrex, Ethocel,
+                     Saran, Polyethylene and PVC, as well as information regarding the design and
+                     properties of plastics</abstract>
+                  <physdesc><extent>3 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1946">1946, </unitdate>
+                  <unitdate type="inclusive" normal="1951/1967">1951-1967 </unitdate>
+                  <container type="Box">6</container>
+               </did></c03></c02>
+            
+            <c02>
+               <did>
+                  <unittitle>Dri-Print Foils, Inc.</unittitle>
+                  <abstract>a booklet highlighting the product line</abstract>
+                  <container type="Box">6</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>DSM Resins UK Ltd.</unittitle>
+                  <abstract>a folder containing commercial literature regarding Auto Press and the
+                     innovations in injection molding</abstract>
+                  <unitdate normal="1991" type="inclusive">1991</unitdate><container type="Box">6</container></did></c02>
+
+   <c02><did><unittitle>Du Pont</unittitle>
+                  </did>
+               <c03><did><unittitle>Promotional material</unittitle></did><c04>
+                  <did>
+                     <unittitle>Annual Report, <emph render="italic">Du Pont: Celebrating the Past, Shaping the
+                           Future. Fiftieth Anniversary of Nylon and Teflon</emph></unittitle>
+                     
+                     <unitdate type="inclusive" normal="1950">1987</unitdate>
+                     <container type="Box">6</container>
+                  </did>
+               </c04>
+               <c04>
+                  <did>
+                     <unittitle>Better Living: The DuPont Employee
+                           Magazine</unittitle>
+                     
+                     <unitdate type="inclusive" normal="1950">1950</unitdate>
+                     <container type="Box">6</container>
+                  </did>
+               </c04>
+               <c04>
+                  <did>
+                     <unittitle>Boudoir Accessories catalogs</unittitle>
+                     <abstract>Lucite, Pyralin, and Arlton</abstract>
+                     <unitdate type="inclusive" normal="1920/1930">1920-1930</unitdate>
+                     <container type="Box">6</container>
+                  </did>
+               </c04>
+               <c04>
+                  <did>
+                     <unittitle>Du Pont News, Vol 6 no. 12</unittitle>
+                     
+                     <unitdate type="inclusive" normal="1977-12">Dec 1977</unitdate>
+                     <container type="Box">6</container>
+                  </did>
+               </c04>
+               <c04>
+                  <did>
+                     <unittitle>This is Du Pont</unittitle>
+                     <abstract>52-page promotional magazine about company</abstract>
+                     <unitdate normal="1949" type="inclusive">1949</unitdate>
+                     <container type="Box">6</container>
+                  </did>
+               </c04></c03><c03><did><unittitle>Technical literature</unittitle>
+                  </did><c04><did><unittitle>[General]</unittitle>
+                  <abstract>design, engineering and technical data regarding Alathon, Delrin,
+                     Teflon, Zytel Nylon Resin, and Lucite</abstract>
+                  
+                  <unitdate type="inclusive" normal="1956/1961">1956-1961 </unitdate><container type="Box">6</container></did></c04><c04><did>
+                  <unittitle>[General]</unittitle>
+                  <abstract>design, engineering and technical data regarding Alathon, Delrin, Teflon, Zytel Nylon Resin, Lucite, Corian, Hytrel, Neoprene,
+                     Teflon and Delrin,</abstract>
+                  <physdesc><extent>7 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1956/1962">1956-1962 </unitdate>
+                  
+                  <unitdate type="inclusive" normal="1968/1969">1968-1969, </unitdate>
+                  <unitdate type="inclusive" normal="1972/1978">1972-1978</unitdate>
+                  <container type="Box">7</container>
+               </did></c04></c03></c02>
+
+   
+            
+   <c02><did><unittitle>Durez Plastics Division (Hooker Chemical Corp)</unittitle>
+                  <abstract>booklets with data regarding molding compounds and phenolics, technical
+                     data regarding properties of products and molding techniques, 13
+                     issues of the Durex Molder bulletin</abstract>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1930">1930, </unitdate>
+                  <unitdate type="inclusive" normal="1951/1960">1951-1960, </unitdate>
+                  <unitdate type="inclusive" normal="1964">1964, </unitdate>
+                  <unitdate type="inclusive" normal="1967/1973">1967-1973</unitdate>
+                  <unitdate type="inclusive" normal="1983">1983</unitdate><container type="Box">8</container></did></c02>
+
+   <c02><did><unittitle>Eastman Chemical Products  (Tenite)</unittitle>
+                  <abstract>book detailing the invention of color film and technical information
+                     regarding Tenite</abstract>
+                  <unitdate type="inclusive" normal="1957">1957, </unitdate>
+                  <unitdate type="inclusive" normal="1967">1967, </unitdate>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate><container type="Box">8</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Edmark Enterprise, Inc.</unittitle>
+                  <abstract>catalog of fashion accessories</abstract>
+                  <unitdate type="inclusive" normal="1989">1989 </unitdate>
+                  <container type="Box">8</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Enjay Chemical Company</unittitle>
+                  <abstract>technical books regarding Escon Polypropylene</abstract>
+                  <container type="Box">8</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Exact Weight Scale Company</unittitle>
+                  <abstract>instructions for operating the Exact Weight Plastics Weigh
+                     Feeder</abstract>
+                  <unitdate type="inclusive" normal="1956">1956, </unitdate>
+                  <unitdate type="inclusive" normal="1965">1965,</unitdate>
+                  <unitdate type="inclusive" normal="1912/2009"> undated</unitdate><container type="Box">8</container></did></c02>
+   <c02><did><unittitle>Farrel-Birmingham Company, Inc.</unittitle><abstract>bulletin highlighting Banbury mixers</abstract><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">8</container></did></c02><c02><did><unittitle>Fellows Gear Shaper Company</unittitle>
+                  <abstract>instructions for operating the injection molding machine with
+                     drawings</abstract>
+                  <unitdate type="inclusive" normal="1955">1955, </unitdate>
+                  <unitdate type="inclusive" normal="1960">1960, </unitdate>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate><container type="Box">8</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Fiberite</unittitle>
+                  <abstract>materials selection handbook</abstract>
+                  <unitdate type="inclusive" normal="1985">1985 </unitdate>
+                  <container type="Box">8</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Fibroc</unittitle>
+                  <abstract>pamphlet announcing merger with Continental-Diamond Fibre Co. and
+                     their new name, Fibroc Insulation Company</abstract>
+                  <unitdate type="inclusive" normal="1930">June 5, 1930</unitdate>
+                  <container type="Box">8</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Foster Grant</unittitle>
+                  <abstract>technical bulletin highlighting nylon injection molding
+                     problems</abstract>
+                  <container type="Box">8</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Fraser and Glass, LTD</unittitle>
+                  <abstract>drawing of unknown object</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">8</container>
+               </did>
+            </c02>
+            <c02><did><unittitle>Furukawa Group</unittitle>
+                  <abstract>information book highlighting their factories, products and
+                     history</abstract><container type="Box">8</container></did>
+				</c02>
+            <c02><did><unittitle>General Electric</unittitle></did>
+            	<c03><did><unittitle>Genal Product Line binder</unittitle><unitdate type="inclusive" normal="1974">1974</unitdate><container type="Box">9</container></did></c03>
+            	<c03><did><unittitle>Lexan</unittitle><container type="Box">9</container></did></c03>
+            	<c03><did><unittitle>Noryl</unittitle><container type="Box">9</container></did></c03>
+            	<c03><did><unittitle>Phenolic Molding Compound</unittitle><unitdate type="inclusive" normal="1974">1946, </unitdate><unitdate type="inclusive" normal="1974">1948, </unitdate><unitdate type="inclusive" normal="1974">undated</unitdate><container type="Box">9</container></did></c03>
+            	<c03><did><unittitle>Phenolic Molding Compound</unittitle><unitdate type="inclusive" normal="1974">1966-1974</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">9</container></did></c03>
+            	<c03><did><unittitle>Textolite</unittitle><unitdate type="inclusive" normal="1942/1952">circa 1947</unitdate><container type="Box">9</container></did></c03>
+            	<c03><did><unittitle>Valox</unittitle><unitdate type="inclusive" normal="1983">1983</unitdate><container type="Box">9</container></did></c03>
+            	<c03><did><unittitle>Miscellaneous product information</unittitle><container type="Box">9</container></did></c03>
+            	<c03><did><unittitle>Miscellaneous publicity material</unittitle><unitdate type="inclusive" normal="1965">1965</unitdate><container type="Box">9</container></did><acqinfo><p>Gift of James Albright, 2014.</p></acqinfo></c03>
+				</c02>
+            <c02>
+               <did>
+                  <unittitle>The General Tire and Rubber Company, Bolta Products
+                     Division</unittitle>
+                  <abstract>Boltaron fashion tones samples</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">9</container>
+               </did>
+            </c02><c02><did><unittitle>BF Goodrich (Koroseal)</unittitle>
+                  <abstract>handbook and literature containing technical information related to
+                     Koroseal, and a sample of fourteen wires in various colors </abstract><container type="Box">10</container></did></c02>
+   <c02><did><unittitle>Hanna Engineering Works</unittitle>
+                  <abstract>technical book for Hydraulic Cylinders</abstract><container type="Box">10</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Hercules Powder Company</unittitle>
+                  <abstract>technical book for Ethyl Cellulose</abstract>
+                  <unitdate type="inclusive" normal="1944">1944</unitdate>
+                  <container type="Box">10</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hitachi Chemical Products</unittitle>
+                  <abstract>technical book for their products and materials</abstract>
+                  <container type="Box">10</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hobalite</unittitle>
+                  <unitdate type="inclusive" normal="1944">1944</unitdate>
+                  <container type="Box">10</container>
+                  <abstract>technical book for hobbed mold dies</abstract>
+               </did>
+            </c02>
+   <c02><did><unittitle>Hoechst</unittitle>
+                  <abstract>technical binder regarding organic pigments for PVC with
+                     samples</abstract>
+                  <unitdate type="inclusive" normal="1965">1965</unitdate>
+                  <unitdate type="inclusive" normal="1987">1987</unitdate><container type="Box">10</container></did></c02>
+	<c02><did><unittitle>Hottwatt Electric Heaters</unittitle>
+                  <abstract>distributor catalog of discounts and prices for heaters</abstract>
+                  <unitdate type="inclusive" normal="1981">1981</unitdate><container type="Box">10</container></did></c02>
+
+   <c02><did><unittitle>ICI (Imperial Chemical Industries)</unittitle>
+                  <abstract>technical literature on Cereclor</abstract>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1966">1966,</unitdate>
+                  <unitdate type="inclusive" normal="1969">1969</unitdate><container type="Box">10</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Idemitsu Petrochemical Co., LTD</unittitle>
+                  <abstract>booklet of company history and statistics</abstract>
+                  <unitdate type="inclusive" normal="1967/1977">[1972]</unitdate>
+                  <container type="Box">11</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>IMS Co. (Injection Molders Supply)</unittitle>
+                  <abstract>catalog of supplies for the injection molder, injection machine nozzle
+                     handbook, accessory plant equipment for injection molders book, and an
+                     auxiliary machinary packet for plastic processors</abstract>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate normal="1951" type="inclusive">1951,</unitdate>
+                  <unitdate normal="1968/1969" type="inclusive">1968-1969,</unitdate>
+                  <unitdate normal="1986/1987" type="inclusive">1986-1987</unitdate><container type="Box">11</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Incoe Corporation</unittitle>
+                  <abstract>technical booklet regarding the hot tip bushings manifold
+                     system</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">11</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Industrial Plastics Products, Inc.</unittitle>
+                  <abstract>folder with company information and illustrations of products</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">11</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>International Paper</unittitle>
+                  <abstract>nine product information promotional booklets and fact sheets about
+                     laminates from Nevamar Decorative Products Division</abstract>
+                  <unitdate type="inclusive" normal="1997/1999">1997-1999</unitdate>
+                  <container type="Box">11</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Interstab Chemicals, Inc.</unittitle>
+                  <abstract>technical manual on stabilizers, chelators, blowing agent catalysts,
+                     organotin stabilizers, and lubricants</abstract>
+                  <unitdate type="inclusive" normal="1974">1974 </unitdate>
+                  <container type="Box">11</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Japan Gas Chemical Co.</unittitle>
+                  <abstract>book containing company history</abstract>
+                  <container type="Box">11</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Japan Synthetic Rubber Co.</unittitle>
+                  <abstract>book containing company and product history</abstract>
+                  <unitdate type="inclusive" normal="1965/1975">[1970]</unitdate>
+                  <container type="Box">11</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Jeuffroy &amp; Fils</unittitle>
+                  <abstract>album with 39 pages illustrating machinery used for the manufacture of
+                     combs from horn, rubber nad celluloid </abstract>
+                  <unitdate type="inclusive" normal="1885/1895">[1890]</unitdate>
+                  <container type="Box">11</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Kanebo</unittitle>
+                  <abstract>pamphlet containing their products and materials used</abstract>
+                  <container type="Box">11</container>
+               </did>
+            </c02>
+
+   <c02><did><unittitle>Kelvinator (Adelaide Australia)</unittitle>
+                  <abstract>book discussing molding, processes and machinary</abstract>
+                  <unitdate type="inclusive" normal="1960/1970">[1965]</unitdate><container type="Box">11</container></did></c02>
+   <c02><did><unittitle>Kent Plastics</unittitle>
+                  <abstract>book highlighting their products and factory locations</abstract><container type="Box">11</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Kleinewefers</unittitle>
+                  <abstract>book on company history and progress</abstract>
+                  <unitdate type="inclusive" normal="1962">1962 </unitdate>
+                  <container type="Box">11</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Koehring</unittitle>
+                  <abstract>2 booklets on Prodex extrusion systems</abstract>
+                  <unitdate type="inclusive" normal="1973">1973 </unitdate>
+                  <container type="Box">11</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Koppers Co.</unittitle>
+                  <abstract>technical bulletins on troubleshooting injection molding problems,
+                     adhesive for polystyrene and Dylite</abstract><container type="Box">11</container></did></c02>
+   <c02><did><unittitle>Krauss Maffei</unittitle>
+                  <abstract>catalogs for machinary and technical journals</abstract>
+                  <unitdate type="inclusive" normal="1988">1988</unitdate>
+                  <unitdate type="inclusive" normal="1991">1991</unitdate><container type="Box">12</container></did></c02>
+   <c02><did><unittitle>Kureha Chemical</unittitle>
+                  <abstract>book containing company history and product information</abstract>
+                  <unitdate type="inclusive" normal="1970">1970</unitdate><container type="Box">12</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Kyowa Gas Chemical</unittitle>
+                  <abstract>typed booklet containing company history, a diagram of manufacturing
+                     process and two photographs of factories</abstract>
+                  <unitdate type="inclusive" normal="1970">1970</unitdate>
+                  <container type="Box">12</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Lego</unittitle>
+                  <abstract>holiday consumer catalog of lego products</abstract>
+                  <unitdate type="inclusive" normal="2009">2009</unitdate>
+                  <container type="Box">12</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Lehigh Valley Plastics</unittitle>
+                  <abstract>ordering catalog for their plastic sheets, rods and tubes</abstract>
+                  <container type="Box">12</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Leominster Tool Co., Inc.</unittitle>
+                  <unitdate type="inclusive" normal="1984">1984</unitdate>
+                  <container type="Box">12</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Lily-Tulip Cup Corporation</unittitle>
+                  <abstract>company history and product booklet</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">12</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>LNP</unittitle>
+                  <abstract>a guide to statically conductive and EMI attenuating composites,
+                     technical bulletins on thermoplastics and fluoropolymer composites</abstract>
+                  <unitdate type="inclusive" normal="1980">1980, </unitdate>
+                  <unitdate type="inclusive" normal="1985">1985, </unitdate>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">12</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Lyon Inc.</unittitle>
+                  <abstract>magazine ad for Whitewalls trim ring for automobile tires</abstract><container type="Box">12</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Magnus Harmonica Corporation</unittitle>
+                  <abstract>book entitled, "Precision Builds an Industry, The Story of the Magnus
+                     Harmonica Corporation," contianed within are reprints of old newspaper
+                     clippings and ads</abstract>
+                  <unitdate type="inclusive" normal="1946/1948">1946-1948,</unitdate>
+                  <unitdate type="inclusive" normal="1989">1989</unitdate>
+                  <container type="Box">12</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Mattel, Inc.</unittitle>
+                  <abstract>book of mold standards with drawings</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">12</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>McNeil Akron</unittitle>
+                  <abstract>booklet on machinary and products</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">12</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Mitsubishi Petrochemical Company Limited</unittitle>
+                  <abstract>book containing company history, statistics and product
+                     information</abstract>
+                  <unitdate type="inclusive" normal="1967">1967</unitdate>
+                  <container type="Box">12</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle> Modern Plastics</unittitle>
+                  <abstract>retail order form, product information catalog for Defender Interior
+                     Insulating Windows,product list and a green plastic sample </abstract>
+                  <unitdate type="inclusive" normal="1995">1995</unitdate>
+                  <container type="Box">12</container>
+               </did>
+            </c02>
+   <c02><did><unittitle> Monsanto</unittitle>
+                  </did><c03><did><unittitle>Product material</unittitle><abstract>product magazines featuring greenhouses and furniture, Lustran San price
+                     schedule</abstract>
+                  <unitdate type="inclusive" normal="1963/1964">1963-1964,</unitdate>
+                  <unitdate type="inclusive" normal="1969">1969</unitdate><container type="Box">12</container></did></c03><c03><did><unittitle>Technical material</unittitle><abstract>two technical books regarding plasticizers and resin modifiers, and
+                     technical information on Lustrex L and LX Styrenes</abstract>
+                  <physdesc><extent>5 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1961">1961,</unitdate>
+                  <unitdate normal="1964" type="inclusive">1964,</unitdate>
+                  <unitdate type="inclusive" normal="1969">1969,</unitdate>
+                  <unitdate type="inclusive" normal="1976">1976,</unitdate>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">13</container>
+               </did></c03></c02>
+            
+            <c02>
+               <did>
+                  <unittitle>Morgan Industries</unittitle>
+                  <abstract>book entitled, "Cutting Costs in Short-Run Plastics Injection Molding"
+                     featuring injection molding process, tool design and building, part design and
+                     material selection, epoxy tooling and material handling</abstract>
+                  <container type="Box">14</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>The M.S. Plastics Co.</unittitle>
+                  <abstract>facilities report</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">14</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Nalle Plastics, Inc.</unittitle>
+                  <abstract>Naltex netting information and samples</abstract>
+                  <unitdate type="inclusive" normal="1958/1968">[1963]</unitdate>
+                  <container type="Box">14</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Newbury Industries, Inc.</unittitle>
+                  <abstract>information on plastic injection molding machines,
+                     "mini-jector"</abstract>
+                  <unitdate type="inclusive" normal="1969">1969</unitdate>
+                  <container type="Box">14</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Nichimen Co., LTD</unittitle>
+                  <abstract>book from the 12th National Plastics Exposition with company and plastic
+                     material history</abstract>
+                  <unitdate type="inclusive" normal="1968">1968</unitdate>
+                  <container type="Box">14</container>
+               </did>
+            </c02>
+
+   <c02><did><unittitle>NL Industries</unittitle>
+                  <abstract>technical information regarding Titanox titanium pigments</abstract>
+                  <unitdate type="inclusive" normal="1967/1977">[1972]</unitdate><container type="Box">14</container></did></c02>
+	 <c02><did><unittitle>Novacor Chemicals, Inc. (a subsidiary of Nova Corporation of Alberta)</unittitle>
+                  <abstract>"Nova World" employee publication</abstract>
+                  <unitdate type="inclusive" normal="1991">1991</unitdate><container type="Box">14</container></did></c02>
+   <c02><did><unittitle>Nypro</unittitle>
+                  <abstract>The Nypro Institute booklets, "Plastics Innovation for Fifty Years"
+                     booklets, and an annual report from the company</abstract>
+                  <unitdate type="inclusive" normal="1998">1998,</unitdate>
+                  <unitdate type="inclusive" normal="2000/2002">2000-2002,</unitdate>
+                  <unitdate type="inclusive" normal="2005">2005</unitdate><container type="Box">14</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Olsen Testing Machine Company</unittitle>
+                  <abstract>information booklet for their impact testing machine with
+                     "change-o-matic" head</abstract>
+                  <unitdate type="inclusive" normal="1941">1941</unitdate>
+                  <container type="Box">14</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Owens-Corning Fiberglas Corporation</unittitle>
+                  </did><c03><did><unittitle>Promotional material</unittitle><abstract>Textile Products
+                     Division folder "More product problems solved with
+                     reinforced molding compounds"</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">14</container>
+               </did></c03><c03><did><unittitle>Technical material</unittitle><abstract>fiberglas development programs and
+                     their indicated uses</abstract>
+                  <unitdate type="inclusive" normal="1943" datechar="">1943</unitdate><container type="Box">14</container></did></c03></c02>
+            
+            <c02>
+               <did>
+                  <unittitle>PARR Moulding Compounds Corp.</unittitle>
+                  <abstract>information on the tests they conduct on their materials and
+                     products</abstract>
+                  <unitdate type="inclusive" normal="1955/1965">[1960]</unitdate>
+                  <container type="Box">14</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Pasadena Hydraulics, Inc..</unittitle>
+                  <abstract>8-page booklet "PHI Injection Molding Machines" with diazo blueline
+                     print insert illustration by E. J. Delgado of a medium size injection molding
+                     machine</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">14</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Phillips Chemical Company</unittitle>
+                  <unitdate type="inclusive" normal="1959">1959,</unitdate>
+                  <unitdate type="inclusive" normal="1959/1969">[1964]</unitdate>
+                  <container type="Box">14</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Pioneer Mold Co</unittitle>
+                  <abstract>Tool &amp; Die journal article, "An Electronic Aid in Die
+                     Making"</abstract>
+                  <unitdate type="inclusive" normal="1947">1947</unitdate><container type="Box">14</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Pixley Richards, Inc.</unittitle>
+                  <abstract>three promotional booklets</abstract>
+                  <unitdate type="inclusive" normal="1980/1988">1980-1988</unitdate>
+                  <container type="Box">15</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Plaskon Co.</unittitle>
+                  <abstract>handbook containing the properties of molded Plaskon and the technique
+                     of molding Plaskon</abstract>
+                  <unitdate type="inclusive" normal="1939">1939</unitdate><container type="Box">15</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Plasticor</unittitle>
+                  <unitdate type="inclusive" normal="1919/2009">undated</unitdate>
+                  <container type="Box">15</container>
+                  <abstract>clipping of advertisement in "Plastics World"</abstract>
+               </did>
+            </c02>
+   <c02><did><unittitle>Plasticraft, Inc.</unittitle>
+                  <abstract>craft instructional book for "Dolie-Craft" doll outfits</abstract><container type="Box">15</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Plastics Packaging Corp.</unittitle>
+                  <abstract>promotional folder with insert describing and illustrating product
+                     lines</abstract>
+                  <unitdate normal="2012" type="inclusive">2012</unitdate>
+                  <container type="Box">15</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Plastics Unlimited</unittitle>
+                  <abstract>customer pamphlet with a list of their products, properties, and
+                     distributors</abstract>
+                  <container type="Box">15</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Plastics Engineering Co. (Plenco)</unittitle>
+                  <abstract>price schedules for various plastic materials, and technical information
+                     for phenolic molding compounds</abstract>
+                  <unitdate type="inclusive" normal="1976">1970</unitdate>
+                  <unitdate type="inclusive" normal="1976">1976</unitdate>
+                  <unitdate type="inclusive" normal="1997/1998">1997-1998</unitdate><container type="Box">15</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Polyplastex United, Inc.</unittitle>
+                  <abstract>information on Royaltex</abstract>
+                  <unitdate type="inclusive" normal="1960/1961">1960-1961 </unitdate>
+                  <container type="Box">15</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Plume &amp; Atwood Mfg</unittitle>
+                  <abstract>product catalog for washers and rivets</abstract><container type="Box">15</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Polaroid</unittitle>
+                  <abstract>book entitled, "Polaroid Access, Fifty Years" by Richard Saul Wurman,
+                     and a product catalog</abstract>
+                  <unitdate type="inclusive" normal="1940">1940,</unitdate>
+                  <unitdate type="inclusive" normal="1989">1989</unitdate>
+                  <container type="Box">15</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Pro Corporation</unittitle>
+                  <abstract>newsletter, corporate brochure</abstract>
+                  
+                  
+                  <unitdate type="inclusive" normal="1984/1994">circa 1989, </unitdate><unitdate type="inclusive" normal="1995">1995</unitdate><container type="Box">15</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Racine Hydraulics &amp; Machinery</unittitle>
+                  <abstract>technical catalogs and data for products, and diagrams for 4-way valves,
+                     check valves and pressure gauges</abstract>
+                  <unitdate type="inclusive" normal="1944/1949">1944-1949,</unitdate>
+                  <unitdate type="inclusive" normal="1956">1956,</unitdate>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate><container type="Box">15</container></did></c02>
+   <c02><did><unittitle>Raschig</unittitle>
+                  <abstract>technical product booklet for resins and molding compounds </abstract>
+                  <unitdate type="inclusive" normal="1985">1985</unitdate><container type="Box">15</container></did></c02>
+   <c02><did><unittitle>Raybestos–Manhattan, Inc.</unittitle>
+                  <abstract>technical data for R/M Pyrotex Molding Compounds, and a bulletin of
+                     engineering data for reinforced plastics</abstract>
+                  <unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">15</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Reed Prentice</unittitle>
+                  <abstract>technical booklet on how to evaluate screw injection machine
+                     plasticating performance</abstract>
+                  <unitdate type="inclusive" normal="1966">1966</unitdate>
+                  <container type="Box">15</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Resinous Products &amp; Chemical Company</unittitle>
+                  <abstract>price schedule for resin adhesives, Tego resin film, Amberlite and
+                     Uformite</abstract>
+                  <unitdate type="inclusive" normal="1944">1944</unitdate>
+                  <container type="Box">15</container>
+               </did>
+            </c02>
+
+   <c02><did><unittitle>Rexall Chemical Co.</unittitle>
+                  </did><c03><did><unittitle>Technical information</unittitle><abstract>reciprocating screw machine, Polypropylene,
+                     Polyethylene and El Rex brand products, information on correcting molding
+                     faults </abstract>
+                  <unitdate type="inclusive" normal="1961">1961,</unitdate>
+                  <unitdate type="inclusive" normal="1966">1966,</unitdate>
+                  <unitdate type="inclusive" normal="1972">1972,</unitdate>
+                  <unitdate type="inclusive" normal="1979">1979,</unitdate>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate><container type="Box">15</container></did></c03><c03><did><unittitle>Technical information</unittitle><abstract>Polypropylene, Polyethylene, Polystyrene,
+                     powders and resins; measurement tools, </abstract>
+                  <physdesc><extent>7 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1970/1980">[1975],</unitdate>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate><container type="Box">16</container></did></c03></c02>
+
+   
+            <c02>
+               <did>
+                  <unittitle>Rogers Corporation</unittitle>
+                  <abstract>technical information for plastics molding materials</abstract>
+                  <unitdate type="inclusive" normal="1973">1973</unitdate>
+                  <container type="Box">17</container>
+               </did>
+            </c02>
+
+   <c02><did><unittitle>Rohm &amp; Hass Company</unittitle>
+                  <abstract>samples of plexiglas, technical information on molding powder product
+                     design, solving light control problems with plexiglas, and Monoplex and
+                     Paraplex plasticizers</abstract>
+                  <physdesc><extent>3 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1954">1954,</unitdate>
+                  <unitdate type="inclusive" normal="1965/1968">1965-1968,</unitdate>
+                  <unitdate type="inclusive" normal="1974">1974</unitdate><container type="Box">17</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>B. Shackman &amp; Co.</unittitle>
+                  <abstract>wholesale catalog number 51 favors and novelties for easter etc., 48
+                     pp</abstract>
+                  <unitdate type="inclusive" normal="1923">1923</unitdate>
+                  <container type="Box">17</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Seaward International, Inc.</unittitle>
+                  <abstract>technical manuals Seapile recycled plastic information, and various
+                     other boat/marine products</abstract>
+                  <unitdate type="inclusive" normal="1994">1994</unitdate>
+                  <container type="Box">17</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Sekisui Plastics</unittitle>
+                  <abstract>book containing company and product history</abstract>
+                  <unitdate type="inclusive" normal="1969">1969</unitdate>
+                  <container type="Box">17</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Showa Denko KK (SDK)</unittitle>
+                  <abstract>book of technical information for light metals, ferroalloys, electrodes,
+                     abrasive grains, synthetic resins, organic and inorganic chemicals, and
+                     fertilizers</abstract>
+                  <unitdate type="inclusive" normal="1968">1968</unitdate>
+                  <container type="Box">17</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Silvatrim Mouldings</unittitle>
+                  <abstract>product information and samples for Silvatrim</abstract>
+                  <unitdate type="inclusive" normal="1962">1962</unitdate>
+                  <container type="Box">17</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Singer Manufacturing Company</unittitle>
+                  <abstract>product literature and instructions for Singer electronic seamer for
+                     bonding thermoplastic materials</abstract>
+                  <unitdate type="inclusive" normal="1950">1950</unitdate>
+                  <container type="Box">17</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>SMS Plastics Technology</unittitle>
+                  <abstract>a Modern Plastics custom publication featuring an article on Battenfeld
+                     injection molding machines and technology</abstract>
+                  <unitdate type="inclusive" normal="2002">2002</unitdate>
+                  <container type="Box">18</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Society of the Plastics Industry (SPI)</unittitle>
+                  <abstract>distributor book entitled, "Standards and Practices of Plastics Molders
+                     and Plastics Molded Parts Buyers Guide"</abstract>
+                  <unitdate type="inclusive" normal="1978">1978</unitdate>
+                  <container type="Box">18</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Solar Chemical Corporation</unittitle>
+                  <abstract>plastic weight comparator and a plastic weight converter</abstract>
+                  <unitdate type="inclusive" normal="1960">1960</unitdate><container type="Box">18</container></did></c02>
+   <c02><did><unittitle>South Bend Lathe Works</unittitle>
+                  <abstract>bulletin on how to cut screw threads in the lathe and an apprentice
+                     training book for a machine shop course</abstract>
+                  <unitdate type="inclusive" normal="1938/1939">1938-1939</unitdate><container type="Box">18</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Spin-Cast Plastics, Inc.</unittitle>
+                  <abstract>Spin-Cast rotational moulding advertisement</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">18</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Spirex Corporation</unittitle>
+                  <abstract>several editions of corporate booklet "for reference and education"; titles differ</abstract>
+                  <unitdate type="inclusive" normal="1985">1985, </unitdate><unitdate type="inclusive" normal="1992">1992, </unitdate><unitdate type="inclusive" normal="2002/2012">circa 2007</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">18</container></did></c02>
+   <c02><did><unittitle>Springborn Laboratories</unittitle>
+                  <abstract>book of technical information regarding trends in end-use markets for
+                     plastics, such as aviation/space and apparel/footwear</abstract>
+                  <unitdate type="inclusive" normal="1992">1992</unitdate><container type="Box">18</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Standard Tool Company</unittitle>
+                  <abstract>technical booklet for molds, beryllium copper, and steel
+                     castings</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">18</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Starplast Industries</unittitle>
+                  <abstract>product catalog</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">18</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Sterling Extruder Corporation</unittitle>
+                  <abstract>book of technical information regarding manufacturing, research and
+                     development, engineering, and several machines, such as the Sterling
+                     Series</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate><container type="Box">18</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Sumitomo Chemical Co., LTD</unittitle>
+                  <abstract>Japanese technical book</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">18</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Sun Chemical Corporation</unittitle>
+                  <abstract>35th annual report</abstract>
+                  <unitdate type="inclusive" normal="1963">1963</unitdate>
+                  <container type="Box">18</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Taber Instrument Corporation</unittitle>
+                  <abstract>book discussing the quality of their products and the various testing
+                     each goes through, specifically the Taber Abraser Test</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">18</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Tech-Art Plastic Company</unittitle>
+                  <abstract>molders' manual </abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate><container type="Box">18</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Tennessee Eastman Corporation (subsidiary of Eastman Kodak
+                     Company)</unittitle>
+                  <abstract>technical information for Tenite</abstract>
+                  <unitdate type="inclusive" normal="1940">1940,</unitdate>
+                  <unitdate type="inclusive" normal="1944">1944</unitdate>
+                  <container type="Box">18</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Tokuyama Soda Co., LTD</unittitle>
+                  <abstract>book of company history and technical information for their
+                     materials</abstract>
+                  <unitdate type="inclusive" normal="1970">1970</unitdate>
+                  <container type="Box">18</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Tucker</unittitle>
+                  <abstract>consumer catalogs of their products</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">18</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>UBE Laboratories</unittitle>
+                  <abstract>two books discussing their industrial history and a technical book on
+                     polyethylene </abstract>
+                  <unitdate type="inclusive" normal="1966">1966,</unitdate>
+                  <unitdate type="inclusive" normal="1968">1968,</unitdate>
+                  <unitdate type="inclusive" normal="1970">1970</unitdate>
+                  <container type="Box">19</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Union Carbide &amp; Bakelite</unittitle>
+                  <abstract>purchaser's guide on plastics for molding and extrusion, technical
+                     information on molding materials and Bakelite, brochure announcing Bakelite
+                     Cellulose Acetate, technical data on vinyl rigid sheets and Parylene conformal
+                     coatings</abstract>
+                  <physdesc><extent>3 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1938">1938,</unitdate>
+                  <unitdate type="inclusive" normal="1955/1957">1955-1957,</unitdate>
+                  <unitdate type="inclusive" normal="1974">1974</unitdate>
+                  <container type="Box">19</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Uniroyal</unittitle>
+                  <abstract>Royalite thermoplastic materials technical information</abstract>
+                  <unitdate type="inclusive" normal="1912/2009">undated</unitdate>
+                  <container type="Box">19</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>United States Gasket Corporation</unittitle>
+                  <abstract>"Final Report, Feb. 15, 1953 to June 15, 1954, Investigation of Filled
+                     Teflon, Fluorocarbon Products, Inc., Div. of United States Gasket Company,
+                     Camden, NJ, Navy Department Bureau of Ships Electronics Division" </abstract>
+                  <unitdate type="inclusive" normal="1953/1954">1953-1954</unitdate>
+                  <container type="Box">19</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>United States Plastic Corporation</unittitle>
+                  <abstract>consumer ordering catalog of products, such as Glutton containers and
+                     Smokers Cease-Fire cigarette disposal containers</abstract>
+                  <unitdate type="inclusive" normal="2001">2001</unitdate><container type="Box">19</container></did></c02>
+   <c02><did><unittitle>Vetrotex CertainTeed (Glassline)</unittitle>
+                  <abstract>product information catalog featuring  FRP panels</abstract>
+                  <unitdate type="inclusive" normal="1992">1992</unitdate><container type="Box">19</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Valentine Sugars, Inc.</unittitle>
+                  <abstract>technical data book</abstract>
+                  <unitdate normal="1989" type="inclusive">1989</unitdate>
+                  <container type="Box">19</container>
+               </did>
+            </c02>
+<c02>
+               <did>
+                  <unittitle>Whitehead &amp; Hoag</unittitle>
+                  <abstract>envelope printed with logo, motto, etc.</abstract>
+                  <unitdate normal="1895/1905" type="inclusive">circa 1900</unitdate>
+                  <container type="Box">19</container>
+               </did>
+            </c02></c01>
+
+      </dsc>	</archdesc>
+</ead>

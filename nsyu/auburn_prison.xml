@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.9, 7/18/2007-->
+<!-- Changed entity files to txt rather than xml, don't suppose it matters which they are (?) -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="auburn_prison">auburn_prison</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Auburn Prison Ledgers</titleproper>
+            <subtitle>An  inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2008-03-25" encodinganalog="Date">25 Mar 2008</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-03-25" encodinganalog="Date">25 Mar 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>8 Oct 2008 - addition (MRC)</item><item>3 Feb 2013 - name changed, descripton adjusted (MRC)</item>
+         <item>13 Nov 2017 - rehoused, inventory updated (MS)</item></list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">Auburn Prison</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Auburn Prison Ledgers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1904/1920" type="inclusive" label="Inclusive Dates: ">1904-1905, 1920</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 volumes</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Ledgers from Auburn Prison in Auburn, New York, with purchases and expenditures, reports, charts, statistics.   The first volume pertains to the women's prison, the second to both the men's and women's prison.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2605370</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The correctional facility in Auburn, New York opened in 1817.    "The Auburn System" was intended as a new (i.e. tougher) approach to prison, and included policies such as flogging, isolation, lockstep marching, striped uniforms, and rigorously enforced silence. Auburn was the first prison to turn a profit by leasing the labor of its convicts to local manufacturers (products that came out of the Auburn prison factory included nails, barrels, clothing, shoes and boots, carpets, buttons, carpenters' tools, steam engines and boilers, combs, harnesses, furniture, brooms, clocks, buckets and pails, saddle trees, wagons and sleighs, threshing equipment, rifles, and -- at one point -- silkworms and silk).   Auburn also has the dubious distinction of being the first prison to install and use the electric chair.</p><p>Women prisoners at Auburn suffered particularly dire conditions and were not exempt from physical punishment.  In the early days, women  prisoners at Auburn were relegated to the dark and airless attic; a matron was not hired until 1832, and even then the legislature refused to appropriate funds to pay.   In 1838 all women prisoners were transferred to the  new female unit opened at Sing Sing,  but they returned in 1894 when the Auburn Asylum was closed and converted to a women's prison.  The Auburn Prison for Women remained in operation from then until 1933, when a new maximum-security wing opened at Bedford Hills.</p><p>Flogging at the Auburn facility was outlawed in 1847 and convict contract labor in 1894.  In 1913 Thomas Mott Osborne, mayor of Auburn, was appointed to the newly created State Commission for Prison Reform and, after an undercover stint as an inmate, introduced numerous reforms -- including inmate self-government -- that were later adopted at many other correctional facilities.   The prison operates today as the "Auburn Correctional Facility."</p><p>[Portions of this background adapted from the brochure "Both Sides of the Wall," published by the Cayuga Museum.]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Auburn Prison Ledgers</emph> consists of two volumes.  The first volume is a financial ledger, detailing purchases and expenditures including rations, furniture, salaries, and other financial matters pertaining to the women's prison.  The second volume includes reports, charts, statistics, and other material.  Much of this second volume pertains to the men's prison.</p>
+      </scopecontent>
+      
+      <!--<arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>## OPT (MARC 351$a)</p>
+      </arrangement>-->
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <subject encodinganalog="650" source="local">New York State</subject><!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+         <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">	Auburn Prison.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Prisons -- New York (State)</subject><subject encodinganalog="650" source="lcsh">Women prisoners.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Ledgers (account books)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Prison administration.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Auburn Prison Ledgers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>1904-1905 volume purchased with funds from the Blackman Fund, 2008.  1920 volume purchased, 1989.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+            <did>
+               <unittitle>Ledgers</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Financial ledger</unittitle>
+                  <unitdate normal="1904/1905" type="inclusive">1904-1905</unitdate>
+                  <container type="Oversize">1</container>
+                  
+                  
+               </did>
+            </c02>
+         <c02>
+               <did>
+                  <unittitle>"Report of Auburn State Prison and State Prison for Women"</unittitle>
+                  <unitdate normal="1904/1905" type="inclusive">1920</unitdate>
+                  <physdesc><extent>125 pp</extent></physdesc><container type="Oversize">2</container>
+                  
+                  
+               </did>
+            </c02></c01>
+      </dsc>
+   </archdesc>
+</ead>

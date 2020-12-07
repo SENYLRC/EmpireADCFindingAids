@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="middleton_d">middleton_d</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Drew Middleton Papers</titleproper>
+            <subtitle>An inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-03-22" encodinganalog="Date">22 Mar 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-03-22">22 Mar 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>4 Aug 2011 - collection processed (MRC)</item><item>2 Oct 2015 - memorabilia added (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Middleton, Drew, 1913-1990.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Drew Middleton Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1935/1967" type="inclusive" label="Inclusive Dates: ">1935-1967</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1.25 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Foreign correspondent and author.  Collection contains manuscripts of 
+		 four of Middleton's books including his first, <emph render="italic">Struggle for Germany</emph>, published in 1949.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2741075</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Drew Middleton (1913-1990) was a reporter for the Associated Press and the New York Times, noted for his combat reports as 
+	  Foreign Correspondent for the Times during World War II, and his coverage and analysis of postwar Europe and the cold war.  He is author of more 
+	  than a dozen books on military affairs, postwar diplomacy, and foreign policy.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Drew Middleton Papers</emph> consist of Memorabilia and Writings.</p><p><emph render="bold">Memorabilia</emph>, donated separately, contains photographs, a clipping, and a postcard.</p><p><emph render="bold">Writings</emph> contains manuscripts for four of Middleton's books.  There are 
+		 three drafts of <emph render="italic">America's Stake in Asia</emph> (1967), two drafts and a set of galleys for 
+		 <emph render="italic">The Atlantic Community</emph> (1965), one draft of 
+		 <emph render="italic">Crisis in the West</emph> (1965), and one 
+		 draft of <emph render="italic">Struggle for Germany</emph> (1949, his first book).  There are also two items of correspondence 
+		 with his editors, one relating to each of the first two titles.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Writings are in alphabetical order by book title.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>The library has published editions of many of Middleton's books, including <emph render="italic">Our Share of Night : A Personal 
+		 Narrative of the War Years</emph>.  Please refer to &summitref; to locate these items.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>A published copy of <emph render="italic">The Atlantic Community</emph> has been sent to Rare Books for cataloging.</p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Historians</subject>
+         <subject encodinganalog="650" source="local">Journalism</subject>
+		 <subject encodinganalog="650" source="local">Military history</subject>
+         <persname encodinganalog="600" source="lcnaf">Middleton, Drew, 1913-1990.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Foreign correspondents -- Europe.</subject>
+         <subject encodinganalog="650" source="lcsh">International Relations -- Asia.</subject>
+         <subject encodinganalog="650" source="lcsh">World politics -- 1955-1965.</subject>
+         <subject encodinganalog="650" source="lcsh">World War, 1939-1945 -- Personal narratives.</subject>
+         <geogname encodinganalog="651" source="lcsh">Europe -- History -- 1918-1945.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Europe -- Politics and government -- 1918-1945.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Asia -- Foreign relations -- United States.</geogname>
+         <geogname encodinganalog="651" source="lcsh">United States -- Foreign relations -- Asia.</geogname>
+         <geogname encodinganalog="651" source="lcsh">North Atlantic Region -- Politics and government.</geogname>
+         <geogname encodinganalog="651" source="lcsh">North Atlantic Region -- Strategic aspects.</geogname>
+		 <geogname encodinganalog="651" source="lcsh">Germany -- Politics and government -- 1945-1990.</geogname>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Galley proofs.</genreform>
+         <genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Typescripts.</genreform>
+		 <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Historians.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Military historians.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Drew Middleton Papers,  <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Drew Middleton</persname>, 1967, 1968, 1971.</p>
+      <p>Memorabilia folder, gift of <persname role="donor">Aline Archambault</persname>, 2015.</p></acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><unitdate normal="1935" type="inclusive">1935, </unitdate><unitdate normal="1945" type="inclusive">1945, </unitdate><unitdate type="inclusive" normal="1935/1950">undated</unitdate><container type="Box">1</container></did><acqinfo><p>Gift of Aline Archambault, 2015.</p></acqinfo><scopecontent><p>This folder contains a photograph of Drew Middleton, a photograph of a meeting between Franklin D. Roosevelt and Winston Churchill with Middleton in background, a postcard with the image of the Onondaga Hotel in Syracuse, N.Y. that was addressed to Middleton's sister Audrey, and a brief New York Times article dated 28 May 1945 about the American graves at Saint Laurent sur Mer in Normandy written by Drew Middleton.</p></scopecontent></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02><did><unittitle>America's Stake in Asia (1967)</unittitle></did>
+               <c03><did><unittitle>Correspondence</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>Draft A</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>Draft B</unittitle><abstract>appears to be identical to Draft A, down to the same handwritten corrections</abstract><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>Draft C</unittitle><abstract>incorporates corrections on previous drafts</abstract><container type="Box">1</container></did></c03>
+			</c02>
+            <c02><did><unittitle>The Atlantic Community (1965)</unittitle></did>
+               <c03><did><unittitle>Correspondence</unittitle><unitdate normal="1965" type="inclusive">1965</unitdate><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>Draft</unittitle><physdesc><extent>10 folders</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>Publisher's copy of draft</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>Final typescript</unittitle><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>Gallerys</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container></did></c03>
+			</c02>
+            <c02><did><unittitle>Crisis in the West (1965)</unittitle></did>
+               <c03><did><unittitle>Draft</unittitle><container type="Box">2</container></did></c03>
+			</c02>
+            <c02><did><unittitle>Struggle for Germany (1949)</unittitle></did>
+               <c03><did><unittitle>Draft</unittitle><container type="Box">3</container></did></c03>
+			</c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

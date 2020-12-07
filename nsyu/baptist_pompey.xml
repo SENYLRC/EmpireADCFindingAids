@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.7, 1/24/2007-->
+<!--Added copyright statement to Use Restrictions section-->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="baptist_pompey">baptist_pompey</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Baptist Society of Pompey, New York Records</titleproper>
+            <subtitle>An inventory of its records at Syracuse University</subtitle>
+         <author encodinganalog="Creator">-</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1999/2001" encodinganalog="Date">ca. 2001</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2007-06-14">14 Jun 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>7 Dec 2007 - correction (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">Baptist Society of Pompey, New York</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Baptist Society of Pompey, New York Records</unittitle>
+         <unitdate encodinganalog="245$f" normal="1799/1943" type="inclusive" label="Inclusive Dates: ">1799-1943</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Records of the church in Pompey, located in central New York.  Collection includes financial, administrative, membership, legal, and printed material as well as three volumes of meeting minutes.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2538174</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <!--<bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>## Use MARC 545</p></bioghist>-->
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Baptist Society of Pompey Records</emph> includes financial, administrative, membership, and legal <emph render="bold">Church records</emph>; related <emph render="bold">Printed material</emph> including a copy of the Church manual and some clippings; and three volumes of <emph render="bold">Church and Covenant meeting minute books</emph>.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Church records are arranged alphabetically by type.  Printed material and meeting minute books are arranged chronologically.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+			<subject encodinganalog="650" source="local">New York State</subject>
+			<subject encodinganalog="650" source="local">Church and clergy</subject>
+         <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            
+         
+            <corpname encodinganalog="610" source="lcnaf">Baptist Society of Pompey, New York.</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Baptists -- New York (State) -- Pompey.</subject>
+				<subject encodinganalog="650" source="lcsh">Church records and registers -- New York (State) -- Pompey.</subject>
+         <geogname encodinganalog="651" source="lcsh">New York (State) -- Social life and customs.</geogname>
+            <genreform encodinganalog="655" source="aat">Articles.</genreform>
+				<genreform encodinganalog="655" source="aat">Church registers.</genreform>
+				<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+				<genreform encodinganalog="655" source="aat">Financial records.</genreform>
+				<genreform encodinganalog="655" source="aat">Microfilms.</genreform>
+				<genreform encodinganalog="655" source="aat">Minutes (administrative records)</genreform>
+         
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Baptist Society of Pompey, New York Records, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <!--<acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>### (MARC 541 and/or  561)</p>
+      </acqinfo>-->
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>Church records</unittitle>
+            </did><c02>
+               <did>
+                  <unittitle>Accounts payable</unittitle>
+                  <unitdate normal="1816/1929" type="inclusive">1816-1929</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Annual reports and letters</unittitle>
+                  <unitdate normal="1923/1942" type="inclusive">1923-1942, </unitdate><unitdate normal="1799/1943" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Attendance record</unittitle>
+                  <unitdate normal="1933" type="inclusive">1933</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Bank statements</unittitle>
+                  <unitdate normal="1921" type="inclusive">1921, </unitdate><unitdate normal="1923" type="inclusive">1923, </unitdate><unitdate normal="1927" type="inclusive">1927</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Blank forms</unittitle>
+                  <unitdate normal="1799/1943" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Certificates of membership and letter of dismissal</unittitle>
+                  <unitdate normal="1801/1936" type="inclusive">1801-1936</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Church articles of practice and Church Covenant</unittitle>
+                  <unitdate normal="1799/1943" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Confession of sin</unittitle>
+                  </did>
+            <c03><did><unittitle>Pearce vs. Cooley</unittitle><unitdate normal="1816/1823" type="inclusive">1816-1823</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did></c03><c03><did><unittitle>Coats vs. Warren</unittitle><unitdate normal="1818" type="inclusive">1818</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did></c03></c02><c02>
+               <did>
+                  <unittitle>Confession of faith</unittitle>
+                  <unitdate normal="1799/1943" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Correspondence, incoming</unittitle>
+                  <unitdate normal="1799/1943" type="inclusive">1805-1943</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Correspondence, outgoing</unittitle>
+                  <unitdate normal="1805/1929" type="inclusive">1805-1929</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Declaration of Withdrawal</unittitle>
+                  <unitdate normal="1896" type="inclusive">1896</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Deed</unittitle>
+                  <unitdate normal="1799" type="inclusive">1799</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Insurance</unittitle>
+                  <unitdate normal="1927/1928" type="inclusive">1927-1928</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Lane, Elder Benjamin</unittitle>
+                  <unitdate normal="1819" type="inclusive">1819, </unitdate><unitdate normal="1922" type="inclusive">1922</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Legal Matters</unittitle>
+                  <unitdate normal="1883/1926" type="inclusive">1883-1926</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <unitdate normal="1805/1938" type="inclusive">1805-1938, </unitdate><unitdate normal="1799/1943" type="inclusive">undated</unitdate>
+                  <physdesc><extent>3 folders</extent></physdesc><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Missionary report</unittitle>
+                  <unitdate normal="1926" type="inclusive">1926</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Opinion on communion</unittitle>
+                  <unitdate normal="1822" type="inclusive">1822</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Receipts</unittitle>
+                  <unitdate normal="1817/1934" type="inclusive">1817-1934</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Reports from neighboring churches</unittitle>
+                  <unitdate normal="1833" type="inclusive">1833, </unitdate><unitdate normal="1838" type="inclusive">1838, </unitdate>
+                  <unitdate normal="1799/1943" type="inclusive">undated</unitdate><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Succession of ministers</unittitle>
+                  <unitdate normal="1805/1825" type="inclusive">1805-1825</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Treasurer’s report</unittitle>
+                  <unitdate normal="1846/1933" type="inclusive">1846-1933</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02>
+         <c02>
+               <did>
+                  <unittitle>Poems</unittitle>
+                  <unitdate normal="1799/1943" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02></c01><c01 level="series"><did><unittitle>Printed material</unittitle></did><c02><did><unittitle>Baptist Church Manual</unittitle><unitdate type="inclusive" normal="1925">1925</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Church Insurance Association</unittitle><unitdate type="inclusive" normal="1892">1892</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>"Country church once more" by W.A. Grange</unittitle><unitdate normal="1799/1943" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Clippings</unittitle><abstract>history of the church building</abstract><unitdate type="inclusive" normal="1915">1915</unitdate><unitdate normal="1799/1943" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Miscellaneous</unittitle><unitdate type="inclusive" normal="1925">1925, </unitdate><unitdate normal="1799/1943" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02></c01><c01 level="series"><did><unittitle>Church and Covenant meeting minute books</unittitle></did><c02><did><unittitle><unitdate type="inclusive" normal="1805/1835">1805-1835</unitdate></unittitle><abstract>Pompey/Delphi
+     Male members, female members, organizational records, Articles of Faith,  
+     Articles of Practice, Church Covenant, minutes</abstract><container type="Volume">1</container></did></c02><c02><did><unittitle><unitdate type="inclusive" normal="1835/1875">1835-1875, </unitdate><unitdate normal="1914" type="inclusive">1914, </unitdate><unitdate normal="1934" type="inclusive">1934, </unitdate><unitdate normal="1935" type="inclusive">1935</unitdate></unittitle><abstract>     Male members, female members, Articles of Faith and Practice of the Baptist  
+     Church, Delphi, Covenant, Accords of the Baptist Church, Delphi, miscellaneous.
+     Also, lists of members from 1914, correspondence from 1934, Baptist church  
+     Manual, 1935.</abstract><container type="Volume">2</container></did></c02><c02><did><unittitle><unitdate normal="1875/1924" type="inclusive">1875-1924, </unitdate><unitdate normal="1916" type="inclusive">1916</unitdate></unittitle><abstract>Record and property of the First Baptist Church of the Town of  
+                    Pompey at Delphi, 1875.
+           	         Articles of Faith and Practice, Covenant, membership, minutes of  
+                    Covenant meetings, printed article on the Delphi Church building erected in 1916.
+</abstract><container type="Volume">3</container></did></c02></c01><c01 level="series"><did><unittitle>Microfilm</unittitle></did><c02><did><unittitle>Microfilm 22 - First Baptist Society, Town of Pompey, Onondaga County, NY
+</unittitle><container type="Box">1</container></did></c02></c01>
+      </dsc>
+   </archdesc>
+</ead>

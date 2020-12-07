@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+<?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen.css"?>
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="crockett_g">crockett_g</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Gib Crockett Cartoons</titleproper>
+            <subtitle>An inventory of his cartoons at Syracuse University</subtitle>
+         <author encodinganalog="Creator">SK</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2006-03-08" encodinganalog="Date">18 Nov 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Susan Kline<date normal="2006-03-08">18 Nov 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <revisiondesc>
+         <list>
+            <item>18 Nov 2010 - created inventory (SK)</item>
+            <item>25 May 2011 - Edited bio, scope; added subject and genre headings (AM)</item><item>29 Sep 2015 - Carol Duncan gift added (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100" source="lcnaf">Crockett, Gib.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Gib Crockett Cartoons</unittitle>
+         <unitdate encodinganalog="245$f" normal="1964/1975" type="inclusive" label="Inclusive Dates: ">1964-1975</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Original editorial cartoons, sketches, memorabilia. </abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3298879</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Gib Crockett (1912-2000) was an American editorial cartoonist. </p><p>Gibson Crockett was born on September 18, 1912. He studied cartooning through a
+            correspondence course and started working for the <emph render="italic">Washington
+               Evening Star</emph> in 1933, under the direction of James Berryman. Initially
+            Crockett drew illustrations, spot cartoons and sports cartoons. In the 1940s, his
+            work began to alternate with James Berryman's on the editorial page. Eventually,
+            Crockett replaced Berryman as editorial cartoonist in 1965 upon Berryman's
+            retirement. </p><p>Crockett's illustrations promoting war bonds  were recognized by the U.S. Treasury. He also received awards from the Freedoms Foundation and received the National Headliners Award (1957). A member of the American Art League of Washington, Crockett was also a painter. </p><p>Gib Crockett died at Montgomery General Hospital in Maryland on February 18, 2000. </p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Gib Crockett Cartoons</emph> contains original artwork and a small amount of memorabilia. </p><p><emph render="bold">Cartoons</emph> contains 12 editorial cartoons
+            and one unfinished drawing for the <emph render="italic">Washington Star</emph>
+            (previously known as the <emph render="italic">Washington Evening Star</emph>). Works
+            vary in size and are often drawn with graphite, white pencil, crayon and ink. U.S. and international politics are the subjects of the editorial cartoons, including the Bobby
+            Baker case, Ronald Reagan, Fidel Castro, Mao Zedong, communism and Pakistan.</p><p><emph render="bold">Memorabilia</emph>, accumulated by Crockett's friend and fellow artist Francis C. Peters, contains a tribute to Crockett published in the 9 Feb 1975 issue of the <emph render="italic">Washington Star-News</emph> and several pieces of original artwork by him, including a caricature of Peters.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Items are arranged in chronological order. </p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has collections of more than 150 cartoonists. Please refer to &subjindex;
+            for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--<separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial>-->
+      
+      <!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Art -- Cartoonists</subject><persname encodinganalog="600" source="lcnaf">Crockett, Gib.</persname>
+         <persname encodinganalog="600" source="lcnaf">Mao, Zedong, 1893-1976 -- Caricatures and
+            cartoons.</persname>
+         <persname encodinganalog="600" source="lcnaf">Castro, Fidel, 1926- -- Caricatures and
+            cartoons.</persname>
+         <!--<corpname encodinganalog="610" source="lcnaf"/>-->
+         <title encodinganalog="630" source="lcnaf">The Washington Evening Star. </title>
+         <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject>
+         <subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United
+            States.</subject>
+         <subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Editorial cartoons -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">World politics -- 1964-1966 -- Caricatures and
+            cartoons.</subject>
+         <geogname encodinganalog="651" source="lcsh">United States -- Politics and government --
+            1964-1966 -- Caricatures and cartoons.</geogname>
+         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+         <genreform encodinganalog="655" source="aat">Editorial cartoons.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+         <!--<function encodinganalog="657" source="lcsh">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Gib Crockett Cartoons, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of 
+        
+        <persname role="donor">David Norton</persname>, 1979.
+        
+        </p>
+      <p>Francis C. Peters memorabilia, gift of 
+        
+        <persname role="donor">Carol Duncan</persname>, 2014.</p></acqinfo>
+      
+      <!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+      
+      
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         
+         <c01 level="series"><did><unittitle>Cartoons</unittitle>
+               <physdesc>
+                  <extent>13 items</extent>
+               </physdesc></did>
+               
+            <c02>
+               <did>
+                  <unittitle>Original art
+                     
+                  </unittitle>
+                  <unitdate type="inclusive" normal="1964">1964</unitdate><container type="Oversize">1</container>
+               </did>
+               <scopecontent>
+                  <p>Jul 13: "Laocoon": Barry Goldwater, Republican party</p>
+               </scopecontent>
+            </c02>
+         <c02>
+               <did>
+                  <unittitle>Original art
+                     
+                  </unittitle>
+                  <unitdate normal="1965" type="inclusive">1965</unitdate><container type="Oversize">1</container>
+               </did>
+               <scopecontent>
+                  <p>Feb 26: "Never saw hide nor hair of him!": Jordan, Bobby Baker case<lb/> May
+                     18: "Out, damned spots! Out, I say!": Lennox Polk McLendon, Baker case,
+                     committee report<lb/> May 26: "The world's most select committee": Senate
+                     ethics investigation<lb/> Sep 22: "Here we go again!": Ronald Reagan,
+                     California Republican party <lb/> Sep 21: "It's not as comfortable as it
+                     looks!": Lal Bahadur Shastri, China, famine, United Nations, Pakistan, world
+                     news<lb/> Oct 21: "I've got my own rights to keep me wrong!": U.S.
+                     Constitution, Klu Klux Klan<lb/>Dec 6: "Love me love my dogma!": Mao Zedong,
+                     Leonid Brezhnev, Marxism, Leninism: additional sketch of same title </p>
+               </scopecontent>
+            </c02><c02>
+               
+       
+            <did>
+                  <unittitle>Original art
+                     
+                  </unittitle>
+                  <unitdate normal="1966" type="inclusive">1966</unitdate><container type="Oversize">1</container>
+               </did>
+               <scopecontent>
+                  <p>Mar 4: "It really isn't as dangerous as it looks!": Britain, Harold Wilson<lb/>
+                     Mar 10: "If it hadn't been for me they'd be French - and it would serve them
+                     right!": Nelson's Pillar, Ireland<lb/> Mar 16: "I just can't stand idiots!" Mao
+                     Zedong, Fidel Castro, communism<lb/> May 4: "But don't go near the water!":
+                     Senate ethics comittee, Thomas Dodd case, reform </p>
+               </scopecontent>
+            </c02></c01><c01 level="series"><did><unittitle>Memorabilia</unittitle></did><c02><did><unittitle>Francis C. Peters</unittitle><unitdate type="inclusive" normal="1967">1967, </unitdate><unitdate type="inclusive" normal="1971">1971, </unitdate><unitdate type="inclusive" normal="1975">1975</unitdate><container type="Oversize">1</container></did><acqinfo><p>Gift of Carol Duncan, 2014.</p></acqinfo><scopecontent><p> Peters was a friend and colleague of Crockett's.  This folder, donated by Peters' daughter, contains a tribute to Crockett published in the <emph render="italic">Washington Star-News</emph> (9 Feb 1975) and three pieces of original artwork by Crockett: a sketch of an artist painting an image of the Washington Monument, a colored caricature portrait of Peters (1971), and a political cartoon entitled "Crime?  What Crime?" which appeared in the <emph render="italic">Washington Star</emph> on 25 May 1967.</p></scopecontent></c02></c01>
+      </dsc>
+   </archdesc>
+</ead>

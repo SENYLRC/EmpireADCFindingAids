@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012--><!-- added altformavail section -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="bell_latin" mainagencycode="NSyU">bell_latin</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Bell Brothers Collection of Latin American and Caribbean Recordings</titleproper>
+        <subtitle>An inventory of their collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">PJM</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2013-03-27">24 Jul 2017</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Patrick J Midtlyng
+           
+        
+        <date normal="2013-03-27">24 Jul 2017</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository encodinganalog="852$a" id="scrc" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <!--<persname encodinganalog="100">Bell, Max</persname>
+           <persname encodinganalog="100">Bell, Joseph</persname>-->
+        <corpname encodinganalog="110">Bell Music Box</corpname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Bell Brothers Collection of Latin American and Caribbean Recordings</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1950/1982" type="inclusive">1950-1982</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>15,300 recordings</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: " langcode="639.2">A subset of the Bell Brothers Collection focusing on Latin American and Caribbean musical genres.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">4959697</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">Majority of the material is in 
+           
+        
+        <language langcode="spa">Spanish</language>but other languages are represented, including
+        
+        <language langcode="eng">English</language>and
+        
+        <language langcode="por">Portuguese</language></langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Joseph and Max Bell established the Bell Music Box record shop in Manhattan, New York City following World War II. 
+         The brothers were Russian immigrants, who spent time in Cuba before coming to America. While in Cuba, they took an interest in Spanish language recordings
+         as well as the music of the Caribbean.  Their store was known to record aficionados and collectors nationwide and was comprehensive in its breadth -- if they did not have a copy of a particular recording, they would make their own.  As a result, their inventory contained both commercially produced and sold recordings, and personal copies made for their own reference and use.</p><p>In 1963, Syracuse University purchased the entire inventory of the Bell Brothers' store.  Commercial recordings were integrated into the <archref href="belfer_discs.htm">Belfer Commercial Phonograph Disc Recordings</archref>.  Latin American and Caribbean recordings were separated into the <archref href="bell_latin.htm">Bell Brothers Collection of Latin American and Caribbean Recordings</archref>.  Noncommercial recordings were retained as the <archref href="bell_brothers.htm">Bell Brothers Collection</archref>.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The
+        
+        <emph render="bold">Bell Brothers Collection of Latin American and Caribbean Recordings</emph>contains over 15,000 recordings 
+            from Latin American artists from North, Central, and South America as well as Cuba and other Caribbean islands. This (primarily) 45-rpm collection 
+            of Caribbean and Caribbean-derived musics covers the historical development of the whole gamut of Caribbean musics, and contains examples of 
+            many musical genres including: rancheras, meringues, boleros, porros, guarachas, valses, pasillos, chachachás, pachangas, merecumbés, aguinaldos, 
+            seises fajardeños, plenas, tango-boleros, pasodobles, mambos, guaguancós, sones montunos, charangas, guajira sones, plechangas, calypsos, bossa novas, 
+            bombas, bembés, seises jíbaros, tangos, paseos, danzones, seises milongas, huapangos, canciones, polkas, and salves.</p>
+      <p>Recordings issued after 1963 were acquired separately through a combination of gifts and purchases but were added to this collection based on content and format similarity.</p>
+    </scopecontent>
+    <altformavail encodinganalog="530">
+      <head>Other Formats Available</head>
+      <p>The discs in this collection are part of an ongoing digitization project. For access to
+            digitized items please see
+        
+        <extref href="http://scrconline.syr.edu/xtf/search?brand=scrc;repository=scrc;f1-collection=Bell%20Brothers%20Collection%20of%20Latin%20American%20and%20Caribbean%20Recordings">The Bell Brothers Collection of Latin American and Caribbean Recordings</extref>in
+            &scrconline;.</p>
+    </altformavail>
+    <!--     <originalsloc encodinganalog="535">
+	    <head>Location of Originals</head>
+		<p>Originals are here and here and here.</p>
+     </originalsloc>-->
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Lacquer disc copies of commercial recordings remain in original order. Commercial items are in label name and catalog number order.</p>
+    </arrangement>
+    <!--     <relatedmaterial encodinganalog="544 1">
+        <head>Related Material</head>
+     </relatedmaterial>-->
+      
+     <!--Use archref, not extref, to link to related collections.-->
+    <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>Commercial recordings in this collection have been sent to cataloging.  Please refer to &summitref; to locate these items.</p>
+    </separatedmaterial>
+    <otherfindaid encodinganalog="555">
+      <head>Other Related Finding Aids</head>
+      <p>See also
+        
+        the <archref href="bell_brothers.htm">Bell Brothers Collection</archref>.</p>
+    </otherfindaid>
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+            defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Music</subject>
+      <subject encodinganalog="650" source="local">Popular culture</subject>
+      <persname encodinganalog="600" source="lcnaf">Bell, Max.</persname>
+      <persname encodinganalog="600" source="lcnaf">Bell, Joseph.</persname>
+      <corpname encodinganalog="610" source="lcnaf">Bell Music Box.</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Popular music -- 1971-1980.</subject>
+      <subject encodinganalog="650" source="lcsh">Popular music -- Cuba -- 1961-1970.</subject>
+      <subject encodinganalog="650" source="lcsh">Popular music -- Mexico -- 1961-1970.</subject>
+      <subject encodinganalog="650" source="lcsh">Protest songs -- Puerto Rico.</subject>
+      <subject encodinganalog="650" source="lcsh">Aguinaldos.</subject>
+      <subject encodinganalog="650" source="lcsh">Boleros.(Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Bossa nova (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Calypso (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Charango music.</subject>
+      <subject encodinganalog="650" source="lcsh">Cumbia (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Danzones (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Guaguancos (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Cumbia (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Guajira.</subject>
+      <subject encodinganalog="650" source="lcsh">Guarachas (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Huapangos (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Mambos (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Merengue (Dance)</subject>
+      <subject encodinganalog="650" source="lcsh">Milongas (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Pachangas (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Pasillos (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Paso dobles (Music)</subject>
+      <subject encodinganalog="650" source="lcsh">Plenas.</subject>
+      <subject encodinganalog="650" source="lcsh">Polkas.</subject>
+      <subject encodinganalog="650" source="lcsh">Porros.</subject>
+      <subject encodinganalog="650" source="lcsh">Rancheras.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh"></geogname>-->
+      <genreform encodinganalog="655" source="aat">45 rpm records.</genreform>
+      <genreform encodinganalog="655" source="aat">78 rpm records.</genreform>
+    
+    
+       <!--<occupation encodinganalog="656" source="lcsh">##</occupation>
+        <function encodinganalog="657">##</function>-->
+     </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      <p>Researcher access to the recordings requires advance notice in order to produce a working copy.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any 
+            materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Bell Brothers Collection of Latin American and Caribbean Recordings,
+        
+        <lb/>&su_name;</p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>The majority of this collection was acquired by purchase from the Bell Brothers in 1963.</p>
+      <p>Recordings issued after 1963 were acquired separately through a combination of gifts and purchases but were added to this collection based on content and format similarity.</p>
+    </acqinfo>
+    <!--     <appraisal encodinganalog="583">
+        <head>Appraisal Information</head>
+        <p>## OPT (MARC 583)</p>
+     </appraisal>-->
+      
+<!--     <accruals encodinganalog="584">
+        <head>Accruals</head>
+        <p>Additional</p>
+     </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+      <c01 level="series">
+        <did>
+          <unittitle>Lacquer copies, 45 rpm</unittitle>
+          <note>
+            <p>The Bell Brothers were collectors of rare recordings. If they could not acquire
+                     a released copy of a recording, they would often make instantaneous copies or
+                     dubs of the original recording on a lacquer disc.</p>
+          </note>
+        </did>
+        <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+           <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+        <c02>
+          <did>
+            <unitid>latin_amer_028</unitid>
+            <unittitle>Adamo - Tu Nombre, Un Mechon de Cabello, La Noche ; Quiero, Mi Gran
+                     Noche, Ella</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_042</unitid>
+            <unittitle>Aires de Cadiz Solea - Sabicas ; Madrid - Bobby Capo</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_023</unitid>
+            <unittitle>Antonio Molina - Adios a Espana ; Cantina</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_029</unitid>
+            <unittitle>Antonio Molina - El Agua del Avellano ; A La Sombra de un Bambu</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_032</unitid>
+            <unittitle>Antonio Molina - Mar Blanca ; Soy El Cante</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_036</unitid>
+            <unittitle>Antonio Molina - Yo Quiero Ser “Matador” ; Maria de Los Rene Dios</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_027</unitid>
+            <unittitle>Argentinita - El Fandango Del Candil ; Andaluza</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Audiodisc brand seven-inch metal recording disc with black lacquer and
+                     paper label with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_005</unitid>
+            <unittitle>Arriento Surcos Folkloricos Morenada Huayno ; Tu Eres Mi Pslomits
+                     Oscar Grajeda Cueca</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_038</unitid>
+            <unittitle>Cancion Del Ole - Balerias ; Dos Cruces - Bolero Moreno</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Audiodisc brand seven-inch metal recording disc with black lacquer and
+                     paper label with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_044</unitid>
+            <unittitle>Carlos Montoya - Alegrias (Guitar) ; Media Granaina (Guitar)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_039</unitid>
+            <unittitle>Carlos Montoya - Se Villan Stipicas ; Tarantas (Guitar)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_012</unitid>
+            <unittitle>Con Fold Tarijeno - Amanacaya Cueca ; Corazon Cueca</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_003</unitid>
+            <unittitle>Cueca Con Folk Tarijen - A Moto Mendez ; La Chulupia</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_045</unitid>
+            <unittitle>El Carambelito - Ritmo Carambe ; La Pistolera - Corrido</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Audiodisc brand seven-inch metal recording disc with black lacquer and
+                     paper label with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_025</unitid>
+            <unittitle>El Zapatero - Balerias ; Besame - Farruca</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Audiodisc brand seven-inch metal recording disc with black lacquer and
+                     paper label with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_057</unitid>
+            <unittitle>G. Butikofer y R. Cordova - Manchaypuito (Folk Nacional) ; Gran
+                     Mosaico (Folk Nacional)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer without labels on the disc, just
+                     a small circle sticker with number; label with typewritten text is applied to
+                     the plain white paper sleeve.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_010</unitid>
+            <unittitle>Gladys Moreno - El Carretero Taquirari ; Para Que Cueca</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_006</unitid>
+            <unittitle>Gladys Moreno - Huerfana Virginia Cueca ; A Cotoca Carnaval</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_001</unitid>
+            <unittitle>Guillermo Butikofer - Illimina (Tango) ; Fiesta Oriental Guapuru
+                     (Bolivia)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number. Fania Records,
+                     Inc. sleeve.
+              
+              <extent>7" lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_030</unitid>
+            <unittitle>Hansel And Gretel (EP)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_043</unitid>
+            <unittitle>Juan Legido - De Pies a Cabeza Copla y Oracion ; Los Consejos de La
+                     Gente - Clavelitos J Legi(?)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_035</unitid>
+            <unittitle>Lola Flores - Isabel (Asturiana) ; Tu Nochecita (Zambra)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_041</unitid>
+            <unittitle>Lola Flores - Salero (Pasodoble) ; Aquel Juramento</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_016</unitid>
+            <unittitle>Los Cunumis - Holgazan Taquirari ; No Mas No Mas Llorar (Taquirari
+                     Bolivian)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with handwritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_017</unitid>
+            <unittitle>Los Cunumis - Vena Mi (Carnaval) ; Pa Que Pa Que (Taquirari)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Audiodisc brand seven-inch metal recording disc with black lacquer and
+                     paper label with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_018</unitid>
+            <unittitle>Los Davalos - Al Pie del Misti (Vals) ; La Chica Que Me Quier
+                     (Marinera)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_014</unitid>
+            <unittitle>Los Davalos - Con Locura (Vals) ; Gente Morena (Marinera)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_007</unitid>
+            <unittitle>Los Dos Caminantes - A Bolivia Cueca ; Moto Mendez Cueca</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_009</unitid>
+            <unittitle>Los Dos Caminantes - Selecion de Bailecitos ; Sed de Amor Cueca</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_013</unitid>
+            <unittitle>Los Fronterizos - La Salorencina (Cueca Boliviana) ; Pollerita
+                     Colorada (Huaino)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_020</unitid>
+            <unittitle>Los Genios - Lima Lima (Vals) ; Nita (Vals)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_021</unitid>
+            <unittitle>Los Jairas - Copacabana (Huayno) ; Cuarguara de Carangas (Huayno)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_052</unitid>
+            <unittitle>Los Peregrinos - Diablada Tradicional ; Jenecheyru Carnaval</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer without labels on the disc, just
+                     a small circle sticker with number; label with typewritten text is applied to
+                     the plain white paper sleeve.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_004</unitid>
+            <unittitle>Los Peregrinos - Jenecheyru Taquirari ; Diablada Tradicional Diablada</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_053</unitid>
+            <unittitle>Los Peregrinos - Naranjita (Bolivianas) ; Rie Corazon (Musica de
+                     Bolivia)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer without labels on the disc, just
+                     a small circle sticker with number; label with typewritten text is applied to
+                     the plain white paper sleeve.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_002</unitid>
+            <unittitle>Los Peregrinos - Naranjita Huano ; Acuarela Bolivian Potpourri</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_056</unitid>
+            <unittitle>Los Peregrinos - Pollerita (Musica de Bolivia) ; Borrachito Corazon
+                     (Musica de Bolivia)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer without labels on the disc, just
+                     a small circle sticker with number; label with typewritten text is applied to
+                     the plain white paper sleeve.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_015</unitid>
+            <unittitle>Mauro Nunez - Chuquesaquenito (Huayno) ; Los Antiplanicos - Cacharpaya
+                     del Indio (Huayno)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_050</unitid>
+            <unittitle>Nina de los Peines - Peteneras ; Sevillanas #2</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_026</unitid>
+            <unittitle>Noche De Ronda - Bolero Tango ; Lo Han Vieto Con Otra - Tango</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Audiodisc brand seven-inch metal recording disc with black lacquer and
+                     paper label with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_040</unitid>
+            <unittitle>Pepe Blanco - Magnetismo (Zambra) ; A Mi Serrana (Pasadoble)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_031</unitid>
+            <unittitle>Pepe Blanco - Se Llamo Rosa ; De “Caiz” Al Puerto</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_047</unitid>
+            <unittitle>Raphael - A Pesar de Todo ; No Tengo No Tengo</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_051</unitid>
+            <unittitle>Raphael - Cuando Tu No Estas ; No Vuelvas</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with handwritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_046</unitid>
+            <unittitle>Raphael - Que No Me Despier Te Nadie ; Inmensidad</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_024</unitid>
+            <unittitle>Raphael - Te Voy A Contar mi Vida ; Llevan</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_033</unitid>
+            <unittitle>Raphael - Vuelve a Empezar ; Poco a Poco</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_055</unitid>
+            <unittitle>Raphael - Yo Soy Aquel ; Cuando Tu No Estas</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer without labels on the disc, just
+                     a small circle sticker with number; label with typewritten text is applied to
+                     the plain white paper sleeve.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_008</unitid>
+            <unittitle>Recuerdos de Paraguay ; Recuerdos de Dulzur Los Paraguayos</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_054</unitid>
+            <unittitle>Rosita Romero - Que Linda Que es La Vida Baion ; Mala Femmena (Cancion
+                     Italiana)</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer without labels on the disc, just
+                     a small circle sticker with number; label with typewritten text is applied to
+                     the plain white paper sleeve, and song titles are handwritten in the disc’s
+                     inner ring.
+              
+              <extent>7" lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_011</unitid>
+            <unittitle>Sabicas - Recuerdo a Linares ; Fandango del Albaicin</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with handwritten notes on
+                     the paper label.
+              
+              <extent>7" lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_049</unitid>
+            <unittitle>Sabicas y Escuderu - Improvisacion ; Sevillanas Corraleras</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_037</unitid>
+            <unittitle>Si vas a Catalayud - Cancion ; Me Gusta Mi Novio - Pasodoble</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Audiodisc brand seven-inch metal recording disc with black lacquer and
+                     paper label with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_048</unitid>
+            <unittitle>Solera Gaditana ; Camino del Monte</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_058</unitid>
+            <unittitle>Susan ; My Fair Lady</unittitle>
+            <unitdate normal="1956-12-16" type="inclusive">12/16/1956</unitdate>
+            <physdesc>Philco Safety Record, metal base - slow burning.
+              
+              <extent>7" lacquer
+                        disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_019</unitid>
+            <unittitle>Trio Paraguay - Ende Que Te Vi ; Jorge Valdez - Pena India</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Disc with metal base and black lacquer with plain white sticker labeled
+                     with typewritten text plus small circle sticker with number.
+              
+              <extent>7"
+                        lacquer disc/acetate</extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_034</unitid>
+            <unittitle>Trio Vegabajeño (F. Alvarez) - Punto ; La Nieve de Mis Años</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Audiodisc brand seven-inch metal recording disc with black lacquer and
+                     paper label with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_059</unitid>
+            <unittitle>unlabeled RCA Victor Phonogram</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>RCA Victor Phonogram, blue-green “flexidisc,” unlabeled but appears to
+                     have content recorded onto it.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>latin_amer_022</unitid>
+            <unittitle>Wynonie Harris - Blood Shot Eyes ; C. Boswell - Smoke Gets In Your
+                     Eyes</unittitle>
+            <unitdate normal="1950/1982" type="inclusive">undated</unitdate>
+            <physdesc>Soundcraft seven-inch metal recording disc with paper label around
+                     center hole with handwritten notes.
+              
+              <extent>7" lacquer disc/acetate
+                    </extent></physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

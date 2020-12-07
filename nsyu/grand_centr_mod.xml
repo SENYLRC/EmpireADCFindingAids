@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="grand_centr_mod" mainagencycode="NSyU">grand_centr_mod</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Grand Central Moderns Records </titleproper>
+        <subtitle>An inventory of 
+                        its records 
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">JOD</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date encodinganalog="Date" normal="1996-02-07">1996-02-07</date>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           
+        <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>16 Aug 2007 - converted to EAD (JPK)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+      <origination label="Creator: ">
+        <corpname encodinganalog="110" source="lcnaf">Grand Central Moderns.</corpname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Grand Central Moderns Records </unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1947/1967" type="inclusive">1947-1967</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">3 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    The Grand Central Moderns, under the direction of Colette Roberts, was a "non-profit organization dealing in Modern American Art," a branch of the "long-established institution known as Grand Central Art Galleries." Original material pertaining to group and solo exhibitions held at Grand Central Moderns as well as an assortment of personal papers of Colette Roberts.  Gallery material consists of clippings, correspondence, exhibition catalogs, photographs, and press releases relating to seventy-nine artists represented by the Gallery as well as several group exhibitions. The Colette Roberts material contains correspondence, photographs, miscellaneous printed material, writings, and memorabilia.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">146325</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">
+                          English
+                       </language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>The Grand Central Moderns was the modern art division of the Grand Central Art Galleries, established in 1922 by director Erwin S. Barrie.  The gallery was located in Manhattan's Grand Central Terminal and was founded as a non-profit organization designed to support American artists.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        <emph render="bold">Grand Central Moderns Records</emph> collection contains material from the Grand Central Moderns art gallery in New York City from approximately 1951 through 1965 while under the curatorial direction of Colette Roberts. The 
+        <emph render="bold">Gallery</emph> material consists mainly of correspondence relatating to various artists, but also includes clippings,  exhibition catalogs, photographs, and press releases.   Seventy-nine artists are represented within the collection, among them Byron Browne, Lamar Dodd, Jennett Lam, and Louise Nevelson.  The 
+        <emph render="bold">Colette Roberts</emph> material contains clippings, correspondence, memorabilia, newsletters, photographs of the work of various artists, and writings as well as exhibition catalogs and press releases from other galleries and museums.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>
+        <emph render="bold">Gallery</emph> material (Boxes 1-3) begins with correspondence, which is sorted alphabetically by subject or personal name.  Printed material (Box 3) consists of clippings, exhibition catalogs/announcements, newsletters, and press releases, in that order.</p>
+      <p>
+        <emph render="bold">Collete Roberts</emph> papers (Box 3) starts with correspondence and is followed by photographs, printed material, writings, and memorabilia. Correspondence is ordered by date. The photographs are of art work and are arranged in alphabetical order by the name of the artist.  Printed material includes clippings, exhibition catalogs/announcements, museum guide-books, press releases, and publicity, all ordered by date.  Writings and memorabilia are also arranged by date where applicable.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial>-->
+    <!--<separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial>--><!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+<subject encodinganalog="650" source="local">Business and Industry</subject>
+<subject encodinganalog="650" source="local">Art -- Painters</subject>
+<subject encodinganalog="650" source="local">Art -- Illustrators</subject>
+      <subject encodinganalog="650" source="local">Art -- Sculptors</subject><persname encodinganalog="600" source="lcnaf">Roberts, Colette, 1910-1971.</persname>
+      <corpname encodinganalog="610" source="lcnaf">Grand Central Moderns -- Archives.</corpname>
+      <subject encodinganalog="650" source="lcsh">Art, Exhibitions.</subject>
+      <subject encodinganalog="650" source="lcsh">Art, American -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Art galleries, Commercial -- New York (State) -- New York.</subject>
+      <subject encodinganalog="650" source="lcsh">Art galleries, Commercial -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Artists -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Painters -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Painting, American -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Sculptors -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Sculpture, American -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Women art critics -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Women art historians -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Women artists -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Women painters -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Women sculptors -- United States.</subject>
+      <genreform encodinganalog="655" source="aat">Announcements.</genreform>
+      <genreform encodinganalog="655" source="aat">Bulletins.</genreform>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Exhibition catalogs.</genreform>
+      <genreform encodinganalog="655" source="aat">Guidebooks.</genreform>
+      <genreform encodinganalog="655" source="aat">Memorabilia.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Press releases.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Art critics.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Art historians.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Artists.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Painters.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Sculptors.</occupation>
+      <function encodinganalog="657" source="aat">Art galleries.</function>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+                       all relevant rights holders before publishing quotations, excerpts or images from any 
+                       materials in this collection. </p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Grand Central Moderns Records 
+        <lb/>&su_name;</p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of Colette Roberts, director.</p>
+    </acqinfo>
+    <!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+        <did>
+          <unittitle>Gallery</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence - subject files</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Activities (General)</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Adler, Samuel</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"An Architects's Choice"</unittitle>
+              <unitdate normal="1954-05-10/1954-06-08" type="inclusive">May 10-June 8, 1954</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Asher, Elise</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Banks, Virginia</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Beattie, George</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Betsberg, Ernestine</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Boxer, Stanley</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Browne, Byron</unittitle>
+              <physdesc>
+                <extent>4 folders</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Campbell, Kenneth</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Candell, Victor</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Carlson, Edith</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Chadbourn, Alfred</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Cheney, Lewis</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Conway, Fred</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Cook, Howard</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Corcos, Lucille</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Cress, George</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Day, Worden</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>De Martini, Joseph</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Dodd, Lamar</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Durfee, Hazard</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Elliott, Ronnie</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ellis, Dean</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>England, Paul</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"An Exchange Exhibition, Paris - New York"</unittitle>
+              <unitdate normal="1953-10-05/1953-10-24" type="inclusive">Oct 5-24, 1953</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Fine, Albert</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Flettrich, Leonard</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ford, Gigi</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"4 Murals"</unittitle>
+              <unitdate normal="1954-11-01/1954-11-18" type="inclusive">Nov 1-18, 1954</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Freborg, Stan</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Galantiere, Nancy</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Geoffrey, J. Iqbal</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Golbin, Andree</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Goldring, Milton</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Gonzalez, Xavier</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Grant, James</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Guest Sculptors"</unittitle>
+              <unitdate normal="1953-01-03/1953-01-27" type="inclusive">Jan 3-27, 1953</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Hare, Channing</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Hasen, Burton</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Hebald, Milton</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Hensel, Hopkins</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Houser, Jim</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"The Island"</unittitle>
+              <unitdate normal="1952-10-13/1952-11-08" type="inclusive">Oct 13-Nov 8, 1952</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Kearl, Stanley Brandon</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lam, Jennett</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lethem, Richard</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Livitan, Israel</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lund, David</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Macdonald, Herbert</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Madrigal, August</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Manso, Leo</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Marren, Janet</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mikus, Eleanore</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miyashita, Tad</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Moffitt, Elizabeth</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Morrison, George</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Moy, Seong</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Narotzky, Norman</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Nevelson, Louise</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"New York"</unittitle>
+              <unitdate normal="1952" type="inclusive">Summer 1952</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Niewald, Wilbur</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Osver, Arthur</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Outlook 1955"</unittitle>
+              <unitdate normal="1955-01-27/1955-02-17" type="inclusive">Jan 27-Feb 17, 1955</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Outlook 1956"</unittitle>
+              <unitdate normal="1956-04-28/1956-05-12" type="inclusive">Apr 28-May 12, 1956</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Parsons, Betty</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Preminger, Mary Gardner</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ray, Rudolf</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Reid, Robert</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Robus, Hugo</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Roth, Jack</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Rowan, Herman</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ruben, Richard</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Russo, Alexander</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Shahly, Jehan</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Simon, Sidney</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Steffen, Bernard</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stoltenberg, Donald</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Taplitz</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Thompson, William</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Trotter, McKie</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Twiggs, Russell</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Twirbutt, Josef</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Wald, Sylvia</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Watts, Robert</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Wilson, Sybil</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Woods, Conrad</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Zuka</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Printed material</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Clippings</unittitle>
+              <unitdate normal="1951/1961" type="inclusive">1951-1961, </unitdate>
+              <unitdate normal="1947/1967" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Exhibition catalogs/announcements (miscellaneous)</unittitle>
+              <unitdate normal="1952/1961" type="inclusive">1952-1961, </unitdate>
+              <unitdate normal="1947/1967" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Newsletters</unittitle>
+              <unitdate normal="1953/1965" type="inclusive">1953-1965</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Press releases</unittitle>
+              <unitdate normal="1951/1960" type="inclusive">1951-1960, </unitdate>
+              <unitdate normal="1947/1967" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Collette Roberts</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence - subject file</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Miscellany</unittitle>
+              <unitdate normal="1953" type="inclusive">1953, </unitdate>
+              <unitdate normal="1957/1964" type="inclusive">1957-1964, </unitdate>
+              <unitdate normal="1947/1967" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Photographs</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Artwork</unittitle>
+              <abstract>By artist A-Z, unknown</abstract>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Printed material</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Clippings</unittitle>
+              <unitdate normal="1950/1964" type="inclusive">1950-1964, </unitdate>
+              <unitdate normal="1947/1967" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Exhibition catalogs/announcements (miscellaneous)</unittitle>
+              <unitdate normal="1947" type="inclusive">1947, </unitdate>
+              <unitdate normal="1954/1965" type="inclusive">1954-1965, </unitdate>
+              <unitdate normal="1947/1967" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>9 folders</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Museum guide-books</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">The Art Gallery</emph>
+                </unittitle>
+                <unitdate normal="1962-10/1967-04" type="inclusive">Oct 1962-Apr 1967</unitdate>
+                <physdesc>
+                  <extent>3 folders</extent>
+                </physdesc>
+                <container type="Box">3</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">The New York Arts Calendar</emph>
+                </unittitle>
+                <unitdate normal="1964-05" type="inclusive">May 1964, </unitdate>
+                <unitdate normal="1964-10/1964-12" type="inclusive">Oct-Dec 1964</unitdate>
+                <container type="Box">3</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Press releases (miscellaneous)</unittitle>
+              <unitdate normal="1957/1965" type="inclusive">1957-1965, </unitdate>
+              <unitdate normal="1947/1967" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Publicity (personal)</unittitle>
+              <unitdate normal="1947/1967" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Writings</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Miscellany</unittitle>
+              <unitdate normal="1953/1963" type="inclusive">1953-1963, </unitdate>
+              <unitdate normal="1947/1967" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Memorabilia</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Course material</unittitle>
+              <unitdate normal="1947/1967" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellany</unittitle>
+              <unitdate normal="1961/1965" type="inclusive">1961-1965, </unitdate>
+              <unitdate normal="1947/1967" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

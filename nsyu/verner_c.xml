@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.4, 4/7/2006 -->
+<!--Added inventory creator's name/initials-->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="us" mainagencycode="NSyU" identifier="verner_c">verner_c</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Coolie Verner Papers</titleproper>
+				<subtitle>An inventory of his papers at Syracuse University</subtitle>
+			<author encodinganalog="Creator">-</author><sponsor>The adult education holdings are collectively known as the <lb/><extptr title="Alexander N. Charters Library of Resources for Educators of Adults" href="https://library.syr.edu/scrc/collections/areas/adult-ed.php" show="new"/>.</sponsor></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="1976-10" encodinganalog="Date">Oct 1976</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2006-05-11">11 May 2006</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<revisiondesc>
+			<list>
+				<item>11 May 2006 - converted to EAD (MRR)</item>
+			</list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<persname encodinganalog="100">Verner, Coolie</persname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Coolie Verner Papers</unittitle>
+			<unitdate encodinganalog="245$f" normal="1953/1972" type="inclusive" label="Inclusive Dates: ">1953-1972</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>1.25 linear ft.</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">American educator Coolie Verner received his Ph.D. from Columbia University in 1952. He was professor of adult education at Florida State University (1953-1961) and the University of British Columbia (1961-) where he served as department chair. His awards include a Fulbright Fellowship (1952-1953), a Canada Council Fellowship (1968-1969) and an Imago Mundi Award (1959).
+ Papers include agendas, correspondence, drafts, programs and reports. Papers include those generated while professor at Florida State University and the University of British Columbia. There are also papers from his activities in the Canadian Association for Adult Education, the International Congress of University Adult Education, from Washington State University, and those which resulted from his writings. A significant portion of the correspondence is that of Thurman J. White.</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="us" repositorycode="NSyU">149422</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+			</langmaterial>
+		</did>
+				
+		<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>Coolie Verner took his doctorate from Columbia University in 1952. First affiliated as a research assistant with the Institute of Adult Education at Columbia University, he became a professor of adult education at Florida State University from 1953 to 1961. Since that time he has been a professor of adult education at the University of British Columbia, where he has served as chairman of the Department of Adult Education. His awards include a Fulbright Fellowship in 1952-53, a Canada Council
+Fellowship in 1968-69, and an Imago Mundi Award for 1959.
+</p></bioghist>
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>The three boxes of his papers date from 1953 to 1972. They concern a wide variety of correspondence and subject materials concerned with Florida State University, Washington State University, the University of British Columbia, the Canadian Association for Adult Education, and the International Congress of University Adult Education.
+</p>
+		</scopecontent>
+		
+		<!--<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>## OPT (MARC 351$a)</p>
+		</arrangement>-->
+		
+		<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>The library holds a considerable number of collections related to adult and continuing education.  Please refer to &subjindex; for a complete listing.  </p>
+		</relatedmaterial>
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Adult education</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Verner, Coolie, Archives</persname><persname encodinganalog="600" source="lcnaf">White, Thurman J.</persname>
+			
+            <corpname encodinganalog="610" source="lcnaf">Canadian Association for Adult Education</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Adult education</subject><subject encodinganalog="650" source="lcsh">Educators, United States</subject><subject encodinganalog="650" source="lcsh">Educators, Canada</subject>
+			
+            <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Drafts (documents)</genreform><genreform encodinganalog="655" source="aat">Programs (documents)</genreform><genreform encodinganalog="655" source="aat">Reports.</genreform>
+			<occupation encodinganalog="656" source="lcsh">Educators.</occupation>
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p>Coolie Verner Papers, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<!--<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>### (MARC 541 and/or  561)</p>
+		</acqinfo>-->
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Correspondence</unittitle>
+				<!--C01 @LEVEL must be set to 'series' to show up in TOC.--></did>
+				<c02>
+					<did>
+						<unittitle><unitdate normal="1959/1971" type="inclusive">1959-1971</unitdate></unittitle>
+						
+						<container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle><unitdate normal="1967/1970" type="inclusive">1967-1970</unitdate></unittitle>
+						
+						<container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02>
+			</c01><c01 level="series"><did><unittitle>Subject files</unittitle></did><c02><did><unittitle>Activities</unittitle><unitdate normal="1953/1971" type="inclusive">1953-1971</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Algonquin College</unittitle><unitdate normal="1967/1970" type="inclusive">1967-1970</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>
+Banff Symposium, "Stimulants to Social and Economic Development in Slow Growing Regions."
+</unittitle><unitdate normal="1966" type="inclusive">1966</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>
+Canadian Association for Adult Education,
+National Conference, Vancouver</unittitle><unitdate normal="1966" type="inclusive">1966</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>
+Exams</unittitle><unitdate normal="1962/1967" type="inclusive">1962-1967</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>
+Florida State University</unittitle><unitdate normal="1970/1971" type="inclusive">1970-1971</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Harper &amp; Brothers</unittitle><unitdate normal="1956/1965" type="inclusive">1956-1965</unitdate><container type="Box">2</container></did></c02><c02><did><unittitle>
+International Congress of University Adult Education, Second World Conference, Montreal</unittitle><unitdate normal="1967/1970" type="inclusive">1970</unitdate><container type="Box">2</container></did></c02><c02><did><unittitle>Macmillan Publishing Company </unittitle><unitdate normal="1960/1970" type="inclusive">1960-1970</unitdate><container type="Box">2</container></did></c02><c02><did><unittitle>
+Neylan-Verner Study</unittitle><unitdate normal="1953/1972" type="inclusive">undated</unitdate><container type="Box">2</container></did></c02><c02><did><unittitle>Ontario Institute for Studies in Education</unittitle><unitdate normal="1970" type="inclusive">1970</unitdate><container type="Box">2</container></did></c02><c02><did><unittitle> Professors - Canada</unittitle><unitdate normal="1966/1969" type="inclusive">1966-1969</unitdate><container type="Box">2</container></did></c02><c02><did><unittitle>
+St. Mark's College, Night School Directors' Workshop</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Box">2</container></did></c02><c02><did><unittitle>
+Teaching-Learning Conference at Alderbrook</unittitle><unitdate normal="1968" type="inclusive">1968</unitdate><container type="Box">2</container></did></c02><c02 level="subseries"><did><unittitle>University of British Columbia
+</unittitle></did><c03><did><unittitle>Committee on Extra Sessional Programs</unittitle><unitdate normal="1962/1966" type="inclusive">1962-1966</unitdate><container type="Box">2</container></did></c03><c03><did><unittitle> 
+Continuing Education Committee</unittitle><unitdate normal="1963/1964" type="inclusive">1963-1964</unitdate><container type="Box">2</container></did></c03><c03><did><unittitle> Senate Committee on Continuing Education</unittitle><unitdate normal="1966/1970" type="inclusive">1966-1970</unitdate><container type="Box">2</container></did></c03><c03><did><unittitle>
+Trustees' Project</unittitle><unitdate normal="1961/1966" type="inclusive">1961-1966</unitdate><container type="Box">2</container></did></c03></c02><c02><did><unittitle>
+University of Washington, Bureau of Community Development</unittitle><unitdate normal="1956/1958" type="inclusive">1956-1958</unitdate><container type="Box">2</container></did></c02><c02>
+					<did>
+						<unittitle>
+Washington Northern State Hospital</unittitle>
+						
+						
+						
+						
+						
+					<unitdate normal="1970" type="inclusive">1970</unitdate><container type="Box">3</container></did>
+				</c02><c02><did><unittitle>Washington State University, Seminar in Adult Education</unittitle><unitdate normal="1970" type="inclusive">1970</unitdate><container type="Box">3</container></did></c02><c02><did><unittitle>White, Thurman J.</unittitle><unitdate normal="1971/1972" type="inclusive">1971-1972</unitdate><container type="Box">3</container></did></c02></c01><c01 level="series"><did><unittitle>Writings</unittitle></did><c02><did><unittitle>"Understanding Adult Learning and Instruction," by Coolie Verner and Catherine V. Davison</unittitle><abstract>draft</abstract><unitdate normal="1953/1972" type="inclusive">undated</unitdate><container type="Box">3</container></did></c02></c01>
+		</dsc>
+	</archdesc>
+</ead>

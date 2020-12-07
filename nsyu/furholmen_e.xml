@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="furholmen_e">furholmen_e</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Erik Furholmen Papers</titleproper>
+            <subtitle>An  inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-09-22" encodinganalog="Date">22 Sep 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2011-09-22">22 Sep 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Furholmen, Erik.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Erik Furholmen Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1939/1983" type="inclusive" label="Inclusive Dates: ">1939-1983</unitdate>
+            <unitdate encodinganalog="245$g" normal="1939/1959" type="bulk" label="Bulk Dates: ">1939-1959</unitdate><physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Patent information, technical reports, publicity, company data, product data; bulk relates to Chicago Molded Plastics Corporation and some of its products.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3367112</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Erik Furholmen (1896-1963) was a Norwegian-American engineer, teacher and entrepreneur.</p>
+		<p>Born in Oslo, Norway, Erik Furholmen emigrated in 1905 with the rest of his family to the United States.  In school he followed 
+		in the footsteps of several others in his family by studying engineering.  His formal education included engineering at the 
+		University of Minnesota and toolmaking at Dunwoody Institute in Minneapolis.</p>
+		<p>He began his toolmaking career with H. E. Wilcox Motor Co. in Minneapolis, where he was a machinist, tool designer 
+		and tool maker, eventually becoming assistant to the superintendent.  In 1920 he went to Chicago to work in the Machine 
+		Design Division of Jos. T. Ryerson &amp; Co.</p>
+		<p>In 1924 he returned to Minneapolis where he became chief draftsman for Minneapolis Honeywell Co., and in 1930 he was assigned 
+		to develop their new plastics engineering department.  From 1938 to 1944 he was Chief Estimating Engineer for Chicago Molded 
+		Products Co. in Chicago, Illinois.  During World War II he was also an instructor at Northwestern University in Evanston, 
+		Illinois, where he taught evening classes in Elementary Plastics Engineering and Plastics Production and Fabrication.</p>
+		<p>From 1944 to 1946 Furholmen was Works Manager and Chief Engineer, first with Cincinnati Advertising Products and then with 
+		Superior Plastics in Chicago.</p>
+		<p>Furholmen was a speaker at a number of technical society meetings and authored technical articles regarding plastics 
+		engineering that appeared in national trade magazines such as <emph render="italic">Modern Plastics</emph> and <emph render="italic">Machinery</emph>.  He contributed a chapter to 
+		Herbert Chase's book <emph render="italic">Handbook on Designing for Quantity Production</emph>, two editions of which were published by McGraw Hill (1944 and 1950).</p>
+		<p>In 1947, Furholmen and Norman Nelson formed a partnership to start their own company, Furnel, in Chicago.  The company 
+		specialized in product development, tooling and production with the emphasis on plastics.  Furnel, Inc. continued after 
+		Nelson's departure in 1952, and Furholmen continued his plastics engineering work until his death in 1963.</p>
+		
+		
+		</bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Erik Furholmen Papers</emph> consist of company material, product data, pubilshed material and reports.</p><p><emph render="bold">Company data</emph> contains copies of the Chicago Molded Products Co. (CMPC) company newsletter, <emph render="italic">Plastics Progress</emph>, and some publicity brochures.</p><p><emph render="bold">Product data</emph> consists of patent , publicity and technical data relating to several CMPC products, including Teflon, Rulon, and the MegaColor Meter for precise coloring of plastics.</p><p><emph render="bold">Published material</emph> includes articles by and about Furholmen.</p><p><emph render="bold">Reports</emph> contains one annual report and several company reports to foreign associates and licensees.  Some of the reports bear the acronym CAMPCO, which is presumably a variation on CMPC and thus the same company.  However, this cannot be stated definitively.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Material is arranged alphabetically.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has  considerable holdings relating to plastics manufacturing and engineering, including manuscript collections of both individuals and companies as well as published books, serials and monographs.  Please refer to &subjindex; under "Plastics" to located other manuscript collections, and to &summitref; to located cataloged published items.</p><p>See also the Syracuse Plastics Collection website at <extref href="http://plastics.syr.edu">plastics.syr.edu</extref>, which has digital images of a wide range of plastic artifacts in our holdings.</p>
+      </relatedmaterial>
+      
+      <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>Two plastics artifacts donated with the collection have been transferred to the <archref href="../p/plastics_art.htm">Plastics Artifacts Collection</archref>.  One autographed book has been transferred to Rare Books for cataloging.</p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Plastics</subject><subject encodinganalog="650" source="local">Business and Industry</subject><subject encodinganalog="650" source="local">Science and medicine</subject><persname encodinganalog="600" source="lcnaf">Furholmen, Erik.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Chicago Molded Plastics Co.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Dixon Co.</corpname><!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Chemical engineering -- Handbooks, manuals, etc.</subject><subject encodinganalog="650" source="lcsh">Engineers -- United States.</subject><subject encodinganalog="650" source="lcsh">Plastics -- Coloring.</subject><subject encodinganalog="650" source="lcsh">Plastics -- Extrusion.</subject><subject encodinganalog="650" source="lcsh">Methyl methacrylate.</subject><subject encodinganalog="650" source="lcsh">Plastics industry and trade -- United States.</subject><subject encodinganalog="650" source="lcsh">Plastics machinery industry -- United States.</subject><subject encodinganalog="650" source="lcsh">Polytef.</subject><subject encodinganalog="650" source="lcsh">Styrene.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Articles.</genreform><genreform encodinganalog="655" source="aat">Brochures.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Technical reports.</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Design patents.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Engineers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Erik Furholmen Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Portions gift of Glenn Beall, 2011.</p><p>Portions gift of David Furholmen, 2011.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         
+         <c01 level="series"><did><unittitle>Company data</unittitle></did>
+            <c02><did><unittitle>Newsletters, <emph render="italic">Plastics Progress</emph></unittitle><unitdate normal="1941/1942" type="inclusive">1941-1942</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Publicity</unittitle><abstract>includes "Plastics molding goes to war" pamphlet </abstract><unitdate normal="1942" type="inclusive">1942, </unitdate><unitdate normal="1942/1945" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Product data</unittitle></did>
+            <c02><did><unittitle>MegaColor</unittitle></did>
+               <c03><did><unittitle>Patent application</unittitle><abstract>correspondence, descriptions, etc.</abstract><unitdate normal="1981" type="inclusive">1981, </unitdate><unitdate normal="1983" type="inclusive">1983, </unitdate><unitdate normal="1980/1983" type="inclusive">undated</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>Publicity material</unittitle><abstract>brochures, photographs, etc.</abstract><container type="Box">1</container></did></c03>
+				</c02>
+            <c02><did><unittitle>Teflon and Rulon</unittitle></did>
+               <c03><did><unittitle>Technical data and graphs</unittitle><unitdate normal="1955" type="inclusive">1955, </unitdate><unitdate normal="1957" type="inclusive">1957</unitdate><container type="Box">1</container></did></c03>
+				</c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Published material</unittitle></did>
+            <c02><did><unittitle>Articles about Furholmen</unittitle><abstract>micellaneous articles mentioning Furholmen, his company or his research; also a brochure from Northwestern University listing courses Furholmen taught</abstract><unitdate normal="1941/1942" type="inclusive">1941-1942, </unitdate><unitdate normal="1949/1950" type="inclusive">1949-1950</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Articles by Furholmen</unittitle><abstract>"What the  product designer should know about plastics," reprint of 5 articles from <emph render="italic">Machinery</emph></abstract><unitdate normal="1942" type="inclusive">1942</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Articles, miscellaneous</unittitle><abstract>Two articles by Herbert Chase</abstract><unitdate normal="1936" type="inclusive">1936, </unitdate><unitdate normal="1939" type="inclusive">1939</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Reports</unittitle></did>
+            <c02><did><unittitle>CAMPCO Report to Foreign Associates No's 15, 16 and 17</unittitle><abstract>reports on the testing and development of various products, including graphs, charts and a few photographs; no. 16 has two blueprints in a plastic pocket in back</abstract><physdesc><extent>3 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            
+            
+            <c02><did><unittitle>CAMPCO Report to Licensees No. 14</unittitle><unitdate normal="1942/1945" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>CMPC Annual Report</unittitle><unitdate normal="1959" type="inclusive">1959</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

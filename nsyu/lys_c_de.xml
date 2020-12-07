@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="lys_c_de">lys_c_de</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Claudia de Lys Papers</titleproper>
+            <subtitle>An inventory of her papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">DCA</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-05-06" encodinganalog="Date">Sep 1985</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-05-06">6 May 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>17 Jun 2010 - converted to EAD (MRC)</item><item>21 Feb 2018 - phonodiscs added (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Lys, Claudia de.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Claudia de Lys Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1920/1960" type="inclusive" label="Inclusive Dates: ">1920-1960</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>23 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">American anthropologist, author.  Collection includes correspondence, clippings, drafts and manuscripts for publication, photographs, news releases, printed material.  Writings and research material on customs, folklore, palmistry, and superstition.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149420</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Claudia de Lys (dates unknown) is an American anthropologist and author of numerous books on customs, folklore, palmistry, and superstition.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Claudia de Lys Papers</emph> consist of three accessions which have not yet been integrated.  The collection has received minimal processing, and the inventory which follows is a simple box listing.</p><p>The <emph render="bold">original accession</emph> contains correspondence, galley proofs, and printed material (mostly newspaper and magazine clippings) and a three-part recording of an interview with de Lys.</p><p>The <emph render="bold">1990 addition</emph> contains correspondence, photographs, writings, and memorabilia.</p><p>The <emph render="bold">1992 addition</emph> contains correspondence, writings, and memorabilia.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection has received minimal processing and by and large remains in original order.  Note that the box numbering restarts with "Box 1" for each.  Please specify accession and box number when requesting material.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>More than one hundred artifacts and pieces of art were transferred to the Syracuse University Art Collection in 1985.  These include 27 original cartoons by Ton Smits; 30 drawings, 47 prints and three print blocks by Gus Bundy; a bas-relief bust of de Lys by Edgardo Simone; a charcoal portrait of de Lys by Paul Swan; and an oil painting of the Hagia Sophia in Turkey, circa 1930.  For more information about these items please contact <extref href="http://suart.syr.edu">the SU Art Galleries</extref>.</p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Women Authors</subject>
+			<subject encodinganalog="650" source="local">Religion and philosophy</subject>
+			<subject encodinganalog="650" source="local">Science and medicine</subject>
+			<persname encodinganalog="600" source="lcnaf">Lys, Claudia de.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Anthropologists -- United States.</subject><subject encodinganalog="650" source="lcsh">Cats -- Mythology.</subject><subject encodinganalog="650" source="lcsh">Folklore.</subject><subject encodinganalog="650" source="lcsh">Folklorists -- United States.</subject><subject encodinganalog="650" source="lcsh">Manners and customs.</subject><subject encodinganalog="650" source="lcsh">Superstition.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Drafts (documents)</genreform><genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform><genreform encodinganalog="655" source="aat">Phonograph records.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Anthropologists.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Claudia de Lys Papers,  <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unspecified, 1990, 1992.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Original accession</unittitle></did>
+            <c02><did><unittitle>Correspondence</unittitle><abstract>incoming and outgoing; contains some print material</abstract><unitdate normal="1920/1969" type="inclusive">1920s-1960s</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Graphic material</unittitle><abstract>copies of print cartoons by Ton Smits; drawings and block prints by Gus Bundy; originals transferred to SU Art Galleries</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Graphic material</unittitle><abstract>photographs</abstract><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Galley proofs, <emph render="italic">A Treasury of Parenthood</emph></unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Galley proofs, <emph render="italic">A Treasury of American Superstition</emph> and <emph render="italic">To Be or Not To Be a Virgin</emph></unittitle><abstract>also typescript of <emph render="italic">To Be or Not To Be a Virgin</emph></abstract><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Signatures, unbound, <emph render="italic">A Treasury of American Superstition</emph></unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Typescripts</unittitle><abstract>ideas for advertiseres; radio program; dictionary of French sayings</abstract><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Printed material</unittitle><abstract>superstitions; typescript copies; news releases; clippings</abstract><container type="Box">7</container></did></c02>
+   <c02><did><unittitle>Printed material</unittitle><abstract>typescript list of sayings</abstract><container type="Box">8</container></did></c02>
+   <c02><did><unittitle>Printed material</unittitle><abstract>clippings of sayings</abstract></did>
+      <c03><did><unittitle>Air and breathing</unittitle><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Breasts</unittitle><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Breastfeeding</unittitle><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Hands, fingers</unittitle><container type="Box">10</container></did></c03>
+      <c03><did><unittitle>Handwritings</unittitle><container type="Box">10</container></did></c03>
+      <c03><did><unittitle>Lefthandedness</unittitle><container type="Box">10</container></did></c03>
+      <c03><did><unittitle>Palmistry</unittitle><container type="Box">10</container></did></c03>
+      <c03><did><unittitle>Hands, symbols</unittitle><container type="Box">11</container></did></c03>
+      <c03><did><unittitle>Mouth</unittitle><abstract>diseases</abstract><container type="Box">11</container></did></c03>
+      <c03><did><unittitle>Mouth</unittitle><abstract>falsehoods</abstract><container type="Box">11</container></did></c03>
+      <c03><did><unittitle>Mouth</unittitle><abstract>Kinsey Dept.</abstract><container type="Box">11</container></did></c03>
+      <c03><did><unittitle>Mouth</unittitle><abstract>kissing</abstract><container type="Box">11</container></did></c03>
+      <c03><did><unittitle>Mouth</unittitle><abstract>kissing</abstract><container type="Box">12</container></did></c03>
+      <c03><did><unittitle>Mouth</unittitle><abstract>kissing</abstract><container type="Box">13</container></did></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">14</container></did></c03></c02>
+   <c02><did><unittitle>Printed material</unittitle><abstract>superstition clippings</abstract><container type="Box">15</container></did></c02>
+   <c02><did><unittitle>Printed material</unittitle><abstract>superstition clippings</abstract><container type="Box">16</container></did></c02>
+   <c02><did><unittitle>Printed material</unittitle><abstract>superstition clippings</abstract><container type="Box">17</container></did></c02>
+   <c02><did><unittitle>Printed material</unittitle><abstract>superstition clippings</abstract><container type="Box">18</container></did></c02>
+   <c02><did><unittitle>Printed material</unittitle><abstract>scrapbook of clippings</abstract><container type="Package"></container></did></c02>
+   
+   <c02><did><unittitle>Recordings</unittitle></did>
+    <c03>
+        <did>
+            <unittitle>“Superstition In News”, Claudia de Lys, Part 1 and Part 6 (disc 1 of 3)</unittitle>
+            <unitid>lys_cd_001</unitid>
+            
+            <physdesc>
+                <extent>Lacquer discs/acetates</extent>
+            </physdesc>
+        </did>
+        
+    </c03>
+    <c03>
+        <did>
+            <unittitle>“Superstition In News”, Claudia de Lys, Part 2 and Part 4  (disc 2 of 3)</unittitle>
+            <unitid>lys_cd_002</unitid>
+            
+            <physdesc>
+                <extent>Lacquer discs/acetates</extent>
+            </physdesc>
+        </did>
+        
+    </c03>
+    <c03>
+        <did>
+            <unittitle>“Superstition In News”, Claudia de Lys, Part 3 and Part 5 (disc 3 of 3)</unittitle>
+            <unitid>lys_cd_003</unitid>
+            
+            <physdesc>
+                <extent>Lacquer discs/acetates</extent>
+            </physdesc>
+        </did>
+        
+    </c03>	
+	</c02>
+</c01>
+
+<c01 level="series"><did><unittitle>1990 accession</unittitle></did><c02 level="subseries"><did><unittitle>Correspondence-subject files</unittitle></did>
+   <c03><did><unittitle>Adamo, Hunter and Alice</unittitle></did></c03>
+   <c03><did><unittitle>Batchelor, C.D. and Julie Forsyth</unittitle><abstract>includes original artwork</abstract></did></c03>
+   <c03><did><unittitle>Battey, Terence Louise</unittitle></did></c03>
+   <c03><did><unittitle>Bundy, Gus</unittitle><abstract>includes original artwork</abstract></did></c03>
+   <c03><did><unittitle>Cloud, Virginia</unittitle></did></c03>
+   <c03><did><unittitle>Cole, Madelaine</unittitle></did></c03>
+   <c03><did><unittitle>Darragh, Kathleen</unittitle></did></c03>
+   <c03><did><unittitle>Debruille, Paulette</unittitle></did></c03>
+   <c03><did><unittitle>Evans, Henry S.</unittitle></did></c03>
+   <c03><did><unittitle>Evans, Isabelle and Philip</unittitle></did></c03>
+   <c03><did><unittitle>Garmisa, Ilyana</unittitle></did></c03>
+   <c03><did><unittitle>Grayson, Anka and James</unittitle></did></c03>
+   <c03><did><unittitle>Grolier, Inc.</unittitle></did></c03>
+   <c03><did><unittitle>Hamilton, Marjorie J.</unittitle></did></c03>
+   <c03><did><unittitle>Harcourt, Brace and Company</unittitle></did></c03>
+   <c03><did><unittitle>Kamin, Claude and Martin</unittitle></did></c03>
+   <c03><did><unittitle>Kendrick, Eleanore (agent)</unittitle></did></c03>
+   <c03><did><unittitle>Kilbourn, Lucy</unittitle></did></c03>
+   <c03><did><unittitle>Kline, Harry Byrd</unittitle></did></c03>
+   <c03><did><unittitle>Lopatecki, Yvonne de</unittitle></did></c03>
+   <c03><did><unittitle>Murphy, J.E. </unittitle><abstract>includes original artwork</abstract></did></c03>
+   <c03><did><unittitle>Oldfield, Barney</unittitle></did></c03>
+   <c03><did><unittitle>Oman, Annie and Sheridan</unittitle><abstract>includes original artwork</abstract></did></c03>
+   <c03><did><unittitle>Orner, Faustina</unittitle></did></c03>
+   <c03><did><unittitle>Plantiff, Ellen</unittitle></did></c03>
+   <c03><did><unittitle>Poterbaugh, Edward and Celene</unittitle></did></c03>
+   <c03><did><unittitle>Russell, George B. and Edith</unittitle></did></c03>
+   <c03><did><unittitle>Serebrykoff, Lynn Christensen</unittitle></did></c03>
+   <c03><did><unittitle>Short, Marcia</unittitle></did></c03>
+   <c03><did><unittitle>Silvermine Publishers</unittitle></did></c03>
+   <c03><did><unittitle>Speller, Robert (publisher?)</unittitle></did></c03>
+   <c03><did><unittitle>Sugar, Paul</unittitle></did></c03>
+   <c03><did><unittitle>Tomiuk, Yolande / Tania Shamy</unittitle></did></c03>
+   <c03><did><unittitle>Traver, Marion Gray</unittitle><abstract>includes original artwork</abstract></did></c03>
+   <c03><did><unittitle>Wadler, Leonard</unittitle></did></c03>
+   <c03><did><unittitle>White, Mary Lee</unittitle></did></c03></c02>
+<c02 level="subseries"><did><unittitle>Photographs</unittitle></did>
+   <c03><did><unittitle>Miscellaneous</unittitle></did></c03></c02>
+<c02 level="subseries"><did><unittitle>Writings</unittitle></did>
+   <c03><did><unittitle>"The Cat is Out of the Bag"</unittitle><abstract>manuscript draft</abstract></did></c03>
+   <c03><did><unittitle>Superstitious? Here's Why</unittitle></did></c03>
+   <c03><did><unittitle>A Treasury of American Superstition</unittitle></did></c03>
+   <c03><did><unittitle>A Treasury of Parenthood and Its Folklore</unittitle></did></c03>
+   <c03><did><unittitle>Your Cat: Fact and Superstition</unittitle></did></c03>
+   <c03><did><unittitle>Your Cat: A Treasury of Fact and Superstition</unittitle></did></c03></c02>
+<c02 level="subseries"><did><unittitle>Memorabilia</unittitle></did>
+   <c03><did><unittitle>Clippings</unittitle></did></c03>
+   <c03><did><unittitle>Essays</unittitle></did></c03>
+   <c03><did><unittitle>Phonodiscs</unittitle><abstract>2 LPs</abstract></did></c03>
+   <c03><did><unittitle>Syndicate sheets</unittitle></did></c03>
+   <c03><did><unittitle>Miscellaneous</unittitle></did></c03></c02></c01><c01 level="series"><did><unittitle>1992 accession</unittitle></did><c02 level="subseries"><did><unittitle>Correspondence-subject files</unittitle></did>
+   <c03><did><unittitle>General</unittitle><container type="Box">1</container></did></c03>
+   <c03><did><unittitle>Personal</unittitle></did>
+      <c04><did><unittitle>MacNiel, Stanley S.</unittitle><container type="Box">1</container></did></c04>
+      <c04><did><unittitle>Mayfield, John</unittitle><abstract>3 folders</abstract><container type="Box">1</container></did></c04>
+      <c04><did><unittitle>Philosophical Library, Inc.</unittitle><container type="Box">1</container></did></c04>
+      <c04><did><unittitle>Syracuse University</unittitle><container type="Box">1</container></did></c04></c03>
+   <c03><did><unittitle>Subject files</unittitle></did>
+      <c04><did><unittitle>Boy</unittitle><container type="Box">1</container></did></c04>
+      <c04><did><unittitle>Bundling</unittitle><container type="Box">1</container></did></c04>
+      <c04><did><unittitle>Chaperons</unittitle><container type="Box">1</container></did></c04>
+      <c04><did><unittitle>Circumcision</unittitle><container type="Box">1</container></did></c04>
+      <c04><did><unittitle>Sex determination</unittitle><abstract>2 folders</abstract><container type="Box">1</container></did></c04></c03></c02>
+<c02 level="subseries"><did><unittitle>Writings</unittitle></did>
+   <c03><did><unittitle>Books</unittitle></did>
+      <c04><did><unittitle>A Century of Cats</unittitle><container type="Box">1</container></did></c04></c03>
+   <c03><did><unittitle>Essays</unittitle></did>
+      <c04><did><unittitle>"As I recall…en route on my life's journey"</unittitle><abstract>manuscript draft</abstract><container type="Box">1</container></did></c04>
+      <c04><did><unittitle>"As I recall…en route on my life's journey"</unittitle><abstract>manuscript draft</abstract><container type="Box">2</container></did></c04>
+      <c04><did><unittitle>"The cat's out of the bag" (working title: The Cat's Nine Lives Plus)</unittitle><abstract>correspondence, research material, photographs, manuscript drafts</abstract><container type="Box">2</container></did></c04>
+      <c04><did><unittitle>"Lena's Odd Odyssey"</unittitle><abstract>research material, manuscripts, 4 folders</abstract><container type="Box">2</container></did></c04>
+      <c04><did><unittitle>"Savage wife excels as husband's partner," New York World-Telegram, 10 Jan 1935</unittitle><container type="Box">2</container></did></c04>
+      <c04><did><unittitle>"Working island cats" Pet Digest Winter 1964</unittitle><container type="Box">2</container></did></c04>
+      <c04><did><unittitle>"Your cat: a treasury of fact and superstition</unittitle><abstract>manuscript draft, 2 folders</abstract><container type="Box">2</container></did></c04></c03></c02>
+<c02 level="subseries"><did><unittitle>Memorabilia</unittitle></did>
+   <c03><did><unittitle>Printed material</unittitle></did>
+      <c04><did><unittitle>Clippings about</unittitle><container type="Box">2</container></did></c04>
+      <c04><did><unittitle>Clippings, general</unittitle><container type="Box">2</container></did></c04>
+      <c04><did><unittitle>Miscellaneous</unittitle><container type="Box">2</container></did></c04></c03>
+   <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">2</container></did></c03></c02></c01>
+
+
+      </dsc>
+   </archdesc>
+</ead>

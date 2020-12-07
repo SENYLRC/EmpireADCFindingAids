@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="lowell_novelty">lowell_novelty</eadid>
+      <filedesc>
+         <titlestmt>
+                     <titleproper encodinganalog="Title">Lowell Novelty Company Records</titleproper>
+         <subtitle>A description of the collection at Syracuse University</subtitle>
+
+         <author encodinganalog="Creator">MM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+               <date normal="2006" encodinganalog="Date">2006</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-12">Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>Feb 2009 - converted to EAD (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+               <corpname encodinganalog="110">Lowell Novelty Company.</corpname></origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Lowell Novelty Company Records</unittitle>
+         <unitdate encodinganalog="245$f" normal="1940/1941" type="inclusive" label="Inclusive Dates: ">1940-1941</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection consists of eight documents of the Lowell Novelty Company from 1940 to 1941. The documents include a copy of the official drawings of Waterproof Accessory, and papers related to the Board of Directors and dissolution of the company.</abstract>
+
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2663550</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Lowell Novelty Company was a small manufacturing company that operated in Lowell, Massachusetts. Ralph Zannoni was on the Board of Directors, Frank Benedetti was the President and Michele DeNicola was the treasurer.</p>
+</bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Lowell Novelty Company Records</emph> consists of eight documents of the Lowell Novelty Company from 1940 to 1941. The documents include a copy of the official drawings of Waterproof Accessory, and papers related to the Board of Directors and dissolution of the company.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Roughly chronological.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous holdings in the areas of plastics and industrial design. Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+<subject encodinganalog="650" source="local">Plastics</subject><persname encodinganalog="600" source="local" rules="aacr2">Benedetti, Frank.</persname><persname encodinganalog="600" source="local" rules="aacr2">Zannoni, Ralph.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="local" rules="aacr2">Lowell Novelty Company  -- Archives.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Plastics industry and trade.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Summonses.</genreform><genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Lowell Novelty Company Records, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from National Plastics Center and Museum, 11/06/2008.  Originally, gift of <persname role="donor">Rosemary Zannoni Folk</persname>, 2006.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      
+   <dsc type="combined">
+         <head>Inventory</head>
+         
+         <c01 level="series"><did><unittitle>Company records</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><physdesc><extent>7 items</extent></physdesc><container type="SC">323</container></did><scopecontent><p>1. Copy of the Official Drawings of Waterproof Accessory. Prepared for F. Benedetti by Victor J. Evans and Co., Registered Patent Attorneys.<lb/>2. Resolution of the Board of Directors naming Frank Benedetti President and Michele DeNicola Treasurer with authority to sign checks, March 16, 1940.
+<lb/>3. Letter to Ralph Zannoni from Frank Benedetti with envelope, October 7, 1940
+<lb/>4. Notice stating Ralph Zannoni is authorized to lease premises for the corporation, March 16, 1940
+<lb/>5. Summons from the City of Lowell to attach goods at $300 and for the company to appear in court May 17, 1941
+<lb/>6. Notice of Board of Directors waiving notice of meeting, March 16, 1940 and April 29, 1941
+(2)<lb/>7. Notice of Board of Directors authorizing Zannoni to sell property of corporation, April 29, 1941
+</p></scopecontent></c02>
+            
+            
+            
+         </c01>
+      </dsc>	</archdesc>
+</ead>

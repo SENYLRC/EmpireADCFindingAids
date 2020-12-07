@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.7, 1/24/2007-->
+<!--Added copyright statement to Use Restrictions section-->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="reiner_l">reiner_l</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Lillian Reiner Collection</titleproper>
+            <subtitle>An inventory of her papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">PRB</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2004-05" encodinganalog="Date">May 2004</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Rothenberger
+            <date normal="2007-05-10">10 May 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Reiner, Lillian</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Lillian Reiner Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1890/1991" type="inclusive" label="Inclusive Dates: ">1890-1991</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>12 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Spanning 1890 to 1991, the Lillian Reiner Collection comprises Correspondence/subject files, Writings, and Memorabilia relating to the Syracuse, New York teacher and political activist (1901-1987).</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2524844</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Lillian Reiner (1901-1987) was a native of Syracuse, New York and a civil rights and peace activist.  She graduated from Syracuse University at the age of 64 and ran unsuccessfully for mayor, State Legislature, Congress and other offices as a member of the Onondaga County Liberal Party. In her campaigns, she often drew attention to issues of human services and the threat of nuclear weapons.
+
+</p><p>She was a member of the National Council of Negro Women, the National Organization for Women, the National Association for the Advancement of Colored People and the American Civil Liberties Union. She was an advocate of gay rights and belonged to a number of peace organizatons, including the Syracuse Peace Council.  </p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>A perpetual candidate and letter writer, Lillian Reiner was an active voice in many liberal causes and her interests and activism provide a unique perspective on the political climate of Central New York in the second half of the Twentieth Century. The <emph render="bold">Lillian Reiner Collection</emph> comprises Correspondence/subject files, Writings, and Memorabilia relating to the Syracuse, New York teacher and political activist (1901-1987).  </p><p>Arranged alphabetically, the <emph render="bold">Correspondence/subject files</emph> (Boxes 1-3)  illustrate the wide range of issues and organizations to which Reiner gave her time and talent, as well as her many campaigns for political office.</p><p>Including articles, letters to editors, and class notes by Lillian Reiner, <emph render="bold">Writings</emph> (Box 4) primarily comprise material gathered for <emph render="italic">Gutsy Lady</emph>, Reiner’s memoir, which was completed by Sari Biklen, Janet Bogdan, Karen DeCrow, and Jean M. Hoefer following Reiner’s death. </p><p><emph render="bold">Memorabilia</emph> (Boxes 5-8) includes clippings, photographs, and printed material as well as Reiner’s collection of political buttons.
+</p>
+      </scopecontent>
+      
+      <!--<arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>## OPT (MARC 351$a)</p>
+      </arrangement>-->
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">New York State</subject>
+         <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <subject encodinganalog="650" source="local">Activism and social reform</subject><persname encodinganalog="600" source="lcnaf">Reiner, Lillian, Archives</persname>
+         
+            <corpname encodinganalog="610" source="lcnaf">Liberal Party of New York State</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Women political activists, New York (State)</subject><subject encodinganalog="650" source="lcsh">Women political candidates, New York (State)</subject><subject encodinganalog="650" source="lcsh">Women social reformers</subject><subject encodinganalog="650" source="lcsh">Sociology</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+            <genreform encodinganalog="655" source="aat">Articles.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Notes (documents)</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Social reformers.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Lillian Reiner Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Sari Biklen</persname>, <persname role="donor">Janet Bogdan</persname>, <persname role="donor">Karen DeCrow</persname>, and <persname role="donor">Jean M. Hoefer</persname>.  Refer to donor file or finding aids file for itemized donor/material list.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>Biographical material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02>
+         </c01>
+      <c01 level="series">
+         
+            <did>
+               <unittitle>Correspondence-subject files</unittitle>
+            </did>
+            <c02><did><unittitle>General correspondence</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Family correspondence</unittitle><container type="Box">1</container></did><note><p>See also <ref target="rabr">Brooks, Rodney A.</ref> and <ref target="isel">Elman, Isadore</ref></p></note></c02>
+<c02><did><unittitle>Abortion rights</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Abzug, Bella S.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Action Coalition to Create Opportunities for Retirement with Dignity, Inc.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Adams, Sherman A.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Advocates Dedicated to Vigorous Ongoing Change of Attitudes Toward the Elderly</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>American Association of University Women, Syracuse Branch</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>American Committee for Protection of Foreign Born</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>American Jewish Congress</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>American Labor Party</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>American–Arab Anti-Discrimination Committee</unittitle><container type="Box">1</container></did></c02>
+<c02 id="afda"><did><unittitle>Americans for Democratic Action</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Auer, Martin S.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Biklen, Sari</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Black civil rights </unittitle><container type="Box">1</container></did></c02>
+<c02 id="rabr"><did><unittitle>Brooks, Rodney A.</unittitle><container type="Box">1</container></did></c02>
+<c02 level="subseries"><did><unittitle>Campaigns</unittitle></did>
+              <c03><did><unittitle><unitdate normal="1954" type="inclusive">1954</unitdate> -  U.S. Representative, 35th Congressional District</unittitle><container type="Box">1</container></did></c03>
+              <c03><did><unittitle><unitdate normal="1973" type="inclusive">1973</unitdate> - Mayor of Syracuse (2 folders)</unittitle><container type="Box">1</container></did></c03>
+              <c03><did><unittitle><unitdate normal="1974" type="inclusive">1974</unitdate> - New York State Assembly, 121st District</unittitle><container type="Box">1</container></did></c03>
+              <c03><did><unittitle><unitdate normal="1976" type="inclusive">1976</unitdate> - U.S. Representative, 33rd Congressional District</unittitle><container type="Box">1</container></did></c03>
+              <c03><did><unittitle><unitdate normal="1977" type="inclusive">1977</unitdate> - Onondaga County Clerk</unittitle><container type="Box">1</container></did></c03>
+               <c03><did><unittitle><unitdate normal="1978" type="inclusive">1978</unitdate> - U.S. Representative, 32nd Congressional District</unittitle><container type="Box">1</container></did></c03>
+               <c03><did><unittitle><unitdate normal="1982" type="inclusive">1982</unitdate> - New York State Assembly, 120th  District</unittitle><container type="Box">1</container></did></c03>
+               <c03><did><unittitle><unitdate normal="1983" type="inclusive">1983</unitdate> - Onondaga County Executive</unittitle><container type="Box">1</container></did></c03>
+              <c03><did><unittitle><unitdate normal="1987" type="inclusive">1987</unitdate> - Onondaga County Executive</unittitle><container type="Box">1</container></did></c03>
+              <c03><did><unittitle>undated</unittitle><container type="Box">1</container></did></c03></c02>
+<c02><did><unittitle>Canadian Aid for Vietnam Civilians (Vancouver, BC)</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Central New York Committee Against Racism and Apartheid</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Children’s Center of Brookline and Greater Boston, The</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Children’s Television Workshop (New York, NY)</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Citizens for Water (Syracuse, NY)</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Citizens United Against Police Brutality (Syracuse, NY)</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Community Action Group Concerned with the Needs of the Institutionalized Elderly</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Congress of Racial Equality</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Consumer Information Service Center, Syracuse, NY</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Cousins, Norman</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Cowen, June C.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>DeBenedittis, Victor</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>DeCrow, Karen</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Eastern Airlines</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Education</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Elderhostel </unittitle><container type="Box">1</container></did></c02>
+<c02 id="isel"><did><unittitle>Elman, Isadore</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Equal Rights Amendment</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Feiner, Irving</unittitle><note><p>See <ref target="ypa-suc">Young Progressives of America, Syracuse University Chapter</ref></p></note></did></c02>
+<c02><did><unittitle>Fisher, Marguerite J.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Foster Grandparent Program</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Frontiers in Elementary Education Conference</unittitle><unitdate normal="1954-07" type="inclusive">July 14-16, 1954</unitdate><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Gay rights</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>General Electric</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Gray Panthers</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle><emph render="italic">The Guardian</emph></unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Harambee, Inc. </unittitle><note><p>See <ref target="wyo">Westcott Youth Organization (Syracuse, NY)</ref></p></note></did></c02>
+<c02><did><unittitle>Hanley, James M.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Housing, Syracuse, NY</unittitle><unitdate normal="1954" type="inclusive">1954</unitdate><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Hunt, James B.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Hyman, Irwin I.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Javits, Jacob K.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Johnson, Edwin Carl</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Krupsak, May Ann</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>League of Women Shoppers, Inc.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>League of Women Voters</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Liberal Party of New York State</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Lytell, Elaine</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Manwell, Elizabeth M.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Marcantonio, Vito</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>May Memorial Unitarian Society (Syracuse, NY)</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>McMahon, Brien</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Meadowbrook Area Task Force (Syracuse, NY)</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Meals on Wheels</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Migrant labor</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Military draft</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Municipal power</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>National Association for the Advancement of Colored People</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>National Committee to Reopen the Rosenberg Case</unittitle><note><p>See <ref target="roso">Rosenberg/Sobell case</ref></p></note></did></c02>
+<c02><did><unittitle>National Committee to Secure Justice for Morton Sobell</unittitle><note><p>See <ref target="roso">Rosenberg/Sobell case</ref></p></note></did></c02>
+<c02><did><unittitle>National Committee to Secure Justice in the Rosenberg Case</unittitle><note><p>See <ref target="roso">Rosenberg/Sobell case</ref></p></note></did></c02>
+<c02><did><unittitle>National Committee to Secure Justice in the Rosenberg-Sobell Case</unittitle><note><p>See <ref target="roso">Rosenberg/Sobell case</ref></p></note></did></c02>
+<c02><did><unittitle>National Council of American-Soviet Friendship</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>National Council of Senior Citizens, Inc.</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>National Council of Jewish Women</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>National Council of Negro Women</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>National Emergency Civil Liberties Committee</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>National Labor Committee for Clemency for the Rosenbergs</unittitle><note><p>See <ref target="roso">Rosenberg/Sobell case</ref></p></note></did></c02>
+<c02 id="now"><did><unittitle>National Organization for Women</unittitle><unitdate type="inclusive" normal="1968/1987">1968-1987, </unitdate><unitdate type="inclusive" normal="1966/1991">undated</unitdate><physdesc><extent>4 folders</extent></physdesc><container type="Box">2</container></did></c02>
+<c02><did><unittitle>National Small Business Association</unittitle><container type="Box">2</container></did></c02>
+<c02 id="nwpc"><did><unittitle>National Women’s Political Caucus</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>New Jewish Agenda</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>New York Civil Liberties Union, Central New York Chapter</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>New York State Assembly</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>New York State Senate, Standing Committee on Labor</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>New York State Teachers’ Retirement System</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>New York State Women’s Political Caucus</unittitle><note><p>See <ref target="nwpc">National Women’s Political Caucus</ref></p></note></did></c02>
+<c02><did><unittitle>New York State Workmen’s Compensation Board</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Nuclear arms</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Nuclear power</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>On the Rise Bakery (Syracuse, NY)</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Onondaga County Women’s Political Caucus</unittitle><note><p>See <ref target="nwpc">National Women’s Political Caucus</ref></p></note></did></c02>
+<c02><did><unittitle>Onondaga Independent Citizens’ Committee</unittitle><container type="Box">2</container><unitdate normal="1946" type="inclusive">1946</unitdate></did></c02>
+<c02><did><unittitle>Pageant</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Peace Now Jerusalem</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Peacewriters Network</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Police brutality</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Post-war race relations</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Progressive Citizens of America</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Retirement</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Rogers, Stephen</unittitle><container type="Box">2</container></did></c02>
+<c02 id="roso"><did><unittitle>Rosenberg/Sobell case</unittitle><unitdate normal="1952/1983" type="inclusive">1952-1983</unitdate><physdesc><extent>4 folders</extent></physdesc><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Schwartzman, Marshall</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Seidenberg, Robert</unittitle></did><note><p>See also <ref target="now">National Organization for Women</ref></p></note></c02>
+<c02><did><unittitle>Skills for Action</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Smith, Howard K.</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Sobell, Helen</unittitle><container type="Box">3</container></did><note><p>See also <ref target="roso">Rosenberg/Sobell case</ref></p></note></c02>
+<c02><did><unittitle>Society for Ethical Culture</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Speaking engagements</unittitle><unitdate normal="1962/1986" type="inclusive">1962-1986</unitdate><container type="Box">3</container></did></c02>
+<c02><did><unittitle>State Press (Little Rock, AR)</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Syracuse (NY) Citizens’ Committee for Fair and Effective Price Control</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Syracuse (NY) City School District</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Syracuse Coalition for the Free Flow of Information in the Broadcast Media</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Syracuse Developmental Center Advisory Board</unittitle><note><p>See <ref target="sssab">Syracuse State School Advisory Board</ref></p></note></did></c02>
+<c02><did><unittitle>Syracuse Housing Authority</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Syracuse Peace Council</unittitle><container type="Box">3</container></did></c02>
+<c02 id="sssab"><did><unittitle>Syracuse State School Advisory Board</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Syracuse University Alumni News </unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Syracuse University Center on Human Policy</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Syracuse University Humanistic Studies Center</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Syracuse (NY) Women for Peace</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Thresholds Correctional Solutions</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Union for Democratic Action</unittitle><note><p>See <ref target="afda">Americans for Democratic Action</ref></p></note></did></c02>
+<c02><did><unittitle>United Nations Association of Central New York</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>United States Central Intelligence Agency</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>United States Department of Agriculture Emergency Food Program</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>United States Federal Bureau of Investigation</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>United States Office of Price Administration  National Consumer Advisory Committee</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>United States Post Office Department</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Walsh, William F.</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>War tax resistance</unittitle><container type="Box">3</container></did></c02>
+<c02 id="wyo"><did><unittitle>Westcott Youth Organization (Syracuse, NY)</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Women in politics</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Women’s issues</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Women’s International League for Peace and Freedom  </unittitle><unitdate type="inclusive" normal="1961/1985">1961-1985, </unitdate><unitdate type="inclusive" normal="1890/1991">undated</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">3</container></did></c02>
+<c02 id="ypa-suc"><did><unittitle>Young Progressives of America, Syracuse University Chapter</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Youth March for Integrated Schools</unittitle><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Zimmer, Melvin N.</unittitle><container type="Box">3</container></did></c02>
+
+         </c01><c01 level="series"><did><unittitle>Writings</unittitle></did><c02 level="subseries"><did><unittitle>Articles</unittitle></did>
+<c03><did><unittitle><emph render="italic">Advocate</emph>  <unitdate normal="1974-03-09" type="inclusive">3/9/1974</unitdate> - typescript</unittitle><container type="Box">4</container></did></c03></c02>
+<c02 level="subseries"><did><unittitle>Books</unittitle></did>
+<c03><did><unittitle><emph render="italic">Gutsy Lady</emph> Lillian Reiner Book Fund Syracuse, NY</unittitle><unitdate normal="1991" type="inclusive">1991</unitdate><container type="Box">4</container></did></c03>
+<c03><did><unittitle>"That Gutsy Lady" (working title)</unittitle></did>
+<c04><did><unittitle>Manuscript</unittitle></did>
+<c05><did><unittitle>Lillian Reiner’s first draft – typescript</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">4</container></did></c05>
+<c05><did><unittitle>Jean Hoefer’s draft copy – typescript</unittitle><physdesc><extent>11 folders</extent></physdesc><container type="Box">4</container></did></c05></c04>
+<c04><did><unittitle>Research notes</unittitle></did>
+<c05><did><unittitle>"Activities"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Anti-Jew/Black"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Barry Park"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Biographical"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Black rights"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Chapter one"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Brooks, Rodney"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"C.O.R.E."</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Chronology"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Communist Party"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Cub Scouts"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Death penalty"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"DeCrow interview"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Eightieth birthday"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Environmental hazards"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"F.B.I."</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Family"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Famous people"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Feiner case"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Feminist"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Foster Grandparents"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Friends"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>Interviews (transcripts)</unittitle></did>
+<c06><did><unittitle>Reiner, Larry, "tape 4a" </unittitle><unitdate normal="1890/1991" type="inclusive">undated</unitdate><container type="Box">4</container></did></c06>
+<c06><did><unittitle>Reiner, Lillian "tape 1" </unittitle><unitdate normal="1977-11-15" type="inclusive">Nov. 15, 1977</unitdate><container type="Box">4</container></did></c06>
+<c06><did><unittitle>Reiner, Lillian "Session2 tape1"</unittitle><unitdate normal="1977-11-29" type="inclusive">Nov. 29, 1977</unitdate><container type="Box">4</container></did></c06>
+<c06><did><unittitle>Reiner, Lillian</unittitle><unitdate normal="1981" type="inclusive">1981</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">4</container></did></c06>
+<c06><did><unittitle>Reiner, Lillian "Session 1 tape 2" </unittitle><unitdate normal="1890/1991" type="inclusive">undated</unitdate><container type="Box">4</container></did></c06>
+<c06><did><unittitle>Reiner, Lillian "Interviewer’s notes" </unittitle><unitdate normal="1890/1991" type="inclusive">undated</unitdate><container type="Box">4</container></did></c06>
+<c06><did><unittitle>Washington, Henry </unittitle><unitdate normal="1978-10-26" type="inclusive">Oct. 26, 1978</unitdate><container type="Box">4</container></did></c06></c05>
+<c05><did><unittitle>"Letters to publishers"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Liberal Party"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Military draft"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"N.A.A.C.P."</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Newspapers"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Obits"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Outlines"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"P.C.A.-A.L.P."</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Peace"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Personal philosophy"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Picketing"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Police brutality"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Regal Restaurant"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Reiner’s notes"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Rosenberg/Sobell"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Running for office"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Seidenberg interviews"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Statement of hours and expenses"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Syracuse Peace Council"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"United Nations Association"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Wallace campaign"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>"Yiddish"</unittitle><container type="Box">4</container></did></c05>
+<c05><did><unittitle>Miscellaneous</unittitle><container type="Box">4</container></did></c05></c04></c03></c02>
+<c02 level="subseries"><did><unittitle>Class notes</unittitle></did>
+<c03><did><unittitle>"Experiences at C.C. School, <unitdate normal="1972-07" type="inclusive">July 12, 13, 14,  1972</unitdate>"</unittitle><container type="Box">4</container></did></c03>
+<c03><did><unittitle>"Family Living and Child Development"   </unittitle><unitdate normal="1953" type="inclusive">Summer 1953</unitdate><container type="Box">4</container></did></c03>
+<c03><did><unittitle>"Home Nursing and Community Health #30"   </unittitle><unitdate normal="1953/1954" type="inclusive">Fall 1953-54</unitdate><container type="Box">4</container></did></c03>
+<c03><did><unittitle>"Social Organization and Deviant Groups"  </unittitle><unitdate normal="1954" type="inclusive">Spring 1954</unitdate><container type="Box">4</container></did></c03>
+<c03><did><unittitle>Sociology 109 "Primary Interaction and Personal Behavior"  </unittitle><unitdate normal="1964" type="inclusive">Spring 1964</unitdate><container type="Box">4</container></did></c03>
+<c03><did><unittitle>Sociology 133 "The Family"  </unittitle><unitdate normal="1953" type="inclusive">Fall 1953</unitdate><container type="Box">4</container></did></c03>
+<c03><did><unittitle>Sociology 142  </unittitle><unitdate normal="1954" type="inclusive">Spring 1954</unitdate><container type="Box">4</container></did></c03>
+<c03><did><unittitle>Sociology 145 "Leisure and Social Group Work" </unittitle><unitdate normal="1954" type="inclusive">Spring 1954</unitdate><container type="Box">4</container></did></c03>
+<c03><did><unittitle>Sociology 152b "Leisure and Social Group Work" </unittitle><unitdate normal="1954" type="inclusive">Spring 1954</unitdate><container type="Box">4</container></did></c03>
+<c03><did><unittitle>Sociology 154a "Child in the Group" </unittitle><unitdate normal="1953/1954" type="inclusive">Fall 1953-54</unitdate><container type="Box">4</container></did></c03>
+<c03><did><unittitle>Special Ed 141 "Education of Children with Retarded Intelligence" </unittitle><unitdate normal="1954" type="inclusive">Summer 1954</unitdate><container type="Box">4</container></did></c03></c02>
+<c02 level="subseries"><did><unittitle>Journal</unittitle></did>
+<c03><did><unittitle><unitdate normal="1962-10" type="inclusive">"10/8 and 11/4, 1962"</unitdate></unittitle><container type="Box">4</container></did></c03>
+<c03><did><unittitle><unitdate normal="1984-08" type="inclusive">"August 6-19, 1984"</unitdate></unittitle><container type="Box">4</container></did></c03></c02>
+<c02><did><unittitle>Letters to editors</unittitle><unitdate normal="1946/1987" type="inclusive">1946-1987, </unitdate><unitdate normal="1890/1991" type="inclusive">undated</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Letters to elected officials</unittitle><unitdate normal="1946" type="inclusive">1946, </unitdate><unitdate normal="1976" type="inclusive">1976</unitdate><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Radio scripts  "Comment" WSOQ Radio North Syracuse, NY</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">4</container></did></c02>
+</c01><c01 level="series"><did><unittitle>Memorabilia</unittitle></did><c02><did><unittitle>Academic records</unittitle><unitdate normal="1953/1972" type="inclusive">1953-1972</unitdate><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Appointment calendar</unittitle><unitdate normal="1983" type="inclusive">1983</unitdate><container type="Box">5</container></did></c02><c02 level="subseries"><did><unittitle>Artwork</unittitle></did>
+<c03><did><unittitle>Portraits of Lillian Reiner</unittitle><physdesc><extent>2, unframed</extent></physdesc><container type="Box">5</container></did></c03>
+<c03><did><unittitle>Paintings by Isabell M. Williams</unittitle><physdesc><extent>3, framed</extent></physdesc><container type="Box">5</container></did></c03>
+<c03><did><unittitle>Tribute "The Ballad of Lillian Reiner (framed)</unittitle><container type="Box">5</container></did></c03></c02>
+<c02 level="subseries"><did><unittitle>Audio recordings</unittitle></did>
+<c03><did><unittitle>Cassette tapes</unittitle><physdesc><extent>30 tapes</extent></physdesc><container type="Box">5</container></did></c03>
+<c03><did><unittitle>Vinyl phonograph records</unittitle><physdesc><extent>6 records</extent></physdesc><container type="Box">5</container></did></c03></c02>
+<c02 level="subseries"><did><unittitle>Awards and certificates</unittitle></did>
+<c03><did><unittitle><unitdate normal="1975/1987" type="inclusive">1975-1987, </unitdate><unitdate normal="1890/1991" type="inclusive">undated</unitdate></unittitle><container type="Box">5</container></did></c03>
+<c03><did><unittitle>Brass bell inscribed "To Lillian Reiner for Outstanding Service on Behalf of Mental Health <unitdate normal="1985-01-17">Jan. 17, 1985</unitdate> M.H.A.O.C."</unittitle><container type="Box">8</container></did></c03>
+<c03><did><unittitle>Plaque inscribed "Gay Light Person of the Year"</unittitle><unitdate normal="1976" type="inclusive">1976</unitdate><container type="Box">8</container></did></c03>
+<c03><did><unittitle>Miscellaneous</unittitle></did>
+<c04><did><unittitle>Ceramic vase</unittitle><container type="Box">8</container></did></c04>
+<c04><did><unittitle>Cloth with embroidered signatures</unittitle><container type="Box">8</container></did></c04>
+<c04><did><unittitle>Lists of addresses and other unidentified notes</unittitle><physdesc><extent>1 folder</extent></physdesc><container type="Box">8</container></did></c04>
+<c04><did><unittitle>Political and campaign buttons</unittitle><container type="Box">8</container></did></c04></c03></c02>
+<c02 level="subseries"><did><unittitle>Clippings</unittitle></did>
+<c03><did><unittitle><unitdate normal="1948/1949" type="inclusive">1948-1949</unitdate></unittitle><container type="Box">6</container></did></c03>
+<c03><did><unittitle><unitdate normal="1953" type="inclusive">1953</unitdate></unittitle><container type="Box">6</container></did></c03>
+<c03><did><unittitle><unitdate normal="1954" type="inclusive">1954</unitdate></unittitle><container type="Box">6</container></did></c03>
+<c03><did><unittitle><unitdate normal="1962" type="inclusive">1962</unitdate></unittitle><container type="Box">6</container></did></c03>
+<c03><did><unittitle><unitdate normal="1971/1984" type="inclusive">1971-1984</unitdate></unittitle><container type="Box">6</container></did></c03>
+<c03><did><unittitle>About Lillian Reiner</unittitle><container type="Box">6</container></did></c03></c02>
+<c02><did><unittitle>Employment records</unittitle><unitdate normal="1955/1974" type="inclusive">1955-1974</unitdate><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Financial records</unittitle><unitdate normal="1971/1976" type="inclusive">1971-1976, </unitdate><unitdate normal="1890/1991" type="inclusive">undated</unitdate><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Medical records</unittitle><unitdate normal="1954/1974" type="inclusive">1954-1974</unitdate><container type="Box">6</container></did></c02><c02 level="subseries"><did><unittitle>Photographs</unittitle></did>
+<c03><did><unittitle><unitdate normal="1890/1987" type="inclusive">c. 1890-1987, </unitdate><unitdate normal="1890/1991" type="inclusive">undated</unitdate> </unittitle><physdesc><extent>7 folders</extent></physdesc><container type="Box">6</container></did></c03></c02>
+<c02 level="subseries"><did><unittitle>Printed material</unittitle></did>
+<c03><did><unittitle>American Friends Service Committee "Steps to Peace" </unittitle><unitdate normal="1951" type="inclusive">1951</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>Association For Childhood Education International "Nursery School Portfolio" </unittitle><unitdate normal="1953" type="inclusive">1953</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>Auerbach, Aline B. "How to Give Your Child a Good Start"</unittitle><unitdate normal="1951" type="inclusive">1951</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>Braden, Anne "House Un-American Activities Committee: Bulwark of Segregation"  </unittitle><unitdate normal="1964" type="inclusive">1964</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>Civil Rights Congress "Voices for Freedom"</unittitle><unitdate normal="1951" type="inclusive">1951</unitdate><physdesc><extent>4 copies</extent></physdesc><container type="Box">7</container></did></c03>
+<c03><did><unittitle>Dawn Bible Students Association "Armageddon Then World Peace" </unittitle><unitdate normal="1960" type="inclusive">1960</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>New York State American Labor Party Council on Public Affairs "A Program for Jobs in N.Y. State"</unittitle><physdesc><extent>7 copies</extent></physdesc><unitdate normal="1954" type="inclusive">1954</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>New York State Commission Against Discrimination "Inside Facts" </unittitle><unitdate normal="1952" type="inclusive">1952</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>New York State Department of Commerce Business Program for Women "A Business of Her Own" </unittitle><unitdate normal="1945" type="inclusive">1945</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>Onondaga Community College "A History of the Black Community of Syracuse" </unittitle><unitdate normal="1980" type="inclusive">1980</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>Robins, Raymond "An American Prophet Speaks"</unittitle><physdesc><extent>4 copies</extent></physdesc><unitdate normal="1933" type="inclusive">1933</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>Stover, Fred "The Contest between the People and the Plunderers"</unittitle><unitdate normal="1890/1991" type="inclusive">undated</unitdate><physdesc><extent>6 copies</extent></physdesc><container type="Box">7</container></did></c03>
+<c03><did><unittitle>Syracuse Hebrew Day School, "Guidebook to the Syracuse Jewish Community Passover 5734/1974" </unittitle><unitdate normal="1974" type="inclusive">1974</unitdate></did></c03>
+<c03><did><unittitle>Town Hall, Inc. "Town Meeting"</unittitle></did>
+<c04><did><unittitle>v. 14 nos. 3, 12, 23, 27, 31-52</unittitle><container type="Box">7</container></did></c04>
+<c04><did><unittitle>v. 15 nos. 1- 16, 19 – 21</unittitle><container type="Box">7</container></did></c04></c03>
+<c03><did><unittitle>Wexley, John "The Judgment of Julius and Ethel Rosenberg" </unittitle><unitdate normal="1955" type="inclusive">1955</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>Wolf, Anna W.M. "What Makes a Good Home?" </unittitle><unitdate normal="1951" type="inclusive">1951</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>Miscellaneous</unittitle><container type="Box">7</container></did></c03></c02>
+<c02 level="subseries"><did><unittitle>Scrapbooks</unittitle></did>
+<c03><did><unittitle>"Testimonial dinner in honor of Lillian Reiner"</unittitle><unitdate normal="1956-02-18" type="inclusive">Feb. 18, 1956</unitdate><container type="Box">7</container></did></c03>
+<c03><did><unittitle>Eightieth birthday </unittitle><unitdate normal="1981-05-16" type="inclusive">May 16, 1981</unitdate><container type="Box">7</container></did></c03></c02></c01></dsc>
+   </archdesc>
+</ead>

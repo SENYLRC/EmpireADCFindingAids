@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="mary_qos">mary_qos</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Mary, Queen of Scots Letter</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-11-07" encodinganalog="Date">7 Nov 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2011-11-07">7 Nov 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Mary, Queen of Scots, 1542-1587.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Mary, Queen of Scots Letter</unittitle>
+         <unitdate encodinganalog="245$f" normal="1565" type="inclusive" label="Inclusive Dates: ">1565</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 item.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Letter from Mary, Queen of Scots, to a Lord Grey, concerning religious tolerance in her realm.  Accompanied by several engravings of portraits of her, the earliest dated 1729.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3647908</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Mary, Queen of Scots (1542-1587), also known as Mary Stuart or Mary I of Scotland, was queen of Scotland from 1542 to 1567.  Through her husband Francis II, King of France, she was also briefly queen consort of France (1559-1560).  Mary was the daughter of James V of Scotland and through him the grand-daughter of Margaret Tudor, elder sister of Henry VIII; as such she had a legitimate claim to the throne of England as well.    Mary's reign was tempestuous, partly due to her choice of unsuitable husbands and partly due to the religious upheaval of the time.  Mary was a Catholic while many of the Scottish nobles were Protestant; however, Mary declined to persecute Protestants which earned her the distrust of the Catholic faction as well.  Mary's relations with Queen Elizabeth of England (daughter of Henry VIII) were also difficult since she had laid claim to Elizabeth's throne and since many Catholics in England viewed her as the rightful Queen of England due to their belief that Elizabeth was illegitimate.   In July of 1567 Mary was forced by her own nobles to abdicate the Scottish throne in favor of her year-old son James VI and fled to England.  She was treated well but was regarded by Elizabeth as a persistent threat and a potential rallying point for her enemies, and so spent the rest of her life in English custody.    In 1586 she was tried and convicted of treason for conspiracy to assassinate Elizabeth, and she was executed on February 8, 1587.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Mary, Queen of Scots Letter</emph> consists of a single letter from Mary to a Lord Gray (probably Patrick, 4th Lord Gray, a Scottish landowner and supporter of the Scottish Reformation).  The letter, dated 16 July 1565 from Edinburgh, was probably written by a secretary, but Mary's own signature appears at the end.  The letter is important because it spells out Mary's toleration for religious worship.  It reads, in part:</p><p><blockquote><p>...that we should have intended to impede or molest our subjects in the using of their religion and conscience freely...never entered our mind...The effect is to certifie and assure you that as hitherto we have never permitted stop stay or molestation to you or any others in using your religion and conscience, so may ye look for the same good will and clemency in time coming...</p></blockquote></p><p>Accompanying the above is a photostat of a letter from Edwin John Byard of the British Museum attesting to its authenticity, a handwritten transcript of the letter, and several engravings of portraits of Mary, the earliest dated 1729.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Single item.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+			<subject encodinganalog="650" source="local">Religion and philosophy</subject>
+			<persname encodinganalog="600" source="lcnaf">Mary, Queen of Scots, 1542-1587.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Dissenters, Religious -- Scotland.</subject>
+			<subject encodinganalog="650" source="lcsh">Religion and politics -- Scotland -- History -- 16th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Religious tolerance -- Scotland -- History.</subject>
+         <geogname encodinganalog="651" source="lcsh">Scotland -- History -- 16th century.</geogname>
+			<geogname encodinganalog="651" source="lcsh">Scotland -- History -- Mary Stuart, 1542-1567.</geogname>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Engravings (prints)</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Mary, Queen of Scots Letter, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from Frances Ward Harrington Collection.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+               
+               
+            <c02><did><unittitle>to Lord Gray</unittitle><unitdate normal="1565-07-16" type="inclusive">16 Jul 1565</unitdate><container type="Package">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

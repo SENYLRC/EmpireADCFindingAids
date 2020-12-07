@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="root_e" mainagencycode="NSyU">root_e</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Elihu Root Correspondence</titleproper>
+        <subtitle>An inventory of his
+ correspondence at Syracuse University</subtitle>
+        <author encodinganalog="Creator">KM</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date calendar="gregorian" encodinganalog="Date" era="ce" normal="1989-03">Mar 1989</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+
+
+
+
+        <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>
+	  13 Jan 2009 - converted to EAD (LDC)
+        </item>
+      <item>5 Jan 2017 - fixed index code (MRC)</item></list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Root, Elihu, 1845-1937.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Elihu Root Correspondence</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1874/1935" type="inclusive">1874-1935</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">127 items</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Papers of the American lawyer, politician, U.S. Secretary of War under President McKinley, U.S. Secretary of State under Theodore Roosevelt, following the death of John Hay, and United States Senator from New York. Letters, 125 of which are outgoing, which include discussions concerning national and state Republican Party politics.  Several letters are responses to speaking and/or dinner invitations as well as recommendations for various appointments. Correspondents include Cephas Brainerd, Henry Billings Brown, Charles Butler, Julius Chambers, Henry J. Cookinham, William E. Curtis, Charles B. Elliott, Robert Ely, John H. Finley, Henry W. Fishel, Jacob Gallinger, Paul Hickok, Frank Wayland Higgins, Willis Johnson, Adrian Joline, John Knox, Samuel Koenig, Chester Lord, Isabel Lord, William McAdoo, Richard McCurdy, Martin McMahon, Charles Miller, Benjamin B. Odell, William C. Osborn, Ellis Robb, Arthur Saunders, and others.
+</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">149360</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Elihu Root (1845-1937) was an American lawyer and politician who served as Secretary of War under President William McKinley and Secretary of State under President Theodore Roosevelt, and was elected to the United States Senate in 1909.</p>
+      <chronlist>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1845">1845</date>
+          <event>Born in Clinton, New York on February 15th</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1864">1864</date>
+          <event>Graduated from Hamilton College</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1867">1867</date>
+          <event>Graduated from the Law School of New York University </event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1883/1885">1883-1885</date>
+          <event>United States Attorney for the Southern District of New York</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1894">1894</date>
+          <event>Delegate to the State Constitutional Convention</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1899/1904">1899-1904</date>
+          <event>U.S. Secretary of War</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1905/1909">1905-1909</date>
+          <event>U.S. Secretary of State</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1909/1915">1909-1915</date>
+          <event>United States Senator</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1912">1912</date>
+          <event>Winner of the Nobel Peace Prize</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1917">1917</date>
+          <event>Ambassador Extraordinary to Russia</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1937">1937</date>
+          <event>Died in New York City on February 7th</event>
+        </chronitem>
+      </chronlist>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Elihu Root Correspondence</emph> is a collection of 127 predominantly 
+		incoming items written between 1874 and 1935 by a lawyer who served as U.S. Secretary of War under 
+		President McKinley, U.S. Secretary of State under Theodore Roosevelt, and later as United States 
+		Senator from New York. Whether serving at the national or state level, Root maintained his 
+		involvement with Republican Party politics, and many of the letters in the collection (Henry J. 
+		Cookinham, Samuel G. French, Samuel Koenig, Richard A. McCurdy, Timothy L. Woodruff) reflect 
+		Root's concern with the party's role in restoring the confidence of voters in the wake of the 
+		widespread abuse of public trust by Tammany Hall. Urging Richard A. McCurdy to join the Republican 
+		Club, Root writes (11 Mar 1895):
+
+        <blockquote>
+          <p>...when occasion arises for the effective assertion of distinctive Republican sentiment your voice
+could be heard through its agency no matter how many corrupt County Committee men are bought out or how 
+completely the regular organization fails to represent the party.</p>
+        </blockquote></p>
+      <p>A few years later, responding to several telegrams warning that "the insistence upon a State 
+		Republican ticket in King's County was blocking the chance of anti-Tammany fusion," Root addressed 
+		New York State Lieutenant-Governor Timothy L. Woodruff (23 Sep 1909):
+
+        <blockquote>
+          <p>... the Republican Party of the State as a whole will be very severely punished by a great 
+			 mass of voters who will be disaffected and disgusted if there is not a fusion. Whether rightly 
+			 or wrongly, they will charge the failure to us and we shall have to suffer for it.</p>
+        </blockquote></p>
+      <p>Stressing the importance of party unity in defeating the powerful and corrupt stranglehold of 
+		the Tammany machine, Root cautions Samuel Koenig (21 Oct 1913):
+
+        <blockquote>
+          <p>I hope all Republicans in the City will vote for Mr. [John Purroy] Mitchell [sic] &amp; the 
+			 Anti-Tammany ticket which he heads. That is the Republican ticket &amp; it represents the principles 
+			 for which we have been fighting in the City for many years.</p>
+          <p>Unless your professions have been false pretences we must support that ticket now even though 
+			 we might have preferred another candidate. That is the only way now to decrease the power of Tammany 
+			 Hall. Surely all the Republicans must wish to do that when they consider the shameful and 
+			 humiliating record in the government of our State which has resulted from the executive and 
+			 legislative control of Tammany at Albany.</p>
+        </blockquote></p>
+      <p>Concerning his own ambitions for national public office, Root outlined his thoughts about the 
+		Vice-Presidency for Henry J. Cookinham (15 Dec 1899):
+
+        <blockquote>
+          <p>It is of course gratifying to have the commendation which is involved in being seriously talked 
+			 about for the nomination, and it is especially gratifying to have such feeling in the county where 
+			 I was born and where my family have lived since its settlement. I have, however, no such desire for 
+			 the office as to lead me to be a candidate for it, and I do not intend to be. My real desire is to 
+			 get the work done which I am engaged upon, and get back to the bar. If I am ever called upon to 
+			 consider the question of the Vice-Presidency, it will be because somebody else wants it, not because 
+			 I do.</p>
+          <p>As my observation indicates that such great offices do not go around hunting people out, I do 
+			 not regard the matter as practicable.</p>
+        </blockquote></p>
+      <p>In addition, there are also a number of letters in response to suggestions that Root consider approval 
+		of various pieces of legislation, including the Telepost Bill and an amendment to a corporation tax bill 
+		(H.H. Platt). Also, there is a series of letters to Timothy L. Woodruff written between 1900 and 1901 
+		concerning a bill to cede jurisdiction to the federal government of the land under water south of Governor's 
+		Island (28 Dec 1900):
+
+        <blockquote>
+          <p>The benefits to the entire City of New York will be very great, and the benefits to Brooklyn will 
+			 be especially so. The improvement contemplated will enable us to make permanent arrangements for 
+			 transacting business at that point, to maintain a more respectable garrison and to provide for interior 
+			 defense by establishing batteries of rapid fire guns - a matter of very great importance because as 
+			 the defenses of the Harbor are now arranged, if a fast little boat were to get up through the Narrows 
+			 with rapid fire guns, she would have the City of New York at her mercy.</p>
+        </blockquote></p>
+      <p>Becoming impatient with the measure which Root believed would "go through [the State legislature] as a 
+		matter of course," the then U.S. Secretary of War threatened (04 Feb 1901):
+
+        <blockquote>
+          <p>Of course if the people of New York don't want the improvement made, the people of the rest of the 
+			 country will not experience any sorrow. They are all pressing for the expenditure of Government money 
+			 in their own localities, and for the erection and enlargement of army posts and fortifications in the 
+			 neighborhood of their own cities.</p>
+        </blockquote></p>
+      <p>Similarly, in a letter to then Comptroller of the Currency, John J. Knox, Root communicates his alarm 
+		concerning a plan by the federal government to tax bank deposits (29 Jul 1881):
+
+        <blockquote>
+          <p>The Commissioner of Internal Revenue has just started upon a raid on the State banks here which if 
+			 persisted in must it seems to me very seriously affect your wards, the National Banks. He proposes to 
+			 levy the tax upon deposits, upon the gross deposits before the daily exchanges &amp; to enforce the 
+			 tax upon the difference between the net and gross deposits for the past sixteen years ... I hope that 
+			 the project will be abandoned. If it is not there will be a monkey &amp; parrot time here. Depositors 
+			 do not look at claims of such magnitude against their banks with serenity.</p>
+        </blockquote></p>
+      <p>In addition, the collection also contains a number of responses to recommendations for various 
+		appointments (Cephas Brainerd, H. B. Brown, Ashley W. Cole, Jacob H. Gallinger, Edward W. Hatch, Samuel 
+		Koenig, Robert C. Morris, William C. Osborn) as well as recommendations by Root to New York State Governors 
+		Benjamin B. Odell and Frank W. Higgins concerning appointments to the Appellate Division of the State 
+		Supreme Court, First Department.</p>
+      <p>Also, there are several speaking and/or dinner invitations (Otto T. Bannard, William Barbour, Robert E. 
+		Ely, Oscar F. Fellows, Chester S. Lord, Isabel Lord, George McAneny, Thomas J. Watson) as well as a number 
+		of responses to invitations to appear at ceremonial functions. Asked to attend the Hooker Memorial Exercises 
+		in Boston by Lieutenant- Governor of Massachusetts Curtis Guild, Root declines (11 May 1903):
+
+        <blockquote>
+          <p>My son is graduated from college on that day, and if I were to be absent the results in my family 
+			 would be worse than anything that has ever happened in the Philippines. Moreover, personally and 
+			 confidentially, I am tired and sick of making speeches, and am unhappy over four or five which are piled 
+			 up before me already.</p>
+        </blockquote></p>
+      <p>There are also some responses to the receipt of reading material which was sent to Root (William E. 
+		Curtis, Julius Chambers, Willis F. Johnson), and a number of personal letters to Charles H. Butler, John P. 
+		Clarke, and A. P. Saunders and his family.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The collection contains one series, Correspondence, which is arranged chronologically.  
+		A <ref target="sic">Selected Index of Correspondence</ref> is located at the end of the finding aid.</p>
+    </arrangement>
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">New York State</subject>
+      <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+      <persname encodinganalog="600" source="lcnaf">Brainerd, Cephas, 1831-1910.</persname>
+      <persname encodinganalog="600" source="lcnaf">Brown, Henry Billings, 1836-1913.</persname>
+      <persname encodinganalog="600" source="lcnaf">Butler, Charles Henry, 1859-1940.</persname>
+      <persname encodinganalog="600" source="lcnaf">Chambers, Julius, 1850-1920.</persname>
+      <persname encodinganalog="600" source="lcnaf">Cookinham, Henry J., 1843-</persname>
+      <persname encodinganalog="600" source="lcnaf">Curtis, William Eleroy, 1850-1911.</persname>
+      <persname encodinganalog="600" source="lcnaf">Elliott, Charles B. (Charles Burke), 1861-1935.</persname>
+      <persname encodinganalog="600" source="lcnaf">Ely, Robert Erskine, 1861-</persname>
+      <persname encodinganalog="600" source="lcnaf">Finley, John H. (John Huston), 1863-1940.</persname>
+      <persname encodinganalog="600" source="lcnaf">Fishel, Henry W.</persname>
+      <persname encodinganalog="600" source="lcnaf">Gallinger, Jacob Harold, 1837-1918.</persname>
+      <persname encodinganalog="600" source="lcnaf">Hickok, Paul Robinson, 1877-1945.</persname>
+      <persname encodinganalog="600" source="lcnaf">Higgins, Frank Wayland, 1856-1907.</persname>
+      <persname encodinganalog="600" source="lcnaf">Johnson, Willis Fletcher, 1857-1931.</persname>
+      <persname encodinganalog="600" source="lcnaf">Joline, Adrian H. (Adrian Hoffman), 1850-1912.</persname>
+      <persname encodinganalog="600" source="lcnaf">Knox, John Jay, 1828-1892.</persname>
+      <persname encodinganalog="600" source="lcnaf">Koenig, Samuel S., 1872-1955.</persname>
+      <persname encodinganalog="600" source="lcnaf">Lord, Chester Sanders, 1850-1933.</persname>
+      <persname encodinganalog="600" source="lcnaf">Lord, Isabel Ely, 1871-</persname>
+      <persname encodinganalog="600" source="lcnaf">McAdoo, W. G. (William Gibbs), 1863-1941.</persname>
+      <persname encodinganalog="600" source="lcnaf">McCurdy, Richard A. (Richard Aldrich), 1835-1916.</persname>
+      <persname encodinganalog="600" source="lcnaf">McMahon, Martin Thomas, 1838-1906.</persname>
+      <persname encodinganalog="600" source="lcnaf">Miller, Charles Ransom, 1849-1922.</persname>
+      <persname encodinganalog="600" source="lcnaf">Odell, Benjamin B. (Benjamin Barker), 1854-1926.</persname>
+      <persname encodinganalog="600" source="lcnaf">Osborn, William Church, 1862-</persname>
+      <persname encodinganalog="600" source="lcnaf">Robb, Ellis D.</persname>
+      <persname encodinganalog="600" source="lcnaf">Root, Elihu, 1845-1937.</persname>
+      <persname encodinganalog="600" source="lcnaf">Saunders, Arthur Percy, 1869-</persname>
+      <corpname encodinganalog="610" source="lcnaf">Republican Party (N.Y.)</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Republican Party (U. S. : 1854- )</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Tammany Hall.</corpname>
+      <subject encodinganalog="650" source="lcsh">Legislators -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Political parties -- New York (State) -- History -- Sources.</subject>
+      <subject encodinganalog="650" source="lcsh">Politicians -- United States.</subject>
+      <geogname encodinganalog="651" source="lcsh">New York (State) -- History -- 1865-</geogname>
+      <geogname encodinganalog="651" source="lcsh">New York (State) -- Officials and employees -- Selection and appointment.</geogname>
+      <geogname encodinganalog="651" source="lcsh">New York (State) -- Politics and government -- 1865-1950.</geogname>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Legislators.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Elihu Root Correspondence
+
+
+
+        <lb/>&su_name;</p>
+    </prefercite>
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1874/1886" type="inclusive">1874-1886</unitdate>
+            
+            <physdesc>
+              <extent>3 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">1</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1895/1896" type="inclusive">1895-1896</unitdate>
+            
+            <physdesc>
+              <extent>4 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">2</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1899" type="inclusive">1899</unitdate>
+            
+            <physdesc>
+              <extent>3 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">3</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1900" type="inclusive">1900</unitdate>
+            
+            <physdesc>
+              <extent>5 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">4</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1901" type="inclusive">1901</unitdate>
+            
+            <physdesc>
+              <extent>12 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">5</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1902/1903" type="inclusive">1902-1903</unitdate>
+            
+            <physdesc>
+              <extent>7 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">6</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1904/1905" type="inclusive">1904-1905</unitdate>
+            
+            <physdesc>
+              <extent>9 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">7</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1906" type="inclusive">1906</unitdate>
+            
+            <physdesc>
+              <extent>6 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">8</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1907" type="inclusive">1907</unitdate>
+            
+            <physdesc>
+              <extent>5 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">9</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1908" type="inclusive">1908</unitdate>
+            
+            <physdesc>
+              <extent>3 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">10</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1909" type="inclusive">1909</unitdate>
+            
+            <physdesc>
+              <extent>12 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">11</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1910" type="inclusive">1910</unitdate>
+            
+            <physdesc>
+              <extent>16 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">12</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1911/1912" type="inclusive">1911-1912</unitdate>
+            
+            <physdesc>
+              <extent>7 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">13</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1913/1915" type="inclusive">1913-1915</unitdate>
+            
+            <physdesc>
+              <extent>7 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">14</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1917/1919" type="inclusive">1917-1919</unitdate>
+            
+            <physdesc>
+              <extent>6 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">15</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1920/1923" type="inclusive">1920-1923</unitdate>
+            
+            <physdesc>
+              <extent>6 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">16</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1924/1926" type="inclusive">1924-1926</unitdate>
+            
+            <physdesc>
+              <extent>5 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">17</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1928/1930" type="inclusive">1928-1930</unitdate>
+            
+            <physdesc>
+              <extent>4 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">18</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[General]</unittitle>
+              <unitdate calendar="gregorian" era="ce" normal="1931/1935" type="inclusive">1931-1935</unitdate>
+            
+            <physdesc>
+              <extent>7 items</extent>
+            </physdesc>
+          <container type="Box">1</container><container type="Folder">19</container>
+            </did>
+        </c02>
+      </c01>
+
+      
+    </dsc>
+  <index id="sic"><head>Selected index to correspondence</head>
+<indexentry>
+   <name>Babcock</name>
+   <ptrgrp>
+      <ref>25 Jul 1908</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Bannard, Otto T.</name>
+   <ptrgrp>
+      <ref>25 Nov 1911</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Barbour, William</name>
+   <ptrgrp>
+      <ref>30 Dec 1914</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Bartlett, Willard</name>
+   <ptrgrp>
+      <ref>10 Dec 1912</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Beals, Herbert</name>
+   <ptrgrp>
+      <ref>19 Apr 1910</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Blair, Gist</name>
+   <ptrgrp>
+      <ref>17 Feb 1912</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Brainerd, Cephas</name>
+   <ptrgrp>
+      <ref>10 Mar 1902</ref>
+      <ref>31 Oct 1905</ref>
+      <ref>11 Apr 1910</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Brown, George G.</name>
+   <ptrgrp>
+      <ref>07 May 1910</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Brown, Henry Billings</name>
+   <ptrgrp>
+      <ref>19 Dec 1905</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Bruce, Eli M.</name>
+   <ptrgrp>
+      <ref>07 Apr 1910</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Brush, George W.</name>
+   <ptrgrp>
+      <ref>17 Oct 1906</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Butler, Charles Henry</name>
+   <ptrgrp>
+      <ref>21 Mar 1904</ref>
+      <ref>14 Mar 1905</ref>
+      <ref>19 Feb 1906</ref>
+      <ref>21 Dec 1907</ref>
+      <ref>21 Jan 1908</ref>
+      <ref>16 Mar 1909</ref>
+      <ref>31 May 1909</ref>
+      <ref>24 Dec 1924</ref>
+      <ref>21 Feb 1925</ref>
+      <ref>25 Feb 1931</ref>
+      <ref>12 Mar 1935</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Chambers, Julius</name>
+   <ptrgrp>
+      <ref>16 May 1905</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Chapman, W. G.</name>
+   <ptrgrp>
+      <ref>16 Aug 1909</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Childs, F. W.</name>
+   <ptrgrp>
+      <ref>16 Aug 1899</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Clarke, John Proctor</name>
+   <ptrgrp>
+      <ref>01 Feb 1906</ref>
+      <ref>17 Mar 1910</ref>
+      <ref>24 Dec 1922</ref>
+      <ref>17 Feb 1923</ref>
+      <ref>17 Nov 1925</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Cole, Ashley T.</name>
+   <ptrgrp>
+      <ref>30 Jul 1903</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Cole, Ashley W.</name>
+   <ptrgrp>
+      <ref>05 Jul 1895</ref>
+      <ref>16 Jan 1896</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Cookinham, Henry J.</name>
+   <ptrgrp>
+      <ref>15 Dec 1899</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Curtis, William Eleroy</name>
+   <ptrgrp>
+      <ref>20 Jan 1906</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Drew, Thomas</name>
+   <ptrgrp>
+      <ref>02 Apr 1874</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Elliott, Charles Burke</name>
+   <ptrgrp>
+      <ref>30 Oct 1920</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Ely, Robert Erskine</name>
+   <ptrgrp>
+      <ref>01 Apr 1907</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Fallows, Edward Huntington</name>
+   <ptrgrp>
+      <ref>10 Apr 1911</ref>
+      <ref>06 Nov 1917</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Fellows, Oscar F.</name>
+   <ptrgrp>
+      <ref>19 Jan 1909</ref>
+      <ref>28 Sep 1912</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Finley, John H.</name>
+   <ptrgrp>
+      <ref>13 Mar 1925</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Fishel, Henry W.</name>
+   <ptrgrp>
+      <ref>08 Mar 1909</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Floyd, A. B.</name>
+   <ptrgrp>
+      <ref>26 Mar 1910</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>French, Samuel Gibbs</name>
+   <ptrgrp>
+      <ref>30 Aug 1895</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Gallinger, Jacob Harold</name>
+   <ptrgrp>
+      <ref>26 Oct 1905</ref>
+      <ref>29 Jun 1906</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Goadby, Arthur M.</name>
+   <ptrgrp>
+      <ref>09 May 1899</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Guild, Curtis, Jr.</name>
+   <ptrgrp>
+      <ref>27 Feb 1901</ref>
+      <ref>02 Dec 1901</ref>
+      <ref>07 May 1903</ref>
+      <ref>11 May 1903</ref>
+      <ref>15 May 1903</ref>
+      <ref>20 Oct 1905</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Guiteau, B. L.</name>
+   <ptrgrp>
+      <ref>20 Apr 1910</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Hatch, Edward Wingate</name>
+   <ptrgrp>
+      <ref>29 Jun 1901</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Hayes, H. M.</name>
+   <ptrgrp>
+      <ref>26 Mar 1910</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Hickok, Paul Robinson</name>
+   <ptrgrp>
+      <ref>19 Oct 1928</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Higgins, Frank Wayland</name>
+   <ptrgrp>
+      <ref>11 Feb 1905</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Hoffman, Joseph G</name>
+   <ptrgrp>
+      <ref>19 Apr 1910</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Howell, E. V.</name>
+   <ptrgrp>
+      <ref>05 Apr 1913</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Ingraham, George Landon</name>
+   <ptrgrp>
+      <ref>03 May 1918</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Johnson, Willis Fletcher</name>
+   <ptrgrp>
+      <ref>26 Nov 1906</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Joline, Adrian Hoffman</name>
+   <ptrgrp>
+      <ref>27 Feb 1901</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Knox, John Jay</name>
+   <ptrgrp>
+      <ref>29 Jul 1881</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Koenig, Samuel S.</name>
+   <ptrgrp>
+      <ref>05 Dec 1911</ref>
+      <ref>21 Oct 1913</ref>
+      <ref>31 Dec 1914</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Lord, Chester Sanders</name>
+   <ptrgrp>
+      <ref>06 Nov 1901</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Lord, Isabel Ely</name>
+   <ptrgrp>
+      <ref>18 Mar 1909</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>McAdoo, William Gibbs</name>
+   <ptrgrp>
+      <ref>27 Aug 1917</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>McAneny, George</name>
+   <ptrgrp>
+      <ref>08 Dec 1900</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>McCurdy, Richard Aldrich</name>
+   <ptrgrp>
+      <ref>11 Mar 1895</ref>
+      <ref>06 Feb 1904</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>McMahon, Martin Thomas</name>
+   <ptrgrp>
+      <ref>20 Jun 1900</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Maynard, W. P.</name>
+   <ptrgrp>
+      <ref>25 Apr 1910</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Miller, C. R.</name>
+   <ptrgrp>
+      <ref>30 Mar 1907</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Moore, Waldo C.</name>
+   <ptrgrp>
+      <ref>29 Oct 1921</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Morris, Robert C.</name>
+   <ptrgrp>
+      <ref>19 Jun 1901</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Odell, Benjamin Barker</name>
+   <ptrgrp>
+      <ref>24 Dec 1900</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Ohnsted, H.</name>
+   <ptrgrp>
+      <ref>18 Nov 1886</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Osborn, William Church</name>
+   <ptrgrp>
+      <ref>16 Jun 1909</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Platt, H. H.</name>
+   <ptrgrp>
+      <ref>22 Jan 1912</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Rathbun, Benjamin F.</name>
+   <ptrgrp>
+      <ref>11 Apr 1910</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Robb, Ellis D.</name>
+   <ptrgrp>
+      <ref>04 Jan 1929</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Saunders, Arthur Percy</name>
+   <ptrgrp>
+      <ref>10 Nov 1919</ref>
+      <ref>26 Feb 1921</ref>
+      <ref>27 Feb 1922</ref>
+      <ref>25 Feb 1931</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Saunders, Louise</name>
+   <ptrgrp>
+      <ref>15 Feb 1919</ref>
+      <ref>16 Jan 1928</ref>
+      <ref>04 Mar 1932</ref>
+      <ref>08 Mar 1932</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Saunders, Silvia</name>
+   <ptrgrp>
+      <ref>07 Apr 1917</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Scott, William Forse (Mrs.)</name>
+   <ptrgrp>
+      <ref>20 Oct 1914</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Sheehan, William Francis</name>
+   <ptrgrp>
+      <ref>08 Nov 1900</ref>
+      <ref>07 Apr 1915</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Shepard, Chester D.</name>
+   <ptrgrp>
+      <ref>12 Nov 1915</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Sniffen, Culver Channing</name>
+   <ptrgrp>
+      <ref>17 Aug 1903</ref>
+      <ref>20 Nov 1908</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Stoneham, Ellridge F. (Mrs.)</name>
+   <ptrgrp>
+      <ref>12 Mar 1935</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Tagliapietra, Margaret Townsend</name>
+   <ptrgrp>
+      <ref>17 Apr 1901</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Thomas, John G.</name>
+   <ptrgrp>
+      <ref>22 Apr 1926</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Watson, Thomas J.</name>
+   <ptrgrp>
+      <ref>29 Oct 1932</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Wiley, Louis</name>
+   <ptrgrp>
+      <ref>02 Sep 1930</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Woodruff, Timothy Lester</name>
+   <ptrgrp>
+      <ref>28 Dec 1900</ref>
+      <ref>07 Jan 1901</ref>
+      <ref>04 Feb 1901</ref>
+      <ref>15 Feb 1901</ref>
+      <ref>28 Feb 1901 (incoming note attached)</ref>
+      <ref>31 Mar 1907</ref>
+      <ref>30 Dec 1907</ref>
+      <ref>25 Apr 1909</ref>
+      <ref>14 Aug 1909</ref>
+      <ref>23 Sep 1909</ref>
+      <ref>06 Dec 1909</ref>
+      <ref>20 Dec 1909</ref>
+      <ref>24 Feb 1910 (copy of incoming response 26 Feb 1910 attached)</ref>
+      <ref>09 Mar 1910</ref>
+      <ref>19 Mar 1910</ref>
+   </ptrgrp>
+</indexentry>
+
+  
+  </index></archdesc>
+</ead>

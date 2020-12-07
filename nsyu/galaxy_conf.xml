@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.5, 5/26/2006 -->
+<!--Added description of how to enter revisions-->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="us" mainagencycode="NSyU" identifier="galaxy_conf">galaxy_conf</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Galaxy Conference Records</titleproper>
+				<subtitle>An inventory of its records at Syracuse University</subtitle>
+			<author encodinganalog="Creator">-</author><sponsor>The adult education holdings are collectively known as the <lb/><extptr title="Alexander N. Charters Library of Resources for Educators of Adults" href="https://library.syr.edu/scrc/collections/areas/adult-ed.php" show="new"/>.</sponsor></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="1976-10" encodinganalog="Date">Oct 1976</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2006-06-05">5 Jun 2006</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+<!--Enter revisions in the format "## date - ## change (## initials)"-->
+<revisiondesc>
+   <list>
+      <item>5 Jun 2006 - converted to EAD (MRR)</item>
+      <item>2 Dec 2008 - correction to related material (MRC)</item>
+      <item>2 Feb 2010 - link to AEA fixed (MRC)</item>
+   </list>
+</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<corpname encodinganalog="610" source="lcnaf">Galaxy Conference on Adult Education (1969: Washington, D.C.)</corpname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Galaxy Conference Records</unittitle>
+			<unitdate encodinganalog="245$f" normal="1967/1970" type="inclusive" label="Inclusive Dates: ">1967-1970</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>1.5 linear ft.</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">The Galaxy Conference on Adult Education was held in Washington, D.C. in 1969.  Participating organizations included the American Education Association, American Library Association, Commission of Professors of Adult Education, Committee of Adult Education Organizations, Council of National Organizations, National Association for Public School Adult Education, National Council on Adult Jewish Education, and the National University Extension Association.  The records of the Galaxy Conference provide comprehensive documentation of the history, planning and execution of the conference.</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="us" repositorycode="NSyU">148994</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+			</langmaterial>
+		</did>
+				
+		<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>The Galaxy Conference of Adult. Education Organizations was held in Washington, D.C., in 1969. It was the outgrowth of the Conference of Adult Education Organizations, convened in 1964 to provide liaison among the major professional associations in the field and to focus on common concerns. By 1969, 19 organizations were participating. The Conference, which had both general sessions and associated conferences, was successful both in its own right and in forwarding the goals of the Committee of Adult Education Organizations, which dropped the ad hoc qualification and later incorporated as the Coalition of Adult Education Organizations (CAEO).</p></bioghist>
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>The Galaxy Papers, besides giving a comprehensive documentation of the planning and execution of the Conference, include (in Box 3) an organized history, a formal report, and the statement "Imperatives for Action," which resulted from the Galaxy Conference.</p>
+		</scopecontent>
+		
+		<!--<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>## OPT (MARC 351$a)</p>
+		</arrangement>-->
+		
+		<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>The library holds a considerable number of collections related to adult and continuing education.  Please refer to &subjindex; for a complete listing.</p><p>Additional material on the Wingspread Conference is located in the <extref href="../c/cceu.htm">Council for the Continuing Education Unit (CCEU) Records</extref>.  Other collections that may be of particular interest include:<blockquote><p><extref href="../a/aaace.htm">Adult Education Association (AEA-USA)/American Association for Adult and Continuing Education (AAACE) Records</extref><lb/><extref href="../a/auec.htm">Association of University Evening Colleges (AUEC) Records</extref><lb/><extref href="../c/charters_an.htm">Alexander N. Charters papers</extref><lb/><extref href="../c/caeo.htm">Coalition of Adult Education Organizations (CAEO) Records</extref><lb/><extref href="../c/cpae.htm">Commission of the Professors of Adult Education (CPAE) Records</extref><lb/><extref href="../i/icuae.htm">International Congress of University Adult Education (ICUAE) Records</extref><lb/><extref href="../n/napsae.htm">National Association for Public School Adult Educators (NAPSAE) Records</extref><lb/><extref href="../n/nuea.htm">National University Extension Association (NUEA) Records</extref><lb/><extref href="../u/ucepr.htm">University Council on Education for Public Responsibility (UCEPR) Records</extref></p></blockquote></p>
+		</relatedmaterial>
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Adult education</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Charters, Alexander N.</persname>
+			
+            <corpname encodinganalog="610" source="lcnaf">Galaxy Conference on Adult Education (1969: Washington, D.C.)</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Adult education -- United States.</subject><subject encodinganalog="650" source="lcsh">Evening and continuation schools -- United States.</subject>
+			
+            <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Reports.</genreform>
+			<occupation encodinganalog="656" source="lcsh">Educators.</occupation>
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p> Galaxy Conference Records, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<!--<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>### (MARC 541 and/or  561)</p>
+		</acqinfo>-->
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Organizational papers</unittitle>
+				<!--C01 @LEVEL must be set to 'series' to show up in TOC.--></did>
+				<c02>
+					<did>
+						<unittitle>Advertising
+</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Budgets, correspondence re
+</unittitle>
+						
+						<unitdate normal="1967/1970" type="inclusive">1967-1970</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Central Planning Group</unittitle>
+						
+						
+						
+						
+						
+					</did>
+				<c03><did><unittitle><unitdate normal="1964/1970" type="inclusive">1964-1970</unitdate></unittitle><container type="Box">1</container></did></c03><c03><did><unittitle><unitdate normal="1968/1970" type="inclusive">1968-1970</unitdate></unittitle><container type="Box">1</container></did></c03></c02><c02>
+					<did>
+						<unittitle>Correspondence, general
+</unittitle>
+						
+						<unitdate normal="1969/1970" type="inclusive">1969-1970</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Evaluation
+</unittitle>
+						
+						<unitdate normal="1969/1970" type="inclusive">1969-1970</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Exhibits
+</unittitle>
+						
+						<unitdate normal="1968/1969" type="inclusive">1968-1969</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Exhibits and advertising, correspondence re</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Local arrangements</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>News releases
+</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Program committee 
+</unittitle>
+						
+						<unitdate normal="1968/1970" type="inclusive">1968-1970</unitdate><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Program materials 
+</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Program materials and papers
+</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Program schedules 
+</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Public relations 
+</unittitle>
+						
+						<unitdate normal="1968/1969" type="inclusive">1968-1969</unitdate><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Registration packet information 
+</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Speakers</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c02></c01><c01 level="series"><did><unittitle>Participating organizations</unittitle></did><c02>
+					<did>
+						<unittitle>Miscellaneous Papers 
+</unittitle>
+						
+						<unitdate normal="1967/1969" type="inclusive">1967-1969</unitdate><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Miscellaneous, A-Z
+</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Adult Education Association 
+</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>American Library Association 
+</unittitle>
+						
+						<unitdate normal="1968/1969" type="inclusive">1968-1969</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Commission of the Professors of Adult Education
+</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Committee of Adult Education Organizations
+</unittitle>
+						
+						<unitdate normal="1968/1969" type="inclusive">1968-1969</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Council of National Organizations 
+</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>National Association for Public School Adult Education 
+</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>National Council on Adult Jewish Education
+</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>National University Extension Association</unittitle>
+						
+						<unitdate normal="1968/1969" type="inclusive">1968-1969</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02></c01><c01 level="series"><did><unittitle>Miscellaneous</unittitle></did><c02>
+					<did>
+						<unittitle>Charters, Alexander N.</unittitle>
+						
+						<abstract>notes</abstract><unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>History of the planning for the conference</unittitle>
+						
+						<unitdate normal="1970" type="inclusive">1970</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>"Imperatives for Action"</unittitle>
+						
+						<unitdate normal="1969" type="inclusive">1969</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Report on the 1969 Galaxy Conference of Adult Education Organizations 
+</unittitle>
+						
+						<unitdate normal="1970" type="inclusive">1970</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Wingspread Conference</unittitle>
+						
+						<abstract>general papers</abstract><unitdate normal="1968/1969" type="inclusive">1969</unitdate><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02></c01>
+		</dsc>
+	</archdesc>
+</ead>

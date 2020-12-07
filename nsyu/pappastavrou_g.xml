@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="pappastavrou_g">pappastavrou_g</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">George Pappastavrou Interviews</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-03-27" encodinganalog="Date">27 Mar 2013</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2013-03-27">27 Mar 2013</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Pappastavrou, George.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">George Pappastavrou Interviews</unittitle>
+         <unitdate encodinganalog="245$f" normal="2012" type="inclusive" label="Inclusive Dates: ">2012</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Video interviews of concert pianist and professor of music George Pappastavrou, by pianist and music scholar Artis Wodehouse.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4071581</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>George Pappastavrou, a first-generation American of Greek descent, was a professor of music at Syracuse University and a concert pianist.  He grew up in Syracuse, New York and attended Juilliard as both an undergraduate and graduate student (1949-1956), where he studied under Alton Jones and Irwin Freundlich; his fellow students included the well-known pianist Van Cliburn and soprano Leontyne Price.    In addition to playing and recording in the United States -- particularly the music of composer Charles Ives -- he also toured Russia at the invitation of the Ministry of Culture and sponsored by the USIA (1974), China (1987, 1988), and Singapore (1990).  He was a professor in the Syracuse University School of Music for more than thirty years (1961-1992) and director of the School from 1983-1992.  During his career he knew and worked with a number of notable composers, musicians, dancers and other artists, including Henry Cowell, Calvin Hampton, Howard Boatwright, Aaron Copland, Luise Talma, Louis Krasner, and Martha Graham.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">George Pappastavrou Interviews</emph> consists of six video interviews, recorded over the course of eight days in 2012.  The interviewer is Artis Wodehouse, a musician, musicologist, and former student of Pappastavrou.  The interviews span Pappastavrou's entire career, from his childhood in Syracuse, New York to his days at Juilliard, his travels to Europe, Russia and China, and his years on the faculty at Syracuse University's School of Music.   During the interviews Pappastavrou discusses his teaching philosophy, friends and colleagues (including dancer and choreographer Martha Graham), and his long-standing interest in and work on the music of American modernist composer Charles Ives. In addition to the video interviews, there is one DVD with simultaneously-recorded audio only.</p><p>Each DVD-R has been assigned an ID number; other than that ID number, all information given below, including dates and titles of interviews and the summary of contents, was provided by Ms. Wodehouse.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The interviews were received as audio files on DVD-Rs, which are arranged in chronological order by interview date, as given by the donor.  Each DVD-R has been assigned an ID number; please use this number in addition to the title when requesting items from the collection.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous collections relating to composers and musicians, including Franz Waxman, Miklos Rosza, and Arturo Toscanini.  Please refer to &subjindex; for a complete listing.</p></relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Music</subject>
+<subject encodinganalog="650" source="local">New York State</subject><persname encodinganalog="600" source="lcnaf">Freundlich, Irwin.</persname><persname encodinganalog="600" source="lcnaf">Ives, Charles, 1874-1954.</persname><persname encodinganalog="600" source="lcnaf">Graham, Martha.</persname><persname encodinganalog="600" source="lcnaf">Pappastavrou, George.</persname><persname encodinganalog="600" source="lcnaf">Wodehouse, Artis Stiffey.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Juilliard School of Music -- Personal narratives.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Composers -- United States.</subject><subject encodinganalog="650" source="lcsh">Greek Americans.</subject><subject encodinganalog="650" source="lcsh">Music -- Instruction and study.</subject><subject encodinganalog="650" source="lcsh">Music education.</subject><subject encodinganalog="650" source="lcsh">Music teachers -- United States.</subject><subject encodinganalog="650" source="lcsh">Pianists -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Piano teachers -- United States.</subject><geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- History.</geogname>
+         <genreform encodinganalog="655" source="aat">Oral histories  (literary works)</genreform><genreform encodinganalog="655" source="aat">Interviews.</genreform><genreform encodinganalog="655" source="aat">DVDs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Pianists.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>George Pappastavrou Interviews, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Artis Wodehouse</persname>, 2013.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Video interviews</unittitle></did>
+            <c02><did><unitid>pappa_001</unitid><unittitle>Video <unitdate normal="2012-08-06" type="inclusive">8/6/12</unitdate>-1 Syracuse, ca. 1930-1948</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>Discovery of talent and first lessons.
+Teachers from beginning up to entry into Juilliard: general repertoire, techniques covered/imposed, personalities and manner of relating to students.
+The city of Syracuse: Depression years, economic situation in the city.  
+The school system and attitudes toward high art.  
+Musical/art institutions in the city; 	recitals and concerts both by local and touring artists and their effect upon knowledge and development.
+Growing up Greek American: education, upbringing, values.
+Early forces pointing toward a career as a pianist: friends, teachers, and relatives.
+Intellectual stimulation outside of the strictly musical: books, teachers, plays, and 	films.
+First performances.</p></scopecontent></c02>
+            <c02><did><unitid>pappa_002</unitid><unittitle>Video <unitdate normal="2012-08-06" type="inclusive">8/6/12</unitdate>-2: Juilliard years 1949-1956</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>Primary teachers: repertoire, technique, and manner of relating to students, 	personalities.
+	Ancillary teachers: historians/musicologists, chamber music, theorists, composers, Literature and Materials (L &amp; M) of music: Bergsma, Ehrbar, Freundlich, Giannini, Goeb, Goldman, Hart, Herford, 	Hufstader, Jacobi, Kagen, Lloyd, Mennin, Persichetti, Tangeman. Samaroff, 	Hutcheson, the Lhevinnes, Gwendolyn Mackillop, Carl 	Friedberg,
+
+	William Schuman.
+	Jean Morel.
+	Beveridge Webster.
+	Juilliard Quartet.
+	GI Bill.
+	Juilliard Review.
+	Martha Hill and the dance program.</p></scopecontent></c02>
+            <c02><did><unitid>pappa_003</unitid><unittitle>Video <unitdate normal="2012-08-07" type="inclusive">8/7/12</unitdate>-1 Juilliard years 1949-1956</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>Fellow students: those of note, those of personal/musical significance: John Browning, Van Cliburn, Leontyne Price, Herbert Rogers.</p></scopecontent></c02>
+            <c02><did><unitid>pappa_004</unitid><unittitle>Video <unitdate normal="2012-08-07" type="inclusive">8/7/12</unitdate>-2 Juilliard years 1949-1956</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>Order out of Chaos: Institute of Musical Arts and old Juilliard Graduate School, becoming the Juilliard School of Music; 
+				Literature and Materials (L &amp; M) Course at Juilliard: teachers, what learned, influences.
+		Frederic Jacobi, William Bergsma, Bernard Wagenaar, Peter Mennin, Vincent Persechetti, Norman Lloyd, Frederick Hart.
+		Robert Helps.
+		Justin Ehrbar.
+		Jean Morel.
+		Beveridge Webster.
+		William Schuman.
+		Juilliard Quartet – Robert Mann, Arthur Winograd, Raphael Hillyer, Robert Koff, chamber music class.
+		Juilliard Review – fresh thinking.
+		Martha Graham relationship with Jacob Druckman started 1950 ("I know how to lift myself off the ground" - Graham).
+		Gian Carlo Menotti.</p></scopecontent></c02>
+            <c02><did><unitid>pappa_005</unitid><unittitle>Video <unitdate normal="2012-08-07" type="inclusive">8/7/12</unitdate>-3 Baroque music, Landowska and Albert Fuller; Video 8/7/12-4 David Burge</unittitle><container type="SC">697</container></did><scopecontent><p>	Piano Festival at NY State Fair, 2-Keyboard Concerto by JS Bach, performed
+	1940 (age 10). Wanda Landowska 1950 recital including JKH Fischer and influence on
+	JS Bach.
+	Fernando Valenti.
+	1960 NY Debut recital. 
+	Albert Fuller  - his knowledge and his background.
+	Purchase of Herz harpsichord and Gough clavichord.
+	Ornamentation, treatises, performance practice and context.
+	1967 – CPE Bach 2 harpsichord concerto performed with Fuller and the Musica Aeterna orchestra, Waldman conducting.
+	Hughes Cuenod.
+	Fuller’s integrity.
+	Development of embellishment and ornamentation.
+	Microtonal music introduced at Juilliard.
+	 JS Bach’s instruments.
+	Harpsichord technique vs. clavichord technique vs. piano technique.
+	John Metz (Pappastavrou harpsichord student); tone clusters on harpsichord (David Burge).</p></scopecontent></c02>
+            <c02><did><unitid>pappa_006</unitid><unittitle>Video <unitdate normal="2012-08-08" type="inclusive">8/8/12</unitdate>-1 Piano technique and training</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>Veronica Rohan Sage – Matthay method; how did Chopin play – plaster cast of his hands – Chopin's piano.
+		Malcolm Frager.
+		Dealing with arthritis in hand.
+		Causes of Leon Fleisher's and Gary Grafman's piano-playing problems.
+		Tobias Matthay.
+		Irma Wolpe.
+		Gorodnitski’s Juilliard students hand position.
+		Wolpe and use of thumb.
+		Development of technical/ interpretive approach to piano playing.
+		Developing effective, efficient practice.
+		Alberto Jonas keyboard exercises. 
+		Brahms exercises creating problems.
+		Survival at Juilliard.
+		Freundlich on technique.
+		Hedy Spielter (1956-60 period) personality, technique, "crackpots."</p></scopecontent></c02>
+            <c02><did><unitid>pappa_007</unitid><unittitle>Video <unitdate normal="2012-08-08" type="inclusive">8/8/12</unitdate>-2 Piano technique and training</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>Spielter using silent clavier.
+		First two  NY recitals: repertoire.
+		Martin Canin introduced him to Irma Wolpe (spring 1962) – 6 months study.  
+		Studies with Irma Wolpe - supination stressed.	
+		References to Seymour Fink.
+		Principle of teaching techniques to students.</p></scopecontent></c02>
+            <c02><did><unitid>pappa_008</unitid><unittitle>Video <unitdate normal="2012-08-08" type="inclusive">8/8/12</unitdate>-3 Composers and important artists known or worked with</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>Henry Cowell – finding music, and leading to performing his music, coaching with Cowell.</p>
+		<p>Oliver Daniel, head of Contemporary Music Projects at BMI, instrumental in introducing GP to Cowell and suggesting Ives Quarter Tone Pieces (1965) – John Kirkpatrick.</p>
+		<p>Ives Quarter Tone pieces and commissioned quarter tone works:  
+			copyright issues,
+			Donald Lybbert – Phylliis Brynjulson,
+			Calvin Hampton – ondes Martenot,
+			Teo Macero,
+			Bach C major Prelude in quarter tones – Leopold Stokowski's reaction,
+			tuning problems in quarter tone music and on Odyssey recording,
+			John McClure approaches GP about recording for Odyssey.</p>
+		<p>Ernst Bacon; 
+		Samuel Barber;
+		William Bergsma;
+		Howard Boatwright;
+		Elliott Carter.</p></scopecontent></c02>
+            <c02><did><unitid>pappa_009</unitid><unittitle>Video <unitdate normal="2012-08-08" type="inclusive">8/8/12</unitdate>-4 and <unitdate normal="2012-08-08" type="inclusive">8/9/12</unitdate>-1 Composers and important artists known or worked with</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>8/8/12-4:  
+		Aaron Copland,
+		Paul Jacobs,
+		Henry Cowell,
+		Lucas Foss,
+		Louise Talma,
+		Calvin Hampton,
+		Roy Harris.</p>
+		<p>8/9/12-1: Norman Dello Joio and Martha Graham,
+		Leon Kirchner,
+		Ernst Krenek,
+		Henry Cowell,
+		Dane Rhudyar,
+		Peter Mennin,
+		Vincent Persichetti,
+		Wallingford Riegger [and] brass players at Juilliard post WWII,
+		Roger Sessions,
+		Halsey Stevens,
+		Robert Starer,
+		Virgil Thomson,
+		Ben Weber,
+		Stefan Wolpe,
+		Irma Wolpe,
+		Gunther Schuller, Louis Krasner,
+		Edward Steuermann,
+		Phyllis Brynjulson - Vocal Institute at Lake Placid,
+		Myra Hess,
+		Martha Graham.</p></scopecontent></c02>
+            <c02><did><unitid>pappa_010</unitid><unittitle>Video <unitdate normal="2012-08-08" type="inclusive">8/9/12</unitdate>-2 Composers and important artists known or worked with</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>[no separate description was provided for 8/9/12-2; presumably contents are same as 8/9/12-1]</p></scopecontent></c02>
+            <c02><did><unitid>pappa_011</unitid><unittitle>Video <unitdate normal="2012-08-14" type="inclusive">8/14/12</unitdate>-1 Russia tour 1974</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>	How tour came about – Ives Centennial – USIA involvement.
+	Repertoire performed and where.
+	Impressions of the respective societies and the role of Western and 	American art.</p></scopecontent></c02>
+            <c02><did><unitid>pappa_012</unitid><unittitle>Video <unitdate normal="2012-08-14" type="inclusive">8/14/12</unitdate>-2 and <unitdate normal="2012-08-14" type="inclusive">8/14/12</unitdate>-3 China  tours 1987, 1988</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>How tour came about.
+	Repertoire performed and where.
+	Chinese composers and pianists, Chinese pianists who studied with GP.
+	Impressions of the respective societies and the role of Western and American art music in China.
+	Values of Chinese society.
+	"Pianist’s Island."
+	Piano in Chinese society.
+	Influence of Russian teachers in China.</p></scopecontent></c02>
+            <c02><did><unitid>pappa_013</unitid><unittitle>Video <unitdate normal="2012-08-14" type="inclusive">8/14/12</unitdate>-4 and <unitdate normal="2012-08-14" type="inclusive">8/14/12</unitdate>-5 Educator at Syracuse University</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>	Previous experience teaching.
+	How got job.
+Teaching philosophy: accomplishments/contributions to students’ development.
+	Observations about the evolution of the Music School/Music Dept. over years at 	Syracuse University. 
+	Level of support for the music program and the nature of the student body over 	the years.</p></scopecontent></c02>
+            <c02><did><unitid>pappa_014</unitid><unittitle>Video <unitdate normal="2012-08-16" type="inclusive">8/16/12</unitdate>-1 Charles Ives</unittitle><container type="SC">697</container></did>
+				<scopecontent><p>Charles Ives: repertoire, fit into continuum of American music.
+	Bricouleur concept (Claude Lévi-Strauss).
+	Multiple implications of Ives' thematic materials.
+	Influence of Ives on Carter and Copland.
+	Reception of GP performance of Concord over the years while learning.
+	Reception of Ives music, generally, through the years.
+	Ives' meaning to non-US societies (China, Europe, Russia).
+	Art transcending a specific culture.</p></scopecontent></c02>
+            <c02><did><unitid>pappa_015</unitid><unittitle>Video <unitdate normal="2012-08-16" type="inclusive">8/16/12</unitdate>-2 Charles Ives</unittitle><unitdate normal="2012-08-16" type="inclusive">16 Aug 2012</unitdate><container type="SC">697</container></did>
+				<scopecontent><p>	Personal background supported future involvement with Ives' music:
+		Greek heritage,
+		Veronica Rohan Sage,
+		NY art community centered at Juilliard.
+	Discovery of Ives sketches for 8th tones at Yale.
+	New publications of Ives' works and new edition of Quarter Tone pieces.
+	Gregg Smith.
+	Observation of performances of Ives subsequent to performing Concord.
+	Ives' recording of own work vs. other performers.
+	"The Ives phenomenon."  "What does sound have to do with music?" - George Ives (father of Charles).</p></scopecontent></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Audio tracks</unittitle></did>
+            <c02><did><unitid>pappa_016</unitid><unittitle>Pappastavrou audio <unitdate normal="2012-08" type="inclusive">8/12</unitdate></unittitle><container type="SC">697</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

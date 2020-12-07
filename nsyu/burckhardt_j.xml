@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="burckhardt_j">burckhardt_j</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Jacob Burckhardt Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+            <author encodinganalog="Creator">MRC</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-04-13" encodinganalog="Date">13 Apr 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-04-13">13 Apr 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>12 Feb 2019 - processed (KD)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Burckhardt, Jacob, 1818-1897.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Jacob Burckhardt Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1842/1968" type="inclusive"
+            label="Inclusive Dates: ">1842-1968</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear
+            ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">German art and cultural historian.
+            Collection contains items both by and about Burckhardt, including correspondence,
+            clippings, printed material, typescripts, photographs, and more.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2745151</unitid>
+         <langmaterial label="Language: " encodinganalog="546">The majority of the collection is in
+               <language langcode="ger">German</language> with some material partially in <language
+               langcode="eng">English</language>.</langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Jacob Burckhardt (1818-1897) was a German art and cultural historian. The son of a
+            Protestant clergyman, Burckhardt came from a thriving and respected family who had built
+            their power and political sway over three centuries, many serving as professors and
+            pastors. Burckhardt studied at the University of Basel, focusing on Greek and theology.
+            While attending the University of Berlin, he worked with two professors - Franz Kugler
+            and Leopold von Ranke - who turned his focus to the philological and historical.
+            Burckhardt specialized in the Renaissance and classical periods, and is most known for
+            his work <emph render="italic">Die Kultur der Renaissance in Italien</emph> (1860). He
+            is sometimes credited with developing the field now known as cultural history.</p>
+         <p>Georg Leyh (1877-1968) was a German librarian, library historian, philosopher, and
+            administrator. He studied philology and history in Munich, Stasbourg, and Tubingen. He
+            began as a library research assistant at the Kaiser Wilhelm Library in Poznan, then
+            worked in univerisity libraries in Gottingen, Konigsberg, Berlin, Halle, Wroclaw, the
+            Prussian Historical Institute in Rome, and the Royal Library in Berlin. From 1914-1917
+            he served in the First World War. He made many advances to the design of libraries, and
+            is especially known for <emph render="italic">The Dogma of the Systematic
+               Arrangement</emph>.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Jacob Burckhardt Collection</emph> consist of correspondence,
+            memorabilia, printed material, and writings. Some material is by Burckhardt but the bulk
+            is about him.</p>
+         <p><emph render="bold">Correspondence</emph> contains letters from Burckhardt and a
+            substantial amount of letters to or from Leyh.</p>
+         <p><emph render="bold">Memorabilia</emph> contains artwork, photographs, and miscellaneous
+            material.</p>
+         <p><emph render="bold">Printed material</emph> contains brochures for books, clippings,
+            dust jackets, and magazines.</p>
+         <p><emph render="bold">Writings</emph> contains material by Burckhardt, Leyh, Wolfflin, and
+            others. Some items are handwritten and some are pritned.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Correspondence is arranged by sender and chronologically with undated material or empty
+            envelopes at the end. Artwork and miscellaneous memorabilia are arranged chronologically
+            with undated material at the end. Photographs are in no particular order. Printed
+            material is arranged chronologically with undated material at the end. Writings are
+            arranged by author with unidentified material at the end.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Historians</subject>
+			<persname encodinganalog="600" source="lcnaf">Burckhardt, Jacob, 1818-1897.</persname>
+         <persname source="lcnaf" encodinganalog="600">Wolfflin, Heinrich, 1864-1945.</persname>
+         <persname encodinganalog="600" source="lcnaf">Leyh, Georg, 1877-1968.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Art historians -- Switzerland.</subject>
+			<subject encodinganalog="650" source="lcsh">Art historians -- 19th century.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Brochures.</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Typescripts.</genreform>
+         <genreform encodinganalog="655" source="aat">Book jackets.</genreform>
+         <genreform encodinganalog="655" source="aat">Photocopies.</genreform>
+         <genreform encodinganalog="655" source="aat">Magazines (periodicals)</genreform>
+         <genreform>Manuscripts for publication.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Art historians.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require
+            advanced notice for retrieval. Researchers are encouraged to contact us in advance
+            concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Jacob Burckhardt Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from Rare Books, 1969.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Burckhardt, Jakob</unittitle>
+                  <unitdate type="inclusive" normal="1875/1887">1875-1887</unitdate>
+                  <abstract>most are photocopies</abstract>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Burckhardt, Jakob</unittitle>
+                  <unitdate type="inclusive" normal="1842/1893">1842-1893</unitdate>
+                  <abstract>transcripts</abstract>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Leyh, Georg</unittitle>
+                  <unitdate type="inclusive" normal="1906/1962">1906-1962, </unitdate>
+                  <unitdate normal="1842/1968" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Memorabilia</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Artwork</unittitle>
+                  <unitdate normal="1923/1928" type="inclusive">1923-1928, </unitdate>
+                  <unitdate type="inclusive" normal="1842/1968">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Photographs</unittitle>
+                  <abstract>most of Burckhardt</abstract>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate type="inclusive" normal="1912/1965">1912-1965, </unitdate>
+                  <unitdate type="inclusive" normal="1842/1968">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Printed material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Brochures</unittitle>
+                  <unitdate type="inclusive" normal="1921/1961">1921-1961, </unitdate>
+                  <unitdate normal="1842/1968" type="inclusive">undated</unitdate>
+                  <abstract>most are advertisements for books about Burckhardt</abstract>
+                  <container type="Box"/>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Clippings</unittitle>
+                  <unitdate type="inclusive" normal="1858/1968">1858-1968, </unitdate>
+                  <unitdate type="inclusive" normal="1842/1968">undated</unitdate>
+                  <physdesc><extent>3 folders</extent></physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Clippings</unittitle>
+                  <unitdate normal="1923/1968" type="inclusive">1923-1968, </unitdate>
+                  <unitdate type="inclusive" normal="1842/1968">undated</unitdate>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Dust jackets</unittitle>
+                  <unitdate type="inclusive" normal="1919/1932">1919-1932, </unitdate>
+                  <unitdate normal="1842/1968" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Dust jackets</unittitle>
+                  <physdesc><extent>1 item</extent></physdesc>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Magazines</unittitle>
+                  <unitdate type="inclusive" normal="1919/1928">1919, 1928</unitdate>
+                  <container type="Box"/>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Writings</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Burckhardt, Jacob</unittitle>
+                  <abstract>letters between Burckhardt and Albert Brenner, Franz Kugler, and
+                     Friedrich Nietzche, including some analysis</abstract>
+                  <unitdate normal="1858/1888" type="inclusive">1858-1888</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Leyh, Georg</unittitle>
+                  <abstract>includes reviews of Burckhardt's writings, <emph render="italic">From
+                        Forty Years of Library Work</emph>, and <emph render="italic">Der Junge
+                        Burckhardt</emph>.</abstract>
+                  <unitdate type="inclusive" normal="1953/1962">1953-1962, </unitdate>
+                  <unitdate type="inclusive" normal="1842/1968">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Wolfflin, Heinrich</unittitle>
+                  <abstract>biographical material about Burckhardt</abstract>
+                  <unitdate type="inclusive" normal="1867/1918">1867-1918</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>By others B-K</unittitle>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>By others M-S</unittitle>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>By others T-W, unidentified</unittitle>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>By others, unidentified</unittitle>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.8, 7/18/2007-->
+<!-- Added comment about use of archref element, removed copyright statement -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="cortez_c">cortez_c</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Carlos Cortez Prints</titleproper>
+            <subtitle>An inventory of the items at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2007-10-30" encodinganalog="Date">30 Oct 2007</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2007-10-30" encodinganalog="Date">30 Oct 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Cortez, Carlos, 1923-</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Carlos Cortez Prints</unittitle>
+         <unitdate encodinganalog="245$f" normal="1923/2005" type="inclusive" label="Inclusive Dates: ">Undated</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Four original prints, two signed, from the Mexican-American poet, printmaker, and political activist.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2572280</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Carlos Cortez (1923-2005) was an artist, poet, printmaker, photographer, songwriter and lifelong political activist. His support for the working man was likely encouraged by his parents: his German mother was a socialist pacifist and his father was a Mexican Indian organizer for the Industrial Workers of the World (IWW), also known as the Wobblies.  Cortez himself was a member of the IWW for nearly sixty years.</p><p>Cortez began his art career drawing cartoons in 1948 for <emph render="italic">Industrial Worker</emph>, the IWW's newspaper, but soon became interested in printmaking.  He later became an accomplished oil and acrylic painter, though it never replaced linoleum and woodblock as his  preferred medium.   Recurrent themes of his art include Chicano issues, Latino identity, and worker's rights; he is also known for his large linocut poster/portraits of well-known activists and labor organizers.</p><p>Cortez  wrote several collections of poetry, including <emph render="italic">Where Are the Voices? &amp; Other Wobbly Poems</emph> (1997), and was the editor of  <emph render="italic">Viva Posada: A Salute to the Great Printmaker of the Mexican Revolution</emph> (2002).</p><p>Cortez served as editor of <emph render="italic">Industrial Worker</emph> and on IWW's General Executive Board, and was a popular public speaker. In 1985, to commemorate the union's 80th anniversary, he organized an exhibit entitled "Wobbly: 80 Years of Rebel Art," which featured original works by many of his fellow IWW cartoonists. Cortez's work has been exhibited at the Museum of Modern Art in New York, the Smithsonian Institution, and other venues throughout the United States, Europe and Mexico.   In 1998 the Center for the Study of Political Graphics awarded Carlos Cortez their "Art as a Hammer" Award for "his inspired and inspiring use of art to create a more just world." </p><blockquote><p>"When you do a painting that's it, it's one of a kind. But when you do a graphic the amount of prints you can make from it is infinite. I made a provision in my estate, for whoever will take care of my blocks, that if any of my graphic works are selling for high prices immediate copies should be made to keep the price down." (Carlos Cortez, quoted on politicalgraphics.org)</p></blockquote></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Carlos Cortez Prints</emph> consists of undated woodcuts, two signed.</p>
+      </scopecontent>
+      
+      <!--<arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>## OPT (MARC 351$a)</p>
+      </arrangement>-->
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has a number of books illustrated by Carlos Cortez which have been catalogued as Rare Books.  Please refer to &summitref; and search on the keyword  "Cortez, Carlos" for a complete listing.</p><p>For further information on Cortez' art, researchers can contact the Mexican Fine Arts Center Museum in Chicago.  His labor writings and papers are archived by Wayne State University, Detroit.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Art -- Illustrators</subject>
+         <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Cortez, Carlos, 1923-</persname>
+         
+            
+            
+            <subject encodinganalog="650" source="lcsh">Mexican American artists.</subject><subject encodinganalog="650" source="lcsh">Mexican American poets.</subject><subject encodinganalog="650" source="lcsh">Wood-engravers.</subject>
+         <subject encodinganalog="650" source="lcsh">Printmakers.</subject>
+            <genreform encodinganalog="655" source="aat">Prints (visual works)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Printmakers.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Carlos Cortez Prints, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2007.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+            <did>
+               <unittitle>Artwork</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Prints</unittitle>
+                  <unitdate normal="1923/2005" type="inclusive">Undated</unitdate>
+                  <container type="SC">211</container>
+                  
+                  
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

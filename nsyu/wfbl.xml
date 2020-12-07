@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="wfbl">wfbl</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">WFBL Onondaga County Parks Tour Recordings</titleproper>
+            <subtitle>An inventory of its recordings at Syracuse University</subtitle>
+         <author encodinganalog="Creator">PJM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-03-08" encodinganalog="Date">08 Mar 2013</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>PJM<date normal="2013-03-08">08 Mar 2013</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <!--<persname encodinganalog="100">## use MARC 100 </persname>--><corpname encodinganalog="110">WFBL (Radio station : Syracuse, N.Y.)</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">WFBL Onondaga County Parks Tour Recordings</unittitle>
+         <unitdate encodinganalog="245$f" normal="1946" type="inclusive" label="Inclusive Dates: ">1946</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 items</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Radio broadcasts of summer tours of
+            Highland Forest and Pratt's Falls, two Onondaga County Parks</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4041778</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English </language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>WFBL is a talk and news radio station owned by Buckley Broadcasting and serving the city of
+            Syracuse, New York. WFBL's call sign stands for "First Broadcast License" because the
+            station was the first FCC-licensed radio station to sign on in central New York in
+            1922.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">WFBL Onondaga County Parks Tour Recordings</emph> consists of 2 16-inch transcription
+            discs. These contain radio broadcast "tours" of Pratt's Falls and Highland Forest.</p>
+      </scopecontent>
+      <!--<altformavail encodinganalog="530"><head>Other Formats Available</head><p>## Use MARC 530 or comment out if not applicable</p></altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>No particular order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+      <!--<separatedmaterial encodinganalog="544 0"><head>Separated Material</head><p>## OPT (MARC 544 0)</p></separatedmaterial>-->
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         
+         <subject encodinganalog="650" source="local">New York State</subject><subject encodinganalog="650" source="local">Radio, television, film</subject>
+         <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">WFBL (Radio station : Syracuse, N.Y.) </corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Trails -- New York (State)</subject>
+         <subject encodinganalog="650" source="lcsh">Parks-- New York (State) -- Onondaga County.</subject><subject encodinganalog="650" source="lcsh">Radio broadcasting.</subject>
+         <geogname encodinganalog="651" source="lcsh">Onondaga County (N.Y.)</geogname>
+         <genreform encodinganalog="655" source="aat">Broadcasts.</genreform>
+         <genreform encodinganalog="655" source="aat">Phonograph records.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>WFBL Onondaga County Parks Tour
+               Recordings, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of Onondaga Historical Assocation, 2012</p>
+      </acqinfo>
+      <!--<appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>-->
+      <!--<accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>16-inch transcription discs</unittitle></did>
+               <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+               <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+            <c02><did><unitid>wfbl-001</unitid><unittitle>Summer Tours Highland Forest, Bill Thorpe Reporting</unittitle><unitdate normal="1946" type="inclusive">1946</unitdate></did></c02>
+            <c02>
+               <did>
+                  <unitid>wfbl-002</unitid><unittitle>Summer Tours Pratt's Falls</unittitle>
+                  <unitdate normal="1946" type="inclusive">5 Jul 1946</unitdate>
+                  
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

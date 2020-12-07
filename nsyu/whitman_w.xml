@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="whitman_w">whitman_w</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Walt Whitman Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-11-24" encodinganalog="Date">24 Nov 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-11-24">24 Nov 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>6 Sep 2019 - media processed, series title updated (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Walt Whitman Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1860/1957" type="inclusive" label="Inclusive Dates: ">1860-1957</unitdate>
+            <unitdate encodinganalog="245$g" normal="1860/1892" type="bulk" label="Bulk Dates: ">1860-1892</unitdate><physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">American poet.  Collection contains correspondence (incoming and outgoing), printed material,  clippings, one reel film.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3181659</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Walt Whitman (1819-1892) was an influential and well-known American poet, essayist and journalist.  Among his best-known works are poems "I Sing the Body Electric" and "Song of Myself," and the poetry collection <emph render="italic">Leaves of Grass</emph>.  He is buried at Harleigh Cemetery in Camden, New Jersey, where he lived for the last twenty years of his life.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Walt Whitman Collection</emph> consists of clippings, correspondence, one media item, and printed material.</p>
+         <p><emph render="bold">Clippings</emph> consists of a scrapbook of clippings about Whitman and his work, compiled by William Douglas O'Connor and included his annotations on the articles.</p>
+         <p>The bulk of <emph render="bold">Correspondence</emph> is incoming, mostly from friends such as clergyman William Sloane Kennedy, publisher James Gordon Bennett, author William Douglas O'Connor, and journalist and reformer James Redpath.  A complete list of correspondents is given in the inventory below.</p>
+         <p><emph render="bold">Media</emph> consists of one reel of 16mm film, an 11-minute sequence consisting of a short biography of Whitman and one of his poems set to a scenic background.  The film canister is labeled "color" but the accompanying card says "black and white."</p>
+         <p><emph render="bold">Printed material</emph> contains a prospectus for book, a reprint of "At the Graveside of Walt Whitman," and several items related to a 1957 exhibit on Whitman mounted by the Rumanian Institute for Cultural Relations with Foreign Countries.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>Whitman-related material may be found in several other collections, particulatly the Charles Wharton Stork Papers and the Frederick P. Hier Papers.  Please search the manuscript collections for "Whitman" to locate all relevant material.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+			<subject encodinganalog="650" source="local">Literature -- American Poetry</subject>
+			<persname encodinganalog="600" source="lcnaf">Whitman, Walt.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Poets, American.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">16mm (photographic film size)</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			
+         <genreform encodinganalog="655" source="aat">Prospectuses.</genreform><genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+			<occupation encodinganalog="656" source="lcsh">Poets.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p><p>Access to media requires advance notice to produce a use copy.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Walt Whitman Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unspecified, 1964.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Clippings</unittitle></did>
+            <c02><did><unittitle>Scrapbook of critics' newspaper columns</unittitle><abstract>compiled by William Douglas O'Connor, with his handwritten notes</abstract><unitdate normal="1860/1887" type="inclusive">1860-1887</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Incoming</unittitle><unitdate normal="1860/1889" type="inclusive">1860-1889</unitdate><container type="Box">1</container></did>
+				<scopecontent>
+				<p>Correspondents:<lb/>W. 
+				Angus, Mary Ashley<lb/>
+				Herbert J. Bathgate, James Gordon Bennett, R. Brisbane, John Burroughs<lb/>
+				Edward Carpenter, Matt H. Carpenter<lb/>
+				J. Chamberlin, Henry Clapp, Richard W. Colles, M. Daniel Conway<lb/>
+				William Sloane Kennedy<lb/>
+				F.C. MacDonald, Joseph B. Marvin<lb/>
+				William Douglas O'Connor, Nelly O'Connor<lb/>
+				Edward Potter<lb/>
+				James Redpath, Ernest Rhys, A. Rice, Thomas William Rolleston<lb/>
+				Rudolf Schmidt, Susan Garnet Smith, Louisa Sowdon<lb/>
+				Ticknor and Fields<lb/>
+				Allen Upward<lb/>
+				</p></scopecontent></c02>
+            <c02><did><unittitle>Outgoing</unittitle><unitdate normal="1887/1889" type="inclusive">1887-1889, </unitdate><unitdate normal="1892" type="inclusive">1892</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Of others, related to Whitman</unittitle><abstract>letters and telegrams from J.W. Wallace to H. Buxton Forman, concerning Whitman's ill-health</abstract><unitdate normal="1891/1892" type="inclusive">1891-1892</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Media</unittitle></did>
+            <c02>        <did>
+
+            <unittitle>A Carol of Harvest</unittitle>
+
+            <unitid>whitman_w_001</unitid>
+
+            <unitdate type="inclusive" normal="1957-03-21">3/21/1957</unitdate>
+
+            <abstract>visual interpretation of Walt Whitman's famous poem; includes old label and handwritten note, which reads: "Bio and poem of W. Whitman against a scenic background".</abstract>
+
+            <physdesc>
+
+                <extent>Film: 16mm; running time 11:00</extent>
+
+            </physdesc>
+
+            <container type="Reel"/>
+
+        </did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><abstract>prospectus for book; reprint of article "At the Graveside of Walt Whitman"; items related to exhibit by Rumania Institute for Cultural Relations with Foreign Countries</abstract><unitdate normal="1892" type="inclusive">1892, </unitdate><unitdate normal="1893" type="inclusive">1893, </unitdate><unitdate normal="1957" type="inclusive">1957</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

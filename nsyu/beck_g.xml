@@ -1,0 +1,4264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 --><!-- Added Belfer as container type -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="beck_g" mainagencycode="NSyU">beck_g</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">George Beck Papers</titleproper>
+        <subtitle>An inventory of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">University Archives</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1994-08-04">4 Aug 1994</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2010-05-06">6 May 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Beck, George A., 1908-1977.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">George Beck Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1950/1969" type="inclusive">1950-1969</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>24.5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">American industrial designer.  Collection includes notes, drawings, 
+		 correspondence, reports, conference materials, public relations and marketing material, product data, slides, transparencies, 
+		 models, and much more.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2750907</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>George A. Beck (1908-1977) was an American industrial designer.  He first worked for Montgomery Ward and then Sears Roebuck, 
+	  but the majority of his career (more than thirty years, starting in 1934) was spent with General Electric</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">George Beck Papers</emph> includes notes, drawings, correspondence, reports, conference materials, public relations and 
+		 marketing material, product data, slides, transparencies, models, and much more.</p>
+      <p>The collection has received minimal processing.  The inventory that follows is a simple box list, and folders retain Beck's original labels and are in no particular order.  Researchers are advised to read the 
+		 entire inventory to ensure locating all relevant materials.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The collection has received minimal processing and remains in original order.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has the papers of many noted industrial designers.  Please refer to &subjindex; for a complete listing.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.-->
+	  <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Industrial Design</subject>
+		<persname encodinganalog="600" source="lcnaf">Beck, George A., 1908-1977.</persname>
+      <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+      <corpname encodinganalog="610" source="lcnaf">General Electric Company.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Industrial Designers Society of America.</corpname>
+      <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+      <subject encodinganalog="650" source="lcsh">Industrial design -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Industrial designers -- United States.</subject>
+      <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+      <genreform encodinganalog="655" source="aat">Brochures.</genreform>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Reports.</genreform>
+      <genreform encodinganalog="655" source="aat">Research notes.</genreform>
+      <genreform encodinganalog="655" source="aat">Slides (photographs)</genreform>
+      <occupation encodinganalog="656" source="lcsh">Industrial designers.</occupation>
+    
+    
+         <!-- <function encodinganalog="657">##</function> -->
+	  </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>George Beck Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Transfer from University Archives, 2000.</p>
+    </acqinfo>
+    <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+      <c01 level="series">
+        <did>
+          <unittitle>Box 7079 </unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>'Fortune' article; nation &amp; its industry in space 'industrial design'  </unittitle>
+            <unitdate type="inclusive" normal="1961-03">March 1961</unitdate>
+            <container type="Box">7079</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fires in high-rise buildings </unittitle>
+            <container type="Box">7079</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Executive weekly day-timer (Arthur's)</unittitle>
+            <container type="Box">7079</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Weekly day-timer (George beck associates)</unittitle>
+            <container type="Box">7079</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Weekly day-timer</unittitle>
+            <unitdate type="inclusive" normal="1970-10/1971-10">Oct 1970 - Oct 1971</unitdate>
+            <container type="Box">7079</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oberdorfer pump renderings </unittitle>
+            <container type="Box">7079</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>GAB folder </unittitle>
+            <container type="Box">7079</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Telemax drawings </unittitle>
+            <container type="Box">7079</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 7080 </unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Air conditioner </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ash tray &amp; humidor </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Automobile design </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bissel </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Boats </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Beverage cooler </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Escutcheon </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dishwasher </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dictaphone </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Correspondence </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Casco </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Boat </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fans </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Perspective </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photostat </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Radio-auto </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Radio-prints </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Metal, silverware, glassware, ceramic, plastics </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Displays </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Chicago </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Refrigerator hard prints </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Range hard prints </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ranges </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>General </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cartoon </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Renderings </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Interiors </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Gold/brass/chrome smokador </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertising &amp; sketches </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Booklets &amp; competition </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Tables, etc.</unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stands &amp; trays </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Full-size </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Tables ash tray </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Design, pencil</unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rendering, color </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Refrig. nameplate paints </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Toasters </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Thermo guide humidity ind. </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>To do </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Smokador </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Color stock Baylis co. </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Color </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Displays </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Wall-type ashtray </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ornament, empire design </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oil burner </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Nameplates-labels </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Murals </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kitchen </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Laundry </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Radio </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Comments by clients </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gamble company</unittitle>
+            <abstract>radio designs &amp; photos </abstract>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Certificates </unittitle>
+            <container type="Box">7080</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Jerrold </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Electric convertor </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>RCU wall hanger </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>RCU unit </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>TV convertor </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>SDS 1 </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Keyboard unit </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>RCU artwork </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Bernzomatic gas grill re-do </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>G.B. XLT brochures </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Eagan-Fairmount </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Raytheon range graphics </unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>G.B. brochures </unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>General</unittitle>
+                <container type="Box">7080</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate type="inclusive" normal="1973">1973</unitdate>
+                </unittitle>
+                <container type="Box">7080</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>GAB corporate I.D.  </unittitle>
+              <unitdate type="inclusive" normal="1972">1972</unitdate>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Manlius Liquors</unittitle>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Metropolitan Development Association</unittitle>
+              <unitdate type="inclusive" normal="1972">1972</unitdate>
+              <container type="Box">7080</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Oneida </unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Stainless storage</unittitle>
+                <container type="Box">7080</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Melamine merchandising display</unittitle>
+                <container type="Box">7080</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Display </unittitle>
+                <unitdate type="inclusive" normal="1972-08-28">8/28/72</unitdate>
+                <container type="Box">7080</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Des. dev. sketches </unittitle>
+                <unitdate type="inclusive" normal="1971-12-20">12/20/71</unitdate>
+                <container type="Box">7080</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Solid stainless display </unittitle>
+                <unitdate type="inclusive" normal="1971-12">12/71</unitdate>
+                <container type="Box">7080</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Lysander new community models </unittitle>
+                <unitdate type="inclusive" normal="1971-03-25">3/25/71</unitdate>
+                <container type="Box">7080</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 7081 </unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>New contracts </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Agway </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Arthur's </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Morris Kopelove </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Alcoa </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Albert's </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Albert's graphics </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Barton Aschiman </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Brian </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>New community Baldwinsville, Lysander</unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>World buttery </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Buttery menu panel </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Cazenovia College </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>J. Van Heusen award dinner </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Charles Gourmet </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Digney, Marion</unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Eagan models </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ekblau </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Faxton </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>5 to 9 </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Foamold</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Pure fluid devices </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ziaia </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>G.E. dining\Hommel</unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Kopp </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lincoln Bank</unittitle>
+              <abstract>money market signs </abstract>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Color sample </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lincoln Bank </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Magnavox </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Maxson </unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>General</unittitle>
+                <container type="Box">7081</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Telemax</unittitle>
+                <container type="Box">7081</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Telemax colors </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Maxson </unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Fone-Fax</unittitle>
+                <container type="Box">7081</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Related materials</unittitle>
+                <container type="Box">7081</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Root &amp; Clark. OCC </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Hueber/Le Moyne </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>King &amp; King </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Auburn </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Models </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>MDA; Un. Hill renovation &amp; cube minibus </unittitle>
+            <unitdate type="inclusive" normal="1969-12">12/69</unitdate>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stevens, Burton, O'Connell </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Onondaga Bank </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Marine pump </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oberdorfer </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>General </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Pump division </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Market survey </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Presidential plaza </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Correspondence </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Medical center </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Beck's 1201-sch i </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Raytheon </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sako </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Finland </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Correspondence, notes</unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Trip </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sketches </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Juhani</unittitle>
+            <unitdate type="inclusive" normal="1970-02">Feb 1970</unitdate>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sutton re Co. </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syroco </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse</unittitle>
+            <abstract>housing, city planning, UDC, MDA</abstract>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse Press Club </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>University Hill GNRP</unittitle>
+            <abstract>illus. site plan scale 1"-80' </abstract>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>United Parcel Service </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>H. Ward </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>H.P.C. Hamilton Publishing Co. </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>F.M. </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Corridors &amp; lobby </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Colors, Manlius Elem.</unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Corridor &amp; lobby </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>School </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Classroom </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Assoc. </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>GAB assoc. </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>University Club of Syr. </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>F.M. Curtis' office </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Flight service </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sibley's proposal </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Office personnel &amp; organization </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Budget  </unittitle>
+            <unitdate type="inclusive" normal="1956">1956</unitdate>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Administrative committee </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Budget </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle> [Miscellaneous]</unittitle>
+              <unitdate type="inclusive" normal="1951/1952">1951-1952</unitdate>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>General </unittitle>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>[Miscellaneous]</unittitle>
+              <unitdate type="inclusive" normal="1944/1948">1944-1948</unitdate>
+              <physdesc>
+                <extent>5 folders</extent>
+              </physdesc>
+              <container type="Box">7081</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Scroll, Hazeltine data display control </unittitle>
+            <container type="Box">7081</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11799</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>ICSID </unittitle>
+            <unitdate type="inclusive" normal="1963/1967">1963-1967</unitdate>
+            <physdesc>
+              <extent>6 folders</extent>
+            </physdesc>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sketches </unittitle>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Notebooks</unittitle>
+            <abstract>general notes</abstract>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Drawings </unittitle>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Personal </unittitle>
+            <unitdate type="inclusive" normal="1951/1953">1951-1953</unitdate>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>President </unittitle>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Personal and personnel letter book  </unittitle>
+            <unitdate type="inclusive" normal="1948">1948</unitdate>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Personal</unittitle>
+            <unitdate type="inclusive" normal="1950">1950</unitdate>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Personal and personnel letter book </unittitle>
+            <unitdate type="inclusive" normal="1951/1952">1951-1952</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Personal</unittitle>
+            <unitdate type="inclusive" normal="1943/1947">1943-1947</unitdate>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E.,  radios and radio-phonographs</unittitle>
+            <abstract>presentation notebooks</abstract>
+            <unitdate type="inclusive" normal="1942">1942</unitdate>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Appliance and merchandising department, appearance design</unittitle>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E. marketing plans  </unittitle>
+            <unitdate type="inclusive" normal="1956">1956</unitdate>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E. cabinet data </unittitle>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Combinations</unittitle>
+            <abstract>cabinet drawings </abstract>
+            <container type="Box">11799</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11800</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>General Electric </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>LMEE Johnson City </unittitle>
+              <container type="Box">11800</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Light military</unittitle>
+              <abstract>sales promotion</abstract>
+              <container type="Box">11800</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>LMED office </unittitle>
+              <container type="Box">11800</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Missiles </unittitle>
+              <container type="Box">11800</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Representative sheets </unittitle>
+              <container type="Box">11800</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Capacitor department </unittitle>
+              <container type="Box">11800</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Military electronics, 1,2, &amp; 3</unittitle>
+              <container type="Box">11800</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Radio and tv color proofs </unittitle>
+              <container type="Box">11800</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Washington headquarters</unittitle>
+              <container type="Box">11800</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Graphics and packaging </unittitle>
+              <container type="Box">11800</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Transmitter, mikes</unittitle>
+              <container type="Box">11800</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Industrial design organizational plans</unittitle>
+            <unitdate type="inclusive" normal="1958">1958</unitdate>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>ICSID </unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDI </unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photos of hill </unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>MDA </unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous </unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Negatives </unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida silver </unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Optical display unit </unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Presidential plaza </unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Raytheon </unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Telemax, Mason</unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sako </unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wescon </unittitle>
+            <container type="Box">11800</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11801</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>IDSA Detroit</unittitle>
+            <unitdate type="inclusive" normal="1967">1967</unitdate>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>George Beck</unittitle>
+            <unitdate type="inclusive" normal="1967/1968">1967-1968</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDSA administration</unittitle>
+            <abstract>ethics, policy and re. correspondence</abstract>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Certification </unittitle>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous committees and reports </unittitle>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Education survey and council </unittitle>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Executive committee, and board of directors minutes, reports, budgets </unittitle>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Membership rosters, IDSA directory</unittitle>
+            <unitdate type="inclusive" normal="1969">1969</unitdate>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDSA membership </unittitle>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDSA publications </unittitle>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Safety council </unittitle>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDSA surveys </unittitle>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDSA 'design notes' publication </unittitle>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDI correspondence</unittitle>
+            <unitdate type="inclusive" normal="1964">1964</unitdate>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDI 'date line' and miscellaneous publications </unittitle>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDI educational programs</unittitle>
+            <unitdate type="inclusive" normal="1963">1963</unitdate>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDI/ASID inter-society committee (merger)</unittitle>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>ASID/IDI 1964</unittitle>
+            <container type="Box">11801</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>ICSID </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>News bulletins </unittitle>
+              <container type="Box">11801</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Addresses </unittitle>
+              <container type="Box">11801</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Constitution, codes, resolutions, policy, ethics</unittitle>
+              <container type="Box">11801</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle><unitdate type="inclusive" normal="1957/1960">1957-1960</unitdate></unittitle>
+              <physdesc>
+                <extent>4 folders</extent>
+              </physdesc>
+              <container type="Box">11801</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Paris  </unittitle>
+              <unitdate type="inclusive" normal="1963">1963</unitdate>
+              <container type="Box">11801</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11802</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>GAB comment </unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>General Electric, Bridgeport</unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Locomotives </unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Portraits </unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.B. graphics  </unittitle>
+            <abstract>letterheads, cards, etc.</abstract>
+            <unitdate type="inclusive" normal="1969-11">11/69</unitdate>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.B. stationery </unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.B. graphics </unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Graphics completed </unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Caz college IDSA </unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>ICSID  Ibiza (International Conference of Industrial Designers)</unittitle>
+            <unitdate type="inclusive" normal="1971">1971</unitdate>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Administration, general</unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wescon</unittitle>
+            <unitdate type="inclusive" normal="1962">1962</unitdate>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse University </unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Talk speeches </unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Administration, speeches/papers</unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>LMEE, talks and speeches</unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>ID/articles/speeches, art center</unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syr</unittitle>
+            <unitdate type="inclusive" normal="1976-03">March 1976</unitdate>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Conference leadership </unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Creativity as a process </unittitle>
+            <container type="Box">11802</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11803</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>P.R. materials and promotion </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Design critique</unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Limelight and various newsletters </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Merger </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>News clippings </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Correspondence </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDSA publications </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous publications </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>General Electric portfolios </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>L.M.M. Correspondence </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>L.B. 3rd floor </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>L.B. Minoa letters </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Monroe building, Costello, Cooney and Fearon</unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>L.B. Minoa sketches </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Albert's sketches </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>White Towers, Washington </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Foamold brochure </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E. Intercom </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Glass frame display, Hommel</unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Everson Museum </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Everson Museum information </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Eagan display table </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>D.C.P. </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kiosk </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Vanderbilt square signs</unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Nebs, point of sale signs</unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Chamber of commerce award </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>1881 chest, Oneida ltd.</unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida silver, combination tv/ware tray</unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida ltd., melamine trays</unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida r &amp; d </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>U.N. Club </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>George reprints </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Resume, G. Beck </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous published materials </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Slides </unittitle>
+            <container type="Box">11803</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11804</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>A-G</unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Anderson and Pickard </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bernzomatic</unittitle>
+            <abstract>color flame </abstract>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bernzomatic</unittitle>
+            <abstract>ceramic grill </abstract>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bernzomatic development </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bernzomatic  annual report</unittitle>
+            <unitdate type="inclusive" normal="1971">1971</unitdate>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>CGT and Associates Inc. (communication growth technology)</unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Car bumpers </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Eagan signs </unittitle>
+            <unitdate type="inclusive" normal="1971-02">2/71 </unitdate>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Eagan plaque</unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Eagan/Kemper</unittitle>
+            <unitdate type="inclusive" normal="1968/1970">1968-1970</unitdate>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kemper Eagan real estate </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Jerrold Electronics SDS keyboard encoder</unittitle>
+            <unitdate type="inclusive" normal="1974">1974</unitdate>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Jerrold</unittitle>
+            <unitdate type="inclusive" normal="1974-09">Sep 1974, </unitdate>
+            <unitdate type="inclusive" normal="1975-10/1975-01">Oct-Jan 1975</unitdate>
+            <container type="Box">11804</container>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Annual report </unittitle>
+              <container type="Box">11804</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>ADTSG and compet </unittitle>
+              <container type="Box">11804</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>To do </unittitle>
+              <container type="Box">11804</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" normal="1974-01/1974-08">1974, Jan-Aug</unitdate>
+              </unittitle>
+              <physdesc>
+                <extent>7 folders</extent>
+              </physdesc>
+              <container type="Box">11804</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" normal="1973-03/1973-05">1973, Mar-May</unitdate>
+              </unittitle>
+              <physdesc>
+                <extent>4 folders</extent>
+              </physdesc>
+              <container type="Box">11804</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Electronics  </unittitle>
+              <unitdate type="inclusive" normal="1973">1973</unitdate>
+              <container type="Box">11804</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Oprints </unittitle>
+              <unitdate type="inclusive" normal="1973">1973</unitdate>
+              <container type="Box">11804</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Electronics</unittitle>
+              <unitdate type="inclusive" normal="1972">1972</unitdate>
+              <container type="Box">11804</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kennedy Memorial </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Manlius Liquor Store</unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Magnavox </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ober-bull sketches </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>PPS bulletin </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDI  </unittitle>
+            <unitdate type="inclusive" normal="1963">1963</unitdate>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oak Park High School Journal </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>J. Van Heusen display </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>The Rochester Story </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Design concepts </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Office product sketches </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lincoln Bank/MONY</unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Microelectronics symbol </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Foamold </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Graphics </unittitle>
+            <container type="Box">11804</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11805</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Syracuse,  new bldg.</unittitle>
+            <unitdate type="inclusive" normal="1980">1980</unitdate>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse,  model update</unittitle>
+            <unitdate type="inclusive" normal="1980">1980</unitdate>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>King, Syracuse U. Library </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Auburn city model </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Comm. College </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>MDA directory </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Central Syracuse display </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Upstate </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>University Hill model</unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>University Hill display </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>U. Hill corporation photos </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Old university hill area building drawings </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>King and King </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bristol sketches </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Brach. model Syracuse </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pres. Plaza apt. </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Sketches </unittitle>
+              <container type="Box">11805</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Letters </unittitle>
+              <container type="Box">11805</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Notes </unittitle>
+              <container type="Box">11805</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Fountain </unittitle>
+              <container type="Box">11805</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Holstein space </unittitle>
+              <container type="Box">11805</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sec'ty service space </unittitle>
+              <container type="Box">11805</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Onon. Community College </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Arthur's King of beef </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Arthur's time study </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Maxson, telefax </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Merchants </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Class interest </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>S.U. Smith outlines </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Misc. notes </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Class outlines </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida script </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Monday </unittitle>
+            <unitdate type="inclusive" normal="1970-11-30">Nov. 30, 1970</unitdate>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida display </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida display unit </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Tray #179 </unittitle>
+              <container type="Box">11805</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Graphics </unittitle>
+              <container type="Box">11805</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Chest research and study </unittitle>
+              <container type="Box">11805</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Trays and chests stain flatware storage </unittitle>
+              <container type="Box">11805</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>MDA brochure  </unittitle>
+            <unitdate type="inclusive" normal="1969">1969</unitdate>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Hazeltine Corp </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Unit span </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Human factors </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Human engineering </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Standards and v.e. </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Industrial design standards engineering </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>MDA II type </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dept. of City Planning, Syracuse </unittitle>
+            <container type="Box">11805</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11806</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Story board </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDSA </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Design dialogue 3 </unittitle>
+              <container type="Box">11806</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle> [Miscellaneous]</unittitle>
+              <unitdate type="inclusive" normal="1971/1974">1971-1974</unitdate>
+              <container type="Box">11806</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Pocono </unittitle>
+              <container type="Box">11806</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Design study program </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IBA march </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Patents </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Office misc. </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dui </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stearns and wheeler </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Aw meeting/text</unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida, Bob Reed, kitchen sys.</unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Jerrold</unittitle>
+            <unitdate type="inclusive" normal="1975/1976">1975-1976</unitdate>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Remote control unit </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ideas DMM </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Resume </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Potential </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Phlander, Corning toaster</unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Weekly day timer</unittitle>
+            <unitdate type="inclusive" normal="1972/1973">1972-1973</unitdate>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Safeway verticar, notes</unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fire rescues </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Safeway verticar </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Sketches </unittitle>
+              <container type="Box">11806</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Brochure/photos</unittitle>
+              <container type="Box">11806</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Clippings </unittitle>
+              <container type="Box">11806</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Newsprint and comments </unittitle>
+              <container type="Box">11806</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Hi-rise fire info. </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Alivator </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oman engines </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Safeway verticar</unittitle>
+            <unitdate type="inclusive" normal="1975-06">June 1975</unitdate>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fire </unittitle>
+            <unitdate type="inclusive" normal="1975-06">June 1975 </unitdate>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Towering inferno </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Advertising </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Aircraft and early George Beck </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Art Center College </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Automobiles </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E. Avionic </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E. SST presentation design </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E. Optical display unit </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>F-S optical sight model redesign </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Design awards </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dwight enterprises </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Jerrold </unittitle>
+            <container type="Box">11806</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11807</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Photographs and color transparencies </unittitle>
+            <container type="Box">11807</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11808</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Beck's label, 'miscellaneous, correspondence, clients'</unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Arthur's K. Beef </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cazenovia College </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Chamber of Commerce </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Costello, Cooney and Fearon</unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Digney, Marion</unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Eagan Real Estate </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Edwards, Lincoln</unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>5-9 shop, OCSB</unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Guaranteed Parts Company, Incorporated</unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Hodgdon, Dewey</unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>E. Hommel and Son </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IBM </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>King and King architects </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kiosk </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Laroche </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Linklaen house </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lincoln house </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lucy's </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mackenzie, Smith, Lewis, Mitchell, Hughes</unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Massachusetts mutual </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Maxson electronics </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Metropolitan Development Association </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Minnesota Hospital Service Association </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ninos </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oberdorfer </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida Ltd. </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Onondaga Community College </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Onondaga County Savings Association </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dr. William Peacher </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Park Lane Shoe </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>189 - OCSB brochure </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>GAB brochure </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Film, negative and positives </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>GAB resume folders </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida  </unittitle>
+            <unitdate type="inclusive" normal="1971/1972">1971-1972</unitdate>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oberdorfer Pump Division </unittitle>
+            <container type="Box">11808</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11809</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Cazenovia College </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E. Integrated circuit products department </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida Ltd. </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bristol Asprite System </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Merchants Bank </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stearns and Wheeler notes </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Robson and Woese Incorporated </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>ID Magazine proposal </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>MDA report, directory and envelope</unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lipe, rollway </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Optical display unit </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Maxon sign </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Maxson logo </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fone-fax </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida</unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Telemax </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Roast beef restaurant </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Titles, Fred</unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lincoln Bank, Fred</unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse blue receipts </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Correspondence </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>AIGA contest </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Charles Gourmet symbol </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Charles Gourmet packaging </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Five - 9 fashions </unittitle>
+            <container type="Box">11809</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11810</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Stearn and Wheeler </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Brochure plans and misc. </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Square pulse bonder</unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>General purpose control department </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Misc. </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Thin film bonding control </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Accounting sheets </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Confidential, current monthly account sheets</unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>MDA booklets </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Public relations </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.B., congratulations notes</unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDI, IDSA, ICSIA </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Insurance receipts </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>GAB</unittitle>
+            <abstract>personal/family</abstract>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>James Parsons </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Naneese, Vernon Court</unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Guy ,  Univ of Denver </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>UDC, direct costs</unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Beck's "to file" </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Proposals, gab</unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>George Beck brochures </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Day-time records, G.B.</unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>MDA</unittitle>
+            <abstract>brochure mock-ups</abstract>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Jefferson Tower, Pres. Plaza Apartments </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pres. Plaza publicity </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Raytheon </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rochester school model #19 </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dr. Stark and Connelly </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sutton Real Estate </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse  </unittitle>
+            <unitdate type="inclusive" normal="1980">1980</unitdate>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse Dept. of City Planning </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>United Parcel Service </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>University Hill Corp. </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>U.D.C. Folder </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Valley Sport Center </unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Watt, Gordon</unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Harry Ward Liquor Store</unittitle>
+            <container type="Box">11810</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>White Tower Corporation </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Syracuse butteries </unittitle>
+              <container type="Box">11810</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>World buttery </unittitle>
+              <container type="Box">11810</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Misc. </unittitle>
+              <container type="Box">11810</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11811</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Tv channel selector </unittitle>
+            <container type="Box">11811</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photo albums </unittitle>
+            <container type="Box">11811</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Executive planner </unittitle>
+            <container type="Box">11811</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Appointment book </unittitle>
+            <unitdate type="inclusive" normal="1977">1977</unitdate>
+            <container type="Box">11811</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs in briefcase </unittitle>
+            <container type="Box">11811</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Drawings </unittitle>
+            <container type="Box">11811</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photo album </unittitle>
+            <container type="Box">11811</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sketches of silverware </unittitle>
+            <container type="Box">11811</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photos </unittitle>
+            <container type="Box">11811</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11812</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Limelight magazine </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDSA  </unittitle>
+            <unitdate type="inclusive" normal="1965">1965</unitdate>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>National meeting</unittitle>
+            <unitdate type="inclusive" normal="1966">1966</unitdate>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Board meeting minutes </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDSA, national meeting</unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDI, Detroit</unittitle>
+            <unitdate type="inclusive" normal="1964">1964</unitdate>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>ICSID, Vienna Congress</unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pert </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDSA</unittitle>
+            <unitdate type="inclusive" normal="1966">1966</unitdate>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Design recognition </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous drawings </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>House plans </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Drawing </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photos </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>General Electric folio </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photos and drawings </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Portable cab </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Transmitter </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Coordinated unit cabinets </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Tone arms </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Table models </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Speciality division </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Record changer </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Radio/phono</unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Advance (pub. mat.)</unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Calendar, notes, correspondence</unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Line console cabinets</unittitle>
+            <unitdate type="inclusive" normal="1952">1952</unitdate>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E. Radio color </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Musaphonic by General Electric </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sketches, period console</unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Receipts, trip to europe</unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Many photographs </unittitle>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.B. - G.E. correspondence</unittitle>
+            <unitdate type="inclusive" normal="1961">1961</unitdate>
+            <container type="Box">11812</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11813</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Various drawings </unittitle>
+            <container type="Box">11813</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Architectural plans </unittitle>
+            <container type="Box">11813</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>P. and A. Designs </unittitle>
+            <container type="Box">11813</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E. </unittitle>
+            <container type="Box">11813</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11814</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>International list of schools of design </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Various newsletters </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IDA award to Beck </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>The HMED Look reprint </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Reprints from Industrial Design</unittitle>
+            <unitdate type="inclusive" normal="1965">1965</unitdate>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Aluminum dinnerware </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Tableware contest </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>139 Oneida cutlery </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oneida </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Macy display </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ltd. Showroom </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Discount </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ltd. Modular chest stainless </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ltd. P.T. Noyes </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Package, foamold </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Raytheon, electronic oven</unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Party invitations </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Onondaga County Savings Bank </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Vads rate table </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E. F 4d sight test station </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E. Optical sight display </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Call for entries 9th annual wescon </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G.E. Avionic controls </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gamble </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Albert's display lights </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>J.V.H. Display </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sako, Finland </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>ID Magazine, Sako</unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Minnesota hospital </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pres. Plaza </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Modifications </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lobby fountain </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>General </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bristol Labs </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bristol </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Time capsule </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Valley Sport Center </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fairmont Fair </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fairmont Fair Landscape </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Green Giant </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lincoln Bank </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Rendering </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Tellers counters </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Signs </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Directory and display area </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Check desk </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Money and file cart </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stairway details </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Misc. Equipment stand</unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>General </unittitle>
+              <container type="Box">11814</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Systems analysis brochure ibm </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle> Mr. and Mrs. G. Nait </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mental hygiene center </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Harry Ward Liquors</unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Correspondence and various design plans </unittitle>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Elfun Society</unittitle>
+            <unitdate type="inclusive" normal="1962/1964">1962-1964</unitdate>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Management conference, Grossinger's  </unittitle>
+            <unitdate type="inclusive" normal="1960">1960</unitdate>
+            <container type="Box">11814</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11815</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Published materials </unittitle>
+            <container type="Box">11815</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bulletins </unittitle>
+            <container type="Box">11815</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Booklets </unittitle>
+            <container type="Box">11815</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Brochures </unittitle>
+            <container type="Box">11815</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fairmont fair </unittitle>
+            <container type="Box">11815</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>News clippings </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>McKinley death</unittitle>
+              <unitdate type="inclusive" normal="1901">1901</unitdate>
+              <container type="Box">11815</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Roosevelt death</unittitle>
+              <unitdate type="inclusive" normal="1945">1945</unitdate>
+              <container type="Box">11815</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>World War II ends</unittitle>
+              <unitdate type="inclusive" normal="1945">1945</unitdate>
+              <container type="Box">11815</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Association Island and G.E. Syracuse </unittitle>
+              <container type="Box">11815</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Advertisements </unittitle>
+            <container type="Box">11815</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11816</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Slides </unittitle>
+            <container type="Box">11816</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11817</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Portfolio </unittitle>
+            <container type="Box">11817</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11818</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Portfolio</unittitle>
+            <abstract>including modern water colors by  G. Beck</abstract>
+            <container type="Box">11818</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Box 11819</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Portfolio</unittitle>
+            <abstract>including various drawings</abstract>
+            <container type="Box">11819</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="sul_postcards">sul_postcards</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Syracuse University Libraries Postcard Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-11-16" encodinganalog="Date">16 Nov 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-11-16">16 Nov 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>19 Jan 2019 - processed, name corrected (MRC) </item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            
+         <corpname encodinganalog="110">Syracuse University Libraries.</corpname></origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Syracuse University Libraries Postcard Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1910/1950" type="inclusive" label="Inclusive Dates: ">circa 1910-1950</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>6 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Architecture, museums, people, street scenes, World War I.  Mostly Europe.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3178221</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>, <language langcode="fra">French</language>, <language langcode="ger">German</language>, <language langcode="ita">Italian</language>, <language langcode="spa">Spanish</language>, <language langcode="por">Portuguese</language></langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Many of the postcards are stamped ART LIBRARY SYRACUSE UNIVERSITY, so the assumption is that they were collected by the Libraries here at SU and at some point transferred to &scrc_name;.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The  <emph render="bold">Syracuse University Libraries Postcard Collection</emph> consists entirely of postcards depicting  architecture,  cathedrals, fountains, landscapes, sculpture, statuary, street scenes, and so on.    The vast majority are from countries in western Europe, but there are a few from Czechoslovakia, Panama, Cuba, and other countries.  There collection also contains a substantial number of World War I postcards, whose images include soldiers, battlefields, ruined towns and buildings, hospitals and wounded, and so on.  Almost all of the cards are blank.  Many are stamped ART LIBRARY SYRACUSE UNIVERSITY on the back.  Most are unused/blank, but a few are written on and addressed to Syracuse University Art Library.</p><p>The geographical subdivisions of the collection were retained as originally defined, with the exception of the World War I postcards.  Those subdivisions were created during the processing of the collection.  The original packet labels are filed at the end of the last box.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by topic and within that alphabetical by country, with the exception of World War I postcards which are subdivided again by topic.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="arents_postcards.xml">Arents Postcard Collection</archref>.</p></relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         
+			
+			<!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Architecture -- Europe -- Pictorial works.</subject><subject encodinganalog="650" source="lcsh">Cathedrals -- Europe -- Pictorial works.</subject><subject encodinganalog="650" source="lcsh">Fountains -- Europe -- Pictorial works.</subject><subject encodinganalog="650" source="lcsh">Landscapes -- Europe -- Pictorial works.</subject><subject encodinganalog="650" source="lcsh">Postcards -- Europe.</subject>
+			<subject encodinganalog="650" source="lcsh">Sculpture, European -- Pictorial works.</subject><subject encodinganalog="650" source="lcsh">Soldiers -- Pictorial works.</subject><subject encodinganalog="650" source="lcsh">World War, 1914-1918 -- Pictorial works.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         
+			<genreform encodinganalog="655" source="aat">Postcards.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Syracuse University Libraries Postcard Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from Syracuse University Art Library, date unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+   <head>Inventory</head>
+   <c01 level="series"><did><unittitle>Postcards</unittitle></did>
+   <c02><did><unittitle>Angels</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Animals, demons and grotesques</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Arab</unittitle><abstract>mostly people, some landscapes</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Architecture</unittitle></did>
+      <c03><did><unittitle>Algeria</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Austria</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Belgium</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Costa Rica</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Cuba</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Czechoslovakia</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>England</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>France</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>France (cont.)</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Germany</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Ireland</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Italy</unittitle><container type="Box">2</container></did></c03>
+      <c03 id="arch-japa"><did><unittitle>Japan</unittitle><container type="Box">2</container></did><note><p>See also <ref target="orie">Oriental</ref>, below.</p></note></c03>
+      <c03><did><unittitle>Netherlands</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Portugal</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Puerto Rico</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Spain</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Sweden</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Switzerland</unittitle><container type="Box">2</container></did></c03></c02>
+   <c02><did><unittitle>Archways</unittitle></did>
+      <c03><did><unittitle>Algeria</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Belgium</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>England</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>France</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Germany</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Italy</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Portugal</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Spain</unittitle><container type="Box">2</container></did></c03></c02>
+   <c02><did><unittitle>Bas reliefs</unittitle></did>
+      <c03><did><unittitle>Religious</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Secular</unittitle><abstract>most from Versailles</abstract><container type="Box">2</container></did></c03></c02>
+   <c02><did><unittitle>Busts, secular</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Cathedrals</unittitle><abstract>most of these are from Musée de Sculpture Comparée (Museum of Comparative Sculpture); also includes churches, monasteries, chapels</abstract></did>
+      <c03><did><unittitle>Abstract designs, columns, portals</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Column heads and arches</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Facades and columns</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Interiors</unittitle><abstract>also includes some museum interiors</abstract><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Sculpted figures</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><abstract>tombs, choir stalls, porticos, windows, etc., </abstract><container type="Box">3</container></did></c03></c02>
+   <c02><did><unittitle>Dolls</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Figurines, secular</unittitle><abstract>mostly France</abstract><container type="Box">3</container></did></c02>
+   <c02 id="foun"><did><unittitle>Fountains and water features</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Furniture, clothing, household design</unittitle><abstract>mostly France</abstract><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Interiors</unittitle><abstract>other than cathedrals</abstract></did>
+      <c03><did><unittitle>Belgium</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>England</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>France</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Germany</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Portugal</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Spain</unittitle><container type="Box">4</container></did></c03></c02>
+   <c02><did><unittitle>Landscapes</unittitle></did>
+      <c03><did><unittitle>Algeria</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Austria</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Belgium</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Cuba</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Czechoslovakia</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>England</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>France</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>France (cont.)</unittitle><container type="Box">5</container></did></c03>
+      <c03><did><unittitle>Germany</unittitle><container type="Box">5</container></did></c03>
+      <c03><did><unittitle>Gibraltar</unittitle><container type="Box">5</container></did></c03>
+      <c03><did><unittitle>Italy</unittitle><container type="Box">5</container></did></c03>
+      <c03><did><unittitle>Portugal</unittitle><container type="Box">5</container></did></c03>
+      <c03><did><unittitle>Scotland</unittitle><container type="Box">5</container></did></c03>
+      <c03><did><unittitle>Spain</unittitle><container type="Box">5</container></did></c03>
+      <c03><did><unittitle>Switzerland</unittitle><container type="Box">5</container></did></c03>
+      <c03><did><unittitle>Wales</unittitle><container type="Box">5</container></did></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">5</container></did></c03></c02>
+   <c02 id="orie"><did><unittitle>Oriental</unittitle><abstract>people, landscapes, architecture</abstract><container type="Box">5</container></did><note><p>See also <ref target="arch-japa">Architecture: Japan</ref>.</p></note></c02>
+   <c02><did><unittitle>Paintings, tapestries, etc.</unittitle><abstract>includes secular frescoes, paintings from El Escorial in Spain</abstract><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>People</unittitle><abstract>some with livestock, including scenes of bullfighting</abstract><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Religious sculpture</unittitle></did>
+      <c03><did><unittitle>Female figures</unittitle><container type="Box">6</container></did></c03>
+      <c03><did><unittitle>Male figures</unittitle><container type="Box">6</container></did></c03></c02>
+   <c02><did><unittitle>Sculpture</unittitle></did>
+      <c03><did><unittitle>Bas reliefs, medallions, columns, facades, etc.</unittitle><abstract>from public buildings, estates, chateaux</abstract><container type="Box">6</container></did></c03>
+      <c03><did><unittitle>Gallo-Roman</unittitle><container type="Box">6</container></did></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><abstract>mostly France</abstract><container type="Box">6</container></did></c03></c02>
+   <c02><did><unittitle>Statuary</unittitle><abstract>miscellaneous secular, mostly neo-Classical</abstract><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Street scenes</unittitle></did>
+      <c03><did><unittitle>Algeria</unittitle><container type="Box">6</container></did></c03>
+      <c03><did><unittitle>Austria</unittitle><container type="Box">6</container></did></c03>
+      <c03><did><unittitle>Belgium</unittitle><container type="Box">6</container></did></c03>
+      <c03><did><unittitle>Cuba</unittitle><container type="Box">6</container></did></c03>
+      <c03><did><unittitle>Czechoslovakia</unittitle><container type="Box">6</container></did></c03>
+      <c03><did><unittitle>England</unittitle><container type="Box">6</container></did></c03>
+      <c03><did><unittitle>France, Paris</unittitle><container type="Box">6</container></did></c03>
+      <c03><did><unittitle>France, miscellaneous</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>Germany</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>Italy</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>Netherlands</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>Portugal</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>Spain</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>Switzerland</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>Tunisia</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>Wales</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">7</container></did></c03></c02>
+   <c02><did><unittitle>Tombs, monuments, statues</unittitle><abstract>of famous people, e.g. Napoleon, Joan of Arc, Charles V, Voltaire</abstract><container type="Box">7</container></did></c02>
+   <c02><did><unittitle>Vessels, urns, etc.</unittitle><abstract>including church artifacts</abstract><container type="Box">7</container></did></c02>
+   <c02><did><unittitle>Virgin and child figures</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unittitle>Water and boats</unittitle></did>
+      <note><p>See also <ref target="foun">Fountains</ref>.</p></note><c03><did><unittitle>Belgium</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>Cuba</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>England</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>France</unittitle><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>France (cont.)</unittitle><container type="Box">8</container></did></c03>
+      <c03><did><unittitle>Germany</unittitle><container type="Box">8</container></did></c03>
+      <c03><did><unittitle>Gibraltar</unittitle><container type="Box">8</container></did></c03>
+      <c03><did><unittitle>Netherlands</unittitle><container type="Box">8</container></did></c03>
+      <c03><did><unittitle>Panama</unittitle><container type="Box">8</container></did></c03>
+      <c03><did><unittitle>Portugal</unittitle><container type="Box">8</container></did></c03>
+      <c03><did><unittitle>Spain</unittitle><container type="Box">8</container></did></c03>
+      <c03><did><unittitle>Switzerland</unittitle><container type="Box">8</container></did></c03>
+      <c03><did><unittitle>Wales</unittitle><container type="Box">8</container></did></c03></c02>
+   <c02><did><unittitle>Wooden sculpture</unittitle><abstract>most from Musée des Arts Décoratifs</abstract><container type="Box">8</container></did></c02>
+   <c02><did><unittitle>World War I</unittitle></did>
+      <c03><did><unittitle>Battlefield scenes</unittitle><abstract>including trenches</abstract><container type="Box">8</container></did></c03>
+      <c03><did><unittitle>Damage and ruins</unittitle><abstract>mostly France and Belgium; towns, cathedrals, houses, etc.</abstract><container type="Box">8</container></did></c03>
+      <c03><did><unittitle>Damage and ruins (cont.)</unittitle><abstract>mostly France and Belgium; towns, cathedrals, houses, etc.</abstract><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Hospitals and wounded</unittitle><abstract>includes one scene of man training dog to find wounded</abstract><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Monuments, tombs, graves</unittitle><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Prisoners and spies</unittitle><abstract>includes executions</abstract><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Ships and boats</unittitle><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Soldiers</unittitle><abstract>eating, talking, on the march, on parade, etc.; mostly French but also some British, Belgian, other nationalities</abstract><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Unusual or interesting</unittitle><abstract>priests saying mass, Indian and Egyptian soldiers (the latter on camels), refugees, children, livestock, undamaged towns and homes, etc.</abstract><container type="Box">9</container></did></c03></c02>
+   <c02><did><unittitle>Miscellany</unittitle><abstract>birds, trains, the giant beer vat of Heidelberg, etc.</abstract><container type="Box">9</container></did></c02>
+   <c02><did><unittitle>Original packet labels</unittitle><container type="Box">9</container></did></c02>
+
+	</c01>
+</dsc>
+   </archdesc>
+</ead>

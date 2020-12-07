@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="peck_pl">peck_pl</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Paul Lachlan Peck Papers</titleproper>
+            <subtitle>A description of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-03-11" encodinganalog="Date">11 Mar 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-03-11">11 Mar 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>24 Feb 2014 - processed (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Peck, Paul Lachlan.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Paul Lachlan Peck Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1950/2006" type="inclusive" label="Inclusive Dates: ">before 2006</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Writings (articles, sermons, essays, hymns) by the American spiritual metaphysical author, speaker and counselor.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2739502</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Paul Lachlan Peck is an American spiritual metaphysical author, speaker and counselor.</p><p>Born in Glens Falls, New York, Peck holds a BA. Degree in Marketing from the University of Connecticut, a M.Ed. degree in high school administration from Westfield State College, Westfield, MA and a Th.D. (Hon) from Bernadean University in Nevada.  Prior to entering the full-time ministry, Reverend Peck served as Vice President of Syracuse University, Fairleigh Dickinson University and Manhattan College (Bronx) over a period of fifteen years. While at Syracuse (1960-1970) he served on the Chaplains’ Council of the University and as a volunteer Chaplain at Auburn State Prison for one year, and was the University's first full-time director of deferred giving programs.  He was ordained by the Truth Center of California in 1972, and knighted by the international charitable Order of Sts. John of Jerusalem, Knights of Malta for his many years of service to youth in the area of drug abuse and sui­cide prevention. He has appeared on radio and television and is the author of numerous books, articles, essays, sermons and New Age hymns.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Paul Lachlan Peck Papers</emph> consists entirely of Peck's writings -- articles, books, essays, sermons, New Age hymns, and other items.  The items are typed, organized thematically,  and bound into twelve volumes.  Some, such as Volumes IX and XII, have been commercially published; the published version may or may not be identical to the manuscript versions in this collection.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Bound volumes, as organized thematically by the donor.</p></arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>Peck also donated to the library his extensive collection of 20th century literature, including authors such as Taylor Caldwell, Mary Renault, and R. F. Delderfield.  These items have been cataloged.  Please refer to &summitref;, and search on the phrase "Gift of Rev. Paul Lachlan Peck" to locate these items.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Religion and philosophy</subject>
+			<persname encodinganalog="600" source="lcnaf">Peck, Paul Lachlan.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Arete Truth Center.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Clergy -- United States.</subject><subject encodinganalog="650" source="lcsh">Conduct of life.</subject><subject encodinganalog="650" source="lcsh">Gender identity -- Personal accounts.</subject><subject encodinganalog="650" source="lcsh">Jesus Christ -- New Age movement interpretations.</subject><subject encodinganalog="650" source="lcsh">Spiritual life -- New Age movement.</subject><subject encodinganalog="650" source="lcsh">New Age movement.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Autobiographies (literary works)</genreform><genreform encodinganalog="655" source="aat">Essays.</genreform>
+         <genreform encodinganalog="655" source="aat">Hymns.</genreform><genreform encodinganalog="655" source="aat">Sermons.</genreform><occupation encodinganalog="656" source="lcsh">Authors.</occupation><occupation encodinganalog="656" source="lcsh">Clergy.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Paul Lachlan Peck Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Paul Lachlan Peck</persname>, 2004-2006.</p></acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02><did><unittitle>Volume I Footsteps Along the  Path: New Age Hymns</unittitle><abstract>more than 100 hymns; includes metrical index</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Volume II Inherit the Kingdom: Basic Spiritual Metaphysics</unittitle><abstract>topics include "What is God?", "Dealing with Error," and "The Aquarian Church"</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Volume III Milestones of the Way: Intermediate Spiritual Metaphysics</unittitle><abstract>topics include "Understanding  Karma," "Reincarnation and the Holy Bible," "Armageddon," and "The Collective Oversoul"</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Volume IV Freeway to Health: Sermons based on Jesus' teachings</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Volume V Freeway to Work and Wealth: Essays based on Jesus' teachings</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Volume VI Freeway to Human Love: Essays based on Jesus' teachings</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Volume VII Freeway to Human Growth: Essays based on Jesus' teachings</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Volume VIII Your Dreams Count: An eclectic approach to dream analysis</unittitle><abstract> general overview of dreams as well as discussion of specific items such as gemstones, numbers, colors, and more; includes index</abstract><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Volume IX Worth the Room: An Autobiography</unittitle><container type="Box">4</container></did><scopecontent><p>From the introduction: "...This is a story of survival from a childhood of emotional and physical abuse.  It is also the story of surviving four near-death experiences, as well as the parallel story of my development as a minister, healer and psychic.  Furthermore, it is the story of the manner by which I came to terms with my gender identity.  Finally, it is the story of a lifetime of proving (realizing) that I am worth the room I take up on this earth..."</p><p>Published by iUniverse, Inc. in 2004 as <emph render="italic">Worth The Room: An Autobiography of Survival and Service</emph>.</p></scopecontent></c02>
+            <c02><did><unittitle>Volume X Miscellany 1993-2003, Volume I: Essays supplemental to Worth the Room</unittitle><abstract>essays on a wide range of topics from Ann Landers to guns to family recipes</abstract><container type="Box">4</container></did></c02>
+            <c02><did><unittitle>Volume XI Heroic Love Poems: Sensitive, Alternative, Current</unittitle><abstract>more than 120 poems of various forms, including sonnets, on a wide range of topics</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Volume XII Anthology of Classic Children's LIterature: 550 Years of Delightful Reading</unittitle><container type="Box">3</container></did><scopecontent><p>Recommendations span nearly six hundred years, from 1450 (<emph render="italic">Arabian Nights</emph>) to 2000 (<emph render="italic">The Babysitters Club</emph>).  Each title is accompanied by a one-page discussion, and there is an author index at the end.  </p><p>Published by iUniverse, Inc. in 2004 as <emph render="italic">Classic Children's Literature for Your Home Library</emph>.</p></scopecontent></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

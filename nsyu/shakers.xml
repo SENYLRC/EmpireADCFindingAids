@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+
+<ead relatedencoding="MARC21">
+<eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="shakers" mainagencycode="NSyU">shakers</eadid>
+
+   <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Shakers (Mt. Lebanon Bishopric) Collection</titleproper>
+        <subtitle>An inventory of the
+ item(s) at Syracuse University</subtitle>
+        <author encodinganalog="Creator">DC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date calendar="gregorian" era="ce" encodinganalog="Date" normal="1993-02">Feb 1993</date></publicationstmt>
+    </filedesc>
+
+    <profiledesc>
+      <creation>[Derived from Summit]
+       <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+
+    <revisiondesc>
+      <list>
+        <item>
+		26 Mar 2009 - converted to EAD (LDC)</item><item>4 Nov 2011 - missing item found! (MRC)</item><item>15 Feb 2017 - adds, P-15-308 (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <corpname encodinganalog="110" source="lcnaf">Shakers. -- Mt. Lebanon Bishopric (N.Y.)</corpname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Shakers (Mt. Lebanon Bishopric) Collection</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " type="inclusive" normal="1885/1907">1885-1907</unitdate>
+      <unitdate encodinganalog="245$g" label="Bulk Dates: " type="bulk" normal="1906/1907">1906-1907</unitdate><physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">1 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Legal and printed materials. Includes the court transcript of testimony in the New York State Supreme Court case brought by Levi Shaw and other Trustees of the United Society of Believers (Shakers) against their neighbor, Olive Hand, and miscellaneous material related to this Mount Lebanon, New York deed dispute.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">149269</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>The Mount Lebanon Shaker Society (1787-1947) was an American communal settlement of Shakers in New Lebanon, New York.  Arguably the most influential of the 19 American Shaker communities, Mount Lebanon was intended to serve as a model for all other members of the United Society of Believers (Shakers) to follow.  At its peak, Mount Lebanon was home to 600 members and encompassed 6,000 acres.</p>
+    </bioghist>
+
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Shakers (Mt. Lebanon Bishopric) Collection</emph> contains mostly legal materials and a few other items.  The bulk pertains to a New York State Supreme Court case brought by Levi Shaw and other Trustees of the United Society of Believers (Shakers) against their neighbor, Olive Hand.  The collection contains court testimony, case notes for the trial and an article published in the <emph render="italic">The Hudson Evening Register</emph> on the case's outcome.  There is also an unrelated business letter.</p>
+    </scopecontent>
+
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The collection is divided into two series: Legal materials and Other materials.</p>
+    </arrangement>
+
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+        <subject encodinganalog="650" source="local">Religion and philosophy</subject>
+         <subject encodinganalog="650" source="local">New York State</subject>
+         <persname encodinganalog="600" source="lcnaf">Shaw, Levi -- Trials, litigation, etc.</persname>
+          <persname encodinganalog="600" source="lcnaf">Hand, Olive -- Trials, litigation, etc.</persname>
+         <corpname encodinganalog="610" source="lcnaf">Shakers. Mt. Lebanon Bishopric (N.Y.)</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Shakers -- Archival resources.</corpname>
+         <subject encodinganalog="650" source="lcsh">Christian communities -- New York (State)</subject>
+         <subject encodinganalog="650" source="lcsh">Christian communities -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Collective settlements -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Real property -- New York (State) -- Mount Lebanon.</subject>
+         <subject encodinganalog="650" source="lcsh">Religious communities -- New York (State) -- Mount Lebanon.</subject>
+         <subject encodinganalog="650" source="lcsh">Trial transcripts -- New York (State) -- Mount Lebanon.</subject>
+         <geogname encodinganalog="651" source="lcsh">Mount Lebanon (N.Y.) -- History.</geogname>
+         <genreform encodinganalog="655" source="aat">Legal documents.</genreform>
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Notes (documents)</genreform>
+         <genreform encodinganalog="655" source="aat">Testimonies.</genreform>
+    </controlaccess>
+
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Shakers (Mt. Lebanon Bishopric) Collection<lb/>&su_name;</p>
+    </prefercite>
+<dsc type="combined">
+<head>Inventory</head>
+
+<c01 level="series">
+<did><unittitle>Legal materials</unittitle></did>
+
+  <c02><did><unittitle>Case notes</unittitle><abstract>on Caledonian Insurance Company letterhead</abstract><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1906">1906</unitdate><container type="Box">1</container></did></c02>
+
+  <c02><did><unittitle>Court case testimony</unittitle><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1906">1906</unitdate><abstract>typescript of testimony in court case brought by Levi Shaw and others, as Trustees of the United States Believers, against Olive Hand, concerning a deed dispute in Mount Lebanon, New York</abstract><physdesc><extent>1 volume</extent></physdesc><container type="Box">1</container></did>
+  </c02>
+
+</c01>
+
+<c01 level="series">
+<did><unittitle>Other materials</unittitle></did>
+
+  <c02><did><unittitle>Miscellaneous</unittitle><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1885">1885, </unitdate><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1906">1906</unitdate><container type="Box">1</container></did>
+
+    
+
+  <scopecontent><p>Clipping, "Shakers Lost Law Suit About Lebanon Land" in <emph render="italic">The Hudson Evening Register (photocopy)</emph><lb/>business letter, on letterhead of the Shaker Seed Co.</p></scopecontent></c02>
+
+
+</c01>
+
+</dsc>
+
+  </archdesc>
+</ead>

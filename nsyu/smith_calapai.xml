@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="smith_calapai">smith_calapai</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Robert Smith Collection relating to Letterio Calapai</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2015-09-16" encodinganalog="Date">16 Sep 2015</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2015-09-16">16 Sep 2015</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Smith, Robert C.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Robert Smith Collection relating to Letterio Calapai</unittitle>
+         <unitdate encodinganalog="245$f" normal="1950/1995" type="inclusive" label="Inclusive Dates: ">1950-1995</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.25 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Printed material and memorabilia relating to the Italian-American artist.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4596713</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Letterio Calapai was an Italian-American painter, engraver, illustrator, printmaker who worked in New York City and Chicago.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Robert Smith Collection</emph> relating to Letterio Calapai consists of printed material and memorabilia relating to the Italian-American artist.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by type or topic.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="../c/calapai_l.htm">Letterio Calapai Papers</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <subject encodinganalog="650" source="local">Art -- Painters</subject><subject encodinganalog="650" source="local">Art -- Illustrators</subject>
+<!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Calapai, Letterio, 1902-1993.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Art, American -- 20th century.</subject>
+<subject encodinganalog="650" source="lcsh">Engravers -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Etchers -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Illustrators -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Italian Americans.</subject>
+<subject encodinganalog="650" source="lcsh">Painters -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Printmakers -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Wood-engravers -- United States.</subject>
+
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+<genreform encodinganalog="655" source="aat">Exhibition catalogs.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Robert Smith Collection relating to Letterio Calapai, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Robert C. Smith</persname>, 2015.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Artwork</unittitle></did>
+            <c02><did><unittitle>Print, "The mischievous dog" by Calapai</unittitle><abstract>original print in decorative folder, with accompanying letter from Calapai and a copy of "A Portfolio of Wood Engravings: Aesop's Fables," of which the print was part</abstract><unitdate normal="1980" type="inclusive">1980</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Sketches of Smith, by Calapai</unittitle><abstract>photocopies</abstract><unitdate normal="1950/1995" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Incoming, from Calapai</unittitle><unitdate normal="1968" type="inclusive">1968, </unitdate><unitdate normal="1980" type="inclusive">1980, </unitdate><unitdate normal="1986" type="inclusive">1986, </unitdate><unitdate normal="1991/1992" type="inclusive">1991-1992, </unitdate><unitdate normal="1968/1992" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Obituary, Deer Island (Maine) newspaper</unittitle><unitdate normal="1993" type="inclusive">1993</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Photographs</unittitle><abstract>candid photos of Calapai, Calapai and Smith, annotated by Smith</abstract><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle>Clippings and press releases</unittitle><unitdate normal="1950" type="inclusive">1950, </unitdate><unitdate normal="1952" type="inclusive">1952, </unitdate><unitdate normal="1981/1984" type="inclusive">1981-1984, </unitdate><unitdate normal="1986" type="inclusive">1986, </unitdate><unitdate normal="1988" type="inclusive">1988, </unitdate><unitdate normal="1991/1993" type="inclusive">1991-1993, </unitdate><unitdate normal="1995" type="inclusive">1995, </unitdate><unitdate normal="1950/1995" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Exhibit catalogs and invitations</unittitle><abstract>some signed by artist; Rome exhibit catalog includes letter and enclosures from Calapai to Smith</abstract><unitdate normal="1961" type="inclusive">1961, </unitdate><unitdate normal="1967" type="inclusive">1967, </unitdate><unitdate normal="1972" type="inclusive">1972, </unitdate><unitdate normal="1977" type="inclusive">1977, </unitdate><unitdate normal="1983" type="inclusive">1983, </unitdate><unitdate normal="1986" type="inclusive">1986, </unitdate><unitdate normal="1988" type="inclusive">1988, </unitdate><unitdate normal="1991" type="inclusive">1991</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Intaglio workshop</unittitle><abstract>course catalog from New School; postcard</abstract><unitdate normal="1960/1961" type="inclusive">1960-1961</unitdate><container type="Box">1</container></did></c02>
+      </c01>
+   </dsc></archdesc>
+</ead>

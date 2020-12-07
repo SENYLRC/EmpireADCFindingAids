@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008--><!--Revised standard blurb for related material -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="jarvis_j" mainagencycode="NSyU">jarvis_j</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">John Jarvis Cartoons</titleproper>
+        <subtitle>An inventory of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MD</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2008-11-20">20 Nov 2008</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>MD
+        
+        <date normal="2006-03-08">20 Nov 2008</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>20 Nov 2008 - converted to EAD (MD)</item>
+        <item>9 Dec 2009 - bio, scope and inventory added (SK)</item><item>3 May 2012 - corrected collection name (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Jarvis, John.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">John Jarvis Cartoons</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1963/1973" type="inclusive">1963-1973</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>14 items</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">10 original cartoons, newspaper clippings, published material and 2 photographs.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2649888</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>John Jarvis is an American cartoonist.</p>
+      <p>John Jarvis, an Illinois native, sold his first cartoon while still in high school for five dollars to 
+        
+        <emph render="italic">Health and Strength</emph> magazine. After graduating high school in 1936, Jarvis studied at the Academy of Fine Arts and the Chicago School of Professional Art.  Javis taught at the Chicago School of Professional Art before serving over three years with the Air Force during World War II. While in the military, several of his cartoons were published in 
+        
+        <emph render="italic">Yank</emph> magazine.  </p>
+      <p>Following the war, Jarvis published cartoons in <emph render="italic">Look</emph>, <emph render="italic">Esquire</emph> and <emph render="italic">Collier's</emph> and spent a few years with the Western Newspaper Union. After he was laid off, he returned to Geneva, Illinois and in 1953, started working at the Aurora 
+        
+        <emph render="italic">Beacon News</emph> where he drew editorial cartoons and illustrated some advertisements. In addition to editorial cartoons, Jarvis’ work has appeared as single panel cartoons and comic strips titled <emph render="italic">Inklings</emph>, <emph render="italic">Courthouse Squares</emph> and <emph render="italic">Croaker</emph>. His illustrations accompanied the "Where in the World Is"  trivia feature published in the <emph render="italic">Chicago Times</emph> as well as the Geneva (Illinois) <emph render="italic">Republican</emph> feature, "Old Timers Column". </p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">John Jarvis Cartoons</emph> are organized into 2 series. 
+        
+        <emph render="bold">Cartoons</emph> contains 10 original editorial cartoons and one black and white photograph of a cartoon. Three of the cartoons are dated. The 7 undated cartoons lack captions. The cartoons range in size from 10 1/4" x 11 ½" to 10 ½" x 16". The cartoons were drawn primarily in ink and watercolor with some crayon shading and dot screening appeared in selected cartoons. Notations appear in the borders in pen and various colors of pencil. </p>
+      <p>
+        <emph render="bold">Published Material </emph>contains a copy of 
+        
+        <emph render="italic">The Bell Ringer</emph>, a publication for Aurora 
+        
+        <emph render="italic">Beacon News</emph> employees containing an article about Jarvis' donation of cartoons to Syracuse University (1967) and two clippings of cartoons as they appeared in the 
+        
+        <emph render="italic">Beacon News</emph> with related editorial content (1966). </p>
+    </scopecontent>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has collections of over one hundred cartoonists.  Please refer to &subjindex; for a complete listing.</p>
+    </relatedmaterial>
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Art -- Cartoonists</subject>
+      <persname encodinganalog="600" source="local">Jarvis, John.</persname>
+      <title encodinganalog="630" source="local">Beacon news (Aurora, Ill.)</title>
+      <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject>
+      <subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- Illinois.</subject>
+      <subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Cartoonists -- Illinois.</subject>
+      <subject encodinganalog="650" source="lcsh">Editorial cartoons -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Editorial cartoons -- Illinois.</subject>
+      <subject encodinganalog="650" source="lcsh">World politics -- 1945-1989 -- Caricatures and cartoons.</subject>
+      <geogname source="lcsh" encodinganalog="651">Aurora (Ill.) -- Newspapers.</geogname>
+      <geogname source="lcsh" encodinganalog="651">Aurora (Ill.) -- Caricatures and cartoons.</geogname><geogname encodinganalog="651" source="lcsh">United States -- Politics and government -- Caricatures and cartoons.</geogname>
+      <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+      <genreform source="aat" encodinganalog="655">Black-and-white photographs.</genreform>
+      <genreform source="aat" encodinganalog="655">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Editorial cartoons.</genreform>
+      <genreform encodinganalog="655" source="aat">Publications.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p> John Jarvis Cartoons, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname>John Jarvis</persname>, 1966-1967.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Cartoons</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Dated</unittitle>
+            <container type="Oversize">1</container>
+          </did>
+          <scopecontent>
+            <p>December 25, 1966: Follow the Star- Christmas
+              
+              <lb/>June 2, 1963: Okay, Dad, Let me  Take over now- college graduates
+              
+              <lb/>April 20 (unknown year): The Old Runaround- city departments and services</p>
+          </scopecontent>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1963/1973" type="inclusive">Undated</unitdate>
+            </unittitle>
+            <container type="Oversize">1</container>
+            <abstract>without captions</abstract>
+          </did>
+          <scopecontent>
+            <p>Three astronauts receiving diplomas
+              
+              <lb/>Nikita Khrushchev telling a woman, "Women are better off under communism"
+              
+              <lb/>Latin America and U.S. agricultural surplus
+              
+              <lb/>Man with a snake rapped around  him while another man carries cage with label reading "poison snake cage"
+              
+              <lb/>Two members of the armed forces discuss dating and a female member of the military
+              
+              <lb/>Couple in sports car with "1973" license plate at a gas station 
+              
+              <lb/>Group of men labeled "plane builders" ask Uncle Sam for $750 million for supersonic jets</p>
+          </scopecontent>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photograph of cartoon</unittitle>
+            <unitdate normal="1963/1973" type="inclusive">undated</unitdate>
+            <container type="Oversize">1</container>
+          </did>
+          <scopecontent>
+            <p>Our Streets and Highways with man filling potholes while saying "I'm patching as fast as I can!" </p>
+          </scopecontent>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Published material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">The Bell Ringer</emph> with original photograph</unittitle>
+            <abstract>publication for employees of the Aurora 
+              
+              <emph render="italic">Beacon News</emph>, contains article about donation of Jarvis material to Syracuse University and an original photograph of Jarvis selecting cartoons is attached</abstract>
+            <unitdate normal="1967-01" type="inclusive">Jan 1967</unitdate>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Clippings from the 
+              
+              <emph render="italic">Beacon News</emph> </unittitle>
+            <abstract>two cartoons as published in the 
+              
+              <emph render="italic">Beacon News</emph> with related editorials</abstract>
+            <unitdate normal="1966-11-06" type="inclusive">6 Nov 1966, </unitdate>
+            <unitdate normal="1966-12-25" type="inclusive">25 Dec 1966</unitdate>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

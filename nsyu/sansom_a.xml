@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="sansom_a">sansom_a</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Art Sansom Cartoons</titleproper>
+            <subtitle>An inventory of his cartoons at Syracuse University</subtitle>
+         <author encodinganalog="Creator">EF</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1968" encodinganalog="Date">1968</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>MD<date normal="2008-12-11">11 Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>1985 - revised (--)</item><item>11 Dec 2008 - converted to EAD (MD)</item><item>14 Apr 2009 - revised (MD)</item><item>22 May 2017 - 1968 added (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Sansom, Art.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Art Sansom Cartoons</unittitle>
+         <unitdate encodinganalog="245$f" normal="1966/1968" type="inclusive" label="Inclusive Dates: ">1966-1968</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>6 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">598 original daily and Sunday cartoons from the newspaper comic strip <emph render="italic">The Born Loser</emph>.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2652491</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Arthur Baldwin Sansom (1920-1991), commonly known as Art Sansom,  was an American cartoonist and the creator of the comic strip <emph render="italic">The Born Loser</emph>.</p><p>Sansom was born in East Cleveland, Ohio in 1920.  He attended Ohio Wesleyan University, graduating in 1942 with a degree in art. The early part of his career was spent as an engineer/draftsman for the General Electric Company.  Sansom subsequently spent many years as a cartoonist, working on  the strips <emph render="italic">Chris Welkin, Planeteer</emph> and <emph render="italic">Vic Flint</emph> among others before launching his signature creation, <emph render="italic">The Born Loser</emph>, with the NEA syndicate in 1965. Sansom worked on the hugely popular strip until his death in 1991.  The strip was taken over by his son Chip Sansom, who had worked as Art's assistant for many years.  <emph render="italic">The Born Loser</emph> received the National Cartoonists Society's prestigious Reuben Award in 1987 and 1991. </p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Art Sansom Cartoons</emph> collection contains original daily and Sunday cartoons from the comic strip <emph render="italic">The Born Loser</emph> (1966-1968). Daily cartoon: traces of graphite, opaque white, zipatone, crayon, pen and ink on illustration board, dimensions vary, most approx. 6 ¼ x 18 in. Sunday cartoon: traces of graphite, opaque white, zipatone, pasteovers, crayon, pen and ink on illustration board, dimensions vary, most approx. 18 ¼ x 26 in.  </p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Daily and Sunday cartoons are arranged separately in chronological order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has collections of over one hundred cartoonists. Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Sansom, Art.</persname>
+         
+         <corpname encodinganalog="610" source="lcnaf">Newspaper Enterprise Association.</corpname>
+         <title encodinganalog="630" source="local" rules="aacr2">The born loser (comic strip)</title>	
+			<subject encodinganalog="650" source="local">Art -- Cartoonists</subject>							
+         <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject><subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States.</subject><subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject><subject encodinganalog="650" source="lcsh">Comic books, strips, 
+
+etc. -- United States.</subject>
+         
+         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p> Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Art Sansom Cartoons, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <!--<acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p></p>
+      </acqinfo>-->
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+<c01 level="series"><did><unittitle><emph render="italic">The Born Loser</emph></unittitle></did>
+<note><p>Click <extref href="sansom_a_inv.pdf">here</extref> for detailed inventory.</p></note>               
+<c02><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1966-01/1966-08">1966 Jan - 1966 Aug</unitdate><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1966-09/1967-03">1966 Sep - 1967 Mar</unitdate><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1967-04/1967-12">1967 Apr - 1967 Dec</unitdate><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1968-01/1968-06">1968 Jan-Jun</unitdate><container type="Box">4</container></did></c02><c02><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1968-07/1968-12">1968 Jul-Dec</unitdate><container type="Box">5</container></did></c02><c02><did><unittitle>Sunday  cartoons</unittitle><unitdate type="inclusive" normal="1966-01/1967-05">1966 Jan - 1967 May</unitdate><container type="Oversize">1</container></did></c02>
+<c02><did><unittitle>Sunday  cartoons</unittitle><unitdate type="inclusive" normal="1967-06/1968-12">1967 Jun - 1968 Dec</unitdate><container type="Oversize">2</container></did></c02></c01>        
+      </dsc>
+   </archdesc>
+</ead>

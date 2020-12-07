@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="bissell_r">bissell_r</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Richard Bissell Manuscript</titleproper>
+            <subtitle>An inventory of of his item  at Syracuse University.</subtitle>
+         <author encodinganalog="Creator">AM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2009-04-30" encodinganalog="Date" type="inclusive">30 Apr 2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>AM
+            <date normal="2009-04-30" type="inclusive">30 Apr 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100" rules="lcnaf">Bissell, Richard, 1913-1977.</persname><!--<corpname encodinganalog="110">or 110</corpname>-->
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Richard Bissell Manuscript</unittitle>
+         <unitdate encodinganalog="245$f" normal="1964" type="inclusive" label="Inclusive Dates: ">1964</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 item (SC).</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">3-page holograph manuscript book review.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2677708</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Richard Bissell (1913-1977) was an American author, playwright and critic.  In addition to his literary pursuits, Bissell also worked in the Venezuelan oil fields, as a seaman, a factory superintendent,  and as a  river pilot on the upper Mississippi and Monongahela Rivers.  Originally from Dubuque, Iowa, Bissell graduated from Harvard University in 1936, married Marian Van Patten Grilk in 1938, and had four children: Thomas, Nathaniel, Anastasia, and Samuel.  Some of his well-known works include the novel <emph render="italic">7 1/2 Cents</emph>, which served as the basis for his play and later screenplay <emph render="italic">The Pajama Game</emph>, <emph render="italic">A Stretch on the River</emph>, and <emph render="italic">My Life on the Mississippi; or, Why I Am Not Mark Twain</emph>.  Bissell died in Dubuque on May 4, 1977.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Richard Bissell Manuscript</emph> consists of a three-page holograph signed book review by the American author, playwright and critic.  The book reviewed is <emph render="italic">Voices on the River: the story of the Mississippi Waterways</emph> by Walter Havighurst.  The review is noted as being typed and mailed by "Marian." A reprint of the published review from <emph render="italic">Minnesota History</emph> is included for reading clarity.</p>
+      </scopecontent>
+      
+      <!--<arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>## OPT (MARC 351$a)</p>
+      </arrangement>-->
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>Following is  boilerplate statement - delete this if you have specific related 
+material that you are listing.<p>&scrc_name; has made a concerted effort over the 
+years to ensure that its manuscript and rare books holdings complement each other.  
+As a result, many of our manuscript collections are supported by books, pamphlets, 
+serials and other items which are cataloged in the Rare Books Collection.  Please be 
+sure to search &summitref; for these related materials.</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <<head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Literature -- American Fiction</subject><persname encodinganalog="600" source="lcnaf">Bissell, Richard, 1913-1977</persname>
+         <persname encodinganalog="600" source="lcnaf">Bissell, Marian.</persname>
+         <persname encodinganalog="600" source="lcnaf">Havighurst, Walter, 1901- </persname>
+         <corpname encodinganalog="610" source="lcnaf">Minnesota Historical Society -- Periodicals.</corpname>
+         
+         <subject encodinganalog="650" source="lcsh">Mississippi River -- History -- Book reviews.</subject>
+         
+         <geogname encodinganalog="651" source="lcnaf">Mississippi River.</geogname>
+         <genreform encodinganalog="655" source="aat">Reviews (documents)</genreform>
+         <occupation encodinganalog="656" source="aat">Authors.</occupation>
+         <occupation source="aat" encodinganalog="656">Critics.</occupation></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Richard Bissell Manuscript,  <lb/> &su_name; </p>
+      </prefercite>
+      
+      <!--<acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>### (MARC 541 and/or  561)</p>
+      </acqinfo>-->
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+               <!--Permissible values for @TYPE for first CONTAINER are 'Box' 'Oversize' 'Volume' 'Carton' or 'Map-Case'.-->
+               <!--Permissible values for @TYPE for second CONTAINER are 'Folder' 'Frame' 'Page'  or 'Reel'.-->
+            <c02><did><unittitle>[Book Review for <emph render="italic">Voices on the River</emph>]</unittitle><unitdate normal="1964-10-05" type="inclusive">5 Oct 1964</unitdate><abstract>"Publishers insist on putting cute titles on books..."</abstract><physdesc><extent>3 pages</extent></physdesc><container type="SC">316</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="freeman_w">freeman_w</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">William Freeman Trial Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2012-08-24" encodinganalog="Date">24 Aug 2012</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2012-08-24">24 Aug 2012</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>23 Oct 2017 - rehoused (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">William Freeman Trial Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1846" type="inclusive" label="Inclusive Dates: ">1846</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Day-by-day accounts of the trial of William Freeman, accused of multiple murders in Upstate New York, one of the first American trials to employ the insanity defense.  Freeman was prosecuted by John Van Buren, son of President Martin Van Buren, and defended by William Seward, later Secretary of State to President Abraham Lincoln.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3953655</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>In March of 1846 William Freeman, a young man of African-American and Native American descent, murdered four members of the Van Nest family in the town of Fleming in Cayuga County, New York.  The victims included a pregnant woman and a two-year-old child.    William Seward, later Secretary of State to President Abraham Lincoln and a long-time advocate of prison reform, defended Freeman on the grounds that he had suffered abuse resulting in brain damage and therefore could not be held responsible for his actions, making this one of the earliest American trials to attempt an insanity defense.   (Seward defended another murderer, Henry Wyatt,  on similar grounds that same year.)  Freeman was convicted but Seward successfully appealed, although Freeman died in prison before he could be retried.  The prosecuting attorney was John Van Buren, son of President Martin Van Buren.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">William Freeman Trial Collection</emph> consists of five complete issues of the <emph render="italic">Rochester Daily Advertiser</emph> with numerous lengthy articles about the murders and the trial.  One issue includes, unusually, an engraving of Freeman done from a sketch "supplied by our friends of the <emph render="italic">Cayuga Tocsin</emph>."</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Issues are in chronological order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>Auburn and the surrounding regions of New York State were noted for their progressive attitudes towards penal systems.  &scrc_name; is also the repository of the papers of several prison reformers, notably <archref href="../o/osborne_fam.htm">Thomas Mott Osborne</archref>.</p><p>Several books on the murder and trial were published and are in either the Rare Books or general (circulating) collection; please refer to &summitref; and search on "Freeman, William, 1824-1847" to locate these items.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">African Americans</subject><subject encodinganalog="650" source="local">New York State</subject><persname encodinganalog="600" source="lcnaf">Freeman, William, 1824-1847.</persname><persname encodinganalog="600" source="lcnaf">Seward, William H. (William Henry), 1801-1872.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <title encodinganalog="630" source="lcnaf">Rochester Daily Advertiser (Rochester, N.Y.) </title>
+         <subject encodinganalog="650" source="lcsh">Insanity (Law) -- History -- 19th century.</subject><subject encodinganalog="650" source="lcsh">Newspaper court reporting -- United States.</subject><subject encodinganalog="650" source="lcsh">Trials (Murder) -- New York (State) -- Auburn.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Newspapers.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>William Freeman Trial Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2012.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Published material</unittitle></did>
+               <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+               <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+            <c02><did><unittitle><emph render="italic">Rochester Daily Advertiser</emph></unittitle><unitdate normal="1846-03" type="inclusive">Mar 1846</unitdate><physdesc><extent>5 issues</extent></physdesc><container type="Oversize">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

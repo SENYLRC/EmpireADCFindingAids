@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.7, 1/24/2007-->
+<!--Added copyright statement to Use Restrictions section-->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="movie_press_kits">movie_press_kits</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Movie Press Kit Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">–</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2006-03-08" encodinganalog="Date">unknown</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2007-05-16">16 May 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>9 Apr 2012 - updated search terms (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <corpname encodinganalog="110">##</corpname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Movie Press Kit Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1976/1983" type="inclusive" label="Inclusive Dates: ">1976-1983</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>1.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection contains selected press kits from Warner Bros. and Twentieth Century Fox.  Movies include <emph render="italic">The Star Chamber</emph>, <emph render="italic">Mr. Mom</emph>, <emph render="italic">All the President's Men</emph>.  Format varies, includes audiocassette, videocassette, booklets.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2536590</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>A press kit is a prepackaged set of promotional material.  In the case of movies, press kits often include still shots from the film, a page with sketches and brief bios of main characters, a plot summary, and sample posters, contained in or printed on an illustrated custom folder or packet.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Movie Press Kit Collection</emph> contains selected press kits for programming for two movie studios, Twentieth Century Fox and Warner Bros.  The Warner Bros. kit was prepared by Barla, Orloff &amp; Associates, Los Angeles, CA.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection is divided by movie studio.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has a number of television- and movie-related collections.  Please refer to &subjindex; for a complete listing.  For other press kits, see the <extref href="../t/tv_press_kits.htm">Television Press Kit Collection</extref> and the <archref href="../c/cartoon_press.htm">Cartoon Press Kit Collection</archref>.</p>
+      </relatedmaterial>
+      
+      <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Radio, television, film</subject><subject encodinganalog="650" source="local">Popular culture</subject>
+         <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            
+         
+            
+            
+            <!--<persname encodinganalog="600" source="lcnaf">##</persname>--><!--<famname encodinganalog="600" source="lcnaf">##</famname>--><corpname encodinganalog="610" source="lcnaf">Twentieth Century-Fox Film Corporation.</corpname><corpname encodinganalog="610" source="lcnaf">Warner Bros.</corpname><!--<title encodinganalog="630" source="lcnaf">##</title>--><subject encodinganalog="650" source="lcsh">Advertising -- Motion pictures.</subject><subject encodinganalog="650" source="lcsh">Motion pictures -- Marketing.</subject><subject encodinganalog="650" source="lcsh">Motion pictures -- Public relations</subject>
+         
+            <!--<geogname encodinganalog="651" source="lcsh">##</geogname>--><genreform encodinganalog="655" source="aat">Audiocassettes.</genreform><genreform encodinganalog="655" source="aat">Brochures.</genreform><genreform encodinganalog="655" source="aat">Interviews.</genreform><genreform encodinganalog="655" source="aat">Press kits.</genreform><genreform encodinganalog="655" source="aat">Trailers (motion pictures)</genreform><genreform encodinganalog="655" source="aat">Videocassettes.</genreform>
+         
+         <occupation encodinganalog="656" source="lcsh">Advertisers.</occupation><!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Movie Press Kit Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Some press kits gift of <persname role="donor">Steven H. Scheuer</persname>.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+
+
+
+
+
+
+			               
+            
+         <c01 level="series"><did><unittitle>Twentieth Century Fox</unittitle></did>
+<c02><did><unittitle><emph render="italic">Making Love</emph></unittitle><unitdate normal="1981" type="inclusive">1981</unitdate><container type="Box">1</container></did>
+<scopecontent><p>Videotape contains production information, interview with Barry Sadler.  Printed material includes a transcript of the Sadler interview, introductory letter,  and  a cast/credit list.</p></scopecontent></c02><c02><did><unittitle><emph render="italic">Mr. Mom</emph></unittitle><unitdate normal="1982" type="inclusive">1982, </unitdate><unitdate normal="1983" type="inclusive">1983</unitdate><container type="Box">1</container></did><scopecontent><p>Videotape contains trailer, behind-the-scenes footage, profiles of Michael Keaton and Teri Garr, selected interview sound bites, two promo clips, and a  review clip. Folder of printed material includes a transcript of the Keaton and Garr profiles and a photocopy of an article from <emph render="italic">Cosmopolitan</emph> (May 1983).  Also includes two slides with shots of Keaton and Garr together.</p></scopecontent></c02><c02><did><unittitle><emph render="italic">Neil Simon's: I Ought to Be In Pictures</emph></unittitle><unitdate normal="1981" type="inclusive">1981</unitdate><container type="Box">1</container></did>
+<scopecontent><p>Videotape contains production information, questions and answers with Herb Ross, and feature on Dinah Manoff.  Printed material includes a transcript of the Ross interview and  a cast/credit list.</p></scopecontent></c02><c02><did><unittitle><emph render="italic">The Star Chamber</emph></unittitle><unitdate normal="1982" type="inclusive">1982</unitdate><container type="Box">1</container></did><scopecontent><p>Videotape contains production notes, review clip, interview(s) with Michael Douglas, behind-the-scenes footage, and trailer.  Folder of printed material includes production notes and excerpt from Douglas interview.</p></scopecontent></c02><c02><did><unittitle><emph render="italic">Taps</emph></unittitle><unitdate normal="1981" type="inclusive">1981</unitdate><container type="Box">1</container></did><scopecontent><p>Videotape contains "The making of Taps," interviews with Stanley Jaffe, Timothy Hutton, Harold Becker, and Howard Jaffe, and a feature story, "Actors become cadets."</p></scopecontent></c02></c01><c01 level="series"><did><unittitle>Warner Bros.</unittitle></did><c02><did><unittitle><emph render="italic">All the President's Men</emph></unittitle><unitdate normal="1976" type="inclusive">1976</unitdate><container type="Box">1</container></did><scopecontent><p>Printed material includes production information booklet, foldout poster/flyer, short essay on "The Investigative Reporter and Cinematic Images," three letters from Katherine Orloff to Professor Scheuer.  Four cassette tapes contain interviews with Dustin Hoffman, Robert Redford, Jason Robards, George Jenkins, Jack Warden, Walter Coblenz, Alan J. Pakula, and Gordon Willis.</p></scopecontent></c02></c01>
+
+
+
+
+
+</dsc>
+   </archdesc>
+</ead>

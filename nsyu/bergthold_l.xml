@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="bergthold_l">bergthold_l</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Lucille Bergthold Collection of Literacy Material</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author><sponsor>The adult education holdings are collectively known as the <lb/><extptr title="Alexander N. Charters Library of Resources for Educators of Adults" href="https://library.syr.edu/scrc/collections/areas/adult-ed.php" show="new"/>.</sponsor></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-03-27" encodinganalog="Date">27 Mar 2013</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2013-03-27">27 Mar 2013</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Bergthold, Lucille.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Lucille Bergthold Collection of Literacy Material</unittitle>
+         <unitdate encodinganalog="245$f" normal="1961/1976" type="inclusive" label="Inclusive Dates: ">1961-1976</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.25 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection of material relating to the organization California Literacy and  to Frank Laubach of Laubach Literacy.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4596589</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>, <language langcode="mar">Marathi</language></langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Laubach Literacy International (LLI) was founded in 1955 by Dr. Frank C. 
+Laubach to help address the world-wide problem of illiteracy. Dr. Laubach 
+believed that literacy was the "first step toward ending the suffering and 
+exploitation of the world's disadvantaged people." The mission of Laubach 
+Literacy International as stated in the 1989 annual report was "to enable 
+illiterate adults and older youths to acquire the listening, speaking, 
+reading, writing and mathematics skills they need to solve the problems 
+they encounter in daily life; to take full advantage of opportunities in 
+their environment; and to fully participate in the transformation of their 
+society." LLI carried out its literacy mission both in the United States, through its  National Affiliation for Literacy Advance (NALA), and internationally, through its International Program.</p><p>Lucille Bergthold, the collector and donor of this material, was very active in Laubach Literacy from 1972-1990 in California and was Southwest Regional Chairman of the National Affiliation for Literacy Advance, a organization founded to extend the work begun by Dr. Laubach, from  1975 to 1977. </p><p>Bernice Elliot was a missionary to India for forty years (1915-1945).  It was she who invited Dr. Frank Laubach to India because she was interested in women learning to read.</p><p>May McMillan was the founder and president of California Literacy for many years, and met Dr. Laubach on at least one occasion.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Lucille Bergthold Collection of Literacy Material</emph> consists of material relating to Bernice Elliott, missionary to India and advocate for women's education; to the organization California Literacy; and to Laubach Literacy and its founder Frank Laubach.</p><p>The <emph render="bold">Bernice Elliott material</emph> includes a clipping about Elliott and her work and several items in the Marathi language.</p><p>The <emph render="bold">California Literacy materal</emph> contains newsletters and other printed items put out by the organization.</p><p>The <emph render="bold">Laubach material</emph> includes material by and about Dr. Laubach as well as May McMillan's memories of meeting him.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by title or topic.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has extensive holdings relating to literacy and to adult and continuing education.  Please refer to &subjindex; to locate relevant manuscript collections and to &summitref; to  locate printed and cataloged items.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <subject encodinganalog="650" source="local">Adult education</subject><!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Bergthold, Lucille.</persname><persname encodinganalog="600" source="lcnaf">Elliott, Bernice.</persname><persname encodinganalog="600" source="lcnaf">Laubach, Frank Charles, 1884-1970.</persname>
+         <persname encodinganalog="600" source="lcnaf">McMillan, May.</persname><!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">California literacy.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Laubach Literacy, Inc.</corpname><!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Adult education -- United States.</subject><subject encodinganalog="650" source="lcsh">Literacy -- California.</subject><subject encodinganalog="650" source="lcsh">Literacy -- India.</subject><subject encodinganalog="650" source="lcsh">Literacy -- Study and teaching.</subject>
+         <subject encodinganalog="650" source="lcsh">Marathi language.</subject><subject encodinganalog="650" source="lcsh">Missionaries -- India.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Brochures.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Newsletters.</genreform><genreform encodinganalog="655" source="aat"> Primers (books)</genreform><genreform encodinganalog="655" source="aat">Reminiscences.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Lucille Bergthold Collection of Literacy Material, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Lucille Bergthold</persname>, 2015.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Bernice Elliott material</unittitle></did>
+            <c02><did><unittitle>Clippings</unittitle><abstract>article about Elliott and her work</abstract><unitdate normal="1975" type="inclusive">1975</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Laubach Literacy primer, in Marathi language</unittitle><unitdate normal="1961/1975" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Life of Christ, in Marathi language</unittitle><abstract>from the Gospel of Luke</abstract><unitdate normal="1961/1975" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Printed material, miscellaneous</unittitle><unitdate normal="1961/1975" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>California Literacy material</unittitle></did>
+            <c02><did><unittitle>Literacy Lights of Southern California</unittitle><abstract>newsletter</abstract><unitdate normal="1961/1963" type="inclusive">1961-1963, </unitdate><unitdate normal="1966/1967" type="inclusive">1966-1967, </unitdate><unitdate normal="1970/1974" type="inclusive">1970-1974</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Southern California Literacy Council</unittitle><abstract>newsletter</abstract><unitdate normal="1963/1964" type="inclusive">1963-1964</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Success Stories of California Literacy Inc.</unittitle><unitdate normal="1971/1976" type="inclusive">1976?</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Laubach Literacy/Frank Laubach material</unittitle></did>
+            <c02><did><unittitle>May McMillan's reminiscences re: Frank Laubach</unittitle><unitdate normal="1961/1975" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Newsletters</unittitle><unitdate normal="1965" type="inclusive">1965</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Publications about Frank Laubach</unittitle><abstract>printed brochures</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Publications by Frank Laubach</unittitle><abstract>printed brochures and booklets</abstract><container type="Box">1</container></did><scopecontent><p>Contains the following items: The Game with Minutes, Literacy As Evangelism, and How to Teach One and Win One for Christ</p></scopecontent></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

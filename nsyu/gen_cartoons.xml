@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008--><!--Revised standard blurb for related material --><?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen.css"?>
+
+
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="gen_cartoons" mainagencycode="NSyU">gen_cartoons</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">General Cartoon Collection</titleproper>
+        <subtitle>An inventory of the cartoons at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MD</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher> &su_address;
+        <date encodinganalog="Date" normal="2009-03-26">26 Mar 2009</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>MD
+        
+        <date normal="2009-03-26">26 Mar 2009</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>26 Mar 2009 - converted to EAD (MD)</item>
+        <item>15 Apr 2009 - revised (MD)</item>
+        <item>12 May 2010 - added item level inventory (SK)</item>
+        <item>2 Feb 2011 - added item level inventory and revised (AM)</item>
+		<item>20 Jan 2012 - updated box types (MRC)</item>
+		<item>30 Jan 2012 - adds P-11-117 (MRC)</item>
+		<item>14 Feb 2012 - adds P-11-141 (MRC)</item>
+		<item>16 Apr 2013 - Long Sam, Anderson cartoons (MRC)</item><item>7 Apr 2016 - Curt Swan cartoon identified (MRC)</item><item>7 Feb 2017 - additions (MRC)</item><item>22 Jan 2018 - addition, "C Bells" (MRC)</item><item>29 Jan 2018 - addition, Walter Taylor cartoon (MRC)</item>
+            <item>8 May 2019 - addition, National Cartoonists Society 1962 (KD)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: "> &su_name;
+        <lb/> &su_address; </repository>
+      <origination label="Creator: ">
+        <corpname encodinganalog="110" source="local">Syracuse University. Library. Special
+               Collections Research Center.</corpname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">General Cartoon Collection</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1870/1995" type="inclusive">1870-1995</unitdate>
+      <unitdate encodinganalog="245$g" label="Bulk Dates: " normal="1930/1949" type="bulk">1930-1949</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>3 linear
+            ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Original newspaper comic strip and
+            comics cartoons, editorial cartoons and magazine cartoons/illustrations representative
+            of the history of cartooning from the late 19th century to 1963; with some material from
+            the 1990s.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2670148</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>The 
+        
+        <emph render="bold">General Cartoon Collection</emph> is an artificial collection
+            bringing together samples of original work from a wide variety of cartoonists and
+            illustrators. </p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">General Cartoon Collection</emph> contains original newspaper
+            comic strip and comics cartoons, editorial cartoons and magazine cartoons/illustrations
+            representative of the history of cartooning from the late 19th century to the
+            late-1950s. Artists represented include Herblock, C. K. Berryman, Billy DeBeck, Bernhard
+            Gillam, Eugene "Zim" Zimmerman, Winsor McCay, T. E. Powers, Alex Raymond and many
+            others. There are also  unidentified cartoonists or unidentified art featured in this
+            collection, including items related to 
+        
+        <emph render="italic">Looney Tunes</emph>,
+            Pepsi-cola and Superman.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Items were sorted into 3 containers (based on size). Cartoons in each container are in
+            alphabetical order by artist name.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has collections of over one hundred cartoonists. Please refer to &subjindex;
+            for a complete listing.</p>
+    </relatedmaterial>
+    <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>A number of cartoons were separated into standalone collections, or transferred into existing collections, for example items from C.D. Batchelor, George Herriman, Carey Orr and others.</p>
+    </separatedmaterial>
+    <otherfindaid encodinganalog="555">
+      <head>Other Related Finding Aids</head>
+      <p>A partial set of cards containing titles, dates, captions, condition and other
+            information about some of the cartoons is located in the finding aids folder. It appears
+            to have been completed after receiving the collection, possibly by a staff member,
+            student or intern.</p>
+    </otherfindaid>
+    <!--Use archref, not extref, to link to related collections.-->
+      <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+
+         <subject encodinganalog="650" source="local">Art -- Cartoonists</subject><persname encodinganalog="600" source="lcnaf">Anderson, Jesse Sylvester, 1873-1966.</persname>
+         <persname encodinganalog="600" source="lcnaf">Bairnsfather, Bruce, 1887-1959.</persname>
+		 <persname encodinganalog="600" source="lcnaf">Bastian, Robert O.</persname><persname encodinganalog="600" source="lcnaf">Berryman, Clifford Kennedy, 1869-1949.</persname>
+		 <persname encodinganalog="600" source="lcnaf">Block, Herbert, 1909-2001.</persname>
+		 <persname encodinganalog="600" source="lcnaf">Gillam, Bernhard, 1856-1896.</persname>
+		 <persname encodinganalog="600" source="lcnaf">Peb, 1926-</persname><persname encodinganalog="600" source="lcnaf">Swan, Curt.</persname>
+		 <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+		 <!--<corpname encodinganalog="610" source="lcnaf">Special Collections Research Center.</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      
+      <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject>
+      <subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United
+            States.</subject>
+      <subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Comic books, strips, etc. -- United
+            States.</subject>
+      <subject encodinganalog="650" source="lcsh">Editorial cartoons -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Illustrators -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">World politics -- Caricatures and
+            cartoons.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+	  <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+      <genreform encodinganalog="655" source="aat">Editorial cartoons.</genreform>
+      <genreform encodinganalog="655" source="aat">Illustrations.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Illustrators.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p> Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p> General Cartoon Collection, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Majority purchased from Goodspeed's Bookshop, 1963.</p>
+         <p>Vet Anderson artwork (2 items), purchased, 2012.</p>
+      </acqinfo>
+
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <note>
+        <p>
+        
+        <!--replace "all" as unit date normal attribute when done for those that will have entire collection date range--></p>
+      </note>
+<c01 level="series"><did><unittitle>Cartoons</unittitle></did>
+   <c02><did><unittitle>Anderson, Vet (Jesse Sylvester)</unittitle></did>
+      <c03><did><unittitle>"Prepare a pathetic, heart-interest recitation—how the cow has gone dry and the horse halt, then having your tears on tap, turn 'em on"</unittitle><abstract>pen and ink on illustration board</abstract><unitdate normal="1870/1995" type="inclusive">undated</unitdate><container type="Oversize">2</container><physdesc><dimensions>24" x 18"</dimensions></physdesc></did></c03>		  
+      <c03><did><unittitle>"He speaks of masters. I know none."</unittitle><abstract>pen and ink on illustration board </abstract><unitdate normal="1870/1995" type="inclusive">undated</unitdate><container type="Oversize">2</container><physdesc><dimensions>19.5" x 14.25"</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Bairnsfather, Bruce</unittitle></did>
+      <c03><did><unittitle>Untitled</unittitle><abstract>original artwork; watercolor, paint and white pencil on pasteboard</abstract><unitdate normal="1930/1949" type="inclusive">undated</unitdate><container type="Oversize">2</container><physdesc><dimensions>14 ½'' x 21''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Bastian, Robert</unittitle></did>
+      <c03><did><unittitle>Untitled, JFK and inflation</unittitle><abstract>cartoon; charcoal and ink on paper </abstract><unitdate type="inclusive" normal="1961/1963">1961-1963</unitdate><container type="Oversize">1</container><physdesc><dimensions>14" x 17"</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Bateman, H. M.</unittitle></did>
+      <c03><did><unittitle>"The Chief's Eyes!", <emph render="italic">Punch</emph></unittitle><abstract>magazine illustration; pen and ink on illustration board </abstract><unitdate normal="1924-12-27" type="inclusive">27 Dec 1924</unitdate><container type="Oversize">1</container><physdesc><dimensions>11" x 16"</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Belloc, Piere (Peb)</unittitle></did>
+      <c03><did><unittitle>"Now Look What You Made Him Do!", <emph render="italic">Annenberg Syndicate</emph></unittitle><abstract>editorial cartoon; signed by Peb</abstract><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Oversize">1</container><physdesc><dimensions>11'' x 14''</dimensions></physdesc></did></c03>
+      <c03><did><unittitle>"Stand, Cowards! Be Not So Base As to Fly Before A Single Knight, Who Dares Encounter You All!", <emph render="italic">Annenberg Syndicate</emph></unittitle><abstract>editorial cartoon; signed by Peb</abstract><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Oversize">1</container><physdesc><dimensions>11'' x 14''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Berdanier, Paul Frederick</unittitle></did>
+      <c03><did><unittitle>"Where Does He Go From Here?"</unittitle><abstract>political cartoon; signed by Paul Berdanier; crayon, pen and ink onillustration board</abstract><unitdate normal="1940-06-08" type="inclusive">8 June 1940</unitdate><container type="Oversize">2</container><physdesc><dimensions>13'' x 22''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Berndt, Walter</unittitle></did>
+      <c03><did><unittitle>"Little Herby"</unittitle><abstract>comic strip daily; signed by Walter Berndt; pen and ink onillustration board </abstract><unitdate normal="1931-10-28" type="inclusive">28 Oct 1931</unitdate><container type="Oversize">2</container><physdesc><dimensions>6 ½''  x 20''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Berryman, C. K. (Clifford K.)</unittitle></did>
+      <c03><did><unittitle>"Chamberlain Says He Knows the Mine Secret", <emph render="italic">Washington EveningStar</emph></unittitle><abstract>editorial cartoon; inscribed and signed by C. K. Berryman; pen andink on illustration board </abstract><unitdate normal="1940-02" type="inclusive">Feb 1940</unitdate><container type="Oversize">1</container><physdesc><dimensions>13 ½'' x 14 ¼''</dimensions></physdesc></did></c03>
+      <c03><did><unittitle>"Headline Makers—But Not in Print!", <emph render="italic">Washington Evening Star</emph></unittitle><abstract>editorial cartoon; inscribed and signed as Jim Berryman; pen and inkon illustration board</abstract><unitdate normal="1939-12-31" type="inclusive">31 Dec 1939</unitdate><container type="Oversize">1</container><physdesc><dimensions>13 ½'' x 14 ¼''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Black, Oz</unittitle></did>
+      <c03><did><unittitle>"Here in Lincoln", <emph render="italic">Sunday Journal &amp; Star</emph></unittitle><abstract>original drawing; inscribed and signed by Oz Black</abstract><unitdate normal="1940-02-11" type="inclusive">11 Feb 1940</unitdate><container type="Oversize">3</container><physdesc><dimensions>22 ½'' x 23''</dimensions></physdesc><note><p>Newspaper clipping of cartoon also found in Box 3.</p></note></did></c03></c02>
+   <c02><did><unittitle>Block, Herb</unittitle><note><p>See <ref target="herblock">Herblock</ref>.</p></note></did>
+      </c02>
+   <c02><did><unittitle>Bradley, Luther</unittitle></did>
+      <c03><did><unittitle>"The Queen of May", <emph render="italic">Chicago Daily News</emph></unittitle><abstract>editorial cartoon; signed by Luther Bradley; pen and ink onillustration board</abstract><unitdate normal="1907-05-01" type="inclusive">1 May 1907</unitdate><container type="Oversize">1</container><physdesc><dimensions>14'' x 15''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Bradley and Edgington</unittitle></did>
+      <c03><did><unittitle>"Rex Morgan, M.D." [?]</unittitle><abstract>comic strip daily; pen and ink on illustration board</abstract><unitdate normal="1949-07-07" type="inclusive">7 Jul 1949</unitdate><container type="Oversize">2</container><physdesc><dimensions>21'' x 8''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Breger, Irv</unittitle></did>
+      <c03><did><unittitle>"All right, I'll tell you why I left my last book-keeping job—but you tell me why your book-keeper left this one!"</unittitle><abstract>magazine illustration; watercolor; pen and ink on illustrationboard</abstract><unitdate normal="1930/1949" type="inclusive">undated</unitdate><container type="Oversize">1</container><physdesc><dimensions> 9 ½'' x 11 ½''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Briggs</unittitle></did>
+      <c03><did><unittitle>"The Talkative Golfer"</unittitle><abstract>sketch; signed by Briggs; pen and ink on illustrationboard</abstract><unitdate normal="1930/1949" type="inclusive">undated</unitdate><container type="Oversize">2</container><physdesc><dimensions>  13'' x 17''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Brown, Edward Scott  (T. Brown)</unittitle></did>
+      <c03><did><unittitle>"The Haunted House", <emph render="italic"> New York Herald Tribune</emph></unittitle><abstract>political cartoon; signed by Brown; pen and ink on illustrationboard</abstract><unitdate normal="1930/1949" type="inclusive">undated</unitdate><container type="Oversize">2</container><physdesc><dimensions>   14'' x 17''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Bush, C. G.</unittitle></did>
+      <c03><did><unittitle>"Another Proof of Dreyfus' Innocence"</unittitle><abstract>political cartoon; signed by C.G. Bush; graphite, pen and ink onillustration board</abstract><unitdate normal="1894/1904" type="inclusive"> circa 1899</unitdate><container type="Oversize">3</container><physdesc><dimensions>19'' x 22''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Cassell, John</unittitle></did>
+      <c03><did><unittitle>"Untitled [man in top hat and ragamuffins]"</unittitle><abstract>original drawing; opaque white, brush, pen and ink on illustrationboard</abstract><unitdate normal="1890/1910" type="inclusive">1890-1910</unitdate><container type="Oversize">3</container><physdesc><dimensions>21 ¾'' x 18 ¼''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Caniff, Milton</unittitle></did>
+      <c03><did><unittitle>"Steve Canyon"</unittitle><abstract>comic strip daily; inscribed and signed by Milt Caniff; opaquewhite, brush, pen and ink on illustration board</abstract><unitdate normal="1956-09-26" type="inclusive">26 Sep 1956</unitdate><container type="Oversize">2</container><physdesc><dimensions>7 ¼'' x 22 ¾''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Chubb</unittitle></did>
+      <c03><did><unittitle>"After Thirteen Years"</unittitle><abstract>political cartoon; signed by Chubb; pen and ink on illustrationboard</abstract><unitdate normal="1931" type="inclusive">1931</unitdate><container type="Oversize">2</container><physdesc><dimensions> 14 ¾'' x 19'' </dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Collier, Nate</unittitle></did>
+      <c03><did><unittitle>"Hey! Take Your HandOff!"</unittitle><abstract>editorial cartoon; graphite, crayon and ink on illustrationboard</abstract><unitdate normal="1941" type="inclusive">1941</unitdate><container type="Oversize">1</container><physdesc><dimensions> 10'' x 12'' </dimensions></physdesc></did></c03></c02>
+   
+   <c02><did><unittitle>Conselman, Bill &amp; Plumb, Charlie</unittitle></did>
+      <c03><did><unittitle>"Ella Cinders",  United FeatureSyndicate</unittitle><abstract>comic strip daily; ink and pen on illustration board</abstract><unitdate normal="1938-09-09" type="inclusive">9 Sep 1938</unitdate><container type="Oversize">2</container><physdesc><dimensions>5 ¾'' x 22''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Davenport, Homer Calvin</unittitle></did>
+      <c03><did><unittitle>"The Food Trust" </unittitle><abstract>editorial cartoon; ink and pen on paper</abstract><unitdate normal="1895/1905" type="inclusive">circa 1900</unitdate><container type="Map-Case">107</container><physdesc><dimensions>25'' x 30½''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>DeBeck, Billy</unittitle></did>
+      <c03><did><unittitle>"Barney Google"</unittitle><abstract>comic strip daily; traces of graphite, blue pencil, pen and ink onillustration board</abstract><unitdate normal="1922/1949" type="inclusive">17 Feb (after 1922)</unitdate><container type="Oversize">2</container><physdesc><dimensions> 4 ¾'' x 17 ¾''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Donahey, William</unittitle></did>
+      <c03><did><unittitle>"Pay Day! Yeah?",  <emph render="italic">Cleveland-Plain Dealer</emph></unittitle><abstract>political cartoon; ink and pen on illustration board</abstract><unitdate normal="1930/1949" type="inclusive">undated</unitdate><container type="Oversize">2</container><physdesc><dimensions>13'' x 18''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Ehrhart</unittitle></did>
+      <c03><did><unittitle>Untitled, tramp and lady</unittitle><abstract>original drawing; ink and pen on illustration board</abstract><unitdate normal="1893-06-09" type="inclusive">9 Jun 1893</unitdate><container type="Oversize">2</container><physdesc><dimensions>15 ¼'' x 15 ¼''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Forrest, Hal</unittitle></did>
+      <c03><did><unittitle>"Tailspin Tommy,"<emph>Bell Syndicate</emph></unittitle><abstract>comic strip daily; pen and ink on illustration board</abstract><unitdate normal="1930" type="inclusive">1930</unitdate><unitdate normal="1930" type="inclusive">1930</unitdate><physdesc><extent>2 cartoons</extent></physdesc><container type="Oversize">2</container><physdesc><dimensions> 7 ¼ '' x 23''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Foster, R.</unittitle></did>
+      <c03><did><unittitle>"He had to do it!!"</unittitle><abstract>political cartoon;  traces of graphite, blue pencil, pen and ink onillustration board</abstract><unitdate normal="1940" type="inclusive">19</unitdate><unitdate normal="1940" type="inclusive">40</unitdate><container type="Oversize">1</container><physdesc><dimensions> 11'' x 14''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Gillam, Bernhard</unittitle></did>
+      <c03><did><unittitle>"Hubbell's Work"</unittitle><abstract>political cartoon; pen and ink on illustration board; drawing ismatted</abstract><unitdate normal="1875/1885" type="inclusive">circa 1880</unitdate><container type="Oversize">1</container><physdesc><dimensions>7 ¼'' x 8''</dimensions></physdesc></did></c03>
+      <c03><did><unittitle>[Mahdist rebellion],  <emph render="italic">Puck</emph></unittitle><abstract>political cartoon; pen and ink on illustration board</abstract><unitdate normal="1884/1885" type="inclusive">1884 or 1885</unitdate><container type="Oversize">1</container><physdesc><dimensions>6 ¾'' x 9''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Glackens, L. M.</unittitle></did>
+      <c03><did><unittitle>"In the Republican Dark-Room, An Amateur Photographer Who Spoils Good Plates by Using Bad Chemicals," <emph render="italic">Puck</emph></unittitle><abstract> political cartoon; pen and ink on illustration board</abstract><unitdate normal="1910" type="inclusive">1910</unitdate><container type="Oversize">2</container><physdesc><dimensions> 16 ¼ '' x 20''</dimensions></physdesc></did><note><p> March 2 1910 edition of Puck is also in Box 2.</p></note></c03></c02>
+   <c02><did><unittitle>Grissinger, Harry</unittitle></did>
+      <c03><did><unittitle>"Miss Parker cleared her throat,'You don't need to lie, Mr. Briggs,' she said sternly."</unittitle><abstract> original drawing; inscribed and signed by Grissinger; traces ofgraphite, watercolor and ink on illustration board</abstract><unitdate normal="1930/1949" type="inclusive">undated</unitdate><container type="Oversize">3</container><physdesc><dimensions> 17 ¾'' x 20''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Haney, R. T.</unittitle></did>
+      <c03><did><unittitle>"The Broken Pledge"</unittitle><abstract>editorial cartoon; pen and ink on illustration board</abstract><unitdate normal="1940-06-24" type="inclusive"> 24 Jun 1940</unitdate><container type="Oversize">2</container><physdesc><dimensions> 14 ½'' x 18 ½''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Hanny, William</unittitle></did>
+      <c03><did><unittitle>"A Little Road Information"</unittitle><abstract> editorial cartoon; pen and ink on illustration board</abstract><unitdate normal="1930/1949" type="inclusive"> undated</unitdate><container type="Oversize">2</container><physdesc><dimensions> 14'' x 17 ½''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Harman, Fred</unittitle></did>
+      <c03><did><unittitle>"Red Ryder"</unittitle><abstract>comic strip daily; pen and ink on illustration board</abstract><unitdate normal="1939-10-31" type="inclusive"> 31 Oct 1939</unitdate><container type="Oversize">2</container><physdesc><dimensions> 6 ¼'' x 22''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Hayes, Geoff</unittitle></did>
+      <c03><did><unittitle>"Best Wishes!" from characters Juneand Ted,  <emph> Bell Syndicate</emph></unittitle><abstract>comic strip; pen and ink on illustration board</abstract><unitdate normal="1930/1949" type="inclusive"> undated</unitdate><container type="Oversize">2</container><physdesc><dimensions> 5 ¼'' x 20''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Henderson</unittitle></did>
+      <c03><did><unittitle>"Spring Design,"<emph render="italic">Sunday Journal</emph></unittitle><abstract>editorial cartoon; pen and ink on illustration board</abstract><unitdate normal="1930/1949" type="inclusive"> undated</unitdate><container type="Oversize">2</container><physdesc><dimensions> 14 ½'' x 17''</dimensions></physdesc></did></c03></c02>
+   <c02 id="herblock"><did><unittitle>Herblock</unittitle></did>
+      <c03><did><unittitle>"This would beat the Bonneville Dam Ceremony"</unittitle><abstract>editorial cartoon; graphite and ink on illustration board</abstract><unitdate normal="1937" type="inclusive">1937</unitdate><container type="Oversize">2</container><physdesc><dimensions>14'' x 17''</dimensions></physdesc></did></c03></c02><c02><did><unittitle>Howard, Oscar</unittitle></did>
+      <c03><did><unittitle>"Untitled [tavern girl],  "<emph render="italic">New York Daily News</emph>[?]</unittitle><abstract>illustration; crayon, pen and ink on illustration board</abstract><unitdate normal="1932" type="inclusive">1932</unitdate><container type="Oversize">2</container><physdesc><dimensions> 14'' x 17''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Johnson, Charles Howard</unittitle></did>
+      <c03><did><unittitle>"St. Valentine Number,"<emph render="italic">Life</emph> magazine cover</unittitle><abstract>original drawing; traces if graphite, watercolor and ink onillustration board</abstract><unitdate normal="1888/1898" type="inclusive"> circa 1893</unitdate><container type="Oversize">3</container><physdesc><dimensions> 20'' x 25 ½''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Johnson, Vic</unittitle></did>
+      <c03><did><unittitle>McGovern / Vietnam cartoon</unittitle><abstract>original drawing; editorial cartoon; chalk on paper</abstract><container type="Oversize">1</container></did></c03></c02>
+   <c02><did><unittitle>Johnston, Earl S.</unittitle></did>
+      <c03><did><unittitle>"He Seems to Be in Earnest Now,"<emph render="italic">Arkansas Democrat</emph>[?]</unittitle><abstract>editorial cartoon; inscribed and signed by Earle S. Johnston; tracesof graphite, crayon, pen and ink on illustration board</abstract><unitdate normal="1930/1939" type="inclusive">1930s</unitdate><container type="Oversize">1</container><physdesc><dimensions>11'' x 15 ¼''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Keys, Larry</unittitle></did>
+      <c03><did><unittitle>"The Same Old Snipe Hunt"</unittitle><abstract>editorial cartoon; traces of graphite, crayon and ink on illustrationboard</abstract><unitdate normal="1930/1949" type="inclusive">undated</unitdate><container type="Oversize">3</container><physdesc><dimensions>19 ¼'' x 22''</dimensions></physdesc></did></c03></c02>
+   
+   <c02><did><unittitle>Larimer, Harry</unittitle></did>
+      <c03><did><unittitle>"The Greeting She Would Like Most to Receive,"<emph render="italic">News-Sentinel</emph></unittitle><abstract>editorial cartoon; inscribed and signed by Harry Larimer; pen and inkon illustration board</abstract><unitdate normal="1940" type="inclusive">1940</unitdate><container type="Oversize">2</container><physdesc><dimensions>14'' x 17 ½''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Lehti, John</unittitle></did>
+      <c03><did><unittitle>"Tales from the Great Book, Noah's Ark"</unittitle><abstract>original cartoon; inscribed and signed by Lehti; pen and ink onillustration board</abstract><unitdate normal="1930/1949" type="inclusive">26 May</unitdate><container type="Oversize">3</container><physdesc><dimensions>14'' x 17 ½''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Lewis, R. A.</unittitle></did>
+      <c03><did><unittitle>"I Am Monarch of All That I Survey,"<emph render="italic">Milwaukee Journal</emph></unittitle><abstract>editorial cartoon; traces of graphite, opaque white, crayon, pen andink on illustration board</abstract><unitdate normal="1930/1939" type="inclusive">1930s</unitdate><container type="Oversize">1</container><physdesc><dimensions>11'' x 14 ¼''</dimensions></physdesc></did></c03>
+      <c03><did><unittitle>"Victory in Spain,"<emph render="italic">Milwaukee Journal</emph></unittitle><abstract>editorial cartoon; traces of graphite, opaque white, crayon, pen andink on illustration board</abstract><unitdate normal="1939" type="inclusive">1939</unitdate><container type="Oversize">1</container><physdesc><dimensions>11'' x 14 ¼''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Loring, Paul</unittitle></did>
+      <c03><did><unittitle>"You May Need a Round Trip Ticket, Big Boy,"<emph render="italic">Providence Evening Bulletin</emph></unittitle><abstract>editorial cartoon; blue pencil, opaque white, brush, pen and ink onillustration board </abstract><unitdate normal="1934/1944" type="inclusive">circa 1939</unitdate><container type="Oversize">1</container><physdesc><dimensions> 13'' x 13''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Lubbers, Bob</unittitle></did>
+      <c03><did><unittitle><emph render="italic">Long Sam</emph></unittitle><abstract>comic strip daily; inscribed and signed by BobLubbers; pen and ink on illustration board</abstract><unitdate normal="1957-03-08" type="inclusive">8 Mar 1957</unitdate><container type="Oversize">2</container><physdesc><dimensions> 6 ½'' x 20 ¾''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Maier, Carl</unittitle></did>
+      <c03><did><unittitle>Untitled, three sketches for comic feature</unittitle><abstract>signed by Maier; graphite, pen and ink on illustrationboard</abstract><unitdate normal="1930/1949" type="inclusive">undated</unitdate><container type="Oversize">2</container><physdesc><dimensions> 17 ¾'' x 21 ½''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Maxwell, Gee Tee (George T.)</unittitle></did>
+      <c03><did><unittitle>"But, Gosh-h-h, Who's Gonna Pay for 'Em?"</unittitle><abstract>editorial cartoon; crayon, pen and ink on illustrationboard</abstract><unitdate normal="1935/1939" type="inclusive">late 1930s</unitdate><container type="Oversize">1</container><physdesc><dimensions>14 ½'' x 17 ¼'' </dimensions></physdesc></did></c03>
+      <c03><did><unittitle>"Pruning Time"</unittitle><abstract>editorial cartoon; inscribed and signed by Gee Tee Maxwell;crayon, pen and ink on illustration board </abstract><unitdate normal="1940" type="inclusive">1940</unitdate><container type="Oversize">1</container><physdesc><dimensions>11'' x 11 ½''</dimensions></physdesc></did></c03>
+      <c03><did><unittitle>"Why Of Course It's Not Political!"</unittitle><abstract>editorial cartoon; inscribed and signed by Gee Tee Maxwell; crayon,opaque white, pen and ink on illustration board </abstract><unitdate normal="1940" type="inclusive">1940</unitdate><container type="Oversize">1</container><physdesc><dimensions> 11'' x 11 ½'' </dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>McCarthy, Father Justin</unittitle></did>
+      <c03><did><unittitle><emph render="italic">Brother Sebastian</emph> panel</unittitle><abstract>comic panel; watercolor and ink on illustration board; matted</abstract><unitdate normal="1957" type="inclusive">1957</unitdate><container type="Oversize">1</container><physdesc><dimensions> 7'' x 8''</dimensions></physdesc><note><p>Series ran in Friar magazine and was syndicated until 1986.</p></note></did></c03></c02>
+   <c02><did><unittitle>McCay, Winsor</unittitle></did>
+      <c03><did><unittitle>Untitled, multiple dwellings bill</unittitle><abstract>editorial cartoon; graphite, pen and ink on illustration board; matted</abstract><unitdate normal="1930/1949" type="inclusive">undated</unitdate><container type="Oversize">2</container><physdesc><dimensions> 9'' x 17 ¼''</dimensions></physdesc></did></c03></c02>
+   
+   <c02><did><unittitle>Nelan, Charles</unittitle></did>
+      <c03><did><unittitle> Untitled, "Beware of..."</unittitle><abstract>political cartoon; pen and ink on illustration board</abstract><unitdate normal="1865/1875" type="inclusive">circa 1870</unitdate><container type="Oversize">3</container><physdesc><dimensions>18 ½'' x 17 ½''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Nofziger, Ed</unittitle></did>
+      <c03><did><unittitle>Untitled, crane with neck tied in knot</unittitle><abstract>Magazine illustration; inscribed and signed by Ed Nofziger;watercolor, pen and ink on illustration board</abstract><unitdate normal="1939-06-14" type="inclusive">14 Jun 1939</unitdate><container type="Oversize">2</container><physdesc><dimensions>7 ½'' x 17'' </dimensions></physdesc></did><note><p>Probably appeared in the Saturday Evening Post .</p></note></c03></c02>
+   <c02><did><unittitle>Nor, E.</unittitle></did>
+      <c03><did><unittitle>Untitled, small snake wringing neck of large snake</unittitle><abstract>original comic cartoon; watercolor and ink on illustration board</abstract><unitdate normal="1930/1949" type="inclusive">undated</unitdate><container type="Oversize">2</container><physdesc><dimensions>7 ½'' x 17'' </dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Packer, Fred</unittitle></did>
+      <c03><did><unittitle type="">The Winnah</unittitle><abstract>editorial cartoon; crayon, opaque white, pen and ink on illustrationboard</abstract><unitdate normal="1940" type="inclusive">1940</unitdate><container type="Oversize">2</container><physdesc><dimensions>14 ¾'' x 18'' </dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Page, Grover</unittitle></did>
+      <c03><did><unittitle>The Trail Blazer and the Blaze Trailer, <emph render="italic">Courier Journal</emph>, Louisville, Kentucky</unittitle><abstract>editorial cartoon; crayon on illustration board</abstract><unitdate normal="1932-07-10" type="inclusive">10 Jul 1932</unitdate><container type="Oversize">2</container><physdesc><dimensions>15'' x 20'' </dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Patzer, George L.</unittitle></did>
+      <c03><did><unittitle>Next?</unittitle><abstract>editorial cartoon; inscribed and signed by Patzer; pen and ink onillustration board</abstract><unitdate normal="1940" type="inclusive">1940</unitdate><container type="Oversize">2</container><physdesc><dimensions>15'' x 20'' </dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Pease, Lucius Curtis (Lute Pease)</unittitle></did>
+      <c03><did><unittitle>"Plain Evidence,"<emph render="italic">Newark Evening News</emph></unittitle><abstract>editorial cartoon; crayon, opaque white, pen and ink on illustrationboard</abstract><unitdate normal="1929/1939" type="inclusive">circa 1934</unitdate><container type="Oversize">1</container><physdesc><dimensions>11 ¼'' x 14 ¼''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Powers, T. E.</unittitle></did>
+      <c03><did><unittitle>"What Have You Got for Tomorrow's Paper?," <emph render="italic">New York Journal</emph></unittitle><abstract>editorial cartoon; inscribed and signed by T.E. Powers; pen and inkon illustration board</abstract><unitdate normal="1913/1923" type="inclusive">circa 1918</unitdate><container type="Oversize">1</container><physdesc><dimensions>9 ½'' x 11 ¼''</dimensions></physdesc></did><note><p>Reprinted in The New York Daily News, March 23, 1941. Newspaper version alsoin Box 1.</p></note></c03></c02>
+   <c02><did><unittitle>Pratt, Newton</unittitle></did>
+      <c03><did><unittitle>"Valor Is Not Enough,"<emph render="italic">Sacramento Bee</emph></unittitle><unitdate normal="1934/1944" type="inclusive">circa 1939</unitdate><abstract>editorial cartoon; traces of graphite, opaque white, crayon, pen andink on illustration board</abstract><container type="Oversize">1</container><physdesc><dimensions>11 ¼'' x 15''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Pughe, J. S.</unittitle></did>
+      <c03><did><unittitle>"International Commercial Race," <emph render="italic">Puck</emph></unittitle><unitdate normal="1894-07-09" type="inclusive">9 Jul 1894</unitdate><abstract>political cartoon; pen and ink on illustration board</abstract><container type="Oversize">1</container><physdesc><dimensions> 11 ½'' x 11 ½''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Raymond, Alex</unittitle></did>
+      <c03><did><unittitle>Jungle Jim </unittitle><unitdate normal="1938-07-17" type="inclusive">17 Jul 1938</unitdate><abstract>panel cartoon; pen and ink on illustration board</abstract><container type="Oversize">3</container><physdesc><dimensions> 25 ¼'' x 12 ¼''</dimensions></physdesc></did></c03></c02><c02><did><unittitle>Rosol, John</unittitle></did><c03><did><unittitle>Here and There</unittitle><unitdate normal="1941" type="inclusive">1941</unitdate><abstract>several daily strips on newsprint, both sides; possibly a galley proof</abstract><container type="Oversize">3</container><physdesc><dimensions>24'' x 16''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Satterfield, Robert W.</unittitle></did>
+      <c03><did><unittitle>The Killjoy</unittitle><unitdate normal="1901/2000" type="inclusive">early 20th century</unitdate><abstract> illustration; pen and ink on illustration board</abstract><container type="Oversize">1</container><physdesc><dimensions>13'' x 15 ½''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Shaw, Dick</unittitle></did>
+      <c03><did><unittitle>"I'm worried! That circus train shouldda been by here fifteen minutes ago!",  <emph render="italic">Saturday Evening Post</emph></unittitle><unitdate normal="1930/1949" type="inclusive">undated</unitdate><abstract>magazine illustration; traces of graphite, opaque white, pen and inkon illustration board; includes clipping of printed version</abstract><container type="Oversize">1</container><physdesc><dimensions>9 ½'' x 12 ¼''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Shoemaker, Vaughn</unittitle></did>
+      <c03><did><unittitle>"Now Beware of the Trojan Market Basket"</unittitle><unitdate normal="1942" type="inclusive">1942</unitdate><abstract>editorial cartoon; inscribed and signed by Shoemaker; traces of graphite, opaque white, pen and ink on illustration board </abstract><container type="Oversize">2</container><physdesc><dimensions>16 ¾'' x 20''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Smith, Dorman H.</unittitle></did>
+      <c03><did><unittitle>"Front Seat - In a position to lead the parade"</unittitle><unitdate normal="1940/1949" type="inclusive">1940s</unitdate><abstract>editorial cartoon; traces of graphite, crayon, opaque white and ink </abstract><container type="Oversize">3</container><physdesc><dimensions>11 ¼'' x 28''</dimensions></physdesc></did></c03>
+      <c03><did><unittitle>"Nanny Grabbing - A little fun in Washington"</unittitle><unitdate normal="1940/1949" type="inclusive">1940s</unitdate><abstract>editorial cartoon; traces of graphite, crayon, opaque white and ink </abstract><container type="Oversize">3</container><physdesc><dimensions>11 ¼'' x 28''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Summers, William Henry</unittitle></did>
+      <c03><did><unittitle>"Chute Brigade Over Philadelphia,"<emph render="italic">The Cleveland News</emph></unittitle><unitdate normal="1940-06-22" type="inclusive">22 Jun 1940</unitdate><abstract>editorial cartoon; crayon, blue, opaque white and ink on illustrationboard</abstract><container type="Oversize">3</container><physdesc><dimensions>22 ½'' x 28''</dimensions></physdesc></did></c03>
+      <c03><did><unittitle>"Il Duce Jumps In,"<emph render="italic">The Cleveland News</emph></unittitle><unitdate normal="1940-06" type="inclusive">Jun 1940</unitdate><abstract>editorial cartoon; crayon, blue, opaque white and ink on illustrationboard</abstract><container type="Oversize">3</container><physdesc><dimensions>22 ½'' x 28''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Swan, Curt</unittitle></did>
+      <c03><did><unittitle>Untitled Superman panel, Action Comics/DC National Comics </unittitle><unitdate normal="1930/1949" type="inclusive">undated</unitdate><abstract>panel comic; #325; pen and ink on illustration board</abstract><container type="Oversize">2</container><physdesc><dimensions>13'' x 21''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Taylor, R.</unittitle></did>
+      <c03><did><unittitle>"Port of Nassau, Bahamas"</unittitle><unitdate normal="1979" type="inclusive">1979</unitdate><abstract>reproduction, signed and inscribed "to Richard 3/19/79"</abstract><container type="Oversize">2</container></did></c03></c02>
+   <c02><did><unittitle>Taylor, Walter</unittitle></did>
+      <c03><did><unittitle>"Why, Darling, can't you guess?", <emph render="italic">The New Yorker</emph></unittitle><unitdate normal="1930/1949" type="inclusive">undated</unitdate><abstract>comic cartoon; watercolor,  pen and ink on illustration board; matted</abstract><container type="Oversize">2</container><physdesc><dimensions>7 ¼'' x 10''</dimensions></physdesc></did></c03></c02><c02><did><unittitle>Victor</unittitle></did>
+      <c03><did><unittitle>"The Gambling Mania: Uncle Sam in the hands of thieves," <emph render="italic">Judge</emph></unittitle><unitdate normal="1930/1949" type="inclusive">undated</unitdate><abstract>magazine clipping; color illustration</abstract><container type="Oversize">2</container></did></c03></c02>
+   <c02><did><unittitle>Walker, Ryan</unittitle></did>
+      <c03><did><unittitle>"The Laborer"</unittitle><unitdate normal="1910" type="inclusive">1910</unitdate><abstract>original cartoon; graphite, pen and ink on illustration board</abstract><container type="Oversize">2</container><physdesc><dimensions>12'' x 12''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Webster, H. T. (Harold Tucker)</unittitle></did>
+      <c03><did><unittitle>"Mgr. Selee's Real Difficulty Will Be to Retain His Pitchers"</unittitle><unitdate normal="1902/1905" type="inclusive">1902-1905</unitdate><abstract>sports cartoon; pen and ink on illustration board</abstract><container type="Oversize">1</container><physdesc><dimensions>9'' x 14''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Zimmerman, Eugene (Zim)</unittitle></did>
+      <c03><did><unittitle>"The Diary of Dauntless Dick, The Hobo Hound"</unittitle><unitdate normal="1930/1949" type="inclusive">undated</unitdate><abstract>panel cartoon for comic strip; traces of graphite, pen and ink on illustration board</abstract><container type="Oversize">2</container><physdesc><dimensions>15'' x 22''</dimensions></physdesc></did></c03></c02>
+   <c02><did><unittitle>Unidentified </unittitle></did>
+      <c03><did><unittitle><emph render="italic">Looney Tunes</emph>,  Warner Brothers Cartoons, Inc.</unittitle><abstract>original cartoon featuring Bugs Bunny and Elmer Fudd; pen and ink on illustration board</abstract><unitdate normal="1949-06-11" type="inclusive">11 Jun 1949</unitdate><physdesc><dimensions>23'' x 8''</dimensions></physdesc><container type="Oversize">2</container></did></c03>
+      <c03><did><unittitle>Sketchbook</unittitle><unitdate normal="1930/1949" type="inclusive">undated</unitdate><abstract>spiral-bound sketchbook with a number of original ink drawings and cartoons</abstract><physdesc><dimensions>9" x 11"</dimensions></physdesc><container type="Box">1</container></did></c03><c03><did><unittitle>"The C Bells"</unittitle><abstract>small pen-and-ink cartoon of man with top hat and monocle, large bell, surrounded by elves[?], signed with interlocked initials "PC" or "CP"</abstract><unitdate normal="1930/1949" type="inclusive">undated</unitdate><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Untitled [Pepsi-cola]</unittitle><abstract>comic strip; pen and ink on illustration board</abstract><unitdate normal="1930/1949" type="inclusive">undated</unitdate><physdesc><dimensions>6'' x 18'' </dimensions></physdesc><container type="Oversize">2</container></did></c03>
+      <c03><did><unittitle>Untitled [from Newspaper Enterprise Association Service]</unittitle><abstract>comic strip featuring characters Pug and Bertie; pen and ink onillustration board</abstract><unitdate normal="1948-07-06" type="inclusive">6 Jul 1948</unitdate><container type="Oversize">1</container><physdesc><dimensions>10'' x 12'' </dimensions></physdesc></did></c03></c02></c01>
+	<c01 level="series"><did><unittitle>Printed material</unittitle></did>
+      <c02><did><unittitle>Book, <emph render="italic">Blue Book</emph>, King Features Syndicate comics </unittitle><unitdate normal="1946" type="inclusive">1946</unitdate><container type="Oversize">3</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>National Cartoonists Society</unittitle>
+                  <abstract>14th Annual Reuben Awards pamphlet, 16th Annual Reuben Awards "year
+                     book"</abstract>
+                  <unitdate normal="1960-04-26" type="inclusive">26 Apr 1960</unitdate>
+                  <unitdate normal="1962-04-23" type="inclusive">23 Apr 1962</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+		<c02><did><unittitle>Newsletter, <name>Comic Art Studies</name>, from Russel B. Nye Popular Culture Collection</unittitle><abstract>issues 50, 53, 54, 55</abstract><unitdate normal="1993/1995" type="inclusive">1993-1995</unitdate><container type="Box">1</container></did></c02>
+	</c01>
+      
+    </dsc>
+  </archdesc>
+</ead>

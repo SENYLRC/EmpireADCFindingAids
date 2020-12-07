@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008--><!--Revised standard blurb for related material -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="stanley_l" mainagencycode="NSyU">stanley_l</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Lee W. Stanley Papers</titleproper>
+        <subtitle>An inventory of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">EF</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1968-06-07">7 June 1968</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>MD
+        
+        <date normal="2008-12-18">18 Dec 2008</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>18 Dec 2008 - converted to EAD (MD)</item>
+        <item>19 Nov 2009 - inventory added (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Stanley, Lee Wright</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Lee W. Stanley Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1906/1964" type="inclusive">1906-1964</unitdate>
+      <unitdate encodinganalog="245$g" label="Bulk Dates: " normal="1930/1957" type="bulk">1930-1957</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Original cartoons, proofs, newspaper clippings, photos 
+		 and published material of the American cartoonist, most from his syndicated panel "The Old Home Town."</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2653502</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>, with one item in 
+        
+        <language langcode="fre">French</language>.
+         </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Lee Wright Stanley (b. 1885) was an American cartoonist and creator of the comic strip 
+	  
+        
+        <emph render="italic">The Old Home Town</emph>.  </p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Lee W. Stanley Papers</emph> contains cartoons (original art and proof sheets), memorabilia, and printed material.</p><p>The vast majority of <emph render="bold">Cartoons</emph> consist of original art and proof sheets for Stanley's syndicated one-panel <emph render="italic">The Old Home Town</emph> (1930-1964).  A <extref href="stanley_l_inv.pdf">detailed listing of the exact dates</extref> for which we have original art is available.  The proof sheets, which are in two different sizes, each contain one week's worth of    panels (Monday through Saturday); there is no detailed listing for the dates of the proof sheets but in most cases the entire year is present.   The few other items in this series are original art for a few political cartoons relating to conventions (1912 and 1928) and some miscellaneous cartoons.</p><p><emph render="bold">Memorabilia</emph> contains clippings about Stanley, a biographical sketch and essay on his career, and photographs of Stanley and his wife, Harriet, who assisted him on <emph render="italic">The Old Home Town</emph>.</p><p><emph render="bold">Printed material</emph> contains clippings of Stanley's work, including some World War I cartoons, and a booklet entitled "Guide to Good Humor," produced and illustrated by Stanley and several other cartoonists.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>All other material is in alphabetical order.  Within the cartoon series, proof sheets are 
+		 arranged in chronological order.  </p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has collections of over one hundred cartoonists. Please refer to &subjindex; for a 
+		 complete listing.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <persname encodinganalog="600" source="lcnaf">Stanley, Lee Wright.</persname>
+      <title encodinganalog="630" rules="aacr2" source="local">Old Home Town (comic strip)</title>
+      <subject encodinganalog="650" source="local">Art -- Cartoonists</subject>
+      <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject>
+      <subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject>
+		<subject encodinganalog="650" source="lcsh">Mountain people -- Caricatures and cartoons.</subject>
+      <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+		<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+		<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+		<genreform encodinganalog="655" source="aat">Proofs (printed matter)</genreform>
+      <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Lee W. Stanley Papers, 
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname>Lee W. Stanley</persname>, 1967.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Cartoons</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>"The Old Home Town"</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Character sheets</unittitle>
+              <abstract>photocopies, showing all the characters from the strip</abstract>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Original art</unittitle>
+              <physdesc>
+                <dimensions>11" x 11"</dimensions>
+              </physdesc>
+            </did>
+            <note><p>Click <extref href="stanley_l_inv.pdf">here</extref> for detailed inventory.</p></note><c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1930" type="inclusive">1930</unitdate>
+                </unittitle>
+                <physdesc>
+                  <dimensions> 13" x 14.5"</dimensions>
+                </physdesc>
+                <container type="Oversize">8</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1931/1935" type="inclusive">1931-1935</unitdate>
+                </unittitle>
+                <container type="Oversize">1</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1936/1940" type="inclusive">1936-1940, </unitdate>
+                  <unitdate normal="1942" type="inclusive">1942, </unitdate>
+                  <unitdate normal="1945" type="inclusive">1945, </unitdate>
+                  <unitdate normal="1947/1948" type="inclusive">1947-1948, </unitdate>
+                  <unitdate normal="1951" type="inclusive">1951, </unitdate><unitdate normal="1958" type="inclusive">1958</unitdate>
+                </unittitle>
+                <container type="Oversize">2</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1959" type="inclusive">1959</unitdate>
+                </unittitle>
+                <container type="Oversize">3</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1960-01/1961-06" type="inclusive">1960-Jun 1961</unitdate>
+                </unittitle>
+                <container type="Oversize">4</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1961-07/1962-12" type="inclusive">Jul 1961-1962</unitdate>
+                </unittitle>
+                <container type="Oversize">5</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Proof sheets</unittitle>
+              <abstract>most on newsprint, two different sizes</abstract>
+            </did>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1926" type="inclusive">1926</unitdate> </unittitle>
+                <physdesc>
+                  <dimensions>10" x 14"</dimensions>
+                </physdesc>
+                <container type="Box">1</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1937/1944" type="inclusive">1937-1944</unitdate>
+                </unittitle>
+                <physdesc>
+                  <dimensions>14" x 20"</dimensions>
+                </physdesc><container type="Oversize">6</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1944" type="inclusive">1944</unitdate>
+                </unittitle>
+                <physdesc>
+                  <dimensions>10" x 14"</dimensions>
+                </physdesc>
+                <container type="Box">1</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1945" type="inclusive">1945</unitdate>
+                </unittitle>
+                <physdesc>
+                  <dimensions>10" x 14"</dimensions>
+                </physdesc>
+                <container type="Box">1</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1945/1957" type="inclusive">1945-1957</unitdate>
+                </unittitle>
+                <physdesc>
+                  <dimensions>14" x 20"</dimensions>
+                </physdesc><container type="Oversize">7</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1948/1962" type="inclusive">1948-1962</unitdate>
+                </unittitle>
+                <physdesc>
+                  <extent>15 folders</extent>
+                  <dimensions>10" x 14"</dimensions>
+                </physdesc>
+                <container type="Box">1</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <unitdate normal="1963/1964" type="inclusive">1963-1964</unitdate>
+                </unittitle>
+                <physdesc>
+                  <extent>2 folders</extent>
+                  <dimensions>10" x 14"</dimensions>
+                </physdesc>
+                <container type="Box">2</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Political conventions</unittitle>
+            <abstract>original art</abstract>
+            <unitdate normal="1912" type="inclusive">1912, </unitdate>
+            <unitdate normal="1928" type="inclusive">1928</unitdate>
+            <container type="Oversize">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous cartoons</unittitle>
+            <abstract>original art</abstract>
+            <unitdate normal="1906/1907" type="inclusive">1906-1907, </unitdate>
+            <unitdate normal="1930/1957" type="inclusive">undated</unitdate>
+            <container type="Oversize">8</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Memorabilia</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Clippings about</unittitle>
+            <unitdate normal="1928" type="inclusive">1928, </unitdate>
+            <unitdate normal="1930" type="inclusive">1930, </unitdate>
+            <unitdate normal="1957" type="inclusive">1957, </unitdate>
+            <unitdate normal="1963" type="inclusive">1963, </unitdate>
+            <unitdate normal="1930/1957" type="inclusive">undated</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Lee Stanley, Cartoonist"</unittitle>
+            <unitdate normal="1986" type="inclusive">1986</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs of Stanley, family, friends</unittitle>
+            <unitdate normal="1923" type="inclusive">1923, </unitdate>
+            <unitdate normal="1927" type="inclusive">1927, </unitdate>
+            <unitdate normal="1949" type="inclusive">1949, </unitdate>
+            <unitdate normal="1952" type="inclusive">1952, </unitdate>
+            <unitdate normal="1950" type="inclusive">1950, </unitdate>
+            <unitdate normal="1963" type="inclusive">1963</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Printed material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Cleveland Press</emph> clippings</unittitle>
+            <unitdate normal="1913" type="inclusive">1913</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Guide to Good Humor"</unittitle>
+            <unitdate normal="1945" type="inclusive">1945</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">LIFE</emph> magazine cartoons</unittitle>
+            <unitdate normal="1902/1903" type="inclusive">1902-1903</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>World War I cartoons</unittitle>
+            <unitdate normal="1915/1918" type="inclusive">1915 and later</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

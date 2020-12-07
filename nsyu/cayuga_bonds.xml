@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="cayuga_bonds">cayuga_bonds</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Cayuga County Register of Bonds</titleproper>
+            <subtitle>An inventory of the item at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-01-06" encodinganalog="Date">6 Jan 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2011-01-06">6 Jan 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>17 Oct 2018 - rehoused (MS)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">Cayuga County (N.Y.). -- Board of Superivisors</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Cayuga County Register of Bonds</unittitle>
+         <unitdate encodinganalog="245$f" normal="1862/1902" type="inclusive" label="Inclusive Dates: ">1862-1902</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 volume.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Record of bonds issued by the Cayuga County (N.Y.) Board of Supervisors, for various purposes.   Records inclued to whom issued, town of residence, date issued, amount, and interest paid.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3192477</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Cayuga County is located in the state of New York, in the west central area known as the 
+		Finger Lakes, bordering Lake Ontario. Originally formed in 1799, the county was named for the 
+		Native American tribe, a member of the Iroquois Confederation.  Counties in the area split and 
+		reformed several times over the years; Cayuga County as it is today was formed in 1817.  The 
+		county seat includes the Montezuma Wildlife Refuge and the county seat is at Auburn; other towns 
+		within the county's border include Cato, Meridian, Scipio, Moravia, Ledyard, Ira and Conquest.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Cayuga County Register of Bonds</emph> consists of one large 
+			volume, in which are recorded the bonds issued by the Cayuga County Board of Supervisors over 
+			a period of forty years.   Each series (up to Bonds Series 8) is listed separately; in 
+			addition, the book records bonds issued for a particular purpose such as a Seneca River Bridge 
+			Loan (1866-1871) and a New Jail Loan (1890-1895).</p>
+			
+			<p>For each bond, the book records the 
+			date and amount of issue, the purchaser (and in some cases his or her town of residence), the 
+			date and amount of regular interest payments, and the principal paid at the end of the term.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Single volume.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has extensive holdings related to Central New York politics, governance and 
+			public administration.  Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+		<!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">New York State</subject>
+			<subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+			<!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Cayuga County (N.Y.). -- Board of Superivisors</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Municipal bonds -- New York (State)</subject>
+			<subject encodinganalog="650" source="lcsh">Municipal finance -- Accounting.</subject>
+         <geogname encodinganalog="651" source="lcsh">Cayuga County (N.Y.) -- History -- 19th century.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Cayuga County (N.Y.) -- Politics and government -- 19th century.</geogname>
+         <genreform encodinganalog="655" source="aat">	Journals (accounts)</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Cayuga County Register of Bonds,  <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2010.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Financial papers</unittitle></did>
+               <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+               <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+            <c02><did><unittitle>Record of bonds issued by Cayuga County Board of Supervisors</unittitle><unitdate normal="1862/1902" type="inclusive">1862-1902</unitdate><container type="Oversize">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

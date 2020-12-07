@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.10, 22 May 2008-->
+<!-- Added standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="ben_buckhurst">ben_buckhurst</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Ben Buckhurst Chronicle</titleproper>
+            <subtitle>An  inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">KM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1997-02" encodinganalog="Date">Feb 1997</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-10-07">7 Oct 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Powell, Alice.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Ben Buckhurst Chronicle</unittitle>
+         <unitdate encodinganalog="245$f" normal="1862/1867" type="inclusive" label="Inclusive Dates: ">1862-1867</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>33 issues</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">33 issues of a monthly manuscript of family news and drawings from the Powell family of Kent, England.  "Ben Buckhurst" refers to Buckhurst Hill, where the family lived, "ben" being the Scottish word for hill or mountain.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2639540</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The Powells were a Victorian country family of Kent, England.   Brothers David, Baden, and James Powell between 
+	  them had eight sons, all of whom in turn had large families.   Baden was an Oxford professor of geometry and authority 
+	  on radiation; his son Robert became the first Baron Baden-Powell of Gilway and founder of the Boy Scouts.   Nathaniel 
+	  Powell and his wife Agnes lived at Buckhurst Hill together with their two sons and seven daughters.  </p>
+	  
+	  <p>Nathaniel and Agnes' eldest daughter, Alice, began <emph render="italic">The Ben Buckhurst Chronicle</emph> as a 
+	  monthly four-page quarto-size manuscript of family news and drawings.   Later issues feature increasingly elaborate 
+	  illustrations, some in color, with eight small folio pages on blue paper.  At a cost of sixpence to read the single copy 
+	  of the manuscript, the periodical was circulated among its subscribers by mail, and returned to the editor, often with 
+	  comments on the blank leaves or in the margins.  The subscribers, many of whom were also contributors, were cousins or 
+	  other relatives, and appear never to have exceeded eight or nine in number.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p><emph render="bold"><emph render="italic">The Ben Buckhurst Chronicle</emph></emph> collection consists of 33 
+		 issues of the monthly family newsletter.  In addition to documenting family visits, travel departures, births, and 
+		 marriages, much of it in verse form, the <emph render="italic">Chronicle</emph> offers accounts of balls, musical 
+		 programs, church events, and athletic competitions including races, croquet, and cricket matches.  Acrostics, riddles, 
+		 and contents are interspersed with compositions on such widely diverse topics as mermaids and carbon.  Often droll 
+		 and always charming, <emph render="italic">The Ben Buckhurst Chronicle</emph> not only illustrates the maturation of 
+		 an enterprising, talented, and energetic young woman, but also offers a glimpse into 19th century upper class family 
+		 structure and social life.</p><p>Issues in the collection  span May to October 1862 and September 1864 to May 1866, 
+		 with an odd printed number dated March 31, 1867.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Issues are in chronological order, in a slipcase.</p>
+      </arrangement>
+      
+      <!-- <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>##</p>
+      </relatedmaterial> -->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Art -- Illustrators</subject>
+		 <persname encodinganalog="600" source="lcnaf">Powell, Alice.</persname>
+         <famname encodinganalog="600" source="lcnaf">Powell family.</famname>
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Family histories -- 19th century.</subject>
+         <geogname encodinganalog="651" source="lcsh">Buckhurst Hill (England)</geogname>
+		 <geogname encodinganalog="651" source="lcsh">Kent (England) -- Intellectual life.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Kent (England) -- Manners and customs.</geogname>
+		 <genreform encodinganalog="655" source="aat">Manuscripts (document genre)</genreform>
+		 <genreform encodinganalog="655" source="local">Family newsletters.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p><emph render="italic">Ben Buckhurst Chronicle</emph>, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <!--<acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>### (MARC 541 and/or  561)</p>
+      </acqinfo>-->
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>Manuscripts</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle><emph render="italic">The Ben Buckhurst Chronicle</emph></unittitle>
+                  <unitdate normal="1862/1867" type="inclusive">1862-1867</unitdate>
+                  <physdesc><extent>33 issues</extent></physdesc><container type="Volume">1</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

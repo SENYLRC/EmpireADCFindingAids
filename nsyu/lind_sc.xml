@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="lind_sc">lind_sc</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Samuel Colville Lind Research Notebook</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-09-14" encodinganalog="Date">14 Sep 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-09-14">14 Sep 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Lind, Samuel C. (Samuel Colville), 1879-1965.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Samuel Colville Lind Research Notebook</unittitle>
+         <unitdate encodinganalog="245$f" normal="1879/1965" type="inclusive" label="Inclusive Dates: ">undated</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 volume.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">American chemist, specializing in research on chemical reactions.  One research notebook with experiments.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3169570</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Samuel Colville Lind (1879-1965) was an American chemist.  His research focus was on chemical reactions, 
+	  particularly reactions induced by ionizing radiation.  He studied in both the United States and Europe (with Marie 
+	  Curie, among others), and his career included positions at independent laboratories, government laboratories, and 
+	  universities.  His last position was Director of the Chemistry Division at Oak Ridge National Laboratory, and 
+	  he was widely respected as a scientist, teacher, and administrator.  His memoirs were published posthumously 
+	  in 1972.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Samuel Colville Lind Research Notebook</emph> consists of one research notebook containing data on a range of  
+		 experiments.  The oversize volume includes charts, graphs, tables, and other data.  An envelope contains microfiche cards with a filmed version of the notebook.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Single item.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         
+		 <subject encodinganalog="650" source="local">Science and medicine</subject>
+	     <persname encodinganalog="600" source="lcnaf">Lind, Samuel C. (Samuel Colville), 1879-1965.</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <!-- <corpname encodinganalog="610" source="lcnaf">##</corpname> -->
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="lcsh">Chemistry -- Study and teaching.</subject>
+			<geogname encodinganalog="651" source="lcsh">Chemists -- United States.</geogname>
+         
+			<genreform encodinganalog="655" source="aat">Research notes.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Chemists.</occupation>
+         <!--<function encodinganalog="657">##</function>-->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Samuel Colville Lind Research Notebook, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Philip Rudolph</persname>, 1973.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02><did><unittitle>Research notebook</unittitle><container type="Volume">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

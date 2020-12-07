@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="beach_hm">beach_hm</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Henry M. Beach Adirondack Camp Photographs</titleproper>
+            <subtitle>A description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-04-12" encodinganalog="Date">12 Apr 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-04-12">12 Apr 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>24 Jan 2011 - added item-level inventory (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Beach, Henry M., 1863-1943.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Henry M. Beach Adirondack Camp Photographs</unittitle>
+         <unitdate encodinganalog="245$f" normal="1863/1943" type="inclusive" label="Inclusive Dates: ">Undated</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>53 items.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Noted Adirondack photographer.  Collection contains 53 photographs of camps in the Adirondacks region of New York State, including Old Forge, Saranac Lake, Big Moose, Raquette Lake, more.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2746138</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Henry M. Beach (1863-1943) was a prolific and accomplished upstate New York photographer who documented the North Country during the first quarter of the twentieth century.     <emph render="italic">Adirondack Vernacular:
+The Photography of Henry M. Beach</emph>, a collection of his work, was  published by Syracuse University Press in 2003.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Henry M. Beach Adirondack Camp Photographs</emph> consists of 53 photogaphs of camps in the Adirondacks region  of New York State.  Areas represented include Big Moose, Raquette Lake, Saranac Lake, Old Forge, Star Lake, Utica and more.  The photos are panoramic prints approximately 9" by 36".</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>No particular order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">New York State</subject>
+			<subject encodinganalog="650" source="local">Photography</subject>
+			<persname encodinganalog="600" source="lcnaf">Beach, Henry M., 1863-1943.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Cities and towns -- New York (State) -- Adirondack Mountains Region -- Photographs.</subject>
+			<subject encodinganalog="650" source="lcsh">Hunting lodges -- Photographs.</subject>
+         <geogname encodinganalog="651" source="lcsh">Adirondack Mountains (N.Y.) -- Photographs.</geogname>
+         
+			<geogname encodinganalog="651" source="lcsh">Old Forge (N.Y.)  -- Photographs.</geogname>
+			<geogname encodinganalog="651" source="lcsh">Raquette Lake (N.Y.) -- Photographs.</geogname>
+			<geogname encodinganalog="651" source="lcsh">Saranac Lake (N.Y.) -- Photographs.</geogname>
+         
+         
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Photographers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Henry M. Beach Collection of Adirondack Camp Photographs, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unspecified, 2004.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Adirondacks region photographs</unittitle></did>
+<c02 level="item"><did><unitid>PHB 01-006-359</unitid><unittitle>Adirondack League Club, Little Moose Lake, Old Forge, New York</unittitle><abstract>Slightly different view than print that is titled</abstract><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>32-1/2" x 6"</dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 02-005-119</unitid><unittitle>View of Sunset Camp on Raquette Lake, Raquette Lake, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>28" x 6"</dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 03-006-364</unitid><unittitle>Large panoramic view of Fulton Chain of Lakes, Old Forge, New York</unittitle><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>43-3/4" x 6"</dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 04-005-123</unitid><unittitle>View of Sunset Camp on Raquette Lake, Raquette Lake, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>26-3/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 05-005-360</unitid><unittitle>Panoramic view of village of Deferiet, Deferiet, New York</unittitle><abstract>Several houses along with post office and general store</abstract><unitdate type="inclusive" normal="1910">1910</unitdate><physdesc><dimensions>36-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 06-005-362</unitid><unittitle>Taken from veranda of Grand View Hotel looking east, Lake Placid, New York</unittitle><unitdate type="inclusive" normal="1912">1912</unitdate><physdesc><dimensions>38-1/2" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 07-006-389</unitid><unittitle>Mountain view of Eagle Bay and Inlet, Fourth Lake, Old Forge, New York</unittitle><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>28-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 08-005-390</unitid><unittitle>Unidentified at this point, but is early paper mill on river, Possibly Deferiet, New York?</unittitle><unitdate type="inclusive" normal="1910">1910</unitdate><physdesc><dimensions>42" x 6"</dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 09-012-365</unitid><unittitle>Upper Saranac Lake, New York</unittitle><abstract>Copyright Deposit; H. M. Beach; February 19, 1912</abstract><unitdate type="inclusive" normal="1912">1912</unitdate><physdesc><dimensions>41" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 10-008-140</unitid><unittitle>Old Forge, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>32-1/2" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 11-005-143</unitid><unittitle>Close up of heart shaped garden, main drive at Kamp Kill Kare, Lake Kora, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>22-3/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 12-007-366</unitid><unittitle>View from lake of walking bridge to Kamp Kill Kare, Lake Kora, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>38-3/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 13-005-149</unitid><unittitle>View of Saranac Inn across lake, Upper Saranac Lake, New York</unittitle><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>26-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 14-005-152</unitid><unittitle>Bird's eye view of Fulton Chain of Lakes, Old Forge, New York</unittitle><abstract>Copyright Deposit; H. M. Beach; July 18, 1911</abstract><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>42-1/2" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 15-006-155</unitid><unittitle>Excellent panoramic view from lake of main camp, boathouses and cabins, Big Moose, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>36-1/2" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 16-007-317</unitid><unittitle>Resort Hotel and Casino, Long Lake, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>27-1/2" x 6"</dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 17-006-161</unitid><unittitle>Close up view of main camp and boathouses at Dart's Camp with what, Big Moose, New York</unittitle><abstract>Appears to be Bill Dart with his dog and cat standing near Dart's Lake shore</abstract><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>38-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 18-007-166</unitid><unittitle>Lake Placid, New York</unittitle><unitdate type="inclusive" normal="1912">1912</unitdate><physdesc><dimensions>28-3/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 19-006-172</unitid><unittitle>Panoramic view of Grand View Hotel looking southeast, Lake Placid, New York</unittitle><abstract>Copyright Deposit; H. M. Beach; February 19, 1912</abstract><unitdate type="inclusive" normal="1912">1912</unitdate><physdesc><dimensions>41" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 20-008-367</unitid><unittitle>View from mountain of lake with two gentleman relaxing after</unittitle><abstract>Possibly carrying H. M. Beach's Panoramic Camera up mountain</abstract><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>44" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 21-014-368</unitid><unittitle>View of Upper Saranac Lake with Wawbeek buildings to right and Wawbeek launch on lake, Upper Saranac Lake, New York</unittitle><abstract>Copyright Deposit; H. M. Beach; February 19, 1912</abstract><unitdate type="inclusive" normal="1912">1912</unitdate><physdesc><dimensions>33-1/2" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 22-09-322</unitid><unittitle>Close up view from lawn of original Seventh Lake House and boats on Seventh Lake, Inlet, New York</unittitle><abstract>Copyright Deposit; H. M. Beach; July 18, 1911</abstract><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>25-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 23-009-401</unitid><unittitle>Close up of main camp and boat house with Mr. &amp; Mrs. Henry Covey on lawn, Big Moose, New York</unittitle><abstract>With guide boat on Big Moose Lake and three gentlemen in background</abstract><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>32" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 24-006-195</unitid><unittitle>Close up of Glennmore Hotel with steamer "Big Moose" leaving dock, Big Moose, New York</unittitle><abstract>Copyright Deposit; H. M. Beach; September 11, 1911</abstract><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>40" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 25-00-199</unitid><unittitle>Close up of Glennmore Hotel with people on porch, horses, carriages and early car, Big Moose, New York</unittitle><abstract>Copyright Deposit; H. M. Beach; September 11, 1911</abstract><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>40-1/4"  x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 26-006-204</unitid><unittitle>Close up view of Lake Placid Club boathouses, Lake Placid, New York</unittitle><unitdate type="inclusive" normal="1912">1912</unitdate><physdesc><dimensions>39-3/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 27-005-209</unitid><unittitle>Close up view from lake of Kamp Kill Kare bridge and buildings, Lake Kora, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>31" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 28-005-212</unitid><unittitle>Veranda of Grand View Hotel looking east, Lake Placid, New York</unittitle><abstract>Copyright Deposit; H. M. Beach; February 19, 1912</abstract><unitdate type="inclusive" normal="1912">1912</unitdate><physdesc><dimensions>36" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 29-006-218</unitid><unittitle>View of mountains from grounds of Grand View Hotel with , Lake Placid, New York</unittitle><abstract>Groves of trees and baseball grounds labeled</abstract><unitdate type="inclusive" normal="1912">1912</unitdate><physdesc><dimensions>42" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 30-007-402</unitid><unittitle>Camps, man in boat, docks on Fourth Lake, Old Forge, New York</unittitle><unitdate type="inclusive" normal="1913">1913</unitdate><physdesc><dimensions>40-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 31-008-370</unitid><unittitle>Third Lake, Old Forge, New York</unittitle><abstract>Copyright Deposit; H. M. Beach; July 18, 1911</abstract><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>29-1/4" x 6</dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 32-005-230</unitid><unittitle>Shoreline and lake view, Star Lake, New York</unittitle><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>31-3/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 33-009-374</unitid><unittitle>Large panoramic view of the Fulton Chain of Lakes, Old Forge, New York</unittitle><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>39-1/2" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 34-007-328</unitid><unittitle>View of main camp, boathouse and cabins overlooking Dart's Lake, Big Moose, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>36-1/2" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 35-005-240</unitid><unittitle>Political Rally, August 21, 1912, James Sherman, Vice President, Utica, New York</unittitle><abstract>Under Taft giving campaign speech</abstract><unitdate type="inclusive" normal="1912">1912</unitdate><physdesc><dimensions>32-1/2" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 36-007-392</unitid><unittitle>View of buildings and lake from lawn at Kamp Kill Kare, Lake Kora, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>30-3/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 37-011-403</unitid><unittitle>Formerly located on the West Side of Stillwater Reservoir</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>29-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 38-010-394</unitid><unittitle>Looking to East over Mirror Lake, Lake Placid Club on far shore, Lake Placid, New York</unittitle><unitdate type="inclusive" normal="1912">1912</unitdate><physdesc><dimensions>26-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 39-008-372</unitid><unittitle>View from lawn showing hotel, pines, lawn, tennis court and drive, Lake Placid, New York</unittitle><abstract>Copyright Deposit; H. M. Beach; February 16, 1912</abstract><unitdate type="inclusive" normal="1912">1912</unitdate><physdesc><dimensions>40-3/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 40-009-377</unitid><unittitle>Main lodge and cabins on Big Moose Lake, Big Moose, New York</unittitle><abstract>Copyright Deposit; H. M. Beach; September 21, 1911</abstract><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>35-3/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 41-009-396</unitid><unittitle>Panoramic view from mountain of Big Moose Lake, Big Moose, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>33-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 42-008-380</unitid><unittitle>View of and from the veranda, Lake Bonaparte, New York</unittitle><abstract>Excellent panoramic view of The New Hermitage Hotel</abstract><unitdate type="inclusive" normal="1910">1910</unitdate><physdesc><dimensions>36-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 44-005-275</unitid><unittitle>Upper Saranac Lake, New York</unittitle><unitdate type="inclusive" normal="1912">1912</unitdate><physdesc><dimensions>20-3/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 45-017-398</unitid><unittitle>View of Lake Placid Club, Lake Placid, New York</unittitle><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>20-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 46-005-287</unitid><unittitle>Close up of buildings at Kamp Kill Kare, Lake Kora, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>10" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 47-007-292</unitid><unittitle>Group of people overlooking Fourth Lake from Rocky Mountain, Old Forge, New York</unittitle><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>23-1/4" x 6"</dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 48-005-295</unitid><unittitle>Close up view of Kamp Kill Kare gardens, Lake Kora, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>13-1/2" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 49-005-298</unitid><unittitle>Close up view of greenhouse and gardens with gardener working at Kamp Kill Kare, Lake Kora, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>17-1/2" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 50-006-400</unitid><unittitle>Looking East over Mirror Lake, Lake Placid, New York</unittitle><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>16-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 51-006-383</unitid><unittitle>Saranac Inn, Upper Saranac Lake, New York</unittitle><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>18-1/2" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 52-007-381</unitid><unittitle>View from mountain of Eagle Bay, Fourth Lake, Old Forge, New York</unittitle><unitdate type="inclusive" normal="1911">1911</unitdate><physdesc><dimensions>17-3/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 53-008-385</unitid><unittitle>View of Buttermilk Falls on Raquette River, New York</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><dimensions>20-1/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+<c02 level="item"><did><unitid>PHB 54-005-386</unitid><unittitle>Ogdensburg State Mental Hospital, Ogdensburg, New York</unittitle><unitdate type="inclusive" normal="1910">1910</unitdate><physdesc><dimensions>13-3/4" x 6" </dimensions></physdesc><container type="Map-Case">77</container></did></c02>
+		
+	
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

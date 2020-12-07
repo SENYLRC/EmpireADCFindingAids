@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="wells_coll">wells_coll</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">H. G. Wells Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2017-04-05" encodinganalog="Date">5 Apr 2017</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2017-04-05">5 Apr 2017</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">##</persname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">H. G. Wells Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1932/1942" type="inclusive" label="Inclusive Dates: ">circa 1937</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Book reviews and a flier relating to British author H. G. Wells</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4851088</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>H. G. Wells (1866-1946) was a British author of novel, history, politics, social commentary, and textbooks.  He is best known for his science fiction novels such as <emph render="italic">The Time Machine</emph> and <emph render="italic">War of the Worlds</emph>.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">H. G. Wells Collection</emph> consists of two book reviews of Wells' autobiography and a flier advertising a lecture by British author H. G. Wells.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 	  
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>No particular order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>##</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         
+
+
+<subject encodinganalog="650" source="local">Biography</subject><subject encodinganalog="650" source="local">Literature -- British</subject><subject encodinganalog="650" source="local">Science fiction</subject><persname encodinganalog="600" source="lcnaf">Wells, H. G. (Herbert George), 1866-1946.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <title encodinganalog="630" source="lcnaf">Experiment in autobiography.</title>
+         <subject encodinganalog="650" source="lcsh"> Authors, English -- 20th century.</subject><subject encodinganalog="650" source="lcsh">British literature -- 20th century.</subject>
+
+
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Reviews (documents)</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Fliers (printed matter)</genreform><genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Authors.</occupation><occupation encodinganalog="656" source="lcsh">Critics.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>H. G. Wells Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Manuscripts</unittitle></did>
+            <c02><did><unittitle>Review of Wells' autobiography, by Lawrence Martin</unittitle>
+					<abstract>typescript, signed and inscribed by author, 8 pp.</abstract>
+					<unitdate normal="1932/1942" type="inclusive">undated</unitdate>
+					<container type="SC">796</container></did>
+				</c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle>Clipping, flier</unittitle>
+					<abstract>clipping of brief review of Wells' autobiography by Lawrence Martin; flier for a lecture by Wells at Northwestern University</abstract>
+					<unitdate normal="1937" type="inclusive">1937, </unitdate>
+					<unitdate normal="1932/1942" type="inclusive">undated</unitdate>
+					<container type="SC">796</container></did>
+				</c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

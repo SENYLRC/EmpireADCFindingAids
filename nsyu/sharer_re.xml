@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.5, 5/26/2006 -->
+<!--Added description of how to enter revisions-->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="us" mainagencycode="NSyU" identifier="sharer_re">sharer_re</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Robert E. Sharer Papers</titleproper>
+				<subtitle>An inventory of his papers at Syracuse University</subtitle>
+			<author encodinganalog="Creator">-</author><sponsor>The adult education holdings are collectively known as the <lb/><extptr title="Alexander N. Charters Library of Resources for Educators of Adults" href="https://library.syr.edu/scrc/collections/areas/adult-ed.php" show="new"/>.</sponsor></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="1976-10" encodinganalog="Date">Oct 1976</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2006-05-31">31 May 2006</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+			<list>
+				<item></item>
+			</list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<persname encodinganalog="100">Sharer, Robert E.</persname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Robert E. Sharer Papers</unittitle>
+			<unitdate encodinganalog="245$f" normal="1943/1971" type="inclusive" label="Inclusive Dates: ">1943-1971</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>.75 linear ft.</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">The papers include correspondence, 1947-1952, articles, reports and other material on adult education by Sharer and others. Material on the Michigan State University adult education programs from 1944-1967 is included.</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="us" repositorycode="NSyU">149578</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+			</langmaterial>
+		</did>
+				
+		<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>Robert E. Sharer was chief of a division of the Michigan Department of Experimental Adult Education in the 1940's. Later he was Director, Office of Adult Education Programs in Continuing Educaticn (1958-63) and Director, Evening College (1963-68) at Michigan State University. He was Executive Director of the Adult Education Association of the U.S.A., 1968-70. Among his earlier posts, he was Vice-President, Adult Education, of the National Education Association.</p></bioghist>
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>The <emph render="bold">Robert E. Sharer Papers</emph> extend from material from Sharer's years in the Michigan State adult education programs (1944-1967) such as correspondence, articles, reports and other material, to his writings (1948-1971).</p>
+		</scopecontent>
+		
+		<!--<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>## OPT (MARC 351$a)</p>
+		</arrangement>-->
+		
+		<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>The library holds a considerable number of collections related to adult and continuing education.  Please refer to &subjindex; for a complete listing.</p><p>In particular, see also the <extref href="../a/aaace.htm">Adult Education Association (AEA) Records</extref></p>
+		</relatedmaterial>
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Adult education</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Sharer, Robert E.</persname>
+			
+            
+            
+            <subject encodinganalog="650" source="lcsh">Adult education -- United States.</subject><subject encodinganalog="650" source="lcsh">Adult education -- Michigan.</subject><subject encodinganalog="650" source="lcsh">Educators -- United States.</subject><subject encodinganalog="650" source="lcsh">Evening and continuation schools -- United States.</subject>
+			
+            <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<occupation encodinganalog="656" source="lcsh">Educators.</occupation>
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p>Robert E. Sharer Papers, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<!--<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>### (MARC 541 and/or  561)</p>
+		</acqinfo>-->
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Correspondence</unittitle>
+				<!--C01 @LEVEL must be set to 'series' to show up in TOC.--></did>
+				<c02>
+					<did>
+						<unittitle><unitdate normal="1947/1952" type="inclusive">1947-1952</unitdate></unittitle>
+						
+						<container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02>
+			</c01>
+		<c01 level="series">
+				<did>
+					<unittitle>Subject files</unittitle>
+				</did>
+				<c02>
+					<did>
+						<unittitle>Education 460, "Adult Education: General Survey," syllabus
+</unittitle>
+						
+						<unitdate normal="1953/1954" type="inclusive">1953-1954</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Michigan Adult Education Programs </unittitle>
+						
+						<unitdate normal="1944/1967" type="inclusive">1944-1967</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Sharer Memorabilia</unittitle>
+						
+						<unitdate normal="1950/1963" type="inclusive">1950-1963</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02>
+			</c01><c01 level="series"><did>
+					<unittitle>Writings</unittitle>
+				</did><c02 level="subseries">
+					<did>
+						<unittitle>Addresses
+</unittitle>
+						
+						
+						
+						
+						
+					</did>
+				<c03><did><unittitle><unitdate normal="1948/1963" type="inclusive">1948-1963</unitdate></unittitle><container type="Box">1</container></did></c03><c03><did><unittitle><unitdate normal="1964/1969" type="inclusive">1964-1969 </unitdate></unittitle><container type="Box">1</container></did></c03></c02><c02 level="subseries">
+					<did>
+						<unittitle>Articles</unittitle>
+						
+						</did>
+				<c03><did><unittitle>Miscellaneous manuscripts</unittitle><unitdate normal="1949/1969" type="inclusive">1949-1969</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>"President's Column" </unittitle><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Printed material, magazine format </unittitle><unitdate normal="1960/1971" type="inclusive">1960-1971</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did></c03></c02><c02 level="subseries">
+					<did>
+						<unittitle>Reports and Studies
+</unittitle>
+						
+						</did><c03><did><unittitle>"Adult Education in Urban American Public-School Systems"
+</unittitle></did><c04><did><unittitle>Draft, tsc
+</unittitle><unitdate normal="1952" type="inclusive">1952</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did></c04><c04><did><unittitle>Questionnaires, [1952]
+</unittitle><unitdate normal="1953/1954" type="inclusive"></unitdate><container type="Box">1</container>
+						
+						
+						
+					</did></c04></c03><c03><did><unittitle>"A Michigan Integrated University Extension System"</unittitle><unitdate normal="1958" type="inclusive">1958</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>"Trailblazers, Pioneers, Pacemakers and Builders" </unittitle><unitdate normal="1955/1965" type="inclusive">[ca. 1960]</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Miscellaneous Reports</unittitle><unitdate normal="1953/1954" type="inclusive">1957-1959, </unitdate><unitdate normal="1943/1971" type="inclusive">undated</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did></c03></c02></c01><c01 level="series"><did><unittitle>Writings by others</unittitle></did><c02>
+					<did>
+						<unittitle>"Adult Education in the Public Schools and Teacher Training Institutions of Michigan"
+</unittitle>
+						
+						<unitdate normal="1943" type="inclusive">1943</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02 level="subseries">
+					<did>
+						<unittitle>Michigan State University Seminars on Leadership in Continuing Education, Reports and Proceedings
+</unittitle>
+						
+						</did>
+				<c03><did><unittitle><unitdate normal="1959" type="inclusive">1959 </unitdate>(2 copies)</unittitle><container type="Box">1</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle> <unitdate normal="1961" type="inclusive">1961</unitdate></unittitle><container type="Box">1</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1963" type="inclusive">1963</unitdate></unittitle><container type="Box">1</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1964" type="inclusive">1964</unitdate></unittitle><container type="Box">2</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1965" type="inclusive">1965</unitdate></unittitle><container type="Box">2</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1966" type="inclusive">1966</unitdate></unittitle><container type="Box">2</container>
+						
+						
+						
+					</did></c03></c02><c02>
+					<did>
+						<unittitle>Montecito Workshop in Adult Education, Report
+and Proceedings</unittitle>
+						
+						<unitdate normal="1952" type="inclusive">1952</unitdate><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Miscellaneous Published Material</unittitle>
+						
+						<unitdate normal="1964" type="inclusive">1964</unitdate><container type="Box">2</container>
+						
+						
+						
+					</did>
+				</c02></c01></dsc>
+	</archdesc>
+</ead>

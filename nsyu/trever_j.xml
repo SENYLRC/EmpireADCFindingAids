@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="trever_j">trever_j</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">John Trever Cartoons</titleproper>
+            <subtitle>An inventory of his cartoons at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2012-11-01" encodinganalog="Date">1 Nov 2012</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2012-11-01">1 Nov 2012</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>10 Apr 2013 - added 1985-1990 items (MRC)</item><item>9 Mar 2016 - additions for 1977-1984, 1997-2010 (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Trever, John</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">John Trever Cartoons</unittitle>
+         <unitdate encodinganalog="245$f" normal="1977/2010" type="inclusive" label="Inclusive Dates: ">1977-2010</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>23 linear ft. (50 oversize boxes)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">American editorial cartoonist for the <emph render="italic">Albuquerque Journal</emph>.  Collection contains original artwork for more than a thousand cartoons, convering subjects such as the O.J. Simpson Trial, the Iran/Contra affair, the Oklahoma City bombing, the Branch Davidian incident in Waco, the 1992 and 1996 presidential elections, the presidencies of Bill Clinton and George H. W. Bush, all areas of U.S. domestic and foreign policy, current issues of the day (e.g., the deficit, Congressional gridlock, etc.), and many other events and personalities.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3961698</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>John Trever is an American editorial and political cartoonist.  A graduate of Syracuse University, he was the political cartoonist for the <emph render="italic">Albuquerque Journal</emph> for 35 years, from 1976 to 2011.  He has been honored for his work by the Society of Professional Journalists, the Free Press Association, the Overseas Press Club, the New Mexico Legislature and the Albuquerque Arts Alliance, and his cartoons are distributed to more than 350 daily papers by King Features Syndicate.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">John Trever Cartoons</emph> consists of original artwork for more than a thousand editorial cartoons, dating from 1985 to 1996.  Subjects covered include the O.J. Simpson Trial, the Iran/Contra affair, the Oklahoma City bombing, the Branch Davidian incident in Waco, the 1992 and 1996 presidential elections, the presidencies of Bill Clinton and George H. W. Bush, U.S. domestic and foreign policy, current issues of the day, and many other events and personalities.  In a few cases Trever has annotated an item on the back, indicating the subject.</p><p>There are gaps in the collection -- that is, not every single date is represented.  In some cases the original was sold or given away, or retained by the donor.    For some, but not all, of these missing items, photocopies (annotated by Trever as to date and the disposition of the original) were provided with the original donation.  A complete list of dates present in the collection is available <extref href="trever_j_inv.pdf">in PDF form</extref>.  In two cases, a cartoon is in the form of a negative transparency rather than original art</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Chronological, as identified by donor.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has the collections of more than 200 cartoonists.  Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>A complete list of dates present in the collection is available <extref href="trever_j_inv.pdf">in PDF form</extref>.</p>
+      </otherfindaid>
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Art -- Cartoonists</subject><persname encodinganalog="600" source="lcnaf">Bush, George, 1924- -- Caricatures and cartoons.</persname><persname encodinganalog="600" source="lcnaf">Clinton, Bill, 1946-  -- Caricatures and cartoons.</persname><persname encodinganalog="600" source="lcnaf">Trever, John.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">United States. -- Congress -- Caricatures and cartoons.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject>
+         <subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Cartoonists -- New Mexico.</subject>
+         <subject encodinganalog="650" source="lcsh">Editorial cartoons -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Elections -- Caricatures and cartoons.</subject>
+         <subject encodinganalog="650" source="lcsh">Taxes -- Caricatures and cartoons.</subject><subject encodinganalog="650" source="lcsh">World politics -- 1985-1995 -- Caricatures and cartoons.</subject>
+         <subject encodinganalog="650" source="lcsh">World politics -- 1995-2005 -- Caricatures and cartoons.</subject>
+         
+         
+         
+         <geogname encodinganalog="651" source="lcsh">United States -- Foreign relations -- Caricatures and cartoons.</geogname><geogname encodinganalog="651" source="lcsh">United States -- Politics and government -- Caricatures and cartoons.</geogname>
+         <genreform encodinganalog="655" source="aat">Artwork.</genreform><genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform><genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform><genreform encodinganalog="655" source="aat">Editorial cartoons.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>John Trever Cartoons, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">John Trever</persname>, 2003, 2012-2015.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Cartoons</unittitle></did>
+            <note><p>The following is a list of inclusive dates for each box in the collection.  A complete list of dates present in the collection is available <extref href="trever_j_inv.pdf">in PDF form</extref>.</p></note>
+
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1976: 16 original items, 4 photocopies</extent></physdesc><unitdate type="inclusive" normal="1976-11/1976-12">1976, Nov-Dec</unitdate><container type="Oversize">18</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1977: 112 original items, 34 photocopies</extent></physdesc><unitdate type="inclusive" normal="1977-01/1977-06">1977, Jan-Jun</unitdate><container type="Oversize">18</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1977: 112 original items, 34 photocopies</extent></physdesc><unitdate type="inclusive" normal="1977-07/1977-12">1977, Jul-Dec</unitdate><container type="Oversize">19</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1978: 127 original items, 25 photocopies</extent></physdesc><unitdate type="inclusive" normal="1978-01">1978, Jan</unitdate><container type="Oversize">19</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1978: 127 original items, 25 photocopies</extent></physdesc><unitdate type="inclusive" normal="1978-02/1978-07">1978, Feb-Jul</unitdate><container type="Oversize">20</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1978: 127 original items, 25 photocopies</extent></physdesc><unitdate type="inclusive" normal="1978-08/1978-12">1978, Aug-Dec</unitdate><container type="Oversize">21</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1979: 122 original items, 27 photocopies</extent></physdesc><unitdate type="inclusive" normal="1979-01">1979, Jan</unitdate><container type="Oversize">21</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1979: 122 original items, 27 photocopies</extent></physdesc><unitdate type="inclusive" normal="1979-02/1979-07">1979, Feb-Jul</unitdate><container type="Oversize">22</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1979: 122 original items, 27 photocopies</extent></physdesc><unitdate type="inclusive" normal="1979-08/1979-12">1979, Aug-Dec</unitdate><container type="Oversize">23</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1980: 144 original items, 21 photocopies</extent></physdesc><unitdate type="inclusive" normal="1980-01">1980, Jan</unitdate><container type="Oversize">23</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1980: 144 original items, 21 photocopies</extent></physdesc><unitdate type="inclusive" normal="1980-02/1980-07">1980, Feb-Jul</unitdate><container type="Oversize">24</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1980: 144 original items, 21 photocopies</extent></physdesc><unitdate type="inclusive" normal="1980-08/1980-12">1980, Aug-Dec</unitdate><container type="Oversize">25</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1981: 158 original items, 23 photocopies</extent></physdesc><unitdate type="inclusive" normal="1981-01/1981-06">1981, Jan-Jun</unitdate><container type="Oversize">26</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1981: 158 original items, 23 photocopies</extent></physdesc><unitdate type="inclusive" normal="1981-07/1981-12">1981, Jul-Dec</unitdate><container type="Oversize">27</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1982: 143 original items, 22 photocopies</extent></physdesc><unitdate type="inclusive" normal="1982-01/1982-08">1982, Jan-Aug</unitdate><container type="Oversize">28</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1982: 143 original items, 22 photocopies</extent></physdesc><unitdate type="inclusive" normal="1982-09/1982-12">1982, Sep-Dec</unitdate><container type="Oversize">29</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1983: 143 original items, 22 photocopies</extent></physdesc><unitdate type="inclusive" normal="1983-01/1983-03">1983, Jan-Mar</unitdate><container type="Oversize">29</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1983: 143 original items, 22 photocopies</extent></physdesc><unitdate type="inclusive" normal="1983-04/1983-10">1983, Apr-Oct</unitdate><container type="Oversize">30</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1983: 143 original items, 22 photocopies</extent></physdesc><unitdate type="inclusive" normal="1983-11/1983-12">1983, Nov-Dec</unitdate><container type="Oversize">31</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1984: 149 original items, 13 photocopies</extent></physdesc><unitdate type="inclusive" normal="1984-01/1984-05">1984, Jan-May</unitdate><container type="Oversize">31</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1984: 149 original items, 13 photocopies</extent></physdesc><unitdate type="inclusive" normal="1984-06/1984-12">1984, Jun-Dec</unitdate><container type="Oversize">32</container></did></c02>
+				
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>108 original items, 12 photocopies</extent></physdesc><unitdate normal="1985-01/1985-09" type="inclusive">1985, Jan-Sep</unitdate><container type="Oversize">10</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>32 original items, 6 photocopies</extent></physdesc><unitdate normal="1985-10/1985-12" type="inclusive">1985, Oct-Dec</unitdate><container type="Oversize">11</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>70 original items, 8 photocopies</extent></physdesc><unitdate normal="1986-01/1986-06" type="inclusive">1986, Jan-Jun</unitdate><container type="Oversize">11</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>70 original items, 7 photocopies</extent></physdesc><unitdate normal="1986-07/1986-12" type="inclusive">1986, Jul-Dec</unitdate><container type="Oversize">12</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>45 original items, 5 photocopies</extent></physdesc><unitdate normal="1987-01/1987-04" type="inclusive">1987, Jan-Apr</unitdate><container type="Oversize">12</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>102 original items, 10 photocopies</extent></physdesc><unitdate normal="1987-05/1987-12" type="inclusive">1987, May-Dec</unitdate><container type="Oversize">13</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>108 original items, 7  photocopies</extent></physdesc><unitdate normal="1988-01/1988-09" type="inclusive">1988, Jan-Sep</unitdate><container type="Oversize">14</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>31 original items,  6 photocopies</extent></physdesc><unitdate normal="1988-10/1988-12" type="inclusive">1988, Oct-Dec</unitdate><container type="Oversize">15</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>89 original items, 3  photocopies</extent></physdesc><unitdate normal="1989-01/1989-08" type="inclusive">1989, Jan-Aug</unitdate><container type="Oversize">15</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>46 original items, 7  photocopies</extent></physdesc><unitdate normal="1989-09/1989-12" type="inclusive">1989, Sep-Dec</unitdate><container type="Oversize">16</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>40 original items,  3 photocopies</extent></physdesc><unitdate normal="1990-01/1990-03" type="inclusive">1990, Jan-Mar</unitdate><container type="Oversize">16</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>107 original items,  12 photocopies</extent></physdesc><unitdate normal="1990-04/1990-12" type="inclusive">1990, Apr-Dec</unitdate><container type="Oversize">17</container></did></c02>
+
+				<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>101 original items, 9 photocopies</extent></physdesc><unitdate normal="1991-01/1991-08" type="inclusive">1991 Jan-Aug</unitdate><container type="Oversize">1</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>40 original items, 6 photocopies</extent></physdesc><unitdate normal="1991-09/1991-12" type="inclusive">1991 Sep-Dec</unitdate><container type="Oversize">2</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>50 original items, 4 photocopies</extent></physdesc><unitdate normal="1992-01/1992-04" type="inclusive">1992 Jan-Apr</unitdate><container type="Oversize">2</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>107 original items, 4 photocopies</extent></physdesc><unitdate normal="1992-05/1992-12" type="inclusive">1992 May-Dec</unitdate><container type="Oversize">3</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>57 original items, 5 photocopies</extent></physdesc><unitdate normal="1993-01/1993-05" type="inclusive">1993 Jan-May</unitdate><container type="Oversize">4</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>71 original items, 13 photocopies</extent></physdesc><unitdate normal="1993-06/1993-12" type="inclusive">1993 Jun-Dec</unitdate><container type="Oversize">5</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>81 original items, 12 photocopies</extent></physdesc><unitdate normal="1994-01/1994-08" type="inclusive">1994 Jan-Aug</unitdate><container type="Oversize">6</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>39 original items, 5 photocopies</extent></physdesc><unitdate normal="1994-09/1994-12" type="inclusive">1994 Sep-Dec</unitdate><container type="Oversize">7</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>35 original items, 4 photocopies</extent></physdesc><unitdate normal="1995-01/1995-04" type="inclusive">1995 Jan-Apr</unitdate><container type="Oversize">7</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>74 original items, 8 photocopies</extent></physdesc><unitdate normal="1995-05/1995-12" type="inclusive">1995 May-Dec</unitdate><container type="Oversize">8</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><physdesc><extent>106 original items, 24 photocopies</extent></physdesc><unitdate normal="1996" type="inclusive">1996</unitdate><container type="Oversize">9</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1997: 101 original items, 7 photocopies</extent></physdesc><unitdate type="inclusive" normal="1997-01/1997-10">1997, Jan-Oct</unitdate><container type="Oversize">33</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1997: 101 original items, 7 photocopies</extent></physdesc><unitdate type="inclusive" normal="1997-11/1997-12">1997, Nov-Dec</unitdate><container type="Oversize">34</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1998: 104 original items, 25 photocopies</extent></physdesc><unitdate type="inclusive" normal="1998-01/1998-08">1998, Jan-Aug</unitdate><container type="Oversize">34</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1998: 104 original items, 25 photocopies</extent></physdesc><unitdate type="inclusive" normal="1998-09/1998-12">1998, Sep-Dec</unitdate><container type="Oversize">35</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1999: 93 original items, 11 photocopies</extent></physdesc><unitdate type="inclusive" normal="1999-01/1999-07">1999, Jan-Jul</unitdate><container type="Oversize">35</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 1999: 93 original items, 11 photocopies</extent></physdesc><unitdate type="inclusive" normal="1999-08/1999-12">1999, Aug-Dec</unitdate><container type="Oversize">36</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2000: 109 original items, 5 photocopies</extent></physdesc><unitdate type="inclusive" normal="2000-01/2000-08">2000, Jan-Aug</unitdate><container type="Oversize">36</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2000: 109 original items, 5 photocopies</extent></physdesc><unitdate type="inclusive" normal="2000-09/2000-12">2000, Sep-Dec</unitdate><container type="Oversize">37</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2001: 117 original items, 11 photocopies</extent></physdesc><unitdate type="inclusive" normal="2001-01/2001-05">2001, Jan-May</unitdate><container type="Oversize">37</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2001: 117 original items, 11 photocopies</extent></physdesc><unitdate type="inclusive" normal="2001-06/2001-12">2001, Jun-Dec</unitdate><container type="Oversize">38</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2002: 120 original items, 7 photocopies</extent></physdesc><unitdate type="inclusive" normal="2002-01/2002-03">2002, Jan-Mar</unitdate><container type="Oversize">38</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2002: 120 original items, 7 photocopies</extent></physdesc><unitdate type="inclusive" normal="2002-04/2002-12">2002, Apr-Dec</unitdate><container type="Oversize">39</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2003: 114 original items, 9 photocopies</extent></physdesc><unitdate type="inclusive" normal="2003-01/2003-09">2003, Jan-Sep</unitdate><container type="Oversize">40</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2003: 114 original items, 9 photocopies</extent></physdesc><unitdate type="inclusive" normal="2003-10/2003-12">2003, Oct-Dec</unitdate><container type="Oversize">41</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2004: 122 original items, 17 photocopies</extent></physdesc><unitdate type="inclusive" normal="2004-01/2004-06">2004, Jan-Jun</unitdate><container type="Oversize">41</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2004: 122 original items, 17 photocopies</extent></physdesc><unitdate type="inclusive" normal="2004-07/2004-12">2004, Jul-Dec</unitdate><container type="Oversize">42</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2005: 112 original items, 10 photocopies</extent></physdesc><unitdate type="inclusive" normal="2005-01/2005-03">2005, Jan-Mar</unitdate><container type="Oversize">42</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2005: 112 original items, 10 photocopies</extent></physdesc><unitdate type="inclusive" normal="2005-04/2005-12">2005, Apr-Dec</unitdate><container type="Oversize">43</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2006: 102 original items, 8 photocopies</extent></physdesc><unitdate type="inclusive" normal="2006-01/2006-09">2006, Jan-Sep</unitdate><container type="Oversize">44</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2006: 102 original items, 8 photocopies</extent></physdesc><unitdate type="inclusive" normal="2006-10/2006-12">2006, Oct-Dec</unitdate><container type="Oversize">45</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2007: 110 original items, 1 photocopies</extent></physdesc><unitdate type="inclusive" normal="2007-01/2007-04">2007, Jan-Apr</unitdate><container type="Oversize">45</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2007: 110 original items, 1 photocopies</extent></physdesc><unitdate type="inclusive" normal="2007-05/2007-10">2007, May-Oct</unitdate><container type="Oversize">46</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2007: 110 original items, 1 photocopies</extent></physdesc><unitdate type="inclusive" normal="2007-11/2007-12">2007, Nov-Dec</unitdate><container type="Oversize">47</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2008: 129 original items, 7 photocopies</extent></physdesc><unitdate type="inclusive" normal="2008-01/2008-05">2008, Jan-May</unitdate><container type="Oversize">47</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2008: 129 original items, 7 photocopies</extent></physdesc><unitdate type="inclusive" normal="2008-06/2008-12">2008, Jun-Dec</unitdate><container type="Oversize">48</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2009: 108 original items, 6 photocopies</extent></physdesc><unitdate type="inclusive" normal="2009-01/2009-02">2009, Jan-Feb</unitdate><container type="Oversize">48</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2009: 108 original items, 6 photocopies</extent></physdesc><unitdate type="inclusive" normal="2009-03/2009-12">2009, Mar-Dec</unitdate><container type="Oversize">49</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2010: 116 original items, 2 photocopies</extent></physdesc><unitdate type="inclusive" normal="2010-01/2010-02">2010, Jan-Feb</unitdate><container type="Oversize">49</container></did></c02>
+<c02><did><unittitle>Cartoons</unittitle><physdesc><extent>For all of 2010: 116 original items, 2 photocopies</extent></physdesc><unitdate type="inclusive" normal="2010-03/2010-12">2010, Mar-Dec</unitdate><container type="Oversize">50</container></did></c02>
+				
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

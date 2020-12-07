@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="claire_swallow">claire_swallow</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">William Claire Collection Relating to Alan Swallow</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2015-09-09" encodinganalog="Date">9 Sep 2015</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2015-09-09">9 Sep 2015</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>27 Feb 2017 - additions (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Claire, William F.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">William Claire Collection Relating to Alan Swallow</unittitle>
+         <unitdate encodinganalog="245$f" normal="1942/1990" type="inclusive" label="Inclusive Dates: ">1942-1990</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Two copies of <emph render="italic">Publishing in the West: Alan Swallow</emph>, edited by William Claire, along with a collection of material pertaining to the creation and production of the book, including correspondence, manuscripts, galleys, reviews, notes, clippings, etc.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4592162</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Alan Swallow (1915-1966) was an American professor and publisher.  A graduate of the University of Wyoming (1937) and Louisiana State University (1939), he taught English at several universities before becoming the founder and owner of his own publishing firm, Alan Swallow, Publisher.  As publisher, he focused on poetry and fiction of contemporary writers, both well-known and lesser-known; he also published several collections of his own poems.</p>
+		
+		<p>William Claire was the founding editor and publisher of the literary magazine <emph render="italic">Voyages</emph>, a Yaddo and MacDowell scholar, and a Rockefeller Foundation resident in Bellagio, Italy. His essays and reviews have appeared in over 50 major publications. [Adapted from Georgetown University's finding aid for the William F. Claire Papers.]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">William Claire Collection Relating to Alan Swallow</emph> consists of correspondence, printed material, writings and a small amount of miscellany, all pertaining to Claire's <emph render="italic">Publishing in the West: Alan Swallow</emph>.</p><p><emph render="bold">Correspondence</emph> includes letters to Claire from Jene Lyons (publisher) and Robert Dickey (founder of <emph render="italic">Poetry Bag</emph>), as well as photocopies of letters from Swallow, presumably for use in Claire's book.</p><p><emph render="bold">Printed material</emph> consists of two copies of <emph render="italic">Publishing in the West: Alan Swallow</emph>, along with the manuscript, galleys, and reviews.</p><p><emph render="bold">Writings</emph> contains writings by Swallow and about Swallow, some of which may have been used in the book.  All are either eprints or photocopies. </p><p>A small amount of <emph render="bold">Miscellany</emph> completes the collection -- a photocopy of one of Swallow's catalogs, a typed list of the book's proposed contents, and a few others items.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by name or topic.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="../s/swallow_a.htm">Alan Swallow Papers</archref>.</p><!--Following is  boilerplate statement - delete this if you have specific related 
+material that you are listing.-->
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <subject encodinganalog="650" source="local">Biography</subject>
+			<subject encodinganalog="650" source="local">Literature -- American Poetry</subject>
+			<subject encodinganalog="650" source="local">Publishing, printing and book arts</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Claire, William F.</persname>
+			<persname encodinganalog="600" source="lcnaf">Dickey, R. P. (Robert Preston), 1932-2002.</persname>
+			<persname encodinganalog="600" source="lcnaf">Lyon, Jene.</persname>
+			<persname encodinganalog="600" source="lcnaf">Pauker, John.</persname><persname encodinganalog="600" source="lcnaf">Stanford, Ann.</persname><persname encodinganalog="600" source="lcnaf">Swallow, Alan, 1915-1966.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Alan Swallow, Publisher.</corpname><corpname encodinganalog="610" source="lcnaf">Lightning Tree, Inc. (Santa Fe, N.M.)</corpname>
+         <title encodinganalog="630" source="lcnaf">Publishing in the West : Alan Swallow : some letters and commentaries / edited, with an introd. by William F. Claire.</title>
+         <subject encodinganalog="650" source="lcsh">American literature -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">American poetry -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Authors, American.</subject>
+			<subject encodinganalog="650" source="lcsh">Poets, American.</subject>
+			<subject encodinganalog="650" source="lcsh">Publishers and publishing -- United States.</subject>
+			<!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Articles.</genreform>
+			<genreform encodinganalog="655" source="aat">Book reviews.</genreform>
+			<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Essays.</genreform><genreform encodinganalog="655" source="aat">Galley proofs.</genreform><genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform><genreform encodinganalog="655" source="aat">Poems.</genreform>
+         
+         <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Biographers.</occupation>
+			<!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> William Claire Collection Relating to Alan Swallow, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2015.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Dickley, R. P.</unittitle><unitdate normal="1975" type="inclusive">1975</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Lyon, Jene (Lightning Tree Inc.)</unittitle><unitdate normal="1973/1976" type="inclusive">1973-1976, </unitdate><unitdate normal="1986/1987" type="inclusive">1986-1987, </unitdate><unitdate normal="1990" type="inclusive">1990</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Pauker, John</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Princeton University Library</unittitle><unitdate normal="1973" type="inclusive">1973</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Schevill, James</unittitle><unitdate normal="1962/1968" type="inclusive">1968 [?]</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Stanford, Ann</unittitle><unitdate normal="1975" type="inclusive">1975</unitdate><container type="Box">1</container></did></c02>
+            <c02 id="alsw"><did><unittitle>Swallow, Alan</unittitle><abstract>photocopies of letters used in <emph render="italic">Publishing in the West</emph> (below)</abstract><unitdate normal="1948/1951" type="inclusive">1948-1951, </unitdate><unitdate normal="1963" type="inclusive">1963, </unitdate><unitdate normal="1943/1968" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Swallow, Mrs. Alan</unittitle><abstract>by an attorney on her behalf</abstract><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">1</container></did></c02>
+            <c02 id="swpr"><did><unittitle>The Swallow Press</unittitle><unitdate normal="1968" type="inclusive">1968, </unitdate><unitdate normal="1966/1968" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Wagner, Durrett</unittitle><note><p>See <ref target="swpr">The Swallow Press</ref>.</p></note></did></c02>
+            <c02><did><unittitle>Yueh, Norma</unittitle><abstract>includes letter to Anaïs Nin</abstract><unitdate normal="1968" type="inclusive">1968</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Miscellaneous, A-Z</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Miscellaneous, first name only, A-Z</unittitle><unitdate normal="1967" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle>Book reviews, Publishing in the West : Alan Swallow</unittitle><unitdate normal="1974" type="inclusive">[1974]</unitdate><container type="Box">1</container></did></c02>
+				<c02><did><unittitle>Publishing in the West : Alan Swallow</unittitle><abstract>early manuscript, with working title "Some Letters of Alan Swallow"</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Publishing in the West : Alan Swallow</unittitle><abstract>galleys</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Publishing in the West : Alan Swallow</unittitle><abstract>hardcover</abstract><unitdate normal="1974" type="inclusive">1974</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Publishing in the West : Alan Swallow</unittitle><abstract>softcover</abstract><unitdate normal="1974" type="inclusive">1974</unitdate><container type="Box">1</container></did></c02>            
+            <c02><did><unittitle>Miscellaneous</unittitle><abstract>newsletter, undated catalog of Alan Swallow, Publisher, Swallow's obituary,</abstract><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02><did><unittitle>About Swallow</unittitle><container type="Box">1</container></did><scopecontent><p>This folder contains essays, articles, and poems by Gus Blaisdell, Cleanth Brooks, [Robert?] Chrisman, J. V. Cunningham, Richard Elman, Vi Gale, Mark Harris, Weilliam Hogan, Lewis Nichols, Prairie Press, Bobbi Sherman, William Stafford, Jim Wood, and Norma Yueh, as well as Swallow's obituary.  All items are either photocopies or reprints.</p></scopecontent></c02>
+            <c02><did><unittitle>By Swallow</unittitle><container type="Box">1</container></did><scopecontent><p>This folder contains the following: "Story of a publisher," "The tenth year: An editorial," Yvor Winters: A publisher's comment," "Epitaph" (excerpt from letter to friend), and an interview of author Vardis Fisher.  All are photocopies, no originals.</p></scopecontent></c02>
+         </c01>
+         
+         <c01 level="series"><did><unittitle>Miscellaneous</unittitle></did>
+            <c02><did><unittitle>Miscellaneous handwritten notes</unittitle><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

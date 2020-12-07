@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.10, 22 May 2008-->
+<!-- Added standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="franklin_25">franklin_25</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Franklin Automobile Company Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2008-06-25" encodinganalog="Date">25 Jun 2008</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-06-25">25 Jun 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>25 Sep 2015 - additions, name changed (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">	 Franklin Automobile Company.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Franklin Automobile Company Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1906/1932" type="inclusive" label="Inclusive Dates: ">1906-1932</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 folders (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Material relating to the 	H. H. Franklin Manufacturing Company in Syracuse, New York.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2619870</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The H. H. Franklin Manufacturing Company, located  in Syracuse, New York, was a a maker of automobiles between 1902 and 1934.  The company was founded by Herbert H. Franklin with the assistance of engineer John Wilkinson.  Franklin automobiles offered the first six-cylinders (by 1905), the first automatic spark advance (1907), and were the leading air-cooled automobiles on the market (most other autos were water-cooled, which was problematic for cold-weather buyers such as those in Syracuse).  Franklin also manufactured air-cooled engines for light aircraft and early American helicopters.</p><p>The company produced automobiles as The Franklin Automobile Company.  The company went bankrupt in 1934, but a  group of former Franklin employees formed Air-Cooled Motors of Syracuse, bought Franklin's name and assets, and continued production of Franklin air-cooled engines for several years. The company eventually passed through several corporate hands including Republic (aircraft),Tucker Industries (Tucker automobile), and Aero Industries; the latter renamed it Franklin Engine Company.  In 1975 the company was purchased by the government of Poland and relocated to Rzeszów.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Franklin Automobile Company Collection</emph> (formerly titled <emph render="bold">Franklin Automobile 25th Anniversary Broadside</emph>) contains material relating to the Syracuse, New York manufacturer of automobiles.  The collection includes  an illustrated broadside advertisement for "The 25th Anniversary Franklin," at a price of $2490 for the coupe and $2790 for the sedan.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>By type.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has made a concerted effort over the 
+years to ensure that its manuscript and rare books holdings complement each other.  
+As a result, many of our manuscript collections are supported by books, pamphlets, 
+serials and other items which are cataloged in the Rare Books Collection.  Please be 
+sure to search &summitref; for these related materials.</p><p>In particular, see <ref href="2263314" role="bibid">Menno Duerksen's history of the great american classics</ref>, and the  H.H. Franklin Club's <ref href="2263295" role="bibid">The city of Syracuse &amp; Franklin cars</ref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">New York State</subject><subject encodinganalog="650" source="local">Business and Industry</subject><!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Franklin Automobile Company.</corpname><corpname encodinganalog="610" source="lcnaf">H.H. Franklin Manufacturing Company -- History.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">	 Automobile industry and trade -- New York (State) -- Syracuse.</subject><subject encodinganalog="650" source="lcsh">Automobiles -- History.</subject><subject encodinganalog="650" source="lcsh">Franklin automobile.</subject>
+         <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- History.</geogname>
+         <genreform encodinganalog="655" source="aat">Advertisements.</genreform><genreform encodinganalog="655" source="aat">Broadsides (notices)</genreform><genreform encodinganalog="655" source="aat">Checks (bank checks)</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Franklin Automobile Company Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2008, 2015.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>Business papers</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <abstract>check, printed envelope</abstract><unitdate normal="1906" type="inclusive">1906, </unitdate><unitdate normal="1927" type="inclusive">1932</unitdate>
+                  <container type="SC">223</container>
+                  
+                  
+               </did>
+            </c02>
+         </c01>
+      <c01 level="series">
+         
+            <did>
+               <unittitle>Printed material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Franklin Automobile 25th Anniversary Broadside</unittitle>
+                  <unitdate normal="1927" type="inclusive">1927</unitdate>
+                  <container type="SC">223</container>
+                  
+                  
+               </did>
+            </c02>
+         </c01></dsc>
+   </archdesc>
+</ead>

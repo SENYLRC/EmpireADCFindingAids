@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+<?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen.css"?>
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="botkin_h">botkin_h</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Henry Botkin Papers</titleproper>
+            <subtitle>An inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-04-09" encodinganalog="Date">9 Apr 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-04-09">9 Apr 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>21 Jun 2011 - inventory added (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+            &su_name;
+            <lb/>
+            &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Botkin, Henry Albert, 1896-1983.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Henry Botkin Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1928/1965" type="inclusive" label="Inclusive Dates: ">1928-1965</unitdate>
+         <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">American painter and illustrator.
+            Collection includes correspondence, printed material, photographs, clippings.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2744136</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         <p>Henry Botkin (1896-1983) was an American abstract, modern and expressionist painter and
+            illustrator; he was known for his figure-views, still lifes, and non-objective
+            paintings. He was active in artistic circles, served as president of four major art
+            organizations (Artists Equity Association, American Abstract Artists, Group 256
+            Provincetown, and Federation of Modern Painters and Sculptors), and in 1955 organized
+            the first exhibition of American abstract art at the Museum of Modern Art in Tokyo,
+            Japan.</p>
+      </bioghist>
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Henry Botkin Papers</emph> consists of biographical material, correspondence, manuscript material, photographs, published material and subject files.</p><p><emph render="bold">Biographical material</emph> contains a biographical sketch of Botkin from the 1948 Marquis <emph render="italic">International Who's Who</emph>.</p><p><emph render="bold">Correspondence</emph> includes letters to or from Botkin's wife and fellow painter Anna Walinska, along with a few unidentified letters.</p><p><emph render="bold">Manuscripts</emph> contains an assortment of material by and about Botkin, including a book outline, press releases, some pencil sketches, speeches and discussions.</p><p><emph render="bold">Photographs</emph> are of Botkin, his work, and the work of others.</p><p>The bulk of <emph render="bold">Published material</emph> is comprised of newspaper clippings by and about Botkin; there are also some reproductions of Botkin's work and some exhibit material.  Two books originally with the collection have been transferred to Rare Books for cataloging.</p><p><emph render="bold">Subject files</emph> includes financial material (bills, receipts, etc.), an essay  on abstrac art in Japan by Sabro Hasagawa, a few building plans and meeting minutes from several organizations to which Botkin belonged.</p>
+      </scopecontent>
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical.</p>
+      </arrangement>
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      <!--Use archref, not extref, to link to related collections.-->
+      <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>Two books (listed in inventory below) have been sent to Rare Books for cataloging.</p>
+      </separatedmaterial>
+     
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Art -- Illustrators</subject>
+         <subject encodinganalog="650" source="local">Art -- Painters</subject>
+         <persname encodinganalog="600" source="lcnaf">Botkin, Henry Albert, 1896-1983.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Expressionism (Art)</subject>
+         <subject encodinganalog="650" source="lcsh">Painting, Abstract.</subject>
+         <subject encodinganalog="650" source="lcsh">Painting, America -- 20th century.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <genreform encodinganalog="655" source="aat">Press releases.</genreform><occupation encodinganalog="656" source="lcsh">Painters.</occupation>
+         <!--<function encodinganalog="657">##</function>-->
+      </controlaccess>
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Henry Botkin Papers, <lb/> &su_name; </p>
+      </prefercite>
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Mrs. Henry Botkin</persname>, 1965.</p>
+      </acqinfo>
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series">
+            <did>
+               <unittitle>Biographical material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Biographical material</unittitle>
+                  <abstract>"International Who's Who" published by the A.N. Marquis Co.</abstract>
+                  <unitdate normal="1948" type="inclusive">1948</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Mrs. Botkin</unittitle>
+                  <abstract>handwritten and typed letters; photocopied letters</abstract>
+                  <unitdate normal="1937/1962" type="inclusive">1937-1962</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Anna Walinska</unittitle>
+                  <abstract>handwritten and typed letters; photocopied letters</abstract>
+                  <unitdate normal="1928/1965" type="inclusive">1928-1965</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <abstract>handwritten letters; photocopied letters</abstract>
+                  <unitdate normal="1919/1939" type="inclusive">1919-1939</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02></c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Manuscripts</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>About Botkin's work</unittitle>
+                  <abstract>critiques and reviews</abstract>
+                  <unitdate normal="1927/1959" type="inclusive">1927-1959</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Autobiographical</unittitle>
+                  <unitdate normal="1919/1965" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>By Botkin</unittitle>
+                  <abstract>outline for book; writings on art and artists</abstract>
+                  <unitdate normal="1944" type="inclusive">1944</unitdate>
+                  <unitdate normal="1919/1965" type="inclusive"> undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Gallery press releases by Botkin</unittitle>
+                  <abstract>Gallery 256; Karlis Gallery; Museum of Modern Art</abstract>
+                  <unitdate normal="1957/1962" type="inclusive">1957-1962</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Gallery press releases mentioning Botkin</unittitle>
+                  <abstract>Gallery 256; Karlis Gallery</abstract>
+                  <unitdate normal="1957/1962" type="inclusive">1957-1962</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>"Henry Botkin" by anonymous</unittitle>
+                  <unitdate normal="1919/1965" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Pencil sketches by Botkin</unittitle>
+                  <unitdate normal="1919/1965" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Speeches and discussions</unittitle>
+                  <abstract>first draft for forum-Museum of Modern Art; copy of Botkin's part in
+                     panel discussion for federation meeting; discussion with Mr. Segy and Mrs.
+                     Story</abstract>
+                  <unitdate normal="1958" type="inclusive">1958</unitdate>
+                  <unitdate normal="1919/1965" type="inclusive"> undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Photographs</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Negatives</unittitle>
+                  <unitdate normal="1919/1965" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Of works of others</unittitle>
+                  <abstract>from Henry Botkin to George Gershwin</abstract>
+                  <unitdate normal="1919/1965" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Of Botkin's work</unittitle>
+                  <unitdate normal="1928/1961" type="inclusive">1928-1961</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Of Henry Botkin</unittitle>
+                  <unitdate normal="1945/1955" type="inclusive">circa 1950 </unitdate>
+                  <unitdate normal="1919/1965" type="inclusive"> undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Published material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Book, <emph render="italic">Art: From Life to Life</emph> by A. Walkowitz</unittitle>
+                  
+                  
+                  
+               <note><p>Transferred to Rare Books for cataloging.</p></note></did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Exhibitions</unittitle>
+                  <abstract>newspaper clippings and promotional material</abstract>
+                  <unitdate normal="1935/1965" type="inclusive">1935-1965</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Exhibition catalog, <emph render="italic">Catalogue des Tableaux Modernes</emph></unittitle>
+                  
+                  
+                  
+               <unitdate normal="1928" type="inclusive">1928</unitdate><note><p>Transferred to Rare Books for cataloging.</p></note></did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Newspaper clippings about Botkin</unittitle>
+                  <unitdate normal="1929/1963" type="inclusive">1929-1963</unitdate>
+                  <unitdate normal="1919/1965" type="inclusive"> undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Newspaper clippings about others</unittitle>
+                  <abstract>B.A. Botkin; Gershwin; Curry; Glackens; Lahey; Kern; Zanuck; Edzard;
+                     Cezanne</abstract>
+                  <unitdate normal="1929/1956" type="inclusive">1929-1956</unitdate>
+                  <unitdate normal="1919/1965" type="inclusive"> undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Newspaper clippings by Botkin</unittitle>
+                  <abstract>"One-Man Shows at Karlis Gallery"</abstract>
+                  <unitdate normal="1958" type="inclusive">1958</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Reproductions of Botkin's work</unittitle>
+                  <unitdate normal="1923/1961" type="inclusive">1923-1961</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Subject files</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Bills, receipts, checks, invoices</unittitle>
+                  <unitdate normal="1957/1960" type="inclusive">1957-1960</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Building plans, Artist's Equity</unittitle>
+                  <unitdate normal="1952" type="inclusive">1952</unitdate>
+                  <unitdate normal="1919/1965" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hasegawa, Sabro, "Abstract Art in Japan Today" and vitae</unittitle>
+                  <abstract>essay and notes</abstract>
+                  <unitdate normal="1919/1965" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes of meetings</unittitle>
+                  <abstract>Artist's Equity Association Board of Directors; Building Administration
+                     Board</abstract>
+                  <unitdate normal="1952/1953" type="inclusive">1952-1953</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

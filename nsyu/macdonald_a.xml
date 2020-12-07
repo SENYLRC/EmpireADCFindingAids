@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="macdonald_a">macdonald_a</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Alexandre Macdonald Letters</titleproper>
+            <subtitle>An  inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-06-28" encodinganalog="Date">28 Jun 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-06-28">28 Jun 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Macdonald, Etienne-Jacques-Joseph-Alexandre, duc de Tarente, 1765-1840.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Alexandre Macdonald Letters</unittitle>
+         <unitdate encodinganalog="245$f" normal="1807/1840" type="inclusive" label="Inclusive Dates: ">1807-1840</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 folders (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Letters from the French military leader and legislator to three generations of the Billacoys family.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2810980</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="fra">French</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Étienne Jacques Joseph Alexandre MacDonald (1765-1840) was a Marshal of France and 
+		military leader during the French Revolutionary Wars and the Napoleonic Wars, regarded with 
+		respect for both his military achievements and his personal character.</p><p>Born in France to 
+		Jacobite Scottish parents, he embarked on his military career in 1785.  By 1793 he was a colonel in 
+		the French Army, and fought in Spain and Italy.  In 1800 he was named commander of the Helvetic Republic (Switzerland) and in 
+		1809 he became military adviser to the viceroy of the Kingdom of Italy.  In recognition of his 
+		achievements that same year in the Battle of Wagram against the Austrians, Napoleon made 
+		him a Marshal of France and duke of Taranto (in Naples).  After the restoration of the 
+		Bourbon monarchy in 1814 MacDonald assisted in negotiating Napoleon's surrender and was named a peer of France,  a Knight Grand-Croix of the Royal 
+		Order of St. Louis, and Chancellor of the Legion of Honor.  He retired from public life in 
+		1830 and died in 1840.</p><p>Although he visited his father's homeland, the island of Uist in the Outer Hebrides, only once, the island erected a plaque "to the memory of Marshal of France Jacques Macdonald" in May of 2010.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Alexandre MacDonald Letters</emph> consists of approximately 140 letters from MacDonald to 
+			three generations of the Billacoys family.   The letters are personal and intimate in nature, 
+			many concerning the two Billacoys children who were sponsored by MacDonald and in whom 
+			he took a lively interest.  Some discuss his activities in the French legislature and many 
+			give details of his life in Paris and at his chateau, with mention of mutual friends, 
+			including a number of important French personalities of the time.</p>
+			
+			<p>There is little of military of political content, but the letters 
+			reveal a good deal of Macdonald's personality, character and philosophy and reflect the 
+			mores of France over a span of more than forty years.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Chronological.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p> MacDonald's travel diary resides in the French National Archives and includes, according to an article in London's <emph render="italic">Sunday Times</emph>, "his impressions on his first visit to his ancestral homeland...[and] an account of a boisterous evening in the company of a drunken Sir Walter Scott."</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Military history</subject>
+			<subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+			<persname encodinganalog="600" source="lcnaf">Macdonald, Etienne-Jacques-Joseph-Alexandre, duc de Tarente, 1765-1840.</persname>
+         <famname encodinganalog="600" source="lcnaf">Billacoys family.</famname>
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <!--<subject encodinganalog="650" source="lcsh">##</subject>-->
+         <geogname encodinganalog="651" source="lcsh">France -- History -- 1789-1815.</geogname>
+         <geogname encodinganalog="651" source="lcsh">France -- History -- Consulate and First Empire, 1799-1815.</geogname>
+			<geogname encodinganalog="651" source="lcsh">France -- Social life and customs -- 18th century.</geogname>
+         <geogname encodinganalog="651" source="lcsh">France -- Social life and customs -- 19th century.</geogname>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Soldiers.</occupation>
+			<occupation encodinganalog="656" source="lcsh">Legislators.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Alexandre MacDonald Letters, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 1969.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle><unitdate normal="1807/1840" type="inclusive">1807-1840</unitdate></unittitle><physdesc><extent>2 folders</extent></physdesc><container type="SC">513</container></did></c02>
+            
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

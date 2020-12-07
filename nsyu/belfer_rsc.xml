@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="belfer_rsc">belfer_rsc</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Belfer Record Sleeve Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2012-08-10" encodinganalog="Date">10 Aug 2012</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2012-08-10">10 Aug 2012</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Belfer Record Sleeve Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1900/1980" type="inclusive" label="Inclusive Dates: ">circa 1900-1980</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>6 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Record sleeves from several dozen record companies, labels, stores and dealers, the majority located in the United States and a few in other countries.  </abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3948943</unitid>
+         <langmaterial label="Language: " encodinganalog="546">Majority in 
+            <language langcode="eng">English</language>; scattered items in <language langcode="fre">French</language>, <language langcode="ger">German</language>, <language langcode="spa">Spanish</language>, <language langcode="ita">Italian</language>, <language langcode="por">Portuguese</language>, <language langcode="swe">Swedish</language>, <language langcode="gre">Greek</language>, <language langcode="rus">Russian</language>
+         and <language langcode="dan">Danish</language></langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>This is an artificial reference/research collection created by Belfer Audio Archive.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Belfer Record Sleeve Collection</emph> consists of record sleeves from several dozen record companies, labels, stores and dealers, the majority located in the United States and a few in other countries.  Most are 10" square in size, with a few smaller at 7" square and a few larger at 12" square.   Many of the sleeves are decorative and/or include advertising for phonograph-related items such as players and needles.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The sleeves are subdivided into those printed with company or label names, and those printed with retail store or dealer names.  Company/label sleeves are arranged alphabetically by name, based on the information appearing on the sleeve.   Company names beginning with "Discos" are filed under the next word, so for example "Discos Iberia" will be found under "I".  Store/dealer sleeves are arranged alphabetically by country, based on the information appearing on the sleeve.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Music</subject><subject encodinganalog="650" source="local">Popular culture</subject><!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Columbia Recording Corporation.</corpname><corpname encodinganalog="610" source="lcnaf">Decca Records (Firm)</corpname><corpname encodinganalog="610" source="lcnaf">Edison Bell Phonograph Corporation.</corpname><corpname encodinganalog="610" source="lcnaf">Electrola GmbH.</corpname><corpname encodinganalog="610" source="lcnaf">Odeon (Record company)</corpname><corpname encodinganalog="610" source="lcnaf">Pathé Frères Phonograph Company.</corpname><corpname encodinganalog="610" source="lcnaf">RCA-Victor Company, inc.</corpname><corpname encodinganalog="610" source="lcnaf">Victor Talking Machine Company.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Sound recording industry.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Record covers.</genreform><genreform encodinganalog="655" source="aat">Picture sleeves.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Belfer Record Sleeve Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Accumulated by Belfer Audio Archive, Syracuse University.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>As required, at irregular intervals.</p>
+      </accruals>
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+<c01 level="series"><did><unittitle>Companies</unittitle></did>
+   <c02><did><unittitle>Ansonia</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>ARA</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Arte Musica</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>Spain?</abstract><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Arto</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>one includes ad for rolls for player piano</abstract><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Atlantic</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>A, misc</unittitle><abstract>ABC, Accord (Sweden), Aeolian, Admiral, Aladdin, Alamphon (World War I/war bonds sleeve), Alberti (Germany), Discos America (Venezuela), Animal Records, Discos Antiguos (Antigua), Arion, ASO, Audiodiscs</abstract><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>A, misc</unittitle><physdesc><dimensions>12"</dimensions></physdesc><abstract>Aeolian, Artist, Audiodiscs</abstract><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Banner</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Bluebird</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Brunswick</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>B, misc</unittitle><abstract>BBC (England), Bell, Better Music for Young Folks, Black, Broadcast, Bullet</abstract><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>B, misc</unittitle><physdesc><dimensions>12"</dimensions></physdesc><abstract>BBC (England)</abstract><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Cameo</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Capitol</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Children's Record Guild</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Columbia</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Columbia</unittitle><physdesc><dimensions>12"</dimensions></physdesc><container type="Oversize">9</container></did></c02>
+   <c02><did><unittitle>Continental</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Coral</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><abstract>subsidiary of Decca</abstract><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>C, misc</unittitle><abstract>Candy, Caravan ("Foodini's Trip to the Moon" and "Snow White"), Clarion, Colonial (Puerto Rico), Concertone, Conqueror (distributed exclusively by Sears Roebuck), Cordion, Crown, Crystalette, Cub</abstract><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>C, misc</unittitle><physdesc><dimensions>12"</dimensions></physdesc><abstract>Cetra (Spain), CGD (Compagnia Generale del Disco, Spain?)</abstract><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Decca</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Decca</unittitle><physdesc><dimensions>12"</dimensions></physdesc><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Dot</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><abstract>includes Pat Boone picture sleeve</abstract><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>D, misc</unittitle><abstract>Dana, Deluxe, Derby, Deutsche Grammophon (Germany), Discovery, Diva, Domino, Dunhill</abstract><container type="Oversize">2</container></did></c02>
+   <c02><did><unittitle>Edison, Edison Diamond Disc</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Electrola</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>Germany</abstract><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Electrola</unittitle><physdesc><dimensions>12"</dimensions></physdesc><abstract>Germany</abstract><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Elite-Special</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>Germany</abstract><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Emerson</unittitle><physdesc><dimensions>6", 7", 10"</dimensions></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Epic</unittitle><physdesc><dimensions>7"</dimensions></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>E, misc</unittitle><abstract>Excelsior, Exclusive, Discos Exito</abstract><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>F, misc</unittitle><abstract>Federal, Festival (France), Folkraft (reverse includes folk dance instructions), Fona Radio (Denmark?), Fuentes</abstract><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>G, misc</unittitle><abstract>Gennett, Gilt-Edge, Gramola (Germany), Grey Gull</abstract><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>G, misc</unittitle><physdesc><dimensions>12"</dimensions></physdesc><abstract>Gramola (Germany)</abstract><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>H, misc</unittitle><abstract>Harmony, Hindenburg (sleeve has line art portrait of him), Hit Record</abstract><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>I, misc</unittitle><abstract>Discos Iberia (Spain), Immortal Music of the Masters (flexible plastic, possibly India?), Imperial (includes Ricky Nelson picture sleeve), International Records for Children</abstract><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>I, misc</unittitle><physdesc><dimensions>12"</dimensions></physdesc><abstract>Ideal (France), Image et Son (Belgium)</abstract><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Jien-O-Phone</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>India</abstract><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Jubilee</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Kapp</unittitle><physdesc><dimensions>7"</dimensions></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>King</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">3</container></did></c02>
+   <c02><did><unittitle>Linguaphone</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>England; includes one hard-sided portfolio-style case</abstract><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>London</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>London</unittitle><physdesc><dimensions>12"</dimensions></physdesc><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>L, misc</unittitle><abstract>Laurie, Liberty, Listen-n-Sing (includes instructions on singing along, harmonizing), Little Folks Favorites</abstract><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Marvela</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Melotone</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>manufactured by Brunswick</abstract><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Mercury</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>MGM</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Modern</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Musicraft</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>M, misc</unittitle><abstract>Majestic, Marconi Velvet Tone, Masterpiece, Melodisc, Monogram, Moxie, Musart (Disco Irrompibles)</abstract><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>M, misc</unittitle><physdesc><dimensions>12"</dimensions></physdesc><abstract>Marconi Velvet Tone, Music Lovers Chest of Records</abstract><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>New Excelsior</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>India</abstract><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Odeon</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><abstract>includes sleeves from Spain, Germany, France, India; several say "Pressed in the Okeh factories"</abstract><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Odeon</unittitle><physdesc><dimensions>12"</dimensions></physdesc><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Okeh</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>see also Odeon</abstract><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Oriole</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>"sold only at McCrory's"</abstract><container type="Oversize">4</container></did></c02>
+   <c02><did><unittitle>Panart</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>Parlophon</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>England?</abstract><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>Pathé</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>includes one in French</abstract><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>Pathé</unittitle><physdesc><dimensions>12"</dimensions></physdesc><container type="Oversize">9</container></did></c02>
+   <c02><did><unittitle>Perfect</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>Polydor</unittitle><physdesc><dimensions>10"</dimensions></physdesc><abstract>German (Deutsche Grammophon, Berlin)</abstract><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>Presto</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>P, misc</unittitle><abstract>Discos Pampa, Panachord (made by Decca), Parlway, Peerless (Mexico), Pied Piper, Disques Pierrot (Montreal), Playtime Records, Polyphon, Prom, </abstract><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>P, misc</unittitle><physdesc><dimensions>12"</dimensions></physdesc><abstract>Pharos (Greece), Presto, Disque Pyral</abstract><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>RCA Victor</unittitle><abstract>unusual items include picture sleeves for Fontane Sisters, Perry Como, Eartha Kitt, Eddie Fisher; holiday sleeve; Little Nipper Junior series; many sleeves with Victor Talking Machine Company ad; bag with handle; more.  Countries represented include Mexico, France, Greece, Italy, Germany, Brazil, more</abstract><container type="Oversize">6</container></did></c02>
+   <c02><did><unittitle>RCA Victor</unittitle><physdesc><dimensions>12"</dimensions></physdesc><container type="Oversize">9</container></did></c02>
+   <c02><did><unittitle>R, misc</unittitle><abstract>R.C.S. (England), Regal, Reprise (Hollywood / Warner Bros.), Roulette, Royale</abstract><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>R, misc</unittitle><physdesc><dimensions>12"</dimensions></physdesc><abstract>Radio Carisch (Italy)</abstract><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Savoy</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>Signature</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>Seeco</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>S, misc</unittitle><abstract>Schuster's, Scepter, Discos Silver (Colombia), Silvertone, Smash (division of Mercury), Sonolux, Sonora (incl. one from Sweden[?] printed with ad for portable phonograph), Discos Sonoro (Cuba), Soundcraft, Sparton (printed with ad for portable phonograph), Specialty, Discos Star (Brazil), Sunset</abstract><container type="Oversize">5</container></did></c02>
+   <c02><did><unittitle>S, misc</unittitle><physdesc><dimensions>12"</dimensions></physdesc><abstract>Schirmer's Library of Recorded Music, Schuster's, Silvertone</abstract><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Telefunken</unittitle><abstract>Germany; includes two picture sleeves of Erna Sach, Peter Ander[s?], Rosita Serrano, Teddy Stauff</abstract><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>Tempo</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>T, misc</unittitle><abstract>Tops, Transco, The Twin (India)</abstract><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>T, misc</unittitle><physdesc><dimensions>12"</dimensions></physdesc><abstract>Transco</abstract><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>United Artists</unittitle><physdesc><dimensions>7"</dimensions></physdesc><abstract>includes one from "Silver Spotlight Series"</abstract><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>U, misc</unittitle><physdesc><dimensions>12"</dimensions></physdesc><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Vocalion</unittitle><physdesc><dimensions>10"</dimensions></physdesc><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>V, misc</unittitle><abstract>Variety, Vaughan, Verne, Vik (Argentina), Vita, Voices of Victory (souvenir sleeve with pictures of FDR and Churchill)</abstract><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>W, misc</unittitle><abstract>Wand, Wards, Warner Bros., White Eagle (reverse printed with "Polish Popular Songs" list), Wilcox-Gay (cartons rather than sleeves), Wing (division of Mercury), Word, WOR Feature Records (Winston Churchill speeches, souvenir sleeve)</abstract><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>X, misc</unittitle><abstract>X</abstract><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>Z, misc</unittitle><abstract>Zephyr, Zonophone (England)</abstract><container type="Oversize">7</container></did></c02>
+   <c02><did><unittitle>Unidentified</unittitle><abstract>sorted by language</abstract></did>
+      <c03><did><unittitle>Chinese, French, Greek</unittitle><container type="Oversize">10</container></did></c03>
+      <c03><did><unittitle>Russian</unittitle><physdesc><dimensions>7", 10"</dimensions></physdesc><abstract>includes decorative folk-art style, line drawings of buildings, etc.</abstract><container type="Oversize">8</container></did></c03>
+      <c03><did><unittitle>Russian</unittitle><physdesc><dimensions>12"</dimensions></physdesc><abstract>includes some whose name translates as "April Factory" [?]</abstract><container type="Oversize">10</container></did></c03></c02></c01>
+<c01 level="series"><did><unittitle>Stores/dealers</unittitle></did>
+   <c02><did><unittitle>United States</unittitle><abstract>California, Illinois, Massachusetts, Michigan, New Jersey, New York</abstract><container type="Oversize">10</container></did></c02>
+   <c02><did><unittitle>Other countries</unittitle><abstract>Brazil, Canada, England, Morocco (Casablanca), Spain, Sweden, </abstract><container type="Oversize">10</container></did></c02></c01>
+<c01 level="series"><did><unittitle>Unidentified</unittitle></did>
+   <c02><did><unittitle>Miscellaneous</unittitle><abstract>large hard-sided album for multiple discs, with decorative medallion on front</abstract><container type="Oversize">9</container></did></c02>
+   <c02><did><unittitle>Miscellaneous</unittitle><abstract>sleeves with no identifying information</abstract><container type="Oversize">7</container></did></c02></c01>
+
+      </dsc>
+   </archdesc>
+</ead>

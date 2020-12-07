@@ -1,0 +1,1584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.4, 4/7/2006 -->
+
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="us" mainagencycode="NSyU" identifier="afce">afce</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">American Foundation for Continuing Education (AFCE) Records</titleproper>
+				<subtitle>An inventory of its records at Syracuse University</subtitle>
+			<author encodinganalog="Creator">EL</author><sponsor>The adult education holdings are collectively known as the <lb/><extptr title="Alexander N. Charters Library of Resources for Educators of Adults" href="https://library.syr.edu/scrc/collections/areas/adult-ed.php" show="new"/>.</sponsor></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="1976-10" encodinganalog="Date">Oct 1976</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2006-04-11">11 Apr 2006</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<revisiondesc>
+			<list>
+				<item>11 Apr 2006 - converted to EAD (MRR)</item><item>21 Jun 2011 - brochure, Box 31; formatting (MRC)</item>
+			</list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<corpname encodinganalog="110">American Foundation for Continuing Education</corpname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">American Foundation for Continuing Education (AFCE) Records</unittitle>
+			<unitdate encodinganalog="245$f" normal="1947/1965" type="inclusive" label="Inclusive Dates: ">1947-1965</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>19 linear ft</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">Administrative files, general correspondence, financial documents, programs and projects (conferences, workshops, seminars), and publications. Individual correspondents include William W. Cowan, Stanley A. Gill, Charles A. Nelson, George W. Overton, William J. Trainor, Harold S. Williams, and Jerome M. Ziegler as well as officials from the Fund for Adult Education (FAE).</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="us" repositorycode="NSyU">148809</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+			</langmaterial>
+		</did>
+				
+		<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>Beginning in 1947 as the American Foundation for Political Education, this organization developed liberal education materials for study-discussion programs focused on politics, law, and international affairs; helped organizations, agencies, and institutions through consultation, program development, and leadership training; and prepared special materials on liberal arts and politics for business and industry. In the late 1950’s the Foundation’s subject interests, publications, and clientele grew and encompassed the fields of economics, science, the arts, and the humanities, thus prompting the Foundation to change its name to the American Foundation for Continuing Education. The Foundation garnered financial support largely by grants from the Fund for Adult Education, as well as participants’s fees and service charges. The Foundation ended most of its activities other than publications and revisions in 1965.</p></bioghist>
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>Administrative files contain annual reports, board of directors minutes, meeting reports and agendas, funding information, staff meetings, and miscellany. Correspondence has four divisions: general correspondence (1953-1970); individuals and organizations; outgoing (1962-1969); subject. Key Foundation names appear as correspondents; William W. Cowan, Stanley A. Gill, Charles A. Nelson, George W. Overton, William J. Trainor, Harold S. Williams, and Jerome M. Ziegler; as well as officials from the Fund for Adult Education. Financial documents include account books, auditor and bank statements, income tax and related papers, payroll records, and other common financial data. Programs and projects include conferences, workshops, and seminars sponsored by the Foundation or in which the Foundation played a role. Of note, Arms and Foreign Policy Program (1962), Avenue to the Arts (1959-1963), Explorations of the Universe (1961-1963), Peace Corps Project (1960’s), and Science Program (1959-1964). Publications include discussion manuals and papers. Subject files have material of organizations with which the Foundation had contact. Miscellaneous papers consist of newsletters and an assortment of printed material.</p>
+		</scopecontent>
+		
+		<!--<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>## OPT (MARC 351$a)</p>
+		</arrangement>-->
+		
+		<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>The library holds a considerable number of collections related to adult and continuing education.  Please refer to &subjindex; for a complete listing.</p>
+		</relatedmaterial>
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Adult education</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Cowan, William Wallace</persname>
+				<persname encodinganalog="600" source="local">Gill, Stanley A.</persname>
+				<persname encodinganalog="600" source="local">Nelson, Charles A.</persname>
+				<persname encodinganalog="600" source="local">Overton, George W.</persname>
+				<persname encodinganalog="600" source="lcnaf">Trainor, William J.</persname>
+				<persname encodinganalog="600" source="local">Williams, Harold S.</persname>
+				<persname encodinganalog="600" source="lcnaf">Ziegler, Jerome M.</persname>
+			
+            <corpname encodinganalog="610" source="lcnaf">American Foundation for Continuing Education.</corpname>
+				<corpname encodinganalog="610" source="lcnaf">American Foundation for Political Education.</corpname>
+				<corpname encodinganalog="610" source="lcnaf">Fund for Adult Education (U.S.)</corpname>
+				<corpname encodinganalog="610" source="lcnaf">Peace Corps (U.S.)</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Adult education.</subject>
+				<subject encodinganalog="650" source="lcsh">Art -- Study and teaching.</subject>
+				<subject encodinganalog="650" source="lcsh">International relations.</subject>
+				<subject encodinganalog="650" source="lcsh">Science -- Study and teaching.</subject>
+			
+            <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+				<genreform encodinganalog="655" source="aat">Manuals (instructional materials)</genreform>
+				<genreform encodinganalog="655" source="aat">Minutes (administrative records)</genreform>
+				<genreform encodinganalog="655" source="aat">Reports.</genreform>
+			<occupation encodinganalog="656" source="lcsh">Teachers.</occupation>
+			<function encodinganalog="657" source="lcsh">Adult education</function></controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p>American Foundation for Continuing Education (AFCE) Records, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<!--<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>### (MARC 541 and/or  561)</p>
+		</acqinfo>-->
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Administrative files</unittitle>
+				<!--C01 @LEVEL must be set to 'series' to show up in TOC.--></did>
+				<c02>
+					<did>
+						<unittitle>"AFCE - Origin and Philosophical Basis"</unittitle>
+						
+						<unitdate normal="1947/1965" type="inclusive">undated</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Administrative manual</unittitle>
+						
+						<unitdate normal="1955" type="inclusive">1955</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Advisors</unittitle>
+						
+						
+						
+						
+						
+					</did>
+				<c03><did><unittitle>Advisors to AFCE</unittitle><unitdate normal="1961/1965" type="inclusive">1961-1965</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Foundation advisors</unittitle><unitdate normal="1960" type="inclusive">1960</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>New</unittitle><unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Renewed</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did></c03></c02><c02>
+					<did>
+						<unittitle>Annual reports</unittitle>
+						
+						<unitdate normal="1952" type="inclusive">1952, </unitdate><unitdate normal="1968" type="inclusive">1968</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Board of Directors minutes</unittitle>
+						
+						
+						
+						
+						
+					</did>
+				<c03><did><unittitle><unitdate normal="1947-04-17/1952-06-30" type="inclusive">1947 Apr 17 - 1952 Jun 30</unitdate></unittitle><container type="Box">1</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1952-08-01/1953-04-01" type="inclusive">1952 Aug 6 - 1953 Apr 1</unitdate></unittitle><container type="Box">2</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1953-05-09/1954-04-01" type="inclusive">1953 May 9 - 1954 Apr 1</unitdate></unittitle><container type="Box">2</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1954-05/1955-05" type="inclusive">1954 May  - 1955 May</unitdate></unittitle><container type="Box">3</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1955-06/1956-06" type="inclusive">1955 Jun  - 1956 Jun</unitdate></unittitle><container type="Box">3</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1956-07/1957-06" type="inclusive">1956 Jul - 1957 Jun</unitdate></unittitle><container type="Box">3</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1957-07/1958-06" type="inclusive">1957 Jul 1 - 1958 Jun 30</unitdate></unittitle><container type="Box">4</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1958-07/1959-06" type="inclusive">1958 Jul 1 - 1959 Jun 30</unitdate></unittitle><container type="Box">4</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1959-07/1960-06" type="inclusive">1959 Jul 1 - 1960 Jun 30</unitdate></unittitle><container type="Box">4</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1960-07/1961-06" type="inclusive">1960 Jul 1 - 1961 Jun 30</unitdate></unittitle><container type="Box">5</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1961-06/1961-12" type="inclusive">1961 Jul - 1961 Dec</unitdate></unittitle><container type="Box">5</container>
+						
+						
+						
+					</did></c03></c02><c02>
+					<did>
+						<unittitle>Board of directors minutes, meeting reports and agendas</unittitle>
+						
+						
+						
+						
+						
+					</did>
+				<c03><did><unittitle><unitdate normal="1962-06-02" type="inclusive">1962 Jun 2</unitdate></unittitle><container type="Box">5</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1962-11-03" type="inclusive">1962 Nov 3</unitdate></unittitle><container type="Box">5</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1963-06-08" type="inclusive">1963 Jun 8</unitdate></unittitle><container type="Box">5</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1963-12-07" type="inclusive">1963 Dec 7</unitdate></unittitle><container type="Box">5</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1964-05-15" type="inclusive">1964 May 15</unitdate></unittitle><container type="Box">6</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1964-05-23" type="inclusive">1964 May 23</unitdate></unittitle><container type="Box">6</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1964-11-14" type="inclusive">1964 Nov 14</unitdate></unittitle><container type="Box">6</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1967-02-02" type="inclusive">1967 Feb 2</unitdate></unittitle><container type="Box">6</container>
+						
+						
+						
+					</did></c03></c02><c02>
+					<did>
+						<unittitle>By-laws</unittitle>
+						
+						<unitdate normal="1953" type="inclusive">1953</unitdate><container type="Box">6</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Corporate minutes and by-laws, draft forms</unittitle>
+						
+						<unitdate normal="1959" type="inclusive">1959</unitdate><container type="Box">6</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Funding</unittitle>
+						
+						
+						
+						
+						
+					</did>
+				<c03><did><unittitle>Foundation proposals, grants</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Box">6</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Fund for Adult Education, grants</unittitle><unitdate normal="1960/1967" type="inclusive">1960-1967</unitdate><container type="Box">6</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Johnson Foundation, grants</unittitle><unitdate normal="1961" type="inclusive">1961</unitdate><container type="Box">6</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Stern Family Fund</unittitle><unitdate normal="1966" type="inclusive">1966</unitdate><container type="Box">6</container>
+						
+						
+						
+					</did></c03></c02><c02>
+					<did>
+						<unittitle>Inter-office memoranda</unittitle>
+						
+						<unitdate normal="1959" type="inclusive">1959, </unitdate><unitdate normal="1960/1962" type="inclusive">1960-1962</unitdate><container type="Box">6</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Memoranda, various</unittitle>
+						
+						<unitdate normal="1955/1962" type="inclusive">1955-1962</unitdate><container type="Box">6</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Personnel</unittitle>
+						
+						
+						
+						
+						
+					</did><c03><did><unittitle>File</unittitle><unitdate normal="1960/1962" type="inclusive">1960-1962</unitdate><container type="Box">6</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Resumes, various dates</unittitle><container type="Box">6</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Science administration and programs</unittitle><unitdate normal="1960/1963" type="inclusive">1960-1963</unitdate><container type="Box">6</container>
+						
+						
+						
+					</did></c03></c02><c02>
+					<did>
+						<unittitle>Staff meetings</unittitle>
+						
+						
+						
+						
+						
+					</did><c03><did><unittitle><unitdate normal="1955/1957" type="inclusive">1955-1957</unitdate>, notes</unittitle><container type="Box">7</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1961-11" type="inclusive">1961 Nov</unitdate></unittitle><container type="Box">7</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1962-01" type="inclusive">1962 Jan</unitdate></unittitle><container type="Box">7</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1962-05" type="inclusive">1962 May</unitdate></unittitle><container type="Box">7</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1962" type="inclusive">1962 Jul</unitdate></unittitle><container type="Box">7</container>
+						
+						
+						
+					</did></c03></c02><c02>
+					<did>
+						<unittitle>Staff memoranda</unittitle>
+						
+						<unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate><container type="Box">7</container>
+						
+						
+						
+					</did>
+				</c02><c02 id="afpe-stat">
+					<did>
+						<unittitle>Statistical information (AFPE)</unittitle>
+						
+						<unitdate normal="1955" type="inclusive">1955</unitdate><container type="Box">7</container>
+						
+						
+						
+					</did>
+				<note><p>See also Subject files: <ref target="afpe-sub">American Foundation for Political Education</ref></p></note></c02><c02 id="tafce"><did><unittitle>Termination of AFCE</unittitle><unitdate normal="1965" type="inclusive">1965</unitdate><container type="Box">14</container>
+						
+						
+						
+					</did></c02><c02>
+					<did>
+						<unittitle>Miscellaneous</unittitle>
+						
+						
+						
+						
+						
+					</did>
+				<c03><did><unittitle>AFCE transfer to Aspen, CO</unittitle><unitdate normal="1965" type="inclusive">1965</unitdate><container type="Box">7</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Future of AFCE (Trainor memorandum)</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Box">7</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>New York Office, transfer of</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Box">7</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>New York State registration papers</unittitle><unitdate normal="1953" type="inclusive">1953</unitdate><container type="Box">7</container>
+						
+						
+						
+					</did></c03></c02></c01><c01 level="series"><did><unittitle>Correspondence</unittitle></did><c02 level="subseries">
+					<did>
+						<unittitle>General files</unittitle>
+						
+						
+						
+						
+						
+					</did>
+				<c03><did><unittitle><unitdate normal="1953/1960" type="inclusive">1953-1960</unitdate></unittitle><container type="Box">7</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1961-01-01/1968-08-31" type="inclusive">1961 Jan 1 - Aug 31</unitdate></unittitle><container type="Box">7</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1961-09-01/1968-10-31" type="inclusive">1961 Sep 1 - Oct 31</unitdate></unittitle><container type="Box">7</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1961-11-01/1968-12-31" type="inclusive">1961 Nov 1 - Dec 31</unitdate></unittitle><container type="Box">8</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1962-01-01/1962-03-31" type="inclusive">1962 Jan 1 - Mar 31</unitdate></unittitle><container type="Box">8</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1962-04-01/1962-06-30" type="inclusive">1962 Apr 1 - Jun 30</unitdate></unittitle><container type="Box">8</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1962-07-01/1962-12-31" type="inclusive">1962 Jul 1 - Dec 31</unitdate></unittitle><container type="Box">8</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1963" type="inclusive">1963</unitdate></unittitle><container type="Box">8</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1964" type="inclusive">1964</unitdate></unittitle><container type="Box">8</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1965" type="inclusive">1965</unitdate></unittitle><container type="Box">9</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1966-01-01/1966-06-30" type="inclusive">1966 Jan 1 - Jun 30</unitdate></unittitle><container type="Box">9</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1966-07-01/1966-12-31" type="inclusive">1966 Jul 1 - Dec 31</unitdate></unittitle><container type="Box">9</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1967/1970" type="inclusive">1967-1970</unitdate></unittitle><container type="Box">9</container>
+						
+						
+						
+					</did></c03></c02><c02 level="subseries"><did><unittitle>Individual files</unittitle></did><c03><did><unittitle>Arden House Conference</unittitle><unitdate normal="1959" type="inclusive">1959</unitdate><container type="Box">9</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Bell and Howell</unittitle><unitdate normal="1960/1961" type="inclusive">1960-1961</unitdate><container type="Box">9</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Boardman, Harry</unittitle><unitdate normal="1959/1964" type="inclusive">1959-1964</unitdate><container type="Box">9</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Brooks, Shepherd</unittitle><unitdate normal="1957/1961" type="inclusive">1957-1961</unitdate><container type="Box">9</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Chagy, Gideon</unittitle><unitdate normal="1959/1962" type="inclusive">1959-1962</unitdate><container type="Box">9</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Crohn, Richard J.</unittitle><unitdate normal="1956/1961" type="inclusive">1956-1961</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Daedalus</unittitle><unitdate normal="1960/1962" type="inclusive">1960-1962</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Development and planning committee</unittitle><unitdate normal="1961" type="inclusive">1961</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Financial committee</unittitle><unitdate normal="1957/1962" type="inclusive">1957-1962</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Geldzahler, Walter S.</unittitle><unitdate normal="1961" type="inclusive">1961</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>General Electric Co.</unittitle><unitdate normal="1959/1960" type="inclusive">1959-1960</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>General Foods Corp.</unittitle><unitdate normal="1959/1960" type="inclusive">1959-1960</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Harlan, H.C.</unittitle><unitdate normal="1960/1965" type="inclusive">1960-1965</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Johnson, Robert B.</unittitle><unitdate normal="1961/1962" type="inclusive">1961-1962</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Kendall College</unittitle><unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Moldof, Edwin</unittitle><unitdate normal="1961" type="inclusive">1961</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Nelson, Charles A.</unittitle><unitdate normal="1960/1964" type="inclusive">1960-1964</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Oceana Publications Ltd.</unittitle><unitdate normal="1962/1964" type="inclusive">1962-1964</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Percy, Charles H.</unittitle><unitdate normal="1960" type="inclusive">1960</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Pickus, Robert</unittitle><unitdate normal="1959/1961" type="inclusive">1959-1961</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>President's Commission on National Goals</unittitle><unitdate normal="1960" type="inclusive">1960</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Raymond, Bernard</unittitle><unitdate normal="1960/1962" type="inclusive">1960-1962</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Stone, Sumner</unittitle><unitdate normal="1958/1961" type="inclusive">1958-1961</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Trainor, William J.</unittitle><unitdate normal="1952/1962" type="inclusive">1952-1962</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>University of Chicago staff</unittitle><unitdate normal="1960/1962" type="inclusive">1960-1962</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Washington office</unittitle><unitdate normal="1961" type="inclusive">1961</unitdate><container type="Box">10</container>
+						
+						
+						
+					</did></c03></c02><c02 level="series"><did><unittitle>Outgoing files</unittitle></did><c03><did><unittitle><unitdate normal="1962-01/1962-02" type="inclusive">1962 Jan-Feb</unitdate></unittitle><container type="Box">11</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1962-03" type="inclusive">1962 Mar</unitdate></unittitle><container type="Box">11</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1962-04/1962-05" type="inclusive">1962 Apr-May</unitdate></unittitle><container type="Box">11</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1962-06/1962-12" type="inclusive">1962 Jun-Dec</unitdate></unittitle><container type="Box">11</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1963-01/1963-04" type="inclusive">1963 Jan-Apr</unitdate></unittitle><container type="Box">11</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1963-05/1963-08" type="inclusive">1963 May-Aug</unitdate></unittitle><container type="Box">11</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1962-09/1962-12" type="inclusive">1963 Sep-Dec</unitdate></unittitle><container type="Box">11</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1964-01/1964-06" type="inclusive">1964 Jan-Jun</unitdate></unittitle><container type="Box">11</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1964-07/1964-12" type="inclusive">1964 Jul-Dec</unitdate></unittitle><container type="Box">12</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1965-01/1965-06" type="inclusive">1965 Jan-Jun</unitdate></unittitle><container type="Box">12</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1967-03/1967-06" type="inclusive">1967 Mar-Jun</unitdate></unittitle><container type="Box">12</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1967-07/1967-12" type="inclusive">1967 Jul-Dec</unitdate></unittitle><container type="Box">12</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1968-02/1968-12" type="inclusive">1968 Feb-Dec</unitdate></unittitle><container type="Box">12</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1969-01/1969-06" type="inclusive">1969 Jan-Jun</unitdate></unittitle><container type="Box">12</container>
+						
+						
+						
+					</did></c03></c02></c01><c01 level="series"><did><unittitle>Financial documents</unittitle></did><c02><did><unittitle>Account books</unittitle></did><c03><did><unittitle><unitdate normal="1957/1958" type="inclusive">1957-1958</unitdate></unittitle><container type="Box">15</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1958/1959" type="inclusive">1958-1959</unitdate></unittitle><physdesc><extent>6 folders</extent></physdesc><container type="Box">15, 16</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1960/1961" type="inclusive">1960-1962</unitdate></unittitle><physdesc><extent>5 folders</extent></physdesc><container type="Box">16</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate></unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">17</container>
+						
+						
+						
+					</did></c03></c02><c02><did><unittitle>Auditors' statements</unittitle><unitdate normal="1952/1958" type="inclusive">1952-1958</unitdate><physdesc><extent>4 folders</extent></physdesc><container type="Box">17</container></did></c02><c02><did><unittitle>Bank books</unittitle><unitdate normal="1960/1969" type="inclusive">1960-1969</unitdate><container type="Box">18</container></did></c02><c02><did><unittitle>Bank records</unittitle><unitdate normal="1963/1965" type="inclusive">1963-1965</unitdate><container type="Box">18</container></did></c02><c02><did><unittitle>Bank statements</unittitle></did><c03><did><unittitle>General account</unittitle><unitdate normal="1959/1963" type="inclusive">1959-1963</unitdate><container type="Box">18</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Operating fund account</unittitle><unitdate normal="1959/1963" type="inclusive">1959-1963</unitdate><container type="Box">18</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Payroll account</unittitle><unitdate normal="1959/1963" type="inclusive">1959-1963</unitdate><container type="Box">18</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Miscellaneous</unittitle><unitdate normal="1959/1963" type="inclusive">1959-1963, </unitdate><unitdate normal="1965/1969" type="inclusive">1965-1969</unitdate><container type="Box">18</container>
+						
+						
+						
+					</did></c03></c02><c02><did><unittitle>Budget</unittitle><unitdate normal="1954/1955" type="inclusive">1954-1955, </unitdate><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate><container type="Box">18</container></did></c02><c02><did><unittitle>Check books</unittitle><unitdate normal="1959/1960" type="inclusive">1959-1960</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">19</container></did></c02><c02><did><unittitle>Financial statements</unittitle><unitdate normal="1960" type="inclusive">1960, </unitdate><unitdate normal="1964/1968" type="inclusive">1964-1968</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">19</container></did></c02><c02><did><unittitle>Income tax and related papers</unittitle></did><c03><did><unittitle><unitdate normal="1948/1956" type="inclusive">1948-1956</unitdate></unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">19</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle><unitdate normal="1957/1962" type="inclusive">1957-1962, </unitdate><unitdate normal="1965" type="inclusive">1965, </unitdate><unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate></unittitle><physdesc><extent>5 folders</extent></physdesc><container type="Box">20</container>
+						
+						
+						
+					</did></c03></c02><c02><did><unittitle>Lease papers</unittitle><unitdate normal="1953/1958" type="inclusive">1953-1958</unitdate></did></c02><c02><did><unittitle>Payroll records</unittitle></did><c03><did><unittitle><unitdate normal="1951" type="inclusive">1951, </unitdate><unitdate normal="1953/1956" type="inclusive">1953-1956, </unitdate><unitdate normal="1958" type="inclusive">1958</unitdate></unittitle>
+						
+						
+						
+					<physdesc><extent>6 folders</extent></physdesc><container type="Box">20</container></did></c03><c03><did><unittitle><unitdate normal="1959/1960" type="inclusive">1959-1960</unitdate></unittitle><container type="Box">21</container>
+						
+						
+						
+					</did></c03></c02><c02><did><unittitle>Sales tax exemptions (municipal)</unittitle><unitdate normal="1957" type="inclusive">1957</unitdate><container type="Box">21</container></did></c02><c02><did><unittitle>Working papers</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">21</container></did></c02><c02><did><unittitle>Miscellaneous</unittitle></did><c03><did><unittitle>American Foundation for Political Education</unittitle><unitdate normal="1948" type="inclusive">1948</unitdate><container type="Box">21</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Salary scales</unittitle><unitdate normal="1954/1956" type="inclusive">1954-1956</unitdate><container type="Box">21</container>
+						
+						
+						
+					</did></c03></c02></c01><c01 level="series"><did><unittitle>Programs and projects</unittitle></did><c02 id="alp-pap"><did><unittitle>African Leadership Project</unittitle></did><note><p>See also Subject Files: <ref target="alp-sub">African Leadership Project</ref></p></note><c03><did><unittitle>Funding</unittitle><unitdate normal="1961/1963" type="inclusive">1961-1963</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Memoranda and various papers</unittitle><unitdate normal="1961/1963" type="inclusive">1961-1963</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Proposal</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03></c02><c02><did><unittitle>Area Redevelopment Administration</unittitle><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate><container type="Box">22</container></did></c02><c02><did><unittitle>Arms and Foreign Policy Program</unittitle></did><c03><did><unittitle>Memoranda</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Sessions I-II, International Politics</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Session III</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Session IV, Force and Foreign Policy</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Session V, The Cold War</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Session VI, Thermonuclear War</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Session VII, Limited War</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Session VIII, Arms Control</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Session IX, Disarmamentr</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Session X, The Prospects Before Us</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">22</container>
+						
+						
+						
+					</did></c03></c02><c02 id="aihs-pap"><did><unittitle>Aspen Institute for Humanistic Studies</unittitle><abstract>annual report drafts and related material</abstract><unitdate normal="1965/1967" type="inclusive">1965-1967</unitdate><container type="Box">23</container>
+						
+						
+						
+					</did><note><p>See also Subject files: <ref target="aihs-sub">Aspen Institute for Humanistic Studies</ref></p></note></c02><c02 id="ata-pap"><did><unittitle>"Avenues to the Arts"</unittitle></did><note><p>See also Subject files: <ref target="ata-sub">"Avenues to the Arts"</ref></p></note><c03><did><unittitle>Incomplete set</unittitle><unitdate normal="1959" type="inclusive">1959</unitdate><container type="Box">23</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Drafts, compilations (Sessions I-VI)</unittitle><container type="Box">23</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Drafts of outlines, etc</unittitle><container type="Box">23</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Permissions, literature</unittitle><unitdate normal="1959-01/1962-06" type="inclusive">1959-1962 Jun</unitdate><container type="Box">23</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Permissions, literature</unittitle><unitdate normal="1962-07/1963-12" type="inclusive">1962 Jul - 1963</unitdate><container type="Box">23</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Permissions, music</unittitle><unitdate normal="1959-02/1959-04" type="inclusive">1959 Feb - 1959 Apr</unitdate><container type="Box">23</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Permissions, music</unittitle><unitdate normal="1959-05/1962-03" type="inclusive">1959 May - 1962 Mar</unitdate><container type="Box">24</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Readings (1-2)</unittitle><container type="Box">24</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Readings (3-8)</unittitle><container type="Box">24</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Readings (10-11)</unittitle><container type="Box">24</container>
+						
+						
+						
+					</did></c03></c02><c02><did><unittitle>Business programs, miscellaneous</unittitle><unitdate normal="1961/1963" type="inclusive">1961-1963</unitdate><container type="Box">24</container>
+						
+						
+						
+					</did></c02><c02 id="chs-pap"><did><unittitle>Capitol Hill Seminar proposal</unittitle><unitdate normal="1961/1963" type="inclusive">1961-1963</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">24</container>
+						
+						
+						
+					</did><note><p>See also Subject files: <ref target="chs-sub">Capitol Hill Seminar</ref></p></note></c02><c02><did><unittitle>Carnegie Readings Project</unittitle><unitdate normal="1963/1965" type="inclusive">1963-1965</unitdate><container type="Box">24</container>
+						
+						
+						
+					</did></c02><c02 id="cnas-prop"><did><unittitle>"The Citizen and the New Age of Science" </unittitle><abstract>proposal for a program and final report</abstract><unitdate normal="1960/1963" type="inclusive">1960-1963</unitdate><container type="Box">25</container>
+						
+						
+						
+					</did><note><p>See also Publications: <ref target="cnas-pub">Publication brochure and proposal for "The Citizen and the New Age of Science"</ref></p></note></c02><c02><did><unittitle>Conference on Mass Media: Criticism of the Arts</unittitle><unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate><container type="Box">25</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>Developing Responsible Public Leadership</unittitle><unitdate normal="1961/1963" type="inclusive">1961-1963</unitdate><container type="Box">25</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>Diplomat's Reading Program</unittitle><unitdate normal="1965/1966" type="inclusive">1965-1966</unitdate><container type="Box">25</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>Discussion Program on Urbanism</unittitle><abstract>outline draft</abstract><unitdate normal="1964" type="inclusive">1964</unitdate><container type="Box">25</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>The Executive Seminar</unittitle>
+						
+						
+						
+					</did><c03><did><unittitle>[General]</unittitle><unitdate normal="1959/1961" type="inclusive">1959-1961</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">25</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Permissions</unittitle><unitdate normal="1958/1959" type="inclusive">1958-1959</unitdate><container type="Box">25</container>
+						
+						
+						
+					</did></c03></c02><c02><did><unittitle>"Explorations of the Universe"</unittitle>
+						
+						
+						
+					</did><c03><did><unittitle>Discussion guide for text edition of draft</unittitle><unitdate normal="1957/1967" type="inclusive">circa 1962</unitdate><container type="Box">25</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Discussion leader's guide</unittitle><container type="Box">26</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Memphis Adult Education Center</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>NET television series</unittitle><unitdate normal="1961/1962" type="inclusive">1961-1962</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>New York reception</unittitle><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Outline</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Suggestions for use of study-discussion program</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Washington reception</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c03></c02><c02><did><unittitle>Japan seminar</unittitle><unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>KZSU Radio, Stanford University</unittitle><unitdate normal="1963/1966" type="inclusive">1963-1966</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>Labor education</unittitle><unitdate normal="1960/1962" type="inclusive">1960-1962</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>"Man and the Modern Community"</unittitle><abstract>proposals</abstract><unitdate normal="1947/1965" type="inclusive">undated</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>Mass Media Program</unittitle><unitdate normal="1958/1961" type="inclusive">1958-1961</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>"Mystery of Matter"</unittitle>
+						
+						
+						
+					</did><c03><did><unittitle>Experimental groups</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Fort Worth Public Library</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Proposal outline</unittitle><unitdate type="inclusive" normal="1947/1965">undated</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>University of Wyoming</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Western Reserve University</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c03></c02><c02><did><unittitle>Oak Ridge (ORINS) Project</unittitle><abstract>general correspondence</abstract><unitdate normal="1963/1965" type="inclusive">1963-1965</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>Oak Ridge Summer Institute</unittitle><abstract>various papers</abstract><unitdate normal="1963/1965" type="inclusive">1963-1965</unitdate><container type="Box">26</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>Parent Education Project</unittitle><unitdate normal="1959" type="inclusive">1959</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c02><c02 id="pc-pap"><did><unittitle>Peace Corps</unittitle>
+						
+						
+						
+					</did><note><p>See also Subject files: <ref target="pcp-sub">Peace Corps Project</ref></p></note><c03><did><unittitle>General</unittitle><unitdate normal="1960/1962" type="inclusive">1960-1962</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Negotiated contract</unittitle><unitdate normal="1966" type="inclusive">1966</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c03></c02><c02 id="pcp-pap"><did><unittitle>Peace Corps Project</unittitle>
+						
+						
+						
+					</did><note><p>See also Subject files: <ref target="pcp-sub">Peace Corps Project</ref></p></note><c03><did><unittitle>Asilomar costs</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Commentaries</unittitle><unitdate normal="1966" type="inclusive">1966</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Conference for Project Directors</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Confidential assessment reports</unittitle><unitdate normal="1962/1966" type="inclusive">1962-1966</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Contracts and financial papers</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Correspondence</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Director's training program</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Permissions to publish</unittitle><unitdate normal="1966" type="inclusive">1966</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Proposal</unittitle><unitdate normal="1965" type="inclusive">1965</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Returned Volunteers' Conference, evaluations 1-7</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Returned Volunteers' Meetings</unittitle><unitdate normal="1965/1966" type="inclusive">1965-1966</unitdate><container type="Box">28</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Returned Volunteers' Program, final report</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">28</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Various papers</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">28</container>
+						
+						
+						
+					</did></c03></c02><c02 id="pcs-pap"><did><unittitle>Peace Corps Seminar</unittitle>
+						
+						
+						
+					</did><note><p>See also Subject files: <ref target="pcp-sub">Peace Corps Project</ref></p></note><c03><did><unittitle>Discussion leader's guide, Vol. 1 (Vol. 2 missing)</unittitle><unitdate normal="1967" type="inclusive">1966</unitdate><container type="Box">28</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Discussion leader's guide, Vols. 3-5</unittitle><unitdate normal="1967" type="inclusive">1966</unitdate><container type="Box">28</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Discussion leader's guide, Vols. 6-8</unittitle><unitdate normal="1967" type="inclusive">1966</unitdate><container type="Box">28</container>
+						
+						
+						
+					</did></c03></c02><c02><did><unittitle>"Peace in the Western World" Project</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>"Powerful Newspapers" Conference</unittitle><unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate><container type="Box">27</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>Proposals</unittitle>
+						
+						
+						
+					</did><c03><did><unittitle>Drafts</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate><container type="Box">29</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>National Science Foundation</unittitle><unitdate normal="1960/1961" type="inclusive">[ca. 1960-1961]</unitdate><container type="Box">29</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>"Pilot Redevelopment Education Program"</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate><container type="Box">29</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Proposals by AFCE</unittitle><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate><container type="Box">29</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Various areas</unittitle><unitdate normal="1965/1966" type="inclusive">1965-1966</unitdate><container type="Box">29</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>"The World of the Atlantic"</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate><container type="Box">29</container>
+						
+						
+						
+					</did></c03></c02><c02><did><unittitle>Public Careers for Retired Corporate Executives</unittitle><unitdate normal="1964/1966" type="inclusive">1964-1966</unitdate><container type="Box">29</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>RPCV meeting</unittitle><abstract>group distributions materials</abstract><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">29</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>Science and Religion Project</unittitle><unitdate normal="1964" type="inclusive">1964</unitdate><container type="Box">29</container>
+						
+						
+						
+					</did></c02><c02 id="sp-pap"><did><unittitle>Science Program</unittitle>
+						
+						
+						
+					</did><note><p>See also Subject files: <ref target="sp-sub">Science Program</ref></p></note><c03><did><unittitle>Clippings and articles</unittitle><unitdate normal="1959/1963" type="inclusive">1959-1963</unitdate><container type="Box">29</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Draft of parts 4-9</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate><container type="Box">29</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Memoranda and printed material</unittitle><unitdate normal="1957/1960" type="inclusive">1957-1960</unitdate><container type="Box">29</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Printed material</unittitle><unitdate normal="1958/1969" type="inclusive">1958-1969</unitdate><container type="Box">30</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Promotion</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate><container type="Box">30</container>
+						
+						
+						
+					</did></c03><c03><did><unittitle>Various papers</unittitle><unitdate normal="1960/1964" type="inclusive">1960-1964</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c03></c02><c02><did><unittitle>"Theological Renewal"</unittitle><unitdate normal="1966" type="inclusive">1966</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c02><c02><did><unittitle>Third Southwest Seminar in Public Responsibility</unittitle><unitdate normal="1961/1962" type="inclusive">1961-1962</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c02><c02><did><unittitle>United Steelworkers of America</unittitle></did><c03><did><unittitle>Proposal for Institute on Men and Labor</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c03><c03><did><unittitle>"Men and American Society"</unittitle><unitdate normal="1961" type="inclusive">1961</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c03><c03><did><unittitle>Staff training conference</unittitle><unitdate normal="1960" type="inclusive">1960</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c03></c02><c02><did><unittitle>Young Presidents' Organization</unittitle><unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c02></c01><c01 level="series"><did><unittitle>Publications</unittitle></did><c02><did><unittitle>Advanced Management Training Program</unittitle><abstract>evaluation report on</abstract><unitdate normal="1960" type="inclusive">1960</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c02><c02><did><unittitle>Carson, Pirie, Scott, Publishers</unittitle><unitdate normal="1961" type="inclusive">1961</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c02><c02><did><unittitle>Case histories</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c02><c02><did><unittitle>Complimentary and review copies, lists of</unittitle><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c02><c02><did><unittitle>Copyrights</unittitle><unitdate normal="1961" type="inclusive">1961</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c02><c02><did><unittitle>Critical Issues and Decisions: A Program for Federal Executives</unittitle><abstract>reprint permissions</abstract><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c02><c02><did><unittitle>Discussion Leaders' Manual, revised edition</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate>
+						
+						
+						
+					<container type="Box">30</container></did></c02><c02><did><unittitle>Discussion Manual, draft</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02><did><unittitle>"Education and Democracy"</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02><did><unittitle>"Freedom of the Press," chapter VII</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02><did><unittitle>"Man in the Political Community"</unittitle><unitdate normal="1965/1967" type="inclusive">1965-1967</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02><did><unittitle>"Manual for Leaders of Adult Discussion Groups on World Politics" (AFPE)</unittitle><unitdate normal="1951/1954" type="inclusive">1951-1954</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02><did><unittitle>McGraw-Hill Publishers</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02><did><unittitle>Miscellaneous forms and agreements</unittitle><unitdate normal="1965/1966" type="inclusive">1965-1966</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02><did><unittitle>Permissions</unittitle>
+						
+						
+						
+					</did><c03><did><unittitle>General</unittitle><unitdate normal="1963/1965" type="inclusive">1963-1965</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c03><c03 id="pub-lal"><did><unittitle>"Law and the Lawless"</unittitle><unitdate normal="1968" type="inclusive">1968</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did><note><p>See also Subject files: <ref target="subj-lal">"Law and the Lawless"</ref></p></note></c03><c03><did><unittitle>McGraw-Hill</unittitle><unitdate normal="1962/1965" type="inclusive">1962-1965</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c03></c02><c02><did><unittitle>"Population in Perspective" (Louise Young, editor)</unittitle><abstract>outline</abstract><unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02><did><unittitle>Production schedules</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02><did><unittitle>Proofs and original copy for outstanding manuscripts</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02><did><unittitle>"Programs and Publicatons" brochure</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02 id="cnas-pub"><did><unittitle>Publication brochure and proposal for "The Citizen and the New Age of Science"</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did><note><p>See also Programs and projects: <ref target="cnas-prop">"The Citizen and the New Age of Science"</ref></p></note></c02><c02><did><unittitle>Publications in continuing education</unittitle><unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02><did><unittitle>Publications list for former CSLEA</unittitle><unitdate normal="1952/1963" type="inclusive">1952-1963</unitdate>
+						
+						
+						
+					<container type="Box">31</container></did></c02><c02><did><unittitle>Publications pamphlet, photo-ready copy</unittitle><unitdate normal="1947/1965" type="inclusive">various dates</unitdate>
+						
+						
+						
+					<container type="Box">32</container></did></c02><c02><did><unittitle>Publishers, various papers</unittitle><unitdate normal="1961/1962" type="inclusive">1961-1962</unitdate>
+						
+						
+						
+					<container type="Box">32</container></did></c02><c02><did><unittitle>Radio scripts, Harold Williams</unittitle><unitdate normal="1966" type="inclusive">1966</unitdate>
+						
+						
+						
+					<container type="Box">32</container></did></c02><c02><did><unittitle>Transfer papers for copyrights</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate>
+						
+						
+						
+					<container type="Box">32</container></did></c02><c02><did><unittitle>Westinghouse permissions</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate>
+						
+						
+						
+					<container type="Box">32</container></did></c02><c02><did><unittitle>"What is the Nature of Science?"</unittitle><physdesc><extent>3 folders</extent></physdesc><unitdate normal="1947/1965" type="inclusive">undated</unitdate>
+						
+						
+						
+					<container type="Box">32</container></did></c02></c01><c01 level="series"><did><unittitle>Subject files</unittitle></did><c02><did><unittitle>Adult Education Association (AEA)</unittitle><unitdate normal="1959/1964" type="inclusive">1959-1964</unitdate>
+						
+						
+						
+					<container type="Box">33</container></did></c02><c02 id="alp-sub"><did><unittitle>African Leadership Project</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate><container type="Box">12</container>
+						
+						
+						
+					</did><note><p>See also Programs and projects: <ref target="alp-pap"> African Leadership Project</ref></p></note></c02><c02><did><unittitle>American Assembly</unittitle><unitdate normal="1961/1963" type="inclusive">1961-1963</unitdate>
+						
+						
+						
+					<container type="Box">33</container></did></c02><c02><did><unittitle>American Association for the Advancement of Science</unittitle><unitdate normal="1961/1963" type="inclusive">1961-1963</unitdate>
+						
+						
+						
+					<container type="Box">33</container></did></c02><c02><did><unittitle>American Association of University Women</unittitle><abstract>study guides and various papers</abstract><unitdate normal="1951/1967" type="inclusive">1951-1967</unitdate>
+						
+						
+						
+					<container type="Box">33</container></did></c02><c02 id="afpe-sub"><did><unittitle>American Foundation for Political Education (AFPE)</unittitle>
+						
+						
+						
+					</did><note><p>See also Administrative files: <ref target="afpe-stat">Statistical information (AFPE)</ref></p></note><c03><did><unittitle>"A Statement Concerning [its] Character, Activities, Purposes, Future Plans and Financial Condition"</unittitle><unitdate normal="1948" type="inclusive">1948</unitdate>
+						
+						
+						
+					<container type="Box">33</container></did></c03><c03><did><unittitle>Evaluation report (J.E. Ivey) and related papers</unittitle><unitdate normal="1952/1953" type="inclusive">1952-1953</unitdate>
+						
+						
+						
+					<container type="Box">33</container></did></c03><c03><did><unittitle>Study of American Foundation for Political Education</unittitle><unitdate normal="1954" type="inclusive">1954</unitdate>
+						
+						
+						
+					<container type="Box">33</container></did></c03></c02><c02><did><unittitle>American Management Association</unittitle><unitdate normal="1959/1961" type="inclusive">1959-1961</unitdate>
+						
+						
+						
+					<container type="Box">33</container></did></c02><c02><did><unittitle>Annual reports, State of Illinois</unittitle><unitdate normal="1953/1958" type="inclusive">1953-1958</unitdate><container type="Box">12</container>
+						
+						
+						
+					</did></c02><c02 id="aihs-sub"><did><unittitle>Aspen Institute for Humanistic Studies</unittitle>
+						
+						
+						
+					</did><note><p>See also Programs and projects: <ref target="aihs-pap">Aspen Institute for Humanistic Studies</ref></p></note><c03><did><unittitle>Communications Conference</unittitle><unitdate normal="1965/1966" type="inclusive">1965-1966</unitdate>
+						
+						
+						
+					<container type="Box">34</container></did></c03><c03><did><unittitle>Selections from the 1963 lecture series</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate>
+						
+						
+						
+					<container type="Box">34</container></did></c03><c03><did><unittitle>Selections from the 1965 Lecture Series</unittitle><unitdate normal="1965" type="inclusive">1965</unitdate>
+						
+						
+						
+					<container type="Box">34</container></did></c03></c02><c02><did><unittitle>Aspen Society of Fellows</unittitle><unitdate normal="1964/1966" type="inclusive">1964-1966</unitdate>
+						
+						
+						
+					<container type="Box">34</container></did></c02><c02><did><unittitle>Atlantic Council of the U.S.</unittitle><unitdate normal="1963/1964" type="inclusive">1963-1964</unitdate>
+						
+						
+						
+					<container type="Box">34</container></did></c02><c02 id="ata-sub"><did><unittitle>"Avenues to the Arts"</unittitle>
+						
+						
+						
+					<unitdate normal="1957/1963" type="inclusive">1957-1963</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">13</container></did><note><p>See also Programs and projects: <ref target="ata-pap">"Avenue to the Arts"</ref></p></note></c02><c02 id="chs-sub"><did><unittitle>Capitol Hill seminar</unittitle><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate><container type="Box">13</container>
+						
+						
+						
+					</did><note><p>See also Programs and projects: <ref target="chs-pap">Capitol Hill Seminar proposal </ref></p></note></c02><c02><did><unittitle>Center for the Study of Democratic Institutions</unittitle><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate>
+						
+						
+						
+					<container type="Box">34</container></did></c02><c02><did><unittitle>Chicago Council on Foreign Relations</unittitle><abstract>seminar and various papers</abstract><unitdate normal="1960/1962" type="inclusive">1960-1962</unitdate>
+						
+						
+						
+					<container type="Box">34</container></did></c02><c02><did><unittitle>Chicago World Politics Program</unittitle><unitdate normal="1956/1962" type="inclusive">1956-1962</unitdate>
+						
+						
+						
+					<container type="Box">34</container></did></c02><c02><did><unittitle>Committee for the Study of Mankind</unittitle><unitdate normal="1958/1961" type="inclusive">1958-1961</unitdate>
+						
+						
+						
+					<container type="Box">34</container></did></c02><c02><did><unittitle>Committee of Correspondence</unittitle><unitdate normal="1960/1962" type="inclusive">1960-1962</unitdate>
+						
+						
+						
+					<container type="Box">34</container></did></c02><c02><did><unittitle>Congressional investigations</unittitle><unitdate normal="1952/1953" type="inclusive">1952-1953</unitdate>
+						
+						
+						
+					<container type="Box">35</container></did></c02><c02><did><unittitle>Council of National Organizations</unittitle><unitdate normal="1960/1961" type="inclusive">1960-1961, </unitdate><unitdate normal="1962" type="inclusive">1962</unitdate>
+						
+						
+						
+					<container type="Box">35</container></did></c02><c02><did><unittitle>"Discovering Modern Poetry"</unittitle><unitdate normal="1960/1961" type="inclusive">1960-1961</unitdate><container type="Box">13</container></did></c02><c02><did><unittitle>"Education for Public Responsibility"</unittitle><unitdate normal="1961" type="inclusive">1961</unitdate><container type="Box">13</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>Educational television, printed material</unittitle><unitdate normal="1960" type="inclusive">1960</unitdate>
+						
+						
+						
+					<container type="Box">35</container></did></c02><c02><did><unittitle>Encampment for Citizenship</unittitle><unitdate normal="1960" type="inclusive">1960</unitdate>
+						
+						
+						
+					<container type="Box">35</container></did></c02><c02><did><unittitle>Film conference with UCLA</unittitle><unitdate normal="1965/1966" type="inclusive">1965-1966</unitdate>
+						
+						
+						
+					<container type="Box">35</container></did></c02><c02><did><unittitle>Foreign Policy Association, Committee on Community Development</unittitle><unitdate normal="1960/1964" type="inclusive">1960-1964</unitdate>
+						
+						
+						
+					<container type="Box">35</container></did></c02><c02><did><unittitle>Fund Raising Institute</unittitle><unitdate normal="1966" type="inclusive">1966</unitdate>
+						
+						
+						
+					<container type="Box">35</container></did></c02><c02><did><unittitle>Grants from foundations</unittitle><unitdate normal="1961/1965" type="inclusive">1961-1965</unitdate><container type="Box">13</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>Great Books Foundation</unittitle><unitdate normal="1960/1962" type="inclusive">1960-1962</unitdate>
+						
+						
+						
+					<container type="Box">35</container></did></c02><c02><did><unittitle>Harvard Business School Association</unittitle><unitdate normal="1960" type="inclusive">1960</unitdate>
+						
+						
+						
+					<container type="Box">35</container></did></c02><c02><did><unittitle>Illinois Statewide Conference on Adult Education</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate>
+						
+						
+						
+					<container type="Box">35</container></did></c02><c02><did><unittitle>Institute for International Order</unittitle><unitdate normal="1960/1961" type="inclusive">1960-1961</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02><did><unittitle>Kawin, Ethel</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02 id="subj-lal"><did><unittitle>"Law and the Lawless"</unittitle><unitdate normal="1967/1969" type="inclusive">1967-1969</unitdate><container type="Box">13</container>
+						
+						
+						
+					</did><note><p>See also Publications: Permissions: <ref target="pub-lal">"Law and the Lawless"</ref></p></note></c02><c02><did><unittitle>Law-Science Academy of America</unittitle><unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02><did><unittitle>Legislation</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02><did><unittitle>Living Library</unittitle><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02><did><unittitle>National Center of Communication Arts and Sciences</unittitle><unitdate normal="1960/1962" type="inclusive">1966</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02><did><unittitle>National Council of the Churches of Christ</unittitle><unitdate normal="1963/1964" type="inclusive">1963-1964</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02><did><unittitle>National Educational Television</unittitle><unitdate normal="1959/1963" type="inclusive">1959-1963</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02><did><unittitle>National Science Foundation</unittitle><unitdate normal="1953/1969" type="inclusive">1953-1969</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02><did><unittitle>National University Extension Association</unittitle>
+						
+						
+						
+					</did><c03><did><unittitle>General material</unittitle><unitdate normal="1961" type="inclusive">1961</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c03><c03><did><unittitle>Progress report of the Community Development Division</unittitle><unitdate normal="1961/1962" type="inclusive">1961-1962</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c03><c03><did><unittitle>NUEA Conference</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c03></c02><c02><did><unittitle>Pasadena (area) Liberal Arts Center</unittitle><unitdate normal="1961/1962" type="inclusive">1961-1962</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02 id="pcp-sub"><did><unittitle>Peace Corps. project</unittitle><unitdate normal="1966" type="inclusive">1966</unitdate><container type="Box">13</container>
+						
+						
+						
+					</did><note><p>See also Projects and Programs: <ref target="pc-pap">Peace Corps</ref>; Projects and Programs: <ref target="pcp-pap">Peace Corps Project</ref>; Projects and Programs: <ref target="pcs-pap">Peace Corps Seminar</ref></p></note></c02><c02><did><unittitle>Press analyses, magazine articles</unittitle><unitdate normal="1948/1959" type="inclusive">1948-1959</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02><did><unittitle>Promotion letters</unittitle><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02><did><unittitle>Publishers (science publications)</unittitle><unitdate normal="1961/1962" type="inclusive">1961-1962</unitdate><container type="Box">14</container>
+						
+						
+						
+					</did></c02><c02 id="sp-sub"><did><unittitle>Science program</unittitle>
+						
+						
+						
+					<unitdate normal="1957/1969" type="inclusive">1957-1969</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">14</container></did><note><p>See also Projects and Programs: <ref target="sp-pap">Science Program</ref></p></note></c02><c02><did><unittitle>Scientists' Committee for Radiation Information</unittitle><unitdate normal="1963" type="inclusive">1963</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02><did><unittitle>Society for International Development</unittitle><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate>
+						
+						
+						
+					<container type="Box">36</container></did></c02><c02><did><unittitle>Strategy for Peace Conference</unittitle><unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate>
+						
+						
+						
+					<container type="Box">37</container></did></c02><c02><did><unittitle>Thomas More Institute</unittitle><unitdate normal="1961/1962" type="inclusive">1961-1962</unitdate>
+						
+						
+						
+					<container type="Box">37</container></did></c02><c02><did><unittitle>University of British Columbia</unittitle><unitdate normal="1961/1962" type="inclusive">1961-1962</unitdate>
+						
+						
+						
+					<container type="Box">37</container></did></c02><c02><did><unittitle>University of Illinois, World Affairs Programs</unittitle><unitdate normal="1965" type="inclusive">1965</unitdate>
+						
+						
+						
+					<container type="Box">37</container></did></c02><c02><did><unittitle>University of Miami, Faculty Training Institute</unittitle><unitdate normal="1961/1964" type="inclusive">1961-1964</unitdate>
+						
+						
+						
+					<container type="Box">37</container></did></c02><c02><did><unittitle>University of Wisconsin, Alumni Seminar</unittitle><unitdate normal="1962" type="inclusive">1962</unitdate>
+						
+						
+						
+					<container type="Box">37</container></did></c02><c02><did><unittitle>Urban renewal</unittitle><abstract>clippings</abstract><unitdate normal="1965/1967" type="inclusive">1965-1967</unitdate>
+						
+						
+						
+					<container type="Box">37</container></did></c02><c02><did><unittitle>Urban renewal</unittitle><abstract>miscellaneous</abstract><unitdate normal="1963" type="inclusive">1963</unitdate><container type="Box">14</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle>Westinghouse Electric Corp. Seminars</unittitle><unitdate normal="1961/1963" type="inclusive">1961-1963</unitdate>
+						
+						
+						
+					<container type="Box">37</container></did></c02><c02><did><unittitle>Wingspread Assembly on National Goals</unittitle><unitdate normal="1959/1961" type="inclusive">1959-1961</unitdate>
+						
+						
+						
+					<container type="Box">37</container></did></c02></c01><c01 level="series"><did><unittitle>Miscellaneous</unittitle></did><c02><did><unittitle>Newsletters</unittitle><unitdate normal="1954/1961" type="inclusive">1954-1961</unitdate>
+						
+						
+						
+					<container type="Box">37</container></did></c02><c02><did><unittitle>Printed material</unittitle><unitdate normal="1954/1961" type="inclusive">1954-1961</unitdate>
+						
+						
+						
+					<container type="Box">37</container></did></c02><c02><did><unittitle>Printed material</unittitle><unitdate normal="1962/1966" type="inclusive">1962-1966</unitdate>
+						
+						
+						
+					<container type="Box">38</container></did></c02><c02><did><unittitle>Publications (non-AFCE)</unittitle><unitdate normal="1959/1965" type="inclusive">1959-1965</unitdate>
+						
+						
+						
+					<container type="Box">38</container></did></c02><c02><did><unittitle>Science newsletter layouts</unittitle><unitdate normal="1947/1965" type="inclusive">undated</unitdate>
+						
+						
+						
+					<container type="Box">38</container></did></c02><c02><did><unittitle>"Visiting Scholars in the United States"</unittitle><unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate>
+						
+						
+						
+					<container type="Box">38</container></did></c02><c02><did><unittitle>"Worldwide Register of Adult Education</unittitle><unitdate normal="1965" type="inclusive">1965</unitdate>
+						
+						
+						
+					<container type="Box">38</container></did></c02><c02><did><unittitle>Unidentified and fragments</unittitle><unitdate normal="1947/1965" type="inclusive">various dates</unitdate>
+						
+						
+						
+					<container type="Box">38</container></did></c02></c01>
+		</dsc>
+	</archdesc>
+</ead>

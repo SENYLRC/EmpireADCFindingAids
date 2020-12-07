@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="morley_c">morley_c</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Christopher Morley Correspondence</titleproper>
+            <subtitle>A description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">LMD</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2006-03-08" encodinganalog="Date">10 November 2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Laura Deal<date normal="2006-03-08">10 November 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>26 Aug 2014 - additions processed (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100" source="lcnaf">Morley, Christopher, 1890-1957.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Christopher Morley Correspondence</unittitle>
+         <unitdate encodinganalog="245$f" normal="1917/1962" type="inclusive" label="Inclusive Dates: ">1917-1962</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 folders (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Letters from the American author, some related to his activities with the Rialto Theater and the Ampersand Club, and one manuscript.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2721026</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Christopher Morley (1890-1957) was an American author and editor. He was one of the founders of the <emph render="italic">Saturday Review of Literature</emph> and worked as a contributing editor to the publication from 1924 to 1940. He was a prolific writer of novels, essays, and poetry, his most successful work being the best-selling 1939 novel <emph render="italic">Kitty Foyle.</emph> He was also famous for his popular "Bowling Green" column in the <emph render="italic">New York Evening Post</emph> and the <emph render="italic">Saturday Review</emph>. </p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Christopher Morley Correspondence</emph> consists of letters and one manuscript.</p><p><emph render="bold">Correspondence</emph> contains letters to Morley's publisher, Harcourt Brace and to various friends, editors, and fellow authors including Morley Kennerley, Bennet Cerf, Frank Henry, A.N. Hosking,  and Mrs. Joseph R. Hatch.   Topics discussed include Robert Louis Stevenson, William Saroyan, various writing projects, and lecture appearances.  There are also some letters concerning Christopher Morley's brothers John and Frank.</p><p>One letter, dated 21 May 1929, was sent to Morley by Philip S. Clarke, a Brooklyn lawyer. It is also addressed to Cleon Throckmorton, a  theatrical scenic designer. In 1929, Morley and Throckmorton were both involved in the reopening of the old Rialto Theater of Hoboken, New York. The letter discusses Morley and Throckmorton's shares of stock, likely referring to the company the two helped form to lease the theater and finance its theatrical productions.  </p><p>In another, written by Morley on 7 May 1940 and addressed to "Paul," Morley discusses the Ampersand Club, a social organization devoted to the appreciation of books and book production. Likely this letter was sent to Paul Hillestad, who was secretary of the club in 1940.  Morley discusses proofs for a book in the letter, possibly referring to <emph render="italic">Friends, Romans...</emph>, the text of an address by Morley which the Ampersand Club had published in 1940.</p><p><emph render="bold">Writings</emph> contains one handwritten manuscript, untitled, about a book salesman named Frank Hurley.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Letters are in chronological order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; holds two books written by Christopher Morley about the Rialto Theater project:  <ref role="bibid" href="771097">Seacoast of Bohemia</ref> and <ref href="1520039" role="bibid">Born in a Beer Garden</ref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <subject encodinganalog="650" source="local">Literature -- American Fiction</subject><!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         
+			<persname encodinganalog="600" source="lcnaf">Cerf, Bennett, 1898-1971.</persname><persname encodinganalog="600" source="lcnaf">Morley, Christopher, 1890-1957.</persname>
+         <persname encodinganalog="600" source="local">Throckmorton, Cleon, 1897-1965.</persname>
+			<corpname encodinganalog="610" source="lcnaf">Old Rialto Theatre (Hoboken, N.J.)</corpname>
+         <subject encodinganalog="650" source="lcsh">Ampersand Club.</subject><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Christopher Morley Correspondence, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Letters of 21 May 1929 and 7 May 1940, unknown provenenance.</p><p>All other letters and manuscript, purchased, 2014.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><unitdate normal="1917/1962" type="inclusive">1917-1962, </unitdate><unitdate normal="1917/1962" type="inclusive">undated</unitdate><container type="SC">348</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02><did><unittitle>Untitled manuscript about Frank Henry, book salesman</unittitle><container type="SC">348</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

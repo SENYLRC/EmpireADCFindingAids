@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="jones_dali">jones_dali</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Harold Jones Collection of Salvador Dali and Joseph Forêt</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2017-05-25" encodinganalog="Date">25 May 2017</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2017-05-25">25 May 2017</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Jones, Harold Grover, 1941-</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Harold Jones Collection of Salvador Dali and Joseph Forêt</unittitle>
+         <unitdate encodinganalog="245$f" normal="1956/1963" type="inclusive" label="Inclusive Dates: ">1956-1963</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>8 linear ft. (oversize flat boxes)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Artwork and memorabilia relating to surrealist artist Salvador Dali and his collaborations with French publisher Joseph Forêt on illustrated editions of <emph render="italic">La Divina Commedia</emph> (Dante), <emph render="italic">Don Quichotte de la Mancha</emph> (Cervantes), and <emph render="italic">L'Apocalypse de St. Jean</emph>.  The material was collected by Syracuse University Professor Emeritus Harold Jones.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4878520</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>, <language langcode="spa">Spanish</language>, 
+         <language langcode="ita">Italian</language></langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Harold Grover Jones (1941- ) is Professor Emeritus of Spanish at Syracuse University.   He earned his PhD in Spanish Literature at Princeton in 1968.   Prior to coming to Syracuse he taught at Macalester College, the University of Missouri, and the University of Houston, where he was chair of the Department of Hispanic and Classical Languages.  He came to Syracuse University in 1988, where he served as chair of the department for nine years (1988 to 1997) and program coordinator of Spanish for the following six years.</p><p>Salvador Dali (1904-1989) was a prominent Spanish surrealist artist known for his striking and bizarre images.   An eccentric and grandiose creative genius, he worked in a variety of media including printmaking and painting but also film, sculpture, and photography, and frequently collaborated with other artists.</p><p>Joseph Forêt was a French publisher.  Between 1956 and 1963, he and Salvador Dalí collaborated to produce fine illustrated editions of Dante’s <emph render="italic">Divine Comedy</emph>, Cervantes’s <emph render="italic">Don Quixote</emph>, and Saint John’s <emph render="italic">Apocalypse</emph>.   All three are notable for their size, lush artwork, attention to detail, and fine craftsmanship.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Harold Jones Collection of Salvador Dali and Joseph Forêt</emph> consists of artwork and a few items of memorabilia.</p><p><emph render="bold">Artwork</emph> contains portfolios of prints from the <emph render="italic">La Divina Commedia</emph>, <emph render="italic">L'Apocalypse de St. Jean</emph>, and <emph render="italic">Don Quichotte</emph> (<emph render="italic">Don Quixote</emph>) and a few individual prints.  There are also a few items by French artist Pierre-Yves Trémois.</p><p><emph render="bold">Memorabilia</emph> contains photographs of Dali with Parisian publisher Joseph Forêt and a few items with Dali's signature.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Material is arranged as necessary for appropriate storage and protection, but is listed in the inventory below in alphabetical order by type or title.  Folders are numbered consecutively across the entire collection.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>A number of published items  have been transferred to Rare Books for cataloging.  Please refer to &summitref; and search on "Gift of Harold G. Jones" to locate these items.</p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Art -- Illustrators</subject>
+<subject encodinganalog="650" source="local">Art -- Painters</subject><subject encodinganalog="650" source="local">Publishing, printing and book arts</subject><persname encodinganalog="600" source="lcnaf">Cervantes Saavedra, Miguel de, 1547-1616.</persname>
+			<persname encodinganalog="600" source="lcnaf">Dalí, Salvador, 1904-1989.</persname>
+			<persname encodinganalog="600" source="lcnaf">Dante Alighieri, 1265-1321.</persname>
+			<persname encodinganalog="600" source="lcnaf">Foret, Joseph.</persname>
+			<persname encodinganalog="600" source="lcnaf">Jones, Harold Grover, 1941-</persname>
+			<persname encodinganalog="600" source="lcnaf">Trémois, Pierre Yves, 1921-</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <title encodinganalog="630" source="lcnaf">Bible. -- Revelation.</title>
+         <subject encodinganalog="650" source="lcsh">Art, Modern -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Illustration of books.</subject>
+			<subject encodinganalog="650" source="lcsh">Painting, Modern -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Surrealism.</subject>
+			<subject encodinganalog="650" source="lcsh">Grotesque in art.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Lithographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Memorabilia.</genreform>
+         <genreform encodinganalog="655" source="aat">Printing plates.</genreform><genreform encodinganalog="655" source="aat">Prints (visual works)</genreform>
+			<occupation encodinganalog="656" source="lcsh">Artists.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Harold Jones Collection of Salvador Dali and Joseph Forêt, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of/purchase from <persname role="donor">Harold Jones</persname>, 2016.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Artwork</unittitle></did>
+            <c02><did><unittitle>Portfolios</unittitle></did>
+               <c03><did><unittitle>Blue portfolio, small, containing prints from copy A of <emph render="italic">Don Quichotte</emph></unittitle><unitdate normal="1957" type="inclusive">1957</unitdate><physdesc><extent>5 items</extent></physdesc><container type="Oversize">4</container><container type="Folder">1</container></did>
+					<scopecontent><p>Don Quixote L'Age Dor, on parchment<lb/>Don Quixote L'Age Dor, on paper<lb/>Attack on the windmills, on vellum[?]<lb/>Unidentified, on paper (2 copies, appear to be identical)</p></scopecontent>
+					</c03>
+               <c03><did><unittitle>Blue portfolio, large, containing prints from copy A of <emph render="italic">Don Quichotte de la Manche</emph></unittitle><unitdate normal="1957" type="inclusive">1957</unitdate><container type="Oversize">4</container><container type="Folder">2</container></did></c03>
+               
+               
+				</c02>
+            <c02><did><unittitle>Prints</unittitle></did>
+				   <c03><did><unittitle>L'Apocalypse de St. Jean, "L'Hostie" [The Host]</unittitle><container type="Oversize">1</container><container type="Folder">3</container></did></c03>
+				   <c03><did><unittitle>L'Apocalypse de St. Jean, "La Pieta"</unittitle><container type="Oversize">3</container><container type="Folder">4</container></did></c03>
+					<c03><did><unittitle>Don Quichotte de la Manche</unittitle><abstract>a suite on Papier Japon Imperial of the 12 lithographs and the rare 13th lithograph "Exploding head of Don Quichotte"</abstract><unitdate normal="1957" type="inclusive">1957</unitdate><physdesc><extent>13 items</extent></physdesc><container type="Oversize">1</container><container type="Folder">5</container></did></c03>
+               <c03><did><unittitle>Inferno 18, "The Flatterer"</unittitle><container type="Oversize">1</container><container type="Folder">6</container></did></c03>
+               <c03><did><unittitle>Paradiso 71, "Beatrice"</unittitle><container type="Oversize">1</container><container type="Folder">6</container></did></c03>
+               <c03><did><unittitle>Purgatorio 29, "Meeting of Dante and Beatrice"</unittitle><container type="Oversize">1</container><container type="Folder">6</container></did></c03>
+               <c03><did><unittitle>"Santiago el Grande," number 135 of 172</unittitle><unitdate normal="1958" type="inclusive">1958</unitdate><container type="Oversize">3</container><container type="Folder">7</container></did></c03>
+               <c03><did><unittitle>Unidentified print on silk</unittitle><container type="Oversize">2</container></did></c03>
+				</c02>
+            <c02><did><unittitle>Miscellaneous</unittitle></did>
+               <c03><did><unittitle>L'Apocalypse, unidentified sketch</unittitle><abstract>winged figure looking down and to the left, one hand on chest and one outstretched; includes pencil, pen, other media; annotated on back in French beginning "Le troisième [illegible] /  Dieu [illegible] à l'agneau les destinées du monde..."</abstract><container type="Oversize">1</container><container type="Folder">6</container></did></c03>
+               <c03><did><unittitle>The End of Man / La Fin de l'homme, by Pierre-Yves Trémois</unittitle><unitdate normal="1961" type="inclusive">1961</unitdate><container type="Oversize">1</container><container type="Folder">6</container></did></c03>
+               <c03><did><unittitle>The Locusts of Destruction / La Sauterelle apollyon, by Pierre-Yves Trémois</unittitle><abstract>2 versions, one gray and yellow and the other monochrome grays</abstract><unitdate normal="1961" type="inclusive">1961</unitdate><physdesc><extent>2 items</extent></physdesc><container type="Oversize">1</container><container type="Folder">6</container></did></c03>
+               
+				</c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Money, signed by Dali</unittitle><physdesc><extent>2 items</extent></physdesc><container type="Oversize">2</container></did></c02>
+            <c02><did><unittitle>Photographs</unittitle><container type="Oversize">2</container></did>
+				   <scopecontent><p>Joseph Forêt holding copy of <emph render="italic">L'Apocalypse</emph><lb/>
+					Joseph Forêt and Salvador Dali in Monaco<lb/>
+					Salvador Dali in Monaco<lb/>
+					Salvador Dali</p></scopecontent></c02>
+            <c02><did><unittitle>Portrait of Dali, painted by street artist in India</unittitle><container type="Oversize">3</container><container type="Folder">8</container></did></c02>           
+            <c02><did><unittitle>Printing plate for Inferno 18, "The Flatterer"</unittitle><abstract>copper plate for this print, including Dali's signature at bottom center</abstract><container type="Oversize">5</container><container type="Folder">9</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

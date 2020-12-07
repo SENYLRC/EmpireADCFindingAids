@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="spock_symp">spock_symp</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Benjamin Spock Symposium Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-02-16" encodinganalog="Date">16 Feb 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2011-02-16">16 Feb 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">##</persname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Benjamin Spock Symposium Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1996" type="inclusive" label="Inclusive Dates: ">1996</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Videorecordings, audiorecordings, slides, photos, and assorted other material relating to "Choices for Children and Families: A Symposium Honoring Benjamin Spock" held at Syracuse University</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3194830</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Dr. Benjamin Spock (1903-1998) was an American pediatrician, author, and peace activist.  He 
+		is the author of the worldwide best-selling book <emph render="italic">Baby and Child Care</emph>.</p>
+		
+		<p>"Choices for Children and Families: A Symposium Honoring Benjamin Spock" was held at Syracuse University on September 
+		21, 1996.   The program, which was co-sponsored by Syracuse University Library Associates and the College of Human 
+		Development, included pediatricians, physicians, doctoral students, professors in related fields, and Spock biographer 
+		James Sullivan.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Benjamin Spock Symposium Collection</emph> consists of subject files (paperwork, attendees, 
+		 photographs, slides) and media (videorecordings, audiorecordings) relating to a 1996 symposium honoring Spock.</p>
+		 
+		 <p>Titles of media items are given exactly as written on the item.  For the "official" tape recordings of the 
+		 symposium (the 3-tape set listed first in the inventory below), the collection contains a complete list of what is on 
+		 each tape, including the speaker's name, the topic, and the starting and ending timestamp.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Items are in no particular order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>See also the 
+		<archref href="../b/bloom_spock.htm">Lynn Z. Bloom Collection Relating to Benjamin Spock</archref> and the 
+		<archref href="../s/spock_b.htm">Benjamin Spock Papers</archref>.</p>
+    </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Activism and social reform</subject>
+<subject encodinganalog="650" source="local">Science and medicine</subject>
+
+
+<persname encodinganalog="600" source="lcnaf">Spock, Benjamin, 1903-1998.</persname>
+
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Pediatricians -- United States.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Videotapes.</genreform>
+		 <genreform encodinganalog="655" source="aat">Audiocassettes.</genreform>
+		 <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+		 <genreform encodinganalog="655" source="aat">Slides (photographs)</genreform>
+         <genreform encodinganalog="655" source="aat">Floppy disks.</genreform>
+		 <occupation encodinganalog="656" source="lcsh">Pediatricians.</occupation>
+		 <occupation encodinganalog="656" source="lcsh">Biographers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+         <p>Access to recordings requires advance notice to create a use copy.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Benjamin Spock Symposium Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Benjamin Spock</persname>, 1997, 2001.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Subject files</unittitle></did>
+            <c02><did><unittitle>Attendees</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Fliers</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Handouts</unittitle><abstract>folder with contents, distributed to attendees</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Hinton, Mary Beth</unittitle><abstract>organizing information, order of events, etc.</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Photographs</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Program planning</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Reaction sheets</unittitle><abstract>feedback on symposium</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Slides</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Video project</unittitle><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Media</unittitle></did>
+            <c02><did><unittitle>Choices for Children and Families: A Benjamin Spock Symposium</unittitle><abstract>parts 1, 2 and 3</abstract><physdesc><extent>3 VHS tapes</extent></physdesc><container type="Box">2</container>
+			<note><p>An itemized list of what is on each tape (speaker, topic and timestamp) is included in the box.</p></note></did></c02>
+            <c02><did><unittitle>Benjamin Spock Symposium of 9/21/96 / at Syracuse University</unittitle><physdesc><extent>2 VHS tapes</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle> S.U. Library Associates / "Spock: A One-Man Show by Geoffrey Brown"</unittitle><physdesc><extent>1 VHS tape</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Spock 1 + 2</unittitle><physdesc><extent>1 VHS tape</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Spock 3 + 4 + 5</unittitle><physdesc><extent>1 VHS tape</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Spock 6 + 7</unittitle><physdesc><extent>1 VHS tape</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Benjamin Spock Symposium</unittitle><physdesc><extent>4 audiocassettes</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Spock files 96 + 97</unittitle><abstract>unknown files, unknown format</abstract><physdesc><extent>3¼" floppy disk</extent></physdesc><container type="Box">2</container></did></c02>
+            
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

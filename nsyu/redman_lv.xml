@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="redman_lv">redman_lv</eadid>
+      <filedesc>
+         <titlestmt>
+                     <titleproper encodinganalog="Title">Lawrence V. Redman Papers</titleproper>
+         <subtitle>A description of his papers at Syracuse University</subtitle>
+
+         <author encodinganalog="Creator">MM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+               <date normal="2006" encodinganalog="Date">2006</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-12">Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>Feb 2009 - converted to EAD (MRC)</item><item>22 Oct 2013 - corrected box numbers (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+               <persname encodinganalog="100">Redman, L. V. (Lawrence Vincent), b. 1880.</persname></origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Lawrence V. Redman Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1922/1930" type="inclusive" label="Inclusive Dates: ">1922-1930</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection contains two items related to the career of Lawrence Vincent Redman, a booklet on his phenolic plastic, redmanol, and a certificate of recognition from the American Chemical Society.</abstract>
+
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2663650</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Lawrence Vincent Redman (1880-1946) was a Canadian chemist and a leader in the industrial applications of plastics. </p><p>Born Robert Lawrence Vincent Redman on September 1, 1880 in Oil Springs, Ontario, Canada, he earned his degree at the University of Toronto 1908 and studied at University of Kansas. In 1913, he established Redmanol Chemical Products Company to produce a plastic (redmanol) similar to bakelite.
+The Redmanol company, the Condensite Company of America, and General Bakelite were consolidated in 1922 into the Bakelite Corporation. Redman was vice president and director of research and retired in 1939. He was a member of the American Chemical Society and its president in 1932.
+</p>
+</bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Lawrence V. Redman Papers</emph> contains printed material (a booklet on Redman's phenolic plastic, redmanol) and memorabilia (a certificate of recognition from the American Chemical Society).</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>None.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous holdings in the areas of plastics and industrial design. Please refer to &subjindex; for a complete listing.  There are also artifacts made of redmanol in the holdings.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+<subject encodinganalog="650" source="local">Plastics</subject><persname encodinganalog="600" source="lcnaf">Redman, L. V. (Lawrence Vincent), b. 1880.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Bakelite Corporation.</corpname><corpname encodinganalog="610" source="local" rules="aacr2">Redmanol Chemical Products Company.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Plastics industry and trade.</subject>
+         <subject encodinganalog="650" source="lcsh">Phenolic resins.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Awards.</genreform><genreform encodinganalog="655" source="aat">Booklets.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Chemical engineers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Lawrence V. Redman Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from National Plastics Center and Museum, 11/06/2008.  Originally, gift of <persname role="donor">Alice Redman Gooch</persname>, 2004.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      
+   <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Award, presented to Lawrence Redman by the American Chemical Society, framed</unittitle><unitdate type="inclusive" normal="1930">1930</unitdate><container type="Oversize">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle>"REDMANOL: A Popular Exposition of the Scientific Merits of Redmanol, the Basic Material of Many Industries" /  Redmanol Chemical Products Company</unittitle><abstract>"Robert Lawrence Vincent Redman" handwritten inside back cover</abstract><unitdate type="inclusive" normal="1922">1922</unitdate><container type="Oversize">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

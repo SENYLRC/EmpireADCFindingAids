@@ -1,0 +1,1774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012--><!-- added altformavail section -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="harvith_int" mainagencycode="NSyU">harvith_int</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">John and Susan Edwards Harvith Interview Collection</titleproper>
+        <subtitle>An inventory of their Collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2013-09-13">13 Sept 2013</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+        <date normal="2013-09-13">13 Sept 2013</date>
+      </creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+          6 Mar 2017 - Collection name, scope and contents,  notes changed and videotapes added (PJM)
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Harvith, John.</persname>
+        <persname encodinganalog="100">Harvith, Susan Edwards.</persname>
+         </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">John and Susan Edwards Harvith Interview Collection</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1998/2001" type="inclusive">1998-2001</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>1.5 linear ft</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Audio and video recordings of interviews by the Harviths of important figures in the history of the 
+        arts and the history of radio and television, including actors, conductors, directors, musicians, writers, producers, and others.</abstract>
+      <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4089759</unitid>
+      <langmaterial encodinganalog="546" label="Language:">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>John Harvith and Susan Edwards Harvith are mass communications and arts historians who together have produced
+            exhibitions and film series, as well as books and articles. Their research has emphasized the interface between the arts and
+            technology in film, photography, radio, and television, resulting in numerous interviews
+            with cinematographers, film editors, musicians, and radio and television pioneers.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">John and Susan Edwards Harvith Interview Collection</emph> consists of interviews with over sixty important figures  -- actors, comedians, musicians, writers, directors and producers -- in the history of radio and television broadcasting, particular comedy and drama.  
+        These interviews, conducted primarily in the subject's homes, offer unique personal insights into the heyday of broadcast television, what it was like to be 
+        involved in massively popular television shows of the time, and how American popular culture shaped and was shaped by them.  
+        Television shows represented include <emph render="italic">Father Knows Best</emph>, <emph render="italic">All in the Family</emph>, <emph render="italic">M*A*S*H*</emph>,
+        <emph render="italic">I Love Lucy</emph>, and many more.</p>
+    </scopecontent>
+    <altformavail encodinganalog="530"><head>Other Formats Available</head><p>All audiocassettes save the interview of Dr. and Mrs. Rose Setnor (harvith_int_131) have been digitized as of March 27, 2017.</p></altformavail>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Alphabetical by last name of person being interviewed.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has numerous collections relating to music, entertainment, and television and radio broadcasting history.  Please &searchcoll; for a complete listing.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.-->
+      <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>##</p>
+      </separatedmaterial>-->
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Popular culture</subject>
+      <subject encodinganalog="650" source="local">Radio, television, film</subject>
+      <subject encodinganalog="650" source="local">Music</subject>
+      <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+      <!--<title encodinganalog="630" source="lcnaf"/>-->
+      <subject encodinganalog="650" source="lcsh">Actors -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Actresses -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Comedians -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Conductors (Music) -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Dancers -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Musicians -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Pianists -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Radio broadcasting -- United States -- History.</subject><subject encodinganalog="650" source="lcsh">Radio comedy writers -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Radio personalities -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Radio writers -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Singers -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Television broadcasting -- United States -- History.</subject>
+<subject encodinganalog="650" source="lcsh">Television comedy writers -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Television personalities -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Television producers and directors -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Television writers -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Women comedians -- United States.</subject>
+<!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Audiocassettes.</genreform>
+      <genreform encodinganalog="655" source="aat">Sound recordings.</genreform><genreform encodinganalog="655" source="aat">Interviews.</genreform>
+    
+    
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed off site and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      <p>Access to videotape and undigitized recordings requires advance notice for production of a listening copy. </p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+			<p>Listening copies are for on-site use only. Any person wishing to purchase a
+            research copy will need to obtain permission from the copyright holder prior to placing
+            their order.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>John and Susan Edwards Harvith Interview Collection,
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">John Harvith </persname>and 
+        
+        <persname role="donor">Susan Edwards Harvith</persname>.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>-->
+      <!--<accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Interviews</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unitid>harvith_int_001</unitid>
+            <unittitle>Eddie Albert, parts 1 and 2</unittitle>
+            <abstract>interview with actor Eddie Albert, in Los Angeles, CA</abstract>
+            <unitdate normal="2000-01-10" type="inclusive">01/10/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_002</unitid>
+            <unittitle>Eddie Albert, parts 3 and 4</unittitle>
+            <abstract>interview with actor Eddie Albert, in Los Angeles, CA</abstract>
+            <unitdate normal="2000-01-10" type="inclusive">01/10/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_003</unitid>
+            <unittitle>Eddie Albert, part 5</unittitle>
+            <abstract>interview with actor Eddie Albert, in Los Angeles, CA</abstract>
+            <unitdate normal="2000-01-10" type="inclusive">01/10/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_004</unitid>
+            <unittitle>Arthur Alsberg, parts 1 and 2</unittitle>
+            <abstract>interview with radio comedy writer Arthur Alsberg</abstract>
+            <unitdate normal="2000-08-08" type="inclusive">08/08/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_005</unitid>
+            <unittitle>Arthur Alsberg, parts 3 and 4</unittitle>
+            <abstract>interview with radio comedy writer Arthur Alsberg</abstract>
+            <unitdate normal="2000-08-08" type="inclusive">08/08/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_130</unitid>
+            <unittitle>Martina Arroyo</unittitle>
+            <abstract>interview with American soprano, Martina Arroyo</abstract>
+            <unitdate normal="1977-05-01" type="inclusive">05-01-1977</unitdate>
+            <physdesc>
+              <extent>1 1/2-inch videotape</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_006</unitid>
+            <unittitle>Bea Arthur, parts 1 and 2</unittitle>
+            <abstract>interview with television and film actress Bea Arthur, in California</abstract>
+            <unitdate normal="2000-01-05" type="inclusive">01/05/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_007</unitid>
+            <unittitle>Bea Arthur, part 3</unittitle>
+            <abstract>interview with television and film actress Bea Arthur, in California</abstract>
+            <unitdate normal="2000-01-05" type="inclusive">01/05/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_008</unitid>
+            <unittitle>Conrad Bain, parts 1 and 2</unittitle>
+            <abstract>interview with actor Conrad Bain, in California</abstract>
+            <unitdate normal="1999-05-06" type="inclusive">05/06/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_009</unitid>
+            <unittitle>Kaye Ballard, parts 1 and 2</unittitle>
+            <abstract>interview with Kaye Ballard, musical theatre and television actress, comedienne and singer</abstract>
+            <unitdate normal="2000-08-04" type="inclusive">08/04/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_010</unitid>
+            <unittitle>Kaye Ballard, part 3</unittitle>
+            <abstract>interview with Kaye Ballard, musical theatre and television actress, comedienne and singer</abstract>
+            <unitdate normal="2000-08-04" type="inclusive">08/04/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_011</unitid>
+            <unittitle>Gary Belkin, parts 1 and 2</unittitle>
+            <abstract>interview with Gary Belkin, writer for comedy and variety shows, in Los Angeles, CA</abstract>
+            <unitdate normal="2000-01-09" type="inclusive">01/09/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_012</unitid>
+            <unittitle>Gary Belkin, part 3</unittitle>
+            <abstract>interview with Gary Belkin, writer for comedy and variety shows, in Los Angeles, CA</abstract>
+            <unitdate normal="2000-01-09" type="inclusive">01/09/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_013</unitid>
+            <unittitle>Milton Berle, parts 1 and 2</unittitle>
+            <abstract>interview with comedian Milton Berle at the Friars Club; "in the Milton Berle Room, Rocky Kalish in attendance", in Beverly Hills, CA</abstract>
+            <unitdate normal="1999-08-02" type="inclusive">08/02/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_014</unitid>
+            <unittitle>Milton Berle, parts 1 and 2</unittitle>
+            <abstract>interview with comedian Milton Berle, in Beverly Hills, CA</abstract>
+            <unitdate normal="2000-01-17" type="inclusive">01/17/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_015</unitid>
+            <unittitle>Milton Berle, part 3</unittitle>
+            <abstract>interview with comedian Milton Berle, in Beverly Hills, CA</abstract>
+            <unitdate normal="2000-01-17" type="inclusive">01/17/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_128</unitid>
+            <unittitle>Frans Brüggen at Rackham</unittitle>
+            <abstract>interview with Dutch conductor, recorder player and flautist, Franciscus Brüggen</abstract>
+            <unitdate normal="1977-03-22" type="inclusive">03/22/1977</unitdate>
+            <physdesc>
+              <extent>1 1/2-inch videotape</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_016</unitid>
+            <unittitle>Betty Folker Bullock</unittitle>
+            <abstract>interview with Betty Folker Bullock, wife of television and film writer Harvey Bullock</abstract>
+            <unitdate normal="2000-08-02" type="inclusive">08/02/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_017</unitid>
+            <unittitle>Harvey Bullock, parts 1 and 2</unittitle>
+            <abstract>interview with Harvey Bullock, television and film writer</abstract>
+            <unitdate normal="2000-08-02" type="inclusive">08/02/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_018</unitid>
+            <unittitle>Harvey Bullock, parts 3 and 4</unittitle>
+            <abstract>interview with Harvey Bullock, television and film writer</abstract>
+            <unitdate normal="2000-08-02" type="inclusive">08/02/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_019</unitid>
+            <unittitle>Harvey Bullock, parts 5 and 6</unittitle>
+            <abstract>interview with Harvey Bullock, television and film writer; also includes his wife Betty Folker Bullock</abstract>
+            <unitdate normal="2000-08-02" type="inclusive">08/02/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_020</unitid>
+            <unittitle>Sid Caesar, parts 1 and 2</unittitle>
+            <abstract>interview with Sid Caesar, comic actor and writer, in California</abstract>
+            <unitdate normal="1999-05-03" type="inclusive">05/03/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_021</unitid>
+            <unittitle>Sid Caesar, parts 1 and 2</unittitle>
+            <abstract>interview with Sid Caesar, comic actor and writer, in California</abstract>
+            <unitdate normal="1999-05-03" type="inclusive">05/03/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bob Carroll, Jr.</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="mada">Madelyn Davis and Bob Carroll, Jr.</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_022</unitid>
+            <unittitle>Hal Cooper, parts 1 and 2</unittitle>
+            <abstract>interview with director Hal Cooper</abstract>
+            <unitdate normal="2000-07-29" type="inclusive">07/29/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_023</unitid>
+            <unittitle>Hal Cooper, parts 3 and 4</unittitle>
+            <abstract>interview with director Hal Cooper</abstract>
+            <unitdate normal="2000-07-29" type="inclusive">07/29/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_024</unitid>
+            <unittitle>Hal Cooper, parts 5 and 6</unittitle>
+            <abstract>interview with director Hal Cooper</abstract>
+            <unitdate normal="2000-07-29" type="inclusive">07/29/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_025</unitid>
+            <unittitle>Hal Cooper, parts 7 and 8</unittitle>
+            <abstract>interview with director Hal Cooper</abstract>
+            <unitdate normal="2000-07-29" type="inclusive">07/29/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_026</unitid>
+            <unittitle>Hal Cooper, parts 9 and 10</unittitle>
+            <abstract>interview with director Hal Cooper</abstract>
+            <unitdate normal="2000-07-29" type="inclusive">07/29/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_027</unitid>
+            <unittitle>Hal Cooper, parts 11 and 12</unittitle>
+            <abstract>interview with director Hal Cooper</abstract>
+            <unitdate normal="2000-07-29" type="inclusive">07/29/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_028</unitid>
+            <unittitle>Jackie Cooper, parts 1 and 2</unittitle>
+            <abstract>interview with Jackie Cooper, actor, television director, producer and executive</abstract>
+            <unitdate normal="1999-01-09" type="inclusive">01/09/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_029</unitid>
+            <unittitle>Jackie Cooper, parts 3 and 4</unittitle>
+            <abstract>interview with Jackie Cooper, actor, television director, producer and executive</abstract>
+            <unitdate normal="1999-01-09" type="inclusive">01/09/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_030</unitid>
+            <unittitle>Norman Corwin, parts 1 and 2</unittitle>
+            <abstract>interview with Norman Corwin, writer, screenwriter, producer, essayist and teacher of journalism and writing, at Annette Kaufman's home, in Los Angeles, CA</abstract>
+            <unitdate normal="2000-01-16" type="inclusive">01/16/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_031</unitid>
+            <unittitle>Norman Corwin, parts 1 and 2</unittitle>
+            <abstract>interview with Norman Corwin, writer, screenwriter, producer, essayist and teacher of journalism and writing, at Annette Kaufman's home, in Los Angeles, CA</abstract>
+            <unitdate normal="2000-01-16" type="inclusive">01/16/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02 id="mada">
+          <did>
+            <unitid>harvith_int_032</unitid>
+            <unittitle>Madelyn Davis and Bob Carroll, Jr., parts 1 and 2</unittitle>
+            <abstract>interview with Madelyn Davis (also known as Madelyn Pugh Davis, Madelyn Pugh, or Madelyn Martin) and Bob Carrol, Jr., television comedy writers and creators of I Love Lucy, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-31" type="inclusive">07/31/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_033</unitid>
+            <unittitle>Madelyn Davis and Bob Carroll, Jr., parts 3 and 4</unittitle>
+            <abstract>interview with Madelyn Davis (also known as Madelyn Pugh Davis, Madelyn Pugh, or Madelyn Martin) and Bob Carrol, Jr., television comedy writers and creators of I Love Lucy, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-31" type="inclusive">07/31/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_034</unitid>
+            <unittitle>Elinor Donahue, parts 1 and 2</unittitle>
+            <abstract>interview with actress Elinor Donahue, at Chez Nous restaurant, in North Hollywood, CA</abstract>
+            <unitdate normal="1999-05-07" type="inclusive">05/07/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_035</unitid>
+            <unittitle>Jack Elinson, parts 1 and 2</unittitle>
+            <abstract>interview with Jack Elinson, writer and producer for television comedy</abstract>
+            <unitdate normal="2000-07-30" type="inclusive">07/30/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_036</unitid>
+            <unittitle>Jack Elinson, parts 3 and 4</unittitle>
+            <abstract>interview with Jack Elinson, writer and producer for television comedy</abstract>
+            <unitdate normal="2000-07-30" type="inclusive">07/30/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_037</unitid>
+            <unittitle>Jack Elinson, part 5</unittitle>
+            <abstract>interview with Jack Elinson, writer and producer for television comedy</abstract>
+            <unitdate normal="2000-07-30" type="inclusive">07/30/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_038</unitid>
+            <unittitle>Robert Ellenstein, parts 1 and 2</unittitle>
+            <abstract>interview with actor Robert Ellenstein</abstract>
+            <unitdate normal="1999-01-11" type="inclusive">01/11/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_039</unitid>
+            <unittitle>Robert Ellenstein, parts 3 and 4</unittitle>
+            <abstract>interview with actor Robert Ellenstein</abstract>
+            <unitdate normal="1999-01-11" type="inclusive">01/11/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_040</unitid>
+            <unittitle>Robert Ellenstein, part 5</unittitle>
+            <abstract>interview with actor Robert Ellenstein</abstract>
+            <unitdate normal="1999-01-11" type="inclusive">01/11/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_041</unitid>
+            <unittitle>Nanette Fabray, parts 1 and 2</unittitle>
+            <abstract>interview with Nanette Fabray, actress, comedienne, singer, dancer, and activist</abstract>
+            <unitdate normal="1999-01-16" type="inclusive">01/16/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_042</unitid>
+            <unittitle>Nanette Fabray, part 3</unittitle>
+            <abstract>interview with Nanette Fabray, actress, comedienne, singer, dancer, and activist</abstract>
+            <unitdate normal="1999-01-16" type="inclusive">01/16/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_043</unitid>
+            <unittitle>Nanette Fabray, parts 1 and 2</unittitle>
+            <abstract>interview with Nanette Fabray, actress, comedienne, singer, dancer, and activist, in California</abstract>
+            <unitdate normal="1999-05-04" type="inclusive">05/04/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_044</unitid>
+            <unittitle>Nanette Fabray, part 3</unittitle>
+            <abstract>interview with Nanette Fabray, actress, comedienne, singer, dancer, and activist, in California</abstract>
+            <unitdate normal="1999-05-04" type="inclusive">05/04/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_045</unitid>
+            <unittitle>Betty Garrett, parts 1 and 2</unittitle>
+            <abstract>interview with Betty Garrett, actress, comedienne, singer and dancer , in California</abstract>
+            <unitdate normal="1999-07-28" type="inclusive">07/28/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_046</unitid>
+            <unittitle>Betty Garrett, parts 3 and 4</unittitle>
+            <abstract>interview with Betty Garrett, actress, comedienne, singer and dancer , in California</abstract>
+            <unitdate normal="1999-07-28" type="inclusive">07/28/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_047</unitid>
+            <unittitle>Betty Garrett, part 5</unittitle>
+            <abstract>interview with Betty Garrett, actress, comedienne, singer and dancer , in California</abstract>
+            <unitdate normal="1999-07-28" type="inclusive">07/28/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_048</unitid>
+            <unittitle>Larry Gelbart, parts 1 and 2</unittitle>
+            <abstract>interview with Larry Gelbart, television writer, playwright, screenwriter and author, and creator and producer of M*A*S*H., in Beverly Hills, CA</abstract>
+            <unitdate normal="1999-07-21" type="inclusive">07/21/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_049</unitid>
+            <unittitle>Larry Gelbart, parts 3 and 4</unittitle>
+            <abstract>interview with Larry Gelbart, television writer, playwright, screenwriter and author, and creator and producer of M*A*S*H., in Beverly Hills, CA</abstract>
+            <unitdate normal="1999-07-21" type="inclusive">07/21/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_050</unitid>
+            <unittitle>Bill Gray, parts 1 and 2</unittitle>
+            <abstract>interview with actor Bill Gray (William Thomas Gray)</abstract>
+            <unitdate normal="1999-01-06" type="inclusive">01/06/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_051</unitid>
+            <unittitle>Bill Gray, parts 3 and 4</unittitle>
+            <abstract>interview with actor Bill Gray (William Thomas Gray)</abstract>
+            <unitdate normal="1999-01-06" type="inclusive">01/06/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_127</unitid>
+            <unittitle>Guarneri Quartet</unittitle>
+            <abstract>interview with Guarneri Quartet (Arnold Steinhart - 1st violin, John Dailey - 2nd violin, Michael Tree - viola, and David Soyer, Violoncello)</abstract>
+            <unitdate normal="1977" type="inclusive">1977</unitdate>
+            <physdesc>
+              <extent>1 1/2 inch videotape</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_052</unitid>
+            <unittitle>Kitty Carlisle Hart, parts 1 and 2</unittitle>
+            <abstract>interview with Kitty Carlisle, singer and actress</abstract>
+            <unitdate normal="1999-08-00" type="inclusive">08/00/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_053</unitid>
+            <unittitle>Charles Isaacs, parts 1 and 2</unittitle>
+            <abstract>interview with radio and television comedy writer Charles Isaacs</abstract>
+            <unitdate normal="2000-08-10" type="inclusive">08/10/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_054</unitid>
+            <unittitle>Charles Isaacs, parts 3 and 4</unittitle>
+            <abstract>interview with radio and television comedy writer Charles Isaacs</abstract>
+            <unitdate normal="2000-08-10" type="inclusive">08/10/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_055</unitid>
+            <unittitle>Charles Isaacs, parts 5 and 6</unittitle>
+            <abstract>interview with radio and television comedy writer Charles Isaacs</abstract>
+            <unitdate normal="2000-08-10" type="inclusive">08/10/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_056</unitid>
+            <unittitle>Charles Isaacs, parts 7 and 8</unittitle>
+            <abstract>interview with radio and television comedy writer Charles Isaacs</abstract>
+            <unitdate normal="2000-08-10" type="inclusive">08/10/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_057</unitid>
+            <unittitle>Charles Isaacs, parts 9 and 10</unittitle>
+            <abstract>interview with radio and television comedy writer Charles Isaacs</abstract>
+            <unitdate normal="2000-08-10" type="inclusive">08/10/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_058</unitid>
+            <unittitle>Charles Isaacs, parts 11 and 12</unittitle>
+            <abstract>interview with radio and television comedy writer Charles Isaacs</abstract>
+            <unitdate normal="2000-08-10" type="inclusive">08/10/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_059</unitid>
+            <unittitle>Sheldon Keller, parts 1 and 2</unittitle>
+            <abstract>interview with Sheldon Keller, screenwriter and composer, in Los Angeles, CA</abstract>
+            <unitdate normal="2000-01-10" type="inclusive">01/10/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_060</unitid>
+            <unittitle>Don Knotts, parts 1 and 2</unittitle>
+            <abstract>interview with actor Don Knotts, in Annette Kaufman's home, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-26" type="inclusive">07/26/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_061</unitid>
+            <unittitle>Norman Lear, parts 1 and 2</unittitle>
+            <abstract>interview with Norman Lear, television writer and producer , in Los Angeles, CA</abstract>
+            <unitdate normal="2000-01-13" type="inclusive">01/13/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_062</unitid>
+            <unittitle>Janet Leigh, parts 1 and 2</unittitle>
+            <abstract>interview with actress Janet Leigh (Jeanette Helen Morrison)</abstract>
+            <unitdate normal="2000-08-01" type="inclusive">08/01/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_063</unitid>
+            <unittitle>Janet Leigh, parts 3 and 4</unittitle>
+            <abstract>interview with actress Janet Leigh (Jeanette Helen Morrison)</abstract>
+            <unitdate normal="2000-08-01" type="inclusive">08/01/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_064</unitid>
+            <unittitle>Art Linkletter, parts 1 and 2</unittitle>
+            <abstract>interview with radio and television personality Art Linkletter (Gordon Arthur Kelly), in California</abstract>
+            <unitdate normal="2000-01-15" type="inclusive">01/15/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_065</unitid>
+            <unittitle>Art Linkletter, parts 3 and 4</unittitle>
+            <abstract>interview with radio and television personality Art Linkletter (Gordon Arthur Kelly), in California</abstract>
+            <unitdate normal="2000-01-15" type="inclusive">01/15/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_066</unitid>
+            <unittitle>Adrienne Luraschi, parts 1 and 2</unittitle>
+            <abstract>interview with television producer and director Adrienne Luraschi</abstract>
+            <unitdate normal="2000-08-03" type="inclusive">08/03/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_067</unitid>
+            <unittitle>Adrienne Luraschi, parts 3 and 4</unittitle>
+            <abstract>interview with television producer and director Adrienne Luraschi</abstract>
+            <unitdate normal="2000-08-03" type="inclusive">08/03/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_068</unitid>
+            <unittitle>Kevin McCarthy, parts 1 and 2</unittitle>
+            <abstract>interview with actor Kevin McCarthy, in Annette Kaufman's home, in Los Angeles, CA</abstract>
+            <unitdate normal="2000-01-15" type="inclusive">01/15/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_069</unitid>
+            <unittitle>Kevin McCarthy, part 3</unittitle>
+            <abstract>interview with actor Kevin McCarthy, in Annette Kaufman's home, in Los Angeles, CA</abstract>
+            <unitdate normal="2000-01-15" type="inclusive">01/15/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_070</unitid>
+            <unittitle>Howard Morris, parts 1 and 2</unittitle>
+            <abstract>interview with actor and director Howard Morris, in Annette Kaufman's home, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-30" type="inclusive">07/30/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_071</unitid>
+            <unittitle>Howard Morris, parts 3 and 4</unittitle>
+            <abstract>interview with actor and director Howard Morris, in Annette Kaufman's home, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-30" type="inclusive">07/30/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_072</unitid>
+            <unittitle>David Nelson, parts 1 and 2</unittitle>
+            <abstract>interview with David Nelson, actor, director, and producer.</abstract>
+            <unitdate normal="2000-01-12" type="inclusive">01/12/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_073</unitid>
+            <unittitle>David Nelson, part 3</unittitle>
+            <abstract>interview with David Nelson, actor, director, and producer.</abstract>
+            <unitdate normal="2000-01-12" type="inclusive">01/12/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_074</unitid>
+            <unittitle>Don Nelson, parts 1 and 2</unittitle>
+            <abstract>interview with Don Nelson, screenwriter, film producer and musician, in Los Angeles, CA</abstract>
+            <unitdate normal="2000-08-08" type="inclusive">08/08/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_075</unitid>
+            <unittitle>Don Nelson, part 3</unittitle>
+            <abstract>interview with Don Nelson, screenwriter, film producer and musician, in Los Angeles, CA</abstract>
+            <unitdate normal="2000-08-08" type="inclusive">08/08/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_076</unitid>
+            <unittitle>Louis Nye, parts 1 and 2</unittitle>
+            <abstract>interview with comedy actor Louis Nye</abstract>
+            <unitdate normal="1999-01-15" type="inclusive">01/15/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_077</unitid>
+            <unittitle>Louis Nye, parts 3 and 4</unittitle>
+            <abstract>interview with comedy actor Louis Nye</abstract>
+            <unitdate normal="1999-01-15" type="inclusive">01/15/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_078</unitid>
+            <unittitle>Ted Post, parts 1 and 2</unittitle>
+            <abstract>interview with Ted Post, television and film director and producer</abstract>
+            <unitdate normal="2000-08-06" type="inclusive">08/06/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_079</unitid>
+            <unittitle>Ted Post, parts 3 and 4</unittitle>
+            <abstract>interview with Ted Post, television and film director and producer</abstract>
+            <unitdate normal="2000-08-06" type="inclusive">08/06/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_080</unitid>
+            <unittitle>Ted Post, parts 5 and 6</unittitle>
+            <abstract>interview with Ted Post, television and film director and producer</abstract>
+            <unitdate normal="2000-08-06" type="inclusive">08/06/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_081</unitid>
+            <unittitle>Tom Poston, parts 1 and 2</unittitle>
+            <abstract>interview with actor Tom Poston, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-05-05" type="inclusive">05/05/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_082</unitid>
+            <unittitle>Tom Poston, part 3</unittitle>
+            <abstract>interview with actor Tom Poston, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-05-05" type="inclusive">05/05/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_083</unitid>
+            <unittitle>Charlotte Rae, parts 1 and 2</unittitle>
+            <abstract>interview with Charlotte Rae (Charlotte Rae Lubotsky), actress, singer, dancer and comedienne, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-23" type="inclusive">07/23/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_084</unitid>
+            <unittitle>John Randolph, parts 1 and 2</unittitle>
+            <abstract>interview with actor John Randolph, in Hollywood, CA</abstract>
+            <unitdate normal="2000-01-13" type="inclusive">01/13/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_085</unitid>
+            <unittitle>John Randolph, part 3</unittitle>
+            <abstract>interview with actor John Randolph, in Hollywood, CA</abstract>
+            <unitdate normal="2000-01-13" type="inclusive">01/13/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_086</unitid>
+            <unittitle>John Randolph, parts 1 and 2</unittitle>
+            <abstract>interview with actor John Randolph, in Hollywood, CA</abstract>
+            <unitdate normal="2000-01-16" type="inclusive">01/16/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_087</unitid>
+            <unittitle>John Randolph, part 3</unittitle>
+            <abstract>interview with actor John Randolph, in Hollywood, CA</abstract>
+            <unitdate normal="2000-01-16" type="inclusive">01/16/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_088</unitid>
+            <unittitle>Carl Reiner, parts 1 and 2</unittitle>
+            <abstract>interview with Carl Reiner, actor, film director, producer, writer, and comedian, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-20" type="inclusive">07/20/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_089</unitid>
+            <unittitle>Carl Reiner, part 3</unittitle>
+            <abstract>interview with Carl Reiner, actor, film director, producer, writer, and comedian, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-20" type="inclusive">07/20/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_090</unitid>
+            <unittitle>Gene Reynolds, parts 1 and 2</unittitle>
+            <abstract>interview with Gene Reynolds, actor, television writer, director, and producer, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-27" type="inclusive">07/27/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_091</unitid>
+            <unittitle>Gene Reynolds, parts 3 and 4</unittitle>
+            <abstract>interview with Gene Reynolds, actor, television writer, director, and producer, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-27" type="inclusive">07/27/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_092</unitid>
+            <unittitle>Gene Reynolds, part 5</unittitle>
+            <abstract>interview with Gene Reynolds, actor, television writer, director, and producer, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-27" type="inclusive">07/27/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_093</unitid>
+            <unittitle>Larry Rhine, parts 1 and 2</unittitle>
+            <abstract>interview with Larry Rhine, comedy writer for radio, television and film</abstract>
+            <unitdate normal="2000-08-12" type="inclusive">08/12/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_094</unitid>
+            <unittitle>Larry Rhine, part 3</unittitle>
+            <abstract>interview with Larry Rhine, comedy writer for radio, television and film</abstract>
+            <unitdate normal="2000-08-12" type="inclusive">08/12/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_095</unitid>
+            <unittitle>John Rich, parts 1 and 2</unittitle>
+            <abstract>interview with film and television director John Rich, in Beverly Hills, CA</abstract>
+            <unitdate normal="2000-01-14" type="inclusive">01/14/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_096</unitid>
+            <unittitle>John Rich, parts 3 and 4</unittitle>
+            <abstract>interview with film and television director John Rich, in Beverly Hills, CA</abstract>
+            <unitdate normal="2000-01-14" type="inclusive">01/14/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_097</unitid>
+            <unittitle>John Rich, parts 5 and 6</unittitle>
+            <abstract>interview with film and television director John Rich, in Beverly Hills, CA</abstract>
+            <unitdate normal="2000-01-14" type="inclusive">01/14/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_098</unitid>
+            <unittitle>John Rich, parts 7 and 8</unittitle>
+            <abstract>interview with film and television director John Rich, in Beverly Hills, CA</abstract>
+            <unitdate normal="2000-01-14" type="inclusive">01/14/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_099</unitid>
+            <unittitle>John Rich, parts 1 and 2</unittitle>
+            <abstract>interview with film and television director John Rich</abstract>
+            <unitdate normal="2000-08-01" type="inclusive">08/01/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_100</unitid>
+            <unittitle>John Rich, parts 3 and 4</unittitle>
+            <abstract>interview with film and television director John Rich</abstract>
+            <unitdate normal="2000-08-12" type="inclusive">08/12/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_101</unitid>
+            <unittitle>Aaron Ruben, parts 1 and 2</unittitle>
+            <abstract>interview with television director Aaron Ruben, in Beverly Hills, CA</abstract>
+            <unitdate normal="2000-01-11" type="inclusive">01/11/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_102</unitid>
+            <unittitle>Aaron Ruben, parts 3 and 4</unittitle>
+            <abstract>interview with television director Aaron Ruben, in Beverly Hills, CA</abstract>
+            <unitdate normal="2000-01-11" type="inclusive">01/11/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_103</unitid>
+            <unittitle>Aaron Ruben, parts 5 and 6</unittitle>
+            <abstract>interview with television director Aaron Ruben, in Beverly Hills, CA</abstract>
+            <unitdate normal="2000-01-11" type="inclusive">01/11/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_104</unitid>
+            <unittitle>Aaron Ruben, parts 7 and 8</unittitle>
+            <abstract>interview with television director Aaron Ruben, in Beverly Hills, CA</abstract>
+            <unitdate normal="2000-01-11" type="inclusive">01/11/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_105</unitid>
+            <unittitle>Joseph Ruskin, parts 1 and 2</unittitle>
+            <abstract>interview with actor Joseph Ruskin, in Annette Kaufman's home, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-23" type="inclusive">07/23/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_106</unitid>
+            <unittitle>Joseph Ruskin, parts 3 and 4</unittitle>
+            <abstract>interview with actor Joseph Ruskin, in Annette Kaufman's home, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-23" type="inclusive">07/23/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_132</unitid>
+            <unittitle>György Sándor</unittitle>
+            <abstract>interview with Hungarian born pianist and writer, György Sándor</abstract>
+            <physdesc>
+              <extent>1 1/2 inch videotape</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_107</unitid>
+            <unittitle>William Schallert, parts 1 and 2</unittitle>
+            <abstract>interview with actor William Schallert</abstract>
+            <unitdate normal="1998-07-27" type="inclusive">07/27/1998</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_108</unitid>
+            <unittitle>William Schallert, parts 3 and 4</unittitle>
+            <abstract>interview with actor William Schallert</abstract>
+            <unitdate normal="1998-07-27" type="inclusive">07/27/1998</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_109</unitid>
+            <unittitle>William Schallert, parts 5 and 6</unittitle>
+            <abstract>interview with actor William Schallert</abstract>
+            <unitdate normal="1998-07-27" type="inclusive">07/27/1998</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02 id="bosc">
+          <did>
+            <unitid>harvith_int_110</unitid>
+            <unittitle>Bob Schiller and Bob Weiskopf, parts 1 and 2</unittitle>
+            <abstract>interview with television writers Bob Schiller and Bob Weiskopf, in Santa Monica, CA</abstract>
+            <unitdate normal="2000-01-08" type="inclusive">01/08/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_111</unitid>
+            <unittitle>Bob Schiller and Bob Weiskopf, parts 3 and 4</unittitle>
+            <abstract>interview with television writers Bob Schiller and Bob Weiskopf, in Santa Monica, CA</abstract>
+            <unitdate normal="2000-01-08" type="inclusive">01/08/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_112</unitid>
+            <unittitle>Bob Schiller and Bob Weiskopf, parts 5 and 6</unittitle>
+            <abstract>interview with television writers Bob Schiller and Bob Weiskopf, in Santa Monica, CA</abstract>
+            <unitdate normal="2000-01-08" type="inclusive">01/08/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+          <unitid>harvith_int_131</unitid>
+          <unittitle>Dr. Jules and Mrs. Rose Setnor</unittitle>
+          <abstract>interview with Dr. Jules and Rose Setnor</abstract>
+            <unitdate normal="1997-10-09" type="inclusive">10/09/1997</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_113</unitid>
+            <unittitle>Doris Singleton, parts 1 and 2</unittitle>
+            <abstract>interview with actress Doris Singleton</abstract>
+            <unitdate normal="2000-08-10" type="inclusive">08/10/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_114</unitid>
+            <unittitle>Doris Singleton, part 3</unittitle>
+            <abstract>interview with actress Doris Singleton</abstract>
+            <unitdate normal="2000-08-10" type="inclusive">08/10/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_115</unitid>
+            <unittitle>Jean Stapleton, parts 1 and 2</unittitle>
+            <abstract>interview with actress Jean Stapleton</abstract>
+            <unitdate normal="2000-11-03" type="inclusive">11/03/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_116</unitid>
+            <unittitle>Jean Stapleton, part 3</unittitle>
+            <abstract>interview with actress Jean Stapleton</abstract>
+            <unitdate normal="2000-11-03" type="inclusive">11/03/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_128</unitid>
+            <unittitle>János Starker</unittitle>
+            <abstract>interview with Hungarian-American cellist, János Starker</abstract>
+            <unitdate normal="1977-03-14" type="inclusive">03/14/1977</unitdate>
+            <physdesc>
+              <extent>1 1/2-inch videotape reel</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_117</unitid>
+            <unittitle>Leonard Stern, parts 1 and 2</unittitle>
+            <abstract>interview with Leonard Stern,  film and television producer, writer and director, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-21" type="inclusive">07/21/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_118</unitid>
+            <unittitle>Leonard Stern, parts 3 and 4</unittitle>
+            <abstract>interview with Leonard Stern,  film and television producer, writer and director, in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-21" type="inclusive">07/21/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_119</unitid>
+            <unittitle>Mel Tolkin, parts 1 and 2</unittitle>
+            <abstract>interview with television comedy writer Mel Tolkin (Shmuel Tolchinsky), in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-24" type="inclusive">07/24/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_120</unitid>
+            <unittitle>Mel Tolkin, parts 3 and 4</unittitle>
+            <abstract>interview with television comedy writer Mel Tolkin (Shmuel Tolchinsky), in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-24" type="inclusive">07/24/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_121</unitid>
+            <unittitle>Mel Tolkin, parts 5 and 6</unittitle>
+            <abstract>interview with television comedy writer Mel Tolkin (Shmuel Tolchinsky), in Los Angeles, CA</abstract>
+            <unitdate normal="1999-07-24" type="inclusive">07/24/1999</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bob Weiskopf</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="bosc">Bob Schiller and Bob Weiskopf</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_122</unitid>
+            <unittitle>Earl Wild, parts 1 and 2</unittitle>
+            <abstract>interview with pianist Royland Earl Wild, in Columbus, OH</abstract>
+            <unitdate normal="2001-06-04" type="inclusive">06/04/2001</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_123</unitid>
+            <unittitle>Jane Wyatt, parts 1 and 2</unittitle>
+            <abstract>interview with actress Jane Wyatt</abstract>
+            <unitdate normal="1998-07-24" type="inclusive">07/24/1998</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_124</unitid>
+            <unittitle>Jane Wyatt, part 3</unittitle>
+            <abstract>interview with actress Jane Wyatt</abstract>
+            <unitdate normal="1998-07-24" type="inclusive">07/24/1998</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_125</unitid>
+            <unittitle>Bud Yorkin, parts 1 and 2</unittitle>
+            <abstract>interview with Bud Yorkin, film and television producer, director, writer and actor</abstract>
+            <unitdate normal="2000-07-28" type="inclusive">07/28/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>harvith_int_126</unitid>
+            <unittitle>Bud Yorkin, part 3</unittitle>
+            <abstract>interview with Bud Yorkin, film and television producer, director, writer and actor</abstract>
+            <unitdate normal="2000-07-28" type="inclusive">07/28/2000</unitdate>
+            <physdesc>
+              <extent>1 audiocassette</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

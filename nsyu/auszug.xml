@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.6, 9/12/2006 -->
+<!-- Fixed countrycode case -->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="US" mainagencycode="NSyU" identifier="auszug">auszug</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Auszug eines Handbuchs für pracktische Juwellier Gold et  Silberarbeiten</titleproper>
+				<subtitle encodinganalog="242">(Excerpt of a manual for practical jeweler's gold and silverwork)<lb/>German jeweler's handbook</subtitle>
+			<author encodinganalog="Creator">MRR</author></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="2006-11-13" encodinganalog="Date">13 Nov 2006</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2006-11-13">13 Nov 2006</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+			<list>
+				<item></item>
+			</list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<persname encodinganalog="100">Regensburger, H.</persname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Auszug eines Handbuchs für pracktische Juwellier Gold et  Silberarbeiten</unittitle>
+			<unitdate encodinganalog="245$f" normal="1891" type="inclusive" label="Inclusive Dates: ">1891</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 volume (SC)</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">jeweler's handbook, longhand, contains text, recipes and a few sketches</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2484299</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="deu">German</language>
+			</langmaterial>
+		</did>
+				
+		<!--<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>## Use MARC 545</p></bioghist>-->
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>The <emph render="bold">Auszug eines Handbuchs für pracktische Juwellier Gold et  Silberarbeiten</emph> or <emph render="bold">German Jeweler's Manual</emph> consists of a single volume, 128 pages (116 numbered), written in German in longhand.  The bulk of the pages contain narrative text and recipes (calling for ingredients such as antimony and vitriol) relating to gold and silver work; the last few pages have some sketches.  The title page reads as follows:</p><blockquote><p>Auszug eines / Handbuchs für prack- / tische Juwellier Gold / et [und] / Silberarbeiten / gewitmet für / H. Regensburger</p><p>Excerpt of a / manual for prac- / tical jeweler's gold / and / silverwork / dedicated to / H. Regensburger  </p></blockquote><p>The cover reads "Handbuch für H. Regensburger" and inside the front cover is written, "Handbuch / [veröffentlicht?] / und / [hinausgegeben?] / von  / H. Regensburger / Gold und Silberarbeiter / [Wertheim?] um 20/1/1891."</p>
+		</scopecontent>
+		
+		<!--<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>## OPT (MARC 351$a)</p>
+		</arrangement>-->
+		
+		<!--<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>## (MARC 544 1)</p>
+		</relatedmaterial>-->
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="local">Regensburger, H.</persname>
+			
+            
+            
+            <subject encodinganalog="650" source="lcsh">Jewelers -- Germany.</subject>
+			<subject encodinganalog="650" source="lcsh">Jewelers -- 19th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Jewelry making.</subject>
+			<geogname encodinganalog="651" source="lcsh">Germany -- History -- 19th century.</geogname>
+            <genreform encodinganalog="655" source="aat">Handbooks.</genreform>
+			<genreform encodinganalog="655" source="aat">Manuscripts (document genre)</genreform>
+			<occupation encodinganalog="656" source="lcsh">Jewelers.</occupation>
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p>Auszug eines Handbuchs für pracktische Juwellier Gold et  Silberarbeiten, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<!--<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>### (MARC 541 and/or  561)</p>
+		</acqinfo>-->
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Manuscripts</unittitle>
+				<!--C01 @LEVEL must be set to 'series' to show up in TOC.--></did>
+				<c02>
+					<did>
+						<unittitle>Auszug eines Handbuchs für pracktische Juwellier Gold et  Silberarbeiten</unittitle>
+						
+						<unitdate normal="1891-01-20" type="inclusive">20 Jan 1891</unitdate><physdesc><extent>1 volume</extent></physdesc><container type="SC">178</container>
+						
+						
+						
+					</did>
+				</c02>
+			</c01>
+		</dsc>
+	</archdesc>
+</ead>

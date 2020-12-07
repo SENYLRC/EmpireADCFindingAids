@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="osann_k">osann_k</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Kate Osann Cartoons</titleproper>
+            <subtitle>An inventory of her cartoons at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1968-05-28" encodinganalog="Date">28 May 1968</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>MD<date normal="2008-12-10">10 Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>23 Sept 1970 - revised (MB)</item><item>10 Dec 2008 - converted to EAD (MD)</item><item>26 Jan 2009 - revised (MD)</item><item>26 Apr 2017 - 1968 added (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Osann, Kate</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Kate Osann Cartoons</unittitle>
+         <unitdate encodinganalog="245$f" normal="1966/1968" type="inclusive" label="Inclusive Dates: ">1966-1968</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>3.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Original cartoons from the comic strip <emph render="italic">Tizzy</emph>.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2652486</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Kate Osann is an American cartoonist and creator of the comic strip <emph render="italic">Tizzy</emph>. Born in St. Louis, Osann grew up in New York City and was a graduate of Hunter College. She spent the early part of her career doing ads and illustrations for popular magazines like <emph render="italic">Collier's Weekly</emph> and the <emph render="italic">Saturday Evening Post</emph>.  Osann was a regular contributor to <emph render="italic">Collier's</emph>, and it was here that her teen humor panel <emph render="italic">Tizzy</emph> first appeared.  With the demise of <emph render="italic">Collier's</emph> in 1957, the strip was picked-up by NEA where it ran until 1970. Numerous Tizzy books were published  during the late 1950s and 1960s, including <emph render="italic">Tizzy: That Loveable, Laughable, Teen-Ager</emph> (Berkeley, 1958), <emph render="italic">Tizzy</emph> (Scholastic Book Services, 1967) and <emph render="italic">Baby-Sitter's Guide</emph> (Scholastic Book Services, 1969). </p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Kate Osann Cartoons</emph> collection contains more than 600 original cartoon panels from the comic strip <emph render="italic">Tizzy</emph> (1966-1968). Cartoon panels are pen and ink on illustration board; most are 8 ½ x 11 in.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Cartoons are in chronological order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has collections of over one hundred cartoonists. Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Osann, Kate.</persname>
+         
+         <corpname encodinganalog="610" source="lcnaf">Newspaper Enterprise Association.</corpname>
+         <title encodinganalog="630" source="local" rules="aacr2">Tizzy (comic strip)</title>	
+			<subject encodinganalog="650" source="local">Art -- Cartoonists</subject>							
+         <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject><subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States.</subject><subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject><subject encodinganalog="650" source="lcsh">Comic books, strips, 
+
+etc. -- United States.</subject><subject encodinganalog="650" source="lcsh">Women cartoonists.</subject>
+         
+         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p> Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Kate Osann Cartoons, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <corpname role="donor">Newspaper Enterprise Association</corpname>, 1968-1969.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+<dsc type="combined">
+<head>Inventory</head>
+<c01 level="series"><did><unittitle>Cartoons</unittitle></did><note><p>Click <extref href="osann_k_inv.pdf">here</extref> for detailed inventory.</p></note>
+   <c02><did><unittitle><emph render="italic">Tizzy</emph></unittitle><unitdate type="inclusive" normal="1966-01/1966-04">1966, Jan-Apr</unitdate><physdesc><extent>96 items</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle><emph render="italic">Tizzy</emph></unittitle><unitdate type="inclusive" normal="1966-05/1966-09">1966, May-Sep</unitdate><physdesc><extent>111 items</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle><emph render="italic">Tizzy</emph></unittitle><unitdate type="inclusive" normal="1966-10/1967-01">1966, Oct-Dec; 1967, Jan</unitdate><physdesc><extent>98 items</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02><did><unittitle><emph render="italic">Tizzy</emph></unittitle><unitdate type="inclusive" normal="1967-02/1967-06">1967, Feb-Jun</unitdate><physdesc><extent>123 items</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02><did><unittitle><emph render="italic">Tizzy</emph></unittitle><unitdate type="inclusive" normal="1967-08/1967-12">1967, Aug-Dec</unitdate><physdesc><extent>102 items</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02><did><unittitle><emph render="italic">Tizzy</emph></unittitle><unitdate type="inclusive" normal="1968-01/1968-09">1968, Jan-Sep</unitdate><physdesc><extent>197 items</extent></physdesc><container type="Box">6</container></did></c02>
+   <c02><did><unittitle><emph render="italic">Tizzy</emph></unittitle><unitdate type="inclusive" normal="1968-10/1968-12">1968, Oct-Dec</unitdate><physdesc><extent>77 items</extent></physdesc><container type="Box">7</container></did></c02>
+</c01>      
+</dsc>
+
+   </archdesc>
+</ead>

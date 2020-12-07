@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="soc_sun_sch">soc_sun_sch</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Socialist Sunday Schools Typescript</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+            <author encodinganalog="Creator">DSA</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2019-06-10" encodinganalog="Date">10 Jun 2019</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Daniel Allie<date normal="2019-06-10">10 Jun 2019</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+            &su_name;
+            <lb/>
+            &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Shedd, Kendrick P. (Kendrick Philander),
+               1866-1953.</persname>
+            <!--<corpname encodinganalog="110">Socialist Party National Office</corpname>-->
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Socialist Sunday Schools
+            Typescript</unittitle>
+         <unitdate encodinganalog="245$f" normal="1905/1935" type="inclusive" label="Inclusive Dates: ">circa 1910-1930</unitdate>
+         <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder
+            (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Typescript detailing how to run a
+            Socialist Sunday School.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">5441364</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Kendrick P. Shedd (1866-1953) was an American Socialist educator. As a professor at the
+            University of Rochester in 1911, he angered local authorities by stating his preference
+            for the Socialist flag over the American flag, and was banned from speaking in public
+            buildings by the mayor of Rochester. He resigned from the University of Rochester
+            shortly thereafter to spare the University the bad publicity resulting from his
+            continued presence. Living for a time in Milwaukee, he eventually returned to New York
+            State to become the principal of Naples High School, and remained a strong figure in the
+            Socialist party, having co-authored <emph render="italic">Some Songs for Socialist
+               Singers</emph>, circa 1913. [Information adapted from <extref linktype="simple" href="https://www.newspapers.com/clip/268091/kendrick_p_shedd_death_notice/" show="new">Shedd's obituary</extref>.]</p>
+         <p>The Socialist Sunday Schools movement began in the United Kingdom in the 1880s, and
+            appeared in the United States around the same time. In the United States, these
+            institutions were sponsored by the Socialist Party of America, with the full endorsement
+            of Socialist figure Eugene V. Debs, who promoted Socialist Sunday Schools as a tool to
+            counteract the capitalist influences of society, and an alternative to
+            capitalism-supporting Christian education.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p><emph render="bold">Socialist Sunday Schools Typescript</emph> is a single item, three
+            typewritten sheets detailing the concept of a Socialist Sunday School, written by
+            Kendrick Shedd.</p>
+      </scopecontent>
+      <!--<altformavail encodinganalog="530"><head>Other Formats Available</head><p>## Use MARC 530 or comment out if not applicable</p></altformavail>-->
+      <!--<originalsloc encodinganalog="535"><head>Location of Originals</head><p>Originals are here and here and here.</p></originalsloc>--> 	  
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Single item.</p>
+      </arrangement>
+      <!--<relatedmaterial encodinganalog="544 1"><head>Related Material</head><p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         
+         <subject encodinganalog="650" source="local">Religion and philosophy</subject>
+         <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+         <persname encodinganalog="600" source="lcnaf">Shedd, Kendrick P. (Kendrick Philander),
+            1866-1953.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Socialist Party of the United States of
+            America.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Socialism -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Socialism and education -- United
+            States.</subject>
+         <subject encodinganalog="650" source="lcsh">Socialism and youth -- United States.</subject>
+         <geogname encodinganalog="651" source="lcsh">Rochester (N.Y.) -- Politics and government.</geogname>
+         <genreform encodinganalog="655" source="aat">Typescripts.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require
+            advanced notice for retrieval. Researchers are encouraged to contact us in advance
+            concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Socialist Sunday Schools Typescript, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      <!--<appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Typescripts</unittitle></did>
+            <c02><did><unittitle>Socialist Sunday Schools</unittitle><unitdate normal="1905/1935" type="inclusive">circa 1910-1930</unitdate><container type="SC">856</container>
+                  <abstract>two page document, with two copies of second page</abstract></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

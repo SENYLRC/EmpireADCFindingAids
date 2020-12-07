@@ -1,0 +1,2304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.9, 7/18/2007--><!-- Changed entity files to txt rather than xml, don't suppose it matters which they are (?) -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="pratt_f" mainagencycode="NSyU">pratt_f</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Fletcher Pratt Papers</titleproper>
+        <subtitle>An inventory of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">--</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1998-07">July 1998</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2007-12-06">6 Dec 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        6 Dec 2007 - converted to EAD (MRC)</item><item>23 May 2008 - acquisition info (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Pratt, Fletcher, 1897-1956.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Fletcher Pratt Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1930/1960" type="inclusive">ca. 1935-1955?</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>18 cartons</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, manuscripts of the American military, naval, and science fiction novelist.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2578780</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Fletcher Pratt (1897-1956) was an American military, naval, and science fiction novelist.  Born in Buffalo, New York, Pratt is said to have been raised on an Indian reservation.  He attended Hobart College for a year.  During World War I he served with the War Library Service.  During his intensive writing career, Pratt wrote chiefly on military and naval subjects, but also in the field of science fiction, collaborating often with L. Sprague DeCamp.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The Fletcher Pratt Papers consists of correspondence-subject files, manuscripts and research material, and a small amount of printed material and memorabila.  
+        
+        <emph render="bold">Correspondence</emph> is primarily with publications (
+        
+        <emph render="italic">Atlanta Journal</emph>, 
+        
+        <emph render="italic">Fantasy and Science Fiction</emph>, 
+        
+        <emph render="italic">Harper's Magazine</emph>, 
+        
+        <emph render="italic">The Infantry Journal</emph>, 
+        
+        <emph render="italic">Pacific Spectator</emph>) and publishers (Ballantine Books, Bobbs-Merrill, Doubleday &amp; Company, Gnome Press, Henry Holt and Company, Penguin) but also includes a few organizations (e.g., Science Fiction League of America).  
+        
+        <emph render="bold">Subject files</emph> cover miscellaneous topics, most relating to either the Navy (British Navy at War, First Philippine Sea, 4th Fleet, German Navy) or general military (Eleven Generals, Macarthur, Munitions and equipment, Pearl Harbor, Spies/espionage).   
+        
+        <emph render="bold">Manuscripts and research material</emph> contains material for more than 150 articles, essays, stories, and other pieces of writing by Pratt, as well as a small amount of printed material (book reviews, published stories and similar).  
+        
+        <emph render="bold">Memorabilia</emph> contains clippings and nine scrapbooks.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>All series are arranged alphabetically.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+      <subject encodinganalog="650" source="local">Military history</subject><subject encodinganalog="650" source="local">Science fiction</subject>
+      <persname encodinganalog="600" source="lcnaf">Pratt, Fletcher, 1897-1956.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">American literature -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Authors, American.</subject>
+      <subject encodinganalog="650" source="lcsh">Military art and science in literature.</subject>
+      <subject encodinganalog="650" source="lcsh">Military history in literature.</subject>
+      <subject encodinganalog="650" source="lcsh">Novelists, American.</subject>
+      <subject encodinganalog="650" source="lcsh">Science fiction, American.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Manuscripts (document genre)</genreform>
+      <genreform encodinganalog="655" source="aat">Research notes.</genreform>
+      <genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Fletcher Pratt Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of <persname role="donor">John D. Clark</persname>, 1970.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Biographical</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>General A-G</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>General H-Z</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Harry Altshuler (Author's Agent) </unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>American Broadcasting Company</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>American Magazines</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Atlanta Journal</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ballantine Books</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bobbs-Merrill Company</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bread Loaf</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Correspondence/ conference schedules/ address lists</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">The Crumb</emph>
+              </unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Drawings/ Creative writings</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Writer's Conference (Middlebury College Bulletin)</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Charles Scribner's Sons</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Civil War Round Table</emph> (blank letters and envelopes)</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Correspondence</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>"Kicks and Kurses"</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Navy Department</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Nut Letters" and a Ginkgo leaf from 1951</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Secretary of the Navy</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Coward-McCann, Inc.</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Curtis Brown, Ltd.</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Memorandums</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bernard DeVoto</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Doubleday &amp; Company, Inc.</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Duell, Sloan &amp; Pearce, Inc.</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Detective Stories</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fantasia</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Fantasy and Science Fiction</emph>
+            </unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Funk &amp; Wagnall's Company</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gnome Press</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Green Leaf Publishing Co.</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Guggenheimer &amp; Untermyer</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Harcourt, Brace and Company, Inc.</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Harper's Magazine</emph>
+            </unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Harper and Brothers Publishers</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Harrison-Hilton Books</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Harrison Smith and Robert Haas, Inc.</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Hawthorn Books Inc, Publishers</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Henry Holt and Company, Inc.</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">The Infantry Journal</emph>
+            </unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Journal and Sentinel</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Little, Brown &amp; Company</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>The Lotos Club</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Macmillan Company</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Maps, charts, and Naval photographs</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>National Better Business Bureau</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New York Author's Club</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Otis Kline Associates, Inc.</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Pacific Spectator</emph>
+            </unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Penguin Books</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Pratt alone</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Pratt with others</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mrs. F. Pratt</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pratt (book covers)</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Prime Press</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>RKO Radiopictures, Inc.</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Random House</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Reviews (written in German)</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rinehart &amp; Company, Inc.</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Robert Hale Limited</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Science Fiction League of America</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Smith &amp; Durrell, Inc.</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stellar Publishing Corporation</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Street and Smith Publications, Inc.</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Twayne Publishers</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Vanguard Press Inc.</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Viking Press Inc.-Publishers</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>W.W. Norton &amp; Company</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>William Sloan Associates</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Yale University Press</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ziff-Davis Publishing Company</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Subject files</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Aleutians</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Army - U.S. History</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bases</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bismarck Sea</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bonins Operations</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Borneo</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"The British Navy at War"</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Casablanca</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Office of Censorship (and related papers)</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Central Pacific</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Communications</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Coral Sea</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Desron 23"</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Eleven Generals"</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Esquire Articles</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>First Philippine Sea</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"4th Fleet"</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Freak Weapons</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>German Navy</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Hollywood Squadron"</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Italy/ Sicily</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Interview with Pratt</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Japanese Navy</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kwajalein (Central Pacific)</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Leyte Gulf</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Luzon</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>MacArthur</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>AREA</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Command</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Halsey</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Offensive</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Magazine articles</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Marianas/ Saipan</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Marshall and Gilbert</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mediterranean</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Midway</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Munitions and Equipment</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Naval Africa</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"The Navy"</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Navy Department Communiqués</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>#8-117 (incomplete run)</unittitle>
+              <unitdate normal="1941/1942" type="inclusive">2/16/41- 9/3/42</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>#301- 400</unittitle>
+              <unitdate normal="1943" type="inclusive">3/6/43-6/3/43</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>#401- 500</unittitle>
+              <unitdate normal="1943" type="inclusive">6/4/43</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>#501- 539,  541-582</unittitle>
+              <unitdate normal="1944/1945" type="inclusive">2/4/44- 3/1/45</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Navy Personnel</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Admiral Halsey</unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Admiral Nimitz</unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Admirals (miscellaneous)</unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous Officers</unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Navy - Italy, France, Sweden, Russia</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Navy - U.S. History</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"The Navy's War"</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New Guinea</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New Ireland</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Normandy</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Okinawa</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Ordeal by Fire"</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Paramushiru</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pearl Harbor</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Propaganda</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Salt Lake City</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>SAVO Island</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Solomons</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>"Solomons"</unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Battle of Cape Esperance"</unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Battle of Guadalcanal"</unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Battle of Santa Cruz"</unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Spies/ Espionage</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stanton</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>SUBS</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Atlantic</unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mines</unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Pacific</unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>U.S.S. Biloxi</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>U.S.S. Salt Lake City</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>World War I</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous unsorted</unittitle>
+            <physdesc>
+              <extent>5 folders</extent>
+            </physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous unsorted</unittitle>
+            <physdesc>
+              <extent>9 folders</extent>
+            </physdesc>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Legal material- Pratt vs. Future Publications, Inc., and John Raymond</unittitle>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Manuscripts and Research Material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Aaron Wand and The Picket Line</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Adventure of Joshua Barney</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>All About Rockets and Jets</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Another Trafalgar</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Atom Submarine and Her Skipper</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Atoms, Matter, and Energy</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Battles That Changed History</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bell, Book and Candle</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Best Reported War in History</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Big Pacific Push</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Blood on the Ground</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Blood, Sweet Blood</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Book of Famous and Decisive Battles</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Book Reviews</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Boyle of the Chasseur</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Building of the Atom Submarine</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Burp in Time</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>CA 25</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Campaign Beyond Glory</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Campaign in the Coral Sea</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Campaign in the Java Sea</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Captain Who Tried to Sell His Ship</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cards are Dealt</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Carnelian Cube - galleys</unittitle>
+            <physdesc>
+              <extent>4 folders</extent>
+            </physdesc>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Caribbean Command</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Case of the 14m man</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Castles of Chron </unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Chance for a Piece of Change</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Chinese Invention</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>City of the Living Dead</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Civil War</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Civil War in Pictures (text)</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Code Experts War</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[Collected Pratt science fiction]</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Comic Strips</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Compact History of the United States Navy</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Crisis of the Computers</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Curious Literature of the Comic Strips</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Current Post-War Naval Developments</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dr. Grimshaw's Sanitarium</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Double Jeopardy</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Elemental Question</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Eleven Generals</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Engineers From Europe</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Estimate of the Situation</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Facts of Soviet Espionage (outline)</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Famous Inventors and Their Inventions</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fighting Machine</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>First of the Great Raids</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Frost and Her Playmates</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Future of Cities (outline)</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gavagan's Bar</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>General Can't Write English</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Goodbye Street</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Great Steel Panic</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Green Thumb</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Grift Goes Legitimate</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Hail Caesar</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Harold Shea</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Here, Putzi!</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Heroic Years</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>History of the South Atlantic Campaign</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>How the Censor Rigged the News</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Interviews (notes) with Pacific Fleet Personnel</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Invention of the Atomic Submarine</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Inventions</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Is the Navy Ready?</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>January Easy Chair,  by Bernard DeVoto</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Keyport Auction (outline)</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lament of Lamethenon</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lantflex and the Lost Plane</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Longview</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Loss of the Wasp</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lost Battalion</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mad Destroyer</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Man Who Awoke</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Man Who Never Lived</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Man Who Pulls the Trigger</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Man With a Million Dollars Cash </unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mathematics of Magic</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Military and Naval History of the United States</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Military Genius of Abraham Lincoln (preface)</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Moon and I</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Monitor and the Merimac</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Most Important Job in the Navy</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mutinies in Foreign Navies</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mysteries of Midway</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mystery of the Hittitis</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Napoleon- research notes</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Napoleon- research notes</unittitle>
+            <physdesc>
+              <extent>4 folders</extent>
+            </physdesc>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Napoleon</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[Naval aviation book]</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Naval History of the Civil War (outline, research)</unittitle>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Navy Has Wings</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Nightwork</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>No Pity for Heroes</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Obscene Language is Not Necessary for Realism</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Oh, Say Can You See</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>One Destroyer</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>One Man's Meat</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>One-Ship Fleet</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ordeal by Fire</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ordeal by Fire (television adaptation)</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Our New Navy</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Palimpsest of St. Augustine</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pardon My Mistake</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pattern Repeat</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pictorial History of the Civil War</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Planet Lithia</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Preble's Boys</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Preble's Boys-notes</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Preble's Boys-notes</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Red King</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Reign of the Navy</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Revenge</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rhodes, a Study in Sea Power</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Road to Empire - correspondences</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Roaring Trumpet</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Roger Bacon Formula</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Roger's Reef, by John T. Goodrich</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Scientific Articles</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sea Power and Today's War</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Second Chance</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Secret and Urgent</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Seed From Space</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ship That Could Shoot</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ship That Fought the War</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ship That Made Like a Fleet</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Should Human Population Increase Be Controlled?</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Silver Accident (outline)</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Square-Cube Law</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stanton: Lincoln's Secretary of War</unittitle>
+            <physdesc>
+              <extent>3 folders </extent>
+            </physdesc>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Strange Deed of Captain Glenney</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Submarine is on the Ropes</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Submarines Pacific</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Super-Carrier Forrestad</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Superstitions in Sports</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Symbiosis</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Thing in the Woods</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Third King</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Three Kings - notes</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>This was Trafalgar</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Three Valdemars</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Turkey-shoot of Saipan</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Twilight of the Ideals</unittitle>
+            <physdesc>
+              <extent>2 folders </extent>
+            </physdesc>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Undying Fire</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Unexpected Planet</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>United States Navy History-Revolution</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>United States Navy History-WWI-press stories</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Violation of Rules</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wall of Serpents</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wanderer's Return</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>War of the Giants</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>War on Western Waters</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Weissenbroch Spectacles</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>What Happened to Cicero?</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Who Gave Their Lives?</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Who Pays For It?</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>World Around the Corner</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>World War II and the Changing Conception of Sea Power</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[Untitled science-fiction collection]</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[Unidentified]</unittitle>
+            <physdesc>
+              <extent>6 folders </extent>
+            </physdesc>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Printed Material</unittitle>
+            <container type="Box">15</container>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Book reviews</unittitle>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Civil War</unittitle>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Foreign Language editions</unittitle>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Infantry Journal (4 issues)</unittitle>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>New Jersey</unittitle>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pratt prints from Pacific Spectator</unittitle>
+            <container type="Box">16</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pratt prints from U.S. Naval Institution Proceedings</unittitle>
+            <container type="Box">16</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pratt stories from Harper's</unittitle>
+            <container type="Box">16</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Roundup of the Fleet", Our Navy</unittitle>
+            <container type="Box">16</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Roundup on the War", Our Navy</unittitle>
+            <container type="Box">16</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Science Fiction</unittitle>
+            <physdesc>
+              <extent>5 folders</extent>
+            </physdesc>
+            <container type="Box">16</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>World War II</unittitle>
+            <physdesc>
+              <extent>5 folders</extent>
+            </physdesc>
+            <container type="Box">16</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[Unsorted manuscripts]</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">16</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Memorabilia</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Newspaper Clippings</unittitle>
+            <physdesc>
+              <extent>7 folders</extent>
+            </physdesc>
+            <container type="Box">17</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Scrapbooks</unittitle>
+            <physdesc>
+              <extent>3 volumes</extent>
+            </physdesc>
+            <container type="Box">17</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Scrapbooks</unittitle>
+            <physdesc>
+              <extent>6 volumes</extent>
+            </physdesc>
+            <container type="Box">18</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

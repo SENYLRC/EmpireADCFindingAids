@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008--><!--Revised standard blurb for related material -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="bull_jm" mainagencycode="NSyU">bull_jm</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">John Margetts Bull Papers</titleproper>
+        <subtitle>An  inventory of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">--</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1975/1985">circa 1980</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+        
+        <date normal="2008-10-17">17 Oct 2008</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>17 Oct 2008 - converted to EAD (MRC)</item><item>5 Dec - minor updates (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Bull, John Margetts.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">John Margetts Bull Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1849/1877" type="inclusive">1849-1877</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>1.5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Biographical material and writings (speeches, reviews, essays, sermons, etc) of the American clergyman.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2642145</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>John Margetts Bull (1812?-1897?) was an American Methodist clergyman.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">John Margetts Bull Papers</emph> consist of biographical material and photocopies of writings by Bull, including addresses, book reviews, essays, lectures, notes, reviews, and sermons.  The latter constitute the bulk of the collection.  They are of course religious in character, but also refer to current events and social questions of the time, such as a typhoid epidemic, the Great Rebellion (Civil War), and the  characteristics of a good teacher.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Material is arranged alphabetically.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has the papers of numerous clergymen as well as the records of a number of churches. Please refer to &subjindex; for a complete listing.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Church and clergy</subject>
+      <subject encodinganalog="650" source="local">New York State</subject>
+      <persname encodinganalog="600" source="lcnaf">Bull, John Margetts.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Clergy -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Methodist Church -- Clergy.</subject>
+      <geogname encodinganalog="651" source="lcsh">New York (State) -- Manners and customs.</geogname>
+      <genreform encodinganalog="655" source="aat">Book reviews.</genreform>
+      <genreform encodinganalog="655" source="aat">Essays.</genreform>
+      <genreform encodinganalog="655" source="aat">Lectures.</genreform>
+      <genreform encodinganalog="655" source="aat">Notes (documents)</genreform>
+      <genreform encodinganalog="655" source="aat">Sermons.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Clergy.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>John Margetts Bull Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Marian Bull Wheeler</persname>, February 1988.  Given in honor of her father, Charles King Bull.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+      <c01 level="series">
+        <did>
+          <unittitle>Biographical material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Writings</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Addresses</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Mental Power</unittitle>
+              <unitdate type="inclusive" normal="1853/1863">1858?</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>(Untitled). Sodus, Winter </unittitle>
+              <unitdate type="inclusive" normal="1845/1846">1845-1846</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Bible Class Lessons</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>#1 On the existence and attributes of God</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>#2 Creation</unittitle>
+              <unitdate type="inclusive" normal="1856">1856</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03><c03>
+            <did>
+              <unittitle>#3 The Flood</unittitle>
+              
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Book Review</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>"Philosophy of the plan of Salvation"</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Essays</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Abrahamic covenant</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On ancient religious festivals</unittitle>
+              <unitdate type="inclusive" normal="1864/1874">1869?</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Birth of Christ</unittitle>
+              <unitdate type="inclusive" normal="1849">1849</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Church, the past, the present, and the future</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Church Saving</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Conflict of antagonistic principles</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Duties of members of the M.E. Church towards their pastors</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Essay on posthumous influence</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On the gradual development of religious truth</unittitle>
+              <unitdate type="inclusive" normal="1861">1861</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>History of the Prophets</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>History of the Prophets, cont</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The human mind</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"I know thy work"</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lord's Supper</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lost soul</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Moral agency of man</unittitle>
+              <unitdate type="inclusive" normal="1849">1849</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On sacrifice</unittitle>
+              <unitdate type="inclusive" normal="1857">1857, </unitdate>
+              <unitdate type="inclusive" normal="1861">1861, </unitdate>
+              <unitdate type="inclusive" normal="1866">1866, </unitdate>
+              <unitdate type="inclusive" normal="1869">1869</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On the best means of promoting a revival of religion</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The responsibilities of teachers</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>A shadow of things to come</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Worldly amusements versus the Church</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Untitled</unittitle>
+              <physdesc>
+                <extent>3 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Lectures</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>The ideal and the actual</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Temperance</unittitle>
+              <unitdate type="inclusive" normal="1850">1850</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lecture #3, On Bible chronology</unittitle>
+              <unitdate type="inclusive" normal="1867">1867, </unitdate>
+              <unitdate type="inclusive" normal="1868">1868</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lecture #14, Israel and her judges</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lecture #15, Israel and her judges, cont</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Bible Lecture #16, Israel and her judges, cont</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>#17 Scripture history: Samuel and the Kingdom</unittitle>
+              <unitdate type="inclusive" normal="1869">1869</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>#18 Saul and David.</unittitle>
+              <unitdate type="inclusive" normal="1870">1870</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>#19 David.</unittitle>
+              <unitdate type="inclusive" normal="1870">1870</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lecture #20 Solomon</unittitle>
+              <unitdate type="inclusive" normal="1870">1870</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lecture #21 Division of the Kingdom</unittitle>
+              <unitdate type="inclusive" normal="1870">1870</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lecture #22 Kingdom of Israel</unittitle>
+              <unitdate type="inclusive" normal="1870">1870</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>#23 Kingdom of Judah</unittitle>
+              <unitdate type="inclusive" normal="1865/1875">1870?</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Legal documents</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Constitution of Canandaigua District Ministerial Association</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Missionary address</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>A world converted to Christ</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Notes</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Early usages with respect to the Lord's Supper</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Testimonies of Saints</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Obituary</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Andrews, Herman</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Rev. Ira Fairbanks. Died, Benton Center, Yates County, N.Y.</unittitle>
+              <unitdate type="inclusive" normal="1857-05-31">May 31, 1857</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lisk, Elizabeth</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Reviews</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Methodist Quarterly Review</emph>, April</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Scripture lessons</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Untitled, 1 item</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Sermons</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Advantages of a return to the Almighty</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advantages of retirement for religious purposes, or, a plea for Camp Meetings</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advent of Christ</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Agony of Christ</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>All for Jesus</unittitle>
+              <unitdate type="inclusive" normal="1869">1869</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Amazing love of God as displayed in the high priveleges (sic) and perogatives [sic] of God's people</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Assimilation to the Divine image</unittitle>
+              <unitdate type="inclusive" normal="1870">1870, </unitdate>
+              <unitdate type="inclusive" normal="1871">1871, </unitdate>
+              <unitdate type="inclusive" normal="1872">1872, </unitdate>
+              <unitdate type="inclusive" normal="1873">1873</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Atonement with its glorious results</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The beneficial results of a national annual Thanksgiving</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Bondage of sin</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The brevity of time</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christ Jesus the only source and dispenser of the blessings of salvation</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christ stilling the tempest</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christ the sacrificial offering for human guilt</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christian aims and efforts</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Christian Church, the agent in the World's conversion</unittitle>
+              <unitdate type="inclusive" normal="1855">1855</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christian minister's closing act for his people</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Christian ministry</unittitle>
+              <unitdate type="inclusive" normal="1859">1859, </unitdate>
+              <unitdate type="inclusive" normal="1861">1861</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christian Unity</unittitle>
+              <unitdate type="inclusive" normal="1866">1866, </unitdate>
+              <unitdate type="inclusive" normal="1870">1870</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christian watchword</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christ's second Advent</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Death of Saints Precious</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Death of the soul</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Deluge</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Divine and human agencies cooperative in promoting the best interests of the race</unittitle>
+              <unitdate type="inclusive" normal="1869">1869</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Divine and human agencies cooperative in promoting the best interests of the race. (rewritten) </unittitle>
+              <unitdate type="inclusive" normal="1880">1880</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Divine expectations not realized</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Divine hand in public calamities (on the occasion of the great fire at Chicago, Oct 8, 1871)</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Divine help in time of earthly sorrow</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Divine longsuffering</unittitle>
+              <unitdate type="inclusive" normal="1869">1869, </unitdate>
+              <unitdate type="inclusive" normal="1870">1870, </unitdate>
+              <unitdate type="inclusive" normal="1873">1873</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Divine support in the time of trouble</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Duty of the Church in respect to the erring and the disobedience</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Duty of the Church with regard to children</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Duty of the Church with respect to education</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Duty of the hour</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Entire consecration to God accepted and ratified</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Faith an absolute condition to the reception of the blessings of salvation</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Forgiveness</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>God pleading His own cause</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>God the Christian's Rock</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>God's witnesses</unittitle>
+              <unitdate type="inclusive" normal="1871">1871, </unitdate>
+              <unitdate type="inclusive" normal="1872">1872, </unitdate>
+              <unitdate type="inclusive" normal="1875">1875, </unitdate>
+              <unitdate type="inclusive" normal="1872/1882">1877?</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Golden rule as applicable to our duty with respect to missions</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Gospel the Wisdom of God</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Grateful joy of the soul that has Jehovah for its salvation</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The harmony existing between the Divine, and human government</unittitle>
+              <unitdate type="inclusive" normal="1864">1864</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Heart iniquity and effectual barrier between the soul and God</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The heinous nature &amp; effects of sin</unittitle>
+              <unitdate type="inclusive" normal="1872">1872</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Historical sermon #1 - Scriptural characters: Adam</unittitle>
+              <unitdate type="inclusive" normal="1860">1860, </unitdate>
+              <unitdate type="inclusive" normal="1861">1861</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Historical sermon #4 - The life and times of Noah</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Historical sermon #5 - Job</unittitle>
+              <unitdate type="inclusive" normal="1861">1861, </unitdate>
+              <unitdate type="inclusive" normal="1863">1863, </unitdate>
+              <unitdate type="inclusive" normal="1865">1865, </unitdate>
+              <unitdate type="inclusive" normal="1868">1868, </unitdate>
+              <unitdate type="inclusive" normal="1871">1871, </unitdate>
+              <unitdate type="inclusive" normal="1874">1874</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Historical sermon #6 - Abraham</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Holy Eucharist</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Hope of the Soul</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03><c03>
+            <did>
+              <unittitle>Human sorrow alleviated (on the occasion of the death of 3 persons by small-pox)</unittitle>
+              <unitdate type="inclusive" normal="1869">1869</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The imperatively specific and religious duty</unittitle>
+              <unitdate type="inclusive" normal="1858">1858, </unitdate>
+              <unitdate type="inclusive" normal="1860">1860</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Individuality of human duty</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Individuality of human responsibility</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Infinite contrast between present and external things</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Inseparable connection of the Divine Promise with our duty in world's conversion</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Intemperance and the duty of the hour</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Jesus Christ is the only source of the blessings of salvation</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Justification, its high and exalted character</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lean hand. (Ch. Adv.) </unittitle>
+              <unitdate type="inclusive" normal="1869-03-11">March 11, 1869</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>(To the Sunday School) The Letter "S"</unittitle>
+              <container type="Box">2</container>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>(Notes) Levi</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Light from the sanctuary on dark and mysterious providences</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Loss and gain</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lost soul</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lore of Christ a divine force</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Marks of true discipleship to Christ</unittitle>
+              <unitdate type="inclusive" normal="1872">1872, </unitdate>
+              <unitdate type="inclusive" normal="1873">1873, </unitdate>
+              <unitdate type="inclusive" normal="1874">1874</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Moral contrast</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>National advantages arising from the possession of the Divine Oracles</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>National affairs</unittitle>
+              <unitdate type="inclusive" normal="1861">1861</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Nature and office work of the Holy Spirit</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Neutrality towards the Church of God impossible</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Noble Bereans</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Of Angels</unittitle>
+              <unitdate type="inclusive" normal="1869">1869</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Office and work of Christ</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Old paths</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On Baptism</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On Church polity</unittitle>
+              <unitdate type="inclusive" normal="1855">1855</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On Conscience</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On death</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On prophecy</unittitle>
+              <unitdate type="inclusive" normal="1857">1857</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On sacred song</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On the death of Albert H. Stacy who was slain in battle, Sept.13, 1862</unittitle>
+              <unitdate type="inclusive" normal="1862">1862</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On the due observance of the Sabbath</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On the occasion of the fall of Richmond</unittitle>
+              <unitdate type="inclusive" normal="1865">1865</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Opposite views of God</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The perfect Christian</unittitle>
+              <unitdate type="inclusive" normal="1876">1876</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Practical atheism</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Praise for national blessings</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Praise for national mercies</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Prayer</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Premature judging of things mysterious</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Prime requirement</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Psychology of conversion</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Race for glory</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Relation of the Sunday School to the church and the world</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The repentance of the Ninevites</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Resurrection of Christ</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Returning to God</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Right - improvement of God-given talents</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sabbath</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Scripture biography #7: scenes in the life of Jacob </unittitle>
+              <unitdate type="inclusive" normal="1866">1866, </unitdate>
+              <unitdate type="inclusive" normal="1867">1867, </unitdate>
+              <unitdate type="inclusive" normal="1868">1868, </unitdate>
+              <unitdate type="inclusive" normal="1872">1872, </unitdate>
+              <unitdate type="inclusive" normal="1874">1874</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Scripture biography #8: Life of Joseph</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Scripture biography #10: Moses</unittitle>
+              <unitdate type="inclusive" normal="1869">1869, </unitdate>
+              <unitdate type="inclusive" normal="1874">1874</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Scripture biography #11 Moses, cont</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Self abasement before God</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Self conservation to God</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Self-examination</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Self-humiliation before God</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Self-sacrifice for others' benefits</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sermon of baptism (rewritten)</unittitle>
+              <unitdate type="inclusive" normal="1864-07">July 1864</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sermon on the Trinity</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Spiritual Armory</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Temperance sermon</unittitle>
+              <unitdate type="inclusive" normal="1854">1854</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Temperance sermon</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Thanksgiving sermon - The beneficial results of a national annual Thanksgiving</unittitle>
+              <unitdate type="inclusive" normal="1867">1867, </unitdate>
+              <unitdate type="inclusive" normal="1870">1870, </unitdate>
+              <unitdate type="inclusive" normal="1873">1873, </unitdate>
+              <unitdate type="inclusive" normal="1874">1874</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Thanksgiving sermon - God for the right: a praise for national blessings</unittitle>
+              <unitdate type="inclusive" normal="1863">1863</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Thanksgiving sermon - Our country - its prosperity, its sins &amp; its future prospects</unittitle>
+              <unitdate type="inclusive" normal="1852">1852</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Thanksgiving sermon - Rebellion vanquished - Praise to God or/for National Deliverance</unittitle>
+              <unitdate type="inclusive" normal="1865">1865</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Thanksgiving sermon - The true element of national prosperity</unittitle>
+              <unitdate type="inclusive" normal="1858">1858, </unitdate>
+              <unitdate type="inclusive" normal="1860">1860</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Thanksgiving sermon - The true principles of national prosperity</unittitle>
+              <unitdate type="inclusive" normal="1856">1856</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Time in its relation to humanity</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Trial of faith</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The true national fast, with its attendant happy consequences. April 30, </unittitle>
+              <unitdate type="inclusive" normal="1863">1863</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>True remedy for troubled times</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Truth</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Twelve meanings of the term Xapls-Grace</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Unaccepted service</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Unaccomplished purposes</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Unspeakable gift</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Uses and ends of Holy Scripture</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Vigilance against moral evil</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Untitled</unittitle>
+              <physdesc>
+                <extent>8 items</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

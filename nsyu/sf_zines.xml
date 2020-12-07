@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.9, 7/18/2007-->
+<!-- Changed entity files to txt rather than xml, don't suppose it matters which they are (?) -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="sf_zines">sf_zines</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Science Fiction Fanzines and Ephemera Collection</titleproper>
+            <subtitle>A description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">PRB</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1999-01" encodinganalog="Date">Jan 1999</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2007-12-18">18 Dec 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>18 Dec 2007 - converted to EAD (MRC)</item><item>24 Feb 2015 - updated to reflect cataloging of majority of collection (MRC)</item><item>2 Oct 2017 - updated to reflect additional items returned from cataloging (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Science Fiction Fanzines and Ephemera Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1949/1983" type="inclusive" label="Inclusive Dates: ">1949-1983</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>1.0 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection of science fiction fan-generated publications (zines), science fiction convention material, clippings, photographs, and assorted other ephemera.  Originally 12 linear feet, all of the zines have now been cataloged and only a few items remain in the manuscript collection.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2581782</unitid>
+         <langmaterial label="Language: " encodinganalog="546">Most are in <language langcode="eng">English</language>, a few items in  <language langcode="chi">Chinese</language> and <language langcode="rus">Russian</language>.</langmaterial>
+      </did>
+            
+      <!--<bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>## Use MARC 545</p></bioghist>-->
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Science Fiction Fanzines and Ephemera Collection</emph> spans more than thirty years and contains an assortment of miscellaneous ephemera -- artwork, photographs, clippings, publicity, etc. -- relating to science fiction authors, conventions, publishers, and so on.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection is arranged alphabetically by type or title.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has the papers of a number of science fiction authors and organizations, including the Science Fiction Writers of America; please refer to &subjindex; for a complete listing.</p><p>The library also holds a considerable number of science fiction books; please refer to &summitref; to locate these items.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>A list of material originally present in the collection appears in Box 1, but all of the fanzines themselves have been removed and cataloged.  Please refer to &summitref; to locate these items.</p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <subject encodinganalog="650" source="local">Popular culture</subject><subject encodinganalog="650" source="local">Science fiction</subject><!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+         <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Fan magazines.</subject>
+			<subject encodinganalog="650" source="lcsh">Fantasy fiction -- Congresses.</subject>
+			<subject encodinganalog="650" source="lcsh">Science fiction -- Congresses.</subject>
+			<subject encodinganalog="650" source="lcsh">Fantasy fiction -- History and criticism.</subject>
+         <subject encodinganalog="650" source="lcsh">Science fiction -- History and criticism.</subject>
+			<subject encodinganalog="650" source="lcsh">Fantasy fiction -- Societies, etc.</subject>
+			<subject encodinganalog="650" source="lcsh">Science fiction -- Societies, etc.</subject>
+			<!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Book jackets.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform><genreform encodinganalog="655" source="aat">Newsletters.</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Programs (documents)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Science fiction fans.</occupation>
+         <!--<function encodinganalog="657">##</function>-->
+		</controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Science Fiction Fanzines and Ephemera Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Articles and clippings</unittitle></did>
+			   <c02><did><unittitle>Long after Ecclesiastes, Ray Bradbury, <emph render="italic">Orbit</emph></unittitle><abstract>poem</abstract><unitdate type="inclusive" normal="1983">1983</unitdate><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>Professor Tolkien and the hobbits, <emph render="italic">Diplomat</emph></unittitle><abstract>special section of magazine with several articles</abstract><unitdate type="inclusive" normal="1966-10">Oct 1966</unitdate><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>Science fiction and fantasy, <emph render="italic">Saturday Review</emph></unittitle><unitdate type="inclusive" normal="1949-12">Dec 1949</unitdate><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>Science fiction of the nuclear age, <emph render="italic">Johns Hopkins Magazine</emph></unittitle><unitdate type="inclusive" normal="1977-03">Mar 1977</unitdate><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>The threat of creationism, Isaac Asimov, <emph render="italic">New York Times Magazine</emph></unittitle><unitdate type="inclusive" normal="1981">1981</unitdate><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>Through space and time with Forrest Ackerman, <emph render="italic">New West</emph></unittitle><unitdate type="inclusive" normal="1980-01-28">28 Jan 1980</unitdate><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>Miscellaneous</unittitle><abstract>on various science fiction-related topics</abstract><unitdate type="inclusive" normal="1964">1964, </unitdate><unitdate type="inclusive" normal="1970">1970, </unitdate><unitdate type="inclusive" normal="1973">1973, </unitdate><unitdate type="inclusive" normal="1980">1980</unitdate><container type="Box">1</container></did></c02>
+			</c01>
+         <c01 level="series"><did><unittitle>Conventions</unittitle></did>
+			   <c02><did><unittitle>Con-Committee Chairman's Guide, by George Scithers</unittitle><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>Miscellaneous</unittitle><abstract>fliers, registration forms, posters, etc.</abstract><container type="Box">1</container></did></c02>
+			</c01>
+         <c01 level="series"><did><unittitle>Fanzines and newsletters</unittitle></did>
+			   <note><p>The vast majority of these items have been cataloged.  Please refer to &summitref; to locate these items.</p></note>
+			   <c02><did><unittitle>List of titles (original)</unittitle><abstract>complete list of what was originally in the collection</abstract><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>Miscellaneous</unittitle><container type="Box">1</container></did></c02>
+			</c01>
+         <c01 level="series"><did><unittitle>Movies and films</unittitle></did>
+			   <c02><did><unittitle>Miscellaneous</unittitle><abstract>movie press releases, movie and film societies, etc.</abstract><container type="Box">1</container></did></c02>
+			</c01>
+         <c01 level="series"><did><unittitle>People and organizations</unittitle></did>
+			   <c02><did><unittitle>Cogswell, Theodore</unittitle><abstract>Christmas card</abstract><unitdate type="inclusive" normal="1975">1975</unitdate><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>Ellison, Harlan</unittitle><abstract>article by Ellison for <emph render="italic">Writer's Digest</emph>, few items of correspondence</abstract><unitdate type="inclusive" normal="1980/1981">1980-1981</unitdate><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>Heinlein, Robert</unittitle><abstract>brochure for Forrestal Lecture Series, featuring Heinlein</abstract><unitdate type="inclusive" normal="1972">1972</unitdate><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>International Aviation Writer's Association</unittitle><abstract>text of speech on legal aspects of space travel</abstract><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>NASA (National Aeronatics and Space Administration)</unittitle><abstract>Kennedy Space Center material, teacher's guide on the planets, list of names given to surface features near the Apollo 15 landing site, etc.</abstract><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>Science Fiction Writers of America (SFWA)</unittitle><abstract>correspondence, mailings, ballots, etc.; much of it pertains to the Nebula Awards</abstract><unitdate type="inclusive" normal="1966/1978">1966-1978</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>Zelazny, Roger</unittitle><abstract>few items of correspondence, publicity poster for <emph render="italic">Madwand</emph>, "Working bibliography" compiled by Phil Stephensen-Payne, photocopy of "My lady of the diodes"</abstract><container type="Box">1</container></did></c02>
+			   <c02><did><unittitle>Zelazny, Roger (cont.)</unittitle><abstract>article by Zelazny on writing for children, miscellaneous items from a Russian fan</abstract><container type="Box">2</container></did></c02>
+			   <c02><did><unittitle>Miscellaneous</unittitle><container type="Box">2</container></did></c02>
+			   
+			</c01>
+         <c01 level="series"><did><unittitle>Photographs and artwork</unittitle></did>
+			   <c02><did><unittitle>Artwork, original</unittitle><abstract>original art by unidentified artists, mostly pen and ink</abstract><container type="Box">2</container></did></c02>
+			   <c02><did><unittitle>Artwork, reproduction</unittitle><abstract>line art illustrations for <emph render="italic">Dragons of Darkness</emph>, <emph render="italic">Pocket </emph>, possibly others</abstract><container type="Box">2</container></did></c02>
+			   <c02><did><unittitle>Photographs</unittitle><abstract>living "pods" on alien planet, possibly a movie set?</abstract><container type="Box">2</container></did></c02>
+			</c01>
+         <c01 level="series"><did><unittitle>Publishers and books</unittitle></did>
+			   <c02><did><unittitle>Avon</unittitle><abstract>mostly press releases about upcoming SF titles</abstract><container type="Box">2</container></did></c02>
+			   <c02><did><unittitle>Ballantine</unittitle><abstract>publicity posters and book lists for their Del Rey line of SF</abstract><container type="Box">2</container></did></c02>
+			   <c02><did><unittitle>Bantam</unittitle><container type="Box">2</container></did></c02>
+			   <c02><did><unittitle>Carcosa</unittitle><abstract>press release for its first title</abstract><container type="Box">2</container></did></c02>
+			   <c02><did><unittitle>Pocket Books</unittitle><abstract>includes numerous issues of "Timescape," their science fiction newsletter</abstract><container type="Box">2</container></did></c02>
+			   <c02><did><unittitle>Miscellaneous</unittitle><abstract>includes several jacket proofs and some used book lists</abstract><container type="Box">2</container></did></c02>
+			</c01>
+         <c01 level="series"><did><unittitle>Miscellaneous</unittitle></did>
+			   <c02><did><unittitle>Atomic Clock</unittitle><abstract>packet of material pertaining to the atomic clock and its use in testing Einstein's theory of relativity</abstract><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">2</container></did></c02>
+			   <c02><did><unittitle>Correspondence</unittitle><container type="Box">2</container></did></c02>
+			   <c02><did><unittitle>Printed material</unittitle><abstract>Japanese issue of <emph render="italic">Omni</emph> magazine, poster for "Science fiction at your library!", etc.</abstract><physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container></did></c02>
+			   
+			</c01>
+      </dsc>
+   </archdesc>
+</ead>

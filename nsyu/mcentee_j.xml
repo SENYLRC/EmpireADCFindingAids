@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.4, 4/7/2006 -->
+<!--Added inventory creator's name/initials-->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="us" mainagencycode="NSyU" identifier="mcentee_j">mcentee_j</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Jervis McEntee Diary</titleproper>
+				<subtitle>A description of  his diary at Syracuse University</subtitle>
+			<author encodinganalog="Creator">PRB</author></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="2004-05" encodinganalog="Date">May 2004</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2006-03-08">20 Apr 2006</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<revisiondesc>
+			<list>
+				<item>20 Apr 2006 - converted to EAD (MRR)</item>
+			<item>19 Jul 2006 - minor changes to subject headings (MRR)</item>
+			<item>2 Nov 2006 - fixed name of institution (MRR)</item>
+			<item>19 Aug 2010 - added related material (MRC)</item><item>10 Mar 2016 - added related material (MRC)</item></list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<persname encodinganalog="100">McEntee, Jervis, 1829-1891</persname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Jervis McEntee Diary</unittitle>
+			<unitdate encodinganalog="245$f" normal="1844/1845" type="inclusive" label="Inclusive Dates: ">1844-1845</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 volume</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">Personal journal of the American Hudson River School artist</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="us" repositorycode="NSyU">2458722</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+			</langmaterial>
+		</did>
+				
+		<!--<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>## Use MARC 545</p></bioghist>-->
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>Spanning August, 1844 to October, 1845, the Jervis McEntee Diary comprises one early personal journal of the Hudson River School artist.  Written while he was a student at the Clinton Liberal Institute in Clinton, NY, the diary details McEntee's life at the school and his travels back and forth to his home in Rondout, NY.  The later journals of Jervis McEntee, filled with details of the New York art world of the late 19th century, are a well-known resource and this journal foreshadows the style of observation that would become the hallmark of his reputation later in life.</p>
+		</scopecontent>
+		
+		<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>Single volume.</p>
+		</arrangement>
+		
+		<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>The entire diary has been digitized and is available through &scrconline;.</p>
+      </altformavail><relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>The next volume of McEntee's diary, covering Oct 1845 to Sep 1846, is at the 
+			<extref href="http://library.utulsa.edu/search~S0?/amcentee+jervis">University of Tulsa Library</extref>.  The Archives of American Art also has five volumes of McEntee's diaries, which have been digitized and <extref href="http://www.aaa.si.edu/collections/diaries/mcentee" title="Jervis McEntee Diaries at AAA">are available online</extref>.</p>
+		</relatedmaterial>
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Art -- Painters</subject><subject encodinganalog="650" source="local">New York State</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">McEntee, Jervis, 1829-1891.</persname>
+			
+            
+            
+            <subject encodinganalog="650" source="lcsh">Hudson River school of landscape painting.</subject><subject encodinganalog="650" source="lcsh">Landscape painting, American -- 19th century.</subject><subject encodinganalog="650" source="lcsh">Clinton Liberal Institute.</subject>
+			
+            <genreform encodinganalog="655" source="aat">Diaries.</genreform>
+			<occupation encodinganalog="656" source="lcsh">Painters.</occupation>
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p>Jervis McEntee Diary, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>Gift of <persname role="donor">Abbie Harper Bigelow</persname>, 19??</p>
+		</acqinfo>
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Writings</unittitle>
+				</did>
+				<c02>
+					<did>
+						<unittitle>Diary</unittitle>
+						
+						<unitdate normal="1844/1845" type="inclusive">1844-1845</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02>
+			</c01>
+		</dsc>
+	</archdesc>
+</ead>

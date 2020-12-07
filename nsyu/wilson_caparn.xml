@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="wilson_caparn">wilson_caparn</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Elizabeth Wilson Collection Relating to Rhys
+               Caparn</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+            <author encodinganalog="Creator">MRC</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2014-02-04" encodinganalog="Date">4 Feb 2014</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+			<date normal="2014-02-04">4 Feb 2014</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>28 Jan 2019 - processed (KD)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Wilson, Elizabeth</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Elizabeth Wilson Collection Relating to Rhys Caparn</unittitle>
+         <unitdate encodinganalog="245$f" normal="1933/2011" type="inclusive" label="Inclusive Dates: ">1933-2011</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Artwork, correspondence, memorabilia,
+            printed material, and wiritings relating to American abstract artist Rhys
+            Caparn</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4124026</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Rhys Caparn (1909-1997) was an American sculptor and illustrator.</p>
+         <p>She was born on July 28, 1909 in Onteora Park, New York. Her father, Harold ap Rhys
+            Caparn was the landscape architect for the Brooklyn Botanical Garden from 1912-1945. </p>
+         <p>Rhys studied at the Brearly School in New York City from 1918-1927, Bryn Mawr College
+            from 1927-1929, Ecole Artistique des Animaux in Paris from 1929-1930, and Archipenko
+            School of Art from 1931-1933. She is particularly remembered for her abstract animal
+            sculptures and was a member of the American Abstract Artists and the Federation of
+            Modern Painters and Sculptors. </p>
+         <p>On September 9, 1935 she married Herbert Johannes Steele, an economic and business
+            columnist who was known for making uncanny predictions about the stock market. She died
+            in 1997 in Danbury, Connecticut.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Elizabeth Wilson Collection Relating to Rhys Caparn</emph>
+            consists of artwork, correspondence, memorabilia, printed material, and wiritings
+            relating to American abstract artist Rhys Caparn.</p>
+         <p><emph render="bold">Artwork</emph> is divided into originals and reproductions.</p>
+         <p><emph render="bold">Correspondence</emph> consists of personal incoming mail.</p>
+         <p><emph render="bold">Memorabilia</emph> is divided into personal photos and
+            miscellaneous.</p>
+         <p><emph render="bold">Printed material</emph> is divided into clippings, exhibition
+            catalogs, and exhibition invitations.</p>
+         <p><emph render="bold">Writings</emph> contains biographical notes by another, biographical
+            information by Rhys Caparn, and an essay.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Artwork is in no particular order. Correspondence is arranged chronologically with
+            undated material at the end. Memorabilia is in no particular order. Printed Material
+            (including clippings, exhibition catalogs, and exhibition inivitations) are arranged
+            chronologically with undated material at the end. Writings are arranged by page number
+            when applicable.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+      <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>Two copies of <emph render="italic">Rhys Caparn</emph> by Robert Beverly Hale, and one
+            copy of <emph render="italic">American Abstract Artists 1936-1966</emph> edited by The
+            American Abstract Artists, with introduction by Ruth Gurin, have been transferred to
+            Rare Books.</p>
+      </separatedmaterial>
+      <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>See also the <archref altrender="/c/caparn_r.htm">Rhys Caparn Papers</archref>.</p>
+      </otherfindaid>
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+			<subject encodinganalog="650" source="local">Art -- Illustrators</subject>
+			<subject encodinganalog="650" source="local">Art -- Sculptors</subject>
+			<persname encodinganalog="600" source="lcnaf">Caparn, Rhys, 1909-1997.</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <!-- <corpname encodinganalog="610" source="lcnaf">##</corpname> -->
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+			<subject encodinganalog="650" source="lcsh">Art, American -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Illustrators -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Sculptors -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Sculpture, American -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Women artists -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Women sculptors -- United States.</subject>
+			<genreform encodinganalog="655" source="aat">Articles.</genreform>
+			<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <genreform encodinganalog="655" source="aat">Black-and-white negatives.</genreform>
+         <genreform encodinganalog="655" source="aat">Color negatives.</genreform>
+         
+         <genreform encodinganalog="655" source="aat">Exhibition catalogs.</genreform>
+			<occupation encodinganalog="656" source="lcsh">Artists.</occupation>
+			<occupation encodinganalog="656" source="lcsh">Illustrators.</occupation>
+			<occupation encodinganalog="656" source="lcsh">Sculptors.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require
+            advanced notice for retrieval. Researchers are encouraged to contact us in advance
+            concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Elizabeth Wilson Collection Relating to Rhys Caparn, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Michele Wilson</persname>, 2012.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+            <did>
+               <unittitle>Artwork</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Originals</unittitle>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Reproductions</unittitle>
+                  <abstract>includes negatives</abstract>
+                  <physdesc><extent>3 folders</extent></physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Incoming</unittitle>
+                  <unitdate normal="1963/1988" type="inclusive">1963-1988, </unitdate>
+                  <unitdate type="inclusive" normal="1933/2011">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Memorabilia</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Address lists</unittitle>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Certificate, Accademia Bedriacense</unittitle>
+                  
+                  <unitdate normal="1984" type="inclusive">1984</unitdate>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Personal photos</unittitle>
+                  <abstract>includes negatives</abstract>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <abstract>membership cards, notes, price lists</abstract>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Printed material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Clippings</unittitle>
+                  <abstract>a number of articles by or about Johannes Steele</abstract>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate normal="1942/2011" type="inclusive">1942-2011, </unitdate>
+                  <unitdate normal="1933/2011" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Clippings</unittitle>
+                  <abstract>a number of articles by or about Johannes Steele</abstract>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1956/1988">1956-1988, </unitdate>
+                  <unitdate normal="1933/2011" type="inclusive">undated</unitdate>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Exhibition catalogs</unittitle>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate normal="1933/1978" type="inclusive">1933-1978, </unitdate>
+                  <unitdate normal="1933/2011" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Exhibition invitations</unittitle>
+                  <unitdate normal="1957/1984" type="inclusive">1957-1984, </unitdate>
+                  <unitdate normal="1933/2011" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Magazines</unittitle>
+                  <abstract>Art News</abstract>
+                  <unitdate normal="1992-11" type="inclusive">Nov 1992</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Writings</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Biographical notes, author unknown</unittitle>
+                  <abstract>possibly by Elizabeth Wilson</abstract>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Biographical material by Rhys Caparn</unittitle>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Essay, "Art and the Animal" by Rhys Caparn</unittitle>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

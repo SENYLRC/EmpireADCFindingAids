@@ -1,0 +1,2910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.--><?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen.css"?>
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="fairfield" mainagencycode="NSyU">fairfield</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Fairfield Collection</titleproper>
+        <subtitle>An inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">--</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1955-02">Feb 1955</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           
+        
+        <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>28 Oct 2008 - converted to EAD (MRC)</item>
+        <item>1 Jun 2010 - updated related material (MRC)</item>
+        <item>1 Sep 2011 - corrected location (MRC)</item>
+        <item>24 Apr 2012 - reprocessed collection and updated finding aid (SAH)</item>
+        <item>17 May 2012 - added English patent (MRC)</item>
+        <item>26 Oct 2012 - extent revised (MBD)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository encodinganalog="852$a" id="scrc" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <!--<origination label="Creator: ">
+        <corpname encodinganalog="110" source="lcnaf"></corpname>
+      </origination>-->
+      <unittitle encodinganalog="245$a" label="Title: ">Fairfield Collection</unittitle>
+      <unitdate type="inclusive" encodinganalog="245$f" label="Inclusive Dates: " normal="1804/1950">1804-1950</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">10 linear
+          ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Records of Fairfield Academy and Fairfield
+        Medical College, Herkimer County, New York, and the personal papers of Dr. William Mather,
+        Alonzo C. Mather, Albert B. Watkins, and other families and individuals connected with the
+        school and town.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">148968</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        Most in 
+        
+        
+        
+        <language langcode="eng">English</language>, scattered items in 
+        
+        
+        
+        <language langcode="fre">French</language> and 
+        
+        
+        
+        <language langcode="spa">Spanish</language></langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>
+        <emph render="bold">Fairfield Academy</emph>, located in the town of Fairfield in Herkimer
+        County, New York, was incorporated in 1803. The Academy had several instructors in medical
+        subjects, including anatomy, pharmacy, medicine, surgery, and obstetrics. In 1812, 43
+        students were studying medical subjects and the Academy applied for a charter as a medical
+        college in order to be able to grant M.D. degrees to its students. The charter was granted
+        under the name of "The College of Physicians and Surgeons of the Western District of New
+        York," but the institution was commonly known as Fairfield Medical College. It was the
+        second medical college to be chartered in the state and the 11th in the United States. The
+        faculty was composed of eminent physicians and physician-instructors, and the college
+        acquired an excellent reputation. By 1833 the school had over 200 students and over its life
+        granted more than 600 M.D. degrees, 18 of whom went on to become professors in other medical
+        colleges. (Of the five members of the faculty of the Geneva (N.Y.) Medical College who
+        transferred to the Syracuse University Medical College upon its establishment in 1871, at
+        least three had received their medical training at Fairfield.) Fairfield Medical College
+        closed in 1840, due to competition from other medical colleges opened in New York and
+        surrounding states. In 1812, the trustees of Fairfield Academy, acting on the suggestion of
+        the Rev. Amos G. Baldwin, petitioned Trinity Episcopal Church in Fairfield for a grant of
+        funds to establish a college of liberal culture under Episcopal auspices. This petition was
+        not granted, but in the following year, acting upon another petition suggested by the Rev.
+        Baldwin, the corporation of Trinity church founded a theological school in connection with
+        Fairfield Academy. </p>
+      <p>The academy was reorganized as the co-educational Fairfield Seminary in 1839, incorporating
+        a "Classical Academy and Female Collegiate Institute," with a teacher training and college
+        preparation curriculum. Its enrollment in 1861 was 551. As new major transportation routes
+        developed in the 19th century, bypassing the town of Fairfield, the academy lost its
+        prominence. It operated as a military academy beginning in 1891 and closed permanently in
+        1901, largely due to competition from the growing number of high schools in the area.</p>
+      <p>
+        <emph render="bold">Dr. William Mather (1802-1890)</emph>, a descendent of Cotton Mather, was a son of Captain Moses
+        Mather, an early settler of Herkimer County and one of the founders of Fairfield Academy. In
+        1826, Mather graduated from Fairfield Medical College with the degree of M.D. As he had from
+        boyhood been "an ardent lover of the science of chemistry," he turned his attention to that
+        subject and from 1828 to 1868 was one of the most popular lecturers in this country. He
+        married Mary Ann Buell in 1836, and the two had three children. In 1838 he was appointed
+        instructor in chemistry at the Hamilton (New York) Literary and Theological Seminary and in
+        1841 was elected professor of chemistry at the Castleton (Vermont) Medical College. From
+        1852 to 1868 he was professor of chemistry, mineralogy, and geology at Madison (now Colgate)
+        University in Hamilton. He was also the president of Fairfield Seminary for more than a
+        quarter of a century.</p>
+      <p>
+        <emph render="bold">Alonzo Clark Mather (1848-1941)</emph>, an inventor and industrialist,
+        was educated at Fairfield Academy and upon graduation went to work as a clerk in Utica, New
+        York. In 1867 he opened his own mercantile business in Little Falls, New York, and moved to
+        Quincy, Illinois the subsequent year. In 1875 he moved to Chicago and ran a wholesale
+        business under the name Alonzo C. Mather and Company, which imported and manufactured a
+        ladies’ self-lacing glove of his own patent. In 1880, following an incident observing the
+        poor conditions of cattle in railway transport, Mather began work on a more humane stock
+        car, and in the following year started the Mather Humane Stock Transportation Company of
+        Chicago (commonly known as the Mather Stock Car Company) in order to produce these cars. The
+        American Humane Association awarded Mather a medal for the humane treatment of animals in
+        1883. For many years, Mather endeavored to build a bridge across the Niagara River from
+        Buffalo to Fort Erie, Ontario, which would harness the water currents for electric power;
+        however, a bill from the United States Congress prevented the realization of this idea. He
+        did build Mather Tower in Chicago, which served as the headquarters for the Mather Stock Car
+        Company and is now a Chicago Historic Landmark.</p>
+      <p>
+        <emph render="bold">Albert Barnes Watkins (1838-1892)</emph>, a native of Naples, New York,
+        was a student of Fairfield Seminary who also began teaching at the school. In 1861 he
+        entered Amherst College as a junior and graduated in two years with honors. He returned to
+        Fairfield as a teacher, and in 1863 he married Martha Ann Mather, the daughter of Dr.
+        William Mather. He was the principal of the Hungerford Collegiate Institute in Adams, New
+        York, for twelve years (1870-1882), where he was elected and served two terms as School
+        Commissioner of Jefferson County, and also received the degree of Doctor of Philosophy. In
+        1882 he became the State Inspector of Teachers' Classes, and from 1884 until his death he
+        served as the Assistant Secretary of the University of the State.</p>
+      <p>A genealogy of the Buell, Clark, Dresser, Griswold, Mather and Watkins families is
+        available 
+        
+        <extref href="fairfield_tree.pdf">here</extref> (if online) or at the end of this
+        finding aid (if in hard copy).</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Fairfield Academy</emph> series encompasses items relating to the
+        combined history of Fairfield Academy (incorporated 1803), The College of Physicians and
+        Surgeons of the Western District of New York (chartered 1812), and Fairfield Seminary
+        (founded 1813). Included are the correspondence and meeting minutes of the Board of
+        Trustees; materials related to the College of Physicians and Surgeons; items from Fairfield
+        Seminary including a diploma for Burrit D. Case and report cards for Martha Ann Mather;
+        financial material, and published material.</p>
+      <p>The 
+        
+        <emph render="bold">Fairfield, New York</emph> series consists of iems connected to the town of Fairfield, including biographical and genealogical notes from
+        researchers, primarily regarding the Buell and Mather families; legal documents; and
+        materials regarding Trinity Church and the Woman’s Central Association of Relief. </p>
+      <p>
+        <emph render="bold">Fairfield Families</emph> includes the personal papers of the Buell,
+        Mather, and Watkins families who are connected through the marriages of Dr. William Mather
+        to Mary Ann Buell, whose father Roswell Buell donated land for Fairfield Academy; and of
+        Mather’s daughter Martha Ann to Albert Barnes Watkins. Many of the writers of the letters
+        are already represented in the Library's special collections, especially the Gerrit Smith
+        Collection. No special restrictions.</p>
+      <p>The 
+        
+        <emph render="bold">Dr. William Mather Papers</emph> material contains the personal papers of
+        Dr. William Mather, including his own biographical and genealogical work; family, general
+        and professional correspondence; financial records and writings. There are also many of Dr.
+        Mather's lecture notes in manuscript, including "minutes" of the medical lectures delivered
+        by various doctors at the Fairfield school between 1827 and 1838; account books and journals
+        of the "popular lectures" which he delivered throughout New York State; manuscript notes and
+        letter-press accounts of the history of the Fairfield schools and of the Town of Fairfield,
+        etc. These papers are significant for the revelations they make concerning the early days of
+        the teaching of natural sciences in New York State and the teaching of chemistry in the
+        United States during the first half of the nineteenth century. </p>
+      <p>The 
+        
+        <emph render="bold">Alonzo C. Mather Papers</emph> contain the personal papers of
+        Alonzo Clark Mather, including biographical and genealogical work; family correspondence;
+        general correspondence and subject files; financial material and memorabilia. There is also
+        assorted material related to his various inventions, primarily the humane stock car and the
+        proposed bridge, as well as his professional interests. </p>
+      <p>The 
+        
+        <emph render="bold">Albert B. Watkins Papers</emph> include the correspondence and
+        documents of Albert Barnes Watkins, a notable Fairfield Seminary student and teacher. Among
+        the professional correspondence and the documents are materials relating to Watkins’
+        capacity as a teacher at Fairfield, as principal of the Hungerford Collegiate Institute in
+        Adams, NY, and as Assistant Secretary of the University of the State. </p>
+      <p>The 
+        
+        <emph render="bold">Miscellaneous</emph> series contains unidentified correspondence and fragments,
+        unsigned manuscripts, assorted printed material, and "Transcripts from Colonial Record”
+        which relates to Edward Griswold (1607-1691), of whom Sarah Buell (née Griswold) (1769-1856)
+        is a descendent.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Material is divided into the series given above, in ascending chronological order.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>See also the 
+        
+        <archref href="eaton_a.htm">Smallwood Collection</archref>, which concerns Amos Eaton and the teaching of the natural sciences in America previous to 1875;
+        
+        
+        <ref href="2577530" role="bibid">Tip of the Hill</ref>, by Thomas C. O'Donnell, an informal history of Fairfield Academy and Fairfield Medical College; and
+        "The Pawnee missionaries," a narrative about Martha Ann Mather Satterlee in 
+        
+        <ref href="2161065" role="bibid">The Christian keepsake and missionary annual</ref>, edited by John Alonzo Clark.</p>
+    </relatedmaterial>
+    <!-- <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial> -->
+<!--
+            <otherfindaid encodinganalog="555">
+<head>Other Related Finding Aids</head>
+<p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">New York State</subject>
+      <subject encodinganalog="650" source="local">Science and medicine</subject>
+      <persname encodinganalog="600" source="lcnaf">Buell, Alexander Hamilton.</persname>
+      <persname encodinganalog="600" source="lcnaf">Clark, John A. (John Alexander)</persname>
+      <persname encodinganalog="600" source="lcnaf">Clark, John A. (John Alonzo), 1801-1843.</persname>
+      <persname encodinganalog="600" source="lcnaf">Mather, Alonzo C.</persname>
+      <persname encodinganalog="600" source="lcnaf">Mather, Horace E., 1827-1909.</persname>
+      <persname encodinganalog="600" source="lcnaf">Mather, Mary Ann Buell.</persname>
+      <persname encodinganalog="600" source="lcnaf">Mather, Moses, 1774-1832.</persname>
+      <persname encodinganalog="600" source="lcnaf">Mather, William.</persname>
+      <persname encodinganalog="600" source="lcnaf">Satterlee, Martha Ann Mather.</persname>
+      <persname encodinganalog="600" source="lcnaf">Spalding, Lyman, 1775-1821.</persname>
+      <persname encodinganalog="600" source="lcnaf">Watkins, Albert Barnes.</persname>
+      <persname encodinganalog="600" source="lcnaf">Watkins, Martha Ann Mather.</persname>
+      <famname encodinganalog="600" source="lcnaf">Buell family.</famname>
+      <famname encodinganalog="600" source="lcnaf">Mather family.</famname>
+      <famname encodinganalog="600" source="lcnaf">Watkins family.</famname>
+      <corpname encodinganalog="610" source="lcnaf">College of Physicians and Surgeons of the Western District of the State of New-York.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Fairfield seminary and military academy, Fairfield, N.Y. </corpname>
+      <corpname encodinganalog="610" source="lcnaf">Fairfield Medical College.</corpname>
+      <corpname encodinganalog="610" source="lnaf">Woman's Central Association of Relief.</corpname>
+      <subject encodinganalog="650" source="lcsh">Cooper, James Fenimore, 1789-1851 -- Criticism and interpretation.</subject>
+      <subject encodinganalog="650" source="lcsh">Genealogical correspondence.</subject>
+      <subject encodinganalog="650" source="lcsh">Education -- New York (State) -- Herkimer County.</subject>
+      <subject encodinganalog="650" source="lcsh">Medical education -- History.</subject>
+      <subject encodinganalog="650" source="lcsh">Railroads -- Livestock transportation.</subject>
+      <subject encodinganalog="650" source="lcsh">Water-power -- New York (State)</subject>
+      <geogname encodinganalog="651" source="lcsh">Adams (N.Y.)</geogname>
+      <geogname encodinganalog="651" source="lcsh">Buffalo (N.Y.)</geogname>
+      <geogname encodinganalog="651" source="lcsh">Chicago (Ill.)</geogname>
+      <geogname encodinganalog="651" source="lcsh">Fairfield (N.Y.: Town)</geogname>
+      <geogname encodinganalog="651" source="lcsh">Fort Erie (Ont.)</geogname>
+      <geogname encodinganalog="651" source="lcsh">Herkimer County (N.Y.)</geogname>
+      <geogname encodinganalog="651" source="lcsh">Niagara Falls (N.Y. and Ont.)</geogname>
+      <genreform encodinganalog="655" source="aat">Address books.</genreform>
+      <genreform encodinganalog="655" source="aat">Agreements.</genreform>
+      <genreform encodinganalog="655" source="aat">Autobiographies (literary works)</genreform>
+      <genreform encodinganalog="655" source="aat">Blueprints (reprographic copies)</genreform>
+      <genreform encodinganalog="655" source="aat">Broadsides (notices)</genreform>
+      <genreform encodinganalog="655" source="aat">Business letters.</genreform>
+      <genreform encodinganalog="655" source="aat">Circulars (fliers)</genreform>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Diaries.</genreform>
+      <genreform encodinganalog="655" source="aat">Diplomas.</genreform>
+      <genreform encodinganalog="655" source="aat">Genealogies (histories)</genreform>
+      <genreform encodinganalog="655" source="aat">Greeting cards.</genreform>
+      <genreform encodinganalog="655" source="aat">Indentures.</genreform>
+      <genreform encodinganalog="655" source="aat">Instructional materials.</genreform>
+      <genreform encodinganalog="655" source="aat">Logs (records)</genreform>
+      <genreform encodinganalog="655" source="aat">Minutes (administrative records)</genreform>
+      <genreform encodinganalog="655" source="aat">Notebooks.</genreform>
+      <genreform encodinganalog="655" source="aat">Obituaries.</genreform>
+      <genreform encodinganalog="655" source="aat">Patents.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Report cards.</genreform>
+      <genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+      <genreform encodinganalog="655" source="aat">Sketches.</genreform>
+      <genreform encodinganalog="655" source="aat">Summonses.</genreform>
+      <genreform encodinganalog="655" source="aat">Telegrams.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Educators.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Industrialists.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Inventors &amp; inventions.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Lawyers.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Physicians.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection. </p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Fairfield Collection,
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Mary Anne Loomis Shepard</persname> of Palmdale, California, 
+great-granddaughter of George S. Loomis, pioneer resident of the Town of DeWitt, Onondaga County, New York, 1970.</p>
+      <p>Diploma gift of 
+        
+        <persname role="donor">Sarah Christensen</persname>, 2011..</p>
+    </acqinfo>
+    <!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       -->
+<!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+      <c01 level="series">
+        <did>
+          <unittitle>Fairfield Academy</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Board of Trustees</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Correspondence</unittitle>
+              <unitdate type="inclusive" normal="1844">1844, </unitdate>
+              <unitdate type="inclusive" normal="1876">1876</unitdate>
+              <physdesc>
+                <extent>3 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Meeting minutes</unittitle>
+              <unitdate type="inclusive" normal="1811">1811, </unitdate>
+              <unitdate type="inclusive" normal="1842">1842, </unitdate>
+              <unitdate type="inclusive" normal="1845">1845, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <physdesc>
+                <extent>10 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>College of Physicians and Surgeons</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Dr. Spalding's Inaugural Address</unittitle>
+              <abstract>An address delivered at Fairfield VII December MDCCCXIII at the inauguration
+                of the officers of the College of Physicians and Surgeons of the Western District of
+                the State of New-York by Lyman Spalding. Contains original and photocopy; an 
+                
+                <ref href="3271930" role="bibid">electronic copy</ref> is available via &summitref;.</abstract>
+              <unitdate type="inclusive" normal="1814">1814</unitdate>
+              <container type="Box">1</container>
+              <physdesc>
+                <extent>2 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Kappa Alpha Phi Society</unittitle>
+              <unitdate type="inclusive" normal="1826">1826, </unitdate>
+              <unitdate type="inclusive" normal="1830">1830</unitdate>
+              <container type="Box">1</container>
+              <physdesc>
+                <extent>4 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <container type="Box">1</container>
+              <unitdate type="inclusive" normal="1827">1827, </unitdate>
+              <unitdate type="inclusive" normal="1830">1830, </unitdate>
+              <unitdate type="inclusive" normal="1880">1880</unitdate>
+              <physdesc>
+                <extent>3 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Reunion and Memorial</unittitle>
+              <unitdate type="inclusive" normal="1922/1923">1922-1923</unitdate>
+              <physdesc>
+                <extent>26 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <unitdate type="inclusive" normal="1864">1864</unitdate>
+              <physdesc>
+                <extent>4 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Fairfield Seminary</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Catalogs</unittitle>
+              <unitdate type="inclusive" normal="1866/1874">1866-1874</unitdate>
+              <container type="Box">1</container>
+              <physdesc>
+                <extent>3 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Debate societies</unittitle>
+              <unitdate type="inclusive" normal="1862/1865">1862-1865, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <container type="Box">1</container>
+              <physdesc>
+                <extent>8 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Diploma</unittitle>
+              <abstract>for Burritt D. Case</abstract>
+              <container type="Box">18</container>
+              <unitdate type="inclusive" normal="1899-06-22">June 22, 1899</unitdate>
+              <physdesc>
+                <extent>1 item</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Records</unittitle>
+              <unitdate type="inclusive" normal="1857/1890">1857-1890, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <container type="Box">1</container>
+              <physdesc>
+                <extent>11 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Report cards</unittitle>
+              <abstract>for Martha Ann Mather, daughter of Dr. William Mather</abstract>
+              <unitdate type="inclusive" normal="1853/1859">1853-1859, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <container type="Box">1</container>
+              <physdesc>
+                <extent>8 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Financial material</unittitle>
+            <unitdate type="inclusive" normal="1853/1869">1853-1869</unitdate>
+            <container type="Box">1</container>
+            <physdesc>
+              <extent>5 items</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Published material</unittitle>
+            <unitdate type="inclusive" normal="1881/1896">1881-1896,</unitdate>
+            <unitdate type="inclusive" normal="1913">1913,</unitdate>
+            <unitdate type="inclusive" normal="1950">1950, </unitdate>
+            <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+            <container type="Box">1</container>
+            <physdesc>
+              <extent>9 items</extent>
+            </physdesc>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Fairfield, New York</unittitle>
+        </did>
+        <c02 id="ffnyg">
+          <did>
+            <unittitle>Biography and genealogy material</unittitle>
+            <physdesc>
+              <extent>17 items</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+          <note>
+            <p>See also Dr. William Mather Papers: 
+              
+              <ref target="wmbg">Biographical and genealogical
+                material</ref> (Box 7) and Alonzo C. Mather Papers: 
+              
+              <ref target="acmbg">Biographical
+                and genealogical material</ref> (Box 8)</p>
+          </note>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Sale of Martha Watkins' house</unittitle>
+              <unitdate type="inclusive" normal="1919/1920">1919-1920</unitdate>
+              <container type="Box">1</container>
+              <physdesc>
+                <extent>8 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Town correspondence</unittitle>
+              <unitdate type="inclusive" normal="1879">1879, </unitdate>
+              <unitdate type="inclusive" normal="1884">1884</unitdate>
+              <container type="Box">1</container>
+              <physdesc>
+                <extent>2 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Legal material</unittitle>
+            <unitdate type="inclusive" normal="1831">1831, </unitdate>
+            <unitdate type="inclusive" normal="1853">1853, </unitdate>
+            <unitdate type="inclusive" normal="1875">1875, </unitdate>
+            <unitdate type="inclusive" normal="1877">1877</unitdate>
+            <physdesc>
+              <extent>4 items</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Trinity Church</unittitle>
+            <unitdate type="inclusive" normal="1837">1837, </unitdate>
+            <unitdate type="inclusive" normal="1860/1880">1860-1880, </unitdate>
+            <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+            <physdesc>
+              <extent>17 items</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Woman's Central Association of Relief</unittitle>
+            <unitdate type="inclusive" normal="1864/1865">1864-1865, </unitdate>
+            <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+            <physdesc>
+              <extent>10 items</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous and fragmentary</unittitle>
+            <physdesc>
+              <extent>9 items</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Fairfield Families</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Buell</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Buell, Alexander Clark (1845-1880) (son of Alexander H. and Harriet
+                Buell)</unittitle>
+              <unitdate type="inclusive" normal="1852/1876">1852-1876, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <physdesc>
+                <extent>11 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Buell, Alexander H. (Hamilton) (1801-1853) (brother of Mary Ann
+                Mather)</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Correspondence</unittitle>
+                <unitdate type="inclusive" normal="1827/1851">1827-1851</unitdate>
+                <physdesc>
+                  <extent>6 items</extent>
+                </physdesc>
+                <container type="Box">2</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Death of</unittitle>
+                <abstract>includes telegrams and summons</abstract>
+                <unitdate type="inclusive" normal="1853">1853</unitdate>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">2</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Buell, Harriet E. (née Gruman) (1819-?) (wife of Alexander H.
+                Buell)</unittitle>
+              <unitdate type="inclusive" normal="1861/1884">1861-1884, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <physdesc>
+                <extent>11 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Buell, Mary Ann (1805-1874)</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="mam">Mather, Mary Ann (née Buell)</ref></p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Buell, Sarah (née Griswold) (1769-1856) (mother of Daniel, Sarah, Alexander
+                H., and Mary Buell)</unittitle>
+              <unitdate type="inclusive" normal="1812/1848">1812-1848</unitdate>
+              <physdesc>
+                <extent>8 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Buell, Sarah (1798-?)</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="sbc">Clark, Sarah (née Buell)</ref></p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Clark, John A. (Alexander) (1833-?) (son of Reverend John Alonzo and Sarah
+                Clark)</unittitle>
+              <unitdate type="inclusive" normal="1852/1874">1852-1874, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <physdesc>
+                <extent>12 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Clark, Reverend John Alonzo (1801-1943) (husband of Sarah
+                Clark)</unittitle>
+              <unitdate type="inclusive" normal="1831/1834">1831-1834, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <physdesc>
+                <extent>7 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03 id="sbc">
+            <did>
+              <unittitle>Clark, Sarah (née Buell) (1798-?) (sister of Mary Buell)</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Incoming correspondence</unittitle>
+                <unitdate type="inclusive" normal="1838/1851">1838-1851, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>8 items</extent>
+                </physdesc>
+                <container type="Box">2</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Outgoing correspondence</unittitle>
+                <unitdate type="inclusive" normal="1839/1855">1839-1855, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>13 items</extent>
+                </physdesc>
+                <container type="Box">2</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Mather</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Mather, A. B. (Albert Barnes) (1845-?) (son of Jairus and Eliza
+                Mather)</unittitle>
+              <unitdate type="inclusive" normal="1865/1866">1865-1866</unitdate>
+              <physdesc>
+                <extent>6 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mather, Irene (née Argyle Irene Gasper) (1879-1950) (third wife of Alonzo
+                C. Mather)</unittitle>
+              <unitdate type="inclusive" normal="1914">1914</unitdate>
+              <physdesc>
+                <extent>13 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mather, Jairus (1819-1893) (brother of Dr. William Mather)</unittitle>
+              <unitdate type="inclusive" normal="1853/1862">1853-1862</unitdate>
+              <physdesc>
+                <extent>4 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mather, John Alonzo Clark ("Lon") (1848-1941) (son of Dr. William and Mary
+                Mather)</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="acm">Alonzo C. Mather Papers</ref> (Boxes 8-15)</p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mather, Louise (née Maria Louise Eames) (1840-1920) (second wife of Alonzo
+                C. Mather)</unittitle>
+              <unitdate type="inclusive" normal="1880/1884">1880-1884, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <physdesc>
+                <extent>22 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mather, Martha Ann (1813-1836) (sister of Dr. William Mather)</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="satterlee">Satterlee, Mrs. Benedict (née Martha Ann Mather) (Box
+                    3)</ref></p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mather, Martha Ann ("Mattie") (1840-1927) (daughter of Dr. William and Mary
+                Mather)</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="maw">Watkins, Martha Ann ("Mattie") (née Mather)</ref> (Boxes
+                  4-6)</p>
+              </note>
+            </did>
+          </c03>
+          <c03 id="mam" level="subseries">
+            <did>
+              <unittitle>Mather, Mary Ann (née Buell) (1805-1874) (wife of Dr. William
+                Mather)</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Incoming correspondence</unittitle>
+                <unitdate type="inclusive" normal="1823/1846">1823-1846</unitdate>
+                <physdesc>
+                  <extent>9 items</extent>
+                </physdesc>
+                <container type="Box">2</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Outgoing correspondence</unittitle>
+                <unitdate type="inclusive" normal="1831/1870">1831-1870, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>10 items</extent>
+                </physdesc>
+                <container type="Box">2</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mather, Martha O. (née Johnson) (?-1879) (first wife of Alonzo C.
+                Mather)</unittitle>
+              <unitdate type="inclusive" normal="1879">1879</unitdate>
+              <physdesc>
+                <extent>1 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mather, Moses (1774-1832) (father of Dr. William, Jacob Dresser, Martha
+                Ann, and Jairus Mather)</unittitle>
+              <unitdate type="inclusive" normal="1804">1804, </unitdate>
+              <unitdate type="inclusive" normal="1814">1814</unitdate>
+              <physdesc>
+                <extent>2 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mather, Sarah (née Dresser) (1779-1843) (mother of Dr. William, Jacob
+                Dresser, Martha Ann, and Jairus Mather)</unittitle>
+              <unitdate type="inclusive" normal="1853/1858">1853-1858</unitdate>
+              <physdesc>
+                <extent>10 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mather, Dr. William (1802-1890)</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="wm">Dr. William Mather Papers</ref> (Boxes 7-8)</p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mather, Dr. William and Mary (collectively)</unittitle>
+              <unitdate type="inclusive" normal="1856/1874">1856-1874</unitdate>
+              <container type="Box">3</container>
+              <physdesc>
+                <extent>6 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mather, William Alexander (1837-1908) (son of Dr. William and Mary
+                Mather)</unittitle>
+              <unitdate type="inclusive" normal="1853/1884">1853-1884, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <container type="Box">3</container>
+              <physdesc>
+                <extent>8 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03 id="satterlee" level="subseries">
+            <did>
+              <unittitle>Satterlee, Mrs. Benedict (née Martha Ann Mather) (1813-1836) (sister of Dr.
+                William Mather)</unittitle>
+              <note>
+                <p>Died en route to Oregon with the Marcus Whitman expedition in 1836</p>
+              </note>
+              <unitdate type="inclusive" normal="1828/1835">1828-1835</unitdate>
+              <container type="Box">3</container>
+              <physdesc>
+                <extent>12 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>W[ickham?], Abbie (niece of Sarah Mather)</unittitle>
+              <unitdate type="inclusive" normal="1834/1867">1834-1867, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <container type="Box">3</container>
+              <physdesc>
+                <extent>13 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Watkins</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>General biographical facts</unittitle>
+              <physdesc>
+                <extent>3 items</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Watkins, Albert Barnes</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="wat">Albert B. Watkins Papers</ref> (Boxes 16-17)</p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Watkins, Albert Barnes and Martha Ann</unittitle>
+              <unitdate type="inclusive" normal="1864/1869">1864-1869</unitdate>
+              <physdesc>
+                <extent>6 items</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Watkins, Arthur (circa 1849-1899)</unittitle>
+              <abstract>brother of Albert B.
+                Watkins</abstract>
+              <unitdate type="inclusive" normal="1863/1869">1863-1869</unitdate>
+              <physdesc>
+                <extent>23 items</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Watkins, Mrs. E. H. (née Eveline Hamlin, 1816-1900)</unittitle>
+              <abstract>mother of Albert
+                Barnes, Frank H., and Arthur Watkins</abstract>
+              <unitdate type="inclusive" normal="1862/1876">1862-1876, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <physdesc>
+                <extent>137 items in 5 folders</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Watkins, Eva (Evelina/Evelyn Mary) (1866-1932)</unittitle>
+              <abstract>daughter of Albert B. and
+                Martha A. Watkins</abstract>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Correspondence</unittitle>
+                <unitdate type="inclusive" normal="1878/1882">1878-1882</unitdate>
+                <physdesc>
+                  <extent>8 items</extent>
+                </physdesc>
+                <container type="Box">4</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Personal documents</unittitle>
+                <unitdate type="inclusive" normal="1882/1884">1882-1884, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">4</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Watkins, Frank Alonzo (1875-?)</unittitle>
+              <abstract>son of Albert B. and Martha A.
+                Watkins</abstract>
+              <unitdate type="inclusive" normal="1880/1923">1880-1923</unitdate>
+              <physdesc>
+                <extent>15 items</extent>
+              </physdesc>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Watkins, Frank H. (circa 1846-?)</unittitle>
+              <abstract>brother of Albert B. Watkins</abstract>
+              <unitdate type="inclusive" normal="1862/1868">1862-1868</unitdate>
+              <physdesc>
+                <extent>36 items</extent>
+              </physdesc>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Watkins, Jesse Mather (1868-?)</unittitle>
+              <abstract>son of Albert B. and Martha A.
+                Watkins</abstract>
+              <unitdate type="inclusive" normal="1879/1923">1879-1923</unitdate>
+              <container type="Box">4</container>
+              <physdesc>
+                <extent>7 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03 id="maw" level="subseries">
+            <did>
+              <unittitle>Watkins, Martha "Mattie" Ann (1840-1927)</unittitle>
+              <abstract>daughter of Dr.
+                William and Mary Mather; wife of Albert B. Watkins</abstract>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Correspondence, family</unittitle>
+              </did>
+              <c05>
+                <did>
+                  <unittitle>Incoming</unittitle>
+                  <unitdate type="inclusive" normal="1853/1867">1853-1867</unitdate>
+                  <container type="Box">4</container>
+                  <physdesc>
+                    <extent>30 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Mather, Alonzo C. (brother)</unittitle>
+                  <unitdate type="inclusive" normal="1864/1914">1864-1914</unitdate>
+                  <container type="Box">4</container>
+                  <physdesc>
+                    <extent>4 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Mather, Mary Ann (mother)</unittitle>
+                  <unitdate type="inclusive" normal="1855/1871">1855-1871</unitdate>
+                  <container type="Box">4</container>
+                  <physdesc>
+                    <extent>10 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Mather, Dr. William (father)</unittitle>
+                  <unitdate type="inclusive" normal="1857/1880">1857-1880</unitdate>
+                  <container type="Box">4</container>
+                  <physdesc>
+                    <extent>72 items in 3 folders</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Mather, Dr. William (father)</unittitle>
+                  <unitdate type="inclusive" normal="1881/1886">1881-1886, </unitdate>
+                  <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                  <container type="Box">5</container>
+                  <physdesc>
+                    <extent>76 items in 3 folders</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Parents (collectively)</unittitle>
+                  <unitdate type="inclusive" normal="1864/1874">1864-1874, </unitdate>
+                  <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                  <container type="Box">5</container>
+                  <physdesc>
+                    <extent>24 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Watkins, Albert Barnes (husband)</unittitle>
+                  <unitdate type="inclusive" normal="1859/1862">1859-1862</unitdate>
+                  <physdesc>
+                    <extent>25 items in 2 folders</extent>
+                  </physdesc>
+                  <container type="Box">5</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Watkins, Albert Barnes (husband)</unittitle>
+                  <unitdate type="inclusive" normal="1863/1865">1863-1865, </unitdate>
+                  <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                  <container type="Box">6</container>
+                  <physdesc>
+                    <extent>12 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Other family</unittitle>
+                  <unitdate type="inclusive" normal="1852">1852, </unitdate>
+                  <unitdate type="inclusive" normal="1856">1856, </unitdate>
+                  <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                  <container type="Box">6</container>
+                  <physdesc>
+                    <extent>4 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Correspondence, general</unittitle>
+              </did>
+              <c05>
+                <did>
+                  <unittitle>A-W</unittitle>
+                  <physdesc>
+                    <extent>49 items</extent>
+                  </physdesc>
+                  <container type="Box">6</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Dunn, John King</unittitle>
+                  <unitdate type="inclusive" normal="1853/1855">1853-1855</unitdate>
+                  <physdesc>
+                    <extent>10 items</extent>
+                  </physdesc>
+                  <container type="Box">6</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Hockley, Thomas and Annie</unittitle>
+                  <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                  <physdesc>
+                    <extent>7 items</extent>
+                  </physdesc>
+                  <container type="Box">6</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Liddell, Mattie (Mrs. J. B. Hull)</unittitle>
+                  <unitdate type="inclusive" normal="1858/1865">1858-1865</unitdate>
+                  <physdesc>
+                    <extent>21 items</extent>
+                  </physdesc>
+                  <container type="Box">6</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Perkins, Katie</unittitle>
+                  <unitdate type="inclusive" normal="1856/1867">1856-1867</unitdate>
+                  <physdesc>
+                    <extent>33 items</extent>
+                  </physdesc>
+                  <container type="Box">6</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Quinby, Libbie</unittitle>
+                  <unitdate type="inclusive" normal="1862/1869">1862-1869, </unitdate>
+                  <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                  <physdesc>
+                    <extent>13 items</extent>
+                  </physdesc>
+                  <container type="Box">6</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Ward, Eliza ("Lizzie")</unittitle>
+                  <unitdate type="inclusive" normal="1853/1864">1853-1864</unitdate>
+                  <physdesc>
+                    <extent>25 items</extent>
+                  </physdesc>
+                  <container type="Box">6</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Unidentified</unittitle>
+                  <physdesc>
+                    <extent>13 items</extent>
+                  </physdesc>
+                  <container type="Box">6</container>
+                </did>
+              </c05>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Printed material</unittitle>
+                <container type="Box">6</container>
+                <physdesc>
+                  <extent>2 items</extent>
+                </physdesc>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Writings</unittitle>
+                <unitdate type="inclusive" normal="1852/1859">1852-1859, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <container type="Box">6</container>
+                <physdesc>
+                  <extent>29 items</extent>
+                </physdesc>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+      </c01>
+      <c01 id="wm" level="series">
+        <did>
+          <unittitle>Dr. William Mather Papers</unittitle>
+        </did>
+        <c02 id="wmbg" level="subseries">
+          <did>
+            <unittitle>Biographical and genealogical material</unittitle>
+          </did>
+          <note>
+            <p>See also Fairfield, New York: 
+              
+              <ref target="ffnyg">Biography and genealogy
+                material</ref> (Box 1) and Alonzo C. Mather Papers: 
+              
+              <ref target="acmbg">Biographical
+                and genealogical material</ref> (Box 8)</p>
+          </note>
+          <c03>
+            <did>
+              <unittitle>Written by Dr. William Mather</unittitle>
+              <container type="Box">7</container>
+              <physdesc>
+                <extent>33 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Obituaries</unittitle>
+              <unitdate type="inclusive" normal="1890">1890</unitdate>
+              <container type="Box">7</container>
+              <physdesc>
+                <extent>2 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Family</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Incoming</unittitle>
+                <unitdate type="inclusive" normal="1836/1882">1836-1882, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <container type="Box">7</container>
+                <physdesc>
+                  <extent>10 items</extent>
+                </physdesc>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>General</unittitle>
+                <unitdate type="inclusive" normal="1830/1851">1830-1851</unitdate>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">7</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Children (collectively)</unittitle>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">7</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Mather, Mary (wife)</unittitle>
+                <container type="Box">7</container>
+                <unitdate type="inclusive" normal="1849/1867">1849-1867</unitdate>
+                <physdesc>
+                  <extent>8 items</extent>
+                </physdesc>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>General</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>A-W</unittitle>
+                <unitdate type="inclusive" normal="1839/1884">1839-1884</unitdate>
+                <physdesc>
+                  <extent>30 items</extent>
+                </physdesc>
+                <container type="Box">7</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Herkimer County National Bank</unittitle>
+                <unitdate type="inclusive" normal="1875/1882">1875-1882</unitdate>
+                <physdesc>
+                  <extent>6 items</extent>
+                </physdesc>
+                <container type="Box">7</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Mather, Horace</unittitle>
+                <unitdate type="inclusive" normal="1880/1882">1880-1882</unitdate>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">7</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Silver, N—</unittitle>
+                <unitdate type="inclusive" normal="1869/1880">1869-1880</unitdate>
+                <physdesc>
+                  <extent>9 items</extent>
+                </physdesc>
+                <container type="Box">7</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Professional</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>A-W</unittitle>
+                <unitdate type="inclusive" normal="1829/1885">1829-1885, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>25 items</extent>
+                </physdesc>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Outgoing</unittitle>
+                <container type="Box">7</container>
+                <physdesc>
+                  <extent>4 items</extent>
+                </physdesc>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Financial records</unittitle>
+            <container type="Box">7</container>
+            <physdesc>
+              <extent>10 items</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Lectures</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Correspondence</unittitle>
+              <unitdate type="inclusive" normal="1833/1859">1833-1859, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <physdesc>
+                <extent>10 items</extent>
+              </physdesc>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Financial records</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>"Memorandums, Accounts, ..."</unittitle>
+                <abstract>bound notebook</abstract>
+                <unitdate type="inclusive" normal="1851/1857">1851-1857</unitdate>
+                <physdesc>
+                  <extent>1 item</extent>
+                </physdesc>
+                <container type="Box">7</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Subscriptions</unittitle>
+                <unitdate type="inclusive" normal="1837/1847">1837-1847</unitdate>
+                <physdesc>
+                  <extent>9 items</extent>
+                </physdesc>
+                <container type="Box">7</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Notes taken at medical lectures, Fairfield Medical College"</unittitle>
+              <unitdate type="inclusive" normal="1827/1838">1827-1838</unitdate>
+              <physdesc>
+                <extent>12 items in 2 folders</extent>
+              </physdesc>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Teaching material</unittitle>
+              <physdesc>
+                <extent>20 items</extent>
+              </physdesc>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photograph of Dr. William Mather</unittitle>
+            <container type="Box">8</container>
+            <physdesc>
+              <extent>1 item</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Writings</unittitle>
+            <abstract>includes resignation letter to the trustees of the college and "What I
+              remember of James Fennimore (sic) Cooper" (original and copies)</abstract>
+            <physdesc>
+              <extent>18 items</extent>
+            </physdesc>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <physdesc>
+              <extent>5 items</extent>
+            </physdesc>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 id="acm" level="series">
+        <did>
+          <unittitle>Alonzo C. Mather Papers</unittitle>
+        </did>
+        <c02 id="acmbg" level="subseries">
+          <did>
+            <unittitle>Biographical and genealogical material</unittitle>
+          </did>
+          <note>
+            <p>See also Fairfield, New York: 
+              
+              <ref target="ffnyg">Biography and genealogy
+                material</ref> (Box 1) and Dr. William Mather Papers: 
+              
+              <ref target="wmbg">Biographical and genealogical material</ref> (Box 7)</p>
+          </note>
+          <c03>
+            <did>
+              <unittitle>By Alonzo C. Mather</unittitle>
+              <abstract>includes copy of Alonzo C. Mather's brief history of the Mather family and
+                autobiography submitted to 
+                
+                <emph render="italic">Courier-Journal</emph> circa
+                1884</abstract>
+              <physdesc>
+                <extent>6 items</extent>
+              </physdesc>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>By others</unittitle>
+              <abstract>includes copies of obituaries, notes about his life, and correspondence
+                regarding the collection</abstract>
+              <physdesc>
+                <extent>10 items</extent>
+              </physdesc>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence</unittitle>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="inv">Inventions</ref> and 
+              
+              <ref target="prin">Professional
+                Interests</ref> for additional correspondence related to specific projects.</p>
+          </note>
+          <c03>
+            <did>
+              <unittitle>Family correspondence</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Mather, Mary Ann (mother)</unittitle>
+                <unitdate type="inclusive" normal="1863/1874">1863-1874, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <container type="Box">8</container>
+                <physdesc>
+                  <extent>6 items</extent>
+                </physdesc>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Mather, Dr. William (father)</unittitle>
+                <unitdate type="inclusive" normal="1865/1885">1865-1885, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>63 items in 2 folders</extent>
+                </physdesc>
+                <container type="Box">8</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Parents</unittitle>
+                <unitdate type="inclusive" normal="1866/1872">1866-1872</unitdate>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">8</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Watkins, Albert Barnes (brother-in-law)</unittitle>
+                <unitdate type="inclusive" normal="1866">1866</unitdate>
+                <physdesc>
+                  <extent>4 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Watkins, Martha Ann (sister)</unittitle>
+                <unitdate type="inclusive" normal="1862/1870">1862-1870, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>17 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Miscellaneous</unittitle>
+                <unitdate type="inclusive" normal="1890/1923">1890-1923</unitdate>
+                <physdesc>
+                  <extent>11 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>General correspondence/subject files</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>A-W</unittitle>
+                <physdesc>
+                  <extent>53 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Auto</unittitle>
+                <unitdate type="inclusive" normal="1899/1901">1899-1901</unitdate>
+                <physdesc>
+                  <extent>10 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blackmar, Esbon</unittitle>
+                <abstract>resident of the Alliance</abstract>
+                <unitdate type="inclusive" normal="1902">1902</unitdate>
+                <physdesc>
+                  <extent>12 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Buffalo Concrete, Stone and Brick Company</unittitle>
+                <unitdate type="inclusive" normal="1904">1904</unitdate>
+                <physdesc>
+                  <extent>15 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Doyle, General P. C. (Peter C.)</unittitle>
+                <unitdate type="inclusive" normal="1893/1900">1893-1900</unitdate>
+                <physdesc>
+                  <extent>8 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Electricity and canal boats</unittitle>
+                <unitdate type="inclusive" normal="1893">1893</unitdate>
+                <physdesc>
+                  <extent>14 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Fulton, Robert</unittitle>
+                <unitdate type="inclusive" normal="1893">1893</unitdate>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">Inventive Age</emph>
+                </unittitle>
+                <unitdate type="inclusive" normal="1893/1894">1893-1894</unitdate>
+                <physdesc>
+                  <extent>4 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Lazarus, Rosenfeld and Lehmann</unittitle>
+                <unitdate type="inclusive" normal="1901">1901</unitdate>
+                <physdesc>
+                  <extent>7 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Mather, Horace E.</unittitle>
+                <unitdate type="inclusive" normal="1895">1895, </unitdate>
+                <unitdate type="inclusive" normal="1897">1897</unitdate>
+                <physdesc>
+                  <extent>15 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Price, J. Edward</unittitle>
+                <abstract>regarding a coat of arms for the Alliance</abstract>
+                <unitdate type="inclusive" normal="1901">1901</unitdate>
+                <physdesc>
+                  <extent>13 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Rowland, Edward B.</unittitle>
+                <unitdate type="inclusive" normal="1916/1918">1916-1918</unitdate>
+                <physdesc>
+                  <extent>10 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Scott, A. J.</unittitle>
+                <unitdate type="inclusive" normal="1901/1902">1901-1902</unitdate>
+                <physdesc>
+                  <extent>7 items</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Thompson, Ellen B.</unittitle>
+                <abstract>regarding commission to copy works of art for Mather's art
+                  collection</abstract>
+                <unitdate type="inclusive" normal="1901/1905">1901-1905, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>73 items in 4 folders</extent>
+                </physdesc>
+                <container type="Box">9</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>The Trumbull Manufacturing Company</unittitle>
+                <abstract>regarding plans for an automobile</abstract>
+                <unitdate type="inclusive" normal="1900/1901">1900-1901, </unitdate>
+                <unitdate type="inclusive" normal="1903">1903</unitdate>
+                <physdesc>
+                  <extent>91 items in 3 folders</extent>
+                </physdesc>
+                <container type="Box">10</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>United States flag proposal</unittitle>
+                <abstract>regarding Mather's design for the new 45-star flag</abstract>
+                <unitdate type="inclusive" normal="1896">1896</unitdate>
+                <physdesc>
+                  <extent>78 items in 2 folders</extent>
+                </physdesc>
+                <container type="Box">10</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Weapon collection</unittitle>
+                <unitdate type="inclusive" normal="1900/1901">1900-1901</unitdate>
+                <physdesc>
+                  <extent>18 items</extent>
+                </physdesc>
+                <container type="Box">10</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Wire nail machinery</unittitle>
+                <unitdate type="inclusive" normal="1902">1902</unitdate>
+                <physdesc>
+                  <extent>12 items</extent>
+                </physdesc>
+                <container type="Box">10</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Yacht</unittitle>
+                <unitdate type="inclusive" normal="1898/1902">1898-1902</unitdate>
+                <physdesc>
+                  <extent>46 items</extent>
+                </physdesc>
+                <container type="Box">10</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Financial material</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Checkbook</unittitle>
+              <unitdate type="inclusive" normal="1901">1901</unitdate>
+              <physdesc>
+                <extent>1 items</extent>
+              </physdesc>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Correspondence</unittitle>
+              <physdesc>
+                <extent>23 items</extent>
+              </physdesc>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Invoices</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>General</unittitle>
+                <unitdate type="inclusive" normal="1900/1906">1900-1906</unitdate>
+                <physdesc>
+                  <extent>19 items</extent>
+                </physdesc>
+                <container type="Box">11</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Bowles, Frank</unittitle>
+                <physdesc>
+                  <extent>9 items</extent>
+                </physdesc>
+                <container type="Box">11</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Walbridge and Company</unittitle>
+                <unitdate type="inclusive" normal="1902/1903">1902-1903</unitdate>
+                <physdesc>
+                  <extent>17 items</extent>
+                </physdesc>
+                <container type="Box">11</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Personal Finances</unittitle>
+              <physdesc>
+                <extent>6 items</extent>
+              </physdesc>
+              <unitdate type="inclusive" normal="1922">1922</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Southern Mutual Investment Company</unittitle>
+              <physdesc>
+                <extent>8 items</extent>
+              </physdesc>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="inv" level="subseries">
+          <did>
+            <unittitle>Inventions</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Humane stock car</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Correspondence/subject files</unittitle>
+              </did>
+              <c05>
+                <did>
+                  <unittitle>[General]</unittitle>
+                  <unitdate type="inclusive" normal="1881/1892">1881-1892</unitdate>
+                  <physdesc>
+                    <extent>30 items</extent>
+                  </physdesc>
+                  <container type="Box">11</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Automatic couplers</unittitle>
+                  <unitdate type="inclusive" normal="1891/1892">1891-1892</unitdate>
+                  <physdesc>
+                    <extent>8 items</extent>
+                  </physdesc>
+                  <container type="Box">11</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Gasoline engine</unittitle>
+                  <unitdate type="inclusive" normal="1892/1906">1892-1906</unitdate>
+                  <container type="Box">11</container>
+                  <physdesc>
+                    <extent>9 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Ripley, G. N.</unittitle>
+                  <unitdate type="inclusive" normal="1891">1891</unitdate>
+                  <container type="Box">11</container>
+                  <physdesc>
+                    <extent>17 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Financial material</unittitle>
+              </did>
+              <c05>
+                <did>
+                  <unittitle>"Bills paid on a/c Mather's Humane Stock Trans. Co."</unittitle>
+                  <unitdate type="inclusive" normal="1881">1881</unitdate>
+                  <container type="Box">11</container>
+                  <physdesc>
+                    <extent>28 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Invoices</unittitle>
+                  <unitdate type="inclusive" normal="1888/1889">1888-1889</unitdate>
+                  <container type="Box">11</container>
+                  <physdesc>
+                    <extent>6 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Statements</unittitle>
+                  <unitdate type="inclusive" normal="1920">1920</unitdate>
+                  <container type="Box">11</container>
+                  <physdesc>
+                    <extent>17 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Legal material</unittitle>
+                <container type="Box">11</container>
+                <physdesc>
+                  <extent>12 items</extent>
+                </physdesc>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Printed material</unittitle>
+              </did>
+              <c05>
+                <did>
+                  <unittitle>Advertising material</unittitle>
+                  <physdesc>
+                    <extent>48 items</extent>
+                  </physdesc>
+                  <container type="Box">12</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>American Humane Association</unittitle>
+                  <unitdate type="inclusive" normal="1880">1880, </unitdate>
+                  <unitdate type="inclusive" normal="1881">1881</unitdate>
+                  <physdesc>
+                    <extent>2 items</extent>
+                  </physdesc>
+                  <container type="Box">12</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>
+                    <emph render="italic">Humane Journal</emph> clippings</unittitle>
+                  <physdesc>
+                    <extent>12 items</extent>
+                  </physdesc>
+                  <container type="Box">12</container>
+                </did>
+              </c05>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Records</unittitle>
+              </did>
+              <c05>
+                <did>
+                  <unittitle>"List of Newspapers and Public Men sent Circulars - To Stock
+                    Transportation Co."</unittitle>
+                  <physdesc>
+                    <extent>1 item</extent>
+                  </physdesc>
+                  <container type="Box">12</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Reports of patent and common cars</unittitle>
+                  <physdesc>
+                    <extent>1 item</extent>
+                  </physdesc>
+                  <container type="Box">12</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Stockyard logs</unittitle>
+                  <unitdate type="inclusive" normal="1923">1923</unitdate>
+                  <physdesc>
+                    <extent>12 items</extent>
+                  </physdesc>
+                  <container type="Box">12</container>
+                </did>
+              </c05>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Scrapbook</unittitle>
+                <physdesc>
+                  <extent>1 item</extent>
+                </physdesc>
+                <container type="Box">12</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Miscellaneous</unittitle>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">12</container>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <unittitle>Patents</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Airplane</unittitle>
+              </did>
+              <c05>
+                <did>
+                  <unittitle>German patent</unittitle>
+                  <unitdate type="inclusive" normal="1912">1912</unitdate>
+                  <physdesc>
+                    <extent>8 items</extent>
+                  </physdesc>
+                  <container type="Box">12</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Notes and sketches</unittitle>
+                  <physdesc>
+                    <extent>21 items</extent>
+                  </physdesc>
+                  <container type="Box">12</container>
+                </did>
+              </c05>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Pneumatic spring</unittitle>
+                <container type="Box">13</container>
+                <unitdate type="inclusive" normal="1894">1894</unitdate>
+                <physdesc>
+                  <extent>3 items</extent>
+                </physdesc>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Railroad track</unittitle>
+                <container type="Box">13</container>
+                <unitdate type="inclusive" normal="1894">1894</unitdate>
+                <physdesc>
+                  <extent>2 items</extent>
+                </physdesc>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Self-lacing boot and glove</unittitle>
+              </did>
+              <c05>
+                <did>
+                  <unittitle>Documents</unittitle>
+                  <unitdate type="inclusive" normal="1883/1886">1883-1886</unitdate>
+                  <container type="Box">13</container>
+                  <physdesc>
+                    <extent>11 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Patents</unittitle>
+                  <unitdate type="inclusive" normal="1883/1884">1883-1884</unitdate>
+                  <container type="Box">13</container>
+                  <physdesc>
+                    <extent>13 items in 2 folders</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Patent, England</unittitle>
+                  <unitdate type="inclusive" normal="1883">1883</unitdate>
+                  <container type="Map-Case">
+                  </container>
+                </did>
+              </c05>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Unidentified patent drawings</unittitle>
+                <physdesc>
+                  <extent>8 items</extent>
+                </physdesc>
+                <container type="Box">13</container>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <unittitle>Power bridge and water-regulating devices</unittitle>
+            </did>
+            <note>
+              <p>includes material relating to Mather's proposed bridge to generate electricity from
+                Niagara Falls, as well as related power-generating technologies</p>
+            </note>
+            <c04>
+              <did>
+                <unittitle>Blueprints and patents</unittitle>
+                <physdesc>
+                  <extent>10 items</extent>
+                </physdesc>
+                <container type="Box">13</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Correspondence</unittitle>
+              </did>
+              <c05>
+                <did>
+                  <unittitle>A-W</unittitle>
+                  <container type="Box">13</container>
+                  <physdesc>
+                    <extent>23 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1900/1907">1900-1907</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>André Citroën and Company</unittitle>
+                  <container type="Box">13</container>
+                  <physdesc>
+                    <extent>3 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1908">1908</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Brill, George M.</unittitle>
+                  <container type="Box">13</container>
+                  <physdesc>
+                    <extent>5 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1904/1905">1904-1905</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Chains</unittitle>
+                  <container type="Box">13</container>
+                  <physdesc>
+                    <extent>18 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1904/1905">1904-1905</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Churchyard, Joseph J.</unittitle>
+                  <container type="Box">13</container>
+                  <physdesc>
+                    <extent>8 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1905">1905</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Corliss, Hon. John B.</unittitle>
+                  <abstract>Representative for proposing the bridge</abstract>
+                  <container type="Box">13</container>
+                  <physdesc>
+                    <extent>19 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1900/1903">1900-1903</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Cowper, T. D.</unittitle>
+                  <container type="Box">13</container>
+                  <physdesc>
+                    <extent>18 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1893/1900">1893-1900</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Dean, Cyrus S.</unittitle>
+                  <container type="Box">14</container>
+                  <physdesc>
+                    <extent>23 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1906/1907">1906-1907</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Decker, Arthur W.</unittitle>
+                  <container type="Box">14</container>
+                  <physdesc>
+                    <extent>10 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1901">1901</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Levin, A. M.</unittitle>
+                  <container type="Box">14</container>
+                  <physdesc>
+                    <extent>15 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1905/1906">1905-1906</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Lockwood, Stephen T.</unittitle>
+                  <container type="Box">14</container>
+                  <physdesc>
+                    <extent>10 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1896/1900">1896-1900</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Norris, James L.</unittitle>
+                  <abstract>patent lawyer</abstract>
+                  <container type="Box">14</container>
+                  <physdesc>
+                    <extent>8 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1899/1902">1899-1902</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>O'Keefe and Orbison</unittitle>
+                  <container type="Box">14</container>
+                  <physdesc>
+                    <extent>20 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1904/1905">1904-1905</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>"Responses to bids for hydraulic cylinders"</unittitle>
+                  <container type="Box">14</container>
+                  <physdesc>
+                    <extent>24 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1905">1905</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Wisner, Geo. Y.</unittitle>
+                  <container type="Box">14</container>
+                  <physdesc>
+                    <extent>4 items</extent>
+                  </physdesc>
+                  <unitdate type="inclusive" normal="1903">1903</unitdate>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Outgoing correspondence</unittitle>
+                  <container type="Box">14</container>
+                  <physdesc>
+                    <extent>8 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Legislative material</unittitle>
+                <unitdate type="inclusive" normal="1891">1891, </unitdate>
+                <unitdate type="inclusive" normal="1893/1900">1893-1900, </unitdate>
+                <unitdate type="inclusive" normal="1902">1902, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>30 items</extent>
+                </physdesc>
+                <container type="Box">14</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Photographs</unittitle>
+                <physdesc>
+                  <extent>8 items</extent>
+                </physdesc>
+                <container type="Box">14</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>"Plan for power house"</unittitle>
+                <physdesc>
+                  <extent>14 items</extent>
+                </physdesc>
+                <container type="Box">14</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Printed material</unittitle>
+              </did>
+              <c05>
+                <did>
+                  <unittitle>Advertising material</unittitle>
+                  <container type="Box">14</container>
+                  <physdesc>
+                    <extent>5 items</extent>
+                  </physdesc>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Clippings</unittitle>
+                </did>
+                <c06>
+                  <did>
+                    <unittitle>International Waterways Commission</unittitle>
+                    <container type="Box">14</container>
+                    <unitdate type="inclusive" normal="1905">1905</unitdate>
+                    <physdesc>
+                      <extent>12 items</extent>
+                    </physdesc>
+                  </did>
+                </c06>
+                <c06>
+                  <did>
+                    <unittitle>Mather Power Bridge</unittitle>
+                    <container type="Box">14</container>
+                    <unitdate type="inclusive" normal="1895/1900">1895-1900, </unitdate>
+                    <unitdate type="inclusive" normal="1906">1906</unitdate>
+                    <physdesc>
+                      <extent>29 items</extent>
+                    </physdesc>
+                  </did>
+                </c06>
+                <c06>
+                  <did>
+                    <unittitle>Niagara power</unittitle>
+                    <container type="Box">14</container>
+                    <unitdate type="inclusive" normal="1889/1895">1889-1895</unitdate>
+                    <physdesc>
+                      <extent>17 items</extent>
+                    </physdesc>
+                  </did>
+                </c06>
+              </c05>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Memorabilia</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Address book</unittitle>
+              <container type="Box">15</container>
+              <physdesc>
+                <extent>1 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Clippings</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Airplanes</unittitle>
+                <abstract>includes correspondence regarding suggestions for improvements</abstract>
+                <container type="Box">15</container>
+                <unitdate type="inclusive" normal="1918">1918, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>20 items</extent>
+                </physdesc>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Miscellaneous</unittitle>
+                <container type="Box">15</container>
+                <unitdate type="inclusive" normal="1890/1902">1890-1902</unitdate>
+                <physdesc>
+                  <extent>4 items</extent>
+                </physdesc>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Notes and sketches</unittitle>
+              <container type="Box">15</container>
+              <physdesc>
+                <extent>50 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Photograph of Alonzo C. Mather</unittitle>
+              <container type="Box">15</container>
+              <unitdate type="inclusive" normal="1888">1888</unitdate>
+              <physdesc>
+                <extent>1 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Writings</unittitle>
+              <container type="Box">15</container>
+              <physdesc>
+                <extent>2 items</extent>
+              </physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="prin" level="subseries">
+          <did>
+            <unittitle>Professional interests</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Brewster sanitarium</unittitle>
+              <abstract>a project by Dr. Flora A. Brewster to build a sanitarium, which Mather aided
+                financially</abstract>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Correspondence</unittitle>
+                <abstract>primarily between Brewster and Mather</abstract>
+                <unitdate type="inclusive" normal="1899/1905">1899-1905</unitdate>
+                <physdesc>
+                  <extent>114 items in 3 folders</extent>
+                </physdesc>
+                <container type="Box">15</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Documents</unittitle>
+                <physdesc>
+                  <extent>8 items</extent>
+                </physdesc>
+                <container type="Box">15</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Buffalo, New York</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>The Alliance</unittitle>
+                <abstract>apartment building financed by Mather</abstract>
+                <unitdate type="inclusive" normal="1900/1909">1900-1909</unitdate>
+                <physdesc>
+                  <extent>31 items</extent>
+                </physdesc>
+                <container type="Box">15</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>"House memo"</unittitle>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">15</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Real estate</unittitle>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <unitdate type="inclusive" normal="1895">1895</unitdate>
+                <container type="Box">15</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Reciprocity League</unittitle>
+              </did>
+              <note>
+                <p>Organization dedicated to promoting free trade</p>
+              </note>
+              <c05>
+                <did>
+                  <unittitle>Correspondence</unittitle>
+                  <abstract>primarily with Campbell Shaw, secretary of the Lower Lakes Reciprocity
+                    League (of which Mather was vice president)</abstract>
+                  <unitdate type="inclusive" normal="1898">1898, </unitdate>
+                  <unitdate type="inclusive" normal="1902/1905">1902-1905</unitdate>
+                  <physdesc>
+                    <extent>21 items</extent>
+                  </physdesc>
+                  <container type="Box">15</container>
+                </did>
+              </c05>
+              <c05>
+                <did>
+                  <unittitle>Clippings</unittitle>
+                  <unitdate type="inclusive" normal="1903">1903</unitdate>
+                  <physdesc>
+                    <extent>11 items</extent>
+                  </physdesc>
+                  <container type="Box">15</container>
+                </did>
+              </c05>
+            </c04>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <physdesc>
+              <extent>13 items</extent>
+            </physdesc>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 id="wat" level="series">
+        <did>
+          <unittitle>Albert B. Watkins Papers</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Family</unittitle>
+              <unitdate type="inclusive" normal="1867/1880">1867-1880, </unitdate>
+              <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+              <physdesc>
+                <extent>26 items</extent>
+              </physdesc>
+              <container type="Box">16</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>General</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>A-Y</unittitle>
+                <unitdate type="inclusive" normal="1863/1870">1863-1870, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>89 items in 3 folders</extent>
+                </physdesc>
+                <container type="Box">16</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Unidentified</unittitle>
+                <physdesc>
+                  <extent>3 items</extent>
+                </physdesc>
+                <container type="Box">16</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Personal</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>B-Y</unittitle>
+                <unitdate type="inclusive" normal="1863/1869">1863-1869, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>32 items</extent>
+                </physdesc>
+                <container type="Box">16</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Babbitt, Jas. H.</unittitle>
+                <unitdate type="inclusive" normal="1863/1867">1863-1867</unitdate>
+                <physdesc>
+                  <extent>17 items</extent>
+                </physdesc>
+                <container type="Box">16</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Baldwin, R. S.</unittitle>
+                <unitdate type="inclusive" normal="1863/1865">1863-1865</unitdate>
+                <physdesc>
+                  <extent>4 items</extent>
+                </physdesc>
+                <container type="Box">16</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Cutting, Chas. (Charles)</unittitle>
+                <unitdate type="inclusive" normal="1863/1868">1863-1868</unitdate>
+                <physdesc>
+                  <extent>14 items</extent>
+                </physdesc>
+                <container type="Box">16</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Henderson, J. D.</unittitle>
+                <unitdate type="inclusive" normal="1865/1867">1865-1867</unitdate>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">16</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Leggett, C. D.</unittitle>
+                <unitdate type="inclusive" normal="1867/1870">1867-1870</unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>6 items</extent>
+                </physdesc>
+                <container type="Box">16</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Merrill, George R.</unittitle>
+                <unitdate type="inclusive" normal="1863/1867">1863-1867, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>17 items</extent>
+                </physdesc>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Morrill, G. W. (George Willard)</unittitle>
+                <unitdate type="inclusive" normal="1863/1866">1863-1866</unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Quinby, J. W.</unittitle>
+                <unitdate type="inclusive" normal="1864/1870">1864-1870</unitdate>
+                <physdesc>
+                  <extent>11 items</extent>
+                </physdesc>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Randall, —</unittitle>
+                <unitdate type="inclusive" normal="1864">1864, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Ward, John</unittitle>
+                <unitdate type="inclusive" normal="1863/1869">1863-1869, </unitdate>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>20 items</extent>
+                </physdesc>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Wells, George H. (Huntington)</unittitle>
+                <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+                <physdesc>
+                  <extent>5 items</extent>
+                </physdesc>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Documents</unittitle>
+            <unitdate type="inclusive" normal="1863/1880">1863-1880, </unitdate>
+            <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+            <physdesc>
+              <extent>25 items</extent>
+            </physdesc>
+            <container type="Box">17</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Miscellaneous</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Unidentified correspondence and fragments</unittitle>
+            <unitdate type="inclusive" normal="1836/1898">1836-1898, </unitdate>
+            <unitdate type="inclusive" normal="1804/1950">undated</unitdate>
+            <physdesc>
+              <extent>13 items</extent>
+            </physdesc>
+            <container type="Box">17</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Unsigned manuscripts</unittitle>
+            <physdesc>
+              <extent>19 items</extent>
+            </physdesc>
+            <container type="Box">17</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Printed material</unittitle>
+            <physdesc>
+              <extent>35 items</extent>
+            </physdesc>
+            <container type="Box">17</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Transcripts from Colonial Record"</unittitle>
+            <note>
+              <p>relates to Edward Griswold (1607-1691), of whom Sarah Buell (née Griswold)
+                (1769-1856) is a descendent</p>
+            </note>
+            <unitdate type="inclusive" normal="1897">1897</unitdate>
+            <container type="Box">17</container>
+            <physdesc>
+              <extent>1 item</extent>
+            </physdesc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

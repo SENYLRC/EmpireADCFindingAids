@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="new_music_ed" mainagencycode="NSyU">new_music_ed</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">New Music Edition Compositions</titleproper>
+        <subtitle>An inventory of the collection 
+                        
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">-</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1988-08-03">Aug 1988</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           
+        
+        <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>2 Feb 2009 - converted to EAD (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <corpname encodinganalog="110" source="lcnaf">New Music Edition.</corpname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">New Music Edition Compositions</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1947/1955" type="inclusive">1947-1955</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">1.5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the music publisher.  Submitted, but never published, choral and instrumental compositions by 16 
+					composers.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">149332</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">
+                          English
+                       </language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>New Music Edition was an imprint of music publisher Carl Fischer LLC.  They published both choral and instrumental works.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The collection of 
+        
+        <emph render="bold">New Music Edition Compositions</emph> consists of compositions submitted, but never published.  Sixteen composers 
+	  are represented in the collection, in both choral and instrumental works.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Alphabetical by composer.</p>
+    </arrangement>
+    <!-- <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial> -->
+	
+    <!-- <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial> -->
+	
+	<!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">Music</subject>
+		<persname encodinganalog="600" source="lcnaf">Ames, W. T.</persname>
+		<persname encodinganalog="600" source="lcnaf">Archer, Violet.</persname>
+		<persname encodinganalog="600" source="lcnaf">Brogue, Roslyn, 1919-</persname>
+		<persname encodinganalog="600" source="lcnaf">Brown, Merton, 1913-2001.</persname>
+		<persname encodinganalog="600" source="lcnaf">Cuming, Richard.</persname>
+      <persname encodinganalog="600" source="lcnaf">Engel, Lehman, 1910-1982.</persname>
+      <persname encodinganalog="600" source="lcnaf">Goodman, Alfred Grant, 1910-</persname>
+      <persname encodinganalog="600" source="lcnaf">Hurst, George, 1926-2012.</persname>
+		<persname encodinganalog="600" source="lcnaf">Lavender, William.</persname>
+		<persname encodinganalog="600" source="lcnaf">Moss, Larry, 1927-</persname>
+		<persname encodinganalog="600" source="lcnaf">Parris, Robert, 1924-1999.</persname>
+		<persname encodinganalog="600" source="lcnaf">Ricklis, Leon.</persname>
+		<persname encodinganalog="600" source="lcnaf">Siracusa, Frank.</persname>
+		<persname encodinganalog="600" source="lcnaf">Stanley, William P.</persname>
+      <persname encodinganalog="600" source="lcnaf">Stearns, Peter Pindar.</persname>
+      <persname encodinganalog="600" source="lcnaf">Watt, Jay.</persname>
+      <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+    <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+      <corpname encodinganalog="610" source="lcnaf">New Music Edition -- Archives.</corpname>
+      <subject encodinganalog="650" source="lcsh">Music publishers -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Composers.</subject>
+      <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+      <genreform encodinganalog="655" source="aat">78 rpm records.</genreform>
+      <genreform encodinganalog="655" source="aat">Musical scores.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Composers.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Music publishers.</occupation>
+    
+    
+    <!-- <function encodinganalog="657">##</function> -->
+	</controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+                       all relevant rights holders before publishing quotations, excerpts or images from any 
+                       materials in this collection. </p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>New Music Edition Compositions
+        
+        <lb/>&su_name;</p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Frank Wigglesworth</persname>, 1987.</p>
+    </acqinfo>
+    <!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Compositions</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Ames, W. T.</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Sonata for viola and piano</unittitle>
+              <unitdate normal="1952" type="inclusive">1952</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Song cycle, words by Adelaide Crapsey</unittitle>
+              <abstract>November night; Susanna and the elders; The guarded wound; Amaze; The warning</abstract>
+              <unitdate normal="1951" type="inclusive">1951</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <abstract>Meeting; Rapid transit for high voice and piano; Star moss; Pygmalion, by H.D.; Now close the windows (Robert Frost)</abstract>
+              <unitdate normal="1947/1951" type="inclusive">1947-1951, </unitdate><unitdate normal="1947/1955" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Archer, Violet</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Divertimento, for oboe, Bb clarinet, and bassoon</unittitle>
+              <unitdate normal="1947/1955" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Death be not proud, for male chorus</unittitle>
+              <unitdate normal="1949-02" type="inclusive">Feb 1949</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Brogue, Roslyn</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Quartet for piano and strings: a fantasy on the chanson, "Mille regretz"</unittitle>
+              <unitdate normal="1949" type="inclusive">1949</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Brown, Merton</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Suite for string quartet</unittitle>
+              <unitdate normal="1950" type="inclusive">1950</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Cumming, Richard</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Prelude, adagio and toccata (for organ?)</unittitle>
+              <unitdate normal="1952" type="inclusive">1952</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The knight's page, for recitation and piano</unittitle>
+              <unitdate normal="1953" type="inclusive">1953</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Piano sonata (published by J&amp;W Chester, London)</unittitle>
+              <unitdate normal="1948/1958" type="inclusive">circa 1953</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Engel, Lehmann</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Sonata for violin and piano</unittitle>
+              <abstract>includes photodopy of music with hand corrections, plus test pressing of recorded performance on 2 78rpm phonodiscs</abstract>
+              <unitdate normal="1953" type="inclusive">1953</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Goodman, Alfred Grant</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Seven sketches for piano, op. 16</unittitle>
+              <unitdate normal="1950" type="inclusive">1950</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Hurst, George</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Fantasy on an original theme, for pianoforte</unittitle>
+              <unitdate normal="1947/1955" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Three murders, for baritone and piano, poems by Lawrence Josephs</unittitle>
+              <abstract>includes only no. 1, "For Love"</abstract>
+              <unitdate normal="1947/1955" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Lavender, William</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Toccatina for piano</unittitle>
+              <unitdate normal="1948" type="inclusive">1948</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Monotone, for a cappella chorus, text from Chicago Poems by Carl Sandburg</unittitle>
+              <unitdate normal="1949" type="inclusive">1949</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Fantasy for string orchestra</unittitle>
+              <unitdate normal="1951" type="inclusive">1951</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Moss, Larry</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Intermezzo, for piano</unittitle>
+              <unitdate normal="1949" type="inclusive">1949</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Four songs on text of Carl Sandburg, for baritone or mezzo-soprano and piano</unittitle>
+              <abstract>Prairie; Fog; Village in late summer; Autumn movement</abstract>
+              <unitdate normal="1950" type="inclusive">1950</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Elegy, for piano</unittitle>
+              <unitdate normal="1949" type="inclusive">1949</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Parris, Robert</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Three love lyrics, for tenor and piano</unittitle>
+              <abstract>Madrigal (anon.); Eyes, hide my love (Daniel); Madrigal (Wilbye)</abstract>
+              <unitdate normal="1947/1955" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Three songs from The Gardener (Rabindranath Tagore), for  baritone with the accompaniment of piano and celesta</unittitle>
+              <unitdate normal="1948" type="inclusive">1948</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>In time like grass, for voice and piano</unittitle>
+              <unitdate normal="1949" type="inclusive">1949</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Ricklis, Leon</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Fantasy sextet, for string quartet, percussion and piano</unittitle>
+              <unitdate normal="1950" type="inclusive">1950</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Siracusa, Frank</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Three studies for keyboard</unittitle>
+              <unitdate normal="1954" type="inclusive">1954</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Chant for keyboard</unittitle>
+              <unitdate normal="1953" type="inclusive">1953</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Concert for a chamber trio, flute, Bb trumpet and viola</unittitle>
+              <unitdate normal="1953" type="inclusive">1953</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Chamber quartet, for Bb clarinet, tenor trombone, cello, piano</unittitle>
+              <unitdate normal="1954" type="inclusive">1954</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Stanley, William P.</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Three songs from The Tower, by William Butler Yeats</unittitle>
+              <abstract>The fool by the roadside; from Sailing to Byzantium; A prayer for my son</abstract>
+              <unitdate normal="1947/1955" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sonata for cello and piano</unittitle>
+              <unitdate normal="1947/1955" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Stearns, Peter Pindar</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Four lyrics from The Book of Tao (Lao Tse), for soprano and clarinet</unittitle>
+              <unitdate normal="1954" type="inclusive">1954</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sonata for piano</unittitle>
+              <unitdate normal="1954" type="inclusive">1954</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>String quartet no. 3 in A minor</unittitle>
+              <unitdate normal="1955" type="inclusive">1955</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Watt, Jay</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Prelude [for piano]</unittitle>
+              <unitdate normal="1951" type="inclusive">1951</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+    <eadid countrycode="US" mainagencycode="NSyU" identifier="lamartine_a">lamartine_a</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Alphonse de Lamartine Collection</titleproper>
+        <subtitle>An inventory of 
+                        the collection 
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">EL</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>&su_address;
+                           <date normal="1975-04" encodinganalog="Date">Apr 1975</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           <date era="ce" calendar="gregorian" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language langcode="eng" encodinganalog="Language">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>5 Jun 2009 - converted to EAD (MRC)</item><item>27 Oct 2011 - noted missing item (MRC)</item><item>22 Feb 2012 - LeChevalier date (MRC)</item>
+   <item>6 Jan 2017 - fixed index code (MRC)</item><item>11 Sep 2019 - rehoused, inventory updated (MS)</item></list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name; <lb/>&su_address;
+               </repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Lamartine, Alphonse de, 1790-1869.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Alphonse de Lamartine Collection</unittitle>
+      <unitdate encodinganalog="245$f" type="inclusive" label="Inclusive Dates: " normal="1829/1868">1829-1868</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">0.5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the French author, poet.   Autograph letters signed (176), including 154 to his niece, Valentine de Cessiat; also 12 letters from Marianne de Lamartine to various correspondents.  Also, one 2-page manuscript of Lamartine, and one 4-page manuscript of his niece.</abstract>
+      <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149792</unitid>
+      <langmaterial label="Language: " encodinganalog="546">
+        <language encodinganalog="546" langcode="fre">French</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Alphonse Marie Louis de Prat de Lamartine (1790-1869) was a French writer, poet and politician.</p>
+    <chronlist><chronitem><date>1790 Oct 21</date><event> Born at Mâcon to a Royalist family.</event></chronitem>
+<chronitem><date>1794</date><event>The Lamartine household moves to Milly.</event></chronitem>
+<chronitem><date>1803-1807</date><event>He attends school at the Jesuit college at Belley.</event></chronitem>
+<chronitem><date>1811</date><event>Travel in Italy.</event></chronitem>
+<chronitem><date>1812</date><event>Returns to France.</event></chronitem>
+<chronitem><date>1814</date><event>Enters the Gardes du Corps.</event></chronitem>
+<chronitem><date>1815</date><event>In Switzerland during the Hundred Days.</event></chronitem>
+<chronitem><date>1817</date><event>Returns to Paris from the country and becomes active in society.</event></chronitem>
+<chronitem><date>1818-1819</date><event>Revisits Italy, Switzerland, and Savoy.</event></chronitem>
+<chronitem><date>1820</date><event><emph render="italic">Les Méditations poétiques</emph>, his first published book.  Marries Maria Anna Eliza Birch, an Englishwoman.</event></chronitem>
+<chronitem><date>1820-1821</date><event>At Naples; he remained in diplomatic service until 1829.</event></chronitem>
+<chronitem><date>1821</date><event>Birth of Valentine de Cessiat, to whom Lamartine wrote most of the letters in this collection.</event></chronitem>
+<chronitem><date>1822</date><event>Visits England.</event></chronitem>
+<chronitem><date>1823</date><event><emph render="italic">Les Nouvelles méditations</emph> published.</event></chronitem>
+<chronitem><date>1825-1828</date><event>In Florence as legation secretary.</event></chronitem>
+<chronitem><date>1829</date><event>Elected to the Académie Française.</event></chronitem>
+<chronitem><date>1830</date><event>Having given up his diplomatic career, he takes an active interest in politics after the Revolution of 1830.</event></chronitem>
+<chronitem><date>1832</date><event>Travels in Greece, Syria, and Palestine. The Lamartines' only surviving child, Julia, dies at Beirut.</event></chronitem>
+<chronitem><date>1833</date><event>Elected a deputy to the national assembly, where he gained a reputation as an orator.</event></chronitem>
+<chronitem><date>1836</date><event>The narrative poem <emph render="italic">Jocelyn</emph> published.</event></chronitem>
+<chronitem><date>1838</date><event><emph render="italic">La Chute d'un ange</emph> published.</event></chronitem>
+<chronitem><date>1839</date><event>The publication of <emph render="italic">Les Recueillements poétiques</emph>  marks the virtual end of his poetic output.</event></chronitem>
+<chronitem><date>1847</date><event><emph render="italic">Histoire des Girondins</emph>.</event></chronitem>
+<chronitem><date>1848 Feb</date><event>In the Revolution of 1848 he becomes an important national figure as the minister of foreign affairs, as the effective head of the provisional government, and as one of five members of the Executive Committee.</event></chronitem>
+<chronitem><date>1848 Dec</date><event>Loses as a candidate for the presidency of the Republic.</event></chronitem>
+<chronitem><date>1849</date><event><emph render="italic">Le Conseiller du peuple</emph> begins publication.  <emph render="italic">Les Confidences</emph> and <emph render="italic">Histoire de la Révolution de  1848</emph> are published.</event></chronitem>
+<chronitem><date>1851 Dec</date><event>	Retires from public life after the coup d'état of Louis-Napoleon.</event></chronitem>
+<chronitem><date>1850s-1860s</date><event> In his last years, having incurred great debts during his political career, he attempts to restore his finances through the writing of many volumes of history and biography.</event></chronitem>
+<chronitem><date>1863</date><event> Maria Anna Eliza Lamartine dies.</event></chronitem>
+<chronitem><date>1867</date><event> The Assembly votes Lamartine a subsidy.</event></chronitem>
+<chronitem><date>1867 Sep?</date><event> Lamartine probably marries Valentine de Cessiat, one of the daughters of his sister Cécile.</event></chronitem>
+<chronitem><date>1869 Feb 28</date><event>Dies at Paris.</event></chronitem>
+</chronlist></bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Alphonse de Lamartine Collection</emph> contains 191 letters and several 
+incidental items. Dated items in the collection span the years 1829 to 1867, 
+but the years 1842 to 1854 are the most heavily represented.</p><p>Most of the correspondence consists of autograph letters, signed, of 
+Lamartine. One hundred fifty-four of these letters, dating from 1841 to 1856, 
+are addressed to his favorite niece, Valentine de Cessiat. In these letters, 
+most of which are three to five pages in length, he wrote of his political 
+fortunes and his literary and personal concerns. One letter, dated 28 May 
+1845, is the poem "La fleur des eaux," with deletions and with variations from 
+the text as it appears in <emph render="italic">Oeuvres poétiques  complètes</emph>, edited by M.-F. Guyard 
+([Paris], Gallimard, 1963). Approximately fifty-eight of these letters to 
+Valentine de Cessiat have been published, often with significant omissions, in 
+Marie-Thérèse Emile Ollivier, <emph render="italic">Valentine de Lamartine</emph> (Paris, Librairie 
+Hachette, 1908) and <emph render="italic">Lamartine et ses nièces; correspondence  inédite </emph> (Paris, 
+Les petits-fils de Plon et Nourrit, [1928]).  There are three letters from 
+Valentine de Cessiat to Lamartine.</p><p>Dated correspondence is arranged chronologically; letters dated only to the 
+year precede letters of the same year with complete dates. Many of the 
+Lamartine letters lack complete dates in his own handwriting, but are arranged 
+either by dates supplied from pencil notations on the letters themselves or, 
+in the case of letters with accompanying transcripts, by dates penciled onto 
+the transcripts. These penciled dates may be postmark dates from envelopes 
+discarded before the letters' arrival at Syracuse. One date has been supplied 
+at Syracuse from a postmark, and another date has been supplied from a dealer-
+catalogue entry that is attached to the letter. These penciled dates on the 
+majority of the letters are not verified.</p><p>Undated correspondence (arranged alphabetically first by the name of the 
+writer, thereunder by the name of the addressee) and correspondence without 
+year dates (arranged by month) are filed after the dated correspondence. All 
+of the correspondence is in French, and approximately half of the letters are 
+accompanied by typed transcripts. Each letter is placed in an individual 
+folder.</p><p>There are, in addition, seventeen letters from Lamartine to fifteen other 
+correspondents, five letters from Lamartine to unidentified correspondents, 
+and twelve letters of Maria A. E. (Birch) de Lamartine, ten of which are 
+addressed to her physician, Jules Tallien de Cabarrus.</p><p>In the section of miscellaneous items at the end of the collection are a 
+stamped letter cover bearing a Paris postmark of 25 November 1858, a letter 
+cover fragment, and a quarto sheet on which Lamartine set forth in a two-page 
+holograph his conditions for the establishment of a political newspaper.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Letters are arranged in chronological order.  An 
+		<ref target="sic">index to correspondence</ref> is given at the end of this inventory.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial>-->
+    <!--<separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial>--><!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+	<controlaccess><head>Subject and Genre Headings</head>
+	<subject encodinganalog="650" source="local">Literature -- French</subject><persname encodinganalog="600" source="lcnaf">Cessiat, Valentine de.</persname>
+	<persname encodinganalog="600" source="lcnaf">Lamartine, Alphonse de, 1790-1869.</persname>
+	<persname encodinganalog="600" source="lcnaf">Lamartine, Marianne de.</persname>
+	<subject encodinganalog="650" source="lcsh">Authors, French.</subject>
+	<subject encodinganalog="650" source="lcsh">French literature -- 19th century.</subject>
+	<subject encodinganalog="650" source="lcsh">Poets, French.</subject>
+	<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+	<genreform encodinganalog="655" source="aat">Manuscripts (document genre)</genreform>
+	<occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+	<occupation encodinganalog="656" source="lcsh">Poets.</occupation>
+	</controlaccess>
+	
+	<accessrestrict encodinganalog="506">
+	<head>Access Restrictions</head>
+	<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p></accessrestrict>
+	
+	<userestrict encodinganalog="540">
+	<head>Use Restrictions</head>
+	<p>Written permission must be obtained from SCRC and 
+                       all relevant rights holders before publishing quotations, excerpts or images from any 
+                       materials in this collection. </p></userestrict>
+							  
+	<prefercite encodinganalog="524">
+	<head>Preferred Citation</head>
+	<p>Preferred citation for this material is as follows:</p><p>Alphonse de Lamartine Collection,<lb/>&su_name;
+                  </p></prefercite><acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Correspondence between Lamartine and Valentine de Cessiat, Purchase, 1958.
+Twelve Maria A. E. (Birch) de Lamartine letters, fifteen Lamartine letters, 
+and three miscellaneous items, purchase, 1969.
+Seven letters of Lamartine, purchase, 1971.</p>
+      </acqinfo><!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+<dsc type="combined">
+<head>Inventory</head>
+<c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+   <c02><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="1829">1829, </unitdate><unitdate type="inclusive" normal="1836">1836, </unitdate><unitdate type="inclusive" normal="1839">1839, </unitdate><unitdate type="inclusive" normal="1841/1858">1841-1858, </unitdate><unitdate type="inclusive" normal="1867/1868">1867-1868</unitdate><physdesc><extent>18 folders</extent></physdesc><container type="Box">1</container><note><p>Letter to Valentine de Cessiat dated 1845 May 28, missing as of 10/27/2011</p></note></did></c02>
+   
+   
+   
+   
+<c02><did><unittitle>To Valentine de Cessiat</unittitle><unitdate type="inclusive" normal="1829/1868">undated</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>From Marianne de Lamartine to M. de Cabarrus</unittitle><unitdate type="inclusive" normal="1829/1868">undated</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Miscellaneous</unittitle><abstract>includes brief piece on "Conditions for establishing a political newspaper"</abstract><unitdate type="inclusive" normal="1829/1868">undated</unitdate><container type="Box">1</container></did></c02></c01>
+
+
+</dsc>
+<index id="sic">
+<head>Index to correspondence</head>
+<p>All letters are from Lamartine to the individual listed, with the exception of three items from Valentine de Cessiat 
+(noted in the index as "to AL"), and all items from Maria de Lamartine.</p>
+
+<indexentry>
+   <name>Cessiat, Valentine de</name>
+   <ptrgrp>
+      <ref>undated(8 letters) [place unknown]</ref>
+      <ref>n.y. Jan 18 Paris</ref>
+      <ref>n.y. Mar 31 Paris?</ref>
+      <ref>n.y. Apr 13 Paris</ref>
+      <ref>1841 Oct 20 Paris</ref>
+      <ref>1842 Apr 5 Paris</ref>
+      <ref>1842 May 2 [place unknown]</ref>
+      <ref>1842 May 21 [place unknown]</ref>
+      <ref>1842 May 28 Paris</ref>
+      <ref>1842 Aug 12 [place unknown]</ref>
+      <ref>1843 Jan 29 Paris</ref>
+      <ref>1843 Feb 20 [place unknown]</ref>
+      <ref>1843 Mar 1 Paris</ref>
+      <ref>1843? Mar 4 [place unknown]</ref>
+      <ref>1843 Mar 25 [place unknown]</ref>
+      <ref>1843 Apr 3 Paris</ref>
+      <ref>1843 May 15 Paris?</ref>
+      <ref>1843 May 25 [place unknown]</ref>
+      <ref>1843 Aug 4 [place unknown]</ref>
+      <ref>1843 Sep 3 Monceaux</ref>
+      <ref>1843 Dec 25 [place unknown]</ref>
+      <ref>1844 Apr b1 [place unknown]</ref>
+      <ref>1844 Apr 2 [place unknown]</ref>
+      <ref>1844 Apr 6? [place unknown]</ref>
+      <ref>1844 Apr 19 [place unknown]</ref>
+      <ref>1844 May 8 [place unknown]</ref>
+      <ref>1844 May 29 [place unknown]</ref>
+      <ref>1844 Jun 9 [place unknown]</ref>
+      <ref>1844 Jun 20 [place unknown]</ref>
+      <ref>1845 --- [place unknown]</ref>
+      <ref>1845 Mar 12 Paris</ref>
+      <ref>1845 Apr 25 [place unknown]</ref>
+      <ref>1845 May 7 [place unknown]</ref>
+      <ref>1845 May 8 de la chambre</ref>
+      <ref>1845 May 16 [place unknown]</ref>
+      <ref>1845 May 28 [place unknown] [missing, as of 10/27/2011]</ref>
+      <ref>1846 Feb -- [place unknown]</ref>
+      <ref>1846 Feb 10 [place unknown]</ref>
+      <ref>1846 Mar 2 [place unknown]</ref>
+      <ref>1846 Mar 13 Paris</ref>
+      <ref>1846 Mar 22 Paris</ref>
+      <ref>1846 Jun 5 [place unknown]</ref>
+      <ref>1847 --- [place unknown]</ref>
+      <ref>1847 Feb 12 [place unknown]</ref>
+      <ref>1847 Mar 19 [place unknown]</ref>
+      <ref>1847 Mar 28 [place unknown]</ref>
+      <ref>1847 Mar 31 [place unknown]</ref>
+      <ref>1847 Apr 7 [place unknown]</ref>
+      <ref>1847 Jun 18 Paris</ref>
+      <ref>1847 Aug 16 Marseille</ref>
+      <ref>1848 --- [place unknown]</ref>
+      <ref>1848 Mar 16 [place unknown]</ref>
+      <ref>1848 Mar 22 [place unknown]</ref>
+      <ref>1848 Apr 3 [place unknown]</ref>
+      <ref>1848 Apr 20 [place unknown]</ref>
+      <ref>1848 Jun 9 [place unknown]</ref>
+      <ref>1848 Jul 1 [place unknown]</ref>
+      <ref>1848 Aug 6 [place unknown]</ref>
+      <ref>1848 Aug 24  [Castel-]Madrid</ref>
+      <ref>1848 Sep 10 [place unknown]</ref>
+      <ref>1848 Sep 21 Paris</ref>
+      <ref>1848 Dec 19 [place unknown]</ref>
+      <ref>1849 --- [place unknown]</ref>
+      <ref>1849 Mar 22 [place unknown]</ref>
+      <ref>1849 May 6 Paris</ref>
+      <ref>1849 May 27 [place unknown]</ref>
+      <ref>1849 Jun 18 [place unknown]</ref>
+      <ref>1849 Aug 14 [place unknown]</ref>
+      <ref>1849 Aug 26 [place unknown]</ref>
+      <ref>1850 Mar 15 Paris</ref>
+      <ref>1850 Apr 13  Paris</ref>
+      <ref>1850 May 2 [place unknown]</ref>
+      <ref>1850 May 11 [place unknown]</ref>
+      <ref>1850 Aug 7 au Lazarette de Marseille</ref>
+      <ref>1850 Nov 15 Paris</ref>
+      <ref>1851 Jan -- [place unknown]</ref>
+      <ref>1851 Jan 1 [place unknown]</ref>
+      <ref>1851 Feb 21 [place unknown]</ref>
+      <ref>1851 Apr 11 [place unknown]</ref>
+      <ref>1851 May 9 [place unknown]</ref>
+      <ref>1851 May 19 [place unknown]</ref>
+      <ref>1851 May 31 [place unknown]</ref>
+      <ref>1851 Jun 6 Paris?</ref>
+      <ref>1851 Jun 7 [place unknown]</ref>
+      <ref>1851 Jul 5 [place unknown]</ref>
+      <ref>1851 Jul 25 Paris</ref>
+      <ref>1852 Jan 21 Paris</ref>
+      <ref>1852 Jan 27 [place unknown]</ref>
+      <ref>1852 Feb 6 [place unknown]</ref>
+      <ref>1852 Feb 8 [place unknown]</ref>
+      <ref>1852 Feb 14 [place unknown]</ref>
+      <ref>1852 Feb 21 [place unknown]</ref>
+      <ref>1852 Mar 16 [place unknown]</ref>
+      <ref>1852 Mar 18 [place unknown]</ref>
+      <ref>1852 Apr 5 [place unknown]</ref>
+      <ref>1852 Apr 7 [place unknown]</ref>
+      <ref>1852 Apr 20 [place unknown]</ref>
+      <ref>1852 Apr 27 [place unknown]</ref>
+      <ref>1852 May 8 [place unknown]</ref>
+      <ref>1852 May 16 [place unknown]</ref>
+      <ref>1852 May 19 [place unknown]</ref>
+      <ref>1852 May 22 [place unknown]</ref>
+      <ref>1852 Jun 2 [place unknown]</ref>
+      <ref>1852 Jun 10 [place unknown]</ref>
+      <ref>1852 Jun 18 [place unknown]</ref>
+      <ref>1852 Dec 14 [place unknown]</ref>
+      <ref>1853 Jan 5 [place unknown]</ref>
+      <ref>1853 Jan 8 [place unknown]</ref>
+      <ref>1853 Jan 9 Macon, to AL</ref>
+      <ref>1853 Jan 12 Paris</ref>
+      <ref>1853 Jan 20 [place unknown]</ref>
+      <ref>1853 Jan 26 [place unknown]</ref>
+      <ref>1853 Feb 1 [place unknown]</ref>
+      <ref>1853 Mar 14 [place unknown]</ref>
+      <ref>1853 Mar 18 [place unknown]</ref>
+      <ref>1853 Mar 24 [place unknown]</ref>
+      <ref>1853 Mar 28 [place unknown]</ref>
+      <ref>1853 Mar 28 [place unknown]</ref>
+      <ref>1853 Apr 7 [place unknown]</ref>
+      <ref>1853 Apr 8 [place unknown]</ref>
+      <ref>1853 Apr 14 [place unknown]</ref>
+      <ref>1853 Apr 18 Paris</ref>
+      <ref>1853 Apr 27 [place unknown]</ref>
+      <ref>1853 Apr 28 [place unknown]</ref>
+      <ref>1853?Apr 29 [place unknown]</ref>
+      <ref>1853 May 5 [place unknown]</ref>
+      <ref>1853 May 16 Paris</ref>
+      <ref>1853 May 16 [place unknown]</ref>
+      <ref>1853 May 17 Macon, to AL</ref>
+      <ref>1853 May 20 [place unknown]</ref>
+      <ref>1853 May 25 [place unknown]</ref>
+      <ref>1853 May 29 [place unknown]</ref>
+      <ref>1853 Dec 18 [place unknown]</ref>
+      <ref>1853 Dec 20 [place unknown]</ref>
+      <ref>1853 Dec 23 Paris</ref>
+      <ref>1853 Dec 27 [place unknown]</ref>
+      <ref>1854 Jan 1 [place unknown]</ref>
+      <ref>1854 Jan 14 [place unknown]</ref>
+      <ref>1854 Jan 18 [place unknown]</ref>
+      <ref>1854 Feb 2 [place unknown]</ref>
+      <ref>1854 Feb 5 [place unknown]</ref>
+      <ref>1854 Feb 12 Paris</ref>
+      <ref>1854 Feb 16 [place unknown]</ref>
+      <ref>1854 Feb 25 [place unknown]</ref>
+      <ref>1854 Mar 4 [place unknown]</ref>
+      <ref>1854 Mar 8 [place unknown]</ref>
+      <ref>1854 May 1 [place unknown]</ref>
+      <ref>1854 Apr 30 Macon, to AL</ref>
+      <ref>1856 --- -- Livourne</ref>
+      <ref>1856 Jan 12 Macon[?]</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Bartlett, M.</name>
+   <ptrgrp>
+      <ref>ca. 1853 [Paris]</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Bohain, Victor</name>
+   <ptrgrp>
+      <ref>1844 May 15 [place unknown]</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Bonoldi, M.</name>
+   <ptrgrp>
+      <ref>1849 Feb 10 Paris</ref>
+      <ref>1849 Aug 10 Paris</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Buloz, [Francois]</name>
+   <ptrgrp>
+      <ref>1836 Apr 17 [place unknown]</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Burette Theodor</name>
+   <ptrgrp>
+      <ref>1839 Dec?29 [place unknown]</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Doray[?], M.</name>
+   <ptrgrp>
+      <ref>1862 Mar 20?</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Dulacq, M.</name>
+   <ptrgrp>
+      <ref>1855 Feb 11 Paris</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Girardin, [Emile de]</name>
+   <ptrgrp>
+      <ref>undated [place unknown]</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Lamartine, [Maria A. E. (Birch)] de (from)</name>
+   <ptrgrp>
+      <ref>undated [place unknown], to [Jules Tallien] de Cabarrus</ref>
+      <ref>undated "lundi" Paris, to [Jules Tallien] de Cabarrus</ref>
+      <ref>undated "lundi" [place unknown], to [Jules Tallien] de Cabarrus</ref>
+      <ref>undated "mercredi"  [place unknown], to [Jules Tallien] de Cabarrus</ref>
+      <ref>undated "jeudi" [place unknown], to [Jules Tallien] de Cabarrus</ref>
+      <ref>undated "jeudi" [place unknown], to [Jules Tallien] de Cabarrus</ref>
+      <ref>undated "jeudi" [place unknown], to [Jules Tallien] de Cabarrus</ref>
+      <ref>1841 Sep 1 Macon, to [Jules Tallien] de Cabarrus</ref>
+      <ref>1856 --- [place unknown], to [Jules Tallien] de Cabarrus</ref>
+      <ref>1856 Sep -- StP. Macon, to [Jules Tallien] de Cabarrus</ref>
+      <ref>undated [place unknown], to Madame de Cabarrus</ref>
+      <ref>1842 Aug 20 Paris, to Ministere de l'interieur</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Lechevalier, M.</name>
+   <ptrgrp>
+      <ref>n.y. May 27 [place unknown]</ref>
+      <ref>1857[?] Apr 14 [place unknown]</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Lenoble[?], M.</name>
+   <ptrgrp>
+      <ref>1829 Jun -- [place unknown]</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Marrast, [Armand]</name>
+   <ptrgrp>
+      <ref>undated [place unknown]</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Meignier, M. de</name>
+   <ptrgrp>
+      <ref>1858 Sep 4 Paris</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Millaud(?), P.</name>
+   <ptrgrp>
+      <ref>undated [place unknown]</ref>
+   </ptrgrp>
+</indexentry>
+
+<indexentry>
+   <name>Unidentified</name>
+   <ptrgrp>
+      <ref>1839 Jan 18 Paris, to Director-in-Chief of the Postal Service</ref>
+      <ref>1845 Dec 3 Macon, to "Monsieur"</ref>
+      <ref>1847 Jul 29 St Point, to "Monsieur le Comte" [de Salvandy?]</ref>
+      <ref>1857 Feb [place unknown], to "Mademoiselle"</ref>
+      <ref>1857 Dec 2 Paris to "Madame"</ref>
+      <ref>1867 Feb 14 [place unknown], to "Cher voisin et excellent ami"</ref>
+      <ref>no year,  Oct 16 Macon, to "Mon cher ami"</ref>
+   </ptrgrp>
+</indexentry>
+
+</index></archdesc>
+</ead>

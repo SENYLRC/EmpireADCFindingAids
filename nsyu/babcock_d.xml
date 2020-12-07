@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="babcock_d">babcock_d</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Deodatus Babcock Notebook</titleproper>
+            <subtitle>An  inventory of the item at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-10-12" encodinganalog="Date">12 Oct 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2011-10-12">12 Oct 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Babcock, Deodatus.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Deodatus Babcock Notebook</unittitle>
+         <unitdate encodinganalog="245$f" normal="1819" type="inclusive" label="Inclusive Dates: ">1819</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Notes by Deodatus Babcock of Manlius, New York on various works of theology, including Thomas Stackhouse's "A Complete Body of Divinity," Rev. J. Shepherd's "On Common Prayer," William Paley's "Evidence of Christianity,"</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3471961</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Nothing is known of the author of this volume, other than that he resided in Manlius, New York, and evidently had an interest in theological scholarship.  Thomas Stackhouse (1677-1752) was an English theologian, Curate of Shepperton in Middlesex and, from 1713, minister of the English Church at Amsterdam.  He is best known for his "New History of the Holy Bible from the Beginning of the World to the Establishment of Christianity," but he also published sermons and monographs.  William Paley (1743-1805) was a British Christian apologist and philosopher.  He is best known for his work <emph render="italic">Natural Theology</emph>, wherein he made use of the watchmaker analogy to argue for the existence of God.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p><emph render="bold">Deodatus Babcock Notebook</emph> consists of one handwritten volume, begun in February 1819.  It contains notes on a number of theological works, including Thomas Stackhouse's <emph render="italic">A Complete Body of Divinity</emph>, Rev. J. Shepherd's <emph render="italic">On Common Prayer</emph>, and William Paley's <emph render="italic">Evidence of Christianity</emph>.  Inside the back cover is a list of "Names of the primitive writers &amp; places of residence" and in the middle of the book is a list of dates of translations of the Bible, and of the rulers of England from Henry VIII to Elizabeth I.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Single volume</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Religion and philosophy</subject>
+			<persname encodinganalog="600" source="lcnaf">Babcock, Deodatus.</persname>
+			<persname encodinganalog="600" source="lcnaf">Stackhouse, Thomas, 1706-1784 -- Criticism and interpretation.</persname>
+			<persname encodinganalog="600" source="lcnaf">Paley, William, 1743-1805 -- Criticism and interpretation.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Natural theology.</subject><subject encodinganalog="650" source="lcsh">Theology.</subject>
+         <geogname encodinganalog="651" source="lcsh">Manlius (N.Y.) -- Intellectual life.</geogname>
+         <genreform encodinganalog="655" source="aat">Notebooks.</genreform><genreform encodinganalog="655" source="aat">Research notes.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Deodatus Babcock Notebook, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02><did><unittitle>Notebook of theological writings</unittitle><unitdate normal="1819" type="inclusive">1819</unitdate><container type="SC">672</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

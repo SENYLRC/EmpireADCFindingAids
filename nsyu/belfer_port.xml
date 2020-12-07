@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="belfer_port">belfer_port</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Belfer Portrait Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-03-09" encodinganalog="Date">9 Mar 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-03-09">9 Mar 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>12 Jul 2010 - adds M10-026 (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">Syracuse University.  Belfer Audio Archive.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Belfer Portrait Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1920/2000" type="inclusive" label="Inclusive Dates: ">circa 1920-circa 2000</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Photographs of composers, musicians, conductors and singers.   A very few are original photographs; most are clippings from magazines, record album covers, books, postcards, advertisements, or other sources.  There are also a few glass plate positives, possibly lantern slides.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2740149</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The Belfer Audio Archive at Syracuse University was formed in 1963 with a collection 
+		of 150,000 recordings held off-campus.  Today the Belfer has more than 350,000 items, 
+		ranging from Edison wax cylinders to CDs, housed in a specially designed climate-controlled 
+		facility with a state-of-the-art audio studio.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Belfer Portrait Collection</emph> is a reference 
+			collection, amassed by the Belfer Audio Archive, of reproductions of photographs, 
+			sketches and paintings of notable <emph render="bold">Composers, musicians and conductors</emph> and <emph render="bold">Singers</emph> 
+			(mostly opera).    The vast majority are 
+			pictures clipped from magazines or record album covers although there are a few originals; other formats include postcards, 
+			programs, and old scrapbooks.  A number of items are part of a series of testimonials by various important 
+			figures in the music world put out by the Steinway company to advertise their pianos.  
+			The earliest items date from  circa 1920.  The collection includes approximately twenty <emph render="bold">Glass plate positives</emph>.   These are 
+			listed separately.</p><p>There are also a few <emph render="bold">Miscellaneous</emph> music-related clippings (e.g. minstrels, musical instruments, etc.) and a packet of photogravures from the Victor Talking Machine Company.</p>
+			
+			</scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection is arranged alphabetically by performer name.  Names are given in 
+			strict alphabetical order, regardless of nationality or prefix (e.g., de Los Angeles 
+			is filed under "D" and von Bary is filed under "V").  If names had alternate 
+			spellings, the one appearing most often was used.  Glass plate negatives are filed 
+			separately in Box 4.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Steinway &amp; Sons.</corpname><corpname encodinganalog="610" source="lcnaf">Victor Talking Machine Company.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="local">Music</subject>
+			<subject encodinganalog="650" source="local">Photography</subject>
+			<subject encodinganalog="650" source="lcsh">Singers -- Photographs.</subject>
+         <subject encodinganalog="650" source="lcsh">Singers -- Pictorial works.</subject>
+         <subject encodinganalog="650" source="lcsh">Musicians -- Photographs.</subject>
+         <subject encodinganalog="650" source="lcsh">Musicians -- Pictorial works.</subject>
+         <subject encodinganalog="650" source="lcsh">Composers -- Photographs.</subject>
+         <subject encodinganalog="650" source="lcsh">Composers -- Pictorial works.</subject>
+         <subject encodinganalog="650" source="lcsh">Conductors -- Photographs.</subject>
+         <subject encodinganalog="650" source="lcsh">Conductors -- Pictorial works.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Advertisements.</genreform>
+			<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">Lantern slides.</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Programs (documents)</genreform>
+			<genreform encodinganalog="655" source="aat">Testimonials.</genreform>
+         
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Belfer Portrait Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Collected by Belfer Audio Archive, 1963-</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Composers, musicians, conductors</unittitle></did>
+            <c02><did><unittitle>A-K</unittitle><container type="Box">1</container></did><scopecontent><p>Albeniz, Alfano, Auber, Auer, Bach, Bachaus, Bantock, Bartók, Bauer, Beecham, Berg, Berlioz, Bernstein, Bizet, Boito, Boult, Brahms, Bull, Burmester, Busoni, Campanini, Casadesus, Casals, Chaminade, Cluytens, Cortot, D'Albert, De Koven, de Pachmann, Dohnanyi, Dussek, Dvořák, Elgar, Fall, Faure, Fiedler, Fou, Friedman, Furtwaengler, Gieseking, Glazounoff, Glinka, Gottschalk, Gounod, Grainger, Grunfeld, Haydn, Herbert, Hess, Hindemith, Hofmann, Ives, Joachim, Klemperer, Korngold, Kreisler</p></scopecontent></c02>
+            <c02><did><unittitle>L-Z</unittitle><container type="Box">1</container></did><scopecontent><p>Landowska, Lhevinne, Lev, Leoncavallo, Liszt, Mac Dowell, Mahler, Mascagni, Massenet, Mengelberg, Menuhin, Meyerbeer, Michelangeli, Milstein, Mozart, Novaes, Ormandy, Paderewski, Paganini, Palestrina, Parker, Prokofieff, Puccini, Purcell, Rabaud, Rachmaninoff, Ravel, Refini, Reiner, Respighi, Rosenthal, Rossini, Rubinstein, Saint-Säens, Saminsky, Sarasate, Sauer, Scarlatti, Scharwenka, Schubert, Schumann, Schuricht, Schütz, Schweitzer, Segovia, Shostakovich, Spohr, Straus, Stravinsky, Stern, Sullivan, Szigeti, Tchaikowsky, Toscanini, Verdi, von Bülow, von Weber, Wagner, Walter, Ysaye, Zimbalist.</p></scopecontent></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Singers</unittitle></did>
+            <c02><did><unittitle>A</unittitle><container type="Box">1</container></did><scopecontent><p>Abott, Adams, Affre, Agostinelli, Akimoff, Albani, Alcock, Alda, Alexandrovicz, Althouse, Alvarez, Alvary, Amato, Ancona, Anderson, Anitua, Anselmi, Ansseau, Arnoldson, Arimondi, Arral, Auguez, Aumonier, Auster, Austral, Avral [?]</p></scopecontent></c02>
+            <c02><did><unittitle>B</unittitle><container type="Box">1</container></did><scopecontent><p>Baddi, Badmun, Baillie, Baker, Balguerie, Bandrowski, Barrientos, Bars, Bassi, Battistini, Bauermeister, Bellantoni, Belmas, Bender, Bergonza, Bernac, Bertana, Berthald, Berthon, Billington, Bispham, Björling, Blauvelt, Boner, Bonci, Bonelli, Borgatti, Borgioli, Bori, Bramson, Brandel, Brandt, Braslau, Brejean-Silver, Breval, Broch, Budanovitz, Burdick, Burzio</p></scopecontent></c02>
+            <c02><did><unittitle>C</unittitle><container type="Box">1</container></did><scopecontent><p>Cabellé, Cahier, Callas, Calvé, Campagnola, Campanari, Campanini, Capoul, Carelli, Carmen-Melis, Caruso, Case, Castagna, Catalini, Cavalieri, Cavan, Cazette, Cernay, Cerquetti, Chaliapin, Chamlee, Chapman, Charny, Christoff, Clement, Coates, Coiffier, Constantineau, Constantino, Corney, Corradetti, Cortis, Couzinou, Crabbé, Crestani, Crimi, Cristalli, Cristoforeanu, Crooks, Culp</p></scopecontent></c02>
+            <c02><did><unittitle>D</unittitle><container type="Box">1</container></did><scopecontent><p>D'Alessio, Dalmores, D'Alvarez, DaMayer, Danise, d'Aubigne, de Angelis, de Cisneros, de Gogorza, de Hidalgo, de Los Angeles, de Luca, de Lussan, de Muro, de Pasquali, de Reszke, de Segurola, de Trevi, Debitzka, del Campo, del Monaco, del Monte, della Casa, della Rizza, Delmas, Delna, Destinn, Devries, Didur, Dippel, di Stefano, Dobkin, Doloukhanova, Dufresne, Du Guy, Dux</p></scopecontent></c02>
+            <c02><did><unittitle>E</unittitle><container type="Box">2</container></did><scopecontent><p>Eames, Easton, Edvina, Endreze, Engle, Escalaïs</p></scopecontent></c02>
+            <c02><did><unittitle>F</unittitle><container type="Box">2</container></did><scopecontent><p>Fanning, Farrar, Favart, Fay, Ferrari-Fontana, Ferrier, Figner, Fuscher-Dieskau, Fischer, Fitziu, Flagstad, Fleta, Fornia, Forsell, Franci, Franz, Fremstad, Frijsh, Fugere</p></scopecontent></c02>
+            <c02><did><unittitle>G</unittitle><container type="Box">2</container></did><scopecontent><p>Gadski, Galeffi, Gall, Galli, Galli-Curci, Galli-Marie, Galvany, Gange, Garden, Garrison, Gauthier, Gentle, Gerhardt, Gerster, Gerville-Réache, Giannini, Gigli, Gilibert, Gilly, Giorgini, Giraldoni, Gluck, Gobbi, Gordon, Granier, Grauforte [?], Graveure, Grisi, Gudehus</p></scopecontent></c02>
+            <c02><did><unittitle>H</unittitle><container type="Box">2</container></did><scopecontent><p>Poulenc (see also Bernac)</p></scopecontent></c02>
+            <c02><did><unittitle>I</unittitle><container type="Box">2</container></did><scopecontent><p>Ives, Ivogun</p></scopecontent></c02>
+            <c02><did><unittitle>J</unittitle><container type="Box">2</container></did><scopecontent><p>Jadlowker, Jepson, Johnson, Jorn, Journet, Juarez, Juch, Jurinac</p></scopecontent></c02>
+            <c02><did><unittitle>K</unittitle><container type="Box">2</container></did><scopecontent><p>Kainz, Kellogg, Kipnis, Kirkby Lunn, Kirsten, Kiurina, Kline, Koshetz, Kremer, Kurenko, Kurz</p></scopecontent></c02>
+            <c02><did><unittitle>L</unittitle><container type="Box">2</container></did><scopecontent><p>Labia, Lail, Lamont, Lapeyrette, Lappas, Larsen-Todsen, Lassalle, Laubenthal, Lauri-Volpi, Laute-Brun, Lazaro, Lazzari, Lehmann, Leisner, Lemnitz, Lind, Lipkowska, Llewellyn, London, Lorengar, Luart, Lubin, Lucca, Ludikar</p></scopecontent></c02>
+            <c02><did><unittitle>M</unittitle><container type="Box">2</container></did><scopecontent><p>Macbeth, Malkin, Mantelli, Marchese, Marconi, Marcoux, Mardones, Marengo, Martin, Mason, Materna, Matzenauer, Maurel, McCormack, McEachern, McEwan, Mei-Figner, Melba, Melchior, Merle, Merrill, Metzger, Michailova, Milanov, Milhaud / Micheau, Minghini-Cattaneo, Mirassou, Mojica, Montalant, Montfort, Morelli, Morena, Morgana, Morturier, Mueller, Muratore, Muzio</p></scopecontent></c02>
+            <c02><did><unittitle>N</unittitle><container type="Box">2</container></did><scopecontent><p>Namarra, Narcon, Nemeth, Nevada, Nezhdanova, Nielsen, Niemann-Rabe, Nilsson, Nordica, Norena, Norwood, Novotna</p></scopecontent></c02>
+            <c02><did><unittitle>O</unittitle><container type="Box">2</container></did><scopecontent><p>Olczewska, Olitzka, Onegin, O'Sullivan, Ottein</p></scopecontent></c02>
+            <c02><did><unittitle>P</unittitle><container type="Box">3</container></did><scopecontent><p>Pacini, Panzera, Parero, Pareto, Parsi-Petinella, Pasta, Patti, Pattiera, Payan, Pederzini, Peerce, Peralta, Petroff, Pevny, Piaf, Piccaluga, Piccaver, Pinza, Plancon, Pons, Ponselle, Poulenc, Potter, Price</p></scopecontent></c02>
+            <c02><did><unittitle>R</unittitle><container type="Box">3</container></did><scopecontent><p>Raisa, Ralf, Randaccio [?], Rappold, Raveau, Reache, Reimers, Renaud, Rethberg, Rimini, Ritter-Ciampi, Robeson, Rogachewsky, Rosenblatt, Rosing, Rothier, Rouard, Rousseliere, Roze, Rubinstein, Ruffo, Ruffo, Russ, Rysanek</p></scopecontent></c02>
+            <c02><did><unittitle>Sa-St</unittitle><container type="Box">3</container></did><scopecontent><p>Sabanieva, Saleza, Salignac, Sammarco, Sanderson, Santley, Saville, Sayao, Scalchi, Scheff, Schiotz, Schipa, Schlusnus, Schone, Schoffler, Schorr, Schumann, Schumann-Heink, Schwarz (Joseph), Schwarz (Vera), Schwarzkopf, Scotney, Scotti, Seefried, Seidl, Sembach, Sembrich, Siepi, Simoniato, Singher, Slezak, Slobodskaya, Smirnov, Sontag, Soulacroix, Souzay, Spani, Spencer, Stabile, Stracciari, Stransky</p></scopecontent></c02>
+            <c02><did><unittitle>Su-Sz</unittitle><container type="Box">3</container></did><scopecontent><p>Sucher, Sundelius, Supervia, Sutherland, Swarthout</p></scopecontent></c02>
+            <c02><did><unittitle>T</unittitle><container type="Box">3</container></did><scopecontent><p>Talley, Tamagno, Tariol-Bauge, Tauber, Tebaldi, Ternina, Terry, Tetrazzini, Teyte, Thill, Thomas, Tibbett, Tiersot, Tirard, Tokatyan, Tourel, Trentini, Trevisan
+			</p></scopecontent></c02>
+            <c02><did><unittitle>U</unittitle><container type="Box">3</container></did><scopecontent><p>Urbano, Urlus</p></scopecontent></c02>
+            <c02><did><unittitle>V</unittitle><container type="Box">3</container></did><scopecontent><p>Vaguet, Valleria, Vallin, van Dyck, van Gordon, van Zandt, Verlet, Vezzani, Viafora, Vignas, Villabella, Vinay, Vix, von Bary, von Rooy</p></scopecontent></c02>
+            <c02><did><unittitle>W</unittitle><container type="Box">3</container></did><scopecontent><p>Wahlgren-Arnell, Walska, Walter, Warfield, Warren, Werrenrath, Whitehill, Williams, Winckelmann, Witherspoon, Wittrisch</p></scopecontent></c02>
+            <c02><did><unittitle>Y</unittitle><container type="Box">3</container></did><scopecontent><p>Yaw</p></scopecontent></c02>
+            <c02><did><unittitle>Z</unittitle><container type="Box">3</container></did><scopecontent><p>Zanelli, Zbrujeva, Zenatello, Zeppellin</p></scopecontent></c02>
+            <c02><did><unittitle>Unidentified</unittitle><container type="Box">3</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Glass plate positives</unittitle></did>
+            <c02><did><unittitle>B-T</unittitle><container type="Box">4</container></did><scopecontent><p>Battistini, Bonci, Calve, Caruso, de Reszke, Destinn, Eames, Gadski, Homer, Johnson, Journet, Maurel, McCormack, Melba, Nordica, Patti, Plancon, Renaud, Ruffo, Schumann-Heink, Sembrich, Tamagno, Tetrazzini</p></scopecontent></c02>
+         </c01><c01 level="series"><did><unittitle>Miscellaneous</unittitle></did>
+            <c02><did><unittitle>People</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Places and things</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Victor Talking Machine Company photogravures</unittitle><abstract>promotional packet of "photogravures of famous Victor artists for store and window decoration, from Victor Talking Machine Co. Camden, New Jersey" with information on how to order larger prints</abstract><container type="Box">3</container></did></c02>
+         </c01>
+         
+      </dsc>
+   </archdesc>
+</ead>

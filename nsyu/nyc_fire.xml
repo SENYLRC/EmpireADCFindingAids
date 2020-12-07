@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="nyc_fire">nyc_fire</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">New York City Fire Engine Company Rosters</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-06-30" encodinganalog="Date">30 Jun 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-06-30">30 Jun 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110"> New York (N.Y.). -- Fire Department.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">New York City Fire Engine Company Rosters</unittitle>
+         <unitdate encodinganalog="245$f" normal="1813/1838" type="inclusive" label="Inclusive Dates: ">1813-1838</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 volumes</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Bound volumes containing lists of names of firefighters for fire engine companies and hook-and-ladder companies in New York City.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2811103</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The origins of the New York City Fire Department trace back to 1648 when the first fire ordinance was adopted in the city then known as New Amsterdam.  Fire fighting equipment (buckets, ladders, etc.) was purchased with funds derived from fines on dirty chimneys,  and an eight-man "fire watch" was established.  The first New York fire brigade entered service in 1731, the city's first firehouse was built in 1736, and the following year the Fire Department of the City of New York was officiall established.   The department was an all-volunteer force until 1865, when state legislation created the Metropolitan Fire Department (MFD), staffed with paid professionals.</p><p>[Adapted from information found on the FDNY website at <extref href="http://www.nyc.gov/html/fdny/html/history/fire_service.shtml">http://www.nyc.gov/html/fdny/html/history/fire_service.shtml</extref>.]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">New York City Fire Engine Company Rosters</emph> consists of two volumes listing the names of fire fighters in New York City fire engine companies and hook-and-ladder companies between 1813 and 1838.  The names are listed by company.</p></scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Bound volumes.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf"> New York (N.Y.). -- Fire Department -- History.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">  	  Fire departments -- New York (State) -- New York.</subject><subject encodinganalog="650" source="lcsh">Fire fighters -- New York (State) -- New York.</subject>
+         <geogname encodinganalog="651" source="lcsh"> New York (N.Y.) -- History.</geogname>
+         <genreform encodinganalog="655" source="aat">Rosters.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Fire fighters.</occupation>
+         <function encodinganalog="657" source="lcsh">Fire extinction.</function></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.  The volumes have considerable red rot on their covers; researchers should be advised to take reasonable care in using them.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>New York City Fire Engine Company Rosters, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 1969.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Rosters</unittitle></did>
+            <c02><did><unittitle>Fire engine companies and hook-and-ladder companies</unittitle><unitdate normal="1813/1838" type="inclusive">1813-1824</unitdate><container type="Oversize">1</container></did></c02>
+            <c02><did><unittitle>Fire engine companies and hook-and-ladder companies</unittitle><unitdate normal="1813/1838" type="inclusive">1820-1838</unitdate><container type="Oversize">2</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

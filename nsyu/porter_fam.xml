@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="porter_fam">porter_fam</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Porter Family Papers</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-03-22" encodinganalog="Date">22 Mar 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-03-22">22 Mar 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>24 Aug 2020 - inventory added (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <famname encodinganalog="110">Porter family</famname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Porter Family Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1859/1867" type="inclusive" label="Inclusive Dates: ">1859-1867</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.75 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, photographs, journals, clippings, etc. relating to the Porter family of Skaneateles and Lockport, New York, primarily Stanley Porter and Benjamin H. Porter, who served in the Union Navy during the American Civil War.  Other family members represented include his parents, James and Sarah, and his siblings Seth and Laura.  At one time known as the Mensing-Braun Collection of Civil War Material.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2741093</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+         <p>The Porter family resided in Skaneateles and Lockport, New York, during the American Civil War.  
+			Family members fought on both the Union and Confederate sides.</p>
+			
+			<p>James Gurdon Porter (1808-1885) of Skaneateles, New York married Sarah Grosvenor (1811-1882) of Nacogdoches, 
+			Louisiana in 1829.  They had nine children, six boys and three girls: Lucia Mary (1831-1834), Laura, Seth, 
+			Samuel (1837-1868), Henry (1839-1861), Frederick (1840-1864), Stanley, Benjamin, and Maria Grosvenor.</p>
+			
+			<p>Benjamin Horton Porter (1844-1865) was born in Skaneateles, New York on July 19, 1844.  A few years later 
+			the family moved to Lockport, New York.  He attended the United States Naval School at Annapolis and then 
+			served aboard the USS Roanoke.  In the early days of the Civil War he was a member of Burnside's North 
+			Carolina expedition, earning a commendation from General John Foster.  
+			Following this he was put in command of a gunboat patrolling the waterways of North Carolina.  In November 
+			1862 he was ordered to the USS Canandaigua for blockade duty.  In July 1863 he and his comrades spent
+			three weeks reconnoitering the harbor of Charleston under cover of darkness, ultimately volunteering to be 
+			part of stealth attack on Fort Sumter.  The attack failed and Porter was a prisoner of war in Columbia, 
+			South Carolina for more than a year.  Porter was exchanged in October 1864 and assigned as commander of 
+			the USS Malvern, Admiral David Porter's (no relation) flagship.  He was killed on January 15, 1865 during an attack on Fort 
+			Fisher, near Wilmington.</p>
+			
+			<p>Seth Grosvenor Porter (1835-1910) was a Confederate blockade runner in North Carolina; according to 
+			some accounts he later served in the Spanish-American war and became a U.S. Marshall.  Stanley Porter 
+			(1842-1862) served in the Union Army and was killed in 1862 at the Second Battle of Bull Run.   Laura 
+			(1833-1900) married Cornelius van Schaak Roosevelt, Jr. (1827-1887), a member of the prominent Roosevelt 
+			family and an uncle of U.S. President Theodore Roosevelt.  Marie (1848-?), the youngest of James and 
+			Sarah's children, married Adolf (or Adolph) Mensing, a German Naval officer.</p>
+			
+			<p>[Biographical information drawn from 
+			"<extref href="https://usnamemorialhall.org/index.php/BENJAMIN_H._PORTER,_LT,_USN">Benjamin J. Porter</extref>," U.S. Naval Academy Virtual Memorial Hall; 
+			"<extref href="https://guides.loc.gov/civil-war-soldiers/benjamin-porter">Benjamin Porter: Tragedy at Fort Fisher </extref>", Library of Congress Research Guide; 
+			"<extref href="https://babel.hathitrust.org/cgi/pt?id=nc01.ark:/13960/t2s480m99">Heroic Deeds of Heroic Men XVII: Benjamin H. Porter</extref>" in <emph render="italic">Harper's New Monthly Magazine</emph>, Apr 1867, pp. 559-571; 
+			and from "<extref href="https://kihm6.wordpress.com/2018/06/04/the-other-hero/">The Other Hero</extref>," blog post.]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Porter Family Papers</emph> consists of correspondence, manuscripts, photographs 
+			and subject files relating to the Porter family of Skaneateles and Lockport, New York.  Much of the material relates 
+			to Benjamin H. Porter and his brother Stanley, both of whom died while serving in the Union military forces during the 
+			American Civil War.  Other family members represented include their parents, James and Sarah Porter, and their sister Laura.</p>
+			
+			<p><emph render="bold">Correspondence</emph> contains letters to and from members of the Porter family, 
+			including Benjamin H. Porter, his mother Sarah, his father James, his brother Stanley, 
+			and his sister Laura (Mrs. C.V.S. Roosevelt).  Many of the letters were written while Benjamin, a Union naval 
+			officer, was a prisoner of war in Columbia, South Carolina -- including a very amicable one to his brother Seth, 
+			who at the time was a blockade runner for the Confederacy operating in the same area.</p>
+
+			<p><emph render="bold">Manuscripts</emph> consists of several poems by Stanley Porter, including one from 
+			1862 entitled "Off to Baltimore."</p>
+
+			<p><emph render="bold">Photographs</emph> consists mostly of reproductions (engravings) possibly taken from 
+			books, but there are a few originals.  Subjects include members of the Porter family as well as important 
+			Civil War figures such as Major General George B. McCLellan and Brigadier General Ambrose Burnside.</p>
+
+			<p><emph render="bold">Subject files</emph> includes printed material, Stanley Porter's journal, a "Register 
+			of Vessel," a military pass, and carbons of typed transcripts and inventories of material in the collection.</p>
+			
+			<p>Typed captions accompanying the photographs, as well as information in the transcripts and lists at the end 
+			of the collection, indicate that the material
+			was once part of something called the Mensing-Braun Collection of Civil War Material.  This suggests that the 
+			material was accumulated by Maria, the Porters' youngest daughter, who married German naval officer Adolph Mensing.</p>
+		</scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Correspondence is arranged alphabetically by sender.  Within that, where appropriate, it is subdivided by 
+			recipient and then arranged chronologically.  Photographs are subdivided into those of the Porter family and 
+			those of others.  Subject files are arranged alphabetically by type, title, or topic.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Military history</subject>
+			<subject encodinganalog="650" source="local">New York State</subject>
+			<subject encodinganalog="650" source="local">Civil War (U.S.)</subject>
+
+         <persname encodinganalog="600" source="lcnaf">Porter, Benjamin Horton, 1844-1865.</persname>
+         <persname encodinganalog="600" source="lcnaf">Porter, James Gurdon, 1808-1885.</persname>
+         <persname encodinganalog="600" source="lcnaf">Porter, Sarah Grosvenor, 1811-1882.</persname>
+			<persname encodinganalog="600" source="lcnaf">Porter, Seth Grosvenor, 1835-1910.</persname>
+         <persname encodinganalog="600" source="lcnaf">Porter, Stanley G., 1842-1862.</persname>
+			<persname encodinganalog="600" source="lcnaf">Roosevelt, Cornelius V. S., 1827-1887.</persname>
+         <persname encodinganalog="600" source="lcnaf">Roosevelt, Laura, 1833-</persname>
+			<persname encodinganalog="600" source="lcnaf" authfilenumber="n95122486">Roosevelt, Theodore, 1831-1878.</persname>
+			<famname encodinganalog="600" source="lcnaf">Porter family.</famname>
+         <corpname encodinganalog="610" source="lcnaf">Confederate States of America. -- Navy.</corpname>
+			<corpname encodinganalog="610" source="lcnaf">United States. -- Navy.</corpname> 
+         <!--<title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="lcsh">Blockade -- North Carolina.</subject>
+			<subject encodinganalog="650" source="lcsh">Soldiers -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Steamboats.</subject> 
+         <geogname encodinganalog="651" source="lcsh">Skaneateles (N.Y.) -- History.</geogname>
+			<geogname encodinganalog="651" source="lcsh">Lockport (N.Y.) -- History.</geogname>
+			<geogname encodinganalog="651" source="lcsh">United States -- History -- Civil War, 1861-1865.</geogname>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">Diaries.</genreform>
+			<genreform encodinganalog="655" source="aat">Military passes.</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Registrations (licenses)</genreform>
+         <!-- <occupation encodinganalog="656" source="lcsh">##</occupation> -->
+         <!-- <function encodinganalog="657">##</function> -->
+		 </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advance notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Porter Family Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+       <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo> 
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Barton, Clara</unittitle><abstract>regarding Stanley Porter</abstract><unitdate normal="1865" type="inclusive">1865</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Porter, Benjamin</unittitle></did>
+               <c03><did><unittitle>to Laura (sister)</unittitle><unitdate normal="1859/1864" type="inclusive">1859-1864</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to Sarah (mother)</unittitle><unitdate normal="1859/1865" type="inclusive">1859-1865</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to Seth (brother)</unittitle><unitdate normal="1863" type="inclusive">1863</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to Cornelius Roosevelt (brother-in-law)</unittitle><unitdate normal="1864/1865" type="inclusive">1864-1865</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to miscellaneous or unidentified</unittitle><unitdate normal="1863/1864" type="inclusive">1863-1864</unitdate><container type="Box">1</container></did></c03>
+				</c02>
+            <c02><did><unittitle>Porter, James</unittitle></did>
+               <c03><did><unittitle>to Benjamin (son)</unittitle><unitdate normal="1862" type="inclusive">1862</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to miscellaneous or unidentified</unittitle><abstract>a Mr Fox, regarding release of Benjamin from prison</abstract><unitdate normal="1862" type="inclusive">1864</unitdate><container type="Box">1</container></did></c03>
+				</c02>
+            <c02><did><unittitle>Porter, Sarah</unittitle></did>
+               <c03><did><unittitle>to Benjamin (son)</unittitle><unitdate normal="1862/1865" type="inclusive">1862-1865</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to Stanley (son)</unittitle><unitdate normal="1862" type="inclusive">1862</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to miscellaneous or unidentified</unittitle><abstract>includes one to "my dear child"</abstract><unitdate normal="1863" type="inclusive">1863, </unitdate><unitdate normal="1859/1865" type="inclusive">undated</unitdate><container type="Box">1</container></did></c03>
+				</c02>
+            <c02><did><unittitle>Porter, Stanley</unittitle></did>
+               <c03><did><unittitle>to Laura (sister)</unittitle><unitdate normal="1862" type="inclusive">1862</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to Sarah (mother)</unittitle><unitdate normal="1859/1862" type="inclusive">1859-1862</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to miscellaneous or unidentified</unittitle><abstract>to "My Dear Cousin"</abstract><unitdate normal="1862" type="inclusive">1862</unitdate><container type="Box">1</container></did></c03>
+				</c02>
+            <c02><did><unittitle>Miscellaneous senders</unittitle></did>
+               <c03><did><unittitle>to Benjamin</unittitle><abstract>most are from friends and/or fellow officers, possibly fellow prisoners</abstract><unitdate normal="1862" type="inclusive">1862, </unitdate><unitdate normal="1859/1865" type="inclusive">undated</unitdate><container type="Box">1</container></did><scopecontent><p> Names appearing include Preston, Meade, and Bedel.  Preston is likely Lt. Samuel W. Preston of Illinois, who served with Porter on the USS Malvern and was, like him, killed during the attack on Fort Fisher. Bedel may be John Bedel of New Hampshire, whose regiment served in the Wilmington area and who was a prisoner during this same period.</p></scopecontent></c03>
+               <c03><did><unittitle>to James</unittitle><abstract>fromt the Army, regarding the missing Stanley Porter</abstract><unitdate normal="1862" type="inclusive">1862</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to Laura (Mrs. C.V.S. Roosevelt)</unittitle><abstract>includes some relating to Benjamin's capture and imprisonment</abstract><unitdate normal="1863/1864" type="inclusive">1863-1864, </unitdate><unitdate normal="1859/1865" type="inclusive">undated</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to Sarah</unittitle><abstract>includes letter of condolence on death of Benjamin</abstract><unitdate normal="1864/1865" type="inclusive">1864-1865</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to Roosevelt, C.V.S.</unittitle><abstract>prisoner exchange, letter of condolence on death of Benjamin</abstract><unitdate normal="##" type="inclusive">1864-1865, </unitdate><unitdate normal="1859/1865" type="inclusive">undated</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to Roosevelt, Theodore</unittitle><abstract>Benjamin's capture and imprisonment</abstract><unitdate normal="1864/1865" type="inclusive">1864-1865</unitdate><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>to unknown/unidentified</unittitle><abstract>one concerns the capture of 15 members of the Confederate Navy, charged with piracy</abstract><unitdate normal="1863/1865" type="inclusive">1863-1865</unitdate><container type="Box">1</container></did></c03>
+				</c02>            
+         </c01>
+         <c01 level="series"><did><unittitle>Manuscripts</unittitle></did>
+            <c02><did><unittitle>Poetry by Stanley Porter</unittitle><abstract>handwritten poems, most on  military topics</abstract><unitdate normal="1862" type="inclusive">1862</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Photographs</unittitle></did>
+            <c02><did><unittitle>Porter family</unittitle><unitdate normal="1859/1865" type="inclusive">undated</unitdate><container type="Box">2</container></did><scopecontent><p>Four items.  Two are of Benjamin, inluding one from Matthew Brady's studio.  Two are of Stanley, one of which is a small daguerreotype in a metal frame.</p></scopecontent></c02>
+            <c02><did><unittitle>Others</unittitle><unitdate normal="1862/1867" type="inclusive">1862-1867</unitdate><container type="Box">2</container></did><scopecontent><p>Most are reproductions, engravings of leading military figures of the Civil War such as Gen. Ambrose Burnside.  The six original photographs are identified as Ike Barker, Lewis Clarke, Midshipmen Daniel Higby and Robert Schuyler, Lt. Col. Adrian Root, and Charles W. Tracy.  The Tracy photograph is signed and inscribed on the back from Coquimbo, Chile with a date of 1867.</p></scopecontent></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Subject files</unittitle></did>
+            <c02><did><unittitle>Eulogy for Stanley Porter, by Sarah Porter</unittitle><unitdate normal="1862" type="inclusive">[1862]</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Journal of Stanley Porter</unittitle><abstract>many pages enlivened with small sketches and humorous cartoons (a drawing of a soldier with the tail of a  fish appears just below the line, "If Gen McDowell keeps us out here in this swamp, I believe I shall become a merman.")</abstract><unitdate normal="1861/1862" type="inclusive">22 Jul 1861 - 28 May 1862</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Obituary for Benjamin Porter</unittitle><abstract>clippings from unidentified newspapers</abstract><unitdate normal="1865" type="inclusive">1865</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Pass, Stanley Porter</unittitle><abstract>military pass for travel to Washington, DC</abstract><unitdate normal="1862-03" type="inclusive">Mar 1862</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Register of Vessel, CSS Phantom</unittitle><abstract>Confederate States of America registration, listing Seth Grosvenor Porter as owner/master</abstract><unitdate normal="1863" type="inclusive">1863</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Solder's Text Book, or, Confidence in Time of War by Rev. J. R. Macduff</unittitle><abstract>signed and inscribed to Benjamin, from his mother</abstract><unitdate normal="1861/1862" type="inclusive">1861-1862</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Transcripts, lists, etc.</unittitle><abstract>typed carbons with transcripts and itemized list of contents for the Mensing-Braun Collection of Civil War Material</abstract><container type="Box">2</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="plastics_art">plastics_art</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Plastics Artifacts Collection</titleproper>
+            <subtitle>A description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2009-07-29" encodinganalog="Date">29 Jul 2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2009-07-29">29 Jul 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>16 Nov 2010 - updated related material (MRC)</item>
+			<item>1 Jun 2016 - link to full inventory added (MRC)</item><item>5 Feb 2019 - restrictions updated (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!-- <origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname>
+         </origination> -->
+         <unittitle encodinganalog="245$a" label="Title: ">Plastics Artifacts Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1870/1990" type="inclusive" label="Inclusive Dates: ">1870-1990</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>~250 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection consists of manufactured objects made of various types of plastic.</abstract>
+         <!--Old BIB record in Summit, 2686021, became corrupted, had to move to new one.-->
+
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4093288</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The Plastics Artifact Collection was accumulated originally by the National Plastics Center and Museum (NPCM) 
+in Leominster, Massachusetts.  Begun in 1970 as a cooperative effort of the Pioneer Valley Section of the Society 
+of Plastics Engineers and several local Leominster Historians, the NPCM was incorporated in 1982 and acquired a building 
+in Leominster in the mid 1980s.  In addition to maintaining documents and artifacts documenting the history and development 
+of plastics and related engineering fields, the NPCM initiated a national outreach program to schools (including the 
+traveling PlastiVan) and inaugurated the Plastics Hall of Fame.  In 2008 NPCM transferred its manuscript collections and 
+artifactual holdings to the Special Collections Research Center at Syracuse University.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Plastics Artifact Collection</emph> is a supplement to the numerous manuscript collections relating to 
+organizations and individuals who played a significant role in the development and manufacture of plastic products 
+in the United States.  Objects include personal items (combs, brushes), toys, dishes, decorative 
+objects, housewares, medical equipment, automotive components, material samples, and more.</p>
+      </scopecontent>
+      
+      <altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>Many of the items have been photographed and may be viewed on the <extref href="http://plastics.syr.edu">Plastics website</extref>.</p>
+      </altformavail> <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Artifacts are in no particular order.</p>
+      </arrangement> 
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>Special Collections Research Center has numerous holdings in the areas of plastics and 
+industrial design. Please refer to &subjindex; for a complete listing.  See also the <extref href="http://plastics.syr.edu">Plastics website</extref> for digital images of 
+more than 2000 plastic artifacts and a wide range of material on the history and development of plastics.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+      <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>See also the <extref href="http://plastics.syr.edu">Plastics website</extref>.</p>
+      </otherfindaid>
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <!-- <persname encodinganalog="600" source="lcnaf">##</persname> -->
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+          <corpname encodinganalog="610" source="lcnaf">Borg-Warner Corporation.</corpname><corpname encodinganalog="610" source="lcnaf">Monsanto Chemical Company.</corpname><corpname encodinganalog="610" source="lcnaf">Robinson Plastics Corporation.</corpname><corpname encodinganalog="610" source="lcnaf">Tupperware Corporation.</corpname> 
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="lcsh">Industrial design -- History -- 20th century.</subject><subject encodinganalog="650" source="lcsh">Plastic containers.</subject><subject encodinganalog="650" source="lcsh">Plastic jewelry.</subject><subject encodinganalog="650" source="lcsh">Plastic novelties.</subject><subject encodinganalog="650" source="lcsh">Plastic tableware.</subject><subject encodinganalog="650" source="lcsh">Plastic toys.</subject><subject encodinganalog="650" source="lcsh">Plastics -- History.</subject><subject encodinganalog="650" source="lcsh">Plastics -- Extrusion.</subject><subject encodinganalog="650" source="lcsh">Plastics -- Molding.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics in automobiles.</subject><subject encodinganalog="650" source="lcsh">Plastics in building.</subject><subject encodinganalog="650" source="lcsh">Plastics in medicine.</subject><subject encodinganalog="650" source="lcsh">Plastics industry and trade.</subject>
+         <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+          <genreform encodinganalog="655" source="aat">Combs (hair ornaments)</genreform><genreform encodinganalog="655" source="aat">Eyeglasses.</genreform><genreform encodinganalog="655" source="aat">Medical equipment.</genreform><genreform encodinganalog="655" source="aat">Samples.</genreform><genreform encodinganalog="655" source="aat">Tableware.</genreform><genreform encodinganalog="655" source="aat">Toys (recreational artifacts)</genreform> 
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation> -->
+         <!--<function encodinganalog="657">##</function> -->
+      </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+		 <p>THE ENTIRE COLLECTION IS CLOSED FOR REHOUSING DURING THE SUMMER OF 2019.</p>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p><p>Kit in Oversize 224 is not accessible to researchers due to presence of asbestos.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Plastics Artifact Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Bulk, gift of the National Plastics Center and Museum, 2008.  Additional items, gifts of various donors, 2009-present.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+<dsc type="othertype">
+   <head>Inventory</head>
+   <note><p>THE ENTIRE COLLECTION IS CLOSED FOR REHOUSING DURING THE SUMMER OF 2019.</p>
+   
+   <p>The inventory for this collection is not currently available online, due to an ongoing rehousing project.  To locate or request specific items, please contact the repository listed above.  Many of the items have been photographed and may be viewed on the <extref href="http://plastics.syr.edu">Plastics website</extref>.</p>
+     </note>
+	 
+</dsc>	
+   </archdesc>
+</ead>

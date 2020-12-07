@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+    <eadid countrycode="US" mainagencycode="NSyU" identifier="amer_book_co">amer_book_co</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">American Book Company Records </titleproper>
+        <subtitle>An inventory of 
+                        its records 
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MPK, KBP, JMB, DMB</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>&su_address;
+                           <date normal="1978-10" encodinganalog="Date">October 1978</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           <date era="ce" calendar="gregorian" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language langcode="eng" encodinganalog="Language">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>23 Apr 2008 - converted to EAD (MRC)</item>
+		<item>6 Mar 2012 - added 1998 books (MRC)</item>
+		<item>10 Oct 2013 - Brammer book corrected (MRC)</item>
+		<item>3 Sep 2014 - Ordewer gifts added, missing boxes added (MRC)</item><item>10 Jul 2017 - box 821 books added (MRC)</item>
+            <item>20 Dec 2017 - updated after rehousing of original artwork (SM)</item><item>14 Oct 2019 - list by plate number (ABC_4A.xlsx) off by one; updated (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name; <lb/>&su_address;
+               </repository>
+      <origination label="Creator: ">
+        <corpname encodinganalog="110" source="lcnaf">American Book Company.</corpname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">American Book Company Records </unittitle>
+      <unitdate encodinganalog="245$f" type="inclusive" label="Inclusive Dates: " normal="1801/1971">1801-1971</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: "><extent encodinganalog="300$a">3313 linear
+               ft.</extent></physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">The American Book Company was formed in 1890 by consolidation of Van Antwerp, Bragg and Co., A.S. Barnes and Co., D. Appleton and Co., and Iveson, Blakeman and Co.   The collection includes the records of the company which manufactured books and educational materials in several locations in the United States, with head offices in New York City; the book list embraced all subjects at all educational levels.  The collection is primarily textbooks, including several editions as far back as 1840 of the McGuffey readers; also included are business records and illustrations.</abstract>
+      <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">148784</unitid>
+      <langmaterial label="Language: " encodinganalog="546"> Bulk in <language langcode="eng">
+               English </language>, some items in <language langcode="spa">Spanish</language>,
+               <language langcode="fre">French</language>, <language langcode="ger">German</language>, and <language langcode="lat">Latin</language></langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>The American Book Company (ABC) was an educational book publisher that published 
+		textbooks at the elementary school, secondary school and collegiate levels. The company 
+		was formed in 1890 by the consolidation of four publishing houses: Van Antwerp, Bragg 
+		and Co., A.S. Barnes and Co., D. Appleton and Co., and Iveson, Blakeman and Co.  It 
+		operated successfully as the American Book Company for more than seventy years with the 
+		public school system and other educational institutions as its main clients, publishing 
+		educational titles on accounting, agriculture, art, civics, foreign languages, history 
+		(both ancient and modern), life sciences, literature, mathematics, penmanship, physical 
+		sciences, and various levels of readers.  </p>
+		
+		<p>In the 1960s and 1970s the company 
+		passed first to Litton Industries and then to the International Thomson Organization, 
+		finally being acquired by D. C. Heath and Company in 1981. ABC was eventually absorbed 
+		into D. C. Heath and ceased to exist as an imprint.</p>
+		
+		<p>The company employed many 
+		noted artists as illustrators for its public school textbooks, including Norman Rockwell 
+		and Frederick Remington.  It is perhaps best known for its series of McGuffey Readers, 
+		which sold 120 million copies between 1836 and 1960.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">American Book Company Papers</emph> consists of general 
+correspondence, calendars, business records, books, miscellanea, 
+illustrations, and study charts, with correspondence and illustrations comprising the vast 
+majority of the collection. Both ABC itself and its predecessor companies (Van Antwerp, Bragg 
+and Co., A.S. Barnes and Co., D. Appleton and Co., and Iveson, Blakeman and Co.) are 
+represented in the collection.  The vast scope of the material provides a detailed picture 
+of the education received by children in the American public school system in the late 19th and 
+early 20th centuries, as well as the state of various fields of knowledge at the time.</p>
+
+<p><emph render="bold">General 
+correspondence</emph> consists of correspondence with authors, publishers, illustrators and 
+others  in the course of ABC's publishing work.  This portion of the inventory is presented as a spreadsheet to simplify 
+sorting the material in various ways.</p>
+
+<p><emph render="bold">Business records</emph> contains   a miscellaneous assortment of 
+business-related records, including small desk calendars decorated with excerpts from 
+American Book Company textbooks which were distributed to educators as a 
+publicity feature, contracts, editorial forms, permissions, steps in the book 
+production process, meeting minutes, and other similar material.  No personnel records of 
+any kind are included in the collection.  At the end of the business records are several boxes of index card files, including an index to correspondence.</p>
+
+<p><emph render="bold">Books</emph> contains books published by the American Book 
+Company and its acquisitions, and its founders and their acquisitions. There are 
+multiple copies of many books, in which case at least one copy is the "marked 
+copy" (that is,  the Editor's Library copy, carrying annotations and/or pasted-in proofs showing changes 
+made between printings and editions). One of the most famous American Book 
+Company publications is the series of McGuffey's Readers; the collection includes 
+several editions of these readers dating back to 1840.  The series also 
+includes wall posters, flash cards, and writing slates.  This portion of the inventory is 
+presented as a spreadsheet to allow sorting of the material in various ways.</p>
+
+<p><emph render="bold">Miscellanea</emph> contains photographs, artifacts and memorabilia, and a notebook recording the 
+trips made by the company's private railroad car.</p>
+
+<p><emph render="bold">Illustrations</emph> contains photographs of people, industry, and
+            architecture; galleys and proofs of original work by staff artists; prints,
+            reproductions, and copies of famous paintings and sculpture; maps; and original
+            drawings, watercolors, and paintings, all of which were used in the company's
+            publications. It contains a number of works by noteworthy artists and illustrators,
+            among whom are Norman Rockwell and Frederick Remington. This portion of the inventory is
+            presented in the form of spreadsheets to permit sorting the material in various
+            ways.</p>
+
+<p>Authors and book titles for whom illustrations are present include the following:</p>
+
+<blockquote>
+<list>
+<item>Abreau (Gomez) &amp; Flores : <emph render="italic">Leyendas Mexicanas</emph>, 1951</item>
+<item>Alexander &amp; Cormack : <emph render="italic">Bruce and Marcia, Woodsmen</emph>, 1939</item>
+<item>Allen &amp; Monpeurt : <emph render="italic">En Route</emph></item>
+<item>Allen &amp; Wirth : <emph render="italic">This Government of Ours</emph></item>
+<item>Athey : <emph render="italic">Along Nature's Trails</emph>, 1936</item>
+<item>Atticka : <emph render="italic">A First Course in Bookkeeping</emph>, 1935</item>
+<item>Barnes and Others, The Realm of Reading : <emph render="italic">Doorways</emph>, 1941; <emph render="italic">Trails</emph>, 1941; <emph render="italic">Highways</emph>, 1940; <emph render="italic">Heritage</emph>, 1940; <emph render="italic">The American</emph>  (two packages), regular edition 1940, Texas edition 1941; <emph render="italic">The English Scene</emph>, 1940</item>
+<item>Batchelor &amp; Vorath : <emph render="italic">Horizontes Latinoamericanos</emph>, 1955</item>
+<item>Bauman &amp; Erlenbach : <emph render="italic">College Bookkeeping</emph> (No book - not published</item>
+<item>Bernstein : <emph render="italic">Judy's Ocean Voyage</emph>, 1932</item>
+<item>Betz &amp; Holzwarth : <emph render="italic">A Second German Book</emph>, 1933</item>
+<item>Betz &amp; Price : <emph render="italic">Learning German - A First Book</emph>, 1935; <emph render="italic">First Book</emph>, 1917</item>
+<item>Bourbousson : <emph render="italic">Ecrivains Francais-d'Aujourd'Hui</emph>, 1953</item>
+<item>Brauer : <emph render="italic">Chemistry and Its Wonders</emph>, 1938; <emph render="italic">Exploring the Wonders of Chemistry</emph>, 1938</item>
+<item>Bradley &amp; Upton : <emph render="italic">Air Navigation Workbook</emph>, 1943</item>
+<item>Brigham &amp; McFarlane : <emph render="italic">How the World Lives and Works</emph>, 1933</item>
+<item>Brown &amp; Butterfield : <emph render="italic">Bozo the Woodchuck</emph>, 1933</item>
+<item>Buckley, White, Adams, &amp; Silvernale :  <emph render="italic">The Road to Reading</emph> series, 1938 (State Contract and Regular Editions for all titles), including <emph render="italic">Away We Go</emph> (A); <emph render="italic">Happy Times</emph> (B); <emph render="italic">In Storm and Sunshine</emph> (C); <emph render="italic">In Town and Country</emph> (D); <emph render="italic">Here and There</emph> (E); <emph render="italic">Around the Year</emph> (F); <emph render="italic">On Land and Water</emph> (G); <emph render="italic">Who Travels There? </emph> (H)</item>
+<item>Buckley &amp; White : <emph render="italic">Activity Spellers</emph>, 1931, Grades 2, 3, 4, 5, 6, 7, 8</item>
+<item>Buckley &amp; White : Speller and Workbook, Grades 2-6 (in one package), 1936; Speller and Workbook, Grades 7 &amp; 8 (in one package), 1936</item>
+<item>Burns : <emph render="italic">Come and Sing</emph>, 1938</item>
+<item>Cabot &amp; Fanning : <emph render="italic">A New Approach to Spanish, First Year</emph>, 1942; <emph render="italic">A New Approach to Spanish, Second Year</emph>, 1945</item>
+<item>Capen : <emph render="italic">Being a Citizen</emph>, 1947</item>
+<item>Capen &amp; Melchior : <emph render="italic">My Worth to the World</emph>, 1934, Regular and State Editions; <emph render="italic">My Worth to the World</emph>, Revised (included in above)</item>
+<item>Carpenter : <emph render="italic">Canada and Our Northern Neighbors</emph>, 1946; <emph render="italic">Caribbean Lands</emph>, 1950; <emph render="italic">Our Little Friends of the Arabian Desert</emph>, 1934; 
+   <emph render="italic">Our Little Friends of China</emph>; <emph render="italic">Our Little Friends of Switzerland</emph>, 1941; 
+	<emph render="italic">Our Little Neighbors at Work and Play</emph>, 1939; <emph render="italic">Our Little Neighbors at Work and Play</emph>, 1939, Revised; 
+	Workbook for above, 1939; <emph render="italic">Our Neighbors Near and Far</emph>, 1933; <emph render="italic">Our Neighbors Near and Far</emph>, 1933, Revised (includes Regular, Gray (Pennsylvania), and New York State Editions); 
+	<emph render="italic">My Geography Workbook</emph>, 1934; <emph render="italic">Our South American Neighbors</emph>, 1942 (2 packages)</item>
+<item>Cavanah &amp; Myers : <emph render="italic">Handwriting for Expression</emph>, 1940; alphabet ruler; <emph render="italic">Teacher's First Book</emph>; <emph render="italic">Pupil's First Book</emph>; omnibus package of photos</item>
+<item>Clifford : <emph render="italic">American Leaders</emph>, 1953; <emph render="italic">Yesterday in America</emph>, 1949</item>
+<item>Cornell &amp; MacDonald : <emph render="italic">Business Organization and Practice</emph>, 1936</item>
+<item>Cronin : <emph render="italic">Economics and Society</emph>, 1939</item>
+<item>Dodge and Others : <emph render="italic">Quelques Choses de Facile</emph>, 1935</item>
+<item>Du Mont : <emph render="italic">Introductory French - A Reading Approach</emph>, 1941</item>
+<item>Dvorak and Others : <emph render="italic">Typewriting Behavior</emph>, 1936</item>
+<item>Elsbree : <emph render="italic">The American Teacher</emph>, 1939</item>
+<item>Elson : <emph render="italic">United States - Its Past and Present</emph>, 1926 (see cards for illustration before 1931); <emph render="italic">Modern Times and the Living Past</emph>, 1921 (See cards. This must be for copyrights after 1931)</item>
+<item>Evans &amp; Coulter : <emph render="italic">First Lessons in Georgia History</emph>, 1913 (see cards also)</item>
+<item>Foresman : <emph render="italic">Our Music in Story and Song</emph>, 1935; 
+   <emph render="italic">Songs and Pictures (First Edition titled Books of Songs)</emph>; 
+	<emph render="italic">Child's Book</emph>, 1928 (See also cards) - First, Second, Third, Fourth, Fifth</item>
+<item>Garner &amp; Capen : <emph render="italic">Our Government</emph> (two packages; see also cards), 1930</item>
+<item>Gerwig : <emph render="italic">Guideposts to Citizenship</emph> (Ambition, Loyalty, and Perseverance, all in one package), 1932 </item>
+<item>Gellette &amp; Reinhardt : <emph render="italic">Current Social Problems</emph>, 1933</item>
+<item>Goodfellow &amp; Rosenberg : <emph render="italic">The Ace Supermarket</emph>, 1951</item>
+<item>Gordon &amp; Loftus : <emph render="italic">Come to France</emph>, 1939</item>
+<item>Grayson &amp; Lohman : <emph render="italic">Principles of Economics</emph>, 1956</item>
+<item>Grismer &amp; Arroyo : <emph render="italic">Buenos Amigos</emph>, 1943</item>
+<item>Gruener &amp; Lankelma : <emph render="italic">Introduction to Organic Chemistry</emph>, 1939</item>
+<item>Halleck : <emph render="italic">English Literature</emph> (two packages), 1900 (see also cards); 
+   <emph render="italic">American Literature</emph> (two packages), 1911 (See also cards); 
+	<emph render="italic">The Romance of American Literature</emph>, 1934; 
+	<emph render="italic">The Story of English Literature</emph>, 1937; 
+	<emph render="italic">History of Our Country for Higher Grades</emph>, 1923 (see also cards)</item>
+<item>Halleck &amp; Frantz : <emph render="italic">Our United States</emph>, 1935; 
+   <emph render="italic">Founders of Our Nation</emph>, 1929 (see also cards); 
+	<emph render="italic">Makers of Our Nation</emph>, 1930 (see also cards)</item>
+<item>Hart &amp; Wilson : <emph render="italic">The Philippines</emph>, 1946</item>
+<item>Healey &amp; Faucher : <emph render="italic">France: Silhouettes et Croquis</emph>, 1950</item>
+<item>Hesse (Peebles) : <emph render="italic">Drei Erzählungen</emph>, 1950</item>
+<item>Hill : <emph render="italic">Drei Zeitgenössische Erzähler</emph>, 1951</item>
+<item>Hilton : <emph render="italic">Rural School Management</emph>, 1949</item>
+<item>Hoffman : <emph render="italic">Bookkeeping</emph>, 1949; <emph render="italic">Workbook in Bookkeeping</emph>, 1949</item>
+<item>Holmes &amp; Hernandez : <emph render="italic">Practical Spanish Grammar</emph>, 1943</item>
+<item>Huber : <emph render="italic">Cinder the Cat</emph>, 1931</item>
+<item>Hughes : <emph render="italic">Rhythmic Games and Dances</emph>, 1942</item>
+<item>Hunkins &amp; Allen : <emph render="italic">Sod House Days</emph>, 1941</item>
+<item>Hunter : <emph render="italic">Problems in Biology</emph>, 1931; <emph render="italic">Laboratory Problems in Biology</emph>, 1932; <emph render="italic">Science Teaching</emph>, 1934</item>
+<item>Hunter &amp; Hunter : <emph render="italic">Manual of College Biology</emph>, 1938</item>
+<item>Hunter &amp; Knopf : <emph render="italic">Mastery Tests in General Science</emph>, 1934 (two, perhaps)</item>
+<item>Hunter &amp; Whitman : <emph render="italic">Problems in General Science</emph>, 1930; 
+   workbook, 1932; manual, 1931; <emph render="italic">The March of Science</emph>, 1935; 
+	<emph render="italic">My Own Science Problems</emph>, plus workbook; 
+	<emph render="italic">Science in Our World of Progress</emph></item>
+<item>Knowlton et al.: <emph render="italic">The Westward March of Man</emph> series, including 
+   <emph render="italic">Our Beginnings in the Past</emph>, 1933; <emph render="italic">Our Past in Western Europe</emph>; 
+	<emph render="italic">Beginnings of Our Nation</emph>, 1933; <emph render="italic">Since We Became a Nation</emph>, 1934; 
+	<emph render="italic">When We Were Colonies</emph>, 1934; <emph render="italic">Our America - Past and Present</emph>, 1938</item>
+<item>Leavell et al.: <emph render="italic">The Friendly Hour Readers</emph> (State Contract and Regular editions), 1935; 
+   <emph render="italic">Pre-Primer - Friends at Play</emph>; <emph render="italic">Primer - Ben and Alice</emph>; 
+	<emph render="italic">Book One - Playmates</emph>; <emph render="italic">Book Two - Indoors and Out</emph>; 
+	<emph render="italic">Book Three - Friends to Know</emph>; <emph render="italic">Book Four - Trails of Adventure</emph>; 
+	<emph render="italic">Book Five - The World's Gifts</emph>; <emph render="italic">Book Six - Winning Our Way</emph>; 
+	<emph render="italic">Reading Readiness Workbook for Preference</emph>; workbooks for Primer, Books One through Six</item>
+<item>Leonard, Miles &amp; Van der Kar : <emph render="italic">The Child at Home and School</emph>, 1942</item>
+<item>Lothrop : <emph render="italic">The Wayside - Home of Authors</emph>, 1940</item>
+<item>Lucas : <emph render="italic">Organic Chemistry</emph>, 1953 (Two packages)</item>
+<item>McElroy &amp; Younge : <emph render="italic">Toby Chipmunk</emph>, 1935</item>
+<item>Macomber : <emph render="italic">Guiding Child Development in the Elementary School</emph>, 1941</item>
+<item>Maddy &amp; Giddings : <emph render="italic">Fun in Music</emph>, 1937</item>
+<item>Marble : <emph render="italic">Home Safety</emph>, 1940</item>
+<item>Mawhinney &amp; Smith : <emph render="italic">Business and Professional Speech</emph>, 1950</item>
+<item>Menge &amp; Faunce : <emph render="italic">Working Together for Better Schools</emph>, 1953</item>
+<item>Merrick and Others : <emph render="italic">My Typewriter and I</emph>, 1937</item>
+<item>Nyberg : <emph render="italic">Fundamentals of Algebra, First Book</emph>, 1944; 
+   <emph render="italic">Fundamentals of Algebra, Second Book</emph>, 1945; 
+	<emph render="italic">Key to Fundamentals of Algebra, Second Book</emph>, 1945; 
+	<emph render="italic">Fundamentals of Solid Geometry</emph>, 1944</item>
+<item>Pack : <emph render="italic">Kee and Bah, Navajo Children</emph>, 1940</item>
+<item>Parker : <emph render="italic">Commercial Algebra</emph>, 1952</item>
+<item>Partridge &amp; Mooney : <emph render="italic">Education in Living - Time Out for Living</emph>, 1941</item>
+<item>Pate : <emph render="italic">Local Government and Administration</emph>, 1954</item>
+<item>Patenski &amp; Wilson : <emph render="italic">The Charm String</emph>, 1943</item>
+<item>Payne : <emph render="italic">Biology - Season by Season</emph>, 1942; 
+   <emph render="italic">Seasonal Experiences in Biology</emph>, 1943</item>
+<item>Peattie : <emph render="italic">Rambles in Europe</emph>, 1934</item>
+<item>Perry &amp; Price : <emph render="italic">American History First Book</emph>, 1913 (see also cards); 
+   <emph render="italic">American History Second Book</emph>, 1914 (See also cards)</item>
+<item>Pflueger &amp; Moore : <emph render="italic">Das Unvergängliche</emph>, 1951</item>
+<item>Place : <emph render="italic">Second Latin Course</emph>, 1930</item>
+<item>Pollard : <emph render="italic">Virginia-Born Presidents</emph>, 1932</item>
+<item>Porter &amp; Hansen : <emph render="italic">Fields and Fence Rows</emph>, 1937</item>
+<item>Ray : <emph render="italic">Laboratory Manual for Social Psychology</emph>, 1951</item>
+<item>Reed : <emph render="italic">The Effective and Ineffective College Teacher</emph>, 1935</item>
+<item>Reeder &amp; Renner : <emph render="italic">Home Geography</emph>, 1944</item>
+<item>Reich &amp; Siegler : <emph render="italic">Selling to the Consumer</emph>, 1937</item>
+<item>Reinhardt and Others : <emph render="italic">Social Problems</emph>, 1952</item>
+<item>Riemer &amp; Liebling : <emph render="italic">Expert Typewriting</emph>, 1949</item>
+<item>Ross &amp; Wallace : <emph render="italic">Short Stories in Context</emph>, 1953</item>
+<item>Skinner &amp; Skinner : <emph render="italic">Fun in Town and Country</emph>, 1940</item>
+<item>Snyder &amp; Wilson : <emph render="italic">Roots of Political Behavior</emph>, 1949</item>
+<item>Spears : <emph render="italic">The High School for Today</emph>, 1950</item>
+<item>Steadman pads (remnants of earlier publications)</item>
+<item>Strayer &amp; Upton : <emph render="italic">Social Utility Arithmetics</emph> (regular and state editions) Books 1 (1938) through 6; <emph render="italic">Social Utility Arithmetics</emph>, revision of 1951, Books 1-6</item>
+<item>Strong : <emph render="italic">Writing Business Letters</emph>, 1950</item>
+<item>Talbot &amp; Pearson : <emph render="italic">Homemaking for Boys and Girls</emph>, 1935;<emph render="italic">Practical Problems in Homelife</emph>, 1936</item>
+<item>Taylor : <emph render="italic">Dynamic and Abnormal Psychology</emph>, 1954</item>
+<item>Van Tuyl : <emph render="italic">Mathematics at Work</emph>, 1935; <emph render="italic">Mathematics of Business</emph>, 1940; <emph render="italic">Key to Mathematics of Business</emph>, 1941; <emph render="italic">New Complete Business Arithmetic</emph>, 1947</item>
+<item>Walden : <emph render="italic">Harness and Pack</emph>, 1935</item>
+<item>Walker : <emph render="italic">Our Birds and Their Nestlings</emph>, 1904 (See also cards)</item>
+<item>Warfel : <emph render="italic">American Novelists of Today</emph>, 1951; <emph render="italic">American College English</emph>, 1949</item>
+<item>Wheat &amp; Fitzpatrick : <emph render="italic">General Biology</emph>, 1932; <emph render="italic">General Biology, Rev.</emph>, 1942; <emph render="italic">Everyday Problems in Health</emph>, 1923</item>
+<item>Whitbeck and Others : <emph render="italic">The Working World</emph>, 1937; Manual and Key, 1939</item>
+<item>Whitman : <emph render="italic">Laboratory Manual for Whitman-Peck Physics</emph>, 1947; Teaching Manual for Whitman-Peck Physics, 1947</item>
+<item>Whitman &amp; Peck : <emph render="italic">Physics</emph>, 1946 (two packages) </item>
+<item>Wikdall : <emph render="italic">The Training of a Secretary</emph>, 1938 </item>
+<item>Williams : <emph render="italic">Toby, the Little Lost Dog</emph>, 1942 </item>
+<item>Williams : <emph render="italic">Secondary Schools for American Youth</emph>, 1948 </item>
+<item>Williams &amp; Fink : <emph render="italic">Projects in Psychology</emph>, 1955 </item>
+<item>Wilson &amp; Others: <emph render="italic">Our Ways of Living</emph> series, including <emph render="italic">Where Our Ways of Living Come From</emph>; 
+   <emph render="italic">Ways of Living in Many Lands</emph>; <emph render="italic">Living in the Age of Machines</emph>; 
+	<emph render="italic">Richer Ways of Living</emph>; workbooks for the above 4 titles</item>
+<item>Wilson, Bowman, &amp; King : <emph render="italic">This America</emph>, 1942</item>
+
+</list>
+</blockquote><p>  <emph render="bold">Study charts</emph> contains a small group of charts.</p><p>Some additional information is contained in the library's correspondence with ABC, prior to and during their donation of material.  Please contact the repository listed above for more information on this correspondence.</p>
+    </scopecontent>
+    <altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>Many of the textbooks have been digitized by Google books/Hathitrust.</p>
+      </altformavail><arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The primary arrangement of the <emph render="bold">General 
+correspondence</emph> is loosely chronological from ca. 1880 to 1964; it 
+is secondarily arranged in many repeating roughly alphabetical sequences.   This portion of 
+the inventory is presented as a spreadsheet to enable sorting in various ways.</p>
+
+<p><emph render="bold">Business records</emph> remain in original order.</p>
+
+<p><emph render="bold">Books</emph> are arranged in no particular order.  This portion of the inventory 
+is presented as a spreadsheet to enable sorting in various ways (see inventory below).</p>
+
+<p><emph render="bold">Illustrations</emph> are arranged in numerical order according to the
+            "Drawing Number" stamped an the backing plate. Plates which are out of sequence, extra
+            large, or unnumbered are placed at the end as well as illustration material organized by
+            book title, beginning with Oversize 1060.  To simplify locating all plates on a given
+            topic, this portion of the inventory is presented as two spreadsheets (one arranged by
+            plate number and location and the other by topic and plate number); see the inventory
+            below.</p>
+
+<p><emph render="bold">Miscellanea</emph> is arranged alphabetically by topic or title.</p></arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial>-->
+    <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p><emph render="italic"><ref role="bibid" href="138600">American Book Company, our heritage and our history</ref></emph>, a two-volume unpublished history of the company written by Managing Editor Mauck Brammer, has been removed from the collection and cataloged as part of the the Rare Books collection.</p>
+    </separatedmaterial>            <otherfindaid encodinganalog="555">
+	 <head>Other Related Finding Aids</head><p>Portions of the finding aid inventory are presented as spreadsheets to enable sorting the data in
+            various ways. These are: the General correspondence (click <extref href="abc_1.xls">here</extref>), the Books published (<extref href="abc_2.xls">original
+               accession</extref> and <extref href="abc_1998.xls">1998 additions</extref>), and the
+            Illustrations (click <extref href="ABC_4A.xlsx">here</extref> and <extref href="ABC_4B.xls">here</extref>). A more detailed explanation of each series, with a
+            link to it, is provided at the appropriate location in the inventory below.</p></otherfindaid>
+            <controlaccess>
+				<head>Subject and Genre Headings</head>
+<subject encodinganalog="650" source="local">Business and Industry</subject>
+<subject encodinganalog="650" source="local">Publishing, printing and book arts</subject>
+
+<corpname encodinganalog="610" source="lcnaf">American Book Company -- Archives.</corpname>
+<title encodinganalog="630" source="lcnaf" rules="aacr2r">McGuffey readers.</title>
+<subject encodinganalog="650" source="lcsh">Arithmetic -- Study and teaching.</subject>
+<subject encodinganalog="650" source="lcsh">Education, Elementary -- Textbooks -- Specimens.</subject>
+<subject encodinganalog="650" source="lcsh">Education, Primary -- Textbooks -- Specimens.</subject>
+<subject encodinganalog="650" source="lcsh">Education, Secondary -- Textbooks -- Specimens.</subject>
+<subject encodinganalog="650" source="lcsh">Educational publishing -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Geography -- Textbooks -- Specimens.</subject>
+<subject encodinganalog="650" source="lcsh">History -- Textbooks -- Specimens.</subject>
+<subject encodinganalog="650" source="lcsh">Mathematics -- Textbooks -- Specimens.</subject><subject encodinganalog="650" source="lcsh">Music -- Textbooks -- Specimens.</subject>
+<subject encodinganalog="650" source="lcsh">Penmanship.</subject>
+<subject encodinganalog="650" source="lcsh">Primers -- 1800-1870.</subject>
+<subject encodinganalog="650" source="lcsh">Primers -- 1870-1950.</subject>
+<subject encodinganalog="650" source="lcsh">Publishers and publishing -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Readers (Elementary)</subject>
+<subject encodinganalog="650" source="lcsh">Readers (Secondary)</subject>
+<subject encodinganalog="650" source="lcsh">Science -- Textbooks -- Specimens.</subject>
+<subject encodinganalog="650" source="lcsh">Textbooks -- Publishing.</subject>
+<subject encodinganalog="650" source="lcsh">Textbooks -- United States.</subject>
+<subject encodinganalog="650" source="lcsh">Vocational education -- Textbooks -- Specimens.</subject>
+<genreform encodinganalog="655" source="aat">Annual reports.</genreform>
+<genreform encodinganalog="655" source="aat">Artwork.</genreform>
+<genreform encodinganalog="655" source="aat">Books.</genreform>
+<genreform encodinganalog="655" source="aat">Calendars (documents)</genreform>
+<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+<genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform>
+<genreform encodinganalog="655" source="aat">Galley proofs.</genreform>
+<genreform encodinganalog="655" source="aat">Illustrations.</genreform>
+<genreform encodinganalog="655" source="aat">Maps (documents)</genreform>
+<genreform encodinganalog="655" source="aat">Paintings (visual works)</genreform>
+<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+<genreform encodinganalog="655" source="aat">Primers (books)</genreform>
+<genreform encodinganalog="655" source="aat">Textbooks.</genreform>
+<genreform encodinganalog="655" source="aat">Watercolors (paintings)</genreform>
+<occupation encodinganalog="656" source="lcsh">Publishers.</occupation>
+</controlaccess>
+
+<accessrestrict encodinganalog="506">
+   <head>Access Restrictions</head>
+   <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+</accessrestrict>
+
+<userestrict encodinganalog="540">
+   <head>Use Restrictions</head>
+   <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection. </p>
+</userestrict>
+
+							  <prefercite encodinganalog="524"><head>Preferred Citation</head>
+							  <p>Preferred citation for this material is as follows:</p>
+							  <p>American Book Company Records, <lb/>&su_name;
+                  </p></prefercite>
+						
+						<acqinfo encodinganalog="541"><head>Acquisition Information</head>
+						<p>Majority, gift of the <corpname role="donor">American Book Company</corpname>.</p><p>Some items (noted in inventory below) gift of <persname role="donor">Selma Ordewer</persname>, 2014.</p></acqinfo><!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+		 <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>General correspondence</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>General correspondence</unittitle>
+               <unitdate normal="1801/1964" type="inclusive">1801-1964</unitdate>
+					<container type="Box">1-244</container></did>
+            <scopecontent><p>The general correspondence contains ABC's correspondence with its 
+				authors, illustrators, and editors, as well as with other publishers; in many, though 
+				not all, cases, an author's name is accompanied by the title of the book(s) under 
+				discussion.  There are also organizations, educational institutions, and other 
+				correspondents as well as material relating to declined manuscripts, copyright, 
+				contracts, and a few meeting minutes.   The material is arranged in a roughly 
+				chronological order in repeating alphabetic sequences; as a result material relating to 
+				a given correspondent or book title may be found in several different locations.  To 
+				simplify locating all relevant information, this section of the inventory is presented 
+				in the form of a spreadsheet, which can be sorted by box number, correspondent, book 
+				title/subject, or date.  Click <extref href="abc_1.xls">here</extref> to open the 
+				spreadsheet.</p><p>There is also a partial index to the correspondence; see <ref target="br-ic-corr">Business records : Index card files : Correspondence</ref>.</p></scopecontent></c02>
+         </c01>
+      <c01 level="series">
+            <did>
+               <unittitle>Business records</unittitle>
+            </did>
+            <note><p>Business records do not contain any employee files or other employee records.</p></note><c02>
+            <did>
+               <unittitle>Calendars</unittitle>
+            <unitdate normal="1887/1963" type="inclusive">1887-1963</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">245</container>
+               </did>
+            
+         
+</c02><c02><did><unittitle>Dropped books list</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Design and proposition procedure</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Lorna Dietz</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Managers</unittitle><unitdate type="inclusive" normal="1919">1919</unitdate><container type="Box">245</container></did></c02>
+<c02><did><unittitle>W.H. Dennis, obituary</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Magnetism</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Wilson, Ben J.</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Americanism</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Butler, Sheldon &amp; Co.</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Everett T. Calvert</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>P.L. Carret</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Litton Industries</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Contract form</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Gillman</unittitle><unitdate type="inclusive" normal="1914/1931">1914-1931</unitdate><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Miscellaneous</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Editorial notices</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Suggestions for authors</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>E.S. Bird</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>A.S. Barnes &amp; Co.</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>James Baldwin</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Appleton &amp; Co.</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>American Book vs American Book Company</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>ABC - Ambrose</unittitle><unitdate type="inclusive" normal="1896/1914">1896-1914</unitdate><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Aladdin Books</unittitle><container type="Box">245</container></did></c02>
+<c02><did><unittitle>Blake</unittitle><unitdate normal="1939" type="inclusive">1939</unitdate><container type="Box">245</container></did></c02>
+<c02><did><unittitle> Blakeman and Iveson</unittitle><unitdate normal="1895/1896" type="inclusive">1895-1896</unitdate><container type="Box">245</container></did></c02>
+<c02><did><unittitle> Brown</unittitle><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Herbert G. Molden</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>McGuffey, William Holmes</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Permission procedure</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Major steps in book production</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Proof corrections</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Publishers Book of Trade</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Merriam-Webster</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Marriner</unittitle><unitdate type="inclusive" normal="1946/1956">1946-1956</unitdate><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Managers' meetings</unittitle><unitdate type="inclusive" normal="1920/1922">1920-1922</unitdate><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Sales offices</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Samuels</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>School Book Publishers Society</unittitle><unitdate type="inclusive" normal="1907">1907</unitdate><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Filing system and policy</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Forms, blank</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Founders</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Author biographies</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Leo Gans</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Harper</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Russell Hinuran</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>War Production Board</unittitle><unitdate type="inclusive" normal="1942">1942</unitdate><container type="Box">246</container></did></c02>
+<c02><did><unittitle>The Union Label</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle> Vail</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Van Antwerp, Brace and Co.</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>ABC Histories, Howe</unittitle><unitdate type="inclusive" normal="1931/1939">1931-1939</unitdate><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Ivison, Blakeman and Co.</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Edward W. Smith</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>State publication</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>State blueprints, Texas</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Gilmon H. Tucker</unittitle><container type="Box">246</container></did></c02><c02><did><unittitle>Intercompany business</unittitle><physdesc><extent>23 folders</extent></physdesc><unitdate normal="1904/1930" type="inclusive">1904-1930</unitdate><container type="Box">246</container></did></c02>
+
+         <c02><did><unittitle>Editorial department</unittitle><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Plate account and plate expense</unittitle><physdesc><extent>8 folders</extent></physdesc><container type="Box">246</container></did></c02>
+<c02><did><unittitle>Annual reports, corporate</unittitle><abstract>includes original printing plate for ABC logo</abstract><unitdate normal="1964/1965" type="inclusive">1964-1965</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">247</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02><c02><did><unittitle>Annual reports, editorial dept.</unittitle><unitdate normal="1931/1951" type="inclusive">1931-1951</unitdate><physdesc><extent>4 folders</extent></physdesc><container type="Box">247</container></did></c02>
+<c02><did><unittitle>Buckingham study of typography in relation to readability in first grade materials</unittitle><unitdate normal="1932/1933" type="inclusive">1932-1933</unitdate><container type="Box">247</container></did></c02>
+<c02><did><unittitle>Policy statements for authors</unittitle><abstract>copyright, copyright procedure, contract and quotation privileges</abstract><container type="Box">247</container></did></c02>
+<c02><did><unittitle>Books published 1904-1932</unittitle><abstract>total number of books published each year</abstract><container type="Box">247</container></did></c02>
+<c02><did><unittitle>Statistical reports, editorial dept.</unittitle><unitdate normal="1952/1961" type="inclusive">1952-1961</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">247</container></did></c02>
+<c02><did><unittitle>Editorial activities, education - college - international</unittitle><unitdate normal="1962/1966" type="inclusive">1962-1966</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">247</container></did></c02>
+<c02><did><unittitle>Editorial expenses</unittitle><abstract>covers mid-1950s to mid-1960s; includes booklet of ABC type specimens from 1892</abstract><container type="Box">247</container></did></c02>
+<c02><did><unittitle>Company biography by Mauck Brammer</unittitle></did><note><p>Transferred to Rare Books for cataloging.</p></note></c02>
+<c02><did><unittitle>Pamphlets</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">247</container></did><scopecontent><list><item>One Hundred Fifty Years of Arithmetic Textbooks, (1945), by Henry Lester Smith, Merrill T.
+                        Eaton, and Kathleen Dugdale</item><item>Alphabetical Price List (circa 1900?), American Book Company; includes instructions, "If ordering by telegraph"</item><item>Our Textbooks, Yesterday and Today (1953), by W.W. Livengood</item><item>Winthrop B. Smith: Creator of the Eclectic Educational Series (1971), by Mauck Brammer (in <emph render="italic">Ohio History</emph> Vol. 80 No. 1)</item></list></scopecontent></c02>
+<c02><did><unittitle>Miscellaneous publications</unittitle><container type="Box">248</container></did></c02>
+<c02><did><unittitle>Prices and catalogues</unittitle><unitdate normal="1890/1967" type="inclusive">1890-1967</unitdate><container type="Box">249</container></did></c02>
+<c02><did><unittitle>Books of entry</unittitle><physdesc><extent>4 volumes</extent></physdesc><container type="Box">250</container></did><userestrict><p>Handle with Extreme Care</p></userestrict></c02>
+<c02><did><unittitle>Books of Entry</unittitle><physdesc><extent>2 volumes</extent></physdesc><unitdate normal="1905/1945" type="inclusive">1905-1945</unitdate><container type="Oversize">1</container></did></c02>
+<c02><did><unittitle>Weekly reports, editorial department</unittitle></did>
+<c03><did><unittitle>Weekly reports</unittitle><unitdate normal="1923-10-06/1931-09-25" type="inclusive">Oct. 6, 1923-Sep. 25, 1931</unitdate><physdesc><extent>4 volumes</extent></physdesc><container type="Oversize">2</container></did></c03>
+<c03><did><unittitle>Weekly reports</unittitle><unitdate normal="1931-10-03/1937-11-27" type="inclusive">Oct. 3, 1931- Nov. 27, 1937</unitdate><physdesc><extent>3 volumes</extent></physdesc><container type="Oversize">3</container></did></c03>
+<c03><did><unittitle>Weekly reports</unittitle><unitdate normal="1937-12-11/1947-08-25" type="inclusive">Dec. 11, 1937-Aug. 25, 1947</unitdate><physdesc><extent>3 volumes</extent></physdesc><container type="Oversize">4</container></did></c03>
+<c03><did><unittitle>Weekly reports</unittitle><unitdate normal="1947-09-01/1951-05-28" type="inclusive">Sep. 1, 1947-May 28, 1951</unitdate><physdesc><extent>2 volumes</extent></physdesc><container type="Oversize">5</container></did></c03>
+</c02>
+<c02 id="bric"><did><unittitle>Index card files</unittitle></did>
+   <c03 id="br-ic-corr"><did><unittitle>Correspondence index, A-Z by author</unittitle><abstract>several hundred cards, including Brammer's original note accompanying the donation; unclear what dates are covered, but no later than 1966</abstract><container type="Box">251</container></did></c03>
+   <c03><did><unittitle>Permissions</unittitle><abstract>about 30 index cards listing permissions information for various titles</abstract><container type="Box">251</container></did></c03><c03><did><unittitle>Transfers, A-D</unittitle><container type="Box">553</container></did></c03>
+   <c03><did><unittitle>Transfers, Ea-Z</unittitle><container type="Box">554</container></did></c03>
+   <c03><did><unittitle>Transfers</unittitle><unitdate type="inclusive" normal="1925/1955">1910-1927</unitdate><container type="Box">555</container></did></c03><c03><did><unittitle>Declined manuscripts</unittitle><unitdate type="inclusive" normal="1925/1955">circa 1930-1950</unitdate><container type="Box">555</container></did></c03>
+   <c03><did><unittitle>Declined proposals</unittitle><container type="Box">556</container></did></c03>
+   <c03><did><unittitle>Declines and transfers</unittitle><unitdate type="inclusive" normal="1850/1910">to 1910</unitdate><container type="Box">557</container></did></c03>
+</c02>
+</c01>
+<c01 level="series">
+         
+            <did>
+               <unittitle>Books</unittitle>
+            </did>
+            <scopecontent><p>These boxes contain publications of the American Book 
+Company and its acquisitions, its founders and their acquisitions. There are 
+multiple copies of many books, in which case at least one copy is the "marked 
+copy" -- the Editor's Library copy, carrying pasted-in proofs showing changes 
+made between printings and editions.  The series also 
+includes wall posters, flash cards, and writing slates.  Items include textbooks, teachers' guides, answer keys, tests, additional instructional material, etc.</p>
+
+<p>The material is roughly arranged in repeating alphabetic sequences; as a result 
+items relating to a given author or book title may be found in several different 
+locations.  To simplify locating all relevant information, this section of the 
+inventory is presented in the form of two, spreadsheets, one for the original accession and another for the later 1998 accession, which can be sorted by box 
+number, author, book title, or date.</p></scopecontent><note><p>See also <ref target="bric">Business records : Index card files</ref> above for additional material relating to books.</p></note><c02>
+               <did>
+                  <unittitle>Books published by the American Book Company, original accession</unittitle>
+                  <unitdate normal="1801/1971" type="inclusive">1801-1971</unitdate>
+                  <container type="Box">252-551, 821</container>
+               </did>
+            
+            <scopecontent><p>Click <extref href="abc_2.xls">here</extref> 
+to open the spreadsheet for the initial accession.   Also includes Oversize 1-B.</p></scopecontent></c02>
+         <c02>
+               <did>
+                  <unittitle>Books published by the American Book Company, 1998 accession</unittitle>
+                  <unitdate normal="1801/1971" type="inclusive">1801-1971</unitdate>
+                  <container type="Box">558-818</container>
+               </did>
+            
+            <scopecontent><p>Click <extref href="abc_1998.xls">here</extref> 
+to open the spreadsheet for the 1998 accession; this list does not include names of any authors.</p></scopecontent></c02></c01>
+
+			<c01 level="series">
+            <did>
+               <unittitle>Illustrations</unittitle>
+            </did><c02><did><unittitle>Photographs</unittitle><abstract>both original and reproduction, with a wide range of formats, dates and subject matter from pigs to streetcars; likely used in books published by ABC</abstract><container type="Box">552</container></did></c02><c02>
+               <did>
+                  <unittitle>Illustrations commissioned by the American Book Company for use in its publications</unittitle>
+                  <unitdate normal="1801/1964" type="inclusive">1801-1964</unitdate>
+                  <container type="Oversize">8-1200</container>
+               </did>
+            <scopecontent><p>These boxes contain illustrations commissioned by the American Book Company for use in its
+                     publications (see the main Scope and Content description above for a list of
+                     authors and book titles whose illustrations are included here). The material is
+                     arranged in order by plate number but oversize plates have been relocated to
+                     the end and the series also includes unnumbered plates and plates identified
+                     only by book title. To simplify locating all relevant information, this section
+                     of the inventory is presented in the form of two spreadsheets, which can be
+                     sorted either by box number and plate number (click <extref href="ABC_4A.xlsx">here</extref>) or by subject matter and plate number (click <extref href="ABC_4B.xls">here</extref>). The spreadsheets do <emph render="italic">not</emph> reference the plates by artist and does <emph render="italic">not</emph> correlate plate numbers and publications.</p></scopecontent><note><p>See also <ref>Miscellanea : Artwork</ref> above for a few other examples of images used in ABC books.</p></note></c02>
+         </c01>
+			<c01 level="series">
+            <did>
+               <unittitle>Study charts</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Study charts</unittitle>
+               <physdesc><extent>51 rolls, 1 tripod</extent></physdesc></did>
+            </c02>
+         </c01>
+		<c01 level="series">
+            <did>
+               <unittitle>Miscellanea</unittitle>
+            </did>
+            <c02><did><unittitle>Artwork</unittitle><abstract>photograph and print, apparently used in <emph render="italic">World History Since 1870</emph></abstract><container type="Box">819</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02>
+            <c02><did><unittitle>Artwork</unittitle><abstract>camera-ready map mounted on cardboard entitled "A Map of New England" prepared by the Hagstrom Company of New York, which appeared in <emph render="italic">The Puritans</emph> by Perry Miller and Thomas Johnson published in 1938</abstract><container type="Map-Case">131</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02><c02><did><unittitle>Book covers</unittitle><abstract>samples of covers for hardcover and paperback textbooks on a variety of topics, including college texts, foreign languages, math and science, grammar, spelling, etc.</abstract><physdesc><extent>7 folders</extent></physdesc><container type="Box">819</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02>
+            <c02><did><unittitle>Bylaws</unittitle><unitdate normal="1965" type="inclusive">1965</unitdate><container type="Box">819</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02>
+            <c02><did><unittitle>Clippings</unittitle><abstract>acquisition of ABC by Litton; Litton's sale of ABC to Thomson; Thomson's sale of ABC assets to D.C. Heath (Raytheon)</abstract><unitdate normal="1965" type="inclusive">1966, </unitdate><unitdate normal="1965" type="inclusive">1981</unitdate><container type="Box">819</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02><c02><did><unittitle>Letterhead, corporate</unittitle><container type="Box">819</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02>
+			   <c02><did><unittitle>Notebook : "Movements of Private Car, Anthracite"</unittitle><unitdate normal="1914/1917" type="inclusive">1914-1917</unitdate><container type="Oversize">1-B</container></did></c02>
+            <c02><did><unittitle>"Our Heritage"</unittitle><abstract>address delivered to the company by W.W. Livegood, editor-in-chief and vice president</abstract><unitdate normal="1947-01-04" type="inclusive">4 Jan 1947</unitdate><container type="Box">819</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02>
+            <c02><did><unittitle>"Our Language Today" packet</unittitle><abstract>covers, content, teacher's guide, etc.</abstract><container type="Box">820</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02>
+			   <c02><did><unittitle>Perception cards</unittitle><container type="Oversize">7</container></did><scopecontent><p>Story Hour Readers Perception Cards. Primer, First Year-First Half; Story Hour Readers Perception Cards.  Book One, First Year-Second Half</p></scopecontent></c02>
+				
+            <c02><did><unittitle>Pins</unittitle><abstract> commemorative pins given to10-year employees</abstract><container type="Box">820</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02>
+		      <c02><did><unittitle>Posters</unittitle><container type="Oversize">6</container></did><scopecontent><p>Wall posters to accompany Stoddard, Bailey, Lewis, McPherson English Series; Krusi’s  Industrial Drawing Elementary Architecture Complete; Alphabetical Register no.1; American School Daily Weekly and Quarterly Register</p></scopecontent><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02>
+            <c02><did><unittitle>Printing plates</unittitle><abstract>ABC logo, decorations, etc.</abstract><physdesc><extent>5 items in 2 folders</extent></physdesc><container type="Box">820</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02>
+            <c02><did><unittitle>School catalog</unittitle><unitdate normal="1970/1971" type="inclusive">1970-1971</unitdate><container type="Box">820</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02>
+            <c02><did><unittitle>"You and Your Company"</unittitle><abstract>corporate overview for new employees</abstract><unitdate normal="1956" type="inclusive">1956</unitdate><container type="Box">820</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02>
+            <c02><did><unittitle>Miscellaneous artifacts</unittitle><abstract>loupe, ruler/square, etc.</abstract><unitdate normal="1956" type="inclusive">1956</unitdate><container type="Box">820</container></did><acqinfo><p>Gift of Selma Ordewer, 2014.</p></acqinfo></c02>
+			</c01></dsc>
+	</archdesc>
+</ead>

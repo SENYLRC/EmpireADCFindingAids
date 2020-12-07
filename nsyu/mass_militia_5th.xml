@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="mass_militia_5th" mainagencycode="NSyU">mass_militia_5th</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Massachusetts Militia, 5th Regiment, Monson Artillery Company Orderly Book</titleproper>
+        <subtitle>An inventory of the item at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date calendar="gregorian" encodinganalog="Date" era="ce" normal="2010-09-03">3 Sep 2010</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+
+
+
+
+        <date calendar="gregorian" era="ce" normal="2010-09-03">3 Sep 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>17 Oct 2018 - rehoused (MS)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <corpname encodinganalog="110" source="lcnaf">Massachusetts. -- Militia. -- Regiment, 5th.
+        </corpname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Massachusetts Militia, 5th Regiment, Monson Artillery Company Orderly Book</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1815/1842" type="inclusive">1815-1842</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">1 volume</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Orderly book of the Massachusetts Militia's Monson Artillery Company (4th Division, 1st Brigade, 5th Regiment).  Volume 
+	  also contains some school records from District No. 2, Stafford.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">3164209</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Little is known of the Monson Artillery Company beyond the information given in the collection.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Massachusetts Militia, 5th Regiment, Monson Artillery Company Orderly Book</emph> consist of a 
+	  single, bound volume.  The first half of the volume (99 pages) is an orderly book, where records were kept of orders sent to the company 
+	  between 1815 and 1842.  The second half of the book (54 pages) contains school records from District No. 2, Stafford; these records are 
+	  undated.  Finally, a few pages at the end of the book comprise an unidentified cash account, 1821-1826 (5 pages).</p>
+    </scopecontent>
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">Military history</subject>
+      <corpname encodinganalog="610" source="lcnaf">Massachusetts. -- Militia. -- Regiment, 5th.</corpname>
+      <genreform encodinganalog="655" source="aat">Public records.</genreform>
+      <genreform encodinganalog="655" source="aat">School records.</genreform>
+      <genreform encodinganalog="655" source="aat">Orderly books.</genreform>
+      <subject encodinganalog="650" source="lcsh">Military history -- United States.</subject>
+      <geogname encodinganalog="651" source="lcsh">Massachusetts -- History, Military.</geogname>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, 
+	  excerpts or images from any materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Massachusetts Militia, 5th Regiment, Monson Artillery Company Orderly Book, 
+
+
+
+        <lb/>&su_name;</p>
+    </prefercite>
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Military records</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Orderly book</unittitle>
+			<abstract>volume also contains 50+ pages of school records and a few pages of cash accounting</abstract>
+            <unitdate calendar="gregorian" era="ce" normal="1815/1842" type="inclusive">1815-1842</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

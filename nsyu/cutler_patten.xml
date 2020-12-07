@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="cutler_patten">cutler_patten</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">John L. Cutler Research Collection Relating to Gilbert Patten</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-03-19" encodinganalog="Date">19 Mar 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-03-19">19 Mar 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>28 Sep 2018 - processed (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Cutler, John L.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">John L. Cutler Research Collection Relating to Gilbert Patten</unittitle>
+         <unitdate encodinganalog="245$f" normal="1925/2002" type="inclusive" label="Inclusive Dates: ">1925-2002</unitdate>
+            <unitdate encodinganalog="245$g" normal="1925/1938" type="bulk" label="Bulk Dates: ">1925-1938</unitdate><physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Research notes for a book about dime novel author Gilbert Patten, aka Burt L. Standish.  Collection includes notes, photographs, printed material, essays, correspondence.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2740154</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Gilbert Patten (pen name of Burt L. Standish) was the author of a pulp series for Street &amp; Smith called The Amazing Frank  Merriwell Stories.  John L. Cutler was the author of <emph render="italic">Gilbert Patten and his Frank Merriwell saga:  a study in sub-literary fiction, 1896-1913</emph> (1934).  Ryan K. Anderson is the author of <emph render="italic">Frank Merriwell and the Fiction of All-American Boyhood</emph> (2015).  This collection of Cutler's research material was given to Anderson by Cutler's daughter Carolyn, and subsequently donated by Anderson.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">John L. Cutler Research Collection Relating to Gilbert Patten</emph> consists of research material for Cutler's book  <emph render="italic">Gilbert Patten and his Frank Merriwell saga:  a study in sub-literary fiction, 1896-1913</emph>.   includes correspondence, Patten memorabilia, and research material.</p><p><emph render="bold">Correspondence</emph> contains Cutler's correspondence with Patten himself, as well as with dime novel collector Charles Bragin and others.  There is also one letter from Cutler's daughter Carolyn to Ryan K. Anderson.</p><p><emph render="bold">Patten memorabilia</emph> contains two photographs of Patten along with covers and full issues of several of Patten's stories, written under the name Burt Standish.</p><p><emph render="bold">Research material</emph> contains material accumulatd by Cutler relating to Patten and to dime novels in general, including articles by and about Patten, a questionnaire compiled by Cutler and completed by Patten, a dime novel bibliography, and assorted other items.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by name or type of material.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; is also the repository for the <archref href="street_smith.htm">records of dime novel and pulp publisher Street &amp; Smith</archref>.  In addition, we have a large number of dime novels and pulp magazines cataloged in our Rare Books holdings; please refer to &summitref; to locate these items.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+			<persname encodinganalog="600" source="lcnaf">Bragin, Charles.</persname><persname encodinganalog="600" source="lcnaf">Ellis, Milton, 1885-1947.</persname><persname encodinganalog="600" source="lcnaf">Standish, Burt L., 1866-1945.</persname><persname encodinganalog="600" source="lcnaf">Standish, Burt L., 1866-1945. -- Famous Frank Merriwell stories.</persname>
+	      
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Street &amp; Smith.</corpname>
+         <title encodinganalog="630" source="lcnaf">Tip top weekly.</title>
+         <subject encodinganalog="650" source="lcsh">Dime novels -- History and criticism.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Bibliographies.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Genealogies (histories)</genreform><genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Research notes.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+			<occupation encodinganalog="656" source="lcsh">Biographers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>There are no access restrictions on this material.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>John L. Cutler Research Collection Relating to Gilbert Patten, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Ryan K. Anderson</persname>, 2004.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+<c01 level="series"><did><unittitle>Correspondence</unittitle><container type="Box">1</container></did>
+   <c02><did><unittitle>Cutler, Carolyn (Cutler's daughter)</unittitle><abstract>to donor Ryan Anderson, about her father</abstract><unitdate type="inclusive" normal="2002">2002</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Cutler, John, with Charles Bragin (dime novel collector)</unittitle><unitdate type="inclusive" normal="1937/1938">1937-1938</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Cutler, John, with Milton Ellis (professor, University of Maine)</unittitle><unitdate type="inclusive" normal="1932">1932, </unitdate><unitdate type="inclusive" normal="1934">1934</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Cutler, John, with Alice Gardner Morris (Patten's ex-wife)</unittitle><unitdate type="inclusive" normal="1935">1935</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Cutler, John, with Gilbert Patten</unittitle><unitdate type="inclusive" normal="1931/1934">1931-1934, </unitdate><unitdate type="inclusive" normal="1930/1935">undated</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Cutler, John, with Street &amp; Smith</unittitle><unitdate type="inclusive" normal="1932">1932</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Cutler, John, miscellaneous</unittitle><container type="Box">1</container></did></c02></c01>
+<c01 level="series"><did><unittitle>Patten memorabilia</unittitle></did>
+   <c02><did><unittitle>Beadle's New York Dime Library No. 71, cover</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Jesse James Stories No. 1, full issue</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Photographs of Patten</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Tip Top Weekly #256, cover</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Tip Top Weekly #256, full issue</unittitle><container type="Box">1</container></did></c02></c01>
+<c01 level="series"><did><unittitle>Research material</unittitle></did>
+   <c02><did><unittitle>Articles about Patten</unittitle><unitdate type="inclusive" normal="1925">1925, </unitdate><unitdate type="inclusive" normal="1932">1932, </unitdate><unitdate type="inclusive" normal="1934">1934, </unitdate><unitdate type="inclusive" normal="1938">1938</unitdate><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Articles by Patten</unittitle><abstract>includes "Dime novel days: My start as a writer" from Saturday Evening Post</abstract><unitdate type="inclusive" normal="1931/1932">1931-1932, </unitdate><unitdate type="inclusive" normal="1934">1934, </unitdate><unitdate type="inclusive" normal="1937">1937</unitdate><container type="Oversize">1</container></did></c02>
+   <c02><did><unittitle>Dime Novel Bibliography, Charles Bragin</unittitle><unitdate type="inclusive" normal="1938">1938</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Essay on Munsey Publishing House, author not given</unittitle><unitdate type="inclusive" normal="1930/1938">undated</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Maine 1850 census notes</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Notes on dime novels</unittitle><abstract>index cards</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Patten genealogical information</unittitle><abstract>family trees on loose sheets, small notebook with notes on Patten family</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Questionnaires, completed by Patten</unittitle><container type="Box">1</container></did></c02></c01>
+         
+      </dsc>
+   </archdesc>
+</ead>

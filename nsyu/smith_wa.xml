@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+    <eadid countrycode="US" mainagencycode="NSyU" identifier="smith_wa">smith_wa</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">William Arthur Smith Collection</titleproper>
+        <subtitle>An inventory of the collection 
+                        
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">-</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>&su_address;
+                           <date normal="1967-08" encodinganalog="Date">Aug 1967</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           <date era="ce" calendar="gregorian" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language langcode="eng" encodinganalog="Language">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>18 Nov 2009 - converted to EAD (MRC)</item><item>4 Aug 2010 - adds, updates (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name; <lb/>&su_address;
+               </repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Smith, William Arthur, 1918-</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">William Arthur Smith Collection</unittitle>
+      <unitdate encodinganalog="245$f" type="inclusive" label="Inclusive Dates: " normal="1950/1966">1950-1966</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">1 linear feet</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the American painter and print-maker.  Collection includes gallery and exhibition 
+					material, photographs, and published material about Smith and other artists.</abstract>
+      <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">148673</unitid>
+      <langmaterial label="Language: " encodinganalog="546">Majority in <language langcode="eng">English</language>, 
+	  a few items in <language langcode="jap">Japanese</language>, <language langcode="gre">Greek</language>, 
+	  <language langcode="ita">Italian</language>, and <language langcode="tur">Turkish</language>.
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>William Arthur Smith (1918-1989) was an American painter, illustrator and print-maker, particularly known 
+	  for his landscapes and graphics.</p>
+	  <p>Born in Toledo, Ohio on April 19, 
+	  1918, Smith studied art at the University of Toledo with Theodore J. Keane and later at the Ecole des Beaux 
+	  Arts and L'Academie de la Grande Chaumiere in Paris.  Smith was an Academician of the National Academy of 
+	  Design, a member of the West Coast Watercolor Society, and a past president of the American Watercolor Society.  
+	  He also belongs to the Audubon Association.</p>
+	  <p>Smith won numerous awards, among them the National Academy of Design's coveted medal (twice), a grand prize 
+	  and a gold medal from the society that awards the "Watercolor of the Year" (1957, 1965), and an honorary 
+	  degree from the University of Toledo.</p>
+	  <p>Smith's work is in the permanent collections of the Museum of Modern Art, the Chrysler Corporation, Florida 
+	  Southern College, the Library of Congress, and the Los Angeles Museum of Art, and he had exhibits at major 
+      museums in countries around the world, including India, Greece, Italy, Turkey and Japan.    In the United States Smith's work was exhibited at the Museum of Modern Art, 
+	  the Metropolitan Museum of Art, the Pennsylvania Academy of Fine Arts, and the City Art Museum of St. Louis.</p>
+	  <p>The United States 
+	  sent Smith as a delegate to the International Conference on Plastic Arts in Venice in 1954, and he lectured 
+	  extensively in the Philippines as well as in Taiwan, Thailand, Vietnam, Burma, Nepal and Turkey.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">William Arthur Smith Collection</emph> consists of  articles and biographical sketches about Smith (including two that fold out to large poster-size and feature reproductions of his work); exhibit catalogs, several in foreign languages; photographs of Smith at work in his studio; and a reproduction of a painting (not by Smith) from the National Gallery in Washington, DC, printed with "Seasons Greetings Ferol and William Smith."</p></scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Alphabetical.</p>
+    </arrangement>
+    <!-- <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial> -->
+    <!-- <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial> -->
+	
+	<!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+			
+   <controlaccess><head>Subject and Genre Headings</head>
+   <subject encodinganalog="650" source="local">Art -- Illustrators</subject>
+   <subject encodinganalog="650" source="local">Art -- Painters</subject>
+   <persname encodinganalog="600" source="lcnaf">Smith, William Arthur, 1918-</persname>
+   <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+   <!-- <corpname encodinganalog="610" source="lcnaf">##</corpname> -->
+   <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+   <subject encodinganalog="650" source="lcsh">Painters -- United States -- 20th century.</subject>
+   <subject encodinganalog="650" source="lcsh">Illustrators -- United States.</subject>
+   <subject encodinganalog="650" source="lcsh">Printmakers -- United States.</subject>
+   <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+   <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+   <genreform encodinganalog="655" source="aat">Exhibition catalogs.</genreform>
+   <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+   <occupation encodinganalog="656" source="lcsh">Painters.</occupation>
+   <occupation encodinganalog="656" source="lcsh">Illustrators.</occupation>
+   <occupation encodinganalog="656" source="lcsh">Printmakers.</occupation>
+   <!-- <function encodinganalog="657">##</function> -->
+   </controlaccess>
+   
+   <accessrestrict encodinganalog="506">
+   <head>Access Restrictions</head>
+   <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p></accessrestrict>
+   
+   <userestrict encodinganalog="540">
+   <head>Use Restrictions</head>
+   <p>Written permission must be obtained from SCRC and 
+                       all relevant rights holders before publishing quotations, excerpts or images from any 
+                       materials in this collection. </p></userestrict>
+	
+	<prefercite encodinganalog="524">
+	<head>Preferred Citation</head>
+	<p>Preferred citation for this material is as follows:</p><p>William Arthur Smith Collection, <lb/>&su_name;
+                  </p></prefercite>
+				  
+	<!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Subject files</unittitle></did>
+            <c02><did><unittitle>Articles about</unittitle><unitdate normal="1959" type="inclusive">1959, </unitdate><unitdate normal="1966" type="inclusive">1966, </unitdate><unitdate normal="1950/1959" type="inclusive">undated </unitdate><container type="Oversize">1</container></did></c02>
+            <c02><did><unittitle>Exhibition catalogs</unittitle><abstract>includes items in English,  Italian, Japanese, Greek and Turkish</abstract><unitdate normal="1952" type="inclusive">1952, </unitdate><unitdate normal="1954" type="inclusive">1954, </unitdate><unitdate normal="1955" type="inclusive">1955, </unitdate><unitdate normal="1950/1959" type="inclusive">undated</unitdate><container type="Oversize">1</container></did></c02>
+            <c02><did><unittitle>Photographs</unittitle><abstract>of Smith in his studios</abstract><unitdate normal="1950" type="inclusive">1950, </unitdate><unitdate normal="1951," type="inclusive">1951, </unitdate><unitdate normal="1958" type="inclusive">1958</unitdate><container type="Oversize">1</container></did></c02>
+            <c02><did><unittitle>Reproduction of a painting (not by Smith)</unittitle><unitdate normal="1950/1959" type="inclusive">undated</unitdate><container type="Oversize">1</container></did></c02>
+         </c01>
+	  </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+   <eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="taylor_fam">taylor_fam</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Taylor Family Collection</titleproper>
+            <subtitle>A description of their collection at Syracuse University</subtitle>
+            <author encodinganalog="Creator">MRC</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher> &su_address; <date normal="2010-04-12" encodinganalog="Date">12 Apr 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-04-12">12 Apr 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"-->
+      <revisiondesc>
+         <list>
+            <item>17 Aug 2010 - processed and added inventory (CBE)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: "> &su_name; <lb/> &su_address; </repository>
+         <origination label="Creator: ">
+            <famname encodinganalog="100">Taylor family.</famname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Taylor Family Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1845/1980" type="inclusive" label="Inclusive Dates: ">1845-1980</unitdate>
+         <physdesc encodinganalog="300$a" label="Quantity: "><extent>4 linear
+            ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Central New York family. Collection
+            contains correspondence, photographs, memorabilia, genealogical records, legal
+            documents, printed material and other items.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3151990</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+
+         <p>The Taylor family represented in this collection is primarily the immediate family of
+            Albert B. Taylor, Superintendent of Telegraph of the New York Central &amp; Hudson River
+            Railroad between 1906 and 1928. His father, Jeremiah B. Taylor, was a Baptist minister
+            who left New York City for Kansas in the 1860s. The whole family moved to Kansas, but
+            Albert and his brother Joseph were taken back to New York in the 1870s and raised by an
+            uncle, Isaac Remsen Blauvelt. Eventually the entire family returned to New York and
+            lived in Brooklyn.</p>
+         <p>Albert B. Taylor married Mary S. Deane, the daughter of Robert and Jane Deane. Robert
+            Deane was a distinguished engineer for the British Navy in India, where he worked
+            building bridges in difficult locations using his exceptional skill with the diving
+            bell. His first wife, Sylvia S. Shields, and their infant son were murdered in the
+            Indian Rebellion of 1857 by their native servants. Jane S. Willis had travelled to India
+            in 1856 with her mother and fiancé, Robert Horn, to live with relatives. They, too, were
+            caught up in the Indian Rebellion and lived with hundreds of other British subjects
+            under siege in the Fort of Agra. Robert Horn and Jane's mother both died during the
+            siege. Jane S. Willis met Robert Deane and they were married in 1860. They had four
+            children (Mary, William, Florence, and Blanche) in India before moving to the United
+            States in 1867. </p>
+         <p>Albert began studying to become a teacher but abandoned that field in favor of learning
+            to be a stenographer. He became the secretary for the Manager of the New York, West
+            Shore and Buffalo Railroad. Albert and Mary Taylor had eight children: Albert W.
+            ("Bert"), Joseph H. ("Joe"), Mary F. ("Maidie" or "Florence"), Elizabeth C. ("Bess"),
+            Blanche S., Elsie D. ("Deane"), Edna B., and Violet J. ("Budge"). </p>
+         <p>Bert died young in 1911. Joe became a civil engineer, worked for Lockheed and moved to
+            California, raising his children Nancy and Don there. Florence married a man named
+            Walter Penshaw. Bess became assistant to the head of the New York Railroad company.
+            Blanche married a teacher named Robert Rodgers, born in Scotland and a veteran of World
+            War I, and they had two sons, Robert (known as Robin or Robbie) and Eric. Robin died in
+            1945 in an airplane crash while training in Georgia for the US Army Air Corps during
+            World War II. Eric eventually married a woman with two children named Laurie and Jimmy
+            Mansfield. Deane married a man named Finn Finne, taught, and is responsible for most of
+            the genealogical research of the family. Edna married a Dr. Richard Feige and lived in
+            Maplewood, New Jersey. Budge married a man named Peter Schroeder and both became
+            professors at the University of Connecticut. All of the Taylor daughters were college
+            graduates. Blanche was the only daughter to have children and Joe's children are the
+            only grandchildren of Albert B. Taylor's to have children of their own.</p>
+      </bioghist>
+
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Taylor Family Collection</emph> consists of correspondence,
+            genealogical material, legal documents, and memorabilia.</p>
+         <p><emph render="bold">Correspondence</emph> is the bulk of the collection. The letters are
+            separated by author. The most heavily represented writer of the collection is Mary Deane
+            Taylor, Albert B. Taylor's wife, who often lived apart from her husband while he was
+            working for the railroad in a secretarial capacity. Those letters are primarily between
+            1882 and 1889, though there are more letters written by Mary to her grown daughters
+            spanning the decades before her death in 1919. Correspondence also includes a collection
+            of early to mid- 20th century greeting cards collected primarily by Robert M. Rodgers
+            and his wife, Blanche Taylor Rodgers. </p>
+         <p><emph render="bold">Genealogical material</emph> includes genealogical records and
+            family history. There are family tree diagrams as well as narratives about the 18th and
+            19th century ancestors. </p>
+         <p><emph render="bold">Legal documents</emph> are divided into four family sections,
+            representing the Blauvelt, Deane, Rodgers, and Taylor families. The folders include
+            deeds, stock certificates, marriage certificates, wills, legal correspondence about
+            wills, and contracts.</p>
+         <p><emph render="bold">Memorabilia</emph> is comprised of clippings, programs from events,
+            photographs, and objects collected by family members as keepsakes, such as a woodblock
+            and a watch. There is also a folder of religious material, including a bible belonging
+            to Albert B. Taylor and prayer books from the 1860s. About half of the photographs in
+            the collection are unlabeled and have been separated from those in which the subject has
+            been identified.</p>
+      </scopecontent>
+
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection is organized alphabetically by subject and then chronologically when
+            possible. Many items are not dated. Correspondence is alphabetical by the author's last
+            name.</p>
+      </arrangement>
+
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+
+      <!--Use archref, not extref, to link to related collections.-->
+      <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>Two books have been removed and sent to Rare Books for cataloging. These are an 1866
+            book titled <emph render="italic">A New Service and Tune Book, for Sunday Schools</emph> by A. B. Goodrich and 
+            a book printed around 1784 titled <emph render="italic">Songs in
+               the Night</emph>.</p>
+      </separatedmaterial>
+
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <subject encodinganalog="650" source="local">New York State</subject>
+		 <famname encodinganalog="600" source="lcnaf">Deane family.</famname>
+         <famname encodinganalog="600" source="lcnaf">Rodgers family.</famname>
+         <famname encodinganalog="600" source="lcnaf">Taylor family.</famname>
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Genealogy.</subject>
+         <geogname encodinganalog="651" source="lcsh">New York (State) -- History -- 1865- </geogname>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Biographies.</genreform>
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">Contracts.</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Genealogies (histories)</genreform>
+         <genreform encodinganalog="655" source="aat">Legal documents.</genreform>
+         <genreform encodinganalog="655" source="aat">Memorabilia.</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+         <genreform encodinganalog="655" source="aat">Wills.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>-->
+      </controlaccess>
+
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Taylor Family Collection, <lb/> &su_name; </p>
+      </prefercite>
+
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Polly Darnell</persname>, 2007.</p>
+      </acqinfo>
+
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+
+      <dsc type="combined">
+         <head>Inventory</head>
+
+
+         <c01 level="series">
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Deane, Florence J.</unittitle>
+                  <container type="Box">1</container>
+                  <unitdate type="inclusive" normal="1883/1888">1883-1888</unitdate>
+               </did>
+            </c02>
+
+            <c02>
+               <did>
+                  <unittitle>Deane, Robert</unittitle>
+                  <abstract>includes a letter of recommendation for Robert Deane and letters to his
+                     wife, Jane S. Willis Deane</abstract>
+                  <container type="Box">1</container>
+                  <unitdate type="inclusive" normal="1855/1871">circa 1860-1866</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Deane, William</unittitle>
+                  <container type="Box">1</container>
+                  <unitdate type="inclusive" normal="1873">1873</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Deane, William H. ("Will")</unittitle>
+                  <container type="Box">1</container>
+                  <unitdate type="inclusive" normal="1883/1929">1883-1929</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Feige, Edna Taylor </unittitle>
+                  <container type="Box">1</container>
+                  <unitdate type="inclusive" normal="1912/1944 ">1912-1944 </unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Finne, Elsie Deane Taylor ("Deane")</unittitle>
+                  <container type="Box">1</container>
+                  <unitdate type="inclusive" normal="1901/1977">1901-1977</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Major, George M. </unittitle>
+                  <container type="Box">1</container>
+                  <unitdate type="inclusive" normal="1883/1884">1883-1884</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Penshaw, Mary Florence Taylor ("Florence")</unittitle>
+                  <container type="Box">1</container>
+                  <unitdate type="inclusive" normal="1907">1907</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Rodgers, Blanche Taylor </unittitle>
+                  <container type="Box">1</container>
+                  <unitdate type="inclusive" normal="1923/1940 ">1923-1940 </unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Rodgers, Eric M.</unittitle>
+                  <container type="Box">1</container>
+                  <unitdate type="inclusive" normal="1927/1975">1927-1975</unitdate>
+                  <physdesc><extent>2 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Rodgers, Jane and Robert</unittitle>
+                  <container type="Box">1</container>
+                  <unitdate type="inclusive" normal="1895/1935">circa 1900-1930</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Rodgers, Robert D. (“Robin”)</unittitle>
+                  <container type="Box">1</container>
+                  <unitdate type="inclusive" normal="1925/1945">1925-1945</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Rodgers, Robert M.</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate type="inclusive" normal="1928">1928</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Schroeder, Peter B.</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate type="inclusive" normal="1943-09/1945-04">Sep 1943-Apr 1945</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Schroeder, Violet Taylor (“Budge”)</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate type="inclusive" normal="1920/1952">1920-1952</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Taylor, Albert B.</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate type="inclusive" normal="1883/1929 ">1883-1929 </unitdate>
+                  <physdesc><extent>2 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Taylor, Donald</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate type="inclusive" normal="1938/1947">1938-1947</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Taylor, Elizabeth (“Bess”)</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate type="inclusive" normal="1914/1974 ">1914-1974 </unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Taylor, J. Spencer</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate type="inclusive" normal="1886/1922">1886-1922</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Taylor, Jeremiah B.</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate type="inclusive" normal="1886/1892">1886-1892</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Taylor, Joseph H.</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate type="inclusive" normal="1910/1974 ">1910-1974 </unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Taylor, Marian L. Brace</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate type="inclusive" normal="1922/1923 ">1922-1923 </unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Taylor, Mary S. Deane</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle><unitdate type="inclusive" normal="1882/1883">1882-1883 </unitdate></unittitle>
+                     <container type="Box">3</container>
+                     <physdesc><extent>9 folders</extent></physdesc>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle><unitdate type="inclusive" normal="1884/1918 ">1884-1918 </unitdate></unittitle>
+                     <container type="Box">4</container>
+                     <physdesc><extent>6 folders</extent></physdesc>
+                  </did>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Taylor, William C.</unittitle>
+                  <container type="Box">4</container>
+                  <unitdate type="inclusive" normal="1882/1886">1882-1886</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Vason, Sue Reid</unittitle>
+                  <container type="Box">4</container>
+                  <unitdate type="inclusive" normal="1945-03/1945-10">Mar-Oct 1945</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Willis, Mary Cushier</unittitle>
+                  <container type="Box">4</container>
+                  <unitdate type="inclusive" normal="1845">1845</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Dated</unittitle>
+                     <container type="Box">4</container>
+                     <unitdate type="inclusive" normal="1882/1980">1882-1980</unitdate>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Empty envelopes</unittitle>
+                     <container type="Box">4</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Greeting cards </unittitle>
+                     <container type="Box">4</container>
+                  </did>
+               </c03>
+
+               <c03>
+                  <did>
+                     <unittitle>Undated</unittitle>
+                     <container type="Box">4</container>
+                  </did>
+               </c03>
+            </c02>
+
+         </c01>
+         <c01 id="gen" level="series">
+            <did>
+               <unittitle>Genealogical material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Family trees</unittitle>
+                  <container type="Box">5</container>
+               </did>
+               <scopecontent>
+                  <p>3 copies of the Pedigree of Deane tracing the lineage through Robert Deane’s
+                     brothers back to their 17th century ancestor, Sir Anthony Deane; outline of
+                     lineage from the D.A.R. records, tracing Elizabeth “Bess” C. Taylor back to her
+                     great-great-grandfather, Jeremiah Brower Taylor, who served in the American
+                     Revolution; family tree drawn of the Robert Deane family. </p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous </unittitle>
+                  <container type="Box">5</container>
+                  <unitdate type="inclusive" normal="1915/1990">1915-1990</unitdate>
+               </did>
+               <scopecontent>
+                  <p>Photocopy of letter by J. Spencer Taylor 1915 with information about Alpheus
+                     Sherman; notes about Alpheus Sherman; page of notes about family members;
+                     photocopy of books pages documenting the final resting places of Blanche
+                     Taylor’s in-laws, Jane and Robert Rodgers of Chicago, Illinois; a letter from
+                     Elsie Deane Taylor to Mrs. Gott from 1990 outlining some family history; a
+                     letter written to Mary S. Deane Taylor by her mother, Jane S. Willis Taylor; a
+                     narrative of the Deane family in India.</p>
+               </scopecontent>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Legal Documents</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Blauvelt estate</unittitle>
+                  <container type="Box">5</container>
+                  <unitdate type="inclusive" normal="1902/1904">1902-1904</unitdate>
+               </did>
+               <scopecontent>
+                  <p> Last Will and Testament; 1902 announcement that Albert B. Taylor was executor
+                     of the estate; 1903 letter from state comptroller to estate lawyer; 1904
+                     summons for Albert B. Taylor to appear as the executor; 1904 correspondence
+                     with estate lawyer; 1904 notice of an estate appraisal; 1904 report of estate
+                     appraisal. </p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Deane family</unittitle>
+                  <container type="Box">5</container>
+                  <unitdate type="inclusive" normal="1858/1913">1858-1913</unitdate>
+               </did>
+               <scopecontent>
+                  <p>1858 certificate of marriage between Robert Deane and Sylvia Sophia Shields;
+                     1860 marriage certificate between Robert Deane and Jane Sarah Willis; 1887
+                     certificate of naturalization for Jane S. Deane; 1871 will of Jane S. Deane’s
+                     aunt, Jane Lee; 1911 will of Jane S. Deane; letter from Albert B. Taylor to his
+                     brother William H. Deane with another copy of Jane S. Deane’s will; 1913 notice
+                     that William H. and Albert B. Taylor are the executors of Jane S. Deane’s
+                     estate.</p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Rodgers family</unittitle>
+                  <container type="Box">5</container>
+                  <unitdate type="inclusive" normal="1911/1948">1911-1948</unitdate>
+               </did>
+               <scopecontent>
+                  <p>Passport for Robert Rodgers; 1911 certificate of naturalization for Robert
+                     Rodgers; 1929 deed and contract for Beverly Cemetery plots for Jane and Robert
+                     Rodgers; 1930 stock certificate in Hudson Seal Fur Company; 1931 stock
+                     certificate in Whitney Syndicate Inc.; 1948 stock certificates for Robert M.
+                     Rodgers in Resources Corporation International.</p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Taylor family</unittitle>
+                  <container type="Box">5</container>
+                  <unitdate type="inclusive" normal="1864/1928">1864-1928</unitdate>
+               </did>
+               <scopecontent>
+                  <p>1864 Commission of Jeremiah B. Taylor by the American Baptist Home Mission
+                     Society; contracts signed by Albert B. Taylor for the New York Railroad company
+                     in 1906, 1916 and 1928.</p>
+               </scopecontent>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Memorabilia</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Clippings</unittitle>
+                  <abstract>unrelated newspaper clippings kept by family members, magazine clippings
+                     that discuss Albert B. Taylor’s retirement from the railroad
+                     industry</abstract>
+                  <container type="Box">5</container>
+                  <unitdate type="inclusive" normal="1877/1980">1877-1980</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Negatives</unittitle>
+                  <abstract>two tintypes of railroad scenes</abstract>
+                  <container type="Box">5</container>
+                  <unitdate type="inclusive" normal="1875/1905"> circa 1880-1900</unitdate>
+               </did>
+
+            </c02>
+            <c02 id="pho">
+               <did>
+                  <unittitle>Photographs</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Identified</unittitle>
+					 <unitdate type="inclusive" normal="1865/1975">circa 1870-1970</unitdate>
+					 <physdesc><extent>2 folders</extent></physdesc>
+					 <container type="Box">5</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Unidentified</unittitle>
+                     <unitdate type="inclusive" normal="1865/1975">circa 1870-1970</unitdate>
+					 <physdesc><extent>2 folders</extent></physdesc>
+					 <container type="Box">5</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Programs</unittitle>
+                  <abstract>event programs for banquets, graduations, parties, and
+                     conventions</abstract>
+                  <container type="Box">5</container>
+                  <unitdate type="inclusive" normal="1890/1947">1890-1947</unitdate>
+                  <physdesc><extent>2 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Religious material</unittitle>
+                  <abstract>a bible, printed psalms, hymns, quotes, cards, images, membership
+                     certificates to churches</abstract>
+                  <container type="Box">6</container>
+                  <unitdate type="inclusive" normal="1785/1974">1785-1974</unitdate>
+               </did>
+            </c02>
+
+            <c02>
+               <did>
+                  <unittitle>Tintypes</unittitle>
+                  <abstract>three tintypes of children</abstract>
+                  <container type="Box">6</container>
+                  <unitdate type="inclusive" normal="1855/1895"> circa 1860-1890</unitdate>
+               </did>
+
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <container type="Box">6</container>
+                  <physdesc><extent>3 folders</extent></physdesc>
+               </did>
+               <scopecontent>
+                  <p>Woodblock, box with sachets and garter, gold watch, sorority pin and wedding
+                     ring in a blue velvet pouch, case with hand drawn illustration of a person's
+                     profile, and a kerchief; ticket stubs, cartoons, notes, blank postcards,
+                     stamps, printed oaths to the Knights of Columbus and Sinn Fein, poetry, and
+                     brochures.</p>
+               </scopecontent>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Scrapbooks</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Album by Robert Deane</unittitle>
+                  <abstract>contains drawings, poetry and letters to Jane Sarah Willis</abstract>
+                  <container type="Box">6</container>
+                  <unitdate type="inclusive" normal="1855/1865">circa 1860</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>John Cushier</unittitle>
+                  <abstract>loose-leaf album which tells the history of 18th century ancestor John
+                     Cushier and includes a portrait</abstract>
+                  <container type="Oversize">1</container>
+
+                  <note>
+                     <p>See also <ref target="gen">Genealogical material</ref>.</p>
+                  </note>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Snapshots: Blanche Taylor Rodgers</unittitle>
+                  <abstract>photographs of children, relatives, friends, sorority sisters and
+                     fraternity brothers, and trips</abstract>
+                  <container type="Oversize">1</container>
+                  <unitdate type="inclusive" normal="1906/1970">1906-1970</unitdate>
+                  <note>
+                     <p>See also <ref target="pho">Memorabilia: Photographs</ref>.</p>
+                  </note>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Untitled photo album</unittitle>
+                  <abstract>Rodgers family portraits, likely labeled by Robert M. Rodgers, including
+                     photographs from Glasgow, Scotland and Wayland Academy, Wisconsin.</abstract>
+                  <container type="Oversize">1</container>
+                  <unitdate type="inclusive" normal="1865/1955">circa 1870-1950</unitdate>
+                  <note>
+                     <p>See also <ref target="pho">Memorabilia: Photographs</ref>.</p>
+                  </note>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

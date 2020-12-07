@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="savada_mj">savada_mj</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Morton J. Savada Papers</titleproper>
+            <subtitle>An inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2009-07-01" encodinganalog="Date">1 Jul 2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2009-07-01">1 Jul 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>21 Jun 2012 - musicals, BG discography (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Savada, Morton J.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Morton J. Savada Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1920/2007" type="inclusive" label="Inclusive Dates: ">circa 1920-2007</unitdate>
+            <unitdate encodinganalog="245$g" normal="1990/2005" type="inclusive" label="Bulk Dates: ">1990-2005</unitdate><physdesc encodinganalog="300$a" label="Quantity: "><extent>6 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Papers from Savada's New York City business, Records Revisited, which dealt in 78rpm phonograph records.  Includes correspondence from customers, other dealers, friends; inventories and receipts; obituaries, clippings, and other information about artists of the era.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2686914</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Morton J. Savada (1923-2008) was an American record collector and dealer in New York City.  He operated his business, Records Revisited, in midtown Manhattan for more than thirty years,</p><p>Savada was born in Manhattan and graduated from Cornell University with a degree in electrical engineering.     He worked for the family business -- Savada Brothers Inc., a clothing company -- for twenty years before opening Records Revisited.   The store specialized in 78rpm records from artists such as  King Oliver, Ma Rainey, Artie Shaw and Benny Goodman, and carried genres ranging from big band and jazz to Latin, country, and spoken word.  Although the store was a business, Savada also regarded the 250,000 albums on its shelves as a collection or archive; rather than sell the last copy of a recording he would make a copy on tape, and often loaned copies to CD producers or for use in movie sound tracks. For many years the store was a meeting place for Record Research, a group of about a dozen collectors and researchers.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Morton J. Savada Papers</emph> consists almost exclusively of material relating to Savada's record store, Records Revisited. </p><p><emph render="bold">Correspondence-subject files</emph> contains correspondence from long-time customers, other collectors, and a few friends and family members.   <emph render="bold">Financial files</emph> contain several years' worth of receipts, and sales tax exemption and resale certificates.  The bulk of <emph render="bold">Lists and inventories</emph> is made up of Savada's inventory cards, alphabetized by artist name.  Also included are photocopies of some discographies by label, a complete listing of Army V-Discs, morale boosters put out during World War II, and assorted other lists.  <emph render="bold">Memorabilia</emph> contains Savada's desk calendars for 2003-2006, the business certificate for Records Revisited, and business cards for same as well as for Savada Brothers Inc.  <emph render="bold">Printed material</emph> contains some very early items, such as the label from a Columbia Graphophone, as well as much later items such as newsletters and a concert program.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Material is arranged alphabetically.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>The complete inventory of 78rpm phonographs was donated to the Belfer Audio Archives at Syracuse University as the Morton J. Savada 78 RPM Collection.  Please contact the repository listed above for more information.</p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+<subject encodinganalog="650" source="local">Business and Industry</subject>
+<subject encodinganalog="650" source="local">Music</subject>
+<subject encodinganalog="650" source="local">Popular culture</subject>
+         <persname encodinganalog="600" source="lcnaf">Connor, D. Russell (Donald Russell)</persname>
+         <persname encodinganalog="600" source="lcnaf">Hicks, Warren W.</persname><persname encodinganalog="600" source="lcnaf">Savada, Morton J.</persname><!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="local">Records Revisited.</corpname>
+         <title encodinganalog="630" source="lcnaf">BG on the record: a bio-discography of Benny Goodman, D. Russell Connor and Warren W. Hicks.</title>
+         <subject encodinganalog="650" source="lcsh">Record labels.</subject>
+			<subject encodinganalog="650" source="lcsh">Sound recordings -- Collectors and collecting.</subject>
+			<subject encodinganalog="650" source="lcsh">Sound recordings -- History.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Appointment books.</genreform>
+			<genreform encodinganalog="655" source="aat">Business cards.</genreform>
+			<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Discographies.</genreform><genreform encodinganalog="655" source="aat">Inventories.</genreform>
+			
+			<genreform encodinganalog="655" source="aat">Obituaries.</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Receipts (financial records)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Collectors.</occupation>
+			<occupation encodinganalog="656" source="lcsh">Merchants.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Morton J. Savada Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Morton Savada</persname>, 2008.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+<c01 level="series"><did><unittitle>Correspondence-subject files</unittitle></did>
+   <c02><did><unittitle>Abbott, Darrell</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>American Vintage Record Labelography</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Andres, Jean-Louis</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Arenberg, Marietta</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Arie, Michael</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Auctions</unittitle></did>
+	   <c03><did><unittitle>Bids</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Wins en route</unittitle><container type="Box">1</container></did></c03>
+	</c02>
+   <c02><did><unittitle>A, misc</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Baker, Artie</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Barron, Blue</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Bash [29th Annual VJM Collector's Fair and Bash]</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Bendick, Bill</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Bert Block Orchestra</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Bickley, George F.</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>The Blue Pages</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>B, misc</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Cabaniss, Jeff</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Carl Fenton Orchestra</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Cathcart, Paul H.</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Clippings</unittitle></did>
+      <note><p>See also <ref target="obit">Obituaries</ref>.</p></note><c03><did><unittitle>About Savada</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Collectors and collecting</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>E-music</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><abstract>See also Obituaries</abstract><container type="Box">2</container></did></c03>
+   </c02>
+   <c02 id="jaco"><did><unittitle>Coogan, Jackie</unittitle><abstract>rare label photostats</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Cornell University</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Crawford, Ken</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>C, misc</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Darnel, Allan</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Diaz, Cristobal</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>D, misc</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Eaton and Behnke collections</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Eldman, Sol</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Evans, Gil</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Expert Stylus Company</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>E, misc</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Feil, Morris</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Fein, Harry and Rita</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Ferency, Frank (D. Jurgens)</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Film dubs</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Fire safety manual</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Florance, Frank</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Forms, blank</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>F, misc</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Gray, Christopher, <emph render="italic">New York Times</emph></unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Gray, John B.</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>G, misc</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Herman, Jules</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>H, misc</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Inman, Bob</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>International Association of Jazz Music Collectors</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Ishii, Osamu</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Johnson, Richard</unittitle><container type="Box">3</container></did></c02>
+   <c02 id="jorc"><did><unittitle>Joyce Record Club</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Juke boxes</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>J, misc</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Kalb, Hartwig</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Klein, Dave</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Korst, Bill</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Kremer, Mike</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>K, misc</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Lang, Bob</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Library of Congress</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Lippmann, Sidney</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>L, misc</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Gordon MacRae Club</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Mahlowe, Gerald</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Malcolm-Smith</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Mascia, Glen</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>McCalla, Roy</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Metolius Music Company</unittitle><note><p>See <ref target="jorc">Joyce Record Club</ref>.</p></note></did></c02>
+   <c02><did><unittitle>Military Bands (Fred Williams)</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Miller, John</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Morgan, Colin</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Music Research Book Publishers</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>M, misc</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Nale, Dennis</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Nash, Joe</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Nauck, Kurt</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Newton, Graham, and Colin Bray</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Norvo, Red</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>N, misc</unittitle><container type="Box">4</container></did></c02>
+   <c02 id="obit"><did><unittitle>Obituaries</unittitle></did>
+      <c03><did><unittitle>A-M</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>N-Z</unittitle><container type="Box">5</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Ohman, Anders</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Ono, Ted</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>O, misc</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Parnell, Rick</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Petko, Ernie</unittitle><container type="Box">5</container></did></c02>
+   <c02 id="frpi"><did><unittitle>Pilcher, Frank (Roane's Pennsylvanians)</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Pictures of artists</unittitle><abstract>stamps, clippings, postcards, other images</abstract><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Pirak, Tony</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>P, misc</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Quilliam, Mark</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Randolph, Marvin</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Rangus, John (Xavier Cugat)</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>RCA Latin</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Record collections purchased</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Record labels</unittitle><abstract>some original, some photocopies</abstract><container type="Box">5</container></did><note><p>See also <ref target="jaco">Coogan, Jackie</ref> and <ref target="elsc">Scranton, E.L.</ref></p></note></c02>
+   <c02><did><unittitle>Record Research</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Renard, Jacques</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle><emph render="italic">Rhythm and News Magazine</emph></unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Rizzo, Pat</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Roane's Pennsylvanians</unittitle><note><p>See <ref target="frpi">Pilcher, Frank</ref>.</p></note></did></c02>
+   <c02><did><unittitle>Rust, Brian</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>R, misc</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Savada, Elias</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Savada, Shira</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Schuster, Ira</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Scott, Walter</unittitle><container type="Box">6</container></did></c02>
+   <c02 id="elsc"><did><unittitle>Scranton, E.L.</unittitle><abstract>includes photocopies of many record labels</abstract><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Shipping/packing instructions</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Storage albums price quotes</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Stoffer, George</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Sturtevant, Roger</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>S, misc</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Tapes made</unittitle></did>
+      <c03><did><unittitle>Current</unittitle><container type="Box">6</container></did></c03>
+      <c03><did><unittitle>Permanent file</unittitle><container type="Box">6</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Taylor, Bruce</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Thygesen, Helge</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Tucker, Orrin</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>T, misc</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>UCLA Archives</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>U, misc</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Vrzal, Otto</unittitle><abstract>includes photographs</abstract><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>V, misc</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Wank, Kenneth</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Williamson, Tom</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Wilson, Teddy</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>W, misc</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Y, Z misc</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Miscellaneous names and addresses</unittitle><container type="Box">6</container></did><note><p>See also <ref target="buca">Memorabilia: Business cards, others</ref>.</p></note></c02>
+   <c02><did><unittitle>Unidentified</unittitle><container type="Box">6</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Financial files</unittitle></did>
+   <c02><did><unittitle>Receipts</unittitle><unitdate type="inclusive" normal="1990/2001">pre-2002</unitdate><container type="Box">7</container></did></c02>
+   <c02><did><unittitle>Receipts</unittitle><unitdate type="inclusive" normal="2002/2006">2002-2006</unitdate><physdesc><extent>7 folders</extent></physdesc><container type="Box">7</container></did></c02>
+   
+   
+   
+   
+   <c02><did><unittitle>Sales tax exempt and resale certificates</unittitle><container type="Box">7</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Lists and inventories</unittitle></did>
+   <c02><did><unittitle>Army V-Discs</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unittitle>Catalogs (other people's)</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unittitle>Inventory cards</unittitle></did>
+      <c03><did><unittitle>Aaronson, Irving - Sherwood, Bobby</unittitle><container type="Box">8</container></did></c03>
+      <c03><did><unittitle>Shilkret, Jack - Zentner, Sy</unittitle><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Miscellaneous genres</unittitle><container type="Box">9</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Lists</unittitle></did>
+      <c03><did><unittitle>By artist</unittitle><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>By label</unittitle><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">9</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Musicals</unittitle></did><scopecontent><p>This material consists of several hundred forms containing detailed information on musicals that opened or played in New York City, including title, open/close dates, venue, ticket price, names (stars, writer, producer, author, composer, lyricist, etc.), and whether Savada attended.  The forms are in two binders, but additional slips are laid in with other information such as a list of openings by year and occasional newspaper clippings.</p></scopecontent><c03><did><unittitle>Shows</unittitle><unitdate normal="1968/1974" type="inclusive">1968-1974</unitdate><physdesc><extent>1 volume</extent></physdesc><container type="Box">12</container></did></c03><c03><did><unittitle>Shows</unittitle><unitdate normal="1975/1979" type="inclusive">1975-1979</unitdate><physdesc><extent>1 volume</extent></physdesc><container type="Box">12</container></did></c03></c02><c02><did><unittitle>Value charts</unittitle><container type="Box">9</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+   <c02><did><unittitle>Address book</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unittitle>Business cards and letterhead, Savada</unittitle><container type="Box">10</container></did></c02>
+   <c02 id="buca"><did><unittitle>Business cards,  others</unittitle><container type="Box">11</container></did></c02>
+   <c02><did><unittitle>Business certificate</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unittitle>Desk calendars </unittitle><unitdate normal="2003/2006" type="inclusive">2003-2006</unitdate><abstract>2 folders</abstract><container type="Box">10</container></did></c02>
+   <c02><did><unittitle>Notes</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unittitle>Photographs</unittitle><abstract>includes photos from visit to Sony Studios</abstract><container type="Box">10</container></did></c02>
+   <c02><did><unittitle>Record cleaners</unittitle><abstract>ads on the back include Decca, The Ink Spots, RCA Victor</abstract><container type="Box">11</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Printed material</unittitle></did>
+   <c02><did><unittitle><emph render="italic">BG On The Record: A Bio-Discography of Benny Goodman</emph>, by D. Russell Connor and Warren W. Hicks</unittitle><unitdate normal="1969" type="inclusive">1969</unitdate><abstract>annotated, corrected, numerous handwritten slips and other information laid in</abstract><container type="Box">12</container></did></c02><c02><did><unittitle><unitdate normal="1910/1950" type="inclusive">Pre-1950</unitdate></unittitle><abstract>includes Columbia Graphophone label, 1944 issue of "Jazz Impressions," old playbills and advertisements; few are photocopies</abstract><container type="Box">10</container></did></c02>
+   <c02><did><unittitle><unitdate normal="1970/2005" type="inclusive">Post-1970</unitdate></unittitle><abstract>newsletters, program, sheet music</abstract><container type="Box">10</container></did></c02>
+</c01>
+
+      </dsc>
+   </archdesc>
+</ead>

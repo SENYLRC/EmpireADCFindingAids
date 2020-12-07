@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008--><!--Revised standard blurb for related material -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="lane_e" mainagencycode="NSyU">lane_e</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Eastwood Lane Papers</titleproper>
+        <subtitle>An  inventory of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">CAD</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1986-07">Jul 1986</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2009-06-05">5 Jun 2009</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>Jun 2009 - converted to EAD (MRC)</item>
+        <item>08 Sep 2017 - Media ID numbers added and inventory updated (PJM)</item>
+        <item>12 June 2018 - Reorganized and rehoused. (PRB)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Lane, Eastwood, 1879-1951.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Eastwood Lane Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1899/1994" type="inclusive">1899-1994</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>4.0 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Biographical material,
+        correspondence-subject files, memorabilia, scores and writings of the New York State
+        composer. Much of the material is undated.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2681979</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Sidney Eastwood Lane (1879-1951), known professionally simply as Eastwood Lane, was an
+        American composer and author from New York State. His compositions include piano suites,
+        impressionist pieces, and ballet; perhaps his best-known piece is <emph render="italic">Adirondack Sketches</emph>. </p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Eastwood Lane Papers</emph> consists of  biographical material,
+        correspondence-subject files, memorabilia, scores and writings.</p>
+      <p>
+        <emph render="bold">Biographical material</emph> includes biographical sketches, a
+        biographical article by Norman Gentieu and notes about the Eastwood Family. </p>
+      <p><emph render="bold">Correspondence-subject files</emph> most of which is undated, contains
+        single letters from composers William Berwald, Charles Huerter, and Deems Taylor,
+        contemporaries and friends of Lane. The largest group of correspondence is with soprano
+        Modena Scovill Lane, his wife. Many of these were written from Lane's Adirondack home and
+        discuss the natural surroundings as well as local events and news. </p>
+      <p><emph render="bold">Memorabilia</emph> includes clippings, concert programs, photographs,
+        promotional material for Lane's published music, modern recordings of his compositions,
+        address books and an essay about the Adirondacks by his Aunt Ella Eastwood Wood.</p>
+      <p>
+        <emph render="bold">Scores</emph> is by far the largest component of this collection. Some
+        pieces are in sketch form, others in published format. Few of the handwritten scores are
+        dated. </p>
+      <p>
+        <emph render="bold">Writings</emph> includes diaries, notes for a play, letters to editors
+        and articles. </p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Correspondence, memorabilia scores and writings are all arranged alphabetically.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+<subject encodinganalog="650" source="local">Music</subject>
+<subject encodinganalog="650" source="local">New York State</subject>
+      <persname encodinganalog="600" source="lcnaf">Lane, Eastwood, 1879-1951.</persname>
+      <persname encodinganalog="600" source="lcnaf">Benet, William Rose, 1886-1950.</persname>
+      <persname encodinganalog="600" source="lcnaf">Berwald, W. (William), 1864-1948.</persname>
+      <persname encodinganalog="600" source="lcnaf">St. Denis, Ruth, 1880-1968.</persname>
+      <persname encodinganalog="600" source="lcnaf">Scovill, Modena.</persname>
+      <persname encodinganalog="600" source="lcnaf">Shawn, Ted, 1891-1972.</persname>
+      <persname encodinganalog="600" source="lcnaf">Taylor, Deems, 1885-1966.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Composers -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Composition (Music)</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Articles.</genreform>
+      <genreform encodinganalog="655" source="aat">Audiocassettes.</genreform>
+      <genreform encodinganalog="655" source="aat">Compact discs.</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Poems.</genreform>
+      <genreform encodinganalog="655" source="aat">Programs (documents)</genreform>
+      <genreform encodinganalog="655" source="aat">Scores.</genreform>
+      <genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+      <genreform encodinganalog="655" source="aat">Sketches.</genreform>
+      
+      <occupation encodinganalog="656" source="lcsh">Composers.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p><p>Access to recordings requires advance notice to produce a use copy.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Eastwood Lane Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of <persname role="donor">Norman Gentieu</persname>, 1982.</p>
+      <p>Gift of <persname role="donor">Mr. and Mrs. Franklin E. Dunham</persname>, 2013.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+      <c01 level="series">
+        <did>
+          <unittitle>Biographical material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Biographical article "Eastwood Lane" by Norman Gentieu in <emph render="italic">Journal of jazz studies</emph></unittitle>
+            <unitdate normal="1976" type="inclusive">1976</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Eastwood Family history </unittitle>
+            <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence subject files</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>General correspondence</unittitle>
+            <unitdate normal="1902" type="inclusive">1902,</unitdate>
+            <unitdate normal="1911/1950" type="inclusive">1911-1950,</unitdate>
+            <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>American Piano Company (AMPICO)</unittitle>
+            <unitdate normal="1924" type="inclusive">1924,</unitdate>
+            <unitdate normal="1927" type="inclusive">1927</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>American Society of Composers, Authors and Publishers (ASCAP)</unittitle>
+            <unitdate normal="1925" type="inclusive">1925,</unitdate>
+            <unitdate type="inclusive" normal="1938">1938,</unitdate>
+            <unitdate normal="1942" type="inclusive">1942</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Benét, William Rose</unittitle>
+            <unitdate normal="1929" type="inclusive">1929</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Berwald, William</unittitle>
+            <unitdate normal="1929" type="inclusive">1929</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Crane, Nathalia</unittitle>
+            <unitdate normal="1929" type="inclusive">1929,</unitdate>
+            <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Denishawn, The Ruth St. Denis and Ted Shawn School of Dancing</unittitle>
+            <unitdate normal="1924" type="inclusive">1924,</unitdate>
+            <unitdate normal="1927" type="inclusive">1927</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Huerter, Charles J.</unittitle>
+            <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Menth, Herma</unittitle>
+            <unitdate normal="1911" type="inclusive">1911</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Scovill, Modena</unittitle>
+            <unitdate normal="1943/1946" type="inclusive">1943-1946,</unitdate>
+            <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Taylor, Deems</unittitle>
+            <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Memorabilia</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Clippings</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>About Eastwood lane</unittitle>
+              <unitdate normal="1920/1937" type="inclusive">1920-1937,</unitdate>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <unitdate normal="1912/1948" type="inclusive">1912-1948,</unitdate>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Concert programs</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Performances by Eastwood Lane</unittitle>
+              <unitdate normal="1924" type="inclusive">1924</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Performances by Modena Scovill</unittitle>
+              <unitdate normal="1919/1926" type="inclusive">1919-1926</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Performances of Eastwood Lane works</unittitle>
+              <unitdate normal="1915/1933" type="inclusive">1915-1933</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <unitdate normal="1910/1930" type="inclusive">1910-1930</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Case, Anna</unittitle>
+              <unitdate normal="1911" type="inclusive">1911</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Denishawn: Ruth St. Denis and Ted Shawn</unittitle>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Dietrich, George</unittitle>
+              <unitdate normal="1922" type="inclusive">1922</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Hollins, Alfred</unittitle>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Kasner, Jacques</unittitle>
+              <unitdate normal="1913" type="inclusive">1913</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lane, Eastwood</unittitle>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>McMahon, Aline</unittitle>
+              <unitdate normal="1914" type="inclusive">1914</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Noyes, Byron E.</unittitle>
+              <unitdate normal="1910" type="inclusive">1910</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Russell, Alexander</unittitle>
+              <unitdate normal="1910" type="inclusive">1910</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Scovill, Modena</unittitle>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sorrentine, Umberto</unittitle>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Taylor, Deems</unittitle>
+              <unitdate normal="1918" type="inclusive">1918,</unitdate>
+              <container type="Box">2</container>
+              <unitdate normal="1920" type="inclusive">1920</unitdate>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Werrenrath, Reinald</unittitle>
+              <unitdate normal="1920" type="inclusive">1920</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous unidentified</unittitle>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Promotional material</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Ampico recordings of Eastwood Lane scores</unittitle>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Fischer Editions</unittitle>
+              <unitdate normal="1916/1929" type="inclusive">1916-1929,</unitdate>
+              <unitdate normal="1942" type="inclusive">1942,</unitdate>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Hinds, Hayden &amp; Eldredge</unittitle>
+              <unitdate normal="1915/1917" type="inclusive">1915-1917,</unitdate>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Recordings</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unitid>lane_e_0001</unitid>
+              <unittitle><emph render="italic">Piano Deco: Mike Polad plays American music of the
+                  1920s</emph>, Eastwood Lane, Bix Biederbecke, Rube Bloom</unittitle>
+              <physdesc>
+                <extent>1 Audiocassette</extent>
+              </physdesc>
+              <unitdate normal="1994" type="inclusive">1994</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitid>lane_e_0002</unitid>
+              <unittitle><emph render="italic">Piano Deco: Mike Polad plays American music of the
+                  1920s</emph>, Eastwood Lane, Bix Biederbecke, Rube Bloom</unittitle>
+              <physdesc>
+                <extent>1 Compact disc</extent>
+              </physdesc>
+              <unitdate normal="1994" type="inclusive">1994</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Address books and notebooks</unittitle>
+              <unitdate normal="1918" type="inclusive">1918,</unitdate>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Adirondack Wildlings by Ella Eastwood Wood</unittitle>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Assorted mementos</unittitle>
+              <unitdate normal="1913" type="inclusive">1913,</unitdate>
+              <unitdate normal="1923/1926" type="inclusive">1923-1926,</unitdate>
+              <unitdate normal="1940/1943" type="inclusive">1940-1943,</unitdate>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+     
+      <c01 level="series">
+          <did>
+            <unittitle>Scores</unittitle>
+          </did>
+          <c02>
+            <did>
+              <unittitle>Handwritten</unittitle>
+            </did>
+            <c03>
+              <did>
+                <unittitle>Abelard and Heloise from Pantomime</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Ann Rutledge (fragment)</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>The Blue Robed Mandarin</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Boston Fancy (sketch)</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Calm Lake and Quiet Lovers from Central Park Suite</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Cande from Jesuits' Journey and Shropshire</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>A Corporal's Ballad</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>The Crap Shooter (A Negro Ballad)</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>The Elfin Knight words by Langdon Warner</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Fourth of July Parade (sketches)</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Gay Occasion</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Gray Winds, Dream Laden words by Cathal O'Byrne</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Great White Way</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>A Gringo Dance</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>A Gringo Tango</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Harlem Town</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>I'm in Love with a Girl from the Country</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>In Sleepy Hollow</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Incidental Music to a Dream (sketches)</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Jesuits' Journey</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Joanne words by Joseph Wells Singleton</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Katrina's Waltz</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Knee High to a Grasshopper</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Lady Jane Grey</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>The lady of the Palankeen</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Lines to Ann Rutledge</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Little Boys Sail Little Boats (unfinished)</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Liza: A Spring Pastoral</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Lovers by the Lake from Central Park Sketches</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>March - Finale (sketch)</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>A Mid-October Afternoon from In Sleepy Hollow</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Minuet for Betty Schuyler from Fourth of July Suite</unittitle>
+                <unitdate normal="1951" type="inclusive">1951</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Minuet to Betty Schuyler (unfinished sketch)</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>North of Boston</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Notebook with sketches and fragments</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+                <physdesc>
+                  <extent>2 folders</extent>
+                </physdesc>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>On Tapan Zee, A Boat Song</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Overlooking Harlem (fragment)</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Parade from Fourth of July Suite</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Persimmon Pucker</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Plymouth in Autumn</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Polonaise</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Prelude - Moon Section - Opening</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>The Road to Old Japan</unittitle>
+                <unitdate normal="1913" type="inclusive">1913</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Round the Hall, A Dance Hall Ditty</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Sand Shuffle, An American Dance</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Sea Burial</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Scherzo</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Serenade for Mme. Chiang Kai Shek</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Shropshire Lass</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Sold Down the River (sketches)</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Swanee (fragment)</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>The Time of Golden Dreams</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>They've Hung Bill Jones, lyrics by Frank L. Stanton</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Tune to the Moon</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Watch on the Village Green from Fourth of July Suite
+                  (incomplete)</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Where the Whip Willer Sings</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Workbook: Sea Burial - early sketches, Persimmon Pucker</unittitle>
+                <unitdate normal="1910" type="inclusive">1910</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Unidentidfied sketches and fragments</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Oversize">2</container>
+              </did>
+            </c03>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>Published</unittitle>
+            </did>
+            <c03>
+              <did>
+                <unittitle>Songs for Piano</unittitle>
+                <unitdate normal="1919/1920" type="inclusive">1919-1920</unitdate>
+              <container type="Oversize">1</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Down Stream</unittitle>
+                <unitdate normal="1922" type="inclusive">1922</unitdate>
+              <container type="Oversize">2</container>
+              </did>
+            </c03>
+            <c03>
+              <did>
+                <unittitle>Summer Glow</unittitle>
+                <unitdate normal="1919" type="inclusive">1919</unitdate>
+                <container type="Box">2</container>
+              </did>
+            </c03>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>Source material</unittitle>
+            </did>
+            <c03>
+              <did>
+                <unittitle>Clippings, poems and artwork</unittitle>
+                <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+                <container type="Box">3</container>
+              </did>
+            </c03>
+          </c02>
+        </c01>
+      <c01 level="series">
+          <did>
+            <unittitle>Writings</unittitle>
+          </did>
+          <c02>
+            <did>
+              <unittitle>Diaries</unittitle>
+              <unitdate normal="1899/1900" type="inclusive">1899-1900,</unitdate>
+              <unitdate normal="1911/1913" type="inclusive">1911-1913,</unitdate>
+              <unitdate normal="1917/1918" type="inclusive">1917-1918</unitdate>
+              <physdesc>
+                <extent>7 folders</extent>
+              </physdesc>
+            </did>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>The Great and Glorious (notes for a play)</unittitle>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>Letters to editors</unittitle>
+              <unitdate normal="1923" type="inclusive">1923,</unitdate>
+              <unitdate normal="1937/1938" type="inclusive">1937-1938,</unitdate>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>Musical America article</unittitle>
+              <unitdate normal="1914" type="inclusive">1914</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>Opera News articles</unittitle>
+              <unitdate normal="1914/1915" type="inclusive">1914-1915</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>The Piano in Our Town Musicians Club Monthly</unittitle>
+              <unitdate normal="1915" type="inclusive">1915</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>Poems</unittitle>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>Portrait of a Pioneer: Eulogy for William J. McAleese</unittitle>
+              <unitdate normal="1946" type="inclusive">1946</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>Psycho-Pianism: A Contemporary Musical Fantasy  Musical America</unittitle>
+              <unitdate normal="1914" type="inclusive">1914</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>A Troubador En Route Musical America</unittitle>
+              <unitdate normal="1929" type="inclusive">1929</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>Wind and Percussion</unittitle>
+              <unitdate normal="1899/1994" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c02>
+          <c02>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <unitdate type="inclusive" normal="1899/1994">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c02>
+        </c01>
+    </dsc>
+  </archdesc>
+</ead>

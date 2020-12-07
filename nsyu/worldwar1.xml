@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="worldwar1">worldwar1</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">World War I Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-09-20" encodinganalog="Date">20 Sep 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2011-09-20">20 Sep 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">World War I Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1912/1964" type="inclusive" label="Inclusive Dates: ">1912-1964</unitdate>
+            <unitdate encodinganalog="245$g" normal="1914/1919" type="bulk" label="Bulk Dates: ">1914-1919</unitdate><physdesc encodinganalog="300$a" label="Quantity: "><extent>0.25 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Published material, clippings and ephemera relating to World War I.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3367127</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            Majority in <language langcode="ger">German</language>, some in <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>World War I (1914-1918), originally known as the World War, the Great War, or the War to End All Wars until 1939, involved all major powers in the world at the time.  It was triggered by the assassination of Arch-Duke Franz Ferdinand, but the imperialistic policies of Germany, England, France, Italy and Russia in the preceding decades played an important role in setting the stage.  On one side were the Allies (at first Russia, England and France, later joined by the United States, Canada, Spain, and several other countries) and on the other the Central Powers (primarily the German Empire, the Austro-Hungarian Empire and the Ottoman Empire).  Hostilities ceased on 11 November 1918 (Armistice Day) and the war formally ended on June 28, 1919 with the signing of the Treaty of Versailles.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">World War I Collection</emph> consists of printed material and personal material.</p><p><emph render="bold">Personal material</emph> consists of a diary (1918-1919) and accompanying memorabilia, including dance tickets and reminiscent notes, and a number of postcards from Harold Drais, with the 56th Engineers,  to his family.</p><p><emph render="bold">Printed material</emph> contains cartoons and clippings from German newspapers; a 1964 issue of LIFE magazine with the cover story "The First World War"; an assortment of pro-German pamphlets, some in German and others in English; miscellaneous post-war American and English pamphlets; souvenir postcards with photographs of World War I battlefields, memorials and cemeteries; and a few miscellaneous items.  Of particular interest among the pamphlets are two from 1915: <emph render="italic">The British Black Book</emph>, by "an American", and  a piece by Houston Stewart Chamberlain entitled, "Who is to blame for the war?"</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Series are arranged alphabetically.  Within that, clippings are arranged chronologically.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Military history</subject><persname encodinganalog="600" source="lcnaf">Chamberlain, Houston Stewart, 1855-1927 -- Who is to blame for the war?</persname><persname encodinganalog="600" source="lcnaf">Cronau, Rudolf -- The British black book.</persname><persname encodinganalog="600" source="lcnaf">Drais, Harold J. -- Correspondence.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">United States. -- Army. -- Engineer Regiment, 56th.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Château-Thierry, Battle of, Château-Thierry, France, 1918.</subject><subject encodinganalog="650" source="lcsh">World War, 1914-1918.</subject>
+         <geogname encodinganalog="651" source="lcsh">Compiègne Forest (France)</geogname><geogname encodinganalog="651" source="lcsh">Montfaucon (Meuse, France)</geogname>
+         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Diaries.</genreform><genreform encodinganalog="655" source="aat">Editorial cartoons.</genreform><genreform encodinganalog="655" source="aat">Pamphlets.</genreform><genreform encodinganalog="655" source="aat">Postcards.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>World War I Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Various.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Personal material</unittitle></did>
+            <c02><did><unittitle>Correspondence, Harold Drais</unittitle><abstract>picture postcards sent to family</abstract><unitdate normal="1919" type="inclusive">1919</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Diary and related memorabilia</unittitle><abstract>dance ticket, news clipping</abstract><unitdate normal="1918/1919" type="inclusive">1918-1919, </unitdate><unitdate normal="1914/1919" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle>Cartoons, German</unittitle><abstract>cartoons published in German newspapers; humorous as well as editorial</abstract><unitdate normal="1914/1919" type="inclusive">1914-1919</unitdate><container type="Box">1</container></did>
+				   
+				</c02>
+            <c02><did><unittitle>Clippings</unittitle></did>
+				   <c03><did><unitdate normal="1912" type="inclusive">1912</unitdate><unittitle>English-language newspapers, relating to the Titanic</unittitle><container type="Box">1</container></did></c03>
+					<c03><did><unitdate normal="1914/1916" type="inclusive">1914-1916</unitdate><unittitle>German newspapers, relating to the war</unittitle><container type="Box">1</container></did></c03>
+					<c03><did><unitdate normal="1919" type="inclusive">1919</unitdate><unittitle>Anti-war editorial by George Bernard Shaw,  published in <emph render="italic">New York American</emph></unittitle><container type="Box">1</container></did></c03>
+					<c03><did><unitdate normal="1914/1918" type="inclusive">Undated</unitdate><unittitle>German newspapers, relating to the war, also one or two in English</unittitle><container type="Box">1</container></did></c03>
+				</c02>
+            <c02><did><unittitle>Magazine, LIFE</unittitle><abstract>cover story on World War I</abstract><unitdate normal="1964" type="inclusive">1964</unitdate><container type="Oversize">1</container></did>
+				   
+				</c02>
+            <c02><did><unittitle>Pamphlets</unittitle></did>
+				   <c03><did><unittitle>Pro-German publications</unittitle><unitdate normal="1914/1916" type="inclusive">1914-1916</unitdate><abstract>in English; primarily text, few or no photos; includes "The British Black Book" outlining why England should be America's enemy and "Who is to blame for the war?" by Houston Stewart Chamberlain</abstract><container type="Box">1</container></did></c03>
+				   <c03><did><unittitle>Pro-German publications</unittitle><unitdate normal="1914/1916" type="inclusive">1914-1916</unitdate><abstract>in German; many with photographs and illustrations</abstract><container type="Oversize">1</container></did></c03>
+				   <c03><did><unittitle>Miscellaneous</unittitle><unitdate normal="1931" type="inclusive">1931, </unitdate><unitdate normal="1934" type="inclusive">1934, </unitdate><unitdate type="inclusive" normal="1914/1934">undated</unitdate><abstract>Sermon "The Slaugher of the Innocents" by Father Charles Coughlin; pamphlet on the war and the American farmer; booklet "Arms and the Men" about Krupp and other arms manufacturers' role in the war</abstract><container type="Box">1</container></did></c03>
+				</c02>
+            <c02><did><unittitle>Postcards</unittitle><abstract> battlefields, memorials, cemeteries</abstract><container type="Box">1</container></did></c02>
+				<c02><did><unittitle>Miscellaneous</unittitle><abstract>War Chest ad, EGGNIT egg substitute ad, large printed photo, possibly an oversize postcard</abstract><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

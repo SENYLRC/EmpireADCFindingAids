@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.9, 7/18/2007--><!-- Changed entity files to txt rather than xml, don't suppose it matters which they are (?) -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="mayor_ms" mainagencycode="NSyU">mayor_ms</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Maria Snowden Mayor Papers</titleproper>
+        <subtitle>An inventory of her papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">--</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1966-11">Nov. 1966</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Lara Chmela
+            
+        
+        <date normal="2008-01-23">23 Jan. 2008</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>20 Mar 2008 - converted to EAD (LDC)</item><item>3 Feb 2016 - condensed boxes, updated inventory (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Mayor, Maria Snowden.</persname>
+      
+      <!--<corpname encodinganalog="110">or 110</corpname>-->
+         </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Maria Snowden Mayor Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1814/1934" type="inclusive">1814-1934</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>2.5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, personal documents, and published material. Correspondence includes that of Audella Hyatt, Alfred G. Mayor, and Harriet Hyatt Mayor.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2604731</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Very little is known about Mrs. Mayor. She was the second wife of Alfred Marshall Mayor the noted physicist. Dr. Mayor had a son, Alfred Goldsborough Mayor, by his first wife Katharine Goldsborough. So the second Mrs. Mayor had a stepson.</p>
+      <p>She and Dr. Mayor also had two children of their own, Joseph Henry and Brantz, but both these boys died young. Mrs. Mayor lived with her husband for a time in Hoboken, N. J. but they moved to Maplewood, N.J. first as a summer home and later permanently. Her stepson Alfred married Harriet Hyatt in 1900 and soon she was a grandmother. She died around 1934 at an elderly age.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The Maria Snowden Mayor (Mrs. Alfred Marshall Mayor) Papers contain correspondence, bills and receipts, cards, legal papers, photographs, and published material including articles and newspaper clippings about others, and books.</p>
+      <p>
+        <emph render="bold">Correspondence</emph>, includes incoming and outgoing correspondence and correspondence to and from others. 
+        
+        <emph render="bold">Subject File</emph>, contains an old bank note, bills and receipts, bond notices, cards, snips of children's hair, legal papers, notes of others, and photographs. 
+        
+        <emph render="bold">Published Material</emph>, includes articles about others, two books, and newspaper clippings about others. </p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Incoming letters are arranged alphabetically by author and the outgoing letters are arranged chronologically. The letters to and from others are divided into general letters, letters to Mrs. Antoinette Snowden, and Snowden family letters. Subject File and Published Material are arranged alphabetically by type.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>The &scrc_name; has numerous collections for the Hyatt-Mayor families.  For information on members of the Hyatt, Mayor, Beebe, and Huntington families see &subjindex; for the finding aids of individual family members.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+      <persname encodinganalog="600" source="lcnaf">Mayor, Maria Snowden.</persname>
+      <persname encodinganalog="600" source="lcnaf">Mayer, Alfred M. (Alfred Marshall), 1836-1897.</persname>
+      
+      <persname encodinganalog="600" source="lcnaf">Hyatt, Audella, 1840-1932.</persname>
+      <persname encodinganalog="600" source="lcnaf">Mayor, A. Hyatt (Alpheus Hyatt), 1901-1980.</persname>
+      <persname encodinganalog="600" source="lcnaf">Mayor, Alfred Goldsborough, 1868-1922.</persname>
+      <persname encodinganalog="600" source="lcnaf">Mayor, Harriet H. (Harriet Hyatt), 1868-1960.</persname>
+      <famname encodinganalog="600" source="lcnaf">Hyatt family.</famname>
+      <famname encodinganalog="600" source="lcnaf">Mayor family.</famname>
+      <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <!--<subject encodinganalog="650" source="lcsh">##</subject>-->
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Receipts (financial records)</genreform>
+      <genreform encodinganalog="655" source="aat">Legal documents.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Articles.</genreform>
+      <genreform encodinganalog="655" source="aat">Books.</genreform>
+      <genreform encodinganalog="655" source="aat">Bank notes.</genreform>
+    
+    <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Maria Snowden Mayor, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <!--<acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>### (MARC 541 and/or  561)</p>
+      </acqinfo>-->
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Incoming Correspondence</unittitle>
+          
+          
+                  
+                  
+                  <!--Permissible values for @TYPE for first CONTAINER are 'Box' 'Oversize' 'Volume' 'Carton' or 'Map-Case'.-->
+                  <!--Permissible values for @TYPE for second CONTAINER are 'Folder' 'Frame' 'Page'  or 'Reel'.-->
+               </did>
+          <c03>
+            <did>
+              <unittitle>A - B</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>C - D</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Cook, Katharine Mayor</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="kmct">Townsend, Katharine Mayor Cook</ref>.</p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>F</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>H</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Hyatt, Audella</unittitle>
+            <unitdate normal="1896" type="inclusive">1896, </unitdate>
+                  <unitdate normal="1900/1902" type="inclusive">1900-1902, </unitdate><unitdate normal="1904/1907" type="inclusive">1904-1907</unitdate><unitdate normal="1908/1911" type="inclusive">1908-1913, </unitdate>
+                  <unitdate normal="1915/1917" type="inclusive">1915-1921, </unitdate>
+                  <unitdate normal="1923/1925" type="inclusive">1923-1925, </unitdate>
+                <unitdate normal="1931" type="inclusive">1931-1932, </unitdate><unitdate normal="1814/1934" type="inclusive">undated</unitdate><container type="Box">1</container><physdesc><extent>10 folders</extent></physdesc></did>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Hyatt, Harriet</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="hhm">Mayor, Harriet Hyatt</ref></p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>J - L</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>M</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mayor, Alfred G.</unittitle> <unitdate normal="1884" type="inclusive">1884, </unitdate>
+                  <unitdate normal="1890" type="inclusive">1890-1893, </unitdate>
+                <unitdate normal="1896/1897" type="inclusive">1896-1897, </unitdate><unitdate normal="1899/1900" type="inclusive">1899-1900, </unitdate><unitdate normal="1902/1904" type="inclusive">1902-1905, </unitdate>
+                  <unitdate normal="1907/1910" type="inclusive">1907-1911, </unitdate>
+                
+                  <unitdate normal="1913/1914" type="inclusive">1913-1922, </unitdate>
+                <unitdate normal="1814/1934" type="inclusive">undated/unknown</unitdate><physdesc><extent>15 folders</extent></physdesc><container type="Box">2</container></did>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mayor, Alfred M.</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mayor, Alpheus Hyatt.</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mayor, Barbara</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="bmm">Money, Barbara Mayor</ref>.</p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mayor, Brantz</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mayor, various</unittitle>
+              <abstract>Charles F., Ellen, Evelyn Griswold, Lewis C. and Virginia Sluder</abstract><container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mayor, Frank B.</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03 id="hhm">
+            <did>
+              <unittitle>Mayor, Harriet Hyatt</unittitle> <unitdate normal="1897/1899" type="inclusive">1897-1905, </unitdate>
+                  <unitdate normal="1907/1909" type="inclusive">1907-1917</unitdate>
+                <physdesc><extent>12 folders</extent></physdesc><container type="Box">3</container></did>
+				</c03>
+            <c03>
+              <did>
+                <unittitle>Mayor, Harriet Hyatt</unittitle>
+                  <unitdate normal="1918" type="inclusive">1918-1927, </unitdate>
+                <unitdate normal="1929" type="inclusive">1929, </unitdate>
+                  <unitdate normal="1931" type="inclusive">1931-1934, </unitdate>
+                <unitdate normal="1814/1934" type="inclusive">undated/unidentified</unitdate><physdesc><extent>14 folders</extent></physdesc><container type="Box">4</container>
+              </did>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mayor, Joseph Henry</unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mayor, Katharine</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="kmct">Townsend, Katharine Mayor Cook</ref>.</p>
+              </note>
+            </did>
+          </c03>
+          <c03 id="bmm">
+            <did>
+              <unittitle>Money, Barbara Mayor</unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>N, P, R</unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>S</unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stevens, W. L.</unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03 id="kmct">
+            <did>
+              <unittitle>Townsend, Katharine Mayor Cook</unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>V</unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>W</unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Unidentified</unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Outgoing correspondence</unittitle>
+          </did>
+          
+          <c03>
+            <did>
+              <unittitle>To Mrs. Charles F. Mayor</unittitle>
+              <unitdate normal="1880/1883" type="inclusive">1872-1883</unitdate>
+              <unitdate normal="1889" type="inclusive">1889, </unitdate>
+                <unitdate normal="1897" type="inclusive">1897, </unitdate>
+                <unitdate normal="1899" type="inclusive">1899, </unitdate>
+                <unitdate normal="1933" type="inclusive">1933, </unitdate>
+              <unitdate normal="1814/1934" type="inclusive">undated/unidentified</unitdate><physdesc><extent>5 folders</extent></physdesc><container type="Box">5</container>
+            </did>
+          </c03>
+          
+          
+          
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Correspondence to and from others</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>[Miscellaneous]</unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Letters to Miss Antoinette Snowden</unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Snowden family letters</unittitle>
+              <unitdate normal="1814/1829" type="inclusive">1814-1829</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Subject file</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Bank Note for 12 ½ cents</unittitle>
+            <abstract>Frederictown Branch Bank, 1841 (Frederick, Md.)</abstract>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bills and receipts</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bond notices</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cards</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Children's hair</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Legal papers</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Notes of others</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Published material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Article: "Sketch of the Life of Alfred M. Mayor"</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Books</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Die Plagen</emph>
+              </unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Schlau, Schlauer am Schlausten</emph>
+              </unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Newspaper clippings about others</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

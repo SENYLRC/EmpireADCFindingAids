@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008--><!--Revised standard blurb for related material -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="munson_w" mainagencycode="NSyU">munson_w</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Walt Munson Cartoons</titleproper>
+        <subtitle>An  inventory of his cartoons at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MD</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2008-12-02">2 Dec 2008</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>MD
+            
+        
+        <date normal="2008-12-02">2 Dec 2008</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>2 Dec 2008 - converted to EAD (MD)</item>
+        <item>6 Jan 2010 -  added bio, scope and detailed inventory (SK)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Munson, Walt.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Walt Munson Cartoons</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1965/1970" type="inclusive">1965-1970</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>1.67 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">27 original sports cartoons and 7 proofs.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2651145</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Walt Munson was an American sports cartoonist and illustrator.</p>
+      <p>Munson worked as a cartoonist for the <emph render="italic">New Haven Register</emph> from approximately the early 1940s through 1974.  Prior to this, he drew the single panel cartoon, 
+        
+        <emph render="italic">Such is Life</emph> and illustrated comic postcards. </p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Walt Munson Cartoons</emph> are divided into two series. 
+        
+        <emph render="bold">Cartoons </emph> (1965-1970, undated) contains 27 original sports cartoons produced for the <emph render="italic">New Haven Register</emph>.  A variety of sports are caricatured, however Munson's attention is frequently on college sports played by Yale University and other Ivy League teams. </p>
+      <p>Sixteen cartoons have dates stamped on the back. The cartoons vary in size with the largest measuring approximately 11 1/2" x 17 1/2". The cartoons were drawn primarily with ink on illustration  board and Graphix paper. Some were drawn with crayon and traces of pencil are visible.</p>
+      <p>
+        <emph render="bold">Proofs and Tearsheet</emph> (1970, undated) contains 7 items. Several are about the interruption of college sporting events by campus protests and demonstrations.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Dated items are arranged in chronological order and undated items are arranged in alphabetical order. </p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has collections of over one hundred cartoonists.  Please refer to &subjindex; for a complete listing.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <persname encodinganalog="600" source="lcnaf">Munson, Walt.</persname>
+      <subject encodinganalog="650" source="local">Art -- Cartoonists</subject>
+      <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject>
+      <subject encodinganalog="650" source="lcsh">Baseball -- Caricatures and cartoons.</subject>
+      <subject encodinganalog="650" source="lcsh">Basketball -- Caricatures and cartoons. </subject>
+      <subject encodinganalog="650" source="lcsh">Boxing -- Caricatures and cartoons.</subject>
+      <subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- 
+
+Connecticut.</subject>
+      <subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- 
+
+United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Cartoonists -- Connecticut.</subject>
+      <subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">College sports -- Caricatures and cartoons. </subject>
+      <subject encodinganalog="650" source="lcsh">Demonstrations -- Caricatures and cartoons. </subject>
+      <subject encodinganalog="650" source="lcsh">Football -- Caricatures and cartoons.</subject>
+      <subject encodinganalog="650" source="lcsh">Golf -- Caricatures and cartoons. </subject>
+      <subject encodinganalog="650" source="lcsh">Hockey -- Caricatures and cartoons. </subject>
+      <subject encodinganalog="650" source="lcsh">Horse racing -- Caricatures and cartoons. </subject>
+      <subject encodinganalog="650" source="lcsh">Ivy League (Athletic conference) -- Caricatures and cartoons. </subject>
+      <subject encodinganalog="650" source="lcsh">Sports -- Caricatures and cartoons.</subject>
+      <subject encodinganalog="650" source="lcsh">Student protesters -- Caricatures and cartoons. </subject>
+      <subject encodinganalog="650" source="lcsh">Yale University -- Caricatures and cartoons. </subject>
+      <geogname encodinganalog="651" source="lcsh">United States -- Caricatures and cartoons.</geogname>
+      <genreform encodinganalog="655" source="aat">Cartoons (humorous images)
+</genreform>
+      <genreform encodinganalog="655" source="aat">Proofs (printed matter)</genreform>
+      <genreform encodinganalog="655" source="aat">Tear sheets.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p> Walt Munson Cartoons, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Walt Munson</persname>, 1967, 1969, 1971 and 1972.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Cartoons</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1965" type="inclusive">1965</unitdate>
+            </unittitle>
+          <container type="Oversize">1</container></did>
+          <scopecontent>
+            <p>Feb 5: Will You Be My Valentine: horse racing, track and field, Yale University, wrestling, Brown University, Ivy League<lb/>Oct 9: Sportsnotes Scientist to Spend $63,000 to Learn Why Birds Warble</p>
+          </scopecontent>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+            </unittitle>
+          <container type="Oversize">1</container></did>
+          <scopecontent>
+            <p>Apr 8: The Greeks had a word for it "Go man go!": baseball, chariot racing, Yale University, basketball, 
+
+Muhammad Ali
+              
+              <lb/>
+Jul 8: Box Office Draw: baseball
+              
+              <lb/>
+Oct 14: Sports Love in Bloom: New York Mets, Washington Senators, Boston Red Sox, hockey</p>
+          </scopecontent>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1968" type="inclusive">1968</unitdate>
+            </unittitle>
+          <container type="Oversize">1</container></did>
+          <scopecontent>
+            <p>Jan 13: [Superbowl]: Oakland Raiders, Green Bay Packers
+              
+              <lb/>
+Feb 3: Chef's Special: Yale University, Ivy League 
+              
+              <lb/>
+Mar 1: Back to the Drawing Board: sports stadiums and arenas
+              
+              <lb/>Oct 8: What Is Your Favorite Sport?
+              
+              <lb/>
+Oct 12: PenPost Mortem: World Series, football, Columbia, Mickey Lolich</p>
+          </scopecontent>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1969" type="inclusive">1969</unitdate>
+            </unittitle>
+          <container type="Oversize">1</container></did>
+          <scopecontent>
+            <p>Oct 11: It's the new sports compact made isn't it?: football, basketball, hockey, baseball, New 
+
+York Mets</p>
+          </scopecontent>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+            </unittitle>
+          <container type="Oversize">1</container></did>
+          <scopecontent>
+            <p>Jan 17: National Collegiate Athletic Association Puts Yale University Athletes on two-year probation: NCAA, 
+
+Yale University
+              
+              <lb/>
+Feb 28: Speaking of Air Pollution- Around the Sportspark...we are: sports heroes
+
+              
+              <lb/>
+Apr 13: Ivy League Completes Budget Talks
+              
+              <lb/>
+May 9: Oh! Somewhere in this favored landed the sun is shining bright... 
+
+              
+              <lb/>May 25: Book Review: Jim Bouton, horse racing, New York Mets, Boston Patriots</p>
+          </scopecontent>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1965/1970" type="inclusive">Undated</unitdate>
+            </unittitle>
+          <container type="Oversize">1</container></did>
+          <scopecontent>
+            <p>Ah Yes, Sweet smell of flowers in  spring sportstime!: baseball, hockey, basketball, boxing
+              
+              <lb/>
+Along sportslines: golf, sportswriters
+              
+              <lb/>
+Coming Attractions at Home and Away: football, Harvard, Yale University, Michigan State, Notre Dame
+              
+              <lb/>
+Let's not disappoint dear old mother: Yale University, Ivy League
+              
+              <lb/>
+Our National Pastime: football
+              
+              <lb/>Picket Lines: boxing, golf, Navy, cheerleaders (Jan. 8)
+              
+              <lb/>
+Seasonal Greeting Cards are in the mail: Leo Durocher, Eddie Stanky, Boston Red Sox, boxing, NCAA, 
+
+Yale University, Al Dark
+              
+              <lb/>
+Stop the press- stop your kidding: Princeton, Yale University, football
+              
+              <lb/>
+State of the Union Sports Report to Congress
+              
+              <lb/>
+Trick or Treat...shall we dance?: Dartmouth, Yale University, football
+              
+              <lb/>
+Vote the Straight sports ticket: Boston Red Sox, boxing, golf, New York City</p>
+          </scopecontent>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Proofs and Tearsheet</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+            </unittitle>
+          <container type="Oversize">1</container></did>
+          <scopecontent>
+            <p>[Yale University's Two Year Suspension by the NCAA] (2 copies)
+              
+              <lb/>Sep 13: Sportslines...Love and Tears:  demonstrations by football players in favor of a coaching change (photocopy of the original, note about Syracuse University written at top)</p>
+          </scopecontent>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1965/1970" type="inclusive">Undated</unitdate>
+            </unittitle>
+          <container type="Oversize">1</container></did>
+          <scopecontent>
+            <p>Go Ahead. Read me the Funnies. I could use a laugh: college student demonstrations 
+              
+              <lb/>Oh! Somewhere in this favored land the sun is shining  bright:...: college student demonstrations
+              
+              <lb/>Where Have all the fans gone?: baseball, horse racing
+              
+              <lb/>To Have and to Hold- for better and worse: National League baseball expansion</p>
+          </scopecontent>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

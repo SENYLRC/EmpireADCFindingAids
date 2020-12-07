@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="arents_tour">arents_tour</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Arents Grand Tour Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-11-08" encodinganalog="Date">8 Nov 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-11-08">8 Nov 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>8 Dec 2016 - inventory added (MRC)</item>
+         <item>10 Jan 2019 - added related material links, removed 2 Berlin photoalbums that were part of Krasner collection, rehoused, inventory updated/corrected (MRC)</item></list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Arents, George, 1875-1960.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Arents Grand Tour Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1900/1925" type="inclusive" label="Inclusive Dates: ">circa 1900-1925</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>9 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Commercially printed photograph albums of cities and sites of interest in countries around the world.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3178207</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>, <language langcode="fra">French</language>, <language langcode="ger">German</language>, <language langcode="ita">Italian</language>, <language langcode="spa">Spanish</language>, <language langcode="cro">Croatian</language>, <language langcode="rus">Russian</language>, 
+         <language langcode="por">Portuguese</language></langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>George Arents, Jr. (1875-1960) was an American businessman.  He studied at Columbia University and received his master's degree from 
+		Syracuse University at the age of 57.   His father and great-uncle were founders of the Allen &amp; Ginter Tobacco Company, which later 
+		became the American Tobacco Company.  In 1922 Arents became a director of the American Tobacco Company and from 1924 he was  the treasurer 
+		of both the American Machine and Foundry and International Cigar Machinery.  He was also a collector of books and other published material 
+		relating to tobacco.   He and his wife Lena made substantial gifts to Syracuse University; in recognition of their generosity, the 
+		department of rare books and special collections at Bird Library was for many years known as the George Arents Research Library.</p>
+		</bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Arents Grand Tour Collection</emph> consists of dozens of photograph albums of cities and sites of interest in countries around the world.  Countries represented include Algeria, Australia, Cambodia, the U.K., most of Europe, Iceland, Malta, several Scandinavian countries, Tunisia, Turkey, Yugoslavia, and more.</p><p>All but two of the albums are  commercially produced and printed; some of the smaller booklets are perforated and intended to be used as postcards.  The two volumes of "Wanderings in Spain and Portugal" appear to contain original photographs taken by the Arentses during their travels through those two countries, with handwritten captions.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by country and within that by city.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="arents_postcards.htm">Arents Postcard Collection</archref> and the <archref href="arents_xmas.htm">Arents Christmas Card Collection</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+		<!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+			<subject encodinganalog="650" source="local">Photography</subject>
+			<persname encodinganalog="600" source="lcnaf">Arents, George, 1875-1960.</persname>
+			<persname encodinganalog="600" source="lcnaf">Arents, Lena.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Voyages and travels.</subject>
+			
+			<geogname encodinganalog="651" source="lcsh">Africa -- Description and travel.</geogname>
+			<geogname encodinganalog="651" source="lcsh">Asia -- Description and travel.</geogname>
+			<geogname encodinganalog="651" source="lcsh">Australia -- Description and travel.</geogname>
+			<geogname encodinganalog="651" source="lcsh">Europe -- Description and travel.</geogname>
+			
+			
+			
+			<geogname encodinganalog="651" source="lcsh">North America -- Description and travel.</geogname>
+			
+			
+			<genreform encodinganalog="655" source="aat">Photograph albums.</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Postcards.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>-->
+	   </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Arents Grand Tour Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">George and Lena Arents</persname>.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+   <head>Inventory</head>
+<c01 level="series"><did><unittitle>Photoalbums</unittitle></did>
+   <c02><did><unittitle>Algeria</unittitle><physdesc><extent>5 albums in 2 folders</extent></physdesc><container type="Box">1</container></did>
+      <scopecontent>
+	      <p>Places: Algiers, Blida</p>
+		   <p>Album titles: Alger [red]; Alger [brown]; Souvenir d'Alger [blue]; Souvenir d'Alger [red]; Blida et Gorges de la Chiffa</p>
+	   </scopecontent>
+   </c02>
+   <c02><did><unittitle>Australia</unittitle><physdesc><extent>1 album in 1 folder</extent></physdesc><container type="Box">1</container></did>
+      <scopecontent>
+	      <p>Places: New South Wales</p>
+		   <p>Album titles: One Hundred Photographic Pictures of Places of Interest in New South Wales, including Visitors Resorts, Buildings, Shipping, &amp;c.</p>
+	  </scopecontent>
+   </c02>
+   <c02><did><unittitle>Austria</unittitle><physdesc><extent>10 albums in 4 folders</extent></physdesc><container type="Box">1</container></did>
+      <scopecontent>
+	      <p>Places: Gmunden, Innsbruck, Salzburg, Salzkammergut, Kitzbühel, Tyrol and Vorarlberg, Vienna</p>
+	   	<p>Album titles: Erinnerung in der Salzkammergut; Innsbruck; Salzburg; Gisela-Bahn; Tirol und Vorarlberg; Album von Wien; Erinnerung an Wien; Das Neue Wien; Wien [red]; Wien [green]</p>
+	   </scopecontent>
+   </c02>
+   <c02><did><unittitle>Belgium</unittitle><physdesc><extent>6 albums in 2 folders</extent></physdesc><container type="Box">1</container></did>
+      <scopecontent>
+	      <p>Places: Anvers, Brussels</p>
+	      <p>Album titles: 24 Vues de la ville d'Anvers; Souvenir d'Anvers; Bruxelles; Souvenir de Bruxelles [blue]; Souvenir de Bruxelles [red with gold]; Souvenir de Bruxelles [red with gold and black]; </p>
+	   </scopecontent>
+	</c02>
+   <c02><did><unittitle>Cambodia</unittitle><physdesc><extent>1 album in 1 folder</extent></physdesc><container type="Box">2</container></did>
+      <scopecontent>
+		   <p>Places: Angkor-Wat</p>
+		   <p>Album titles: Le temple d'Angkor-Vath Angkor-Wat</p>
+		</scopecontent>
+	</c02>
+   <c02><did><unittitle>Croatia</unittitle><note><p>For the towns of Opatija (Abbazie) and Rijeka (Fiume), which are in modern-day Croatia, see <ref target="yugo">Yugoslavia</ref>.</p></note></did></c02>
+   <c02><did><unittitle>Czechoslovakia</unittitle><physdesc><extent>5 albums in 3 folders</extent></physdesc><container type="Box">2</container></did>
+      <scopecontent>
+		   <p>Places: Karlsbad, Prague</p>
+		   <p>Album titles: Karlsbad; [untitled, red and gold]; [untitled, red and gold]; Praha Prague; Praha Prague ПРАГА</p>
+		</scopecontent>
+	</c02>
+   <c02><did><unittitle>Denmark</unittitle><physdesc><extent>1 album in 1 folder</extent></physdesc><container type="Box">2</container></did>
+      <scopecontent>
+         <p>Places: Roskilde</p>
+         <p>Album titles: Roskilde Domkirke</p>
+      </scopecontent>
+	</c02>
+   <c02><did><unittitle>England, B-L</unittitle><physdesc><extent>12 albums in 4 folders</extent></physdesc><container type="Box">2</container></did>
+      <scopecontent>
+         <p>Places: Bedford, Blackpool, Colchester, London</p>
+         <p>Album titles: Rock's Royal Bedford Cabinet Album; The Album of Blackpool Views; 
+			Rock's Royal Colchester Cabinet Album; Album of London Views [red, title in script]; Album of London Views [red, title in block letters]; London Views; 
+			The New Album of London; The Royal Album of London View; Views of London; 
+			The Royal Album of Crystal Palace Views; The Temple; Views of the Houses of Parliament and Westminster Abbey</p>
+      </scopecontent>
+   </c02>
+	<c02><did><unittitle>England, M-W</unittitle><physdesc><extent>7 albums in 3 folders</extent></physdesc><container type="Box">3</container></did>
+      <scopecontent>
+         <p>Places: Manchester, Newbury, Salisbury, Torquay, Warwick, Windsor</p>
+         <p>Album titles: The Album of Manchester Views; The Sixpenny Album of Newbury Views; Views of Salisbury; The Album of Torquay Views; Views of Warwick, Kenilworth, and Shakespeare's Country; The Royal Album of Windsor Views; The Album of Windsor Views</p>
+      </scopecontent> 
+   </c02>
+   <c02><did><unittitle>France, A-C</unittitle><physdesc><extent>7 albums in 3 folders</extent></physdesc><container type="Box">3</container></did>
+      <scopecontent>
+         <p>Places: Biarritz, Carcasonne, Chamonix, Charters, Chenonceaux</p>
+         <p>Album titles: Automobile Trip 1903 [very large foldout map in hard covers and slipcase]; Biarritz; 
+			Biarritz St. Jean-de-Luz; Cité de Carcasonne; Souvenir Vallée de Chamonix; Cathédrale de Chartres; 
+			Chenonceaux</p>
+      </scopecontent>
+   </c02>
+   <c02><did><unittitle>France, C-V</unittitle><physdesc><extent>28 albums in 9 folders</extent></physdesc><container type="Box">4</container></did>
+      <scopecontent>
+         <p>Places: Cheverny, Chinon, Fontainebleau, Grande Corniche, Langeais, Loup (river), Marseille, Mont St. Michel, Nice, Nîmes, Paris, the Pyrenees, Quimper, Rheims, Strasbourg, Vaux (and other forts); Verdun, Versailles</p>
+         <p>Album titles: Cheverny; Chinon; Fontainebleau, Le Chateau; Circuit de la Grande Corniche; Excursion de la Grande Corniche; Langeais;  Les Gorges de Loup; 
+			Marseille; 
+			Souvenir de Marseille; Le Mont St. Michel; Souvenir de Nice et Monte Carlo; Nîmes et ses Environs; 
+			La Conciergerie; Paris; Expiatory Chapel Louis XVI Square; Hôtel des Invalides; 
+			Pantheon; Sacre-Coeur, Montmartre; Mon excursion dans les Pyrenees; Mon voyage aux Pyrenees; 
+			La Route des Pyrenees; Quimper; Ce qu'etait Reims ce quelle est devenue; Souvenir von Strassburg; 
+			Le Circuit des Forts: Vaux, Douaumont, L'Ossuaire, la Tranchée des Baïonettes; Album souvenir Verdun; Versailles; 
+			Souvenir Versailles et Trianons</p>
+		</scopecontent>
+	</c02>
+   <c02><did><unittitle>France, Paris</unittitle><physdesc><extent>1 album</extent></physdesc><container type="Oversize">1</container></did>
+      <scopecontent>
+         <p>Places: Paris</p>
+         <p>Album titles: Exposition Universelle de Paris 1889</p>
+      </scopecontent>
+	</c02><c02><did><unittitle>France, V (cont.)</unittitle><physdesc><extent>1 album in 1 folder</extent></physdesc><container type="Box">4</container></did>
+      <scopecontent>
+         <p>Places: Versailles</p>
+         <p>Album titles: Versailles et les Trianons, Vues Photographiques</p>
+      </scopecontent>
+	</c02>
+   <c02><did><unittitle>Germany, A-E</unittitle><physdesc><extent>9 albums in 5 folders</extent></physdesc><container type="Box">5</container></did>
+      <scopecontent>
+         <p>Places: Ahrthal, Baden-Baden, Berlin (and Potsdam); Bremen, Dresden, Edenkoben</p>
+         <p>Album titles: Ahrthal; Souvenir von Baden-Baden; Ansichten-Album Berlin; 
+			Berlin [red with gold]; Berlin [red with gold and black]; Berlin-Potsdam; Bremen; Dresden; Ansichts-Album von Edenkoben</p>
+      </scopecontent>
+	</c02>
+   <c02><did><unittitle>Germany, F-H</unittitle><physdesc><extent>8 albums in 6 folders</extent></physdesc><container type="Box">6</container></did>
+      <scopecontent>
+         <p>Places: Frankfurt, Görbersdorf, Hamburg</p>
+         <p>Album titles: Frankfurt [red with gold and black, first photo is numbered 505]; Frankfurt a M; Album von Frankfurt am Main; Frankfurt [red with gold and black, first photo is numbered 59]; Görbersdorf; Hamburg [red with gold and black, first photo is numbered 1604[, 2 copies; Album von Hamburg</p>
+      </scopecontent>
+	</c02>
+   <c02><did><unittitle>Germany, H-R</unittitle><physdesc><extent>18 albums in 6 folders</extent></physdesc><container type="Box">7</container></did>
+      <scopecontent>
+         <p>Places: Hanover, Heidelberg, Herrenchiemsee, Jena, Leipzig, Munich, Nuremberg, Potsdam, the Rhine</p>
+         <p>Album titles: Hannover; Heidelberg [red with gold and black]; Heidelberg [small envelope]; Erinnerung am Herrenchiemsee; 
+	Album von Jena; Leipzig; München; Album München 12; München; Andenken an Nürnberg; 
+	Nürnberg Serie III; Potsdam Serie 1; Rhein; Album vom Rhein;  Panorama vom Rhein: Cöln bis Mainz; Panorama des Rheines, Köln bis Mainz; Der Rhein vom Mainz bis Cöln; Neuestes Rhein-Panorama vom Mainz-Cöln</p>
+      </scopecontent>
+	</c02>
+   <c02><did><unittitle>Germany, R-W</unittitle><physdesc><extent>3 albums in 1 folder</extent></physdesc><container type="Box">8</container></did>
+      <scopecontent>
+         <p>Places: Rothenberg; Wiesbaden</p>
+         <p>Album titles: Rothenberg ob der Tauber; Album von Wiesbaden; Wiesbaden</p>
+      </scopecontent>
+   </c02>
+   <c02><did><unittitle>Gibraltar</unittitle><physdesc><extent>1 album in 1 folder</extent></physdesc><container type="Box">8</container></did>
+      <scopecontent>
+         <p>Places: Gibraltar</p>
+         <p>Album titles: Souvenir of Gibraltar</p>
+      </scopecontent>
+   </c02>
+   <c02><did><unittitle>Iceland</unittitle><container type="Box">8</container></did>
+      <scopecontent>
+         <p>Places: Iceland generally</p>
+         <p>Album titles: Native Views of Iceland</p>
+      </scopecontent>
+   </c02>
+   <c02><did><unittitle>Ireland</unittitle><container type="Box">8</container></did>
+      <scopecontent>
+         <p>Places: Ireland generally, Blarney, Cork, Dublin, Queenstown</p>
+         <p>Album titles: Album of Ireland; Album of Cork, Blarney and Queenstown; Album Dublin</p>
+      </scopecontent>
+   </c02>
+   <c02><did><unittitle>Italy, A-G</unittitle><physdesc><extent>7 albums in 4 folders</extent></physdesc><container type="Box">8</container></did>
+      <scopecontent>
+         <p>Places: Assisi, Bologna, Florence, Genoa</p>
+         <p>Album titles: Assisi Ricordo della Basilica di S. Francesco; Bologna; Firenze Vedute; Ricordo di Firenze; Ricordo del Camposanto di Genova [red with gold and black]; Ricordo del Camposanto di Genova [blue with gold and black]; 
+	Ricordo di Genova</p>
+      </scopecontent>
+   </c02>
+   <c02><did><unittitle>Italy, M-V</unittitle><physdesc><extent>15 albums in 7 folders</extent></physdesc><container type="Box">9</container></did>
+      <scopecontent>
+         <p>Places: Milan, Naples, Pompeii, Rome, Siena, Venice</p>
+         <p>Album titles: Ricordo di Milano; Ricordo di Milano 32 Vedute; Album=Ricordo di Napoli; Napoli 32 vedute; 
+	Ricordo di Napoli XXXII Vedute; Napoli Pompei; Ricordo di Pompei 32 Vedute; Ricordo di Roma No. 1; Ricordo di Roma III; Ricordo di Roma 30 Vedute; 
+	Ricordo di Roma 48 Vedute; Roma; Siena 20 principali vedute; Ricordo di Venezia [blue with gold]; Ricordo di Venezia [green with gold]</p>
+      </scopecontent>
+   </c02>
+   <c02><did><unittitle>Italy, V</unittitle><physdesc><extent>5 albums in 2 folders</extent></physdesc><container type="Box">10</container></did>
+      <scopecontent>
+         <p>Places: Venice, Verona</p>
+         <p>Album titles: Ricordo di Venezia [red  with gold and black, plus 7 loose personal photographs]; Ricordo di Venezia [brown paper covers, tied]; 
+	R.R. Gallerie dell'Accademia Venezia; Souvenir de l'Hôtel d'Italie Bauer Grünwald Venise; Ricordo di Verona</p>
+      </scopecontent>
+   </c02>
+   <c02><did><unittitle>Malta</unittitle><physdesc><extent>3 albums in 1 folder</extent></physdesc><container type="Box">10</container></did>
+      <scopecontent>
+         <p>Places: Malta</p>
+         <p>Album titles: Souvenir de Malte [red paper covers]; Souvenir de Malte [faded green paper covers]; 
+			Souvenir of Malta [hard cover with photo on front]</p>
+      </scopecontent>
+   </c02>
+   <c02><did><unittitle>Martinique</unittitle><physdesc><extent>2 albums in 1 folder</extent></physdesc><container type="Box">10</container></did>
+      <scopecontent>
+         <p>Places: Fort-de-France, Martinique generally</p>
+         <p>Album titles: Fort-de-France Serie 34; Papayers de Presbytere de la Redoubte</p>
+      </scopecontent>
+   </c02>
+   <c02><did><unittitle>Monaco</unittitle><physdesc><extent>1 album in 1 folder</extent></physdesc><container type="Box">10</container></did>
+      <scopecontent>
+         <p>Places: Monaco generally</p>
+         <p>Album titles: Principaute de Monaco</p>
+      </scopecontent>	
+   </c02>
+   <c02><did><unittitle>Montenegro</unittitle><note><p>For the Bay of Kotor, which is in modern-day Montenegro, see <ref target="yugo">Yugoslavia</ref>.</p></note></did></c02>
+	<c02><did><unittitle>Netherlands, A-M</unittitle><physdesc><extent>8 albums in 3 folders</extent></physdesc><container type="Box">10</container></did>
+      <scopecontent>
+         <p>Places: Amsterdam, Haarlem, the Hague ('s Gravenhage), Marken, Middelburg</p>
+         <p>Album titles: Souvenir Amsterdam; Souvenir de la Hollande; Haarlem en Omstreken; 
+	Great Church of St. Bavo at Haarlem; Souvenir 's Gravenhage; Marken I; Marken II; Middelburg</p>
+      </scopecontent>	
+   </c02>
+   <c02><did><unittitle>Netherlands, V-Z</unittitle><physdesc><extent>2 albums in 1 folder</extent></physdesc><container type="Box">11</container></did>
+      <scopecontent>
+         <p>Places: Volendam, Zeeland</p>
+         <p>Album titles: Volendam I; Zeeland I</p>
+      </scopecontent>	
+   </c02>
+   <c02><did><unittitle>Norway</unittitle><physdesc><extent>3 albums in 1 folder</extent></physdesc><container type="Box">11</container></did>
+      <scopecontent>
+         <p>Places: Bergen, Dalen, Djupvand, Geiranger Fjord, Skien</p>
+         <p>Album titles: Bergen; Merok, Geirangerfjord, Djupvand; Skien-Dalen</p>
+      </scopecontent>	
+   </c02>
+   <c02><did><unittitle>Poland</unittitle><physdesc><extent>2 albums in 1 folder</extent></physdesc><container type="Box">11</container></did>
+      <scopecontent>
+         <p>Places: Danzig</p>
+         <p>Album titles: Danzig; Erinnerung an Danzig's Umgegend</p>
+      </scopecontent>	
+   </c02>
+   <c02><did><unittitle>Portugal</unittitle><physdesc><extent>3 albums in 1 folder</extent></physdesc><container type="Box">11</container></did>
+      <note><p>See also <ref target="spain">Spain: Wanderings in Spain and Portugal</ref></p></note><scopecontent>
+         <p>Places: Madeira</p>
+         <p>Album titles: Madeira; Album da Ilha da Madeira; Souvenir of Madeira Album No. 1</p>
+      </scopecontent>	
+   </c02>
+   <c02><did><unittitle>Scotland</unittitle><physdesc><extent>6 albums in 4 folders</extent></physdesc><container type="Box">11</container></did>
+      <scopecontent>
+         <p>Places: Edinburgh, Glasgow, St. Boswell's</p>
+         <p>Album titles: The Cabinet Album Views of Edinburgh [blue]; The Cabinet Album Views of Edinburgh [dark green]; 
+	Views in the Edinburgh District; The Cabinet Album Views of Glasgow and International Exposition; 
+   The Cabinet Album Views of Glasgow; Dryburgh Abbey</p>
+      </scopecontent>	
+   </c02>
+   <c02><did><unittitle>Scotland</unittitle><physdesc><extent>1 album</extent></physdesc><container type="Oversize ">1</container></did>
+      <scopecontent>
+         <p>Places: Glasgow</p>
+         <p>Album titles: The "Camera" Series Album of Views of Glasgow</p>
+      </scopecontent>	
+   </c02>
+   <c02><did><unittitle>Spain</unittitle><physdesc><extent>6 albums in 3 folders</extent></physdesc><container type="Box">11</container></did>
+      <scopecontent>
+         <p>Places: Barcelona, Malaga, Majorca, Seville, Toledo</p>
+         <p>Album titles: Barcelona; Recuerdo de Malaga; Mallorca Valldemosa Miramar Soller [includes additional loose postcards]; Sevilla II; Sevilla Monumental; Recuerdo de Toledo</p>
+      </scopecontent>	
+   </c02>
+	<c02 id="spain"><did><unittitle>Spain: Wanderings in Spain and Portugal, Volume 1</unittitle><container type="Oversize">2</container></did>
+	   <note><p>These appear to be personal photographs taken by the Arentses.</p></note>
+      
+	</c02>
+	<c02><did><unittitle>Spain: Wanderings in Spain and Portugal, Volume 2</unittitle><container type="Oversize">3</container></did>
+	   <note><p>These appear to be personal photographs taken by the Arentses.</p></note>
+      
+	</c02>
+   <c02><did><unittitle>Sweden</unittitle><physdesc><extent>3 albums in 1 folder</extent></physdesc><container type="Box">12</container></did>
+      <scopecontent>
+         <p>Places: Göta, Kronborg, Stockholm</p>
+         <p>Album titles: Göta Kanal; Kronborg Slot; Stockholm</p>
+      </scopecontent>	
+	</c02>
+   <c02><did><unittitle>Switzerland</unittitle><physdesc><extent>14 albums albums in 7 folders</extent></physdesc><container type="Box">12</container></did>
+      <scopecontent>
+         <p>Places: Switzerland generally, Berne, Engadin, Interlaken, Lake Lucerne, Oberland Bernois, Ragaz, Righi, Sächsische Schweiz, St. Moritz</p>
+         <p>Album titles: Die Schweiz; Souvenir de Berne; Ragaz-Engadin; Ober Engadin; Interlaken [text only, no photos]; 
+   	Souvenir du Lac des IV Cantons, Righi, Pilate, et du St. Gothard; Album vom Berner Oberland; Oberland Bernois; 
+		Souvenir de l'Oberland Bernois; Panorama Pittoresque du Righi et du Lac des IV Cantons; Souvenir du Righi; 
+		Sächs. Schweiz; Souvenir de St. Moritz</p>
+      </scopecontent>	
+	</c02>
+   <c02><did><unittitle>Tunisia</unittitle><physdesc><extent>6 albums in 2 folders</extent></physdesc><container type="Box">13</container></did>
+      <scopecontent>
+         <p>Places: Carthage, Tunis</p>
+         <p>Album titles: Carthage; Carthage 24 Vues; Tunis [red paper covers]; Tunis Serie I [cream covers with photographs]; Tunis Serie I [medium brown covers with artists' renderings]; Tunis Serie II</p>
+      </scopecontent>	
+   </c02>
+   <c02><did><unittitle>Turkey</unittitle><physdesc><extent>1 album in 1 folder</extent></physdesc><container type="Box">13</container></did>
+      <scopecontent>
+         <p>Places: Constantinople</p>
+         <p>Album titles: Vues de Constantinople No. 1</p>
+      </scopecontent>	
+   </c02>
+   <c02><did><unittitle>United States</unittitle><physdesc><extent>3 albums in 1 folder</extent></physdesc><container type="Box">13</container></did>
+      <scopecontent>
+         <p>Places: Saratoga, New York</p>
+         <p>Album titles: Picturesque Saratoga; Saratoga; Souvenir of Saratoga Springs</p>
+      </scopecontent>	
+   </c02>
+   <c02 id="yugo"><did><unittitle>Yugoslavia</unittitle><physdesc><extent>2 albums in 1 folder</extent></physdesc><container type="Box">13</container></did>
+      <scopecontent>
+         <p>Places: Bay of Kotor, Rijeka, Opatija</p>
+         <p>Album titles: ВОКА КОТОРСКА Boka Kotorska; Fiume e Abbazia</p>
+      </scopecontent>	
+   </c02>
+</c01></dsc>
+   </archdesc>
+</ead>

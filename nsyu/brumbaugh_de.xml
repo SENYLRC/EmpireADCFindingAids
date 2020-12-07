@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="brumbaugh_de">brumbaugh_de</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">David Emmert Brumbaugh Papers</titleproper>
+            <subtitle>An inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">-</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1994-09" encodinganalog="Date">Sep 1994</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-06-09">9 Jun 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Brumbaugh, David Emmert (1894-1977)</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">David Emmert Brumbaugh Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1939/1962" type="inclusive" label="Inclusive Dates: ">1939-1962</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>13 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">United States congressman from Pennsylvania.  Collection includes 
+		 campaign and election material, correspondence, texts of speeches and bills; also some later material (correspondence and 
+		 other items) relating to Brumbaugh's tenure as Pennsylvania's Secretary of Banking.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2764890</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>David Emmert Brumbaugh (1894-1977) was an American banker, insurance executive and legislator.  He served in the U.S. Army 
+	  during World War I, and later was a U.S. Representative from Pennsylvania (1943-1947) and a member of the Pennsylvania state 
+	  senate (1963-1967).  In 1947 Pennsylvania Governor James A. Duff appointed him the state's Secretary of Banking, a position 
+	  he held until 1952.  He was a Pennsylvania delegate to the Republican National Convention in 1952, 1956 and 1960.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+		 <p>The <emph render="bold">David Emmert Brumbaugh Papers</emph> contain three types of material.  Because the material is 
+		 in original order, this material is scattered throughout the collection.  The researcher is advised to review the entire 
+		 inventory carefully to ensure locating all relevant material.</p>
+		 <p>Campaigns and elections material consists of campaign receipts and expenditures, county and town lists 
+		 of voter registrations, lists of Republican committeemen, candidate's petitions, press releases, election results, and 
+		 congratulatory messages from constituents.</p>
+		 <p>Material relating to the 78th and 79th Congresses includes the correspondence of Brumbaugh's predecessor, James E. Van 
+		 Zandt.  Much of this correspondence points up the legislative responsibilities of a congressman during World War II and its 
+		 aftermath.  There are letters from constituents requesting help in obtaining passports, sugar, farm deferments, and military 
+		 discharges.  Also included is correspondence relating to the mustering-out pay bill for members of the armed forces, the soldier 
+		 vote bill, the Continuation of Commodity Credit Corporation with Anti-Food Subsidy provision, the overriding of the President's 
+		 veto tax bill, extension of the land-lease act, the G.I. Bill of Rights, Townsend Legislation, and more.</p>
+		 <p>Also included in this series are texts of Brumbaugh's speeches before Congress.</p>
+		 <p>Banking-related material covers Brumbaugh's career as Pennsylvania's Secretary of Banking and his 
+		 correspondence with fellow bankers and banking association officers.</p>
+		 <p>Correspondents of note in the collection include Pennsylvania Governors James A. Duff and Edward Martin, House Minority 
+		 Leader Joseph W. Martin, Jr., Chester Bowles and Paul Porter.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection has received minimal processing and remains in original order with (for the most part) the donor's 
+		 original subject headings.</p>
+      </arrangement>
+      
+      <!-- <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial> -->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+		 <persname encodinganalog="600" source="lcnaf">Brumbaugh, David Emmert (1894-1977)</persname>
+		 <persname encodinganalog="600" source="lcnaf">Van Zandt, James E. (James Edward), 1898-</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <!-- <corpname encodinganalog="610" source="lcnaf">##</corpname> -->
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="lcsh">Bankers -- Pennsylvania.</subject>
+         <subject encodinganalog="650" source="lcsh">Legislators -- Pennsylvania.</subject>
+         <subject encodinganalog="650" source="lcsh">Legislators -- United States.</subject>
+         <geogname encodinganalog="651" source="lcsh">Pennsylvania -- Politics and government -- 1951-</geogname>
+         <genreform encodinganalog="655" source="aat">Bills (legislative records)</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <genreform encodinganalog="655" source="aat">Speeches (documents)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Bankers.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Legislators.</occupation>
+         <!-- <function encodinganalog="657">##</function> -->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>James Emmert Brumbaugh Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">James Emmert Brumbaugh</persname>, circa 1965.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Papers</unittitle></did>
+   <c02 level="subseries"><did><unittitle>Correspondence</unittitle></did>
+      <c03><did><unittitle>A-Boh</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Boj-Co</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Cr-Ey</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Fa-Gw</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>Ha-J</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">5</container></did></c03>
+      <c03><did><unittitle>Ka-Mc</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">6</container></did></c03>
+      <c03><did><unittitle>Mc-My</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">7</container></did></c03>
+      <c03><did><unittitle>Na-Q</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">8</container></did></c03>
+      <c03><did><unittitle>Ra-Shop</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Shope-Sw</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">10</container></did></c03>
+      <c03><did><unittitle>Ta-Wa</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">11</container></did></c03>
+      <c03><did><unittitle>We-Z</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate><container type="Box">12</container></did></c03>
+      <c03><did><unittitle>Annapolis/West Point</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">13</container></did></c03>
+      <c03><did><unittitle>Army/Navy game tickets</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">13</container></did></c03>
+      <c03><did><unittitle>Applications to West Point</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">13</container></did></c03>
+      <c03><did><unittitle>Case Bill</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">13</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Miscellaneous</unittitle></did>
+      <c03><did><unittitle>Bills introduced by DEB</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">13</container></did></c03>
+      <c03><did><unittitle>Baby books</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">13</container></did></c03>
+      <c03><did><unittitle>Newspaper articles</unittitle><unitdate type="inclusive" normal="1945/1946">1945-1946</unitdate><container type="Box">14</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Correspondence</unittitle></did>
+      <c03><did><unittitle>A-Cu</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">15</container></did></c03>
+      <c03><did><unittitle>Da-Gu</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">16</container></did></c03>
+      <c03><did><unittitle>Ha-Ly</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">17</container></did></c03>
+      <c03><did><unittitle>Mc-Q</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">18</container></did></c03>
+      <c03><did><unittitle>Ra-Sw</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">19</container></did></c03>
+      <c03><did><unittitle>T-Z</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">20</container></did></c03>
+      <c03><did><unittitle>A-H (O.D.)*</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">20</container></did></c03>
+      <c03><did><unittitle>J-Z (O.D.)*</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">20</container></did></c03>
+      <c03><did><unittitle>James Van Zandt</unittitle><unitdate type="inclusive" normal="1939/1943">1939-1943</unitdate><container type="Box">21</container></did></c03>
+      <c03><did><unittitle>Campaign</unittitle><unitdate type="inclusive" normal="1944">1944, </unitdate><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">21</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Miscellaneous</unittitle></did>
+      <c03><did><unittitle>Election expenditures</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">21</container></did></c03>
+      <c03><did><unittitle>Election receipts and expenditures</unittitle><unitdate type="inclusive" normal="1943">1943</unitdate><container type="Box">21</container></did></c03>
+      <c03><did><unittitle>Petitions</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">21</container></did></c03>
+      <c03><did><unittitle>Announcements</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">21</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Correspondence</unittitle></did>
+      <c03><did><unittitle>Red Cross</unittitle><unitdate type="inclusive" normal="1944">1944, </unitdate><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">22</container></did></c03>
+      <c03><did><unittitle>Sugar</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">22</container></did></c03>
+      <c03><did><unittitle>Sugar shortage</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">22</container></did></c03>
+      <c03><did><unittitle>Sympathy</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">22</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Miscellaneous</unittitle></did>
+      <c03><did><unittitle>Speeches</unittitle><unitdate type="inclusive" normal="1945/1946">1945-1946</unitdate><container type="Box">22</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Correspondence</unittitle></did>
+      <c03><did><unittitle>Townsend Bill</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">23</container></did></c03>
+      <c03><did><unittitle>Terminal Leave Pay</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">23</container></did></c03>
+      <c03><did><unittitle>U.S. Military Academy</unittitle><unitdate type="inclusive" normal="1941">1941, </unitdate><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">23</container></did></c03>
+      <c03><did><unittitle>U.S. Naval Academy</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">23</container></did></c03>
+      <c03><did><unittitle>Veterans Hospital</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">23</container></did></c03>
+      <c03><did><unittitle>Veterans Hospital, 79th Congress</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">23</container></did></c03>
+      <c03><did><unittitle>HR 309, introduced by DEB</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">23</container></did></c03>
+      <c03><did><unittitle>U.S. Merchant Marine Academy</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">23</container></did></c03>
+      <c03><did><unittitle>Voting record</unittitle><unitdate type="inclusive" normal="1943">1943</unitdate><container type="Box">23</container></did></c03>
+      <c03><did><unittitle>HR 1964</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">23</container></did></c03>
+      <c03><did><unittitle>HR 5293, introduced by DEB</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">23</container></did></c03>
+      <c03><did><unittitle>Wedding</unittitle><unitdate type="inclusive" normal="1943">1943</unitdate><container type="Box">24</container></did></c03>
+      <c03><did><unittitle>Election results</unittitle><unitdate type="inclusive" normal="1943">1943</unitdate><container type="Box">24</container></did></c03>
+      <c03><did><unittitle>Election results, Nov.</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">24</container></did></c03>
+      <c03><did><unittitle>23rd District committeemen and women</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">24</container></did></c03>
+      <c03><did><unittitle>Congratulations</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">24</container></did></c03>
+      <c03><did><unittitle>Birthday</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">24</container></did></c03>
+      <c03><did><unittitle>Compulsory military training (pro and con)</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">24</container></did></c03>
+      <c03><did><unittitle>Invitations</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">24</container></did></c03>
+      <c03><did><unittitle>Congratulations</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">24</container></did></c03>
+      <c03><did><unittitle>Coal</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">24</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Miscellaneous</unittitle></did>
+      <c03><did><unittitle>Congratulations political workers</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">24</container></did></c03>
+      <c03><did><unittitle>Immigrations visa I-133</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">24</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Correspondence</unittitle></did>
+      <c03><did><unittitle>National Service Law HR 3944</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">25</container></did></c03>
+      <c03><did><unittitle>Omnibus Bill of Legions: HR 3917, HR 4057, S 1767</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">25</container></did></c03>
+      <c03><did><unittitle>Nurse Draft bill</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">25</container></did></c03>
+      <c03><did><unittitle>Lumber</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">25</container></did></c03>
+      <c03><did><unittitle>Lakemont Legion</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">25</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Miscellaneous</unittitle></did>
+      <c03><did><unittitle>Lists</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">25</container></did></c03>
+      <c03><did><unittitle>Labor drafts</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">25</container></did></c03>
+      <c03><did><unittitle>Nurse Draft bill</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">25</container></did></c03>
+      <c03><did><unittitle>Lake Erie / Ohio River Canal</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">25</container></did></c03>
+      <c03><did><unittitle>Political</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">25</container></did></c03>
+      <c03><did><unittitle>Publicity</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">25</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Correspondence</unittitle></did>
+      <c03><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="27 Feb 1951-6 Nov 1962">27 Feb 1951-6 Nov 1962</unitdate><container type="Box">26</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Miscellaneous</unittitle></did>
+      <c03><did><unittitle>Speeches</unittitle><container type="Box">26</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Correspondence</unittitle></did>
+      <c03><did><unittitle>Post office</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">27</container></did></c03>
+      <c03><did><unittitle>Personal</unittitle><unitdate type="inclusive" normal="1945">1945</unitdate><container type="Box">27</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Miscellaneous</unittitle></did>
+      <c03><did><unittitle>Petitions</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Box">27</container></did></c03>
+      <c03><did><unittitle>Petitions for primary</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">27</container></did></c03>
+      <c03><did><unittitle>Publicity</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><container type="Box">27</container></did></c03>
+   </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

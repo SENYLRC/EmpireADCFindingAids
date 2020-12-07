@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.7, 1/24/2007-->
+<!--Added copyright statement to Use Restrictions section-->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="rohfeld_r">rohfeld_r</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Rae Rohfeld Papers</titleproper>
+            <subtitle>An  inventory of her papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author><sponsor>The adult education holdings are collectively known as the <lb/><extptr title="Alexander N. Charters Library of Resources for Educators of Adults" href="https://library.syr.edu/scrc/collections/areas/adult-ed.php" show="new"/>.</sponsor></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2007-06-14" encodinganalog="Date">14 Jun 2007</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2007-06-14">14 Jun 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Rohfeld, Rae Wahl</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Rae Rohfeld Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1988/1993" type="inclusive" label="Inclusive Dates: ">1988-1993</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.75 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Papers of the adult education professor at Syracuse University.  Collection includes correspondence, conference material, writings.  Most relates to several working conferences on the history of adult education held at SU.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2537526</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Rae Rohfeld was a professor of adult education at Syracuse University and later taught at Empire State College.  As a member of the Syracuse University Kellogg Project, she coordinated several conferences on the history of adult education.  The first was a traditional conference but subsequent ones were structured as "working conferences, " meaning that time was built into the conferences for scholars to actually carry out research among collection materials, present preliminary findings, and receive interactive feedback from fellow conference participants.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Rae Rohfeld Papers</emph> is divided into two series.  <emph render="bold">Conferences and meetings</emph> contains material from several annual conferences on the history of adult education held at Syracuse University under the auspices of the Kellogg Project; the 1988 International Conference on Adult Education held in Aachen, Germany, at which Rohfeld represented the Kellogg Project; and the History of Education Society's 1991 meeting.  This includes conference proceedings, agenda, correspondence, notes, and other    material.  <emph render="bold">Writings</emph> contains several papers written by Rohfeld.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Conference and meeting material is in alphabetical order by conference title and within that in chronological order.  Writing is in alphabetical order by title.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has more than 50 collections relating to adult education.  Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Adult education</subject>
+         <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Rohfeld, Rae Wahl.</persname>
+         
+            <corpname encodinganalog="610" source="lcnaf">Syracuse University Kellogg Project.</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Adult education -- United States.</subject><subject encodinganalog="650" source="lcsh">Adult education -- Research.</subject><subject encodinganalog="650" source="lcsh">Adult education teachers -- Training of.</subject><subject encodinganalog="650" source="lcsh">History of Education Society.</subject><subject encodinganalog="650" source="lcsh">International Conference on Adult Education.</subject>
+         
+            <genreform encodinganalog="655" source="aat">Articles.</genreform><genreform encodinganalog="655" source="aat">Papers (document genres)</genreform><genreform encodinganalog="655" source="aat">Proceedings.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Adult education educators.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Rae Rohfeld Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Rae Rohfeld</persname>, 2007</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>Conferences and meetings</unittitle>
+            </did>
+            <c02 level="subseries">
+               <did>
+                  <unittitle>History of Adult Education</unittitle>
+                  </did>
+            <c03><did><unittitle><unitdate normal="1989" type="inclusive">1989</unitdate>  conference</unittitle><abstract>includes printed and bound proceedings</abstract><physdesc><extent>2 folders</extent></physdesc>
+                  <container type="Box">1</container>
+                  
+                  
+               </did></c03><c03><did><unittitle><unitdate normal="1990" type="inclusive">1990</unitdate>  conference</unittitle>
+                  <container type="Box">1</container>
+                  
+                  
+               </did></c03><c03><did><unittitle><unitdate normal="1991" type="inclusive">1991</unitdate>  conference</unittitle>
+                  <container type="Box">1</container>
+                  
+                  
+               </did></c03><c03><did><unittitle><unitdate normal="1993" type="inclusive">1993</unitdate>  conference</unittitle>
+                  <container type="Box">1</container>
+                  
+                  
+               </did></c03></c02><c02 level="subseries"><did><unittitle>History of Education Society</unittitle></did><c03><did><unittitle><unitdate normal="1988" type="inclusive">1991</unitdate> annual meeting</unittitle>
+                  <container type="Box">2</container>
+                  
+                  
+               </did></c03></c02><c02 level="subseries"><did><unittitle>International Conference on Adult Education</unittitle></did><c03><did><unittitle><unitdate normal="1988" type="inclusive">1988</unitdate>   conference</unittitle>
+                  <container type="Box">2</container>
+                  
+                  
+               </did></c03></c02>
+         </c01><c01 level="series"><did><unittitle>Writings</unittitle></did><c02><did><unittitle>The challenge of documenting adult education</unittitle><abstract> paper presented at History of Education Society meeting</abstract><unitdate normal="1991" type="inclusive">1991</unitdate><container type="Box">2</container>
+                  
+                  
+               </did></c02><c02><did><unittitle>Collaboration between voluntary organizations and the state for adult education in the United States</unittitle><abstract> paper presented at International Conference on Adult Education</abstract><unitdate normal="1988" type="inclusive">1988</unitdate><container type="Box">2</container>
+                  
+                  
+               </did> </c02><c02><did><unittitle>Reconstructing the mainstream: issues in history of race, class and gender</unittitle><abstract> paper presented at Commission of Professors of Adult Education (CPAE) meeting</abstract><unitdate normal="1991" type="inclusive">1991</unitdate><container type="Box">2</container>
+                  
+                  
+               </did></c02><c02><did><unittitle>The working conference: A vehicle for historical research</unittitle><unitdate normal="1992" type="inclusive">1992</unitdate><container type="Box">2</container>
+                  
+                  
+               </did></c02></c01>
+      </dsc>
+   </archdesc>
+</ead>

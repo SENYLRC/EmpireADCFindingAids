@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="farm_security_photos">farm_security_photos</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Farm Security Administration Photographs</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2020-09-01" encodinganalog="Date">1 Sep 2020</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2020-09-01">1 Sep 2020</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">United States. -- Farm Security Administration.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Farm Security Administration Photographs</unittitle>
+         <unitdate encodinganalog="245$f" normal="1934/1943" type="inclusive" label="Inclusive Dates: ">1934-1943</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 folders (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Photographs from the American South and West, relating to agricultural conditions and family resettlement during the Great Depression (1929-1939); taken under the auspices of the Resettlement Administration and Farm Security Administration</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">## Use our field 001</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The Resettlement Administration (RA) was a federal agency created in 1935, under the auspices of the United States Department of Agriculture, in response to poverty resulting from the Great Depression.  It built relief camps for migratory workers, particularly in California, and relocated struggling urban and rural families to new communities planned and built by the federal government, such as Greenbelt, Maryland. The RA was controversial within the US Congress, where it was perceived as socialist or even Communist, and in 1936 the US Supreme Court ruled its town-building program unconstitutional (<emph render="italic">Franklin Township v. Tugwell</emph>, 1936).  In 1937 the RA was folded into the new Farm Security Administration (FSA) which was intended to promote rural rehabilitation more generally.  Among other things, the FSA had a small but highly influential photography program that vividly portrayed the challenges of rural poverty, and created an indelible image of the Depression in the United States. Many notable photographers produced work for the FSA, including Ben Shahn, Walker Evans, and Dorothea Lange.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Farm Security Administration Photographs</emph> contains photographs taken in agricultural areas of the United States between the mid-1930s and mid-1940s.  The photographs were taken on behalf of the
+Resettlement
+Administration (RA) and the Farm Security Administration (FSA), and include several by notable photojournalists: six by Dorothea Lange, twelve by
+Arthur Rothstein, six by Russell Lee, six by John Vachon, and one by
+Carl Mydans.  Others are attributed only to Acme News
+Pictures.  All photographs have an NEA (Newspaper Enterprise Association) hand-stamp on the back; many also have FSA or RA hand-stamps.  All photographs are dated and most have captions, either handwritten or typed.  An <ref target="index">index to photographers</ref> appears at the end of this finding aid.</p><p>Images include houses, gardens, farms, and farm equipment, as well as people -- men, women, and children -- at home, at work in fields and gardens, at agricultural meetings, in new "resettlement" houses, and so on.  Several depict migrant  workers (cherry pickers in Michigan and pea pickers in California).  Identified events include the Imperial Valley Pea Strike and groundbreaking for the planned town of Greenbelt, Maryland.   Thirteen states are represented, though California is the most frequent.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by state.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Photography</subject>
+
+<subject encodinganalog="650" source="local">Politics, government and public administration</subject><persname encodinganalog="600" source="lcnaf">Lange, Dorothea.</persname>
+			<persname encodinganalog="600" source="lcnaf">Lee, Russell, 1903-1986.</persname>
+			<persname encodinganalog="600" source="lcnaf">Mydans, Carl.</persname>
+			<persname encodinganalog="600" source="lcnaf">Rothstein, Arthur, 1915-1985.</persname>
+			<persname encodinganalog="600" source="lcnaf">Vachon, John, 1914-1975.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">United States. -- Farm Security Administration.</corpname>
+			<corpname encodinganalog="610" source="lcnaf">United States. -- Resettlement Administration.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Depressions -- 1929.</subject>
+			<subject encodinganalog="650" source="lcsh">Documentary photography -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Farmers -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Migrant labor -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Migration, Internal -- United States.</subject><subject encodinganalog="650" source="lcsh">Photographers -- United States.</subject>
+         <geogname encodinganalog="651" source="lcsh">United States -- History -- 1933-1945.</geogname>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advance notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		 
+</accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Farm Security Administration Photographs, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2020.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series" id="fold-1"><did><unittitle>Photographs</unittitle></did>
+            <c02><did><unittitle>Photographs by state, A-G</unittitle><abstract>Alabama, California, Colorado, Georgia</abstract><unitdate normal="1934/1943" type="inclusive">1934-1943</unitdate><container type="SC">863</container></did></c02>
+            <c02 id="fold-2"><did><unittitle>Photographs by state, I-T</unittitle><abstract>Iowa, Maryland, Michigan, Missouri, Montana, Nebraska, New Mexico, Ohio, Tennessee, unidentified</abstract><unitdate normal="1934/1943" type="inclusive">1934-1943</unitdate><container type="SC">863</container></did></c02>
+         </c01>
+      </dsc>
+   <index id="index"><head>Index to photographers</head><p>All identified photographers are listed here, with the locations where their photos may be found in the collection.</p><indexentry><name>Fisher, [unknown]</name><ptrgrp><ref target="fold-2">Missouri</ref><ref target="fold-2">unidentified</ref></ptrgrp></indexentry><indexentry><name>Lange, Dorothea</name><ptrgrp><ref target="fold-1">California</ref><ref target="fold-2">unidentified</ref></ptrgrp></indexentry>
+<indexentry><name>Lee, Russell</name><ptrgrp><ref target="fold-1">California</ref><ref target="fold-2">Missouri</ref></ptrgrp></indexentry>
+<indexentry><name>Mydans, Carl</name><ptrgrp><ref target="fold-2">Ohio</ref></ptrgrp></indexentry>
+<indexentry><name>Rothstein, Arthur</name><ptrgrp><ref target="fold-1">Alabama</ref><ref target="fold-1">Colorado</ref><ref target="fold-1">Georgia</ref><ref target="fold-2">Iowa</ref><ref target="fold-2">Maryland</ref><ref target="fold-2">Missouri</ref><ref target="fold-2">Montana</ref><ref target="fold-2">New Mexico</ref><ref target="fold-2">Tennessee</ref><ref target="fold-2">unidentified</ref></ptrgrp></indexentry>
+<indexentry><name>Vachon, John</name><ptrgrp><ref target="fold-1">Georgia</ref><ref target="fold-2">Michigan</ref><ref target="fold-2">Nebraska</ref></ptrgrp></indexentry></index></archdesc>
+</ead>

@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="curtis_gw" mainagencycode="NSyU">curtis_gw</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">George William Curtis Letters</titleproper>
+        <subtitle>An inventory of his letters
+
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">KM</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1989-02">Feb 1989</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+        <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>1 Oct 2008 - converted to EAD (LDC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Curtis, George William, 1824-1892.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">George William Curtis Letters</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1851/1892" type="inclusive">1851-1892</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">89 items (SC)</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the American critic, social commentator, essayist; Chiefly outgoing correspondence.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">149356</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">
+                          English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>George William Curtis (1824-1892) was an American critic, social commentator, and essayist.</p>
+      <chronlist>
+        <head>Select Works</head>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1851">1851</date>
+          <event>
+            <emph render="italic">Nile Notes of a Howadji</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1852">1852</date>
+          <eventgrp>
+            <event>
+              <emph render="italic">The Howadji in Syria</emph>
+            </event>
+            <event>
+              <emph render="italic">Lotus-Eating: A Summer Book</emph>
+            </event>
+          </eventgrp>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1853">1853</date>
+          <event>
+            <emph render="italic">The Potiphar Papers</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1856">1856</date>
+          <eventgrp>
+            <event>
+              <emph render="italic">Prue and I</emph>
+            </event>
+            <event>
+              <emph render="italic">Our Best Society</emph>
+            </event>
+          </eventgrp>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1861">1861</date>
+          <event>
+            <emph render="italic">Trumps. A Novel</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1891">1891</date>
+          <event>
+            <emph render="italic">Washington Irving: A Sketch</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1891/1894">1891-1894</date>
+          <event>
+            <emph render="italic">From the Easy Chair</emph>, 3 volumes</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1893">1893</date>
+          <event>
+            <emph render="italic">Other Essays from the Easy Chair</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1894">1894</date>
+          <eventgrp>
+            <event>
+              <emph render="italic">Orations and Addresses of George William Curtis</emph>
+            </event>
+            <event>
+              <emph render="italic">Literary and Social Essays</emph>
+            </event>
+          </eventgrp>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1896">1896</date>
+          <eventgrp>
+            <event>
+              <emph render="italic">Emerson</emph>
+            </event>
+            <event>
+              <emph render="italic">Hawthorne</emph>
+            </event>
+            <event>
+              <emph render="italic">Longfellow</emph>
+            </event>
+          </eventgrp>
+        </chronitem>
+      </chronlist>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The
+
+       <emph render="bold">George William Curtis Letters</emph> are a collection of chiefly outgoing <emph render="bold">Correspondence</emph> which illuminate the journalism career, political activities, and personal life of this 19th century American social commentator and orator. As editor of "The Easy Chair," a feature which appeared in
+
+        <emph render="italic">Harper's Monthly</emph>, Curtis's widely-read opinions generated interest in him as a speaker,
+		  and a number of letters concern invitations to address various political
+		  organizations and educational institutions (Bond, Lee, Partington, Prince). Also among the letters are several
+		  responses to social invitations (Croffut, Graham, Hart, Tenney, Wharton), and a number of more personal
+		  letters (Dwight, Downing, Fields, Robbins, Taylor) which concern social engagements, typical among them is
+		  this to Eastman: "I cannot tell you how fresh and beautiful the little excursion was - nor how much I owe you - euchre included."</p>
+      <p>While the personal letters (Lossing, Putnam, Stoddard) reveal much of the wit and warmth
+		of Curtis the journalist and literary critic, there are also a number of letters which
+		reflect on beliefs and opinions of this political activist (Moffat, Pruyn, Ranney, Pierrepont).
+		Responding to his nomination by acclamation for Secretary of State of New York at the
+		Republican convention, Curtis wrote to Judge Edwards Pierrepont
+		(
+
+        <date normal="1869-10-01">1 Oct 1869</date>):
+       <blockquote>
+          <p>Certainly one of the most agreeable events in a man's life must be his summons
+			 to an honorable public position by the spontaneous and unanimous voice of a
+			 multitude of his fellow citizens personally unknown to him; and certainly he must feel
+			 very grateful to the friend who was the immediate cause of that expression of preference.
+			 You must know, therefore, before I say it, how sincerely I thank you for naming me in the
+			 Convention and how truly sorry I am that I could not, with an honorable regard for my
+			 present duties and engagements, even permit myself to think of accepting.</p>
+          <p>I hope meanwhile, to be of more actual service both to the state and to the
+			 country in an unofficial post.</p>
+        </blockquote></p>
+      <p>Although active in Republican Party politics, Curtis rejected the choice of James G. Blaine
+		for the American presidency and urged the election of Grover Cleveland, becoming the most
+		influential of the Independents in national affairs. In a letter of
+        <date normal="1884-11-14">14 Nov 1884</date>, Curtis explains:
+        <blockquote>
+          <p>If support of a candidate who is believed to be dishonest or of a measure which is
+			 thought to be injurious to the public welfare, be compatible with Republicanism, no self
+			 respecting man can be a Republican.</p>
+        </blockquote></p>
+      <p>And in a letter addressed to Henry S. Ranney and others, Curtis outlines his personal
+		view of the role of political parties (
+        <date normal="1829-10-30">30 Oct 1829</date>):
+        <blockquote>
+          <p>You hold that the first duty of an American citizen is to his country; and while
+			 we all agree that under our political system the country is to be served through party
+			 organization, you assert the great conservative truth that organization can be kept
+			 faithful to its purpose only by the individual independence of its members. Undoubtedly
+			 the party majority must rule but the only way to compel it to rule rightly is to refuse
+			 obedience to its recommendations when they cannot be obeyed without sacrifice of principle.</p>
+        </blockquote></p>
+      <p>Offering some advice to an aspiring social activist; Curtis advises C. W. Stickney (
+
+        <date normal="1870-02-15">15 Feb 1870</date>):
+        <blockquote>
+          <p>I should beg you to think a little of the manner of your action, whether speaking or writing or advocating this or that special measure - but everything of great result, and of the carefulness, the conscience, the training, the knowledge, which are essential to success in every form. If you fit your heart upon the pen as your weapon, - it may deceive you. If upon the tongue, - it may disappoint you. But everywhere and everyhow as opportunity offers, to speak or to write or to do, for whatever is best and generous &amp; manly, that is really to live, and not to do it is to die.</p>
+        </blockquote></p><p>The <emph render="bold">Subject Files</emph> series contains a single photograph.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The collection is divided into two series: Subject Files and Correspondence.  The correspondence is arranged chronologically; there is a <ref target="sic">Selected Index to Correspondence</ref> located at the end of the finding aid.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial>-->
+    <!--<separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial>--><!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">Journalism</subject><persname encodinganalog="600" source="lcnaf">Bond, William.</persname>
+      <persname encodinganalog="600" source="lcnaf">Bourne, Wm. Oland (William Oland), 1819-1901.</persname>
+      <persname encodinganalog="600" source="lcnaf">Cotting, Benjamin Eddy, 1812-1897.</persname>
+      <persname encodinganalog="600" source="lcnaf">Croffut, William Augustus.</persname>
+      <persname encodinganalog="600" source="lcnaf">Curtis, George William, 1824-1892.</persname>
+      <persname encodinganalog="600" source="lcnaf">Dwight, John Sullivan, 1813-1893.</persname>
+      <persname encodinganalog="600" source="lcnaf">Fields, James Thomas, 1817-1881.</persname>
+      <persname encodinganalog="600" source="lcnaf">Lanman, Charles, 1819-1895.</persname>
+      <persname encodinganalog="600" source="lcnaf">Lossing, Helen (Mrs. Benson)</persname>
+      <persname encodinganalog="600" source="lcnaf">Moffat, Reuben Burnham, 1861-</persname>
+      <persname encodinganalog="600" source="lcnaf">Pierrepont, Edwards, 1817-1892.</persname>
+      <persname encodinganalog="600" source="lcnaf">Pruyn, John VanSchaick Lansing, 1811-1877.</persname>
+      <persname encodinganalog="600" source="lcnaf">Putnam, George Palmer, 1814-1872.</persname>
+      <persname encodinganalog="600" source="lcnaf">Ranney, Henry S.</persname>
+      <persname encodinganalog="600" source="lcnaf">Stickney, C. W.</persname>
+      <persname encodinganalog="600" source="lcnaf">Stoddard, Richard Henry, 1825-1903.</persname>
+      <persname encodinganalog="600" source="lcnaf">Taylor, Bayard, 1825-1878.</persname>
+      <persname encodinganalog="600" source="lcnaf">Tenney, William Jewett.</persname>
+      <persname encodinganalog="600" source="lcnaf">Ward, William Hayes.</persname>
+      <persname encodinganalog="600" source="lcnaf">White, Francis Wayland.</persname>
+      <persname encodinganalog="600" source="lcnaf">Whittier, John Greenleaf, 1807-1892.</persname>
+      <corpname encodinganalog="610" source="lcnaf">Republican Party (N.Y.)</corpname>
+      <subject encodinganalog="650" source="lcsh">American literature -- 19th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Authors, American.</subject>
+      <subject encodinganalog="650" source="lcsh">Journalists -- Political activity.</subject>
+      <subject encodinganalog="650" source="lcsh">Journalists -- United States.</subject>
+      <geogname encodinganalog="651" source="lcsh">New England -- Intellectual life.</geogname>
+      <geogname encodinganalog="651" source="lcsh">New England -- Social life and customs.</geogname>
+      <geogname encodinganalog="651" source="lcsh">New York (State) -- Politics and government.</geogname>
+      <genreform encodinganalog="655" source="aat">Letters (correspondence)</genreform>
+      <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Journalists.</occupation>
+      <subject encodinganalog="650" source="local">Journalism</subject>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and
+                       all relevant rights holders before publishing quotations, excerpts or images from any
+                       materials in this collection. </p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>George William Curtis Letters,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <lb/>&su_name;</p>
+    </prefercite>
+    <!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Subject Files</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Photograph</unittitle>
+            <unitdate normal="1851/1892" type="inclusive">undated</unitdate>
+            <container type="SC">71</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>
+              
+            Outgoing</unittitle>
+            <unitdate normal="1851/1855" type="inclusive">1851-1855</unitdate><physdesc>
+              <extent>4 letters</extent>
+            </physdesc>
+            <container type="SC">71</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            Outgoing</unittitle>
+            <unitdate normal="1856/1859" type="inclusive">1856-1859</unitdate><physdesc>
+              <extent>7 letters</extent>
+            </physdesc>
+            <container type="SC">71</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            Outgoing</unittitle>
+            <unitdate normal="1860/1865" type="inclusive">1860-1865</unitdate><physdesc>
+              <extent>10 letters</extent>
+            </physdesc>
+            <container type="SC">71</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            Outgoing</unittitle>
+            <unitdate normal="1866/1869" type="inclusive">1866-1869</unitdate><physdesc>
+              <extent>11 letters</extent>
+            </physdesc>
+            <container type="SC">71</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            Outgoing</unittitle>
+            <abstract>includes 1 fragment of incoming letter</abstract><unitdate normal="1870/1874" type="inclusive">1870-1874</unitdate><physdesc>
+              <extent>10 letters; 1 fragment</extent>
+            </physdesc>
+            <container type="SC">71</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            Outgoing</unittitle>
+            <unitdate normal="1875/1879" type="inclusive">1875-1879</unitdate><physdesc>
+              <extent>10 letters</extent>
+            </physdesc>
+            <container type="SC">71</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            Outgoing</unittitle>
+            <unitdate normal="1880/1884" type="inclusive">1880-1884</unitdate><physdesc>
+              <extent>12 letters</extent>
+            </physdesc>
+            <container type="SC">71</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            Outgoing</unittitle>
+            <unitdate normal="1885/1889" type="inclusive">1885-1889</unitdate><physdesc>
+              <extent>11 letters</extent>
+            </physdesc>
+            <container type="SC">71</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            Outgoing</unittitle>
+            <unitdate normal="1890/1892" type="inclusive">1890-1892</unitdate><physdesc>
+              <extent>12 letters</extent>
+            </physdesc>
+            <container type="SC">71</container>
+          </did>
+        </c02>
+      </c01>
+      
+    </dsc>
+  <index id="sic"><head>Selected Index to Correspondence</head><indexentry>
+   <name>Black</name>
+   
+      <ref>1 Apr 1862</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Bonaparte, Mr.</name>
+   
+      <ref>3 Jan 1889</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Bond, William</name>
+   
+      <ref>9 Sep 1857</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Bourne, William Oland</name>
+   <ptrgrp>
+      <ref>12 Feb 1866</ref>
+      <ref>13 Mar 1866</ref>
+      <ref>16 Apr 1874</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Chadwick</name>
+   
+      <ref>20 Apr 1875</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Collins, Mr.</name>
+   
+      <ref>16 Dec 1857</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Cotting, Benjamin Eddy</name>
+   
+      <ref>19 Jan 1856</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Croffut, William Augustus</name>
+   
+      <ref>28 Feb 1867</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Downing, Mrs.</name>
+   
+      <ref>28 Jan 1855</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Dwight, John Sullivan</name>
+   
+      <ref>12 Aug 1851</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Eastman</name>
+   
+      <ref>3 Aug 1862</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Eleanor</name>
+   
+      <ref>1 Nov 1875</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Fields, James Thomas</name>
+   <ptrgrp>
+      <ref>16 Mar 1857</ref>
+      <ref>7 Oct 1861</ref>
+      <ref>10 Dec 1872</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Francis, David G.</name>
+   
+      <ref>26 Dec 1883</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Gilder, Mr.</name>
+   
+      <ref>17 May 1890</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Graham, Mr.</name>
+   <ptrgrp>
+      <ref>10 Dec 1865</ref>
+      <ref>23 Dec 1865</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Hart, Dr.</name>
+   <ptrgrp>
+      <ref>1 Jun 1870</ref>
+      <ref>25 Nov 1871</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Horatio</name>
+   
+      <ref>8 Dec 1878</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Huntington, D</name>
+   <ptrgrp>
+      <ref>21 Nov 1879</ref>
+      <ref>2 Dec 1879</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Ireland, Mr.</name>
+   
+      <ref>18 Apr 1879</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Lanman, Charles</name>
+   
+      <ref>24 Jan 1878</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Lee, Mr.</name>
+   
+      <ref>18 Dec 1859</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Lossing, Helen (Mrs. Benson)</name>
+   
+      <ref>8 Apr 1866</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Mackaye, Mrs.</name>
+   
+      <ref>11 Jul 1888</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Mayer, Mr.</name>
+   
+      <ref>23 Mar 1857</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Moffat, Reuben Burnham</name>
+   
+      <ref>22 Nov 1884</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Osgood, J. R. &amp; Co.</name>
+   
+      <ref>20 Jan 1875</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Partington, Mr.</name>
+   <ptrgrp>
+      <ref>15 Apr 1888</ref>
+      <ref>1 Jun 1889</ref>
+      <ref>5 Feb 1890</ref>
+      <ref>2 Jun 1890</ref>
+      <ref>18 Aug 1891</ref>
+      <ref>18 Feb 1892</ref>
+      <ref>15 Jun 1892</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Pierrepont, Edwards</name>
+   
+      <ref>1 Oct 1869</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Prince, Mr.</name>
+   
+      <ref>20 Jan 1865</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Pruyn, Anna Parker</name>
+   
+      <ref>12 Jun 1890</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Pruyn, John VanSchaick Lansing</name>
+   
+      <ref>25 Sep 1867</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Putnam, George Palmer</name>
+   <ptrgrp>
+      <ref>2 Dec 1863</ref>
+      <ref>9 Jan 1869</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Ranney, Henry S.</name>
+   
+      <ref>30 Oct 1879</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Richards, Mr.</name>
+   
+      <ref>5 May 1890</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Richelson, Mr.</name>
+   
+      <ref>21 Oct 1874</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Robbins, Mr.</name>
+   
+      <ref>31 Dec 1860</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Sargent, Mr.</name>
+   
+      <ref>26 Apr 1866</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Sheldon, Mr.</name>
+   
+      <ref>20 Oct 1888</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Sherwood, Mr.</name>
+   
+      <ref>12 Jun 1885</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Smith, Mr.</name>
+   
+      <ref>23 Oct 1872</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Stickney, C. W.</name>
+   
+      <ref>15 Feb 1870</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Stoddard, Richard Henry</name>
+   
+      <ref>22 Oct 1859</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Taylor, Bayard</name>
+   
+      <ref>25 Feb 1865</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Tenney, William Jewett</name>
+   
+      <ref>22 Sep 1867</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Ward, William Hayes</name>
+   
+      <ref>14 Nov 1881</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Wharton, Mr.</name>
+   
+      <ref>2 Oct 1885</ref>
+   
+</indexentry>
+<indexentry>
+   <name>White, Francis Wayland</name>
+   
+      <ref>22 Jan 1855</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Whittier, John Greenleaf</name>
+   
+      <ref>20 Jan 1884</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Wilstach, Mr.</name>
+   
+      <ref>27 Dec 1881</ref>
+   
+</indexentry>
+<indexentry>
+   <name>Wiman, Mr.</name>
+   
+      <ref>12 May 1890</ref>
+   
+</indexentry>
+</index></archdesc>
+</ead>

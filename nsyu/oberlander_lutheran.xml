@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="oberlander_lutheran">oberlander_lutheran</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Oberlander Lutheran Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">-</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1993-01-26" encodinganalog="Date">26 Jan 1993</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-07-16">16 Jul 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>16 Jul 2010 - converted to EAD (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Oberlander, Alexander.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Oberlander Lutheran Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1925/1933" type="inclusive" label="Inclusive Dates: ">1925-1933</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Approximately 900 pieces relating to the Lutheran Church in Central New York, collected by Alexander Oberlander of Syracuse.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2922477</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Alexander Oberlander was the owner of the Oberlander Press in Syracuse, New York, and an officer in the governing body of the Lutheran Church.  As such Oberlander was involved in problem solving for local churches, including issues of congregational resistance to switching the liturgical language from German to English, and conflicts between pastor and congregation.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Oberlander Lutheran Collection</emph> consists of approximately 900 pieces relating to the Lutheran Church in Central New York, collected by Alexander Oberlander of Syracuse.  Churches represented include the United Lutheran Church of New York, St. Paul's (Oswego), St. Paul's (Syracuse), and Trinity Church (Herkimer), as well as Concordia and St. Paul's churches in Watertown.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Original order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous collections relating to church and clergy in the Central New York area.  Please refer to &subjindex; for a complete listing.</p></relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Church and clergy</subject>
+			<subject encodinganalog="650" source="local">New York State</subject>
+			<subject encodinganalog="650" source="local">Religion and philosophy</subject>
+			<persname encodinganalog="600" source="lcnaf">Hartwick, John Christopher, 1714-1796.</persname><persname encodinganalog="600" source="lcnaf">Oberlander, Alexander.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Lutheran Church -- Clergy.</corpname><corpname encodinganalog="610" source="lcnaf">Lutheran Church -- Doctrines.</corpname><corpname encodinganalog="610" source="lcnaf">Lutheran Church -- New York (State) -- History.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <!--<subject encodinganalog="650" source="lcsh">##</subject>-->
+         <geogname encodinganalog="651" source="lcsh">New York (State) -- Church history.</geogname>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Church records.</genreform><genreform encodinganalog="655" source="aat">Reports.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Clergy.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Oberlander Lutheran Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Alexander Oberlander</persname>, circa 1964.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Lutheran church material</unittitle></did>
+            <c02><did><unittitle>Concerning John Christopher Hartwick</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Doctrinal basis of the United Lutheran Church of New York, Article 1, Section 2</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>St. Paul's Church, Oswego (New York)</unittitle><unitdate normal="1931/1932" type="inclusive">1931-1932</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>St. Paul's Church, Syracuse (New York)</unittitle><unitdate normal="1925/1926" type="inclusive">1925-1926</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Synod matters</unittitle><physdesc><extent>4 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Trinity Church, Hermiker (New York)</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Watertown (New York) Concordia and St. Paul congregations</unittitle><unitdate normal="1932/1933" type="inclusive">1932-1933</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Writings</unittitle><abstract>miscellaneous</abstract><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

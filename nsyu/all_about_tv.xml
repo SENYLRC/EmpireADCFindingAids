@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="all_about_tv">all_about_tv</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">All About TV Recordings</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">SB</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-06" encodinganalog="Date">Jun 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Simone Becque<date normal="2010-09-29">29 Sep 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>29 Sep 2010 - converted to EAD (MRC)</item><item>30 Mar 2018 - audiorecordings added (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">All About TV Recordings</unittitle>
+         <unitdate encodinganalog="245$f" normal="1990/1995" type="inclusive" label="Inclusive Dates: ">1990-1995</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>32 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Videotape recordings of the television show <emph render="italic">All About TV</emph>.  Also includes a few recordings of <emph render="italic">Day at </emph>Night and <emph render="italic">Television in America</emph>.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3171503</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p><emph render="italic">All About TV</emph>, later called <emph render="italic">World:Comm</emph>, was a television series produced by television critic Steven H. Scheuer and Loomis Irish, Head of the Television and Radio Department at Brooklyn College.  It ran on WNET-Channel 13 in New York City between 1992 and 1995. The series examined a sweeping range of issues relating to television and media, including violence on television, cameras in the courtroom, children's television, deregulation, political campaigns, advertising, soap opera addiction, coverage of Vietnam, and much more.   Panelists and  guests featured on its 200+ episodes included Dan Rather, Mike Wallace, John Kenneth Galbraith, Ed Koch, Bill Kurtis, Lewis Friedman, Robert MacNeil, and many more.</p><p><emph render="italic">Day at Night</emph> was a public television series hosted by the late James Day, co-founder of KQED in San Francisco, president of the New York City television station WNET, and Chairman of the Advisory Board for City University Television in New York (CUNY TV) .  The show featured interviews with notable cultural and political figures conducted in the mid 1970's.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">All About TV Recordings</emph> consists of approximately 330 videotape recordings of episodes of the 1990s series.   Panlists and guests featured in the collection include David Webster, US Director for the BBC; Lawrence Grossman, President of PBS; economist John Kenneth Galbraith; journalist Bill Kurtis; New York mayor Ed Koch; NBC journlist Linda Ellerbee; journalist Daniel Schorr; television critic Pat Aufderheide; and many more.  Topics addressed spanned the entire range of political, social, economic, educational and technological issues surrounding television, including social responsibility and TV, soap opera addiction, politics and television news, sex and violence, the First Amendment, television in the courtroom, children's television, Vietnam and other war coverage, the impact of media on social behavior, and much much more.</p><p>Also included in the collection are ten videorecordings of episodes of <emph render="italic">Day At Night</emph>.  Interviewees are primarily from the entertainment field and include Ozzie Nelson, Art Linkletter, E.G. Marshall, and Tennessee Ernie Ford.</p><p>Finally, there are sixteen episodes of <emph render="italic">Television in America: First Person Singular</emph>, an interview series.  Interviewees include Ed Bleier, Heywood Broun, Mike Wallace and other journalists.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Recordings are subdivided by show title and within that are  in order by the call number assigned to them during cataloging.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has extensive collections relating to radio, television and film history, including the papers of Stephen Scheuer and Ed Bleier.  Please refer to &summitref; for a complete listing.</p></relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Popular culture</subject>
+			<subject encodinganalog="650" source="local">Radio, television, film</subject>
+			<persname encodinganalog="600" source="lcnaf">Scheuer, Steven H.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <title encodinganalog="630" source="lcnaf"> All about TV (Television program)</title>
+         <title encodinganalog="630" source="lcnaf">Day at night (Television program)</title>
+         <title encodinganalog="630" source="lcnaf">Television in America (Television program)</title>
+         <subject encodinganalog="650" source="lcsh">Popular culture -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Religion on television.</subject>
+			<subject encodinganalog="650" source="lcsh">Television -- History.</subject>
+			<subject encodinganalog="650" source="lcsh">Television -- Study and teaching.</subject>
+			<subject encodinganalog="650" source="lcsh">Television and children.</subject>
+			<subject encodinganalog="650" source="lcsh">Television and culture.</subject>
+			<subject encodinganalog="650" source="lcsh">Television and history.</subject>
+			<subject encodinganalog="650" source="lcsh">Television and politics.</subject>
+			<subject encodinganalog="650" source="lcsh">Television in religion.</subject>
+			<subject encodinganalog="650" source="lcsh">Television in education.</subject>
+			<subject encodinganalog="650" source="lcsh">Television broadcasting -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Television broadcasting of news -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Television journalists -- United States.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Sound recordings.</genreform>
+		 <genreform encodinganalog="655" source="aat">Audiotapes.</genreform>
+		 <genreform encodinganalog="655" source="aat">Video recordings.</genreform>
+		 <genreform encodinganalog="655" source="aat">Videotapes.</genreform>
+			<genreform encodinganalog="655" source="aat">Interviews.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Television broadcasters.</occupation>
+		 <occupation encodinganalog="656" source="lcsh">Television journalists.</occupation>
+		 <occupation encodinganalog="656" source="lcsh">Television producers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+         <p>Access to recordings requires advance notice in order to produce a use copy.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>All About TV Recordings,  <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from Media Services, 2010.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+<c01 level="series"><did><unittitle>All About TV</unittitle></did>
+   <c02><did><unitid>B1000</unitid><unittitle>The world of TV commercials</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unitid>B1001</unitid><unittitle>Public television : whose public</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unitid>B1002</unitid><unittitle>TV, politics and the news</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unitid>B1003</unitid><unittitle>Keeping your eye on TV</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unitid>B1004</unitid><unittitle>CBS : reflections in a bloodshot eye. A talk with Robert Metz</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unitid>B1005</unitid><unittitle>TV politics : equal time for whom</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unitid>B1006</unitid><unittitle>TV sponsors : can they influence what the public sees</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unitid>B1007</unitid><unittitle>A conversation with David Webster, U.S. Director for BBC</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unitid>B1008</unitid><unittitle>A conversation with Lawrence K. Grossman, president of PBS</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unitid>B1010</unitid><unittitle>CBS : the power and the profits. A conversation with David Halberstam</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unitid>B1011</unitid><unittitle>The television documentary</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unitid>B1012</unitid><unittitle>Soap opera addiction : is it harmful</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unitid>B1013</unitid><unittitle>TV, politics and money Part II</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unitid>B1014</unitid><unittitle>Sex and violence : viewer bait</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unitid>B1015</unitid><unittitle>Social responsibility and TV Parts I - II</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unitid>B1016</unitid><unittitle>Social responsibility and TV Parts I - II</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unitid>B1017</unitid><unittitle>Assault on the media : the Nixon years</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unitid>B1018</unitid><unittitle>The good guys, the bad guys and the First Amendment : a talk with Fred W. Friendly</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unitid>B1019</unitid><unittitle>Cable TV : growth of an industry</unittitle><container type="Box">-</container></did></c02>
+   <c02><did><unitid>B1020</unitid><unittitle>Kojak &amp; Co. Selling the audience</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unitid>B1021</unitid><unittitle>Kojak &amp; Co. Selling of ideas</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unitid>B1022</unitid><unittitle>Kojak &amp; Co. Selling ideologies for export</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unitid>B1023</unitid><unittitle>The new television season</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unitid>B1024</unitid><unittitle>The manipulators</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unitid>B1025</unitid><unittitle>TV coverage of election night : which network won</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unitid>B1026</unitid><unittitle>TV news : the movie, Network</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unitid>B1027</unitid><unittitle>The view from highway one</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unitid>B1029</unitid><unittitle>Tuning in on politics Part 1</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unitid>B1030</unitid><unittitle>Freedom &amp; fairness : another viewpoint</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unitid>B1031</unitid><unittitle>The subject is soap opera</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unitid>B1032</unitid><unittitle>Checks and balances in the media</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unitid>B1033</unitid><unittitle>The golden age of television</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unitid>B1034</unitid><unittitle>Kids, food &amp; television</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unitid>B1034</unitid><unittitle>Sex, violence and free speech</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unitid>B1036</unitid><unittitle>Media ecology</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unitid>B1037</unitid><unittitle>Local news : style or substance</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unitid>B1038</unitid><unittitle>Local news : trojan horse in the newsroom</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unitid>B1039</unitid><unittitle>A conversation with John Kenneth Galbraith</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unitid>B1040</unitid><unittitle>A conversation with John Kenneth Galbraith</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unitid>B1041</unitid><unittitle>Stage to screen : theater on TV</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unitid>B1042</unitid><unittitle>Public TV : whose public, how public</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unitid>B1043</unitid><unittitle>Television &amp; the public interest</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unitid>B1044</unitid><unittitle>TV as teacher : decoding the messages</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unitid>B1045</unitid><unittitle>Censorship in the arts</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unitid>B1046</unitid><unittitle>How the British view American TV</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unitid>B1047</unitid><unittitle>Television cops and the law</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unitid>B1048</unitid><unittitle>A conversation with Nicholas Johnson</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unitid>B1049</unitid><unittitle>The CIA's secret army : an investigative report</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unitid>B1050</unitid><unittitle>Visions : a conversation with Barbara Schultz</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unitid>B1051</unitid><unittitle>DocuDrama : fact or fiction</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unitid>B1052</unitid><unittitle>TV : the show and tell machine</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unitid>B1053</unitid><unittitle>Funding the arts</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unitid>B1054</unitid><unittitle>Clearing the air : a conversation with Daniel Schorr</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unitid>B1055</unitid><unittitle>Televising Congress</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unitid>B1056</unitid><unittitle>A conversation with Les Brown Part II</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unitid>B1057</unitid><unittitle>TV sports : America's modern religion</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unitid>B1058</unitid><unittitle>TV sports : coverage or control</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unitid>B1059</unitid><unittitle>The TV family</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unitid>B1060</unitid><unittitle>New electronic media</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unitid>B1061</unitid><unittitle>TV : an international viewpoint</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unitid>B1062</unitid><unittitle>Remote control Parts 1 - 2 : TV manipulates America</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unitid>B1063</unitid><unittitle>Remote control Parts 1 - 2 : TV manipulates America</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unitid>B1064</unitid><unittitle>TV journalism Parts I - II : how free</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unitid>B1065</unitid><unittitle>TV journalism Parts I - II : how free</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unitid>B1066</unitid><unittitle>Independent film, video and public TV</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unitid>B1067</unitid><unittitle>The politics of public service advertising</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unitid>B1068</unitid><unittitle>A conversation with Benjamin Hooks</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unitid>B1069</unitid><unittitle>The business of commercial TV</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unitid>B1070</unitid><unittitle>Conversation with Sylvester "Pat" Weaver</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unitid>B1071</unitid><unittitle>Advertising on children's tv</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unitid>B1072</unitid><unittitle>Television in the courtroom</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unitid>B1073</unitid><unittitle>Television in the courtroom</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unitid>B1074</unitid><unittitle>Business coverage on TV</unittitle><container type="Box">8</container></did></c02>
+   <c02><did><unitid>B1075</unitid><unittitle>A question of access Part II : the independents sue the networks</unittitle><container type="Box">8</container></did></c02>
+   <c02><did><unitid>B1076</unitid><unittitle>Communicating in the eighties</unittitle><container type="Box">8</container></did></c02>
+   <c02><did><unitid>B1077</unitid><unittitle>A discussion about public television</unittitle><container type="Box">8</container></did></c02>
+   <c02><did><unitid>B1078</unitid><unittitle>A conversation with Al Levin</unittitle><container type="Box">8</container></did></c02>
+   <c02><did><unitid>B1079</unitid><unittitle>Let's make a deal</unittitle><container type="Box">8</container></did></c02>
+   <c02><did><unitid>B1080</unitid><unittitle>Media Works : a CETA project</unittitle><container type="Box">8</container></did></c02>
+   <c02><did><unitid>B1081</unitid><unittitle>Network television and the public interest</unittitle><container type="Box">8</container></did></c02>
+   <c02><did><unitid>B1082</unitid><unittitle>TV and political campaigning Part II</unittitle><container type="Box">8</container></did></c02>
+   <c02><did><unitid>B1083</unitid><unittitle>Carnegie Commission report Parts I - II : the future of public broadcasting</unittitle><container type="Box">8</container></did></c02>
+   <c02><did><unitid>B1084</unitid><unittitle>Carnegie Commission report Parts I - II : the future of public broadcasting</unittitle><container type="Box">9</container></did></c02>
+   <c02><did><unitid>B1085</unitid><unittitle>Carnegie Commission report Parts I - II : the future of public broadcasting</unittitle><container type="Box">9</container></did></c02>
+   <c02><did><unitid>B1086</unitid><unittitle>Communications legislation for the 1980's</unittitle><container type="Box">9</container></did></c02>
+   <c02><did><unitid>B1087</unitid><unittitle>Television and the public interest</unittitle><container type="Box">9</container></did></c02>
+   <c02><did><unitid>B1088</unitid><unittitle>10,000 nights of network television</unittitle><container type="Box">9</container></did></c02>
+   <c02><did><unitid>B1089</unitid><unittitle>Cameras in the courtroom</unittitle><container type="Box">9</container></did></c02>
+   <c02><did><unitid>B1090</unitid><unittitle>Media madness &amp; our schools</unittitle><container type="Box">9</container></did></c02>
+   <c02><did><unitid>B1091</unitid><unittitle>Meet the Baxters : America's newest TV family</unittitle><container type="Box">9</container></did></c02>
+   <c02><did><unitid>B1092</unitid><unittitle>The dollars and cents of TV sports</unittitle><container type="Box">9</container></did></c02>
+   <c02><did><unitid>B1093</unitid><unittitle>FCC to networks : c - on kids' shows</unittitle><container type="Box">9</container></did></c02>
+   <c02><did><unitid>B1094</unitid><unittitle>It's still a long way, baby : women in media</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unitid>B1095</unitid><unittitle>CIA on TV</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unitid>B1096</unitid><unittitle>The networks : how they stole the show</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unitid>B1097</unitid><unittitle>TV in the 70's : a review</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unitid>B1098</unitid><unittitle>TV diplomacy Parts I - II</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unitid>B1099</unitid><unittitle>TV diplomacy Parts I - II</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unitid>B1100</unitid><unittitle>Talking back to your TV</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unitid>B1101</unitid><unittitle>The Museum of Broadcasting</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unitid>B1102</unitid><unittitle>Media As Big Business *</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unitid>B1103</unitid><unittitle>The American Short Story *</unittitle><container type="Box">10</container></did></c02>
+   <c02><did><unitid>B1104</unitid><unittitle>Ford Rowan - A Man with a Conscience *</unittitle><container type="Box">11</container></did></c02>
+   <c02><did><unitid>B1105</unitid><unittitle>The Electronic Church *</unittitle><container type="Box">11</container></did></c02>
+   <c02><did><unitid>B1106</unitid><unittitle>CIA on TV</unittitle><container type="Box">11</container></did></c02>
+   <c02><did><unitid>B1107</unitid><unittitle>Cable Network News - Part Two *</unittitle><container type="Box">11</container></did></c02>
+   <c02><did><unitid>B1108</unitid><unittitle>TV and Political Campaigns - Part One *</unittitle><container type="Box">11</container></did></c02>
+   <c02><did><unitid>B1109</unitid><unittitle>TV and Political Campaigns - Part Two *</unittitle><container type="Box">11</container></did></c02>
+   <c02><did><unitid>B1110</unitid><unittitle>A Conversation with William T. Henry II *</unittitle><container type="Box">11</container></did></c02>
+   <c02><did><unitid>B1111</unitid><unittitle>Prime Time American (Robert Sklar) *</unittitle><container type="Box">11</container></did></c02>
+   <c02><did><unitid>B1112</unitid><unittitle>Teaching Critical Viewing *</unittitle><container type="Box">11</container></did></c02>
+   <c02><did><unitid>B1113</unitid><unittitle>The Best of International TV *</unittitle><container type="Box">11</container></did></c02>
+   <c02><did><unitid>B1114</unitid><unittitle>TV Coverage of Campaign in '80 *</unittitle><container type="Box">12</container></did></c02>
+   <c02><did><unitid>B1115</unitid><unittitle>The New Science Boom on TV *</unittitle><container type="Box">12</container></did></c02>
+   <c02><did><unitid>B1116</unitid><unittitle>A conversation with Brian Winston</unittitle><container type="Box">12</container></did></c02>
+   <c02><did><unitid>B1117</unitid><unittitle>The tonight Show</unittitle><container type="Box">12</container></did></c02>
+   <c02><did><unitid>B1118</unitid><unittitle>Public TV : new directions</unittitle><container type="Box">12</container></did></c02>
+   <c02><did><unitid>B1119</unitid><unittitle>Communications technology : new uses</unittitle><container type="Box">12</container></did></c02>
+   <c02><did><unitid>B1120</unitid><unittitle>Local News *</unittitle><container type="Box">12</container></did></c02>
+   <c02><did><unitid>B1121</unitid><unittitle>Image of Older People on TV *</unittitle><container type="Box">12</container></did></c02>
+   <c02><did><unitid>B1122</unitid><unittitle>A Conversation with Henry Geller *</unittitle><container type="Box">12</container></did></c02>
+   <c02><did><unitid>B1123</unitid><unittitle>A Conversation with Henry Geller - Part Two *</unittitle><container type="Box">12</container></did></c02>
+   <c02><did><unitid>B1124</unitid><unittitle>Decola - NBC News Mag *</unittitle><container type="Box">12</container></did></c02>
+   <c02><did><unitid>B1125</unitid><unittitle>Golden age of television</unittitle><container type="Box">13</container></did></c02>
+   <c02><did><unitid>B1126</unitid><unittitle>Deregulation of the Networks *</unittitle><container type="Box">13</container></did></c02>
+   <c02><did><unitid>B1127</unitid><unittitle>The Images of Businessmen on TV *</unittitle><container type="Box">13</container></did></c02>
+   <c02><did><unitid>B1128</unitid><unittitle>Untitled *</unittitle><container type="Box">13</container></did></c02>
+   <c02><did><unitid>B1129</unitid><unittitle>John Beck (Guest) *</unittitle><container type="Box">13</container></did></c02>
+   <c02><did><unitid>B1130</unitid><unittitle>Lawrence Grossman (Guest) *</unittitle><container type="Box">13</container></did></c02>
+   <c02><did><unitid>B1131</unitid><unittitle>Wicklein, Koughman - Part One *</unittitle><container type="Box">13</container></did></c02>
+   <c02><did><unitid>B1132</unitid><unittitle>Wicklein, Koughman - Part Two *</unittitle><container type="Box">13</container></did></c02>
+   <c02><did><unitid>B1133</unitid><unittitle>The Information Society - Part One *</unittitle><container type="Box">13</container></did></c02>
+   <c02><did><unitid>B1134</unitid><unittitle>The Information Society - Part Two *</unittitle><container type="Box">13</container></did></c02>
+   <c02><did><unitid>B1135</unitid><unittitle>Women in TV Sports *</unittitle><container type="Box">13</container></did></c02>
+   <c02><did><unitid>B1136</unitid><unittitle>All About TV : TV News - A Conversation with Dave Marash *</unittitle><container type="Box">14</container></did></c02>
+   <c02><did><unitid>B1137</unitid><unittitle>TV News - A Conversation with Dave Marash (Part Two) *</unittitle><container type="Box">14</container></did></c02>
+   <c02><did><unitid>B1138</unitid><unittitle>Kicking the TV Habit *</unittitle><container type="Box">14</container></did></c02>
+   <c02><did><unitid>B1139</unitid><unittitle>Nightline - New Directions in TV News *</unittitle><container type="Box">14</container></did></c02>
+   <c02><did><unitid>B1140</unitid><unittitle>Women in Cable *</unittitle><container type="Box">14</container></did></c02>
+   <c02><did><unitid>B1141</unitid><unittitle>Women in Cable (Part Two) *</unittitle><container type="Box">14</container></did></c02>
+   <c02><did><unitid>B1142</unitid><unittitle>Programming for Cable *</unittitle><container type="Box">14</container></did></c02>
+   <c02><did><unitid>B1143</unitid><unittitle>A Conversation with Tony Schwartz *</unittitle><container type="Box">14</container></did></c02>
+   <c02><did><unitid>B1144</unitid><unittitle>Middletown - A Conversation with Peter Downs *</unittitle><container type="Box">14</container></did></c02>
+   <c02><did><unitid>B1145</unitid><unittitle>Middletown - A Conversation with Peter Downs - Part Two *</unittitle><container type="Box">14</container></did></c02>
+   <c02><did><unitid>B1146</unitid><unittitle>Low Power *</unittitle><container type="Box">15</container></did></c02>
+   <c02><did><unitid>B1147</unitid><unittitle>Paul Klein</unittitle><container type="Box">15</container></did></c02>
+   <c02><did><unitid>B1148</unitid><unittitle>Who Needs - of Network News *</unittitle><container type="Box">15</container></did></c02>
+   <c02><did><unitid>B1149</unitid><unittitle>The 2nd American Revolution *</unittitle><container type="Box">15</container></did></c02>
+   <c02><did><unitid>B1150</unitid><unittitle>New Directions in TV News *</unittitle><container type="Box">15</container></did></c02>
+   <c02><did><unitid>B1150</unitid><unittitle>New Directions in TV News *</unittitle><container type="Box">15</container></did></c02>
+   <c02><did><unitid>B1151</unitid><unittitle>A Conversation with Lewis Friedman - Part One *</unittitle><container type="Box">15</container></did></c02>
+   <c02><did><unitid>B1152</unitid><unittitle>A Conversation with Lewis Friedman - Part Two *</unittitle><container type="Box">15</container></did></c02>
+   <c02><did><unitid>B1153</unitid><unittitle>A Conversation with Bob Teague *</unittitle><container type="Box">15</container></did></c02>
+   <c02><did><unitid>B1154</unitid><unittitle>CBS Cable : a look at cultural programming</unittitle><container type="Box">15</container></did></c02>
+   <c02><did><unitid>B1155</unitid><unittitle>A Conversation with Robert MacNeil - Part One *</unittitle><container type="Box">15</container></did></c02>
+   <c02><did><unitid>B1156</unitid><unittitle>A Conversation with Robert MacNeil - Part Two *</unittitle><container type="Box">16</container></did></c02>
+   <c02><did><unitid>B1157</unitid><unittitle>A Conversation with Robert Mcneil (Copy) *</unittitle><container type="Box">16</container></did></c02>
+   <c02><did><unitid>B1158</unitid><unittitle>Big Blue Marble *</unittitle><container type="Box">16</container></did></c02>
+   <c02><did><unitid>B1159</unitid><unittitle>A Conversation with Paul Duke *</unittitle><container type="Box">16</container></did></c02>
+   <c02><did><unitid>B1160</unitid><unittitle>A Conversation with Charles Collingwood *</unittitle><container type="Box">16</container></did></c02>
+   <c02><did><unitid>B1161</unitid><unittitle>A Conversation with Charles Collingwood - Part Two *</unittitle><container type="Box">16</container></did></c02>
+   <c02><did><unitid>B1162</unitid><unittitle>Information Revolution - Telextex and Videotex *</unittitle><container type="Box">16</container></did></c02>
+   <c02><did><unitid>B1164</unitid><unittitle>Cable Health Network *</unittitle><container type="Box">16</container></did></c02>
+   <c02><did><unitid>B1165</unitid><unittitle>Children's TV Parts 1 - 2</unittitle><container type="Box">16</container></did></c02>
+   <c02><did><unitid>B1166</unitid><unittitle>Children's TV Parts 1 - 2</unittitle><container type="Box">16</container></did></c02>
+   <c02><did><unitid>B1167</unitid><unittitle>Children's TV Part 2</unittitle><container type="Box">16</container></did></c02>
+   <c02><did><unitid>B1167</unitid><unittitle>Children's TV Parts 1 - 2</unittitle><container type="Box">17</container></did></c02>
+   <c02><did><unitid>B1168</unitid><unittitle>Children's TV Part 2</unittitle><container type="Box">16</container></did></c02>
+   <c02><did><unitid>B1168</unitid><unittitle>Children's TV Parts 1 - 2</unittitle><container type="Box">17</container></did></c02>
+   <c02><did><unitid>B1169</unitid><unittitle>A conversation with Frank Blair</unittitle><container type="Box">17</container></did></c02>
+   <c02><did><unitid>B1170</unitid><unittitle>TV coverage of Central America Part 2</unittitle><container type="Box">17</container></did></c02>
+   <c02><did><unitid>B1171</unitid><unittitle>TV coverage of South America</unittitle><container type="Box">18</container></did></c02>
+   <c02><did><unitid>B1172</unitid><unittitle>Porn on Cable</unittitle><container type="Box">17</container></did></c02>
+   <c02><did><unitid>B1173</unitid><unittitle>Money &amp; politics</unittitle><container type="Box">17</container></did></c02>
+   <c02><did><unitid>B1174</unitid><unittitle>Money &amp; politics</unittitle><container type="Box">`</container></did></c02>
+   <c02><did><unitid>B1175</unitid><unittitle>CBS Nightwatch</unittitle><container type="Box">17</container></did></c02>
+   <c02><did><unitid>B1175</unitid><unittitle>NBC Overnight</unittitle><container type="Box">17</container></did></c02>
+   <c02><did><unitid>B1176</unitid><unittitle>American journey</unittitle><container type="Box">17</container></did></c02>
+   <c02><did><unitid>B1177</unitid><unittitle>Dupont / Columbia Awards *</unittitle><container type="Box">17</container></did></c02>
+   <c02><did><unitid>B1177</unitid><unittitle>Media Speak *</unittitle><container type="Box">17</container></did></c02>
+   <c02><did><unitid>B1178</unitid><unittitle>Satellite News Network *</unittitle><container type="Box">20</container></did></c02>
+   <c02><did><unitid>B1179</unitid><unittitle>War Peace and the News Media *</unittitle><container type="Box">20</container></did></c02>
+   <c02><did><unitid>B1180</unitid><unittitle>DocuDrama (Parts One and Two) *</unittitle><container type="Box">18</container></did></c02>
+   <c02><did><unitid>B1181</unitid><unittitle>Women and Techonlogy *</unittitle><container type="Box">18</container></did></c02>
+   <c02><did><unitid>B1182</unitid><unittitle>Media monopoly</unittitle><container type="Box">18</container></did></c02>
+   <c02><did><unitid>B1183</unitid><unittitle>Interview with Budd Schulberg</unittitle><container type="Box">18</container></did></c02>
+   <c02><did><unitid>B1184</unitid><unittitle>Deregulation of cable</unittitle><container type="Box">18</container></did></c02>
+   <c02><did><unitid>B1184</unitid><unittitle>Deregulation of Cable *</unittitle><container type="Box">18</container></did></c02>
+   <c02><did><unitid>B1185</unitid><unittitle>Vietnam Parts 1-2</unittitle><container type="Box">18</container></did></c02>
+   <c02><did><unitid>B1185a</unitid><unittitle>Vietnam Parts 1-2</unittitle><container type="Box">18</container></did></c02>
+   <c02><did><unitid>B1186</unitid><unittitle>The new season Part 2</unittitle><container type="Box">18</container></did></c02>
+   <c02><did><unitid>B1187</unitid><unittitle>Technologies of freedom Parts 1 - 2</unittitle><container type="Box">18</container></did></c02>
+   <c02><did><unitid>B1188</unitid><unittitle>Technologies of freedom Parts 1 - 2</unittitle><container type="Box">18</container></did></c02>
+   <c02><did><unitid>B1189</unitid><unittitle>Inside prime time</unittitle><container type="Box">19</container></did></c02>
+   <c02><did><unitid>B1190</unitid><unittitle>Bill Kurtis on assignment</unittitle><container type="Box">19</container></did></c02>
+   <c02><did><unitid>B1191</unitid><unittitle>Channels of communications</unittitle><container type="Box">19</container></did></c02>
+   <c02><did><unitid>B1192</unitid><unittitle>Children's TV</unittitle><container type="Box">19</container></did></c02>
+   <c02><did><unitid>B1193</unitid><unittitle>To sing our own song : the Philippines</unittitle><container type="Box">19</container></did></c02>
+   <c02><did><unitid>B1194</unitid><unittitle>Campaign alert</unittitle><container type="Box">19</container></did></c02>
+   <c02><did><unitid>B1195</unitid><unittitle>Adult learning service on PBS</unittitle><container type="Box">19</container></did></c02>
+   <c02><did><unitid>B1196</unitid><unittitle>Changing nature of foreign reporting</unittitle><container type="Box">19</container></did></c02>
+   <c02><did><unitid>B1197</unitid><unittitle>Channels</unittitle><container type="Box">19</container></did></c02>
+   <c02><did><unitid>B1198</unitid><unittitle>The public's right to know</unittitle><container type="Box">19</container></did></c02>
+   <c02><did><unitid>B1199</unitid><unittitle>Higher education through telecommunications</unittitle><container type="Box">20</container></did></c02>
+   <c02><did><unitid>B1200</unitid><unittitle>Soap operas</unittitle><container type="Box">20</container></did></c02>
+   <c02><did><unitid>B1201</unitid><unittitle>The political documentary</unittitle><container type="Box">20</container></did></c02>
+   <c02><did><unitid>B1202</unitid><unittitle>A conversation with Brian Winston</unittitle><container type="Box">20</container></did></c02>
+   <c02><did><unitid>B1203</unitid><unittitle>A conversation with Stephen Fleischman Parts 1 - 2</unittitle><container type="Box">20</container></did></c02>
+   <c02><did><unitid>B1204</unitid><unittitle>A conversation with Stephen Fleischman Parts 1 - 2</unittitle><container type="Box">20</container></did></c02>
+   <c02><did><unitid>B1205</unitid><unittitle>Your children, our children</unittitle><container type="Box">20</container></did></c02>
+   <c02><did><unitid>B1206</unitid><unittitle>A conversation with Ted Sorensen Part 2</unittitle><container type="Box">20</container></did></c02>
+   <c02><did><unitid>B1207</unitid><unittitle>Lifetime</unittitle><container type="Box">21</container></did></c02>
+   <c02><did><unitid>B1208</unitid><unittitle>Organized labor and TV</unittitle><container type="Box">21</container></did></c02>
+   <c02><did><unitid>B1209</unitid><unittitle>The TV turnoff</unittitle><container type="Box">21</container></did></c02>
+   <c02><did><unitid>B1210</unitid><unittitle>Where's cable headed</unittitle><container type="Box">21</container></did></c02>
+   <c02><did><unitid>B1211</unitid><unittitle>Where's cable headed</unittitle><container type="Box">21</container></did></c02>
+   <c02><did><unitid>B1212</unitid><unittitle>Concealed enemies</unittitle><container type="Box">21</container></did></c02>
+   <c02><did><unitid>B1213</unitid><unittitle>Concealed enemies</unittitle><container type="Box">21</container></did></c02>
+   <c02><did><unitid>B1214</unitid><unittitle>The uncounted enemyLibrary has: Part 2.</unittitle><container type="Box">21</container></did></c02>
+   <c02><did><unitid>B1215</unitid><unittitle>NBC in Lebanon Part 1 Part 2</unittitle><container type="Box">21</container></did></c02>
+   <c02><did><unitid>B1216</unitid><unittitle>NBC in Lebanon Part 1 Part 2</unittitle><container type="Box">21</container></did></c02>
+   <c02><did><unitid>B1217</unitid><unittitle>NBC in Lebanon Part 1 Part 2</unittitle><container type="Box">22</container></did></c02>
+   <c02><did><unitid>B1219</unitid><unittitle>Cable T.V.franchises</unittitle><container type="Box">22</container></did></c02>
+   <c02><did><unitid>B1219</unitid><unittitle>The uncounted enemyLibrary has: Part 2.</unittitle><container type="Box">21</container></did></c02>
+   <c02><did><unitid>B1220</unitid><unittitle>Television in American culture</unittitle><container type="Box">22</container></did></c02>
+   <c02><did><unitid>B1221</unitid><unittitle>Comedy zone</unittitle><container type="Box">22</container></did></c02>
+   <c02><did><unitid>B1222</unitid><unittitle>TV and the presidential election</unittitle><container type="Box">22</container></did></c02>
+   <c02><did><unitid>B1223</unitid><unittitle>Civilization and the Jews</unittitle><container type="Box">22</container></did></c02>
+   <c02><did><unitid>B1224</unitid><unittitle>Campaign '84</unittitle><container type="Box">22</container></did></c02>
+   <c02><did><unitid>B1225</unitid><unittitle>Cameras in the courtroom Parts 1 - 2</unittitle><container type="Box">22</container></did></c02>
+   <c02><did><unitid>B1226</unitid><unittitle>Cameras in the courtroom Parts 1 - 2</unittitle><container type="Box">22</container></did></c02>
+   <c02><did><unitid>B1227</unitid><unittitle>Broadcast fairness</unittitle><container type="Box">22</container></did></c02>
+   <c02><did><unitid>B1228</unitid><unittitle>60 minutes</unittitle><container type="Box">23</container></did></c02>
+   <c02><did><unitid>B1229</unitid><unittitle>A conversation with Bruce Christensen</unittitle><container type="Box">23</container></did></c02>
+   <c02><did><unitid>B1230</unitid><unittitle>A conversation with Linda Ellerbee</unittitle><container type="Box">23</container></did></c02>
+   <c02><did><unitid>B1231</unitid><unittitle>The crowded new world of TV</unittitle><container type="Box">23</container></did></c02>
+   <c02><did><unitid>B1232</unitid><unittitle>TV coverage of the economy</unittitle><container type="Box">23</container></did></c02>
+   <c02><did><unitid>B1233</unitid><unittitle>TV coverage of the economy</unittitle><container type="Box">23</container></did></c02>
+   <c02><did><unitid>B1234</unitid><unittitle>TV coverage of the Ethiopian famine</unittitle><container type="Box">23</container></did></c02>
+   <c02><did><unitid>B1235</unitid><unittitle>A conversation with Barbara Feldon</unittitle><container type="Box">23</container></did></c02>
+   <c02><did><unitid>B1236</unitid><unittitle>A conversation with Ed Koch</unittitle><container type="Box">23</container></did></c02>
+   <c02><did><unitid>B1237</unitid><unittitle>Dupont Columbia awards</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1238</unitid><unittitle>Beer and wine ban</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1238</unitid><unittitle>C-SPAN</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1239</unitid><unittitle>Children's programming</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1240</unitid><unittitle>A conversation with Charles Osgood</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1240</unitid><unittitle>Independent stations</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1241</unitid><unittitle>Roundup prime time</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1242</unitid><unittitle>Roundup prime time</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1243</unitid><unittitle>Crisis in Central America</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1243</unitid><unittitle>TV coverage of Central America</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1244</unitid><unittitle>Crisis in Central America</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1245</unitid><unittitle>TV coverage of Central America</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1246</unitid><unittitle>Children's TV : promise and practice</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1247</unitid><unittitle>Children's TV : promise and practice</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1247</unitid><unittitle>Vietnam Parts 1 - 2 : the controversy continues</unittitle><container type="Box">24</container></did></c02>
+   <c02><did><unitid>B1248</unitid><unittitle>Vietnam Parts 1 - 2 : the controversy continues</unittitle><container type="Box">25</container></did></c02>
+   <c02><did><unitid>B1249</unitid><unittitle>A look at CBS Part 1</unittitle><container type="Box">25</container></did></c02>
+   <c02><did><unitid>B1250</unitid><unittitle>A conversation with Danial Schorr</unittitle><container type="Box">25</container></did></c02>
+   <c02><did><unitid>B1251</unitid><unittitle>A Conversation with Will A. Newharth *</unittitle><container type="Box">25</container></did></c02>
+   <c02><did><unitid>B1252</unitid><unittitle>The heart of the dragon</unittitle><container type="Box">25</container></did></c02>
+   <c02><did><unitid>B1253</unitid><unittitle>Independent documentaries</unittitle><container type="Box">25</container></did></c02>
+   <c02><did><unitid>B1254</unitid><unittitle>Nanzi Adzima Parts 1 - 2</unittitle><container type="Box">25</container></did></c02>
+   <c02><did><unitid>B1255</unitid><unittitle>Nanzi Adzima Parts 1 - 2</unittitle><container type="Box">25</container></did></c02>
+   <c02><did><unitid>B1256</unitid><unittitle>Television and aging</unittitle><container type="Box">25</container></did></c02>
+   <c02><did><unitid>B1257</unitid><unittitle>Educational programs for children</unittitle><container type="Box">25</container></did></c02>
+   <c02><did><unitid>B1258</unitid><unittitle>Public access</unittitle><container type="Box">26</container></did></c02>
+   <c02><did><unitid>B1259</unitid><unittitle>CNN</unittitle><container type="Box">26</container></did></c02>
+   <c02><did><unitid>B1260</unitid><unittitle>A conversation with James Duffy</unittitle><container type="Box">26</container></did></c02>
+   <c02><did><unitid>B1261</unitid><unittitle>News at any cost</unittitle><container type="Box">26</container></did></c02>
+   <c02><did><unitid>B1262</unitid><unittitle>Show 103 - Schechner</unittitle><container type="Box">26</container></did></c02>
+   <c02><did><unitid>B1263</unitid><unittitle>The impact of media on social behavior Parts 1 - 2</unittitle><container type="Box">26</container></did></c02>
+   <c02><did><unitid>B1264</unitid><unittitle>The impact of media on social behavior Parts 1 - 2</unittitle><container type="Box">26</container></did></c02>
+   <c02><did><unitid>B1265</unitid><unittitle>60 minutes</unittitle><container type="Box">26</container></did></c02>
+   <c02><did><unitid>B1266</unitid><unittitle>A conversation with Mark Goodson</unittitle><container type="Box">26</container></did></c02>
+   <c02><did><unitid>B1267</unitid><unittitle>West 57th</unittitle><container type="Box">26</container></did></c02>
+   <c02><did><unitid>B1268</unitid><unittitle>A conversation with Richard Hottelet Parts 1-2</unittitle><container type="Box">27</container></did></c02>
+   <c02><did><unitid>B1269</unitid><unittitle>A conversation with Richard Hottelet Parts 1-2</unittitle><container type="Box">27</container></did></c02>
+   <c02><did><unitid>B1270</unitid><unittitle>Cablevisions</unittitle><container type="Box">27</container></did></c02>
+   <c02><did><unitid>B1271</unitid><unittitle>American playhouse 5th season</unittitle><container type="Box">27</container></did></c02>
+   <c02><did><unitid>B1272</unitid><unittitle>Video 1995</unittitle><container type="Box">27</container></did></c02>
+   <c02><did><unitid>B1273/B1274</unitid><unittitle>Local news Part 1-2</unittitle><container type="Box">27</container></did></c02>
+   <c02><did><unitid>B1275</unitid><unittitle>Children &amp; TV</unittitle><container type="Box">27</container></did></c02>
+   <c02><did><unitid>B1276</unitid><unittitle>Saturday night a backstage history of Saturday night live</unittitle><container type="Box">27</container></did></c02>
+   <c02><did><unitid>B1277</unitid><unittitle>Perry Wolff</unittitle><container type="Box">27</container></did></c02>
+   <c02><did><unitid>B1278</unitid><unittitle>Public access</unittitle><container type="Box">28</container></did></c02>
+   <c02><did><unitid>B1279</unitid><unittitle>Financial news on TV</unittitle><container type="Box">28</container></did></c02>
+   <c02><did><unitid>B1280</unitid><unittitle>Media reform</unittitle><container type="Box">28</container></did></c02>
+   <c02><did><unitid>B1281</unitid><unittitle>Communicating on TV</unittitle><container type="Box">28</container></did></c02>
+   <c02><did><unitid>B1282</unitid><unittitle>Funding public TV</unittitle><container type="Box">28</container></did></c02>
+   <c02><did><unitid>B1283</unitid><unittitle>Documentary filmmakers</unittitle><container type="Box">28</container></did></c02>
+   <c02><did><unitid>B1284</unitid><unittitle>Documentary filmmakers</unittitle><container type="Box">28</container></did></c02>
+   <c02><did><unitid>B1285</unitid><unittitle>Stephen Hess</unittitle><container type="Box">28</container></did></c02>
+   <c02><did><unitid>B1286</unitid><unittitle>Helen Wagner/Julianne Moore</unittitle><container type="Box">28</container></did></c02>
+   <c02><did><unitid>B1287</unitid><unittitle>Kim Zimmer/Kathryn Hays</unittitle><container type="Box">28</container></did></c02>
+   <c02><did><unitid>B1288</unitid><unittitle>Downsizing</unittitle><container type="Box">29</container></did></c02>
+   <c02><did><unitid>B1288</unitid><unittitle>TV news</unittitle><container type="Box">29</container></did></c02>
+   <c02><did><unitid>B1289</unitid><unittitle>TV news</unittitle><container type="Box">29</container></did></c02>
+   <c02><did><unitid>B1290</unitid><unittitle>A conversation with Jack Willis</unittitle><container type="Box">29</container></did></c02>
+   <c02><did><unitid>B1291</unitid><unittitle>Murrow Parts 1-2 : his life and times</unittitle><container type="Box">29</container></did></c02>
+   <c02><did><unitid>B1292</unitid><unittitle>Murrow Parts 1-2 : his life and times</unittitle><container type="Box">29</container></did></c02>
+   <c02><did><unitid>B1293</unitid><unittitle>The new season Parts 1-2</unittitle><container type="Box">29</container></did></c02>
+   <c02><did><unitid>B1294</unitid><unittitle>Media watching</unittitle><container type="Box">29</container></did></c02>
+   <c02><did><unitid>B1295</unitid><unittitle>The entrepreneurs : an American adventure</unittitle><container type="Box">29</container></did></c02>
+   <c02><did><unitid>B1296</unitid><unittitle>The entrepreneurs : an American adventure</unittitle><container type="Box">29</container></did></c02>
+   <c02><did><unitid>B1297</unitid><unittitle>The future of network news</unittitle><container type="Box">29</container></did></c02>
+   <c02><did><unitid>B1298</unitid><unittitle>TV coverage of terrorism</unittitle><container type="Box">30</container></did></c02>
+   <c02><did><unitid>B1299</unitid><unittitle>So you want to write a soap opera</unittitle><container type="Box">30</container></did></c02>
+   <c02><did><unitid>B1300</unitid><unittitle>Is late night becoming prime time</unittitle><container type="Box">30</container></did></c02>
+   <c02><did><unitid>B1301</unitid><unittitle>TV and the political process</unittitle><container type="Box">30</container></did></c02>
+   <c02><did><unitid>B1302</unitid><unittitle>John Hendricks</unittitle><container type="Box">30</container></did></c02>
+   <c02><did><unitid>B1302</unitid><unittitle>R.E. Mulholland</unittitle><container type="Box">30</container></did></c02>
+   <c02><did><unitid>B1303</unitid><unittitle>David Marc and Daniel Czitrom</unittitle><container type="Box">30</container></did></c02>
+   <c02><did><unitid>B1304</unitid><unittitle>Charlie Rose</unittitle><container type="Box">30</container></did></c02>
+   <c02><did><unitid>B1305</unitid><unittitle>Henry Hampton : eyes on the prize</unittitle><container type="Box">30</container></did></c02>
+   <c02><did><unitid>B1306</unitid><unittitle>Michael Pertschuk</unittitle><container type="Box">30</container></did></c02>
+   <c02><did><unitid>B1307</unitid><unittitle>John Hess, Roger Rosenblatt</unittitle><container type="Box">30</container></did></c02>
+   <c02><did><unitid>B1308</unitid><unittitle>Norman Isaacs</unittitle><container type="Box">31</container></did></c02>
+   <c02><did><unitid>B1309</unitid><unittitle>James Monaco on Baseline</unittitle><container type="Box">31</container></did></c02>
+   <c02><did><unitid>B1310</unitid><unittitle>Media bias</unittitle><container type="Box">31</container></did></c02>
+   <c02><did><unitid>B1311</unitid><unittitle>Television</unittitle><container type="Box">31</container></did></c02>
+   <c02><did><unitid>B1312</unitid><unittitle>Cable programming</unittitle><container type="Box">31</container></did></c02>
+   <c02><did><unitid>B1313</unitid><unittitle>Prime times, bad times</unittitle><container type="Box">31</container></did></c02>
+   <c02><did><unitid>B1314</unitid><unittitle>Prime times, bad times</unittitle><container type="Box">31</container></did></c02>
+   <c02><did><unitid>B1315</unitid><unittitle>Who killed CBS</unittitle><container type="Box">31</container></did></c02>
+   <c02><did><unitid>B1316</unitid><unittitle>TV critic Pat Aufderheide</unittitle><container type="Box">31</container></did></c02>
+   <c02><did><unitid>B1317</unitid><unittitle>MacNeil/Lehrer newshour : campaign '88</unittitle><container type="Box">31</container></did></c02>
+   <c02><did><unitid>B1318</unitid><unittitle>Demo tape</unittitle><container type="Box">31</container></did></c02>
+   <c02><did><unitid>B1319</unitid><unittitle>Interviews about TV on the street</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unitid>B1320</unitid><unittitle>Interviews about TV on the street</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unitid>B1321</unitid><unittitle>CNN</unittitle><container type="Box">32</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Day At Night</unittitle></did>
+   <c02><did><unittitle>Guest - Art Linkletter *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>Guest - Burt Tillstrom *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>Guest - E. G. Marshall *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>Guest - Howard K. Smith *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>Guest - Jonathan Winter *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>Guest - Newton Minow *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>Guest - Ozzie Nelson *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>Guest - Sam Levinson *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>Guest - Studs Terkel *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>Guest - Tennessee Ernie Ford *</unittitle><container type="Box">32</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Television in America</unittitle></did>
+   <c02><did><unittitle>First Person Singular - Andy Rooney *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - Bernard Birnbaum, Part One *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - Bernard Birnbaum, Part Two *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - Ed Bleier *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - George Dessart *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - Heywood Hale Broun *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - John Sharnik *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - Mike Wallace *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - Perry "Skee" Wolff Part One *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - Phillip Scheffler *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - Richard Hottelet *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - Robin Morgan *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - William Baker *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>First Person Singular - William Sloan *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>Garrick Utley Interview Part Two *</unittitle><container type="Box">32</container></did></c02>
+   <c02><did><unittitle>Morley Safer Interview *</unittitle><container type="Box">32</container></did></c02>
+</c01>
+      <c01 level="series"><did><unittitle>Audiorecordings</unittitle></did><c02><did><unittitle>Reel tapes, various sizes, audio only.</unittitle><container type="Box">33</container></did><accessrestrict><p>Audiorecordings are unprocessed and not accessible to researchers at this time.</p></accessrestrict></c02></c01></dsc>
+   </archdesc>
+</ead>

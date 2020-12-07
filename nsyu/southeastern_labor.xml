@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="southeastern_labor">southeastern_labor</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Southeastern Express Company Labor Arbitration Collection</titleproper>
+            <subtitle>An inventory of the 
+               collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2018-06-19" encodinganalog="Date">19 Jun 2018</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2018-06-19">19 Jun 2018</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Southeastern Express Company Labor Arbitration Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1921/1931" type="inclusive" label="Inclusive Dates: ">circa 1921-1931</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, handwritten notes, and court exhibits relating to a labor dispute between the Southeastern Express Company and its employees, primarily the Brotherhood of Railway, Airline, and Steamship Clerks, Freight Handlers, Express, and Station Employees</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">5092752</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The American Railway Express Company, later known as the Railway Express Agency, was a national package 
+		delivery service that operated in the United States from 1918 to 1975.  It controlled almost all domestic 
+		U.S. express business until 1921, when the Southeastern Express Company was formed out of the Southern 
+		Railway Company and the Mobile &amp; Ohio Railroad Company, and began operating over some 10,000 miles 
+		of track in the southeastern part of the country.</p>
+		
+		<p>The Brotherhood of Railway, Airline, and Steamship Clerks, Freight Handlers, Express, and Station 
+		Employees was founded in 1899 as the Order of Railroad Clerks of America and exists today as the 
+		Transportation Communications International Union.  Its purpose is to represent and advocate for employees 
+		of a wide range of transportation companies.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Southeastern Express Company Labor Arbitration Collection</emph> consists 
+			of documents, handwritten notes and court exhibits pertaining to a labor dispute in the mid-1930s 
+			between the company and its employees' union, the Brotherhood of Railway, Airline, and Steamship Clerks, 
+			Freight Handlers, Express, and Station Employees.</p>
+			
+			<p><emph render="bold">Documents</emph> consists of typed court documents including decisions, dockets, court 
+			filings, notifications, and so on.  Many of these have handwritten annotations.</p>
+
+			<p><emph render="bold">Exhibits</emph> consist of various documents, published items, and statements 
+			that were offered as evidence in the case.  The exhibits, which are numbered, are annotated as "Carriers' 
+			exhibit" (presumably offered by the Southeastern Express Company) or  "Employee exhibit" (presumably 
+			offered by the union).  There are a few items marked as "Board exhibit" and "Agency exhibit."  Many have handwritten annotations.</p>
+
+			<p><emph render="bold">Notes</emph>, either background of or preparation for the case, are handwritten, most on the letterhead of the Prince George Hotel 
+			in New York City.  They appear to be all in the same hand.  One is stapled to a typed carbon copy of an 
+			agreement regarding the establishment of a Board of Adjustment.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 	  
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Documents are arranged chronologically.  Exhibits are arranged by number. Notes are in no particular order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Activism and social reform</subject><subject encodinganalog="650" source="local">Business and Industry</subject><!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Brotherhood of Railway, Airline, and Steamship Clerks, Freight Handlers, Express, and Station Employees.</corpname><corpname encodinganalog="610" source="lcnaf">Southeastern Express Company.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Arbitration, Industrial.</subject>
+			<subject encodinganalog="650" source="lcsh">Labor disputes -- United States -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Labor unions -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Railroads -- Employees.</subject>
+			<subject encodinganalog="650" source="lcsh">Railroads -- United States.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Agreements.</genreform>
+			<genreform encodinganalog="655" source="aat">Case files.</genreform>
+			<genreform encodinganalog="655" source="aat">Decisions (judicial records)</genreform>
+			<genreform encodinganalog="655" source="aat">Dockets.</genreform>
+			<genreform encodinganalog="655" source="aat">Legal files.</genreform>
+			<genreform encodinganalog="655" source="aat">Notes (documents)</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Southeastern Express Company Labor Arbitration Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Arbitration paperwork</unittitle></did>
+            <c02><did><unittitle>Documents</unittitle><unitdate normal="1923" type="inclusive">1923, </unitdate><unitdate normal="1925" type="inclusive">1925, </unitdate><unitdate normal="1931" type="inclusive">1931, </unitdate><unitdate normal="1921/1931" type="inclusive">undated</unitdate><container type="SC">829</container></did></c02>
+            <c02><did><unittitle>Exhibits</unittitle><unitdate normal="1921/1926" type="inclusive">1921-1926, </unitdate><unitdate normal="1929/1931" type="inclusive">1929-1931, </unitdate><unitdate normal="1921/1931" type="inclusive">undated</unitdate><container type="SC">829</container></did></c02>
+            <c02><did><unittitle>Notes</unittitle><unitdate normal="1921/1931" type="inclusive">undated</unitdate><container type="SC">829</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

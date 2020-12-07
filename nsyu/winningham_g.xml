@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="winningham_g">winningham_g</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">George W. Winningham Papers</titleproper>
+            <subtitle>A description of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">CG</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2006-03-08" encodinganalog="Date">2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Christine Godfrey<date normal="2006-03-08">May 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>May 2011 - converted to EAD (CEG)</item>
+         <item>13 May 2011 - processed the collection, added material, and updated the
+               finding aid. (CEG)</item></list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Winningham, George W. </persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">George W. Winningham Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1930/1967" type="inclusive" label="Inclusive Dates: ">1930-1967</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection contains clippings regarding George Winningham and several of his writings, including his "Facts and Comments" articles and poetry. In addition, the collection largely contains correspondence between George Winningham, Senator Earle B. Mayfield, Senator Mayfield's son John Mayfield, and various other persons and publishing houses.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3298899</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>George W. Winningham (1889-unknown) was a Texas legislature  (1933-1935), writer, and poet.</p><p>Born November 6, 1889, George W. Winningham was elected into the 43rd Texas legislature for the Mexia/Limestone county Jan 10, 1933 - Jan 8, 1935 where he belonged to the Democrat party. He was also a writer for The Groesbeck Journal and The Fredericksburg Radio-Post where he wrote his "Facts and Comments" column. In addition to being a newspaper columnist, Winningham also was a religious poet whose poems were frequently published in local newspapers and Christian bulletins.</p><p>George W. Winningham was close friends with former Democrat senator, Earle B. Mayfield (1881-1964) who served in the U.S senate 1923-1929. Senator Mayfield's son John Mayfield was the former curator of the Syracuse University Special Collections in the 1960s.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">George W. Winningham Papers</emph> contain writings and clippings related to or belonging to George Winningham, but the bulk of the material is his personal and professional correspondence.</p>
+      <p><emph render="bold">Clippings</emph> contain various articles written about George W. Winningham or pertain to events that were related to him, such as political affairs or historical preservation efforts.</p><p><emph render="bold">Correspondence</emph> contains letters written between George W.Winningham, Senator Earle B. Mayfield, John Mayfield, The Houston Press, and various other persons (political supporters, friends, collegues, etc.)</p><p><emph render="bold">Writings</emph> contain his "Facts and Comments" column, poetry, and various other articles regarding local history, his Baptist church, and politics.</p><p><emph render="bold">Miscellaneous</emph> contains small maps, a flyer for a political meeting, and pamphlets and articles related to Texas politics written by or related to several of George W. Winningham's collegues.</p></scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Clippings, correspondence, writings, and miscellaneous are all arranged alphabetically by subject and chronologically within.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>For more Earle B. Mayfield correspondence see <archref href="../m/mayfield_oneill.htm">John Mayfield Collection Relating to Eugene O'Neill</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         
+         <subject encodinganalog="650" source="local">Politics, government and public administration</subject><persname encodinganalog="600" source="lcnaf">Mayfield, Earle Bradford, 1881-1964.</persname>
+         
+         
+         
+         <persname encodinganalog="600" source="lcnaf">Winningham, George W.</persname>
+         
+         <geogname encodinganalog="651" source="lcsh">Texas -- Politics and government.</geogname><subject encodinganalog="650" source="lcsh">Legislators -- Texas.</subject><genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Articles.</genreform>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> George W. Winningham Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">George W. Winningham</persname>, circa 1965.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         
+         <c01 level="series"><did><unittitle>Clippings</unittitle></did>
+               
+               
+            <c02><did><unittitle>Newspaper</unittitle><abstract>various articles about George W. Winningham as a poet and legislator, Texas historical figure Leonard Williams, and Fort Parker</abstract><unitdate normal="1933" type="inclusive">1933,</unitdate><unitdate normal="1959" type="inclusive">1959,</unitdate><unitdate normal="1964/1966" type="inclusive">1964-1966</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      <c01 level="series"><did><unittitle>Correspondence</unittitle></did><c02><did><unittitle>The Houston Press</unittitle><physdesc><extent>13 letters</extent></physdesc><unitdate normal="1930/1936" type="inclusive">1930-1936</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Mayfield, Earle B. and  Winningham, George W.</unittitle><physdesc><extent>28 letters</extent></physdesc><unitdate normal="1933" type="inclusive">1933,</unitdate><unitdate normal="1961/1963" type="inclusive">1961-1963</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Mayfield, John  and  Winningham, George W.</unittitle><physdesc><extent>21 letters</extent></physdesc><unitdate normal="1963/1965" type="inclusive">1963-1965</unitdate><container type="Box">1</container></did><scopecontent><p>various clippings attached; letter 4/18/63 includes 3 blank postcards and "The Comanche Trail and the Massacre at Parker's Fort" by Gene Fallwell; letter 1/22/1964 includes a pamphlet of his poems, "The Fool," "I Know God Understands," and "God is Not Far Away;" letter 6/26/64 contains an article George W. Winningham wrote regarding Earle B. Mayfield; letters 9/28/65 contains "The Prisoners of Perote" by William Preston Stapp and several letters regarding copyright, one of which was written and signed by Lyndon B. Johnson when he was a senator in 1958; letter 11/2/65 contains 4 political pamphlets by Ben B. Hunt; letter 11/1965 contains 2 photographs of George W. Winningham and his wife and a booklet on the history of Texas governors</p></scopecontent></c02><c02><did><unittitle>Mayfield, John  and  Winningham, George W.</unittitle><abstract>various clippings attached</abstract><physdesc><extent>6 letters</extent></physdesc><unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate><unitdate normal="1930/1967" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Southern Pacific Lines</unittitle><abstract>"Tracing of Inter-Locking Directorate" - written in pencil by George W. Winningham is his suggestion that some thought this was the cause of the Great Depression</abstract><unitdate normal="1933" type="inclusive">1933</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Telegrams</unittitle><physdesc><extent>4 telegrams</extent></physdesc><unitdate normal="1933" type="inclusive">1933,</unitdate><unitdate normal="1938" type="inclusive">1938,</unitdate><unitdate normal="1950" type="inclusive">1950</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Miscellaneous</unittitle><abstract>various letters from political supporters, friends, collegues and publishers</abstract> <physdesc><extent>53 letters</extent></physdesc><unitdate normal="1933/1934" type="inclusive">1933-1934,</unitdate><unitdate normal="1959/1965" type="inclusive">1959-1965,</unitdate><unitdate normal="1930/1967" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02></c01><c01 level="series"><did><unittitle>Writings</unittitle></did><c02><did><unittitle>"Facts and Comments"</unittitle><abstract>political in content, one of which details George W. Winningham's views on communism</abstract><physdesc><extent>9 articles</extent></physdesc><unitdate normal="1938" type="inclusive">1938,</unitdate><unitdate normal="1965" type="inclusive">1965,</unitdate><unitdate normal="1930/1967" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Poems</unittitle><abstract>"The Fool," "Am I My Brother's Keeper?,"I Know God Understands,"God Is Not Far Away," "Ole Mule's Totin' A Mighty Queer Load," and "Ole Mule's Plumb Tuckered Out"</abstract><unitdate normal="1930/1967" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Miscellaneous</unittitle><abstract>views on sales tax, the Texas platform, "Visit with the Poet of Navasota," Praire Grove Baptist church 96th anniversary, letter to the editor on captive John Parker, recognition for
+
+
+ best religious editorial of 1948, and story on Limestone county hymn writers</abstract><unitdate normal="1938" type="inclusive">1938,</unitdate><unitdate normal="1949" type="inclusive">1949,</unitdate><unitdate normal="1965/1966" type="inclusive">1965-1966,</unitdate><unitdate normal="1930/1967" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02></c01><c01 level="series"><did><unittitle>Miscellaneous</unittitle></did><c02><did><unittitle>Political </unittitle><abstract>small maps, a flyer for a political meeting, and pamphlets and articles related to Texas politics</abstract><unitdate type="inclusive" normal="1933">1933,</unitdate><unitdate type="inclusive" normal="1944">1944,</unitdate><unitdate type="inclusive" normal="1955">1955,</unitdate><unitdate type="inclusive" normal="1965">1965,</unitdate><unitdate type="inclusive" normal="1930/1967">undated</unitdate><container type="Box">1</container></did></c02></c01></dsc>
+   </archdesc>
+</ead>

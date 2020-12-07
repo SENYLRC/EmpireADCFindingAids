@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.12, 12 Jun 2009 --><!-- Updated container types -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="coabe" mainagencycode="NSyU">coabe</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Commission on Adult Basic Education (COABE) Records</titleproper>
+        <subtitle>An  inventory of its records at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      <sponsor>The adult education holdings are collectively known as the <lb/><extptr title="Alexander N. Charters Library of Resources for Educators of Adults" href="https://library.syr.edu/scrc/collections/areas/adult-ed.php" show="new"/>.</sponsor></titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2009-06-15">15 Jun 2009</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2009-06-15">15 Jun 2009</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>Jul 2009 - additions (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <corpname encodinganalog="110">Commission on Adult Basic Education (U.S.)</corpname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Commission on Adult Basic Education (COABE) Records</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1955/2008" type="inclusive">1955-2008</unitdate>
+      <unitdate encodinganalog="245$f" label="Bulk Dates: " normal="1990/2004" type="bulk">1990-2004</unitdate><physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>4 linear ft..</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Records and papers of the adult education and literacy organization.  Collection includes conference planning and programs, minutes, published material, newsletters, membership directories, policies and procedures, bylaws, treasurer's reports, strategic planning files, historian reports, more.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2684651</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>The purpose of the Commission on Adult Basic Education (COABE)  is to advance national and international adult education and literacy opportunities.  It promotes, advocates for, and conducts literacy and lifelong education efforts.   COABE was formed in 1971 to represent non-public adult education and literacy programs within the Adult Education Association (AEA) (public adult education and literacy programs were represented by the National Association for Public Continuing Adult Education, or NAPCAE).  In 1982 NAPCAE and AEA merged to create the American Association for Adult Continuing Education (AAACE), and in 1999 COABE formally split from AAACE to become an independent organization.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The Commission on Adult Basic Education (COABE) Records are subdivided into general files and financial files.</p>
+      <p>
+        <emph render="bold">General files</emph> contains agenda and minutes from board meetings, correspondence, conference planning and programs, Historian's reports and essays, legislative reports, photographs, and other items relating to the functioning of the organization.  Of particular interest here is the material preceding COABE's separation from AAACE ("AAACE/COABE relationship"), and material dating from 2008 in which COABE explored a merger with ProLiteracy Worldwide.  The Historian folder also contains essays by Albert Campbell, COABE historian, including a brief history of the organization.</p>
+      <p>
+        <emph render="bold">Financial files</emph> contains budget reports, scholarship and grant information, and paperwork relating to the establishment of an endowment.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Material are arranged roughly alphabetically with the two main series.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has numerous collections in the area of adult education; please refer to &subjindex; for a complete listing.  For COABE material in particular, see also the <archref href="http://library.syr.edu/digital/guides/a/aaace.htm">Adult Education Association/American Association for Adult and Continuing Education Records</archref>, <archref href="http://library.syr.edu/digital/guides/a/allbritten_d.htm">Drew Allbritten Papers</archref>, <archref href="http://library.syr.edu/digital/guides/l/langner_w.htm">William Langner Papers</archref>, and <archref href="http://library.syr.edu/digital/guides/g/griffith_ws.htm">William S. Griffith Papers</archref>.
+        
+        </p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Adult education</subject>
+      <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">Commission on Adult Basic Education (U.S.)</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <subject encodinganalog="650" source="lcsh">Adult education -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Educators -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Elementary education of adults.</subject>
+      <genreform encodinganalog="655" source="aat">Agendas (administrative records)</genreform>
+      <genreform encodinganalog="655" source="aat">Annual reports.</genreform>
+      <genreform encodinganalog="655" source="aat">Articles.</genreform>
+      <genreform encodinganalog="655" source="aat">Budgets.</genreform>
+      <genreform encodinganalog="655" source="aat">Constitutions.</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Directories.</genreform>
+      <genreform encodinganalog="655" source="aat">Manuals (instructional materials)</genreform>
+      <genreform encodinganalog="655" source="aat">Memorandums.</genreform>
+      <genreform encodinganalog="655" source="aat">Minutes (administrative records)</genreform>
+      <genreform encodinganalog="655" source="aat">Reports.</genreform>
+      <genreform encodinganalog="655" source="aat">Speeches (documents)</genreform>
+      <occupation encodinganalog="656" source="lcsh">Educators.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p> Commission on Adult Basic Education (COABE) Records, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Albert Campbell</persname>, COABE Historian, 2009.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>General records</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>AEA [Adult Education Association] Annual Reports</unittitle>
+            <unitdate normal="1979" type="inclusive">1979, </unitdate>
+            <unitdate normal="1980" type="inclusive">1980</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Awards</unittitle>
+            <unitdate normal="1989/2005" type="inclusive">1989-2005</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Agenda/minutes</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate normal="1980/1999" type="inclusive">1980-1999</unitdate>
+              </unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate normal="2000/2008" type="inclusive">2000-2008</unitdate>
+              </unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>AAACE/COABE relationships</unittitle>
+            <unitdate normal="1992/1998" type="inclusive">1992-1998</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Conference planning and evaluation</unittitle>
+            <unitdate normal="1977" type="inclusive">1977, </unitdate>
+            <unitdate normal="1992" type="inclusive">1992, </unitdate>
+            <unitdate normal="1993" type="inclusive">1993, </unitdate>
+            <unitdate normal="1996" type="inclusive">1996, </unitdate>
+            <unitdate normal="1997" type="inclusive">1997, </unitdate>
+            <unitdate normal="1998" type="inclusive">1998, </unitdate>
+            <unitdate normal="2002" type="inclusive">2002, </unitdate>
+            <unitdate normal="2008" type="inclusive">2008 </unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Conference programs</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate normal="1976" type="inclusive">1976, </unitdate>
+                <unitdate normal="1980" type="inclusive">1980, </unitdate>
+                <unitdate normal="1985" type="inclusive">1985, </unitdate>
+                <unitdate normal="1987/1991" type="inclusive">1987-1991</unitdate>
+              </unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate normal="1992/2000" type="inclusive">1992-2000</unitdate>
+              </unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate normal="2001/2006" type="inclusive">2001-2006</unitdate>
+              </unittitle>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Conference reports</unittitle>
+            <unitdate normal="1977/1979" type="inclusive">1977-1979, </unitdate>
+            <unitdate normal="1985" type="inclusive">1985, </unitdate>
+            <unitdate normal="1987" type="inclusive">1987, </unitdate>
+            <unitdate normal="1992/2005" type="inclusive">1992-2005</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Conference site selection guidelines</unittitle>
+            <unitdate normal="1990" type="inclusive">1990, </unitdate>
+            <unitdate normal="1995" type="inclusive">1995, </unitdate>
+            <unitdate normal="1955/2008" type="inclusive">undated</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Conference miscellany</unittitle>
+            <unitdate normal="1990/1996" type="inclusive">1990-1996, </unitdate>
+            <unitdate normal="1955/2008" type="inclusive">undated</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Correspondence</unittitle>
+            <unitdate normal="1988/2001" type="inclusive">1988-2001 </unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Elections</unittitle>
+            <unitdate normal="1992/1998" type="inclusive">1992-1998, </unitdate>
+            <unitdate normal="1955/2008" type="inclusive">undated</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Historian</unittitle>
+            <abstract>includes several essays by Albert Campbell, COABE Historian, such as "Where Have You Gone, Malcolm Knowles: Adult Education and Baseball" (1999) and "A Brief History of the National Commission on Adult Basic Education" (2002)</abstract>
+            <unitdate normal="1997/2005" type="inclusive">1997-2005</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Journal</unittitle>
+            <abstract>information on 
+              
+              <emph render="italic">Adult Basic Education</emph>, published by COABE</abstract>
+            <unitdate normal="1988/1998" type="inclusive">circa 1993-2008</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Leadership, officers</unittitle>
+            <abstract>includes a 3.5" floppy disk, unknown format</abstract>
+            <unitdate normal="1979/2008" type="inclusive">1979-2008</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Legislative reports</unittitle>
+            <unitdate normal="1995/1998" type="inclusive">1995-1998</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Membership</unittitle>
+            <unitdate normal="1989/2003" type="inclusive">1989-2003</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Newsletter</unittitle>
+            <unitdate normal="1976" type="inclusive">1976, </unitdate>
+            <unitdate normal="1992/2008" type="inclusive">1992-2008</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Planning and strategic plan</unittitle>
+            <unitdate normal="1979/1980" type="inclusive">1979-1980, </unitdate>
+            <unitdate normal="1994" type="inclusive">1994, </unitdate>
+            <unitdate normal="1996/2005" type="inclusive">1996-2005, </unitdate>
+            <unitdate normal="1955/2008" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Policies and procedures</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pro-Literacy</unittitle>
+            <unitdate normal="2000/2008" type="inclusive">2000-2008</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Publicity</unittitle>
+            <abstract>for 1993 conference</abstract>
+            <unitdate normal="1993" type="inclusive">1993</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Technology reports</unittitle>
+            <unitdate normal="2005" type="inclusive">2005</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Financial papers</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Budget</unittitle>
+            <unitdate normal="1995/1997" type="inclusive">1995-1997</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Budget reports</unittitle>
+            <unitdate normal="1992/2005" type="inclusive">1992-2005</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Endowment</unittitle>
+            <unitdate normal="1996/1998" type="inclusive">1996-1998</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Scholarship, grants</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Treasurer's reports</unittitle>
+            <unitdate normal="1955/2006" type="inclusive">1955-2006</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

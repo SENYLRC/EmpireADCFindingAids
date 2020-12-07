@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 --><!-- Added Belfer as container type -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="verbeck_wj" mainagencycode="NSyU">verbeck_wj</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">William Jordan Verbeck Papers</titleproper>
+        <subtitle>A description of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1963/1968">circa 1964</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+        
+        <date normal="2010-10-24">24 Oct 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        27 Oct 2010 - converted to EAD (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Verbeck, William Jordan, 1904-1965.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">William Jordan Verbeck Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1942/1963" type="inclusive">1942-1963</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>6 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">American Army General and career military officer.  
+		 Collection includes manuscripts, printed material, subject files and correspondence.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">3174718</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>William Jordan Verbeck (1904-1965) was an American military officer who retired with the rank of General.  
+	  His father, Brig. Gen. William Verbeck, was head of The Manlius School, a military academy in Aurora, New York.  
+	  During World War II General Verbeck  
+		was named commander of the 21st Infantry Division and then chief of staff of the 24th Infantry Division, and during the Korean War he was 
+		senior advisor to the G3, Republic of Korea Army.   He was decorated numerous times, including the Distinguished Service Medal, Silver Star with 
+		oak leaf cluster, Legion of Merit with oak leaf cluster, Bronze Star Medal with valor device and two oak leaf clusters, Army Commendation 
+		Medal and Purple Heart with oak leaf cluster.</p>
+      <p>
+      </p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">William Jordan Verbeck Papers</emph> includes manuscripts, printed material, subject 
+		 files and correspondence.  Please see the box listing below for more details.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The collection has received minimal processing and remains in original order as received.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Military history</subject>
+      <subject encodinganalog="650" source="local">New York State</subject>
+      <persname encodinganalog="600" source="lcnaf">Verbeck, William Jordan, 1904-1965.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">United States. -- Army -- Officers.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">United States. -- Army. -- Infantry Division, 24th.</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">World War, 1939-1945.</subject>
+      <subject encodinganalog="650" source="lcsh">World War, 1939-1945 -- Alaska -- Aleutian Islands.</subject>
+      <geogname encodinganalog="651" source="lcsh">United States -- History, Military.</geogname>
+      <genreform encodinganalog="655" source="aat">Awards.</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Maps (documents)</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+      <genreform encodinganalog="655" source="aat">Scripts (documents)</genreform>
+      <occupation encodinganalog="656" source="lcsh">Soldiers.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>William Jordan Verbeck Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">William Jordan Verbeck</persname>, 1963.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Box listing</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Script for "The Army Hour," 28N43, plus "Infantry in Alaska" by WJV</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Address on Aleutian campaign</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Emergency foods in the Aleutians"</unittitle>
+            <unitdate normal="1943" type="inclusive">1943</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Action on Attu"</unittitle>
+            <unitdate normal="1943" type="inclusive">1943</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Scrapbooks of Japan and Europe</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Map of Mindanao, award, 2 files of material on Verbeck's service</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous material on the Phillipines</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Letters from 21st Infantry men received after the war</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Japan</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>1955 register of graduates of West Point</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs of Verbeck</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Citation from The Manlius School</unittitle>
+            <unitdate normal="1955" type="inclusive">1955</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photograph album, Antilles</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs of China, etc.</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous printed material, including Manlius Old Boys Bulletin with story by Verbeck</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>A Regiment in Action by Verbeck</unittitle>
+            <abstract>history of 21st Infantry in the Phillipines</abstract>
+            <unitdate normal="1946" type="inclusive">1946</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>File on Dutch harbor and Amchitka</unittitle>
+            <abstract>includes photographs, radiograms, lists of personal unit journal</abstract>
+            <unitdate normal="1942-06/1943-01" type="inclusive">Jun 1942-Jan 1943</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Leyte historical report of the 24th Infantry Division landing team</unittitle>
+            <unitdate normal="1944-10/1944-12" type="inclusive">Oct 1944-Dec 1944</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>File of "secret" memo re war in Alaska</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photograph album, Attu, Massacre Bay</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>File on Aleutians, map of Amchitka</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Scrapbook of clippings of Alaska, Philippines, Japan</unittitle>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Packet of ID cards</unittitle>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"The enemy on Kiska" compiled by the Asst. Chief of Staff</unittitle>
+            <abstract>includes one volume of illustrative material</abstract>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photograph albums, Philippines, Escola Superior de Guerra</unittitle>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Certificates, awards, orders, decorations, letters re promotion</unittitle>
+            <unitdate normal="1957" type="inclusive">1957</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>The 24th Infantry Division: a brief history, other printed material</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Army orders file</unittitle>
+            <unitdate normal="1945/1959" type="inclusive">1945-1959</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Personnel records jacket USA for Verbeck</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous memorabilia, clippings, some on Fort Devens</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Public Achievement Award from University of Massachusetts</unittitle>
+            <unitdate normal="1962" type="inclusive">1962</unitdate>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Other awards, photographs</unittitle>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Children of Yesterday / Valtin, San</unittitle>
+            <abstract>on Philippine Islands campaign</abstract>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>The Howitzer</unittitle>
+            <abstract>annual of U.S. Corps of Cadets, West Point</abstract>
+            <unitdate normal="1927" type="inclusive">1927</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photograph album of visits to hospitals and divisions</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Awards</unittitle>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>List of photographs taken by ?, but no actual photographs</unittitle>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs of graduates of the first class, National War College</unittitle>
+            <unitdate normal="1946" type="inclusive">1946</unitdate>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Awards</unittitle>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

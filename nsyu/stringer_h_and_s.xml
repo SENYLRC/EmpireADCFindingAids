@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="stringer_h_and_s">stringer_h_and_s</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Helen and Sydney Stringer
+               Correspondence</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+            <author encodinganalog="Creator">MRC</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2017-01-09" encodinganalog="Date">9 Jan 2017</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+		 <date normal="2017-01-09">9 Jan 2017</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!----><revisiondesc>
+         <list>
+            <item>2019 Jun 24 - processed (DSA)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+            &su_name;
+            <lb/>
+            &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Stringer, Helen.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Helen and Sydney Stringer
+            Correspondence</unittitle>
+         <unitdate encodinganalog="245$f" normal="1943/1989" type="inclusive" label="Inclusive Dates: ">1943-1989</unitdate><unitdate encodinganalog="245$g" normal="1943/1945" type="bulk" label="Bulk Dates: ">1943-1945</unitdate>
+         <physdesc encodinganalog="300$a" label="Quantity: "><extent>2.25 linear
+            ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">World War II correspondence between
+            Helen Stringer and her husband Sydney, a Captain in the U.S. Army Medical Corps,
+            stationed in North Africa, Italy, France, and Germany.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4795913</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Helen Dann Stringer (1909-2007) was a 1931 graduate of Syracuse University, and also
+            graduated from Yale University School of Nursing in 1934. An active member of such
+            organizations as Planned Parenthood and League of Women Voters among others, she also
+            volunteered with her husband on medical relief operations in Malaysia, Vietnam, Tunisia,
+            and Haiti. A published author later in life, she chronicled the life of her grandmother
+            in <emph render="italic">Millie M.D.: The Story of a Nineteenth Century Woman,
+               1846-1927</emph> (1992), and published her and her husband's World War II
+            correspondence in <emph render="italic">Letters of Love and War: A World War II
+               Correspondence</emph> (1998).</p>
+         <p>Dr. Sydney Walter Stringer (1908? - 1978) was a graduate of Cornell University (1929)
+            and of Yale University School of Medicine (1933). During World War II, as a Captain in
+            the U.S. Army Medical Corps, he was stationed in North Africa, Italy, France, and
+            Germany between 1944 and 1945. After World War II, he returned to his gynecology
+            practice which he had started in 1936, and continued there until 1973. He also further
+            served the Army as a medical officer at the Army Reserve Hospital and the Army Reserve
+            Training Center in Liverpool, NY.  After retiring, he was known in his later years as a
+            cello player and collector of rare orchids.</p>
+         <p>[Some information adapted from <extref href="https://obits.syracuse.com/obituaries/syracuse/obituary.aspx?n=helen-dann-stringer&amp;pid=88795029">Helen Dann Stringer's obituary</extref>, Syracuse.com]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Helen and Sydney Stringer Correspondence</emph> contains letters
+            written between Helen Dann Stringer and Sydney W. Stringer during Sydney's deployment in
+            Europe in World War II, as well as items written from their children to Sydney, and an
+            edited transcription of the letters from March, 1944 - July, 1945.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Arranged alphabetically by type, with correspondence arranged chronologically.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+			
+         <subject encodinganalog="650" source="local">Military history</subject><subject encodinganalog="650" source="local">New York State</subject>
+			<subject encodinganalog="650" source="local">Science and medicine</subject><persname encodinganalog="600" source="lcnaf">Stringer, Helen Dann.</persname>
+         <persname encodinganalog="600" source="lcnaf">Stringer, Sydney Walter.</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <!-- <corpname encodinganalog="610" source="lcnaf">##</corpname> -->
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <corpname source="lcnaf" encodinganalog="610">United States. -- Army. -- Medical
+            Corps.</corpname>
+         <subject encodinganalog="650" source="lcsh">World War, 1939-1945 -- Campaigns -- Africa,
+            North.</subject>
+         <subject encodinganalog="650" source="lcsh">Syracuse (N.Y.) -- Social life and customs --
+            1918-1945. </subject>
+         <subject encodinganalog="650" source="lcsh">World War, 1939-1945 -- New York -- Syracuse. </subject>
+         <subject encodinganalog="650" source="lcsh">World War, 1939-1945 -- Personal narratives,
+            American.</subject>
+         <subject encodinganalog="650" source="lcsh">World War, 1939-1945 -- Medical care.</subject>
+			<!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Transcriptions (documents)</genreform>
+         <genreform encodinganalog="655" source="aat">Pins (jewelry)</genreform>
+         <!--<function encodinganalog="657">##</function>-->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require
+            advanced notice for retrieval. Researchers are encouraged to contact us in advance
+            concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Helen and Sydney Stringer Correspondence, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Helen Stringer</persname>, 1990.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Children to Sydney</unittitle>
+                  <container type="Box">1</container>
+                  <unitdate normal="1944" type="inclusive">1944,</unitdate>
+                  <unitdate normal="1943/1945" type="inclusive">undated</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Helen and Sydney</unittitle>
+                  <container type="Box">1</container>
+                  <unitdate normal="1943-06/1943-10" type="inclusive">1943, Jun, Oct; </unitdate>
+                  <unitdate normal="1944-01/1944-08" type="inclusive">1944, Jan, Mar-Aug</unitdate>
+                  <physdesc><extent>14 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Helen and Sydney</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate normal="1944" type="inclusive">1944, Sep-Dec</unitdate>
+                  <physdesc><extent>12 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Helen and Sydney</unittitle>
+                  <container type="Box">3</container>
+                  <unitdate normal="1944" type="inclusive">1944</unitdate>
+                  <abstract>empty envelopes</abstract>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Helen and Sydney</unittitle>
+                  <container type="Box">3</container>
+                  <unitdate normal="1945-01/1945-04" type="inclusive">1945, Jan 1-Apr 13</unitdate>
+                  <physdesc><extent>10 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Helen and Sydney</unittitle>
+                  <container type="Box">4</container>
+                  <unitdate normal="1945-04/1945-07" type="inclusive">1945, Apr 14-Jul 30</unitdate>
+                  <physdesc><extent>11 folders</extent></physdesc>
+                  <abstract>includes empty envelopes</abstract>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Helen and Sydney</unittitle>
+                  <container type="Box">4</container>
+                  <unitdate normal="1943/1945" type="inclusive">undated</unitdate>
+                  <abstract>includes fragments</abstract>
+                  <physdesc><extent>2 folders</extent></physdesc>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Memorabilia</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <container type="Box">4</container>
+                  <unitdate normal="1943/1989" type="inclusive">undated</unitdate>
+                  <abstract>eagle insignia pin and later note by Helen</abstract>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Printed Material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle><emph render="italic">Prisms</emph></unittitle>
+                  <container type="Box">5</container>
+                  <unitdate normal="1989" type="inclusive">1989</unitdate>
+               </did>
+               <scopecontent>
+                  <p>This volume contains an abridged transcription by Helen Stringer of Helen and
+                     Sydney's correspondence, Mar 23, 1944 - Jul 12, 1945. The title page is
+                     inscribed "To the George Arents Research Library," and signed by Helen
+                     Stringer, Jan 23, 1990.</p>
+               </scopecontent>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

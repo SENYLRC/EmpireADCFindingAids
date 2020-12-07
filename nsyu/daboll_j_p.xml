@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="daboll_j_p">daboll_j_p</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">John and Patty Daboll Letter</titleproper>
+            <subtitle>A description of the item at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2012-08-23" encodinganalog="Date">23 Aug 2012</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2012-08-23">23 Aug 2012</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Daboll, John.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">John and Patty Daboll Letter</unittitle>
+         <unitdate encodinganalog="245$f" normal="1812" type="inclusive" label="Inclusive Dates: ">1812</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Manuscript letter, signed, dated 30 July 1812 from John and Patty Daboll of Aurelius, N.Y., to Richardson Miner of Colraine, Mass., describing the settlement of the region around the Central New York towns of Aurelius, Auburn, and Union Springs in significant detail.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3948948</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>John Daboll and his wife Patty (real name Martha) were early settlers of the Central New York town of Aurelius.   Based on information given in the letter, John was a farmer and woodworker or cabinetmaker.  Richardson Miner, the recipient of the letter, was Mrs. Daboll's father.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">John and Patty Daboll Letter</emph> consists of a single manuscript letter, signed by both the Dabolls, dated 30 July 1812.  The letter is addressed to Mrs. Daboll's father Richardson Miner of Colraine, Mass.   The first part of the letter is from John Daboll and describes the town of Aurelius, New York as well as surrounding towns of Union Springs and Auburn.  The Dabolls had evidently recently settled in Aurelius:</p><blockquote><p>[We are] in a pretty compact neighborhood inhabitants are mostly Baptist and Congregationalists and appear to be a well-bred group being mostly from Chaddam [Chatham] and Stratford in Connecticut.  We have a good library 1/2 a mile distant and a good school 50 rods off...</p></blockquote>
+      <p>Daboll goes on to describe the crops, businesses, land, and some of the local residents ("...the springs are the property of Judge Walter Wood a Friend Quaker and very rich...").  The last part of the letter is from Mrs. Daboll, who mentions the friendliness of the people.</p></scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Single item.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">New York State</subject><persname encodinganalog="600" source="lcnaf">Daboll, John Miner.</persname><persname encodinganalog="600" source="lcnaf">Daboll, Martha.</persname><persname encodinganalog="600" source="lcnaf">Miner, Richardson.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <!--<subject encodinganalog="650" source="lcsh">##</subject>-->
+         <geogname encodinganalog="651" source="lcsh">Auburn (N.Y.) -- History.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Aurelius (N.Y.) -- History.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Union Springs (N.Y.) -- History.</geogname>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>John and Patty Daboll Letter, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchased from Adah C. Blackman Fund, 2012.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Richardson Miner</unittitle><unitdate normal="1812-06-30" type="inclusive">30 Jul 1812</unitdate><container type="SC">683</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

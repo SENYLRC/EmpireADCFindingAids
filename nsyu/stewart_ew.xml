@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="stewart_ew">stewart_ew</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">E. W. Stewart Diary</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2017-01-12" encodinganalog="Date">12 Jan 2017</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2017-01-12">12 Jan 2017</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Stewart, E. W.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">E. W. Stewart Diary</unittitle>
+         <unitdate encodinganalog="245$f" normal="1840/1841" type="inclusive" label="Inclusive Dates: ">1840-1841</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Manuscript diary of lawyer from Camden, New York, containing his opinions on many subjects</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4795907</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Nothing is known of the author of this diary other than what can be gleaned from its contents.  
+		He was evidently a lawyer in Camden, New York, well-educated, thoughtful, and eloquent, with decided 
+		opinions on various topics.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">E. W. Stewart Diary</emph> consists of a single volume -- a notebook, 
+			printed on the cover with "The Pulaski Paper Manufacturing Company."  Inside the front cover is 
+			written, "Diary from 14th Dec 1840 to the first of March 1841 being 76 days."  Topics discussed 
+			in the diary include slavery, abolition, Texas, the difficulties of writing the law clearly, 
+			Blackstone and "his hair-splitting distinctions," and white settlers' treatment of Native Americans.</p>
+			
+			<p>One entry reads, in part:</p>
+			
+			<p><blockquote><p>Dec. 18  To day attended a meeting which for its object the consideration of 
+			the Evils of Slevery.  Slavery! A loathsome sound to greet the ear of an American at this stage 
+			of the 19th Cnetury; but loathsome as it is, it must be sounded in tones of thunder...ere it 
+			shall die away in the sweet and mellow notes of Liberty!</p></blockquote></p>
+			
+			<p>Another gives his opinion of the general quality of a legal arguments offered in court:</p>
+			
+			<p><blockquote><p>Dec. 22  To day, attended as Council before a Justice's Court, and before a 
+			perfect basswood Justice: who, though designing to do justice to the parties, would be apt to 
+			do as much injustice to the character of our Esquire, as by his tardy perception and muddy 
+			intellect, he would, through mistake, despoil the rights of those who left  their affairs to 
+			his decisions.  Disputation is very much recommended to sharpen the wits of men, but it must 
+			be of a higher order than we engage in before our Justice's Courts, or I am sure it would tend 
+			to sink even a splendid intellect below the zero of high-minded controversy.  However, it may 
+			be said to require considerable talent to beat an idea into the head of some of our squires and 
+			consequently would tax one's ingenuity not a little to make his language clear and explicit 
+			enough to make the Justice keep on the side of truth, or rather to discover where the equity 
+			of the matter lay, or so to befog his intellect that he could not discover when he was right 
+			or wrong.</p></blockquote></p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 	  
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Single volume.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">New York State</subject><persname encodinganalog="600" source="lcnaf">Stewart, E. W.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Courts -- United States -- History.</subject><subject encodinganalog="650" source="lcsh">Law -- United States -- History.</subject><subject encodinganalog="650" source="lcsh">Lawyers -- 19th century -- New York (State)</subject><subject encodinganalog="650" source="lcsh">Slavery -- America.</subject>
+         <geogname encodinganalog="651" source="lcsh">Camden (N.Y.) -- History.</geogname>
+         <genreform encodinganalog="655" source="aat">Diaries.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Lawyers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> E. W. Stewart Diary, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2016.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Diaries</unittitle></did>
+               
+               
+            <c02><did><unittitle>[Volume 1]</unittitle><unitdate normal="1840/1841" type="inclusive">1840-1841</unitdate><container type="SC">782</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

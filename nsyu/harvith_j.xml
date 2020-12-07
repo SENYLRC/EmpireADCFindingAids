@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="harvith_j">harvith_j</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">John and Susan Edwards Harvith Collection of Arturo Toscanini Recordings </titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">PJM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-09-04" encodinganalog="Date">4 Sep 2013</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>PJM<date normal="2013-09-04">4 Sep 2013</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item/>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Harvith, John.</persname>
+            <!--<corpname encodinganalog="110">or 110</corpname>-->
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">John and Susan Edwards Harvith Collection of Arturo Toscanini Recordings</unittitle>
+         <unitdate encodinganalog="245$f" normal="1926/1954" type="inclusive" label="Inclusive Dates: ">1926-1954</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>.5 linear ft</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">The collection contains commercial
+            releases and subscription recordings of Arturo Toscanini recordings on audiocassette and
+            long-playing records.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4092827</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+         <p>John Harvith and Susan Edwards Harvith are mass communications and arts historians who
+            together have produced exhibitions and film series, as well as books and articles. The
+            initial research for their book, <emph render="italic">Edison, Musicians, and the
+               Phonograph</emph> began at the Belfer Audio Archive at Syracuse University Libraries.
+            Their book won critical praise from The New York Times and Musical America and has since
+            been frequently cited in publications dealing with Edison, as well as the aesthetics of
+            recorded performance. Their complementary research has emphasized the interface between
+            the arts and technology in film, photography, radio, and television, resulting in
+            numerous interviews with cinematographers, film editors, and - for Syracuse University's
+            Bleier Center for Television and Popular Culture  -  radio and television pioneers.</p>
+         <p>Arturo Toscanini (1867-1957) was an Italian conductor, renowned for his intensity and
+            perfectionism. He is widely regarded as one of the greatest conductors of the 20th
+            century.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">John and Susan Edwards Harvith Collection of Arturo Toscanini
+               Recordings</emph> consists of two Arturo Toscanini Society 33-1/3 RPM Long-playing
+            records and 41 Victor Gold Seal audio cassettes from the Arturo Toscanini Collection.
+            The recordings comprise a significant portion of Toscanini's celebrated career with many
+            of his concerts broadcasted by NBC. The cassette series also features Robert Hupka's
+            iconic photos of Toscanini at work. </p>
+      </scopecontent>
+      <!--<altformavail encodinganalog="530"><head>Other Formats Available</head><p>## Use MARC 530 or comment out if not applicable</p></altformavail>-->
+      <!--<arrangement encodinganalog="351$a"><head>Arrangement of the Collection</head><p>Items are arranged by format and release order.</p></arrangement>-->
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="../h/hupka_toscanini.htm">Robert Hupka Collection of Toscanini
+               Test Pressings and Dom Baron Chant Recordings.</archref></p>
+         <!--Following is  boilerplate statement - delete this if you have specific related 
+material that you are listing.-->
+         <!--<relatedmaterial encodinganalog="544 1"><p>&scrc_name; has made a concerted effort over the years to ensure that its manuscript and rare books holdings complement each other. As a result, many of our manuscript collections are supported by books, pamphlets, serials and other items which are cataloged in the Rare Books Collection. Please be sure to search &summitref; for these related materials.</p></relatedmaterial>-->
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+      <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>The donation also included a number of non-Toscanini commerical and broadcast
+            recordings. These phonorecords have been cataloged in the Belfer 78 RPM and Belfer LP
+            Collections. Please be sure to search "Gift of John and Susan Edwards Harvith" in
+            &summitref; for these materials. </p>
+      </separatedmaterial>
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Music</subject><persname encodinganalog="600" source="lcnaf">Harvith, John.</persname>
+         <persname encodinganalog="600" source="lcnaf">Harvith, Susan Edwards.</persname>
+         <persname encodinganalog="600" source="lcnaf">Toscanini, Arturo, 1867-1957.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">NBC Symphony Orchestra.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">New York Philharmonic.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Philadelphia Orchestra.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf"/>-->
+         <subject encodinganalog="650" source="lcsh">Conductors (Music)</subject>
+         <subject encodinganalog="650" source="lcsh">Orchestral music.</subject>
+         
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Sound recordings.</genreform>
+         <genreform encodinganalog="655" source="aat">Audiocassettes.</genreform>
+         <genreform encodinganalog="655" source="aat">Long-playing records.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      <p>Access to recordings requires advance notice for production of a listening copy. </p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+			<p>Listening copies are for onsite use only. Any person wishing to purchase a
+            research copy will need to obtain permission from the copyright holder prior to placing
+            their order.</p>
+    </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>John and Susan Edward Harvith Collection of Arturo Toscanini Recordings, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of John and Susan Edwards Harvith, 2012, 2013.</p>
+      </acqinfo>
+      <!--<appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>-->
+      <!--<accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <note>
+            <p>An inventory has not been created for this collection. Instead, the collection has
+               been cataloged and may be located by searching  "John and Susan Edwards Harvith Collection of Arturo Toscanini Recordings" in &summitref;. </p>
+            <p/>
+         </note>
+      </dsc>
+   </archdesc>
+</ead>

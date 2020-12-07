@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008--><!--Revised standard blurb for related material -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="dobbins_j" mainagencycode="NSyU">dobbins_j</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title"> James Dobbins Cartoons</titleproper>
+        <subtitle>An  inventory of his cartoons at Syracuse University</subtitle>
+        <author encodinganalog="Creator">BM</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1968-12">Dec 1968</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Summit record]
+        
+        <date normal="2009-02-24">24 Feb 2009</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>24 Feb 2009 - converted to EAD (MD)</item>
+        <item>18 May 2012 - added inventory (MRC)</item>
+        <item>8 May 2015 - Rt 128/Boston cartoons added, M15-040 (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Dobbins, James.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">James Dobbins Cartoons</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1952/1971" type="inclusive">1952-1971</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>24 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Original editorial cartoons, sketches and clippings.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">148944</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>James J. Dobbins (1924-1994) was an American editorial cartoonist. He spent most of his career affiliated with Boston-area newspapers.</p>
+      <p>Born in Woburn, Massachusetts, Dobbins graduated from Woburn High School and attended Cornell College for a brief period before serving as a Navy flier during World War II, where he was awarded a Distinguished Flying Cross.  After the war, Dobbins attended Massachusetts College of Art, graduating in 1951.  He landed his first newspaper job with the 
+        
+        <emph render="italic">Woburn Daily Times</emph> while still in college (1947-1949). Dobbins continued at the Boston University Graduate School of Education and worked as an English teacher in the Boston School System before signing on with the 
+        
+        <emph render="italic">Lowell (Mass.) Sun</emph> as an editorial cartoonist (1952-1953). In 1953, Dobbins took a short term, 4 ½ week assignment with the 
+        
+        <emph render="italic">New York Daily News</emph> while that paper's esteemed cartoonist, C. D. Batchelor, was on an extended leave of absence. When Batchelor returned, Dobbins continued to produce the Sunday drawing for another several months.</p>
+      <p>Dobbins began what turned out to be a steady run with Boston-area newspapers in 1954, when he took up with the now defunct 
+        
+        <emph render="italic">Boston Post</emph> (1954-1956). Subsequently, Dobbins spent sixteen years with the Boston 
+        
+        <emph render="italic">Herald Traveler</emph> (1956-1972) and another five years with the Boston 
+        
+        <emph render="italic">Herald-American</emph> (1972-1977) before finishing his distinguished newspaper career with the 
+        
+        <emph render="italic">Manchester (N.H.) Union Leader</emph>.  In his retirement, Dobbins continued to produce cartoons, regularly contributing to the monthly publication of the National Association of Government Employees.  James Dobbins died May 5, 1994.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">James Dobbins Cartoons</emph> collection contains original editorial cartoons, sketches and clippings of cartoons.  For </p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>This collection is partially arranged—re-housing and complete inventory are pending.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has collections of over one hundred cartoonists.  Please refer to &subjindex; for a complete listing.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <persname encodinganalog="600" source="local">Dobbins, James.</persname>
+      <title encodinganalog="630" source="lctaf">Boston herald traveler and Boston record American (Boston, Mass.)</title>
+      <title encodinganalog="630" source="lctaf">Boston post (Boston, Mass. : Daily)</title>
+      <title encodinganalog="630" source="lctaf">Lowell sun (Lowell, Mass. : 1888)</title>
+      <title encodinganalog="630" source="lctaf">New York daily news.</title>
+      <subject encodinganalog="650" source="local">Art -- Cartoonists</subject>
+      <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject>
+      <subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- 
+
+United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Editorial cartoons -- 
+
+United States.</subject>
+      <subject encodinganalog="650" source="lcsh">World politics -- Caricatures and cartoons.</subject>
+      <geogname encodinganalog="651" source="lcsh">United States -- Politics and government -- 1953-1961 -- Caricatures and cartoons.</geogname>
+      <geogname encodinganalog="651" source="lcsh">United States -- Politics and government -- 1961-1963 -- Caricatures and cartoons.</geogname>
+      <geogname encodinganalog="651" source="lcsh">United States -- Politics and government -- 1963-1969 -- Caricatures and cartoons.</geogname>
+      <geogname encodinganalog="651" source="lcsh">United States -- Politics and government -- 1969-1974 -- Caricatures and cartoons.</geogname>
+      <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)
+</genreform>
+      <genreform encodinganalog="655" source="aat">Editorial cartoons.</genreform>
+      <genreform encodinganalog="655" source="aat">Sketches.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p> James Dobbins Cartoons, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">James Dobbins</persname>, 1967-1972.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Editorial cartoons (1968 accession)</unittitle>
+        </did>
+        <note>
+          <p>Click 
+            
+            <extref href="dobbins_j_inv.pdf">here</extref> for an itemized list of dates present for each year in this accession.</p>
+        </note>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1952" type="inclusive">1952</unitdate>
+            </unittitle>
+            <container type="Folder">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1953" type="inclusive">1953</unitdate>
+            </unittitle>
+            <container type="Folder">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1954-01/1954-06" type="inclusive">1954, Jan-Jun 14</unitdate>
+            </unittitle>
+            <container type="Folder">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1954-06/1954-12" type="inclusive">1954, Jun 15-Dec 31</unitdate>, undated 1954</unittitle>
+            <container type="Folder">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1955" type="inclusive">1955</unitdate>
+            </unittitle>
+            <container type="Folder">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1956" type="inclusive">1956</unitdate>
+            </unittitle>
+            <container type="Folder">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1957-01/1957-06" type="inclusive">1957, Jan-Jun</unitdate>
+            </unittitle>
+            <container type="Folder">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1957-07/1957-12" type="inclusive">1957, Jul-Dec</unitdate>
+            </unittitle>
+            <container type="Folder">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1958-01/1958-07" type="inclusive">1958, Jan-Jul</unitdate>
+            </unittitle>
+            <container type="Folder">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1958-08/1958-12" type="inclusive">1958, Aug-Dec</unitdate>
+            </unittitle>
+            <container type="Folder">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1963" type="inclusive">1963</unitdate>
+            </unittitle>
+            <container type="Folder">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1964" type="inclusive">1964</unitdate>
+            </unittitle>
+            <container type="Folder">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1965-01/1965-06" type="inclusive">1965, Jan-Jun</unitdate>
+            </unittitle>
+            <container type="Folder">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1965-07/1965-12" type="inclusive">1965, Jul-Dec</unitdate>
+            </unittitle>
+            <container type="Folder">14</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Published cartoons (1978 accession)</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Published cartoons</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Original artwork (1978 accession)</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Cartoons</unittitle>
+            <unitdate normal="1959/1960" type="inclusive">1959-1960</unitdate>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cartoons</unittitle>
+            <unitdate normal="1961/1965" type="inclusive">1961-1965</unitdate>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cartoons</unittitle>
+            <unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cartoons</unittitle>
+            <unitdate normal="1967" type="inclusive">1967</unitdate>
+            <container type="Oversize">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cartoons</unittitle>
+            <unitdate normal="1968" type="inclusive">1968</unitdate>
+            <container type="Oversize">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cartoons</unittitle>
+            <unitdate normal="1969" type="inclusive">1969</unitdate>
+            <container type="Oversize">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cartoons</unittitle>
+            <unitdate normal="1970" type="inclusive">1970</unitdate>
+            <container type="Oversize">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cartoons</unittitle>
+            <unitdate normal="1971" type="inclusive">1971</unitdate>
+            <container type="Oversize">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cartoons with rough sketches</unittitle>
+            <unitdate normal="1967/1970" type="inclusive">1967-1970</unitdate>
+            <container type="Oversize">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sketches</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Original artwork, later accessions</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Cartoons</unittitle>
+            <abstract>eight editorial cartoons by James Dobbins pertaining to the connecting highway between Route 128 and Boston</abstract>
+            <unitdate normal="1956/1957" type="inclusive">1956-1957</unitdate>
+            <container type="Map-Case">100</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

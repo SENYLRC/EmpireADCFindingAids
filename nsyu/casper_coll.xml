@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+<?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen.css"?>
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="casper_coll">casper_coll</eadid>
+      <filedesc>
+         <titlestmt>
+                     <titleproper encodinganalog="Title">Irwin Casper Collection of Brush Product Literature</titleproper>
+         <subtitle>A description of the collection at Syracuse University</subtitle>
+<author encodinganalog="Creator">DGI/MM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+               <date normal="2006" encodinganalog="Date">2006</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-12">Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>Feb 2009 - converted to EAD (MRC)</item>
+            <item>Feb 2012 - updated (SCJ)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+               <persname encodinganalog="100">Casper, Irwin.</persname></origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Irwin Casper Collection of Brush Product Literature</unittitle>
+         <unitdate encodinganalog="245$f" normal="1959/1994" type="inclusive" label="Inclusive Dates: ">1959-1994</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection contains catalogs and
+            product literature on various brands of hair brushes, combs, toothbrushes, household
+            brushes, and industrial brushes from American and international companies.</abstract>
+
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2651114</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>, <language langcode="ger">German</language>,
+               <language langcode="fre">French</language>,  <language langcode="por">Portuguese</language>, <language langcode="chi">Chinese</language></langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Unknown.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Irwin Casper Collection of Brush Product Literature</emph>
+            contains product literature on various brands of hair brushes, toothbrushes, household
+            brushes, and industrial brushes from American and international companies.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Boxes are arranged alphabetically by company.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous holdings in the areas of plastics and industrial design. Please
+            refer to &subjindex; for a complete listing.  The Plastics Artifacts Collection contains
+            many examples.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+<subject encodinganalog="650" source="local">Plastics</subject><!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Plastics industry and trade.</subject>
+         <subject encodinganalog="650" source="lcsh">Brooms and brushes.</subject>
+<subject encodinganalog="650" source="lcsh">Toothbrushes.</subject>
+<subject encodinganalog="650" source="lcsh">Hair -- Care and hygiene.</subject>
+<!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Brochures.</genreform><genreform encodinganalog="655" source="aat">Promotional materials.</genreform><genreform encodinganalog="655" source="aat">Advertisements.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657"> ##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Irwin Casper Collection of Brush Product Literature, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from National Plastics Center and Museum, 11/06/2008.  Originally, gift of <persname role="donor">Irwin Casper</persname>.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      
+   <dsc type="combined">
+         <head>Inventory</head>
+         
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02>
+               <did>
+                  <unittitle>Catalogs</unittitle>
+                  <abstract>Product literature on various brands of hair brushes, combs,
+                     toothbrushes, household brushes, and industrial brushes from American and
+                     international companies</abstract>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>All-American Brush Mfg. Corp.</unittitle>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog of promotional information and materials<lb/>1 Planning book of
+                        product information</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Artex</unittitle>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Beecham Products USA</unittitle>
+                     <unitdate type="inclusive" normal="1988">1988</unitdate>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Aquafresh "results" pamphlet</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Bennington Brush Company</unittitle>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>2 Catalogs of product information<lb/>16 Assorted 8x10 product
+                        photographs<lb/>3 Assorted product information sheets</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Big Eagle Company Ltd.</unittitle>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Paper with company contact information</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Celluloid s.a.</unittitle>
+                     <unitdate type="inclusive" normal="1992/1993">1992-1993</unitdate>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog titled "Nouveautes"<lb/>1 Product index<lb/>1 Product
+                        catalog<lb/>1 Letter from F. Caron</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Colgate Oral Pharmaceuticals</unittitle>
+                     <unitdate type="inclusive" normal="1994">1994</unitdate>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Informational pamphlet</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Condor</unittitle>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>2 General catalogs<lb/>2 General catalogs<lb/>1 Letter from Ulisses
+                        Godoy</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Coronet</unittitle>
+                     <unitdate type="inclusive" normal="1977/1982">1977-1982</unitdate>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog titled "the attractive range"<lb/>1 Packet of product and sales
+                        information<lb/>1 Book "The Successful Coronet Programme"</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Derby</unittitle>
+                     <unitdate type="inclusive" normal="1990/1991">1990-1991</unitdate>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog<lb/>2 Catalogs</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>E. I. du Pont Nemours and Company</unittitle>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog<lb/>1 Catalog titled "quality toiletries for the whole family"</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Ebser</unittitle>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Document describing manufacturing equipment</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Empire Brushes Inc.</unittitle>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Advertisement</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>F&amp;F Founders Enterprises Ltd.</unittitle>
+                     <unitdate type="inclusive" normal="1979">1979</unitdate>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Offer sheet and invoice</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>First Co. Plastic Fty.</unittitle>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Product sheet with price list</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Flamingo</unittitle>
+                     <unitdate type="inclusive" normal="1967">1967</unitdate>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Foster Grant Co. Inc.</unittitle>
+                     <unitdate type="inclusive" normal="1967">1967</unitdate>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Price list for nylon combs<lb/>2 Promotional pages for unbreakable nylon
+                        combs<lb/>1 Catalog<lb/>1 Memo to all wholesale salesmen</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Gaylord Products</unittitle>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Gibson-Thomsen Co. Inc.</unittitle>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Golden Uly Int'l Co. Ltd.</unittitle>
+                     <unitdate type="inclusive" normal="1984">1984</unitdate>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Price list with product images</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Goody</unittitle>
+                     <unitdate type="inclusive" normal="1967">1967</unitdate>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Grand Fuhsing Co. Ltd.</unittitle>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Packet of product images</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Hamivreshet Ruhama</unittitle>
+                     <unitdate type="inclusive" normal="1984">1984</unitdate>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>2 Catalogs for Ruhama brushes</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Jackson Associate Corp.</unittitle>
+                     <unitdate type="inclusive" normal="1983">1983</unitdate>
+                     <container label="" type="Box">1</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog with attached letter from Jackson Huang</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>John O. Butler Company</unittitle>
+                     <unitdate type="inclusive" normal="1989/1994">1989-1994</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog "the butler smile factory"<lb/>2 Product catalogs<lb/>1 Product
+                        catalog<lb/>1 Sales catalog<lb/>1 Sales pamphlet</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Johnson &amp; Johnson</unittitle>
+                     <unitdate type="inclusive" normal="1994">1994</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Professional products pamphlet</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Kent of London</unittitle>
+                     <unitdate type="inclusive" normal="1959">1959</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog with attached letter from Eric L.H. Cosby Jr.</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Life-Time Merchandising</unittitle>
+                     <unitdate type="inclusive" normal="1966">1966</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Sales catalog with attached memo</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Lyon Enterprise Co. Ltd.</unittitle>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Marvel Sales Co. Inc.</unittitle>
+                     <unitdate type="inclusive" normal="1967">1967</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Price list with promotional page</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Monofil</unittitle>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog with price list</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Oral-B</unittitle>
+                     <unitdate type="inclusive" normal="1987/1992">1987-1992</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Pamphlet for the "ultra toothbrush"<lb/>1 Advertisement for the "ultra
+                        toothbrush"<lb/>1 Pamphlet for "snap lock interdental brush system"<lb/>1
+                        Sales packet with price list</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Pai-Ta Brush Co. Ltd.</unittitle>
+                     <unitdate type="inclusive" normal="1983">1983</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Price list with product images and attached letter from Jackson Liu</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Piace Companhia Industrial</unittitle>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>11 Assorted pages of product images<lb/>1 Export price list<lb/>1 Paper with
+                        company address</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Paul A. Price Co. Inc.</unittitle>
+                     <unitdate type="inclusive" normal="1967">1967</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog with attached letter from Louis G. Katz</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Pioneer Hair Care Products Limited</unittitle>
+                     <unitdate type="inclusive" normal="1986">1986</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Paper with company contact information<lb/>1 Catalog with price list</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>The PK Group</unittitle>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Product list</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Radius</unittitle>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Sales pamphlet</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Sears</unittitle>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Page image of comb display</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Sekine</unittitle>
+                     <unitdate type="inclusive" normal="1962/1980">1962-1980</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog<lb/>1 Catalog of professional styling brushes<lb/>1 Catalog of
+                        "style and groom" brushes<lb/>6 Assorted pages of product information</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Solo</unittitle>
+                     <unitdate type="inclusive" normal="1967/1969">1967-1969</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog with wholesale price list<lb/>1 Catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Spa</unittitle>
+                     <unitdate type="inclusive" normal="1963">1963</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Stanley Comb Products Corp.</unittitle>
+                     <unitdate type="inclusive" normal="1967">1967</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Distributor price list with product catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Sterkel</unittitle>
+                     <unitdate type="inclusive" normal="1981">1981</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Sunbeam</unittitle>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Informational pamphlet with attached presentation abstract</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Sup-Erb Brush Company</unittitle>
+                     <unitdate type="inclusive" normal="1982">1982</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Tai Max International Co. Ltd.</unittitle>
+                     <unitdate type="inclusive" normal="1987">1987</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Page with product photographs</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Tigre</unittitle>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog of artist brushes and accessories<lb/>1 Catalog of paint brushes,
+                        paint rollers, and accessories<lb/>1 Letter from Dr. Jader Fernades S.
+                        Borges</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Tilton &amp; Cook Co.</unittitle>
+                     <unitdate type="inclusive" normal="1979">1979</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Tin Ngai Industrial Co. Ltd.</unittitle>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Price list with attached photograph</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Tip-Top</unittitle>
+                     <unitdate type="inclusive" normal="1967">1967</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog with price list</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Tung Fat Plastic Co.</unittitle>
+                     <unitdate type="inclusive" normal="1982">1982</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog with price list</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Wah Hing Plastic and Metalware Fty. Ltd.</unittitle>
+                     <unitdate type="inclusive" normal="1983">1983</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog with price list</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Welgroom</unittitle>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog with price list</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Wisdom Toothbrush Company</unittitle>
+                     <unitdate type="inclusive" normal="1993">1993</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Worldwide Dental</unittitle>
+                     <unitdate type="inclusive" normal="1986">1986</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Catalog with price list</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Yung Hsang Development Co. Ltd.</unittitle>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>1 Paper with attached product photographs</p>
+                  </scopecontent>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Periodicals</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Brushwork</unittitle>
+                     <unitdate normal="1988" type="inclusive">January 1988</unitdate>
+                     <container type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>Vol. 1 Number 1</p>
+                  </scopecontent>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Packaging Digest</unittitle>
+                     <unitdate type="inclusive" normal="1986/1989">1986-1989</unitdate>
+                     <container label="" type="Box">2</container>
+                  </did>
+                  <scopecontent>
+                     <p>Vol. 23 Number 7<lb/>Vol. 26 Number 6</p>
+                  </scopecontent>
+               </c03>
+            </c02>
+         </c01>
+      </dsc>	</archdesc>
+</ead>

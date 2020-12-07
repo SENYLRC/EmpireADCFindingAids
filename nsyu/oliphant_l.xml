@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="oliphant_l">oliphant_l</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Laurence Oliphant Letter</titleproper>
+            <subtitle>A description of the item at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-07-13" encodinganalog="Date">13 Jul 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-07-13">13 Jul 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Oliphant, Laurence, 1829-1888.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Laurence Oliphant Letter</unittitle>
+         <unitdate encodinganalog="245$f" normal="1863/1867" type="inclusive" label="Inclusive Dates: ">undated (between 1863-1867)</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">One letter from the British journalist, satirist and adventurer to "My dear Mr. 
+		 Ruxton," regarding Oliphant's having joined one of Thomas Lake Harris' religious communities in New York.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2922478</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Laurence Oliphant (1829-1888) was a British author, traveller, diplomat and mystic. He wrote his first book at age 25, and several 
+	  more followed as outcomes of his extensive travels in India, Russia, China, and Japan.  In 1866 both he and his mother fell under the 
+	  influence of the spiritualist prophet Thomas Lake Harris.  </p>
+	  
+	  <p>Thomas Lake Harris (1823-1906) was born in England but came to New York with his parents at the age of five.  While still a young 
+	  man he became a Unitarian Universalist preacher and then a Swedenborgian.  In the early 1860s he founded a Utopian community in 
+	  Wassaic, New York, among whose members were twenty Japanese from Satsuma Province.  When Laurence and his mother, Lady Oliphant, 
+	  joined the commune they brought a much-needed infusion of cash which allowed the group to move to Brocton on the shores of Lake 
+	  Erie.   Back in England, the Ruxton family became sympathizers and financial supporters of Harris though they never lived in the 
+	  commune itself.</p>
+	  
+	  <p>In 1875 Harris began a gradual relocation of the community to California where he founded the Fountain Grove community.  The 
+	  Oliphants had a falling-out with Harris in about 1881 and through legal action regained some, but not all, of the money they had 
+	  invested.</p>
+	  
+	  <p>[Portions of this sketch adapted from the article "Oliphant, Laurence" in the Encyclopedia Britannica, 11th Edition, Vol. 20, pp. 82-83; 
+	  and from <emph render="italic">California's Utopian Communities</emph> by Robert V. Hine, p. 15]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Laurence Oliphant Letter</emph> consists of one letter to "My dear Mr. Ruxton," dated September 2 from Amenia, New York.  
+		 The letter reads in part, "I am glad I have an opportunity of giving you in writing a hearty welcome among us.  I feel sure 
+		 that if your experience be like mine you will never have cause to regret the step you have taken."</p>
+		 
+		 <p>The letter is undated but based on its being dated from Amenia, New York, it must have been written between 1863, when the 
+		 commune came to Amenia, and 1867, when Harris moved it to Brocton.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Single item.</p>
+      </arrangement>
+      
+      <!-- <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial> -->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">New York State</subject>
+		 <subject encodinganalog="650" source="local">Religion and philosophy</subject>
+		 <persname encodinganalog="600" source="lcnaf">Oliphant, Laurence, 1829-1888.</persname>
+         <famname encodinganalog="600" source="lcnaf">Ruxton family.</famname>
+         <corpname encodinganalog="610" source="lcnaf">Brotherhood of the New Life -- History.</corpname>
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+		 <subject encodinganalog="650" source="lcsh">Authors, English -- 19th century.</subject>
+         <subject encodinganalog="650" source="lcsh">Utopian socialism -- New York (State)</subject>
+         <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <!-- <occupation encodinganalog="656" source="lcsh">##</occupation> -->
+         <!-- <function encodinganalog="657">##</function> -->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Laurence Oliphant Letter, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 1986.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>"My dear Mr. Ruxton"</unittitle><unitdate normal="1863/1867" type="inclusive">undated</unitdate><container type="SC">531</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

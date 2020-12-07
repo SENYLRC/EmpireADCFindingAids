@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="higgins_t">higgins_t</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Thomas Higgins, Jr. Papers</titleproper>
+            <subtitle>An inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">--</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1967-01" encodinganalog="Date">Jan 1967</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>MD<date normal="2008-12-17">17 Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>17 Dec 2008 - converted to EAD (MD)</item>
+            <item>22 Oct 2009 - inventory added (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Higgins, Tom, 1922-2000.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Thomas Higgins, Jr. Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1957/1971" type="inclusive" label="Inclusive Dates: ">1957-1971</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Original cartoons, sketches, proofs, clippings and correspondence.</abstract>
+         <!--<unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149052</unitid>-->
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4205071</unitid><langmaterial label="Language: " encodinganalog="546">
+            Majority in <language langcode="eng">English</language>, a few items in <language langcode="spa">Spanish</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Thomas J. Higgins, Jr. (1922-2000) was an American cartoonist. Over the course of his long career, his 
+	  cartoons appeared in many major magazines and trade journals.</p>
+	  
+	  <p>Higgins was born in Far Rockaway, New York.  During World War II, while stationed in Japan 
+	  shortly after the dropping of the atomic bomb, his lungs were so badly damaged that Higgins required a 
+	  two year convalescence in a military hospital.  Upon his return to New York after the War, he enrolled 
+	  in the Cartoonists and Illustrators School and was soon working as a free lance cartoonist.  </p>
+	  
+	  <p>Higgins' specialty was producing cartoons for niche publications and trade journals, but he also had 
+	  a number of cartoons published in major magazines like the 
+	  <emph render="italic">Saturday Evening Post</emph>, <emph render="italic">Argosy</emph>, 
+	  <emph render="italic">Theatre Arts</emph>, <emph render="italic">Extension</emph> and 
+	  <emph render="italic">Parade</emph>. Higgins continued to work as a professional cartoonist until his 
+	  death in San Diego, California. </p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Thomas Higgins, Jr. Papers</emph> contains correspondence, original artwork, 
+		 and published material.  Much of the published material appeared in various trade or professional publications 
+		 such as <emph render="italic">Illinois Master Plumber</emph> (plumbers), <emph render="italic">Hotel and Club Voice</emph>
+		 (for hotel, bartender and restaurant workers), and <emph render="italic">Safe Driving News</emph>, a 
+		 publication of Kennametal (manufacturer of studded tires).</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Material is arranged alphabetically.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has collections of over one hundred cartoonists. Please refer to &subjindex; for a 
+		 complete listing.
+</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="local">Higgins, Tom, 1922-2000.</persname>
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+		 <subject encodinganalog="650" source="local">Art -- Cartoonists</subject>			
+         <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject>
+		 <subject encodinganalog="650" source="lcsh">Beatles -- Caricatures and cartoons.</subject>
+		 <subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States.</subject>
+		 <subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject>
+		 <subject encodinganalog="650" source="lcsh">Magazine illustration.</subject>
+         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+		 <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+		 <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+		 <genreform encodinganalog="655" source="aat">Portraits.</genreform>
+		 <genreform encodinganalog="655" source="aat">Sketches.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p> Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Thomas Higgins, Jr. Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Thomas Higgins, Jr.</persname>, 1966-1968, 1971.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+<dsc type="combined">
+      <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Miscellaneous, A-Z</unittitle><abstract>includes some original art</abstract><unitdate normal="1965/1967" type="inclusive">1965-1967, </unitdate><unitdate normal="1971" type="inclusive">1971</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Original artwork</unittitle></did>
+            <c02 id="amam"><did><unittitle>Amebic Amiabilities</unittitle><abstract>includes two clippings of printed items from Antibiotic News and a small amount of correspondence</abstract><unitdate normal="1966/1967" type="inclusive">1966-1967, </unitdate><unitdate normal="1957/1971" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Cartoons</unittitle><unitdate normal="1957/1971" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02 id="kenn"><did><unittitle>Kennametal</unittitle><abstract>includes two clippings of printed items from their "Kengrip" newsletter</abstract><unitdate normal="1968" type="inclusive">1968, </unitdate><unitdate type="inclusive" normal="1957/1971">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Portraits of the Beatles</unittitle><abstract>includes newspaper clipping of published version</abstract><unitdate normal="1964" type="inclusive">1964</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Sketches</unittitle><unitdate normal="1957/1971" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle><emph render="italic">Advertiser-Democrat</emph> (Norway and South Paris, Maine)</unittitle><unitdate normal="1959/1961" type="inclusive">1959-1961</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Antibiotic News</emph> ("Amebic Amiabilities")</unittitle><note><p>See <ref target="amam">Original artwork: Amebic Amiabilities</ref>.</p></note></did></c02>
+            <c02><did><unittitle><emph render="italic">Chicago Purchaser</emph></unittitle><unitdate normal="1958" type="inclusive">1958, </unitdate><unitdate type="inclusive" normal="1957/1971">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Concrete Highways</emph></unittitle><unitdate normal="1957/1971" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Eastern Ski Bulletin</emph></unittitle><unitdate normal="1957/1971" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Exhaust</emph></unittitle><unitdate normal="1966" type="inclusive">1966, </unitdate><unitdate type="inclusive" normal="1957/1971">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>"Harriet Hobby and Hubby"</unittitle><unitdate normal="1957/1971" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Hotel and Club Voice</emph></unittitle><abstract>includes numerous items in Spanish</abstract><unitdate normal="1953" type="inclusive">1953, </unitdate><unitdate type="inclusive" normal="1957/1971">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Illinois Master Plumber</emph></unittitle><unitdate normal="1962" type="inclusive">1962, </unitdate><unitdate type="inclusive" normal="1963">1963, </unitdate><unitdate type="inclusive" normal="1966">1966</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Kennametal</unittitle><note><p>See <ref target="kenn">Original artwork: Kennametal</ref>.</p></note></did></c02>
+            <c02><did><unittitle>McNeil Laboratories</unittitle><abstract>includes correspondence and some original art as well</abstract><unitdate normal="1964/1967" type="inclusive">1964-1967</unitdate><container type="Oversize">1</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Modern Retailer</emph></unittitle><unitdate normal="1962" type="inclusive">1962, </unitdate><unitdate type="inclusive" normal="1957/1971">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Music Journal</emph></unittitle><unitdate normal="1957/1971" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Oxford County Fair</unittitle><abstract>includes one item of original art</abstract><unitdate normal="1961" type="inclusive">1961</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Philatelic Leader</emph> ("Philatoons")</unittitle><unitdate normal="1957/1971" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Skate</emph></unittitle><unitdate normal="1959/1960" type="inclusive">1959-1960</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Miscellaneous publications, A-Z</unittitle><unitdate normal="1957/1961" type="inclusive">1957-1961</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Unidentified publications</unittitle><unitdate normal="1959" type="inclusive">1959, </unitdate><unitdate type="inclusive" normal="1957/1971">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+		 </dsc>
+   </archdesc>
+</ead>

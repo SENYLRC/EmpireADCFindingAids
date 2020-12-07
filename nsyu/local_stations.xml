@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="local_stations">local_stations</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Location Station Owners/Managers Interviews</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2019-05-01" encodinganalog="Date">1 May 2019</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2019-05-01">1 May 2019</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Marc, David.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Location Station Owners/Managers Interviews</unittitle>
+         <unitdate encodinganalog="245$f" normal="2001/2002" type="inclusive" label="Inclusive Dates: ">2001-2002</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>30 items</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Interviews, mostly by David Marc, of owners and managers of local radio and television stations</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">5390533</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>David Marc is an author, editor, and teacher specializing in communication and mass media.   He earned his PhD in American Studies (Literature, Film, and Communication) from the University of Iowa in 1981.  Since then, he has held adjunct, assistant, or visiting professor positions at Brandeis University, University of California-Los Angeles, the Annenberg School for Communication at the University of Southern California, and the Newhouse School of Public Communication at Syracuse University.  He is the author of a number of books on television and popular culture.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Location Station Owners/Managers Interviews</emph> consists of interviews with eleven owners and/or managers of local televisions stations across the country.  All but one of the interviews were conducted by Marc, usually at the interviewee's home or office.  The context of and reason for the interviews is unknown.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Tapes are arranged alphabetically by interviewee.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous collections relating to radio and television.  Please &searchcoll; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+         defaults set in the template.-->
+<subject encodinganalog="650" source="local">Popular culture</subject>
+      <subject encodinganalog="650" source="local">Radio, television, film</subject>
+      <persname encodinganalog="600" source="local">Arries, Les.</persname>
+<persname encodinganalog="600" source="local">Bell, Alan J.</persname>
+<persname encodinganalog="600" source="local">Bell, Steve.</persname>
+<persname encodinganalog="600" source="local">Carey, Carl.</persname>
+<persname encodinganalog="600" source="lcnaf" authfilenumber="n94113172">Clotworthy, William G., 1926-</persname>
+<persname encodinganalog="600" source="lcnaf" authfilenumber="n83127742">Marc, David.</persname>
+<persname encodinganalog="600" source="local">Duffy, Pat.</persname>
+<persname encodinganalog="600" source="local">Epstein, Michael.</persname>
+<persname encodinganalog="600" source="local">Malara, Anthony C.</persname>
+<persname encodinganalog="600" source="local">Nathanson, Greg.</persname>
+<persname encodinganalog="600" source="local" authfilenumber="n2008080346">Primo, Albert T.</persname>
+<persname encodinganalog="600" source="local">Ransom, William.</persname>
+<persname encodinganalog="600" source="local">Reilly, Joseph A.</persname>
+
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Freedom Broadcasting, Inc.</corpname>
+         <corpname encodinganalog="610" source="lcnaf" authfilenumber="no99075931">KRTH (Radio station : Los Angeles, Calif.)</corpname>
+         <corpname encodinganalog="610" source="lcnaf" authfilenumber="n2006087593">WGCH (Radio station : Greenwich, Conn.)</corpname>
+         <corpname encodinganalog="610" source="local">WKBW-TV (Television station : Buffalo, N.Y.)</corpname>
+			<corpname encodinganalog="610" source="lcnaf" authfilenumber="n2006067081">New York State Broadcasters Association</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Radio broadcasting -- United States -- History.</subject>
+         <subject encodinganalog="650" source="lcsh">Television broadcasting -- United States -- History.</subject><subject encodinganalog="650" source="lcsh">Radio stations -- Employees.</subject><subject encodinganalog="650" source="lcsh">Radio stations -- Management.</subject><subject encodinganalog="650" source="lcsh">Television stations -- Employees.</subject><subject encodinganalog="650" source="lcsh">Television stations -- Management.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Audiocassettes.</genreform>
+      <genreform encodinganalog="655" source="aat">Sound recordings.</genreform><genreform encodinganalog="655" source="aat">Interviews.</genreform>
+    
+    
+         
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Location Stations/Managers Interviews, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transferred from General Circulation.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      
+         
+         
+         <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Interviews</unittitle></did>
+    <c02>
+        <did>
+            <unittitle>Les Arries w/DM Tape #1 of 2</unittitle>
+            <unitid>local_stations_001</unitid>
+            <unitdate type="inclusive" normal="2001-03-12">3/12/01</unitdate>
+            <abstract>"Osprey, FL - Both sides filled"; probably same as 003</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Les Arries w/David Marc Tape #2 of 2</unittitle>
+            <unitid>local_stations_002</unitid>
+            <unitdate type="inclusive" normal="2001-03-12">3/12/01</unitdate>
+            <abstract>"~20 min"; probably same as 004</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Les Arries (Tape 1 of 2)</unittitle>
+            <unitid>local_stations_003</unitid>
+            <unitdate type="inclusive" normal="2001-03-12">3/12/01</unitdate>
+            <abstract>probably same as 001</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Les Arries (Tape 2 of 2)</unittitle>
+            <unitid>local_stations_004</unitid>
+            <unitdate type="inclusive" normal="2001-03-12">3/12/01</unitdate>
+            <abstract>probably same as 002</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Alan J. Bell Tape #1 of 1</unittitle>
+            <unitid>local_stations_005</unitid>
+            <unitdate type="inclusive" normal="2001-06-04">6-4-01</unitdate>
+            <abstract>Alan J. Bell interviewed at his office, Freedom Broadcasting Inc., Irvine CA; probably same as 006</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Alan J. Bell Tape 1 of 1</unittitle>
+            <unitid>local_stations_006</unitid>
+            <unitdate type="inclusive" normal="2001-06-04">6/4/01</unitdate>
+            <abstract>probably same as 005</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Steve Bell Tape #1 of 2</unittitle>
+            <unitid>local_stations_007</unitid>
+            <unitdate type="inclusive" normal="2001-06-05">June 5, 2001</unitdate>
+            <abstract>Steve Bell interviewed at his home in Pacific Palisades, CA; probably same as 009</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Steve Bell Tape #2 of 2</unittitle>
+            <unitid>local_stations_008</unitid>
+            <unitdate type="inclusive" normal="2001-06-05">June 5, 2001</unitdate>
+            <abstract>Steve Bell interviewed at his home in Pacific Palisades, CA; probably same as 010</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Steve Bell Tape 1 of 2</unittitle>
+            <unitid>local_stations_009</unitid>
+            <unitdate type="inclusive" normal="2001-06-05">6/5/01</unitdate>
+            <abstract>probably same as 007</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Steve Bell Tape 2 of 2</unittitle>
+            <unitid>local_stations_010</unitid>
+            <unitdate type="inclusive" normal="2001-06-05">6/5/01</unitdate>
+            <abstract>probably same as 008</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Carl Bud Carey Tape #1 of 1</unittitle>
+            <unitid>local_stations_011</unitid>
+            <unitdate type="inclusive" normal="2001-02-21">February 21, 2001</unitdate>
+            <abstract>Carl Bud Carey, Syracuse, NY; probably same as 012</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Carl Bud Carey (Tape 1 of 1)</unittitle>
+            <unitid>local_stations_012</unitid>
+            <unitdate type="inclusive" normal="2001-02-21">2/21/01</unitdate>
+            <abstract>probably same as 011</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>William Clotworthy Tape #1 of 2</unittitle>
+            <unitid>local_stations_013</unitid>
+            <unitdate type="inclusive" normal="2001-11-17">November 17, 2001</unitdate>
+            <abstract>William Clotworthy interviewed at his home in Asheville, NC; probably same as 015</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>William Clotworthy Tape #2 of 2</unittitle>
+            <unitid>local_stations_014</unitid>
+            <unitdate type="inclusive" normal="2001-11-17">November 17, 2001</unitdate>
+            <abstract>William Clotworthy interviewed at his home in Asheville, NC (Side A only); probably same as 016</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>William Clotworthy Tape #1 of 2</unittitle>
+            <unitid>local_stations_015</unitid>
+            <unitdate type="inclusive" normal="2001-11-17">11/17/2001</unitdate>
+            <abstract>probably same as 013</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>William Clotworthy 2 of 2</unittitle>
+            <unitid>local_stations_016</unitid>
+            <unitdate type="inclusive" normal="2001-11-17">11/17/2001</unitdate>
+            <abstract>William Clotworthy interviewed at his home in Asheville, NC / Previous recording on this tape was not erased prior to reused; probably same as 014</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Clotworthy</unittitle>
+            <unitid>local_stations_017</unitid>
+            <unitdate type="inclusive" normal="2001">undated</unitdate>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Pat Duffy Tape #1 of 1</unittitle>
+            <unitid>local_stations_018</unitid>
+            <unitdate type="inclusive" normal="2001-05-10">5/10/2001</unitdate>
+            <abstract>Pat Duffy of Radio Station KRTH-101, Los Angeles, interviewed at his office; probably same as 019</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Pat Duffy Tape 1 of 1</unittitle>
+            <unitid>local_stations_019</unitid>
+            <unitdate type="inclusive" normal="2001-05-10">5/10/01</unitdate>
+            <abstract>probably same as 018</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Tony Malara w/DM Tape #1 of 1</unittitle>
+            <unitid>local_stations_020</unitid>
+            <unitdate type="inclusive" normal="2001-03-13">March 13, 2001</unitdate>
+            <abstract>Anthony C. "Tony" Malara, interviewed at his home in Siesta Key, FL; probably same as 021</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Anthony C. "Tony" Malara (Tape 1 of 1)</unittitle>
+            <unitid>local_stations_021</unitid>
+            <unitdate type="inclusive" normal="2001-03-13">3/13/01</unitdate>
+            <abstract>probably same as 020</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Greg Nathanson Tape #1 of 2</unittitle>
+            <unitid>local_stations_022</unitid>
+            <unitdate type="inclusive" normal="2001-06-06">June 6, 2001</unitdate>
+            <abstract>Greg Nathanson, interviewed at his home in Los Angeles; probably same as 024</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Greg Nathanson Tape #2 of 2</unittitle>
+            <unitid>local_stations_023</unitid>
+            <unitdate type="inclusive" normal="2001-06-06">June 6, 2001</unitdate>
+            <abstract>Greg Nathanson, interviewed at his home in Los Angeles; probably same as 025</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Greg Nathanson Tape 1 of 2</unittitle>
+            <unitid>local_stations_024</unitid>
+            <unitdate type="inclusive" normal="2001-06-06">6/6/01</unitdate>
+            <abstract>probably same as 022</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Greg Nathanson Tape 2 of 2</unittitle>
+            <unitid>local_stations_025</unitid>
+            <unitdate type="inclusive" normal="2001-06-06">6/6/01</unitdate>
+            <abstract>probably same as 023</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Al Primo Tape #1 of 1</unittitle>
+            <unitid>local_stations_026</unitid>
+            <unitdate type="inclusive" normal="2002-02-01">2-2-01</unitdate>
+            <abstract>Al Primo, interviewed at the studios of WGCH Radio, Greenwich, CT; probably same as 027</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Al Primo (Tape 1 of 1)</unittitle>
+            <unitid>local_stations_027</unitid>
+            <unitdate type="inclusive" normal="2002-02-01">2/2/01</unitdate>
+            <abstract>probably same as 026</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>William Ransom Tape #1 of 1</unittitle>
+            <unitid>local_stations_028</unitid>
+            <unitdate type="inclusive" normal="2001-06-28">June 28, 2001</unitdate>
+            <abstract>William Ransom, interviewed at Ransom's office at WKBW-TV in Buffalo, NY </abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Joseph A. Reilly Tape #1 of 1</unittitle>
+            <unitid>local_stations_029</unitid>
+            <unitdate type="inclusive" normal="2001-10-27">10/27/01</unitdate>
+            <abstract>Joseph Reilly, interviewed by David Marc, at Reilly's office, headquarters of the NY State Broadcasters Association; probably same as 030</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Joseph A. Reilly 1 of 1</unittitle>
+            <unitid>local_stations_030</unitid>
+            <unitdate type="inclusive" normal="2001-10-27">10/27/01</unitdate>
+            <abstract>Joseph Reilly, interviewed by David Marc, at Reilly's office, headquarters of the NY State Broadcasters Association; probably same as 029</abstract>
+            <physdesc><extent>1/8 inch audio cassette</extent></physdesc>
+            <container type="Box">1</container>
+        </did>
+    </c02>
+         </c01>
+      </dsc>
+
+      
+   </archdesc>
+</ead>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="parting_boats">parting_boats</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Parting of the Boats Image</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+            <author encodinganalog="Creator">DSA</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2019-06-07" encodinganalog="Date">07 Jun 2019</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Daniel Allie<date normal="2019-06-07">07 Jun 2019</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+            &su_name;
+            <lb/>
+            &su_address;
+         </repository>
+         <!--<origination label="Creator: "><persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname></origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Parting of the Boats Image</unittitle>
+         <unitdate encodinganalog="245$f" normal="1881/1891" type="inclusive"
+            label="Inclusive Dates: ">circa 1886</unitdate>
+         <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder
+            (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Photographic reproduction of painting
+            depicting the separation of the lifeboats after the sinking of the ship <emph
+               render="italic">Jeannette</emph>.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US"
+            repositorycode="NSyU">5441358</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The  <emph render="italic">Jeannette</emph> expedition was a privately-funded American
+            expedition seeking to reach the North Pole by entering the Arctic via the Pacific Ocean.
+            The expedition was funded by James Gordon Bennett, Jr., of the <emph render="italic">New
+               York Herald</emph>, and led by George W. De Long.  Starting in 1789, the expedition
+            eventually met with disaster in 1881 when the vessel, stuck in ice in the Arctic Ocean
+            north of Siberia, was crushed and sank, requiring the men to set out on foot over the
+            ice in search of land. Eventually the expedition landed upon an island, still distant
+            from mainland Siberia, which De Long named Bennett Island after their patron. From here,
+            the group set out in three individual boats in search of the Lena River Delta in
+            northern Siberia and were separated in a storm. This separation led to the permanent
+            disappearance of one of the three boats. With two boats eventually reaching the Lena
+            Delta, ultimately only thirteen of the original thirty-three members of the <emph
+               render="italic">Jeannette's</emph> crew returned alive to the United States.</p>
+         <p>The incident of the parting of the boats is also depicted in the article "George Wallace
+            Melville," by Wiliam Ledyard Cathcart in <emph render="italic">Cassier's
+            Magazine</emph>, vol. XI, no. 6 (April, 1897), page 460. Cathcart's illustration was
+            reproduced  from the book <emph render="italic">In the Lena Delta</emph>, by George W.
+            Melville (London: Longmans, Green and Co., 1885), page 65. The book illustration in turn
+            appears to be derived from an illustration appearing on the cover of <emph
+               render="italic">The Graphic</emph>, no. 651, vol. XXV (May 20, 1882), which credits
+            an eyewitness account as its source.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p><emph render="bold">Parting of the Boats Image</emph> is a single item, a photograph of
+            a painting depicting the scene of the lifeboats' separation from each other in a storm
+            following the sinking of the <emph render="italic">Jeannette</emph> in the Arctic Ocean
+            north of Siberia. On back is handwritten summary of a portion of the article "George
+            Wallace Melville," by Wiliam Ledyard Cathcart in <emph render="italic">Cassier's
+               Magazine</emph>, vol. XI, no. 6 (April, 1897), pages 468-469.  Though this image
+            comes from an unknown artist, it appears to be of a common tradition with the published
+            examples mentioned above.</p>
+      </scopecontent>
+      <!--<altformavail encodinganalog="530"><head>Other Formats Available</head><p>## Use MARC 530 or comment out if not applicable</p></altformavail>-->
+      <!--<originalsloc encodinganalog="535"><head>Location of Originals</head><p>Originals are here and here and here.</p></originalsloc>-->
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Single item.</p>
+      </arrangement>
+      <!--<relatedmaterial encodinganalog="544 1"><head>Related Material</head><p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Bennett, James Gordon, 1841-1918.</persname>
+         <persname encodinganalog="600" source="lcnaf">De Long, George W. (George Washington),
+            1844-1881.</persname>
+         <persname encodinganalog="600" source="lcnaf">Melville, George W. (George Wallace),
+            1841-1912.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">New York herald.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Jeannette Expedition (1879-1881)</subject>
+         <geogname encodinganalog="651" source="lcsh">Arctic regions -- Discovery and
+            exploration.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Lena River Delta (Russia)</geogname>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require
+            advanced notice for retrieval. Researchers are encouraged to contact us in advance
+            concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Parting of the Boats Image, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      <!--<appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Photographs</unittitle></did>
+            <c02><did><unittitle>Untitled photograph of painting depicting the parting of the <emph render="italic"
+                        >Jeannette</emph> expedition boats in the Arctic Ocean, artist
+                     unknown</unittitle><unitdate normal="1881/1891" type="inclusive">circa 1886</unitdate><container type="SC">855</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--TEMPLATE VERSION 1.11, 17 Oct 2008--><!--Revised standard blurb for related material -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="michaels_e" mainagencycode="NSyU">michaels_e</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Ed Michaels Papers</titleproper>
+        <subtitle>A description of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">DGI/MM</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2006">2006</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2008-12">Dec 2008</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        Feb 2009 - converted to EAD (MRC)</item><item>Jun 2009 - additions (MRC)</item><item>23 Apr 2019 - film removed, videotapes added (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Michaels, Ed.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Ed Michaels Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1962/1989" type="inclusive">1962-1989</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>1 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Collection contains papers, reports and newspaper 
+articles on resin transfer molding, including the renovation of the Truman balcony at the White House; 
+photographs and slides from Michaels' career and the products he created; and videotapes.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2651140</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Ed Michaels (1922-2002) was an American inventor and manufacturer in the plastics industry.  </p>
+      <p>Michaels worked with reinforced thermoset plastics and developed zero-shrink polyester resin formulations 
+used in molds for composites, making it possible to mold large parts with light-weight polyester molds. He 
+obtained several patents related to the Resin Transfer Mold Process (RTM). Over the course of his career 
+he formed two companies: Composites Consulting in Sheboygan Falls, WI and Fiberglass, Tooling and 
+Specialties. He used his skills to renovate the White House Truman Balcony using polyester. He died 
+March 26, 2002.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Ed Michaels Papers</emph> contains papers, reports and newspaper 
+articles on resin transfer molding, including the renovation of the Truman balcony at the White House; 
+images (photographs and slides) from Michaels' career and the products he created; and videotapes.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <note><p>Collection was already processed upon receipt by &scrc_name;.  Notes below were provided with the collection.</p></note><p>Collection found in no order except the Polaroids which were arranged in two binders, titled Fiberglass Tooling RTM and Repair Rebuilding, and the slides. Slides are labeled and in order as left by Michaels. Arranged in series by format. Polaroids are filed in the order in which they were in the binders. [Processed 2006
+by Margaret O. Moore,
+      Donohue Group, Inc.,
+      Wethersfield, CT.]</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has numerous holdings in the areas of plastics and industrial design. Please refer to &subjindex; for a complete listing.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Business and Industry</subject>
+      <subject encodinganalog="650" source="local">Plastics</subject>
+      <persname encodinganalog="600" source="lcnaf">Michaels, Ed.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Glass fibers.</subject>
+      <subject encodinganalog="650" source="lcsh">Gums and resins, Synthetic.</subject>
+      <subject encodinganalog="650" source="lcsh">Plastics industry and trade.</subject>
+      <subject encodinganalog="650" source="lcsh">Plastics -- Molds.</subject>
+      <subject encodinganalog="650" source="lcsh">Automobiles -- Parts.</subject>
+      <subject encodinganalog="650" source="lcsh">Molding materials.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      
+      <genreform encodinganalog="655" source="aat">Beta (Betamax)</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Hi-8.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Slides (photographs)</genreform>
+      <genreform encodinganalog="655" source="aat">Reports.</genreform><genreform encodinganalog="655" source="aat">VHS.</genreform><genreform encodinganalog="655" source="aat">Videocassettes.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Inventors.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Manufacturers.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Ed Michaels Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Transfer from National Plastics Center and Museum, 11/06/2008.  Originally, gift of 
+        
+        <persname role="donor"> Mrs. Esther Michaels</persname> via Thomas E. Doyle.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Papers, reports, and articles</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <abstract>newspaper clippings, including on the Truman balcony renovation at the White House, and papers on resin transfer molding, FRP Manufacturing (Kohler, Inc.) and polyester technology (Koppers)</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Photographs</unittitle>
+          <unitdate type="inclusive" normal="1962/1989">1962-1989</unitdate>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Prints</unittitle>
+            <physdesc>
+              <extent>387 items</extent>
+            </physdesc>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Fiberglass plant, series A</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Fiberglass plant, series B</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Fiberglass production</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Fiberglass Tooling RTM" binder</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Michaels in his office</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Repair Rebuilding" binder</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <physdesc>
+                <extent>8 items</extent>
+              </physdesc>
+              <abstract>Banning High School, Ed Michaels with unidentified man, and workers handling plastic pieces</abstract>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Slides</unittitle>
+            <physdesc>
+              <extent>1198 items</extent>
+            </physdesc>
+          </did>
+			 <c03>
+            <did>
+              <unittitle>Bway Elixir doors/Alta Manufacturing</unittitle>
+              <unitdate type="inclusive" normal="1957/1967">c. 1962-1984</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">1</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Toledo Plant</unittitle>
+              <unitdate type="inclusive" normal="1970">1970</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">1</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Trips</unittitle>
+              <unitdate type="inclusive" normal="1970/1972">1970-1972</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">1</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>SPI</unittitle>
+              <unitdate type="inclusive" normal="1976">1976</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">1</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Fritz boat</unittitle>
+              <unitdate type="inclusive" normal="1976">1976</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">1</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>RTM  - molding, Plastark (?)</unittitle>
+              <unitdate type="inclusive" normal="1983">1983</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">1</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>White House gutter &amp; fascia</unittitle>
+              <unitdate type="inclusive" normal="1983">1983</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">1</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>SPI, Houston</unittitle>
+              <unitdate type="inclusive" normal="1984">1984</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">1</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Guard doors</unittitle>
+              <unitdate type="inclusive" normal="1985">1985</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">2</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>RTM (has identifying list)</unittitle>
+              <unitdate type="inclusive" normal="1979/1989">c. 1984-1987</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">2</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>RTM, misc.</unittitle>
+              <container type="Box">4</container>
+            <container type="Folder">2</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Assembly of doors</unittitle>
+              <unitdate type="inclusive" normal="1986">1986</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">2</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Raising/lowering device</unittitle>
+              <unitdate type="inclusive" normal="1985">1985</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">2</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Plenco machine</unittitle>
+              <unitdate type="inclusive" normal="1986">1986</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">2</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Artificial limb</unittitle>
+              <unitdate type="inclusive" normal="1986">1986</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">2</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Macair</unittitle>
+              <unitdate type="inclusive" normal="1986">1986</unitdate>
+            <container type="Box">4</container><container type="Folder">2</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Wet jet</unittitle>
+              <unitdate type="inclusive" normal="1986">1986</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">2</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Van</unittitle>
+              <container type="Box">4</container>
+            <container type="Folder">2</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Air shroud, Envirex (?), Macair</unittitle>
+              <container type="Box">4</container>
+            <container type="Folder">2</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mack Truck</unittitle>
+              <container type="Box">4</container>
+            <container type="Folder">2</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Wind blade</unittitle>
+              <unitdate type="inclusive" normal="1987">1987</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">3</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Helix I</unittitle>
+              <unitdate type="inclusive" normal="1987">1987</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">3</container></did>
+          </c03>          <c03>
+            <did>
+              <unittitle>RTM  (has identifying list)</unittitle>
+              <unitdate type="inclusive" normal="1987/1988">1987-1988</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">3</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Back of house &amp; garden, EEA, Oshkosk river trip</unittitle>
+              <unitdate type="inclusive" normal="1988">1988</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">3</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>RTM  (has identifying list)</unittitle>
+              <unitdate type="inclusive" normal="1988/1989">1988-1989</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">4</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Misc. raise/lowering device</unittitle>
+              <unitdate type="inclusive" normal="1988/1989">1988-1989</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">4</container></did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Unidentified</unittitle>
+              <unitdate type="inclusive" normal="1989">1989</unitdate>
+              <container type="Box">4</container>
+            <container type="Folder">4</container></did>
+          </c03>
+        <c03><did><unittitle>"Fiberglass tool"</unittitle><physdesc><extent>18 packets of 14-18 slides each</extent></physdesc><container type="Box">5</container></did></c03>
+			 <c03><did><unittitle>"Transmold"</unittitle><physdesc><extent>10 packets of 14-18 slides each</extent></physdesc><container type="Box">5</container></did></c03>
+			 <c03><did><unittitle>Miscellaneous</unittitle><abstract>companies represented include DuPont, Kawasaki, W.H. Brady, Yakima; may also include some personal slides</abstract><physdesc><extent>20 packets of 14-18 slides each</extent></physdesc><container type="Box">5</container></did></c03>
+          </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Videotapes</unittitle>
+        </did>
+        
+    <c02>
+
+        <did>
+
+            <unittitle>1A Resin Transfer Mold (RTM) at Heicom</unittitle>
+
+            <unitid>michaels_e_002</unitid>
+
+            <abstract>Birth of A new CO. 57m 45A, Fluidization bed, MRI for knee, cheese press lid. By N. Ed Michaels, Composites Consulting</abstract>
+
+            <physdesc>
+
+                <extent>VHS; running time 120:00</extent>
+
+            </physdesc>
+
+            <container type="Box">6</container>
+
+        </did>
+
+    </c02>
+
+    <c02>
+
+        <did>
+
+            <unittitle>Cheese Press Lid; Fluidization Bed; MRI No. 2A; Wind Blade</unittitle>
+
+            <unitid>michaels_e_006</unitid>
+
+            <physdesc>
+
+                <extent>8 mm Hi8 Video; running time 20:00</extent>
+
+            </physdesc>
+
+            <container type="Box">6</container>
+
+        </did>
+
+    </c02>
+
+    <c02>
+
+        <did>
+
+            <unittitle>Composites Consulting, Resin Transfer Mold (RTM) No. 1</unittitle>
+
+            <unitid>michaels_e_001</unitid>
+
+            <abstract>Formerly Fiberglass Tooling and Specialties, Inc. N. Ed Michaels.</abstract>
+
+            <physdesc>
+
+                <extent>VHS; running time 120:00</extent>
+
+            </physdesc>
+
+            <container type="Box">6</container>
+
+        </did>
+
+    </c02>
+
+    <c02>
+
+        <did>
+
+            <unittitle>Hauff Wind Blade (1st Edit)</unittitle>
+
+            <unitid>michaels_e_003</unitid>
+
+            <physdesc>
+
+                <extent>VHS; running time 120:00</extent>
+
+            </physdesc>
+
+            <container type="Box">6</container>
+
+        </did>
+
+    </c02>
+
+    <c02>
+
+        <did>
+
+            <unittitle>Resin Transfer Mold (RTM)</unittitle>
+
+            <unitid>michaels_e_005</unitid>
+
+            <physdesc>
+
+                <extent>Betamax</extent>
+
+            </physdesc>
+
+            <container type="Box">6</container>
+
+        </did>
+
+    </c02>
+
+    <c02>
+
+        <did>
+
+            <unittitle>Training Hand Lay Up in Puebla; Working on Bus Seats (Copy)</unittitle>
+
+            <unitid>michaels_e_004</unitid>
+
+            <physdesc>
+
+                <extent>VHS</extent>
+
+            </physdesc>
+
+            <container type="Box">6</container>
+
+        </did>
+
+    </c02>
+
+
+
+
+      </c01>
+    </dsc>	</archdesc>
+</ead>

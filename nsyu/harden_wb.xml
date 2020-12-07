@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="harden_wb">harden_wb</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">W. B. Harden Scrapbook</titleproper>
+            <subtitle>An inventory of the item at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2015-09-25" encodinganalog="Date">25 Sep 2015</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2015-09-25">25 Sep 2015</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Harden, W. B.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">W. B. Harden Scrapbook</unittitle>
+         <unitdate encodinganalog="245$f" normal="1916/1927" type="inclusive" label="Inclusive Dates: ">circa 1921-1922</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Scrapbook relating to two companies that manufactured presses for the textile and garment industry, Hoffman Machinery Company and Syracuse Triplex Presser Company, both located in Syracuse, New York.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4597829</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            Most in <language langcode="eng">English</language>, one or two items in <language langcode="spa">Spanish</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Hoffman Machinery was a company in Syracuse, New York, a manufacturer of "Sanitary Steam Knit Goods Presses" for the textile industry.  W. B. Harden was their advertising manager. [<emph render="italic">American Wool and Cotton Reporter</emph>, Nov. 10, 1921, p. 104.]  The Syracuse Triplex Presser Company produced garment presses and as of 1922 was "a comparatively new company." [<emph render="italic">Textile World</emph>, September 16, 1922, p. 37]  Harden's connection with this company is unknown.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">W. B. Harden Scrapbook</emph> consists of a large album containing advertising literature and correspondence pertaining to the Hoffman Machinery Company and the Syracuse Triplex Presser Company.  Both companies manufactured garment presses and/or fabric presses for the textile and garment industry.  A substantial amount of additional material is laid in.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Original order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject><subject encodinganalog="650" source="local">New York State</subject><persname encodinganalog="600" source="lcnaf">Harden, W. B.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Hoffman Machinery Company.</corpname><corpname encodinganalog="610" source="lcnaf">Syracuse Triplex Presser Company.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Business enterprises -- Syracuse (N.Y.)</subject><subject encodinganalog="650" source="lcsh">Sales promotion -- United States.</subject><subject encodinganalog="650" source="lcsh">Textile industry -- United States.</subject><subject encodinganalog="650" source="lcsh">Textile machinery industry -- Marketing -- United States.</subject>
+         <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- History.</geogname>
+         <genreform encodinganalog="655" source="aat">Advertisements.</genreform><genreform encodinganalog="655" source="aat">Brochures.</genreform><genreform encodinganalog="655" source="aat">Circulars (fliers)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>W. B. Harden Scrapbook, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2015.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+               
+               
+            <c02><did><unittitle>Scrapbook</unittitle><unitdate normal="1916/1927" type="inclusive">circa 1921-1922</unitdate><container type="Oversize">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

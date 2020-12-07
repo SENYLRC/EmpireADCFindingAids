@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.5, 5/26/2006 -->
+<!--Added description of how to enter revisions-->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="us" mainagencycode="NSyU" identifier="parkinson_ga">parkinson_ga</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">George A. Parkinson Papers</titleproper>
+				<subtitle>An inventory of his papers at Syracuse University</subtitle>
+			<author encodinganalog="Creator">MRR</author><sponsor>The adult education holdings are collectively known as the <lb/><extptr title="Alexander N. Charters Library of Resources for Educators of Adults" href="https://library.syr.edu/scrc/collections/areas/adult-ed.php" show="new"/>.</sponsor></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="2006-05-31" encodinganalog="Date">31 May 2006</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2006-05-31">31 May 2006</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+			<list>
+				<item></item>
+			</list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<persname encodinganalog="100">Parkinson, George A.</persname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">George A. Parkinson Papers</unittitle>
+			<unitdate encodinganalog="245$f" normal="1937/1963" type="inclusive" label="Inclusive Dates: ">1937-1963</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>.25 linear ft.</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">Speeches on adult education topics.</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="us" repositorycode="NSyU">149445</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+			</langmaterial>
+		</did>
+				
+		<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>George A. Parkinson was a member of the Milwaukee University of Wisconsin Extension (1937-1956) and director of the Milwaukee Teachers College (1958-1968).
+He served many posts as board member and officer of the Association of University Evening Colleges. He was active in bringing educational television to Milwaukee. He also served ETV both regionally and nationally	as Vice President of the Midwest ETV Association (1962- ) and as a board member of the National Instructional
+Television Library (1962-	).</p></bioghist>
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>The <emph render="bold">George A. Parkinson Papers</emph> consists of his speeches extending from 1937 to 1963, and ranging in subject matter from "The Role of the Evening College in Community Education," to "A Pattern of Higher Education for the State of Wisconsin" to "Education Beyond the High School and Where Vocation and Adult Education Fit Into the Picture."</p>
+		</scopecontent>
+		
+		<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>Speeches are arranged chronologically.</p>
+		</arrangement>
+		
+		<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>The library holds a considerable number of collections related to adult and continuing education.  Please refer to &subjindex; for a complete listing.</p><p>In particular, see also:</p><blockquote><p>  <extref href="../a/auec.htm">Association of University Evening Colleges (AUEC) Records</extref><lb/> <extref href="../n/nuea.htm">National University Extension Association (NUEA) Records</extref>.</p></blockquote>
+		</relatedmaterial>
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Adult education</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Parkinson, George A.</persname>
+			
+            <corpname encodinganalog="610" source="lcnaf">Association of University Evening Colleges (U.S.)</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Adult education -- United States.</subject><subject encodinganalog="650" source="lcsh">Adult education -- Wisconsin.</subject><subject encodinganalog="650" source="lcsh">Educators -- United States.</subject><subject encodinganalog="650" source="lcsh">Evening and continuation schools -- United States.</subject>
+			
+            <genreform encodinganalog="655" source="aat">Speeches (documents)</genreform>
+			<occupation encodinganalog="656" source="lcsh">Educators.</occupation>
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p>George A. Parkinson Papers, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<!--<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>### (MARC 541 and/or  561)</p>
+		</acqinfo>-->
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Speeches</unittitle>
+				<!--C01 @LEVEL must be set to 'series' to show up in TOC.--></did><c02>
+					<did>
+						<unitdate normal="1937-02-02" type="inclusive">2 Feb 1937</unitdate><unittitle>"Some Aspects of Adult Education" 
+</unittitle>
+						
+						<abstract>ts, 7 pp.</abstract><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unitdate normal="1937" type="inclusive"> [1937]</unitdate><unittitle>"Report on the Investigation of Evening School Students at the Milwaukee Center in the Spring of 1937"</unittitle>
+						
+						<abstract> ts, 8 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unitdate normal="1938-02-09" type="inclusive">9 Feb 1938</unitdate><unittitle>"Adult Education for Adults" </unittitle>
+						
+						<abstract>ts, 15 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unitdate normal="1933/1943" type="inclusive"> [ca.1938]</unitdate><unittitle>"Modern Aspects of Adult Education"</unittitle>
+						
+						<abstract> ts, 13 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unitdate normal="1946-03-26" type="inclusive">26 Mar 1946</unitdate><unittitle>"What Does the Veteran of Foreign Wars Expect of the Public Schools?" </unittitle>
+						
+						<abstract>ts, 4 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unitdate normal="1946-04-08" type="inclusive">8 Apr 1946</unitdate><unittitle>"Should an Additional Year Be Added to the Present Four-Year High School Curriculum?"
+</unittitle>
+						
+						<abstract>ts, 3 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unitdate normal="1946-12-10" type="inclusive">10 Dec 1946</unitdate><unittitle>"What Is the Meaning of Education?"</unittitle>
+						
+						<abstract> ts, 3 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unitdate normal="1946-12-19" type="inclusive">19 Dec 1946</unitdate><unittitle>"The Philosophy of an Educator"</unittitle>
+						
+						<abstract> ts, 10 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unitdate normal="1947-07-31" type="inclusive">31 Jul 1947</unitdate><unittitle>"Who Should Go to College"  </unittitle>
+						
+						<abstract>ts, 7 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02><did><unitdate normal="1947-11-11" type="inclusive">11 Nov 1947</unitdate><unittitle>"The Role of the Evening College in Community
+Education"</unittitle><abstract>ts, 3 pp. </abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1947-11-17" type="inclusive">17 Nov 1947</unitdate><unittitle>"A Pattern of Higher Education for the State
+of Wisconsin" </unittitle><abstract>ts, 16 pp. </abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1949-01-16" type="inclusive">16 Jan 1949</unitdate><unittitle>"A Mathematician Looks at Education"</unittitle><abstract> ts, 8 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1956" type="inclusive">1956</unitdate><unittitle>"Patterns for the Future"</unittitle><abstract> ts, 10 pp. </abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1958-02-18" type="inclusive">18 Feb 1958</unitdate><unittitle>"Education versus Social and Industrial Change" </unittitle><abstract>ts, 5 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1958-09-15" type="inclusive">15 Sep 1958</unitdate><unittitle>"Education and Survival in an Atomic Age" </unittitle><abstract>ts, 9 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1959-01-26" type="inclusive">26 Jan 1959</unitdate><unittitle>Commencement Address at Milwaukee Boy's Technical. High School</unittitle><abstract>ts, 9 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1959-03-18" type="inclusive">18 Mar 1959</unitdate><unittitle>"Education versus Social and Industrial Change"</unittitle><abstract> ts, 5 pp. (2 copies)
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1959-09-08" type="inclusive">8 Sep 1959</unitdate><unittitle>"Education Beyond High School and Where the Vocational and Adult Schools Fit into the Picture"</unittitle><abstract> ts, 8 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1961-04-27" type="inclusive">27 Apr 1961</unitdate><unittitle>"Adult Education and Automation" </unittitle><abstract>ts, 4 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1961-06-06" type="inclusive">6 Jun 1961</unitdate><unittitle>"Education and Social and Industrial Change" </unittitle><abstract> ts, 9 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1962-04-10" type="inclusive">10 Apr 1962</unitdate><unittitle>"Some Reflections on Basic Trends Affecting Our Educational Patterns" </unittitle><abstract>ts,
+9 pp.
+</abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1962-10-09" type="inclusive">9 Oct 1962</unitdate><unittitle>"Some Aspects of Vocational and Technical Education"
+</unittitle><abstract> ts, 8 pp.</abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unitdate normal="1963" type="inclusive">[Spring 1963]</unitdate><unittitle>"The Philosophy and Operation of the Milwaukee Vocational and Adult. Schools"</unittitle><abstract> ts, 7 pp.</abstract><container type="Box">1</container>
+						
+						
+						
+					</did></c02></c01>
+		</dsc>
+	</archdesc>
+</ead>

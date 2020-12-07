@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 --><!-- Added Tube as container type -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="mcdonald_dl" mainagencycode="NSyU">mcdonald_dl</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">David Lamar McDonald Papers</titleproper>
+        <subtitle>An inventory of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2009-10-05">5 Oct 2009</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+           
+        
+        <date normal="2009-10-05">5 Oct 2009</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>25 Sep 2017 - processed (MRC/PJM)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository encodinganalog="852$a" id="scrc" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">McDonald, David L. (David Lamar), 1906-1997.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">David L. McDonald Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1930/1967" type="inclusive">1930-1967</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>2 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Audiotapes, correspondence, printed material, other items from the American admiral.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2709837</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>David L. McDonald (1906-1997) was a United States Navy officer for more than forty years.  He attended the U.S. Naval 
+	  Academy (class of 1928) and later studied at the National War College (1950-1951).   
+	  Commissioned as an ensign in 1928, he was designated a naval aviator in 1931 and eventually rose to the rank 
+	  of admiral in 1963.  He served aboard several navy ships early in his career and commanded three others, including the U.S.S. Coral Sea; other postings included instructor at the Pensacola Naval Air Station, commander of the Sixth Fleet, 
+	  chief of Naval Operations, and commander of U.S. Naval forces in Europe.   He saw active duty during World War II and Vietnam, and receivedthe Navy Distinguished Service Medal (twice), the
+Legion of Merit, and a 
+Bronze Star.  He retired with the rank of Admiral.  
+	  </p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The
+        
+        <emph render="bold">David L. McDonald Papers</emph> consists of audiorecordings, subject files, and writings.</p>
+      <p>
+        <emph render="bold">Audiorecordings</emph> include  conferences, interviews, and news briefings.</p>
+      <p>
+        <emph render="bold">Subject files</emph> contains official Navy biographical material and a few clippings about McDonald.</p>
+      <p>
+        <emph render="bold">Writings</emph> contains addresses and remarks delivered on various occasions, articles by McDonald, and statements 
+		 before various Congressional committees.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Arranged by type and within that by title or subject, with the exception of the audiotapes, which are arranged chronologically.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has numerous collections relating to military history; please refer to &subjindex; for 
+		 a complete listing.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.-->
+	 <!--<separatedmaterial encodinganalog="544 0">
+        <head>Separated Material</head>
+        <p>## OPT (MARC 544 0)</p>
+     </separatedmaterial>-->
+      
+     <!--<otherfindaid encodinganalog="555">
+        <head>Other Related Finding Aids</head>
+        <p>## OPT (MARC 555)</p>
+     </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Military history</subject>
+      <persname encodinganalog="600" source="lcnaf">McDonald, David L. (David Lamar), 1906-1997.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">United States.  Navy -- Officers.</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         
+        <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Audiotapes.</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Speeches (documents)</genreform>
+      <occupation encodinganalog="656" source="lcsh">Admirals.</occupation>
+    
+    
+        <!--<function encodinganalog="657">##</function>-->
+	 </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>David L. McDonald Papers,
+        
+        <lb/>&su_name;</p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of
+        
+        <persname role="donor">H. E. Hetu</persname>, 1965.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+        <head>Appraisal Information</head>
+        <p>## OPT (MARC 583)</p>
+     </appraisal>-->
+      
+     <!--<accruals encodinganalog="584">
+        <head>Accruals</head>
+        <p>## OPT (MARC 584)</p>
+     </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+      <c01 level="series">
+        <did>
+          <unittitle>Audiorecordings</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_001</unitid>
+            <unittitle>Chief of Naval Operations Press Conference, Naval War College</unittitle>
+            <unitdate normal="1964-01-16">01/16/1964</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_002</unitid>
+            <unittitle>Chief of Naval Operations Admiral McDonald Press Conference, AHO
+                     Building, United States Naval Air Station, Atlanta</unittitle>
+            <unitdate normal="1930/1967">02/22/64</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_003</unitid>
+            <unittitle>Georgia’s Admiral</unittitle>
+            <unitdate normal="1964-02-22">02/22/1964</unitdate>
+            <abstract>Audio portion of video-tape program recorded interview of Chief of
+                     Naval Operations Admiral David L. McDonald at WSB-TV Atlanta, Georgia conducted
+                     by Ray Moore, News Director.</abstract>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_004</unitid>
+            <unittitle>Admiral McDonald Press Conference at US Naval Postgraduate School,
+                     Monterey, California</unittitle>
+            <unitdate normal="1964-03-13">03/13/1964</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_005</unitid>
+            <unittitle>Chief of Naval Operations New Briefing, Ft. Leavenworth, Kansas</unittitle>
+            <unitdate normal="1964-03-19">03/19/1964</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_006</unitid>
+            <unittitle>Chief of Naval Operations Press Conference, Norfolk, Virginia</unittitle>
+            <unitdate normal="1964-04-18">04/18/1964</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_007</unitid>
+            <unittitle>Chief of Naval Operations Conference at Armed Forces Staff College,
+                     Norfolk, Virginia</unittitle>
+            <unitdate normal="1964-04-22">04/22/1964</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_008</unitid>
+            <unittitle>Chief of Naval Operations Conference, Tulsa, Oklahoma</unittitle>
+            <unitdate normal="1965-05-14">05/14/1965</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_009</unitid>
+            <unittitle>Press Conference of Admiral David L. McDonald, Chief of Naval
+                     Operations. Buenos Aires, Argentina</unittitle>
+            <unitdate normal="1965-06-02">06/02/1965</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_010</unitid>
+            <unittitle>Chief of Naval Operations Press Conference in Rio De Janeiro, Brazil</unittitle>
+            <unitdate normal="1965-06-03">06/03/1965</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_011</unitid>
+            <unittitle>Chief of Naval Operations Press Conference at Naval Air Stations in
+                     Alameda and Lemoore, California</unittitle>
+            <unitdate normal="1965-08-02">08/02/1965</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_012</unitid>
+            <unittitle>Chief of Naval Operations Press Conference in Seattle, Washington</unittitle>
+            <unitdate normal="1965-08-27">08/27/1965</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_013</unitid>
+            <unittitle>David Lamar McDonald Press Conference at New Orleans, Louisiana</unittitle>
+            <unitdate normal="1965-11-25">11/25/1965</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_014</unitid>
+            <unittitle>Chief of Naval Operations Press Conference at the Conrad Hilton Hotel,
+                     Chicago, Illinois before the Armed Forces Benefit Football Game</unittitle>
+            <unitdate normal="1966-09-02">09/02/1966</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_015</unitid>
+            <unittitle>Chief of Naval Operations Press Conference at Fort Garry Hotel, prior
+                     to Chief of Naval Operations speech to the Annual Convention of the Canadian
+                     Navy League, Winnipeg, Manitoba, Canada</unittitle>
+            <unitdate normal="1966-09-29">09/29/1966</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_016</unitid>
+            <unittitle>Remarks by Admiral David L. McDonald, United States Navy, Chief of
+                     Naval Operations at the Public Affairs Workshop, Pentagon, Washington, DC</unittitle>
+            <unitdate normal="1966-10-18">10/18/1966</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_018</unitid>
+            <unittitle>Chief of Naval Operations Interview by Joe Campbell of the Mutual
+                     Broadcasting System in Admiral’s office</unittitle>
+            <unitdate normal="1966-11-22">11/22/1966</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_019</unitid>
+            <unittitle>Chief of Naval Operations on NBC, Washington, DC (Today Show)</unittitle>
+            <unitdate normal="1966-11-29">11/29/1966</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_020</unitid>
+            <unittitle>Chief of Naval Operations appearance on WGTV - “Men and Ideas”</unittitle>
+            <unitdate normal="1967-01-24">01/24/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_021</unitid>
+            <unittitle>Arrival/Press Conference. Sydney, Australia. Chief of Naval Operations
+                     - Coral Sea Celebration</unittitle>
+            <unitdate normal="1967-04-30">04/30/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_022</unitid>
+            <unittitle>Arrival/Press Conference. Canberra, Australia. Chief of Naval
+                     Operations - Coral Sea Celebration</unittitle>
+            <unitdate normal="1967-05-01">05/01/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_023</unitid>
+            <unittitle>Arrival/Press Conference. Brisbane, Australia. Chief of Naval
+                     Operations - Coral Sea Celebration</unittitle>
+            <unitdate normal="1967-05-03">05/03/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_024</unitid>
+            <unittitle>Arrival/Press Conference. Adelaide, Australia. Chief of Naval
+                     Operations - Coral Sea Celebration</unittitle>
+            <unitdate normal="1967-05-10">05/10/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_025</unitid>
+            <unittitle>Arrival/Press Conference. Melbourne, Australia. Chief of Naval
+                     Operations - Coral Sea Celebration</unittitle>
+            <unitdate normal="1967-05-11">05/11/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_026</unitid>
+            <unittitle>Television Interview Chief of Naval Operations ; Coral Sea Visit,
+                     Melbourne, Australia</unittitle>
+            <unitdate normal="1967-05-12">05/12/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_027</unitid>
+            <unittitle>Press Conference. Hobart, Australia. Chief of Naval Operations, Coral
+                     Sea Celebration</unittitle>
+            <unitdate normal="1967-05-13">05/13/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_030</unitid>
+            <unittitle>Press Conference, Christ Church, New Zealand, Chief of Naval
+                     Operations - Coral Sea Celebration</unittitle>
+            <unitdate normal="1967-05-15">05/15/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_028</unitid>
+            <unittitle>Arrival/Press Conference. Perth, [Australia]. Chief of Naval
+                     Operations, Coral Sea Celebration</unittitle>
+            <unitdate normal="1967-05-17">05/17/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_029</unitid>
+            <unittitle>News Conference, Wellington, New Zealand, Chief of Naval Operations -
+                     Coral Sea Celebration</unittitle>
+            <unitdate normal="1967-05-17">05/17/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_031</unitid>
+            <unittitle>Chief of Naval Operations Press Conference, Christ Church, New
+                     Zealand, Chief of Naval Operations - Coral Sea Celebration</unittitle>
+            <unitdate normal="1967-05-18">05/18/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_032</unitid>
+            <unittitle>Chief of Naval Operations Farewell Luncheon at Sheraton Park (part 1)</unittitle>
+            <unitdate normal="1967-07-31">07/31/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_033</unitid>
+            <unittitle>Chief of Naval Operations Farewell Luncheon at Sheraton Park (part 2)</unittitle>
+            <unitdate normal="1967-07-31">07/31/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_034</unitid>
+            <unittitle>Chief of Naval Operations Farewell Luncheon at Sheraton Park (part 3)</unittitle>
+            <unitdate normal="1967-07-31">07/31/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_035</unitid>
+            <unittitle>Chief of Naval Operations Farewell Luncheon at Sheraton Park (part 4)</unittitle>
+            <unitdate normal="1967-07-31">07/31/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_036</unitid>
+            <unittitle>Chief of Naval Operations - Change of Command at Naval Academy (part
+                     1, copy)</unittitle>
+            <unitdate normal="1967-08-01">08/01/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_037</unitid>
+            <unittitle>Chief of Naval Operations - Change of Command at Naval Academy (part
+                     2, copy)</unittitle>
+            <unitdate normal="1967-08-01">08/01/1967</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_017</unitid>
+            <unittitle>Chief of Naval Operations Department of Defense Press Conference,
+                     Pentagon, Washington, DC</unittitle>
+            <unitdate normal="1996-11-16">11/16/1996</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_038</unitid>
+            <unittitle>Interview of Admiral McDonald by Mr. Watson (part 1)</unittitle>
+            <unitdate normal="1930/1967">undated</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_039</unitid>
+            <unittitle>Interview of Admiral McDonald by Mr. Watson (part 2)</unittitle>
+            <unitdate normal="1930/1967">undated</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_040</unitid>
+            <unittitle>Chief of Naval Operations Address. Australia Version</unittitle>
+            <unitdate normal="1930/1967">undated</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_041</unitid>
+            <unittitle>Chief of Naval Operations Address. New Zealand Version</unittitle>
+            <unitdate normal="1930/1967">undated</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid>mcdonald_dl_042</unitid>
+            <unittitle>Department of Defense Public Affairs Audio -Visual Division audio tape
+                     recording of Admiral McDonald, Chief of Naval Operation, Guest of Honor</unittitle>
+            <unitdate normal="1930/1967">undated</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Subject files</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Biographical material</unittitle>
+            <abstract>photographs, summary of naval service, official Navy
+                     biography</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Clippings about</unittitle>
+            <unitdate normal="1963/1965" type="inclusive">1963-1965</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Writings</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Addresses and remarks</unittitle>
+            <abstract>change of command ceremonies, ship launches, U.S. Navy and Naval Academy
+                     events, various organizations' conferences and meetings (including officers'
+                     wives), senior Swedish military officers, etc.</abstract>
+            <unitdate normal="1963/1965" type="inclusive">1963-1965</unitdate>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Articles by</unittitle>
+            <abstract>Seabees, future of the Navy, etc.</abstract>
+            <unitdate normal="1964" type="inclusive">1964</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Interviews</unittitle>
+            <abstract>Today show, U.S. News and World Report</abstract>
+            <unitdate normal="1964/1965" type="inclusive">1964-1965</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Statements to Congressional committees</unittitle>
+            <abstract>Joint Committee on Atomic Energy, Senate Armed Services committee,
+                     Appropriations Committee, others; topics include military posture, military
+                     appropriations, and nuclear propulsion</abstract>
+            <unitdate normal="1963/1965" type="inclusive">1963-1965</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

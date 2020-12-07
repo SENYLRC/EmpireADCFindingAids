@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.6, 9/12/2006 -->
+<!-- Fixed countrycode case -->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="US" mainagencycode="NSyU" identifier="bullins_e">bullins_e</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Ed Bullins Collection</titleproper>
+				<subtitle>An  inventory of his papers at Syracuse University</subtitle>
+			<author encodinganalog="Creator">MRR</author></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="2006-11-13" encodinganalog="Date">13 Nov 2006</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2006-11-13">13 Nov 2006</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+			<list>
+				<item>21 Sep 2007 - additions (MRC)</item><item>7 Jan 2008 - additions (MRC)</item>
+			</list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<persname encodinganalog="100">Bullins, Ed</persname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Ed Bullins Collection</unittitle>
+			<unitdate encodinganalog="245$f" normal="1965/1979" type="inclusive" label="Inclusive Dates: ">early 1970s?</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 folders (SC)</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">Typscripts of various plays, published and unpublished.</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2484308</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+			</langmaterial>
+		</did>
+				
+		<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>Ed Bullins was born July 2, 1935, in Philadelphia, PA, the son of Edward and Bertha Marie (Queen) Bullins.  Although an excellent student, in junior high school he was transferred to an inner city school and joined a gang, but a near-death from a street-fight stabbing altered his outlook.  Still unsure of his calling, he worked several jobs and then joined the U.S. Navy (1952-55).  After his discharge from the Navy he left Philadelphia for Los Angeles, where he earned his G.E.D. and began to seriously work on his writing.  He studied at  a number of colleges including Los Angeles City College, San Francisco State College (now University), New York School of Visual Arts, New School Extension, Vista College, and University of California Berkeley Extension.  </p><p>Bullins began writing plays as a political activist in the mid-1960s; he also served as associate director of Harlem's New Lafayette Theatre and edited the theater magazine, <emph render="italic">Black Theatre</emph>.  He and a few other young black activists (including Huey Newton and Bobby Seale) created a militant cultural-political organization called Black House, and when Newton and Seale formed California's Black Panther Party, Bullins served as its Minister of Culture.  Bullins' plays, exploring the disillusionment and frustration of ghetto life, were written expressly for and about blacks and he was a militant member of the black arts movement, at one point advocating cultural separatism between races.  Although he was outspokenly dismissive of white aesthetic standards ("It doesn't matter whether they appreciate it. It's not for them."), mainstream critics praised his work; in the 1970s Bullins won three Off-Broadway Awards for distinguished playwriting, a Drama Critics Circle Award, and several prestigious Guggenheim and Rockefeller playwriting grants.</p><p>He eventually received a B.A. from Antioch University (1989) and an M.F.A. from San Francisco State University (1994). In his forty-year career he has written more than ninety plays, started several theatre companies, and been a founding member of several writing workshops. He has also written under the names Kingsley B. Bass and Kingsley B. Bass, Jr.</p></bioghist>
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>The Ed Bullins Collection consists of typescripts.  First is a collection of ten one-act plays.  All but one of the plays (<emph render="italic">The Game of Adam and Eve</emph>) were later published, though the published versions are not necessarily identical to the versions which appear in this collection.  Second is <emph render="italic">Miss Marie</emph>.</p>
+		</scopecontent>
+		
+		<!--<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>## OPT (MARC 351$a)</p>
+		</arrangement>-->
+		
+		<!--<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>## (MARC 544 1)</p>
+		</relatedmaterial>-->
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head>
+<subject source="local">African Americans</subject>
+<subject encodinganalog="650" source="local">Dance and theatre</subject>
+<subject encodinganalog="650" source="local">Radicalism</subject>
+<subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Bullins, Ed.</persname>
+			
+            
+            <title encodinganalog="730" source="lcnaf">How do you do.</title><title encodinganalog="730" source="lcnaf">Dialect determinism.</title><title encodinganalog="730" source="lcnaf">It has no choice.</title><title encodinganalog="730" source="lcnaf">A minor scene.</title><title encodinganalog="730" source="lcnaf">The corner.</title><title encodinganalog="730" source="lcnaf">The Gentleman caller.</title><title encodinganalog="730" source="lcnaf">The helper.</title><title encodinganalog="730" source="lcnaf">The man who dug fish.</title><title encodinganalog="730" source="lcnaf">Miss Marie.</title><title encodinganalog="730" source="lcnaf">The corner.</title><title encodinganalog="730" source="lcnaf">The game of Adam and Eve.</title><title encodinganalog="730" source="lcnaf">The theme is blackness.</title>
+            
+			
+            <subject encodinganalog="650" source="lcsh">African American dramatists.</subject><subject encodinganalog="650" source="lcsh">American literature -- African American authors.</subject><subject encodinganalog="650" source="lcsh">Black Arts Movement -- United States.</subject><subject encodinganalog="650" source="lcsh">One-act plays -- American.</subject><subject encodinganalog="650" source="lcsh">Radicalism in literature.</subject><subject encodinganalog="650" source="lcsh">Revolutionary literature -- American.</subject>
+<genreform encodinganalog="655" source="aat">Scripts (documents)</genreform>
+			<occupation encodinganalog="656" source="lcsh">Dramatists.</occupation>
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p> Ed Bullins Collection, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>Purchased from Adah C. Blackman Fund, Oct. 2006.</p>
+		</acqinfo>
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Writings</unittitle>
+				<!--C01 @LEVEL must be set to 'series' to show up in TOC.--></did>
+				<c02>
+					<did>
+						<unittitle>The Corner</unittitle>
+						
+						<unitdate normal="1971" type="inclusive">undated</unitdate><container type="SC">179</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Miss Marie (#4 of the Twentieth Century Cycle)</unittitle>
+						
+						<unitdate normal="1971" type="inclusive">1971</unitdate><physdesc><extent>1 volume</extent></physdesc><container type="SC">179</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Ten One Act Plays</unittitle>
+						
+						<abstract>Plays are: How do you do, Dialect determinism, It has no choice, A minor scene, The Gentleman caller, The helper, The man who dug fish, The corner, The game of Adam and Eve, The theme is blackness</abstract><unitdate normal="1965/1975" type="inclusive">early 1970s?</unitdate><physdesc><extent>1 volume</extent></physdesc><container type="SC">179</container>
+						
+						
+						
+					</did>
+				</c02>
+			</c01>
+		</dsc>
+	</archdesc>
+</ead>

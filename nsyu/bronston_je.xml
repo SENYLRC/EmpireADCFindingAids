@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="bronston_je">bronston_je</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Jack E. Bronston Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-04-09" encodinganalog="Date">9 Apr 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-04-09">9 Apr 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>28 Sep 2015 - processed (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Bronston, Jack E.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Jack Bronston Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1940/1967" type="inclusive" label="Inclusive Dates: ">before 1967</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>3 folders</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">New York State Senator.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2744139</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Jack E. Bronston (1922- ) was an American lawyer and politician.   A Democrat, Bronston served in the U.S. Marine Corps during World War II and was a member of New York state senate for nearly twenty years (1959-1978), representing three different districts (5th District, 1959-1965; 11th District, 1966; 12th District, 1967-1978).</p><p>[Biographical sketch adapted from information found in the online resource "The Political Graveyard."]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Jack E. Bronston Collection</emph> consists of correspondence, memorabilia, and writings.  <emph render="bold">Correspondence</emph> contains form letters to constituents.  <emph render="bold">Memorabilia</emph> contains photographs.  <emph render="bold">Writings</emph> contains position papers and reports by Bronston as well as one commissioned by him.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by type.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">New York State</subject>
+			<subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+			<persname encodinganalog="600" source="lcnaf">Bronston, Jack E.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Democratic Party (N.Y.)</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Legislators -- New York (State)</subject>
+         <geogname encodinganalog="651" source="lcsh">New York (State) -- Politics and government.</geogname>
+         
+         
+         
+         <genreform encodinganalog="655" source="aat">Form letters.</genreform><genreform encodinganalog="655" source="aat">Reports.</genreform>
+         
+         <occupation encodinganalog="656" source="lcsh">Lawyers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Jack E. Bronston Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Jack E. Bronston</persname>, 1967.  </p><p>Photographs gift of <persname role="donor">Leslie Hollingsworth</persname>, 2014.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Form letter</unittitle><abstract>includes reproductions of clippings about the Democratic party in New York</abstract><container type="SC">765</container><container type="Folder">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Photographs</unittitle><abstract>2 originals, one of Bronston in uniform, and 1 printed brochure with text</abstract><container type="SC">765</container><container type="Folder">2</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02><did><unittitle>Papers, reports, etc.</unittitle><abstract>printed material, reproductions, one typescript carbon; topics include two-year colleges in New York, education for the 1960s, the 1966 gubernatorial campaign, budget proposals, urban renewal programs, encouraging witnesses to report/intervene, etc.</abstract><unitdate normal="1950/1965" type="inclusive">circa 1955-1960</unitdate><container type="SC">765</container><container type="Folder">3</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.9, 7/18/2007--><!-- Changed entity files to txt rather than xml, don't suppose it matters which they are (?) -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="washington_ha" mainagencycode="NSyU">washington_ha</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Henry A. Washington Papers</titleproper>
+        <subtitle>An inventory pf his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">PRB</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1998-06">Jun 1998</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2007-12-12">12 Dec 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "Dec 2007 - converted to EAD (MRC)"-->
+    <revisiondesc>
+      <list>
+        <item>5 Feb 2016 -  2 omitted folders added to inventory (MRC)</item><item>9 Feb 2016 - rehoused, inventory updated (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Washington, Henry A.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Henry A. Washington Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1947/1986" type="inclusive">1947-1986</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>2.5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Spanning 1947 to 1986, comprises biographical material, 
+correspondence, and memorabilia of the African-American community leader and physician and his wife, Evelyn T. Washington.  
+The first African-American physician to establish a permanent practice in Syracuse, New York, Dr. Washington has been 
+called one of "Syracuse's black pioneers."</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2580663</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Henry A. Washington (1906-2001) was an African-American physician and active community leader in Syracuse, New York.  </p>
+      <p>Washington grew up in Tennessee and earned his medical degree from Howard University.     The first 
+African-American physician to establish a permanent practice in Syracuse, New York, Dr. Washington has been 
+called one of "Syracuse's black pioneers." (
+        
+        <emph render="italic">Syracuse Herald American</emph>, 2 Feb 1986)   He was a member of numerous medical and civil rights organizations, including the American Civil Liberties Union, The National Association for the Advancement of Colored People (NAACP), the American Red Cross, the Syracuse Academy of Medicine and the Onondaga County Medical Society.</p>
+      <p>Over the years Washington was recognized numerous times, receiving awards from the D unbar Center, the local NAACP and Mayor Thomas Young, and in 1991 the Urban League of Onondaga County presented him with the Harriet Tubman award.  Morrisville State College's Dr. Henry Washington Award, given annually, is 
+named in his honor.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Henry A. Washington Papers</emph> comprises 
+biographical material, correspondence, and memorabilia of the African 
+American community leader and physician and his wife, Evelyn 
+T. Washington.</p>
+      <p>
+        <emph render="bold">Biographical material</emph> consists of articles about Dr. Washington 
+and a copy of Mrs. Washington's curriculum vitae.</p>
+      <p>
+        <emph render="bold">Correspondence-subject files</emph> reflect 
+the variety of civic, social, cultural, and educational organizations 
+in which Dr. and Mrs. Washington have participated.  The collection 
+contains incoming and outgoing letters and printed material relating 
+to the Chez-Nous Club, Community Folk Art Gallery, Syracuse Celebrators' 
+Club, the Syracuse Museum of Fine Arts, the Syracuse Chapter of the 
+N.A.A.C.P., Syracuse University's Affirmative Action program, and the 
+Urban League of Onondaga County.</p>
+      <p>Issues of a number of African American newspapers constitute the 
+bulk of 
+        
+        <emph render="bold">Memorabilia</emph>. Also included are obituary notices and funeral 
+programs of friends and colleagues of the Washingtons.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Correspondence-subject files are arranged alphabetically by name.  Memorabilia is arranged 
+alphabetically by type.</p>
+    </arrangement>
+    <!-- <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial> -->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+    <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>Some printed material from the collection has been retained in the 
+Martin Luther King, Jr. Library.  Sound recordings have been sent to the 
+Belfer audio Archive, and a number of published works have been catalogued 
+separately in the Library's rare books collection.</p>
+    </separatedmaterial>
+    <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">African Americans</subject>
+      <subject encodinganalog="650" source="local">New York State</subject>
+      <subject encodinganalog="650" source="local">Science and medicine</subject><!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+      <persname encodinganalog="600" source="lcnaf">Washington, Henry A.</persname>
+      <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <!-- <corpname encodinganalog="610" source="lcnaf">##</corpname> -->
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+      <subject encodinganalog="650" source="lcsh">African American physicians.</subject>
+      <subject encodinganalog="650" source="lcsh">African Americans -- New York (State) -- Syracuse.</subject>
+      <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <occupation encodinganalog="656" source="lcsh">Physicians.</occupation>
+    
+    
+         <!-- <function encodinganalog="657">##</function> -->
+</controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Henry A. Washington Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of Henry A. Washington, 1997 to the Martin Luther King, Jr. Library and 
+transferred,  in part, to the Department of Special Collections, 1998.</p>
+    </acqinfo>
+    <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Biographical</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence/subject files</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Alexander, Lee</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Atlanta, Georgia</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bishop Forey Foundation</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Black History Month</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Chez-Nous Club (Syracuse, N.Y.)</unittitle>
+            <physdesc>
+              <extent>6 of 7 folders</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Chez-Nous Club (Syracuse, N.Y.)</unittitle>
+            <physdesc>
+              <extent>1 of 7 folder</extent>
+            s</physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02><c02>
+          <did>
+            <unittitle>Community Folk Art Gallery  (Syracuse, N.Y.) </unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Crusade for Opportunity in Syracuse and Onondaga County, Inc. </unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>DuBois, W. E. B. </unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dunbar Association, Inc. </unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dunham, Clarence E. </unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Farrakhan, Louis</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02 id="fnuls">
+          <did>
+            <unittitle>Friends of National Urban League Sponsoring Committee (Syracuse, N.Y.)</unittitle>
+            <container type="Box">2</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="uloc">Urban League of Onondaga County, Inc.</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Howard University</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Human Rights Commission of Syracuse and Onondaga County</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Interdenominational Ministerial Alliance of Syracuse and Vicinity</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02 id="mcdi">
+          <did>
+            <unittitle>Modern Community Developers, Inc. </unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>National Council of Negro Women (N.C.N.W.), Syracuse Section</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>National Association for the Advancement of Colored People  (NAACP), Syracuse/Onondaga Chapter</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New York State Commission Against Discrimination</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Omega Psi Phi Fraternity, Inc. </unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Onondaga Community College</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Recreation</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Robinson, Jackie</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="mcdi">Modern Community Developers, Inc.</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Southside Preparatory Association, Inc. </unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse Ballet Theatre, Inc.</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse Black Leadership Congress</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>		  		  
+        <c02>
+          <did>
+            <unittitle>Syracuse Celebrators Club</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse City School District</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse Committee on Racial Equality (C.O.R.E.) </unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse Minority Professional Action Conference, Inc. </unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse Museum of Fine Arts</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse University</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Thornden Park Association  (Syracuse, N.Y.) </unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>United Community Chest and Council of Onondaga County, Inc. </unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02 id="uloc">
+          <did>
+            <unittitle>Urban League of Onondaga County, Inc.</unittitle>
+            <physdesc>
+              <extent>1 folder of 3</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+          <note>
+            <p>see also 
+              
+              <ref target="fnuls">Friends of National Urban League Sponsoring Committee</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Urban League of Onondaga County, Inc.</unittitle>
+            <physdesc>
+              <extent>2 folders of 3</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+          
+        </c02><c02>
+          <did>
+            <unittitle>WCNY-TV</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Williams, Annamae</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Willie, Charles V. </unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Woodruff, Hale</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wortley, George</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Memorabilia</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Printed material</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Clippings</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Obituary notices</unittitle>
+                <container type="Box">4</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Miscellaneous</unittitle>
+                <container type="Box">4</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Newspaper issues and reports</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">Atlanta Daily World</emph>
+                </unittitle>
+                <container type="Box">4</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">The Black Voice</emph>
+                </unittitle>
+                <container type="Box">4</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">Heritage Newsmagazine</emph>
+                </unittitle>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">Home Town News</emph>
+                </unittitle>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">The Impartial Citizen</emph>
+                </unittitle>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">In Touch: Central New York's Minority Magazine</emph>
+                </unittitle>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">Model Neighborhood Report</emph>
+                </unittitle>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">Neighborhood Report</emph>
+                </unittitle>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">The Liberated Voice</emph>
+                </unittitle>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">Salt: The News Magazine of Metropolitan Syracuse </emph>
+                </unittitle>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">The Syracuse Banner</emph>
+                </unittitle>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">The Syracuse Gazette</emph>
+                </unittitle>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>
+                  <emph render="italic">The Syracuse Sun</emph>
+                </unittitle>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Programs: funeral services for others</unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Miscellany</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous memorabilia</unittitle>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

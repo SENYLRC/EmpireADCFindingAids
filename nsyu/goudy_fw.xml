@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 --><!-- Added Tube as container type -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="goudy_fw" mainagencycode="NSyU">goudy_fw</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Frederic W. Goudy Collection</titleproper>
+        <subtitle>An  inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2010-02-25">25 Feb 2010</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+        
+        <date normal="2010-02-25">25 Feb 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        9 Sep 2014 - addition P-14-200 (MRC)</item><item>17 Feb 2017 - additions, moved/rehoused  Type as separate series (MRC)</item><item>5 Feb 2019 - unidentified type in Box 3 identified, oversize additions processed (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname>
+         </origination>-->
+      <unittitle encodinganalog="245$a" label="Title: ">Frederic W. Goudy Collection</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1905/1966" type="inclusive">1905-1966</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>3 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, printed material, writings, bibliographies relating to the American type designer and printer.  </abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2737415</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Frederic W. Goudy (1865-1947) was an American printer and type designer of more than 120 
+		fonts, among them Copperplate Gothic, Kennerley, and Goudy Old Style.  Frederic's wife Bertha M. Goudy worked closely with him and was a noted graphic designer 
+		in her own right.  Both Frederic and Bertha were self-taught.</p>
+      <p>With Will H. Ransom, 
+		Goudy founded the Village Press in 1903, an Arts and Crafts venture similar to those of 
+		William Morris in England.  In addition to his independent work Goudy was the art director for Lanston 
+		Monotype for more than twenty-five years (1920-1947).  In 1940 Goudy was appointed a lecturer at Syracuse University's School of Journalism; today Fine Arts students at SU have access to the Frederic W. Goudy Typographic Laboratory and its three letterpresses.  Goudy's studio at Marlborough-on-Hudson, 
+		a converted mill he christened Deepdene, was the site of an annual "pilgrimage" by typographers as well as the 
+		namesake for Goudy's Deepdene typeface. </p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Frederic W. Goudy Collection</emph> consists of original artwork, bibliographies, correspondence, memorabilia, printed material, writings, and a few miscellaneous items. </p>
+      <p><emph render="bold">Artwork</emph> contains original sketches of decorative borders, letters, titles, and assorted other items.</p>
+      <p>Two typescript <emph render="bold">Bibliographies</emph>, one from the Chiswick Book Shop, the other evidently produced by a student for a class at Syracuse University, list various Goudy items.</p>
+      <p>The bulk of <emph render="bold">Correspondence</emph> is outgoing from Goudy.  There are several from Goudy to Leslie Marchand, Professor of English at Rutgers University, and an assortment of other letters.  One, from Goudy to Sherman, concerns the development of his Sherman font (1912).</p>
+      <p>Notable in <emph render="bold">Memorabilia</emph> are the birthday tributes to Goudy and the folder of items commemorating the 35th anniversary of the Village Press.  Many of these are from fellow artists and craftspeople, and are elegant and beautifully-designed letterpress pieces.  This series also contains clippings about Goudy and others, programs from dinners held for Goudy, photographs (most of Goudy himself, but also a framed photo of his studio, Deepdene), and miscellaneous letterpress and commercially published pieces about Goudy.</p>
+      <p><emph render="bold">Printed material</emph> contains Goudy type proofs and type specimens, items printed by the Village Press and Marchbanks Press, and pieces from other printers either designed by Goudy or using Goudy typefaces.  The Village Press items are, where possible, identified with the numbers given by Melbert B. Cary in his <emph render="italic">A bibliography of the Village Press</emph>.</p>
+      <p><emph render="bold">Type</emph> contains a complete set of the Sherman typeface and a few pieces of Village type.</p>
+      <p><emph render="bold">Writings</emph> contains articles, essays, forewords, and other pieces written by Goudy.  Formats include handwritten manuscript, printed (some by the Village Press, some by other presses), and published.</p>
+      <p><emph render="bold">Miscellaneous</emph> items include handmade paper possibly made from one of Goudy's shirts and an assortment of miscellaneous publications.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Except for the clippings about Goudy and Goudy's published writings, which are arranged chronologically, all material is arranged alphabetically.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>In our manuscript holdings, see also the 
+        
+        <archref href="norton_goudy.htm">David Norton Collection relating to Frederic Goudy</archref> and the <archref href="pont_goudy.htm">Charles Pont Collection relating to Frederic Goudy</archref> for additional bibliographies and research material about Goudy.  The library has many Goudy-related books and monographs cataloged in our Rare Books holdings and in the general collection; please refer to &summitref; for a complete listing.  There is also a complete case of Goudy type, presently (2009) located on the sixth floor of Bird Library in the Lemke Seminar Room.</p>
+    </relatedmaterial>
+    <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Publishing, printing and book arts</subject>
+		<persname encodinganalog="600" source="lcnaf">Goudy, Bertha, 1869-1935.</persname>
+      <persname encodinganalog="600" source="lcnaf">Goudy, Frederic W. (Frederic William), 1865-1947.</persname>
+      
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">Cary Graphic Arts Press.</corpname><corpname encodinganalog="610" source="lcnaf">Marchbanks Press.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Village Press.</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Graphic design (Typography) -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Letterpress printing -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Printing -- United States -- History.</subject>
+      <subject encodinganalog="650" source="lcsh">Private presses -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Printing presses -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Type and type-founding -- History.</subject>
+      <subject encodinganalog="650" source="lcsh">Type designers -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Typesetting -- History.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Bibliographies.</genreform>
+      <genreform encodinganalog="655" source="aat">Broadsides (notices)</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform>
+      <genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Programs (documents)</genreform>
+      <genreform encodinganalog="655" source="aat">Type specimens (documents)</genreform>
+      <genreform encodinganalog="655" source="aat">Typefaces (Type forms)</genreform>
+      <occupation encodinganalog="656" source="lcsh">Printers.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Type designers.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>-->
+			</controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Frederic W. Goudy Collection, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Some items gifts of 
+        
+        <persname role="donor">Lyle Spencer</persname>, 
+        
+        <persname role="donor">Elizabeth Sherman Engelhart</persname>, and 
+        
+        <persname role="donor">Ersel L. Janis</persname>.   Additional items purchased, 1943-present.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+    <accruals encodinganalog="584">
+      <head>Accruals</head>
+      <p>Additions at irregular intervals, as new material is acquired.</p>
+    </accruals>
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Artwork</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Borders, decorative</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Letters</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Titles</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Bibliographies</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Chiswick Book Shop</unittitle>
+            <abstract>typescript, titled "List 55"</abstract>
+            <unitdate normal="1905/1966" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fraser, Robert S.</unittitle>
+            <abstract>typescript; evidently created for a class at Syracuse University</abstract>
+            <unitdate normal="1966" type="inclusive">1966</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Cody, Sherwin</unittitle>
+            
+            <abstract>discusses his work practices at this point in his career</abstract><unitdate normal="1935" type="inclusive">1935</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02><c02>
+          <did>
+            <unittitle>Marchand, Leslie / Rutgers University</unittitle>
+            <unitdate normal="1939/1941" type="inclusive">1939-1941, </unitdate>
+            <unitdate normal="1946" type="inclusive">1946</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <unitdate normal="1905/1913" type="inclusive">1905-1913, </unitdate>
+            <unitdate normal="1935" type="inclusive">1935, </unitdate>
+            <unitdate normal="1938" type="inclusive">1938, </unitdate>
+            <unitdate normal="1946" type="inclusive">1946, </unitdate>
+            <unitdate normal="1905/1966" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Memorabilia</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Birthday tributes to Goudy</unittitle>
+            <unitdate normal="1932" type="inclusive">1932, </unitdate><unitdate normal="1935" type="inclusive">1935, </unitdate><unitdate normal="1937" type="inclusive">1937, </unitdate><unitdate normal="1940/1942" type="inclusive">1940-1942</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Clippings about</unittitle>
+            <unitdate normal="1924" type="inclusive">1924, </unitdate>
+            <unitdate normal="1933/1936" type="inclusive">1933-1936, </unitdate>
+            <unitdate normal="1939/1943" type="inclusive">1939-1943, </unitdate>
+            <unitdate normal="1945" type="inclusive">1945, </unitdate>
+            <unitdate normal="1947" type="inclusive">1947, </unitdate>
+            <unitdate normal="1905/1966" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Clippings about others</unittitle>
+            <unitdate normal="1957" type="inclusive">1957</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dinner programs</unittitle>
+            <unitdate normal="1929" type="inclusive">1929, </unitdate>
+            <unitdate normal="1941" type="inclusive">1941, </unitdate>
+            <unitdate normal="1905/1966" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs</unittitle>
+            <abstract>photos of Goudy, Syracuse University medal; also includes reproduction of photo of Deepdene</abstract>
+            <unitdate normal="1905/1966" type="inclusive">undated</unitdate>
+            <physdesc><extent>3 folders</extent></physdesc><container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Village Press 35th anniversary</unittitle>
+            <unitdate normal="1938" type="inclusive">1938</unitdate>
+            <container type="Box">1</container>
+          </did>
+        <note><p>See also <ref target="misc-2">Printed material : Miscellaneous, various printers</ref>.</p></note></c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Printed</unittitle>
+              <abstract>various items privately printed, for or about Goudy</abstract>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Published</unittitle>
+              <abstract>booklets with material about Goudy, list of items from a 1966 exhibition at Syracuse University, prospectuses for two of Goudy's books, more</abstract>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Printed material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Goudy type proofs</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Goudy type specimens</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Marchbanks Press</unittitle>
+            <container type="Box">1</container>
+          </did>
+        <note><p>See also <ref target="misc-1">Miscellaneous, various printers</ref> below.</p></note></c02>
+        <c02>
+          <did>
+            <unittitle>Village Press</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Cary numbers, C-56 to C-231</unittitle>
+              <abstract>not inclusive, there are numerous gaps in the sequence</abstract>
+              <container type="Box">2</container>
+            </did>
+          <note><p>See also <ref target="misc-1">Miscellaneous, various printers</ref> below.</p></note></c03>
+          <c03>
+            <did>
+              <unittitle>M numbers, M-13 to M-25</unittitle>
+              <abstract>not inclusive, there are numerous gaps in the sequence</abstract>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Various printers, items designed by Goudy</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Various printers, using Goudy typefaces</unittitle>
+            <container type="Box">2</container>
+          </did>
+        
+          
+			 </c02><c02 id="misc-1">
+          <did><unittitle>Miscellaneous, various printers</unittitle><unitdate normal="1907/1929" type="inclusive">1907-1929</unitdate><container type="Oversize">1</container></did><scopecontent><p>These items were possibly purchased as a group; the folder includes an inventory by an unknown person with Cary numbers, where known.  Most were printed at the Village Press but there are some from Marchbanks Press and others.</p><p>Extracts from "The Book Beautiful" by T.J. Cobden-Sanderson, Jul 1907 [Cary 48]<lb/>"Jean Grolier: an excerpt..." [Cary 104]<lb/>"Exhibition of American Printing" 1916 [Cary 118]<lb/>"A Proclamation" 4 Jul 1916<lb/>Trial pages for facsimile edition of Froissart's <emph render="italic">Chronicles</emph>, Jun 1920 [Cary 145]<lb/>"To the Residents of Forest Hills Gardens" / "An American's Creed" 4 Jul 1920 [Cary 146]<lb/>Broadside showing types designed by Goudy, Sep 1921 [Cary 153]<lb/>"Elements of Lettering" proof of page 16<lb/>"Frederic W. Goudy Honorary President of the American Institute of Graphic Arts" with portrait of Goudy by Marchbanks Press [Cary 165]<lb/>"Announcing the publication of a portrait gallery of American editors" prospectus, 1925<lb/>"Deepdene: a new type..." [Cary 179]<lb/>"Gutenberg's Invention" Christmas 1929 [Cary 188]<lb/>"The Type Speaks" [Cary 232]</p></scopecontent></c02><c02 id="misc-2"><did><unittitle>Miscellaneous, various printers</unittitle><abstract>Goudy portrait, specimen sheets, commemorative items on the occasion of the celebration of the 35th anniversary of The Village Press at Deepdene, etc.</abstract><unitdate normal="1924/2015" type="inclusive">1924-2015</unitdate><container type="Oversize">1</container></did>
+			 <scopecontent><p>
+"Ancient customs used in a printing house" limited edition print by Arthur W. Rushmore, 23 Jul 1938<lb/>
+Anderson Galleries keepsake, printed by Goudy on hand-press that once belonged to William Morris, March 1924<lb/>
+"F W G" excerpt of broadcast by Lowell Thomas about Goudy, 17 Sep 1934<lb/>
+"Frederic W. Goudy: 150 Years of Typographic Influence" exhibit invitation, Cary Graphic Arts, 12 Mar 2015<lb/>
+"Frederic W. Goudy: A Memorial Sunday, May 11, 1947" reproduction from original in <emph render="italic">Printing Arts</emph><lb/>
+Goudy cartoon by Fred Cooper, printed by Marchbanks Press, 23 Jul 1938<lb/>
+Goudy portrait, engraving by Clarence P. Hornung, 1926<lb/>
+"Great Goudy, O enricher of the age", 8 Mar 1935<lb/>
+"Here's to you, Fred" by Wilber Macey Stone, 23 Jul 1938<lb/>
+"I Bring You Gifts" M. Lyle Spencer tribute to Goudy, 24 Mar 1939<lb/>
+"Kelmscott-Goudy Press," Cary Graphic Arts (RIT) keepsake, 29 Oct 2014<lb/>
+"The Record of Goudy Types" David Gildea, 23 Jul 1938<lb/>
+"A Specimen Sheet Showing Almost All of the 'Lost' Goudy Types," Eastern Corporation, Bangor, Maine<lb/>
+Syracuse University Library Associates commemorative print, 20 Mar 1986</p></scopecontent></c02><c02><did>
+            <unittitle>Miscellaneous unidentified</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+      </c01><c01 level="series"><did><unittitle>Type</unittitle></did><c02>
+          <did>
+            <unittitle>Sherman type, complete set</unittitle>
+            
+            <physdesc><extent>2 folders</extent></physdesc><container type="Box">3</container>
+          </did>
+        </c02><c02>
+          <did>
+            <unittitle>Village type, partial set</unittitle>
+            
+            <physdesc><extent>7 pieces</extent></physdesc><container type="Box">3</container>
+          </did>
+        </c02></c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Writings</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Manuscript</unittitle>
+            <abstract>"The Author's Apologia" and the foreword to "Fashions in American Typography" by Edmund Gress</abstract>
+            <unitdate normal="1905/1966" type="inclusive">undated</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Printed</unittitle>
+            <unitdate normal="1939" type="inclusive">1939, </unitdate>
+            <unitdate normal="1944" type="inclusive">1944, </unitdate>
+            <unitdate normal="1905/1966" type="inclusive">undated</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Published</unittitle>
+            <unitdate normal="1924" type="inclusive">1924, </unitdate>
+            <unitdate normal="1926" type="inclusive">1926, </unitdate>
+            <unitdate normal="1936" type="inclusive">1936, </unitdate>
+            <unitdate normal="1940" type="inclusive">1940, </unitdate>
+            <unitdate normal="1905/1966" type="inclusive">undated</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Miscellaneous</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Paper, handmade</unittitle>
+            <abstract>twelve sheets of a handmade laid paper with a watermark of "FWG 1947," possibly from Charles Pont estate; originally in a large mailing envelope labeled "FWG 1947 paper from shirt"</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Publications</unittitle>
+            <abstract>reprints of articles, an auction catalog, a newsletter from the Syracuse Club of Printing House Craftsmen, etc.</abstract><container type="Box">2</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

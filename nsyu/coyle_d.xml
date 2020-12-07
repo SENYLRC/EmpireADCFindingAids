@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="coyle_d">coyle_d</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Donald Coyle Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2018-01-24" encodinganalog="Date">24 Jan 2018</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2018-01-24">24 Jan 2018</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Donald Coyle Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1954/1965" type="inclusive" label="Inclusive Dates: ">1954-1965</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>4 folders (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Clippings, internal reports on various industries or clients/potential clients</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">5012986</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Donald Coyle (1922-2005) was a Canadian television executive.  He joined American Broadcasting / Paramount Theatres (which later became ABC) in 1950, where he pioneered new methods of market research for the then-new organization.  In 1958 he was named to head ABC's new international division.  Under his leadership, the division launched more than 70 stations in South America, Canada, Central America, the Caribbean, the Far East, and the Middle East. He also founded his own consulting firm, International Communications, Inc. and served as executive vice president of Network CTV in Toronto from 1975 to 1981. He retired to North Carolina in 1981.  [Information taken from Coyle's obituary in Charleston's <emph render="italic">The Post and Courier</emph>, January 2005.]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Donald Coyle Collection</emph> contains clippings, correspondence, and internal reports.</p><p><emph render="bold">Clippings</emph> contains clippings from newspapers and magazines on Coyle, ABC, and/or television generally.</p><p><emph render="bold">Correspondence</emph> contains a single item, a memo to employees.</p><p><emph render="bold">Reports</emph> contains internal reports on various industries or clients/potential clients.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by type of material.  Within that, clippings are arranged chronologically and reports alphabetically by title.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject><subject encodinganalog="650" source="local">Radio, television, film</subject><persname encodinganalog="600" source="lcnaf">Coyle, Donald.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">American Broadcasting Company.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">American Broadcasting-Paramount Theatres.</corpname><!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Radio broadcasting -- History.</subject><subject encodinganalog="650" source="lcsh">Radio broadcasting -- United States -- 1950-1960.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">Reports.</genreform><!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Donald Coyle Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Clippings</unittitle></did>
+            <c02><did><unittitle>Clippings, miscellaneous</unittitle><unitdate normal="1954/1965" type="inclusive">1954-1965, </unitdate><unitdate normal="1954/1965" type="inclusive">undated</unitdate><container type="SC">820</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Internal memo</unittitle><abstract>announcing Coyle's appointment as head of international division</abstract><unitdate normal="1959" type="inclusive">1959</unitdate><container type="SC">820</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Reports</unittitle></did>
+            <c02><did><unittitle>Comparative radio network coverage analysis</unittitle><abstract>"...study of network radio audience changes ...during the past year..."</abstract><unitdate normal="1952" type="inclusive">1952</unitdate><container type="SC">820</container></did></c02>
+            <c02><did><unittitle>A-Z, miscellaneous</unittitle><unitdate normal="1949/1950" type="inclusive">1949-1950</unitdate><container type="SC">820</container></did><scopecontent><p>Aviation manufacturing industry; Anheuser-Busch 1949 fiscal review; Anheuser-Busch new business approaches; Central Bag and Burlap Company review; Philip Morris &amp; Co. 1949 fiscal review; Colonial Airlines report prepared for directors' meeting; Pan American World Airways 1949 fiscal review; Park &amp; Tilford 6 months summary; Television (includes mentions of major telecommunications companies and the movie industry)</p></scopecontent></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

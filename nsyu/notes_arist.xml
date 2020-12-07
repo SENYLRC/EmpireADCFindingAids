@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="notes_arist">notes_arist</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Notes on Aristotle manuscripts</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-10-14" encodinganalog="Date">14 Oct 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2011-10-14">14 Oct 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Notes on Aristotle manuscripts</unittitle>
+         <unitdate encodinganalog="245$f" normal="1664/1679" type="inclusive" label="Inclusive Dates: ">1664-1679</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft (3 volumes)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Three bound manuscripts by three different authors, in Latin, consisting of notes and commentary on various works of Aristotle.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3471967</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="lat">Latin</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Almost nothing is known of the authors of these three manuscripts.  As best as can be determined, they are Gabriellis a Dertona, Evaldus  [last name undecipherable], and Iosephus Queralt, a brother of the Redemptorist order at the University of Barcelona. </p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>This collection of <emph render="bold">Notes on Aristotle manuscripts</emph> consists of three hand written volumes.  The volumes are unnumbered and their origin is unknown.  We have assigned volume numbers for ease of description.</p><p>Volume [1], a codex with a yellowish parchment cover, contains a manuscript written by Gabriellis a Dertona, completed 5th April 1666 (see page 358).  The content concerns the Introduction into Aristotle's Logic. It does not seem to be a copy of Aristotle's organon but a summary, explanation and commentary on it.
+
+</p><p>Volume [2], a thicker codex with a brown paper cover (obviously a much later rebinding) contains a manuscript written by a certain Evaldus, whose last name is indecipherable (appears at the very end of the manuscript), completed on the first of June 1664.  It seems to be  the teaching notes of a course on natural philosophy, based mainly on Aristotle's Physics.
+
+</p><p>Volume [3], a smaller codex with a brown paper cover similar to that of Volume [2], contains a manuscript written by Iosephus Queralt, a brother of the Redemptorist order at the University of Barcelona in 1679.  It contains two works: Aristotle's De generatione et corruptione (fol1-105) and a commentary on Aristotle's De anima (fol 106 ff).</p><p>[&scrc_name; gratefully acknowledges the assistance of Professor Matthieu van der Meer in compiling this description.]</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Bound volumes, in no particular order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Religion and philosophy</subject><persname encodinganalog="600" source="lcnaf">Aristotle -- Criticism and interpretation.</persname>
+         <persname encodinganalog="600" source="lcnaf">Aristotle -- Study and teaching.</persname><!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Philosophy, Ancient -- Study and teaching.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Manuscripts (document genre)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Classicists.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Educators.</occupation><occupation encodinganalog="656" source="lcsh">Scholars.</occupation><!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Notes on Aristotle manuscripts, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Manuscripts</unittitle></did>
+            <c02><did><unittitle>Volume [1], by Gabriellis a Dertona, on Aristotle's <emph render="italic">Logic</emph></unittitle><unitdate normal="1666" type="inclusive">1666</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Volume [2], Evaldus, on Aristotle's <emph render="italic">Physics</emph></unittitle><unitdate normal="1664" type="inclusive">1664</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Volume [3], Iosephus Queralt, on Aristotle's <emph render="italic">De generatione et corruptione</emph> (fol1-105) and Aristotle's <emph render="italic">De anima</emph>  (fol 106 ff)</unittitle><unitdate normal="1679" type="inclusive">1679</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

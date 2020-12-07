@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="willowbrook">willowbrook</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Willowbrook Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1997-04" encodinganalog="Date">Apr 1997</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2009-12-11">11 Dec 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>11 Dec 2009 - converted to EAD (MRC)</item>
+            <item>22 Jul 2013 - minor edits for video and film items in inventory (MBD)</item><item>13 Jan 2014 - minor updates for transfer to SULF (MRC)</item><item>23 May 2014 - recording IDs added (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">American Broadcasting Company.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Willowbrook Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1967/1987" type="inclusive" label="Inclusive Dates: ">circa 1972-1982</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>7 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Notes, videos and films relating to Geraldo Rivera's 1972 
+		 exposé of conditions at Staten Island's Willowbrook State School.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2726309</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>In 1972 television reporter and talk show host Geraldo Rivera, then a budding journalist
+            working for WABC-New York's Eyewitness News, conducted a series of investigations at the
+            Willowbrook State School for the Mentally Retarded, on Staten Island. His work resulted
+            in a televised documentary entitled "Willowbrook: The Last Great Disgrace" which exposed
+            the deplorable conditions and the rampant abuse and neglect of the residents. The report
+            won a Peabody Award and led to changes in state law and to new standards for the
+            treatment of the mentally disabled across the country, as well as making Rivera a
+            national star. Willowbrook closed in 1987 and the area is now part of the campus of
+            Staten Island College.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Willowbrook Collection</emph> consists of notes, photographs, videos, and films relating to 
+		 "Willowbrook: The Last Great Disgrace."  There are also a few unrelated items, such as a copy of Rivera's biography, 
+		 <emph render="italic">Exposing Myself</emph>.</p>
+      </scopecontent>
+      
+      <altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>Portions of the collection have been digitized.  Contact the repostory listed above for more information.</p>
+      </altformavail><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection remains in original order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>Additional material relating to disability and disabled persons may be found in several other collections, 
+		 including the <archref href="langner_w.htm">William Langner Papers</archref>, the 
+		 <archref href="pirkl_jj.htm">James Pirkl Papers</archref>, the 
+		 <archref href="thornton_j.htm">James Thornton Correspondence</archref>, and the 
+		 <archref href="rowley_fam.htm">Rowley Family Papers</archref>, among others.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Journalism</subject>
+		 <subject encodinganalog="650" source="local">Radio, television, film</subject>
+		 <subject encodinganalog="650" source="local">Activism and social reform</subject>
+		 <persname encodinganalog="600" source="lcnaf">	Rivera, Geraldo.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">	Willowbrook State School.</corpname>
+         <title encodinganalog="630" source="lcnaf">Willowbrook: the last great disgrace.</title>
+         <subject encodinganalog="650" source="lcsh">Investigative reporting.</subject>
+		 <subject encodinganalog="650" source="lcsh">Journalists -- United States.</subject>
+		 <subject encodinganalog="650" source="lcsh">People with disabilities -- Abuse of -- United States.</subject>
+		 <subject encodinganalog="650" source="lcsh">People with disabilities -- Institutional care -- United States.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">16mm (photographic film size)</genreform><genreform encodinganalog="655" source="aat">Betacam (TM)</genreform><genreform encodinganalog="655" source="aat">Notes (documents)</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <genreform encodinganalog="655" source="aat">Pamphlets.</genreform>
+         <genreform encodinganalog="655" source="aat">Negatives (photographs)</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">VHS.</genreform><genreform encodinganalog="655" source="aat">Videotapes.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Journalists.</occupation>
+         <function encodinganalog="657" source="lcsh">Investigative reporting.</function></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		 <p>Bernard Carabello: A Willowbrook Case in Box 8 is restricted.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p><p>Entirety of collection may be shared with other libraries and schools at SCRC's discretion, but may not be sold or broadcast on cable, the internet, or television without the written permission of ABC, Inc.  Any such written permission documents will be retained by SCRC.
+
+</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Willowbrook Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Paul R. Dolan</persname>, 1993.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence-subject files</unittitle></did>
+            <c02><did><unittitle>Guide to overall resources</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Guide to legal resources</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Guide to film and tape resources</unittitle><container type="Box">1</container></did></c02>
+            
+            <c02><did><unittitle>Community acceptance resources</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Investigating abuse</unittitle><container type="Box">1</container></did></c02>
+            
+            <c02><did><unittitle>Clips, correspondence</unittitle><unitdate normal="1972/1982" type="inclusive">1972-1982</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Photos, Willowbrook report, WABC News</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Film strips (negatives)</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Willowbrook photos</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>ARC photos</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Media awards</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Concert, Chicago</unittitle><unitdate normal="1977" type="inclusive">1977</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Dance Marathon</unittitle><unitdate normal="1978/1979" type="inclusive">1978-1979</unitdate><container type="Box">2</container></did></c02>
+
+            
+            <c02><did><unittitle> <emph render="italic">Exposing Myself</emph>, Geraldo Rivera</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Community acceptance</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Observing and gaining community acceptance </unittitle><abstract>books and pamphlets</abstract><container type="Box">3</container></did></c02>
+
+            <c02><did><unittitle>One to One key documents</unittitle><container type="Box">1</container></did></c02><c02><did><unittitle>One to One files</unittitle><container type="Box">2</container></did></c02><c02><did><unittitle>One to One history shots, TBE</unittitle><physdesc><extent>1 Kodak box</extent></physdesc><container type="Box">3</container></did></c02><c02><did><unittitle>One to One selected home shots, miscellaneous negatives</unittitle><container type="Box">4</container></did><note><p>See also <ref target="rec-one">Recordings : One to One</ref>.</p></note></c02>
+            <c02><did><unittitle>Center on Human Policy</unittitle><container type="Box">4</container></did></c02>
+            <c02><did><unittitle><emph render="italic">How to Create Interiors for the Disabled</emph>, Jane Randolph Cary</unittitle><container type="Box">4</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Unequal Justice?</emph>, Robert Perske</unittitle><container type="Box">4</container></did></c02>
+            <c02><did><unittitle><emph render="italic">New Neighbors</emph>, U.S. Dept. of Health and Human Services</unittitle><container type="Box">4</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Access, The Guide to a Better Life for the Disabled Americans</emph>, Lilly Bruck</unittitle><container type="Box">4</container></did></c02>
+            
+            <c02><did><unittitle><emph render="italic">Creating Community Acceptance for Handicapped People</emph>, Roberta Nelson</unittitle><container type="Box">4</container></did></c02>
+            <c02><did><unittitle>Alternatives in the community for the developmentally disabled </unittitle><abstract>pamphlets and guidebooks</abstract><container type="Box">4</container></did></c02>
+            <c02><did><unittitle>Bernard Carabello: A Willowbrook Case</unittitle><container type="Box">8</container></did><accessrestrict><p>This file is temporarily restricted.</p></accessrestrict></c02>
+            <c02><did><unittitle>Syracuse</unittitle><container type="Box">4</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Recordings</unittitle></did>
+            <c02>
+               <did>
+                  <unittitle>20/20, Willowbrook Revisited</unittitle>
+                  <unitid>willowbrook_007</unitid><unitdate normal="1982-01-06" type="inclusive">6 Jan 1982</unitdate>
+                  
+                  <physdesc>
+                     <extent>1 Umatic tape</extent>
+                  </physdesc>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>20/20 TS-087 McNulty</unittitle>
+                  <unitid>willowbrook_008, willowbrook_009</unitid><unitdate normal="1987-11-02" type="inclusive">2 Nov 1987</unitdate>
+                  <physdesc>
+                     <extent>2 Umatic tapes</extent>
+                  </physdesc>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Channel 5 News, 10 to 11PM edition</unittitle>
+                  <unitid>willowbrook_017</unitid><unitdate type="inclusive" normal="1977-01-18">18 Jan 1977</unitdate>
+                  <abstract>report on One to One Dance Marathon</abstract>
+                  <physdesc>
+                     <extent>1 Umatic tape</extent>
+                  </physdesc>
+                  <container type="Box">6</container>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>"Death in the Nursery"</unittitle>
+                  <unitid>willowbrook_013</unitid><abstract>parts 1-4 (Newsbreakers report)</abstract><physdesc>
+                     <extent>1 Umatic tape</extent>
+                  </physdesc>
+                  <container type="Box">5</container>
+               </did>
+            </c02><c02><did><unittitle>Evening News</unittitle><unitid>willowbrook_010</unitid><unitdate type="inclusive" normal="1977-04-09">9 Apr 1977</unitdate>
+                  <physdesc>
+                     <extent>1 Umatic tape</extent>
+                  </physdesc><container type="Box">5</container></did></c02>
+            
+            
+
+              <c02>
+               <did>
+                  <unittitle>Eyewitness 12 News, 6 to 7PM edition</unittitle>
+                  <unitid>willowbrook_005</unitid><unitdate type="inclusive" normal="1977-01-18">18 Jan 1977</unitdate>
+                  <abstract>includes report on One to One Dance Marathon</abstract>
+                  <physdesc>
+                     <extent>1 Umatic tape</extent>
+                  </physdesc>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Eyewitness News, 11:00 PM
+                     edition</unittitle>
+                  <unitid>willowbrook_006</unitid><unitdate type="inclusive" normal="1977-01-17">17 Jan 1977</unitdate>
+                  <abstract>includes report on One to One Dance Marathon</abstract>
+                  <physdesc>
+                     <extent>1 Umatic tape</extent>
+                  </physdesc>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Good Morning America</unittitle>
+                  <unitid>willowbrook_015</unitid><unitdate type="inclusive" normal="1977-06-02">2 Jun 1977</unitdate>
+                  <abstract>Geraldo at AABR Chicago explaining One to One</abstract>
+                  <physdesc>
+                     <extent>1 Umatic tape</extent>
+                  </physdesc>
+                  
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Good Morning America</unittitle>
+                  <unitid>willowbrook_016</unitid><unitdate type="inclusive" normal="1977-06-02">2 Jun 1977</unitdate>
+                  <abstract>Geraldo at AABR Chicago explaining One to One</abstract>
+                  
+                  <physdesc>
+                     <extent>1 DVD-Video</extent>
+                  </physdesc>
+                  <container type="Box">5</container>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Good Morning America</unittitle>
+                  <unitid>willowbrook_012</unitid><unitdate type="inclusive" normal="1977-06-20">20 Jun 1977</unitdate>
+                  <physdesc>
+                     <extent>1 Umatic tape</extent>
+                  </physdesc>
+                  <container type="Box">5</container>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Good Morning America</unittitle>
+                  <unitid>willowbrook_011</unitid><unitdate type="inclusive" normal="1977-10-14">14 Oct 1977</unitdate>
+                  
+                  <abstract>Paul Dolan and Felton King</abstract><physdesc>
+                     <extent>1 Umatic tape</extent>
+                  </physdesc>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+            
+            <c02 id="rec-one">
+               <did>
+                  <unittitle>One to One Telethon</unittitle>
+                  <unitid>willowbrook_019, willowbrook_020, willowbrook_021</unitid><unitdate type="inclusive" normal="1979-06-06">6 Jun 1979</unitdate>
+                  <physdesc>
+                     <extent>3 Umatic tapes</extent>
+                  </physdesc>
+                  <container type="Box">6</container>
+               </did>
+            </c02><c02><did>
+                  <unittitle>One to One Telethon</unittitle><unitid>willowbrook_026, willowbrook_027, willowbrook_028, willowbrook_029</unitid><abstract>reels 2A, 3, 3A, 4A</abstract><unitdate type="inclusive" normal="1980-06-03">3 Jun 1980</unitdate><physdesc>
+                     <extent>4 Umatic tapes</extent>
+                  </physdesc><container type="Box">6</container></did></c02><c02><did><unittitle>One to One Telethon</unittitle><unitid>willowbrook_022, willowbrook_023, willowbrook_024, willowbrook_025</unitid><abstract>reels 1-4</abstract><unitdate type="inclusive" normal="1981-06-24">24 Jun 1981</unitdate>
+                  <physdesc>
+                     <extent>4 Umatic tapes</extent>
+                  </physdesc><container type="Box">6</container></did></c02>
+            
+            
+            
+               
+            <c02><did><unittitle>ROI (Residential Opportunities Inc.) Home Video </unittitle>
+                  <unitid>willowbrook_004</unitid><abstract>about life in group homes</abstract><physdesc><extent>1 VHS tape</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Self Advocacy: the Developmentally Disabled Speak for
+                     Themselves</unittitle>
+                  <unitid>willowbrook_018</unitid><physdesc>
+                     <extent>1 Umatic tape</extent>
+                  </physdesc>
+                  <container type="Box">6</container>
+               </did>
+            </c02><c02><did><unittitle>The Willowbrook Case (WLPG-TV, Miami) </unittitle><unitid>willowbrook_001</unitid><physdesc><extent>1 Betacam tape</extent></physdesc><container type="Box">1</container></did></c02><c02><did><unittitle>The Willowbrook Case (WLPG-TV, Miami) </unittitle><unitid>willowbrook_002, willowbrook_003</unitid><physdesc><extent>2 VHS tapes</extent></physdesc><container type="Box">1</container></did></c02>
+
+            <c02>
+               <did>
+                  <unittitle>Willowbrook: The Case</unittitle>
+                  <unitid>willowbrook_030</unitid><abstract>original film can had label, "ABC News 20/20"</abstract>
+                  <physdesc>
+                     <extent>16mm film, 1 reel</extent>
+                  </physdesc>
+                  <container type="Box">7</container>
+               </did>
+            </c02>
+         <c02><did><unittitle>Yes You Can</unittitle><unitid>willowbrook_014</unitid><abstract>story of Timmy Loughlin, Down syndrome child</abstract>
+                  <physdesc>
+                     <extent>1 videotape</extent>
+                  </physdesc><container type="Box">5</container></did></c02></c01>
+      </dsc>
+   </archdesc>
+</ead>

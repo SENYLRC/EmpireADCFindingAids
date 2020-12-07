@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 --><!-- Added Belfer as container type -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="serger_fb" mainagencycode="NSyU">serger_fb</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Frederick B. Serger Papers</titleproper>
+        <subtitle>An inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2010-10-13">13 Oct 2010</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2010-10-13">13 Oct 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item> 26 Oct 2012 - extent revised (MBD)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Serger, Frederick, 1889-</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Frederick B. Serger Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1934/1966" type="inclusive">1934-1966</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>1 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">American landscape and still life painter.  Collection contains correspondence, writings, exhibition catalogues and clippings.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">3173972</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Frederick B. Serger   (1889-1965) was an American painter known for his  floral still lifes and landscapes.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Frederick B. Serger Papers</emph> consists of correspondence, writings, exhibition catalogues and clippings.  The bulk of the collection is exhibit catalogs.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The entire collection is arranged roughly chronologically.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Art -- Painters</subject>
+      <persname encodinganalog="600" source="lcnaf">Serger, Frederick, 1889-</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Art, Modern.</subject>
+      <subject encodinganalog="650" source="lcsh">Painters -- United States.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Exhibition catalogs.</genreform>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <occupation encodinganalog="656" source="lcsh">Artists.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Painters.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p> Frederick B. Serger Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Frederick B. Serger</persname>, 1967.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Subject files</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unitdate normal="1934/1935" type="inclusive">1934-1935</unitdate>
+            <unittitle>Bielsko, Poland, Women's portraits, Przyjaciol Sztuk Museum, Krakow, Poland</unittitle>
+            <abstract>news clippings, exhibition catalog</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1936" type="inclusive">1936</unitdate>
+            <unittitle>Salon des Tuileries, Bernheim-Jeune &amp;c, Paris</unittitle>
+            <abstract>news clippings, admission ticket</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1936/1937" type="inclusive">1936-1937</unitdate>
+            <unittitle>Salon d'Automne, Paris; purchase of painting "Venice" by the city of Paris</unittitle>
+            <abstract>news clippings, admission ticket, criticism</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1936/1939" type="inclusive">1936-1939</unitdate>
+            <unittitle>Letters from museum directors in Poland</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1936/1938" type="inclusive">1936-1938</unitdate>
+            <unittitle>Patacu Sztuki, Krakow, Poland; Salon in Museum Malarski, Warsaw, Poland</unittitle>
+            <abstract>clippings, exhibition catalog</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1938" type="inclusive">1938</unitdate>
+            <unittitle>Salon d'Automne</unittitle>
+            <abstract>exhibition catalog</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1939" type="inclusive">1939</unitdate>
+            <unittitle>Salon des Tuileries, XVIe Catalogue</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1943" type="inclusive">1943</unitdate>
+            <unittitle>Lilienfeld Galleries exhibition</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1944" type="inclusive">1944</unitdate>
+            <unittitle>"New York as Seen by Artists of Many Lands" / Hoffman, Else</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1945" type="inclusive">1945</unitdate>
+            <unittitle>Exhibition, Lilienfeld Galleries, NY; Carnegi Institute, Pittsburgh</unittitle>
+            <abstract>catalog, clippings, correspondence</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1946" type="inclusive">1946</unitdate>
+            <unittitle>La Tausca exhibition</unittitle>
+            <abstract>catalog</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1946" type="inclusive">1946</unitdate>
+            <unittitle>Exhibitions, De Yong Museum, San Francisco and Museum of New Mexico, Santa Fe</unittitle>
+            <abstract>correspondence</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1946" type="inclusive">1946, </unitdate>
+            <unitdate normal="1963" type="inclusive">1963</unitdate>
+            <unittitle>Schonemann Galleries, one man show; Retrospective 1933-1963</unittitle>
+            <abstract>catalogs, clippings</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1947" type="inclusive">1947</unitdate>
+            <unittitle>Painting of the Year, 4th annual; Pepsi Cola exhibition, Rochester Memorial Art Gallery</unittitle>
+            <abstract>catalog</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1946/1951" type="inclusive">1946-1951</unitdate>
+            <unittitle>Exhibit, Lilienfeld Gallery, NY ; various group shows in New York</unittitle>
+            <abstract>clippings, catalogs</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1947" type="inclusive">1947</unitdate>
+            <unittitle>Corcoran Gallery of Art, Washington, DC; Toledo Museum of Art, Toledo, Ohio</unittitle>
+            <abstract>correspondence, catalogs</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1947/1952" type="inclusive">1947-1952</unitdate>
+            <unittitle>Springfield Art League, Springfield, Massachusetts</unittitle>
+            <abstract>clippings, catalogs, one piece correspondence</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1947/1954" type="inclusive">1947-1954</unitdate>
+            <unittitle>Connecticut Gallery of Fine Art, Hartford, Connecticut</unittitle>
+            <abstract>catalog, one piece correspondence</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1947/1962" type="inclusive">1947-1962</unitdate>
+            <unittitle>Pennsylvania Academy of Fine Arts, Philadelphia ;  Detroit Institute of Arts, Detroit, Michigan</unittitle>
+            <abstract>catalogs</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1948" type="inclusive">1948</unitdate>
+            <unittitle>University of Illinois, 
+              
+              <emph render="italic">Contemporary American Painting</emph></unittitle>
+            <abstract>catalog, one piece correspondence</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1948/1949" type="inclusive">1948-1949</unitdate>
+            <unittitle>State Teachers College, Indiana, PA, Art Dept, group show</unittitle>
+            <abstract>catalogs, one piece correspondence</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1948/1950" type="inclusive">1948-1950</unitdate>
+            <unittitle>Woodstock, New York, Rudolph Galleries ; New Paltz State Teachers College Art Association</unittitle>
+            <abstract>clippings, catalogs</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1947/1951" type="inclusive">1947-1951</unitdate>
+            <unittitle>Clearwater Art Museum, Clearwater, Florida ; Norton Gallery and School of Art, West Palm Beach, Florida</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1948/1950" type="inclusive">1948-1950</unitdate>
+            <unittitle>Jewish Museum, New York ; Diamond Jubilee Art Exhibit, Philadelphia, PA</unittitle>
+            <abstract>catalogs, one piece correspondence</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1950" type="inclusive">1950</unitdate>
+            <unittitle>Van Diemen, Lilienfeld Galleries, New York</unittitle>
+            <abstract>clippings, catalog</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1948/1949" type="inclusive">1948-1949</unitdate>
+            <unittitle>Art Association of New Orleans ; Isaac Delgado Museum of Art, New Orleans</unittitle>
+            <abstract>catalogs, clippings</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1947/1951" type="inclusive">1947-1951</unitdate>
+            <unittitle>Painters and Sculptors Society of New Jersey ; Jersey City Museum</unittitle>
+            <abstract>catalogs, award, one piece correspondence</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1951/1955" type="inclusive">1951-1955</unitdate>
+            <unittitle>Butler Institute of American Art, Youngstown, Ohio ; one man show</unittitle>
+            <abstract>catalogs, critique</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1952/1953" type="inclusive">1952-1953</unitdate>
+            <unittitle>John Heller Gallery, New York</unittitle>
+            <abstract>catalog, clippings</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1964" type="inclusive">1964</unitdate>
+            <unittitle>Frederick Anthony Gallery, Beverly Hills, California ; Orr's Gallery, San Diego, California</unittitle>
+            <abstract>catalogs</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1965" type="inclusive">1965</unitdate>
+            <unittitle>Louuisiana Art Commission Galleries ; Baton Rouge, Louisiana retrospective show</unittitle>
+            <abstract>catalogs, clippings, correspondence, publicity</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1965" type="inclusive">1965</unitdate>
+            <unittitle>La Boetie, New York</unittitle>
+            <abstract>catalog, clippings</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1965" type="inclusive">1965</unitdate>
+            <unittitle>Obituary</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1966" type="inclusive">1966</unitdate>
+            <unittitle>Memorial exhibition, La Boetie</unittitle>
+            <abstract>catalog, clippings</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1934/1966" type="inclusive">Undated</unitdate>
+            <unittitle>Statements about paintings,  by Serger</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1934/1966" type="inclusive">Undated</unitdate>
+            <unittitle>Fan mail</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitdate normal="1934/1966" type="inclusive">Undated</unitdate>
+            <unittitle>La Boetie Gallery Collection</unittitle>
+            <abstract>`exhibition catalogs, press release</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

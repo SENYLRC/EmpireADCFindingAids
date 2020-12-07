@@ -1,0 +1,1790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.5, 5/26/2006 -->
+<!--Added description of how to enter revisions-->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="us" mainagencycode="NSyU" identifier="cepamp">cepamp</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Continuing Education Pamphlet Collection</titleproper>
+				<subtitle>An inventory of the collection at Syracuse University</subtitle>
+			<author encodinganalog="Creator">-</author><sponsor>The adult education holdings are collectively known as the <lb/><extptr title="Alexander N. Charters Library of Resources for Educators of Adults" href="https://library.syr.edu/scrc/collections/areas/adult-ed.php" show="new"/>.</sponsor></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="1950/2006" encodinganalog="Date">-</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2006-07-06">7 Jun 2006</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+			<list>
+				<item>7 Jun 2006 - alpha listing/index created, converted to EAD (MRR)</item>
+			</list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<corpname encodinganalog="110">University of the State of New York</corpname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Continuing Education Pamphlet Collection</unittitle>
+			<unitdate encodinganalog="245$f" normal="1900/2006" type="inclusive" label="Inclusive Dates: ">various</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>90 linear ft. (approx.)</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">Pamphlets, journals, directories, newsletters, etc related to adult and continuing education, from the United States as well as from countries from Finland to Thailand</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="us" repositorycode="NSyU">2458669</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language></langmaterial><langmaterial label="Language: " encodinganalog="546"><language langcode="ger">German (may be others)</language>
+			</langmaterial>
+		</did>
+				
+		<!--<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>## Use MARC 545</p></bioghist>-->
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>The Continuing Education Pamphlet Collection is a truly comprehensive selection of adult and continuing education related publications from around the world.  Organizations represented include the Adult Education Association of the Unites States (AEA/USA), the Council on the Continuing Education Unit (CCEU), the Center for the Study of Liberal Ed. for Adults (CSLEA), EDUCAFRICA , the European Centre for Development of Vocational Training, International Council on Adult Education (ICAE), L'ICEA, UNESCO, and the Worker's Education Association (WEA).  Countries represented range from Argentina to Japan to Zimbabwe.  The content includes pamphlets, journals, periodicals, directories, newsletters, monographs, and more.</p>
+		</scopecontent>
+		
+		<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>The collection itself is not arranged in any particular order.  The finding aid is arranged alphabetically, with cross-references; every attempt has been made to note and reference related material, but the researcher would be wise to check under variant names of people and/or organizations as well as under their acronyms to ensure finding all relevant material.</p><p>A <ref target="boxlist">box listing</ref>, without cross-references, is also provided at the end of this finding aid.</p>
+		</arrangement>
+		
+		<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>The library holds a considerable number of collections related to adult and continuing education.  Please refer to &subjindex; for a complete listing.</p>
+		</relatedmaterial>
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Adult education</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            
+			
+            
+            
+            <subject encodinganalog="650" source="lcsh">Adult education</subject><subject encodinganalog="650" source="lcsh">Continuing education</subject>
+			
+            <genreform encodinganalog="655" source="aat">Directories.</genreform><genreform encodinganalog="655" source="aat">Newsletters.</genreform><genreform encodinganalog="655" source="aat">Journals (periodicals)</genreform><genreform encodinganalog="655" source="aat">Pamphlets.</genreform><genreform encodinganalog="655" source="aat">Reports.</genreform>
+			<occupation encodinganalog="656" source="lcsh">Educators.</occupation>
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p>Continuing Education Pamphlet Collection, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>Gift of the U.S. Department of Education; University of the State of New York; Roger Hiemstra.</p>
+		</acqinfo>
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series"><did><unittitle>Alphabetical listing</unittitle></did>
+<c02><did><unittitle>AAAE (American Association for Adult Education)</unittitle><container type="Box">14</container></did></c02>
+<c02><did><unittitle>AAAE Adult Education News</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle>AC, ACE</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>AC/UNC Newsletter</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Academy News</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle>Accreditation</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle>Accreditation-CEU</unittitle><container type="Box">45</container></did><note><p>See also <ref target="cceu">Council on the Continuing Education Unit (CCEU)</ref></p></note></c02>
+<c02 id="acql"><did><unittitle>Acquisition lists</unittitle></did><c03><did><unittitle>Georgia Center Continued Education</unittitle><container type="Box">66</container></did></c03><c03><did><unittitle>NUFFIC-CESO</unittitle><container type="Box">67</container></did></c03><c03><did><unittitle>Open University</unittitle><container type="Box">66</container></did></c03><c03><did><unittitle>University of Reading</unittitle><container type="Box">67</container></did></c03><c03><did><unittitle>University of Liverpool</unittitle><container type="Box">66</container></did></c03></c02>
+<c02><did><unittitle>Activity</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle>Activity (ACT)</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>The AC-UNU</unittitle><container type="Box">22</container></did></c02><c02><did><unittitle>AC-UNU Newsletter</unittitle><container type="Box">40</container></did></c02>
+
+<c02 id="admin"><did><unittitle>Administration</unittitle><container type="Box">51</container></did><note><p>See also <ref target="adea">Adult Education Administration</ref></p></note></c02>
+<c02><did><unittitle>Administration</unittitle><container type="Box">48</container></did></c02>
+<c02><did><unittitle>Administration Principles</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle>Administration Superintendents</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle>Adult Agencies: International</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle>Adult and Continuing Education Today</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle>Adult Basic Education (ABE)</unittitle></did><c03><did><unittitle>Adult Basic Education (ABE)</unittitle><container type="Box">45</container></did></c03><c03><did><unittitle>Adult Basic Education (ABE)</unittitle><container type="Box">53</container></did></c03>
+<c03><did><unittitle>The Adult Basic Education (ABE) Curriculum and Its Development</unittitle><container type="Box">30</container></did></c03><c03><did><unittitle> in Mississippi</unittitle><container type="Box">56</container></did></c03><c03><did><unittitle>National Teacher Training Study</unittitle><container type="Box">4</container></did></c03>
+<c03><did><unittitle>Pamphlets and Publications, Misc.</unittitle><container type="Box">75</container></did></c03><c03><did><unittitle>Pamphlets and Publications, Misc.</unittitle><container type="Box">76</container></did></c03>
+
+<c03><did><unittitle>Pamphlets and Publications, Misc.</unittitle><container type="Box">77</container></did></c03>
+<c03><did><unittitle>Pamphlets and Publications, Misc.</unittitle><container type="Box">78</container></did></c03>
+<c03><did><unittitle>Research Center</unittitle><container type="Box">75</container></did></c03>
+<c03 id="abesc"><did><unittitle>Staff and Conference</unittitle><container type="Box">4</container></did></c03>
+
+
+</c02>
+<c02 id="adce"><did><unittitle>Adult Correctional Education</unittitle><container type="Box">61</container></did><note><p>See also <ref target="alrc">Adult Literacy Responses to Comic Strip Narratives Among Inmates of a Correctional Institution</ref></p></note></c02>
+<c02><did><unittitle>Adult Education,  A Journal of Research and Theory </unittitle><unitdate normal="1960/1982" type="inclusive">1960-1982, </unitdate><unitdate normal="1956" type="inclusive">1956, </unitdate><unitdate normal="1957" type="inclusive">1957</unitdate><container type="Box">10</container></did></c02>
+<c02 id="adea"><did><unittitle>Adult Education Administration</unittitle><container type="Box">46</container></did><note><p>See also <ref target="admin">Administration</ref></p></note></c02>
+
+<c02 id="aealp"><did><unittitle>Adult Education Association (AEA) Leadership Pamphlets</unittitle><container type="Box">4</container></did></c02>
+<c02 id="aeald"><did><unittitle>Adult Education Association (AEA) Leadership Digest</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Adult Education Association of the U.S. (AEA/USA)</unittitle><container type="Box">49</container></did></c02><c02><did><unittitle>Adult Education Clearinghouse</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle>Adult Education Monograph, "Civil Defense for Adult..."</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Adult Education Newsletter</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle>Adult Education Professional Teachers</unittitle><container type="Box">65</container></did></c02>
+
+<c02><did><unittitle>Adult Education Students</unittitle><container type="Box">65</container></did></c02>
+
+<c02><did><unittitle>Adult Education Teachers</unittitle><container type="Box">66</container></did></c02>
+<c02><did><unittitle>Adult Education Teaching</unittitle><container type="Box">65</container></did></c02>
+
+<c02><did><unittitle>Adult Education-U.S. Agencies</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle>Adult Education and Development</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>The Adult Educator</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>Adult Finances</unittitle><container type="Box">49</container></did></c02>
+<c02 id="adle"><did><unittitle>Adult Leadership</unittitle><container type="Box">22</container></did></c02>
+<c02 id="albs"><did><unittitle>Adult Literacy and Basic Skills Unit</unittitle><container type="Box">40</container></did></c02>
+<c02 id="alrc"><did><unittitle>Adult Literacy Responses to Comic Strip Narratives Among Inmates of a Correctional Institution</unittitle><container type="Box">61</container></did><note><p>See also <ref target="adce">Adult Correctional Education</ref></p></note></c02>
+<c02><did><unittitle>Adult Organizations</unittitle><container type="Box">52</container></did></c02>
+<c02 id="apoa"><did><unittitle>Adult Programs on Aging</unittitle><container type="Box">56</container></did></c02><c02 id="aspa"><did><unittitle>Adult Student Personnal Association (ASPA)</unittitle><note><p>See <ref target="adfd">A Decade for Development (ASPA)</ref></p></note></did></c02>
+<c02><did><unittitle>The Adult View</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>AEC - U.S. National Association Institution</unittitle><container type="Box">60</container></did></c02>
+<c02><did><unittitle>AEC Berkeley/Santa Barbara</unittitle><container type="Box">59</container></did></c02>
+<c02 id="aecu"><did><unittitle>AEC UNESCO</unittitle><container type="Box">60</container></did><note><p>See also <ref target="unesco">UNESCO</ref></p></note></c02>
+<c02><did><unittitle>AES Journal on Postsecondary Education</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>Affinities</unittitle><container type="Box">22</container></did></c02>
+<c02 id="africa"><did><unittitle>Africa</unittitle><container type="Box">5</container></did><note><p>See also <ref target="ceia">Continuing Education in Africa</ref>; <ref target="educ">EDUCAFRICA</ref>; <ref target="jaal">Journal of the African Association for Literature</ref>; <ref target="keny">Kenya</ref>; <ref target="nige">Nigeria</ref>; <ref target="soaf">South Africa</ref>; <ref target="wacr">West Africa Crier-Newsletter of the Subregion: AALAE</ref></p></note></c02>
+<c02><did><unittitle>Agencies, Misc.</unittitle><container type="Box">31</container></did></c02>
+<c02 id="aoscl"><did><unittitle>Agencies, Organizations, and Sponsors Civic Literacy</unittitle><container type="Box">46</container></did></c02>
+<c02 id="nga"><did><unittitle>Agencies: Non-Governmental</unittitle><container type="Box">49</container></did><note><p>See also <ref target="nguc">Non-Governmental Universities and Colleges</ref></p></note></c02>
+<c02><did><unittitle>Agency for Instructional Television Newsletter</unittitle><container type="Box">41</container></did></c02><c02><did><unittitle>Age and aging</unittitle><note><p>See <ref target="apoa">Adult Programs on Aging</ref>; <ref target="agne">Aging News</ref>; <ref target="agpr">Aging Programs</ref>; <ref target="edfa">Education for Aging</ref>; <ref target="efan">Education for Aging News</ref>; <ref target="efsa">Education for Senior Adults</ref>; <ref target="goal">Gerontology: Older Adult Learner</ref>; <ref target="nefa">News Education for Aging</ref>; <ref target="prag">Programs on Aging</ref></p></note></did></c02>
+<c02 id="agne"><did><unittitle>Aging News</unittitle><container type="Box">22</container></did></c02>
+<c02 id="agpr"><did><unittitle>Aging Programs</unittitle><container type="Box">69</container></did></c02>
+<c02><did><unittitle>Agricultural Education</unittitle><container type="Box">56</container></did></c02>
+<c02><did><unittitle>Agricultural News</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>AICS Compass</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>Aid Highlight</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>Aker, George</unittitle><container type="Box">14</container></did></c02>
+<c02><did><unittitle>ALBSU</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>Alfalit</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>ALL</unittitle><container type="Box">22</container></did></c02>
+
+<c02><did><unittitle>American Foundation for Continuing Education, Case Stories in American Politics</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>American Medical Asociation</unittitle><container type="Box">22</container></did></c02>
+<c02 id="amacme"><did><unittitle>American Medical Association (AMA) Continuing Medical Education Fact Sheet</unittitle><container type="Box">41</container></did><note><p>See also <ref target="cmen">Continuing Medical Education Newsletter</ref></p></note></c02>
+<c02><did><unittitle>AMT Events</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>AMT Events</unittitle><container type="Box">22</container></did></c02>
+<c02 id="aont"><did><unittitle>AONTAS (Ireland)</unittitle><container type="Box">5</container></did><note><p>See also <ref target="eire">Ireland</ref></p></note></c02>
+<c02><did><unittitle>Arbeits-und Sozialrecht be Luchterhand</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Argentina</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle>Aries</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Asian South Pacific Bureau of A.E.</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>ASPBAE Courier</unittitle><container type="Box">16</container></did></c02>
+<c02 id="ache"><did><unittitle>Association for Continuing Higher Education (ACHE)</unittitle><container type="Box">14</container></did><note><p>See also <ref target="fmwa">Five Minutes with ACHE</ref></p></note></c02>
+<c02><did><unittitle>Association for Continuing Higher Education (ACHE)</unittitle><container type="Box">48</container></did></c02>
+<c02><did><unittitle>Association for World Education Newsletter</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Association of Teacher Education</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>Association of University Evening Colleges (AUEC)</unittitle><container type="Box">18</container></did></c02>
+<c02><did><unittitle>Association of University Evening Colleges (AUEC)</unittitle><container type="Box">30</container></did></c02><c02><did><unittitle>ASTD Educational Programs</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle>ATE Newsletter</unittitle><container type="Box">16</container></did></c02>
+
+<c02><did><unittitle>Australia</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Australia</unittitle><container type="Box">32</container></did></c02><c02><did><unittitle>Australia</unittitle><container type="Box">33</container></did></c02>
+
+<c02><did><unittitle>Australian Journal of Adult Education</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Austria</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle>Availability/Accessibility of Support Services</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle>Bangladesh</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Bank Street News</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Basic Choices</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Basic Education</unittitle><container type="Box">53</container></did></c02>
+<c02><did><unittitle>BBC Continuing Education Newsletter</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>BCEL</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>BCEL</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Benchmark</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Benchmark</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>Bibliography of Publishers</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Bibliography [unspecified]</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Bibliography [unspecified]</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Bibliography [unspecified]</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle>Bilingual and Bicultural Programs</unittitle><container type="Box">56</container></did></c02>
+<c02><did><unittitle>Boeck, Alvord</unittitle><container type="Box">30</container></did></c02><c02><did><unittitle>Botswana</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle>Brazil</unittitle><container type="Box">33</container></did></c02>
+<c02><did><unittitle>Brenton Stevenson, University of Toledo</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>British Columbia</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>British Open University Foundation</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Bulletin of Continuing Education in International Affairs</unittitle><container type="Box">22</container></did></c02>
+
+<c02 id="bcel"><did><unittitle>Business Council Effective Literacy</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>CAEL</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>CAETA</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Campus Market Report</unittitle><container type="Box">21</container></did></c02>
+<c02 id="cana"><did><unittitle>Canada</unittitle><container type="Box">33-36</container></did><note><p>See also <ref target="caae">Canadian Adult Education</ref>; <ref target="cjuce">Canadian Journal of University Continuing Education</ref>; <ref target="ceic">Continuing Education in Canada</ref>; <ref target="soae">Statements on Adult Education by Council of Europe, Germany, and Canada</ref>; <ref target="wnwl">Worldlit Newsletter of World Literacy of Canada</ref></p></note></c02><c02 id="caae"><did><unittitle>Canadian Adult Education</unittitle><container type="Box">18</container></did></c02>
+<c02 id="cjuce"><did><unittitle>Canadian Journal of University Continuing Education</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Capsule Report</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Capsules</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Captrends</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Career Training</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Caribbean</unittitle><container type="Box">5</container></did></c02><c02><did><unittitle>Caribbean Regional Council for Adult Education</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle>Carnegie Quarterly</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Carnegie Quarterly</unittitle><container type="Box">21</container></did></c02>
+
+<c02><did><unittitle>CASAE/ACEEA Newsletter</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Catalyst</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>CAUCE Bulletin</unittitle><container type="Box">16</container></did></c02><c02><did><unittitle>CCEU</unittitle><note><p>See <ref target="cceu">Council on the Continuing Education Unit (CCEU)</ref></p></note></did></c02>
+<c02><did><unittitle>CEC News</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>CEDEFOP</unittitle><container type="Box">21</container></did></c02><c02><did><unittitle>CEDEFOP News</unittitle><container type="Box">16</container></did></c02>
+<c02 id="cvtb"><did><unittitle>CEDEFOP Vocational Training Bulletin</unittitle><container type="Box">16</container></did></c02>
+
+<c02><did><unittitle>Center for Adult Learning and Education Credentials</unittitle><container type="Box">21</container></did></c02>
+<c02 id="ccew"><did><unittitle>Center for Continuing Education of Women</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Center for Ecomomic and Social Information</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Center for the Study of Liberal Education for Adults (CSLEA)</unittitle><container type="Box">18</container></did></c02>
+<c02><did><unittitle>Center for the Study of Liberal Education for Adults (CSLEA) - Sandy</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Centergram</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>CERES</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>CESO</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>CESO</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Charitable Foundations</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle>Charters, Alexander N.</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Child Care Programs</unittitle><container type="Box">56</container></did></c02>
+<c02><did><unittitle>Chile</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle>China</unittitle><container type="Box">5</container></did></c02><c02><did><unittitle>China</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle>Choices</unittitle><container type="Box">7</container></did></c02><c02><did><unittitle>Christians and Israel</unittitle><container type="Box">3</container></did></c02><c02><did><unittitle>Clearinghouse Adell</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle>Coalition of Adult Education Organizations (CAEO)</unittitle><container type="Box">18</container></did></c02>
+<c02><did><unittitle>Coalition of Adult Education Organizations (CAEO)</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Coast Communicator</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Cochran, Harry A.</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>COE New trends</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>COE Newsletter</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>Collage</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>College of Agricultural and Life Sciences Quarterly</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>College of Agricultural Life Science</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>COMBASE</unittitle><container type="Box">3</container></did></c02><c02><did><unittitle>COMBASE: Newsletter/Community-based programs that work</unittitle><container type="Box">41</container></did></c02>
+
+<c02 id="cpae"><did><unittitle>Commission of Professors of Adult Education (CPAE) Newsletter</unittitle><container type="Box">1</container></did><note><p>See also <ref target="pfae">Professors for Adult Education</ref></p></note></c02><c02><did><unittitle>Commission of Professors of Adult Education (CPAE) of AEA of USA Newsletter</unittitle><container type="Box">41</container></did></c02>
+
+<c02><did><unittitle>Commisssion on Higher Education</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Commissions on Higher Education; "Letter"</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Commonwealth</unittitle><container type="Box">39</container></did></c02>
+
+
+
+
+<c02><did><unittitle>Commonwealth News</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>Communication</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle>Community Agencies</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle>Community Colleges for International Development-International News</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>Community Colleges; Misc. info</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Community Development</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Community Education</unittitle><container type="Box">46</container></did></c02><c02><did><unittitle>Community Education</unittitle><container type="Box">46</container></did></c02><c02><did><unittitle>Community Education</unittitle><container type="Box">57</container></did></c02><c02><did><unittitle>Community Education Journal</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Community Education Journal</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>Community Education Today</unittitle><container type="Box">41</container></did></c02>
+
+
+
+<c02><did><unittitle>Community Services; CATALYST</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>Comparative Adult Education Newsletter</unittitle><container type="Box">41</container></did></c02>
+<c02 id="cela"><did><unittitle>Comparative Education of Latin America: Costa Rica</unittitle><container type="Box">76</container></did></c02>
+<c02><did><unittitle>Comparative Education Review</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Comparative and International Education Society (CIES)</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle>Comparative and International Education Society (CIES)</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>COMPAS</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Competency</unittitle><container type="Box">28</container></did></c02><c02><did><unittitle>Competency Based Adult Education (CBAE)</unittitle><container type="Box">46</container></did></c02><c02><did><unittitle>Competency Based Adult Education (CBAE) Futures</unittitle><container type="Box">46</container></did></c02><c02><did><unittitle>Conferences</unittitle></did><note><p>See also 
+<ref target="abesc">Adult Basic Education (ABE) Staff and Conference</ref>; 
+<ref target="coic">Conference on ICUAE</ref>; 
+<ref target="icco">ICUAE Conference 1976</ref>; 
+<ref target="llrc">Lifelong Learning Research Conference Proceedings</ref>; 
+<ref target="msuc">Michigan State University Conferences: 1961, 67, 69, 76</ref>; 
+</p></note><c03 id="aiaec"><did><unittitle>30th All India Adult Education Conference</unittitle><container type="Box">59</container></did></c03>
+<c03 id="aec"><did><unittitle>Adult Education Conference</unittitle><container type="Box">4</container></did></c03>
+<c03 id="aecna"><did><unittitle>Adult Education Conference of North America, etc.</unittitle><container type="Box">59</container></did></c03>
+<c03 id="aerc"><did><unittitle>Adult Education Research Conference (AERC)</unittitle><container type="Box">14</container></did></c03>
+<c03 id="aeiapc"><did><unittitle>Adult Education International Aid and Poverty Conference</unittitle><container type="Box">58</container></did></c03>
+<c03 id="ceon"><did><unittitle>Conference on Education and Occupational Needs of Asian-Pacific-American Women: National Institution of Education</unittitle><container type="Box">60</container></did></c03><c03><did><unittitle>Conferences on Adult Education</unittitle><container type="Box">57</container></did></c03><c03><did><unittitle>Conferences, meetings, and symposiums</unittitle><container type="Box">45</container></did></c03><c03><did><unittitle>Conference-U.S. National Association Institution</unittitle><container type="Box">70</container></did></c03><c03 id="iccae1"><did><unittitle>First International Conference on Comparative Adult Ed</unittitle><container type="Box">59</container></did></c03>
+<c03 id="icae4"><did><unittitle>Fourth International Conference on Adult Education</unittitle><container type="Box">67</container></did></c03>
+<c03 id="inco"><did><unittitle>International Conferences</unittitle><container type="Box">57</container></did></c03>
+<c03 id="reco"><did><unittitle>Research Conference</unittitle><container type="Box">58</container></did></c03>
+<c03 id="usngc"><did><unittitle>U.S. National Groups Conferences</unittitle><container type="Box">60</container></did></c03>
+
+</c02>
+
+
+
+
+
+
+
+<c02><did><unittitle>CONNECT</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Consumer Education</unittitle><container type="Box">60</container></did></c02>
+<c02 id="code"><did><unittitle>Contact with Denmark</unittitle><container type="Box">21</container></did><note><p>See also <ref target="denm">Denmark</ref></p></note></c02>
+<c02><did><unittitle>Continuing Edition</unittitle><container type="Box">21</container></did></c02>
+<c02 id="ceia"><did><unittitle>Continuing Education in Africa</unittitle><container type="Box">4</container></did></c02>
+<c02 id="ceic"><did><unittitle>Continuing Education in Canada</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Continuing Education</unittitle><container type="Box">41</container></did></c02>
+<c02 id="coed"><did><unittitle>Continuing Educator (SACEM)</unittitle><container type="Box">41</container></did><note><p>See also <ref target="sacem">Society for the Advancement of Continuing Education for Ministry (SACEM)</ref></p></note></c02>
+<c02><did><unittitle>The Continuing Educator</unittitle><container type="Box">1</container></did></c02>
+<c02 id="cmen"><did><unittitle>Continuing Medical Education Newsletter</unittitle><container type="Box">41</container></did><note><p>See also <ref target="amacme">American Medical Association (AMA) Continuing Medical Ed. Fact Sheet</ref></p></note></c02>
+<c02><did><unittitle>Convergence</unittitle><container type="Box">8</container></did></c02>
+<c02><did><unittitle>Converging Trends</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>Cooperation South</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Cooperative Extension</unittitle><container type="Box">60</container></did></c02>
+<c02><did><unittitle>Cornell Cooperative Extension</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Cornell International Agriculture Monograph</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>Cornerstone</unittitle><container type="Box">21</container></did></c02><c02><did><unittitle>Costa Rica</unittitle><note><p>See <ref target="cela">Comparative Education of Latin America: Costa Rica</ref></p></note></did></c02>
+<c02><did><unittitle>Council of Europe</unittitle><container type="Box">67</container></did></c02>
+<c02 id="cceu"><did><unittitle>Council on the Continuing Education Unit (CCEU)</unittitle><container type="Box">21</container></did><note><p>See also <ref id="aceu">Accreditation-CEU</ref></p></note></c02>
+<c02><did><unittitle>Council on the Continuing Education Unit - CCEU Reporter</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Council on the Continuing Education Unit - CCEU Reporter</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Councilgram</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Counseling</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle>Counseling</unittitle><container type="Box">62</container></did></c02>
+<c02><did><unittitle>Course trends in Adult Learning</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>CRESST</unittitle><container type="Box">3</container></did></c02><c02><did><unittitle>CRESST Evaluation Comment</unittitle><container type="Box">41</container></did></c02>
+
+<c02><did><unittitle>CSE Evaluation Comment</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle>Czechoslovakia</unittitle><container type="Box">36</container></did></c02><c02><did><unittitle>D.K. Agencies</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>DAE Newsletter</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>Data Base Systems</unittitle><container type="Box">31</container></did></c02>
+<c02 id="adfd"><did><unittitle>A Decade for Development (ASPA)</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Decade Watch</unittitle><container type="Box">3</container></did></c02>
+<c02 id="denm"><did><unittitle>Denmark</unittitle><container type="Box">36</container></did><note><p>See also <ref target="code">Contact with Denmark</ref></p></note></c02>
+<c02><did><unittitle>Development Communication Report</unittitle><container type="Box">42</container></did></c02><c02 id="dire"><did><unittitle>Directories</unittitle></did><note><p>See also <ref target="rpmd">Resources, print: misc. directories</ref></p></note><c03><did><unittitle>Adult Education at Syracuse University directories, misc.</unittitle><container type="Box">29</container></did></c03><c03><did><unittitle>Council of Europe: Education Directories</unittitle><container type="Box">40</container></did></c03>
+<c03><did><unittitle>Directories on Adult Education Resources, Misc.</unittitle><container type="Box">63</container></did></c03><c03><did><unittitle>Directories on Adult Education Resources, Misc.</unittitle><container type="Box">64</container></did></c03><c03><did><unittitle>Directories on Adult Education Resources, Misc.</unittitle><container type="Box">65</container></did></c03><c03><did><unittitle>Guides, Directories, Resources</unittitle><container type="Box">2</container></did></c03><c03><did><unittitle>International, misc. directories, 1980's</unittitle><container type="Box">53</container></did></c03><c03><did><unittitle>Professional resumes: misc. directories</unittitle><container type="Box">31</container></did></c03></c02>
+
+
+
+<c02><did><unittitle>Dissertation correspondence</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Dissertations, Master Theses</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Draper Fund Report</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>Dropouts</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle>Dyer, John </unittitle><container type="Box">30</container></did></c02><c02><did><unittitle>Earth Watch</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>Economics Education</unittitle><container type="Box">68</container></did></c02>
+
+<c02 id="educ"><did><unittitle>EDUCAFRICA</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>Education Adult Evaluation</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle>Education Adult Instruction Methods</unittitle><container type="Box">49</container></did></c02>
+
+<c02 id="edfa"><did><unittitle>Education for Aging</unittitle><container type="Box">19</container></did></c02><c02 id="efan"><did><unittitle>Education for Aging News</unittitle><container type="Box">42</container></did></c02><c02><did><unittitle>Education in Europe</unittitle><container type="Box">18</container></did></c02><c02><did><unittitle>Education Exchange</unittitle><container type="Box">19</container></did></c02>
+
+
+
+<c02><did><unittitle>Education Journalism</unittitle><container type="Box">39</container></did></c02><c02><did><unittitle>Education Policy Fellowship Program</unittitle><container type="Box">6</container></did></c02><c02><did><unittitle>The Education Quarterly</unittitle><container type="Box">26</container></did></c02><c02><did><unittitle>Education Record</unittitle><container type="Box">42</container></did></c02><c02 id="efsa"><did><unittitle>Education for Senior Adults</unittitle><container type="Box">30</container></did></c02><c02><did><unittitle>Education Testing Service</unittitle><container type="Box">49</container></did></c02><c02><did><unittitle>Education for Tomorrow's Environment</unittitle><container type="Box">42</container></did></c02><c02><did><unittitle>Education and Training Programmes for Info Personnel</unittitle><container type="Box">19</container></did></c02>
+
+
+
+<c02><did><unittitle>Education, Adult Higher: Misc. Pamphlets</unittitle><container type="Box">54-55</container></did></c02>
+
+
+
+<c02><did><unittitle>Education, Higher Finance</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle>The Educational Characteristics of the American People</unittitle><container type="Box">65</container></did></c02>
+<c02><did><unittitle>Educational Innovation</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>Educational News</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>Educational Programs for Youth</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle>Educational Record</unittitle><container type="Box">19</container></did></c02>
+
+
+<c02><did><unittitle>Egypt</unittitle><container type="Box">36</container></did></c02>
+
+<c02><did><unittitle>Elementary Education</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle>Ellis, A. Caswell</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>En Toutes Lettres</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>Engineering Industry Training Board Information Paper</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>Engineering Training Today</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>England</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>English as a Second Language</unittitle><container type="Box">61</container></did></c02>
+<c02><did><unittitle>Environment-Bibliography-Adult Education Projects</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle>Environmental, Agricultural Education</unittitle><container type="Box">39</container></did></c02><c02><did><unittitle>ERIC</unittitle><container type="Box">11</container></did></c02>
+<c02><did><unittitle>ERIC</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle>ERIC on Research</unittitle><container type="Box">72</container></did></c02>
+<c02><did><unittitle>Estonia</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle>Ethiopia</unittitle><container type="Box">36</container></did></c02><c02><did><unittitle>Europe</unittitle><container type="Box">5</container></did></c02>
+<c02 id="ebdvt"><did><unittitle>European Bureau for Development of Vocational Training</unittitle><container type="Box">40</container></did><note><p>See also <ref target="ecdvt">European Centre for Development of Vocational Training</ref></p></note></c02>
+<c02><did><unittitle>European Bureau of Adult Education: Education Legislation</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle>European Bureau of Adult Education: Newsletter</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>European Centre for Development of Vocational Training</unittitle><container type="Box">39</container></did></c02><c02 id="ecdvt"><did><unittitle>European Centre for Development of Vocational Training</unittitle><container type="Box">76</container></did><note><p>See also <ref target="ebdvt">European Bureau for Development of Vocational Training</ref></p></note></c02>
+
+<c02><did><unittitle>European Community</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle>Evaluation of Support Services: UNISIST</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle>Evaluation</unittitle><container type="Box">46</container></did></c02>
+<c02 id="eoec"><did><unittitle>Exceptional Children, Education of : "The Open University"</unittitle><container type="Box">39</container></did></c02><c02><did><unittitle>Extension Education</unittitle><container type="Box">60</container></did></c02>
+<c02><did><unittitle>Facilities</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle>FACS</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>Faits Noureaux</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>Family Education</unittitle><container type="Box">61</container></did></c02>
+<c02><did><unittitle>Family Education</unittitle><container type="Box">62</container></did></c02>
+<c02><did><unittitle>Father Wirtenberger</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Federal Agencies</unittitle><container type="Box">48</container></did></c02>
+<c02><did><unittitle>Films of the United Nations Family</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Finances</unittitle><container type="Box">46</container></did></c02><c02><did><unittitle>Finances</unittitle><container type="Box">52</container></did></c02><c02><did><unittitle>Finances: Budgets, Grants and Funding Foundations</unittitle><container type="Box">46</container></did></c02>
+
+
+<c02><did><unittitle>Finland</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle>Finland, Adult Education in</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Finnish Adult Education Organizations</unittitle><container type="Box">42</container></did></c02>
+<c02 id="fmwa"><did><unittitle>Five Minutes with ACHE</unittitle><container type="Box">42</container></did><note><p>See also <ref target="ache">Association for Continuing Higher Education (ACHE)</ref></p></note></c02>
+<c02><did><unittitle>FNV</unittitle><container type="Box">19</container></did></c02><c02><did><unittitle>FNV News</unittitle><container type="Box">1</container></did></c02>
+
+<c02><did><unittitle>Focus Bulletin</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>For the Record</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>For the Record</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>The Ford Foundation</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>Ford Foundation Letter</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>Formative Years 1940-1950</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Forumarbeit</unittitle><container type="Box">19</container></did></c02>
+
+<c02><did><unittitle>France</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>France</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle>The Free Press</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Freld Research Letters</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Froman, Lewis  (Russel Sage College)</unittitle><container type="Box">30</container></did></c02><c02><did><unittitle>Georgia Center Continued Education Acquisition Lists</unittitle><container type="Box">66</container></did></c02>
+<c02><did><unittitle>Georgia Center Quarterly</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>Georgia Center Quarterly</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>Georgia State</unittitle><container type="Box">30</container></did></c02><c02><did><unittitle>Georgia State College</unittitle><container type="Box">30</container></did></c02>
+
+<c02><did><unittitle>Germany</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Germany</unittitle><container type="Box">36</container></did><note><p>See also <ref target="soae">Statements on Adult Education by Council of Europe, Germany, and Canada</ref></p></note></c02>
+<c02 id="goal"><did><unittitle>Gerontology: Older Adult Learner</unittitle><container type="Box">47</container></did></c02>
+<c02><did><unittitle>Gewerkschaftliche Monatschefte</unittitle><container type="Box">9</container></did></c02><c02><did><unittitle>Gewerkschaftliche Monatschefte</unittitle><container type="Box">17</container></did></c02>
+
+<c02><did><unittitle>Ghana</unittitle><container type="Box">36</container></did></c02><c02><did><unittitle>Gifted children</unittitle><note><p>See <ref target="eoec">Education of Exceptional Children, "The Open University"</ref></p></note></did></c02>
+<c02><did><unittitle>Greece</unittitle><container type="Box">36</container></did></c02>
+
+<c02><did><unittitle>Growing Edge</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>The Growing Edge</unittitle><container type="Box">19</container></did></c02>
+
+<c02><did><unittitle>Guyana</unittitle><container type="Box">36</container></did></c02><c02><did><unittitle>Handicapped-Disadvantaged</unittitle><container type="Box">62</container></did></c02>
+<c02><did><unittitle>Hardy, Leslie P.</unittitle><container type="Box">30</container></did></c02><c02><did><unittitle>Health Programs</unittitle><container type="Box">62</container></did></c02>
+<c02><did><unittitle>Health Resource Center</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Higher Adult Education Pamphlets, Misc.</unittitle><container type="Box">68</container></did></c02>
+<c02><did><unittitle>Higher Education and National Affairs</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>Higher Education Research Report</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>Higher Education</unittitle><container type="Box">63</container></did></c02>
+<c02><did><unittitle>Highlights</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>Historical Foundations of A.E.</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>History</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle>History</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle>History of Education Quarterly</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Hockenberry, William R.</unittitle><container type="Box">30</container></did></c02><c02><did><unittitle>Holland</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>How to Learn</unittitle><container type="Box">28</container></did></c02>
+<c02><did><unittitle>Hungary</unittitle><container type="Box">5</container></did></c02><c02><did><unittitle>ICAE</unittitle></did><c03><did><unittitle>Education and Criminal Justice Programme Newsletter</unittitle><container type="Box">17</container></did></c03><c03><did><unittitle>ICAE News</unittitle><container type="Box">17</container></did></c03><c03><did><unittitle>Participatory Formation Newsletter</unittitle><container type="Box">17</container></did></c03><c03><did><unittitle> Voices Rising</unittitle><container type="Box">17</container></did></c03><c03 id="wopn"><did><unittitle> Women's Program Newsletter</unittitle><container type="Box">17</container></did></c03></c02>
+
+<c02><did><unittitle>ICED Newsletter</unittitle><container type="Box">17</container></did></c02><c02 id="icuae"><did><unittitle>ICUAE</unittitle></did><c03><did><unittitle>Bulletin Publication by ICUAE</unittitle><container type="Box">22</container></did></c03><c03 id="coic"><did><unittitle>Conference on ICUAE</unittitle><container type="Box">58</container></did></c03><c03 id="icco"><did><unittitle>ICUAE Conference 1976</unittitle><container type="Box">59</container></did></c03></c02>
+
+<c02><did><unittitle>Ideas and Action</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>Ideas and Action</unittitle><container type="Box">19</container></did></c02>
+
+<c02><did><unittitle>Ideas for Action</unittitle><container type="Box">17</container></did></c02><c02><did><unittitle>IDRC Reports</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>IDRC Reports</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>IFWEA-IVA-FIAET</unittitle><container type="Box">1</container></did></c02>
+<c02 id="illi"><did><unittitle>Illiteracy</unittitle><container type="Box">68</container></did></c02>
+<c02><did><unittitle>ILO Information</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>ILO Publications</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>ILSCAE Newsletter</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>ILSS</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>IMPACT</unittitle><container type="Box">13</container></did></c02>
+<c02><did><unittitle>Incentives vs. Industry</unittitle><container type="Box">16</container></did></c02>
+<c02 id="india"><did><unittitle>India</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>India</unittitle><container type="Box">36</container></did><note><p>See also <ref target="aiaec">30th All India Adult Ed. Conference</ref></p></note></c02><c02><did><unittitle>Indian Education</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle>Indian Educator</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>Indian Journal for A.E.</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>Indian Journal of A.E.</unittitle><container type="Box">17</container></did></c02>
+
+<c02><did><unittitle>Indian Journal of A.E.</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Indice de Information</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Information Census</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle>Innotech</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>Innotech Newsletter</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>Innovation</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>INSERVICE</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>Institute for Instruction Methods: Stanford University</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle>Instruction</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle>Instruction Materials</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle>Instruction Methods</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle>Instructional Television News</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>Intercultural Education</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle>Interdependent</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle>Interlit</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>International Adult Education</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle>International Associates Newsletter</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>International Association Newsletter</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>International Association of Universities of the Third Age Newsletter</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>International Baccalaureate Office</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle>International Bureau of Education: Awareness List</unittitle><container type="Box">42</container></did></c02>
+
+<c02><did><unittitle>International Corporation on Adult Education</unittitle><container type="Box">28</container></did></c02>
+<c02><did><unittitle>International Council</unittitle><container type="Box">59</container></did></c02><c02><did><unittitle>International Council for Correspondence Education</unittitle><container type="Box">4</container></did></c02>
+
+<c02><did><unittitle>International Development Education Program, Univ. of Pittsburg</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>International Handbook for Resources for Education of Adults</unittitle><container type="Box">65</container></did></c02>
+<c02><did><unittitle>International History of Adult Education</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle>International Institute for the Unification of Private Law News Bulletin</unittitle><container type="Box">19</container></did></c02>
+<c02 id="inly"><did><unittitle>International Literacy Year</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>International Network for Comparative...</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>International Organizations: ASPBAE</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle>International Organizations: Commission of the European Communities</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle>International Organizations: Commonwealth Secretariat</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle>International Organizations: Council of Europe</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle>International Symposium on Adult Education</unittitle><container type="Box">58</container></did></c02>
+<c02><did><unittitle>International University Consortium</unittitle><container type="Box">19</container></did></c02>
+
+<c02><did><unittitle>International, misc.</unittitle><container type="Box">28</container></did></c02>
+<c02><did><unittitle>International, misc.</unittitle><container type="Box">6</container></did><note><p>See also <ref target="scco">Scandinavian countries</ref>; names of individual countries</p></note></c02>
+<c02><did><unittitle>International/world Education, misc.</unittitle><container type="Box">76</container></did></c02><c02><did><unittitle>Introductions</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Iran</unittitle><container type="Box">36</container></did></c02><c02><did><unittitle>Iraq</unittitle><container type="Box">5</container></did></c02>
+
+<c02 id="eire"><did><unittitle>Ireland</unittitle><container type="Box">36</container></did><note><p>See also <ref target="aont">AONTAS (Ireland)</ref></p></note></c02>
+<c02><did><unittitle>Israel</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle>Italy</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle>Jamaica</unittitle><container type="Box">36</container></did></c02>
+
+<c02><did><unittitle>Japan</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Japan</unittitle><container type="Box">36</container></did><note><p>See also <ref target="loja">Look Japan</ref></p></note></c02><c02><did><unittitle>Jerusalem</unittitle><container type="Box">5</container></did></c02>
+
+
+<c02 id="jaal"><did><unittitle>Journal of the African Association for Literature</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle>Journal of World Education</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle>Journal of World Education</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>Kappan</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle>Kellog</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle>Kellogg Project, Misc. Occasional Papers</unittitle><container type="Box">29</container></did></c02>
+<c02 id="keny"><did><unittitle>Kenya</unittitle><container type="Box">36</container></did></c02>
+
+<c02><did><unittitle>KENYA Journal of Adult Education</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>Khitpen</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle>Korea</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Korea</unittitle><container type="Box">36</container></did></c02><c02><did><unittitle>Labor</unittitle><container type="Box">68</container></did></c02>
+<c02><did><unittitle>Labor Education Libraries</unittitle><container type="Box">47</container></did></c02>
+<c02><did><unittitle>Labor Education</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>Ladder (PLAN)</unittitle><container type="Box">24</container></did></c02>
+<c02 id="lali"><did><unittitle>Laubach Literacy International</unittitle><container type="Box">15</container></did></c02><c02><did><unittitle>Leadership</unittitle><note><p>See <ref target="aealp">Adult Ed. Association (AEA) Leadership Pamphlets</ref>; <ref target="aeald">Adult Ed. Association (AEA) Leadership Digest</ref>; <ref target="adle">Adult Leadership</ref>; <ref target="lilc">Looking into (LRI) Leadership Courses</ref></p></note></did></c02>
+<c02><did><unittitle>Learning</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>Learning</unittitle><container type="Box">53</container></did></c02>
+<c02><did><unittitle>Learning Connection</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>Learning in New York</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Learning in New York</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle>Learning in New York</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>The Learning Society</unittitle><container type="Box">63</container></did></c02>
+<c02><did><unittitle>Legislation</unittitle><container type="Box">53</container></did></c02>
+
+
+<c02 id="lale"><did><unittitle>Libraries and Literacy Education</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Libraries: U.S. Department of Health, Education, and Welfare</unittitle><container type="Box">47</container></did></c02>
+<c02><did><unittitle>Library of Continuing Education at Syracuse University</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle>L'ICEA</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle>L'ICEA</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle>Life Planning with Adults</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Lifelong Learning</unittitle></did><c03><did><unittitle>Lifelong Learning</unittitle><container type="Box">24</container></did></c03><c03><did><unittitle>Lifelong Learning</unittitle><container type="Box">67</container></did></c03><c03><did><unittitle>Lifelong Learning</unittitle><container type="Box">68</container></did></c03><c03><did><unittitle>Lifelong Learning</unittitle><container type="Box">69</container></did></c03><c03><did><unittitle>Lifelong Learning Forum</unittitle><container type="Box">43</container></did></c03><c03 id="llrc"><did><unittitle>Lifelong Learning Research Conference Proceedings</unittitle><container type="Box">59</container></did></c03></c02>
+<c02><did><unittitle>Linking the National Voluntary Sector</unittitle><container type="Box">43</container></did></c02>
+<c02 id="lirl"><did><unittitle>Listen Real Loud-News of Women's Liberation Worldwide</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>Listing of Periodicals Received by Syracuse University</unittitle><container type="Box">78</container></did></c02>
+<c02><did><unittitle>Literacy</unittitle><container type="Box">69</container></did><note><p>See also <ref target="alrc">Adult Literacy Responses to Comic Strip Narratives Among Inmates of a Correctional Institution</ref>; <ref target="aoscl">Agencies, Organizations, and Sponsors of Civic Literacy</ref>; <ref target="bcel">Business Council Effective Literacy</ref>; <ref target="illi">Illiteracy </ref>; <ref target="inly">International Literacy Year</ref>; <ref target="rtlc">Report of the Texas Literacy Council</ref>; <ref target="wnwl">Worldlit Newsletter of World Literacy of Canada</ref></p></note></c02>
+<c02><did><unittitle>Literacy Documentation</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Literacy and English as a Second Language</unittitle><container type="Box">47</container></did></c02><c02><did><unittitle>Literacy Instruction</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Literacy Instruction</unittitle><container type="Box">69</container></did><note><p>See also <ref target="albs">Adult Literacy and Basic Skills Unit</ref>; <ref target="lali">Laubach Literacy International</ref>; <ref target="malt">Managing Adult Literacy Training</ref>; <ref target="lale">Libraries and Literacy Education</ref></p></note></c02>
+<c02><did><unittitle>Literacy Review</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Literacy Volunteers of America</unittitle><container type="Box">15</container></did></c02>
+
+<c02 id="loja"><did><unittitle>Look Japan</unittitle><container type="Box">4</container></did></c02>
+<c02 id="lilc"><did><unittitle>Looking into (LRI) Leadership Courses</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Love, Robert</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Lucis Trust</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Malawi</unittitle><container type="Box">37</container></did></c02>
+<c02 id="malt"><did><unittitle>Managing Adult Literacy Training</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle>Martinique</unittitle><container type="Box">37</container></did></c02>
+
+<c02><did><unittitle>Mass Media</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Mass Media A.E.</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle>Media and Adult Learning</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>Media Instruction: Extension Education through Television</unittitle><container type="Box">47</container></did></c02>
+<c02><did><unittitle>Media: 2 Misc. Pamphlets</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle>Memo</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>Mexico</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Mexico</unittitle><container type="Box">37</container></did></c02><c02><did><unittitle>Michigan State University</unittitle></did><c03 id="msuc"><did><unittitle>Conferences</unittitle><unitdate type="inclusive" normal="1961">1961, </unitdate><unitdate type="inclusive" normal="1967">1967, </unitdate><unitdate type="inclusive" normal="1969">1969, </unitdate><unitdate type="inclusive" normal="1976">1976</unitdate><container type="Box">59</container></did></c03><c03><did><unittitle>Study Team Reports on Non-Formal Education</unittitle><container type="Box">46</container></did></c03></c02>
+
+<c02><did><unittitle>Middle East Review</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle>Middle States Association</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle>Midwest Focus</unittitle><container type="Box">24</container></did></c02>
+<c02 id="eomg"><did><unittitle>Migrants, education of </unittitle><container type="Box">51</container></did></c02>
+
+
+<c02><did><unittitle>Miller, Donald</unittitle><container type="Box">30</container></did></c02><c02><did><unittitle>Mills, Henry</unittitle><container type="Box">30</container></did></c02><c02 id="eomn"><did><unittitle>Minorities, education of </unittitle><container type="Box">39</container></did></c02><c02><did><unittitle>Minorities, education of </unittitle><container type="Box">49</container></did></c02>
+
+<c02><did><unittitle>Mississippi Community Education Quarterly</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle>Momentum</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle>Mountain Plains Adult Education Newsletter</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>Mumma, Richard </unittitle><container type="Box">30</container></did></c02><c02><did><unittitle>Museums: An Overview of Museums and Continuing Education</unittitle><container type="Box">48</container></did></c02>
+<c02><did><unittitle>NACAC</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle>NACAC Bulletin</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>NALPS</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle>NAPCAE Exchange</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>National Adult Education Boards, Councils, etc.</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle>National Advisory Council on Adult Education</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle>National Advisory Council</unittitle><container type="Box">53</container></did></c02>
+<c02><did><unittitle>National Asssociation of Secondary Schools' Principals</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle>National Center for Education Brokering Newsletter</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>National Council for International Visitors (NCIV)</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>National Council for International Visitors (NCIV)</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle>National Info Exchange</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle>National Institute of Adult Continuing Education (NIACE)</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>National Institute of Adult Continuing Education (NIACE)</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle>National Institute of Adult Education</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>National Report</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle>National Report for Training and Development</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>National Report on Human Resources</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>National Training Laboratories, National Education Association</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>National University Continuing Education Association (NUCEA)</unittitle><container type="Box">13</container></did></c02>
+<c02><did><unittitle>National University Continuing Education Association (NUCEA) Continuing Education News</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>National University Continuing Education Association (NUCEA) Newsletter</unittitle><container type="Box">43</container></did></c02>
+<c02 id="nuea"><did><unittitle>National University Extension Association (NUEA)</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle>NATTS Network</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle>NATTS News</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>NCEA</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>NEAP Newsletter</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>Netherlands</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle>Network Circuit</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>Network Exchange</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>Network Fact Sheet</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>Network Vanguard</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>Neuffer, Frank</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>New Directions for University Adult Education</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>New York Association for Continuing Commmunity Education</unittitle><container type="Box">59</container></did></c02>
+<c02><did><unittitle>New Zealand</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle>New Zealand Journal of Adult Learning</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>News and Views</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle>News and Views</unittitle><container type="Box">43</container></did></c02>
+<c02 id="nefa"><did><unittitle>News Education for Aging</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle>News</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle>Newsletters</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Newsounds</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>Nexus</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>NFE Exchange</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>NHSC Bulletin</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>NHSC Bulletin</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>NHSC Misc.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>NHSC News</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>NHSC News</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>NHSC Report</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Niagara Falls Board of Education</unittitle><container type="Box">56</container></did></c02>
+<c02 id="nige"><did><unittitle>Nigeria</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle>NIJ Reports</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>NN+Q</unittitle><container type="Box">25</container></did></c02>
+<c02 id="nguc"><did><unittitle>Non-Governmental Universities and Colleges</unittitle><container type="Box">51</container></did><note><p>See also <ref target="nga">Agencies: Non-Governmental</ref></p></note></c02>
+<c02><did><unittitle>Non-Formal Education Bulletin</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>Norway</unittitle><container type="Box">37</container></did></c02>
+
+<c02><did><unittitle>Norwegian Institute of Adult Education Reports</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle>Norwegian Institute of Adult Education Reports</unittitle><container type="Box">43</container></did></c02><c02><did><unittitle>Notes and Studies</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>Notes on the Commonwealth</unittitle><container type="Box">2</container></did></c02><c02><did><unittitle>NUEA</unittitle><note><p>See <ref target="nuea">National University Extension Association (NUEA)</ref></p></note></did></c02>
+<c02><did><unittitle>NUFFIC-CESO Acquisition Lists</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle>NYACCE</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>NYACCE</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle>NYACCE</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle>O'Brian, Doris </unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>O'Neil, L.D.</unittitle><container type="Box">30</container></did></c02>
+
+<c02><did><unittitle>O'Regan, William</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Occupational and Continuing Education Newsletter</unittitle><container type="Box">20</container></did></c02>
+<c02 id="oave"><did><unittitle>Occupational and Vocational Education</unittitle><container type="Box">70</container></did></c02>
+<c02><did><unittitle>Occupational Programs</unittitle><container type="Box">69</container></did></c02>
+<c02><did><unittitle>Odyssey</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>OERI Bulletin</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>Office of Economic Opportunity</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Office on Education Credit and Credentials</unittitle><container type="Box">20</container></did></c02><c02><did><unittitle>Office on Education Credit and Credentials News</unittitle><container type="Box">43</container></did></c02>
+
+<c02><did><unittitle>On Adult Learning</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>The Onondaga Citizens League, Reports 5 &amp; 6</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Open Line</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>Open University Acquisition Lists</unittitle><container type="Box">66</container></did></c02>
+<c02><did><unittitle>Opportunity Grants</unittitle><container type="Box">61</container></did></c02>
+<c02><did><unittitle>Orbit</unittitle><container type="Box">44</container></did></c02><c02><did><unittitle>Orbit Organization Chart</unittitle><container type="Box">20</container></did></c02>
+
+<c02><did><unittitle>Oregon State System of Higher Education</unittitle><container type="Box">62</container></did></c02>
+<c02><did><unittitle>Organizational Papers, Misc. </unittitle><container type="Box">47</container></did></c02>
+<c02><did><unittitle>Theory, Innovation, and Practice in Andragogy</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>PACE-Paragraphs About Continuing Education</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Pachamama</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>Parenting Programs (Teenagers, Hyperactive Children)</unittitle><container type="Box">70</container></did></c02>
+<c02><did><unittitle>Parkinson, George</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Participatory Formation - A Network of the International Council for A.E.</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Participatory Research Newsletter</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Partnergram</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>Partners</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>Peace Corps</unittitle><container type="Box">28</container></did></c02>
+<c02><did><unittitle>Peace Corps</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle>Peace Newsletter</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Pedagogical Reports</unittitle><container type="Box">65</container></did></c02>
+<c02><did><unittitle>Personnalité Education Société</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Philippines</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle>Physical Education</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle>Planned Parenthood World Population</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>PLUS</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Poland</unittitle><container type="Box">37</container></did></c02>
+
+<c02><did><unittitle>Population</unittitle><container type="Box">20</container></did></c02><c02 id="ppc"><did><unittitle>Population Policy Compendium</unittitle><container type="Box">20</container></did><note><p>See also <ref target="unppc">United Nations Population Policy Compendium</ref></p></note></c02>
+
+<c02><did><unittitle>POPULI</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Portugal</unittitle><container type="Box">37</container></did></c02><c02><did><unittitle>Posey, Roland B.</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Problem Solving</unittitle><container type="Box">74</container></did></c02>
+<c02><did><unittitle>Problem Solving</unittitle><container type="Box">74</container></did></c02>
+<c02><did><unittitle>Professional</unittitle><container type="Box">70</container></did></c02>
+<c02><did><unittitle>Professional Adult Educators</unittitle><container type="Box">70</container></did></c02>
+<c02><did><unittitle>Professional Development</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle>Professional Developments</unittitle><container type="Box">20</container></did></c02>
+
+<c02 id="pfae"><did><unittitle>Professors for Adult Education</unittitle><container type="Box">15</container></did><note><p>See also <ref target="cpae">Commission of Professors of Adult Education (CPAE)</ref></p></note></c02>
+<c02><did><unittitle>Program Development</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle>Program Development</unittitle><container type="Box">72</container></did></c02>
+<c02><did><unittitle>Programme News</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Programs for Development</unittitle><container type="Box">71</container></did></c02>
+<c02 id="prfw"><did><unittitle>Programs for Women</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle>Programs in Basic Education</unittitle><container type="Box">53</container></did></c02>
+<c02 id="prag"><did><unittitle>Programs on Aging</unittitle><container type="Box">53</container></did></c02>
+<c02><did><unittitle>Programs on Employment</unittitle><container type="Box">61</container></did></c02>
+<c02><did><unittitle>Public Relations</unittitle><container type="Box">72</container></did></c02>
+<c02><did><unittitle>Public Schools</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle>Public Schools</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle>Public Welfare</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle>Publications from Universities</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Publications on Adult Education Research, misc.</unittitle><container type="Box">74</container></did></c02>
+<c02><did><unittitle>Pulse</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Qatar</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle>R&amp;D for Higher Education</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>R+D Monthly Contracts</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>Re:ACE</unittitle><container type="Box">20</container></did></c02><c02><did><unittitle>Re:ACE Reader</unittitle><container type="Box">44</container></did></c02>
+
+<c02><did><unittitle>The Reader</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>Readings in Program Development</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Reals, Willis</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Regents College Reports</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>Region Exchange</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Region X: X Change</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Release</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Religion</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle>Religion</unittitle><container type="Box">71</container></did></c02>
+<c02 id="rtlc"><did><unittitle>Report of the Texas Literacy Council</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Reports</unittitle><container type="Box">6</container></did></c02>
+
+<c02><did><unittitle>Research in Adult Education: misc. pamphlets</unittitle><container type="Box">72</container></did></c02>
+<c02><did><unittitle>Research in Adult Education: misc. pamphlets</unittitle><container type="Box">73</container></did></c02>
+<c02><did><unittitle>Research in Adult Education: misc. pamphlets</unittitle><container type="Box">74</container></did></c02>
+<c02><did><unittitle>Research in Distance Education</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>Residential Programs</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle>Residential Short Courses</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Resources in Migrant Education</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Resources, print: Council of Europe, 3 volumes</unittitle><container type="Box">31</container></did></c02>
+<c02 id="rpmd"><did><unittitle>Resources, print: misc. directories</unittitle><container type="Box">31</container></did><note><p>See also <ref target="dire">Directories</ref></p></note></c02>
+<c02><did><unittitle>Resources, print: misc.</unittitle><container type="Box">31</container></did></c02>
+
+<c02><did><unittitle>RLS Reporter</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Romania</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle>Russia</unittitle><note><p>See <ref target="ussr">U.S.S.R.</ref></p></note></did></c02>
+<c02><did><unittitle>The Royal Bank Letter</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>Royce West</unittitle><container type="Box">30</container></did></c02>
+
+<c02 id="scco"><did><unittitle>Scandinavian countries</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Scotland</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>SCUTREA</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>SCUTREA</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle>Second Thoughts</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Selected bibliographies on Culture</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>SEVA-MANDIR Newsletter</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Singapore</unittitle><container type="Box">37</container></did></c02>
+<c02 id="sacem"><did><unittitle>Society for the Advancement of Continuing Education for Ministry (SACEM)</unittitle><container type="Box">20</container></did><note><p>See also <ref target="coed">Continuing Educator (SACEM)</ref></p></note></c02><c02><did><unittitle>Software Consortium</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Source</unittitle><container type="Box">7</container></did></c02>
+<c02 id="sbevc"><did><unittitle>A Source Book for Education and Vocational Counselors: "The Alive Directory"</unittitle><container type="Box">67</container></did></c02>
+<c02 id="soaf"><did><unittitle>South Africa</unittitle><container type="Box">37</container></did><note><p>See also <ref target="africa">Africa</ref></p></note></c02>
+<c02><did><unittitle>South End Press</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>The Spencer Foundation</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>Spencer Foundation</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Spengler, Edwin, Brooklyn College</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Spivey, Willis T.</unittitle><container type="Box">30</container></did></c02><c02><did><unittitle>Sri Lanka</unittitle><container type="Box">37</container></did></c02>
+
+<c02><did><unittitle>Stamm, Fred</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>State Agencies</unittitle><container type="Box">48</container></did></c02>
+<c02><did><unittitle>State Association Newsletter</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>State Education Department</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>State Education Leader</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Statements and Speeches</unittitle><container type="Box">44</container></did></c02>
+<c02 id="soae"><did><unittitle>Statements on Adult Education by Council of Europe, Germany, and Canada</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle>Statistics</unittitle><container type="Box">65</container></did></c02>
+<c02><did><unittitle>Studies in Continuing Education</unittitle><container type="Box">29</container></did></c02>
+<c02><did><unittitle>Studies of Higher Education and Research</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>Studies of Higher Education and Research</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Sudan</unittitle><container type="Box">37</container></did></c02><c02><did><unittitle>Sweden</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle>Swedish National Board of Universities and Colleges</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Swedish Research on Higher Education</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Switzerland</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle>Syracuse Scholar, vol. 8, Sp. 1987</unittitle><container type="Box">30</container></did></c02><c02><did><unittitle>Syracuse University Publications</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle>Syracuse University Publications in Continuing Education (SUPCE)</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Syracuse University Publications in Continuing Education (SUPCE)</unittitle><container type="Box">15</container></did></c02>
+
+<c02><did><unittitle>Syracuse University Publications in Continuing Education (SUPCE)</unittitle><container type="Box">26</container></did></c02>
+<c02><did><unittitle>Tanzania</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle>Teaching Adults</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Teaching at a Distance</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Techniques for Teaching Adults</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Tel-Coms</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle>Thailand</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Thailand</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle>Today</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle>Training and Development</unittitle><container type="Box">67</container></did></c02><c02><did><unittitle>Training and Development at Syracuse University</unittitle><container type="Box">71</container></did></c02>
+
+<c02><did><unittitle>Tranet</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle>Transitions</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>Trends</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle>Trends in Adult Education</unittitle><container type="Box">66</container></did></c02>
+<c02><did><unittitle>Trinidad</unittitle><container type="Box">38</container></did></c02>
+<c02><did><unittitle>Turkey</unittitle><container type="Box">38</container></did></c02>
+<c02><did><unittitle>U.S. Agencies</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle>U.S. Department of Health, Education, and Welfare</unittitle><container type="Box">56</container></did></c02>
+<c02><did><unittitle>U.S. Department of Health, Education, and Welfare</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle>U.S. Department of Health, Education, and Welfare Reports</unittitle><container type="Box">74</container></did></c02>
+<c02><did><unittitle>U.S. Department of Labor</unittitle><container type="Box">1</container></did></c02>
+
+<c02><did><unittitle>U.S. Professional Agencies</unittitle><container type="Box">50</container></did></c02>
+<c02 id="ussr"><did><unittitle>U.S.S.R.</unittitle><container type="Box">38</container></did></c02>
+<c02><did><unittitle>Un Nuevo Dia</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle>UNDP</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle>UNDP</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle>UNDP Misc.</unittitle><container type="Box">7</container></did></c02><c02 id="unesco"><did><unittitle>UNESCO</unittitle></did><note><p>See also <ref target="aecu">AEC UNESCO</ref></p></note><c03><did><unittitle>UNESCO</unittitle><container type="Box">12</container></did></c03><c03><did><unittitle>UNESCO</unittitle><container type="Box">16</container></did></c03><c03><did><unittitle>UNESCO</unittitle><container type="Box">28</container></did></c03><c03><did><unittitle>UNESCO</unittitle><container type="Box">67</container></did></c03><c03><did><unittitle>UNESCO Adult Education</unittitle><container type="Box">44</container></did></c03><c03><did><unittitle>UNESCO Backgrounder</unittitle><container type="Box">45</container></did></c03><c03><did><unittitle>UNESCO Directions</unittitle><container type="Box">60</container></did></c03><c03><did><unittitle>UNESCO Educational Innovation and Information</unittitle><container type="Box">45</container></did></c03><c03><did><unittitle>UNESCO Facts and Figures</unittitle><container type="Box">45</container></did></c03><c03><did><unittitle>UNESCO Institute for Education Bibliography</unittitle><container type="Box">45</container></did></c03><c03><did><unittitle>UNESCO Regional AEC</unittitle><container type="Box">60</container></did></c03><c03><did><unittitle>UNESCO Surveys and Studies</unittitle><container type="Box">45</container></did></c03><c03><did><unittitle>UNESCO Unisist Newsletter</unittitle><container type="Box">45</container></did></c03><c03><did><unittitle>UNESCO-UNEP Environmental Education Newletter: CONNECT</unittitle><container type="Box">45</container></did></c03></c02>
+
+
+
+
+
+
+<c02><did><unittitle>The Unfinished Agenda</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>UNFPA Newsletter-Population</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle>UNFPA Newsletter-Population</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle>United Kingdom</unittitle><container type="Box">38</container></did></c02>
+<c02><did><unittitle>United Nations</unittitle><container type="Box">3</container></did></c02>
+
+<c02 id="unppc"><did><unittitle>United Nations Population Policy Compendium</unittitle><container type="Box">44</container></did><note><p>See also <ref target="ppc">Population Policy Compendium</ref></p></note></c02>
+<c02><did><unittitle>United Nations University: International Centre for Distance Learning</unittitle><container type="Box">3</container></did></c02><c02><did><unittitle>United Nations University: International Centre for Education</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle>United Nations University, "Work in Progress"</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle>Universities Council for Adult Education (UCAE)</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Universities Council for Adult Education (UCAE) and UCACE Annual Reports</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>University of British Columbia</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle>University of Illinois at Urbana - Champaign Bulletin</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle>University of Jamme</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle>University of Liverpool Acquisition Lists</unittitle><container type="Box">66</container></did></c02>
+<c02><did><unittitle>University of Nottingham</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>University of Reading Acquisition Lists</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle>Unpublished International Occasional Papers in Adult Education</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle>UNU Newsletter</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle>UNU Work in Progress</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle>Venezuela</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Venezuela</unittitle><container type="Box">38</container></did></c02>
+<c02><did><unittitle>Vient de Paraitre</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle>Vocational Education</unittitle><container type="Box">23</container></did></c02>
+<c02 id="voed"><did><unittitle>Vocational Education</unittitle><container type="Box">70</container></did><note><p>See also <ref target="cvtb">CEDEFOP Vocational Training Bulletin</ref>; <ref target="ebdvt">European Bureau for Development of Vocational Training</ref>; <ref target="ecdvt">European Centre for Development of Vocational Training</ref>; <ref target="oave">Occupational and Vocational Education</ref>; <ref target="sbevc">A Source Book for Education and Vocational Counselors: "The Alive Directory"</ref>; <ref target="votr">Vocational Training</ref></p></note></c02>
+<c02><did><unittitle>Vocational Educator</unittitle><container type="Box">45</container></did></c02>
+<c02 id="votr"><did><unittitle>Vocational Training</unittitle><container type="Box">45</container></did><note><p>See also <ref target="voed">Vocational Education</ref></p></note></c02>
+<c02><did><unittitle>Voices for Peace</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle>Voices Rising</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Volunteer Voice</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle>Vox Populi</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Waters, John </unittitle><container type="Box">30</container></did></c02><c02 id="wacr"><did><unittitle>West Africa Crier-Newsletter of the Subregion: AALAE</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle>Who Press</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle>Whole Non-Profit Catalog</unittitle><container type="Box">23</container></did></c02>
+
+<c02><did><unittitle>Women - Education</unittitle><container type="Box">48</container></did><note><p>See also <ref target="ccew">Center for Continuing Education of Women</ref>; <ref target="ceon">Conference on Education and Occupational Needs of Asian-Pacific-American Women: National Institution of Education</ref>; ICAE: <ref target="wopn"> Women's Program Newsletter</ref>; <ref target="lirl">Listen Real Loud-News of Women's Liberation Worldwide</ref>; <ref target="prfw">Programs for Women</ref>; Worker's Education Association: <ref target="wwsn">WEA Women's Studies Newsletter</ref></p></note></c02>
+<c02><did><unittitle>Women's World</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle>Worker's Education Association (WEA)</unittitle></did><c03><did><unittitle>Worker's Ed. Association</unittitle><container type="Box">51</container></did></c03><c03><did><unittitle>WEA News Journal of Workers Educational Association</unittitle><container type="Box">45</container></did></c03><c03 id="wwsn"><did><unittitle>WEA Women's Studies Newsletter</unittitle><container type="Box">45</container></did></c03></c02>
+
+
+<c02><did><unittitle>The World Bank</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>World Bank</unittitle><container type="Box">76</container></did></c02>
+<c02><did><unittitle>World Development</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>World Education Report</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle>World Education, Inc.</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>World Education, Inc.</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle>World Goodwill</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle>World Health</unittitle><container type="Box">7</container></did></c02>
+<c02 id="wnwl"><did><unittitle>Worldlit Newsletter of World Literacy of Canada</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle>Yugoslavia</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle>Zambia</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle>Zimbabwe</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle>Miscellaneous</unittitle></did><c03><did><unittitle>Various large pamphlets</unittitle><container type="Box">27</container></did></c03><c03><did><unittitle>Various Pamphlets (over 1/4 ")</unittitle><container type="Box">26</container></did></c03><c03><did><unittitle>Various Pamphlets</unittitle><container type="Box">26</container></did></c03></c02>
+
+
+</c01>
+		<c01 level="series" id="boxlist">
+				<did>
+					<unittitle>Box listing</unittitle>
+				</did>
+				
+			<c02><did><unittitle>Council on the Continuing Education Unit - CCEU Reporter</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> CPAE Newsletter</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>The Unfinished Agenda</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Universities Council for Adult Education (UCAE) and UCACE Annual Reports</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Universities Council for Adult Education (UCAE)</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> NCEA</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> Vox Populi</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> NHSC Report</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> NHSC News</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> NHSC Bulletin</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> NHSC Misc.</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> Residential Short Courses</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> Looking into (LRI) Leadership Courses</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> New Directions for University Adult Education</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> Community Colleges; Misc. info</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> Office of Economic Opportunity</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> National Institute of Adult Continuing Education (NIACE)</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> U.S. Department of Labor</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>The IDRC Reports</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> University of Nottingham</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>The Continuing Educator</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> IFWEA-IVA-FIAET</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> FNV News</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> International Development Education Program, Univ. of Pittsburg</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> Region Exchange</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> Nexus</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> SCUTREA</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle> International-Adult Education in Finland</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> International-Indice de Information</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>The Onondaga Citizens League, Reports 5 &amp; 6</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> Health Resource Center</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> Aries</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> AC, ACE</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> National Institute of Adult Education</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> Guides, Directories, Resources</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> Dissertations, Master Theses</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> Literacy Review</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> Literacy Instruction</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> National Training Laboratories, National Education Association</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> Community Development</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> Readings in Program Development</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> Adult Education Monograph, "Civil Defense for Adult..."</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> Notes on the Commonwealth</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle> Continuing Education in Canada</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> Mass Media</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> BCEL</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> International-United Nations University: International Centre for Distance Learning</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> CRESST</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> World Education, Inc.</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> South End Press</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> RLS Reporter</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> COMBASE</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> NIJ Reports</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> International-United Nations</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> Christians and Israel</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> International-Commissions on Higher Education; "Letter"</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> Newsletters</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> CESO</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> AC/UNC Newsletter</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> Decade Watch</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> Literacy Documentation</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>The Free Press</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>The World Bank</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle> Learning in New York</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> Cornell Cooperative Extension</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> Lucis Trust</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Adult Education Association (AEA)  Leadership Pamphlets</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Adult Education Association (AEA) Leadership Digest</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> Adult Education Conference</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> ABE Staff and Conference</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> Syracuse University Publications in Continuing Education (SUPCE)</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> American Foundation for Continuing Education, Case Stories in American Politics</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> International Council for Correspondence Education</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> Report of the Texas Literacy Council</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Adult Basic Education (ABE) National Teacher Training Study</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> Continuing Education in Africa</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> College of Agricultural and Life Sciences Quarterly</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> Look Japan</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> Voices Rising</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle> Germany</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> AONTAS (Ireland)</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Thailand</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> British Columbia</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Korea</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Australia</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Holland</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Scotland</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Scandinavian countries</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Venezuela</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> India</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Europe</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Bangladesh</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Hungary</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Jerusalem</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> France</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> England</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Japan</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Africa</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> China</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Carribean</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Iraq</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> Mexico</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle> International-Indian Journal of A.E.</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle> Reports</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle> Education Policy Fellowship Program</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle> PLUS</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle> Publications from Universities</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle> Participatory Formation - A Network of the International Council for A.E.</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle> International Association Newsletter</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle> International-Misc.</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle> World Health</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle> World Development</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle> Choices</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle> Cooperation South</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle> Source</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle> UNDP Misc.</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle> Comparative Education Review</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle> History of Education Quarterly</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle> Convergence</unittitle><container type="Box">8</container></did></c02>
+<c02><did><unittitle> Gewerkschaftliche Monatschefte</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle> Adult Education and Development</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle> Adult Education , A Journal of Research and Theory 1960-1982, 1956, 1957</unittitle><container type="Box">10</container></did></c02>
+<c02><did><unittitle> ERIC</unittitle><container type="Box">11</container></did></c02>
+<c02><did><unittitle> UNESCO</unittitle><container type="Box">12</container></did></c02>
+<c02><did><unittitle> IMPACT</unittitle><container type="Box">13</container></did></c02>
+<c02><did><unittitle> National University Continuing Education Association (NUCEA)</unittitle><container type="Box">13</container></did></c02>
+<c02><did><unittitle> Adult Education Research Conference</unittitle><container type="Box">14</container></did></c02>
+<c02><did><unittitle> Aker, George</unittitle><container type="Box">14</container></did></c02>
+<c02><did><unittitle> American Association for Adult Education</unittitle><container type="Box">14</container></did></c02>
+<c02><did><unittitle> Association for Continuing Higher Education</unittitle><container type="Box">14</container></did></c02>
+<c02><did><unittitle> Kellog</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle> Laubach Literacy International</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle> Library of Continuing Education at Syracuse University</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle> Literacy Volunteers of America</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle> National Advisory Council on Adult Education</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle> National University Extension Association (NUEA)</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle> Professors for Adult Education</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle>Syracuse University Publications in Continuing Education (SUPCE)</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle> SU Publications</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle> UNESCO</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> AMT Events</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Arbeits-und Sozialrecht be Luchterhand</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> ASPBAE Courier</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Association for World Education Newsletter</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Australian Journal of Adult Education</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> ATE Newsletter</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Bank Street News</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Basic Choices</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> BBC Continuing Education Newsletter</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Incentives vs. Industry</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Benchmark</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> British Open University Foundation</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Canadian Journal of University Continuing Education</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Capsules</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Captrends</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Carnegie Quarterly</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> CASAE/ACEEA Newsletter</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Catalyst</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> CAUCE Bulletin</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Council on the Continuing Education Unit - CCEU Reporter</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> CEDEFOP News</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> CEDEFOP Vocational Training Bulletin</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Center for Continuing Education of Women</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Centergram</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> CESO</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle> Gewerkschaftliche Monatschefte</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> Growing Edge</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> Higher Education Research Report</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> Higher Education and National Affairs</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> Historical Foundations of A.E.</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> ICAE Women's Program Newsletter</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> ICAE Education and Criminal Justice Programme Newsletter</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> ICAE News</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> ICAE Participatory Formation Newsletter</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> ICAE Voices Rising</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> ICED Newsletter</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> IDRC Reports</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> ILO Information</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> ILSCAE Newsletter</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> Indian Educator</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> Ideas and Action</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> Ideas for Action</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> Indian Journal for A.E.</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> Indian Journal of A.E.</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> Innotech Newsletter</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> INSERVICE</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> Interdependent</unittitle><container type="Box">17</container></did></c02>
+<c02><did><unittitle> Association of University Evening Colleges (AUEC)</unittitle><container type="Box">18</container></did></c02>
+<c02><did><unittitle> Canadian Adult Education</unittitle><container type="Box">18</container></did></c02>
+<c02><did><unittitle> Center for the Study of Liberal Education for Adults (CSLEA)</unittitle><container type="Box">18</container></did></c02>
+<c02><did><unittitle> Coalition of Adult Education Organizations (CAEO)</unittitle><container type="Box">18</container></did></c02>
+<c02><did><unittitle> Education in Europe</unittitle><container type="Box">18</container></did></c02>
+<c02><did><unittitle> D.K. Agencies</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Draper Fund Report</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Earth Watch</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Education for Aging</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Education Exchange</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Educational Innovation</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Education and Training Programmes for Info Personnel</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Educational News</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Educational Record</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> En Toutes Lettres</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> FACS</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Faits Noureaux</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> FNV</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>The Ford Foundation</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> For the Record</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Forumarbeit</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Georgia Center Quarterly</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle>The Growing Edge</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Highlights</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Ideas and Action</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> ILO Publications</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> ILSS</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Innotech</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Innovation</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Instructional Television News</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> International Association of Universities of the Third Age Newsletter</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> International Institute for the Unification of Private Law News Bulletin</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> International Literacy Year</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> International Network for Comparative...</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> International University Consortium</unittitle><container type="Box">19</container></did></c02>
+<c02><did><unittitle> Occupational and Continuing Education Newsletter</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Odyssey</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Office on Education Credit and Credentials</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> OERI Bulletin</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> On Adult Learning</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Open Line</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>The Orbit Organization Chart</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Pachamama</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Partnergram</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Partners</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Population</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Population Policy Compendium</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Professional Developments</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Re:ACE</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>The Reader</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Research in Distance Education</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> R+D Monthly Contracts</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Regents College Reports</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>The Royal Bank Letter</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Society for the Advancement of Continuing Education for Ministry (SACEM)</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle>The Spencer Foundation</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> Studies of Higher Education and Research</unittitle><container type="Box">20</container></did></c02>
+<c02><did><unittitle> CAEL</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Coalition of Adult Education Organizations (CAEO)</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> CAETA</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Campus Market Report</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Capsule Report</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Career Training</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Carnegie Quarterly</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> CEC News</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> CEDEFOP</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Center for Adult Learning and Education Credentials</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Center for Ecomomic and Social Information</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> CERES</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Charters, Alexander N.</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Comparative and International Education Society (CIES)</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Coast Communicator</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Collage</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> College of Agricultural Life Science</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle>Community Education Journal</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Commisssion on Higher Education</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> COMPAS</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> CONNECT</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Contact with Denmark</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Continuing Edition</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Cornerstone</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Council on the Continuing Education Unit (CCEU)</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Councilgram</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Course trends in Adult Learning</unittitle><container type="Box">21</container></did></c02>
+<c02><did><unittitle> Activity (ACT)</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>The Adult Educator</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> Adult Leadership</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>The Adult View</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> Affinities</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> Aging News</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> Agricultural News</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> ALBSU</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> ALL</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle>The AC-UNU</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> American Medical Asociation</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> AMT Events</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> Asian South Pacific Bureau of A.E.</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> Association of Teacher Education</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> BCEL</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> Benchmark</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> Bulletin Publication by ICUAE</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> Bulletin of Continuing Education in International Affairs</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> Business Council Effective Literacy</unittitle><container type="Box">22</container></did></c02>
+<c02><did><unittitle> Tel-Coms</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> Today</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> Tranet</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> UNDP</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> UNFPA Newsletter-Population</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> United Nations University of International Centre for Education</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> United Nations University, "Work in Progress"</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> University of Illinois at Urbana - Champaign Bulletin</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> University of Jamme</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> Vient de Paraitre</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> Vocational Education</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> Who Press</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> Whole Non-Profit Catalog</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> World Goodwill</unittitle><container type="Box">23</container></did></c02>
+<c02><did><unittitle> Journal of the African Association for Literature</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> Journal of World Education</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> Kappan</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> Khitpen</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> Ladder (PLAN)</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> Learning in New York</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> L'ICEA</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> Lifelong Learning</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> Mass Media A.E.</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> Middle East Review</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> Middle States Association</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> Midwest Focus</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> Mississippi Community Education Quarterly</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> Momentum</unittitle><container type="Box">24</container></did></c02>
+<c02><did><unittitle> NACAC</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle> NALPS</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle> National Council for International Visitors (NCIV)</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle> National Info Exchange</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle>National Institute of Adult Continuing Education (NIACE)</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle> National Report</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle> NATTS Network</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle> News</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle> News and Views</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle> NN+Q</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle> Norwegian Institute of Adult Education Reports</unittitle><container type="Box">25</container></did></c02>
+<c02><did><unittitle> Syracuse University Publications in Continuing Education</unittitle><container type="Box">26</container></did></c02>
+<c02><did><unittitle> Various Pamphlets</unittitle><container type="Box">26</container></did></c02>
+<c02><did><unittitle>The Education Quarterly</unittitle><container type="Box">26</container></did></c02>
+<c02><did><unittitle> Various Pamphlets (over 1/4 ")</unittitle><container type="Box">26</container></did></c02>
+<c02><did><unittitle> Various large pamphlets</unittitle><container type="Box">27</container></did></c02>
+<c02><did><unittitle> UNESCO</unittitle><container type="Box">28</container></did></c02>
+<c02><did><unittitle> International</unittitle><container type="Box">28</container></did></c02>
+<c02><did><unittitle> Peace Corps</unittitle><container type="Box">28</container></did></c02>
+<c02><did><unittitle> International Corporation on Adult Education</unittitle><container type="Box">28</container></did></c02>
+<c02><did><unittitle> How to Learn</unittitle><container type="Box">28</container></did></c02>
+<c02><did><unittitle> Competency</unittitle><container type="Box">28</container></did></c02>
+<c02><did><unittitle> Kellogg Project, Misc. Occasional Papers</unittitle><container type="Box">29</container></did></c02>
+<c02><did><unittitle> Studies in Continuing Education</unittitle><container type="Box">29</container></did></c02>
+<c02><did><unittitle> Misc. Adult Education at Syracuse University Directories</unittitle><container type="Box">29</container></did></c02>
+<c02><did><unittitle>Association of University Evening Colleges (AUEC)</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Fred Stamm</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Brenton Stevenson, University of Toledo</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> John Waters</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Alvord Boeck</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Formative Years 1940-1950</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Lewis Froman, Russel Sage College</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Edwin Spengler, Brooklyn College</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Willis Reals</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Royce West</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Roland B. Posey</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Bibliography</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Willis T Spivey</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Bibliography</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Father Wirtenberger</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> George Parkinson</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Georgia State College</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> John Dyer</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Frank Neuffer</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Richard Mumma</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Henry Mills</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Donald Miller</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> L.D. O'Neil</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Doris O'Brian</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Robert Love</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Freld Research Letters</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Leslie P. Hardy</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Harry A. Cochran</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> A. Caswell Ellis</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> William R. Hockenberry</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>Center for the Study of Liberal Education for Adults (CSLEA) - Sandy</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Dissertation correspondence</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Introductions</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Willim O'Regan</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle>The Adult Basic Education (ABE) Curriculum and Its Development</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Life Planning with Adults</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Libraries and Literacy Education</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Education for Senior Adults</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> A Decade for Development (ASPA)</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Films of the United Nations Family</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Resources in Migrant Education</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Selected bibliographies on Culture</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Bibliography of Publishers</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Syracuse Scholar, vol. 8, Sp. 1987</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Georgia State</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Personalite Education Societe</unittitle><container type="Box">30</container></did></c02>
+<c02><did><unittitle> Resources, Print: Misc. Directories</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle> Education, Higher Finance</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle> Resources, Print: Misc.</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle> Resources, Print: Council of Europe, 3 volumes</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle> Media: 2 Misc. Pamphlets</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle> Data Base Systems</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle> Professional Resumes: Misc. Directories</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle> National Adult Education Boards, Councils, etc.</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle> Professional Development</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle> Agencies, Misc.</unittitle><container type="Box">31</container></did></c02>
+<c02><did><unittitle> Evaluation of Support Services: UNISIST</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle> Availability/Accessibility of Support Services</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle> Public Welfare</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle> Environment-Bibliography-Adult Education Projects</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle> International-Argentina</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle> International-Australia</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle> International-Austria</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle> International-Botswana</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle> Unpublished International Occasional Papers in Adult Education</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle> International History of Adult Education</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle> International Adult Education</unittitle><container type="Box">32</container></did></c02>
+<c02><did><unittitle> International-Austalia</unittitle><container type="Box">33</container></did></c02>
+<c02><did><unittitle> International-Brazil</unittitle><container type="Box">33</container></did></c02>
+<c02><did><unittitle> International-Canada</unittitle><container type="Box">33</container></did></c02>
+<c02><did><unittitle> International-Canada</unittitle><container type="Box">34</container></did></c02>
+<c02><did><unittitle> International-Canada</unittitle><container type="Box">35</container></did></c02>
+<c02><did><unittitle> International-Canada</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Chile</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-China</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Czechoslovakia</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Denmark</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-France</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Egypt</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Estonia</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Ethiopia</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Finland</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Germany</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Ghana</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Greece</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Guyana</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-India</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Iran</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Ireland</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Israel</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Italy</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Jamaica</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Japan</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Kenya</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Korea</unittitle><container type="Box">36</container></did></c02>
+<c02><did><unittitle> International-Malawi</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Martinique</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Mexico</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Netherlands</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Nigeria</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-New Zealand</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Norway</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Philippines</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Poland</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Portugal</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Quatar</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Romania</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Singapore</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-South Africa</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Sri Lanka</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Sudan</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Sweden</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Switzerland</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Tanzania</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Thailand</unittitle><container type="Box">37</container></did></c02>
+<c02><did><unittitle> International-Trinidad</unittitle><container type="Box">38</container></did></c02>
+<c02><did><unittitle> International-Turkey</unittitle><container type="Box">38</container></did></c02>
+<c02><did><unittitle> International-U.S.S.R.</unittitle><container type="Box">38</container></did></c02>
+<c02><did><unittitle> International-United Kingdom</unittitle><container type="Box">38</container></did></c02>
+<c02><did><unittitle> International-Venezuela</unittitle><container type="Box">38</container></did></c02>
+<c02><did><unittitle> International-Yugoslavia</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> International-Zambia</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> International-Zimbabwe</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> International-Commonwealth</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> Education Journalism</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> Education-Exceptional Children, "The Open University"</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> Education of Minorities</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> Intercultural Education</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> Education-Environmental, Agricultural</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> European Centre for Development of Vocational Training</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> International Organizations: ASPBAE</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> Caribbean Regional Council for Adult Education</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> International Organizations: Commission of the European Communities</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> International Organizations: Commonwealth Secretariat</unittitle><container type="Box">39</container></did></c02>
+<c02><did><unittitle> International Organizations: Council of Europe</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> Council of Europe: Education Directories</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> Comparative and International Education Society (CIES)</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> European Bureau for Development of Vocational Training</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> European Bureau of Adult Education-Education Legislation</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> European Community</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> International Baccalaureate Office</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> AAAE Adult Education News</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> AC-UNU Newsletter</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> Academy News</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> Accreditation</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> Activity</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> Adult and Continuing Education Today</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> Adult Education Clearinghouse</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> Adult Education Newsletter</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> Adult Literacy and Basic Skills Unit</unittitle><container type="Box">40</container></did></c02>
+<c02><did><unittitle> AES Journal on Postsecondary Education</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Agency for Instructional Television Newsletter</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> AICS Compass</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Aid Highlight</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Alfalit</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> AMA Continuing Medical Education Fact Sheet</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Continuing Medical Education Newsletter</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> COE Newsletter</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> COE New trends</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> COMBASE: Newsletter/Community-based programs that work</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Commission of Professors of Adult Education of AEA of USA Newsletter</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Commonwealth News</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Community Colleges for International Development-International News</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Community Education Journal</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Community Education Today</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Community Services; CATALYST</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Comparative Adult Education Newsletter</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Continuing Educator (SACEM)</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Continuing Education</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Converging Trends</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> Cornell International Agriculture Monograph</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> CRESST Evaluation Comment</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> CSE Evaluation Comment</unittitle><container type="Box">41</container></did></c02>
+<c02><did><unittitle> DAE Newsletter</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Development Communication Report</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> EDUCAFRICA</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Education for Aging News</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Education for Tomorrow's Environment</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Education Record</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Engineering Industry Training Board Information Paper</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Engineering Training Today</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> European Bureau of Adult Education: Newsletter</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> International-Finnish Adult Education Organizations</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Five Minutes with ACHE</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Focus Bulletin</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> For the Record</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Ford Foundation Letter</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Georgia Center Quarterly</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Interlit</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> International Associates Newsletter</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> International Bureau of Education: Awareness List</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Journal of World Education</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> KENYA Journal of Adult Education</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> L'ICEA</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Labor Education</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Learning</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Learning Connection</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Learning in New York</unittitle><container type="Box">42</container></did></c02>
+<c02><did><unittitle> Lifelong Learning Forum</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Linking the National Voluntary Sector</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Listen Real Loud-News of Women's Liberation Worldwide</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Media and Adult Learning</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Memo</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Mountain Plains Adult Education Newsletter</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> NACAC Bulletin</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> NEAP Newsletter</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> NAPCAE Exchange</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> National Center for Education Brokering Newsletter</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> National Council for International Visitors (NCIV)</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> National Report for Training and Development</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> National Report on Human Resources</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> NATTS News</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Network Circuit</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Network Exchange</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Network Fact Sheet</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Network Vanguard</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> International-New Zealand Journal of Adult Learning</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> News and Views</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Newsounds</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> NFE Exchange</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> NHSC Bulletin</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> NHSC News</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Non-Formal Education Bulletin</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> International-Norwegian Institute of Adult Education Reports</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Notes and Studies</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>National University Continuing Education Association (NUCEA) Continuing Education News</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle>National University Continuing Education Association (NUCEA) Newsletter</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> NYACCE</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Office on Education Credit and Credentials News</unittitle><container type="Box">43</container></did></c02>
+<c02><did><unittitle> Orbit</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> PACE-Paragraphs About Continuing Education</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Participatory Research Newsletter</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Peace Newsletter</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Planned Parenthood World Population</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> POPULI</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Programme News</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Pulse</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> R&amp;D for Higher Education</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Re:ACE Reader</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Region X: X Change</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Release</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Second Thoughts</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> SEVA-MANDIR Newsletter</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Software Consortium</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Spencer Foundation</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> State Association Newsletter</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> State Education Department</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> State Education Leader</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Statements and Speeches</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Studies of Higher Education and Research</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> International-Swedish National Board of Universities and Colleges</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> International-Swedish Research on Higher Education</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Teaching Adults</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Teaching at a Distance</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Techniques for Teaching Adults</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Theory, Innovation, and Practice in Andragogy</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Transitions</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> Un Nuevo Dia</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> United Nations Population Policy Compendium</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> UNESCO Adult Education</unittitle><container type="Box">44</container></did></c02>
+<c02><did><unittitle> UNESCO Backgrounder</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> UNESCO Educational Innovation and Information</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> UNESCO Facts and Figures</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> UNESCO Institute for Education Bibliography</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> UNESCO Surveys and Studies</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> UNESCO Unisist Newsletter</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> UNESCO-UNEP Environmental Education Newletter: CONNECT</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> UNFPA Newsletter-Population</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> UNU Newsletter</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> UNU Work in Progress</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Vocational Educator</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Vocational Training</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Voices for Peace</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Volunteer Voice</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Worker's Education Association (WEA) News Journal of Workers Educational Association</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Worker's Education Association (WEA) Women's Studies Newsletter</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> West Africa Crier-Newsletter of the Subregion: AALAE</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Women's World</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> World Education Report</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Worldlit Newsletter of World Literacy of Canada</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> News Education for Aging</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Conferences, Meetings, and Symposiums</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Statements on Adult Education by Council of Europe, Germany, and Canada</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Information Census</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Accreditation-CEU</unittitle><container type="Box">45</container></did><note><p>See also <ref target="cceu">Council on the Continuing Education Unit (CCEU)</ref></p></note></c02>
+<c02><did><unittitle> Adult Basic Education (ABE)</unittitle><container type="Box">45</container></did></c02>
+<c02><did><unittitle> Adult Education Administration</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Bibliography</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Agencies, Organizations, and Sponsors Civic Literacy</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Community Education</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Finances: Budgets, Grants and Funding Foundations</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Finances</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Evaluation</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Counseling</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Competency Based Adult Education (CBAE) Futures</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> History</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Instruction</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Community Education</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Competency Based Adult Education (CBAE)</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Michigan State University, Study Team Reports on Non-Formal Education</unittitle><container type="Box">46</container></did></c02>
+<c02><did><unittitle> Labor Education Libraries</unittitle><container type="Box">47</container></did></c02>
+<c02><did><unittitle> Libraries: U.S. Department of Health, Education, and Welfare</unittitle><container type="Box">47</container></did></c02>
+<c02><did><unittitle> Literacy and English as a Second Language</unittitle><container type="Box">47</container></did></c02>
+<c02><did><unittitle> Media Instruction: Extension Education through Television</unittitle><container type="Box">47</container></did></c02>
+<c02><did><unittitle> Organizational Papers, Misc. </unittitle><container type="Box">47</container></did></c02>
+<c02><did><unittitle> Gerontology: Older Adult Learner</unittitle><container type="Box">47</container></did></c02>
+<c02><did><unittitle> Museums: An Overview of Museums and Continuing Education</unittitle><container type="Box">48</container></did></c02>
+<c02><did><unittitle> Women-Education</unittitle><container type="Box">48</container></did></c02>
+<c02><did><unittitle> Federal Agencies</unittitle><container type="Box">48</container></did></c02>
+<c02><did><unittitle> State Agencies</unittitle><container type="Box">48</container></did></c02>
+<c02><did><unittitle> (ACHE) Association for Continuing Higher Education</unittitle><container type="Box">48</container></did></c02>
+<c02><did><unittitle> Adminstration</unittitle><container type="Box">48</container></did></c02>
+<c02><did><unittitle> Administration Principles</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle> Adult Finances</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle> Adult Education-U.S. Agencies</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle> Adult Agencies: International</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle> Agencies: Non Governmental</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle> Education Testing Service</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle> NYACCE</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle> Education Adult Instruction Methods</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle> Education Minorities</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle> Adult Education Association of the U.S.</unittitle><container type="Box">49</container></did></c02>
+<c02><did><unittitle> Education Adult Evaluation</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle> Instruction Methods</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle> Community Agencies</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle> Charitable Foundations</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle> U.S. Professional Agencies</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle> Public Schools</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle> Dropouts</unittitle><container type="Box">50</container></did></c02>
+<c02><did><unittitle> Non Governmental Universities and Colleges</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle> Phyical Education</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle> Administration Superintendents</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle> Communication</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle> Indian Education</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle> Worker's Education Association (WEA)</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle> Elementary Education</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle> Education of Migrants</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle> Religion</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle> National Asssociation of Secondary Schools' Principals</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle> Administration</unittitle><container type="Box">51</container></did></c02>
+<c02><did><unittitle> Instruction Materials</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle> Facilities</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle> Peace Corps</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle> Clearinghouse Adell</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle> Institute for Instruction Methods: Stanford University</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle> ERIC</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle> Adult Organizations</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle> Finances</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle> U.S. Agencies</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle> History</unittitle><container type="Box">52</container></did></c02>
+<c02><did><unittitle> Legislation</unittitle><container type="Box">53</container></did></c02>
+<c02><did><unittitle> National Advisory Council</unittitle><container type="Box">53</container></did></c02>
+<c02><did><unittitle> Learning</unittitle><container type="Box">53</container></did></c02>
+<c02><did><unittitle> Programs in Basic Education</unittitle><container type="Box">53</container></did></c02>
+<c02><did><unittitle> Programs on Aging</unittitle><container type="Box">53</container></did></c02>
+<c02><did><unittitle> Basic Education</unittitle><container type="Box">53</container></did></c02>
+<c02><did><unittitle> International, Misc. Directories, 1980's</unittitle><container type="Box">53</container></did></c02>
+<c02><did><unittitle>Adult Basic Education (ABE) </unittitle><container type="Box">53</container></did></c02>
+<c02><did><unittitle> Education-Adult Higher: Misc. Pamphlets</unittitle><container type="Box">54</container></did></c02>
+<c02><did><unittitle> Education-Adult Higher: Misc. Pamphlets</unittitle><container type="Box">55</container></did></c02>
+<c02><did><unittitle>Adult Basic Education (ABE) in Mississippi</unittitle><container type="Box">56</container></did></c02>
+<c02><did><unittitle> Niagara Falls Board of Education</unittitle><container type="Box">56</container></did></c02>
+<c02><did><unittitle> U.S. Department of Health, Education, and Welfare</unittitle><container type="Box">56</container></did></c02>
+<c02><did><unittitle> Adult Programs on Aging</unittitle><container type="Box">56</container></did></c02>
+<c02><did><unittitle> Agricultural Education</unittitle><container type="Box">56</container></did></c02>
+<c02><did><unittitle> Bilingual and Bicultural Programs</unittitle><container type="Box">56</container></did></c02>
+<c02><did><unittitle> Child Care Programs</unittitle><container type="Box">56</container></did></c02>
+<c02><did><unittitle> Community Education</unittitle><container type="Box">57</container></did></c02>
+<c02><did><unittitle> Conferences on Adult Education</unittitle><container type="Box">57</container></did></c02>
+<c02><did><unittitle> International Conferences</unittitle><container type="Box">57</container></did></c02>
+<c02><did><unittitle> Research Conference</unittitle><container type="Box">58</container></did></c02>
+<c02><did><unittitle> Adult Education International Aid and Poverty Conference</unittitle><container type="Box">58</container></did></c02>
+<c02><did><unittitle> Conference on ICUAE</unittitle><container type="Box">58</container></did></c02>
+<c02><did><unittitle> International Symposium on Adult Education</unittitle><container type="Box">58</container></did></c02>
+<c02><did><unittitle> International Council</unittitle><container type="Box">59</container></did></c02>
+<c02><did><unittitle> First International Conference on Comparative Adult Ed</unittitle><container type="Box">59</container></did></c02>
+<c02><did><unittitle> ICUAE Conference 1976</unittitle><container type="Box">59</container></did></c02>
+<c02><did><unittitle> 30th All India Adult Education Conference</unittitle><container type="Box">59</container></did></c02>
+<c02><did><unittitle> Michigan State University Conferences: 1961, 67, 69, 76</unittitle><container type="Box">59</container></did></c02>
+<c02><did><unittitle> New York Association for Continuing Commmunity Education</unittitle><container type="Box">59</container></did></c02>
+<c02><did><unittitle> Lifelong Learning Research Conference Proceedings</unittitle><container type="Box">59</container></did></c02>
+<c02><did><unittitle> Adult Education Conference of North America, etc.</unittitle><container type="Box">59</container></did></c02>
+<c02><did><unittitle> AEC Berkeley/Santa Barbara</unittitle><container type="Box">59</container></did></c02>
+<c02><did><unittitle> AEC UNESCO</unittitle><container type="Box">60</container></did></c02>
+<c02><did><unittitle> UNESCO Regional AEC</unittitle><container type="Box">60</container></did></c02>
+<c02><did><unittitle> AEC - U.S. National Association Institution</unittitle><container type="Box">60</container></did></c02>
+<c02><did><unittitle> U.S. National Groups Conferences</unittitle><container type="Box">60</container></did></c02>
+<c02><did><unittitle> UNESCO Directions</unittitle><container type="Box">60</container></did></c02>
+<c02><did><unittitle> Conference on Education and Occupational Needs of Asian-Pacific-American Women: National Institution of Education</unittitle><container type="Box">60</container></did></c02>
+<c02><did><unittitle> Extension Education</unittitle><container type="Box">60</container></did></c02>
+<c02><did><unittitle> Consumer Education</unittitle><container type="Box">60</container></did></c02>
+<c02><did><unittitle> Cooperative Extension</unittitle><container type="Box">60</container></did></c02>
+<c02><did><unittitle> Adult Correctional Education</unittitle><container type="Box">61</container></did></c02>
+<c02><did><unittitle> Adult Literacy Responses to Comic Strip Narratives Among Inmates of a Correctional Institution</unittitle><container type="Box">61</container></did></c02>
+<c02><did><unittitle> Opportunity Grants</unittitle><container type="Box">61</container></did></c02>
+<c02><did><unittitle> Programs on Employment</unittitle><container type="Box">61</container></did></c02>
+<c02><did><unittitle> English as a Second Language</unittitle><container type="Box">61</container></did></c02>
+<c02><did><unittitle> Family Education</unittitle><container type="Box">61</container></did></c02>
+<c02><did><unittitle> Family Education</unittitle><container type="Box">62</container></did></c02>
+<c02><did><unittitle> Handicapped-Disadvantaged</unittitle><container type="Box">62</container></did></c02>
+<c02><did><unittitle> Health Programs</unittitle><container type="Box">62</container></did></c02>
+<c02><did><unittitle> Counseling</unittitle><container type="Box">62</container></did></c02>
+<c02><did><unittitle> Oregon State System of Higher Education</unittitle><container type="Box">62</container></did></c02>
+<c02><did><unittitle>The Learning Society</unittitle><container type="Box">63</container></did></c02>
+<c02><did><unittitle> Higher Education</unittitle><container type="Box">63</container></did></c02>
+<c02><did><unittitle> Directories on Adult Education Resources, Misc.</unittitle><container type="Box">63</container></did></c02>
+<c02><did><unittitle> Directories on Adult Education Resources, Misc.</unittitle><container type="Box">64</container></did></c02>
+<c02><did><unittitle> International Handbook for Resources for Education of Adults</unittitle><container type="Box">65</container></did></c02>
+<c02><did><unittitle> Directories on Adult Education Resources, Misc.</unittitle><container type="Box">65</container></did></c02>
+<c02><did><unittitle> Statistics</unittitle><container type="Box">65</container></did></c02>
+<c02><did><unittitle>The Educational Characteristics of the American People</unittitle><container type="Box">65</container></did></c02>
+<c02><did><unittitle> Pedagogical Reports</unittitle><container type="Box">65</container></did></c02>
+<c02><did><unittitle> Adult Education Students</unittitle><container type="Box">65</container></did></c02>
+<c02><did><unittitle> Adult Education Professional Teachers</unittitle><container type="Box">65</container></did></c02>
+<c02><did><unittitle> Adult Education Teaching</unittitle><container type="Box">65</container></did></c02>
+<c02><did><unittitle> Adult Education Teachers</unittitle><container type="Box">66</container></did></c02>
+<c02><did><unittitle> Trends in Adult Education</unittitle><container type="Box">66</container></did></c02>
+<c02><did><unittitle> Georgia Center Continued Education Acquisition Lists</unittitle><container type="Box">66</container></did></c02>
+<c02><did><unittitle> University of Liverpool Acquisition Lists</unittitle><container type="Box">66</container></did></c02>
+<c02><did><unittitle> Open University Acquisition Lists</unittitle><container type="Box">66</container></did></c02>
+<c02><did><unittitle> NUFFIC-CESO Acquisition Lists</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> University of Reading Acquisition Lists</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> Training and Development</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> Lifelong Learning</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> Trends</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> World Education, Inc.</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> UNESCO</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> SCUTREA</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> Managing Adult Literacy Training</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> Fourth International Conference on Adult Education</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> Council of Europe</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> UNDP</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> U.S. Department of Health, Education, and Welfare</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> University of British Columbia</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> A Source Book for Education and Vocational Counselors: "The Alive Directory"</unittitle><container type="Box">67</container></did></c02>
+<c02><did><unittitle> Higher Adult Education Pamphlets, Misc.</unittitle><container type="Box">68</container></did></c02>
+<c02><did><unittitle> Economics Education</unittitle><container type="Box">68</container></did></c02>
+<c02><did><unittitle> Illiteracy</unittitle><container type="Box">68</container></did></c02>
+<c02><did><unittitle> Labor</unittitle><container type="Box">68</container></did></c02>
+<c02><did><unittitle> Lifelong Learning</unittitle><container type="Box">68</container></did></c02>
+<c02><did><unittitle> Lifelong Learning</unittitle><container type="Box">69</container></did></c02>
+<c02><did><unittitle> Literacy</unittitle><container type="Box">69</container></did></c02>
+<c02><did><unittitle> Literacy Instruction</unittitle><container type="Box">69</container></did></c02>
+<c02><did><unittitle> Occupational Programs</unittitle><container type="Box">69</container></did></c02>
+<c02><did><unittitle> Aging Programs</unittitle><container type="Box">69</container></did></c02>
+<c02><did><unittitle> Occupational and Vocational Education</unittitle><container type="Box">70</container></did></c02>
+<c02><did><unittitle> Vocational Education</unittitle><container type="Box">70</container></did></c02>
+<c02><did><unittitle> Parenting Programs (Teenagers, Hyperactive Children)</unittitle><container type="Box">70</container></did></c02>
+<c02><did><unittitle> Professional Adult Educators</unittitle><container type="Box">70</container></did></c02>
+<c02><did><unittitle> Professional</unittitle><container type="Box">70</container></did></c02>
+<c02><did><unittitle> Conference-U.S. National Association Institution</unittitle><container type="Box">70</container></did></c02>
+<c02><did><unittitle> Public Schools</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle> Religion</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle> Residential Programs</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle> Training and Development at Syracuse University</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle> ASTD Educational Programs</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle> Programs for Women</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle> Programs for Development</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle> Educational Programs for Youth</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle> NYACCE</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle> Program Development</unittitle><container type="Box">71</container></did></c02>
+<c02><did><unittitle> Program Development</unittitle><container type="Box">72</container></did></c02>
+<c02><did><unittitle> ERIC on Research</unittitle><container type="Box">72</container></did></c02>
+<c02><did><unittitle> Public Relations</unittitle><container type="Box">72</container></did></c02>
+<c02><did><unittitle> Research in Adult Education: Misc. Pamphlets</unittitle><container type="Box">72</container></did></c02>
+<c02><did><unittitle> Research in Adult Education: Misc. Pamphlets</unittitle><container type="Box">73</container></did></c02>
+<c02><did><unittitle> Problem Solving</unittitle><container type="Box">74</container></did></c02>
+<c02><did><unittitle> U.S. Department of Health, Education, and Welfare Reports</unittitle><container type="Box">74</container></did></c02>
+<c02><did><unittitle> Pamphlets on Adult Education Research, Misc.</unittitle><container type="Box">74</container></did></c02>
+<c02><did><unittitle> Problem Solving</unittitle><container type="Box">74</container></did></c02>
+<c02><did><unittitle> Publications on Adult Education Research, Misc.</unittitle><container type="Box">74</container></did></c02>
+<c02><did><unittitle>Adult Basic Education (ABE) Research Center</unittitle><container type="Box">75</container></did></c02>
+<c02><did><unittitle>Adult Basic Education (ABE) Pamphlets and Publications, Misc.</unittitle><container type="Box">75</container></did></c02>
+<c02><did><unittitle>Adult Basic Education (ABE) Pamphlets and Publications International-World Education, Misc.</unittitle><container type="Box">76</container></did></c02>
+<c02><did><unittitle> World Bank</unittitle><container type="Box">76</container></did></c02>
+<c02><did><unittitle> European Centre for Development of Vocational Training</unittitle><container type="Box">76</container></did></c02>
+<c02><did><unittitle> Comparative Education of Latin America: Costa Rica</unittitle><container type="Box">76</container></did></c02>
+<c02><did><unittitle>Adult Basic Education (ABE) Pamphlets and Publications, Misc.</unittitle><container type="Box">77</container></did></c02>
+<c02><did><unittitle>Adult Basic Education (ABE) Pamphlets and Publications, Misc.</unittitle><container type="Box">78</container></did></c02>
+<c02><did><unittitle> Listing of Periodicals Received by Syracuse University</unittitle><container type="Box">78</container></did></c02>
+<c02><did><unittitle>
+</unittitle></did></c02></c01></dsc>
+	</archdesc>
+</ead>

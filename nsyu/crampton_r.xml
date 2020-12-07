@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="crampton_r" mainagencycode="NSyU">crampton_r</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Rollin Crampton Papers</titleproper>
+        <subtitle>An inventory of 
+                        his papers 
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">-</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1967-04">Apr 1967</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           
+        
+        <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>12 Jan 2010 - converted to EAD (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Crampton, Rollin McNeil, 1886-1970.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Rollin Crampton Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1945/1964" type="inclusive">1945-1964</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">0.5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the American painter, sculptor (1886-1970).  Copies of letters received, 1952-1964; exhibition notices 
+					and photographs of work; manuscript 'Laws of Proportion', 1964; also published materials.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">148911</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">
+                          English
+                       </language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Rollin Crampton (1886-1970) was an American painter and illustrator known for his geometric abstractions.</p>
+      <p>Born in New Haven, Connecticut, Crampton studied at Yale University School of Fine Arts and won a scholarship from 
+	  the Art Student's League.  In 1936 he was appointed mural supervisor for the New York City Art Project.  He was the recipient 
+	  of two Purchase Prizes (SUNY New Paltz and Lousiana State University); his work was exhibited at museums and galleries 
+	  across the country (including the Museum of Modern Art) and is in the permanent collections of the Whitney Museum of American 
+	  Art and the Albright Gallery.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Rollin Crampton Papers</emph> consist of biographical material, correspondence, subject files, manuscripts, and published 
+	  material.</p>
+      <p>
+        <emph render="bold">Biographical material</emph> contains a biographical sketch by Crampton for the Program Director of 
+	  the Longview Foundation.</p>
+      <p>
+        <emph render="bold">Correspondence</emph> is incoming only; the majority are photostats, not originals.  Included in the 
+	  photostats are letters from art critic Clement Greenberg and artist Jackson Pollock.</p>
+      <p>
+        <emph render="bold">Subject files</emph> contains exhibit notices, a genealogy of Mrs. Crampton, and photographs of 
+	  Crampton, his work, and others.</p>
+      <p>
+        <emph render="bold">Manuscripts</emph> contains a one-page manuscript entitled "Laws of proportion."</p>
+      <p>
+        <emph render="bold">Published material</emph> consists of a newspaper and magazine clippings about Crampton and his work.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Material is arranged alphabetically.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has the papers of more than one hundred painters, illustrators, and other artists.  Please refer to &subjindex; 
+	  for a complete listing.</p>
+    </relatedmaterial>
+    <!-- <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial> -->
+	<!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">Art -- Illustrators</subject>
+      <subject encodinganalog="650" source="local">Art -- Painters</subject>
+      <persname encodinganalog="600" source="lcnaf">Crampton, Rollin McNeil, 1886-1970 -- Archives.</persname>
+      <subject encodinganalog="650" source="lcsh">Art, American.</subject>
+      <subject encodinganalog="650" source="lcsh">Art, American -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Painters -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Painting, American.</subject>
+      <subject encodinganalog="650" source="lcsh">Painting, American -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Sculptors -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Sculpture, American.</subject>
+      <subject encodinganalog="650" source="lcsh">Sculpture, American -- 20th century.</subject>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Exhibition catalogs.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Artists.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Painters.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Sculptors.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+                       all relevant rights holders before publishing quotations, excerpts or images from any 
+                       materials in this collection. </p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Rollin Crampton Papers
+        
+        <lb/>&su_name;</p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Rollin Crampton</persname>, 1964-1968.</p>
+    </acqinfo>
+    <!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Biographcal material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Letter</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>E-R</unittitle>
+            <unitdate normal="1952" type="inclusive">1952, </unitdate>
+            <unitdate normal="1954" type="inclusive">1954, </unitdate>
+            <unitdate normal="1960/1961" type="inclusive">1960-1961, </unitdate>
+            <unitdate normal="1964" type="inclusive">1964, </unitdate>
+            <unitdate normal="1945/1964" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Greenberg, Clement</unittitle>
+            <abstract>photostat</abstract>
+            <unitdate normal="1960" type="inclusive">1960</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pollock, Jackson</unittitle>
+            <abstract>letter about Crampton; photostat</abstract>
+            <unitdate normal="1945/1964" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Unidentified</unittitle>
+            <abstract>photostat</abstract>
+            <unitdate normal="1952/1954" type="inclusive">1952-1954, </unitdate>
+            <unitdate normal="1945/1964" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Subject files</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Exhibit notices</unittitle>
+            <unitdate normal="1945" type="inclusive">1945, </unitdate>
+            <unitdate normal="1946" type="inclusive">1946, </unitdate>
+            <unitdate normal="1948" type="inclusive">1948, </unitdate>
+            <unitdate normal="1951" type="inclusive">1951, </unitdate>
+            <unitdate normal="1954" type="inclusive">1954, </unitdate>
+            <unitdate normal="1956" type="inclusive">1956, </unitdate>
+            <unitdate normal="1959/1960" type="inclusive">1959-1960, </unitdate>
+            <unitdate normal="1945/1964" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Genealogy of wife</unittitle>
+            <unitdate normal="1945/1964" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>of Crampton</unittitle>
+              <unitdate normal="1945/1964" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>of others</unittitle>
+              <unitdate normal="1945/1964" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>of Crampton's work</unittitle>
+              <unitdate normal="1945/1964" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Manuscripts</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>"Laws of proportion"</unittitle>
+            <unitdate normal="1964" type="inclusive">1964</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Published material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Magazine articles</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>about Crampton and others, Art Digest</unittitle>
+              <unitdate normal="1959" type="inclusive">1959</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Photocopies</unittitle>
+              <unitdate normal="1954" type="inclusive">1954, </unitdate>
+              <unitdate normal="1959/1960" type="inclusive">1959-1960, </unitdate>
+              <unitdate normal="1945/1964" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Newspaper, Hue and Cry</unittitle>
+            <unitdate normal="1945" type="inclusive">1945</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Newspaper clippings</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>about Crampton and others</unittitle>
+              <unitdate normal="1951" type="inclusive">1951, </unitdate>
+              <unitdate normal="1960" type="inclusive">1960, </unitdate>
+              <unitdate normal="1945/1964" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Photocopies</unittitle>
+              <unitdate normal="1958/1960" type="inclusive">1958-1960, </unitdate>
+              <unitdate normal="1945/1964" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

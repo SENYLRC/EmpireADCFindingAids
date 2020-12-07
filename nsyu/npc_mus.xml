@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="npc_mus">npc_mus</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">National Plastics Center &amp; Museum Records</titleproper>
+            <subtitle>An inventory of its records at Syracuse University</subtitle>
+            <author encodinganalog="Creator">DF</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2014" encodinganalog="Date">2014</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Derek Ford <date normal="2013-03-27">12 June 2014</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"-->
+      <revisiondesc><list><item>29 Aug 2014 - Rubin artifact info returned to Rubin Papers (MRC)</item></list></revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+            &su_name;
+            <lb/>
+            &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <!--<persname encodinganalog="100">## use MARC 100 </persname>-->
+            <corpname encodinganalog="110">National Plastics Center &amp; Museum</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">National Plastics Center &amp; Museum Records</unittitle>
+         <unitdate encodinganalog="245$f" normal="1925/2008" type="inclusive" label="Inclusive Dates: ">1925-2008</unitdate>
+         <physdesc encodinganalog="300$a" label="Quantity: "><extent>4 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection consists of administrative
+            records, financial records, and publicity materials from the Museum in Leominster, Massachusetts.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4150871</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The National Plastics Center &amp; Museum was located in Leominster, Mass. in the former
+            Lancaster Street School building. It was incorporated as a non-profit in 1982, long
+            after plastics had become integral to everyday life, but during a time when the effects
+            of plastics production and consumption were being widely debated. The National Plastics
+            Center &amp; Museum was thus founded not only to preserve the foundations and past of
+            the plastics industry, but also to help educate the public about plastics and intervene
+            in public discourse, highlighting the contributions of plastic to the overall quality of
+            modern life, and how the plastics industry was contributing toward environmental
+            sustainability.</p>
+         <p> In addition to maintaining permanent and rotating collections and accumulating
+            artifacts, the National Plastics Center &amp; Museum conducted public outreach, like
+            their PlastiVan program, which travelled throughout the U.S. educating students and
+            teachers about the chemistry, history, processing, and environmental issues around
+            plastics. Starting in 2006, the Society of Plastics Industry provided professional
+            management services to the institution. The National Plastics Center &amp; Museum was
+            closed in 2008, after struggling for several years to attain substantial attendance
+            numbers.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">National Plastics Center &amp; Museum Records</emph> contains
+            records relating to the organization's inventories and artifacts, communications,
+            budgets and financial statements, publicity materials, and press coverage. </p>
+         <p><emph render="bold">Administrative records</emph> contains finding aids and inventories,
+            trustee newsletters, administrative communications, conference materials, meeting minutes
+            and agendas, town records, and documents about the museum's construction.  </p>
+         <p><emph render="bold">Financial records</emph> contains the organization's bank and
+            financial statements, pledge records and payments, expense reports, budgets, and
+            contractor invoices and estimates.</p>
+         <p><emph render="bold">Publicity</emph> contains newsletters, membership packets, and
+            brochures from the National Plastics Center &amp; Museum, related newspaper, magazine,
+            and journal clippings, and a promotional video. </p>
+         
+      </scopecontent>
+      <!--<altformavail encodinganalog="530"><head>Other Formats Available</head><p>One item in this collection is available in digital format.</p></altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Arranged into series by topic.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous holdings in the areas of plastics and industrial design. Please
+            refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      <separatedmaterial encodinganalog="544 0"><head>Separated Material</head><p>Issues of <emph render="italic">Pioneer Valley News</emph> have been transferred to Rare Books for cataloging.  Please refer to &summitref; to locate these items.</p></separatedmaterial>
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p/></otherfindaid>-->
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject><subject encodinganalog="650" source="local">Industrial Design</subject><subject encodinganalog="650" source="local">Plastics</subject><!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Robinson Plastics Corporation.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">National Plastics Center &amp;
+            Museum.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Irvin I. Rubin Plastics
+            Corporation.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Society of the Plastics Industry.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Society of Plastics Engineers.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">State University of New York at Stony Brook.
+            Waste Management Institute.</corpname>
+         <title encodinganalog="630" source="lcnaf">Plastics &amp; molded products.</title>
+         <subject encodinganalog="650" source="lcsh">Plastics -- History.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics -- Museums.</subject><subject encodinganalog="650" source="lcsh">Plastics industry and trade.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics industry and trade -- Congresses and conventions.</subject><geogname encodinganalog="651" source="lcsh">Leominster (Mass.) -- History.</geogname><geogname encodinganalog="651" source="lcsh">Leominster (Mass.) -- Intellectual life.</geogname>
+         <genreform source="aat" encodinganalog="655">Brochures.</genreform><genreform source="aat" encodinganalog="655">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">CD-ROMs.</genreform><genreform encodinganalog="655" source="aat">Expense reports.</genreform><genreform encodinganalog="655" source="aat">Financial statements.</genreform>
+         <genreform encodinganalog="655" source="aat">Newsletters.</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Video recordings.</genreform>
+         
+         
+         
+         
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>-->
+      </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> National Plastics Center &amp; Museum Records,<lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from National Plastics Center &amp; Museum, 11/06/2008.</p>
+      </acqinfo>
+      <!--<appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>-->
+      <!--<accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Administrative records</unittitle></did>
+            <c02>
+               <did>
+                  <unittitle>Book inventory</unittitle>
+                  <unitdate type="inclusive" normal="2005">2005</unitdate>
+                  <container type="Oversize">1</container>
+                  <abstract>inventory arranged by book numbers, titles, authors, and reference
+                     numbers</abstract>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Communications</unittitle>
+                  
+                  
+               </did>
+            <c03><did>
+                  <unittitle>Flannagan, Richard</unittitle>
+                  <unitdate type="inclusive" normal="1984/1985">1984-1985</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did>
+                  <unittitle>Galvin, Jack</unittitle>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1934">1934,</unitdate>
+                  <unitdate type="inclusive" normal="1984/1985">1984-1985</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did>
+                  <unittitle>Keville, John</unittitle>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1984/1986">1984-1986</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did>
+                  <unittitle>Kilcoyne, Mary</unittitle>
+                  <unitdate type="inclusive" normal="1994">1994</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did>
+                  <unittitle>Trustees</unittitle>
+                  <unitdate type="inclusive" normal="1984/1985">1984-1985</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate type="inclusive" normal="1971">1971,</unitdate>
+                  <unitdate type="inclusive" normal="1981/1994">1981-1994</unitdate>
+                  <container type="Box">1</container>
+               </did></c03></c02>
+            
+            
+            <c02>
+               <did>
+                  <unittitle>Conferences</unittitle>
+                  <abstract>programs, letters, photographs, and preparatory materials</abstract><unitdate type="inclusive" normal="1987">1987,</unitdate>
+                  <unitdate type="inclusive" normal="1989/1991">1989-1991</unitdate>
+                  <container type="Box">1</container>
+                  
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Conferences</unittitle>
+                  <abstract>a binder of planning materials for RETEC conferences </abstract><unitdate type="inclusive" normal="1973/1977">1973-1977</unitdate>
+                  
+                  <container type="Oversize">1</container>
+                  
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Construction</unittitle>
+                  <abstract>communications with contractors and Leominster officials about the
+                     construction of the museum; also includes information about Lancaster Street
+                     School, which the museum took over</abstract><unitdate type="inclusive" normal="1931">1931,</unitdate>
+                  <unitdate type="inclusive" normal="1975">1975,</unitdate>
+                  <unitdate type="inclusive" normal="1982/1985">1982-1985</unitdate>
+                  <container type="Box">2</container>
+                  
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Doyle library and archives finding aids</unittitle>
+                  <abstract>binder of finding aids for Museum collections</abstract><unitdate type="inclusive" normal="2007/2008">2007-2008</unitdate>
+                  <container type="Oversize">1</container>
+                  
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Grant proposal</unittitle>
+                  <abstract>proposal for Informal Science Education grant from the National Science
+                     Foundation</abstract><unitdate normal="1998" type="inclusive">1998</unitdate>
+                  <container type="Box">2</container>
+                  
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Information and material requests</unittitle>
+                  <abstract>mostly requests for "Passing through" educational video and accompanying
+                     teacher's guide</abstract><physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1993/1995">1993-1995</unitdate>
+                  <container type="Box">2</container>
+                  
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Meeting minutes and materials</unittitle>
+                  <physdesc>3 folders</physdesc>
+                  <unitdate type="inclusive" normal="1970/1975">1970-1975,</unitdate>
+                  <unitdate type="inclusive" normal="1983/1985">1983-1985,</unitdate>
+                  <unitdate type="inclusive" normal="1993/1994">1993-1994,</unitdate>
+                  <unitdate type="inclusive" normal="1996">1996,</unitdate>
+                  <unitdate type="inclusive" normal="2000">2000</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Pioneer Valley SPE secretary reports</unittitle>
+                  <unitdate type="inclusive" normal="1982/1983">1982-1983</unitdate>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle><emph render="italic">Plastics &amp; Molded Products</emph>, indexes
+                     and contents, vols. 1-11</unittitle>
+                  <unitdate type="inclusive" normal="1925/1934">1925-1934,</unitdate>
+                  <unitdate type="inclusive" normal="1998">1998</unitdate>
+                  <container type="Oversize">1</container>
+                  <abstract>a binder containing photocopies of indexes and tables of contents of
+                     <emph render="italic">Plastics and molded products</emph></abstract>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Program evaluations</unittitle>
+                  <unitdate type="inclusive" normal="1988/2000">circa 1993-1995</unitdate>
+                  <container type="Box">3</container>
+                  <abstract>teacher evaluations about "Passing through" educational film and
+                     accompanying teacher's guide</abstract>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Town and school records</unittitle>
+                  <abstract>city council agendas and notes, Leominster street list, property
+                     assessments, assorted letters</abstract><unitdate type="inclusive" normal="1928">1928,</unitdate>
+                  <unitdate type="inclusive" normal="1932/1936">1932-1936,</unitdate>
+                  <unitdate type="inclusive" normal="1944/1948">1944-1948,</unitdate>
+                  <unitdate type="inclusive" normal="1954/1957">1954-1957,</unitdate>
+                  <unitdate type="inclusive" normal="1983">1983</unitdate>
+                  <container type="Box">3</container>
+                  
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Trustee newsletters</unittitle>
+                  <unitdate type="inclusive" normal="1984/1986">1984-1986</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Waste Management Institute</unittitle>
+                  <abstract>communications and notes regarding the Waste Management Institute at
+                     SUNY Stony Brook</abstract><unitdate type="inclusive" normal="1989">1989</unitdate>
+                  <container type="Box">3</container>
+                  
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Memorabilia</unittitle>
+                  <abstract>2 ribbons and 1 Gala pin</abstract><unitdate type="inclusive" normal="1997">1997,</unitdate>
+                  <unitdate type="inclusive" normal="1925/2008">undated</unitdate>
+                  <container type="Box">3</container>
+                  
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <abstract>photographs, "The future is in your hands" training manual, contact
+                     lists, notes, and letters</abstract>
+                  <unitdate type="inclusive" normal="1939">1939,</unitdate>
+                  <unitdate type="inclusive" normal="1955">1955,</unitdate>
+                  <unitdate type="inclusive" normal="1984/1988">1984-1988,</unitdate>
+                  <unitdate type="inclusive" normal="1991">1991,</unitdate>
+                  <unitdate type="inclusive" normal="1993">1993,</unitdate>
+                  <unitdate type="inclusive" normal="2002/2008">2002-2008, </unitdate>
+                  
+                  
+                  <unitdate type="inclusive" normal="1925/2008">undated</unitdate>
+                  <physdesc><extent>3 folders</extent></physdesc><container type="Box">3</container>
+                  
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Financial records</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Bank statements, Guaranty Bank &amp; Trust Co.</unittitle>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1972/1975">1972-1975</unitdate>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Bank statements, Shawmut Worcester County Bank</unittitle>
+                  <unitdate type="inclusive" normal="1981/1983">1981-1983</unitdate>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Checks </unittitle>
+                  <unitdate type="inclusive" normal="1972/1977">1972-1977</unitdate>
+                  <container type="Box">4</container>
+                  <abstract>also includes handwritten notes</abstract>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Contributions and pledges</unittitle>
+                  <unitdate type="inclusive" normal="1982/1985">1982-1985,</unitdate>
+                  <unitdate type="inclusive" normal="1993/1994">1993-1994</unitdate>
+                  <container type="Box">4</container>
+                  <abstract>checks, annual pledge reports, communications, and pledge
+                     postcards</abstract>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Construction and design</unittitle>
+                  <unitdate type="inclusive" normal="1984/1985">1984-1985</unitdate>
+                  <container type="Box">4</container>
+                  <abstract>communications with contractors and invoices</abstract>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Expense reports</unittitle>
+                  <unitdate type="inclusive" normal="1985">1985</unitdate>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Expense reports, John Keville</unittitle>
+                  <unitdate type="inclusive" normal="1988">1988</unitdate>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Financial statements</unittitle>
+                  <unitdate type="inclusive" normal="1996">1996</unitdate>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Ledgers and notes</unittitle>
+                  <unitdate normal="1983/1985" type="inclusive">1983-1985</unitdate>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Paid invoices</unittitle>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1982/1983">1982-1983</unitdate>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Raffle records</unittitle>
+                  <unitdate type="inclusive" normal="1983">1983</unitdate>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>SPE budgets</unittitle>
+                  <unitdate type="inclusive" normal="1975/1978">1975-1978</unitdate>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <abstract>insurance contract, invoices, land appraisal, and various
+                     notes</abstract><unitdate type="inclusive" normal="1939">1939,</unitdate>
+                  <unitdate type="inclusive" normal="1982/1985">1982-1985</unitdate>
+                  <container type="Box">5</container>
+                  
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Publicity</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Brochures</unittitle>
+                  <abstract>includes brochures from Plastics Institute of America, Somoltec, and the
+                     National Plastics Center &amp; Museum</abstract><unitdate type="inclusive" normal="1925/2008">undated</unitdate>
+                  <container type="Box">5</container>
+                  
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Invitations</unittitle>
+                  <abstract>invitations to events hosted by the National Plastics Center &amp;
+                     Museum and the Solar Chemical Corporation</abstract><unitdate type="inclusive" normal="1969">1969,</unitdate>
+                  <unitdate type="inclusive" normal="1984">1984,</unitdate>
+                  <unitdate type="inclusive" normal="2001/2002">2001-2002</unitdate>
+                  <container type="Box">5</container>
+                  
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Newsletters</unittitle>
+                  <unitdate type="inclusive" normal="1979/1980">1979-1980,</unitdate>
+                  <unitdate type="inclusive" normal="1995/2000">1995-2000,</unitdate>
+                  <unitdate type="inclusive" normal="2003/2008">2003-2008</unitdate>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Newspapers and magazines</unittitle>
+                  <unitdate type="inclusive" normal="1929">1929,</unitdate>
+                  <unitdate type="inclusive" normal="1942">1942,</unitdate>
+                  <unitdate type="inclusive" normal="1956">1956,</unitdate>
+                  <unitdate type="inclusive" normal="1966">1966,</unitdate>
+                  <unitdate type="inclusive" normal="1976/1977">1976-1977,</unitdate>
+                  <unitdate type="inclusive" normal="1979">1979,</unitdate>
+                  <unitdate type="inclusive" normal="1925/2008">undated</unitdate>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Newspapers and magazines</unittitle>
+                  <unitdate type="inclusive" normal="1982/1989">1982-1989,</unitdate>
+                  <unitdate type="inclusive" normal="1925/2008">undated</unitdate>
+                  <physdesc><extent>2 folders</extent></physdesc><container type="Box">5</container>
+               </did>
+            </c02>
+            
+            <c02>
+               <did>
+                  <unittitle>Newspapers and magazines</unittitle>
+                  <unitdate type="inclusive" normal="1991/2005">1991-2005, </unitdate>
+                  <unitdate type="inclusive" normal="1925/2008">undated</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">6</container>
+               </did>
+            </c02>
+            
+            <c02>
+               <did>
+                  <unitid>npc_001</unitid><unittitle>Promotional video, "Wow them now!"</unittitle>
+                  <abstract>includes letter to board members
+                     announcing the new video; printed on the CD is a color photo of the National Plastics Center and Museum building in Leominster</abstract><unitdate type="inclusive" normal="2003">2003</unitdate>
+                  <physdesc><extent>1 CD-ROM</extent></physdesc><container type="Box">6</container>
+                  
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Publicity and membership packets</unittitle>
+                  <unitdate type="inclusive" normal="1925/2008">undated</unitdate>
+                  <container type="Box">6</container>
+               </did>
+            </c02>
+         </c01>
+         
+      </dsc>
+   </archdesc>
+</ead>

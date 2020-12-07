@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="heavey_wf" mainagencycode="NSyU">heavey_wf</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">William F. Heavey Papers</titleproper>
+        <subtitle>An inventory of 
+                        his papers 
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">[Summit record]</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1967-06">Jun 1967</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           
+        
+        <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>10 Feb 2010 - converted to EAD (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Heavey, William Francis, 1896-1974.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">William F. Heavey Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1934/1964" type="inclusive">1934-1964</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">1.0 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the American brigadier-general, engineer.  Collection includes correspondence (1942-1964); 
+					biographical material; manuscript essays; and articles and clippings by and about Heavey.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">149044</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">Bulk in 
+        
+        
+        <language langcode="eng">English</language>, a few published items in 
+        
+        <language langcode="spa">Spanish</language></langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>William Francis Heavey (1896-1974) was an American military officer who retired with the rank of Brigadier-General.</p>
+      <p>Heavey was 
+	  born in Fort McPherson, Georgia on January 29, 1896, the son of Brigadier-General John W. Heavey, he graduated from the U.S. 
+	  Military Academy at West Point in 1917.  During World 
+	  War I Heavey was assigned to the Army Corps of Engineers as a second lieutenant; he was quickly promoted to captain 
+	  (1917) and then major (1918), and commanded the 2d Engineer Special Brigade in fifty 
+	  amphibious landings in the southwest Pacific and Philippines.</p>
+      <p>After World War I he studied at the Massachusetts Institute of 
+	  Technology, earning his degree in 1922, and a few years later (1938) graduated from the Command and General 
+	  Staff School.  He was promoted to brigadier-general in 1942, and during World War II he was Chief Engineering Officer 
+	  for IV Corps (1941-1942) and Commanding General of the 2d Engineer Amphibian Brigade, South Pacific Command (1942-1946).</p>
+      <p>For his services 
+	  he was decorated with Oak Leaf Cluster and the Bronze Star.  He was a charter member of the American Society of Military 
+	  Engineers, and authored the book 
+        
+        <emph render="italic">Down ramp! The story of the Army Amphibian engineers</emph> (1947).   He and his wife had two children; their son William F. Heavey, Jr. (1920-1987) attended the U.S. Naval Academy and became a naval aviator.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">William F. Heavey Papers</emph> consist of biographical material about Heavey's career, correspondence (incoming and outgoing), subject files (mostly memorabilia), 
+	  manuscripts (articles by and about Heavey), and published material (books by and about Heavey, book reviews, and some 
+	  clippings about Heavey and others).</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Correspondence is arranged chronologically.  All other material is arranged alphabetically.</p>
+    </arrangement>
+    <!-- <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial> -->
+    <!-- <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial> -->
+	
+	<!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">Military history</subject>
+      <persname encodinganalog="600" source="lcnaf">Heavey, William Francis, 1896-1974.</persname>
+      <corpname encodinganalog="610" source="lcnaf">United States. -- Army -- Officers -- Biography.</corpname>
+      <subject encodinganalog="650" source="lcsh">Generals -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Military engineering.</subject>
+      <subject encodinganalog="650" source="lcsh">Military engineers -- United States.</subject>
+      <geogname encodinganalog="651" source="lcsh">United States -- History, Military -- 20th century.</geogname>
+      <genreform encodinganalog="655" source="aat">Articles.</genreform>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Essays.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Engineers.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Generals.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Soldiers.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+                       all relevant rights holders before publishing quotations, excerpts or images from any 
+                       materials in this collection. </p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>William F. Heavey Papers,
+        
+        <lb/>&su_name;</p>
+    </prefercite>
+    <!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Incoming</unittitle>
+            <unitdate normal="1942" type="inclusive">1942, </unitdate>
+            <unitdate normal="1945" type="inclusive">1945, </unitdate>
+            <unitdate normal="1964" type="inclusive">1964</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Outgoing</unittitle>
+            <unitdate normal="1942" type="inclusive">1942, </unitdate>
+            <unitdate normal="1943" type="inclusive">1943</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Subject files</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Directory</unittitle>
+            <abstract>2 ESB Vets Assoc.</abstract>
+            <unitdate normal="1960" type="inclusive">1960</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Distinguished Visitor Award, in Spanish</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Field order</unittitle>
+            <unitdate normal="1945" type="inclusive">1945</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Honorary Citizens Award</unittitle>
+            <unitdate normal="1952" type="inclusive">1952</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photograph, Heavey and Noce</unittitle>
+            <unitdate normal="1945" type="inclusive">1945</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Recommendation for award</unittitle>
+            <unitdate normal="1945" type="inclusive">1945</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Manuscripts</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Articles by</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Army vs. Navy</unittitle>
+              <unitdate normal="1934/1964" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Father made the first Army team</unittitle>
+              <unitdate normal="1934/1964" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Contribution to 
+              
+              <emph render="italic">Reader's Digest</emph></unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Promotion article</unittitle>
+            <unitdate normal="1934/1964" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Published material</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Books by</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Abajo la rampa</emph>
+              </unittitle>
+              <unitdate normal="1947" type="inclusive">1947</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Down ramp</emph>
+              </unittitle>
+              <unitdate normal="1947" type="inclusive">1947</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">History of the Second Engineer Special Brigade</emph>
+              </unittitle>
+              <unitdate normal="1946" type="inclusive">1946</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Map and aerial photo reading</emph>
+              </unittitle>
+              <unitdate normal="1943" type="inclusive">1943</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Books about</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Amphibian engineer operations</emph> (volume IV of the series, 
+                
+                <emph render="italic">Engineers of the Southwest Pacific</emph>)</unittitle>
+              <unitdate normal="1959" type="inclusive">1959</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Book reviews</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">New York Times</emph> Book Review</unittitle>
+              <unitdate normal="1948" type="inclusive">1948</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Magazines with articles about</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Yale Review</emph>
+              </unittitle>
+              <unitdate normal="1945" type="inclusive">1945</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Magazines with articles by</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Engineering News-Record</emph>
+              </unittitle>
+              <unitdate normal="1934" type="inclusive">1934</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">The Houston Port Book</emph>
+              </unittitle>
+              <unitdate normal="1952" type="inclusive">1952</unitdate>
+              <physdesc>
+                <extent>2 issues</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Military Engineer</unittitle>
+              <unitdate normal="1946" type="inclusive">1946, </unitdate>
+              <unitdate normal="1948" type="inclusive">1948</unitdate>
+              <physdesc>
+                <extent>4 issues</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Magazines with articles about others</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Time</emph>
+              </unittitle>
+              <unitdate normal="1964" type="inclusive">1964</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Newspaper clippings</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>About Heavey</unittitle>
+              <unitdate normal="1948" type="inclusive">1948</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>About Heavey and others</unittitle>
+              <unitdate normal="1945" type="inclusive">1945, </unitdate><unitdate normal="1948" type="inclusive">1948, </unitdate><unitdate normal="1934/1964" type="inclusive">undated</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

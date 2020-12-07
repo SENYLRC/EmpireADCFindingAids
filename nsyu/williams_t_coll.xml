@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="williams_t_coll">williams_t_coll</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Tennessee Williams Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2018-09-25" encodinganalog="Date">25 Sep 2018</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2018-09-25">25 Sep 2018</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Tennessee Williams Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1959/1980" type="inclusive" label="Inclusive Dates: ">1959-1980</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Typescripts of several plays,  one photograph and a note from Williams to Andy Warhol</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">5135337</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Tennessee Williams (1911-1983) was an American playwright.  Among his best-known works are <emph render="italic">The Glass Menagerie</emph>,  <emph render="italic">A Streetcar Named Desire</emph>, and <emph render="italic">Cat on a Hot Tin Roof</emph> (the latter two won Williams the Pulitzer Prize for Drama in 1948 and 1955, respectively).  He also wrote novels, screenplays, and short stories.  Many of his works have been made into movies.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Tennessee Williams Collection</emph> consists of memorabilia and writings.</p><p><emph render="bold">Memorabilia</emph> contains a publicity photograph and a handwritten note from Williams to Andy Warhol, with a sketched self-portrait.</p><p><emph render="bold">Writings</emph> contains typescripts for several of Williams' plays, including <emph render="italic">The night of the iguana</emph> and <emph render="italic">Slapstick tragedy</emph>.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by type and within that by title.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>The donation of which this was part also contained published items by Williams, which have been sent to Rare Books for cataloging.  Please refer to &summitref; to locate these items.</p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Dance and theatre</subject><subject encodinganalog="650" source="local">Literature -- American Fiction</subject><persname encodinganalog="600" source="lcnaf">Warhol, Andy, 1928-1987.</persname><persname encodinganalog="600" source="lcnaf">Williams, Tennessee, 1911-1983.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <title encodinganalog="630" source="lcnaf">The night of the iguana.</title>
+         <title encodinganalog="630" source="lcnaf">Slapstick tragedy.</title>
+         <title encodinganalog="630" source="lcnaf">The fugitive kind.</title>
+         
+         <subject encodinganalog="650" source="lcsh">American drama -- 20th century.</subject><subject encodinganalog="650" source="lcsh">Dramatists, American -- 20th century.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Screenplays.</genreform><genreform encodinganalog="655" source="aat">Scripts (documents)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Dramatists.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Tennessee Williams Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Eric D. Sherman</persname>, 2017.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Note and self-portrait, Tennessee Williams to Andy Warhol</unittitle><unitdate normal="1975/1985" type="inclusive">circa 1980</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Photograph</unittitle><abstract>publicity portrait photograph</abstract><unitdate normal="1978" type="inclusive">1978</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02><did><unittitle>The fugitive kind</unittitle><abstract>cutting continuity with dialogue mimeographed transcript; issued, not published</abstract><unitdate normal="1959" type="inclusive">1959</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>The fugitive kind, from the stageplay <emph render="italic">Orpheus Descending</emph>, screenplay by Tennessee Williams and Robert Meade</unittitle><abstract>final draft, mimeographed typescript</abstract><unitdate normal="1959" type="inclusive">1959</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>The night of the iguana</unittitle><abstract>original mimeographed typescript, annotated as "final and approved New York playing version"; issued, not published</abstract><unitdate normal="1961" type="inclusive">1961</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Slapstick tragedy / The mutilated</unittitle><abstract>original mimeographed typescript, annotated as "rehearsal version"</abstract><unitdate normal="1965" type="inclusive">1965</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Two plays by Tennessee Williams</unittitle><abstract>original mimeographed typescripts, "I never get dressed til after dark on Sundays" and "The day on which a man dies: An accidental Noh play"; issued, not published</abstract><unitdate normal="1971" type="inclusive">1971</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

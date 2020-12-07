@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+    <eadid countrycode="US" mainagencycode="NSyU" identifier="toney_a">toney_a</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Anthony Toney Papers</titleproper>
+        <subtitle>An inventory of 
+                        his papers 
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">-</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>&su_address;
+                           <date normal="1966/1969" encodinganalog="Date">circa 1966</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           <date era="ce" calendar="gregorian" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language langcode="eng" encodinganalog="Language">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>26 Nov 1979 - additions (DMW)</item>
+        <item>11 Mar 2010 - converted to EAD (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name; <lb/>&su_address;
+               </repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Toney, Anthony.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Anthony Toney Papers</unittitle>
+      <unitdate encodinganalog="245$f" type="inclusive" label="Inclusive Dates: " normal="1932/1969">1932-1969</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">7.5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the American painter.  Collection includes correspondence (1932-1969); artwork, and printed material, 
+					including articles, clippings, and exhibition catalogs.</abstract>
+      <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">148706</unitid>
+      <langmaterial label="Language: " encodinganalog="546">
+        <language langcode="eng">
+                          English
+                       </language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Anthony Toney (1913- ) is an American painter and teacher.  Born in Gloversville, New York, to Syrian immigrant parents, 
+	  Toney graduated from Syracuse University and studied at L'Academie de la Grande Chaumiere and L'Ecole Superieur des Beaux Arts.  
+	  He served with the Abraham Lincoln Brigade during the Spanish Civil War and in the United States Navy during World War II.</p>
+
+       <p>Toney had his first one-man show in 1941, followed by numerous shows and exhibits in New York City. He painted murals and 
+	   taught mural painting under the auspices of the WPA in the early 1940s and taught for more than forty 
+	   years at the New School for Social Research.  In 1955 he received an honorary DFA from Teacher's College, Columbia University, 
+	   and in 1985 he -- along with other veterans of the Abraham Lincoln Brigade -- was honored by the Spanish government for their 
+	   service.  He is also the author of four books.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Anthony Toney Papers</emph> consist of correspondence, memorabilia, news clippings, painting-related material, printed material, 
+	  and writings.</p>
+	  <p><emph render="bold">Correspondence</emph> spans more than thirty years. <emph render="bold">Memorabilia</emph> consists 
+	  mainly of social invitations but also includes biographical and financial material. 
+	  <emph render="bold">News clippings</emph>  holds assorted clippings relating to Toney.</p>
+	  <p><emph render="bold">Painting</emph> has a few original drawings, some copies, and critiques.  
+	  <emph render="bold">Printed material</emph> contains catalogs, magazines and educational material.  
+	  <emph render="bold">Writings</emph> includes a number of Toney's student work (term papers, etc.) and a few published articles.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Correspondence is arranged chronologically; all other series are arranged alphabetically.</p>
+    </arrangement>
+    <!-- <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial> -->
+    <!-- <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial> -->
+	<!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+	<controlaccess>
+	<head>Subject and Genre Headings</head>
+	<subject encodinganalog="650" source="local">Art -- Painters</subject>
+	<persname encodinganalog="600" source="lcnaf">Toney, Anthony.</persname>
+	<subject encodinganalog="650" source="lcsh">Art, American.</subject>
+	<subject encodinganalog="650" source="lcsh">Art, American -- 20th century.</subject>
+	<subject encodinganalog="650" source="lcsh">Painters -- United States.</subject>
+	<subject encodinganalog="650" source="lcsh">Painting, American.</subject>
+	<subject encodinganalog="650" source="lcsh">Painting, American -- 20th century.</subject>
+	<genreform encodinganalog="655" source="aat">Articles.</genreform>
+	<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+	<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+	<genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform>
+	<genreform encodinganalog="655" source="aat">Exhibition catalogs.</genreform>
+	<occupation encodinganalog="656" source="lcsh">Artists.</occupation>
+	<occupation encodinganalog="656" source="lcsh">Painters.</occupation>
+	</controlaccess>
+	
+	<accessrestrict encodinganalog="506">
+	<head>Access Restrictions</head>
+	<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p></accessrestrict>
+	
+	<userestrict encodinganalog="540">
+	<head>Use Restrictions</head>
+	<p>Written permission must be obtained from SCRC and 
+                       all relevant rights holders before publishing quotations, excerpts or images from any 
+                       materials in this collection. </p></userestrict>
+	
+	<prefercite encodinganalog="524">
+	<head>Preferred Citation</head>
+	<p>Preferred citation for this material is as follows:</p>
+	<p>Anthony Toney Papers,<lb/>&su_name;
+                  </p></prefercite><!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle><unitdate normal="1932/1969" type="inclusive">Undated</unitdate></unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle><unitdate normal="1932/1965" type="inclusive">1932-1965</unitdate></unittitle><physdesc><extent>10 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle><unitdate normal="1966/1969" type="inclusive">1966-1969</unitdate></unittitle><physdesc><extent>4 folders</extent></physdesc><container type="Box">2</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Advertising and personal</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Biographical</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Invitations, reports</unittitle><physdesc><extent>4 folders</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Invitations, reports</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Miscellaneous</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Personal</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Receipts</unittitle><container type="Box">3</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>News clippings</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><physdesc><extent>5 folders</extent></physdesc><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Miscellaneous</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">4</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Painting</unittitle></did>
+            <c02><did><unittitle>Artwork, original</unittitle><physdesc><extent>19 items</extent></physdesc><container type="Oversize">1</container></did></c02>
+            <c02><did><unittitle>Artwork, reproductions</unittitle><physdesc><extent>10 items</extent></physdesc><container type="Oversize">1</container></did></c02>
+            <c02><did><unittitle>Critiques</unittitle><container type="Box">4</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle>Exhibition catalogs</unittitle><physdesc><extent>5 folders</extent></physdesc><container type="Box">4</container></did></c02>
+            <c02><did><unittitle>Magazines</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">4</container></did></c02>
+            <c02><did><unittitle>Educational materials</unittitle><physdesc><extent>4 folders</extent></physdesc><container type="Box">5</container></did></c02>
+            <c02><did><unittitle>Bulletins, articles</unittitle><container type="Box">5</container></did></c02>
+            <c02><did><unittitle>News clippings</unittitle><physdesc><extent>338 items</extent></physdesc><container type="Oversize">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02><did><unittitle>College papers on art</unittitle></did>
+               <c03><did><unittitle>Typescripts</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">6</container></did></c03>
+               <c03><did><unittitle>Typescripts, notes</unittitle><container type="Box">6</container></did></c03>
+               <c03><did><unittitle>Papers</unittitle><physdesc><extent>14 folders</extent></physdesc><container type="Box">6</container></did></c03>
+            </c02>
+            <c02><did><unittitle>Published articles</unittitle><container type="Box">6</container></did></c02>
+            <c02><did><unittitle>Advertising</unittitle><container type="Box">6</container></did></c02>
+         </c01>
+      </dsc>	   
+   </archdesc>
+</ead>

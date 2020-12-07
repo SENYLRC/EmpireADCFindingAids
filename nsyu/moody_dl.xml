@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 --><!-- Added Belfer as container type -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="moody_dl" mainagencycode="NSyU">moody_dl</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Dwight Lyman Moody Collection</titleproper>
+        <subtitle>An inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1968-04-11">11 Apr 1968</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2010-10-25">25 Oct 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        27 Oct 2010 - converted to EAD (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Moody, Dwight Lyman, 1837-1899.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Dwight Lyman Moody Collection</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1876/1968" type="inclusive">1876-1968</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>1 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">American Protestant clergyman and evangelist.  Collection contains correspondence, subject files, writings, photographs and research material.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">3174712</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Dwight Lyman Moody (1837-1899) was an American Protestant clergyman and evangelist.</p>
+      <p>Born in Northfield, Massachusetts, Moody settled in Chicago in 1856 where he became successful 
+		in business and active in reliogious work.  He withdrew from business in 1861 to devote his full 
+		energies to city missionary work.  During the Civil War he acted as agent of the United States 
+		Christian Commission and was also secretary of the YMCA.</p>
+      <p>In 1867, while in England, Moody carried on evangelistic work.  In 1870 he became associated 
+		with Ira D. Sankey, organist and singer.  Together they made two notable tours of England (1873-1875 
+		and 1881-1883), and held meetings in many parts of the United States.  Their collections of gospel 
+		hymns were well received.</p>
+      <p>In 1879 Moody established Northfield Seminary for Young Women, the first of a chain of educational 
+		institutions of his planning.  Mount Hermon School for Young Men was added in 1881, and the Bible 
+		Institute for Home and Foreign Missions in 1889.  He also inaugurated the Students' Conference and 
+		the Christian Workers' Conference in Northfield.</p>
+      <p>Moody was married to Emma C. Revell, with whom he had three children: Emma Moody Fitt, William 
+		Revell Moody, and Paul Dwight Moody, who became President of Middlebury College.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Dwight Lyman Moody Collection</emph> consists of correspondence, 
+			subject files, writings, photographs and clippings.  The collection is divided into two parts 
+			according to the donor.</p>
+      <p>Material donated by Mrs. E.M. Powell, grand-daughter of Mr. Moody, contains correspondence, 
+			subject files, writings and photographs.  These are further subdivided as shown in the following 
+			shelf list.  Subject files include ephemera and a curator's file.  Writings consist of articles by 
+			and about Moody, including one page of a sermon outline in his handwriting.  Photographs include 
+			several of Moody at various ages.</p>
+      <p>Material donated by Mr. Colton Storm contains material relating to Dwight Lyman Moody and material 
+			relating to Carl Sidney Bishop.  The Moody material includes correspondence, clippings and a 
+			curator's file.  The Bishop material contains correspondence and a Parsons family genealogy.  
+			Mr. Bishop was Mr. Storm's grandfather and a correspondence of Moody.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Correspondence is arranged chronologically.  Photographs are arranged alphabetically by subject.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has extensive holdings relating to church and clergy in Central New York.  Please refer to &subjindex; for a complete listing.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Church and clergy</subject>
+		<subject encodinganalog="650" source="local">Religion and philosophy</subject>
+		<persname encodinganalog="600" source="lcnaf">Bishop, Carl Sidney.</persname>
+		<persname encodinganalog="600" source="lcnaf">Moody, Dwight Lyman, 1837-1899.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Evangelists -- Great Britain.</subject>
+      <subject encodinganalog="650" source="lcsh">Evangelists -- United States.</subject>
+		<subject encodinganalog="650" source="lcsh">Protestant churches -- Clergy.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Genealogies (histories)</genreform>
+      <genreform encodinganalog="655" source="aat">Memorabilia.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Clergy.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Dwight Lyman Moody Collection, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Mrs. E.M. Powell</persname>.</p>
+      <p>Gift of 
+        
+        <persname role="donor">Colton Storm</persname>.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>E.M. Powell, donor</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>General</unittitle>
+              <unitdate normal="1895" type="inclusive">1895, </unitdate>
+              <unitdate normal="1898" type="inclusive">1898, </unitdate>
+              <unitdate normal="1899" type="inclusive">1899</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subject files</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Announcements</unittitle>
+              <unitdate normal="1886" type="inclusive">1886</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Centenary celebration</unittitle>
+              <unitdate normal="1937" type="inclusive">1937</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Curator's file</unittitle>
+              <unitdate normal="1946/1968" type="inclusive">1946-1968</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Genealogy</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sheet music</unittitle>
+              <unitdate normal="1876" type="inclusive">1876</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Writings</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>About Moody</unittitle>
+              <abstract>printed material</abstract>
+              <unitdate normal="1936/1937" type="inclusive">1936-1937</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>By Moody</unittitle>
+              <abstract>manuscripts, printed material</abstract>
+              <unitdate normal="1900" type="inclusive">1900</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Photographs</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Birthplace</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Burial place</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Library</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mother</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Plaque</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sankey, I.D.</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Self</unittitle>
+              <unitdate normal="1870/1879" type="inclusive">1870-1879</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Son</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Unidentified</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Colton Storm, donor</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Dwight L. Moody material</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Correspondence</unittitle>
+              <unitdate normal="1891" type="inclusive">1891, </unitdate>
+              <unitdate normal="1894" type="inclusive">1894, </unitdate>
+              <unitdate normal="1898/1899" type="inclusive">1898-1899</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Clippings</unittitle>
+              <abstract>funeral; meetings</abstract>
+              <unitdate normal="1899" type="inclusive">1899</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Curator's file</unittitle>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Carl Sidney Bishop material</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Correspondence</unittitle>
+              <unitdate normal="1903/1904" type="inclusive">1903-1904, </unitdate>
+              <unitdate normal="1912" type="inclusive">1912, </unitdate>
+              <unitdate normal="1915" type="inclusive">1915</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Genealogy, Parsons family</unittitle>
+              <unitdate normal="1894" type="inclusive">1894, </unitdate>
+              <unitdate normal="1915" type="inclusive">1915</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

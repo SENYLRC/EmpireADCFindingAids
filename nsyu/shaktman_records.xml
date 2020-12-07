@@ -1,0 +1,1672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012--><!-- added altformavail section --><?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen.css"?>
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" mainagencycode="NSyU" identifier="shaktman_records">shaktman_records</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Shaktman Associates Records</titleproper>
+        <subtitle>An  inventory of its Records at Syracuse University</subtitle>
+        <author encodinganalog="Creator">PRB</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2006-03-08">2 Apr 2013</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>PRB <date normal="2013-04-02">2 Apr 2013</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <corpname encodinganalog="110">Shaktman Associates</corpname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Shaktman Associates Records</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1983/2008" type="inclusive">1983-2008</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>13 linear feet</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Records of the international
+            presentation skills training company founded by American playwright and director Ben
+            Shaktman. Correspondence subject files; publications; memorabilia, including photographs
+            and appointment calendars; and media, including audiotapes, VHS tapes, and computer
+            floppy disks.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">4046332</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">Majority in <language langcode="eng">English</language>, a few items in <language langcode="chi">Chinese</language>, <language langcode="dut">Dutch</language> and <language langcode="fre">French.</language></langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Founded in 1983 by American playwright and director Ben Shaktman, Shaktman Associates is an
+            international presentation skills training company based in Santa Monica, CA. The
+            company conducts workshops, coaches executives and publishes training material for a
+            wide range of corporate clients.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Shaktman Associates Records</emph> spans the years 1983-2008 and
+            is divided into four groups: Correspondence-subject files, Publications, Media, and
+            Memorabilia.</p>
+      <p>
+        <emph render="bold">Correspondence-subject files</emph> is arranged alphabetically and
+            includes letters to and from and information about Shaktman Associates' clients as well
+            as general correspondence. </p>
+      
+      <p>
+        <emph render="bold">Media</emph> includes audio, video, and computer material produced
+            by Shaktman Associates as well as its clients and partners. 
+        
+        </p><p><emph render="bold">Memorabilia</emph> contains appointment calendars, phone logs, photgraphs,
+        and a diary from Ben Shaktman's trip to China in 2000. </p>
+    <p>
+        <emph render="bold">Publications</emph> includes workshop materials and handouts as well
+            as general Shaktman Associates brochures and advertising material.</p></scopecontent>
+    <!--<altformavail encodinganalog="530"><head>Other Formats Available</head><p>## Use MARC 530 or comment out if not applicable</p></altformavail>-->
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Material is arranged alphabetically by type or title.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>See also the
+        
+        <archref href="../s/shaktman_b.htm"> Ben Shaktman Papers</archref></p>
+    
+    <!--Following is  boilerplate statement - delete this if you have specific related 
+material that you are listing.-->
+      </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.-->
+      <!--<separatedmaterial encodinganalog="544 0"><head>Separated Material</head><p>## OPT (MARC 544 0)</p></separatedmaterial>-->
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Business and Industry</subject><subject encodinganalog="650" source="local">Dance and theatre</subject><persname encodinganalog="600" source="lcnaf">Shaktman, Ben, 1937-</persname>
+      <persname encodinganalog="600" source="lcnaf">Carden, William.</persname>
+      <corpname encodinganalog="610" source="lcnaf">International Business Machines
+            Corporation.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Allianz Group.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Andersen Consulting.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Apple Computer, Inc.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Autodesk, Inc.</corpname>
+      <corpname encodinganalog="610" source="local">Claris Corporation.</corpname>
+      <corpname encodinganalog="610" source="local">Computer Sciences Corporation.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">CRM Learning (Firm)</corpname>
+      <corpname encodinganalog="610" source="local">Deloitte &amp; Touche.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Electronic Data Systems
+            Corporation.</corpname>
+      <corpname encodinganalog="610" source="local">Forrester (Firm)</corpname>
+      <corpname encodinganalog="610" source="local">Gartner Group.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">General Electric Company.</corpname>
+      <corpname encodinganalog="610" source="local">Guthy-Renker (Firm)</corpname>
+      <corpname encodinganalog="610" source="local">Inforum (Firm)</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Infosys Technologies Ltd.</corpname>
+      <corpname encodinganalog="610" source="local">Insead. </corpname>
+      <corpname encodinganalog="610" source="lcnaf">London Business School.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">META Group. </corpname>
+      <corpname encodinganalog="610" source="local">MediaWorks (Firm)</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Morgan Stanley &amp; Co.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Polaroid Corporation.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Price, Waterhouse &amp; Co.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Texas Instruments Incorporated.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Xerox Corporation.</corpname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Management -- United States -- Handbooks, manuals,
+            etc.</subject>
+      <subject encodinganalog="650" source="lcsh">Business presentations.</subject>
+      <subject encodinganalog="650" source="lcsh">Executive coaching.</subject>
+      <subject encodinganalog="650" source="lcsh">Communication in management.</subject>
+      <subject encodinganalog="650" source="lcsh">Business communication.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Audiotapes.</genreform>
+      <genreform encodinganalog="655" source="aat">CD-ROMs.</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Diaries.</genreform>
+      <genreform encodinganalog="655" source="aat">Drafts (documents)</genreform>
+      <genreform encodinganalog="655" source="aat">DVDs.</genreform><genreform encodinganalog="655" source="aat">Floppy disks.</genreform><genreform encodinganalog="655" source="aat">Lecture notes.</genreform>
+      <genreform encodinganalog="655" source="aat">Mini-DV.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Research notes.</genreform>
+      <genreform encodinganalog="655" source="aat">VHS.</genreform>
+      
+      
+      <genreform encodinganalog="655" source="aat">Audiocassettes.</genreform>
+      
+      
+    
+    
+         <!--<occupation encodinganalog="656" source="lcsh">Employee Training Specialists.</occupation>-->
+         <!--<function encodinganalog="657">##</function>-->
+      </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Shaktman Associates Records, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of Ben Shaktman: 1984, 1986, 1987, 1989, 1991, 1992, 1993, 1994, 1995, 1996, 1997,
+            1998, 2000, 2001, 2003, 2004, 2006, 2007, 2008, 2009.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>-->
+      <!--<accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence-subject files</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>General correspondence </unittitle>
+            <unitdate normal="1983/2000" type="inclusive"> 1983-2000 </unitdate>
+            <physdesc>
+              <extent>24 folders</extent>
+            </physdesc>
+            <container type="Box"> 1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>General correspondence </unittitle>
+            <unitdate normal="2001/2006" type="inclusive"> 2001-2006 </unitdate>
+            <physdesc>
+              <extent>4 folders</extent>
+            </physdesc>
+            <container type="Box"> 2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ahern, Terry</unittitle>
+            <unitdate normal="1983/1984" type="inclusive"> 1983-1984 </unitdate>
+            <container type="Box"> 2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>[Sam] Albert Associates</unittitle>
+            <unitdate normal="1990" type="inclusive"> 1990 </unitdate>
+            <container type="Box"> 2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Albrezzi, Steven</unittitle>
+            <unitdate normal="1984/1991" type="inclusive"> 1984-1991 </unitdate>
+            <container type="Box"> 2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Alden Design</unittitle>
+            <unitdate normal="1989" type="inclusive"> 1989 </unitdate>
+            <container type="Box"> 2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Allianz</unittitle>
+            <unitdate normal="1988/2007" type="inclusive"> 1988-2007 </unitdate>
+            <physdesc>
+              <extent>11 folders</extent>
+            </physdesc>
+            <container type="Box"> 2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Andersen Consulting </unittitle>
+            <unitdate normal="1988/1994" type="inclusive"> 1988-1994 </unitdate>
+            <physdesc>
+              <extent>24 folders</extent>
+            </physdesc>
+            <container type="Box"> 2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Apple</unittitle>
+            <unitdate normal="1985/1986" type="inclusive"> 1985-1986 </unitdate>
+            <physdesc>
+              <extent>5 folders</extent>
+            </physdesc>
+            <container type="Box"> 2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Apple</unittitle>
+            <unitdate normal="1987/1995" type="inclusive"> 1987-1995 </unitdate>
+            <physdesc>
+              <extent>11 folders</extent>
+            </physdesc>
+            <container type="Box"> 3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Applied Business Technology</unittitle>
+            <unitdate normal="1994/1998" type="inclusive"> 1994-1998 </unitdate>
+            <physdesc>
+              <extent>10 folders</extent>
+            </physdesc>
+            <container type="Box"> 3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Applied Business Technology</unittitle>
+            <unitdate normal="1999/2000" type="inclusive"> 1999-2000 </unitdate>
+            <physdesc>
+              <extent>10 folders</extent>
+            </physdesc>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Autodesk</unittitle>
+            <unitdate normal="1994/1997" type="inclusive"> 1994-1997 </unitdate>
+            <physdesc>
+              <extent>4 folders</extent>
+            </physdesc>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>A.X.A.</unittitle>
+            <unitdate normal="1999/2001" type="inclusive"> 1999-2001 </unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Belkin Productions, Inc.</unittitle>
+            <unitdate normal="1988" type="inclusive"> 1988</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bell South</unittitle>
+            <unitdate normal="1988/1989" type="inclusive"> 1988-1989</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bromka, Elaine</unittitle>
+            <unitdate normal="1994" type="inclusive"> 1994</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Businessland, Inc.</unittitle>
+            <unitdate normal="1986/1987" type="inclusive"> 1986-1987</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Businessland, Inc.</unittitle>
+            <unitdate normal="1986/1987" type="inclusive"> 1986-1987</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Carden, William.</unittitle>
+            <unitdate normal="1988/2003" type="inclusive"> 1988-2003 </unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Chamberlain, Jeffery D.</unittitle>
+            <unitdate normal="1993/1994" type="inclusive"> 1993-1994</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Claris Corp.</unittitle>
+            <unitdate normal="1989" type="inclusive"> 1989</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cochrane, Stuart S.</unittitle>
+            <unitdate normal="1992/1993" type="inclusive"> 1992-1993</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Computer Sciences Corporation</unittitle>
+            <unitdate normal="2000" type="inclusive"> 2000</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Construction Industry Solutions</unittitle>
+            <unitdate normal="2002" type="inclusive"> 2002</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Copyright</unittitle>
+            <unitdate normal="2001/2002" type="inclusive"> 2001-2002</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>CRM Films</unittitle>
+            <unitdate normal="1994" type="inclusive"> 1994</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Delivering Project Excellence Conference</unittitle>
+            <unitdate normal="2004" type="inclusive"> 2004</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Deloitte and Touche</unittitle>
+            <unitdate normal="1998/1999" type="inclusive"> 1998-1999</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Devo Team</unittitle>
+            <unitdate normal="1998" type="inclusive"> 1998</unitdate>
+            <container type="Box"> 4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Drake and Scull</unittitle>
+            <unitdate normal="1997/1998" type="inclusive"> 1997-1998</unitdate>
+            <container type="Box"> 5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Electronic Data Systems</unittitle>
+            <unitdate normal="1987/1994" type="inclusive"> 1987-1994 </unitdate>
+            <physdesc>
+              <extent>10 folders</extent>
+            </physdesc>
+            <container type="Box"> 5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Farb Company</unittitle>
+            <unitdate normal="1994" type="inclusive"> 1994</unitdate>
+            <container type="Box"> 5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fish, Robert Stevens</unittitle>
+            <unitdate normal="1987" type="inclusive"> 1987</unitdate>
+            <container type="Box"> 5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Forrester Research, Inc.</unittitle>
+            <unitdate normal="2003/2004" type="inclusive"> 2003-2004</unitdate>
+            <container type="Box"> 5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Forte Software</unittitle>
+            <unitdate normal="1998" type="inclusive"> 1998</unitdate>
+            <container type="Box"> 5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>The Gartner Group</unittitle>
+            <unitdate normal="1997" type="inclusive"> 1997</unitdate>
+            <container type="Box"> 5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gay, Andrew</unittitle>
+            <unitdate normal="2001" type="inclusive"> 2001</unitdate>
+            <container type="Box"> 5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>General Electric</unittitle>
+            <unitdate normal="1989" type="inclusive"> 1989 </unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box"> 5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>GIGA</unittitle>
+            <unitdate normal="2000/2005" type="inclusive"> 2000-2005</unitdate>
+            <physdesc>
+              <extent>5 folders</extent>
+            </physdesc>
+            <container type="Box"> 6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Goodman, Burt</unittitle>
+            <unitdate normal="1993" type="inclusive"> 1993</unitdate>
+            <container type="Box"> 6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Goss, Richard E.</unittitle>
+            <unitdate normal="2000/2002" type="inclusive"> 2000-2002</unitdate>
+            <container type="Box"> 6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Greenleaf, Barbara</unittitle>
+            <unitdate normal="1991/1993" type="inclusive"> 1991-1993</unitdate>
+            <container type="Box"> 6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Goodman, Burt</unittitle>
+            <unitdate normal="1993" type="inclusive"> 1993</unitdate>
+            <container type="Box"> 6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Grossman, Herb</unittitle>
+            <unitdate normal="1998/2002" type="inclusive"> 1998-2002</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box"> 6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gruber, Michael</unittitle>
+            <unitdate normal="1987/1989" type="inclusive"> 1987-1989</unitdate>
+            <container type="Box"> 6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gunthy-Renker</unittitle>
+            <unitdate normal="1999" type="inclusive"> 1999</unitdate>
+            <container type="Box"> 6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Hirschowitz, Ralph G.</unittitle>
+            <unitdate normal="1987" type="inclusive"> 1987</unitdate>
+            <container type="Box"> 6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Hokus Pokus Productions</unittitle>
+            <unitdate normal="1993" type="inclusive"> 1993</unitdate>
+            <container type="Box"> 6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>I.B.M.</unittitle>
+            <unitdate normal="1983/1989" type="inclusive"> 1983-1989</unitdate>
+            <physdesc>
+              <extent>12 folders</extent>
+            </physdesc>
+            <container type="Box"> 6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>I.B.M.</unittitle>
+            <unitdate normal="1990/1992" type="inclusive"> 1990-1992</unitdate>
+            <physdesc>
+              <extent>14 folders</extent>
+            </physdesc>
+            <container type="Box"> 7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>I.B.M.</unittitle>
+            <unitdate normal="1993/2004" type="inclusive"> 1993-2004</unitdate>
+            <physdesc>
+              <extent>13 folders</extent>
+            </physdesc>
+            <container type="Box"> 8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Inforum</unittitle>
+            <unitdate normal="1988" type="inclusive"> 1988</unitdate>
+            <container type="Box"> 8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Infomart Dallas, Texas</unittitle>
+            <unitdate normal="1985/1988" type="inclusive"> 1985-1988</unitdate>
+            <container type="Box"> 8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Infomart model</unittitle>
+            <unitdate normal="1985" type="inclusive"> 1985</unitdate>
+            <container type="Box"> 8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Inforum</unittitle>
+            <unitdate normal="1988" type="inclusive"> 1988</unitdate>
+            <container type="Box"> 8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Infosys</unittitle>
+            <unitdate normal="2004/2006" type="inclusive"> 2004-2006</unitdate>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box"> 8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Insead</unittitle>
+            <unitdate normal="2001/2006" type="inclusive"> 2001-2006</unitdate>
+            <physdesc>
+              <extent>5 folders</extent>
+            </physdesc>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Intel Corporation</unittitle>
+            <unitdate normal="1990" type="inclusive"> 1990</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Jarvis, PLC</unittitle>
+            <unitdate normal="2000" type="inclusive"> 2000</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Jennings, David A.</unittitle>
+            <unitdate normal="1986" type="inclusive"> 1986</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Jones, Michael L.</unittitle>
+            <unitdate normal="1992/1993" type="inclusive"> 1992-1993</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kirchman Corporation</unittitle>
+            <unitdate normal="1988/1989" type="inclusive"> 1988-1989</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Klemper, Cees</unittitle>
+            <unitdate normal="2005" type="inclusive"> 2005</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lefkoe and Associates</unittitle>
+            <unitdate normal="1992" type="inclusive"> 1992</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Levinson, Richard</unittitle>
+            <unitdate normal="1984" type="inclusive"> 1984</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lightwave Productions</unittitle>
+            <unitdate normal="1999" type="inclusive"> 1999</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Litz, Robert</unittitle>
+            <unitdate normal="1995" type="inclusive"> 1995</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>London Business School</unittitle>
+            <unitdate normal="2005/2008" type="inclusive"> 2005-2008</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lowe, Peter</unittitle>
+            <unitdate normal="1999" type="inclusive"> 1999</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Marigold Associates</unittitle>
+            <unitdate normal="1990" type="inclusive"> 1990</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mediaworks</unittitle>
+            <unitdate normal="1992" type="inclusive"> 1992</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Meta Group</unittitle>
+            <unitdate normal="2004" type="inclusive"> 2004</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mignon, Laurent</unittitle>
+            <unitdate normal="2008" type="inclusive"> 2008</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Milken Institute</unittitle>
+            <unitdate normal="1990" type="inclusive"> 1990</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Morgan Stanley and Company</unittitle>
+            <unitdate normal="1997" type="inclusive"> 1997</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Nugent-Head, Tim</unittitle>
+            <unitdate normal="2004" type="inclusive"> 2004</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>O'Connor, Geoffrey</unittitle>
+            <unitdate normal="1993" type="inclusive"> 1993</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Park, Russell D.</unittitle>
+            <unitdate normal="2002" type="inclusive"> 2002</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Polaroid</unittitle>
+            <unitdate normal="1986" type="inclusive"> 1986</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pratt, Daniel W.</unittitle>
+            <unitdate normal="1987" type="inclusive"> 1987</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Price Waterhouse Coopers</unittitle>
+            <unitdate normal="1998/2008" type="inclusive"> 1998-2008</unitdate>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Public Relations Society of America</unittitle>
+            <unitdate normal="1986" type="inclusive"> 1986</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Raphael, Lisa</unittitle>
+            <unitdate normal="1987" type="inclusive"> 1987</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rasmus, Daniel W.</unittitle>
+            <unitdate normal="2002" type="inclusive"> 2002</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rosenak, David S.</unittitle>
+            <unitdate normal="1986" type="inclusive"> 1986</unitdate>
+            <container type="Box"> 9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sacharow, Neal</unittitle>
+            <unitdate normal="1992" type="inclusive"> 1992</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Schoonover Associates</unittitle>
+            <unitdate normal="1985/1991" type="inclusive"> 1985-1991</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Schreiber, Terry</unittitle>
+            <unitdate normal="1987" type="inclusive"> 1987</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Schubert, Peter</unittitle>
+            <unitdate normal="1998/1999" type="inclusive"> 1998-1999</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Schwartz, Alan</unittitle>
+            <unitdate normal="1993" type="inclusive"> 1993</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Shames, Deborah</unittitle>
+            <unitdate normal="1993" type="inclusive"> 1993</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Shaktman Associates Training Program</unittitle>
+            <unitdate normal="1994" type="inclusive"> 1994</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Siemens</unittitle>
+            <unitdate normal="1997/2000" type="inclusive"> 1997-2000</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Software 2000</unittitle>
+            <unitdate normal="1992/1993" type="inclusive"> 1992-1993</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stellar, Patricia Ann</unittitle>
+            <unitdate normal="1991/1992" type="inclusive"> 1991-1992</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stephenson, Karen</unittitle>
+            <unitdate normal="1999" type="inclusive"> 1999</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Streamline Holdings, Ltd.</unittitle>
+            <unitdate normal="1999" type="inclusive"> 1999</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Tassin, Philippe</unittitle>
+            <unitdate normal="1998/2005" type="inclusive"> 1998-2005</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Telleen, Steve</unittitle>
+            <unitdate normal="2004/2005" type="inclusive"> 2004-2005</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Texas Instruments</unittitle>
+            <unitdate normal="1986/1987" type="inclusive"> 1986-1987</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Unger, Deborah</unittitle>
+            <unitdate normal="1986/1987" type="inclusive"> 1986-1987</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Website</unittitle>
+            <unitdate normal="2000/2005" type="inclusive"> 2000-2005</unitdate>
+            <physdesc>
+              <extent>5 folders</extent>
+            </physdesc>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wesker, Arnold</unittitle>
+            <unitdate normal="1987" type="inclusive"> 1987</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Xerox</unittitle>
+            <unitdate normal="1985/1990" type="inclusive"> 1985-1990</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Zegers, Gerald</unittitle>
+            <unitdate normal="2004" type="inclusive"> 2004</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Zesker, Murlyn</unittitle>
+            <unitdate normal="1987" type="inclusive"> 1987</unitdate>
+            <container type="Box"> 10</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Media</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Susan Nussbaum Scenes from Mishuganismo </unittitle>
+            <unitid>shaktman_001</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>1) Don't hang Up 2) We're Not Kidding </unittitle>
+            <unitid>shaktman_002</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ben Shaktman IMPACT Presentation Paris </unittitle>
+            <unitid>shaktman_003</unitid>
+            <unitdate normal="1999-11" type="inclusive">Nov, 1999</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IMPACT Model Training Workshop </unittitle>
+            <unitid>shaktman_004-shaktman_009</unitid>
+            <unitdate normal="2002-06" type="inclusive">Jun, 2002</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>6 VHSs</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Nov 15 1999 tape 2 </unittitle>
+            <unitid>shaktman_010</unitid>
+            <unitdate normal="1999-11-15" type="inclusive">15 Nov 1999</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>System/390 Magazine </unittitle>
+            <unitid>shaktman_011</unitid>
+            <unitdate normal="1992" type="inclusive">1992</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>AS/400 Report </unittitle>
+            <unitid>shaktman_012</unitid>
+            <unitdate normal="1990-09" type="inclusive">Sep 1990</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>AS/400 In an Open World </unittitle>
+            <unitid>shaktman_013</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>AS/400 Advanced Series: That's The Beauty Of It </unittitle>
+            <unitid>shaktman_014</unitid>
+            <unitdate normal="1994-05-03" type="inclusive">3 May 1994 </unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>AS/400 Extending Your Competitive Edge </unittitle>
+            <unitid>shaktman_015</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Allied Welcome Home </unittitle>
+            <unitid>shaktman_016</unitid>
+            <unitdate normal="1991-10-04" type="inclusive">4 Oct 1991 </unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New York times Magazine Quality Gets Results (short version) </unittitle>
+            <unitid>shaktman_017</unitid>
+            <unitdate normal="1991-02-20" type="inclusive">20 Feb 1991 </unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Compilation Reel Part 2 </unittitle>
+            <unitid>shaktman_018</unitid>
+            <unitdate normal="1991-10-01" type="inclusive">1 Oct 1991 </unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Seminar For One #4 </unittitle>
+            <unitid>shaktman_019</unitid>
+            <unitdate normal="1992-02-19" type="inclusive">19 Feb 1992</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Attorneys &amp; Macintosh: Partners For Success </unittitle>
+            <unitid>shaktman_020</unitid>
+            <unitdate normal="1992" type="inclusive">1992</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Changing The Rules: The Jacksonville Story </unittitle>
+            <unitid>shaktman_021</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 VHS</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Alice In Openland AS/400 </unittitle>
+            <unitid>shaktman_022</unitid>
+            <unitdate normal="1992" type="inclusive">1992</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>AZI 2004 </unittitle>
+            <unitid>shaktman_023</unitid>
+            <unitdate normal="2004" type="inclusive">2004</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New Year Address 2006 </unittitle>
+            <unitid>shaktman_024</unitid>
+            <unitdate normal="2006-01" type="inclusive">Jan 2006</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>AZI 2006</unittitle>
+            <unitid>shaktman_025-shaktman_027</unitid>
+            <unitdate normal="2006-04-01" type="inclusive">1 Apr 2006</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>3 DVDs</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>AZI 2007</unittitle>
+            <unitid>shaktman_028-shaktman_030</unitid>
+            <unitdate normal="2007-03-24" type="inclusive">24 Mar 2007 </unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>3 DVDs</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>AZI Diversity Video </unittitle>
+            <unitid>shaktman_031</unitid>
+            <unitdate normal="2007-03-19" type="inclusive">19 Mar 2007</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Odysseus - Hero of Transformation </unittitle>
+            <unitid>shaktman_032</unitid>
+            <unitdate normal="2007" type="inclusive">2007</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Analyst Conference </unittitle>
+            <unitid>shaktman_033</unitid>
+            <unitdate normal="1999-10-13" type="inclusive">13 Oct 1999</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Emerging Technology Showcase </unittitle>
+            <unitid>shaktman_034</unitid>
+            <unitdate normal="2003-12-08" type="inclusive">8 Dec 2003</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>CAD Camp 95 </unittitle>
+            <unitid>shaktman_035</unitid>
+            <unitdate normal="1995" type="inclusive">1995</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Virage Demo CD v.11 </unittitle>
+            <unitid>shaktman_036</unitid>
+            <unitdate normal="2003" type="inclusive">2003</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 CD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Web Site Business Alignment: Attaining Measurable Value </unittitle>
+            <unitid>shaktman_037</unitid>
+            <unitdate normal="2004" type="inclusive">2004</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Strap 2005 </unittitle>
+            <unitid>shaktman_038</unitid>
+            <unitdate normal="2005-01-06" type="inclusive">6 Jan 2005</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 CD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Board Room 1201A </unittitle>
+            <unitid>shaktman_039</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IMPACT Executive Presentation Skills Workshop </unittitle>
+            <unitid>shaktman_040</unitid>
+            <unitdate normal="2005-06" type="inclusive">Jun 2005</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>GSM Session 10 </unittitle>
+            <unitid>shaktman_041</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>GSM Session 11 </unittitle>
+            <unitid>shaktman_042</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Delivering Project Excellence </unittitle>
+            <unitid>shaktman_043</unitid>
+            <unitdate normal="2005-06-28" type="inclusive">28 Jun 2005</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ben's Presentation </unittitle>
+            <unitid>shaktman_044</unitid>
+            <unitdate normal="2005-06-28" type="inclusive">28 Jun 2005</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ben Shaktman coaching an executive presentation </unittitle>
+            <unitid>shaktman_045</unitid>
+            <unitdate normal="2008-04-01" type="inclusive">1 Apr 2008</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 DVD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photos and old website </unittitle>
+            <unitid>shaktman_046</unitid>
+            <unitdate normal="2008-02-13" type="inclusive">13 Feb 2008</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 CD</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Alice in Openland Disk 1- Disk 4</unittitle>
+            <unitid>shaktman_047-shaktman_050</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>4 floppies (3-1/2 in.) </extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Present Yourself </unittitle>
+            <unitid>shaktman_051</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 floppy (3-1/2 in.) </extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>IBM AS/400 Dick O'Dell Teleconference </unittitle>
+            <unitid>shaktman_052</unitid>
+            <unitdate normal="1996-12-13" type="inclusive">13 Dec 1996</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 floppy (3-1/2 in.) </extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Training Tape '94 Tape 1- Tape 4</unittitle>
+            <unitid>shaktman_053-shaktman_056</unitid>
+            <unitdate normal="1994" type="inclusive">1994</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>4 audio cassettes </extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>S.A. Training Program Tape 1- Tape 9</unittitle>
+            <unitid>shaktman_057-shaktman_065</unitid>
+            <unitdate normal="1994-02-23" type="inclusive">23 Feb 1994</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>9 audio cassettes</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Client Marketing Review Tape 10 - Tape 16</unittitle>
+            <unitid>shaktman_066-shaktman_072</unitid>
+            <unitdate normal="1994-02-28" type="inclusive">28 Feb 1994</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>7 audio cassettes</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sales Training Tape 1 - Tape 3</unittitle>
+            <unitid>shaktman_073-shaktman_075</unitid>
+            <unitdate normal="1993-06-03" type="inclusive">3 Jun 1993</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>3 audio cassettes</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>GIGA Facilitation </unittitle>
+            <unitid>shaktman_076</unitid>
+            <unitdate normal="2001-10-17" type="inclusive">17 Oct 2001</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 audio cassette</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Effective Presentation Skills </unittitle>
+            <unitid>shaktman_077</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 floppy (3-1/2 in.) </extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ben's Dynamics notes re: Credit Union/ Les Speech </unittitle>
+            <unitid>shaktman_078</unitid>
+            <unitdate normal="1988-08-19" type="inclusive">19 Aug 1988</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 audio cassette</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Measures of Success in American Business today </unittitle>
+            <unitid>shaktman_079</unitid>
+            <unitdate normal="1988" type="inclusive">1988</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>1 audio cassette</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Insead University Tape 1 - Tape 2</unittitle>
+            <unitid>shaktman_080 - shaktman_081</unitid>
+            <unitdate normal="1988" type="inclusive">1988</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>2 MiniDVs</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Insead University Tape 1 - Tape 2</unittitle>
+            <unitid>shaktman_080 - shaktman_081</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>2 MiniDVs</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>GIGA interviews Tape 1 - Tape 2</unittitle>
+            <unitid>shaktman_082 - shaktman_083</unitid>
+            <unitdate normal="2002" type="inclusive">2002</unitdate>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>2 MiniDVs</extent>
+            </physdesc>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>S.A. Productions Master Tape 1 - Tape 14</unittitle>
+            <unitid>shaktman_084 - shaktman_097</unitid>
+            <container type="Box">12</container>
+            <physdesc>
+              <extent>14 MiniDVs</extent>
+            </physdesc>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Memorabilia</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Appointment calendars</unittitle>
+            <unitdate normal="1987/2001" type="inclusive">1987-2001</unitdate>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ben Shaktman diary "China Trip"</unittitle>
+            <unitdate normal="2000" type="inclusive">2000</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Phone logs</unittitle>
+            <unitdate normal="1988/2005" type="inclusive">1988-2005</unitdate>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs</unittitle>
+            <unitdate normal="1983/2008" type="inclusive"/>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Publications</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Brochure</unittitle>
+            <unitdate normal="1987/2003" type="inclusive">1987-2003</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Don't Hang Up"</unittitle>
+            <unitdate normal="1992" type="inclusive">1992</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>I.M.P.A.C.T.</unittitle>
+            <unitdate normal="1983/2008" type="inclusive"/>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Managing Media Projects"</unittitle>
+            <unitdate normal="1986" type="inclusive">1986</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Present Yourself!"</unittitle>
+            <unitdate normal="1984" type="inclusive">1984</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Presentation/Communication Skills Workshop material</unittitle>
+            <unitdate normal="1994/2004" type="inclusive">1994-2004</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Writing Product (Technical) Brochures"</unittitle>
+            <unitdate normal="1991" type="inclusive">1991</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

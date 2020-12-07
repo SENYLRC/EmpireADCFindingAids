@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.9, 7/18/2007-->
+<!-- Changed entity files to txt rather than xml, don't suppose it matters which they are (?) -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="hyatt_hrk">hyatt_hrk</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Harriet Randolph King Hyatt Papers</titleproper>
+            <subtitle>An inventory of her papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">--</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1966" encodinganalog="Date">1966?</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Lara Chmela<date normal="2008-02-14">14 Feb. 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>20 Mar 2008 - converted to EAD (LDC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Hyatt, Harriet Randolph King, 1814-1901?</persname><!--<corpname encodinganalog="110">or 110</corpname>-->
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Harriet Randolph King Hyatt Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1863/1903" type="inclusive" label="Inclusive Dates: ">1863-1903</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.25 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Family correspondence and Civil War letters (1863-1898).</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149071</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Birth place unknown, Harriet Randolph King was christened Ruth Ann, but changed her name to Harriet Randolph at the age of thirteen. As a child, she traveled extensively with her mother (Mary Ann Butler), who was married three times, her last husband being John King. Harriet King married a Baltimore merchant, Alpheus Hyatt, and for a time lived in Washington, where her son was Born on April 5, 1834, and named after his father. Harriet R. Hyatt had one other child, a daughter named Ida, while two other infants died earlier. After a few years, the family returned to Baltimore where they lived on an extensive estate on the edge of a-town called "Wansbeck."</p><p>Any other information known about Harriet R. Hyatt is scanty. She took her son, Alpheus Hyatt II, on a tour of Italy in 1858. She was very active in volunteer work during the Civil War, and established diet kitchens in Baltimore and Harpers Ferry for the soldiers, to correct some of the extremely poor sanitary conditions. She set up temporary hospitals to care for the wounded after the disastrous battle of Gettysburg, and used family funds to support them. She demanded an interview with President Lincoln to protest the conditions under which the soldiers suffered, and because of her stubbornness, gained the President's ear and sympathy.</p><p>In her later life, she again traveled abroad, and lived to an old age.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The papers of <emph render="bold">Harriet Randolph King Hyatt</emph> include correspondence, and an accounting of Mrs. Hyatt's estate after her death.</p><p><emph render="bold">Correspondence</emph>, includes incoming letters, outgoing correspondence, and correspondence of others, which is a letter to Mrs. Harriet R. Hyatt's niece, asking about Mrs. Hyatt's ancestors. <emph render="bold">Subject File</emph>, contains an accounting of Mrs. Hyatt's estate after her death.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Incoming correspondence is arranged alphabetically by author, while outgoing correspondence is organized chronologically.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>The &scrc_name; has numerous collections for the Hyatt-Mayor families.  For information on members of the Hyatt, Mayor, Beebe, and Huntington families see &subjindex; for the finding aids of individual family members.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Hyatt, Harriet Randolph King, 1814-1901? -- Archives.</persname>
+         <famname encodinganalog="600" source="lcnaf">Hyatt family.</famname>
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <!--<subject encodinganalog="650" source="lcsh">##</subject>-->
+         <geogname encodinganalog="651" source="lcsh">United States -- History -- Civil War, 1861-1865 -- War work.</geogname>
+         <geogname encodinganalog="651" source="lcsh"> United States -- History -- Civil War, 1861-1865 -- Women.</geogname><genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Harriet Randolph King Hyatt Papers,<lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname>A. Hyatt Mayor</persname> and <persname>Anna Hyatt Huntington</persname>, 1964-1967.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Incoming Correspondence</unittitle>
+                  <!--Permissible values for @TYPE for first CONTAINER are 'Box' 'Oversize' 'Volume' 'Carton' or 'Map-Case'.-->
+                  <!--Permissible values for @TYPE for second CONTAINER are 'Folder' 'Frame' 'Page'  or 'Reel'.-->
+               </did>
+            <c03><did><unittitle>Carpenter, Minna M.</unittitle><container type="Box">1</container>
+				</did></c03>
+
+				<c03><did><unittitle>Hyatt, Alpheus II</unittitle><container type="Box">1</container>
+				</did></c03>
+</c02>
+
+         <c02><did><unittitle>Outgoing Correspondence</unittitle></did>
+			<c03><did><unittitle><unitdate type="inclusive" normal="1871">1871</unitdate>
+			</unittitle><container type="Box">1</container></did></c03>
+<c03><did><unittitle><unitdate type="inclusive" normal="1895/1898">1895-1898</unitdate></unittitle>
+<container type="Box">1</container></did></c03>
+<c03><did><unittitle><unitdate type="inclusive" normal="1863/1903">Undated</unitdate></unittitle>
+<container type="Box">1</container></did></c03>
+<c03><did><unittitle>Unidentified</unittitle><container type="Box">1</container>
+</did></c03>
+</c02>
+<c02><did><unittitle>Correspondence of Others</unittitle></did><c03>
+<did><unittitle><unitdate normal="1894" type="inclusive">1894</unitdate></unittitle><container type="Box">1</container>
+</did></c03>
+</c02>
+</c01>
+      <c01 level="series"><did><unittitle>Subject File</unittitle></did><c02><did>
+		<unittitle>Accounting of Estate, </unittitle><unitdate type="inclusive" normal="1903">1903
+		</unitdate><container type="Box">1</container></did></c02>
+</c01></dsc>
+   </archdesc>
+</ead>

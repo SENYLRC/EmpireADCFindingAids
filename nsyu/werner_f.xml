@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="werner_f" mainagencycode="NSyU">werner_f</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Fritz Werner Papers</titleproper>
+        <subtitle>An inventory of 
+                        his papers 
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">-</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1966/1971">circa 1966</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           
+        
+        <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>9 Dec 2009 - converted to EAD (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Werner, Fritz.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Fritz Werner Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1929/1965" type="inclusive">1929-1965</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">1.0 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the Austrian-American portrait painter.   Collection 
+						  contains correspondence, incoming, 1934-1965; drawings; photographs 
+						  of his portraits; and printed material, including articles, 
+						  clippings and exhibition catalogs, 1936-1964.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">148746</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">
+                          English
+                       </language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Fritz Werner (1898-1994) was an Austrian-American painter best known for his 
+		portraits and still lifes.   Born in Vienna, Austria, Werner studied at the 
+		National Academy of Arts in Munich, the Vienna Imperial Academy and the Academy 
+		des Beaux Arts in Paris.  He spent several years in Argentina before settling in 
+		the United States, where he lived in California, New York, and Arizona.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Fritz Werner Papers</emph> consist of correspondence, 
+		articles,  a few pieces of original artwork, clippings, exhibit material, and photographs of his portrait work.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>All series are arranged chronologically.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial>-->
+    <!--<separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial>--><!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">Art -- Painters</subject><persname encodinganalog="600" source="lcnaf">Werner, Fritz -- Archives.</persname>
+      <subject encodinganalog="650" source="lcsh">Art, American.</subject>
+      <subject encodinganalog="650" source="lcsh">Art, American -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Austrian Americans.</subject>
+      <subject encodinganalog="650" source="lcsh">Painters -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Painting, American.</subject>
+      <subject encodinganalog="650" source="lcsh">Painting, American -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Portrait painters -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Portrait painting -- United States -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Portrait painting, American.</subject>
+      <genreform encodinganalog="655" source="aat">Articles.</genreform>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform>
+      <genreform encodinganalog="655" source="aat">Exhibition catalogs.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Artists.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Painters.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Portrait-painters.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+                       all relevant rights holders before publishing quotations, excerpts or images from any 
+                       materials in this collection. </p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Fritz Werner Papers,
+        
+        <lb/>&su_name;</p>
+    </prefercite>
+    <!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Incoming</unittitle>
+            <unitdate normal="1934/1951" type="inclusive">1934-1951, </unitdate>
+            <unitdate normal="1954/1965" type="inclusive">1954-1965</unitdate>
+            <physdesc>
+              <extent>16 folders</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Undated</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Articles</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Articles about Werner's portraits</unittitle>
+            <unitdate normal="1936" type="inclusive">1936, </unitdate>
+            <unitdate normal="1938" type="inclusive">1938, </unitdate>
+            <unitdate normal="1950" type="inclusive">1950, </unitdate>
+            <unitdate normal="1951" type="inclusive">1951, </unitdate>
+            <unitdate normal="1964" type="inclusive">1964</unitdate>
+            <physdesc>
+              <extent>5 folders</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Artwork</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Drawings by Werner</unittitle>
+            <physdesc>
+              <extent>52 items</extent>
+            </physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Clippings</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Of Werner's portraits</unittitle>
+            <unitdate normal="1964" type="inclusive">1964</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Exhibits</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1936" type="inclusive">1936, </unitdate>
+              <unitdate normal="1943" type="inclusive">1943, </unitdate>
+              <unitdate normal="1954" type="inclusive">1954</unitdate>
+            </unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Photographs</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Of art exhibits</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Of portraits</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unitdate normal="1929" type="inclusive">1929</unitdate>
+              <unittitle>Liselotte von Keller</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitdate normal="1930" type="inclusive">1930</unitdate>
+              <unittitle>Senora Salas de Anchorerra</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitdate normal="1931" type="inclusive">1931</unitdate>
+              <unittitle>Dr. Carlos Egger</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitdate normal="1931" type="inclusive">1931</unitdate>
+              <unittitle>Maria Esther Puentes Falcon</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitdate normal="1932" type="inclusive">1932</unitdate>
+              <unittitle>Dorothy Vits</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitdate normal="1935" type="inclusive">1935</unitdate>
+              <unittitle>Christa Gabriele Greifs</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitdate normal="1942" type="inclusive">1942</unitdate>
+              <unittitle>Susan Barbara</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitdate normal="1958" type="inclusive">1958</unitdate>
+              <unittitle>William Wrigley</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitdate normal="1960" type="inclusive">1960</unitdate>
+              <unittitle>Walter Brimson</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitdate normal="1960" type="inclusive">1960</unitdate>
+              <unittitle>Mrs. David Howard Byrd</unittitle>
+              <physdesc>
+                <extent>2 items</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitdate normal="1961" type="inclusive">1961</unitdate>
+              <unittitle>Mrs. Pullman Louden</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitdate normal="1962" type="inclusive">1962</unitdate>
+              <unittitle>Mrs. Hilding Lindberg</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unitdate normal="1929/1965" type="inclusive">Undated</unitdate>
+              <unittitle>Molly Jackson</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Women, small photos</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Men, small photos</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Women, medium photos</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Men, medium photos</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Women, large photos</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Men, large photos</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Women, oversize photos</unittitle>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Men, oversize photos</unittitle>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Werner's subjects</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

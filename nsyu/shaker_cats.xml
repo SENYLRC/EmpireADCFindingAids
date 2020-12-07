@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="shaker_cats">shaker_cats</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Shaker Catalogs Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-03-27" encodinganalog="Date">27 Mar 2013</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2013-03-27">27 Mar 2013</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname><corpname encodinganalog="110">or 110</corpname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Shaker Catalogs Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1953/1997" type="inclusive" label="Inclusive Dates: ">1953-1997</unitdate>
+            <unitdate encodinganalog="245$g" normal="1980/1995" type="bulk" label="Bulk Dates: ">1980-1995</unitdate><physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Auction and dealer catalogs for items produced by or pertaining to the Shaker religious community.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4597675</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The Shakers, formally known as the United Society of Believers in Christ's Second Appearing, are a religious sect founded in England in the 18th century. Groups of Shakers first came to America in the 19th century, settling in Mount Lebanon and Watervliet, New York.
+
+Shakers practice celibacy, pacifism, a communal lifestyle, and equality of the sexes, which has been a tenet of their society since the 1780s. They are also known for their simple living, architecture, and furniture.  Today there is only one active Shaker community, Sabbathday Lake Shaker Village in Maine.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Shaker Catalogs Collection</emph> contains auction and dealer catalogs for books, pamphlets, antiques, furniture, and other items produced by or pertaining to the Shaker religious community.  Included in the collection are a few catalogs from the United Society of Shakers themselves.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by name or topic, then chronological.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has  a substantial amount of print and manuscript material related to the Shakers and to other communal societies and Utopian communities.  Please refer to &subjindex; to locate additional manuscript material and to &summitref; to locate print material.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Publishing, printing and book arts</subject><subject encodinganalog="650" source="local">Religion and philosophy</subject><persname encodinganalog="600" source="lcnaf">De Wolfe, Scott.</persname><persname encodinganalog="600" source="lcnaf">Newell, David D.</persname><persname encodinganalog="600" source="lcnaf">Sherman, Milton, d. 1990.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Shakers.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Auctions -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Book auctions -- United States.</subject><subject encodinganalog="650" source="lcsh">Booksellers and bookselling -- United States.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Auction catalogs.</genreform>
+         <genreform encodinganalog="655" source="aat">Book catalogs.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Shaker Catalogs Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Auction catalogs</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><unitdate normal="1961/1974" type="inclusive">1961-1974</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Dealer catalogs</unittitle></did>
+            <c02><did><unittitle>Harold Nestler</unittitle><unitdate normal="1974" type="inclusive">1974, </unitdate><unitdate normal="1976" type="inclusive">1976</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>David Newell</unittitle><unitdate normal="1980/1984" type="inclusive">1980-1984, </unitdate><unitdate normal="1990" type="inclusive">1990, </unitdate><unitdate normal="1997" type="inclusive">1997, </unitdate><unitdate normal="1980/2002" type="inclusive">undated</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Miton Sherman</unittitle><unitdate normal="1986/1990" type="inclusive">1986-1990, </unitdate><unitdate normal="1981/1990" type="inclusive">undated</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Scott De Wolfe</unittitle><unitdate normal="1992/1994" type="inclusive">1992-1994</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>United Society of Shakers</unittitle><unitdate normal="1987/1988" type="inclusive">1987-1988</unitdate><container type="Box">1</container></did></c02>
+            
+         </c01>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><abstract>includes supplemental bulletin of the National Association of Watch and Clock Collectors, Inc.</abstract><unitdate normal="1953" type="inclusive">1953, </unitdate><unitdate normal="1972" type="inclusive">1972, </unitdate><unitdate normal="1950/1990" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

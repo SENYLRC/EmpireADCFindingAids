@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="powell_ep">powell_ep</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">E. P. Powell Lectures</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-07-15" encodinganalog="Date">15 Jul 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-07-15">15 Jul 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Powell, Edward Payson, 1833-1915.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">E. P. Powell Lectures</unittitle>
+         <unitdate encodinganalog="245$f" normal="1833/1915" type="inclusive" label="Inclusive Dates: ">undated</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Sixty lectures and one sermon by American journalist and author E. P. 
+		 Powell, and some advertising material for two of his books.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2922486</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>E. P. (Edward Payson) Powell (1833-1915) was an American author and journalist.  Born in Clinton, New York, he graduated 
+	  from Hamilton College and Union Theological Seminary and was ordained as a Congregational minister in 1817.  He embarked on 
+	  his journalistm career in 1886 when he joined the St. Louis Globe-Democrat in 1886 as an editorial writer; he later (1900) 
+	  moved to The Independent of New York, a civil rights and anti-slavery newspaper.</p>
+	  <p>[Adapted from Powell's obituary in the <emph render="italic">New York Times</emph>, 15 May 1915, pg. 13.]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">E. P. Powell Lectures</emph> consists entirely of published material.  There are sixty lectures or addresses given at the 
+		 Utice (New York) City Opera House, one sermon delivered at the same location, and two pieces of advertising for Powell's 
+		 books.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The sermons are in alphabetical order by title (see complete list in inventory below).</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has several collections of sermons; please refer to our main collections list and search on "sermons" for a 
+		 complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Religion and philosophy</subject>
+		 <persname encodinganalog="600" source="lcnaf">Powell, Edward Payson, 1833-1915.</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <corpname encodinganalog="610" source="lcnaf">Utica City Opera House.</corpname>
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="lcsh">Lectures and lecturing -- United States -- 19th century.</subject>
+         <subject encodinganalog="650" source="lcsh">Philosophy and religion -- 19th century.</subject>
+         <geogname encodinganalog="651" source="lcsh">Utica (N.Y.) -- Intellectual life -- 19th century.</geogname>
+         <genreform encodinganalog="655" source="aat">Advertisements.</genreform>
+         <genreform encodinganalog="655" source="aat">Lectures.</genreform>
+         <genreform encodinganalog="655" source="aat">Sermons.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+         <!-- <function encodinganalog="657">##</function> -->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>E. P. Powell Lectures, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase from Adah C. Blackman Fund, 2010.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle>Advertisements</unittitle><unitdate normal="1897" type="inclusive">1897, </unitdate><unitdate normal="1903" type="inclusive">1903</unitdate><container type="SC">534</container></did></c02>
+            <c02><did><unittitle>Sermon, "Free Love"</unittitle><unitdate normal="1881-10-23" type="inclusive">23 Oct 1881</unitdate><container type="SC">534</container></did></c02>
+            <c02><did><unittitle>Lectures</unittitle><container type="SC">534</container></did>
+			   <scopecontent><p>Lecture titles are as follows.</p>
+			   <p>Are Men by Nature or by Grace Divided into Two Classes -- Saints and Sinners<lb/>
+			   Are the Eyes of Evolution in Its Forehead?<lb/>
+			   Brains<lb/>
+			   Buddha, the Reformer of Brahmism<lb/>
+			   A Bundle of Paradoxes<lb/>
+			   Celibacy, Marriage and Protestantism<lb/>
+			   Character<lb/>
+			   A Christmas Dream<lb/>
+			   The Consolation of Theism<lb/>
+			   Discourse to Young Men (Independent Religious Society)<lb/>
+			   Does Science Indicate the Existence of a Supreme Being?<lb/>
+			   The Doing Creed<lb/>
+			   The Eagle's Nest: or the Outlook of an Age of Skepticism<lb/>
+			   The Evolution of the Church. Lecture<lb/>
+			   An Expurgated Bible<lb/>
+			   Finger Posts and Mile Stones. A New Year's Address<lb/>
+			   A Good Conscience<lb/>
+			   Home, Sweet Home<lb/>
+			   How to Have a Happy Life<lb/>
+			   Hymns and Religion<lb/>
+			   Is Man a Fallen Being, and under the Wrath of God?<lb/>
+			   Is the Average Life Worth the Living?<lb/>
+			   Is the Golden Rule Workable?<lb/>
+			   Is There a Personal God? A Sermon. Second Discourse on Our Heredity from God<lb/>
+			   John Calvin<lb/>
+			   John Calvin and Others Concerning Penal Sundays. Tract No. 2.<lb/>
+			   A Law of Human Evolution<lb/>
+			   Lecture on the New Year<lb/>
+			   Life and Death -- What They Are<lb/>
+			   Martin Luther, the Man<lb/>
+			   Nature<lb/>
+			   New Year, 1888<lb/>
+			   Not Allopathy Nor Homeopathy, but Sympathy<lb/>
+			   Our Heredity from God<lb/>
+			   The Penal Sunday Once More<lb/>
+			   Religion as a Factor in Human Evolution<lb/>
+			   The Religion of Despair. Tract No. 4<lb/>
+			   Religion of the Future<lb/>
+			   The Religion of Hope<lb/>
+			   Religious Fables<lb/>
+			   Religious Independence<lb/>
+			   Sin -- A Crime against Life -- Righteousness Obedience to Law<lb/>
+			   Sinning against the Holy Spirit<lb/>
+			   Socrates<lb/>
+			   A Sound Mind in a Sound Body<lb/>
+			   Spirtualism vs. Materialism<lb/>
+			   A Substitute for Orthodoxy<lb/>
+			   A Supposed Sermon by Jesus of Nazareth<lb/>
+			   The Theistic Idea of Deity<lb/>
+			   The Theistic Idea of Future Life<lb/>
+			   The Theistic Idea of God<lb/>
+			   The Theistic Idea of Man<lb/>
+			   The Theistic Idea of Prayer<lb/>
+			   The Trinity<lb/>
+			   The Two Theologies<lb/>
+			   Walking with God<lb/>
+			   Was Jesus a Supernatural Being and Our Attonement with an Angry God?<lb/>
+			   What I Saw and What I Heard on Thanksgiving Day<lb/>
+			   Where the Angels Are Born<lb/>
+			   Why I Believe in Prayer</p>
+               </scopecontent>
+			</c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

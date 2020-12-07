@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="deardoff_grove">deardoff_grove</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Kenneth Deardoff Collection Relating to Grove Press</titleproper>
+            <subtitle>A description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2018-02-07" encodinganalog="Date">7 Feb 2018</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+			<date normal="2018-02-07">7 Feb 2018</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Deardoff, Kenneth.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Kenneth Deardoff Collection Relating to Grove Press</unittitle>
+         <unitdate encodinganalog="245$f" normal="##" type="inclusive" label="Inclusive Dates: ">TBD</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Printed material, posters, books, and manuscript materials from Grove Press, in particular the design 
+			department.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">5019523</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Grove Press was an independent American publisher.  Founded  in New York City's Greenwich Village 
+		in 1949 as a small press, it was purchased by Barney Rossett in 1951 and within three decades had 
+		grown into a multimillion-dollar publishing company recognized as one of the twentieth century's 
+		great avant-garde publishing houses.   In addition to its extensive book catalog featuring numerous 
+		American and European experimental or controversial authors (Samuel Beckett, Jean Genet, William S. 
+		Burroughs, Malcolm X)  and titles (<emph render="italic">Lady Chatterley's Lover</emph>, 
+		<emph render="italic">Tropic of Cancer</emph>), Grove also had a film catalog with  more than 400 
+		titles, a book club, a theater, and <emph render="italic"> Evergreen Review</emph> magazine.</p>
+		
+		
+      
+      <p>While Grove was successful in fighting censorship and obscenity laws and introducing 
+		groundbreaking works to American readers, internal conflicts and challenges such as efforts to 
+		unionize the staff and feminist criticisms confronted Grove in the 1970s, as well as the departures 
+		of long-time editors Dick Seaver and Fred Jordan. After many celebrated achievements and a peak in 
+		staff numbers and office size, Grove reorganized and downsized its operations. Ann Getty and British 
+		publisher George Weidenfeld purchased Grove Press in 1985 for a reported two million dollars. Rosset 
+		left in 1986 and continued to pursue publishing and an Internet-only version of 
+        <emph render="italic">Evergreen Review</emph> until his death in 2012. The Grove imprint continues 
+		  to exist today as part of publisher Grove Atlantic. </p>
+    <p>Kenneth Deardoff was Art Director at Grove Press for a number of years after the departure of 
+		Roy Kuhlman, designing many of their book covers and overseeing the art for Grove's magazine <emph render="bold">Evergreen 
+		Review</emph>.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Kenneth Deardoff Collection Relating to Grove Press</emph> consists of 
+			printed material, posters, books, and manuscript materials from Grove Press, in particular the design 
+			department.</p>
+      </scopecontent>
+
+      <!-- <altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail> -->
+	  
+	  <!-- <originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc> -->
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection is unprocessed and remains in original order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>The <archref href="../g/grove_press.htm">Grove Press Records</archref> contain the full records of the publishing house.  For additional material related to Grove Press, see also the following collections: 
+        <list>
+          <item>
+            <archref href="../w/wainhouse_a.htm">Austryn Wainhouse Papers</archref>
+          </item>
+          <item>
+            <archref href="../g/glass_int.htm">Loren Glass Interviews Relating to Grove Press</archref>
+          </item>
+          <item>
+            
+          </item>
+          <item>
+            <archref href="../p/prix.htm">Prix Formentor Collection</archref>, which contains materials about the Prix International and Prix Formentor literary prizes.</item>
+          <item>
+            <archref href="../c/creative.htm">Creative Film Foundation Records</archref>
+          </item>
+        </list></p>
+      <p>
+        <extref href="http://findingaids.cul.columbia.edu/ead/nnc-rb/ldpd_7953908/summary">Barney Rosset's personal papers</extref> are housed at the Columbia University Rare Book and Manuscript Library, which also has a small <archref href="http://findingaids.cul.columbia.edu/ead/nnc-rb/ldpd_10553502/summary">Grove Press Collection</archref>.</p>
+    </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         
+			
+			
+      
+      
+      <subject encodinganalog="650" source="local">Art -- Illustrators</subject><subject encodinganalog="650" source="local">Publishing, printing and book arts</subject>
+      <subject encodinganalog="650" source="local">Radicalism</subject>
+      <persname encodinganalog="600" source="lcnaf">Deardoff, Kenneth.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Grove Press -- Archives.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Artists -- United States.</subject><subject encodinganalog="650" source="lcsh">Authors and publishers -- United States -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Avant-garde (Aesthetics) -- United States -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Publishers and publishing -- United States -- 20th century.</subject>
+			<!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         
+			<genreform encodinganalog="655" source="aat">Book jackets.</genreform><genreform encodinganalog="655" source="aat">Books.</genreform><genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The collection is currently unprocessed and not available for research. Please contact SCRC for more information.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Kenneth Deardoff Collection Relating to Grove Press, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Kenneth Deardoff</persname>, 2013.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="othertype">
+   <head>Inventory</head>
+   <note><p>An inventory has not yet been created for this collection.  
+Please contact the Repository listed above for more information.</p><p></p></note>
+</dsc>
+   </archdesc>
+</ead>

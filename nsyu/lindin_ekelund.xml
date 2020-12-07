@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="lindin_ekelund">lindin_ekelund</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Carl Eric Lindin Translations of  Vilhelm Ekelund</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-09-23" encodinganalog="Date">23 Sep 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-09-23">23 Sep 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Lindin, Carl Olof Eric, 1869-1942.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Carl Eric Lindin Translations of  Vilhelm Ekelund</unittitle>
+         <unitdate encodinganalog="245$f" normal="1869/1942" type="inclusive" label="Inclusive Dates: ">undated</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Carl Eric Lindin was a Swedish-American artist; Vilhelm Ekelund a 
+		 Swedish poet.  Collection contains Lindin's translations into English of several works by Ekelund and two articles 
+		 about him.  Also included are a few photographs of Ekelund.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3169571</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language></langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Carl Olof Eric Lindin (1869-1942) was a Swedish-American artist.  Born in Sweden, he came to America in 1887 and studied at 
+	  the Chicago Art Institute.  In 1893 he went to Paris and studied under Jean-Paul Laurens, Benjamin Constant, and Aman 
+	  Jean.  He returned to Chicago in 1897 and settled in Woodstock, New York in 1903.  His primary interest was in art, and his 
+	  work was exhibited in Paris, London, Munich, Stockholm, and the United States.  He received a first and two second prizes 
+	  given by the Swedish Club in Chicago, and his work is held in public and private collections in London, Stockholm, 
+	  Philadelphia, Chicago, Memphis (Tennessee), and New York.  His avocation was translating his favorite Swedish authors 
+	  into English, particularly the works of poet Vilhelm Ekelund, with whom he had a voluminous correspondence but whom he never 
+	  met in person.  Lindin was one of the founders of the Woodstock Art Association, and was its honorary President until 
+	  his death in November 1842.</p>
+	  
+	  <p>Vilhelm Ekelund (1880-1949) was a Swedish poet known for the rhythmic and musical qualities of his verse.  He was also 
+	  influential on many later Swedish poets.  In 1907 he gave up poetry in favor of writing essays and aphorisms.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Carl Eric Lindin Translations of  Vilhelm Ekelund</emph> consists of translations of works 
+		 by Ekelund: "Lyre and Hades," "Metron," and "Between Passions; The Flight to Nature; The Genius of Clarity."  Also 
+		 included are translations of two articles about Ekelund and a few photographs of him.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by title.</p>
+      </arrangement>
+      
+      <!-- <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial> -->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	   <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>A copy of Ekelund's Båge Och Lyra 1932, in Swedish, has been transferred to Rare Books for cataloging.  Please refer to &summitref; to locate this item.</p>
+      </separatedmaterial> 
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Ekelund, Vilhelm, 1880-1949.</persname>
+         
+         <persname encodinganalog="600" source="lcnaf">Lindin, Carl Olof Eric, 1869-1942.</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <!-- <corpname encodinganalog="610" source="lcnaf">##</corpname> -->
+         
+         <subject encodinganalog="650" source="lcsh">Poets, Swedish -- 19th century.</subject>
+         <subject encodinganalog="650" source="lcsh">Poets, Swedish -- 20th century.</subject>
+         <subject encodinganalog="650" source="lcsh">Swedish poetry -- 19th century -- Translations into English.</subject>
+         <subject encodinganalog="650" source="lcsh">Swedish poetry -- 20th century -- Translations into English.</subject>
+         <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <genreform encodinganalog="655" source="aat">Translations.</genreform>
+         <genreform encodinganalog="655" source="aat">Typescripts.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Poets.</occupation>
+         <!--<function encodinganalog="657">##</function>-->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Carl Eric Lindin Translations of  Vilhelm Ekelund, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Karin L. Whiteley</persname>, 1982.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>About Ekelund</unittitle></did>
+            <c02><did><unittitle>Two articles, by Ivar Harric and Fredrik Böök</unittitle><abstract>includes envelope with photographs of Ekelund</abstract><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Ekelund's work</unittitle></did>
+            <c02><did><unittitle>Between Passions; Flight to Nature; Genius of Clarity</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Lyra and Hades</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

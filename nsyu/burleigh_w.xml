@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="burleigh_w" mainagencycode="NSyU">burleigh_w</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">William Burleigh Collection</titleproper>
+        <subtitle>An inventory of
+                        the collection
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">LDC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2008-09-09">09 Sep 2008</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+
+
+        <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Burleigh, William, 1785-1827.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">William Burleigh Collection</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1820/1842" type="inclusive">1820-1842</unitdate>
+      <unitdate encodinganalog="245$g" label="Bulk Dates: " normal="1820/1826" type="bulk">1820-1826</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">2 folders (SC)</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Financial and legal papers of a lawyer from Maine, including Port of New York import certificates for tea, deeds, and depositions in various cases.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">149183</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">
+                          English
+                       </language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>William Burleigh was an American lawyer from South Berwick, Maine during the early 19th century.  Little is known about Burleigh, although it is known that his son, John Holmes, was not a lawyer like his father.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The bulk of the <emph render="bold">William Burleigh Collection</emph> contains correspondence on legal matters.  The collection also consists of legal and financial documents of the lawyer, including depositions, Port of New York import certificates, receipts, checks, and deeds of sale.</p>
+    </scopecontent>
+    <!--<arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>## OPT (MARC 351$a)</p>
+    </arrangement>-->
+    <!--<relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial>-->
+    <!--<separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial>--><!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <persname encodinganalog="600" source="lcnaf">Burleigh, William, 1785-1827.</persname>
+      <subject encodinganalog="650" source="lcsh">Lawyers -- Maine.</subject>
+      <occupation encodinganalog="656" source="lcsh">Lawyers.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and
+                       all relevant rights holders before publishing quotations, excerpts or images from any
+                       materials in this collection. </p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>William Burleigh Collection,
+
+        <lb/>&su_name;</p>
+    </prefercite>
+    <!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>
+              <unitdate normal="1820/1842" type="inclusive">1820-1842</unitdate>
+            </unittitle>
+            <container type="SC">229</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Financial and Legal Documents</unittitle>
+        </did>
+  <c02><did><unittitle>Checks</unittitle><physdesc><extent>5 items</extent></physdesc><abstract>signed by Samuel Meredith, Treasurer of the United States 1789-1801</abstract><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1787/1791">1787-1791</unitdate><container type="SC">229</container></did>
+  </c02>
+  <c02><did><unittitle>List of accounts</unittitle><abstract>from David M. Coffin to Isaac Wendell</abstract><container type="SC">229</container></did>
+  </c02>
+        <c02>
+          <did>
+            <unittitle>Receipts</unittitle><physdesc><extent>10 items</extent></physdesc><abstract>from the Port of New York for goods imported</abstract>
+            <container type="SC">229</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <container type="SC">229</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

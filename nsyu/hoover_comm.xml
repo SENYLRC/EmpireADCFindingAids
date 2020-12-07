@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="hoover_comm">hoover_comm</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Hoover Commission Records</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">-</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1960" encodinganalog="Date">circa 1960?</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-05-03">3 May 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">United States. -- Commission on Organization of the Executive Branch of the Government (1953-1955)</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Hoover Commission Records</unittitle>
+         <unitdate encodinganalog="245$f" normal="1947/1949" type="inclusive" label="Inclusive Dates: ">1947-1949</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>8.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Commission appointed by 
+		 President Harry S. Truman to recommend administrative changes to the federal government.
+		 Collection contains reports, analyses, appendices, small amount of correspondence.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2750921</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The Commission on Organization of the Executive Branch of the Government, informally referred to as the Hoover Commission 
+	  because Herbert Hoover was its chairman, was appointed by President Harry S. Truman to recommend administrative changes to 
+	  the federal government.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Hoover Commission Records</emph> contains correspondence, reports, research notes and other material.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection has received minimal processing.  Materials are in roughly alphabetical order by department (agriculture, commerce, etc.).</p>
+      </arrangement>
+      
+      <!-- <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial> -->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+		 <persname encodinganalog="600" source="lcnaf">Flemming, Arthur S. (Arthur Sherwood), 1905-1996.</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <corpname encodinganalog="610" source="lcnaf">United States. -- Commission on Organization of the Executive Branch of the Government (1953-1955)</corpname>
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="lcsh">Executive departments -- United States.</subject>
+         <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Reports.</genreform>
+         <genreform encodinganalog="655" source="aat">Research notes.</genreform>
+         <!-- <occupation encodinganalog="656" source="lcsh">##</occupation> -->
+         <!-- <function encodinganalog="657">##</function> -->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Hoover Commission Records, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unspecified, circa 1966.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+<c01 level="series"><did><unittitle>Records</unittitle></did>
+
+<c02><did><unittitle>Analysis of previous proposals for organization of the executive branch</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Final report, Department of Agriculture</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Agricultural activities</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Commerce Department</unittitle><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Department management</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">1</container></did></c02>
+<c02><did><unittitle>Appendices to study of departmental management</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Federal-state relationships</unittitle><container type="Box">2</container></did></c02>
+<c02><did><unittitle>Federal supply</unittitle><container type="Box">3</container></did></c02>
+<c02><did><unittitle>Fiscal, Budgeting and Accounting</unittitle><container type="Box">4</container></did></c02>
+<c02><did><unittitle>Foreign Affairs</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Federal field offices</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>Flemming, Arthur S.</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>General</unittitle><container type="Box">5</container></did></c02>
+<c02><did><unittitle>General</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>General management of the executive branch</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Government Information Services</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Government Statistical Services</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Indian Affairs</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Labor Department</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Report to the Commission on Organization of the Executive Branch of the Government</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Government Statistical Services</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Office of General Services, supply activities</unittitle><container type="Box">8</container></did></c02>
+<c02><did><unittitle>Overseas Admission, federal-state relations, Federal Research</unittitle><container type="Box">8</container></did></c02>
+<c02><did><unittitle>Personnel and Civil Service Committee</unittitle><container type="Box">8</container></did></c02>
+<c02><did><unittitle>Civil Service Rules and Regulations</unittitle><container type="Box">8</container></did></c02>
+<c02><did><unittitle>Personnel and Civil Service Committee</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Post Office</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Public Works</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Records Management</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Interstate Commerce Commission</unittitle><container type="Box">10</container></did></c02>
+<c02><did><unittitle>Management survey of the United States Maritime Commission</unittitle><container type="Box">10</container></did></c02>
+<c02><did><unittitle>Report of the Personnel Policy Committee</unittitle><container type="Box">10</container></did></c02>
+<c02><did><unittitle>Federal Trade Commission</unittitle><container type="Box">11</container></did></c02>
+<c02><did><unittitle>Federal Communications Commission</unittitle><container type="Box">11</container></did></c02>
+<c02><did><unittitle>National Labor Relations Board</unittitle><container type="Box">11</container></did></c02>
+<c02><did><unittitle>Securities and Exchange Commission</unittitle><container type="Box">11</container></did></c02>
+<c02><did><unittitle>United States Maritime Commission</unittitle><container type="Box">11</container></did></c02>
+<c02><did><unittitle>Federal Power Commission</unittitle><container type="Box">12</container></did></c02>
+<c02><did><unittitle>Committee on Independent Regulatory Commissions Report </unittitle><container type="Box">12</container></did></c02>
+<c02><did><unittitle>Report of the Personnel Policy Committee</unittitle><container type="Box">12</container></did></c02>
+<c02><did><unittitle>Federal Reserve System</unittitle><container type="Box">12</container></did></c02>
+<c02><did><unittitle>Regulatory agencies</unittitle><container type="Box">13</container></did></c02>
+<c02><did><unittitle>Relations of the Presidency to the Executive Branch</unittitle><container type="Box">13</container></did></c02>
+<c02><did><unittitle>Reorganization</unittitle><container type="Box">13</container></did></c02>
+<c02><did><unittitle>Research in Federal Government</unittitle><container type="Box">13</container></did></c02>
+<c02><did><unittitle>Revolving funds</unittitle><container type="Box">13</container></did></c02>
+<c02><did><unittitle>Territories and dependencies</unittitle><container type="Box">13</container></did></c02>
+<c02><did><unittitle>Transportation</unittitle><container type="Box">13</container></did></c02>
+<c02><did><unittitle>Veterans Affairs (other than hospitals)</unittitle><container type="Box">14</container></did></c02>
+<c02><did><unittitle>Welfare</unittitle><container type="Box">14</container></did></c02>
+<c02><did><unittitle>Functions and Activities of the National Government in the Field of Welfare, Parts I, II, III</unittitle><container type="Box">15</container></did></c02>
+<c02><did><unittitle>Functions and Activities of the National Government in the Field of Welfare, Parts IV, V, VI, VII</unittitle><container type="Box">16</container></did></c02>
+<c02><did><unittitle>Galley proofs of reports</unittitle><container type="Box">17</container></did></c02>
+
+</c01>
+      </dsc>
+   </archdesc>
+</ead>

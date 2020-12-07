@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.7, 1/24/2007-->
+<!--Added copyright statement to Use Restrictions section-->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="cny_trade_cat">cny_trade_cat</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Central New York Trade Catalogs and Business Ephemera</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2007-06-11" encodinganalog="Date">11 Jun 2007</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Rothenberger
+            <date normal="2007-06-11">11 Jun 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>3 Jun 2008 - change to regular coll; additions (MRC)</item><item>24 Jul 2007 - additions (MRC)</item>
+         <item>1 Nov 2007 - additions (MRC)</item><item>3 Dec 2008 - additions (MRC)</item><item>12 Feb 2009 - additions (MRC)</item><item>8 Jan 2010 - additions (MRC)</item><item>12 Jul 2010 - additions (MRC)</item><item>21 Dec 2010 - adds (MRC)</item><item>7 Jan 2011 - adds (MRC)</item><item>6 Oct 2011 - additions, updated description (MRC)</item><item>25 Jun 2012 - additions, more detailed processing, updated subject headings (MRC)</item><item>16 Oct 2012 - additions, minor reorg. (MRC)</item>
+            <item>3 Jan 2017 - L.C. Smith material removed. (SM)</item></list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Special Collections Research Center</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Central New York Trade Catalogs and Business Ephemera</unittitle>
+         <unitdate encodinganalog="245$f" normal="1816/1962" type="inclusive" label="Inclusive Dates: ">1816-1962</unitdate>
+           <unitdate encodinganalog="245$g" normal="1865/1900" type="inclusive" label="Bulk Dates: ">1865-1900</unitdate><physdesc encodinganalog="300$a" label="Quantity: "><extent>2 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection of catalogs, trade cards, merchants' scrip, letterhead, photographs, and other ephemera from businesses in and around Syracuse, New York.  Towns represented include Elbridge. Syracuse, Marcellus, Litchfield, Morristown, Scipio, and others.  Also includes records and ledgers from some businesses, including L. C. Smith Typewriter (forerunner of Smith-Corona).</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2537058</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Central New York has been the home of many companies that went on to become known nationwide, among them Smith Bros. Cough Drops, L.C. Smith Typewriter Company (which later became Smith Corona), Oneida Silverware, Clark Music Company and the Franklin Automobile.</p></bioghist>
+      
+       <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Central New York Trade Catalogs and Business Ephemera</emph> consists of correspondence, photographs, printed material and miscellany related to businesses and industries in and around Central New York.</p>
+      </scopecontent><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Material is divided alphabetically by type.  Larger sections, such as trade catalogs and correspondence, are 
+			further ordered alphabetically by company name.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="../c/cny_local_hist.htm">Central New York Local History Collection</archref> and <archref href="../c/cny_cult_eph.htm">Central New York Cultural Ephemera</archref>.   There are also separate collections for a number of businesses and companies, such as Oneida Silverware (<archref href="../o/oneida_comm.htm">Oneida Community Collection</archref>), Endicott-Johnson (<archref href="../j/johnson_cf.htm">Charles F. Johnson</archref> and related collections), and <archref href="../c/clark_music.htm">Clark Music Company</archref> (<archref href="../c/clark_m.htm">Melville Clark</archref>); please refer to &subjindex; under "Business and Industry" or under "New York State" for a full listing.</p>
+      <p>For full descriptions of the merchants' scrip, see <emph render="italic">New York State scrip and private issues</emph> by Gordon L. Harris (S.l. : G.L. Harris, c2001), call no. New York HG627 .N4 2001 (refer to &summitref; to locate).  </p></relatedmaterial>
+      
+      <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+<subject encodinganalog="650" source="local">New York State</subject>
+<subject encodinganalog="650" source="local">Business and Industry</subject>
+         <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Akin, John W.</persname><persname encodinganalog="600" source="lcnaf">Chace, A. Frank B.</persname><persname encodinganalog="600" source="lcnaf">Evans, Mary Elizabeth.</persname>
+         
+            <famname encodinganalog="600" source="lcnaf">Osborne family.</famname><corpname encodinganalog="610" source="local">Syracuse Cart Company.</corpname><corpname encodinganalog="610" source="local">Birdsall Engine company.</corpname><corpname encodinganalog="610" source="local">Candy Kitchen.</corpname><corpname encodinganalog="610" source="local">Protectall Safes.</corpname><corpname encodinganalog="610" source="local">Baker Dash Works.</corpname><corpname encodinganalog="610" source="local"> J.R. Clancy.</corpname><corpname encodinganalog="610" source="local">Perry Seed Store.</corpname><corpname encodinganalog="610" source="local">Elmwood Stud.</corpname><corpname encodinganalog="610" source="local">National Banker's Express Company.</corpname><corpname encodinganalog="610" source="local">American Seating Company.</corpname>
+            
+            <title encodinganalog="630" source="lcnaf">Boyd's Syracuse Guide.</title><subject encodinganalog="650" source="lcsh">Business enterprises -- New York (State) -- History.</subject><subject encodinganalog="650" source="lcsh">Commercial catalogs.</subject><subject encodinganalog="650" source="lcsh">Liquor laws -- New York (State)</subject>
+         <subject encodinganalog="650" source="lcsh">License system -- New York (State)</subject><subject encodinganalog="650" source="lcsh">Retail trade -- Law and legislation -- New York (State)</subject><geogname encodinganalog="651" source="lcsh">Elbridge (N.Y.) -- Commerce.</geogname>
+            <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- Commerce.</geogname>
+            <geogname encodinganalog="651" source="lcsh">Utica (N.Y.) -- Commerce.</geogname><geogname encodinganalog="651" source="lcsh">Cayuga County (N.Y.) -- Commerce.</geogname><genreform encodinganalog="655" source="aat">Advertisements.</genreform><genreform encodinganalog="655" source="aat">Advertisements.</genreform><genreform encodinganalog="655" source="aat">Brochures.</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Fliers (printed matter)</genreform><genreform encodinganalog="655" source="aat">Letterheads.</genreform><genreform encodinganalog="655" source="aat">Printed ephemera.</genreform><genreform encodinganalog="655" source="aat">Receipts (financial records)</genreform><genreform encodinganalog="655" source="aat">Scrip.</genreform><genreform encodinganalog="655" source="aat">Trade cards.</genreform><genreform encodinganalog="655" source="aat">Trade catalogs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Commercial businesses.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Central New York Trade Catalogs and Business Ephemera, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Scrip gift of <persname role="donor">Gordon L. Harris</persname>, July 2003.  Other material purchased with funds from the Library Associates.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+	  <head>Inventory</head>         
+<c01 level="series"><did><unittitle>Correspondence</unittitle></did><scopecontent>
+<p>Receipts, inquiries, etc. on corporate or business letterhead.  Material is in alphabetical order by company name; if company name is a person (for example, "L. C. SMith") it is filed under the surname.</p>
+</scopecontent>
+   <c02><did><unittitle>Birdsall Engine Co.</unittitle><unitdate normal="1918" type="inclusive">1918</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Cayuga Chief Manufacturing Company</unittitle><unitdate normal="1867/1874" type="inclusive">1867-1874</unitdate><container type="Box">1</container></did></c02>
+   
+   <c02><did><unittitle>Navarino auto garage</unittitle><abstract>journal, correspondence, invoices, receipts</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>L. C. Smith Typewriter Company</unittitle>
+                  <note>
+                     <p>material has been removed and is now part of the L.C. Smith &amp; Bros.
+                        Typewriter Co. Collection</p>
+                  </note><unitdate type="inclusive" normal="1890/1904">1890-1904</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Businesses, A-H</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Businesses, I-Z</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Businesses, unidentified</unittitle><container type="Box">1</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Photographs</unittitle></did>
+   <c02><did><unittitle>Miscellaneous</unittitle><abstract>includes accordion-folded souvenir series of tiny photographs of Dryden, New York; photograph of Vernon Downs; more</abstract><container type="Box">1</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Printed material</unittitle></did>
+   <c02><did><unittitle>Cazenovia-area checks</unittitle><unitdate type="inclusive" normal="1830/1859">1830-1859</unitdate><container type="Box">1</container></did></c02> 
+   <c02><did><unittitle>Ephemera</unittitle></did>  
+      <c03><did><unittitle>Genuine Buckeye Mower and Reaper advertising broadside</unittitle><container type="Map-Case">102</container></did></c03><c03><did><unittitle>Miscellaneous</unittitle><abstract>fliers, brochures, savings stamps, checks, etc.</abstract><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Miscellaneous (oversize)</unittitle><container type="Oversize">1</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Maps</unittitle></did>  
+      <c03><did><unittitle>Cartoon-style map of Syracuse</unittitle><unitdate type="inclusive" normal="1977">1977</unitdate><abstract>shows all major businesses and attractions, by Francesca Profili</abstract><container type="Map-Case">102</container></did></c03>  
+      <c03><did><unittitle>Miscellaneous</unittitle><abstract>map of Syracuse with street directory; maps of lots in Lyncourt Lawns, Lyncourt Knolls, Eastwood; more.</abstract><container type="Oversize">1</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Merchant's scrip</unittitle><abstract>non-legal-tender currency issued by local merchants</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Stocks and bonds</unittitle></did><c03><did><unittitle>Miscellaneous</unittitle><container type="Box">1</container></did></c03><c03><did><unittitle>Miscellaneous, oversize</unittitle><container type="Oversize">1</container></did></c03></c02>
+   
+   <c02><did><unittitle>Trade cards</unittitle><abstract>small printed cards intended as advertising</abstract></did><c03><did><unittitle>Albums</unittitle><physdesc><extent>2 volumes</extent></physdesc><container type="Oversize">2</container></did></c03><c03><did><unittitle>Miscellaneous</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">2</container></did></c03></c02>
+   <c02><did><unittitle>Trade catalogs</unittitle></did>                  
+      <c03><did><unittitle>Companies, A-M</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container></did></c03>                  
+      <c03><did><unittitle>Companies, N-Z</unittitle><container type="Box">3</container></did></c03>                  
+      <c03><did><unittitle>A-Z, oversize</unittitle><container type="Oversize">1</container></did></c03></c02></c01>
+<c01 level="series"><did><unittitle>Miscellaneous</unittitle></did>
+   <c02><did><unittitle>Elbridge account book</unittitle><unitdate type="inclusive" normal="1869/1871">1869-1871</unitdate><abstract>groceries, dry goods, tobacco, liquor</abstract><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Liquor and wine license applications, Cayuga County</unittitle><unitdate type="inclusive" normal="1933/1934">1933-1934</unitdate><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>"Yellow Kid" advertisement, copper block for printing</unittitle><abstract>wood-backed copper plate for printing the advertisement; ad is for an unnamed farm implement company, "THRESHERS, SHELLERS, FEED CUTTERS, PLOWS, &amp;c" (not foldered)</abstract><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Unidentified account book</unittitle><unitdate type="inclusive" normal="1920/1929">1920s[?]</unitdate><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Miscellaneous</unittitle><abstract>Boyd's Syracuse Guide and Street Directory; insurance forms, recipe books, calendars, etc.</abstract><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Miscellaneous (oversize)</unittitle><container type="Oversize">1</container></did></c02>
+</c01>
+</dsc>
+
+   </archdesc>
+</ead>

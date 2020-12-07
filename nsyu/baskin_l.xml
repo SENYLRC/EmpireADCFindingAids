@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="baskin_l">baskin_l</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Leonard Baskin Prints</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-02-07" encodinganalog="Date">7 Feb 2013</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2013-02-07">7 Feb 2013</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Baskin, Leonard, 1922-2000</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Leonard Baskin Prints</unittitle>
+         <unitdate encodinganalog="245$f" normal="1958/1973" type="inclusive" label="Inclusive Dates: ">1958-1973</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Original prints of Baskin's engravings and other printed works from the Gehenna Press, founded by Baskin in 1941.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4041729</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Leonard Baskin (1922-2000) was an American printmaker, illustrator, bookmaker, printer, author and teacher.  In 1942, while still a student at Yale, he founded the Gehenna Press whose output over the next fifty years included books of original poetry (some of which were both written and illustrated by Baskin), illustrated books of Baskin's woodcuts and other artists' work, and literary works illustrated with engravings by himself or other artists.  In 1974 Baskin sold the press to Howard McGrath and moved with his family to Devon in England, where they remained for nearly ten years.  In 1983 they returned to the United States and Baskin resumed publication under the Gehenna Press imprint.  A close friend and long-time collaborator was the poet Ted Hughes, with whom Baskin designed and published <emph render="italic">A Primer of Birds</emph> (Gehenna Press, 1981) and several other works.  Baskin died in 2000 (as did Ted Hughes) and Gehenna Press published its final work, a new version by Hughes of Aeschylus' <emph render="italic">Oresteia</emph>, in 2001.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Leonard Baskin Prints</emph> consists of original prints, most from Baskin's Gehenna Press.  Included are prints of Baskin's engravings from an exhibit as well as illustrations by Anthony Hecht for "The Seven Deadly Sins," broadsides, announcements of publications, and  other items.  There is also one handwritten signed letter from Baskin to Fritz Eichenberg, German-American illustrator and engraver.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Prints from the same publication are placed together, but otherwise there is no particular order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has the papers of a number of artists and illustrators, and Leonard Baskin material appears in several of these others collections.  For example, the <archref href="spiral_press.htm">Spiral Press Records</archref> contain the text of Baskin's speech of acceptance on receiving the medal of the American Institute of Graphic Arts New York in 1965.  To locate all related material, please &searchcoll; for "Baskin."</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Baskin, Leonard, 1922-2000.</persname><persname encodinganalog="600" source="lcnaf">Hecht, Anthony, 1923-2004.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Gehenna Press.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Illustrators -- United States.</subject><subject encodinganalog="650" source="lcsh">Printmakers -- United States.</subject><subject encodinganalog="650" source="lcsh">Publishers and publishing.</subject><subject encodinganalog="650" source="lcsh">Small presses -- United States.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Broadsides (notices)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Leaflets.</genreform><genreform encodinganalog="655" source="aat">Prints (visual works)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Printmakers.</occupation><occupation encodinganalog="656" source="lcsh">Publishers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Leonard Baskin Prints, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2013.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Artwork</unittitle></did>
+               
+               
+            <c02><did><unittitle>Prints, original</unittitle><abstract>also includes one letter from Baskin</abstract><unitdate normal="1958/1973" type="inclusive">1958-1973</unitdate><container type="Package">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,1482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008--><!--Revised standard blurb for related material -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="grant_us3" mainagencycode="NSyU">grant_us3</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Ulysses S. Grant III Papers</titleproper>
+        <subtitle>An inventory of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">--</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2006-03-08">circa 1970</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+        
+        <date normal="2008-12-08">8 Dec 2008</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>Dec 2008 - converted to EAD (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Grant, U. S. (Ulysses S.), 1881-1968</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Ulysses S. Grant III Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1850/1937" type="inclusive">1850-1937</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>7 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Bulk of collection consists of advertisements, blueprints, 
+			bids and other material relating to architectural projects; a few articles on conditions in 
+			Russia by Princess Cantacuzene (Julia Dent Grant, sister of Ulysses), including one about her 
+			escape from Russia.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2652442</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Ulysses S. Grant III (1881-1968) was an American army officer, civil engineer and 
+		architect.  The grandson of Ulysses S. Grant, 18th President of the United States, he 
+		was born on the Fourth of July and attended Cutler School (1895-1897) and Columbia 
+		University (1898), both in New York City.  He left in 1898 to fight in the 
+		Spanish-American War, and in 1899 entered West Point where he was a classmate of Douglas 
+		MacArthur.  In 1907 he married Edith Root, daughter of Elihu Root, Roosevelt's secretary 
+		of state.</p>
+      <p>As a member of the Army Corps of Engineers, he served in the Philippines, 
+		Cuba, and Mexico.    In 1918 he served as secretary of the American section of the 
+		Supreme War Council in Paris (for which he received a Distinguished Service Medal).  
+		After the war he was assigned to various engineering commands in the United States, 
+		eventually becoming Director of Public Buildings and Parks for Washington, D.C. 
+		(1926-1933).   By 1942 he had advanced to the rank of Brigadier General; from 1942-1944 
+		he was Chief of the Office of Civilian Defense, protection branch.  He retired in 1945 
+		with the rank of Major General, and shortly thereafter became  president of George 
+		Washington University (1946-1951).</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Ulysses S. Grant III Papers</emph> consists primarily of 
+			advertisements, blueprints, bids and other material relating to architectural 
+			projects.  Other material of interest, although unexpected in this technical
+collection, is a series of articles on the Russian
+political situation from the 
+        
+        <emph render="italic">Saturday Evening Post</emph> (1918-1919)
+by Princess Cantacuzene (Julia Dent Grant, sister of Ulysses)
+A news story from 1920 mentions briefly her escape from Russia.  Although the date range for 
+this collection is 1850-1937, the
+bulk is the period of Grant's service as Director of Public
+Buildings and Parks in Washington, D. C., 1926-1933.
+</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Save for miscellaneous printed materials at the end of the
+collection, everything has been placed in a single alphabetical
+run, to include public projects, articles and speeches, notes,
+and court cases.   Within each project, items are listed in 
+chronological order (advertisements for bid,  then contracts, then blueprints, 
+finally other material).</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has a substantial number of architectural collections, both of firms 
+			and individuals.  Please refer to &subjindex; for a complete listing.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Architects</subject>
+      <persname encodinganalog="600" source="lcnaf">Grant, U. S. (Ulysses S.), 1881-1968.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">United States. -- Army. -- Corps of Engineers.</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Civil engineering -- Contracts and specifications.</subject>
+      <subject encodinganalog="650" source="lcsh">Civil engineering -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Civil engineering -- United States -- California.</subject>
+      <subject encodinganalog="650" source="lcsh">Civil engineering -- United States -- Washington (D.C.)</subject>
+      <subject encodinganalog="650" source="lcsh">Civil engineers -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Military engineering -- Philippines.</subject>
+      <subject encodinganalog="650" source="lcsh">Military engineers -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Public works -- Washington (D.C.)</subject>
+      <geogname encodinganalog="651" source="lcsh">Russia -- Politics and government -- 1917-1936.</geogname>
+      <genreform encodinganalog="655" source="aat">Advertisements.</genreform>
+      <genreform encodinganalog="655" source="aat">Contracts.</genreform>
+      <genreform encodinganalog="655" source="aat">Blueprints (reprographic copies)</genreform>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Civil engineers.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Ulysses S. Grant III Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of <persname role="donor">Mrs. John Dietz</persname>, 1982.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Architectural materials</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>American River, California</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>"Report to the Federal Power Commission on the uses of American River," for California Power Board</unittitle>
+              <abstract>typescript and printed copies</abstract>
+              <unitdate normal="1924" type="inclusive">1924</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Arlington Memorial Bridge Commission, Washington, D. C. McKim Mead and White, Architects, W. J. Douglas, Consulting Engineer</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Advertisement, proposals for constructing piers and abutments</unittitle>
+              <unitdate normal="1925-11-19" type="inclusive">Nov. 19, 1925</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contracts 3 &amp; 4 (furnish and deliver granite)</unittitle>
+              <unitdate normal="1926-03-22" type="inclusive">March 22, 1926</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contracts 3 &amp; 4</unittitle>
+              <physdesc>
+                <extent>8 pieces</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 16 (superstructure and foundations)</unittitle>
+              <unitdate normal="1927-10-10" type="inclusive">Oct. 10, 1927</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 16</unittitle>
+              <physdesc>
+                <extent>12 pieces</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03 id="amb22">
+            <did>
+              <unittitle>Advertisement, contract 22 (bascule draw span)</unittitle>
+              <unitdate normal="1928-06-15" type="inclusive">June 15, 1928</unitdate>
+              <container type="Box">1</container>
+            </did>
+            <note>
+              <p>See also 
+                
+                <ref target="pbco">Phoenix Bridge Co. vs. U. S.</ref> (Box 4)</p>
+            </note>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 23 (granite, boundary bridge channel)</unittitle>
+              <unitdate normal="1928-06-25" type="inclusive">June 25, 1928</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 23</unittitle>
+              <physdesc>
+                <extent>2 pieces</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 24 (boundary channel bridge)</unittitle>
+              <unitdate normal="1928-09-01" type="inclusive">Sept. 1, 1928</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 24</unittitle>
+              <physdesc>
+                <extent>7 pieces</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03 id="amb28">
+            <did>
+              <unittitle>Advertisement, contract 28 (foundations, bridge plaza, water gate)</unittitle>
+              <unitdate normal="1929-03-25" type="inclusive">March 25, 1929</unitdate>
+              <container type="Box">1</container>
+            </did>
+            <note>
+              <p>See also 
+                
+                <ref target="glcc">Grier-Lowrance Construction Co. vs. U. S.</ref> (Box 4)</p>
+            </note>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 28</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Transcript, contract 28, daily progress reports</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Field log entries, contract 28</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 31-33 (granite for bridge plaza, approach structure)</unittitle>
+              <unitdate normal="1929-06-01" type="inclusive">June 1, 1929</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 31-33</unittitle>
+              <physdesc>
+                <extent>13 pieces</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 34 (superstructure, bridge plaza, water gate)</unittitle>
+              <unitdate normal="1929-08-01" type="inclusive">Aug. 1, 1929</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 34</unittitle>
+              <physdesc>
+                <extent>4 pieces</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 40 and 41 (granite carving)</unittitle>
+              <unitdate normal="1930-03-01" type="inclusive">March 1, 1930</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 43 (elm trees)</unittitle>
+              <unitdate normal="1930-05-07" type="inclusive">May 7, 1930</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 44 (fenders for Bascule draw span) July 2, 1980</unittitle>
+              <physdesc>
+                <extent>6 pieces</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 44</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 46 (grading parkway to Memorial Entrance to Cemetery)</unittitle>
+              <unitdate normal="1930-09-08" type="inclusive">Sept. 8, 1930</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 46</unittitle>
+              <physdesc>
+                <extent>4 pieces</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 48 (granite for pedestals)</unittitle>
+              <unitdate normal="1930-12-06" type="inclusive">Dec. 6, 1930</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 48</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contracts 49-52 (granite for memorial entrance to cemetery)</unittitle>
+              <unitdate normal="1931-02-02" type="inclusive">Feb. 2, 1931</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contracts 49-52</unittitle>
+              <physdesc>
+                <extent>9 pieces</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 53 (grading west end of project)</unittitle>
+              <unitdate normal="1931-03-16" type="inclusive">March 16, 1931</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 53</unittitle>
+              <physdesc>
+                <extent>1 piece</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 55 (tunnel under parkway to cemetery)</unittitle>
+              <unitdate normal="1931-03-16" type="inclusive">March 16, 1931</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 55</unittitle>
+              <physdesc>
+                <extent>4 pieces</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 56 (bridge plaza drainage)</unittitle>
+              <unitdate normal="1931-04-15" type="inclusive">April 15, 1931</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 56</unittitle>
+              <physdesc>
+                <extent>2 pieces</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 57 and 58 (equestrian groups on plaza) no date</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 62 (paving Arlington Memorial Bridge &amp; Boundary Channel Bridge)</unittitle>
+              <unitdate normal="1931-08-15" type="inclusive">August 15, 1931</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 62</unittitle>
+              <physdesc>
+                <extent>1 piece</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 63 (paving curb, sidewalks, etc., for bridge plaza)</unittitle>
+              <unitdate normal="1931-09-03" type="inclusive">Sept. 3, 1931</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 63</unittitle>
+              <physdesc>
+                <extent>8 pieces</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 65 (asphalt penetration macadam paving on Columbia Island)</unittitle>
+              <unitdate normal="1931-10-19" type="inclusive">Oct. 19, 1931</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 69</unittitle>
+              <physdesc>
+                <extent>4 pieces</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 75 (reinforced concrete pavement, etc., Memorial Ave. to cemetery)</unittitle>
+              <unitdate normal="1932-08-02" type="inclusive">August 2, 1932</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 70-72 (ornamental evergreens)</unittitle>
+              <unitdate normal="1932-01-18" type="inclusive">Jan. 18, 1932</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 70-72</unittitle>
+              <physdesc>
+                <extent>3 pieces</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 73 (pavement, etc. on road to Ericsson Memorial)</unittitle>
+              <unitdate normal="1932-02-23" type="inclusive">Feb. 23, 1932</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 73</unittitle>
+              <physdesc>
+                <extent>2 pieces</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 74 (temporary gravel surface, Memorial Ave. to cemetery)</unittitle>
+              <unitdate normal="1932-02-13" type="inclusive">Feb. 13, 1932</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 74</unittitle>
+              <physdesc>
+                <extent>1 piece</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 75</unittitle>
+              <physdesc>
+                <extent>7 pieces</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 76 (transplanting elm trees, east end of bridge)</unittitle>
+              <unitdate normal="1932-03-09" type="inclusive">March 9, 1932</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 76</unittitle>
+              <physdesc>
+                <extent>1 piece</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, contract 78 (Memorial entrance to Arlington National Cemetery)</unittitle>
+              <unitdate normal="1932-04-11" type="inclusive">April 11, 1932</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, contract 78</unittitle>
+              <physdesc>
+                <extent>18 pieces</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Advertisement, transplant white pine and American elm</unittitle>
+              <unitdate normal="1931-12-07" type="inclusive">Dec. 7, 1931</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Specifications for carving frescoes</unittitle>
+              <unitdate normal="1927-11-21" type="inclusive">Nov. 21, 1927</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Specifications, and blueprints for Keystone carving</unittitle>
+              <unitdate normal="1927-11-14" type="inclusive">Nov. 14, 1927</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Contract drawings, contracts 1, 16, 22, 24, 34</unittitle>
+              <physdesc>
+                <extent>2 copies</extent>
+              </physdesc>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Articles, speeches, etc.</unittitle>
+            <unitdate normal="1925/1932" type="inclusive">1925-1932</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Astronomy</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Program for field</unittitle>
+              <unitdate normal="1906/1907" type="inclusive">1906-1907</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Azimuth observations</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Latitude by sextant</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Latitude by zenith telescope</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Latitude, transit in prime vertical</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Time, by sextant</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Time, transit in the meridian, chronograph method</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Time, transit in the meridian, eye and ear method</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Breakwater, Gloucester, Mass.</unittitle>
+            <abstract>1 pg., costs and measurements</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Calaveras River, California, flood control</unittitle>
+            <unitdate normal="1923" type="inclusive">1923</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Civil engineering</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Building construction, ventilating, heating, roofs and bridges</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Cement, masonry, concretes, foundations</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Hydraulics, river and harbor improvements, lock gates</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Water supply and sewage disposal</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>[Civilian engineers and the military]</unittitle>
+              <unitdate normal="1921" type="inclusive">1921</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dam across Suison Bay, California</unittitle>
+            <unitdate normal="1923" type="inclusive">1923</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Drydocks; Gonzalez, Teodomino</unittitle>
+            <abstract>correspondence, etc</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>East Potomac Park, Washington, D. C., Tourist Camp Field House</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Advertisement for bids</unittitle>
+              <unitdate normal="1926-05-21" type="inclusive">May 21, 1926</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints</unittitle>
+              <physdesc>
+                <extent>9 pieces</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Feather River, California</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Survey recommendations</unittitle>
+              <unitdate normal="1923-02" type="inclusive">Feb., 1923</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Survey report</unittitle>
+              <unitdate normal="1925-05" type="inclusive">May, 1925</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Maps, index, sheets 1-7</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Maps, sheets 8-13</unittitle>
+              <physdesc>
+                <extent>2 copies of sheet 13</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Maps, profile and cross-sections, sheets 1-4</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Federal Warehouse, Washington, D. C.  William T. Partridge, Consulting Architect, Lockwood Greene Engineers, Inc., Consulting Engineers</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Advertisement for bids</unittitle>
+              <unitdate normal="1931-07-31" type="inclusive">July 31, 1931</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, location plan, survey of site</unittitle>
+              <physdesc>
+                <extent>2 pieces</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, 1st-7th floors, basement, roof</unittitle>
+              <physdesc>
+                <extent>6 pieces</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, elevations, N/S and E/W</unittitle>
+              <physdesc>
+                <extent>2 pieces</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, sections through building, plumbing section</unittitle>
+              <physdesc>
+                <extent>2 pieces</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, architectural details</unittitle>
+              <physdesc>
+                <extent>3 pieces</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, structural</unittitle>
+              <physdesc>
+                <extent>2 folders, 11 pieces</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, heating and ventilation</unittitle>
+              <physdesc>
+                <extent>5 pieces</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, electrical</unittitle>
+              <physdesc>
+                <extent>4 pieces</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, sprinkler system</unittitle>
+              <physdesc>
+                <extent>4 pieces</extent>
+              </physdesc>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, vacuum cleaning system</unittitle>
+              <physdesc>
+                <extent>1 piece</extent>
+              </physdesc>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Francis Junior High School, Washington, D. C., Bath house and pools. Thomas M. Medford, Architect, W. B. Montgomery, Structural engineer, E. A. Hind, Mechanical engineer</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Advertisement, bid</unittitle>
+              <unitdate normal="1923/1933" type="inclusive">ca. Jan. 1928</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints</unittitle>
+              <physdesc>
+                <extent>17 pieces</extent>
+              </physdesc>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="glcc">
+          <did>
+            <unittitle>Grier-Lowrance Construction Co., Inc. vs. United States</unittitle>
+            <unitdate normal="1931/1937" type="inclusive">1931-1937</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="amb28">Arlington Memorial Bridge, contract 28, foundations</ref> (Box 1)</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Industrial mobilization speech</unittitle>
+            <unitdate normal="1925" type="inclusive">1925</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lights [intensity of various illuminants data] and printed material</unittitle>
+            <unitdate normal="1908/1926" type="inclusive">1908-1926</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Locks and canals in the U. S. not owned by the government</unittitle>
+            <abstract>table, 6 sheets</abstract>
+            <unitdate normal="1904-04/1904-05" type="inclusive">April-May, 1904</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Locks for rivers and canals</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Examples</unittitle>
+              <abstract>text and 4 sheets</abstract>
+              <unitdate normal="1910-09-21" type="inclusive">Sept 21, 1910</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Moline, Illinois</unittitle>
+              <unitdate normal="1912-03" type="inclusive">Mar. 1912</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lock no. 6, Warrior River, Alabama</unittitle>
+              <abstract>text and 5 drawings</abstract>
+              <unitdate normal="1911-08" type="inclusive">Aug. 1911</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Illinois and Mississippi Canal, Illinois</unittitle>
+              <abstract>text and 4 drawings</abstract>
+              <unitdate normal="1912-06" type="inclusive">June 1912</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>McKinley High School, Washington, D. C., bathhouse and pools. Thomas M. Medford, Architect, W. B. Montgomery, Structural Engineer, E. A. Hind, Mechanical Engineer</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Advertisement, bid</unittitle>
+              <unitdate normal="1927-07-25" type="inclusive">July 25, 1927</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Amendment,</unittitle>
+              <unitdate normal="1927-08-08" type="inclusive">Aug. 8, 1927</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, location plat, electrical, plumbing</unittitle>
+              <physdesc>
+                <extent>6 pieces</extent>
+              </physdesc>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blueprints, details</unittitle>
+              <physdesc>
+                <extent>2 folders, 24 pieces</extent>
+              </physdesc>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Military engineering</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Defense of Subic Bay, Philippines</unittitle>
+              <abstract>text, diagram map</abstract>
+              <unitdate normal="1906" type="inclusive">1906</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Strategy, naval and coastal defense</unittitle>
+              <unitdate normal="1850/1937" type="inclusive">undated</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mining Convention/Conference, on federal control of hydraulic mining for gold</unittitle>
+            <unitdate normal="1923" type="inclusive">1923</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02 id="pbco">
+          <did>
+            <unittitle>Phoenix Bridge Co. vs. United States</unittitle>
+            <unitdate normal="1937" type="inclusive">1937</unitdate>
+            <container type="Box">4</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="amb22">Arlington Memorial Bridge, contract 22, Bascule draw span</ref> (Box 1)</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rock Creek and Potomac Parkway, Washington, D. C</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>"L" Street Bridge. D. H. Gillette, Chief, Engineering Div., John L. Nagle, Chief, Design Sect</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Advertisement, bids</unittitle>
+                <unitdate normal="1931-12-07" type="inclusive">Dec. 7, 1931; </unitdate>
+                <unitdate normal="1932-09-16" type="inclusive">Sept. 16, 1932</unitdate>
+                <container type="Box">4</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blueprints</unittitle>
+                <physdesc>
+                  <extent>6 pieces</extent>
+                </physdesc>
+                <container type="Box">4</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lyons Mill Bridge. D. H. Gillette, Chief, Engineering Div., John L. Nagle, Chief, Design Sect</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Blueprints</unittitle>
+                <physdesc>
+                  <extent>4 pieces</extent>
+                </physdesc>
+                <container type="Box">4</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Waterside Drive Overpass. D. H. Gillette, Chief, Engineering Div., John L Nagle, Chief, Design Sect</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Advertisement bid</unittitle>
+                <unitdate normal="1931-04-24" type="inclusive">April 24, 1931</unitdate>
+                <container type="Box">4</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blueprints</unittitle>
+                <physdesc>
+                  <extent>11 pieces</extent>
+                </physdesc>
+                <container type="Box">4</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rock Creek Park, Washington, D. C</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Milkhouse Ford Bridge blueprints</unittitle>
+              <physdesc>
+                <extent>3 pieces</extent>
+              </physdesc>
+              <unitdate normal="1925" type="inclusive">1925</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Grapevine Bridge blueprints</unittitle>
+              <physdesc>
+                <extent>2 pieces</extent>
+              </physdesc>
+              <unitdate normal="1928" type="inclusive">1928</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sacramento River, California</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Survey, Sacramento to Collinsville</unittitle>
+              <abstract>text and 5 blueprints</abstract>
+              <unitdate normal="1924" type="inclusive">1924</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sacramento River Flood Control Project</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate normal="1925" type="inclusive">1925</unitdate> </unittitle>
+              <abstract>text and maps</abstract>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Revision report</unittitle>
+              <abstract>text and maps</abstract>
+              <unitdate normal="1925" type="inclusive">1925</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sacramento, San Joaquin Rivers, California</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Notes and speeches</unittitle>
+              <unitdate normal="1920/1924" type="inclusive">1920-1924</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Report of preliminary examination and survey</unittitle>
+              <unitdate normal="1924" type="inclusive">1924</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Physical description, commercial estimate</unittitle>
+              <unitdate normal="1920" type="inclusive">1920</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Flood control </unittitle>
+              <unitdate normal="1925/1927" type="inclusive">1925-1927</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>San Joaquin River</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Bridge above Antioch, application for</unittitle>
+              <unitdate normal="1920/1930" type="inclusive">ca. 1925</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Fresno County, California, power development,</unittitle>
+              <unitdate normal="1924" type="inclusive">1924</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Seacoast fortification, tests of parapets, Sandy Hook, New Jersey</unittitle>
+            <unitdate normal="1918-12" type="inclusive">Dec., 1918</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Severn et al vs. United States</unittitle>
+            <unitdate normal="1936/1937" type="inclusive">1936-1937</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Staniaus River, California, report to the Federal Power Commission on use</unittitle>
+            <unitdate normal="1924" type="inclusive">1924</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stockton, California, Deep waterway</unittitle>
+            <abstract>includes report of survey</abstract>
+            <unitdate normal="1922/1924" type="inclusive">1922-1924</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Trinity River, California</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Report to the Federal Power Commission on uses</unittitle>
+              <unitdate normal="1924" type="inclusive">1924</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Waterflow</unittitle>
+              <abstract>notes</abstract>
+              <unitdate normal="1902" type="inclusive">1902</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>White House, Washington, D. C</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Rebuilding of roof, 3rd and 2nd floor ceilings</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Advertisement, bid</unittitle>
+                <unitdate normal="1926-11-19" type="inclusive">Nov. 19, 1926</unitdate>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blueprints, work in place, ground floor, 1st and 2nd floor</unittitle>
+                <physdesc>
+                  <extent>3 pieces</extent>
+                </physdesc>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blueprints, ground floor, 2nd &amp; 3rd floors</unittitle>
+                <physdesc>
+                  <extent>6 pieces</extent>
+                </physdesc>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blueprints, attic, roof and west terrace</unittitle>
+                <physdesc>
+                  <extent>3 pieces</extent>
+                </physdesc>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blueprints, transverse and longitudinal sections</unittitle>
+                <physdesc>
+                  <extent>2 pieces</extent>
+                </physdesc>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blueprints, exterior elevations</unittitle>
+                <physdesc>
+                  <extent>4 pieces</extent>
+                </physdesc>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blueprints, interior elevations</unittitle>
+                <physdesc>
+                  <extent>4 pieces</extent>
+                </physdesc>
+                <container type="Box">5</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blueprints, roof framing, 3rd floor framing</unittitle>
+                <physdesc>
+                  <extent>3 pieces</extent>
+                </physdesc>
+                <container type="Box">6</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blueprints, details</unittitle>
+                <physdesc>
+                  <extent>6 pieces</extent>
+                </physdesc>
+                <container type="Box">6</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blueprints, mechanical and truss detail</unittitle>
+                <physdesc>
+                  <extent>2 pieces</extent>
+                </physdesc>
+                <container type="Box">6</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Swimming pool, West terrace. Lorenzo S. Winslow, Architect, John L. Nagle, Chief, Engineering Div., D. H. Gillette, Chief, Design sect</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Advertisements, bid</unittitle>
+                <unitdate normal="1933-04-05" type="inclusive">April 5, 1933</unitdate>
+                <container type="Box">6</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Blueprints</unittitle>
+                <physdesc>
+                  <extent>6 pieces</extent>
+                </physdesc>
+                <container type="Box">6</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous printed material on flood control, military engineering, evaluation of building materials, sewage, harbors, etc.</unittitle>
+            <unitdate normal="1850/1932" type="inclusive">1850-1932</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Clippings</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Cantacuzene, Princess (Julia Dent Grant)</unittitle>
+            <abstract>printed material; on Russia</abstract>
+            <unitdate normal="1918/1919" type="inclusive">1918-1919</unitdate>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

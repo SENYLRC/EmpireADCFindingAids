@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="shaffer_bolm">shaffer_bolm</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Rosalind Shaffer Collection Relating to Adolf Bolm</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-01-19" encodinganalog="Date">19 Jan 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-01-19">19 Jan 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Shaffer, Rosalind.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Rosalind Shaffer Collection Relating to Adolf Bolm</unittitle>
+         <unitdate encodinganalog="245$f" normal="1951/2009" type="inclusive" label="Inclusive Dates: ">1951-2009, undated</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.25 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, notes, photographs relating to the Russian-American ballet 
+		 dancer, choreographer, director, and teacher.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2731780</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Adolf Bolm (1884-1951) was a noted choreographer, director and dancer.  Born in Russia, his compatriots included Anna 
+	  Pavlova, Sergei Diaghilev, and Vaslav Nijinsky.  He eventually relocated to the United States where he continued to dance, 
+	  teach, and mentor performers such as Syd (Cyd) Charisse, Rosalind Shaffer de Mille, and Ruth Syndon-Jenkins.</p>
+	  
+	  <p>Rosalind Shaffer was a close friend of Adolf Bolm's wife Beatrice for many years; Bolm's son Olaf and Shaffer's son 
+	  George were good friends as children, and Shaffer's daughter (also named Rosalind) studied ballet with Adolf Bolm.  A 
+	  journalist by profession, Shaffer and Mrs. Bolm compiled notes and research to be used in documenting Bolm's life and 
+	  contributions to dance.  The material passed to her daughter, Rosalind Shaffer de Mille, on Rosalind Shaffer's death in 2008.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Rosalind Shaffer Collection Relating to Adolf Bolm</emph> consists of subject files relating to 
+		 Adolf Bolm.  Material includes articles, photographs, correspondence, and notes (both Bolm's and others').</p>
+		 
+		 <p>The Marilyn McLeod folder contains material added by the donor, reflecting her early
+involvement with Olaf and Rosalind, and the project.  Included in this folder are a portrait of Adolf and his son Olaf 
+(photocopy),  a photograph of Rosalind de Mille standing in front of her portrait at age 17 (photocopy),  a photo collage 
+of the Bolm's Sycamore home in Hollywood, and a printout of the Adolf Bolm website's page on "Adolph Bolm and Rosalind Shaffer de Mille."</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Material is arranged alphabetically.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="bolm_a.htm">Adolf Bolm Collection</archref>.  Additional information is available 
+		 online at the Adolf Bolm website, <extref href="http://www.adolphbolm.com">http://www.Adolphbolm.com</extref>.  
+		 (Note: the website uses the "Adolph" spelling; in this finding aid we have adhered to the Library of Congress Subject Heading (LCSH) spelling, "Adolf.")</p></relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Dance and theatre</subject>
+         
+		 <persname encodinganalog="600" source="lcnaf">Bolm, Adolph, 1894-1951.</persname>
+		 <persname encodinganalog="600" source="lcnaf">Diaghilev, Serge, 1872-1929.</persname>
+		 <persname encodinganalog="600" source="lcnaf">Shaffer, Rosalind.</persname>
+		 <persname encodinganalog="600" source="lcnaf">Stravinsky, Igor, 1882-1971.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Ballet -- History -- 20th century.</subject>
+		 <subject encodinganalog="650" source="lcsh">Ballet dancers.</subject>
+         <subject encodinganalog="650" source="lcsh">Ballet dancing.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Notes (documents)</genreform>
+         <genreform encodinganalog="655" source="aat">Photocopies.</genreform>
+         <genreform encodinganalog="655" source="aat">Research notes.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Ballet dancers.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Dancers.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Choreographers.</occupation>
+         <!-- <function encodinganalog="657">##</function> -->
+		 </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Rosalind Shaffer Collection Relating to Adolf Bolm, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Marilyn McLeod</persname>, 2009.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Subject files</unittitle></did>
+               <c02><did><unittitle>Bertenson, Sergei</unittitle><abstract>handwritten and typed notes from an interview with Bertenson about Bolm; includes several pages titled "outline on Adolph Bolm biography"</abstract><unitdate normal="1951/1952" type="inclusive">1951-1952</unitdate><container type="Box">1</container></did></c02>
+               <c02><did><unittitle>Bolm's notes</unittitle><abstract>handwritten notes, by Bolm, about his life and career</abstract><unitdate normal="1951/2009" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+               <c02><did><unittitle>Correspondence, "Liebe Kinder..."</unittitle><abstract>dated from Riga; possibly from Adolf's parents to Adolf and his wife</abstract><unitdate normal="1934" type="inclusive">1934</unitdate><container type="Box">1</container></did></c02>
+               <c02><did><unittitle>Diaghilev history</unittitle><abstract>handwritten notes by Rosalind Shaffer</abstract><unitdate normal="1951/2009" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+               <c02><did><unittitle>History, Bolm</unittitle><abstract>typed and handwritten notes from Mrs. Bolm and Rosalind Shaffer; includes a timeline of Bolm's life</abstract><unitdate normal="1951/2009" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+               <c02><did><unittitle>Inventory of Bolm's books</unittitle><abstract>four lists, typed and handwritten</abstract><unitdate normal="1951/2009" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+               <c02><did><unittitle>Marilyn McLeod</unittitle><unitdate normal="1951/2009" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+               <c02><did><unittitle>Play script of <emph render="italic">Ballerina</emph> by Lady Eleanor Smith</unittitle><unitdate normal="1951/2009" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

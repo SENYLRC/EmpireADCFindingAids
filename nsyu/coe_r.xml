@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="coe_r">coe_r</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Roland Coe Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2012-09-12" encodinganalog="Date">12 Sep 2012</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2012-09-12">12 Sep 2012</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>22 Feb 2017 - additions, Sonnichsen gift (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Coe, Roland, 1906-1954.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Roland Coe Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1929/1939" type="inclusive" label="Inclusive Dates: ">circa 1935</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.25 linear ft. (in oversize flat box)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Original artwork and printed material from the American cartoonist and commercial artist.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3953653</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Roland Coe (1906-1954) was a cartoonist and commercial artist.  A regular contributor to the  <emph render="italic">Buffalo Times</emph> 
+		and <emph render="italic">Buffalo Courier</emph>, his work also appeared in national magazines such as the 
+		<emph render="italic">Saturday Evening Post</emph>, <emph render="italic">LIFE</emph>, and 
+		<emph render="italic">Esquire</emph>.  He created a number of comic strips or series, including <emph render="italic">Crosstown</emph>, <emph render="italic">His Nibs</emph> (a
+		comic strip for Wheaties breakfast cereal), and <emph render="italic">The Little Scouts</emph>, also released as a Dell comic book.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Roland Coe Collection</emph> consists of original artwork (cartoons, illustrations and paintings) and printed material (proofs for one book).</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>No particular order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has the papers of more than a hundred editorial and humorous cartoonists.  Please refer to &subjindex; for a complete listing of cartoonist collections.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Art -- Cartoonists</subject><subject encodinganalog="650" source="local">Art -- Illustrators</subject><persname encodinganalog="600" source="lcnaf">Coe, Roland, 1906-1954.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <title encodinganalog="630" source="lcnaf">Coe's crosstown carnival.</title>
+         <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject><subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States.</subject><subject encodinganalog="650" source="lcsh">Cartoonists -- New York (State)</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform><genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform><genreform encodinganalog="655" source="aat">Pen-and-wash drawings.</genreform><genreform encodinganalog="655" source="aat">Proofs (printed matter)</genreform><genreform encodinganalog="655" source="aat">Watercolors (paintings)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Roland Coe Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Rosalia Hull Linn</persname>, in memory of Lois Bryson O'Connor and Marion West, 2012.</p><p>Gift of <persname role="donor">Evelyn Sonnichsen</persname>, 2016.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Original artwork</unittitle></did>
+            <c02><did><unittitle>Cartoons, Wheaties</unittitle></did>
+               <acqinfo><p>Gift of Evelyn Sonnichsen, 2016.</p></acqinfo><c03><did><unittitle>"Doin; the chores before breakfast is easier'n I thought, Uncle Clem.  I hadn't figured on the 4 A.M. bowl of Wheaties!"</unittitle><abstract>pencil, matted</abstract><container type="Oversize">2</container></did></c03>
+               <c03><did><unittitle>"It'ud take more'm a southeaster to keep him from goin' to town for his Wheaties!"</unittitle><abstract>pencil, matted</abstract><container type="Oversize">2</container></did></c03>
+            </c02>
+            <c02><did><unittitle>Cartoons, miscellaneous</unittitle></did>
+				   <acqinfo><p>Gift of Rosalia Hull Linn in memory of Lois Bryson O'Connor and Marion Wesp, 2012.</p></acqinfo><c03><did><unittitle>"If I had all her dough you wouldn't catch ME living on a dairy farm in Denmark!"</unittitle><abstract>pen and wash, single panel; original title had "Sweden" but this is crossed out</abstract><container type="Oversize">1</container></did></c03>
+               <c03><did><unittitle>"Is dis where d'artist's ball is bein' held?"</unittitle><abstract>pen and wash, single panel</abstract><container type="Oversize">1</container></did></c03>
+            </c02>
+            <c02><did><unittitle>Illustrations</unittitle></did>
+				   <acqinfo><p>Gift of Rosalia Hull Linn in memory of Lois Bryson O'Connor and Marion Wesp, 2012.</p></acqinfo><c03><did><unittitle>Untitled, featuring a long-eared dog</unittitle><abstract>pen and wash, single panel; possibly for  a book</abstract><physdesc><extent>4 items</extent></physdesc><container type="Oversize">1</container></did></c03>
+				</c02>
+            <c02><did><unittitle>Paintings</unittitle></did>
+				<acqinfo><p>Gift of Rosalia Hull Linn in memory of Lois Bryson O'Connor and Marion Wesp, 2012.</p></acqinfo><c03><did><unittitle>Watercolor of an old-fashioned schoolhouse</unittitle><container type="Oversize">1</container></did></c03></c02>
+         </c01>
+      <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+               
+               
+            <acqinfo><p>Gift of Rosalia Hull Linn in memory of Lois Bryson O'Connor and Marion Wesp, 2012.</p></acqinfo><c02><did><unittitle>Coe's Crosstown Carnival</unittitle><abstract>uncut proof sheets for entire book, including title page; unfolds to approximately 42" x 62"</abstract><unitdate normal="1935" type="inclusive">1935</unitdate><container type="Oversize">1</container></did></c02>
+         </c01></dsc>
+   </archdesc>
+</ead>

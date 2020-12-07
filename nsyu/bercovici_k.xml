@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="bercovici_k">bercovici_k</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Konrad Bercovici Collection</titleproper>
+            <subtitle>A description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-04-22" encodinganalog="Date">22 Apr 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-04-22">22 Apr 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>17 Apr 2013 - minor revisions (MBD)</item>
+            <item>18 Dec 2015 - 3 folders added (MBD)</item>
+            <item>6 May 2019 - added Rada Bercovici letter (KD)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Bercovici, Konrad, 1882-1961.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Konrad Bercovici Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1925/1964" type="inclusive" label="Inclusive Dates: ">1925-1964</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Romanian-born American author.  Manuscripts, memorabilia and correspondence.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2746143</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Konrad Bercovici (1882-1961) was a Romanian-American author whose works included biography, travel, history (particularly of Eastern Europe) and fiction.  He published his memoirs, <emph render="italic">It's the Gypsy In Me</emph>, in 1941.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Konrad Bercovici Collection</emph> consists of writings, memorabilia, and published books.</p><p><emph render="bold">Writings</emph> range from handwritten manuscripts of short stories to galley proofs of novels.  Included are several scripts for stage, radio and television production, some of which contain roles performed by Bercovici himself.</p><p><emph render="bold">Memorabilia</emph> contains correspondence, clippings of newspaper and
+            magazine articles, photographs, and flyleaf inscriptions. Correspondence consits of
+            incoming letters from friends and relatives, including Menachem Begin and Louis
+            Nizer..</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Series are arranged in alphabetical order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>The Internet Archive has a freely downloadable copy of <emph render="italic">It's the Gypsy In Me</emph>, available at <archref href="http://www.archive.org/details/itsthegypsyinmet010056mbp">http://www.archive.org/details/itsthegypsyinmet010056mbp</archref>.</p></relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>The collection originally included copies of books written or edited by Bercovici, ranging from <emph render="italic">Crimes of Passion</emph> (1917) to the late 1940s.  These have been transferred to Rare Books for cataloging; please refer to &summitref; to locate these items.  </p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         
+			<subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+			<persname encodinganalog="600" source="lcnaf">Bercovici, Konrad, 1882-1961.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Authors, American.</subject>
+			<subject encodinganalog="650" source="lcsh">Authors, Romanian.</subject><subject encodinganalog="650" source="lcsh">Travel writers.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+         <genreform encodinganalog="655" source="aat">Galley proofs.</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         
+         
+         <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Konrad Bercovici Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from Rare Books, 1983.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+<c01 level="series"><did><unittitle>Writings</unittitle></did>
+   <c02><did><unittitle>Against the sky</unittitle><abstract>typescript</abstract><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>The American</unittitle><abstract>typescript copy</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>The American, in <emph render="italic">Country Gentleman</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1927-05">May 1927</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Authenticating my portrait by Modigliani</unittitle><abstract>handwritten</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Authenticating my portrait by Modigliani</unittitle><abstract>typed transcript used for publication in <emph render="italic">The Courier</emph></abstract><unitdate type="inclusive" normal="1965">18 May 1905</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Black wedding</unittitle><abstract>typsecript, annotated</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Black wedding</unittitle><abstract>television script; typescript annotated</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Black wedding</unittitle><abstract>miscellaneous pages</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Conquered, in <emph render="italic">Delineator Magazine</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1929-12">Dec 1929</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Fanica, in <emph render="italic">Collier's</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1926-01-16">16 Jan 1926</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Firewood</unittitle><abstract>typescript copy</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>The flood, in <emph render="italic">Good Housekeeping</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1930-12">Dec 1930</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>For a song</unittitle><abstract>typescript copy</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Free land</unittitle><abstract>typescript copy</abstract><container type="Box">1</container></did></c02>
+   <c02 id="tfs"><did><unittitle>The French savage (The savage prodigal)</unittitle><abstract>typescript copy</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Gita</unittitle><abstract>typescript copy</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Gita, in <emph render="italic">Good Housekeeping</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1930-12">Dec 1930</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Horsemen</unittitle><abstract>typescript copy</abstract><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Horsemen, in <emph render="italic">Delineator Magazine</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1928-01">Jan 1928</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>I'm an American, script no. 27</unittitle><abstract>copy; transcript of NBC radio broadcast</abstract><unitdate type="inclusive" normal="1940-11-24">24 Nov 1940</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Indian wind</unittitle><note><p>See <ref target="timp">There is money in poetry</ref></p></note></did></c02>
+   <c02><did><unittitle>Lerla, in <emph render="italic">Good Housekeeping</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1929-10">Oct 1929</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Ludmilla, in <emph render="italic">Good Housekeeping</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1927-11">Nov 1927</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>The master</unittitle><abstract>typescript copy</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>The mill on the river, in <emph render="italic">Good Housekeeping</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1924-06">Jun 1924</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Millstones</unittitle><abstract>typescript copy</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Millstones, in <emph render="italic">Pictorial Review</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1924-11">Nov 1924</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Nancu, in <emph render="italic">McClure's</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1925/1964">undated</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Nina, in <emph render="italic">McCall's </emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1929-11">1929-11</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>One moment please, in <emph render="italic">Delineator Magazine</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1927-12">1927-12</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Outcasts, in <emph render="italic">College Humor</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1925/1964">undated</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Perta, in <emph render="italic">Good Housekeeping</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1925/1964">undated</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Royal intrigue  in Romania, in <emph render="italic">Outlook and Independent</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1931-04/1931-06">Apr-Jun 1931</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Savage prodigal</unittitle><note><p>See <ref target="tfs">The French savage</ref></p></note><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Seed</unittitle><abstract>typescript copy</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Sirocco, in <emph render="italic">Country Gentleman</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1926-10">Oct 1926</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>So beautiful, in <emph render="italic">The American Magazine</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1930-01">Jan 1930</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Steel against steel, in <emph render="italic">Good Housekeeping</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1925">1925</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Story of the Gypsies</unittitle><abstract>typescript, annotated</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>The strong man of the lakes</unittitle><abstract>galley proof</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>The strong man of the lakes, in <emph render="italic">The American Magazine</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1930-05">May 1930</unitdate><container type="Box">2</container></did></c02>
+   <c02 id="timp"><did><unittitle>There is money in poetry</unittitle><abstract>handwritten</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>There is money in poetry</unittitle><abstract>script; typescript, annotated</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>There is money in poetry</unittitle><abstract>television script; mimeograph</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>There is money in poetryin <emph render="italic">Harper's</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1925/1964">undated</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>There is money in poetry</unittitle><abstract>"Indian Wind" theatre program, Yale University School of Fine Arts</abstract><unitdate type="inclusive" normal="1940-02-22">22 Feb 1940</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>The vineyard, in <emph render="italic">Good Housekeeping</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1925-01">Jan 1925</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>What life means to me</unittitle><abstract>photocopy</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>What love is, in <emph render="italic">Liberty</emph></unittitle><unitdate type="inclusive" normal="1926-02-13">13 Feb 1926</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>What the Gypsies have told me</unittitle><abstract>photocopy</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>When faith returns</unittitle><abstract>typescript copy</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>The whip, in <emph render="italic">Country Gentleman</emph></unittitle><abstract>printed material</abstract><unitdate type="inclusive" normal="1925-10">Oct 1925</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Yeshiva University benefit performance, "Creation"</unittitle><abstract>typescript, annotated</abstract><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Youth to Youth, in <emph render="italic">Delineator Magazine</emph></unittitle>
+                  <abstract>printed material</abstract><unitdate type="inclusive" normal="1926-11">Nov 1926</unitdate><container type="Box">2</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Youth to Youth, in <emph render="italic">The World's One Hundred Best
+                        Short Stories, Vol. 4</emph></unittitle>
+                  <abstract>printed material</abstract>
+                  <unitdate type="inclusive" normal="1927">1927</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+   <c02><did><unittitle>Zailain <emph render="italic">Ladies Home Journal</emph></unittitle><unitdate type="inclusive" normal="1930-05">May 1930</unitdate><container type="Box">2</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+   <c02><did><unittitle>Correspondence</unittitle></did>
+               <note>
+                  <p>Individuals are listed separately but contained in the same folder.</p>
+               </note>
+      <c03><did><unittitle>Mayfield, John</unittitle><abstract>from Bercovici family and friends</abstract><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Begin, Manachem</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Bercovici, Jean</unittitle><container type="Box">2</container></did></c03>
+               <c03>
+                  <did>
+                     <unittitle>Bercovici, Rada</unittitle>
+                     <container type="Box">2</container>
+                  </did>
+               </c03>
+      <c03><did><unittitle>Bercovici, Rion</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Birnie, William H.</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Colin, Rosica</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Elmo, Ann</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Farrar, John</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Finch, Helen</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Gruenblat, Maxa Nordau</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Howard, G. Wren</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Kingdon, Frank</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Malraux, Andre</unittitle><abstract>by M. Brandin</abstract><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Marshall, Margaret</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>McConnell, Jane T.</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Nizer, Louis</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>O'Dwyer, Paul</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Rewald, John</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Rosenfield, Harry N.</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Rubin, Reuben</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Stevens, Roger L.</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Wheeler, Monroe</unittitle><abstract>by Francis Keech</abstract><container type="Box">2</container></did></c03>
+               <c03>
+                  <did>
+                     <unittitle>Facsimiles of Misc. Correspondence</unittitle>
+                     <container type="Box">2</container>
+                  </did>
+               </c03>
+   </c02>
+   <c02><did><unittitle>Flyleaf inscriptions</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Newspaper and magazine articles about Bercovici</unittitle></did>
+      <c03><did><unittitle>Guyon, Louise Hubert.  "Konrad Bercovici."  <emph render="italic">Boston Globe</emph></unittitle><unitdate type="inclusive" normal="1925-08-15">15 Aug 1925</unitdate><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Hewes, Robert E. "Bercovici gives writer's views." <emph render="italic">Los Angeles Times</emph></unittitle><unitdate type="inclusive" normal="1925/1964">undated</unitdate><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Janacek, Pat. "Rada Bercovici contributes father's collection to University."  <emph render="italic">Daily Orange</emph></unittitle><unitdate type="inclusive" normal="1963-10-31">31 Oct 1963</unitdate><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Mayfield, John.  "Konrad Bercovici."  <emph render="italic">The Courier</emph></unittitle><unitdate type="inclusive" normal="1964-03">Mar 1964</unitdate><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Miller, Arthur.  "Master of irony."  <emph render="italic">Los Angeles Times Sunday Magazine</emph></unittitle><unitdate type="inclusive" normal="1939-02-05">05 Feb 1939</unitdate><container type="Box">3</container></did></c03>
+      
+      <c03><did><unittitle>Noel, David.  "Konrad Bercovici."  <emph render="italic">The Scholastic</emph></unittitle><unitdate type="inclusive" normal="1925-01-10">10 Jan 1925</unitdate><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Obituary.  <emph render="italic">New York Times</emph></unittitle><unitdate type="inclusive" normal="1961-12-28">28 Dec 1961</unitdate><container type="Box">3</container></did></c03><c03><did><unittitle>"Romany tales."  <emph render="italic">Saturday Evening Post</emph></unittitle><unitdate type="inclusive" normal="1925/1964">undated</unitdate><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>"The short story changes."  <emph render="italic">The New York Nation</emph></unittitle><unitdate type="inclusive" normal="1961-11-30">30 Nov 1961</unitdate><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Swan, Gilbert.  "In New York."  <emph render="italic">Syracuse Herald</emph></unittitle><unitdate type="inclusive" normal="1931-05-25">25 May 1931</unitdate><container type="Box">3</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Photographs</unittitle><abstract>of Bercovici, taken by Margrethe Mather and Muray; also of two portraits of Bercovici, painted by Mirel Bercovici Abbott and Modigliani.</abstract><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Three Lively Arts</unittitle><abstract>contains article by Mirana Bercovici Abbott</abstract><container type="Box">3</container></did></c02>
+</c01>
+      </dsc>
+   </archdesc>
+</ead>

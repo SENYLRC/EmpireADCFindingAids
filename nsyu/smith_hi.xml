@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="smith_hi">smith_hi</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Hiram Smith Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-09-29" encodinganalog="Date">29 Sep 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+		    <date normal="2010-09-29">29 Sep 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!-- <origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname>
+         </origination> -->
+         <unittitle encodinganalog="245$a" label="Title: ">Hiram Smith Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1874/1970" type="inclusive" label="Inclusive Dates: ">1874-1970</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>3 folders (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Farmer and house builder in New York State.  Collection contains 
+		 his handwritten autobiography from 1874, genealogical material from later family members to 1970, an article in the 
+		 Courier about Smith, and an undated photograph of Smith.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3170425</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Hiram Smith (1814-1888) was a 19th century farmer, sash manufacturer and house builder in upstate New York.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Hiram Smith Collection</emph> contains memorabilia, printed material and writings.</p>
+		 <p><emph render="bold">Memorabilia</emph> contains an undated photograph of Smith; written on the back are the words, 
+		 "Hiram Smith b. 1814 d. 1888 (Fred's g. grandfather)".</p>
+		 <p><emph render="bold">Printed material</emph> consists of a copy of The Courier, Vol. 34, containing an article about 
+		 Smith and several sheets of biographical and genealogical information about Hiram and the Smith family, provided by his 
+		 grand-daughter Edna Crocker Smith, who donated the collection.</p>		 
+		 <p><emph render="bold">Writings</emph> contains the complete handwritten manuscript of Smith's autobiography, entitled 
+		 "A Memoir of the Life of Hiram Smith."  The account, which begins with his birth in 1814 and ends in 1874, includes 
+		 reminiscences of learning to play the violin, travels all over central New York via the Erie Canal, and making a sled 
+		 out of a pig's lower jaw.  His account is unusually interesting and valuable because he mentions by name many of the 
+		 people and places he visited, and offers a vivid and fascinating window into life in upstate New York in the early 
+		 part of the 19th century.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by type of material.</p>
+      </arrangement>
+      
+      <!-- <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+	  </relatedmaterial> -->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">New York State</subject>
+		 <persname encodinganalog="600" source="lcnaf">Smith, Hiram, 1814-1888.</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <!-- <corpname encodinganalog="610" source="lcnaf">##</corpname> -->
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <!-- <subject encodinganalog="650" source="lcsh">##</subject> -->
+         <geogname encodinganalog="651" source="lcsh">New York (State) -- History -- 19th century.</geogname>
+         <geogname encodinganalog="651" source="lcsh">New York (State) -- Social life and customs.</geogname>
+         <genreform encodinganalog="655" source="aat">Articles.</genreform>
+         <genreform encodinganalog="655" source="aat">Genealogies (histories)</genreform>
+         <genreform encodinganalog="655" source="aat">Memoirs.</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <!-- <occupation encodinganalog="656" source="lcsh">##</occupation> -->
+         <!-- <function encodinganalog="657">##</function> -->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Hiram Smith Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Edna Crocker Smith</persname>, 1970.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Photograph of Hiram Smith</unittitle><container type="SC">590</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle>Courant article, genealogical and biographical information from Edna C. Smith</unittitle><unitdate type="inclusive" normal="1970">1970</unitdate><container type="SC">590</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02><did><unittitle>Memoir of the life of Hiram Smith</unittitle><unitdate type="inclusive" normal="1874">1874</unitdate><container type="SC">590</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

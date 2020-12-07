@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="hitner_phot_alb">hitner_phot_alb</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Margaret Hitner Photograph Albums</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+            <author encodinganalog="Creator">SM</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2016-05-27" encodinganalog="Date">27 May 2016</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>SM <date normal="2016-05-27">27 May 2016</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"-->
+      <!--<revisiondesc><list><item/></list></revisiondesc>-->
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+            &su_name;
+            <lb/>
+            &su_address;
+         </repository>
+         <!--<origination label="Creator: "><persname encodinganalog="100"/><corpname encodinganalog="110">or 110</corpname></origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Margaret Hitner Photograph Albums</unittitle>
+         <unitdate encodinganalog="245$f" normal="1914/1954" type="inclusive" label="Inclusive Dates:">1914-1954</unitdate>
+         <physdesc encodinganalog="300$a" label="Quantity: "><extent>1.5 linear
+            ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Family photographs, the majority of
+            which are showing the Hitner family and their relatives in Austria. A few pictures were
+            taken in American cities (New York City, Chicago, Cleveland).</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4678030</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="ger">German</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Margaret Hitner (5 Feb 1900-10 Sep 1989, née Margarete Althoff) was born in Austria. She
+            was married to John Maurice Hitner (13 Oct 1890-10 Nov 1978) who was also born in
+            Austria and with whom she had a daughter Ingeborg (22 Jun 1929-19 Feb 2002, married
+            later to Carmen A. DiNiro). At the end of the 1930s the family seems to have immigrated
+            to the United States where the census of 1940 has registered them as living in Syracuse,
+            New York. John M. Hitner was employed by The Prosperity Company of Syracuse, New York, a
+            manufacturer of laundry and dry cleaning equipment, before his retirement.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Margaret Hitner Photograph Albums</emph> consist of three albums. The majority
+            of the photographs were taken in Austria with some having been sent as postcards with
+            short texts written in German. A few photographs were taken at major American cities
+            such as New York City, Chicago and Cleveland. The photographs from Austria are mostly
+            family pictures with a few shots of the Austrian countryside and of World War II
+            destruction.</p>
+      </scopecontent>
+      <!--<altformavail encodinganalog="530"><head>Other Formats Available</head><p>## Use MARC 530 or comment out if not applicable</p></altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The arrangement of the albums seems to be Hitner family in Austria before departure to
+            America, Austrian relatives, travels in America and Europe</p>
+      </arrangement>
+      <!--<relatedmaterial encodinganalog="544 1"><head>Related Material</head><p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+      <!--<separatedmaterial encodinganalog="544 0"><head>Separated Material</head><p>## OPT (MARC 544 0)</p></separatedmaterial>-->
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Photography</subject><persname encodinganalog="600" source="lcnaf">Hitner, Margaret.</persname>
+         <persname encodinganalog="600" source="lcnaf">Hitner, John Maurice. </persname>
+         <persname encodinganalog="600" source="lcnaf">DiNiro, Ingeborg.</persname>
+         <persname encodinganalog="600" source="lcnaf">Althoff, Inge.</persname>
+         <famname encodinganalog="600" source="lcnaf">Hütner, Leon.</famname>
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Syracuse (N.Y.) -- Pictorial works.</subject>
+         <subject encodinganalog="650" source="lcsh">Austria -- Pictorial works.</subject>
+         <subject encodinganalog="650" source="lcsh">Emigration and immigration -- United
+            States.</subject>
+         <subject encodinganalog="650" source="lcsh">Vienna (Austria) -- Pictorial works.</subject>
+         <subject encodinganalog="650" source="lcsh">New York (N.Y.) -- Pictorial works. </subject>
+         <subject encodinganalog="650" source="lcsh">Chicago (Ill.) -- Pictorial works. </subject>
+         <subject encodinganalog="650" source="lcsh">Cleveland (Ohio) -- Pictorial works. </subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Photograph albums.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Margaret Hitner Photograph Albums, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of Ray M. Giebler, 2016</p>
+      </acqinfo>
+      <!--<appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>-->
+      <!--<accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series">
+            <did>
+               <unittitle>Photographs</unittitle>
+            </did>
+            <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+            <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+            <c02>
+               <did>
+                  <unittitle>Reise-Erinnerungen [Travel Memories]</unittitle>
+                  <abstract>Hitner family in Austria; includes many loose photos that have become detached</abstract>
+                  <unitdate normal="1914/1939" type="inclusive" label=" ">1914-1939</unitdate>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Album</unittitle>
+                  <abstract>Austrian relatives, including Margaret's niece Inge, her sister and
+                     mother</abstract>
+                  <unitdate normal="1942/1948" type="inclusive" label=" ">1942-1948</unitdate>
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Photographs</unittitle>
+                  <abstract>travels in America and Europe, including New York City, Chicago,
+                     Cleveland (Ohio)</abstract>
+                  <!--<unitdate normal="##" type="inclusive"/>-->
+                  <container type="Oversize">2</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="robinson_hg">robinson_hg</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Horatio G. Robinson Letters</titleproper>
+            <subtitle>An  inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-08-03" encodinganalog="Date">3 Aug 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-08-03">3 Aug 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Robinson, Horatio G.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Horatio G. Robinson Letters</unittitle>
+         <unitdate encodinganalog="245$f" normal="1866/1867" type="inclusive" label="Inclusive Dates: ">1866-1867</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Letters from Navy sailor Horatio Robinson to his mother, while posted to the USS 
+		 <emph render="italic">Powhatan</emph>, flagship of the South Pacific Squadron, dated from locations in Chile and Peru.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3014635</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Little is known of Horatio G. Robinson beyond what is given in the collection.   Robinson was posted to the USS <emph render="italic">Powhatan</emph>, a 
+	  sidewheel steam frigate in the United States Navy.  From 1866-1869 the <emph render="italic">Powhatan</emph> was the flagship of the 
+	  South Pacific Squadron, commanded for most of that time by Admiral John A. Dahlgren; in March 1866, during the period of these letters, 
+	  she was sent to Callao (Peru) and Valparaíso (Chile) to protect U.S. interests during the Spanish-Peruvian 
+	  War.  A collection of letters at Duke University also from Horatio G. Robinson to "Dear Mother," may be the same person; those letters 
+	  indicate that Robinson was from Boston, and that he served on the USS <emph render="italic">Osceola</emph> during the Civil War.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Horatio G. Robinson Letters</emph> consist of 19 letters from U.S. Navy sailor Horatio Robinson to "Dear Mother."  The letters, 
+		 none shorter than four pages, often begin with Robinson's disappointment at not receiving a letter in the last mail boat (apparently his mother did not write 
+		 often enough to suit him).  Robinson gives a good deal of detail about the ship's movements as well as that of other American forces, 
+		 as well as information about the Spanish fleet.  A letter dated 3 Apr 1866 reads in part:</p>
+		 
+		 <blockquote><p>The Spanish fleet left here yesterday evening, for what place I have not yet learned but think "Callao" is the most probable.  
+		 Commodore Rogers follows them tomorrow in the "Vanderbilt" accompanied by the "Tuscarora" and "Monadnock."  He follows to look 
+		 out for the rights and protections of Americans resident in the place.  One of the English frigates went on the 13th and the other 
+		 will probably follow in a few days.</p>
+		 
+		 <p>By their leaving this port wholly unguarded, the blockade of this port is declared as raised, therefore although the two 
+		 countries may be in actual warfare, this port can not again be under blockade for sixty days at the very least, and by that time 
+		 we are in hopes to see the Chilians so well fortified that the Spanish will not be able to again enter this port.</p></blockquote>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Chronological.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="../d/dahlgren_ja.htm">John A. Dahlgren Collection</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+		 <subject encodinganalog="650" source="local">Military history</subject>
+		 <persname encodinganalog="600" source="lcnaf">Dahlgren, John Adolphus Bernard, 1809-1870.</persname>
+		 <persname encodinganalog="600" source="lcnaf">Robinson, Horatio G.</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <corpname encodinganalog="610" source="lcnaf">Powhatan (Side-wheel steamer)</corpname>
+         <corpname encodinganalog="610" source="lcnaf">United States. -- Navy -- 19th century -- Sources.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">United States. -- Navy. -- Pacific Squadron.</corpname> 
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <!-- <subject encodinganalog="650" source="lcsh">##</subject> -->
+         <geogname encodinganalog="651" source="lcsh">Callao (Callao, Peru) -- Description and travel.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Chile -- History -- War with Spain, 1865-1866 -- Personal narratives.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Valparaiso (Chile) -- Description and travel.</geogname>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Sailors.</occupation>
+         <!-- <function encodinganalog="657">##</function> -->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Horatio G. Robinson Letters, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer, 1970.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>"Dear Mother"</unittitle><unitdate normal="1866/1867" type="inclusive">1866-1867</unitdate><container type="SC">557</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

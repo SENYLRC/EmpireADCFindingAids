@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="sherman_j" mainagencycode="NSyU">sherman_j</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">John Sherman Letters</titleproper>
+        <subtitle>An inventory of his
+ letters at Syracuse University</subtitle>
+        <author encodinganalog="Creator">KM</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date calendar="gregorian" encodinganalog="Date" era="ce" normal="1988-12">Dec 1988</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+
+
+
+
+        <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>
+	  22 Jan 2009 - converted to EAD (LDC)
+        </item>
+      <item>6 Jan 2017 - fixed index code (MRC)</item></list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Sherman, John, 1823-1900.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">John Sherman Letters</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1852/1898" type="inclusive">1852-1898</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">64 items (SC)</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Papers of the American statesman.  Sherman was a U.S. Congressional representative from Ohio, 1855-61; U.S. Senator, 1861-77; U.S. Secretary of the Treasury, 1877-81; U.S. Senator, 1881-97; and U.S. Secretary of State, 1897-98. Cf. Dictionary of national biography. Letters on fiscal policy, political issues, appointments, and the Republican Party, written to Anson Burlingame, Hamilton Fish, Ulysses S. Grant, and others.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">149270</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>John Sherman (1823-1900) was an American statesman who served as U.S. Congressman (1855-61), U.S. Senator (1861-77, 1881-97), U.S. Secretary of the Treasury (1877-81), and U.S. Secretary of State (1897-98).  He is best remembered for authoring the Sherman Antitrust Act aimed at limiting monopolies and cartels in the United States.</p>
+      <chronlist>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1823">1823</date>
+          <event>Born in Lancaster, Ohio on May 10th</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1844">1844</date>
+          <event>Admitted to the bar in Ohio</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1848">1848</date>
+          <eventgrp>
+            <event>Married Margaret Sarah Stewart</event>
+            <event> Delegate to Whig Convention </event>
+          </eventgrp>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1855/1861">1855-1861</date>
+          <event>U.S. Congressman representing Ohio</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1861/1877">1861-1877</date>
+          <event>U.S. Senator representing Ohio</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1877/1881">1877-1881</date>
+          <event>U.S. Secretary of the Treasury under President Rutherford Hayes</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1880">1880</date>
+          <event>Sought Republican Presidential nomination</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1881/1897">1881-1897</date>
+          <event>U.S. Senator representing Ohio</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1890">1890</date>
+          <event>Sherman Antitrust Act</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1897/1898">1897-1898</date>
+          <event>U.S. Secretary of State under President William McKinley</event>
+        </chronitem>
+        <chronitem>
+          <date calendar="gregorian" era="ce" normal="1900">1900</date>
+          <event>Died in Washington, D.C. on October 22nd</event>
+        </chronitem>
+      </chronlist>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">John Sherman Letters</emph> are a collection of 64 outgoing items which reflect 
+		the statesman's public career as a U.S. Congressional Representative from Ohio (1855-1861), U.S. Senator 
+		(1861-1877, 1881-1897), U.S. Secretary of the Treasury (1877-1881), and U.S. Secretary of State (1897-1898).</p>
+      <p>The letters include discussions concerning Sherman's support for various pieces of legislation, his 
+		recommendations for governmental appointments, and miscellaneous issues raised by his constituents as well 
+		as other public officials. A number of letters are responses to invitations to appear at ceremonial functions. 
+		Responding to the receipt of Charles E. Lester's book, <emph render="italic">The Glory and Shame of England</emph>, 
+		Sherman writes (07 Feb 1869):
+
+        <blockquote>
+          <p>I have twice visited that country and could not but feel that we have here imported by our ancestors the best 
+			 elements of England - her laws and liberal institutions - and have left behind in the old country the elements of 
+			 her decay - her intolerance, oligarchy and unequal distribution of wealth.</p>
+        </blockquote></p>
+      <p>The Sherman letters also contain discussions of some of the leading issues facing 19th century America: the national 
+		debt, the politics of Reconstruction, and the doctrine of manifest destiny. In the aftermath of bitterness following 
+		the Civil War, Sherman writes (19 Apr 1866):
+
+        <blockquote>
+          <p>I wish earnestly to prevent a break between Congress &amp; the President for I see no occasion for it. There 
+			 is real danger that the
+            <emph render="italic">chill</emph> arising from the difference of opinion in the Civil rights &amp; other bills 
+				may settle into downright enmity. Both united can control the politics of the country which each has proven enough 
+				to destroy our party. I do think the stubborn will of the President &amp; the dogmatic ultraism of a few men in 
+				Congress will break us up. Perhaps in standing between I may lose the good opinion of both but at least I will 
+				do what is right.</p>
+        </blockquote></p>
+      <p>And regarding the doctrine of manifest destiny, Sherman states (08 Dec 1890):
+
+        <blockquote>
+          <p>...I am against the acquisition of any more territory except Canada whenever it is ready to fall into our lap.</p>
+        </blockquote></p>
+      <p>A forty-year veteran of public life in the nation's capital, Sherman was not above this display of partisanship in a 
+		letter to Ernest Ackerman (Feb 1894):
+
+        <blockquote>
+          <p>You will perceive that the McKinley bill largely reduced the amount of taxes while the revenues from imported 
+			 goods steadily increased until the election of the Democratic President, when the panic commenced.</p>
+        </blockquote></p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The collection contains one series, Correspondence, which is arranged chronologically.  A <ref target="sic">Selected index to correspondence</ref> 
+		is located at the end of the finding aid.</p>
+    </arrangement>
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+      <persname encodinganalog="600" source="lcnaf">Bok, Edward William, 1863-1930.</persname>
+      <persname encodinganalog="600" source="lcnaf">Burlingame, Anson, 1820-1870.</persname>
+      <persname encodinganalog="600" source="lcnaf">Campbell, Lewis D. (Lewis Davis), 1811-1882.</persname>
+      <persname encodinganalog="600" source="lcnaf">Clapp, A. M. (Almon M.)</persname>
+      <persname encodinganalog="600" source="lcnaf">Cowdin, Elliot C. (Elliot Christopher), 1819-1880.</persname>
+      <persname encodinganalog="600" source="lcnaf">Dalzell, James McCormick, 1838-1924.</persname>
+      <persname encodinganalog="600" source="lcnaf">Fish, Hamilton, 1808-1893.</persname>
+      <persname encodinganalog="600" source="lcnaf">Grant, Ulysses S. (Ulysses Simpson), 1822-1885.</persname>
+      <persname encodinganalog="600" source="lcnaf">Greenough, Charles P. (Charles Pelham), 1844-1924.</persname>
+      <persname encodinganalog="600" source="lcnaf">Hodnett, John Pope.</persname>
+      <persname encodinganalog="600" source="lcnaf">Hoyt, Charles Hale, 1859-1910.</persname>
+      <persname encodinganalog="600" source="lcnaf">Hurst, J. F. (John Fletcher), 1834-1903.</persname>
+      <persname encodinganalog="600" source="lcnaf">Leggett, Mortimer Dormer, 1821-1896.</persname>
+      <persname encodinganalog="600" source="lcnaf">Lester, C. Edwards (Charles Edwards), 1815-1890.</persname>
+      <persname encodinganalog="600" source="lcnaf">Metcalf, Lorettus Sutton, 1837-1920.</persname>
+      <persname encodinganalog="600" source="lcnaf">Pinchback, Pinckney Benton Stewart, 1837-1921.</persname>
+      <persname encodinganalog="600" source="lcnaf">Ramsdell, George A. (George Allen), 1834-1900.</persname>
+      <persname encodinganalog="600" source="lcnaf">Rhodes, James Ford, 1848-1927.</persname>
+      <persname encodinganalog="600" source="lcnaf">Rives, John C. (John Cook), 1795-1864.</persname>
+      <persname encodinganalog="600" source="lcnaf">Sherman, John, 1823-1900.</persname>
+      <persname encodinganalog="600" source="lcnaf">Stoddard, William O., 1835-1925.</persname>
+      <persname encodinganalog="600" source="lcnaf">Ward, William Hayes, 1835-1916.</persname>
+      <persname encodinganalog="600" source="lcnaf">Washburne, E. B. (Elihu Benjamin), 1816-1887.</persname>
+      <persname encodinganalog="600" source="lcnaf">Wilson, James Grant, 1832-1914.</persname>
+      <corpname encodinganalog="610" source="lcnaf">Republican Party (U.S. : 1854- )</corpname>
+      <subject encodinganalog="650" source="lcsh">Politicians -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">United States -- History -- 1865-1898.</subject>
+      <subject encodinganalog="650" source="lcsh">United States -- Officials and employees -- Selection and appointment.</subject>
+      <subject encodinganalog="650" source="lcsh">United States -- Politics and government -- 19th century.</subject>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <occupation encodinganalog="656" source="aat">Legislators.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Politicians.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Statesmen.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>John Sherman Letters,
+
+
+
+        <lb/>&su_name;</p>
+    </prefercite>
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>
+              
+            [General]</unittitle>
+            <unitdate calendar="gregorian" era="ce" normal="1852/1860" type="inclusive">1852-1860</unitdate><physdesc>
+              <extent>9 letters</extent>
+            </physdesc>
+          <container type="SC">67</container>
+            <container type="Folder">1</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            [General]</unittitle>
+            <unitdate calendar="gregorian" era="ce" normal="1861/1870" type="inclusive">1861-1870</unitdate><physdesc>
+              <extent>8 letters</extent>
+            </physdesc>
+          <container type="SC">67</container>
+            <container type="Folder">2</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            [General]</unittitle>
+            <unitdate calendar="gregorian" era="ce" normal="1871/1879" type="inclusive">1871-1879</unitdate><physdesc>
+              <extent>7 letters</extent>
+            </physdesc>
+          <container type="SC">67</container>
+            <container type="Folder">3</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            [General]</unittitle>
+            <unitdate calendar="gregorian" era="ce" normal="1883/1886" type="inclusive">1883-1886</unitdate><physdesc>
+              <extent>7 letters</extent>
+            </physdesc>
+          <container type="SC">67</container>
+            <container type="Folder">4</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            [General]</unittitle>
+            <unitdate calendar="gregorian" era="ce" normal="1887/1888" type="inclusive">1887-1888</unitdate><physdesc>
+              <extent>8 letters</extent>
+            </physdesc>
+          <container type="SC">67</container>
+            <container type="Folder">5</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            [General]</unittitle>
+            <unitdate calendar="gregorian" era="ce" normal="1889/1890" type="inclusive">1889-1890</unitdate><physdesc>
+              <extent>6 letters</extent>
+            </physdesc>
+          <container type="SC">67</container>
+            <container type="Folder">6</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            [General]</unittitle>
+            <unitdate calendar="gregorian" era="ce" normal="1892/1894" type="inclusive">1892-1894</unitdate><physdesc>
+              <extent>6 letters</extent>
+            </physdesc>
+          <container type="SC">67</container>
+            <container type="Folder">7</container>
+            </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              
+            [General]</unittitle>
+            <unitdate calendar="gregorian" era="ce" normal="1897/1898" type="inclusive">1897-1898, </unitdate>
+              <unitdate calendar="gregorian" era="ce" normal="1852/1898" type="inclusive">undated</unitdate><physdesc>
+              <extent>7 letters</extent>
+            </physdesc>
+          <container type="SC">67</container>
+            <container type="Folder">8</container>
+            </did>
+        </c02>
+      </c01>
+      
+    </dsc>
+  <index id="sic"><head>Selected index to correspondence</head>
+<indexentry>
+   <name>Ackerman, Ernest R.</name>
+   <ptrgrp>
+      <ref>13? Feb 1894</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Aitken, John W.</name>
+   <ptrgrp>
+      <ref>09 Jan 1890</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Beach, L. H.</name>
+   <ptrgrp>
+      <ref>25 Jul 1887</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Bok, Edward W.</name>
+   <ptrgrp>
+      <ref>31 May 1895</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Burlingame, Anson</name>
+   <ptrgrp>
+      <ref>28 Mar 1859</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Butler, Richard</name>
+   <ptrgrp>
+      <ref>11 Aug 1890</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Campbell, Lewis Davis</name>
+   <ptrgrp>
+      <ref>08 Jan 1868</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Clapp, A. M.</name>
+   <ptrgrp>
+      <ref>17 Mar 1874</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Conant, Charles F.</name>
+   <ptrgrp>
+      <ref>31 Dec 1877</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Cowdin, Elliot Christopher</name>
+   <ptrgrp>
+      <ref>07 Dec 1868</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Dalzell, James McCormick</name>
+   <ptrgrp>
+      <ref>10 Mar 1888</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Del Mar, Eugene</name>
+   <ptrgrp>
+      <ref>24 Mar 1890</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Fish, Hamilton</name>
+   <ptrgrp>
+      <ref>12 May 1870</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Foote, James L.</name>
+   <ptrgrp>
+      <ref>23 Sep 1892</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Goodban, W. F.</name>
+   <ptrgrp>
+      <ref>24 Mar 1879</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Grant, Ulysses S.</name>
+   <ptrgrp>
+      <ref>14 Jun 1873</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Greenough, Charles Pelham</name>
+   <ptrgrp>
+      <ref>02 Mar 1896</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Harrison, R. B.</name>
+   <ptrgrp>
+      <ref>13 Aug 1884</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Hodnett, John Pope</name>
+   <ptrgrp>
+      <ref>20 Apr 1886</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Hoyt, Alfred</name>
+   <ptrgrp>
+      <ref>18 Mar 1895</ref>
+      <ref>28? Jul 1898</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Hoyt, Charles Hale</name>
+   <ptrgrp>
+      <ref>26 Oct 1864</ref>
+      <ref>16 Apr 1884</ref>
+      <ref>14 May 1886</ref>
+      <ref>23 Aug 1886</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Hurst, John F.</name>
+   <ptrgrp>
+      <ref>18 Jan 1897</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Leggett, Mortimer Dormer</name>
+   <ptrgrp>
+      <ref>04 Oct 1883</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Lester, Charles Edwards</name>
+   <ptrgrp>
+      <ref>07 Feb 1869</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Metcalf, Lorettus Sutton</name>
+   <ptrgrp>
+      <ref>11 Jun 1887</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Pinchback, Pinckney Benton S.</name>
+   <ptrgrp>
+      <ref>15 Mar 1897</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Ramsdell, George Allen</name>
+   <ptrgrp>
+      <ref>27 Aug 1897</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Rhodes, James Ford</name>
+   <ptrgrp>
+      <ref>21 Jun 1895</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Rives, John Cook</name>
+   <ptrgrp>
+      <ref>18 Feb 1860</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Rothacker, O. H.</name>
+   <ptrgrp>
+      <ref>28 Jun 1888</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Scott, C. T.</name>
+   <ptrgrp>
+      <ref>05 Aug 1893</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Stoddard, William Osborn</name>
+   <ptrgrp>
+      <ref>12 Feb 1889</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Throndike, Rachel Sherman</name>
+   <ptrgrp>
+      <ref>21 Feb 1892</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Tinsley, Henry G.</name>
+   <ptrgrp>
+      <ref>27 Aug 1887</ref>
+      <ref>03 Sep 1887</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Wakeman, Wilbur Fisk</name>
+   <ptrgrp>
+      <ref>29 Feb 1892</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Ward, William Hayes</name>
+   <ptrgrp>
+      <ref>08 Dec 1890</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Washburne, Elihu Benjamin</name>
+   <ptrgrp>
+      <ref>17 May 1872</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Wilson, James Grant</name>
+   <ptrgrp>
+      <ref>26 Apr 1888</ref>
+   </ptrgrp>
+</indexentry>
+<indexentry>
+   <name>Young, W. P.</name>
+   <ptrgrp>
+      <ref>06 Feb 1889</ref>
+   </ptrgrp>
+</indexentry>
+  
+  </index></archdesc>
+</ead>

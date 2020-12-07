@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="wilson_w">wilson_w</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Woodrow Wilson Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-01-14" encodinganalog="Date">14 Jan 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-01-14">14 Jan 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!-- <origination label="Creator: ">
+            <persname encodinganalog="100">## use MARC 100 </persname>
+         </origination> -->
+         <unittitle encodinganalog="245$a" label="Title: ">Woodrow Wilson Collection</unittitle>
+         <unitdate encodinganalog="245$f" type="inclusive" label="Inclusive Dates: " normal="1920/1956">1920-1922, 1956</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 folders (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence (to and from), exhibit material (date and 
+		 venue of exhibit unknown)</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2728918</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Thomas Woodrow Wilson (1856-1924) was the 28th President of the United States, serving two terms from 1913-1921.  Among other 
+	  achievements his administration passed the Federal Reserve Act creating a central banking system (1913), 
+	  the Clayton Antitrust Act (1914), and the Revenue Act of 1913 which introduced the first progressive income tax.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Woodrow Wilson Collection</emph> contains correspondence to and from Wilson, and a set of reproductions of material used in 
+		 an exhibit (photographs, letters, typescripts, addresses to Congress, etc).  The date and venue of exhibit are unknown, 
+		 but internal evidence suggests it was in 1956, the centennial of his birth.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Correspondence is arranged chronologically.  Exhibit material is arranged by the exhibit numbers appearing 
+		 in the material itself.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>Letters from Woodrow Wilson appear in numerous other collections in our holdings.  Please search our finding aids 
+		 for a full listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!-- For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+		 <persname encodinganalog="600" source="lcnaf">Wilson, Woodrow, 1856-1924.</persname>
+         <persname encodinganalog="600" source="lcnaf">Wilson, Woodrow, 1856-1924 -- Caricatures and cartoons.</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <!-- <corpname encodinganalog="610" source="lcnaf">##</corpname> -->
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="lcsh">Presidents -- United States -- Caricatures and cartoons.</subject>
+         <subject encodinganalog="650" source="lcsh">Presidents -- United States -- Exhibitions.</subject>
+         <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <!-- <occupation encodinganalog="656" source="lcsh">##</occupation> -->
+         <!-- <function encodinganalog="657">##</function> -->
+		 </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Woodrow Wilson Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Exhibit material transferred from Rare Books, 2010.  Correspondence gift of Howard Applegate, 1970, 1971.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle><unitdate normal="1921/1922" type="inclusive">1921-1922</unitdate></unittitle><container type="SC">367</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Exhibit material</unittitle></did>
+            <c02><did><unittitle>Miscellaneous items, numbered 1-20</unittitle><unitdate normal="1956" type="inclusive">1956</unitdate><container type="SC">367</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="harriman_a">harriman_a</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Averell Harriman Recordings</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-05-23" encodinganalog="Date">23 May 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2011-05-23">23 May 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>8 Mar 2012 - added digitization info (MRC)</item>
+            <item>09 Dec 2016 - corrected item numbering (PJM) </item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Harriman, W. Averell (William Averell), 1891-1986.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Averell Harriman Recordings</unittitle>
+         <unitdate encodinganalog="245$f" normal="1955/1956" type="inclusive" label="Inclusive Dates: ">1955-1956</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Audiorecordings (speeches, interviews) of American politician, businessman and 
+		 diplomat W. Averell Harriman.  There is also one of a speech by John Deane, "With Harriman in Moscow."  Several date from 
+		 Harriman's campaign to be the Democratic Presidential nominee in 1956.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3298882</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>W. Averell Harriman (1891-1986) was an American politician, businessman and diplomat.</p>
+	  <p>Born in New York City, Harriman attended Groton and Yale and shortly after graduation established a banking business.  Highlight of 
+	  his career include U.S. Ambassador to the Soviet Union (1943-1946) and the United Kingdom 
+	  (1941 to 1943 and 1946), Secretary of Commerce (1946-1948), Special envoy to Churchill and Stalin, (1941-1946), U.S. Coordinator for the Marshall Plan (1948-1950), 
+	  Governor of New York (1955-1958), two-time candidate for the Democratic nominaton for President (1952, 1956), 
+	  Special Representative to the US President for the Nuclear Test Ban Treaty (1963), and US Ambassador-at-large (1965-1969).</p><p>John R. Deane (b. 1896), whose voice also appears in this collection, was a U.S. Army officer and head of the U.S. Military Mission in Russia from 1943 to the end of World War II.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Averell Harriman Recordings</emph> consists of several phonodisc recordings by or about Harriman.  One is vinyl; the others may be metal with plastic coating or some other format.</p><p><emph render="bold">Recordings of Harriman</emph> contains four items.  Two are radio shows on which Harriman appeared as a guest, one is a speech to the Radio Advertising Bureau, and the last contains two episodes of a series entitled "Democracy on the Job."</p><p><emph render="bold">Recordings about Harriman</emph> contains two copies of a recording of a speech by Major General John R. Deane, about his experiences with Harriman in Moscow.</p>
+      </scopecontent>
+      
+      <altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>All recordings have been digitized.  Please contact the repository listed above for more information.</p>
+      </altformavail><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>None.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>  For additional manuscript collections containing material relating to Harriman, please &searchcoll;.  See in particular the <archref href="../v/vandevander_c.htm">Charles Van Devander Papers</archref>.  Van Devander was a journalist and Executive Assistant to Governor Harriman.</p><p>For additional cataloged and other material by or about Harriman, please search &summitref;.</p><p>Governor Harriman was also <extref href="http://memory.loc.gov/cgi-bin/query/h?ammem/mfdipbib:@field%28DOCID+@lit%28mfdipbib000478%29%29">interviewed</extref> as part of the Foreign Affairs Oral History Collection at the Library of Congress.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">New York State</subject>
+
+
+<subject encodinganalog="650" source="local">Politics, government and public administration</subject><persname encodinganalog="600" source="lcnaf">Alampi, Philip.</persname><persname encodinganalog="600" source="lcnaf">Deane, John R. (John Russell), 1896-1982.</persname><persname encodinganalog="600" source="lcnaf">Harriman, W. Averell (William Averell), 1891-1986.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf"></corpname><corpname encodinganalog="610" source="lcnaf">WCBS (Radio station : New York, N.Y.) </corpname><corpname encodinganalog="610" source="lcnaf">WRCA-TV (Television station : New York, N.Y.) </corpname><corpname encodinganalog="610" source="lcnaf">Radio Advertising Bureau.</corpname>
+         <title encodinganalog="630" source="lcnaf">Democracy on the job.</title>
+         <subject encodinganalog="650" source="lcsh">Governors -- United States.</subject><subject encodinganalog="650" source="lcsh">Presidential candidates -- United States -- Biography.</subject><subject encodinganalog="650" source="lcsh">Radio programs -- United States.</subject><subject encodinganalog="650" source="lcsh">Statesmen -- United States -- Biography.</subject>
+         <geogname encodinganalog="651" source="lcsh">New York (State) -- Politics and government -- 1951-</geogname><geogname encodinganalog="651" source="lcsh">United States -- Foreign relations -- Russia.</geogname>
+         <genreform encodinganalog="655" source="aat">Speeches (documents)</genreform><genreform encodinganalog="655" source="aat">Interviews.</genreform><genreform encodinganalog="655" source="aat">Phonograph records.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Legislators.</occupation><occupation encodinganalog="656" source="lcsh">Diplomats.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>Researcher access to the phonodiscs requires advance notice in order to produce a working copy.</p>
+		 <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Averell Harriman Recordings, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">W. Averell Harriman</persname>, circa 1986.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Recordings of Harriman</unittitle></did>
+            <c02><did><unitid>harriman_001</unitid><unittitle>Alampi Farm News: Governor Harriman, WRCA-TV</unittitle><abstract>33-1/3 rpm, 16", single sided</abstract><physdesc><extent>1 disc</extent></physdesc><unitdate normal="1955-10-26" type="inclusive">26 Oct 1955</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unitid>harriman_002</unitid><unittitle>The Honorable Averell Harriman Governor of New York Address to the Radio Advertising Bureau Clinic, CBS Radio</unittitle><abstract>33-1/3 rpm, 12", double sided</abstract><physdesc><extent>1 disc</extent></physdesc><unitdate normal="1955-10-13" type="inclusive">13 Oct 1955</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unitid>harriman_003</unitid><unittitle>Democracy on the Job: Program #5 "The Case of Elsie Newton," and Program #6 "The Case of Mrs. Consumer," New York State Commission Against Discrimination</unittitle><abstract>33-1/3 rpm, 10", double sided</abstract><physdesc><extent>1 disc</extent></physdesc><unitdate normal="1950/1960" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unitid>harriman_005 - 009</unitid><unittitle>Let's Find Out: Guest Governor Averell Harriman</unittitle><abstract>33-1/3 rpm, 12", single-sided; in maroon album stamped in gold on front</abstract><physdesc><extent>5 discs</extent></physdesc><unitdate normal="1955-01-16" type="inclusive">16 Jan 1955</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Recordings about Harriman</unittitle></did>
+            <c02><did><unitid>harriman_004</unitid><unittitle>With Harriman in Moscow / Excerpts from a speech by Maj. Gen. John R. Deane, Denver, Colorado, Harriman for President Headquarters</unittitle><abstract> 78rpm, single-sided, "WOR Veritone Process Transcription"</abstract><physdesc><extent>2 copies</extent>,</physdesc><unitdate normal="1965-06-06" type="inclusive">16 Jun 1956</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

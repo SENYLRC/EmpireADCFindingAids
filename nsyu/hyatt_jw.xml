@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+<?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen.css"?>
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="hyatt_jw">hyatt_jw</eadid>
+      <filedesc>
+         <titlestmt>
+                     <titleproper encodinganalog="Title">John Wesley Hyatt Collection</titleproper>
+         <subtitle>A description of the collection at Syracuse University</subtitle>
+<author encodinganalog="Creator">DGI/MM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+               <date normal="2006" encodinganalog="Date">2006</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-12">Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>Feb 2009 - converted to EAD (MRC)</item><item>Jun 2009 - books, photos redistributed (MRC)</item>
+            <item>22 April 2011 - added material and updated finding aid. (CEG)</item>
+            <item>June 2012 - added  Perkin medal and updated finding aid (SDG)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+               <persname encodinganalog="100">Hyatt, John W. (John Wesley), 1837-1920.</persname></origination>
+         <unittitle encodinganalog="245$a" label="Title: ">John Wesley Hyatt Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1869/1945" type="inclusive" label="Inclusive Dates: ">circa 1869-1945</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection consists of the Executive
+            Committee Meeting Minutes of the Celluloid Company, 1890 to 1905, two bound volumes of
+            patents obtained by John Wesley Hyatt, including one for the first celluloid billiard
+            ball and several other patents for billiard ball coatings and knife-handles; a booklet
+            on Hyatt's acceptance of the Perkin Medal, 1914; six photographic
+            portraits; and a relief sculpture of the John Wesley Hyatt commemorative award.</abstract>
+
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2651125</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>John Wesley Hyatt (1837-1920) was an American manufacturer in the plastics field, and the inventor of celluloid.</p><p>Born in 
+Starkey, New York in 1837, at the age of 16 Hyatt began work as a printer in Illinois and later in Albany, 
+New York, where he eventually set up his own manufacturing company which became the Albany Billiard Ball Company. 
+In his experiments, Hyatt discovered the solvent action of camphor on cellulose nitrate under moderate 
+heat and pressure, creating celluloid. This was the basis of his 1870 patent. He also developed the 
+necessary machinery for working his new material. </p><p>One of the first uses of the new plastics material was 
+for making denture plates and Hyatt formed the Albany Dental Plate Company in 1870. In 1872, its name 
+was changed to the Celluloid Manufacturing Company and in 1873 the company moved to in Newark, 
+New Jersey. </p><p>Hyatt was awarded the Perkin Gold Medal in 1914, given by the Society of the Chemical 
+Industry, and was posthumously inducted into the Plastics Hall of Fame in 
+1974.</p>
+</bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">John Wesley Hyatt Collection</emph> consists of the Executive
+            Committee meeting minutes of the Celluloid Company, 1890 to 1905; two bound volumes of
+            patents obtained by John Wesley Hyatt, including one for the first celluloid billiard
+            ball and three seperate patents regarding billiard balls, knife-handles, and other
+            articles; six photographic portraits of Hyatt; and a booklet on Hyatt's acceptance of
+            the Perkin Medal, 1914. Also included is a relief sculpture by Paul Manship of the John Wesley Hyatt commemorative award.</p>
+      </scopecontent>
+      
+      <!--<arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>## OPT (MARC 351$a)</p>
+      </arrangement>-->
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous holdings in the areas of plastics and industrial design. Please refer to &subjindex; for a complete listing.  There are also related artifacts.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+<subject encodinganalog="650" source="local">Plastics</subject>
+<persname encodinganalog="600" source="lcnaf">Hyatt, John W. (John Wesley), 1837-1920.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         
+         <corpname encodinganalog="610" source="lcnaf">Celluloid Manufacturing Company.</corpname>
+<corpname encodinganalog="610" source="lcnaf">Plastics Hall of Fame.</corpname>
+<!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Celluloid.</subject>
+		 <subject encodinganalog="650" source="lcsh">Billiards -- Equipment and supplies.</subject>
+<subject encodinganalog="650" source="lcsh">Patents.</subject>
+<subject encodinganalog="650" source="lcsh">Plastics industry and trade.</subject>
+         
+<!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Minutes (administrative records)</genreform>
+		 <genreform encodinganalog="655" source="aat">Patents.</genreform>
+		 <genreform encodinganalog="655" source="aat">Programs (documents)</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Manufacturers.</occupation>
+		 <occupation encodinganalog="656" source="lcsh">Inventors.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>John Wesley Hyatt Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from National Plastics Center and Museum, 11/06/2008.  Originally, gift of <persname role="donor">Dewey Rainville</persname> and <persname role="donor">James DeBenedetto</persname>, and of the  <famname role="donor"> John Wesley Hyatt family</famname></p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      
+   <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+            <did>
+               <unittitle>Legal</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Patents</unittitle>
+                  <abstract>"improvement in processes of coating billiard balls, knife-handles, and
+                     other articles" with drawings, "improved method of coating billiard balls,
+                     &amp;c." and an agreement between John Wesley Hyatt, H. Parker Marshall, Albert
+                     H. Sanborn, Joseph G. Spurr and Albert Albright Jr. involving billiard
+                     balls</abstract>
+                  <unitdate type="inclusive" normal="1869">1869,</unitdate>
+                  <unitdate type="inclusive" normal="1871">1871,</unitdate>
+                  <unitdate type="inclusive" normal="1907">1907</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Photographs</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>John Wesley Hyatt</unittitle>
+                  <abstract>two distinct black and white portraits</abstract>
+                  <physdesc><extent>6 prints</extent></physdesc>
+                  <unitdate type="inclusive" normal="1850/1945">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Sculpture</unittitle></did><c02><did><unittitle>Relief sculpture by Paul Manship</unittitle><abstract>Model for the John Wesley Hyatt commemorative award</abstract><unitdate type="inclusive" normal="1940/1950">[1945]</unitdate><container type="Box">2</container></did></c02></c01><c01 level="series"><did><unittitle>Miscellaneous</unittitle></did>
+            <c02><did><unittitle>Celluloid Company, Executive Committee meeting minutes</unittitle><abstract>leather bound, handwritten ledger; includes report on the September 4, 1898 fire</abstract><unitdate normal="1890-12-17/1905-02-21" type="inclusive">December 17, 1890 through February 21, 1905</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Patents</unittitle><unitdate normal="1883/1918" type="inclusive">1883-1918, </unitdate><unitdate normal="1875/1900" type="inclusive">late 19th century</unitdate><physdesc><extent>2 volumes</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Perkins medal and acceptance speech</unittitle><unitdate normal="1914" type="inclusive">1914</unitdate><container type="Box">1</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>Purple award ribbon</unittitle>
+                  <unitdate normal="1869/1945" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Tupperware managers seminar ribbon</unittitle>
+                  <unitdate type="inclusive" normal="1954">1954</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>	</archdesc>
+</ead>

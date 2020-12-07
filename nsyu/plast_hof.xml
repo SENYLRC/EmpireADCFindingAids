@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+<?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen.css"?>
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="plast_hof">plast_hof</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Plastics Hall of Fame Records</titleproper>
+            <subtitle>A description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">SDG</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-07-29" encodinganalog="Date">29 Jul 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Samuel D. Gruber<date normal="2011-07-29">29 Jul 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>Mar 2012 - updated (SCJ)</item><item>10 Feb 2014 - additions (MRC)</item><item>5 Dec 2018 - additions (MRC)</item><item>27 Feb 2018 - additions (MRC)</item><item>30 Apr 2019 - 1 packet of photos added; all photos identified and sorted (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+            &su_name;
+            <lb/>
+            &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">The Plastics Academy, Inc.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Plastics Hall of Fame Records</unittitle>
+         <unitdate encodinganalog="245$f" normal="1972/2018" type="inclusive" label="Inclusive Dates: ">1972-2018</unitdate>
+         <physdesc encodinganalog="300$a" label="Quantity: "><extent>3.0 linear
+            ft</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Records of the Plastics Academy related
+            to the organization of the Plastics Hall of Fame containing correspondence,
+            organizational notes, meeting minutes, member lists, press clippings, nomination forms,
+            biographies, photographs, event information, induction ceremony programs and other
+            materials related to the Plastics Hall of Fame.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3911508</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The Plastics Hall of Fame is an industry educational organization founded to celebrate
+            those "who, through dedication, work and accomplishment have contributed most
+            significantly to the growth and success of the plastics industry." In October of 1972, <emph render="italic">Modern
+            Plastics</emph> magazine in cooperation with The Society of the Plastics Industry (SPI)
+            established the Plastics Hall of Fame.  The first induction took place during the
+            National Plastics Exposition and Conference held in Chicago from November 5 to 9,
+            1973. In 1974 the concept was expanded to include posthumous induction into the Hall of
+            Fame to honor great contributors to the plastics industry. In 1976, <emph render="italic">Modern Plastics</emph>
+            shifted responsibility for inducting members to the Society of
+            the Plastics Industry (SPI) and after the 1982 event, the Plastics Academy Inc. (a tax
+            exempt organization), was founded to manage the Hall of Fame nominations and inductions.</p><p>[Adapted from information given on the Plastics Academy website, <extref href="http://www.plasticsacademy.org">http://www.plasticsacademy.org</extref>.]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Plastics Hall of Fame Records</emph> contains correspondence, organizational notes, meeting minutes, member
+            lists, press clippings, nomination forms, biographies, photographs, event information,
+            induction ceremony programs and other materials related to the organization.</p>
+         <p><emph render="bold">Administrative material</emph> contains documents regarding the operation of
+            the organization including bylaws, nomination forms, procedural documents, membership
+            lists, press releases, and relevant correspondence to and from the Plastics Hall of Fame.  Also included are materials associated with the National Plastics Center &amp; Museum, such as project
+            estimates, floor plans, and exhibition drawings.</p>
+         <p><emph render="bold">Nominations and inductions</emph> includes biographies and
+            photographs of members of the Plastics Hall of Fame as well
+            as materials relating to their nominations including nomination forms, letters of
+            recommendation, articles, and additional biographical information. This series also contains materials relating to Plastics Hall of Fame induction ceremonies, such as notes and
+            memos, event plans, program scripts, invitations, and event programs.</p>
+         <p>Most of the <emph render="bold">Photographs</emph> are formal shots (portrait photographs) of Hall of Fame inductees.  The vast majority are prints or reproductions, but there are a few negatives and color slides.</p>
+         <p><emph render="bold">Printed material</emph> contains newspaper and magazine articles
+            relating to the organization and members of the Plastics Hall of
+               Fame, as well as some issues of the Plastics Academy publications. Also included are studies and research reports relating to plastics
+            in building construction.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection is arranged alphabetically by subject.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+
+            <subject encodinganalog="650" source="local">Business and Industry</subject>
+            <subject encodinganalog="650" source="local">Plastics</subject>
+            
+            <corpname encodinganalog="610" source="lcnaf">The Plastics Academy, Inc.</corpname>
+            <corpname encodinganalog="610" source="local">Plastics Hall of Fame.</corpname>
+            <corpname encodinganalog="610" source="lcnaf">Society of the Plastics
+            Industry.</corpname>
+         <corpname source="lcnaf" encodinganalog="610">National Plastics Center &amp;
+            Museum.</corpname>
+            <subject encodinganalog="650" source="lcsh">Plastics industry and trade -- Technological
+               innovations.</subject>
+            <subject encodinganalog="650" source="lcsh">Plastics industry and trade -- United States.</subject>
+            <subject encodinganalog="650" source="lcsh">Plastics industry and trade -- History.</subject><subject encodinganalog="650" source="lcsh">Plastics -- Research.</subject>
+            <occupation encodinganalog="656" source="lcsh">Engineers.</occupation>
+            <occupation encodinganalog="656" source="lcsh">Businessmen.</occupation>
+            <occupation encodinganalog="656" source="lcsh">Inventors.</occupation>
+            <genreform encodinganalog="655" source="aat">CD-ROMs.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+            <genreform encodinganalog="655" source="aat">Negatives (photographs)</genreform><genreform encodinganalog="655" source="aat">Newsletters.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+            <genreform encodinganalog="655" source="aat">Programs (documents)</genreform><genreform encodinganalog="655" source="aat">Reports.</genreform><genreform encodinganalog="655" source="aat">Slides (photographs)</genreform>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Plastics Hall of Fame Records, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Original collection, gift of <corpname role="donor">National Plastics Center and Museum</corpname>, 2010.</p><p>Later additions, gift of various individuals and organizations.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+   <head>Inventory</head>
+         <c01 level="series">
+            <did>
+               <unittitle>Administrative material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Bylaws, Plastics Academy</unittitle>
+                  <unitdate type="inclusive" normal="1998">23 Jan 1998</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <abstract>includes Plastics Hall of Fame, inductees, and members of
+                     the plastics industry</abstract><container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Elections and procedures</unittitle>
+                  <physdesc><extent>4 folders</extent></physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Membership lists</unittitle>
+                  <abstract>Plastics Academy members and Plastics Hall of Fame inductees</abstract>
+						<container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <unitdate type="inclusive" normal="1998">1998</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Museum and exhibitions</unittitle>
+                  <abstract>National Plastics Center and Museum, and Plastics
+                     Hall of Fame exhibitions</abstract><container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Press releases</unittitle>
+                  <unitdate normal="1976/1998" type="inclusive">1976-1998</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Recommendations, administration</unittitle>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate type="inclusive" normal="1976/1998">1976-1998</unitdate>
+                  <container type="Box">2</container>
+                  <abstract>includes introductory speeches, internal and external communications,
+                     membership application, and a cd-r with images of trophies and
+                     medals</abstract>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Nominations and inductions</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Biographies of hall of fame inductees</unittitle>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Induction ceremony</unittitle>
+                  <unitdate normal="1976/1979" type="inclusive">1976-1979</unitdate>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <container type="Box">2</container>
+                  <abstract>correspondence, scripts, financials, etc. relating to event planning,
+                     budget, guests, and speakers</abstract>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Induction ceremony</unittitle>
+                  <unitdate normal="1982" type="inclusive">1982</unitdate>
+                  <physdesc><extent>2 folders</extent></physdesc>
+                  <container type="Box">2</container>
+                  <abstract>correspondence, scripts, financials, etc. relating to event planning,
+                     budget, guests, and speakers</abstract>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Induction ceremony</unittitle>
+                  <unitdate normal="1982" type="inclusive">1982</unitdate>
+                  <container type="Box">3</container>
+                  <abstract>correspondence, scripts, financials, etc. relating to event planning,
+                     budget, guests, and speakers</abstract>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Induction ceremony programs</unittitle>
+                  <unitdate normal="1973" type="inclusive">1973, </unitdate>
+						<unitdate normal="1976" type="inclusive">1976, </unitdate>
+						<unitdate normal="1979" type="inclusive">1979, </unitdate>
+                  <unitdate normal="1982" type="inclusive">1982, </unitdate>
+						<unitdate normal="1986/1988" type="inclusive">1986-1988, </unitdate>
+						<unitdate normal="1991" type="inclusive">1991, </unitdate>
+						<unitdate normal="1993/1994" type="inclusive">1993-1994, </unitdate>
+						<unitdate normal="1996/1997" type="inclusive">1996-1997, </unitdate>
+						<unitdate normal="1999/2000" type="inclusive">1999-2000, </unitdate>
+						<unitdate normal="2003" type="inclusive">2003, </unitdate>
+						<unitdate normal="2005/2006" type="inclusive">2005-2006,</unitdate>
+                  <unitdate type="inclusive" normal="2008/2009">2008-2009,</unitdate>
+                  <unitdate type="inclusive" normal="2011/2012">2011-2012, </unitdate>
+						<unitdate type="inclusive" normal="2014/2015">2014-2015, </unitdate>
+						<unitdate type="inclusive" normal="2018">2018</unitdate>
+						<physdesc><extent>6 folders</extent></physdesc>
+						<container type="Box">3</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Nomination materials</unittitle>
+                  <abstract>forms, schedules, deadlines</abstract><container type="Box">4</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Nominations</unittitle>
+                  <abstract>forms, letters of recommendation, biographies, etc.</abstract><unitdate normal="1972/1973" type="inclusive">1972-1973, </unitdate>
+                  <unitdate normal="1976" type="inclusive">1976, </unitdate>
+                  <unitdate normal="1979" type="inclusive">1979, </unitdate>
+						<unitdate normal="1982" type="inclusive">1982</unitdate>
+						<physdesc><extent>7 folders</extent></physdesc>
+                  <container type="Box">4</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Nominations</unittitle>
+                  <abstract>forms, letters of recommendation, biographies, etc.</abstract>
+						<unitdate normal="1993" type="inclusive">1993-1998</unitdate>
+						<physdesc><extent>2 folders</extent></physdesc>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+				<c02>
+               <did>
+                  <unittitle>Nominations, posthumous</unittitle>
+                  <abstract>correspondence, forms, etc.</abstract>
+						<container type="Box">5</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Photographs</unittitle></did>
+         	<c02><did><unittitle>Correspondence about</unittitle>
+				<container type="Box">5</container></did>
+				<note><p>These had already been separated from the photographs to which they refer when the collection was received.</p></note>
+			</c02>
+			<c02>
+               <did>
+                  <unittitle>Bill Cruse, India Trip</unittitle>
+						<unitdate normal="1957" type="inclusive">1957</unitdate>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Hall of Fame inductees</unittitle>
+                  <unitid>plast_hof_001</unitid>
+						<abstract>digital files, tif and jpg format; file listing; prints with filenames on reverse</abstract>
+						<physdesc>CD-ROM</physdesc><container type="Box">5</container>
+               </did>
+            </c02>
+         	<c02>
+               <did>
+                  <unittitle>Hall of Fame inductees, A-G</unittitle>
+                  <physdesc><extent>3 folders</extent></physdesc>
+                  <container type="Box">5</container>
+               </did>
+            </c02>
+				<c02>
+               <did>
+                  <unittitle>Hall of Fame inductees, H-W</unittitle>
+                  <physdesc><extent>3 folders</extent></physdesc>
+                  <container type="Box">6</container>
+               </did>
+            </c02>
+				<c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  
+                  <abstract>includes group shots, photos of inductees receiving award, packet of photos from Russia</abstract><container type="Box">6</container>
+               </did>
+            </c02>
+				<c02>
+               <did>
+                  <unittitle>Miscellaneous, unidentified</unittitle>
+                  
+                  <container type="Box">6</container>
+               </did>
+            </c02>
+				<c02>
+               <did>
+                  <unittitle>Slides and negatives</unittitle>
+                  
+                  <abstract>some identified, some not</abstract><container type="Box">6</container>
+               </did>
+            </c02>
+			</c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Printed material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Clippings about Hall of Fame</unittitle>
+                  <unitdate type="inclusive" normal="1994/2009">1972-2009</unitdate>
+                  <container type="Box">6</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Clippings about people</unittitle>
+                  <container type="Box">6</container>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Clippings, miscellaneous</unittitle>
+                  <container type="Box">6</container>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Publications</unittitle>
+                  <abstract>issues of Plastics Academy News, Hall of Fame Newsletter</abstract>
+						<container type="Box">6</container>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Reports, miscellaneous</unittitle>
+                  <container type="Box">6</container>
+               </did>
+               <scopecontent>
+                  <p>SMANCA, Thermoplastic Duct (PVC) Construction Manual, (1974)<lb/>
+						ASHRAE Standard, Energy Conservation in New Building Design (1975)</p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Technical Report, Fire Research Project</unittitle>
+                  <abstract>includes slides</abstract>
+						<physdesc><extent>2 folders</extent></physdesc>
+						<container type="Box">6</container>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <abstract>brochure, notecards, etc.</abstract>
+						<container type="Box">6</container>
+               </did>
+            </c02>
+			</c01>
+</dsc>
+   </archdesc>
+</ead>

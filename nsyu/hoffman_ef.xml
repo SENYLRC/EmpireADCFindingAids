@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="hoffman_ef">hoffman_ef</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Edward Fenno Hoffman III Papers</titleproper>
+            <subtitle>An inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-03-27" encodinganalog="Date">27 Mar 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-03-27">27 Mar 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>13 Mar 2019 - processed (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">	Hoffman, Edward Fenno, 1916-</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Edward Fenno Hoffman III Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1952/1964" type="inclusive" label="Inclusive Dates: ">1952-1964</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.25 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">American sculptor.  Collection includes printed material, clippings, correspondence, photographs and other material.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2741983</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Edward Fenno Hoffman III (1916-1991) was an American sculptor known for his portraits, 
+		children, and religious themes.  He studied at the Pennsylvania Academy of Fine Arts and 
+		worked with Paul Manship briefly.  For three years (1952-1955) he was Sculptor in Residence at the Henry Clews Memorial Art Foundation in France, and hs first New York exhibition was in 1956.  He was recognized by numerous societies, including a "Best in Show" from the National Sculpture Society (1961),  and his work 
+		is in the permanent collections of many notable musuems.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Edward Fenno Hoffman III Papers</emph> consists of artwork, biographical 
+			material, correspondence, and memorabilia.</p>
+         <p><emph render="bold">Artwork</emph> consists of reproductions of Hoffman's work -- mostly photographs but there is 
+			also one printed item. </p>
+         <p><emph render="bold">Biographical material</emph> contains a brief autobiographical summary, including education, 
+			awards, and shows. The latest date given is 1964.</p>
+         <p><emph render="bold">Correspondence</emph> is entirely incoming.  Correspondents include family ("Auntie Grace"), art world benefactors such as Archer Milton Huntington and   Marie Elsie (Mrs. Henry) Clews, and fellow sculptors Henry Rosin, Donald De Lue,  EvAngelos "Angelo" Frudakis, and Walter Hancock.</p>
+         <p><emph render="bold">Memorabilia</emph> contains clippings about Hoffman, exhibit catalogs,  and a brief essay on him by Claude Saulnier.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetically by topic or title.  Correspondence is arranged chronologically.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous collections relating to American sculptors.  Please &searchcoll; to locate additional material.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Art -- Sculptors</subject>
+			<persname encodinganalog="600" source="lcnaf">Clews, Marie, 1880-1959.</persname><persname encodinganalog="600" source="lcnaf">De Lue, Donald, 1897-1988.</persname>
+			<persname encodinganalog="600" source="lcnaf">Frudakis, EvAngelos.</persname><!--See obituary, Philadelphia Inquirer, 2/21/2019--><persname encodinganalog="600" source="lcnaf">Hoffman, Edward Fenno, 1916-</persname>
+			<persname encodinganalog="600" source="lcnaf">Huntington, Archer M. (Archer Milton), 1870-1955.</persname><persname encodinganalog="600" source="lcnaf">Rosin, Harry.</persname><persname encodinganalog="600" source="lcnaf">Saulnier, Claude.</persname>
+         <!--See his website, http://harryrosin.net/--><!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Art, American -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Sculptors -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Sculpture, American -- 20th century.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Essays.</genreform><genreform encodinganalog="655" source="aat">Exhibition catalogs.</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Artists.</occupation>
+			<occupation encodinganalog="656" source="lcsh">Sculptors.</occupation>
+         <!--<function encodinganalog="657">##</function>-->
+      
+      
+      
+      
+      
+      
+      
+      
+    </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Edward Fenno Hoffman III Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Edward Fenno Hoffman III</persname>, 1971, 1988.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Artwork reproductions</unittitle></did>
+            <c02><did><unittitle>Photographs</unittitle><abstract>photos of Hoffman's sculpture</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Printed items</unittitle><abstract>brochure showing a medal designed by Hoffman for Southern Baptists Convention</abstract><unitdate normal="1964" type="inclusive">1964</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Biographical material</unittitle></did>
+            <c02><did><unittitle>Biographical sketch by Hoffman</unittitle><unitdate normal="1964" type="inclusive">1964</unitdate><container type="Box">1</container></did></c02>
+            
+         </c01>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>General</unittitle><unitdate normal="1930" type="inclusive">1930, </unitdate><unitdate normal="1948/1952" type="inclusive">1948-1952</unitdate><container type="Box">1</container></did></c02>
+         <c02><did><unittitle>General</unittitle><abstract>includes one about Hoffman, giving the writer's thoughts about him</abstract><unitdate normal="1930/1988" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02></c01>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Clippings</unittitle><unitdate normal="1950/1962" type="inclusive">1950-1962, </unitdate><unitdate normal="1988" type="inclusive">1988, </unitdate><unitdate normal="1930/1988" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Exhibit catalogs and notices</unittitle><unitdate normal="1956" type="inclusive">1956, </unitdate><unitdate normal="1961" type="inclusive">1961, </unitdate><unitdate normal="1964/1965" type="inclusive">1964-1965, </unitdate><unitdate normal="1970" type="inclusive">1970, </unitdate><unitdate normal="1930/1988" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>"Some comments about the American artist, Ned Hoffman" by Claude Saulnier</unittitle><abstract>carbon typescript, printed brochure with excerpt</abstract><unitdate normal="1930/1988" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

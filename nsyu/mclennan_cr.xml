@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="mclennan_cr">mclennan_cr</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Carter McLennan Manuscript</titleproper>
+            <subtitle>A description of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date encodinganalog="Date" normal="2009-10-05">5 Oct 2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2009-10-05">5 Oct 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>23 Apr 2018 - Processed and rehoused (PRB)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">McLennan, Carter R.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Carter R. McLennan Manuscript</unittitle>
+         <unitdate encodinganalog="245$f" normal="1940/1946" type="inclusive" label="Inclusive Dates: ">1946</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Autobiographical manuscript based on
+            the diaries of the United States Army colonel.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2709841</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Colonel Carter R. McLennan (1894-1961) was a United States army officer who fought in World
+            War II. Part of his service was spent on Negros Island in the Philippines. In 1945 he
+            received the Distinguished Service Cross for action against enemy forces on Dec 18,
+            1941, in recognition of "outstanding leadership, personal bravery and zealous devotion
+            to duty."</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Carter R. McLennan Manuscript</emph> is an unpublished
+            autobigraphical typescript based on Colonel McLennan's diaries from 1940-1946.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection is a single typescript manuscript.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has several collections relating to military history.  Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Military history</subject>
+		 <persname encodinganalog="600" source="local">McLennan, Carter R.</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <corpname encodinganalog="610" source="lcnaf">United States. -- Army. -- Infantry Regiment, 57th.</corpname>
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="lcsh">World War, 1939-1945 -- Personal narratives, American.</subject>
+		 <subject encodinganalog="650" source="lcsh">World War, 1939-1945 -- Campaigns -- Philippines.</subject>
+         <geogname encodinganalog="651" source="lcsh">Negros Island (Philippines)</geogname>
+         <genreform encodinganalog="655" source="aat">Diaries.</genreform>
+         <genreform encodinganalog="655" source="aat">Typescripts.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Armed Forces -- Officers.</occupation>
+         <!-- <function encodinganalog="657">##</function> -->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require
+            advanced notice for retrieval. Researchers are encouraged to contact us in advance
+            concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Carter R. McLennan Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Mrs. Carter R. McLennan</persname>, 1964.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+<dsc type="combined">
+   <head>Inventory</head>
+         <c01 level="series">
+            <did>
+               <unittitle>Untitled manuscript</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Volume 1</unittitle>
+                  <unitdate normal="1946" type="inclusive">1946</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Volume 2</unittitle>
+                  <unitdate normal="1946" type="inclusive">1946</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Volume 3 part 1</unittitle>
+                  <unitdate normal="1946" type="inclusive">1946</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Volume 3 part 2</unittitle>
+                  <unitdate normal="1946" type="inclusive">1946</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+</dsc>
+   </archdesc>
+</ead>

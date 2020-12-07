@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="bachman_combs">bachman_combs</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Mary Bachman Antique Comb Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2019-02-14" encodinganalog="Date">14 Feb 2019</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2019-02-14">14 Feb 2019</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>26 Mar 2019 - filename changed, related material added</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100" authfilenumber="n98049318">Bachman, Mary.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Mary Bachman Antique Comb Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1850/1969" type="inclusive" label="Inclusive Dates: ">1850-1969</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>3 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Hair combs, decorative and functional, dating from the mid-19th to mid-20th century.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">5201228</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Mary Bachman is a member of the Antique Comb Collectors Club and editor of their newsletter.  She is also the author of <emph render="italic">Collector's Guide to Hair Combs: Identification and Values</emph> (1998).</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Mary Bachman Antique Comb Collection</emph> consists of 21 combs and hairpins.  Most were made in the United States, but the collection also includes a few from France, England, China, and Indonesia.  Materials include brass, silver, horn, ivory, and celluloid.  Most are hand-made, and date from 1850-1969 although one undated item, from China, may be considerably older.</p><p>Identification numbers and descriptions in the inventory below are taken from supplemental information provided by Glenn Beall (see files).</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>No particular order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="../b/bachman_m.htm">Mary Bachman Papers</archref>.   &scrc_name; has several other collections related to hair combs, as well as a considerable amount of material related to plastics history and production generally.  Please &searchcoll; to locate other collections related to plastics and industrial design, and refer to &summitref; to locate cataloged publications.  Please also visit the <extref href="http://plastics.syr.edu">Plastics Collection Website</extref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>A copy of Mary Bachman's book, <emph render="italic">Collector's Guide to Hair Combs: Identification &amp; Values</emph> (1988) has been sent to Rare Books for cataloging.  Please refer to &summitref; to locate this item.</p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Plastics</subject><persname encodinganalog="600" source="lcnaf" authfilenumber="n98049318">Bachman, Mary.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Combs -- History.</subject><subject encodinganalog="650" source="lcsh">Combs -- Specimens.</subject><subject encodinganalog="650" source="lcsh">Hair ornaments.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Combs (hair ornaments)</genreform><!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p><p>Three of the items (002, 007, and 020) are broken.  Exercise extreme care in handling, so as not to lose pieces or cause further damage.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Mary Bachman Antique Comb Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Mary Bachman</persname>, 2019.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Combs</unittitle></did>
+               
+               
+            <c02><did><unittitle>High back comb</unittitle><unitid>bachman_m_001</unitid><abstract>American?, celluloid, openwork, hand-cut</abstract><unitdate type="inclusive">1890-1920</unitdate><container type="Oversize">1</container></did></c02>
+<c02><did><unittitle>High back comb</unittitle><unitid>bachman_m_003</unitid><abstract>Chinese, ivory, openwork with dragons, hand-cut</abstract><unitdate type="inclusive">1850-1920</unitdate><container type="Oversize">1</container></did></c02>
+<c02><did><unittitle>High back comb</unittitle><unitid>bachman_m_004</unitid><abstract>American?, celluloid, openwork with blue and green rhinestones, hand-cut</abstract><unitdate type="inclusive">1810-1910</unitdate><container type="Oversize">1</container></did></c02>
+<c02><did><unittitle>Low back comb</unittitle><unitid>bachman_m_006</unitid><abstract>injection molded comb with cut steel header; comb is likely not the original one</abstract><unitdate type="inclusive">1810-1950</unitdate><container type="Oversize">1</container></did></c02>
+<c02><did><unittitle>Three-tooth hair pin</unittitle><unitid>bachman_m_013</unitid><abstract>clarified horn teeth with gilded filigree brass header</abstract><unitdate type="inclusive">1890-1910</unitdate><container type="Oversize">1</container></did></c02>
+<c02><did><unittitle>High back comb</unittitle><unitid>bachman_m_005</unitid><abstract>stainless steel, sheared and embossed</abstract><unitdate type="inclusive">1890-1910</unitdate><container type="Oversize">2</container></did></c02>
+<c02><did><unittitle>Small low back comb</unittitle><unitid>bachman_m_009</unitid><abstract>American?, cow horn with paint and gilt accents, handmade</abstract><unitdate type="inclusive">1890-1910</unitdate><container type="Oversize">2</container></did></c02>
+<c02><did><unittitle>Two-tooth hair pin</unittitle><unitid>bachman_m_010</unitid><abstract>French?, celluloid acetate injection molded teeth, decorated with gilt leaves, beads, seed pearls, rhinestones</abstract><unitdate type="inclusive">1960s</unitdate><container type="Oversize">2</container></did></c02>
+<c02><did><unittitle>Two-tooth hair pin</unittitle><unitid>bachman_m_011</unitid><abstract>American, polystyrene injection molded teeth, decorated with gilt leaves and rhinestones</abstract><unitdate type="inclusive">1960s</unitdate><container type="Oversize">2</container></did></c02>
+<c02><did><unittitle>Two-tooth hair pin</unittitle><unitid>bachman_m_012</unitid><abstract>French, polystyrene injection molded teeth colored to resemble tortoiseshell, decorated with rhinestone, beads, polystyrene flowers</abstract><unitdate type="inclusive"></unitdate><container type="Oversize">2</container></did></c02>
+<c02><did><unittitle>Two-tooth hair pin</unittitle><unitid>bachman_m_014</unitid><abstract>steel wire teeth, Art Deco style celluloid header decorated with rhinestones and paint</abstract><unitdate type="inclusive">1920</unitdate><container type="Oversize">2</container></did></c02>
+<c02><did><unittitle>Two-tooth hair pin</unittitle><unitid>bachman_m_015</unitid><abstract>injection-molded polystyrene teeth, purple and maroon Art Deco style header</abstract><unitdate type="inclusive">1920-1940</unitdate><container type="Oversize">2</container></did></c02>
+<c02><did><unittitle>Single-tooth bodkin</unittitle><unitid>bachman_m_016</unitid><abstract>Chinese, brass tooth, brass header with kingfisher feathers (only a few remain) and carved brown jade design</abstract><unitdate type="inclusive">unknown</unitdate><container type="Oversize">2</container></did></c02>
+<c02><did><unittitle>Case comb</unittitle><unitid>bachman_m_018</unitid><abstract>silver case and back decorated with hand chasing, celluloid teeth colored to resemble tortoiseshell</abstract><unitdate type="inclusive">1890-1915</unitdate><container type="Oversize">2</container></did></c02>
+<c02><did><unittitle>Five-tooth comb</unittitle><unitid>bachman_m_019</unitid><abstract>novelty comb with lion's head, likely injection molded and then chrome-plated</abstract><unitdate type="inclusive">[1925?]</unitdate><container type="Oversize">2</container></did></c02>
+<c02><did><unittitle>High back comb</unittitle><unitid>bachman_m_002</unitid><abstract>American?, celluloid, openwork with blue and green rhinestones, hand-cut</abstract><unitdate type="inclusive">1900-1930</unitdate><container type="Oversize">3</container></did><accessrestrict><p>Broken.   Exercise extreme care in handling, so as not to lose pieces or cause further damage.</p></accessrestrict></c02>
+<c02><did><unittitle>Low back comb</unittitle><unitid>bachman_m_007</unitid><abstract>British?, horn with faceted jet accents, handmade</abstract><unitdate type="inclusive">mid-1800s</unitdate><container type="Oversize">3</container></did><accessrestrict><p>Broken.   Exercise extreme care in handling, so as not to lose pieces or cause further damage.</p></accessrestrict></c02>
+<c02><did><unittitle>Low back comb</unittitle><unitid>bachman_m_008</unitid><abstract>British?, wire frame with faceted jet accents</abstract><unitdate type="inclusive">mid-1800s</unitdate><container type="Oversize">3</container></did></c02>
+<c02><did><unittitle>Folding case comb</unittitle><unitid>bachman_m_017</unitid><abstract>Chinese, silver case, silver comb with rods individually set</abstract><unitdate type="inclusive"></unitdate><container type="Oversize">3</container></did></c02>
+<c02><did><unittitle>Grooming comb</unittitle><unitid>bachman_m_020</unitid><abstract>Sumatran, cast brass header with Islamic filigree work, clarified horn teeth colored to resemble tortoiseshell</abstract><unitdate type="inclusive"></unitdate><container type="Oversize">3</container></did><accessrestrict><p>Broken.   Exercise extreme care in handling, so as not to lose pieces or cause further damage.</p></accessrestrict></c02>
+<c02><did><unittitle>High back comb</unittitle><unitid>bachman_m_021</unitid><abstract>American?, horn, two pieces attached with small glass rivets</abstract><unitdate type="inclusive">1850-1890</unitdate><container type="Oversize">3</container></did></c02>
+
+
+
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

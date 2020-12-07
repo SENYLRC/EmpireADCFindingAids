@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.8, 7/18/2007-->
+<!-- Added comment about use of archref element, removed copyright statement -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="chicory_blue">chicory_blue</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Chicory Blue Press Records</titleproper>
+            <subtitle>An  inventory of its records at Syracuse University</subtitle>
+         <author encodinganalog="Creator">PRB</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2007-10-25" encodinganalog="Date">25 Oct 2007</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2007-10-26">26 Oct 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>30 Jun 2011 - adds (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">Chicory Blue Press (Goshen, Conn.)</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Chicory Blue Press Records</unittitle>
+         <unitdate encodinganalog="245$f" normal="1987/2011" type="inclusive" label="Inclusive Dates: ">1987-2011</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>3.0 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Founded by Sondra Zeidenstein, Chicory Blue Press of Goshen, Connecticut publishes poetry and short stories by women authors over the age of 60.  Collection contains editorial files, correspondence, audio and video material; a number of published items were removed for separate cataloging.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2570336</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Founded in 1987 by Sondra Zeidenstein, Chicory Blue Press of Goshen, Connecticut publishes poetry and short stories by women authors over the age of 60.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Chicory Blue Press Records</emph> contains correspondence, editorial files, subject files, and audio/video recordings.  Most of the editorial files relate to anthologies edited by Sondra Zeidenstein.  Some printed material has been removed for separate cataloging (see below).</p><p><emph render="bold">Correspondence</emph> consists of letters, cards, notes and other items.  Many are from other poets and authors.  Correspondence relating to specific Chicory Blue titles  may be found in the Editorial files for that title.</p><p><emph render="bold">Editorial files</emph> contains correspondence, cover art, contract information, and other material relating to specific Chicory Blue titles.  The Crimson Edge folders contain cover art and information on a number of Crimson Edge chapbooks.</p><p><emph render="bold">Subject files</emph> relate to topics of interest to the press (e.g., older writers, age and creativity) as well as to the operation of the press itself (book fairs; publicity and promotion).</p><p><emph render="bold">Audio and video</emph> contains audio and video recordings of prose and poetry readings, interviews with Zeidenstein and other authors and poets, and assorted other topics.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Editorial files are arranged by title in order of publication.  Correspondence files are alphabetical by name.  Subject files are arranged alphabetically by various other subjects.  Recordings are in no particular order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>Some published material (books and chapbooks) has been removed for separate cataloging.  For a complete listing, please refer to &summitref; and search for the phrase "Chicory Blue Press" appearing anywhere.</p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+		 <subject encodinganalog="650" source="local">Women Authors</subject>
+		 <subject encodinganalog="650" source="local">Literature -- American Poetry</subject>
+		 <subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+         <subject encodinganalog="650" source="local">Publishing, printing and book arts</subject>
+		 <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Arcana, Judith.</persname>
+			<persname encodinganalog="600" source="lcnaf">Golden, Alvia.</persname>
+			<persname encodinganalog="600" source="lcnaf">Kiefer, Rita, 1930-</persname>
+			<persname encodinganalog="600" source="lcnaf">Leontief, Estelle.</persname>
+			<persname encodinganalog="600" source="lcnaf">McCray, Carrie Allen, 1913-</persname>
+			<persname encodinganalog="600" source="lcnaf">Moore, Honor, 1945-</persname>
+			<persname encodinganalog="600" source="lcnaf">Nason, Tema.</persname>
+			<persname encodinganalog="600" source="lcnaf">Sanchez, Carole.</persname>
+			<persname encodinganalog="600" source="lcnaf">Swift, Joan, 1926-</persname>
+			<persname encodinganalog="600" source="lcnaf">Wagner, Anneliese, 1929-</persname>
+			<persname encodinganalog="600" source="lcnaf">Wong, Nellie.</persname>
+			<persname encodinganalog="600" source="lcnaf">Weinberger, Florence,  1932-</persname>
+			<persname encodinganalog="600" source="lcnaf">Zeidenstein, Sondra</persname>
+         
+            <corpname encodinganalog="610" source="lcnaf">Chicory Blue Press (Goshen, Conn.)</corpname>
+			<corpname encodinganalog="610" source="lcnaf">Small Press Distribution (Firm)</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Older women.</subject>
+			<subject encodinganalog="650" source="lcsh">Publishers and publishing.</subject>
+			<subject encodinganalog="650" source="lcsh">Small presses -- Connecticut -- Goshen.</subject>
+			<subject encodinganalog="650" source="lcsh">Short stories -- Women authors.</subject>
+			<subject encodinganalog="650" source="lcsh">Women -- Poetry.</subject>
+			<subject encodinganalog="650" source="lcsh">Women poets, American.</subject>
+			<subject encodinganalog="650" source="lcsh">Women publishers -- United States.</subject>
+         
+            <genreform encodinganalog="655" source="aat">Audiocassettes.</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Videocassettes.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Publishers.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+         <p>Access to recordings requires advance notice to produce a working copy.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Chicory Blue Press Records, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Sondra Zeidenstein</persname>, 2007, 2011.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did><c02>
+               <did>
+                  <unittitle>A-Z</unittitle>
+                  
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Unidentified</unittitle>
+                  
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02></c01><c01 level="series">
+         
+            <did>
+               <unittitle>Editorial files</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle><emph render="italic">The Crimson Edge</emph></unittitle>
+                  <unitdate normal="1996" type="inclusive">1996</unitdate>
+                  <physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">A Detail in that Story</emph></unittitle>
+                  <unitdate normal="1998" type="inclusive">1998</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">Family Reunion</emph></unittitle>
+                  <unitdate normal="2003" type="inclusive">2003</unitdate>
+                  <physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">Four Sublets</emph></unittitle>
+                  <unitdate normal="2007" type="inclusive">2007</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">Heart of the Flower</emph></unittitle>
+                  <unitdate normal="1991" type="inclusive">1991</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">The Love Word</emph></unittitle>
+                  <unitdate normal="2004" type="inclusive">2004</unitdate>
+                  <container type="Box">1</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">Memoir</emph></unittitle>
+                  <unitdate normal="1988" type="inclusive">1988</unitdate>
+                  <container type="Box">2</container>
+                  
+                  
+               </did>
+            </c02>
+         <c02>
+               <did>
+                  <unittitle><emph render="italic">Resistance</emph></unittitle>
+                  <unitdate normal="2003" type="inclusive">2003</unitdate>
+                  <container type="Box">2</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">What If Your Mother</emph></unittitle>
+                  <unitdate normal="2005" type="inclusive">2005</unitdate>
+                  <physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">A Wider Giving</emph></unittitle>
+                  <unitdate normal="1988" type="inclusive">1988</unitdate>
+                  <physdesc><extent>4 folders</extent></physdesc><container type="Box">2</container>
+                  
+                  
+               </did>
+            </c02></c01><c01 level="series"><did><unittitle>Subject files</unittitle></did><c02>
+               <did>
+                  <unittitle>About the publisher</unittitle>
+                  
+                  <container type="Box">2</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Age and creativity</unittitle>
+                  
+                  <physdesc><extent>2 folders</extent></physdesc><container type="Box">3</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Book fairs, readings and exhibitions</unittitle>
+                  
+                  <container type="Box">3</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Older writers</unittitle>
+                  
+                  <container type="Box">3</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Publicity and promotion</unittitle>
+                  
+                  <container type="Box">3</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>SPD [Small Press Distribution]</unittitle>
+                  
+                  <container type="Box">3</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Submission letters</unittitle>
+                  
+                  <container type="Box">3</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Website</unittitle>
+                  
+                  <container type="Box">3</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  
+                  <container type="Box">3</container>
+                  
+                  
+               </did>
+            </c02></c01><c01 level="series"><did><unittitle>Audio and video</unittitle></did><c02>
+               <did>
+                  <unittitle>Audiotapes</unittitle>
+                  
+                  <abstract>peotry readings, interviews with Zeidenstein and other writers and poets, etc.</abstract><physdesc><extent>21 cassettes</extent></physdesc><container type="Box">3</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Videotape, "Books and the Word," guest Sondra Zeidenstein</unittitle>
+                  
+                  <unitdate normal="1988" type="inclusive">1988</unitdate><physdesc><extent>1 cassette</extent></physdesc><container type="Box">3</container>
+                  
+                  
+               </did>
+            </c02></c01><c01 level="series"><did><unittitle>Printed material</unittitle></did><c02>
+               <did>
+                  <unittitle>Books</unittitle>
+                  
+                  
+                  
+                  
+               <note><p>Removed for separate cataloging.</p></note></did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">Crimson Edge Chapbook</emph> series</unittitle>
+                  
+                  
+                  
+                  
+               <note><p>Removed for separate cataloging.</p></note></did>
+            </c02></c01>
+      </dsc>
+   </archdesc>
+</ead>

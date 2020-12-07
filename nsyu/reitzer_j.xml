@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="reitzer_j">reitzer_j</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Johanna Reitzer Collection on Albert Schweitzer</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-09-23" encodinganalog="Date">23 Sep 2013</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2013-09-23">23 Sep 2013</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Reitzer, Johanna M.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Johanna Reitzer Collection on Albert Schweitzer</unittitle>
+         <unitdate encodinganalog="245$f" normal="1949/1975" type="inclusive" label="Inclusive Dates: ">1949-1975</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.25 linear ft. (1 oversize box)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Scrapbook of clippings, correspondence, printed material.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4092810</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Albert Schweitzer (1875-1965) was a German theologian, philosopher, musician, musicologist, doctor, surgeon, and medical missionary.  He is best known for his writings on the historical Jesus and for his medical missionary work in Africa at his hospital in Lambaréné, Gabon, which he operated for more than thirty years.</p><p>Johanna Reitzer was a professor of German at Colorado State University in Fort Collins, Colorado.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Johanna Reitzer Collection on Albert Schweitzer</emph> consists of correspondence and printed material.  </p><p><emph render="bold">Correspondence</emph> includes a few letters and postcards from Dr. Schweitzer as well as correspondence with associated organizations such as the Friends of Albert Schweitzer.</p><p><emph render="bold">Printed material</emph> consists of a large scrapbook of clippings and some loose items (reprint of an article, typescript of a speech by Schweitzer, etc.)</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>No particular order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="../s/schweitzer_a.htm">Albert Schweitzer Papers</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <subject encodinganalog="650" source="local">Religion and Philosophy</subject>
+<subject encodinganalog="650" source="local">Science and medicine</subject><subject encodinganalog="650" source="local">Activism and social reform</subject><!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Schweitzer, Albert, 1875-1965.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Missionaries, Medical.</subject>
+
+<subject encodinganalog="650" source="lcsh">Missions, Medical -- Gabon.</subject>
+
+         <geogname encodinganalog="651" source="lcsh">Lambaréné (Moyen-Ogooué) -- Gabon.</geogname>
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Reprints.</genreform><genreform encodinganalog="655" source="aat">Scrapbooks.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Missionaries.</occupation>
+
+<occupation encodinganalog="656" source="lcsh">Physicians.</occupation>
+
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Johanna Reitzer Collection on Albert Schweitzer, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Paul Reitzer</persname>, 2013.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+               
+               
+            <c02><did><unittitle>Schweitzer</unittitle><abstract>handwritten letters, inscribed postcards/photographs</abstract><unitdate normal="1953/1954" type="inclusive">1953-1954</unitdate><physdesc><extent>1 folder</extent></physdesc><container type="Oversize">1</container></did></c02>
+         <c02><did><unittitle>Other</unittitle><abstract>primarily Friends of Albert Schweitzer</abstract><unitdate normal="1974/1975" type="inclusive">1974-1975</unitdate><physdesc><extent>1 folder</extent></physdesc><container type="Oversize">1</container></did></c02></c01>
+      <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+               
+               
+            <c02><did><unittitle>Scrapbook</unittitle><abstract>newspaper, magazine and journal clippings about Schweitzer and his work; a few black and white photographs</abstract><unitdate normal="1949/1969" type="inclusive">1949-1969</unitdate><physdesc><extent>1 volume</extent></physdesc><container type="Oversize">1</container></did></c02><c02><did><unittitle>Miscellanous</unittitle><abstract>typescript of lecture by Schweiterz on Goethe; reprint of "Albert Schweitzer: Aus Meinem Lebel"; photocopy of clipping</abstract><unitdate normal="1949" type="inclusive">1949, </unitdate><unitdate normal="1966" type="inclusive">1966, </unitdate><unitdate normal="1970" type="inclusive">1970</unitdate><physdesc><extent>1 folder</extent></physdesc><container type="Oversize">1</container></did></c02>
+         </c01></dsc>
+   </archdesc>
+</ead>

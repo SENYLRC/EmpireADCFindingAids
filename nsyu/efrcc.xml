@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="efrcc">efrcc</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Educational Film Rental Center Collection</titleproper>
+            <subtitle>An inventory of the collection) at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2018-04-12" encodinganalog="Date">12 Apr 2018</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2018-04-12">12 Apr 2018</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">Educational Film Rental Center.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Educational Film Rental Center Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1922/1973" type="inclusive" label="Inclusive Dates: ">1922-1983</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>28 films</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">28 films on a variety of topics ranging from Hinduism to an animated short about a grasshopper.  Originally part of a film lending library based at SU Libraries.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">5059889</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Syracuse University's Film Rental Center was a lending library of 16mm films.   The date the Center was established is unknown, as is the date it ceased operations, but according to information found in the Syracuse University Archives, in 1965 the Center was operating out of a building at 1455 East Colvin Street.   According to a 1978 article in the Syracuse Post-Standard, it offered "[m]ore than 10,000 titles, mostly educational films...at rental fees ranging from $5 to $100" (Syracuse <emph render="italic">Post-Standard</emph>, Nov. 10, 1978, p. 26).      The Center may at one time have been affiliated with the School of Education (records are incomplete).  Eventually the films (or at least some of them) were transferred to the Media Collection at the University's E. S. Bird Library on Waverley Ave.   In 2016 these 28 films were transferred to &scrc_name;; the fate of the rest of the collection is unknown.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Educational Film Rental Center Collection</emph> contains 28 films.   The films range from documentaries on Hinduism  and Frank Lloyd Wright to an animated short film about a grasshopper.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Items are physically arranged by ID number.  They are listed alphabetically by title in the inventory below.  All items are barcoded; please request by ID number.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Radio, television, film</subject><persname encodinganalog="600" source="lcnaf">Adato, Perry Miller.</persname>
+<persname encodinganalog="600" source="lcnaf">Alexeieff, Alexandre, 1901-1982.</persname>
+<persname encodinganalog="600" source="lcnaf">Antonini, Alfredo.</persname>
+<persname encodinganalog="600" source="lcnaf">Bergen, Edgar, 1903-1978.</persname>
+<persname encodinganalog="600" source="lcnaf">Braverman, Charles.</persname>
+<persname encodinganalog="600" source="lcnaf">Burns, George, 1896-1996.</persname>
+<persname encodinganalog="600" source="lcnaf">Chagall, Marc, 1887-1985.</persname>
+<persname encodinganalog="600" source="lcnaf">Claudon, Paul, 1919-2002.</persname>
+<persname encodinganalog="600" source="lcnaf">Cronkite, Walter.</persname>
+<persname encodinganalog="600" source="lcnaf">Dalii, Salvador, 1904-1989.</persname>
+<persname encodinganalog="600" source="lcnaf">De Chirico, Giorgio, 1888-1978.</persname>
+<persname encodinganalog="600" source="lcnaf">Elijah Muhammad, 1897-1975.</persname>
+<persname encodinganalog="600" source="lcnaf">Ernst, Max, 1891-1976.</persname>
+<persname encodinganalog="600" source="lcnaf">Fields, W. C. (William Claude), 1880-1946.</persname>
+<persname encodinganalog="600" source="lcnaf">Flaum, Marshall.</persname>
+<persname encodinganalog="600" source="lcnaf">Gable, Clark, 1901-1960.</persname>
+<persname encodinganalog="600" source="lcnaf">Gandhi, Mahatma, 1869-1948.</persname>
+<persname encodinganalog="600" source="lcnaf">Haesaerts, Paul, 1901-1974.</persname>
+<persname encodinganalog="600" source="lcnaf">Hays, Lora.</persname>
+<persname encodinganalog="600" source="lcnaf">Hitchcock, Alfred, 1899-1980.</persname>
+<persname encodinganalog="600" source="lcnaf">Johnson, Lyndon B. (Lyndon Baines), 1908-1973.</persname>
+<persname encodinganalog="600" source="lcnaf">Kennedy, John F. (John Fitzgerald), 1917-1963.</persname>
+<persname encodinganalog="600" source="lcnaf">Killiam, Paul, 1916-1998.</persname>
+<persname encodinganalog="600" source="lcnaf">King, Martin Luther, Jr., 1929-1968.</persname>
+<persname encodinganalog="600" source="lcnaf">Klée, Jean-Paul.</persname>
+<persname encodinganalog="600" source="lcnaf">Kleinerman, Isaac.</persname>
+<persname encodinganalog="600" source="lcnaf">Kleinsinger, George, 1914-1982.</persname>
+<persname encodinganalog="600" source="lcnaf">Labisse, Félix, 1905-1982.</persname>
+<persname encodinganalog="600" source="lcnaf">Laughton, Charles, 1899-1962.</persname>
+<persname encodinganalog="600" source="lcnaf">Lomax, Louis E., 1922-1970.</persname>
+<persname encodinganalog="600" source="lcnaf">Magritte, René, 1898-1967.</persname>
+<persname encodinganalog="600" source="lcnaf">Masson, André, 1896-1987.</persname>
+<persname encodinganalog="600" source="lcnaf">McQuade, Walter.</persname>
+<persname encodinganalog="600" source="lcnaf">Miró, Joan, 1893-1983.</persname>
+<persname encodinganalog="600" source="lcnaf">Monroe, Marilyn, 1926-1962.</persname>
+<persname encodinganalog="600" source="lcnaf">Mussorgsky, Modest Petrovich, 1839-1881.</persname>
+<persname encodinganalog="600" source="lcnaf">Parker, Claire, 1906-1981.</persname>
+<persname encodinganalog="600" source="lcnaf">Picasso, Pablo, 1881-1973.</persname>
+<persname encodinganalog="600" source="lcnaf">Redon, Odilon, 1840-1916.</persname>
+<persname encodinganalog="600" source="lcnaf">Resnais, Alain, 1922-2014.</persname>
+<persname encodinganalog="600" source="lcnaf">Rimsky-Korsakov, Nikolay, 1844-1908.</persname>
+<persname encodinganalog="600" source="lcnaf">Robbe-Grillet, Alain, 1922-2008.</persname>
+<persname encodinganalog="600" source="lcnaf">Robinson, Jackie, 1919-1972.</persname>
+<persname encodinganalog="600" source="lcnaf">Schedel, Hartmann, 1440-1514.</persname>
+<persname encodinganalog="600" source="lcnaf">Séchan, Edmond, 1919-2002.</persname>
+<persname encodinganalog="600" source="lcnaf">Semmler, Alexander, 1900-1977.</persname>
+<persname encodinganalog="600" source="lcnaf">Seyrig, Francis.</persname>
+<persname encodinganalog="600" source="lcnaf">Smith, H. Daniel, 1928-</persname>
+<persname encodinganalog="600" source="lcnaf">Sullivan, Ed, 1901-1974.</persname>
+<persname encodinganalog="600" source="lcnaf">Taylor, Gardner C.</persname>
+<persname encodinganalog="600" source="lcnaf">Turell, Saul J., 1921-1986.</persname>
+<persname encodinganalog="600" source="lcnaf">Vertov, Dziga, 1896-1954.</persname>
+<persname encodinganalog="600" source="lcnaf">Wallace, Mike, 1918-2012.</persname>
+<persname encodinganalog="600" source="lcnaf">West, Mae.</persname>
+<persname encodinganalog="600" source="lcnaf">Wright, Frank Lloyd, 1867-1959.</persname>
+<persname encodinganalog="600" source="lcnaf">X, Malcolm, 1925-1965.</persname>
+<!--<famname encodinganalog="600" source="lcnaf">##</famname>--><corpname encodinganalog="610" source="lcnaf">Beatles.</corpname>
+
+         
+         
+         <title encodinganalog="630" source="lcnaf">Last night at Marienbad.</title><title encodinganalog="630" source="lcnaf">Nuremberg chronicle.</title><title encodinganalog="630" source="lcnaf">One-eyed men are kings.</title><title encodinganalog="630" source="lcnaf">The hate that hate produced.</title>
+         <subject encodinganalog="650" source="lcsh">Animated films.</subject><subject encodinganalog="650" source="lcsh">Documentary films.</subject><subject encodinganalog="650" source="lcsh">Educational films.</subject><subject encodinganalog="650" source="lcsh">Hinduism.</subject><subject encodinganalog="650" source="lcsh">Race relations -- United States.</subject><subject encodinganalog="650" source="lcsh">Radio comedies.</subject><subject encodinganalog="650" source="lcsh">Surrealism.</subject><subject encodinganalog="650" source="lcsh">Trials (Witchcraft) -- Massachusetts -- Salem.</subject>
+         <geogname encodinganalog="651" source="lcsh">India.</geogname>
+         <genreform encodinganalog="655" source="aat">16mm (photographic film size)</genreform><genreform encodinganalog="655" source="aat">Film reels.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      <p>Access to films requires advance notice for production of a use copy.</p></accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Educational Film Rental Center Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transferred from 4th floor media collection, 2017.  Original provenance and source of acquisition unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Films</unittitle></did>
+               
+               
+                <c02>
+        <did>
+            <unittitle>Braverman's Condensed Cream of Beatles</unittitle>
+            <unitid>efrcc_013</unitid>
+            <unitdate type="inclusive" normal="1973">1973</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 15:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Documents the Beatles from the 1960's from the flip, exuberant, youthful days (ushered in by Ed Sullivan's show) to the sober,socially conscious, end of decade. Film is a fast moving, kinestatic collage of still pix, film clips, works of art and album covers... all accompanied by the Beatle's innovative music. "It is far more than an excuse for nostalgia; it is a valid document of contemporary history and recent value changes. (Jeffrey Schrank, Media Mix) Won Maxi Award, Gold Medal at Atlanta Festival, and Recommended by Landers. PYRAMID 1974". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Dr. Jekyll and Mr. Hyde</unittitle>
+            <unitid>efrcc_017</unitid>
+            <unitdate type="inclusive" normal="1960">1960</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 27:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>This is a Paul Killiam and Saul J. Turrell film.  Accompanied by the old barcoded label, and OCPL instructions before showing the film.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Frank Lloyd Wright</unittitle>
+            <unitid>efrcc_020</unitid>
+            <unitdate type="inclusive" normal="1960">1960</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 26:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "A penetrating look at the late American architect whose ideas and designs helped to change the face of America. Originally produced for television by CBS News, the film includes many of Wright's most famous buildings as well as information about the man himself. A "Twentieth Century" program. CCM 1960". Accompanied by old barcoded label and film description.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>From Dada to Surrealism (part 1)</unittitle>
+            <unitid>efrcc_024</unitid>
+            <unitdate type="inclusive" normal="1967">1967</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "An attractive, clear introduction to the concepts and compositions of surrealism, so often misunderstood of derided. Paul Haesaerts, distinguished Belgian art critic and filmmaker, begins with literary sources of surrealism and then reviews the great painters of the school: Chirico, Magritte, Picasso, Ernst, Chagall, Dali, Klee, and Miro, among others important to an understanding of surrealism. MACMILLAN 1967 Artpaint Artist Artap". Accompanied by old barcoded label and film description.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>From Dada to Surrealism (part 2)</unittitle>
+            <unitid>efrcc_025</unitid>
+            <unitdate type="inclusive" normal="1967">1967</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "An attractive, clear introduction to the concepts and compositions of surrealism, so often misunderstood of derided. Paul Haesaerts, distinguished Belgian art critic and filmmaker, begins with literary sources of surrealism and then reviews the great painters of the school: Chirico, Magritte, Picasso, Ernst, Chagall, Dali, Klee, and Miro, among others important to an understanding of surrealism. MACMILLAN 1967 Artpaint Artist Artap". Accompanied by old barcoded label.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Gandhi</unittitle>
+            <unitid>efrcc_012</unitid>
+            <unitdate type="inclusive" normal="1959/1960">1959; 1960</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 27:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Highlights events in the life of Mohandras K Gandhi between 1930 and 1948 and recounts his role in the struggle to free India from British colonialism. Treats his philosophy of passive resistance and non-violence and discusses the partition of India and establishment of dominion status fro India and Pakistan. Concludes with scenes of his funeral pyre. From "Twentieth Century" series. MCG-H 1960". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Great Radio Comedians (part 1)</unittitle>
+            <unitid>efrcc_028</unitid>
+            <unitdate type="inclusive" normal="1974">1974</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>The original name of the film is: "The Great Radio Comedians". Film description reads: "Recapture the heyday of the era with adroit use of excerpts from old programs, original film clips, and interviews. George Burns' comments about his partnership with Grace Allen (who was a dancer when he discovered her.) Edgar Bergen and Charlie McCarthy recall several choice episodes in which they participated with such sparkling personalities as W. C. Fields, Clark Gable, Mae West, and Charles Laughton. Recommended. 1974 (MCGRAW-HILL)". Accompanied by film description and old barcoded label.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Hate That Hate Produced (part 1)</unittitle>
+            <unitid>efrcc_021</unitid>
+            <unitdate type="inclusive" normal="1959">1959</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 26:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>The original name of the documentary is "The Hate That Hate Produced" produced by PBS. Film description reads: "A unique documentary (and the only existing videotape), presents the first comments on the anti-white crusade in the United States, a movement for Black supremacy, spearheaded by the Black Muslims and the United States African Nationalistic Movement. In this Mike Wallace "Newsbeat Special" (filmed in 1959) study of Black racism, are recorded actual scenes of mass rallies in areas in Washington, D. C., on Harlem street corners, at black Muslim meetings, and of private interviews with Elijah Mohammed and Malcolm X and others. Discussions reveal the reaction of various Negro leaders to the phenomenon of the Black Supremacy movement, filmed long before the Black Muslims had achieved national attention. This starling evidence assembled by the Wallace-Lomax team shows the "rabble-rousing" and "hate-mongering" techniques employed by leaders of the Black Supremacy movements and how these dissident movements affected civic leaders. Includes remarks by Eliajah Mohammed, Malcolm X, Jackie Robinson, Louis Lomax, Ray Wilkins, Ann Hedgman, Gardner Taylor, Ben Epstein, and others. Part I is 26 min, Part II is 32 min. Private Collection 1959, Journal Democ Freedom Law Socprob". Accompanied by old barcoded label and film description.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Hate That Hate Produced (part 2)</unittitle>
+            <unitid>efrcc_022</unitid>
+            <unitdate type="inclusive" normal="1959">1959</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 32:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>The original name of the documentary is "The Hate That Hate Produced" produced by PBS. Film description reads: "A unique documentary (and the only existing videotape), presents the first comments on the anti-white crusade in the United States, a movement for Black supremacy, spearheaded by the Black Muslims and the United States African Nationalistic Movement. In this Mike Wallace "Newsbeat Special" (filmed in 1959) study of Black racism, are recorded actual scenes of mass rallies in areas in Washington, D. C., on Harlem street corners, at black Muslim meetings, and of private interviews with Elijah Mohammed and Malcolm X and others. Discussions reveal the reaction of various Negro leaders to the phenomenon of the Black Supremacy movement, filmed long before the Black Muslims had achieved national attention. This starling evidence assembled by the Wallace-Lomax team shows the "rabble-rousing" and "hate-mongering" techniques employed by leaders of the Black Supremacy movements and how these dissident movements affected civic leaders. Includes remarks by Eliajah Mohammed, Malcolm X, Jackie Robinson, Louis Lomax, Ray Wilkins, Ann Hedgman, Gardner Taylor, Ben Epstein, and others. Part I is 26 min, Part II is 32 min. Private Collection 1959, Journal Democ Freedom Law Socprob". Accompanied by old barcoded label.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Hindu Devotions at Dawn (9)</unittitle>
+            <unitid>efrcc_003</unitid>
+            <unitdate type="inclusive" normal="1969/1970">1969; 1970</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 8:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Films a middle-aged Tengalia Sri-vaisnava brahmin retiring to the privacy of the inner court of his home, there taking pure, fresh water from the well, and seating himself facing in the direction of the morning sunrise; he then applies his sectarian mark on the forehead (urdhvapundra); and, moving into the complex and beautiful liturgies in praise of the Sustainer Who Illumines All, he completes his "devotion at dawn" (sandhyavandana). 1969 release. (SU) India Religion Anthro". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Hindu Family Celebration: 60th Birthday (11)</unittitle>
+            <unitid>efrcc_005</unitid>
+            <unitdate type="inclusive" normal="1969">1969</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 9:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Records the fire-offerings performed by the celebrating elderly couple, aided by their hereditary family Acharya-priest; their ritual baths and the performance of other subsidiary rituals; the renewal before their offspring of their original wedding vows, accompanied by the tying of a second gold pendant around the mother's neck; and the giving and receiving of gifts and blessings. 1969 release. (SU) India Religion Anthro". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Hindu Procession to the Sea (7)</unittitle>
+            <unitid>efrcc_002</unitid>
+            <unitdate type="inclusive" normal="1969">1969</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 8:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Shows the procession - the sacred temple bullock leading the parade, followed by the temple elephant, the staff of priests, musicians, and men, women and children of the neighborhood - arrive at the shore, and, at the moment the chief deity is immersed in the surf, many of the devotees also plunge into the water, thus bathing away all their accumulated sins in their lifetimes. SU 1969". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Hindu Sacrament of Surrender (10)</unittitle>
+            <unitid>efrcc_004</unitid>
+            <unitdate type="inclusive" normal="1970">1970</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 8:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Shows a hereditary Acharya or Preceptor, administering to a non-brahmin couple , the qualifying initiation consisting of five discrete ritual sections: branding their shoulders; imprinting the sacred marks of Vishnu and Sri on their bodies; reciting his lineage and giving the couple a new name as disciples between whom he and his forefathers now stand as intermediaries and intercessors of the Lord; imprinting to them the sacred formula by which God can be properly worshipped. SU 1970". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Hindu Sacrament of Thread Investiture</unittitle>
+            <unitid>efrcc_011</unitid>
+            <unitdate type="inclusive" normal="1970">1970</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 14:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Depicts a boy in his late teens, assisted by his family circle, receiving his special garments; the symbolic, wooden staff; the sacred belt; the upavita-thread; the esoteric instructions; and the ritually begged foods-offering. SYRA UNIV ". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Hindu Temple Rites: Bathing the Image of God</unittitle>
+            <unitid>efrcc_009</unitid>
+            <unitdate type="inclusive" normal="1970">1970</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 13:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Special utsava-celebration, typical of a minor seasonal festival, is enacted at a small village temple near Madras City. The image of the Lord Vishnu is bathed to cool him from the intense heat. Shows special temple-priests bringing water, sanctifying the cultic instruments, decorating the images, giving the shower-bath, and adorning the images with regal attire. Filmed on location. SYRA UNIV". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>JFK: Focus on 1960-1964 (Kennedy Years) (part 1)</unittitle>
+            <unitid>efrcc_026</unitid>
+            <unitdate type="inclusive" normal="1983">1983</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "International tensions mount with the Cuban missile crisis, Bay of Pigs, Berlin Wall, an civil war in Vietnam. America's domestic ferment includes the drive for civil rights, use of television as a political tool, John Glenn's historic orbit, and launching the first communications satellite. Woven between JFK accomplishments are sequences showing Marilyn Monroe, Hitchcock's "Psycho", Hollywood oscars (Butterfield-8, Westside Story, Mary Poppins), arrival of "Beattles" in 1964, Jackie's Whithouse restoration, V-P Lyndon Johnson and Ladybird, Goldwater campaign, and many more original footage segments. 1983 ABC". Accompanied by old barcoded label and film description.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>JFK: Focus on 1960-1964 (Kennedy Years) (part 2)</unittitle>
+            <unitid>efrcc_027</unitid>
+            <unitdate type="inclusive" normal="1983">1983</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "International tensions mount with the Cuban missile crisis, Bay of Pigs, Berlin Wall, an civil war in Vietnam. America's domestic ferment includes the drive for civil rights, use of television as a political tool, John Glenn's historic orbit, and launching the first communications satellite. Woven between JFK accomplishments are sequences showing Marilyn Monroe, Hitchcock's "Psycho", Hollywood oscars (Butterfield-8, Westside Story, Mary Poppins), arrival of "Beattles" in 1964, Jackie's Whithouse restoration, V-P Lyndon Johnson and Ladybird, Goldwater campaign, and many more original footage segments. 1983 ABC". Accompanied by old barcoded label.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Kino-Pravda (Film Forum)</unittitle>
+            <unitid>efrcc_018</unitid>
+            <unitdate type="inclusive" normal="1922/1925">1922-1925</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 13:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Distributor: Minneapolis, Minn. :Festival Films. On the film are excerpts from the second newsreel series of Soviet life from 1922 to 1925 made by Vetrov and his Kino Eye group, Kultkino Production.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Last Year at Marienbad (Extract)</unittitle>
+            <unitid>efrcc_014</unitid>
+            <unitdate type="inclusive" normal="1961">1961</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 12:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Extract treats the scene near the statues: The man reminds the woman of a conversation he claims they had last year. Renais' editing techniques violate almost every convention of filmmaking: component shots offer an illusion of continuity through apparent "match" cuts ... while actually there is rarely real cohesion, spatial or temporal, between any two juxtaposed shots. The sound track creates further ambiguity: it rarely corresponds to the visuals. from "Film Study Extracts" series. CCM 1961". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Martin Luther King, Jr.: A Man of Peace</unittitle>
+            <unitid>efrcc_023</unitid>
+            <unitdate type="inclusive" normal="1968">1968</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 30</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Most likely the film can is previously used for a different film titled: "Romanticism: Revolt of the Spirit" as it's description and label were found in the can. In the new can old barcoded label is inserted.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Monthly Ancestral Offerings In Hinduism (4)</unittitle>
+            <unitid>efrcc_001</unitid>
+            <unitdate type="inclusive" normal="1969">1969</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 8:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Depicts the offerings of sesame seeds and water by a Brahmin householder in his own home, to his departed ancestors - a ceremony which takes place under the direction of a priest during the morning hours of the "new moon" day each month. From "Hindu Religion" series. SU 1969". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Night on Bald Mountain</unittitle>
+            <unitid>efrcc_006</unitid>
+            <unitdate type="inclusive" normal="1933">1933</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 8:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "This film's reputation has grown in the three decades since it was first shown in Europe. It is the pioneer work of Claire Parker's pin screen animation and a masterpiece of cinema art. Visual accompaniment to Moussorgsky's Poem, film follows the music delving into Russian folklore and fairy tale. There is a soft shadowy quality in the forms which emerge from space; forms have the appearance of dissolving to other forms. No narration. MCG-H 1933". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Nuremberg Chronicle</unittitle>
+            <unitid>efrcc_016</unitid>
+            <unitdate type="inclusive" normal="1967">1967</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 22:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Woodblock prints taken from the book, chronicle the story of man as told in the Bible and highlights history to 1493. Narrated by Robert Benson, who gives a historical commentary of the times. Cutting of wood blocks, inking, and printing are briefly shown. For those interested in art, early books, and Medieval costume". Old label, additional information about the film, and OCPL instructions before showing the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>One-Eyed Men are Kings</unittitle>
+            <unitid>efrcc_015</unitid>
+            <unitdate type="inclusive" normal="1974">1974</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 15:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>French short film directed by Michel Leroy and Edmond Séchan. It won an Academy Award in 1975 for Best Short Subject.  Old barcoded label is in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Pilgrimage to a Hindu Temple (6)</unittitle>
+            <unitid>efrcc_010</unitid>
+            <unitdate type="inclusive" normal="1970">1970</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 14:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Opens with a middle-aged Tengalia Spri-vaisnava brahmin getting off the bus in the village of Sriperumbudur, birthplace of the 12th century Hindu saint Ramanuja. The pilgrim then moves to the temple tank where he bathes and changes into garbs appropriate for worship,, goes into the temple and circumambulates the precincts, making his way through the shadowy passages and pillared courts to the innermost shrine in the sanctum sanctorum. Attempts to show areas inside a temple normally inaccessible to non-Hindus and in a way suggestive of how these appear to a believing Hindu. S. U. 1970". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Radha's Day: Hindu Family Life (5)</unittitle>
+            <unitid>efrcc_008</unitid>
+            <unitdate type="inclusive" normal="1969/1970">1969; 1970</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 17:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Shows a girl in her late teens during a typical day: getting up, decorating the threshold, putting on her make-up and jewelry, cooking, washing clothes, shopping at the street market, worshipping at the local shrine, and sitting at home with her sister as the day draws to a close. Abounds in ethnographic detail and in social and anthropological data that helps lead to a comprehension of Hindu family life in a middle-class, white-collar, urban setting. Part of Image India series. S. U. 1969 India Religion Sociol". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Salem Witch Trials</unittitle>
+            <unitid>efrcc_019</unitid>
+            <unitdate type="inclusive" normal="1960">1960</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 27:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "In August, 1692, Salem Village is in a ferment of fear and hysteria as the witch hunt continues. The trails of George Burroughs and Mary Eastey epitomize the evil that hangs over citizens as hysterical young girls accuse innocent people of being witches, a course of events that lead to the execution of twenty people for witchcraft in Salem. From "You are There" series. MCG-H 1960". Accompanied by old barcoded label and film description.</p></scopecontent>
+    </c02>
+    <c02>
+        <did>
+            <unittitle>Sixshortfilms</unittitle>
+            <unitid>efrcc_007</unitid>
+            <unitdate type="inclusive" normal="1973">1973</unitdate>
+            
+            <physdesc>
+                <extent>Film: 16mm; running time 7:00</extent>
+            </physdesc>
+        </did>
+        <scopecontent><p>Film description reads: "Know why that title's run together? Because all six of the films are. This animated film is composed of "flowing" lines to create bizarre effects (i. e. a grasshopper turns into a can-opener which opens a can of tiny people) and is supposed to be full of visual incongruities, in which things are what they seem ... and then become something else. Its inventiveness of images (supported by synthesized music) should stretch the imagination. BFA 1973 ". Old barcoded label and additional information about the film are in the can.</p></scopecontent>
+    </c02>
+
+
+
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+
+<ead relatedencoding="MARC21">
+<eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="stone_family" mainagencycode="NSyU">stone_family</eadid>
+
+   <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Stone Family Collection</titleproper>
+        <subtitle>An inventory of the
+ collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">LDC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date calendar="gregorian" era="ce" encodinganalog="Date" normal="2009-02-10">10 Feb 2009</date></publicationstmt>
+    </filedesc>
+
+    <profiledesc>
+      <creation>[Derived from Summit]
+       <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+
+    <revisiondesc>
+      <list>
+        <item>
+	  </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <famname encodinganalog="100" source="lcnaf">Stone family.</famname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Stone Family Collection</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " type="inclusive" normal="1789/1855">1789-1855</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">0.3 linear ft. (SC)</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Letter to Stone from his godson requesting books, 1789; copy of Asaph Stone's will, 1853; legal correspondence of William, Frederick, and Michael Stone, attorneys; and an 1836 letter from Michael Stone to Mary E. Jenks of Boston. Also receipts and legal papers.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">149277</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>The Stone family (fl. 1789-1855) lived near Port Tobacco, Maryland during the first half of the 19th century.</p>
+<p>Michael Jenifer Stone, a Congressman from Maryland (1789-1791), and his wife Mary Hanson Briscoe, had five children: Frederick D., William B., Michael J., Elizabeth J., and Eleanor Stone.  The three brothers, Frederick, William, and Michael, worked as attorneys in Port Tobacco, Maryland.</p>
+<p>It is unclear how Asaph is related to the Stone family of Maryland.  He was born in 1786 in Watertown, Massachusetts to Moses Stone and Abigail Learned.  On May 20, 1810, he married Jane MacFarlane in Boston.  Tragically, Asaph, his wife Jane, and his daughter, Mary Foulke Stone, died aboard the <emph render="italic">S.S. Arctic</emph> when it sank off the coast of Newfoundland on September 27, 1854.</p>
+    </bioghist>
+
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Stone Family Collection</emph> contains biographical material, correspondence, and a legal document from various members of the Stone family.  The majority of the collection is <emph render="bold">Correspondence</emph> to and from William, Frederick, and Michael Stone, attorneys in Maryland.  Some of the pieces of correspondence also include receipts.  In addition, the collection contains a letter to Stone from his godson, Walter M. Conchie, as well as a personal letter to Mary E. Jenks from Michael Stone.  The single <emph render="bold">Legal document</emph> in the collection is Asaph Stone's will.</p>
+    </scopecontent>
+
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The collection contains three series: Biographical material, Correspondence, and Legal documents.  The Correspondence is further divided into two subseries: General correspondence and Legal correspondence.</p>
+    </arrangement>
+
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+        <subject encodinganalog="650" source="local">None</subject>
+          <persname encodinganalog="600" source="lcnaf">Stone, William B.</persname>
+         <famname encodinganalog="600" source="lcnaf">Stone family.</famname>
+         <subject encodinganalog="650" source="lcsh">Genealogy.</subject>
+         <genreform encodinganalog="655" source="aat">Letters (correspondence)</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Wills.</genreform>
+         <genreform encodinganalog="655" source="aat">Receipts (financial records)</genreform>
+    </controlaccess>
+
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Stone Family Collection<lb/>&su_name;</p>
+    </prefercite>
+
+<dsc type="combined">
+<head>Inventory</head>
+
+<c01 level="series">
+<did><unittitle>Biographical material</unittitle></did>
+
+  <c02><did><container type="SC">286</container><container type="Folder">1</container><unittitle>Stone, Frederick</unittitle></did>
+  </c02>
+
+
+</c01>
+
+<c01 level="series">
+<did><unittitle>Correspondence</unittitle></did>
+
+  <c02 level="subseries"><did><unittitle>General correspondence</unittitle></did>
+
+      <c03><did><container type="SC">286</container><container type="Folder">2</container><unittitle>Conchie, Walter M. (?)</unittitle><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1789-08-12">12 Aug 1789</unitdate></did>
+    </c03>
+
+
+  <c03><did><container type="SC">286</container><container type="Folder">2</container><unittitle>Jenks, Mary E.</unittitle><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1836-06-30">30 Jun 1836</unitdate></did>
+    </c03>
+
+  </c02>
+
+  <c02 level="subseries"><did><unittitle>Legal correspondence</unittitle></did>
+
+  <c03><did><container type="SC">286</container><container type="Folder">2</container><unittitle><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1789/1855">1789-1855</unitdate></unittitle></did>
+  </c03>
+
+</c02>
+
+</c01>
+
+<c01 level="series">
+<did><unittitle>Legal documents</unittitle></did>
+
+  <c02><did><container type="SC">286</container><container type="Folder">3</container><unittitle>Asaph Stone's will</unittitle><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1853-10-14">14 Oct 1853</unitdate></did>
+  </c02>
+
+
+</c01>
+
+</dsc>
+
+  </archdesc>
+</ead>

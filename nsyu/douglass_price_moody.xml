@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="douglass_price_moody">douglass_price_moody</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Douglass, Price, and Moody Family
+               Papers</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+            <author encodinganalog="Creator">MRC</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2017-01-09" encodinganalog="Date">9 Jan 2017</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+			<date normal="2017-01-09">9 Jan 2017</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>5 Mar 2019 - processed (KD)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">##</persname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Douglass, Price, and Moody Family Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1771/1911" type="inclusive"
+            label="Inclusive Dates: ">circa 1771-1911</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>4 linear
+            ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Considerable collection of account
+            books and diaries (some of the latter have been transcribed on DVDs) pertaining to the
+            Douglass, Price, and Moody families of Pulaski, New York, from the nineteenth and
+            twentieth centuries.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4794783</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The Douglass, Price, and Moody families were residents of Pulaski, New York in nineteenth
+            and twentieth centuries.</p>
+         <p> The individuals represented in this collection include Anna Price Douglass (1815-1889)
+            and her husband, Volney Douglass (1810-1866); their two sons, Isaac Price Douglass
+            (1834-1899) and Rufus Grant Douglass (1841-1924); as well as Isaac's wife, Martha Jane
+            Moody Douglass (1840-1911); and Harry Ogden Hoffman Moody (1802-1874) who was Martha's
+            uncle and Rufus's father-in-law.</p>
+         <p>Anna Price Douglass was the granddaughter of Revolutionary War patriot John Weed
+            (1764-1834). Volney Douglass worked in agriculture.</p>
+         <p>Isaac Price Douglass (sometimes referred to in the diaries as "Ike") and Martha Moody
+            Douglass owned and worked a farm near Salmon River. Their daughter, Anna Belle Douglass
+            Moody, lived in Brooklyn, New York with her husband, Harry Anson Moody, and daughter,
+            Dorothy Douglass Moody Barclay.</p>
+         <p>Rufus Grant Douglass married Mary Ellen Moody (1844-1924) in Pulaski and they had two
+            children, Volney G. and Rufus M. In 1879 they relocated to Bloomington, Nebraska, where
+            he lived until his death. </p>
+         <p>Mary Ellen Moody's father, Harry Ogden Hoffman Moody was one of the earliest natives of
+            Jefferson County, New York. He farmed at Stone Mills, Jefferson County, but moved the
+            family to Pulaski in 1830, where he continued farming, was a member of the Royal Arch
+            Masons, and helped to establish the Republican party in the area.</p>
+         <p>The above information was found in various sources including the Find a Grave pages for
+               <extref href="https://www.findagrave.com/memorial/123013077/anna-douglass">Anna Price
+               Douglass</extref>, <extref
+               href="https://www.findagrave.com/memorial/123013034/volney-douglass">Volney
+               Douglass</extref>, <extref
+               href="https://www.findagrave.com/memorial/123012471/isaac-price-douglass">Isaac Price
+               Doulgass</extref>, <extref
+               href="https://www.findagrave.com/memorial/123012656/martha-jane-douglass">Martha
+               Moody Douglass</extref>, <extref
+               href="https://www.findagrave.com/memorial/123014223/rufus-grant-douglass">Rufus Grant
+               Douglass</extref>, and <extref
+               href="https://www.findagrave.com/memorial/20339902/harry-ogden_hoffman-moody">Harry
+               Ogden Hoffman Moody</extref>. Transcribed <extref
+               href="http://sites.rootsweb.com/~nyoswego/obits/obits5b.html">obituaries</extref>
+            were also consulted. Genealogical information on Harry Odgen Hoffman Moody can be found
+            in <extref
+               href="https://books.google.com/books?id=T8kpAQAAMAAJ&amp;pg=PA951&amp;lpg=PA951&amp;dq=%22harry+ogden+hoffman+moody%22&amp;source=bl&amp;ots=7Iyp5szosJ&amp;sig=ACfU3U0YsS1NUk04ZQvCELyGpdHCzXhgqg&amp;hl=en&amp;sa=X&amp;ved=2ahUKEwi-sv7L7evgAhVhneAKHUc9C7cQ6AEwC3oECAQQAQ#v=onepage&amp;q=%22harry%20ogden%20hoffman%20moody%22&amp;f=false"
+               >Genealogical and Family History of the County of Jefferson, New York</extref> by R.
+            A. Oakes. Genealogical information on Anna Price Douglass and her father found in this
+               <extref href="http://halfshire.org/june-5-2009-column/">Half-Shire Historical Society
+               article</extref>.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Douglass, Price, and Moody Family Papers</emph> consists of
+            financial account books, personal diaries, and transcriptions pertaining to the
+            Douglass, Price, and Moody families of Pulaski, New York, from the nineteenth and
+            twentieth centuries.</p>
+         <p>The<emph render="bold"> Financial</emph> series contains account books and receipt
+            fragments.</p>
+         <p>The <emph render="bold">Personal</emph> series contains daybooks and diaries of the
+            family members.</p>
+         <p><emph render="bold">Transcriptions</emph> are CDs containing typed copies of some of the
+            daybooks.</p>
+      </scopecontent>
+
+      <!-- <altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail> -->
+	  
+	  <!-- <originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc> -->
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Financial material is in no particular order. Personal material is arranged
+            alphabetically by individual and chronologically within the folder, with unidentified
+            material at the end of the series. Transcriptions are arranged alphabetically by the
+            title on the item.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         
+			
+			<subject encodinganalog="650" source="local">New York State</subject>
+         <persname encodinganalog="600" source="lcnaf">Douglass, Anna Price (1815-1889)</persname>
+         <persname encodinganalog="600" source="lcnaf">Douglass, Volney (1810-1866)</persname>
+         <persname source="lcnaf" encodinganalog="600">Douglass, Isaac Price (1834-1899)</persname>
+         <persname source="lcnaf" encodinganalog="600">Douglass, Martha Moody (1840-1911)</persname>
+         <persname source="lcnaf" encodinganalog="600">Douglass, Rufus Grant (1841-1924)</persname>
+         <persname source="lcnaf" encodinganalog="600">Moody, Harry Ogden Hoffman
+            (1802-1874)</persname>
+         <famname encodinganalog="600" source="lcnaf">Douglass family.</famname><famname encodinganalog="600" source="lcnaf">Price family.</famname><famname encodinganalog="600" source="lcnaf">Moody family.</famname>
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <!--<subject encodinganalog="650" source="lcsh">##</subject>-->
+			<geogname encodinganalog="651" source="lcsh">Pulaski (N.Y.) -- History.</geogname>
+         
+			<genreform encodinganalog="655" source="aat">Account books.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Diaries.</genreform>
+         <genreform encodinganalog="655" source="aat">DVDs.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require
+            advanced notice for retrieval. Researchers are encouraged to contact us in advance
+            concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Douglass, Price, and Moody Family Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Mrs. H. Douglass Barclay</persname>, 2016.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+            <did>
+               <unittitle>Financial material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Account book</unittitle>
+                  <abstract>first few pages seem to include a list of the persons included in
+                     transactions</abstract>
+                  <container type="Oversize">2</container>
+                  <unitdate normal="1771/1828" type="inclusive">1771-1828</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Fragments</unittitle>
+                  <abstract>includes receipts and fragments of daybooks</abstract>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Personal material</unittitle>
+            </did>
+            <scopecontent>
+               <p>Many of the diaries list weather, chores, health conditions, payments, and travel.
+                  Some, especially those of Anna Price Douglass and Martha Moody Douglass, include
+                  clippings. Also found in some of the Anna Price Douglass diaries are poetry,
+                  songs, and a recipe for asthma relief.</p>
+            </scopecontent>
+            <c02>
+               <did>
+                  <unittitle>Douglass, Anna Price</unittitle>
+                  <container type="Box">1</container>
+                  <unitdate normal="1862/1881" type="inclusive">1862-1881</unitdate>
+                  <physdesc><extent>7 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Douglass, Anna Price</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate normal="1882/1889" type="inclusive">1882-1889</unitdate>
+                  <physdesc><extent>3 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Douglass, Isaac Price</unittitle>
+                  <container type="Box">2</container>
+                  <unitdate normal="1852/1883" type="inclusive">1852-1883</unitdate>
+                  <physdesc><extent>3 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Doulgass, Isaac Price</unittitle>
+                  <container type="Box">3</container>
+                  <unitdate normal="1884/1893" type="inclusive">1884-1893</unitdate>
+                  <physdesc><extent>5 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Douglass, Isaac Price</unittitle>
+                  <container type="Box">4</container>
+                  <unitdate normal="1894/1898" type="inclusive">1894-1898</unitdate>
+                  <physdesc><extent>3 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Douglass, Martha Moody</unittitle>
+                  <container type="Box">4</container>
+                  <unitdate normal="1899/1904" type="inclusive">1899-1904</unitdate>
+                  <physdesc><extent>3 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Douglass, Martha Moody</unittitle>
+                  <container type="Box">5</container>
+                  <unitdate normal="1905/1911" type="inclusive">1905-1911</unitdate>
+                  <physdesc><extent>4 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Douglass, Rufus Price</unittitle>
+                  <container type="Box">5</container>
+                  <unitdate normal="1849/1854" type="inclusive">1849-1854</unitdate>
+                  <physdesc><extent>2 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Douglass, Rufus Price</unittitle>
+                  <container type="Box">6</container>
+                  <unitdate normal="1856/1858" type="inclusive">1856-1858</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Douglass, Rufus Price</unittitle>
+                  <container type="Oversize">1</container>
+                  <unitdate normal="1865/1868" type="inclusive">1865-1868</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Douglass, Volney</unittitle>
+                  <abstract>second folder includes some of Anna Price Doulgass 1868-1875</abstract>
+                  <container type="Box">6</container>
+                  <unitdate normal="1840/1848" type="inclusive">1840-1848</unitdate>
+                  <physdesc><extent>2 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Moody, Harry Ogden Hoffman</unittitle>
+                  <container type="Oversize">2</container>
+                  <unitdate normal="1853/1866" type="inclusive">1853-1866</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Unidentified</unittitle>
+                  <container type="Box">6</container>
+                  <unitdate normal="1858/1875" type="inclusive">1858-1875</unitdate>
+                  <physdesc><extent>3 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Unidentified</unittitle>
+                  <container type="Oversize">1</container>
+                  <unitdate normal="1868/1872" type="inclusive">1868-1872</unitdate>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Transcriptions</unittitle>
+            </did>
+            <scopecontent>
+               <p>Some of the titles incorrectly spell "Douglass" with one "s" and they have been
+                  transcribed verbatim here.</p>
+            </scopecontent>
+            <c02>
+               <did>
+                  <unittitle>Anna Price Douglas Diary</unittitle>
+                  <abstract>Microsoft Word Document (.docx) files, created by Dee Dee
+                     Barclay</abstract>
+                  <unitid>douglass_price_moody_002</unitid>
+                  <container type="Box">6</container>
+                  <physdesc><extent>DVD</extent></physdesc>
+                  <unitdate normal="2011-07-10" type="inclusive">10 Jul 2011</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>HOH [Harry Ogden Hoffman] Moody Diary</unittitle>
+                  <abstract>Microsoft Word Document (.docx) files, created by Dee Dee
+                     Barclay</abstract>
+                  <unitid>douglass_price_moody_007</unitid>
+                  <container type="Box">6</container>
+                  <physdesc><extent>DVD</extent></physdesc>
+                  <unitdate normal="2014-01-02" type="inclusive">2 Jan 2014</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Isaac Price Diaries, parts 1, 2, 3</unittitle>
+                  <abstract>Microsoft Word Document (.docx) files, created by Dee Dee
+                     Barclay</abstract>
+                  <unitid>douglass_price_moody_001</unitid>
+                  <container type="Box">6</container>
+                  <physdesc><extent>DVD</extent></physdesc>
+                  <unitdate normal="2010-08-02" type="inclusive">2 Aug 2010</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Isaac Price Douglas Diary</unittitle>
+                  <abstract>Microsoft Word Document (.docx) files, created by Dee Dee
+                     Barclay</abstract>
+                  <unitid>douglass_price_moody_004</unitid>
+                  <container type="Box">6</container>
+                  <physdesc><extent>DVD</extent></physdesc>
+                  <unitdate normal="2012-08-13" type="inclusive">13 Aug 2012</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Martha Moody Douglass Diary</unittitle>
+                  <abstract>Microsoft Word Document (.docx) files, created by Dee Dee
+                     Barclay</abstract>
+                  <unitid>douglass_price_moody_005</unitid>
+                  <container type="Box">6</container>
+                  <physdesc><extent>DVD</extent></physdesc>
+                  <unitdate normal="2013-06-17" type="inclusive">17 Jun 2013</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Martha Moody Douglass Diary</unittitle>
+                  <abstract>duplication of item "douglass_price_moody_005," Microsoft Word Document
+                     (.docx) files, created by Dee Dee Barclay</abstract>
+                  <unitid>douglass_price_moody_006</unitid>
+                  <container type="Box">6</container>
+                  <physdesc><extent>DVD</extent></physdesc>
+                  <unitdate normal="2013-09-03" type="inclusive">3 Sep 2013</unitdate>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Volney Douglass Diary</unittitle>
+                  <abstract>Microsoft Word Document (.docx) files, created by Dee Dee
+                     Barclay</abstract>
+                  <unitid>douglass_price_moody_003</unitid>
+                  <container type="Box">6</container>
+                  <physdesc><extent>DVD</extent></physdesc>
+                  <unitdate normal="2012-02-16" type="inclusive">16 Feb 2012</unitdate>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

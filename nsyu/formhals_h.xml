@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="formhals_h">formhals_h</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Henry Formhals Cartoons</titleproper>
+            <subtitle>An inventory of his cartoons at Syracuse University</subtitle>
+         <author encodinganalog="Creator">--</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1967" encodinganalog="Date">1967</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>MD<date normal="2008-12-08">8 Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>8 Dec 2008 - converted to EAD (MD)</item><item>20 Mar 2009 - revised (MD)</item>
+         <item>22 May 2017 - 1968 added (MRC)</item></list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Formhals, Henry Martin, 1908-1981</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Henry Formhals Cartoons</unittitle>
+         <unitdate encodinganalog="245$f" normal="1966/1968" type="inclusive" label="Inclusive Dates: ">1966-1968</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Original daily and Sunday cartoons from the newspaper comic strip <emph render="italic">Freckles and His Friends</emph>.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2652430</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Henry Martin Formhals (1908-1981) was an American cartoonist. Beginning in 1935, he served as assistant on Merrill  Blosser's newspaper comic strip <emph render="italic">Freckles and His Friends</emph>. Formhals' name officially appeared on the strip in the mid 1960s (March 21, 1966), and he continued to work on it until the end of its run in 1971.     Over the course of his career, Formhals also worked on the <emph render="italic">Joe Jinks</emph> strip (1946-1953) and assisted on Charlie Plumb's <emph render="italic">Ella Cinders</emph>.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Henry Formhals Cartoons</emph> collection contains original daily (1966-1967) and Sunday (1967-1968) cartoons from the newspaper comic strip <emph render="italic">Freckles and His Friends</emph>. Sunday versions of the strip include the companion title <emph render="italic">Hector</emph>. Daily cartoon: blue pencil, traces of graphite, brush, pen and ink on illustration board, approx. 6 x 17 ¼ in. Sunday cartoon: blue pencil, traces of graphite, brush, pen and ink on illustration board, approx. 19 x 26 in.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Daily and Sunday strips are housed separately in chronological order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See the <archref href="../b/blosser_m.htm">Merrill Blosser Cartoons</archref> for additional material related to <emph render="italic">Freckles and His Friends</emph>. &scrc_name; has collections of over one hundred other cartoonists. Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Formhals, Henry Martin, 1908-1981.</persname>
+         
+         <corpname encodinganalog="610" source="lcnaf">Newspaper Enterprise Association.</corpname>
+         <title encodinganalog="630" source="local" rules="aacr2">Freckles and His Friends (comic strip)</title><title encodinganalog="630" source="local" rules="aacr2">Hector (comic strip)</title>	
+			<subject encodinganalog="650" source="local">Art -- Cartoonists</subject>							
+         <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject><subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States.</subject><subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject><subject encodinganalog="650" source="lcsh">Comic books, strips, 
+
+etc. -- United States.</subject>
+         
+         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p> Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Henry Formhals Cartoons, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <!--<acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p></p>
+      </acqinfo>-->
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+      		<c01 level="series"><did><unittitle><emph render="italic">Freckles and His Friends</emph></unittitle></did>
+				<note><p>Click <extref href="formhals_h_inv.pdf">here</extref> for detailed inventory.</p></note>               
+               <c02><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1966-03/1967-02">1966 Mar - 1967 Feb</unitdate><container type="Box">1</container></did></c02>
+				   <c02><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1967-03/1967-12">1967 Mar - 1967 Dec</unitdate><container type="Box">2</container></did></c02>
+				   <c02><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1968-01/1968-06">1968 Jan-Jun</unitdate><container type="Box">3</container></did></c02>
+				   <c02><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1968-07/1968-12">1968 Jul-Dec</unitdate><container type="Box">4</container></did></c02>
+               <c02><did><unittitle>Sunday cartoons</unittitle><unitdate type="inclusive" normal="1967/1968">1967 Jan - 1968 Dec</unitdate><container type="Oversize">1</container></did></c02>
+				</c01>
+      </dsc>
+   </archdesc>
+</ead>

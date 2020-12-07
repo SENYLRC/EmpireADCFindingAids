@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 --><!-- added entity for linking to collection search. --><!-- TEMPLATE VERSION 1.14, 12 Mar 2010 --><!-- Added Belfer as container type -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="morigi_f" mainagencycode="NSyU">morigi_f</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Frank Morigi Papers</titleproper>
+        <subtitle>An inventory of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2011-08">Aug 2011</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2011-08-10">10 Aug 2011</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Morigi, Francis C.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Frank Morigi Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1968/2004" type="inclusive">1968-2004</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>3.25 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">American interior/industrial designer and Syracuse University professor.  Collection includes articles, clippings, photographs, working drawings, specifications, student work and other items relating to educational, hotel/restaurant, office space, retail and historical preservation projects.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">3314277</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Frank Morigi is an American interior design consultant and educator.  He began his career in 1965 in Chicago with the 
+		firm of Norman R. DeHaan Associates, for whom he designed interiors for stores, restaurants, exhibit spaces and offices throughout the 
+		United States and Canada.  He has taught at Southern Illinois University and at Syracuse University, where he was 
+		Professor of Interior Design and Chair of the Department of Design.  Research projects, many of which involved his 
+		students, have included design studies for Haworth, the Juvenile Products Manufacturing Association, and the National 
+		Institute of Preservation of Cultural Properties.  He has been a consultant for numerous state-funded historical preservation 
+		projects in Central New York.</p>
+      <p>He also has degrees in theatre from Carnegie-Mellon University and the Art Institute of Chicago, and has worked on 
+		sets, lighting and costumes for the Lyric Opera of Chicago and the St. Louis Municipal Opera, among other organizations.</p>
+      <p>Morigi has received numerous awards over his career, among them two Outstanding Teacher Awards from Syracuse University as well 
+		as that institution's Distinguished Professor Emeritus rank, the American Society of Interior Designers' Presidential Citation, 
+		and his students have received more than forty national and international student design awards from a wide range of industry 
+		and professional design organizations.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Frank Morigi Papers</emph> consist of material relating to Morigi's work for Norman R. DeHaan 
+		Associates in Chicago, and to his teaching career at Syracuse University.</p>
+		
+		<p><emph render="bold">DeHaan Associates</emph> material contains specifications, articles, clippings and photographs 
+		relating to education, hotel/restaurant, office space and retail projects, most of them in and around Chicago, Illinois 
+		where the firm was based.  Projects include Hyde Park High School and the O'Hare International Tower hotel. </p>
+		
+		<p><emph render="bold">Syracuse University</emph> material includes awards won by the department and its students; exhibit 
+		invitations for the NY Eleven student organization; historic preservation projects in and around Syracuse including the 
+		well-known Octagon House; newsletters, handouts and other items related to the Design Department, both past and present; 
+		research projects, many of which were adapted for class projects for graduate and undergraduate students; and material 
+		relating to two seminars offered by the department.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Material is arranged alphabetically by title or topic.</p>
+    </arrangement>
+    <!-- <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial> -->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+		<!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Architects</subject><subject encodinganalog="650" source="local">Industrial Design</subject><persname encodinganalog="600" source="lcnaf">Morigi, Francis C.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">Norman R. DeHaan Associates.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Syracuse University. -- College of Visual and Performing Arts.</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Architecture -- Chicago Metropolitan Area.</subject>
+      <subject encodinganalog="650" source="lcsh">Decoration and ornament, Architectural -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Historic buildings -- Conservation and restoration.</subject>
+      <subject encodinganalog="650" source="lcsh">Hotels -- Design and construction.</subject>
+      <subject encodinganalog="650" source="lcsh">Office layout.</subject>
+      <subject encodinganalog="650" source="lcsh">Restaurants -- Design and construction.</subject>
+      <subject encodinganalog="650" source="lcsh">Schools -- Design and construction.</subject>
+      <subject encodinganalog="650" source="lcsh">Interior architecture -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Interior decoration -- United States.</subject>
+      <geogname encodinganalog="651" source="lcsh">Chicago (Ill.) -- Buildings, structures, etc.</geogname>
+      <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- Buildings, structures, etc.</geogname>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <occupation encodinganalog="656" source="lcsh">College teachers.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Designers.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Interior decorators.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Frank Morigi Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Frank Morigi</persname>, 2011.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Biographical material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Resume / c.v.</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>DeHaan Associates</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Articles about</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Education projects</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Elm Place Middle School, Highland Park, Illinois</unittitle>
+              <abstract>specifications for furnishings and lockers</abstract>
+              <unitdate normal="1971" type="inclusive">1971</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Governors State University, Park Forest South, Illinois</unittitle>
+              <abstract>interim campus moveable equipment</abstract>
+              <unitdate normal="1971" type="inclusive">1971</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Governors State University, Park Forest South, Illinois</unittitle>
+              <abstract>working drawings (diazo prints), 28 sheets</abstract>
+              <container type="Tube">1450</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Hyde Park High School, Chicago, Illinois</unittitle>
+              <abstract>published results of competition in which DeHaan Assoc. took second place</abstract>
+              <unitdate normal="1968/2004" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sangamon State University, Springfield, Illinois</unittitle>
+              <abstract>Phase B interim facilities interior partition systems</abstract>
+              <unitdate normal="1971" type="inclusive">1971</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mscellaneous printed items</unittitle>
+              <abstract>articles, clippings, photographs</abstract>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Hotel and restaurant projects</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Arlington Park Tower, Arlington Heights, Illinois</unittitle>
+              <abstract>specifications for fixed drapery and casement</abstract>
+              <unitdate normal="1973" type="inclusive">1973</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Bronze Vail restaurant</unittitle>
+              <abstract>
+                <emph render="italic">Food Service Magazine</emph> article on the concept project; brochure with concept drawings</abstract>
+              <unitdate normal="1968" type="inclusive">1968</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Cousins Club II supper club, Chicago, Illinois</unittitle>
+              <abstract>specifications</abstract>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Dayton's Bubbling Kettle, Fargo, North Dakota</unittitle>
+              <abstract>specifications for cabinetry, room finish and carpet work; small set of blueprints</abstract>
+              <unitdate normal="1972" type="inclusive">1972</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Don Roth restaurant, Chicago, Illinois</unittitle>
+              <abstract>specifications</abstract>
+              <unitdate normal="1972" type="inclusive">1972</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Frying Dutchman</unittitle>
+              <abstract>
+                <emph render="italic">Food Service Magazine</emph> article on the concept project</abstract>
+              <unitdate normal="1968" type="inclusive">1968</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>O'Hare International Tower hotel, Chicago, Illinois</unittitle>
+              <abstract>specifications for interior finishing of specific areas; specifications for carpeting; slides; two articles</abstract>
+              <unitdate normal="1972/1973" type="inclusive">1972-1973</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>O'Hare International Tower hotel, Chicago, Illinois</unittitle>
+              <abstract>working drawings (diazo prints), 25 sheets</abstract>
+              <container type="Tube">1453</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Taberna restaurant</unittitle>
+              <abstract>specifications; Food Service Magazine article on</abstract>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous working drawings</unittitle>
+              <abstract>26 sheets (diazo prints)</abstract>
+              <container type="Tube">1452</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Office planning</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>J &amp; H International Corporation</unittitle>
+              <abstract>specifications for carpeting</abstract>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>State National Bank, Evanston, Illinois</unittitle>
+              <abstract>specifications for basement remodeling</abstract>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous photographs</unittitle>
+              <unitdate normal="1968/2004" type="inclusive">undated</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous working drawings</unittitle>
+              <abstract>7 sheets (diazo prints)</abstract>
+              <container type="Tube">1453</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Retail</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Adler Shoe Store, Brooklyn, New York</unittitle>
+              <abstract>specifications</abstract>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Brass Boot shoe stores</unittitle>
+              <abstract>specifications for stores in Chicago, Milwaukee and New Orleans</abstract>
+              <unitdate normal="1970/1971" type="inclusive">1970-1971, </unitdate>
+              <unitdate normal="1973" type="inclusive">1973</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Brass Boot shoe store</unittitle>
+              <abstract>specifications for Vernon Hills, Illinois, store; maintenance manual; printed publicity brochure</abstract>
+              <unitdate normal="1970" type="inclusive">1970, </unitdate>
+              <unitdate normal="1973" type="inclusive">1973</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>La Tinas store, New York, New York</unittitle>
+              <abstract>2 sets working drawings (diazo prints), 38 items</abstract>
+              <container type="Tube">1450</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Morgan-Hayes Shoe Store, Dallas, Texas</unittitle>
+              <abstract>specifications</abstract>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Paddor's, Schaumburg, Illinois</unittitle>
+              <abstract>specifications</abstract>
+              <unitdate normal="1971" type="inclusive">1971</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Pompian Shop, Chicago, Illinois</unittitle>
+              <abstract>specifications</abstract>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Weyenberg Shoe Manufacturing / Brass Boot</unittitle>
+              <abstract>specifications</abstract>
+              <unitdate normal="1973" type="inclusive">1973</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Weyenberg Shoe Manufacturing / Brass Boot</unittitle>
+              <abstract>working drawings for various locations (diazo prints), 54 sheets</abstract>
+              <container type="Tube">1451</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous printed material</unittitle>
+              <abstract>articles, clippings, photographs</abstract>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous working drawings</unittitle>
+              <abstract>33 sheets (diazo prints)</abstract>
+              <container type="Tube">1452</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Syracuse University</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Awards</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate normal="1970/1989" type="inclusive">1970s-1980s</unitdate>
+              </unittitle>
+              <abstract>awards won by SU Department of Design and/or its students</abstract>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate normal="1980/1999" type="inclusive">1980s, 1990s, </unitdate>
+                <unitdate normal="1968/2004" type="inclusive">undated</unitdate>
+              </unittitle>
+              <abstract>awards won by students and/or by the SU Department of Design</abstract>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Exhibits</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>NY Eleven student exhibitions</unittitle>
+              <abstract>printed material</abstract>
+              <unitdate normal="2002/2004" type="inclusive">2002-2004</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Historic preservation projects</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Metropolitan School for the Arts</unittitle>
+              <abstract>historic restoration and adaptive reuse of 1917 Masonic Temple as a school</abstract>
+              <unitdate normal="1988" type="inclusive">1988</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Oakwood Cemetery</unittitle>
+              <abstract>historic preservation and adaptive reuse study; printed material relating to history of the site</abstract>
+              <unitdate normal="1976" type="inclusive">1976, </unitdate>
+              <unitdate normal="1991" type="inclusive">1991, </unitdate>
+              <unitdate normal="1968/2004" type="inclusive">undated</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Octagon House (aka Wilcox Octagon House)</unittitle>
+              <abstract>historic restoration and adaptive reuse studies</abstract>
+              <unitdate normal="1987" type="inclusive">1987</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Rescue Mission</unittitle>
+              <abstract>project proposal for New Life Center</abstract>
+              <unitdate normal="1998" type="inclusive">1998</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>St. Camillus Health and Rehabilitation Center</unittitle>
+              <abstract>interior design proposal</abstract>
+              <unitdate normal="1997" type="inclusive">1997</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>SA&amp;K Building</unittitle>
+              <abstract>renovation designs</abstract>
+              <unitdate normal="1984" type="inclusive">1984</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Southside Preparatory Academy</unittitle>
+              <abstract>relocation study</abstract>
+              <unitdate normal="1985" type="inclusive">1985</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Spanish Action League</unittitle>
+              <abstract>renovation grant proposal</abstract>
+              <unitdate normal="1984" type="inclusive">1984</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Syracuse Visitors Center</unittitle>
+              <abstract>redesign of Firehouse No. 1 as visitors' bureau</abstract>
+              <unitdate normal="1986" type="inclusive">1986</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous printed material</unittitle>
+              <abstract>articles, clippings, photographs</abstract>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Newsletters, handouts</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <abstract>printed items relating to the Interior Design Program at SU</abstract>
+              <unitdate normal="1980/1989" type="inclusive">1980s</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Program history</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <abstract>correspondence, clippings, handwritten notes, other items relating to the history of the Interior Design Program at SU</abstract>
+              <unitdate normal="1979/1983" type="inclusive">1979-1983, </unitdate>
+              <unitdate normal="1968/2004" type="inclusive">undated</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Research</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Circulation</unittitle>
+              <abstract>"interior dialectics project" for DES447</abstract>
+              <unitdate normal="1985" type="inclusive">1985</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Free address office systems</unittitle>
+              <abstract>"office of the future" project</abstract>
+              <unitdate normal="1990" type="inclusive">1990</unitdate>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Human office environment</unittitle>
+              <abstract>Junior class sketch problem, project for DES348</abstract>
+              <unitdate normal="1986" type="inclusive">1986</unitdate>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Human office environment</unittitle>
+              <abstract>Senior class sketch problem, project for DES447</abstract>
+              <unitdate normal="1985" type="inclusive">1985</unitdate>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Human office environment</unittitle>
+              <abstract>description of project funded by grant from Haworth, Inc.; "The Future Workspace"</abstract>
+              <unitdate normal="1986" type="inclusive">1986</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Nursery environment forecast</unittitle>
+              <abstract>student competition</abstract>
+              <unitdate normal="1992" type="inclusive">1992</unitdate>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Salesmanship</unittitle>
+              <abstract>project for DES447</abstract>
+              <unitdate normal="1986" type="inclusive">1986</unitdate>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous student projects</unittitle>
+              <unitdate normal="1968/2004" type="inclusive">undated</unitdate>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous printed material</unittitle>
+              <abstract>clippings, press releases, etc.</abstract>
+              <unitdate normal="1985/1991" type="inclusive">1985-1991</unitdate>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Seminars</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>70 Years of Interior Design at Syracuse University</unittitle>
+              <unitdate normal="1993" type="inclusive">1993</unitdate>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Interior Design Education and the Future</unittitle>
+              <unitdate normal="1975" type="inclusive">1975</unitdate>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.8, 7/18/2007-->
+<!-- Added comment about use of archref element, removed copyright statement -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="adirondacks">adirondacks</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Adirondacks Collection</titleproper>
+            <subtitle>An inventoryof the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2007-10-26" encodinganalog="Date">26 Oct 2007</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2007-10-26" encodinganalog="Date">26 Oct 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>3 June 2008 - additions, name change (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100" role="creator">Emmons, E.</persname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Adirondacks Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1833/1843" type="inclusive" label="Inclusive Dates: ">ca. 1838</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 folders (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">15 maps and plates pertaining to the Adirondacks and Genesee River.  Two letters detailing research on the origins of the lithographs.  Small packet of postcards with photographs of the area.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2572290</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Regarding the lithographs in the collection, according to a letter (included with the collection) dated November 5, 1973 from then-curator of the Adirondack Museum William Verner, "this series was originally intended to provide illustrations for New York State Assembly Document No. 200 (1838).  Copies of that...document...usually come with the plates bound in the back."  However, Verner mentions having also seen sets bound alone in colored paper wrappers.  Whether the prints attributed to "E. Emmons" were done originally by Professor Emmons, geologist for New York's northern district, or his son Ebenezer Emmons is unknown.  The <emph render="italic">Report of E. Emmons, Geologist of the 2d Geological District of the State of New York</emph>, contains Emmons' suggestion that the high mountains of the region be called the Adirondack Group, and is the first use in print of this name applied to this region. </p><p>The lithographs were printed by John H. Bufford and according to Verner are "among the most important relative to the iconography of the Adirondack region."</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Adirondacks Collection</emph> consist of a assorted material relating to the Adirondacks area of New York.  The most significant item in the collection is a  set of 15 plates, most relating to the survey of northern New York undertaken by Ebenezer Emmons.  Some are maps (e.g. "Map of the Tertiary of Essex County"), others are illustrations of various Adirondack locations such as "Rossie Lead Vein" and  "Trap Dyke at Avalanche Lake."  Also included in the collection are two letters; one of these, from Adirondack Museum Curator William Verner, gives detailed information about the history of the prints based on Verner's research at the New York Public Library.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The lithograph material is foldered separately from other material.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">New York State</subject>
+         <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Bufford, John Henry, 1810-1870.</persname>
+			<persname encodinganalog="600" source="lcnaf">	Emmons, Ebenezer, 1799-1863.</persname>
+            <subject encodinganalog="650" source="lcsh">Lithography, American -- 19th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Lithography, American -- Specimens.</subject>
+			<subject encodinganalog="650" source="lcsh">Prints, American -- 19th century.</subject>
+         <geogname encodinganalog="651" source="lcsh">Adirondack Mountains (N.Y.) -- Pictorial works.</geogname>
+		 <geogname encodinganalog="651" source="lcsh">Adirondack Mountains (N.Y.) -- History.</geogname>
+            <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Lithographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Postcards.</genreform>
+			<genreform encodinganalog="655" source="aat">Maps (documents)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Surveyors.</occupation>
+		 <occupation encodinganalog="656" source="lcsh">Geologists.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Adirondacks Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Lithographs gift of <persname role="donor">David Tatham</persname> and <persname role="donor">Cleota Reed</persname>.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>Photographs</unittitle>
+            </did>
+            
+         <c02>
+               <did>
+                  <unittitle>Postcards</unittitle>
+                  
+                  <container type="SC">210</container>
+                  
+                  
+               </did>
+            </c02></c01><c01 level="series">
+         
+            <did>
+               <unittitle>Prints</unittitle>
+            </did>
+            
+         <c02>
+               <did>
+                  <unittitle>Lithographs of Adirondack and Genesee River regions</unittitle>
+                  
+                  <abstract>maps and illustrations; includes supporting correspondence concerning the origins of the lithographs, 1973-1974.</abstract><unitdate normal="1973/1974" type="inclusive">ca. 1838</unitdate><container type="SC">210</container>
+                  
+                  
+               </did>
+            </c02></c01>
+      </dsc>
+   </archdesc>
+</ead>

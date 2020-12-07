@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+    <eadid countrycode="US" mainagencycode="NSyU" identifier="plummer_c">plummer_c</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Charles Henry Plummer Collection </titleproper>
+        <subtitle>An inventory of 
+                        
+                        his collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">[Summit record]</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>&su_address;
+                           <date normal="2001-01-01" encodinganalog="Date">2001-01-01</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           <date era="ce" calendar="gregorian" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language langcode="eng" encodinganalog="Language">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>12 Mar 2007 - converted to EAD (MRC)</item>
+      <item>3 Mar 2010 - updated EAD (LMD)</item></list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name; <lb/>&su_address;
+               </repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="local">Plummer, Charles Henry.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Charles Henry Plummer Collection </unittitle>
+      <unitdate encodinganalog="245$f" type="inclusive" label="Inclusive Dates: " normal="1790/1893">1790-1893</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">1 folder (SC)</extent>
+      </physdesc>
+      
+      <abstract encodinganalog="520$a" label="Abstract: ">Papers and correspondence of the clergyman and temperance reformer. </abstract>
+      <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149255</unitid>
+      <langmaterial label="Language: " encodinganalog="546">
+        <language langcode="eng">
+                          English
+                       </language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Charles Henry Plummer was a clergyman in Philadelphia in the nineteenth century. He was active in many Christian societies and social movements, such as the Philadelphia Young Men's Temperance Society and the Christian Society of Centerville.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Charles Henry Plummer Collection</emph> contains approximately 150 items of correspondence and  other papers, spanning 1790-1893 (bulk 1838-1867). Most of the collection consists of correspondence to and from Plummer from his family and friends, including his wife, Anne Britton Plummer. Common topics of conversation include Plummer's extended family, his preaching activities, and Christian social movements such as temperance. The collection also includes pages of notes for sermons and speeches by Plummer, and a number of small receipts and financial records.</p><p></p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Items are in chronological order.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>Purchased, 1969.</p>
+    </relatedmaterial>
+    <!--<separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial>--><!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            --><controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Activism and social reform</subject>
+			<subject encodinganalog="650" source="local">Church and clergy</subject>
+			<subject encodinganalog="650" source="local">Religion and philosophy</subject>			
+			<persname encodinganalog="600" source="local">Plummer, Charles Henry.</persname>
+         <persname encodinganalog="600" source="local">Plummer, Anna Britton.</persname>
+			<famname encodinganalog="600" source="local">Plummer family.</famname>
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Temperance and religion -- Societies, etc. </subject>
+         <geogname encodinganalog="651" source="lcsh">Philadelphia (Pa.) -- History.</geogname>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Clergy.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+			<accessrestrict encodinganalog="506"><head>Access Restrictions</head><p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p></accessrestrict><userestrict encodinganalog="540"><head>Use Restrictions</head><p>Written permission must be obtained from SCRC and 
+                       all relevant rights holders before publishing quotations, excerpts or images from any 
+                       materials in this collection. </p></userestrict><prefercite encodinganalog="524"><head>Preferred Citation</head><p>Preferred citation for this material is as follows:</p><p>Charles Henry Plummer Collection, <lb/>&su_name;
+                  </p></prefercite><!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       --><dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Correspondence and Papers</unittitle></did>
+               
+               
+            <c02><did><unittitle><unitdate normal="1790/1893" type="inclusive">1790-1893</unitdate></unittitle><container type="SC">401</container></did></c02>
+         </c01>
+      </dsc></archdesc>
+</ead>

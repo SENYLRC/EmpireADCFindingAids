@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="mordell_dj">mordell_dj</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Daniel J. Mordell Maps</titleproper>
+            <subtitle>A description of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-03-22" encodinganalog="Date">22 Mar 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-03-22">22 Mar 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Mordell, Daniel J.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Daniel J. Mordell Maps</unittitle>
+         <unitdate encodinganalog="245$f" normal="1959/1965" type="inclusive" label="Inclusive Dates: ">1954-1965</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 folders (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Maps of town, canals, railroad lines in Central New York.  Includes Rome Canal, Baldwinsville, German Flats, others.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2742002</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <!--<bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Daniel J. Mordell was...</p></bioghist>-->
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Daniel J. Mordell Maps</emph> consist of several maps and drawings relating to canals, railroads and other features in Central New York.  Some of the maps appear to be part of a numbered set; the others, although in the same style and with similar dates, are not numbered.   Most are 8-1/2" by 11" but some fold out to a larger size.  A complete list of map titles is given in the inventory below.    Notations on the maps indicate that Mordell sketched them from 19th century originals.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Numbered items are in numerical order.  Unnumbered items are in alphabetical order by map title.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">New York State</subject>
+			<subject encodinganalog="650" source="local">Railroads</subject>
+			<persname encodinganalog="600" source="lcnaf">Mordell, Daniel J.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Erie Canal -- Maps.</subject>
+         <subject encodinganalog="650" source="lcsh">Genesee Valley Canal -- Maps.</subject>
+         <subject encodinganalog="650" source="lcsh">German Flats Canal -- Maps.</subject>
+         <subject encodinganalog="650" source="lcsh">Canals -- New York (State) -- History.</subject>
+         <subject encodinganalog="650" source="lcsh">Railroads -- New York (State) -- History.</subject>
+         <geogname encodinganalog="651" source="lcsh">Baldwinsville (N.Y.) -- Maps.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Batavia (N.Y.) -- Maps.</geogname>
+         <geogname encodinganalog="651" source="lcsh">German Flats (N.Y.) -- Maps.</geogname>
+         <genreform encodinganalog="655" source="aat">Maps (documents)</genreform>
+			<genreform encodinganalog="655" source="aat">Sketches.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Daniel J. Mordell Maps, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unspecified, 1966.</p></acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Maps</unittitle></did>
+		
+            <c02><did><unittitle>Numbered items</unittitle><unitdate normal="1964/1965" type="inclusive">1964-1965</unitdate><physdesc><extent>22 items</extent></physdesc><container type="SC">418</container></did>
+				<scopecontent>
+				<p>1. Profile of New York State's Genesee Valley Canal<lb/>
+				2. The Genesee Valley Canal<lb/>
+				3. Tour area [of] the Genesee Valley Canal<lb/>
+				4. Syracuse and Chenango Valley Railroad<lb/>
+				5. Auburn and Syracuse Electric Rwy.<lb/>
+				6. Syracuse Nothern Ry. [and] South Bay R.R.<lb/>
+				7. Some historical points of interest Garbutt, N.Y. Scottsville, N.Y.<lb/>
+				8. Sketch map of the historic Mohawk Portage at Rome, N.Y.<lb/>
+				9. Sketch map of the Williamstown &amp; Redfield R.R. &amp; Forest Co.<lb/>
+				10. Pass of the Genesee at Portage Falls [and] Hornby Lodge at Portage Falls<lb/>
+				11. Western view of the central part of Batavia<lb/>
+				[12-13 missing]<lb/>
+				14. Rome, Watertown &amp; Ogdensburgh Railroad<lb/>
+				15. Original stone bridge over the Erie Canal at Salina Street, 1818<lb/>
+				16. Old Fort Brewerton &amp; its surroundings [and] Royal blockhouse at east end of Oneida Lake<lb/>
+				17. Historical sketch map of Baldwinsville, N.Y.<lb/>
+				[18-19 missing]<lb/>
+				20, 21, [22 missing], 23, [24 missing], 25. Clinton's Ditch [various views]<lb/>
+				26. Rome Canal<lb/>
+				[27 missing]<lb/>
+				28. Section of wooden rail used on original Auburn &amp; Rochester Railroad<lb/>
+				29. Proposed park [along Erie Canal, near Canastota]<lb/>
+				[30 missing]<lb/>
+				31. A sketch map of the Auburn &amp; Syracuse R.R. [and] Auburn &amp; Rochester R.R.</p>
+				</scopecontent></c02>
+            <c02><did><unittitle>Unnumbered items</unittitle><unitdate normal="1964/1965" type="inclusive">1964-1965</unitdate><physdesc><extent>4 items</extent></physdesc><container type="SC">418</container></did>
+				<scopecontent><p>
+				German Flats Canal<lb/>
+				Profile of the locks on Wood Creek erected in 1802-3<lb/>
+				Rome Canal<lb/>
+				Western Inland Lock Navigation Co. [charter limits and works]
+				</p></scopecontent></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

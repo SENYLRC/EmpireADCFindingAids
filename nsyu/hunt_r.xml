@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="hunt_r">hunt_r</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Ruth H. B. Hunt Travel Diaries</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-04-06" encodinganalog="Date">6 Apr 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-04-06">6 Apr 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>6 Nov 2017 - diaries 1929-1930 updated (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Hunt, Ruth, H. B.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Ruth H. B. Hunt Travel Diaries</unittitle>
+         <unitdate encodinganalog="245$f" normal="1913/1942" type="inclusive" label="Inclusive Dates: ">1913-1942</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Wife of Colonel Elvid Hunt, U.S. Army.  Four travel journals covering 
+		 trips within the United States (includes cities in California, Arizona, Utah and Nevada as well as various national parks 
+		 such as Yosemite.  Two travel journals covering trips abroad (China, Manchuria, Korea, Japan, England and continental 
+		 Europe).</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2744171</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Ruth Hubble May Brockway Hunt was the wife of Elvid Hunt, United States Army officer, and a member of the Daughters of the 
+	  American Revolution.  She traveled extensively with her husband and wrote detailed accounts of their journeys.</p>
+	  <p>[Biographical sketch derived in part from information posted by later descendants   at <extref href="http://genforum.genealogy.com/hunt/messages/3386.html">http://genforum.genealogy.com/hunt/messages/3386.html</extref>.]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Ruth H. B. Hunt Travel Diaries</emph> consists of six travel journals.   Four travel journals 
+		 cover trips within the United States (including cities in California, Arizona, Utah and Nevada as well as various national 
+		 parks such as Yosemite).  Two travel journals covering trips abroad (China, Manchuria, Korea, Japan, England and 
+		 continental Europe).   </p><p>The diaries are handwritten.  Five are bound in red with locations and dates are stamped in 
+		 gold on the front cover of each.  One is a photocopy of a typescript.</p><p>There is also a typescript entitled 
+		 "The Odell Inn at Irvington on the Hudson by Ruth H. B. Hunt" which includes the history and  some sketches of the inn.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Diaries are in chronological order.  Typescript is foldered at the end.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the papers of Ruth Hunt's husband, <archref href="../h/hunt_e.htm">Elvid Hunt</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Women Authors</subject>
+			<persname encodinganalog="600" source="lcnaf">Hunt, Elvid, 1877-1955.</persname>
+		   <persname encodinganalog="600" source="lcnaf">Hunt, Ruth, H. B.</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <!-- <corpname encodinganalog="610" source="lcnaf">##</corpname> -->
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="lcsh">National parks and reserves -- United States -- Description and travel.</subject>
+         <subject encodinganalog="650" source="lcsh">Travelers' writings, American.</subject>
+			<subject encodinganalog="650" source="lcsh">Women travelers.</subject>
+          <geogname encodinganalog="651" source="lcsh">China -- Description and travel.</geogname> 
+          <geogname encodinganalog="651" source="lcsh">England -- Description and travel.</geogname> 
+          <geogname encodinganalog="651" source="lcsh">Japan -- Description and travel.</geogname> 
+          <geogname encodinganalog="651" source="lcsh">Korea  -- Description and travel.</geogname> 
+          <geogname encodinganalog="651" source="lcsh">Philippines -- Description and travel.</geogname> 
+          <geogname encodinganalog="651" source="lcsh">Manchuria (China)  -- Description and travel.</geogname> 
+          <geogname encodinganalog="651" source="lcsh">Southwest, New -- Description and travel.</geogname> 
+          <genreform encodinganalog="655" source="aat">Diaries.</genreform>
+			 <genreform encodinganalog="655" source="aat">Typescripts.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!-- <function encodinganalog="657">##</function> -->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Ruth H. B. Hunt Travel Diaries, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Mrs. Frederick Fuhrer</persname>, 1963.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Diaries</unittitle></did>
+            <c02><did><unitdate normal="1913" type="inclusive">1913</unitdate><unittitle>England and Continental Europe Journal</unittitle><physdesc><extent>1 volume</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unitdate normal="1928" type="inclusive">1928</unitdate><unittitle>China, Manchuria, Korea and Japan</unittitle><physdesc><extent>1 volume</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unitdate normal="1929/1930" type="inclusive">1929-1930</unitdate><unittitle>[Philippines and Fort Deming]</unittitle><abstract>photocopy of typescript</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unitdate normal="1936" type="inclusive">1936</unitdate><unittitle>Yosemite, Sequioa National Park, General Grant Park; Yellowstone, Glacier, Ranier [sic], Olympic Peninsula</unittitle><physdesc><extent>1 volume</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unitdate normal="1936" type="inclusive">1936, </unitdate><unitdate normal="1938" type="inclusive">1938</unitdate><unittitle>Columbia River and Redwood Highway; Salt Lake City, Brice Canyon, Zion Canyon, Las Vegas</unittitle><physdesc><extent>1 volume</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unitdate normal="1936" type="inclusive">1936, </unitdate><unitdate normal="1938" type="inclusive">1938</unitdate><unittitle>Lake Tahoe and Mount Lassen; Sonoro and the Mining Towns; Santa Barbara; An Attempt at Death Valley; Death Valley</unittitle><physdesc><extent>1 volume</extent></physdesc><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Manuscripts</unittitle></did>
+            <c02><did><unittitle>"The Odell Inn at Irvington on the Hudson by Ruth H. B. Hunt"</unittitle><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

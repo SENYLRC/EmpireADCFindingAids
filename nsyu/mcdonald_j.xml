@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+<?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen.css"?>
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="mcdonald_j">mcdonald_j</eadid>
+      <filedesc>
+         <titlestmt>
+                     <titleproper encodinganalog="Title">Joseph McDonald Collection of Plastics Patents</titleproper>
+         <subtitle>An inventory of the collection at Syracuse University</subtitle>
+<author encodinganalog="Creator">MM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+               <date normal="2006" encodinganalog="Date">2006</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-12">Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>Feb 2009 - converted to EAD (MRC)</item>
+            <item>Feb 2012 - updated (TLJ)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+               <persname encodinganalog="100">McDonald, Joseph.</persname></origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Joseph McDonald Collection of Plastics Patents</unittitle>
+         <unitdate encodinganalog="245$f" normal="1930/1989" type="inclusive" label="Inclusive Dates: ">1930-1989</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection contains copies of patents
+            for plastic food and beverage containers collected by Joseph McDonald from 1951 to 1989,
+            in the course of his work for Sweetheart Plastics, Inc. and a selection of technical
+            offprints and reports.</abstract>
+
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2663588</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Joseph McDonald was an American researcher and consultant in the field of plastics.  He was employed by Sweetheart Plastics, Inc., a division of Maryland Cup Corporation, in Wilmington, Massachusetts. He later formed Joseph McDonald Associates, Inc. in Lexington, Massachusetts.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Joseph McDonald Collection of Plastics Patents</emph> contains
+            copies of patents for plastic food and beverage containers collected by Joseph McDonald
+            from 1951 to 1989, in the course of his work for Sweetheart Plastics, Inc. (originally
+            Maryland Cup) and a selection of technical offprints and reports. Many of these patents
+            are the work of Thomas W. Winstead who head the research division of Sweetheart. </p>
+         <p><emph render="bold">Patents</emph> contains copies of patents for plastic food and
+            beverage containers. Notes and letters regarding work and research on products and
+            patents by Sweetheart Plastics are kept with the patents they describe. These patents
+            originate mostly from the United States Patent Office but include one Canadian and one
+            German patent.</p>
+         <p><emph render="bold">Publications</emph> contains articles, papers, and reports about
+            plastics and its applications, including electrical insulating, styrene and packaging.
+            It contains two reports written for Sweetheart Plastics relating to extrusion and
+            thermoforming technical data (1966) and two reports written for Winstead Patents, a
+            division of Maryland Corp. (1977 and 1989). </p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Collection found in archives intact in a largely chronological order. Notes and letters were kept with patents as found to preserve original order and context as much as possible. </p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous holdings in the areas of plastics and industrial design. Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+<subject encodinganalog="650" source="local">Plastics</subject>
+         <persname encodinganalog="600" source="local">McDonald, Joseph.</persname>
+         <persname encodinganalog="600" source="local">Winstead, Thomas W.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="local">Sweetheart Plastics, Inc.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Maryland Cup Corporation.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Dow Chemical Company.</corpname>
+         <corpname source="lcnaf" encodinganalog="610">United States. -- Patent Office.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Plastics industry and trade.</subject>
+         
+
+<subject encodinganalog="650" source="lcsh">Patents.</subject><subject encodinganalog="650" source="lcsh">Beverage containers.</subject><subject encodinganalog="650" source="lcsh">Food containers.</subject><subject encodinganalog="650" source="lcsh">Plastic containers.</subject><subject encodinganalog="650" source="lcsh">Plastics -- Extrusion.</subject><subject encodinganalog="650" source="lcsh">Plastics in packaging.</subject><subject encodinganalog="650" source="lcsh">Styrene.</subject><subject encodinganalog="650" source="lcsh">Thermoplastics.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics machinery. </subject>
+<!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Notes (documents)</genreform><genreform encodinganalog="655" source="aat">Reports.</genreform><genreform encodinganalog="655" source="aat">Patents.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Engineers.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Inventors.</occupation>
+         <!--<function encodinganalog="657"> ##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Joseph McDonald Collection of Plastics Patents, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from <corpname role="donor">National Plastics Center and Museum</corpname>, 2008.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      
+   <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+            <did>
+               <unittitle>Patents</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Correspondence, notes, etc.</unittitle>
+                  <unitdate type="inclusive" normal="1951">1951,</unitdate>
+                  <unitdate normal="1986" type="inclusive">1986,</unitdate>
+                  <unitdate normal="1989" type="inclusive">1989</unitdate>
+                  <container type="Box">1</container>
+               </did>
+               <scopecontent>
+                  <p>Notes on a Discussion of New Polystyrene Materials; J.L. Amos, C. Miller, W.H.
+                     Schuette, E.L. Kropscott, H.W. Wehr and J.N. McDonald; October 15,
+                     1951<lb/>Application of Frederick W. Gander, Erhard F. Hoegger and William P.
+                     Kane; To The United States Patent Office; Polyethylene,
+                     terephthalate/terpolymer blends; Films, sheets and articles made using such
+                     blends; and Method of making trays using such sheets<lb/>Receipt from Office of
+                     Patent and Trademark Services; To Patent and Trademark Customer Joseph McDonald
+                     Associates, Inc.; May 12, 1989<lb/>Letter from Herbert L. Gatewood of Marullo
+                     &amp; Barnes, Attorneys at Law, Boston, MA; To Mr. Gerald K. Parker, President
+                     of Artisan Plastics Corporation; Subject: Re: Tamper Evident Package Invention,
+                     File No. 3353/3.86; August 4, 1986<lb/>Letter from Du Pont Corporation, E.W.
+                     Heiderich; To Gim P. Fong, Sweethearts Plastic, Inc.; December 13, 1977</p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Patents</unittitle>
+                  <unitdate type="inclusive" normal="1930/1966">1930-1966</unitdate>
+                  <container type="Box">1</container>
+               </did>
+               <scopecontent>
+                  <p>Container, Henry Nias and William Poster, inventors; Lily-Tulip Cup
+                     Corporation; June 24, 1930; patent # 1,766,226<lb/>Method of and Apparatus for
+                     Producing Reticulated Articles from Thermoplastics, John J. Grebe and Ernest H.
+                     Harder, inventors; The Dow Chemical Company; October 31, 1944; patent #
+                     2,361,369<lb/>Vinylidene Chloride Compositions , Edgar C. Britton and Harold W.
+                     Moll, inventors; The Dow Chemical Company; Sept 18, 1945; patent #
+                     2,384,884<lb/>Foamed Polystyrene Article, James B. Sisson, inventor; St. Regis
+                     Paper Company; December 15, 1959; patent # 2,917,217<lb/>Process for Producing
+                     Folded Rim on a Container of Plastic Material, as well as an apparatus for
+                     carrying out this process, Kornelis van de Kerke and Dirk van de Kerke,
+                     inventors; July 11, 1961; patent # 2,991,602<lb/>Method for Cold Forming
+                     Plastic Article, Eckel R. Lane; inventor; March 30, 1976; patent #
+                     3,947,539<lb/>Extruded Foam Polystyrene, Albert R. Kudlach; inventor; September
+                     18, 1962; patent # 648, 802<lb/>Thin Walled Plastic Container, James R. Caine,
+                     inventor; July 24, 1962; patent #3,045,887<lb/>Storage stable expandable
+                     polymeric composition containing expandable polymeric particles and two
+                     different blowing agents and method of making same, Carl H. Pottenger,
+                     inventor; Koppers Company, Inc.; patent # 3,089,857<lb/>Cup for hot beverage,
+                     William L. Miller, inventor; Continental Can Company, Inc.; May 3, 1964; patent
+                     # 3,123,273<lb/>Composite Plastic Container, Albert McConnell, inventor; Scott
+                     Paper Company; August 10, 1965; patent # 3,199,757<lb/>Container Rim Formation,
+                     Andre F. Commeyras , inventor; Sweetheart Plastics, Inc.; December 13, 1966;
+                     patent # 3,291,361<lb/>Plastic container for dairy products or the like, Paul
+                     Davis, inventor; Sweetheart Plastics, Inc.; March 29, 1966; Patent #
+                     204,212<lb/>Nestable Container, Samuel Shapiro and James C. White, inventors;
+                     American Seal-Kap Corp.; November 29. 1966; patent # 3,288,340<lb/></p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Patents</unittitle>
+                  <unitdate type="inclusive" normal="1967/1970">1967-1970</unitdate>
+                  <container type="Box">1</container>
+               </did>
+               <scopecontent>
+                  <p>Combined Paperboard and Plastic Egg Carton, Theodore C. Baker, inventor;
+                     October 10, 1967; patent # 3,346,171 <lb/>Container Lip Rolling Machine ,
+                     Walter O. Weber, inventor; Haveg Industries, Inc.; December 19, 1967; patent #
+                     3,358,331<lb/>Automatic Rim Rolling Apparatus, Frank Rukavina, inventor;
+                     Illinois Tool Works, Inc.; July 6, 1965; patent # 3,192,565<lb/>Method of
+                     extruding a foamed plastic sheet having a skin on one surface, Jerome Alfred
+                     Cherney, Hubert Joseph Germiat and Elbert William Perry, inventors; American
+                     Can Company; March 28, 1967; patent # 3,311,681 <lb/>Nestable Containers,
+                     Daniel R. Kalata and Henry H. Houston, inventors; October 17, 1967; patent #
+                     3,347,411<lb/>Nesting Container, Martin Mueller, inventor; Lily-Tulip Cup
+                     Corporation; December 19, 1967; patent # 3,358,879<lb/>Container, Charles
+                     Fitzgerald, inventor, The Dow Chemical Company; August 12, 1968, patent #
+                     3,396,868<lb/>Plastic Glasses, Paul K. Schilling, inventor; Plastics, Inc.;
+                     January 16, 1968; patent # 3,363,820Package for Fragile Articles, Bryant
+                     Edwards, inventor; Illinois Tool Works, Inc.; February 3, 1970; patent #
+                     3,493,164 <lb/>Insulated Double Cup, Bryant Edwards, inventor; Illinois Tool
+                     Works, Inc.; March 12, 1968; Patent # 3,372,830<lb/>Plastic container for
+                     materials in bulk, Stephen Fotos, inventor; Union Carbide Corporation; January
+                     9, 1968; Patent # 3,362,575<lb/>Container Lid, Robert J. McCormick, inventor;
+                     The Dow Chemical Company; January 9, 1968; Patent # 3,362,565<lb/>Method for
+                     printing on foam polystyrene with cellulose ether printing composition, Ralph
+                     Karsten, inventor; Screen-Flock Industries, Inc.; July 29, 1969; Patent #
+                     3,458,340<lb/>Kunststoffbehalter, Antrag auf Nichtnennung, inventor;
+                     Tedeco-Verpackung; October 16, 1969; Patent # 1,302,048<lb/>Extrusion Method,
+                     Lloyd Edward Lefevre and Peter Breidt, Jr., inventors; The Dow Chemical
+                     Company; November 18, 1969; Patent # 3,479,425<lb/>Method of Extruding
+                     Laminates, Douglas S. Chisholm and Walter J. Schrenk, inventors; The Dow
+                     Chemical Company; January 19, 1971; patent # 3,557,265<lb/>Apparatus for
+                     Extrusion of Thermoplastics, Gene Leroy, inventor; Union Carbide Corporation;
+                     December 30, 1969; Patent # 3,486,192<lb/>Apparatus for Extruding Thermoplastic
+                     Materials, J.S. Gwinn and D.C. Christensen, inventors; Phillips Petroleum
+                     Company; December 30, 1969; Patent # 3,486,193<lb/> Continuous method and
+                     apparatus for manufacturing articles from foamed thermoplastic material, Thomas
+                     W. Winstead, inventor; November 25, 1969; Patent # 3,479,694 <lb/>Biaxial
+                     Stretching Machine, H.C. Tsien, inventor; Esso Research and Engineering
+                     Company; February 18, 1969; Patent # 3,427,684<lb/>Biaxial Orientation, Heinz
+                     E. Pahlke, inventor; July 15, 1969; Patent # 3,456,044<lb/>Thermoforming
+                     Apparatus, Joseph C. Morin, inventor; Cupples Container Company; October 21,
+                     1969; Patent # 3,473,195<lb/>Container, James E. Foote, inventor; Diamond
+                     International Corporation; September 23, 1969; Patent # 3, 468,468<lb/>Extruder
+                     for Shaping Powdery Thermoplastic Resins; Akira Iwata and Sadao Murai,
+                     inventors; Sekisui Kazaku Kogyo Kabushiki Kaisha; October 7, 1969; Patent #
+                     3,470,584<lb/>Deep Draw Article Forming Apparatus, Bryant Edwards, inventor;
+                     Illinois Tool Works, Inc.; May 12, 1970; Patent # 3,510,913<lb/>Method for the
+                     Preparation of Foamed Sheet and Product Obtained Thereby, Donald W. Simpson and
+                     John Y. Glass, inventors; The Dow Chemical Company; November 10, 1970; Patent #
+                     3,539,473 <lb/>Container, Charles E. Fitzgerald, inventor; The Dow Chemical
+                     Company; The Dow Chemical Company; August 12, 1968; Patent # 3,
+                     520,441<lb/></p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Patents</unittitle>
+                  <unitdate type="inclusive" normal="1971/1972">1971-1972</unitdate>
+                  <container type="Box">1</container>
+               </did>
+               <scopecontent>
+                  <p>Self-Cooking Disposable Food Packages, Milton S. Cohen, inventor; Batelle
+                     Development Corporation; November 9, 1971; Patent # 3,619,214<lb/>Machine for
+                     Sealing Containers with Covers Molded from Synthetic Plastic Sheet, Horst
+                     Lowenthal, inventor; Schweizerische Industrie-Gesellschaft; November 9, 1971;
+                     Patent # 3, 618,293<lb/>Apparatus for Forming Closures, Martin M. Sternau,
+                     inventor; W.R. Grace &amp; Co.; November 23, 1971; Patent # 3,
+                     621,637<lb/>Continuous Motion Container Molding Machine, Bryant Edwards,
+                     inventor; Illinois Tool Works, Inc.; September 20, 1971; Patent # 3,605,192
+                     <lb/>Vented Package, Robert F. Wescott, inventor; International Paper Company;
+                     October 19, 1971; Patent # 3,613,938<lb/>Process for Pre-Expanding Polymer
+                     Beads, Richard H. Immel, inventor; Sinclair-Koppers Company; May 4, 1971;
+                     Patent # 3,577,360<lb/>Method for Extruding Laminates, Douglas S. Chisholm,
+                     inventor; The Dow Chemical Company; January 19, 1971; Patent #
+                     3,557,265<lb/>Food Package, Daniel Bernhardt, inventor; April 20, 1971; Patent
+                     # 3,575,337<lb/>Skin-Coated Article Formed of Foam Thermoplastic Material,
+                     Thomas W. Winstead, inventor; October 5, 1971; Patent # 3,610,509<lb/>Forming
+                     unit for use with apparatus for forming and cutting three-dimensional plastic
+                     articles, Thomas W. Winstead, inventor; July 27, 1971; Patent #
+                     3,594,868<lb/>Cutting mechanism for use with apparatus for forming and cutting
+                     three-dimensional plastic articles, Thomas W. Winstead, inventor; July 7, 1970;
+                     Patent # 3,518,912<lb/>Stacking and packaging unit for use with machine for
+                     continuously thermoforming plastic trays or the like, Thomas W. Winstead,
+                     inventor; June 22, 1971; Patent # 3,585,778 <lb/>Apparatus for Sealing Thin
+                     Walled Containers, Thomas Norman Gaunt and Edward Dodsworth, inventors;
+                     Plastona (John Waddington) Limited; February 29, 1972; Patent #
+                     3,645,825<lb/>Non-Toxic Stabilized Polyvinyl Chloride Products and Stabilizer
+                     Compositions, Carl Robert Gloskey, inventor; M&amp;T Chemicals, Inc.; February
+                     8, 1972; Patent # 3,640,947<lb/>Plasticized Polyvinyl Chloride Film, Donatas
+                     Tijunlis and Edward A. Shriner, inventors; Union Carbide Corporation; February
+                     1, 1972; Patent # 3,639,318<lb/>Pellucid Halogen-Containing Resin Compositions,
+                     Kenneth C. Bergman and Thomas C. Jennings, inventors; Synthetic Products
+                     Company; February 1, 1972; Patent # 3,639,319<lb/>Reentrant Forming Apparatus,
+                     Fred P. Brown and Howard H. Rohdin, inventors; Packaging Industries, Inc.;
+                     February 8, 1972; Patent # 3,640,668<lb/>Folding Plastic Tray, Harford G.
+                     Goings, inventor; February 1, 1972; Patent # 3,638,849<lb/>Liquid Containers,
+                     Uno Wingardh, inventor; Sprinter Pack AB; May 30, 1972; Patent #
+                     3,666,088<lb/>Cup, George A. Cheladze, inventor; Carthage Cup Company; May 30,
+                     1972; Patent # Des. 233,704<lb/>Cup, George A. Cheladze, inventor; Carthage Cup
+                     Company; May 30, 1972; Patent # Des. 233,703<lb/>Stackable Insert Container for
+                     Axially Spaced Engaging Surfaces, Herbert J. Wanderer, inventor; Illinois Tool
+                     Works, Inc.; June 27, 1972; Patent # Re. 27,409<lb/>Apparatus for Extruding a
+                     Skin-Covered, Foamed Thermoplastic; Thomas W. Winstead, inventor; August 19,
+                     1969; Patent # 3,461,496 <lb/> Continuous Method of Extruding and Thermoforming
+                     Skin-Covered Foamed Thermoplastic Articles, Thomas W. Winstead, inventor; July
+                     11, 1972; Patent # 3,676,537 <lb/>Continuous Apparatus for Extruding and
+                     Forming Thermoplastic Articles, Thomas W. Winstead, inventor; January 4, 1972,
+                     Patent # 3,632,266<lb/></p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Patents</unittitle>
+                  <unitdate type="inclusive" normal="1974">1974</unitdate>
+                  <container type="Box">1</container>
+               </did>
+               <scopecontent>
+                  <p>Continuous Method of Manufacturing Articles from Foamed Thermoplastic Material;
+                     Thomas W. Winstead, inventor; January 29, 1974; Patent # 3,789,095<lb/>Method
+                     of Molding a Latch Opening, Kurt G. Dahlberg, inventor; Thermo-Trim, Inc.;
+                     October 29, 1974; Patent # 3,845,187<lb/>A Tool for Sealing a Container Such as
+                     a Cup, Bottle, Jar or the Like, Folke Evert Granseus and Ingvar Helmer
+                     Borgstrom, inventors; Aktiebolaget Platmanufaktur; November 26, 1974; Patent
+                     #3,849,971 <lb/>Method of Forming Foamed Plastic Sheets, Thomas W. Winstead,
+                     inventor; August 20, 1974; Patent # 3,830,900<lb/>Extrusion Apparatus, Thomas
+                     W. Winstead, inventor; June 11, 1968; Patent # 3,387,328<lb/>Continuous Process
+                     for Extruding Cellular Thermoplastics, Thomas W. Winstead, inventor; August 20,
+                     1974; Patent # 3,830,901<lb/></p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Patents</unittitle>
+                  <unitdate type="inclusive" normal="1975/1976">1975-1976</unitdate>
+                  <container type="Box">1</container>
+               </did>
+               <scopecontent>
+                  <p>Apparatus for Molding Plastic Covers for Containers, Heinz Ruch, inventor;
+                     Albert Orbist &amp;Co.; October 28, 1975; Patent # 3,915,613 <lb/>Container for
+                     Cooking Food Therein, William P. Kane, inventor; E.I. du Pont de Nemours and
+                     Company; February 11, 1975; Patent # 3,865,302<lb/>Vented Cavity Mold and
+                     Method of Thermoforming Using Such Mold; David Harris Berkebile, inventor;
+                     Patent # 1,428,328<lb/>Integrity Indicator, Donald F. Halpern, inventor;
+                     Bio-Medical Sciences, Inc.; August 12, 1975; Patent #
+                     3,899,295<lb/>Thermoplastic Resin Composition Having High Transparency and High
+                     Impact Strength, Fumio Ide, Kazuo Kishida, Toshio Sakurai and Syoichi Kawakami,
+                     inventors; Mitsubishi Rayon Co., Ltd. and Nitto Chemical Industry Co., Ltd.;
+                     November 11, 1975; Patent # 3,919,157<lb/>Simplified Process and Apparatus for
+                     the Production of Cups from a Foamed Thermoplastic Sheet, Jingo Seto, inventor;
+                     November 11, 1975; Patent # 3,919,368<lb/>Lid for a Packaging Container or the
+                     Like, Paul Davis, inventor; November 18, 1975; Patent # Des. 237,689<lb/>Cups
+                     for Holding Ingredients for Drinks, Robert H. Day, inventor; Illinois Tool
+                     Works, Inc.; December 23, 1975; Patent # 3,927,766<lb/>Method for Forming
+                     Noncircular Thermoplastic Cupped Articles; Gerrit van der Gaag and Thomas C.
+                     Tomey; Shell Oil Company; December 30, 1975; Patent # 3,929,953<lb/>Heat
+                     Sealing Apparatus, Fred Ascoli and Robert F. Hermann, inventors; Standard
+                     Container Company; February 10, 1976; Patent # 3,937,645<lb/>Closuring
+                     Containers, Emile Raymond Vermeulen, inventor; Sidaplax N.V.; December 21,
+                     1971; Patent # 3,628,301<lb/>Shrink Film Capping Machine; Ernest Willvonseder;
+                     January 8, 1974; Patent # 3,783,582<lb/>Method and Apparatus for Uniting
+                     Articles; Bryant Edwards, inventor; Illinois Tool Works, Inc.; February 6,
+                     1968; Patent # 3,367,808<lb/>Semi-Automatic Capping Machine; William J. Burke,
+                     inventor; Roll-O-Sheets, Inc.; February 8, 2012; Patent #
+                     3,233,386<lb/>Apparatus for Producing Packaged Product, Robert G. Carpenter,
+                     Richard G. King and Thomas W. Greaves, inventors; W.R. Grace &amp; Co.; May 15,
+                     1962; Patent # 3,034,271<lb/>Apparatus for Feeding Heat Shrinkable Plastic Film
+                     and Capping Containers Therewith, Thomas E. Marion and Godfrey M. Priborksy,
+                     inventors; Maryland Cup Corporation; November 21, 1972; Patent #
+                     3,703,066<lb/>Thermoplastic Sealing Apparatus and Method, David R. Zelnick,
+                     inventor; Koehler-Dayton, Inc.; June 10, 1969; Patent # 3,449,183<lb/>Method
+                     and Apparatus for Heat Shrink Capping Containers, William T. Doty, inventor;
+                     Maryland Cup Corporation; November 4, 1975; Patent # 3,916,602<lb/>Apparatus
+                     for Making a Closure on a Container, Martin M. Sternau, inventor; W.R. Grace
+                     &amp; Co.; October 31, 1972; Patent # 3,701,234<lb/>Method for Blow Molding
+                     Foamed Walled Plastic Open Mouthed Containers, Granville J. Hahn, inventor;
+                     Cosden Oil &amp; Chemical Company; February 17, 1976; Patent #
+                     3,939,236<lb/>Scrapless Forming of Plastic Articles, Ralph E. Ayres, Kenneth J.
+                     Cleereman and Walter E. Schrenk, inventors; The Dow Chemical Company; March 30,
+                     1976; Patent # 3,947,204<lb/>Packaging Container for a Razor or the Like, Carl
+                     H. Floren, inventor; The Gillette Company; May 18, 1976; Patent # Des.
+                     239,920<lb/>Lid, Clarence T. Brewer, inventor; Solo Cup Company; May 4, 1976;
+                     Patent # 3,583,596<lb/>Close Nesting, Tamperproof Container Closure, Stephen W.
+                     Amberg and Rodney E. Ludder, inventors; Owens-Illinois, Inc.; May 11, 1976;
+                     Patent # 3,955,699 <lb/>Sealed Container, James B. Swett, inventor; Dart
+                     Industries, Inc.; May 18, 1976; Patent # 3,957,097<lb/>Container Closure, Elmer
+                     E. Kress, inventor; July 7, 1976; Patent # 240,595<lb/>Covered Container for
+                     Serving Food with Combination Ventilation and Finger Holes, Nicholas D.
+                     Commisso, inventor; Mobil Oil Corporation; May 11, 1976; Patent # 3,955,710
+                     <lb/>Food Packaging Tray, Thomas H. White, inventor; Rubbermaid Industrial
+                     Products Corporation; July 27, 1976; Patent # 240,714<lb/>Tamper Indicator
+                     Tape, Lew W. Cornell, inventor; Minnesota Mining and Manufacturing Company;
+                     February 3, 1976; Patent # 3,935,960<lb/>Apparatus for Folding Container Rims,
+                     Gaylord William Brown, inventor; October 21, 1975; Patent # 3,914,102<lb/>Foam
+                     Package for Breakfast Foods, Donald K. Jewell, inventor; Restaurant Technology,
+                     Inc.; July 13, 1976; Patent # 3,968,921<lb/>Straw Dispenser, Stanley W. Peva,
+                     Jr., inventor; Austin-Gordon Design, Inc.; July 13, 1976; Patent # 3,968,901
+                     <lb/>Foam Bead Bottom Plastic Cup and Method of Making Same, Clifford Clayton
+                     Goehring, inventor; American Can Company; January 6, 1976; Patent #
+                     3,931,378<lb/>Method of Making Nestable Foamed Plastic Cups, Ilie Mila
+                     Belivakici, Clifford Clayton Goehring, James Allan Wachtel, William Joseph Lahm
+                     and Carl Richard Storms, inventors; American Can Company; January 6, 1976;
+                     Patent # 3,931,380 <lb/>Insulative Packaging Device, Wayne L. Congleton,
+                     inventor; Dolco Packaging Corporation; January 20, 1976; 3,933,295 <lb/>Plastic
+                     Container, Algis Steven Andrulionis, inventor; Polysar Plastics, Inc.; January
+                     27, 1976; Patent # 3,934,749<lb/><lb/></p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Patents</unittitle>
+                  <unitdate type="inclusive" normal="1977/1978">1977-1978</unitdate>
+                  <container type="Box">1</container>
+               </did>
+               <scopecontent>
+                  <p>Pumped Injection of Gas for Making Foamed Plastic, James W. Hendry, inventor;
+                     Ex-Cell-O Corporation; August 23, 1977; Patent # 4,043,715 <lb/>Polyethylene
+                     Terephthalate/Terpolymer Blends, Film Sheets, and Articles Made Using Such
+                     Blends, and Method of Making Trays Using Such Sheets, Frederick W. Gander,
+                     Ernard F, Hoegger, William P. Kane, inventors; E.I. Du Pont de Nemours and
+                     Company; April 26, 1977; Patent # 4,020,126<lb/>Apparatus for Making Hollow
+                     Molded Products, Arthur J. Griner and Daniel Anthony Koppa, inventors; Nabisco,
+                     Inc.; July 26, 1977; Patent # 4,038,007<lb/>Apparatus for Making Hollow Molded
+                     Products, Arthur J. Griner and Daniel Anthonu Koppa, inventors; Nabisco, Inc.;
+                     July 26, 1977; Patent # 4,038,016<lb/>Sheet Support Apparatus, Gaylord William
+                     Brown, inventor; Sweetheart Plastics, Inc.; July 18, 1978; Patent #
+                     4,101,252<lb/>Laminated Material of Thermoplastic Synthetic Material, Process
+                     of Making and Container Closed Therewith, Barbara Geppert and Kurt Huth,
+                     inventors; Bellaplast, GmbH; July 18, 1978; Patent # 4,101,047</p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Patents</unittitle>
+                  <unitdate type="inclusive" normal="1977/1978">1977-1978</unitdate>
+                  <container type="Box">2</container>
+               </did>
+               <scopecontent>
+                  <p>Nestable Containers, Daniel R. Kalata and Henry Huston, inventors;
+                     Owens-Illinois, Inc.; July 26, 1977; Patent # Re. 29, 320<lb/>Apparatus for
+                     Pre-Expanding and Molding Expandable Thermoplastic Polymer Particles, Stuart B.
+                     Smith, inventor; Foster Grant Co., Inc.; November 29, 1977; Patent #
+                     4,060,354<lb/>Apparatus for the Manufacture of Thin-Walled Shaped Articles of
+                     Thermoplastic Material, Alfons W. Thiel and Hans Hell, inventors; Bellaplast
+                     GmbH; August 8, 1978; Patent # 4,105,386<lb/>Method and Indicator for Detecting
+                     the Loss of Integrity of a Package, Donald F. Halpern, inventor; Bio-Medical
+                     Sciences Inc.; July 4, 1978; Patent # 4,098,577<lb/>Sterile Package, Syed M.H.
+                     Zaidi, inventor; Paper Manufacturers Company; April 15, 1979; Patent #
+                     4,197,947<lb/>Apparatus for Heating a Food Item, Albert E. Colato and Jerome L.
+                     Formo, inventors; Anchor Hocking Corporation; August 1, 1978; Patent #
+                     4,103,736<lb/>The Winstead Patents: Analysis of Content and Coverage, Terrell
+                     C. Birch; 19 page typescript summary; July 18, 1977</p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Patents</unittitle>
+                  <unitdate type="inclusive" normal="1979/1987">1979-1987</unitdate>
+                  <container type="Box">2</container>
+               </did>
+               <scopecontent>
+                  <p>Tamper-Proof Closure and Method of Making Same, Gaylord Brown, inventor;
+                     Sweetheart Plastic, Inc.; June 24, 1980; Patent # 4,209,101<lb/>Method and
+                     Apparatus for Thermoforming Thermoplastic Foam Articles, Donald W. Myers and
+                     Samantha L. Vivlamore, inventors; Mobil Oil Corporation; December 16, 1980;
+                     Patent # 4,239,727<lb/>Method for the Continuous Formation of Biaxially
+                     Oriented Thermoplastic Materials and Forming Articles Therefrom by Intermittent
+                     Forming Means Interfaced Therewith, Thomas W. Winstead, inventor; Maryland Cup
+                     Corporation; December 22, 1981; Patent # 4,307,049<lb/>Tilt Indicator for
+                     Shipping Containers, Ralph R. Mendelson, inventor; July 20, 1982; Patent #
+                     4,340,008<lb/>Non-Spill Drink-Through Lid, William A. Dart and Kenneth B. Dart,
+                     inventors; Dart Container Corporation; November 1, 1983; Patent #
+                     4,412,629<lb/>Container Closure Alignment Device, Robert H.C. M. Daenen,
+                     inventor; Dart Industries, Inc.; November 1, 1983; Patent # 4,412,630<lb/>Spill
+                     Resistant Disposable Paper Drinking Cup, William C. La Fever, inventor;
+                     November 1, 1983; Patent # 4,412,644<lb/>Method for Forming a Cup-Like
+                     Container, Carl Arndt and Martin Mueller, inventors; Owens-Illinois Inc.; May
+                     31, 1983; Patent # 4,386,044<lb/>Thermoformable Polymer Blend Composition,
+                     Michael R. Grancio, David F. Stewart and John F. Cass, inventors; Sweetheart
+                     Plastics, Inc.; May 31, 1983; Patent # 4,386,188<lb/>Thermoformable Polymer
+                     Blend Composition Comprising Styrene Polymer, Olefin Polymer and Block
+                     Copolymer, Michael C. Grancio, David F. Stewart and John F. Cass, inventors;
+                     Sweetheart Plastics, Inc.; May 31, 1983; Patent # 4,386,187<lb/>Apparatus for
+                     the Continuous Formation of Biaxially Oriented Thermoplastic Materials and
+                     Forming Articles Therefrom by Intermittent Forming Means Interfaced Therewith,
+                     Thomas W. Winstead, inventor; Maryland Cup Coproration; May 24, 1983; Patent #
+                     4,348,836<lb/>Tuck and Nest Method and Apparatus, Gaylord Brown, inventor;
+                     Sweetheart Plastic Inc.; May 24, 1983; Patent # 4,384,439<lb/>Edible Food
+                     Containers and the Method of Coating Said Containers, Irving H. Rubenstein and
+                     Herbert M. Bank, inventors; Maryland Cup Corporation; June 28, 1983; Patent #
+                     4,390,553<lb/>Methods and Apparatus for Curling Lips about the Open Mouths of
+                     Stacked Thermoplastic Containers, Albert W. Arends and Ronald E. Henke,
+                     inventors; Leesona Corporation; July 5,1983; Patent #
+                     4,391,768<lb/>Thermoformable Polymer Blend Composition Comprising Styrene
+                     Polymer, Olefin Polymer and Block Copolymer, Michael R. Grancio, David F.
+                     Stewart and John F. Cass, inventors; Sweetheart Plastics, Inc.; May 31, 1983;
+                     Patent # 4,386,187<lb/>Thermoformable Polymer Blend Composition, Michael R.
+                     Grancio; David F. Stewart and John F. Cass, inventors; Sweetheart Plastics,
+                     Inc.; May 31, 1983; Patent # 4,386,188<lb/>Apparatus for the Continuous
+                     Formation of Biaxially Oriented Thermoplastic Materials, Thomas W. Winstead,
+                     inventor; Maryland Cup Corporation; November 8, 1983; Patent #
+                     4,413,964<lb/>Apparatus for the Continuous Formation of Biaxially Oriented
+                     Thermoplastic Materials and Forming Articles Therefrom by Intermittent Formings
+                     Means Interfaced Therewith, Thomas W. Winstead, inventor; Maryland Cup
+                     Corporation; May 24, 1983; Patent # 4,384,836<lb/>Apparatus for the Continuous
+                     Formation of Biaxially Oriented Thermoplastic Materials and Forming Articles
+                     Therefrom by Intermittent Forming Means Interfaced Therewith, Thomas W.
+                     Winstead, inventor; Maryland Cup Corporation; November 22, 1983; Patent #
+                     4,416,607<lb/>Tamper Evident Closures and Packages, Mortimer S. Thompson,
+                     inventor; Tri-Tech Systems International Inc.; December 25, 1984; Patent #
+                     4,489,841<lb/>Container Tamper Detection Device, Joseph A. Resnick, inventor;
+                     January 10, 1984; Patent # 4,424,911<lb/>Receptacle Tampering Indicator and
+                     Method Therefor, Randall A. Newkirk, inventor; February 21, 1984; Patent #
+                     4,432,462<lb/>Tamper Resistant Security Package, Stewart A. Darling, Tadeusz
+                     Kostanecki and George Soos, inventors; DRG Inc.; July 3, 1984; Patent #
+                     4,457,430<lb/>Tamper Evident Container and Method for Making the Same, Peter K.
+                     Laucis and Robert Terry, inventors; Nordson Corporation; November 6, 1984;
+                     Patent # 4,480,749<lb/>Container Closure Integrity System, Donald R.
+                     Wloszczyna, inventor; Denerik Creativity, Inc.; March 5, 1985; Patent #
+                     4,502,605<lb/>Tamper-Indicating Device and Method, Robert C. Weiner, inventor;
+                     March 19, 1985; Patent # 4,505,399<lb/>Container Seal with Tamper Indicator,
+                     Howard J. Klein and Garbor L. Szekeres, inventors; April 16, 1985; Patent #
+                     4,511,052<lb/>Oxygen Indicator for Packaging, Daniel Perlman and Henry
+                     Linschitz, inventors; July 2, 1985; Patent # 4,526,752<lb/>Tamper-Evident
+                     Closure Apparatus, Jeffrey Sandhaus, inventor; May 27, 1986; Patent #
+                     4,591,062<lb/>Pre-Expander for Expandable Polymer Beads, Ian C. Train,
+                     inventor; June 30, 1987; Patent # 4,676,739<lb/>Refrigerant Cooled Plastic
+                     Molding, Method and Apparatus, Robert C. Ritchie, Henry J. McKone and Richard
+                     Stamm, inventors; Dart Industries, Inc.; September 1, 1987; Patent #
+                     4,690,789<lb/>Method of Producing a Skin-Covered Foamed Thermoplastic, Thomas
+                     W. Winstead, inventor; June 13, 1972; Patent # 3,670,059<lb/></p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Winstead patents</unittitle>
+                  <unitdate normal="1977" type="inclusive">1977,</unitdate>
+                  <unitdate type="inclusive" normal="1989">1989</unitdate>
+                  <container type="Box">2</container>
+               </did>
+               <scopecontent>
+                  <p>The Winstead Patents: Analysis of Content and Coverage, Terrell C. Birch; 19
+                     page typescript summary; July 18, 1977<lb/>Special Report; Winstead Patents:
+                     Continuous Thermoforming and Thermoplastic Foams; Michael Gigliotti &amp;
+                     Associates; March 23, 1989</p>
+               </scopecontent>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Publications</unittitle>
+                     </did>
+            <c02>
+               <did>
+                  <unittitle>Articles and papers</unittitle>
+                  <unitdate type="inclusive" normal="1946">1946,</unitdate>
+                  <unitdate normal="1959" type="inclusive">1959</unitdate>
+                  <container type="Box">2</container>
+               </did>
+               <scopecontent>
+                  <p>Electrical Insulating Materials…A Symposium: Plastic compositions for
+                     dielectric applications, W.C. Goggin and R.F. Boyer, authors; The Dow
+                     Electrical Company; Reprinted from Industrial and Engineering Chemistry, Vol.
+                     38, Page 1090, November, 1946.<lb/>Ethyl Cellulose Proves Self on Difficult
+                     Applications; Philip A. Belk, author; Hercules Powder Co. <lb/>Poly-Fibre-a new
+                     approach to molding; W.C. Goggin and R.R. Bradshaw, author<lb/><emph render="italic">Styrene Plastics</emph>, Henno Keskkula, Alan E. Platt and
+                     Raymond F. Boyer, authors; The Dow Chemical Company; Reprinted from
+                     Kirk-Othmer: Encyclopedia of Chemical Technology, Volume 19, 2nd
+                     Edition<lb/>Technical Papers, <emph render="italic"> Plastics in
+                        Packaging</emph>, Lewis A. Bernhard, editor; Society of Plastics Engineers,
+                     Inc.; Regional Technical Conference; November 19, 1959<lb/></p>
+               </scopecontent>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Reports</unittitle>
+                  <unitdate type="inclusive" normal="1951">1951,</unitdate>
+                  <unitdate normal="1964" type="inclusive">1964,</unitdate>
+                  <unitdate normal="1966" type="inclusive">1966,</unitdate>
+                  <container type="Box">2</container>
+               </did>
+               <scopecontent>
+                  <p>Extrusion and Thermoforming Technical Data Prepared for Mr. J.N. McDonald,
+                     Sweetheart Plastics; January 19, 1966<lb/>The Dow Chemical Company Report: The
+                     Extrusion of Polystyrene, I, Report No. PB-11; C.E. Beyer and F.E. Towsley,
+                     authors; The Dow Chemical Company; August 17, 1951; Plastics Basic Research
+                     Laboratory<lb/>Report to Mr. J.N. McDonald Sweetheart Plastics, Inc., Analysis
+                     of Patents: Sheet Extrusion and Thermoforming Technology; From Edison Technical
+                     Services, Inc., Spring 1964<lb/></p>
+               </scopecontent>
+            </c02>                 
+                     </c01>
+   </dsc>	</archdesc>  </ead>

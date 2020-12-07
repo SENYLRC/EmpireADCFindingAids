@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012--><!-- added altformavail section -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" mainagencycode="NSyU" identifier="barbour_b">barbour_b</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Bruce Barbour Recordings</titleproper>
+        <subtitle>An inventory of his recordings at Syracuse University</subtitle>
+        <author encodinganalog="Creator">AES</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2015-12-02">2 Dec 2015</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Anna Smallwood
+        
+        <date normal="2015-12-02">2 Dec 2015</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="local">Barbour, Bruce.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Bruce Barbour Recordings</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1976/1980" type="inclusive">1976-1980</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>3.25 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">The Bruce Barbour Audio Recordings
+            contain reel audio tapes from recitals, concerts and other performances.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">4626989</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Bruce Barbour (1923- ) is Coordinator of Performing Arts of the Munson
+            Williams Proctor Arts Institute (MWPAI), located in Utica, New York in 1962. While in
+            this position, Barbour worked on bringing films, music lectures, and recitals to the
+            Museum of Art Auditorium. As a result from his involvement, the recordings in this
+            collection are presumed to have been performances from MWPAI.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Bruce Barbour Recordings</emph> contains reel audio tapes from recitals, concerts and other
+            performances hosted by Bruce Barbour, most likely at the Munson Williams Proctor Arts
+            Institute.</p>
+    </scopecontent>
+    <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Recordings are arranged in chronological order.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## (MARC 544 1)</p>
+      
+    </relatedmaterial>-->
+    <!--Use archref, not extref, to link to related collections.-->
+      <!--<separatedmaterial encodinganalog="544 0"><head>Separated Material</head><p>## OPT (MARC 544 0)</p></separatedmaterial>-->
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Music</subject>
+	  <subject encodinganalog="650" source="local">New York State</subject>
+	  <persname encodinganalog="600" source="local">Barbour, Bruce.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>
+	  <corpname encodinganalog="610" source="lcnaf">##</corpname>
+	  <title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Music. </subject>
+      <subject encodinganalog="650" source="lcsh">Music -- 20th century -- Performances.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh"></geogname>-->
+      <genreform encodinganalog="655" source="aat">Audiotapes. </genreform>
+      <genreform encodinganalog="655" source="aat">Tape reels.</genreform>
+    
+    
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>
+		 <function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		 <p>Researcher access to the recordings requires advance notice in order to produce a working copy.</p>
+    </accessrestrict>
+	
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+    </userestrict>
+	
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p> The Bruce Barbour Recordings, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+	
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>There is no acquisition information regarding the Bruce Barbour Recordings.</p>
+    </acqinfo>
+	
+    <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>
+      
+      <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+      <c01 level="series">
+        <did>
+          <unittitle>Recordings</unittitle>
+        </did>
+        <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+               <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+        <c02>
+          <did>
+            
+            <unittitle>Barbour Lecture “Hoffmann”</unittitle>
+            <unitid>barbour_001</unitid><unitdate type="inclusive" normal="1976-05-25/1976-05-26">05/25/1976, 05/26/1976</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Ariadne”</unittitle>
+            <unitid>barbour_002</unitid><unitdate type="inclusive" normal="1976-06-01/1976-06-02">06/01/1976-06/02/1976</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Salome” (Richard Strauss)</unittitle>
+            <unitid>barbour_003</unitid><unitdate type="inclusive" normal="1976-06-08">06/08/1976</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Salome” (Richard Strauss)</unittitle>
+            <unitid>barbour_004</unitid><unitdate type="inclusive" normal="1976-06-09">06/09/1976</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>Benefit Concert for the Stanley Performing Arts Center in Utica</unittitle>
+            <unitid>barbour_005</unitid><unitdate type="inclusive" normal="1976-09-22">09/22/1976</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>Ludwig and Wagner</unittitle>
+            <unitid>barbour_006</unitid><unitdate type="inclusive" normal="1976-11-21">11/21/1976</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>Abduction from the Seraglio</unittitle>
+            <unitid>barbour_007</unitid><unitdate type="inclusive" normal="1977-05-03">05/03/1977</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>Recital</unittitle>
+            <unitid>barbour_008</unitid><unitdate type="inclusive" normal="1977-04-17">04/17/1977</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“The Marriage of Figaro”</unittitle>
+            <unitid>barbour_009</unitid><unitdate type="inclusive" normal="1977-05-12">05/12/1977</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Don Giovanni”</unittitle>
+            <unitid>barbour_010</unitid><unitdate type="inclusive" normal="1977-05-17">05/17/1977</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Cosi fan tutte”</unittitle>
+            <unitid>barbour_011</unitid><unitdate type="inclusive" normal="1977-05-24">05/24/1977</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“The Magic Flute”</unittitle>
+            <unitid>barbour_012</unitid><unitdate type="inclusive" normal="1977-05-31">05/31/1977</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Zarzuela” and “3-Cornered Hat”</unittitle>
+            <unitid>barbour_013</unitid><unitdate type="inclusive" normal="1978-01-29">01/29/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Spanish Music”</unittitle>
+            <unitid>barbour_014</unitid><unitdate type="inclusive" normal="1978-02-05">02/05/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Joys of Chamber Music”</unittitle>
+            <unitid>barbour_015</unitid><unitdate type="inclusive" normal="1978-05-11">05/11/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Joys of Chamber Music”</unittitle>
+            <unitid>barbour_016</unitid><unitdate type="inclusive" normal="1978-05-18">05/18/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“The Joys of Chamber Music”</unittitle>
+            <unitid>barbour_017</unitid><unitdate type="inclusive" normal="1978-05-25">05/25/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Diaghilev and the Ballets Russes/Stravinsky: Petrouchka”</unittitle>
+            <unitid>barbour_018</unitid><unitdate type="inclusive" normal="1978-09-14">09/14/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Stravinsky the Rite of Spring”</unittitle>
+            <unitid>barbour_019</unitid><unitdate type="inclusive" normal="1978-09-21">09/21/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Stravinsky, Apollo, Milhaud, le boeuf sur le toit”</unittitle>
+            <unitid>barbour_020</unitid><unitdate type="inclusive" normal="1978-09-28">09/28/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Milhaud: La Creation du Monde/Poulenc: Les Biches</unittitle>
+            <unitid>barbour_021</unitid><unitdate type="inclusive" normal="1978-10-05">10/05/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Satie: Parade/ De Falla - El Amor Brujo”</unittitle>
+            <unitid>barbour_022</unitid><unitdate type="inclusive" normal="1978-10-12">10/12/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Prokofiev: Romeo and Juliet”</unittitle>
+            <unitid>barbour_023</unitid><unitdate type="inclusive" normal="1978-10-26">10/26/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Hindemith: Saint Francis (Nobilissima Visione)/ Barber-Medea”</unittitle>
+            <unitid>barbour_024</unitid><unitdate type="inclusive" normal="1978-11-02">11/02/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>Schubert Memorial Concert</unittitle>
+            <unitid>barbour_025</unitid><unitdate type="inclusive" normal="1978-11-19">11/19/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>Schubert Memorial Concert Part II</unittitle>
+            <unitid>barbour_026</unitid><unitdate type="inclusive" normal="1978-11-19">11/19/1978</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Enigma Variations”</unittitle>
+            <unitid>barbour_027</unitid><unitdate type="inclusive" normal="1979-03-26">03/26/1979</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Verdi: Biography”</unittitle>
+            <unitid>barbour_028</unitid><unitdate type="inclusive" normal="1979-09-10">09/10/1979</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Macbeth”</unittitle>
+            <unitid>barbour_029</unitid><unitdate type="inclusive" normal="1979-09-17">09/17/1979</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“II Trovatore”</unittitle>
+            <unitid>barbour_030</unitid><unitdate type="inclusive" normal="1979-09-25">09/25/1979</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Don Carlo”</unittitle>
+            <unitid>barbour_031</unitid><unitdate type="inclusive" normal="1979-10-02">10/02/1979</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Falstaff” (Verdi)</unittitle>
+            <unitid>barbour_032</unitid><unitdate type="inclusive" normal="1979-10-08">10/08/1979</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>Recital</unittitle>
+            <unitid>barbour_033</unitid><unitdate type="inclusive" normal="1979-11-27">11/27/1979</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Vienna: The World’s Music Center”</unittitle>
+            <unitid>barbour_034</unitid><unitdate type="inclusive" normal="1980-04-21">04/21/1980</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Haydn and Mozart”</unittitle>
+            <unitid>barbour_035</unitid><unitdate type="inclusive" normal="1980-04-28">04/28/1980</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Beethoven”</unittitle>
+            <unitid>barbour_036</unitid><unitdate type="inclusive" normal="1980-05-08">05/08/1980</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Schubert, Strauss, Kalman”</unittitle>
+            <unitid>barbour_037</unitid><unitdate type="inclusive" normal="1980-05-12">05/12/1980</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>“Beer-Garden, Ballroom, Parlor, and Cabaret”</unittitle>
+            <unitid>barbour_038</unitid><unitdate type="inclusive" normal="1980-05-19">05/19/1980</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>Barbour</unittitle>
+            <unitid>barbour_039</unitid><unitdate type="inclusive" normal="1980-06-29">06/29/1980</unitdate>
+            <physdesc>1/4 inch audio tape</physdesc>
+            <container type="Oversize">3</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="yates_ht">yates_ht</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Howard T. Yates Drawings</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2016-03-16" encodinganalog="Date">16 Mar 2016</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2016-03-16">16 Mar 2016</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Yates, Howard T., 1889-1956.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Howard T. Yates Drawings</unittitle>
+         <unitdate encodinganalog="245$f" normal="1926" type="inclusive" label="Inclusive Dates: ">1926</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.1 linear ft. (1 oversize flat box)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Blueprints and specifications for masonry and carpentry work by Syracuse architect Howard T. Yates</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4658781</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Howard T. Yates (1889-1956) was a licensed architect and engineer in Syracuse, New York.  His work in and around Syracuse includes a large Tudor home on Scottholm designed for the M. L. Franklin family (of Franklin Co. Furniture),  new suburban housing tracts around the edges of Syracuse in the late 1920s, most of the houses in the Dewittshire development, located on both sides of Jamesville Road just south of East Genesee Street in Dewitt, the Dunbar Center at 950 South Townsend Street (built in 1940 and demolished in 1964), Giminski's Furniture Store at 1411 West Genesee Street (as of 2015, home of the Syracuse New Times), and a household electrical appliance store for John D. Wilson, owner of the Wilson Building (where Yates had his office) and Wilson's Leading Jewelers, Inc.</p><p>[Information taken from findagrave.com and from "<extref href="http://mycentralnewyork.blogspot.com/2012/09/rediscoveringhoward-t.html">Rediscovering Howard T. Yates (d. 1956), Architect of Early Suburbs</extref>," by Samuel Gruber, <emph render="italic">My Central New York</emph>  blog, 17 Sep 2012.]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Howard T. Yates Drawings</emph> consists of architectural drawings and specifications for masonry and carpentry work by architect and engineer Howard Yates, for the residence and garage of Benjamin Redner, 124 Circle Rd, Syracuse, N.Y., 1926</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Original order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Redner, Benjamin.</persname><persname encodinganalog="600" source="lcnaf">Yates, Howard T., 1889-1956.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Architecture -- New York (State)</subject>
+         <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.)</geogname>
+         <genreform encodinganalog="655" source="aat">Architectural drawings (visual works)</genreform>
+			<genreform encodinganalog="655" source="aat">Blueprints (reprographic copies)</genreform>
+			
+         <occupation encodinganalog="656" source="lcsh">Architects.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Howard T. Yates Drawings, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from University Archives, 2016.   Originally donated to Syracuse University Archives by John Felleman, 2003.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Architectural drawings</unittitle></did>
+               
+               
+            <c02><did><unittitle>Benjamin Redner house</unittitle><unitdate normal="1926" type="inclusive">1926</unitdate><container type="Oversize">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

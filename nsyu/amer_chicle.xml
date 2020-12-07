@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="amer_chicle">amer_chicle</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">American Chicle Company Records</titleproper>
+            <subtitle>An inventory of their records at Syracuse University</subtitle>
+         <author encodinganalog="Creator">-</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1963/1973" encodinganalog="Date">circa 1968</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-05-15">15 May 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>18 May 2010 - converted to EAD (MRC)</item><item>13 Sep 2012 - fixed boxes 43/44 (MRC)</item><item>20 Apr 2018 - fixed inventory for boxes 2, 3 (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">American Chicle Company.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">American Chicle Company Records</unittitle>
+         <unitdate encodinganalog="245$f" normal="1889/1964" type="inclusive" label="Inclusive Dates: ">1889-1964</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>114 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Files and published material of the American gum and confectionery 
+		 manufacturer.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2751593</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The American Chicle Company was an American chewing gum company, incorporated in 1899.  
+		The company had operations in Brooklyn, Cleveland, Chicago, Louisville (Kentucky), and 
+		Toronto, as well as factories and forest land in Yucatan.  Its products eventually grew to 
+		include breath mints, antacids, cough drops and other items.  American Chicle was acquired 
+		by Warner-Lambert in 1962, which in turn was acquired by Pfizer in 2000.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">American Chicle Company Records</emph> contains administrative, legal and financial 
+		 papers.  The largest categories are legal papers, patent materials, and stocks information.  The financial material 
+		 consists entirely of bound volumes.</p><p>Included in the collection (particularly in the financial material) is also some material from subsidiary and/or partner companies, such as the Crawford Gum Company and the Mexican Exploitation Company.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Lacking a company history or organizational chart, the American Chicle files have been arranged in a single alphabetical 
+		 run by topic or type of file (e.g. legal files, patents, etc.)  The majority of the material is in 43 boxes, but there are also 
+		 some 389 bound volumes, most of these financial in nature (ledgers, journals, expense information, etc.)</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+		 <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">American Chicle Company.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Candy industry -- Accounting.</subject>
+         <subject encodinganalog="650" source="lcsh">Candy industry -- United States -- History.</subject>
+         <subject encodinganalog="650" source="lcsh">Chewing gum -- United States -- History.</subject>
+         <subject encodinganalog="650" source="lcsh">Chicle industry -- Mexico.</subject>
+         <subject encodinganalog="650" source="lcsh">Confectionery -- United States -- History.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Advertisements.</genreform>
+         <genreform encodinganalog="655" source="aat">Contracts.</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Journals (accounts)</genreform>
+         <genreform encodinganalog="655" source="aat">Ledgers (account books)</genreform>
+         <genreform encodinganalog="655" source="aat">Legal documents.</genreform>
+         <genreform encodinganalog="655" source="aat">Legal files.</genreform>
+         <genreform encodinganalog="655" source="aat">Minutes (administrative records)</genreform>
+         <genreform encodinganalog="655" source="aat">Patents.</genreform>
+         <genreform encodinganalog="655" source="aat">Reports.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>-->
+      </controlaccess>
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>American Chicle Company Records, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unspecified, 1967.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+<c01 level="series"><did><unittitle>General files</unittitle></did>
+   <c02 level="subseries"><did><unittitle>Adams Brands, Ltd. and Adams Brands Sales, Ltd.</unittitle></did>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1953/1957">1953-1957,  </unitdate><unitdate type="inclusive" normal="1958">1958</unitdate><physdesc><extent>8 folders</extent></physdesc><container type="Box">1</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Adams Chewing Gum Company, Ltd.</unittitle></did>
+      <c03><did><unittitle>Correspondence</unittitle><unitdate type="inclusive" normal="1931/1932">1931-1932</unitdate><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Liquidation</unittitle><unitdate type="inclusive" normal="1933">1933</unitdate><container type="Box">1</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>American Bank Note Company</unittitle></did>
+      <c03><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>American Chicle Company</unittitle></did>
+      <c03><did><unittitle>Board of Transportation</unittitle></did>
+         <c04><did><unittitle>Original and Supplemental Contract V-3</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>1 through 135</unittitle><physdesc><extent>29 folders</extent></physdesc><container type="Box">1</container></did></c04>
+      </c03>
+      <c03><did><unittitle>Bonds</unittitle></did>
+         <c04><did><unittitle>Correspondence</unittitle><unitdate type="inclusive" normal="1929">1929</unitdate><container type="Box">1</container></did></c04>
+         <c04><did><unittitle>General</unittitle><unitdate type="inclusive" normal="1947/1951">1947-1951</unitdate><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Sugar</unittitle><unitdate type="inclusive" normal="1954/1955">1954-1955</unitdate><container type="Box">2</container></did></c04>
+      </c03>
+      <c03><did><unittitle>By-Laws</unittitle><unitdate type="inclusive" normal="1922/1961">1922-1961</unitdate><physdesc><extent>6 folders</extent></physdesc><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Christmas Bonus</unittitle><unitdate type="inclusive" normal="1940/1949">1940-1949</unitdate><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Christmas Boxes to Stockholders-Correspondence</unittitle><unitdate type="inclusive" normal="1950/1957">1950-1957</unitdate><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Claims</unittitle></did>
+         <c04><did><unittitle>Foreign Substance</unittitle></did>
+            <c05><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="1953/1956">1953-1956, </unitdate><unitdate type="inclusive" normal="1954">1954, </unitdate><unitdate type="inclusive" normal="1955">1955, </unitdate><unitdate type="inclusive" normal="1957">1957</unitdate><physdesc><extent>4 folders</extent></physdesc><container type="Box">2</container></did></c05> 
+            <c05><did><unittitle>Summary</unittitle><unitdate type="inclusive" normal="1953/1956">1953-1956</unitdate><container type="Box">2</container></did></c05>
+            <c05><did><unittitle>Canada, General</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">2</container></did></c05>
+         </c04>
+         <c04><did><unittitle>General</unittitle><unitdate type="inclusive" normal="1950/1957">1950-1957</unitdate><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Marine - S.S. Rozewie (Brazil</unittitle><container type="Box">2</container></did></c04>
+      </c03>
+      <c03><did><unittitle>Department of Commerce, Commerce Clearing House</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Employees Association #3</unittitle><unitdate type="inclusive" normal="1948/1958">1948-1958</unitdate><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Insurance</unittitle></did>
+         <c04><did><unittitle>Argentina, Fire</unittitle><unitdate type="inclusive" normal="1947">1947</unitdate><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Auto, General</unittitle><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Marine, Columbia correspondence</unittitle><unitdate type="inclusive" normal="1952/1954">1952-1954</unitdate><container type="Box">2</container></did></c04>
+         <c04><did><unittitle>Personal, J. Hoppenfeld</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Product Liability</unittitle><container type="Box">3</container></did></c04>
+      </c03>
+      <c03><did><unittitle>Inter-Office</unittitle></did>
+         <c04><did><unittitle>P.L. Becker</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>S.C. Davis</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>P. Freedman</unittitle><unitdate type="inclusive" normal="1954/1958">1954-1958</unitdate><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>R.L. Harris</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>K.F. Hazelton</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>R. Heggie</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>J. Hoppenfeld</unittitle><unitdate type="inclusive" normal="1942/1945">1942-1945</unitdate><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>E.V. Moore</unittitle><unitdate type="inclusive" normal="1942/1957">1942-1957</unitdate><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>E. Murrell</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Office Manager</unittitle><unitdate type="inclusive" normal="1957/1958">1957-1958</unitdate><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>J.S. Schastey</unittitle><unitdate type="inclusive" normal="1943/1957">1943-1957</unitdate><container type="Box">3</container></did></c04>
+	   </c03>
+      <c03><did><unittitle>Legal</unittitle></did>
+         <c04><did><unittitle>Adams Mint, Revised Formula</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Advance Payment for Purchase of Supplies</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Advertising</unittitle></did>
+            <c05><did><unittitle>Adams Grape</unittitle><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Adams Wild Cherry</unittitle><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Beemans</unittitle><abstract>Talent Payment Claim, A. Winfield Hoeny</abstract><container type="Box">3</container></did>
+               
+               
+            </c05><c05><did><unittitle>Beemans</unittitle><abstract>TV Copy: "Fun House Mirror," "Roller Coaster Nervous Stomach" Whirling Spring Acid Indigestion Commercial</abstract><physdesc><extent>3 folders</extent></physdesc><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Black Jack</unittitle><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Canada Chiclets 1-cent Promotion, Humpty Dumpty Potato Chip Co.</unittitle><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Chiclets</unittitle><unitdate type="inclusive" normal="1939/1957">1939-1957</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Clorets</unittitle><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Clorets Mints</unittitle><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Clove</unittitle><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Crawfords Cough Gum</unittitle><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Dentyne</unittitle><unitdate type="inclusive" normal="1944/1955">1944-1955</unitdate><container type="Box">3</container></did></c05>
+            
+            <c05><did><unittitle>Dentyne Promotion, teenage market</unittitle><unitdate type="inclusive" normal="1962">1962</unitdate><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Display of Car Cards, United Cigar /  Whelan Stores Corp.</unittitle><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Motion Picture</unittitle><abstract>purchase of Healy film showing chicle gathering</abstract><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Radio, Canada, "Take a Chance" Program</unittitle><container type="Box">3</container></did>
+               
+               
+            </c05><c05><did><unittitle>Radio, Mexico, "Take a Chance" Program</unittitle><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Radio, Television</unittitle><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Sen Sen</unittitle><container type="Box">3</container></did></c05>
+            <c05><did><unittitle>Special Promotion, Proposed Use of Chiclets Fruit Carton Design by Wonderknit Corp.</unittitle><container type="Box">3</container></did>
+               
+               
+            </c05><c05><did><unittitle>Yucatan</unittitle><container type="Box">3</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Advertising contracts, Domestic and Foreign</unittitle><unitdate type="inclusive" normal="1935/1950">1935-1950</unitdate><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Advertising Signs, Trouble Alarm</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Advertising Signs on Trucks Operated by Public Truckmen</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Air Conditioning</unittitle><abstract>offices and cafeteria, L.I.C., Rockford; approp. #5864 (claim against block partitions for water damage from rainstorm)</abstract><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Air Transport Companies Distribution of Samples</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Alcohol, New York State</unittitle><unitdate type="inclusive" normal="1951/1955">1951-1955</unitdate><container type="Box">3</container></did>
+            
+            
+         </c04><c04><did><unittitle>Alcohol, Registration of Stills</unittitle><unitdate type="inclusive" normal="1935/1954">1935-1954</unitdate><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Alcohol, Federal</unittitle><unitdate type="inclusive" normal="1951/1954">1951-1954</unitdate><container type="Box">3</container></did></c04><c04><did><unittitle>Allergies, chewing gum</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Annual Meetings of N.J. Corporation</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Appeal of German Duty on Sen Sen and Sen Sen Tins</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Argentina</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Automobiles - Fleet Purchase Plan</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Boiler and Engine Room Modernization</unittitle><container type="Box">3</container></did></c04>
+         <c04><did><unittitle>Brands and Packings</unittitle></did>
+            <c05><did><unittitle>Correspondence, R.L. Harris</unittitle><unitdate type="inclusive" normal="1958/1960">1958-1960</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">3</container></did>
+               
+               </c05><c05><did><unittitle>Correspondence, R.L. Harris</unittitle><unitdate type="inclusive" normal="1961">1961</unitdate><container type="Box">4</container></did></c05><c05><did><unittitle>Correspondence, R.B. Kyle</unittitle><container type="Box">4</container></did>
+               
+               
+            </c05><c05><did><unittitle>Correspondence, T.H. Smith</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>General</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>W.D. Murphy</unittitle><container type="Box">4</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Building Main Entrance, Damage to Doors</unittitle><container type="Box">4</container></did></c04>
+         <c04><did><unittitle>Canada</unittitle></did>
+            <c05><did><unittitle>"Made in U.S.A."</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>New Deal Legislation</unittitle></did>
+               <c06><did><unittitle>Advertising Copy</unittitle><container type="Box">4</container></did></c06>
+               <c06><did><unittitle>General</unittitle><container type="Box">4</container></did></c06>
+               <c06><did><unittitle>Price Discrimination</unittitle><container type="Box">4</container></did></c06>
+            </c05>
+         </c04>
+         <c04><did><unittitle>Change in Company Name</unittitle></did>
+            <c05><did><unittitle>Canada</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Steps to be taken in event of change</unittitle><container type="Box">4</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Change in Officers</unittitle><container type="Box">4</container></did></c04>
+         <c04><did><unittitle>Chewing Gum a Food or Not a Food</unittitle><container type="Box">4</container></did></c04>
+         <c04><did><unittitle>Claims for Refund of Duty on Goods Destroyed in Bonded Warehouse</unittitle><container type="Box">4</container></did></c04>
+         <c04><did><unittitle>Clayton Act, "Discounts"</unittitle><container type="Box">4</container></did></c04>
+         <c04><did><unittitle>Contests</unittitle><container type="Box">4</container></did></c04>
+         <c04><did><unittitle>Contract</unittitle></did>
+            <c05><did><unittitle>Aetna Freight Lines (San Francisco Warehouse</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>American District Telegraph Company</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>American Sugar Refining Co.</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Amsco Packaging Machinery</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Automatic Canteen Co.</unittitle><unitdate type="inclusive" normal="1933/1955">1933-1955</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Badger, Browning, and Hersey</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Beech-Nut / American Chicle Company Joint Research Project at Mellon Institute</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Brazil-Brown Bag Filling Machine Company</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Brown sBag Filling Machine Company</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Business Fleets, Inc.</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Albert L. Calder Company</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Campbell, Peterson and Co.</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Champlain Corp. (Formerly known as Chamban Corp.</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Chattanooga Medicine Co.</unittitle><abstract>proposed drafts</abstract><unitdate type="inclusive" normal="1955-05">May, 1955</unitdate><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Chattanooga Medicine Company #2</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Claude Neon Lights, Inc.</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Conley Foil Company</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Frank Crossley</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Dellenbarger-Penley</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>L.M. Demarest</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Ralph L. Evans Association (Beech-Nut / H.C. Joint Research</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Fontaine Box</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Gum Vending Corporation</unittitle><unitdate type="inclusive" normal="1949/1951">1949-1951</unitdate><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Horstmann Trucking Corporation</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Tom Huston Peanut Company</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Interborough News Co.</unittitle><unitdate type="inclusive" normal="1936/1945">1936-1945</unitdate><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Interborough News Co.</unittitle><unitdate type="inclusive" normal="1946/1949">1946-1949</unitdate><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Interborough Business Machine Corp.</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>International Paper Box Machine Company</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>H. Johnson (Canada</unittitle><container type="Box">4</container></did></c05>
+            <c05><did><unittitle>Keystone Chemurgic Corporation</unittitle><abstract>Rolaids reformulation, HMA</abstract><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Labor Union-San Francisco</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>L.I.R.R. Siding Agreement</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Liability of Contractual Parties</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Massachusetts Institute of Technology</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Royalty on Sales</unittitle><abstract>2% absentee tax, dividends</abstract><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Munro-Matlack Company</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>National Rejectors, Inc.</unittitle><unitdate type="inclusive" normal="1950/1952">1950-1952</unitdate><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>New York Subways Advertising Co.</unittitle><unitdate type="inclusive" normal="1949">1949</unitdate><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Package Machinery Company</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Pedro Del Rio, Jesus Diaz Cordoba</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>F.B. Redington Company Research, Inc.</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Reynolds Metals Company Robinson Auto Rental Co.</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Rohm and Haas Company</unittitle><abstract>medicated brands, Enzyme Gum, Trident</abstract><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Rowe Corporation</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Sackett and Wilhelms</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Sackett and Wilhelms</unittitle><abstract>cafeteria service</abstract><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Herbert L. Sanger</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>C.E. Schunack Co., Inc.</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>H.C. Seff, Ltd.</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>M.J. Seiwert Cartage Company</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Sen Sen Formula</unittitle></did>
+               <c06><did><unittitle>Mr. S.T. Britten</unittitle><container type="Box">5</container></did></c06>
+               <c06><did><unittitle>Mr. J.P. Phillips</unittitle><container type="Box">5</container></did></c06>
+               <c06><did><unittitle>Mr. C.L. Schastey</unittitle><container type="Box">5</container></did></c06>
+               <c06><did><unittitle>Mr. P.L. Becker</unittitle><container type="Box">5</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Stanford Research Institute</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Strauss and Hedges</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Sullivan-Stauffer-Colwell and Bayles, Inc.</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Sylvania Industrial Corp.</unittitle><abstract>Sylphrap, Nymphrap</abstract><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Texas State Research Foundation</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Tufts College Dental School</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>U.S. Leather Goods Co.</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>U.S. Trucking Corporation</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Vending Concession, Chicago Transit Authority</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>A. Weiss</unittitle><container type="Box">5</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Contracts</unittitle></did>
+            <c05><did><unittitle>Automobile</unittitle><unitdate type="inclusive" normal="1950/1956">1950-1956</unitdate><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Educational Trust</unittitle><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Employees Service Agreements-L.I.C.</unittitle><unitdate type="inclusive" normal="1925/1955">1925-1955</unitdate><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>Export</unittitle><unitdate type="inclusive" normal="1928/1956">1928-1956</unitdate><physdesc><extent>5 folders</extent></physdesc><container type="Box">5</container></did></c05>
+            <c05><did><unittitle>General</unittitle><unitdate type="inclusive" normal="1922/1958">1922-1958</unitdate><physdesc><extent>8 folders</extent></physdesc><container type="Box">6</container></did></c05>
+            <c05><did><unittitle>Sales Arrangements</unittitle><container type="Box">6</container></did></c05>
+            <c05><did><unittitle>Francois L. Schwarz, Inc.</unittitle><container type="Box">6</container></did></c05>
+            <c05><did><unittitle>Special Sales Arrangements</unittitle><container type="Box">6</container></did></c05>
+            <c05><did><unittitle>U.S. Government</unittitle><container type="Box">6</container></did></c05>
+            <c05><did><unittitle>Vending</unittitle><unitdate type="inclusive" normal="1944/1949">1944-1949</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">6</container></did></c05>
+            <c05><did><unittitle>Vending Association, New York City Transit System</unittitle><unitdate type="inclusive" normal="1955">1955, </unitdate><unitdate type="inclusive" normal="1956/1960">1956-1960</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">6</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Copyright Infringement</unittitle><container type="Box">6</container></did></c04>
+         <c04><did><unittitle>Counterfeit Bill, A. Berman</unittitle><container type="Box">6</container></did></c04>
+         <c04><did><unittitle>Coupon in Packages</unittitle><container type="Box">6</container></did></c04>
+         <c04><did><unittitle>Mary B. Cushion Property</unittitle><container type="Box">6</container></did></c04>
+         <c04><did><unittitle>Danish Chiclet Company</unittitle><container type="Box">6</container></did></c04>
+         <c04><did><unittitle>Electric Current, Sackett and Wilhelms</unittitle><container type="Box">6</container></did></c04>
+         <c04><did><unittitle>Employee Benefit Plans</unittitle></did>
+            <c05><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="1935/1960">1935-1960</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">6</container></did></c05>
+            <c05><did><unittitle>Canada</unittitle><container type="Box">6</container></did></c05>
+            <c05><did><unittitle>Major Medical Plan</unittitle><container type="Box">6</container></did></c05>
+            <c05><did><unittitle>Massachusetts Health, Welfare, and Retirement Disclosure Act</unittitle><container type="Box">6</container></did></c05>
+            <c05><did><unittitle>Pension Plan Modernization</unittitle><unitdate type="inclusive" normal="1955/1956">1955-1956</unitdate><container type="Box">6</container></did></c05>
+            <c05><did><unittitle>Supplemental Pension Plan, Treasury Dept. Approval</unittitle><container type="Box">6</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Employment</unittitle><unitdate type="inclusive" normal="1936/1957">1936-1957</unitdate><container type="Box">6</container></did></c04>
+         <c04><did><unittitle>Executive Committee</unittitle><container type="Box">6</container></did></c04>
+         <c04><did><unittitle>Federal Explosive License</unittitle><container type="Box">6</container></did></c04>
+         <c04><did><unittitle>P. Geiss, personal</unittitle><container type="Box">7</container></did></c04>
+         <c04><did><unittitle>Handling of Paper Delivered Orders Holidays</unittitle><container type="Box">7</container></did></c04>
+         <c04><did><unittitle>Honor Awards</unittitle><container type="Box">7</container></did></c04>
+         <c04><did><unittitle>Inspections</unittitle></did>
+            <c05><did><unittitle>Electrical</unittitle><container type="Box">7</container></did></c05>
+            <c05><did><unittitle>Elevator</unittitle><container type="Box">7</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Laws</unittitle></did>
+            <c05><did><unittitle>Brazil</unittitle></did>
+               <c06><did><unittitle>Law of Similar Products</unittitle><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Reciprocal Trade Agreement</unittitle><container type="Box">7</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Fair Trade</unittitle></did>
+               <c06><did><unittitle>California Price #1870 and #769 (Advertising Refunds, etc.) Bill</unittitle><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Federal Trade Commission, Anti-Trust</unittitle><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>General</unittitle><unitdate type="inclusive" normal="1929/1955">1929-1955</unitdate><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Lottery</unittitle><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Price Fixing-Miller Tydings Bill</unittitle><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Robinson-Patman Act-Chain Store Discounts</unittitle><container type="Box">7</container><physdesc><extent>5 folders</extent></physdesc><container type="Box">7</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Labor</unittitle></did>
+               <c06><did><unittitle>Anti-Inflation Act</unittitle><unitdate type="inclusive" normal="1944/1947">1944-1947</unitdate><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Civil Rights' Law</unittitle><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Canada Wage and Hour Act</unittitle><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Fair Labor Standards Act</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>New York State Disability Benefits #1</unittitle><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Workmen's Compensation Act</unittitle><container type="Box">7</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Pure Food</unittitle></did>
+               <c06><did><unittitle>Black Jack</unittitle><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Brands and Packings-Monthly Samples</unittitle><unitdate type="inclusive" normal="1944/1956">1944-1956</unitdate><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Fieldmint Oil, Canada and U.S.</unittitle><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Florida State Board of Health, Registration of Products</unittitle><container type="Box">7</container></did></c06>
+               <c06><did><unittitle>Great Britain, Labels on Packages</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Indiana</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Labels on Packages</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Medicated Brands Policy</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>National Association of Chewing Gum Manufacturers</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Nebraska</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Registration with Board of Pharmacy</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Returns of Spoiled Goods</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Roumania</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Sanitary Code of City of New York</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Sodium Silico Fluoride</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>South Dakota-Use of "Imitation" on Kiss Me Grape Gum</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>South Dakota vs. California Fruit</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>U.S.-Albert T. Calder Company, Inc.</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>U.S. vs. Beeman's Pepsin Adams Pepsin Tutti Frutti</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>U.S. vs. California Fruit and Tutti Frutti</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>U.S. vs. Crawford's Cough Gum</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>United States Shipping Act, Freight Rebates, etc.</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Use of Talc in Confectionery</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Use of Word "Antiseptic"</unittitle><container type="Box">8</container></did></c06>
+            </c05>
+            <c05><did><unittitle>War Revenue Act</unittitle><container type="Box">8</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Lawsuit</unittitle></did>
+            <c05><did><unittitle>American Chicle Company vs. Superior Manufacturing Company</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">8</container></did></c05>
+            <c05><did><unittitle>Federal Trade Commission vs. Big Bear Stores</unittitle><container type="Box">8</container></did></c05>
+            <c05><did><unittitle>Legal and Monetary Affairs Sub-Committee vs. Dentine Advertising</unittitle><container type="Box">8</container></did></c05>
+            <c05><did><unittitle>Superior Plumbing and. Heating Service vs. American Chicle Company</unittitle><container type="Box">8</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Lawsuits</unittitle></did>
+            <c05><did><unittitle>Adams vs. Somerville</unittitle><container type="Box">8</container></did></c05>
+            <c05><did><unittitle>Aetna Acceptance Company vs. R.A. Grubbs</unittitle><container type="Box">8</container></did></c05>
+            <c05><did><unittitle>Wm. Aikman et al vs. American Chicle Company</unittitle><container type="Box">8</container></did></c05>
+            <c05><did><unittitle>American Chewing Products Corp. vs. American Chicle Company</unittitle><container type="Box">8</container></did></c05>
+            <c05><did><unittitle>American Chicle Company vs</unittitle></did>
+               <c06><did><unittitle>Amber Products</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>City of Rochester</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Somerville Paper Box Company, Ltd.</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Standard Bank of South Africa, Ltd.</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>British Honduras</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Long Island Railroad</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Mexico</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>L. Ordenez and Silva</unittitle><container type="Box">8</container></did></c06>
+               <c06><did><unittitle>Charles Wagenseil</unittitle><container type="Box">8</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Antonius vs. American Chicle Company</unittitle><container type="Box">8</container></did></c05>
+            <c05><did><unittitle>Atwood Arnold and Company vs. American Chicle Company</unittitle><container type="Box">9</container></did></c05>
+            <c05><did><unittitle>L.M. Carroll vs. Rahall</unittitle><container type="Box">9</container></did></c05>
+            <c05><did><unittitle>Chu Moar. Gum Company vs. Bubble Balloon</unittitle><container type="Box">9</container></did></c05>
+            <c05><did><unittitle>Consumers Supply Company vs. American Chicle Company</unittitle><container type="Box">9</container></did></c05>
+            <c05><did><unittitle>Simon Cooper vs. American Chicle Company</unittitle><container type="Box">9</container></did></c05>
+            <c05><did><unittitle>Corning Glass Company</unittitle><container type="Box">9</container></did></c05>
+            <c05><did><unittitle>Federal Trade Commission vs.</unittitle></did>
+               <c06><did><unittitle>American Chicle Company</unittitle></did>
+			      <c07><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="1941">1941, </unitdate><unitdate type="inclusive" normal="1948">1948, </unitdate><unitdate type="inclusive" normal="1949/1950">1949-1950</unitdate><physdesc><extent>7 folders</extent></physdesc><container type="Box">9</container></did></c07>
+                  <c07><did><unittitle>Chicle Dainties</unittitle><container type="Box">9</container></did></c07>
+                  <c07><did><unittitle>Vending Operation</unittitle><container type="Box">9</container></did></c07>
+               </c06>
+               <c06><did><unittitle>Automatic Canteen Co. of America</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">9</container></did></c06>
+               <c06><did><unittitle>Bunte Bros., Inc.</unittitle><container type="Box">9</container></did></c06>
+               <c06><did><unittitle>Clorets</unittitle><container type="Box">9</container></did></c06>
+               <c06><did><unittitle>Dentyne</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">9</container></did></c06>
+               <c06><did><unittitle>Life Savers Corporation</unittitle><container type="Box">9</container></did></c06>
+               <c06><did><unittitle>Morton Salt Company</unittitle><container type="Box">9</container></did></c06>
+               <c06><did><unittitle>Peter Paul</unittitle><container type="Box">9</container></did></c06>
+               <c06><did><unittitle>Seagram and Schenley</unittitle><container type="Box">9</container></did></c06>
+               <c06><did><unittitle>Sunshine Biscuits, Inc.</unittitle><container type="Box">9</container></did></c06>
+               <c06><did><unittitle>Sure Laboratories</unittitle><container type="Box">9</container></did></c06>
+               <c06><did><unittitle>Topps</unittitle><container type="Box">9</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Graves Quinn Corporation vs. American Chicle Company</unittitle><container type="Box">9</container></did></c05>
+            <c05><did><unittitle>Groton Realty Company vs. American Chicle Company</unittitle><container type="Box">9</container></did></c05>
+            <c05><did><unittitle>Gum, Inc. vs. Sweets Laboratories</unittitle><container type="Box">9</container></did></c05>
+            <c05><did><unittitle>Health Products (Feenament) vs. Ex-Lax Manufacturing Company</unittitle><container type="Box">9</container></did></c05>
+            <c05><did><unittitle>Jupp Agency vs. Marion Legrand and American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Kellogg Company (Shredded Wheat) vs. National Biscuit Co.</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>La Plante and Dunklin vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Larson vs. Wrigley</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>E. Mc Kee and E. Higbee vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Mirson vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Mitchell vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>New York Fire Department vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Sim L. Nichols vs. National Tube Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>O.P.A. vs. Mars, Inc.</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Ozog vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>A. Palmerini vs. Board of Transportation</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>William J. Paul vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Peguot Manufacturing Co. vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Perman Company vs. Paul Santangelo</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Dorothy Poynton vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Mr. Pracanico vs. Compania</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Manuel Serrano vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Shores-Mueller Co. vs. Palmer</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>State of New Jersey vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>State of Texas vs. Harper</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Unknown Claimant vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>Sheridan P. Wait, Jr. vs. American Chicle Company</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>West Coast Manufacturers and Exporters, Inc. vs. American Chicle Co.</unittitle><container type="Box">10</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Lease</unittitle></did>
+            <c05><did><unittitle>Canada</unittitle></did>
+               <c06><did><unittitle>Chocolate Products, Ltd.</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Colgate-Palmolive-Peet Co.</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Coulter Mfg. Co., Ltd.</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>General</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Harrolds Coal Co.</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>W.H. Iverson and Co.</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Mantle Lamp Company</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Phin Sales Company</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Reliable Mfg. Co.</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Standard Cycle Prod.</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Standard Upholstering Co.</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Vancouver Warehouse</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Winnipeg Warehouse</unittitle><container type="Box">10</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Charge for Electrical Current</unittitle><container type="Box">10</container></did></c05>
+            <c05><did><unittitle>L.I.C. [Long Island City]</unittitle></did>
+               <c06><did><unittitle>Columbia Metal Hose</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Levien, Ross, Bickwitt and Tommarchi</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>National Carbon Co</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Owens-Illinois Distributors, Inc.</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Royal Mounters</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Sackett and Wilhelms Corporation</unittitle><container type="Box">10</container></did></c06>
+               <c06><did><unittitle>Sackett and Wilhelms Corporation</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">11</container></did></c06>
+               <c06><did><unittitle>Standard Lease Form</unittitle><container type="Box">11</container></did></c06>
+               <c06><did><unittitle>Wilbur-Suchard Chocolate Company</unittitle><container type="Box">11</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Mexico</unittitle></did>
+               <c06><did><unittitle>Antonio Hissa Chahlin</unittitle><container type="Box">11</container></did></c06>
+               <c06><did><unittitle>I.L. Rebuelta de Manoy</unittitle><container type="Box">11</container></did></c06>
+               <c06><did><unittitle>Sanborn Brothers</unittitle><container type="Box">11</container></did></c06>
+            </c05>
+            <c05><did><unittitle>New Jersey</unittitle></did>
+               <c06><did><unittitle>Camden Warehouse</unittitle><container type="Box">11</container></did></c06>
+               <c06><did><unittitle>Lackawanna Term. Whse.</unittitle><container type="Box">11</container></did></c06>
+               <c06><did><unittitle>Lehigh Warehouse and Transportation Company</unittitle><container type="Box">11</container></did></c06>
+               <c06><did><unittitle>Newark Central Whse.</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">11</container></did></c06>
+            </c05>
+            <c05><did><unittitle>New York Office</unittitle></did>
+               <c06><did><unittitle>405 Lexington Avenue</unittitle><container type="Box">11</container></did></c06>
+               <c06><did><unittitle>420 Lexington Avenue</unittitle><container type="Box">11</container></did></c06>
+            </c05>
+            <c05><did><unittitle>North Pier Terminal Warehouse</unittitle><container type="Box">11</container></did></c05>
+            <c05><did><unittitle>San Francisco Factory</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">11</container></did></c05>
+         </c04>
+         <c04><did><unittitle>License</unittitle></did>
+            <c05><did><unittitle>Alabama</unittitle><container type="Box">11</container></did></c05>
+            <c05><did><unittitle>Delaware</unittitle><container type="Box">11</container></did></c05>
+            <c05><did><unittitle>Hawaii</unittitle><container type="Box">11</container></did></c05>
+         </c04>
+         <c04><did><unittitle>License Agreement, Brazil</unittitle><container type="Box">11</container></did></c04>
+         <c04><did><unittitle>License Arrangements, Foreign Subsidiaries</unittitle><container type="Box">11</container></did></c04>
+         <c04><did><unittitle>License, Food Delivery, Illinois</unittitle><container type="Box">11</container></did></c04>
+         <c04><did><unittitle>License</unittitle></did>
+            <c05><did><unittitle>Peddler's</unittitle></did>
+               <c06><did><unittitle>Alabama</unittitle><abstract>Bessemer, Birmingham, Greenville, State and Jefferson and Chambers Counties</abstract><physdesc><extent>4 folders</extent></physdesc><container type="Box">11</container></did></c06>
+               <c06><did><unittitle>Arizona</unittitle><container type="Box">11</container></did></c06>
+               <c06><did><unittitle>California</unittitle><physdesc><extent>6 folders</extent></physdesc><container type="Box">11</container></did></c06>
+               <c06><did><unittitle>Georgia</unittitle><container type="Box">12</container></did></c06>
+               <c06><did><unittitle>New Jersey</unittitle><container type="Box">12</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Plates, L.I.C.</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>Plates, Michigan</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>Privilege license, Tennessee</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>State and County Occupational, Florida</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>Wholesale Distributors</unittitle></did>
+               <c06><did><unittitle>California</unittitle><physdesc><extent>4 folders</extent></physdesc><container type="Box">12</container></did></c06>
+               <c06><did><unittitle>Florida</unittitle><container type="Box">12</container></did></c06>
+               <c06><did><unittitle>Louisiana</unittitle><container type="Box">12</container></did></c06>
+               <c06><did><unittitle>Oregon</unittitle><container type="Box">12</container></did></c06>
+            </c05>
+         </c04>
+         <c04><did><unittitle>Manufacturing Plant, Synthetic Base</unittitle><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>Mexico, Counterfeit Premiums</unittitle><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>National Labor Relations Act</unittitle><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>National Production Authority</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>E.V. Moore, Personal</unittitle><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>Ownership</unittitle><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>Passing of Title on Sale of Goods</unittitle><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>Patent Infringement Guarantee Clause</unittitle><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>Pennsylvania Food Act</unittitle><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>Pension Plan</unittitle><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>Pensions, Canada</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>Permit</unittitle></did>
+            <c05><did><unittitle>Alcohol, Federal</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>Alcohol, Registration of Stills</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>Combustible</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>Fuel Oil Storage</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>Marquee on 47th Ave. Side of our Building</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>Place of Assembly</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>Refrigeration</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>Smoking and Tobacco</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>State of New Jersey</unittitle><container type="Box">12</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Permits, General</unittitle><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>Personnel, Company Advances or Loans</unittitle><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>Personnel, General</unittitle><container type="Box">12</container></did></c04>
+         <c04><did><unittitle>Powers of Attorney</unittitle></did>
+            <c05><did><unittitle>Foreign Subsidiaries</unittitle><container type="Box">12</container></did></c05>
+            <c05><did><unittitle>U.S. Customs</unittitle><container type="Box">13</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Printing on Cellophane</unittitle><container type="Box">13</container></did></c04>
+         <c04><did><unittitle>Publications</unittitle></did>
+            <c05><did><unittitle>"Getting Acquainted" Booklet</unittitle><container type="Box">13</container></did></c05>
+            <c05><did><unittitle>Journal of Commerce</unittitle><container type="Box">13</container></did></c05>
+            <c05><did><unittitle>Prentice-Hall, Inc.</unittitle><container type="Box">13</container></did></c05>
+            <c05><did><unittitle>"We Observe", "Current News"</unittitle><container type="Box">13</container></did></c05>
+            <c05><did><unittitle>"Your Job" Booklet</unittitle><container type="Box">13</container></did></c05>
+            <c05><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="1948">1948, </unitdate><unitdate type="inclusive" normal="1950/1955">1950-1955</unitdate><container type="Box">13</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Purchase and Sale of Company Stock</unittitle><container type="Box">13</container></did></c04>
+         <c04><did><unittitle>Purchase of Stock by Employees</unittitle><container type="Box">13</container></did></c04>
+         <c04><did><unittitle>Purchases, Chlorophyll</unittitle><container type="Box">13</container></did></c04>
+         <c04><did><unittitle>Qualifying [States and Countries]</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">14</container></did></c04>
+         <c04><did><unittitle>Ray Dent Company, Inc.</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">15</container></did></c04>
+         <c04><did><unittitle>Reduction of Good Will</unittitle><container type="Box">15</container></did></c04>
+         <c04><did><unittitle>Registration of Commercial Slogans</unittitle><container type="Box">15</container></did></c04>
+         <c04><did><unittitle>Reports</unittitle></did>
+            <c05><did><unittitle>Fats and Oils</unittitle><unitdate type="inclusive" normal="1954/1962">1954-1962</unitdate><physdesc><extent>4 folders</extent></physdesc><container type="Box">15</container></did></c05>
+            <c05><did><unittitle>GR-S Latex</unittitle><unitdate type="inclusive" normal="1954/1958">1954-1958, </unitdate><unitdate type="inclusive" normal="1962">1962</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">15</container></did></c05>
+            <c05><did><unittitle>Sugar</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">15</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Reproduction of Letters for Advertising Purposes</unittitle><container type="Box">15</container></did></c04>
+         <c04><did><unittitle>Resignations</unittitle><container type="Box">15</container></did></c04>
+         <c04><did><unittitle>Sales Manual</unittitle><container type="Box">15</container></did></c04>
+         <c04><did><unittitle>Securities Exchange Act</unittitle><unitdate type="inclusive" normal="1934/1948">1934-1948</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Sen Sen Confection, Suspension from Price Control</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Sen Sen Confectionery Sign</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Sen Sen Flavor, Musk Tincture Partial</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Sen Sen Formula Custodian Agreement</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Sen Sen Formula Registration in India</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Sen Sen, Revised Formula</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Services of Langer, Parry, Card, and Langer</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Statutory Agents, various states</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Stock Purchase Plan for Jobbers and Retailers</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Stockholders' Rights</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Storage of Chicle in New Jersey</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Suggestions from Outsiders</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Surplus Cash Investments</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Tax</unittitle></did>
+            <c05><did><unittitle>Commercial Vehicle, Colorado</unittitle><container type="Box">16</container></did></c05>
+            <c05><did><unittitle>Commercial Vehicle, Kansas</unittitle><container type="Box">16</container></did></c05>
+            <c05><did><unittitle>Imported Materials</unittitle><container type="Box">16</container></did></c05>
+            <c05><did><unittitle>Liens</unittitle><container type="Box">16</container></did></c05>
+            <c05><did><unittitle>Outdoor Advertising</unittitle><container type="Box">16</container></did></c05>
+            <c05><did><unittitle>Sen Sen, Brazil</unittitle><container type="Box">16</container></did></c05>
+            <c05><did><unittitle>Sen Sen, Argentina</unittitle><container type="Box">16</container></did></c05>
+            <c05><did><unittitle>Stock Transfer</unittitle><container type="Box">16</container></did></c05>
+            <c05><did><unittitle>Timbre Matter, Mexico</unittitle><container type="Box">16</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Taxes</unittitle></did>
+            <c05><did><unittitle>Alcohol</unittitle><container type="Box">16</container></did></c05>
+            <c05><did><unittitle>General</unittitle><unitdate type="inclusive" normal="1948/1958">1948-1958</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">16</container></did></c05>
+            <c05><did><unittitle>Increase in Capital Stock</unittitle><container type="Box">16</container></did></c05>
+            <c05><did><unittitle>Tax Calendar</unittitle><container type="Box">16</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Ultra Vires</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Unclaimed Wages</unittitle></did>
+            <c05><did><unittitle>John Sosnowski</unittitle><container type="Box">16</container></did></c05>
+            <c05><did><unittitle>L. Ungerhayer</unittitle><container type="Box">16</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Use of Artificial Colors</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Use of "Cellulin Wrapped"</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Use of our Trade Marks by Others</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Use of "Squeeze Box" Container for Sen Sen</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>W.B. White</unittitle><container type="Box">16</container></did></c04>
+         <c04><did><unittitle>Wire Floor Display Racks</unittitle><container type="Box">16</container></did></c04>
+      </c03>
+      <c03><did><unittitle>Notes, Releases</unittitle><container type="Box">16</container></did></c03>
+      <c03><did><unittitle>Patents</unittitle></did>
+         <c04><did><unittitle>John C. Barker</unittitle><container type="Box">17</container></did></c04>
+         <c04><did><unittitle>Canada</unittitle></did>
+            <c05><did><unittitle>Beatty Moisture Proof Package</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Coho-Chewing Gum Base</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>H.V. Dunham</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Leon W. Geller</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>General</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Maintenance of Freshness of Chewing Gum</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Meyer Sen Sen Tin Box</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Peter Paul, Inc.</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Phenolphthalein in Chewing Gum</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Arthur Russell</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Schandein and Lynn Folding Display Boxes</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Schandein and Lynn</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Stranders Display Rack</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>E.R. Stucky Glass Display Jar</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Tempters Step Display Box</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Tempters Transparent Box</unittitle><container type="Box">17</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Legal Protection of Novel Packages</unittitle><container type="Box">17</container></did></c04>
+         <c04><did><unittitle>Mexico</unittitle></did>
+            <c05><did><unittitle>Tempters Crystal Box</unittitle><container type="Box">17</container></did></c05>
+         </c04>
+         <c04><did><unittitle>U.S.</unittitle></did>
+            <c05><did><unittitle>Air Wick Type Compound and Fluid Employing Chlorophyll</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Anti-Oxidizing Agents for Rubber</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Wm. C. Arkell and Marion G. Mastin</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Auguste H. Aubin</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>G.R. Baker</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Richard K. Baker</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Barbieri-Process of Making Sheets</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Cesare Barbieri</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Bartlett Tin Box</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Bartlett Tin Box, Dispensing Cover for Containers</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>T. Bayer, Means for and Method of Forming Gum</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>W.A. Beatty</unittitle></did>
+               <c06><did><unittitle>Copies of Various Patents</unittitle><container type="Box">17</container></did></c06>
+               <c06><did><unittitle>Jelutong Product and Method of Making It</unittitle><container type="Box">17</container></did></c06>
+               <c06><did><unittitle>Moisture Proof Packages</unittitle><physdesc><extent>5 folders</extent></physdesc><container type="Box">17</container></did></c06>
+               <c06><did><unittitle>Treatment of Rubber</unittitle><container type="Box">17</container></did></c06>
+            </c05>
+            <c05><did><unittitle>P.L. Becker, Paraffin Dipped Package</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Beech-Nut Packing Company, Chewing Gum Base</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Beeman's Pepsin Coin Mats</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>W.L. Belvin, Chewing Gum Base</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>A. Biddle, Composition of Gum Chicle Dispersed in an Aqueous Celloid</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Arthur Biddle, Composition of Gum Chicle</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Bilotti, Medicinal Coating</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Bilotti/Hainer, Mechanism of Release, Corn Syrup</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>H.L. Blaun, Split Flap Carton</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>J.W. Bowman, Apparatus for Handling Chewing Gum</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>G.B. Bradshaw, Process of Making Chicle Substitute</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>W.H. Bradshaw, Refining Process for Certain Raw Gums</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Wm. H. Bradshaw, Purified Gum</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>B.H. Bramble &amp; E.F. Curry</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>R. Brinkema, Display Case</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Brinkema, Display Stand</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Louis H. Britton</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Brown Bag Filling Machine Company</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>H.J. Brown</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Orlando J. Buck</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>L.W. Buckley Method of Making Synthetic Chicle</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>L.W. Buckley Synthetic Chicle Compound and Method of Making Same</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Ludwig Buckley, Synthetic Chicle Compound</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>John Van Buren, Labeling Machine</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>John Van Buren, Packaging Machines</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>J.S. Campbell, Tearing Strips on Packages</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Franklin Canning</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>F.V. Canning, Golf Ball</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Jno. H. Carr, Vending Machine</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Cash Register Display, Improved Design</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Cellophane Package Wrap, Improvement to Facilitate Opening</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Cellophane Tablet Package</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Cellophane Wrapping for Standard Five Stick Brands</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Charcoal in Gum and Coating</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Chicle Substitutes and Bases</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Clark Brothers Chewing Gum Company</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>Maurice C. Clark</unittitle><container type="Box">17</container></did></c05>
+            <c05><did><unittitle>W.P. Cohoe</unittitle></did>
+               <c06><did><unittitle>Antiseptic Chewing Gum</unittitle><container type="Box">17</container></did></c06>
+               <c06><did><unittitle>Chewing Gum Base</unittitle><container type="Box">18</container></did></c06>
+               <c06><did><unittitle>Chewing Gum Base and Method</unittitle><container type="Box">18</container></did></c06>
+               <c06><did><unittitle>Prophylactic Chewing Gum</unittitle><container type="Box">18</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Columbus Vending Machine</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Consolidated Display Case</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Consolidated Display Case, Improved Design</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Philip Corsello, Chewing Gum Wrapper</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>H.W. Cox and D.H. Moore</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Stuart W. Cramer</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>A.B. Craven</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>E.F. Curry</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>James D. Darling</unittitle></did>
+               <c06><did><unittitle>[General]</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">18</container></did></c06>
+               <c06><did><unittitle>Manufacture of Chewing Gum</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">18</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Dating Device, Ball Point Type Ink Applicator</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Davis and Channing, Method of Purifying Chicle</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Davis/Channing,  Process for Purifying Chicle, Gum or Other Adhesive</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>C.E. Dellenbarger, Breaking-Feeding Device; Rendering Rubber Tasteless and Suitable For Use in Chewing Gum</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Dentagum Ingredients</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Dental Medicinal Gum</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Design for a Display Rack Display Case Patents</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Jesse Ditson</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>H.V. Dunham, Chewing Gum Base</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Henry V. Dunham Manufacture of Chewing Gum; Treatment of India Rubber</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Richard P. Dyckman, Milling of Rubber for Chewing Gum Base</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Ekert, Chewing Gum</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Ekert, Drying and/or Coating Apparatus</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Ekert's Screen Tumbling Device</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Elbel Patent Use of Tergitol 4-T in Dentifrices</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Carleton Ellis</unittitle></did>
+               <c06><did><unittitle>Chewing Gum Product</unittitle><container type="Box">18</container></did></c06>
+               <c06><did><unittitle>Composition Containing a Resinous Complex</unittitle><container type="Box">18</container></did></c06>
+               <c06><did><unittitle>Hydrogenated Oil Composition</unittitle><container type="Box">18</container></did></c06>
+               <c06><did><unittitle>Oxidized Resinous Product</unittitle><container type="Box">18</container></did></c06>
+               <c06><did><unittitle>Plastic Reaction Products of PhenOlic Compounds with SulfUr Halides</unittitle><container type="Box">18</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Enzymes in Gum</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Everett, Display Case</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Alfred Falk, Manufacture of Chewing Gum</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>FASCAP, Closure of Collapsible Tubes</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Fink, Display Rack</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Foil Mounted, Wrapping Materials</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>Foil Sealed Package Tab</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>F.A. Garbutt</unittitle></did>
+               <c06><did><unittitle>Chewing Gum Mixing Method</unittitle><container type="Box">18</container></did></c06>
+               <c06><did><unittitle>Method of Forming Chewing Gum</unittitle><container type="Box">18</container></did></c06>
+               <c06><did><unittitle>Chewing Gum Machine</unittitle><container type="Box">18</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Geller</unittitle></did>
+               <c06><did><unittitle>Chewing Gum Bases</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">18</container></did></c06>
+               <c06><did><unittitle>Chicle Substitute</unittitle><container type="Box">18</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Gems Tab Package</unittitle><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>General</unittitle><unitdate type="inclusive" normal="1919/1947">1919-1947</unitdate><physdesc><extent>24 folders</extent></physdesc><container type="Box">18</container></did></c05>
+            <c05><did><unittitle>General</unittitle><unitdate type="inclusive" normal="1948/1958">1948-1958</unitdate><physdesc><extent>16 folders</extent></physdesc><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Gordon, Processes for the Recovery of Chicle and Similar Gum from Filter Press Residue</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Gordon Casein Glue</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Gordon Process for Recovering Chicle from Filter Press Residue</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Walter R. Groshong, New Style Package for Chewing Gum</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Gruskin</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>W.J. Hale, Chlorophyll in Chewing Gum</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Halogens in Chewing Gum</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>M.L. Hamlin, Jelutong Product</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Geo. J. Hanson, (Chewing Gum) Chix</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Harrison, Nulapain Formula</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Hartwig/Lougovoy</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>G.A. Hatherill</unittitle></did>
+               <c06><did><unittitle>Chewing Gum Base</unittitle><container type="Box">19</container></did></c06>
+               <c06><did><unittitle>Method of Making a Chewing Gum Base</unittitle><container type="Box">19</container></did></c06>
+               <c06><did><unittitle>Process of Producing Resinous Material</unittitle><container type="Box">19</container></did></c06>
+            </c05>
+            <c05><did><unittitle>Eduard Heber, A Process of Obtaining Gum from Vegetable Matter</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>R. Heggie, Co-Polymers of Polyvinyl Acetate</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Robert Heggie, Permanently Flavored Chewing Gum Base</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Hein and Shafer, Chlorophyll and Urea in Combination to Retard Dental Caries</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Emil Heinrich, Cutting Mechanism</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>T.E. Heppenstall, Process and Apparatus for Determining Moisture Content</unittitle><container type="Box">19</container></did></c05>
+            <c05><did><unittitle>Eric J. Hewitt, Chewing Gum Base Material</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Hewitt, Maleic Anhydride Adducts of Talloel</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Hewitt, Polyester and Polyamide Resins</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Hoopes, Coating Apparatus Adapted for Confections</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Penrose R. Hoops, Coating Machine</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Hoops Continuous Coating Machine</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Hopper Box Trunks</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Messrs. Howe, Pickett and Dean</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Tom Huston</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Hydrogenated Oils in Gum</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Improvement in Boxes</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Incorporation of Syrup in Gum</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Inspection Machine for Candy Coated Chewing Gum</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>"Iodigum"</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Dean M. Jackman, Chicle Substitute</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Jackman, Chicle Substitutes</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Jumbo Plug Disc Feature</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Frank Y. Keator</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>G.F. Kelly Display Box</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Gerald F. Kelly</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Weston W. Kilbourn</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>King and Adsit</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Guy King</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>A. Kneaskern</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>William A. Koneman</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Labeling Requirements for Iodigum</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Laminated Candy-Gum Combination</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>L.P. Larson</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>L.P. Larson, Jr.</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Benj. A. Laws</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Lewin, Rolaids</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Lougovoy and Hartwig</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>B.N. Lougovoy, Chewing Gum Base, Zein</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>B.N. Lougovoy, Chewing Gum Base, Thiokel)</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Thomas J. Lynch</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Lysozyme and Sugar</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>M. and E. Chicle Melting Kettle</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Douglas McBean</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Chas. McDowell</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>John McGavac and George Binnore</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>G.J. Manson</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>H.W. Matheson</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Medicinal Gums</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>A.G. Meier</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Kurt Meisenburg</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Metal Rims for Filter Press Screens</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Meyer Tin Box</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Milk of Magnesia Gum</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Wallace W. Miller</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Milo Starch</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Chas. C. Moore</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Wm. H. Moss</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Mounting Foil on Cellophane</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>H.M. Mowrey</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>G.B. Mustin</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>Neville Company</unittitle><container type="Box">20</container></did></c05>
+            <c05><did><unittitle>New and Improved Elastomer</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>New Subway Vending Machine</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Novelty Ideas for Chewing Gum</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Emil E. Novotny</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Nozzle for Dust Elimination</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Nux Vomica Gum</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>C.F. Obermaier</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>W.W. Odell</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>O'Neill and Simeone</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>O'Neill Ball Machine</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>O'Neill/Simeone</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>P.M. O'Neill, Use of Photo Electric Cell</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Iwan Ostromislensky</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Eugene Panza</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Richard Pasternack</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Karl E. Peiler</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Peppermint Flavor Deterioration in Sealed Packages</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Pepsodent Company</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Perforated Ball Gum Box</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Permanently Flexible Gum</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Peterson, DeLong</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>C.E. Peterson</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Pickel and Berdick</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Jos. J. Pilger</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>G.W. Pond</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Wm. Beach Pratt,</unittitle><abstract>Patent no's 1,349,912; 1,349,913; 1,349,914; 1,621,468; 1,240,875; 1,382,669; 1,409,570; 1,240,875; 1,461,675; 1,349,909; 1,380,414; 1,349,911; 1,451,711; 1,349,910; 992,590</abstract><physdesc><extent>15 folders</extent></physdesc><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Printing on Cellophane, I. Curwick</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Printing on Cellophane, Driver Patent</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Lysle E. Pritchard</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Process for Recovery of Gum Constituents from Asclepiadaceae</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Proposal of Polyelectrolytes Capable of Binding Copper</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>J.D. Pryor</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Pungs, Wilhelm</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Earl B. Putt</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>A.P. Rapp</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Adolph P. Rapp</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Maria M. Raub</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>P.H. Raymer</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>P.H. Raymer, Incorporation of Milk of Magnesia in Gum</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Redington and Milmoe</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Redington Tutti Frutti Machine</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>William A. Reid</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>J. Robinson, Split Flap Carton</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>E.A. Rodman</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Rose Flavor for Sweet Scent</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Royalty-Free License Agreement</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Thos. Sault</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Sawer and Purves</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Scanlon and Harrison</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>James J. Scanlon</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>G.P. Schmidt</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>Godfrey P. Schmidt</unittitle><container type="Box">21</container></did></c05>
+            <c05><did><unittitle>M.C. Schrank</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Scott and Prouty</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Scrap Unwrapping Machine</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Screens in Coating Pans to Prevent Sugar Forming</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Sears, No Copy</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Fredlk. Henry Sears</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Semi Automatic Feeding Device</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>William F. Semple</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Sen Sen Confection</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Chas. A. Shattuck</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Shiek and Cole</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Shirk, Dental Medicinal Unit</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Frank Sibley et al.</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Simeone</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>M.J. Simeone, Date Stamping Device</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>M.J. Simeone, Folding and Gluing Machine</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Simeone Package for Scotty Gum</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>R. Snedden</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Richard Snedden</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Walter Snelling</unittitle><abstract>patent no's 1,288,723; 1,430,034; 1,430,036; 1,315,246; 1,479,330</abstract><physdesc><extent>6 folders</extent></physdesc><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Edgar W. Snyder</unittitle><abstract>patent no. 1,239,313</abstract><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Wm. A. Steinemann</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Leon W. Stetson</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Clarence M. Stiner</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Stranders Display Rack</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>E.R. Stucky, Glass Display Jar</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Nathan Sulzberger</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Sweets Laboratories</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Synthetic Chewing Gum</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Synthetic Chicle Substitute</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Tabletting Research, Silicones</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Tempters Cellophane Box</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Tempters Step Display Box</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Thompson</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Tibbals Secret Process</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Tobacco Gum</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Joseph M. Trimble</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Amos H. Tyler</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Use of Maizite</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Van Buren, Labeling Machs.</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Vitamins in Chewing Gum</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Joseph F. Volker</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Von Foregger</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Parke H. Watkins</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Weber, Chewing Gum Base</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Harry M. Weber</unittitle><abstract>patent no's 1,248,961; 1,402,817; 1,401,452</abstract><physdesc><extent>3 folders</extent></physdesc><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>G.R. Webber Weston Cafeteria Rail</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>W.J. White</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Ira Williams, 1,875,903; 1,908,093</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Wm. Williams</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Williams Vending Machine</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Windown Box and Sectional Opening Flap</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Van L. Woodward Wrapping Fold</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Wm. Wrigley Jr. Co.</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Wrigley P.K. Package</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Phillip K. Wrigley</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>S.S. Yates</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Chas. O. Young</unittitle><container type="Box">22</container></did></c05>
+            <c05><did><unittitle>Yu Chu Vending Machine</unittitle><container type="Box">22</container></did></c05>
+         </c04>
+      </c03>
+      <c03><did><unittitle>The Proprietary Association</unittitle><container type="Box">22</container></did></c03>
+      <c03><did><unittitle>Real Estate</unittitle></did>
+         <c04><did><unittitle>Canada, New Factory Building</unittitle><container type="Box">22</container></did></c04>
+         <c04><did><unittitle>Long Island City</unittitle><container type="Box">22</container></did></c04>
+         <c04><did><unittitle>Rockford Factory</unittitle><container type="Box">22</container></did></c04>
+         <c04><did><unittitle>Valley Stream, Long Island</unittitle><container type="Box">22</container></did></c04>
+      </c03>
+      <c03><did><unittitle>Salesman's Jobbing Report, by state</unittitle></did>
+         <c04><did><unittitle>A-M</unittitle><container type="Box">22</container></did></c04>
+         <c04><did><unittitle>M-W</unittitle><container type="Box">23</container></did></c04>
+      </c03>
+      <c03><did><unittitle>Stock</unittitle></did>
+         <c04><did><unittitle>Schedule for Annual Meeting of Stockholders</unittitle><container type="Box">23</container></did></c04>
+         <c04><did><unittitle>Capital Increase</unittitle><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">24</container></did></c04>
+         <c04><did><unittitle>Capital Stock, Listing on New York Stock Exchange</unittitle><container type="Box">24</container></did></c04>
+         <c04><did><unittitle>Certification of Increase of Capital Stock and Amendment of Ctf. of Incorporation</unittitle><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">24</container></did></c04>
+         <c04><did><unittitle>Common Stock, Closed Accounts</unittitle><unitdate type="inclusive" normal="1927/1930">1927-1930</unitdate><physdesc><extent>8 folders</extent></physdesc><container type="Box">24</container></did></c04>
+         <c04><did><unittitle>Common Stock, Closed Accounts</unittitle><unitdate type="inclusive" normal="1930/1935">1930-1935</unitdate><physdesc><extent>7 folders</extent></physdesc><container type="Box">25</container></did></c04>
+         <c04><did><unittitle>Common Stock, Closed Accounts</unittitle><unitdate type="inclusive" normal="1934/1935">1934-1935</unitdate><container type="Box">26</container></did></c04>
+         <c04><did><unittitle>Dividends</unittitle></did>
+            <c05><did><unittitle>General</unittitle><container type="Box">26</container></did></c05>
+            <c05><did><unittitle>Personal Letter to Stockholders</unittitle><container type="Box">26</container></did></c05>
+         </c04>
+         <c04><did><unittitle>Lost Stock Certificates</unittitle><container type="Box">26</container></did></c04>
+         <c04><did><unittitle>New York Stock Exchange</unittitle><container type="Box">26</container></did></c04>
+         <c04><did><unittitle>Preferred Stock, Closed Accounts</unittitle><unitdate type="inclusive" normal="1928">1928</unitdate><container type="Box">26</container></did></c04>
+         <c04><did><unittitle>Procedure, Annual Meeting</unittitle><container type="Box">26</container></did></c04>
+         <c04><did><unittitle>Proxies</unittitle><unitdate type="inclusive" normal="1934/1962">1934-1962</unitdate><note><p>destroyed, Jan 1992</p></note><container type="Box">26-35</container></did></c04>
+         <c04><did><unittitle>Reports</unittitle><unitdate type="inclusive" normal="1916/1931">1916-1931</unitdate><physdesc><extent>48 folders</extent></physdesc><container type="Box">36</container></did></c04>
+         <c04><did><unittitle>Reports</unittitle><unitdate type="inclusive" normal="1932/1938">1932-1938</unitdate><physdesc><extent>29 folders, 2 volumes</extent></physdesc><container type="Box">37</container></did></c04>
+         <c04><did><unittitle>Reports</unittitle><unitdate type="inclusive" normal="1939/1955">1939-1955</unitdate><physdesc><extent>57 folders</extent></physdesc><container type="Box">38</container></did></c04>
+         <c04><did><unittitle>Reports</unittitle><unitdate type="inclusive" normal="1956/1961">1956-1961</unitdate><physdesc><extent>23 folders</extent></physdesc><container type="Box">39</container></did></c04>
+         <c04><did><unittitle>Reports</unittitle><unitdate type="inclusive" normal="1962">1962</unitdate><physdesc><extent>6 folders</extent></physdesc><container type="Box">40</container></did></c04>
+         <c04><did><unittitle>Stockholders</unittitle><physdesc><extent>37 folders</extent></physdesc><container type="Box">40</container></did></c04>
+         <c04><did><unittitle>Voting Trust, Invoices</unittitle><container type="Box">40</container></did></c04>
+         <c04><did><unittitle>Tax, California Sales and Use</unittitle><unitdate type="inclusive" normal="1956/1958">1956-1958</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">40</container></did></c04>
+      </c03>
+      <c03><did><unittitle>Trade Marks</unittitle></did>
+         <c04><did><unittitle>[General]</unittitle><container type="Box">41</container></did></c04>
+         <c04><did><unittitle>States, A-L</unittitle><container type="Box">41</container></did></c04>
+         <c04><did><unittitle>States, L-V</unittitle><container type="Box">42</container></did></c04>
+         <c04><did><unittitle>States, V-W</unittitle><container type="Box">43</container></did></c04>
+      </c03>
+      <c03><did><unittitle>United States Trade Mark Association</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Uruguay</unittitle><unitdate type="inclusive" normal="1956">1956, </unitdate><unitdate type="inclusive" normal="1959">1959</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">43</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>American Grocery Specialty</unittitle></did>
+      <c03><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="1927/1929">1927-1929</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">43</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Banks</unittitle></did>
+      <c03><did><unittitle>Bank of Manhattan Trust Company</unittitle><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Bankers Trust Company</unittitle><unitdate type="inclusive" normal="1918/1956">1918-1956</unitdate><physdesc><extent>5 folders</extent></physdesc><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Chase Manhattan Bank</unittitle><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Chase National Bank</unittitle><unitdate type="inclusive" normal="1931/1952">1931-1952</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Chemical Bank and Trust Company</unittitle><unitdate type="inclusive" normal="1931/1942">1931-1942</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Chemical Corn Exchange Bank</unittitle><unitdate type="inclusive" normal="1956/1957">1956-1957</unitdate><container type="Box">43</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Albert L. Calder Company</unittitle></did>
+      <c03><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="1942/1953">1942-1953</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Liquidation</unittitle><container type="Box">43</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Caleb Crawford Company</unittitle></did>
+      <c03><did><unittitle>Annual Meeting</unittitle><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Crawford Cough Gum</unittitle><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Dentagum Circulars</unittitle><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Iodigum Circulars</unittitle><container type="Box">43</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Canadian Chewing Gum Company</unittitle></did>
+      <c03><did><unittitle>Officers, Directors, Stockholders</unittitle><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Copies of Minutes of Directors' Meetings</unittitle><unitdate type="inclusive" normal="1920/1922">1920-1922</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Meeting of Board of Directors</unittitle><unitdate type="inclusive" normal="1921">1921</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1922">1922</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Directors' Meeting</unittitle><unitdate type="inclusive" normal="1922">1922</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Meeting of Board of Directors</unittitle><unitdate type="inclusive" normal="1922">1922</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Directors' Meeting</unittitle><unitdate type="inclusive" normal="1923">1923</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1923">1923</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1924">1924</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1925">1925</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1926">1926</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Board of Directors' Meeting</unittitle><unitdate type="inclusive" normal="1926">1926</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1927">1927</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1928">1928</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Board of Directors' Meeting</unittitle><unitdate type="inclusive" normal="1928">1928</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Board of Directors' Meeting</unittitle><unitdate type="inclusive" normal="1929">1929</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Board of Directors' Meeting</unittitle><unitdate type="inclusive" normal="1930">1930</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1932">1932</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>By-Laws</unittitle><unitdate type="inclusive" normal="1932/1945">1932-1945</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1933">1933</unitdate><container type="Box">43</container></did></c03>
+      <c03><did><unittitle>Dividend</unittitle><unitdate type="inclusive" normal="1939/1941">1939-1941</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">43</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Canadian Chewing Gum Co., Limited</unittitle></did>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1934">1934, </unitdate><unitdate type="inclusive" normal="1935">1935, </unitdate><unitdate type="inclusive" normal="1936">1936</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">44</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Canadian Chewing Gum Sales, Ltd.</unittitle></did>
+      <c03><did><unittitle>By-Laws</unittitle><unitdate type="inclusive" normal="1932/1941">1932-1941</unitdate><physdesc><extent>5 folders</extent></physdesc><container type="Box">44</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Chicle Development Company</unittitle></did>
+      <c03><did><unittitle>New York City</unittitle><unitdate type="inclusive" normal="1922">1922</unitdate><container type="Box">44</container></did></c03>
+      <c03><did><unittitle>By-Laws</unittitle><unitdate type="inclusive" normal="1941/1947">1941-1947</unitdate><container type="Box">44</container></did></c03>
+      <c03><did><unittitle>Correspondence</unittitle><unitdate type="inclusive" normal="1945/1950">1945-1950</unitdate><container type="Box">44</container></did></c03>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1949/1953">1949-1953</unitdate><container type="Box">44</container></did></c03>
+      <c03><did><unittitle>Correspondence</unittitle><unitdate type="inclusive" normal="1951/1955">1951-1955</unitdate><container type="Box">44</container></did></c03>
+      <c03><did><unittitle>Annual Meeting</unittitle><unitdate type="inclusive" normal="1955/1957">1955-1957</unitdate><container type="Box">44</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Corporation Trust Company</unittitle></did>
+      <c03><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="1926/1952">1926-1952</unitdate><container type="Box">44</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Crawford Gum Company</unittitle></did>
+      <c03><did><unittitle>Liquidation</unittitle><container type="Box">44</container></did></c03>
+      <c03><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="1950/1955">1950-1955</unitdate><container type="Box">44</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Fiduciary Trust Company of New York</unittitle></did>
+      <c03><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="1931/1950">1931-1950</unitdate><container type="Box">44</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>First National Bank of Chicago</unittitle></did>
+      <c03><did><unittitle>[General]</unittitle><unitdate type="inclusive" normal="1923">1923</unitdate><container type="Box">44</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Registrar and Transfer Company</unittitle></did>
+      <c03><did><unittitle>Receipts</unittitle><container type="Box">44</container></did></c03>
+      <c03><did><unittitle>Invoices</unittitle><unitdate type="inclusive" normal="1941/1956">1941-1956</unitdate><container type="Box">44</container></did></c03>
+      <c03><did><unittitle>Correspondence</unittitle><unitdate type="inclusive" normal="1947/1954">1947-1954</unitdate><container type="Box">44</container></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Sen-Sen Chiclet Company</unittitle></did>
+      <c03><did><unittitle>Minute Book, Directors and Exec. Com. Meetings</unittitle><container type="Box">44</container></did></c03>
+      <c03><did><unittitle>Minute Book, Stockholders Meetings</unittitle><container type="Box">44</container></did></c03>
+   </c02>
+</c01>
+
+<c01 level="series"><did><unittitle>Financial papers</unittitle></did>
+   <note><p>The following are all  bound volumes.</p></note><c02 level="subseries"><did><unittitle>Adams and Son</unittitle></did>
+      <c03><did><unittitle>Cash Book</unittitle><unitdate type="inclusive" normal="1889/1894">1889-1894</unitdate></did></c03>
+      <c03><did><unittitle>Cash Book</unittitle><unitdate type="inclusive" normal="1902/1909">1902-1909</unitdate></did></c03>
+      <c03><did><unittitle>Journal, General Cash</unittitle><unitdate type="inclusive" normal="1890/1903">1890-1903</unitdate></did></c03>
+      <c03><did><unittitle>Journal Private</unittitle><unitdate type="inclusive" normal="1904/1906">1904-1906</unitdate></did></c03>
+      <c03><did><unittitle>Journal Preferred Stock Dividend</unittitle><unitdate type="inclusive" normal="1891/1899">1891-1899</unitdate></did></c03>
+      <c03><did><unittitle>Journal Preferred Stock Dividend</unittitle><unitdate type="inclusive" normal="1891/1892">1891-1892</unitdate></did></c03>
+      <c03><did><unittitle>Dividend Ledger</unittitle><unitdate type="inclusive" normal="1900/1904">1900-1904</unitdate></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Adams Chewing Gum Company</unittitle></did>
+      <c03><did><unittitle>General Ledger</unittitle><unitdate type="inclusive" normal="1932">1932</unitdate></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>American Chicle Company</unittitle></did>
+      <c03><did><unittitle>Advances to Salesmen and Others</unittitle><unitdate type="inclusive" normal="1952/1963">1952-1963</unitdate><physdesc><extent>11 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Advances to Salesmen and Others, Auto Dept.</unittitle><unitdate type="inclusive" normal="1948/1953">1948-1953</unitdate></did></c03>
+      <c03><did><unittitle>Advertising Stock</unittitle><unitdate type="inclusive" normal="1945/1955">1945-1955</unitdate></did></c03>
+      <c03><did><unittitle>Analysis of Cash Journal</unittitle><unitdate type="inclusive" normal="1906/1913">1906-1913</unitdate></did></c03>
+      <c03><did><unittitle>Analysis, Salesmen</unittitle><unitdate type="inclusive" normal="1963/1964">1963-1964</unitdate></did></c03>
+      <c03><did><unittitle>Appraisals, A.C. Company</unittitle><unitdate type="inclusive" normal="1916">1916, </unitdate><unitdate type="inclusive" normal="1922">1922</unitdate><physdesc><extent>11 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Bill List, Houston, San Francisco, Chicago</unittitle><unitdate type="inclusive" normal="1951/1954">1951-1954</unitdate></did></c03>
+      <c03><did><unittitle>Cafeteria, Current</unittitle><unitdate type="inclusive" normal="1960/1961">1960-1961</unitdate></did></c03>
+      <c03><did><unittitle>Cafeteria, Cash Receipts and Disbursements</unittitle><unitdate type="inclusive" normal="1957/1963">1957-1963</unitdate></did></c03>
+      <c03><did><unittitle>Cafeteria, Invoice Register</unittitle><unitdate type="inclusive" normal="1949/1955">1949-1955</unitdate></did></c03>
+      <c03><did><unittitle>Cafeteria, Journal and Ledger</unittitle><unitdate type="inclusive" normal="1946/1954">1946-1954</unitdate></did></c03>
+      <c03><did><unittitle>Cafeteria, Operating Statement</unittitle><unitdate type="inclusive" normal="1932/1959">1932-1959</unitdate><physdesc><extent>5 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Cash Books</unittitle><unitdate type="inclusive" normal="1960/1962">1960-1962</unitdate><physdesc><extent>4 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Cash Books, General</unittitle><unitdate type="inclusive" normal="1902/1914">1902-1914</unitdate><physdesc><extent>4 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Cash Book, Chicago and San Francisco</unittitle><unitdate type="inclusive" normal="1951/1953">1951-1953</unitdate></did></c03>
+      <c03><did><unittitle>Cash Book, Houston</unittitle><unitdate type="inclusive" normal="1956">1956</unitdate></did></c03>
+      <c03><did><unittitle>Cash Collections</unittitle><unitdate type="inclusive" normal="1949/1950">1949-1950</unitdate></did></c03>
+      <c03><did><unittitle>Cash Disbursements, General</unittitle><unitdate type="inclusive" normal="1922/1955">1922-1955</unitdate><physdesc><extent>6 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Cash Disbursements, Uruguay</unittitle><unitdate type="inclusive" normal="1951/1954">1951-1954</unitdate></did></c03>
+      <c03><did><unittitle>Cash Receipts, General</unittitle><unitdate type="inclusive" normal="1942/1959">1942-1959</unitdate><physdesc><extent>9 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Cash Receipts and Disbursements</unittitle><unitdate type="inclusive" normal="1930/1932">1930-1932</unitdate></did></c03>
+      <c03><did><unittitle>Cash Receipts and Disbursements, Chicago</unittitle><unitdate type="inclusive" normal="1936/1953">1936-1953</unitdate><physdesc><extent>6 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Cash Receipts and Disbursements, San Francisco</unittitle><unitdate type="inclusive" normal="1926/1929">1926-1929, </unitdate><unitdate type="inclusive" normal="1936/1959">1936-1959</unitdate><physdesc><extent>7 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Cash Receipts and Disbursements, Houston</unittitle><unitdate type="inclusive" normal="1938/1941">1938-1941, </unitdate><unitdate type="inclusive" normal="1946/1950">1946-1950</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Compensation Binder, Coleman, San Francisco</unittitle><unitdate type="inclusive" normal="1930/1939">1930-1939</unitdate></did></c03>
+      <c03><did><unittitle>Daily Financial Statements, Canada, Houston, San Francisco</unittitle><unitdate type="inclusive" normal="1951/1954">1951-1954</unitdate></did></c03>
+      <c03><did><unittitle>Essential Oils Stored in Public Warehouses</unittitle><unitdate type="inclusive" normal="1962">1962</unitdate></did></c03>
+      <c03><did><unittitle>Expenses Prepaid and Accrued</unittitle><unitdate type="inclusive" normal="1949/1957">1949-1957</unitdate><physdesc><extent>4 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Expenses, Salesmen</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate></did></c03>
+      <c03><did><unittitle>Expenses, Long Island City</unittitle><unitdate type="inclusive" normal="1959/1960">1959-1960</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Finished Goods, Inventories</unittitle><unitdate type="inclusive" normal="1952/1960">1952-1960</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Finished Goods, Inventories, Houston</unittitle><unitdate type="inclusive" normal="1945/1948">1945-1948</unitdate></did></c03>
+      <c03><did><unittitle>Finished Goods, Inventories, L.I.C.</unittitle><unitdate type="inclusive" normal="1931/1946">1931-1946, </unitdate><unitdate type="inclusive" normal="1940/1941">1940-1941, </unitdate><unitdate type="inclusive" normal="1961">1961</unitdate><physdesc><extent>3 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Finished Goods, Inventories, Warehouses</unittitle><unitdate type="inclusive" normal="1950/1953">1950-1953, </unitdate><unitdate type="inclusive" normal="1954">1954</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Flavors and Ingredients</unittitle><unitdate type="inclusive" normal="1947/1954">1947-1954, </unitdate><unitdate type="inclusive" normal="1960/1963">1960-1963</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Insurance Ledgers</unittitle><unitdate type="inclusive" normal="1937/1952">1937-1952</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Inventories, Cost Dept.</unittitle><unitdate type="inclusive" normal="1933/1951">1933-1951</unitdate></did></c03>
+      <c03><did><unittitle>Inventories, Wholesale Charges</unittitle><unitdate type="inclusive" normal="1946/1950">1946-1950</unitdate></did></c03>
+      <c03><did><unittitle>Inventories, San Francisco and Chicago</unittitle><unitdate type="inclusive" normal="1926">1926</unitdate></did></c03>
+      <c03><did><unittitle>Inventories, San Francisco, Chicago, Canada</unittitle><unitdate type="inclusive" normal="1931">1931</unitdate></did></c03>
+      <c03><did><unittitle>Inventories, San Francisco, Chicago, Houston</unittitle><unitdate type="inclusive" normal="1950/1954">1950-1959</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      
+      <c03><did><unittitle>Invoice Registers</unittitle><unitdate type="inclusive" normal="1916/1962">1916-1962</unitdate><physdesc><extent>47 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Invoice Register, Rockford</unittitle><unitdate type="inclusive" normal="1956/1957">1956-1957</unitdate></did></c03>
+      <c03><did><unittitle>Journal</unittitle><unitdate type="inclusive" normal="1904/1905">1904-1905</unitdate></did></c03>
+      <c03><did><unittitle>Journal, Accounts Receivable</unittitle><unitdate type="inclusive" normal="1940">1940, </unitdate><unitdate type="inclusive" normal="1944/1948">1944-1948, </unitdate><unitdate type="inclusive" normal="1958/1961">1958-1961</unitdate><physdesc><extent>3 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Journal, Cash</unittitle><unitdate type="inclusive" normal="1916/1917">1916-1917</unitdate></did></c03>
+      <c03><did><unittitle>Journal, Cost</unittitle><unitdate type="inclusive" normal="1899/1907">1899-1907, </unitdate><unitdate type="inclusive" normal="1910/1911">1910-1911, </unitdate><unitdate type="inclusive" normal="1932/1951">1932-1951, </unitdate><unitdate type="inclusive" normal="1956/1961">1956-1961</unitdate><physdesc><extent>8 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Journal, Dividend</unittitle><unitdate type="inclusive" normal="1907/1909">1907-1909</unitdate></did></c03>
+      <c03><did><unittitle>Journal, Factory</unittitle><unitdate type="inclusive" normal="1914/1916">1914-1916</unitdate></did></c03>
+      <c03><did><unittitle>Journals, General</unittitle><unitdate type="inclusive" normal="1954/1959">1954-1959</unitdate><physdesc><extent>3 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Journal, General, Authorization for Entries</unittitle><unitdate type="inclusive" normal="1925/1949">1925-1949, </unitdate><unitdate type="inclusive" normal="1950/1954">1950-1954</unitdate><physdesc><extent>13 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Journal, General, Venezuela</unittitle><unitdate type="inclusive" normal="1945/1952">1945-1952</unitdate><physdesc><extent>3 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Journal, General, Mexico</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate></did></c03>
+      <c03><did><unittitle>Journals, General</unittitle><unitdate type="inclusive" normal="1912/1914">1912-1914, </unitdate><unitdate type="inclusive" normal="1916">1916, </unitdate><unitdate type="inclusive" normal="1922/1924">1922-1924, </unitdate><unitdate type="inclusive" normal="1931/1934">1931-1934</unitdate><physdesc><extent>8 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Journal, Private Dividend</unittitle><unitdate type="inclusive" normal="1903/1905">1903-1905</unitdate></did></c03>
+      <c03><did><unittitle>Journal, Purchase</unittitle><unitdate type="inclusive" normal="1916/1917">1916-1917</unitdate></did></c03>
+      <c03><did><unittitle>Journals, Sales</unittitle><unitdate type="inclusive" normal="1917">1917, </unitdate><unitdate type="inclusive" normal="1920">1920, </unitdate><unitdate type="inclusive" normal="1925/1927">1925-1927, </unitdate><unitdate type="inclusive" normal="1932">1932, </unitdate><unitdate type="inclusive" normal="1934">1934, </unitdate><unitdate type="inclusive" normal="1936/1937">1936-1937, </unitdate><unitdate type="inclusive" normal="1940">1940, </unitdate><unitdate type="inclusive" normal="1946/1947">1946-1947, </unitdate><unitdate type="inclusive" normal="1949/1950">1949-1950, </unitdate><unitdate type="inclusive" normal="1958/1960">1958-1960</unitdate><physdesc><extent>10 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledger Box and Carton Materials</unittitle><unitdate type="inclusive" normal="1954/1959">1954-1959, </unitdate><unitdate type="inclusive" normal="1961/1962">1961-1962</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledgers, Cost, San Francisco</unittitle><unitdate type="inclusive" normal="1924/1942">1924-1942</unitdate><physdesc><extent>3 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledger, Cost, San Francisco, Chicago</unittitle><unitdate type="inclusive" normal="1931/1934">1931-1934</unitdate></did></c03>
+      <c03><did><unittitle>Ledgers, Cost</unittitle><unitdate type="inclusive" normal="1942/1945">1942-1945, </unitdate><unitdate type="inclusive" normal="1957/1960">1957-1960</unitdate><physdesc><extent>4 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledger, Cost, L.I.C.</unittitle><unitdate type="inclusive" normal="1946/1953">1946-1953, </unitdate><unitdate type="inclusive" normal="1956/1957">1956-1957</unitdate><physdesc><extent>4 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledger, Cost, Venezuela</unittitle><unitdate type="inclusive" normal="1942/1951">1942-1951</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledger, General</unittitle><unitdate type="inclusive" normal="1916/1918">1916-1918</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Cost Dept., Chicle</unittitle><unitdate type="inclusive" normal="1937/1942">1937-1942</unitdate></did></c03>
+      <c03><did><unittitle>Ledgers, General</unittitle><unitdate type="inclusive" normal="1918/1958">1918-1958</unitdate><physdesc><extent>16 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledgers, Transfer</unittitle><unitdate type="inclusive" normal="1919/1925">1919-1925, </unitdate><unitdate type="inclusive" normal="1919/1937">1919-1937, </unitdate><unitdate type="inclusive" normal="1920/1950">1920-1950</unitdate><physdesc><extent>3 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledger, Journal</unittitle><unitdate type="inclusive" normal="1906/1909">1906-1909</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Prepaid and Accruals</unittitle><unitdate type="inclusive" normal="1945/1948">1945-1948</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Warehouse Data Distribution</unittitle><unitdate type="inclusive" normal="1942/1945">1942-1945</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Materials Stored in Public Warehouses</unittitle><unitdate type="inclusive" normal="1959/1962">1959-1962</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Materials, Factory Expense</unittitle><unitdate type="inclusive" normal="1950/1959">1950-1959</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Materials and Supplies, Mints</unittitle><unitdate type="inclusive" normal="1953">1953, </unitdate><unitdate type="inclusive" normal="1959/1963">1959-1963</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledger, Materials and Supplies, Raw Materials</unittitle><unitdate type="inclusive" normal="1960/1963">1960-1963</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Materials and Supplies, Wrapping Materials</unittitle><unitdate type="inclusive" normal="1958/1963">1958-1963</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Patents</unittitle><unitdate type="inclusive" normal="1909">1909</unitdate></did></c03>
+      <c03><did><unittitle>Premiums</unittitle><unitdate type="inclusive" normal="1935/1942">1935-1942</unitdate></did></c03>
+      <c03><did><unittitle>Research and Development, Materials, Includes</unittitle><unitdate type="inclusive" normal="1961/1963">1961-1963</unitdate></did></c03>
+      <c03><did><unittitle>Shipping Expense</unittitle><unitdate type="inclusive" normal="1962/1964">1962-1964</unitdate></did></c03>
+      <c03><did><unittitle>Shipping Materials</unittitle><unitdate type="inclusive" normal="1959/1962">1959-1962</unitdate></did></c03>
+      <c03><did><unittitle>Stock Register, Capital</unittitle><unitdate type="inclusive" normal="1925/1927">1925-1927</unitdate></did></c03>
+      <c03><did><unittitle>Sugar Invoices, 1 Envelope</unittitle><unitdate type="inclusive" normal="1947">1947</unitdate></did></c03>
+      <c03><did><unittitle>Sundry Accounts, Individuals</unittitle><unitdate type="inclusive" normal="1943/1950">1943-1950, </unitdate><unitdate type="inclusive" normal="1952/1963">1952-1963</unitdate><physdesc><extent>11 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Transfer Binder, Common Stock</unittitle><unitdate type="inclusive" normal="1924/1925">1924-1925</unitdate></did></c03>
+      <c03><did><unittitle>Trial Balance and Work Sheets</unittitle><unitdate type="inclusive" normal="1945/1960">1945-1960</unitdate><physdesc><extent>6 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Voucher Record #1, #2</unittitle><unitdate type="inclusive" normal="1914/1916">1914-1916</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Calders Company</unittitle></did>
+      <c03><did><unittitle>Ledger</unittitle><unitdate type="inclusive" normal="1936">1936</unitdate></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Chicle Development Company</unittitle></did>
+      <c03><did><unittitle>Bintula Refinery, Ledger</unittitle><unitdate type="inclusive" normal="1950/1952">1950-1952</unitdate></did></c03>
+      <c03><did><unittitle>Cash Book</unittitle><unitdate type="inclusive" normal="1948/1957">1948-1957</unitdate></did></c03>
+      <c03><did><unittitle>Cash Book, General</unittitle><unitdate type="inclusive" normal="1945/1947">1945-1947</unitdate></did></c03>
+      <c03><did><unittitle>Cash Distribution</unittitle><unitdate type="inclusive" normal="1938/1942">1938-1942</unitdate><physdesc><extent>4 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Cash Disbursements, General</unittitle><unitdate type="inclusive" normal="1935/1937">1935-1937, </unitdate><unitdate type="inclusive" normal="1943/1945">1943-1945, </unitdate><unitdate type="inclusive" normal="1947/1950">1947-1950</unitdate><physdesc><extent>3 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Cash Receipts</unittitle><unitdate type="inclusive" normal="1938/1946">1938-1946</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Cash Receipts, Special Rubber Acct.</unittitle><unitdate type="inclusive" normal="1943/1944">1943-1944</unitdate></did></c03>
+      <c03><did><unittitle>Claims, Invoices</unittitle><unitdate type="inclusive" normal="1948/1949">1948-1949</unitdate></did></c03>
+      <c03><did><unittitle>Inventories and Balances</unittitle><unitdate type="inclusive" normal="1942/1948">1942-1948</unitdate></did></c03>
+      <c03><did><unittitle>Inventories and Balances, Argentina</unittitle><unitdate type="inclusive" normal="1951/1953">1951-1953</unitdate></did></c03>
+      <c03><did><unittitle>Journal, General</unittitle><unitdate type="inclusive" normal="1942/1943">1942-1943</unitdate></did></c03>
+      <c03><did><unittitle>Ledgers, General</unittitle><unitdate type="inclusive" normal="1942/1943">1942-1943, </unitdate><unitdate type="inclusive" normal="1953/1956">1953-1956</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledger, Barranquilla</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, General, Brazil and Mexico</unittitle><unitdate type="inclusive" normal="1945/1946">1945-1946</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Mexico, Colombia, Rubber Acct.</unittitle><unitdate type="inclusive" normal="1943/1944">1943-1944</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Barranquilla, Colombia, Dario and Perillo</unittitle><unitdate type="inclusive" normal="1942/1944">1942-1944</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Colombia, Guatemala, Venezuela</unittitle><unitdate type="inclusive" normal="1945/1946">1945-1946</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Colombia, Libra, Mayor Perielo</unittitle><unitdate type="inclusive" normal="1942/1944">1942-1944</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Dario, Colombia</unittitle><unitdate type="inclusive" normal="1944">1944</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Guatemala and Colombia</unittitle><unitdate type="inclusive" normal="1946/1947">1946-1947</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Mexico</unittitle><unitdate type="inclusive" normal="1939/1941">1939-1941</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Colombia and Guatemala</unittitle><unitdate type="inclusive" normal="1947/1948">1947-1948</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Mexico, Far East</unittitle><unitdate type="inclusive" normal="1944/1945">1944-1945</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Venezuela</unittitle><unitdate type="inclusive" normal="1941/1942">1941-1942</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Guatemala, Nigeria</unittitle><unitdate type="inclusive" normal="1938/1939">1938-1939</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Tower Hill, Nigeria</unittitle><unitdate type="inclusive" normal="1943/1944">1943-1944</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Venezuela, Gum and Rubber</unittitle><unitdate type="inclusive" normal="1943/1944">1943-1944</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Nigeria and Tower Hill</unittitle><unitdate type="inclusive" normal="1941/1942">1941-1942</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Venezuela, Rubber Operations</unittitle><unitdate type="inclusive" normal="1946/1947">1946-1947</unitdate></did></c03>
+      <c03><did><unittitle>Ledgers, General</unittitle><unitdate type="inclusive" normal="1939/1950">1939-1950</unitdate><physdesc><extent>7 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledger, Rubber Plantations</unittitle><unitdate type="inclusive" normal="1942/1943">1942-1943</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Spot Purchases</unittitle><unitdate type="inclusive" normal="1946/1948">1946-1948</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledger, Spot Purchases, Guatemala, Nigeria</unittitle><unitdate type="inclusive" normal="1948/1950">1948-1950</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, General, Mexico, Individuals and Personnel History</unittitle><unitdate type="inclusive" normal="1938/1947">1938-1947</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Spot Purchases, Far East, Nigeria, Panama, and British Honduras</unittitle><unitdate type="inclusive" normal="1945/1946">1945-1946</unitdate></did></c03>
+      <c03><did><unittitle>Transfer Binder</unittitle><unitdate type="inclusive" normal="1956/1961">1956-1961</unitdate></did></c03>
+      <c03><did><unittitle>Trial Balance</unittitle><unitdate type="inclusive" normal="1939/1945">1939-1945</unitdate></did></c03>
+      <c03><did><unittitle>Voucher Register</unittitle><unitdate type="inclusive" normal="1934/1936">1934-1936</unitdate></did></c03>
+      <c03><did><unittitle>Delivery Records, Brazil, Br. Honduras, Colombia, Guatemala, Mexico, Nigeria, Panama, Peru, Venezuela</unittitle><unitdate type="inclusive" normal="1889/1964">no dates</unitdate></did></c03>
+      <c03><did><unittitle>Bankers Trust Company, C.D.C., Special Account</unittitle><unitdate type="inclusive" normal="1889/1964">no dates</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Journal</unittitle><unitdate type="inclusive" normal="1916/1917">1916-1917</unitdate></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Crawford Gum Company</unittitle></did>
+      <c03><did><unittitle>Ledger</unittitle><unitdate type="inclusive" normal="1939/1940">1939-1940</unitdate></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Frank H. Fleer Company</unittitle></did>
+      <c03><did><unittitle>Stock Ledger</unittitle><unitdate type="inclusive" normal="1889/1964">no dates</unitdate></did></c03>
+      <c03><did><unittitle>Minute Book</unittitle><unitdate type="inclusive" normal="1909">1909</unitdate></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Mexican Exploitation Company</unittitle></did>
+      <c03><did><unittitle>Cash Books</unittitle><unitdate type="inclusive" normal="1900/1907">1900-1907, </unitdate><unitdate type="inclusive" normal="1910">1910</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Journals</unittitle><unitdate type="inclusive" normal="1907/1910">1907-1910</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledger</unittitle><unitdate type="inclusive" normal="1901/1909">1901-1909</unitdate></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>New York City Transit, Vending</unittitle></did>
+      <c03><did><unittitle>Cash Collections</unittitle><unitdate type="inclusive" normal="1951">1951, </unitdate><unitdate type="inclusive" normal="1952">1952</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Contract, 2nd Year Probable P and L</unittitle><unitdate type="inclusive" normal="1950/1951">1950-1951</unitdate></did></c03>
+      <c03><did><unittitle>Contract, 3rd Year Probable P and L</unittitle><unitdate type="inclusive" normal="1951/1952">1951-1952</unitdate></did></c03>
+      <c03><did><unittitle>Contract, 4th Year Probable P and</unittitle><unitdate type="inclusive" normal="1952/1953">1952-1953</unitdate></did></c03>
+      <c03><did><unittitle>Contract, 5th Year Probable P and L</unittitle><unitdate type="inclusive" normal="1954/1955">1954-1955</unitdate></did></c03>
+      <c03><did><unittitle>General Ledger</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate></did></c03>
+      <c03><did><unittitle>Vending Ledger</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate></did></c03>
+      <c03><did><unittitle>Ledger General #2 Nominal Account</unittitle><unitdate type="inclusive" normal="1950/1951">1950-1951</unitdate></did></c03>
+      <c03><did><unittitle>Ledger General #3 Nominal Account</unittitle><unitdate type="inclusive" normal="1949/1951">1949-1951</unitdate></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Sen Sen Chiclet Company</unittitle></did>
+      <c03><did><unittitle>Cash Book, General</unittitle><unitdate type="inclusive" normal="1913/1914">1913-1914</unitdate></did></c03>
+      <c03><did><unittitle>Journal</unittitle><unitdate type="inclusive" normal="1916/1917">1916-1917</unitdate></did></c03>
+      <c03><did><unittitle>Journal and Analysis</unittitle><unitdate type="inclusive" normal="1910/1914">1910-1914</unitdate></did></c03>
+      <c03><did><unittitle>Journal, Private</unittitle><unitdate type="inclusive" normal="1922">1922</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Capital Stock</unittitle><unitdate type="inclusive" normal="1909/1914">1909-1914</unitdate></did></c03>
+      <c03><did><unittitle>Ledgers, Dividend</unittitle><unitdate type="inclusive" normal="1908/1914">1908-1914, </unitdate><unitdate type="inclusive" normal="1910">1910</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Ledger, Dividend</unittitle></did></c03>
+      <c03><did><unittitle>Ledger, Impersonal</unittitle><unitdate type="inclusive" normal="1909">1909</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Private</unittitle><unitdate type="inclusive" normal="1909/1915">1909-1915</unitdate></did></c03>
+      <c03><did><unittitle>Ledger, Transfer and Impersonal</unittitle><unitdate type="inclusive" normal="1913/1914">1913-1914</unitdate></did></c03>
+      <c03><did><unittitle>Profit and Loss</unittitle><unitdate type="inclusive" normal="1909">1909</unitdate></did></c03>
+      <c03><did><unittitle>Purchases and Expenditures</unittitle><unitdate type="inclusive" normal="1909/1914">1909-1914, </unitdate><unitdate type="inclusive" normal="1914">1914</unitdate><physdesc><extent>2 volumes</extent></physdesc></did></c03>
+      <c03><did><unittitle>Stockholders Listings</unittitle><unitdate type="inclusive" normal="1914">1914</unitdate></did></c03>
+      <c03><did><unittitle>Stock Certificates, Cancelled, 1 envelope</unittitle><unitdate type="inclusive" normal="1911">1911</unitdate></did></c03>
+   </c02>
+   <c02 level="subseries"><did><unittitle>Miscellaneous</unittitle></did>
+      <c03><did><unittitle>American Chicle Company Journal</unittitle><unitdate type="inclusive" normal="1916/1917">1916-1917</unitdate></did></c03>
+      <c03><did><unittitle>Cash</unittitle><unitdate type="inclusive" normal="1916/1917">1916-1917</unitdate></did></c03>
+      <c03><did><unittitle>Cash Journal</unittitle><unitdate type="inclusive" normal="1889/1892">1889-1892</unitdate></did></c03>
+      <c03><did><unittitle>Chicago warehouse</unittitle><unitdate type="inclusive" normal="1954/1956">1954-1956</unitdate></did></c03>
+      <c03><did><unittitle>Stock Ledger</unittitle><unitdate type="inclusive" normal="1889/1964">no dates</unitdate></did></c03>
+   </c02>
+</c01>
+
+      </dsc>
+   </archdesc>
+</ead>

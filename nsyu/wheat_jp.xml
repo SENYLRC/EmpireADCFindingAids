@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 --><!-- Added Belfer as container type -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="wheat_jp" mainagencycode="NSyU">wheat_jp</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">John Wheat Papers</titleproper>
+        <subtitle>An inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2011-01-25">25 Jan 2011</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+        
+        <date normal="2011-01-25">25 Jan 2011</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Wheat, John Potter.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">John Wheat Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1954/1969" type="inclusive">1954-1969</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>0.25 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">American painter.  Collection contains artwork (original and photographs), correspondence, printed material and  biographical material, including a diary from Vietnam in late 1968.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">3192487</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p> John Potter Wheat (1920-1980) was an American painter known for his landscapes and mural paintings.  As Official Combat Artist for Vietnam, many of his paintings had military themes.</p>
+      <p>Wheat 
+	  studied at the Art Students League and the Yale School of Fine Arts, and his work has been shown at the Museum of 
+	  Modern Art, Metropolitan Museum, Chicago Art Institute, Corcoran Gallery, and National Academy of Design, among 
+	  others.  He received numerous awards over his career: the American Academy of Arts and Letters Purchase 
+	  Prize, the American Watercolor Society Silver Medal, and the Allied Artists of American Gold Medal, and more than 
+	  25 other national and international awards.  </p>
+      <p>Wheat  served in World War II in the Office of Strategic Services, and was 
+	  the Offical Combat Artist in Vietnam for the Chief of Military History.  Several of his pieces reside in the 
+	  United States Army Historical Collection in Washington, D.C.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">John Wheat Papers</emph> contains artwork, biographical material and printed material.</p>
+      <p>
+        <emph render="bold">Artwork</emph> contains numerous original pen-and-ink and color sketches and drawings, along 
+		 with photographs of many other drawings and of Wheat's paintings.  There is also a folder of photographs of paintings 
+		 annotated with information about their then-current locations and owners.  Many of the paintings represent Vietnam subject matter -- soldiers, tanks, battles, marching troops, POWs, and more.</p>
+      <p>
+        <emph render="bold">Biographical material</emph> contains awards and certificates, including a photocopy of a U.S. 
+		 Army "Certificate of Appreciation for Patriotic Civilian Service" and an original certificate from the Royal Academy for 
+		 the Encouragement of Arts, Manufactures and Commerce in London, naming Wheat a Fellow of the Academy.  Also included here 
+		 is Wheat's typed diary from November to December of 1968, recording his experiences in Vietnam as Offical Combat Artist, 
+		 and some miscellaneous items such as a biographical sketch and a few photos of him in Vietnam.</p>
+      <p>
+        <emph render="bold">Correspondence</emph> consists of an assortment of letters from galleries, museums, art 
+		 dealers and similar individuals.  Most of the letters document or announce awards and recognitions Wheat received.</p>
+      <p>
+        <emph render="bold">Printed material</emph> contains clippings about Wheat and a number of exhibit announcements 
+		 and catalogs.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Correspondence is in chronological order.  Material in the other series is in no particular order.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Art -- Painters</subject>
+      <subject encodinganalog="650" source="local">Military history</subject>
+      <persname encodinganalog="600" source="lcnaf">Wheat, John Potter.</persname>
+      <persname encodinganalog="600" source="lcnaf">Vassos, John, 1898-1989.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">United States. -- Army -- Art collections.</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Combat -- 20th century -- Pictorial works.</subject>
+      <subject encodinganalog="650" source="lcsh">Mural painting and decoration -- United States -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Painters -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Painting, American -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Vietnam War, 1961-1975 -- Personal narratives.</subject>
+      <subject encodinganalog="650" source="lcsh">Vietnam War, 1961-1975 -- Pictorial works.</subject>
+      <subject encodinganalog="650" source="lcsh">War in art.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Diaries.</genreform>
+      <genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Painters.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>-->
+		 </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>John Wheat Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">John Wheat</persname>, 1966, 1970.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Artwork</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Drawings, original</unittitle>
+            <unitdate normal="1966" type="inclusive">1966, </unitdate>
+            <unitdate normal="1954/1969" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Drawings, photographs of</unittitle>
+            <abstract>Vietnam subject matter, pen-and-ink; originals done in 1968, date of photographs unknown</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Paintings, photographs of</unittitle>
+            <abstract>Vietnam subjects</abstract>
+            <container type="Box">1</container>
+          </did>
+          <scopecontent>
+            <p>Originals of these paintings date from 1968 during Wheat's four weeks in Vietnam.  The subject matter includes soldiers, military equipments, marching troops, POWs and more.  The photographs are affixed to sheets of paper with typed details on date, location, Corps area and comments on the event portrayed.  The subdivision by owner or repository reflects Wheat's original arrangement.</p>
+          </scopecontent>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Paintings, photographs of</unittitle>
+            <abstract>miscellaneous subjects</abstract>
+            <container type="Box">1</container>
+          </did>
+          <scopecontent>
+            <p>Originals of these paintings date from 1942 to 1966, but the photographs are undated.  Most are annotated by Wheat on the back with dates, locations, or other information.  Many have Spanish or Mexican themes such as picadors, toreadors and bulls.</p>
+          </scopecontent>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Biographical material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Awards and certificates</unittitle>
+            <unitdate normal="1958" type="inclusive">1958, </unitdate>
+            <unitdate normal="1969" type="inclusive">1969</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Diary, Vietnam</unittitle>
+            <unitdate normal="1968-11/1968-12" type="inclusive">Nov-Dec 1968</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <abstract>typed chronology, two photographs (one taken in Vietnam), and a flier from the dealer who represented Wheat</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <unitdate normal="1954/1966" type="inclusive">1954-1966</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Printed material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Clippings</unittitle>
+            <unitdate normal="1956/1957" type="inclusive">1956-1957, </unitdate>
+            <unitdate normal="1954/1969" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Exhibits</unittitle>
+            <abstract>one item includes brief paragraph on Wheat by John Vassos</abstract>
+            <unitdate normal="1966" type="inclusive">1966, </unitdate>
+            <unitdate normal="1954/1969" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

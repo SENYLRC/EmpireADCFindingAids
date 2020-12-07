@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="kuhn_c">kuhn_c</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Charles H. Kuhn Collection</titleproper>
+            <subtitle>An inventory of his Collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">EF</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1968-06-11" encodinganalog="Date">11 June 1968</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>MD<date normal="2008-12-09">9 Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>9 Dec 2008 - converted to EAD (MD)</item><item>14 Apr 2009 - revised (MD)</item>
+            <item>2 Mar 2012 - box numbers revised (MD)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Kuhn, Charles Harris, 1892-1989</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Charles H. Kuhn Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1961/1966" type="inclusive" label="Inclusive Dates: ">1961-1966</unitdate><unitdate type="bulk" normal="1961/1962" encodinganalog="245$g" label="Bulk dates:">1961-1962</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>3 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">98 original daily and Sunday cartoons from the newspaper comic strip <emph render="italic">Grandma</emph> (1961-1962); 20 pieces of incoming correspondence from readers (1961-1966).</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2652449</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Charles Harris Kuhn (1892-1989) was an American cartoonist and creator of the comic strip <emph render="italic">Grandma</emph>.</p><p>Born in 1892 in Prairie City, Illinois, Kuhn attended the Chicago Academy of Fine Arts before serving in the Navy during World War I.  He spent most of his career primarily as an editorial cartoonist, starting his career with the <emph render="italic">Rocky Mountain News</emph>, and spending the bulk of it with the <emph render="italic">Indianapolis News</emph>.  In 1947, Kuhn launched his own comic strip feature, <emph render="italic">Grandma</emph>, with the Richardson syndicate.  King Features picked-up the strip the following year, and altogether <emph render="italic">Grandma</emph> ran some twenty-two years, until Kuhn's retirement in 1969.
+</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Charles H. Kuhn Collection</emph> contains 62 original daily cartoons and 36 original Sunday cartoons from the comic strip <emph render="italic">Grandma</emph> (1961-1962). The collection also includes approximately 20 pieces of incoming reader correspondence (1961-1966). Daily cartoon: traces of graphite, zipatone, pen and ink on illustration board, approx. 7 ½ x 23 ¼ in. Sunday cartoon: traces of graphite, blue pencil, pen and ink on illustration board, approx. 19 x 27 in.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Daily and Sunday cartoons are arranged separately in chronological order. Correspondence is foldered.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has collections of over one hundred cartoonists. Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Kuhn, Charles Harris, 1892-1989.</persname>
+         
+         <corpname encodinganalog="610" source="lcnaf">King Features Syndicate.</corpname>
+         <title encodinganalog="630" source="local" rules="aacr2">Grandma (comic strip)</title>	
+			<subject encodinganalog="650" source="local">Art -- Cartoonists</subject>							
+         <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject><subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States.</subject><subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject><subject encodinganalog="650" source="lcsh">Comic books, strips, 
+
+etc. -- United States.</subject>
+         
+         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p> Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Charles H. Kuhn Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Charles H. Kuhn</persname>, 1967.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+<c01 level="series"><did><unittitle><emph render="italic">Grandma</emph> cartoons</unittitle><physdesc><extent>98</extent></physdesc></did>
+<note><p>Click <extref href="kuhn_c_inv.pdf">here</extref> for detailed inventory.</p></note>               
+<c02 level="subseries"><did><unittitle>Daily cartoons</unittitle><physdesc><extent>62</extent></physdesc></did><c03><did><unittitle><unitdate type="inclusive" normal="1961-01/1962-11">1961 Jan - 1962 Nov</unitdate></unittitle><container type="Oversize">1</container></did></c03></c02>
+<c02 level="subseries"><did><unittitle>Sunday cartoons</unittitle><physdesc><extent>36</extent></physdesc></did><c03><did><unittitle><unitdate type="inclusive" normal="1962-01/1962-12">1962 Jan - 1962 Dec</unitdate></unittitle><container type="Oversize">1</container></did></c03></c02></c01>         
+      <c01 level="series"><did><unittitle>Correspondence</unittitle><physdesc><extent>approximately 20 items</extent></physdesc></did>
+               
+<c02><did><unittitle><unitdate type="inclusive" normal="1961/1966">1961-1966</unitdate></unittitle><container type="Oversize">1</container></did></c02>
+</c01></dsc>
+   </archdesc>
+</ead>

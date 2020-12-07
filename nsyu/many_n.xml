@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="many_n">many_n</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Nancy Many Photograph Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-03-21" encodinganalog="Date">21 Mar 2013</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2013-03-21">21 Mar 2013</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Many, Nancy</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Nancy Many Photograph Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1840/1900" type="inclusive" label="Inclusive Dates: ">circa 1840-1900</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>11 items, boxed</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Tintypes and daguerreotypes of men, women and children; one of the men is identified as John Ransom Miller, husband of Charlotte Noyes, whose brother John Humphrey Noyes founded the Oneida Community.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4046329</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The Oneida Community was a utopian commune founded by John Humphrey Noyes in 1848 in the town of Oneida in Madison County, New York.  The community practiced Perfectionism, complex marriage, communal ownership of property, and stirpiculture.   At its height in 1878 the community had 306 members, but the community faltered the next year when Noyes attempt to pass on leadership of the community to his son, Theodore Noyes. By 1880 some members had left, many had embarked upon traditional marriages, and the community itself had been reorganized as a joint-stock company named Oneida Community Ltd., later simply Oneida Ltd.  Most of the product lines (animal traps, silk thread, canned vegetables) were abandoned or sold off by 1916, but the company became well-known for its silver and cutlery, production of which continued until 2005 when the company went into bankruptcy and was sold.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Nancy Many Photograph Collection</emph> consists of nine tintype (ferrotype) portraits and two daguerreotype portraits.  One of the daguerreotypes is identified as John Ransom Miller (1813–1854), who joined the Putney Corporation in 1841 and who married Charlotte A. Noyes, the sister of John Humphrey Noyes. The Millers joined the Oneida Association in 1849. John Miller's financial skills helped to make the transition of the Putney Corporation to the Oneida Community a smoother one through successful industries and publishing efforts. </p><p>The remaining ten portraits — four children, one elderly woman, and five men — are unidentified, but they may be of members of the Oneida Community as well.  None of the photographs are dated.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>No particular order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has extensive holdings relating to the Noyes family and the Oneida Community, including the <archref href="../o/oneida_comm.htm">Oneida Community Collection</archref>, <archref href="../r/robertson_cpn.htm">Constance Pierrepont Noyes Robertson Papers</archref>, <archref href="../g/goldsmith_mn.htm">Margaret Noyes Goldsmith Papers</archref>, <archref href="../h/hinds_wa.htm">William A. Hinds Photograph Album</archref>, and <archref href="../c/cragin_ge.htm">George Cragin Manuscript</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Miller, John Ransom.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Oneida Community.</corpname>
+      
+      
+      <corpname encodinganalog="610" source="lcnaf">Putney Community (Putney, Vt.)</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Photography -- History -- 19th century</subject><subject encodinganalog="650" source="lcsh">Portrait photography -- 19th century</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Cased photographs.</genreform><genreform encodinganalog="655" source="aat">Daguerreotypes (photographs)</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Tintypes (prints)</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Nancy Many Photograph Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Nancy Many</persname>, 2012.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Photographs</unittitle></did>
+               
+               
+            <c02><did><unittitle>Miller, John Ransom</unittitle><container type="Box">1</container></did></c02>
+         <c02><did><unittitle>Unidentified</unittitle><physdesc><extent>10 items</extent></physdesc><container type="Box">1</container></did></c02></c01>
+      </dsc>
+   </archdesc>
+</ead>

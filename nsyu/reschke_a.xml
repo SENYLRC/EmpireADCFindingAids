@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 --><!-- Added Belfer as container type -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="reschke_a" mainagencycode="NSyU">reschke_a</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Anita Reschke Collection of Opera Recordings</titleproper>
+        <subtitle>An inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2010-07-19">19 Jul 2010</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2010-07-19">19 Jul 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Reschke, Anita.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Anita Reschke Collection of Opera Recordings</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1988/1990" type="inclusive">1988-1990</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>1.5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Personal (i.e. non-commercial) recordings of various opera performances on 
+		 standard audiocassettes; many are from the Metropolitan Opera but there are also performances from the Bayreuth Festival, 
+		 Chicago Lyric Opera, London, and the Syracuse Symphony. Also includes a few personal recordings of speakers at Jesuit 
+		 gatherings.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">3194829</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Nothing is known of the donor of this material.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Anita Reschke Collection of Opera Recordings</emph> consists of personal (i.e. non-commercial) 
+		 recordings of various opera performances on standard audiocassettes. Many of the recordings are from the Metropolitan 
+		 Opera but there are also performances from the Bayreuth Festival, the Chicago Lyric Opera, the Syracuse Symphony and 
+		 unspecified performances in London. Many, but not all, of the tapes are annotated with the names of the major performers.</p>
+      <p>There are also a few recordings of speakers on religious subjects at Jesuit gatherings.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Alphabetical by composer.</p>
+    </arrangement>
+    <!-- <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial> -->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <!-- <persname encodinganalog="600" source="lcnaf">##</persname> -->
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+      <corpname encodinganalog="610" source="lcnaf">Bayreuther Festspiele.</corpname>
+	  <corpname encodinganalog="610" source="lcnaf">Lyric Opera of Chicago.</corpname>
+	  <corpname encodinganalog="610" source="lcnaf">Metropolitan Opera (New York, N.Y.)</corpname>
+      <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+      <subject encodinganalog="650" source="lcsh">Operas -- Sound recordings.</subject>
+      <subject encodinganalog="650" source="lcsh">Operas -- United States.</subject>
+      <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+      <genreform encodinganalog="655" source="aat">Audiocassettes.</genreform>
+    
+    
+         <!-- <occupation encodinganalog="656" source="lcsh">##</occupation> -->
+         <!-- <function encodinganalog="657">##</function> -->
+	  </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      <p>Access to tapes requires advance notice for creation of use copy.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Anita Reschke Collection of Opera Recordings, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Anita Reschke</persname>.</p>
+    </acqinfo>
+    <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Audiorecordings</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Auber, Manon Lescaut</unittitle>
+            <unitdate type="inclusive" normal="1988/1990">undated</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bellini, I Puritani</unittitle>
+            <unitdate type="inclusive" normal="1988/1990">undated</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bellini, Norma</unittitle>
+            <unitdate type="inclusive" normal="1988/1990">undated</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Berg, Wozzek</unittitle>
+            <unitdate type="inclusive" normal="1990-1-6">1/6/1990</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Berlioz, Requiem</unittitle>
+            <unitdate type="inclusive" normal="1987">1987</unitdate>
+            <abstract>Syracuse Symphony</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Boito, Mefistofele</unittitle>
+            <unitdate type="inclusive" normal="1989-11-11">11/11/1989</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Borodin, Prince Igor</unittitle>
+            <unitdate type="inclusive" normal="1989-9-16">9/16/1989</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Donizetti, Anna Bolena</unittitle>
+            <unitdate type="inclusive" normal="1989-8-19">8/19/1989</unitdate>
+            <physdesc>
+              <extent>3 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Form for ministry retreat</unittitle>
+            <unitdate type="inclusive" normal="1984">1984</unitdate>
+            <physdesc>
+              <extent>7 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Form for ministry retreat</unittitle>
+            <abstract>Fr. Pete Conroy, S.J.</abstract><unitdate type="inclusive" normal="1984-09"> Fall 1984</unitdate>
+            <physdesc>
+              <extent>6 tapes; 3 are missing</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gershwin, Porgy and Bess </unittitle>
+            <unitdate type="inclusive" normal="1990-01-27">1/27/90</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>3 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Giordano, Andrea Chenier </unittitle>
+            <unitdate type="inclusive" normal="1989-9-30">9/30/1989</unitdate>
+            <abstract>London</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Glass, Satyagraha </unittitle>
+            <unitdate type="inclusive" normal="1988-05">May 88</unitdate>
+            <abstract>Chicago Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gospel of John, Fr. Richard Rohr</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gounod, Faust </unittitle>
+            <unitdate type="inclusive" normal="1990-3-3">3/3/1990</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Haydn, Armida </unittitle>
+            <unitdate type="inclusive" normal="1989-8-12">8/12/1989</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Homily, Bishop Harrison b/w Leoncavallo, Pagliacci</unittitle>
+            <unitdate type="inclusive" normal="1989-10-07">10/7/89</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Humperdinck, Hansel and Gretel </unittitle>
+            <unitdate type="inclusive" normal="1988/1989">1988-1989</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mascagni, Cavalleria Rusticana</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Meditation and dying, Lawrence Freeman</unittitle>
+            <unitdate type="inclusive" normal="1988/1990">undated</unitdate>
+            <physdesc>
+              <extent>4 tapes, 2 copies each of 2 tapes</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Meditation</unittitle>
+            <physdesc>
+              <extent>3 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Montamezzi, L'Amore dei tre re </unittitle>
+            <unitdate type="inclusive" normal="1989-9-30">9/30/1989</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Moussorgsky, Kovanschina </unittitle>
+            <unitdate type="inclusive" normal="1988-3-26">3/26/1988</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mozart, Apollo et Hyacinthus </unittitle>
+            <unitdate type="inclusive" normal="1989-8-12">8/12/1989</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mozart, La Clemenzo di Tito </unittitle>
+            <unitdate type="inclusive" normal="1990-6-16">6/16/1990</unitdate>
+            <abstract>Lyric Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mozart, Cosi Fan Tutte </unittitle>
+            <unitdate type="inclusive" normal="1990-1-20">1/20/1990</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mozart, Don Giovanni </unittitle>
+            <unitdate type="inclusive" normal="1989-6-3">6/3/1989</unitdate>
+            <abstract>Lyric Opera of Chicago</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mozart, Don Giovanni </unittitle>
+            <unitdate type="inclusive" normal="1990-4-14">4/14/1990</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mozart, Die Entfahrung aus dem Serail </unittitle>
+            <unitdate type="inclusive" normal="1990-3-24">3/24/1990</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mozart, Le Nozze de Figaro </unittitle>
+            <unitdate type="inclusive" normal="1988-12-31">12/31/1988</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>3 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Offenbach, La Perichole </unittitle>
+            <unitdate type="inclusive" normal="1989-9-23">9/23/1989</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ponchielli, La Gioconda </unittitle>
+            <unitdate type="inclusive" normal="1990-2-3">2/3/1990</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Puccini, La Boheme </unittitle>
+            <unitdate type="inclusive" normal="1990-3-31">3/31/1990</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Puccini, Edgar </unittitle>
+            <unitdate type="inclusive" normal="1989-8-5">8/5/1989</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Puccini, Manon Lescaut </unittitle>
+            <unitdate type="inclusive" normal="1990-3-17">3/17/1990</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Puccini, Turandot </unittitle>
+            <unitdate type="inclusive" normal="1990-1-12">1/12/1990</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rachmaninoff, Aleko </unittitle>
+            <unitdate type="inclusive" normal="1989-9-16">9/16/1989</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Saint-Saens, Samson et Dalila </unittitle>
+            <unitdate type="inclusive" normal="1990-2-17">2/17/1990</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Schoenberg, Gurrelieder </unittitle>
+            <unitdate type="inclusive" normal="1989-5-31">5/31/1989</unitdate>
+            <abstract>Chicago Symphony</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Strauss, Die Fledermaus </unittitle>
+            <unitdate type="inclusive" normal="1990-6-9">6/9/1990</unitdate>
+            <abstract>Lyric Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Thomas, Mignon </unittitle>
+            <unitdate type="inclusive" normal="1989-11-25">11/25/1989</unitdate>
+            <physdesc>
+              <extent>3 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Verdi, Aida </unittitle>
+            <unitdate type="inclusive" normal="1989-01-07">1/7/1989 - Metropolitan Opera</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Verdi, Aida </unittitle>
+            <unitdate type="inclusive" normal="1989-11-18">11/18/1989</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Verdi, Ernani </unittitle>
+            <unitdate type="inclusive" normal="1989-8-5">8/5/1989</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Verdi, La Traviata </unittitle>
+            <unitdate type="inclusive" normal="1990-2-10">2/10/1990</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Verdi, Il Trovatore </unittitle>
+            <unitdate type="inclusive" normal="1989-10-7">10/7/1989</unitdate>
+            <physdesc>
+              <extent>2 tapes, tape #1 is missing</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Verdi, Il Trovatore</unittitle>
+            <unitdate type="inclusive" normal="1988/1990">undated</unitdate>
+            <physdesc>
+              <extent>2 tapes</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wagner, Parsifal </unittitle>
+            <unitdate type="inclusive" normal="1989">1989</unitdate>
+            <abstract>Bayreuth Festival</abstract>
+            <physdesc>
+              <extent>4 tapes</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wagner, Tannhauser </unittitle>
+            <unitdate type="inclusive" normal="1989-5-20">5/20/1989</unitdate>
+            <abstract>Lyric Opera of Chicago</abstract>
+            <physdesc>
+              <extent>3 tapes</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wagner, Die Walküre </unittitle>
+            <unitdate type="inclusive" normal="1990-4-7">4/7/1990</unitdate>
+            <abstract>Metropolitan Opera</abstract>
+            <physdesc>
+              <extent>3 tapes</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

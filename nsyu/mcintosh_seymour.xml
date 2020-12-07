@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="mcintosh_seymour">mcintosh_seymour</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">McIntosh &amp; Seymour Board of Directors Records</titleproper>
+            <subtitle>An inventory of the company's records at Syracuse University</subtitle>
+            <author encodinganalog="Creator">ZEC</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2020-09-23" encodinganalog="Date">23 Sep 2020</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Zoe Costanza<date normal="2020-09-23">23 Sep 2020</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+            &su_name;
+            <lb/>
+            &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">McIntosh &amp; Seymour Corp.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">McIntosh &amp; Seymour Board of Directors
+            Records</unittitle>
+         <unitdate encodinganalog="245$f" normal="1929/1936" type="inclusive"
+            label="Inclusive Dates: ">1929-1936</unitdate>
+         <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.75 linear
+            ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Records from McIntosh &amp; Seymour's
+            Board of Directors meetings.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US"
+            repositorycode="NSyU">5902289</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>McIntosh &amp; Seymour was an American locomotive company, established in 1886 in Auburn,
+            New York. It was responsible for the manufacturing of steam and internal combustion
+            engines in the early 1900s, and diesel engines beginning in 1910. In the 1930s, McIntosh
+            &amp; Seymour merged with the American Locomotive Company (ALCO). [Source: <extref
+               href="https://www.gasenginemagazine.com/company-history/engine-company-mcintosh-and-seymour-zm0z13aszbea"
+               >Article by Bill Vossler, August/September 2013</extref>]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">McIntosh &amp; Seymour Board of Directors Records</emph>
+            consists of meeting reports.</p>
+         <p><emph render="bold">Meeting reports</emph> consist of assembled packets from meetings.
+            These packets were assembled after their respective meetings, as shown by the inclusion
+            of an attendance sheet for the meeting recording who was present. Members of the board
+            and committee changed often, which is reflected on the attendance sheets. Most of the
+            packets include the following: financial reports (including orders and bills), letters
+            of resolution, statement submissions, personalized letters to members requesting
+            attendance, RSVPs for meetings, memos and notices, receipts and vouchers for fees, votes
+            for board members (called certificates of inspectors), letters acknowledging position
+            appointments, letters of resignation, letters accepting resignations, correspondence
+            between board members, and lists of active prospects. A few of the packets include lists
+            of engines, notations on engines, handwritten notes, complaints filed about a contract
+            (3 Sep 1931), and a proposal to repeal the company code and adopt a new one (Dec
+            1929).</p>
+      </scopecontent>
+      <!--<altformavail encodinganalog="530"><head>Other Formats Available</head><p>## Use MARC 530 or comment out if not applicable</p></altformavail>-->
+      <!--<originalsloc encodinganalog="535"><head>Location of Originals</head><p>Originals are here and here and here.</p></originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Material is arranged chronologically.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="alco.htm">American Locomotive Company (ALCO)
+               Records</archref> and the <archref href="alco_coll.htm">ALCO Collection</archref>. </p>
+         <p>The Smithsonian Institution possesses <extref href="https://sova.si.edu//record/NMAH.AC.0985">the bulk of McIntosh &amp; Seymour's archives</extref>. Their
+            collection includes letter books, instruction manuals, price and data sheets, notebooks,
+            design notes, blueprints and drawings, calculations and specifications, sketches, and
+            photographs. </p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+      <!--<separatedmaterial encodinganalog="544 0"><head>Separated Material</head><p>## OPT (MARC 544 0)</p></separatedmaterial>-->
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+	 
+		 <persname encodinganalog="600" source="lcnaf">Seymour, James A., 1864-1943</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">McIntosh &amp; Seymour Corp.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Locomotive industry -- Management.</subject>
+         <subject encodinganalog="650" source="lcsh">Locomotive industry -- New York (State)</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Attendance lists.</genreform>
+         <genreform encodinganalog="655" source="aat">Balance sheets.</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Financial records.</genreform>
+         <genreform encodinganalog="655" source="aat">Memorandums.</genreform>
+         <genreform encodinganalog="655" source="aat">Minutes (administrative records) </genreform>
+         <genreform encodinganalog="655" source="aat">Reply cards.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Board of Directors.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require
+            advance notice for retrieval. Researchers are encouraged to contact us in advance
+            concerning the collection material they wish to access for their research.</p>
+</accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> McIntosh &amp; Seymour Board of Directors Records, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Original source and acquisition date unknown.</p>
+      </acqinfo>
+      <!--<appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>-->
+      <!--<accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Meeting reports</unittitle></did>
+               <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+               <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <abstract>2 packets included in folder; one for the regular meeting held at 11:00
+                     am and one for a "second special meeting" held at 11:30 am</abstract>
+                  <unitdate normal="1929-12-03" type="inclusive">1929 Dec 3</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <abstract>each folder contains a packet for a separate meeting: Feb, Mar, May,
+                     Jul, Sep, Nov</abstract>
+                  <unitdate normal="1930" type="inclusive">1930</unitdate>
+                  <physdesc><extent>6 folders</extent></physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <abstract>each folder contains a packet for a separate meeting: Feb, Mar, Apr,
+                     Jun, Sep, Oct, Dec</abstract>
+                  <unitdate normal="1931" type="inclusive">1931</unitdate>
+                  <physdesc><extent>7 folders</extent></physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <abstract>each folder contains a packet for a separate meeting: Jan, Feb, Mar,
+                     May, Jun, Jul, Sep</abstract>
+                  <unitdate normal="1932" type="inclusive">1932</unitdate>
+                  <physdesc><extent>7 folders</extent></physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <abstract>each folder contains a packet for a separate meeting: Jan, Mar, Apr,
+                     Oct</abstract>
+                  <unitdate normal="1933" type="inclusive">1933</unitdate>
+                  <physdesc><extent>4 folders</extent></physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <abstract>2 packets included in folder; one for a meeting of the executive
+                     committee and one for the regular board meeting, both held on the same
+                     day</abstract>
+                  <unitdate normal="1934-02-01" type="inclusive">1934 Feb 1</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <abstract>meeting held in Mar</abstract>
+                  <unitdate normal="1934" type="inclusive">1934</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <abstract>each folder contains a packet for a separate meeting: May, Jul, Sep,
+                     Oct</abstract>
+                  <unitdate normal="1934" type="inclusive">1934</unitdate>
+                  <physdesc><extent>4 folders</extent></physdesc>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <abstract>each folder contains a packet for a separate meeting: Jan, Mar, May,
+                     Jun, Aug</abstract>
+                  <unitdate normal="1935" type="inclusive">1935</unitdate>
+                  <physdesc><extent>5 folders</extent></physdesc>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <abstract>2 packets included in folder; one for a meeting of the executive
+                     committee held on Sep 12, and one for the regular board meeting held on Sep
+                     25</abstract>
+                  <unitdate normal="1935" type="inclusive">1935 Sep 12, Sep 25</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <abstract>meeting held in Nov</abstract>
+                  <unitdate normal="1935" type="inclusive">1935</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Minutes</unittitle>
+                  <abstract>each folder contains a packet for a separate meeting: Jan, Mar, May,
+                     Jun, Aug</abstract>
+                  <unitdate normal="1936" type="inclusive">1936</unitdate>
+                  <physdesc><extent>5 folders</extent></physdesc>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

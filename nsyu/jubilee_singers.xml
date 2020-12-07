@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.8, 7/18/2007-->
+<!-- Added comment about use of archref element, removed copyright statement -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="jubilee_singers">jubilee_singers</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Jubilee Singers Concert Program</titleproper>
+            <subtitle>A description of the item at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2007-09-20" encodinganalog="Date">20 Sep 2007</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2007-09-20">20 Sep 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">Jubilee Singers</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Jubilee Singers Concert Program</unittitle>
+         <unitdate encodinganalog="245$f" normal="1940" type="inclusive" label="Inclusive Dates: ">1940</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 item (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Program for vocal concert by the Jubilee Singers of Fisk University, Nashville, Tennessee</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2562923</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Fisk University in Nashville, Tennessee, opened in January 1866, was one of seven chartered institutions founded by the American Missionary Association of New York specifically to educate and assist Southern African-Americans in the period immediately following the civil war.  It was named in honor of General Clinton B. Fisk of the Tennessee Freedmen's Bureau.  In 1870 George L. White, Fisk treasurer and music professor, created a nine-member student choral ensemble -- the Jubilee Singers -- and took them on tour to earn money for the University.  Initially the group sang only ballads and patriotic anthems, but White suggested adding spirituals and other songs traditional to the Southern African-American experience, making the Jubilee Singers  the first group to publicly perform the songs of slaves.</p><p>In 1872 the Jubilee Singers sang at the World Peace Festival in Boston and President Ulysses S. Grant invited them to perform at the White House.  In 1873 the group toured Europe, raising enough funds to erect the school's first permanent building, Jubilee Hall; one entire wall of the Hall is a portrait of the original Jubilee Singers.  The portrait was commissioned by Queen Victoria as a gift following the tour.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The Jubilee Singers Concert Program consists of a single item, a program for a vocal concert in 1940.  The city is not specified; presumably the program could be printed in large numbers and then the city added in a separate print run.</p>
+      </scopecontent>
+      
+      <!--<arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>## OPT (MARC 351$a)</p>
+      </arrangement>-->
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; and the library's general circulating collection both have a number of books related to or about the Jubilee Singers.  For a complete listing, please refer to &summitref; and search on "Jubilee singers" as a subject heading.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Music</subject><subject encodinganalog="650" source="local">African Americans</subject>
+         <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            
+         
+            <corpname encodinganalog="610" source="lcnaf">	American Missionary Association.</corpname><corpname encodinganalog="610" source="lcnaf">Jubilee Singers.</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">African American singers.</subject><subject encodinganalog="650" source="lcsh">African Americans -- Music.</subject><subject encodinganalog="650" source="lcsh">Choirs (Music) -- Tennessee -- Nashville.</subject><subject encodinganalog="650" source="lcsh">Fisk University -- Choral organizations.</subject>
+         
+            <genreform encodinganalog="655" source="aat">Programs (documents)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Singers.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Jubilee Singers Concert Program, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2007.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>Printed material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Concert program</unittitle>
+                  <unitdate normal="1940" type="inclusive">1940</unitdate>
+                  <container type="SC">204</container>
+                  
+                  
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

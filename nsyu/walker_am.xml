@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="walker_am" mainagencycode="NSyU">walker_am</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Ardis M. Walker Papers </titleproper>
+        <subtitle>An inventory of 
+                        
+                        his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">[Summit record]</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1967-03">Mar 1967</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           
+        
+        <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>5 Nov 2009 - converted to EAD (MRC)</item><item>20 Sep 2011 - additions processed (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Walker, Ardis Manly, 1901-</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Ardis M. Walker Papers </unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1928/1971" type="inclusive">1928-1971</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">1.5 linear feet</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Papers of the American engineer, writer.  Collection includes correspondence, 1928-63; typescript, holograph, and carbon copy manuscripts of articles; publicity materials including photographs; and published works. Works primarily concern local California history, especially for Kern County, California.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">148725</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">
+                          English
+                       </language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Ardis M. Walker was an American engineer, civil servant, and local historian and poet.</p><p>A 
+	  descendant of a Kern County, California pioneer family, Walker was born in 
+an old mining camp in Kernsville, California. He was educated in the public schools of the 
+Kern County system and later attended Fresno State College, the University of California 
+at Los Angeles and the University of Southern California. After graduation from the 
+School of Engineering of the latter institution, he was employed in New York City as an 
+engineer. Returning to Kern County, he became active in civil affairs, serving as a 
+supervisor and as a justice of the peace. He also became an active sportsman and conservationist, and was well-known for his writings on local history.  He published a number of books, both prose and poetry.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Ardis M. Walker Papers</emph> consist of correspondence, writings, printed material, and a small amount of miscellanea.</p>
+		<p><emph render="bold">Correspondence</emph> consists primarily of incoming letters, much of which is related to Walker's writings.</p>
+		<p><emph render="bold">Writings</emph> contains typescripts of articles, books, pamphlets, poems, and other writings.  Of particular interest is the typescript for his <emph render="italic">Sierra Nevada Sequence</emph> (1968), which includes proofs of the woodcuts by Kirk Martin that accompanied each sonnet.</p>
+		<p><emph render="bold">Printed material</emph> includes campaign material and clippings relating to Walker's bid for Congress, clippings relating to his work, newspapers edited by Walker, publicity items for some of his books, and a selection of letterpress printings of some of his poems.</p>
+		<p>A small amount of <emph render="bold">Miscellany</emph> completes the collection.  Here will be found photographs of Walker and his house, along with typed copy for two radio pieces on Walker that apparently ran on the local radio station.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Overall the collection is arranged alphabetically.  Clippings are arranged roughly chronologically.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial>-->
+    <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>A number of published books and monographs by Walker have been removed from the collection and transferred to Rare Books for cataloging.  Please refer to &summitref; and search on "Gift of Ardis M. Walker" to locate these items.</p>
+    </separatedmaterial>
+    <!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            -->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <persname encodinganalog="600" source="lcnaf">Garcés, Francisco Tomás Hermenegildo, 1738-1781.</persname><persname encodinganalog="600" source="lcnaf">Walker, Ardis Manly, 1901-</persname><persname encodinganalog="600" source="lcnaf">Walker, Joseph Reddeford, 1798-1876.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Local history.</subject><subject encodinganalog="650" source="lcsh">Historians -- United States.</subject><subject encodinganalog="650" source="lcsh">Death Valley '49ers.</subject><subject encodinganalog="650" source="lcsh">Ecology in literature.</subject><subject encodinganalog="650" source="lcsh">Nature in literature.</subject><subject encodinganalog="650" source="lcsh">Poets, American -- 20th century.</subject>
+      <geogname encodinganalog="651" source="lcsh">Kernville (Calif.)  -- History.</geogname><geogname encodinganalog="651" source="lcsh">Sierra Nevada (Calif. and Nev.) -- Poetry.</geogname>
+      <genreform encodinganalog="655" source="aat">Articles.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Essays.</genreform><genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform><genreform encodinganalog="655" source="aat">Newspapers.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Sonnets.</genreform><genreform encodinganalog="655" source="aat">Typescripts.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Historians.</occupation><occupation encodinganalog="656" source="lcsh">Poets.</occupation><occupation encodinganalog="656" source="lcsh">Environmentalists.</occupation>
+      <!--<function encodinganalog="657">##</function>-->
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+                       all relevant rights holders before publishing quotations, excerpts or images from any 
+                       materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Ardis M. Walker Papers, 
+        
+        <lb/>&su_name;</p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Ardis M. Walker</persname>, 1971, 1976, 1988, 1989.</p>
+    </acqinfo>
+    <!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Outgoing</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <unitdate normal="1930/1963" type="inclusive">1930-1963, </unitdate>
+              <unitdate normal="1971" type="inclusive">1971, </unitdate>
+              <unitdate normal="1928/1971" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>15 items with enclosures</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Incoming</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>A</unittitle>
+              <unitdate normal="1954/1963" type="inclusive">1954-1963</unitdate>
+              <physdesc>
+                <extent>2 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>B</unittitle>
+              <unitdate normal="1930" type="inclusive">1930</unitdate>
+              <physdesc>
+                <extent>1 item</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>B</unittitle>
+              <unitdate normal="1962" type="inclusive">1962</unitdate>
+              <physdesc>
+                <extent>1 item</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>C (California)</unittitle>
+              <unitdate normal="1954/1962" type="inclusive">1954-1962, </unitdate>
+              <unitdate normal="1928/1971" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>8 items with enclosures</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>C (Crillimore, Clarence)</unittitle>
+              <unitdate normal="1945/1946" type="inclusive">1945-1946, </unitdate>
+              <unitdate normal="1928/1971" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>15</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>D</unittitle>
+              <unitdate normal="1963" type="inclusive">1963</unitdate>
+              <physdesc>
+                <extent>1 item</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>D (Death Valley 49ers)</unittitle>
+              <unitdate normal="1954/1957" type="inclusive">1954-1957, </unitdate>
+              <unitdate normal="1928/1971" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>3 with enclosures</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>E</unittitle>
+              <unitdate normal="1944" type="inclusive">1944</unitdate>
+              <physdesc>
+                <extent>2 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>F</unittitle>
+              <unitdate normal="1937/1957" type="inclusive">1937-1957, </unitdate>
+              <unitdate normal="1928/1971" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>3 items with enclosures</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>H</unittitle>
+              <unitdate normal="1928/1935" type="inclusive">1928-1935, </unitdate>
+              <unitdate normal="1928/1971" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>15 items with enclosures</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>K</unittitle>
+              <unitdate normal="1960/1962" type="inclusive">1960-1962</unitdate>
+              <physdesc>
+                <extent>2 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>K (Kern County, California)</unittitle>
+              <unitdate normal="1936/1963" type="inclusive">1936-1963</unitdate>
+              <physdesc>
+                <extent>7 items with enclosures</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>L</unittitle>
+              <unitdate normal="1962" type="inclusive">1962, </unitdate>
+              <unitdate normal="1928/1971" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>2 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>L (Larson, Winifred)</unittitle>
+              <unitdate normal="1934/1936" type="inclusive">1934-1936</unitdate>
+              <physdesc>
+                <extent>5 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>M</unittitle>
+              <unitdate normal="1930/1933" type="inclusive">1930-1933</unitdate>
+              <physdesc>
+                <extent>4 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>N</unittitle>
+              <unitdate normal="1962" type="inclusive">1962</unitdate>
+              <physdesc>
+                <extent>1 item</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>O</unittitle>
+              <unitdate normal="1963/1964" type="inclusive">1963-1964</unitdate>
+              <physdesc>
+                <extent>2 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>P</unittitle>
+              <unitdate normal="1949/1963" type="inclusive">1949-1963, </unitdate>
+              <unitdate normal="1928/1971" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>5 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>R</unittitle>
+              <unitdate normal="1936" type="inclusive">1936</unitdate>
+              <physdesc>
+                <extent>1 item</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>S</unittitle>
+              <unitdate normal="1936/1963" type="inclusive">1936-1963</unitdate>
+              <physdesc>
+                <extent>8 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>S (Arthur S. Stockwell Limited)</unittitle>
+              <unitdate normal="1930/1934" type="inclusive">1930-1934</unitdate>
+              <physdesc>
+                <extent>8 items with enclosures</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>T</unittitle>
+              <unitdate normal="1934/1948" type="inclusive">1934-1948</unitdate>
+              <physdesc>
+                <extent>5 items</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>U (Underwood, Edna Worthley)</unittitle>
+              <unitdate normal="1930/1949" type="inclusive">1930-1949</unitdate>
+              <physdesc>
+                <extent>33 items with enclosures</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>W</unittitle>
+              <unitdate normal="1932/1962" type="inclusive">1932-1962, </unitdate>
+              <unitdate normal="1928/1971" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>7 items with enclosures</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Writings</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Articles</unittitle>
+            <abstract>appeared in magazines and newspapers, some with original manuscripts</abstract>
+            <container type="Box">1</container>
+          </did>
+          <scopecontent>
+            <p>1) "A Sonnet To My Wife" (
+              
+              <emph render="italic">The Winged Word</emph>, vol. II, No. 3, Spring, 1943)
+              
+              <lb/>
+      2) "A Tribute To J. C. Howe" (appearing in Aug 6, 1964 newspaper) holographic manuscript, original typescript manuscript and published copy
+              
+              <lb/>
+      3) "Are The People's Forests Administered For The People?" (
+              
+              <emph render="italic">Sierra Rainbow</emph>, Sep 1956) 
+              
+              <lb/>
+      4) "Charles Alvord, His Rescue and His Murder" (
+              
+              <emph render="italic">Death Valley Tales</emph>, 1955) carbon copy manuscript with corrections and 2 published copies. 
+              
+              <lb/>
+      5) "Editorial" on the Sierra Nevadas (
+              
+              <emph render="italic">Sierra  Rainbow</emph>, Jun 1955) published copy
+              
+              <lb/>
+      6) "Founder of Havilah" (
+              
+              <emph render="italic">Sierra Rainbow</emph>, Mar 1957) published copy
+              
+              <lb/>
+      7) "Howard Bilton" ("Sincerely Yours", Kern Valley Sun column, Sep 14 1961) carbon copy manuscript and published copy
+              
+              <lb/>
+      7a) "In Support of Controlled Burning" (
+              
+              <emph render="italic">Sierra  Rainbow</emph>, Aug 1957) 2 Published Copies. 
+              
+              <lb/>
+      8) "Is It Now Too Late? A Summary of a Controversy" (Presented at Conservation Workshop of the Kern Plateau Association, August 29, 1964) mimeographed copy and background research material. 
+              
+              <lb/>
+      9) "Judas of the Kern" (
+              
+              <emph render="italic">Westways</emph>, Mar 1958) published copy
+              
+              <lb/>
+      10) "Old Quartzburg Monument" (
+              
+              <emph render="italic">Sierra Rainbow</emph>, Dec 1956) published copy
+              
+              <lb/>
+      11) "Sierra Prologue" (Kern County Historical Society,  Fourth Annual Publication, May 1938) published copy
+              
+              <lb/>
+      12) The Great Mojave Desert" 3 published installments and holograph and carbon copy manuscript
+              
+              <lb/>
+      13) "Tiburcio Vasquez On The Kern" (
+              
+              <emph render="italic">Sierra Rainbow</emph>, Mar 1957) published copy
+              
+              <lb/>
+      14) "Unsung Argonauts of the Gold Rush" (
+              
+              <emph render="italic">Sierra  Rainbow</emph>, Sep 1957) published copy
+              
+              <lb/>
+      15) "When Youth Came Down From the Harley Mine To Seek Oblivion" (
+              
+              <emph render="italic">Sierra Rainbow</emph>, Mar 1957) published copy
+              
+              <lb/>
+      16) "Whiskey Flat Massacre of 1863" (published copies from 
+              
+              <emph render="italic">Sierra Rainbow</emph>, Mar 1957 and 
+              
+              <emph render="italic">Tales of Whiskey Flat</emph>, Oct 1961) 
+              
+              <lb/>
+      17) "Wilderness Area" (
+              
+              <emph render="italic">Sierra Rainbow</emph>, Oct 1955) published copy</p>
+          </scopecontent>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">The Borax Smith Story</emph>
+            </unittitle>
+            <abstract> "Borax Smith" carbon copy manuscript; "The Story of Borax Smith" (
+              
+              <emph render="italic">Searles Lake Borax</emph>  1862-1962, published for the dedication of the Searles Lake Monument by the Death Valley 49'ers, Nov. 8, 1962); published copy</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Death Valley 49'ers: The First 20 Years</emph>
+            </unittitle>
+            <abstract>original typescript with corrections</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Death Valley and Manly: Symbols of Destiny</emph>
+            </unittitle>
+            <abstract>published copy; "an enlarged treatment of 
+              
+              <emph render="italic">The Manly Map and the  Manly Story</emph>", 1 published copy; "Death Valley and Manly: Symbols of Destiny" original typescript manuscript with corrections</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Francisco Garcés: Pioneer Padre of Kern</emph>
+            </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Early draft, background source material</unittitle>
+              <abstract>holograph and original typescript and carbon copy manuscripts with corrections</abstract>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Second draft of manuscripts with Spanish corrections</unittitle>
+              <abstract>original typescript and carbon copy manuscript with corrections</abstract>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Third draft of manuscript </unittitle>
+              <abstract>holograph, and carbon copy manuscript with corrections</abstract>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Final draft of manuscript </unittitle>
+              <abstract>original typescript manuscript with corrections</abstract>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Freeman Junction</emph> </unittitle>
+            <abstract>original typescript manuscript with corrections; carbon copy manuscript; published copy</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Joseph Reddeford Walker, Agent of Destiny</emph> </unittitle>
+            <abstract>original typescript manuscript with corrections, two copies</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Kern Valley Centennial Vignettes</emph> </unittitle>
+            <abstract>typescript manuscripts of several short articles, with corrections</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Poems </unittitle>
+            <abstract>"Manhattan Spring" and "Spring Quickening"; carbon copy manuscript with corrections by Mrs. Underwood</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Political writings of Mr. Walker</unittitle>
+            <container type="Box">2</container>
+          </did>
+          <scopecontent>
+            <p>"County Purchasing" (a talk given on May 20, 1952 at Candidates' Forum, Ridgecrest, California),  mimeographed copy; "Road District Government" original typescript manuscript with corrections</p>
+          </scopecontent>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Prologue for unidentified book</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle><emph render="italic">Quatrains</emph></unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Manuscripts</unittitle>
+              <abstract>early draft, holograph, original typescript and carbon copy manuscripts with corrections; original typescript manuscripts; carbon copy manuscripts</abstract>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Galley page proofs, promotional postcard</unittitle>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle><emph render="italic">The Rough and the Righteous</emph></unittitle>
+            <abstract>original typescript manuscript with corrections</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle><emph render="italic">Sierra Nevada Sequence</emph></unittitle>
+            <abstract>sonnets; typescript for publication, including proofs of woodcut illustration accompanying each poem</abstract>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sonnets "for possible publication"</unittitle>
+            <abstract>original typescript manuscripts (for possible publication), with typescript explanation</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Unknown Ananias"</unittitle>
+            <abstract>carbon copy manuscript, author uncertain</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Walker Pass"</unittitle>
+            <abstract> original typescript manuscript of article with corrections; carbon copy manuscript with corrections</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Printed material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Campaign material</unittitle>
+            <abstract>relating to Walker's campaign for Congress;  campaign brochure, proofs of two advertisements</abstract>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Clippings</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>About  Walker</unittitle>
+              <unitdate normal="1954/1957" type="inclusive">1954-1957, </unitdate>
+              <unitdate normal="1959" type="inclusive">1959, </unitdate>
+              <unitdate normal="1960/1962" type="inclusive">1960-1962, </unitdate>
+              <unitdate normal="1968" type="inclusive">1968</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>About Walker and politics</unittitle>
+              <unitdate normal="1949/1950" type="inclusive">1949-1950, </unitdate>
+              <unitdate normal="1928/1971" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>4 folders</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <unitdate normal="1957/1959" type="inclusive">1957-1959, </unitdate>
+              <unitdate normal="1928/1971" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Newspapers edited by Walker</unittitle>
+            <abstract>
+              <emph render="italic">The Whiskey Flat Miner</emph> and 
+              
+              <emph render="italic">Kernville News</emph> (Feb 11, 1938)</abstract>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Poems by Walker</unittitle>
+            <abstract> letterpress/fine press printings on  broadsheets, pamphlets, greeting cards</abstract>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Publicity for Walker's books</unittitle>
+            <abstract>fliers or advertisements for 
+              
+              <emph render="italic">Francisco Garces</emph>, 
+              
+              <emph render="italic">The Rough and The Righteous</emph>, and 
+              
+              <emph render="italic">Sierra Nevada Sequence</emph></abstract>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Miscellaneous</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Photographs</unittitle>
+            <abstract>of Walker, his house</abstract>
+            <physdesc>
+              <extent>5 items</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Radio broadcast about Walker</unittitle>
+            <abstract>typescript of remarks by unknown newsperson</abstract>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Radio broadcast about Walker</unittitle>
+            <abstract>typescript of "conversation" between Harbison Parker and Pat [surname unknown], about Walker's Sierra sonnets</abstract>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.10, 22 May 2008-->
+<!-- Added standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="vincent_lh">vincent_lh</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Leon H. Vincent Papers</titleproper>
+            <subtitle>An inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1980/1990" encodinganalog="Date">circa 1985</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-07-08">8 Jul 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>8 Jul 2008 - updated, converted to EAD (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Vincent, Leon H. (Leon Henry), 1859-1941</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Leon H. Vincent Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1895/1919" type="inclusive" label="Inclusive Dates: ">1895-1919</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>4 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, printed material, manuscripts, miscellany from the American author and literary critic.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2620808</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Leon H. Vincent (1859-1941) was an American author, literary critic, and lecturer.  He taught English and American literature in schools and colleges across the country and wrote several books, of which the best-known is <emph render="italic">American Literary Masters</emph>, a collection of essays on noted authors.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Leon H. Vincent Papers</emph> consists of <emph render="italic">Bibliotaph</emph> material, correspondence, manuscripts, and miscellany.  </p><p><emph render="bold"><emph render="italic">Bibliotaph</emph> material</emph> consists of material related to Vincent's book <emph render="italic">The Bibliotaph and Other People</emph>, including a manuscript, a published piece in the <emph render="italic">Atlantic Monthly</emph>, and other items.  <emph render="bold">Correspondence</emph>, all incoming, contains letters from Eugene Field, Edmund H. Garrett, Christopher Morley, and others.  <emph render="bold">Manuscripts</emph> contains lecture notes and manuscripts of lectures, articles, and books.   A small amount of <emph render="bold">Miscellany</emph> (published editions of two books by Vincent, one signed by the author) completes the collection.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>All series are arranged alphabetically.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has made a concerted effort over the 
+years to ensure that its manuscript and rare books holdings complement each other.  
+As a result, many of our manuscript collections are supported by books, pamphlets, 
+serials and other items which are cataloged in the Rare Books Collection.  Please be 
+sure to search &summitref; for these related materials.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Literature -- American Fiction</subject><persname encodinganalog="600" source="lcnaf">Vincent, Leon H. (Leon Henry), 1859-1941 -- Archives.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <title encodinganalog="630" source="lcnaf">The bibliotaph and other people.</title>
+         <subject encodinganalog="650" source="lcsh">Literature, American.</subject><subject encodinganalog="650" source="lcsh">Literature -- History and criticism.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Manuscripts (document genre)</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Books.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Authors.</occupation><occupation encodinganalog="656" source="lcsh">Critics.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Leon H. Vincent Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <!--<acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>### (MARC 541 and/or  561)</p>
+      </acqinfo>-->
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle><emph render="italic">Bibliotaph</emph> material</unittitle></did>
+            <c02><did><unittitle><emph render="italic">Bibliotaph</emph></unittitle><unitdate type="inclusive" normal="1895">1895</unitdate><abstract>holograph manuscript, 42pp.</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle><emph render="italic">Atlantic Monthly</emph>, vol. 77 </unittitle><unitdate type="inclusive" normal="1896-02">Feb 1896</unitdate><abstract>includes publication of "Bibliotaph"</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>4 printed pages</unittitle><abstract>Bibliotaph, Keats, Gautier, Stevenson's <emph render="italic">St. Ives</emph></abstract><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Bacon, Edwin M.</unittitle><unitdate type="inclusive" normal="1899-03-04">4 Mar 1899</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Beard, Mrs. Frank</unittitle><unitdate type="inclusive" normal="1915-08-18">18 Aug 1915</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Field, Eugene to Dewitt Miller</unittitle><unitdate type="inclusive" normal="1892-01-22">22 Jan 1892</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Ford, Worthington Chancey</unittitle><unitdate type="inclusive" normal="1895/1919">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Garrett, Edmund H.</unittitle><unitdate type="inclusive" normal="1894-11-12">12 Nov 1894</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Heddrick, B.A.</unittitle><unitdate type="inclusive" normal="1899-01-20">20 Jan 1899,</unitdate><unitdate type="inclusive" normal="1899-01-30">30 Jan 1899, </unitdate><unitdate type="inclusive" normal="1899-10-24">24 Oct 1899 </unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Mahony, Martin</unittitle><unitdate type="inclusive" normal="1891-12-09">9 Dec 1891, </unitdate><unitdate type="inclusive" normal="1891-12-14">14 Dec 1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Miller, John Dewitt</unittitle><unitdate type="inclusive" normal="1904-06-14">14 Jun 1904</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Milner, W.S.</unittitle><unitdate type="inclusive" normal="1891-07-20">20 Jul 1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Morley, Christopher</unittitle><unitdate type="inclusive" normal="1919-09-23">23 Sep 1919</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Ritchie, Anne</unittitle><unitdate type="inclusive" normal="1916-01-23">23 Jan 1916</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Scudder, H.E. (Horace Elisha)</unittitle><unitdate type="inclusive" normal="1895-03-14">14 Mar 1895, </unitdate><unitdate type="inclusive" normal="1893-04-23">23 Apr 1893</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Swift, Lindsay</unittitle><unitdate type="inclusive" normal="1897-01-18">18 Jan 1897, </unitdate><unitdate type="inclusive" normal="1897-06-28">28 Jun 1897, </unitdate><unitdate type="inclusive" normal="1900-07">Jul 1900</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Whiting, Lilian</unittitle><unitdate type="inclusive" normal="1902-02-12">12 Feb 1902, </unitdate><unitdate type="inclusive" normal="1903-01-08">8 Jan 1903</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Manuscripts</unittitle></did>
+            <c02><did><unittitle>French lectures</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Great Victorian Writers</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>From book to book</unittitle><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Law of his nature</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Novels by DeMorgan</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Law of his nature and other stories</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Independent Miss Dean</unittitle><abstract>novel</abstract><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Price of an ambition</unittitle><abstract>novel</abstract><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Simple pleasures of the poor</unittitle><container type="Box">4</container></did></c02>
+            <c02><did><unittitle>Sixteen-sixteen</unittitle><abstract>short story</abstract><container type="Box">4</container></did></c02>
+            <c02><did><unittitle>William Makepeace Thackeray</unittitle><abstract>lecture notes</abstract><container type="Box">4</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Miscellaneous</unittitle></did>
+            <c02><did><unittitle><emph render="italic">Dewitt Miller, a biographical sketch</emph> by LHV.  Cambride, Riverside press, 1912, no. 19, signed by author</unittitle><container type="Box">4</container></did></c02>
+            <c02><did><unittitle><emph render="italic">A few words on Robert Browning</emph>.  Philadelphia, Arnold &amp; Co., 1890</unittitle><physdesc><extent>2 copies</extent></physdesc><container type="Box">4</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

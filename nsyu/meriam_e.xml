@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.8, 7/18/2007-->
+<!-- Added comment about use of archref element, removed copyright statement -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="meriam_e">meriam_e</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Ebenezer Meriam Letters on Onondaga Indian Education</titleproper>
+            <subtitle>An  inventory of his letters at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2007-07-19" encodinganalog="Date">19 Jul 2007</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2007-07-19">19 Jul 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Meriam, Ebenezer, 1794-1864.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Ebenezer Meriam Letters on Onondaga Indian Education</unittitle>
+         <unitdate encodinganalog="245$f" normal="1852/1858" type="inclusive" label="Inclusive Dates: ">1852-1858</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">12 letters to Ebenezer Meriam, pamphleteer and philanthropist, concerning his support for the schools for Oneida and Onondaga children on the reservation in Central New York.  Eight are from noted abolitionist and Unitarian clergyman Samuel J. May.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2543495</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Ebenezer Meriam (1794-1864) was a New York meteorologist, pamphleteer and philanthropist who contributed regularly to the schools for Oneida and Onondaga Indian children on the reservation in Central New York.</p><p>Samuel J. May (1797-1871), a graduate of Harvard University,  was a Unitarian clergyman and social activist.  Although his primary interest was in civil rights and particularly abolition, he also raised funds to help build a meeting house and school on the Onondaga Indian reservation and arranged government funding for a teacher.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Ebenezer Meriam Letters on Onondaga Indian Education</emph> consists of twelve letters to Ebenezer Meriam.  Eight are from Samuel J. May; the remainder are from Archibald Campbell, New York Deputy Secretary of State; E.W. Leavenworth, New York State Secretary's office; Charles E. Mix, Acting Commissioner for the Office of Indian Affairs; and J.D. Torry, missionary.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Letters are arranged alphabetically by correspondent (by chance this also happens to be a chronological ordering).</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <!--Use archref to link to related collections--><p>The library also has a small collection of <archref href="../m/may_sj.htm">Samuel J. May Letters</archref>.</p>
+      </relatedmaterial>
+      
+      <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">New York State</subject>
+         <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">May, Samuel J. (Samuel Joseph), 1797-1871.</persname><persname encodinganalog="600" source="lcnaf">Meriam, Ebenezer, 1794-1864.</persname>
+         
+            <corpname encodinganalog="610" source="lcnaf">Onondaga Indian Reservation (N.Y.)</corpname>
+            
+            <subject encodinganalog="650" source="lcsh">Education, New York (State)</subject><subject encodinganalog="650" source="lcsh">Indian children, North America.</subject><subject encodinganalog="650" source="lcsh">Indians of North America, Cultural assimilation, New York (State)</subject><subject encodinganalog="650" source="lcsh">Indians of North America, Education, Law and legislation.</subject><subject encodinganalog="650" source="lcsh">Indians of North America, History, 19th century.</subject><subject encodinganalog="650" source="lcsh">Indians, Treatment of, North America.</subject><subject encodinganalog="650" source="lcsh">Oneida Indians, Education.</subject><subject encodinganalog="650" source="lcsh">Onondaga Indians, Education.</subject><subject encodinganalog="650" source="lcsh">Philanthropists, New York (State)</subject>
+         
+            <genreform encodinganalog="655" source="aat">Letters (correspondence)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Educators.</occupation><occupation encodinganalog="656" source="lcsh">Philanthropists.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Ebenezer Meriam Letters on Onondaga Indian Education, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2007.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Campbell, Archibald</unittitle>
+                  <unitdate normal="1852" type="inclusive">1852</unitdate>
+                  <container type="SC">196</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Leavenworth, E.W.</unittitle>
+                  <unitdate normal="1854" type="inclusive">1854</unitdate>
+                  <container type="SC">196</container>
+                  
+                  
+               </did>
+            </c02>
+         <c02>
+               <did>
+                  <unittitle>May, Samuel J.</unittitle>
+                  <unitdate normal="1855/1857" type="inclusive">1855-1857</unitdate>
+                  <container type="SC">196</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Mix, Charles E.</unittitle>
+                  <unitdate normal="1854" type="inclusive">1858</unitdate>
+                  <container type="SC">196</container>
+                  
+                  
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>Torry, J.D.</unittitle>
+                  <unitdate normal="1852/1858" type="inclusive">undated (ca. 1852-1858)</unitdate>
+                  <container type="SC">196</container>
+                  
+                  
+               </did>
+            </c02></c01>
+      </dsc>
+   </archdesc>
+</ead>

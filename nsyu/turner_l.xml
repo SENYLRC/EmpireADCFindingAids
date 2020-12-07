@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="turner_l">turner_l</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Leslie Turner Cartoons</titleproper>
+            <subtitle>An inventory of his cartoons at Syracuse University</subtitle>
+         <author encodinganalog="Creator">EF</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1968-05-29" encodinganalog="Date">29 May 1968</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>MD<date normal="2008-12-18">18 Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>18 Dec 2008 - converted to EAD (MD)</item><item>10 Apr 2009 - revised (MD)</item>
+         <item>7 Jul 2017 - cartoons from 1968 added (MS)</item></list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Turner, Leslie, b. 1899.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Leslie Turner Cartoons</unittitle>
+         <unitdate encodinganalog="245$f" normal="1966/1968" type="inclusive" label="Inclusive Dates: ">1966-1968</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>7 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Original daily and Sunday cartoons from the newspaper comic strip <emph render="italic">Captain Easy</emph>.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2653509</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Leslie H. Turner (1899-1988) was an American cartoonist.  He was Roy Crane's assistant and eventual successor on the long-running newspaper comic strip <emph render="italic">Captain Easy</emph>.
+</p><p>Turner was born in Cisco, Texas in December of 1899.  He served for a short time in the U.S. Army at the tail end of World War I and later attended Southern Methodist University, where he received his degree in 1922. Turner spent his early career doing freelance magazine illustration work in New York, placing his art in the top magazines of the time -- <emph render="italic">Judge</emph>, the <emph render="italic">Saturday Evening Post</emph>, <emph render="italic">Ladies' Home Journal</emph> and <emph render="italic">Boys' Life</emph>.  In 1937, Turner was hired to assist on Roy Crane's popular newspaper adventure strip <emph render="italic">Wash Tubbs/Captain Easy</emph>*.  Crane was content to leave the Sunday <emph render="italic">Captain Easy</emph> feature entirely to Turner, focusing his energy on the daily <emph render="italic">Wash Tubbs</emph> strips.  In 1943, Crane signed on to produce a new strip for King Features Syndicate, <emph render="italic">Buz Sawyer</emph>. Turner inherited the daily and went on to draw both strips for many years, finally retiring at the end of the 1960s.   His last <emph render="italic">Captain Easy</emph> strip appeared in January of 1970.  <emph render="italic">Captain Easy</emph> continued its run until 1988.</p><p><emph render="italic">*Crane's original daily feature was called "Wash Tubbs", but soon the popular Captain Easy character was spun-off to his own Sunday feature.
+After running separately for many years, the two strips both began to carry the title "Captain Easy" around 1949.
+</emph></p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Leslie Turner Cartoons</emph> collection contains original daily cartoons and Sunday cartoons from the comic strip <emph render="italic">Captain Easy</emph>. Daily cartoon: traces of graphite, brush, pen and ink on Craftint board, approx. 6 x 18 1/4 in. Sunday cartoon: traces of graphite, pasteovers, brush, pen and ink on illustration board, approx. 17 3/4 x 26 in.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Daily and Sunday cartoons are arranged separately in chronological order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p> See the <archref href="../c/crane_r.htm">Roy Crane Papers</archref> for additional material related to <emph render="italic">Wash Tubbs/Captain Easy</emph>. Please refer to &subjindex; for a complete listing of cartoon collections at the &scrc_name;.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Turner, Leslie, b. 1899.</persname>
+         
+         <corpname encodinganalog="610" source="lcnaf">Newspaper Enterprise Association.</corpname>
+         <title encodinganalog="630" source="local" rules="aacr2">Captain Easy (comic strip)</title><title encodinganalog="630" source="local" rules="aacr2">Wash Tubbs (comic strip)</title>	
+			<subject encodinganalog="650" source="local">Art -- Cartoonists</subject>							
+         <subject encodinganalog="650" source="lcsh">Adventure stories -- Comic books, strips, etc.</subject><subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject><subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States.</subject><subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject><subject encodinganalog="650" source="lcsh">Comic books, strips, 
+
+etc. -- United States.</subject>
+         
+         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p> Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Leslie Turner Cartoons, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <corpname role="donor">Newspaper Enterprise Association, Inc.</corpname>, 1967-1969.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle><emph render="italic">Captain Easy</emph></unittitle><physdesc><extent>608</extent></physdesc></did>
+<note><p>Click <extref href="turner_l_inv.pdf">here</extref> for detailed inventory.</p></note>               
+            <c02 level="subseries"><did><unittitle>Daily cartoons</unittitle></did><c03><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1966-01/1966-06">1966 Jan - 1966 Jun</unitdate><container type="Box">1</container></did></c03><c03><did><unittitle>Daily cartoons</unittitle></did></c03><c03><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1966-07/1966-12">1966 Jul  - 1966 Dec</unitdate><container type="Box">2</container></did></c03><c03><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1967-01/1967-06">1967 Jan - 1967 Jun</unitdate><container type="Box">3</container></did></c03><c03><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1967-07/1967-12">1967 Jul - 1967 Dec</unitdate><container type="Box">4</container></did></c03><c03><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1968-01/1968-06">1968 Jan - 1968 Jun</unitdate><container type="Box">5</container></did></c03><c03><did><unittitle>Daily cartoons</unittitle><unitdate type="inclusive" normal="1968-07/1968-12">1968 Jul - 1968 Dec</unitdate><container type="Box">6</container></did></c03></c02>
+         <c02 level="subseries"><did><unittitle>Sunday cartoons</unittitle></did><c03><did><unittitle>Sunday cartoons</unittitle><unitdate type="inclusive" normal="1966">1966 Jan - 1966 Dec</unitdate><container type="Oversize">1</container></did></c03><c03><did><unittitle>Sunday cartoons</unittitle><unitdate type="inclusive" normal="1967">1967 Jan - 1967 Dec</unitdate><container type="Oversize">2</container></did></c03><c03><did><unittitle>Sunday cartoons</unittitle><unitdate type="inclusive" normal="1968">1968 Jan - 1968 Dec</unitdate><container type="Oversize">3</container></did></c03></c02></c01>
+      </dsc>
+   </archdesc>
+</ead>

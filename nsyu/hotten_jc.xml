@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="hotten_jc">hotten_jc</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">John Camden Hotten Correspondence</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">-</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1993-05-09" encodinganalog="Date">9 May 1993</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2011-10-27">27 Oct 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Hotten, John Camden, 1832-1873.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">John Camden Hotten Correspondence</unittitle>
+         <unitdate encodinganalog="245$f" normal="1866/1872" type="inclusive" label="Inclusive Dates: ">1866-1872</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.25 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Letters to and from British bookseller, publisher and author John Camden Hotten.  Correspondents include poet Algernon Charles Swinburne, novelist W. Moy Thomas, writer William Michael Rossetti, and publisher Edward Moxon &amp; Co.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3546837</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>John Camden Hotten (1832-1873) was a British bookseller and publisher.   Many of the books published under his imprint were written in part or in whole by himself.    In 1866 he published Algernon Swinburne's <emph render="italic">Poems and Ballads</emph> after it was withdrawn from circulation by its original publisher for "indecency."  He spent several years in American and was the first to introduce a number of American writers to the British public, including James Russell Lowell, Oliver Wendell Holmes and Bret Harte.  He was a Fellow of the Ethnological Society and contributed articles on literary topics to the <emph render="italic">London Review</emph> and other periodicals.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">John Camden Hotten Correspondence</emph> consists of letters to and from British bookseller, publisher and author John Camden Hotten.  Correspondents include poet Algernon Charles Swinburne and publisher Edward Moxon &amp; Co.  A number of the letters involved Hotten's decision to publish Swinburne's <emph render="italic">Poems and Ballads</emph>, which had been withdrawn from circulation by its original publisher for "indecency."  There are also a few non-letter items such as a list of sales of Swinburne's book.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Chronological.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="../s/swinburne_ac.htm">Algernon Charles Swinburne Collection</archref>.</p></relatedmaterial>
+      
+      <!--Use archref, not extref to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Literature -- British</subject>
+			<subject encodinganalog="650" source="local">Publishing, printing and book arts</subject>
+			<persname encodinganalog="600" source="lcnaf">Graham, James Lorimer, 1831-1876.</persname>
+			<persname encodinganalog="600" source="lcnaf">Hotten, John Camden, 1832-1873.</persname>
+			<persname encodinganalog="600" source="lcnaf">Howell, Charles Augustus, 1840?-1890.</persname>
+			<persname encodinganalog="600" source="lcnaf">Swinburne, Algernon Charles, 1837-1909.</persname>
+			<persname encodinganalog="600" source="lcnaf">Thomas, W. Moy (William Moy), 1828-1910.</persname>
+			<persname encodinganalog="600" source="lcnaf">Timmins, Samuel, 1826-1902.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Edward Moxon &amp; Co.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Authors and publishers -- Great Britain.</subject>
+			<subject encodinganalog="650" source="lcsh">Authors, English -- 19th century.</subject><subject encodinganalog="650" source="lcsh">Poets, English -- 19th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Publishers and publishing -- Great Britain. </subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Financial records.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Publishers and publishing.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>John Camden Hotten Correspondence, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>9 letters, purchase, 1955.  Additional items, unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+               
+<c02><did><unittitle>Hotten, John Camden, no recipient</unittitle><unitdate type="inclusive" normal="1866">1866</unitdate><container type="Box">1</container><container type="Folder">1</container></did></c02>
+<c02><did><unittitle>Knight, Joseph to Algernon Charles Swinburne; to Hotten</unittitle><unitdate type="inclusive" normal="1866-08">Aug 1866</unitdate><physdesc><extent>2 items</extent></physdesc><container type="Box">1</container><container type="Folder">2</container></did></c02>
+<c02><did><unittitle>Thomas, W. Moy to Hotten</unittitle><unitdate type="inclusive" normal="1866-09-04">4 Sep 1866</unitdate><container type="Box">1</container><container type="Folder">3</container></did></c02>
+<c02><did><unittitle>Thomas, W. Moy to Hotten</unittitle><unitdate type="inclusive" normal="1866-09-09">9 Sep 1866</unitdate><container type="Box">1</container><container type="Folder">4</container></did></c02>
+<c02><did><unittitle>Thomas, W. Moy to Hotten</unittitle><unitdate type="inclusive" normal="1866-09-26">26 Sep 1866</unitdate><container type="Box">1</container><container type="Folder">5</container></did></c02>
+<c02><did><unittitle>Edward Moxon &amp; Co. to Hotten</unittitle><unitdate type="inclusive" normal="1866-10-23">23 Oct 1866</unitdate><container type="Box">1</container><container type="Folder">6</container></did></c02>
+<c02><did><unittitle>Timmins, Samuel to Hotten</unittitle><unitdate type="inclusive" normal="1866-11-06">6 Nov 1866</unitdate><container type="Box">1</container><container type="Folder">7</container></did></c02>
+<c02><did><unittitle>Arnold, Thomas James to Hotten</unittitle><unitdate type="inclusive" normal="1866-11-16">16 Nov 1866</unitdate><container type="Box">1</container><container type="Folder">8</container></did></c02>
+<c02><did><unittitle>Grosart, -- to Hotten</unittitle><unitdate type="inclusive" normal="1866-11-20">20 Nov 1866</unitdate><container type="Box">1</container><container type="Folder">9</container></did></c02>
+<c02><did><unittitle>Graham, James Lorimer to Hotten</unittitle><unitdate type="inclusive" normal="1866-12-16">15 Dec 1866</unitdate><container type="Box">1</container><container type="Folder">10</container></did></c02>
+<c02><did><unittitle>Huntington, W. H.  to Hotten</unittitle><unitdate type="inclusive" normal="1866-12-18">18 Dec 1866</unitdate><container type="Box">1</container><container type="Folder">11</container></did></c02>
+<c02><did><unittitle>Graham, James Lorimer to Hotten</unittitle><unitdate type="inclusive" normal="1866-12-21">21 Dec 1866</unitdate><container type="Box">1</container><container type="Folder">12</container></did></c02>
+<c02><did><unittitle>Hotten, John Camden</unittitle><unitdate type="inclusive" normal="1866-12-26">26 Dec 1866</unitdate><container type="Box">1</container><container type="Folder">13</container></did></c02>
+<c02><did><unittitle>Dalston &amp; Son to Algernon Charles Swinburne</unittitle><unitdate type="inclusive" normal="1867-01-01">1 Jan 1867</unitdate><container type="Box">1</container><container type="Folder">14</container></did></c02>
+<c02><did><unittitle>Edward Moxon &amp; Co. to Hotten</unittitle><unitdate type="inclusive" normal="1867-02-14">14 Feb 1867</unitdate><container type="Box">1</container><container type="Folder">15</container></did></c02>
+<c02><did><unittitle>Chapman, John to Hotten</unittitle><unitdate type="inclusive" normal="1867-04-09">9 Apr 1867</unitdate><container type="Box">1</container><container type="Folder">16</container></did></c02>
+<c02><did><unittitle>Adams, C. Warren to Hotten</unittitle><unitdate type="inclusive" normal="1867-07-02">2 Jun 1867</unitdate><container type="Box">1</container><container type="Folder">17</container></did></c02>
+<c02><did><unittitle>Hotten, John Camden</unittitle><abstract>sales of Swinburne's book</abstract><unitdate type="inclusive" normal="1868-01">Jan 1868</unitdate><container type="Box">1</container><container type="Folder">18</container></did></c02>
+<c02><did><unittitle>Howell, Charles Augustus to Hotten</unittitle><unitdate type="inclusive" normal="1869-11-16">16 Nov 1869</unitdate><container type="Box">1</container><container type="Folder">19</container></did></c02>
+<c02><did><unittitle>Hotten, John Camden to William Michael Rossetti</unittitle><unitdate type="inclusive" normal="1870-04-12">12 Apr 1870</unitdate><container type="Box">1</container><container type="Folder">20</container></did></c02>
+<c02><did><unittitle>Benham &amp; Tindell to Hotten</unittitle><unitdate type="inclusive" normal="1870-05-02">2 May 1870</unitdate><container type="Box">1</container><container type="Folder">21</container></did></c02>
+<c02><did><unittitle>Hotten, John Camden to William Michael Rossetti</unittitle><unitdate type="inclusive" normal="1870-05-02">2 May 1870</unitdate><container type="Box">1</container><container type="Folder">22</container></did></c02>
+<c02><did><unittitle>Hughes &amp; Son to Hotten</unittitle><unitdate type="inclusive" normal="1870-06-23">23 Jun 1870</unitdate><container type="Box">1</container><container type="Folder">23</container></did></c02>
+<c02><did><unittitle>Hotten, John Camden, no recipient</unittitle><unitdate type="inclusive" normal="1870-11-22">22 Nov 1870</unitdate><container type="Box">1</container><container type="Folder">24</container></did></c02>
+<c02><did><unittitle>Hotten, John Camden to W. Moy Thomas</unittitle><unitdate type="inclusive" normal="1870-11-24">24 Nov 1870</unitdate><container type="Box">1</container><container type="Folder">25</container></did></c02>
+<c02><did><unittitle>Hotten, John Camden, no recipient</unittitle><unitdate type="inclusive" normal="1872-12-21">21 Dec 1872</unitdate><container type="Box">1</container><container type="Folder">26</container></did></c02>
+<c02><did><unittitle>Hotten, John Camden, no recipient</unittitle><unitdate type="inclusive" normal="1866/1872">undated</unitdate><container type="Box">1</container><container type="Folder">27</container></did></c02>
+
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

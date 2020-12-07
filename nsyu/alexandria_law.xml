@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="alexandria_law">alexandria_law</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Alexandria, VA, Lawyers Papers</titleproper>
+            <subtitle>An inventory of papers from three American attorneys</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-04-07" encodinganalog="Date">7 Apr 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-04-07">7 Apr 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>14 Apr 2019 - processed (SU)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository encodinganalog="852$a" label="Repository: ">
+            Special Collections Research Center
+         </repository>
+         <origination label="Creator: ">
+            <!--<persname encodinganalog="100" source="lcnaf">##</persname>-->
+            
+            
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Alexandria, VA, Lawyers Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1786/1865" type="inclusive" label="Inclusive Dates: ">1786-1865</unitdate>
+         <unitdate encodinganalog="245$g" normal="1786/1834" type="bulk" label="Bulk Dates: ">1786-1834</unitdate>
+         <physdesc encodinganalog="300$a" label="Quantity: ">
+          <extent>2 linear feet (2 document boxes, 1 oversized box)</extent>
+        </physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Formerly the George Deneale Papers.  Correspondence and legal papers of three American attorneys from Alexandria, Virginia in the late 17th and early 18th centuries. Papers include warrants, property seizures, and property inventories.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2744146</unitid>
+         <langmaterial label="Language: " encodinganalog="546">Collection materials are in
+            <language langcode="eng">English</language>.</langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>George Deneale was an attorney in Virginia. He was appointed the Clerk of the Circuit Court of the United States for Alexandria County, a position he held from 1801 until his death in 1818. George Deneale is known to have been acquainted with George Washington and James Madison. He was also a militia officer and a Freemason, and was Grand Master of Alexandria-Washington Lodge, No. 22.</p><p>George Gilpin was the first judge of the Orphan's Court of Alexandria in 1800 and became the Postmaster of Alexandria in 1809. George Gilpin was also a member of the same Masonic Lodge as George Washington, and was a pallbearer at Washington's funeral.
+            </p><p>Edmund J. Lee was a prominent political and legal figure in Alexandria. He was the Clerk of the Circuit Court of the United States for Alexandria County from 1818 to 1840.</p>
+      </bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>
+               The <emph render="bold">Alexandria, VA, Lawyers Papers</emph> contains the papers of attorneys from Alexandria, VA during the late 18th and early 19th century.  Three lawyers whose papers are prominently featured in the collection are George Deneale, Edmund Lee, and George Gilpin.
+            The collection is comprised of professional papers, personal papers, and miscellaneous contemporaneous printed items.  A few items pertain to Freemasonry in Virginia.</p>
+      <p><emph render="bold">Professional documents</emph> contains a variety of legal papers, including a certificate of naturalization, estate documents and inventories, fines from the Mutual Assurance Society against Fire on Buildings of the State of Virginia, property seizures, affidavits, and warrants to the US Marshal service.</p><p><emph render="bold">Personal papers</emph> contain correspondence and other personal documents exclusively of George Deneale.</p><p><emph render="bold">Printed materials</emph> from the mid-19th century include pamphlets and other items.</p></scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Material within each series is divided into folders by document type (ex: warrants, inventories, etc) and, within each folder, arranged chronologically.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+
+        <subject encodinganalog="650" source="local">Politics, government and public administration</subject><persname encodinganalog="600" source="lcnaf">Deneale, George, 1766-1818.</persname>
+        <persname encodinganalog="100" source="local">Gilpin, George, 1740-1813.</persname>
+        <persname encodinganalog="100" source="local"> Lee, Edmund, 1772-1843.</persname>
+        <corpname encodinganalog="610" source="lcnaf">Mutual Assurance Society Against Fire on Buildings of the State of Virginia.</corpname>
+        <corpname encodinganalog="610" source="lcnaf">Freemasons. -- Alexandria Lodge, No. 22 (Alexandria, Va.)</corpname>
+        <corpname encodinganalog="610" source="lcnaf">Freemasons. -- Alexandria-Washington Lodge, No. 22 (Alexandria, Va.)</corpname>
+        <corpname encodinganalog="610" source="lcnaf">United States. -- Circuit Court (District of Virginia)</corpname>
+        <subject encodinganalog="650" source="lcsh">Lawyers -- Virginia.</subject>
+        <geogname encodinganalog="651" source="lcsh">Alexandria (Va.) -- History.</geogname>
+        <genreform encodinganalog="655" source="aat">Contracts.</genreform>
+        <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Estate inventories.</genreform><genreform encodinganalog="655" source="aat">Estate records.</genreform><genreform encodinganalog="655" source="aat">Legal documents.</genreform><genreform encodinganalog="655" source="aat">Summonses.</genreform><genreform encodinganalog="655" source="aat">Warrants.</genreform>
+        
+        
+        
+        
+        
+        
+        <!--<occupation encodinganalog="656" source="aat">##</occupation>-->
+       </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>
+            The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.
+         </p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Alexandria, VA, Lawyers Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from Kohen collection, 1963.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series">
+            <did><unittitle>Professional documents</unittitle></did>
+            <c02>
+               <did>
+                  <unittitle>Contracts signed at Alexandria Court</unittitle>
+                  <unitdate normal="1786/1834" type="inclusive">1786-1834</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Contracts signed at Alexandria Court</unittitle>
+                  <unitdate normal="1804" type="inclusive">1804</unitdate>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Estate documents and inventories</unittitle>
+                  <unitdate normal="1786/1834" type="inclusive">1794-1824</unitdate>
+                  
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Estate documents and inventories</unittitle>
+                  <unitdate normal="1796/1811" type="inclusive">1796-1811, </unitdate><unitdate normal="1796/1811" type="inclusive">undated</unitdate>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>George Deneale, Clerk indentures</unittitle>
+                  <unitdate normal="1797/1800" type="inclusive">1797-1800</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Legal complaints</unittitle>
+                  <unitdate normal="1796/1832" type="inclusive">1796-1832, </unitdate><unitdate normal="1796/1832" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Legal papers</unittitle>
+                  <unitdate normal="1790/1817" type="inclusive">1797-1814</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Legal papers</unittitle>
+                  <unitdate normal="1801/1827" type="inclusive">1801-1827</unitdate>
+                  <container type="Oversize">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Legal papers</unittitle>
+                  <unitdate normal="1820/1855" type="inclusive">1820-1855</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Mutual Assurance Society Against Fire on Buildings</unittitle>
+                  <abstract>court motions</abstract><unitdate normal="1808" type="inclusive">1808</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Orders to the Marshal of the District of Columbia</unittitle>
+                  </did>
+            <c03><did><unittitle>Arrest warrants</unittitle><unitdate normal="1790/1812" type="inclusive">1790-1812</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did>
+                  <unittitle>Arrest warrants</unittitle><unitdate normal="1812" type="inclusive">1812, </unitdate>
+                  <unitdate normal="1840" type="inclusive">1840</unitdate>
+                  <container type="Oversize">1</container>
+               </did></c03><c03><did>
+                  <unittitle>Arrest warrants</unittitle>
+                  
+                  <unitdate normal="1815/1840" type="inclusive">1815-1840</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did>
+                  <unittitle>Court summonses</unittitle>
+                  <unitdate normal="1796/1820" type="inclusive">1796-1820</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did>
+                  <unittitle>Debt collection</unittitle>
+                  <unitdate normal="1802/1844" type="inclusive">1802-1844</unitdate>
+                  <container type="Box">2</container>
+               </did></c03><c03><did>
+                  <unittitle>Debt collection</unittitle>
+                  <unitdate normal="1804" type="inclusive">1804</unitdate>
+                  <container type="Oversize">1</container>
+               </did></c03>
+               
+            
+               
+            </c02>
+          </c01>
+          <c01 level="series">
+            <did><unittitle>Personal papers</unittitle></did>
+            <c02>
+               <did>
+                  <unittitle>George Deneale correspondence</unittitle>
+                  <unitdate normal="1794/1816" type="inclusive">1794-1816</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+          </c01>
+          <c01 level="series">
+            <did><unittitle>Printed materials</unittitle></did>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate normal="1882/1884" type="inclusive">1882-1884</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+          </c01>
+      </dsc>
+   </archdesc>
+</ead>

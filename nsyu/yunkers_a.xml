@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="yunkers_a">yunkers_a</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Adja Yunkers Papers</titleproper>
+            <subtitle>A description of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2009-09-24" encodinganalog="Date">24 Sep 2009</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2009-09-24">24 Sep 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>15 Jul 2014 - collection processed (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Yunkers, Adja, 1900-1983.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Adja Yunkers Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1941/1959" type="inclusive" label="Inclusive Dates: ">1941-1959</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.25 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, published material, clippings, scrapbook from the Latvian-American lithographer and painter.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2707543</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            Much is in <language langcode="eng">English</language>, some items in <language langcode="nor">Norwegian</language>, 
+         <language langcode="spa">Spanish</language>, <language langcode="swe">Swedish</language>.</langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Adja Yunkers (1900-1983) was an artist and teacher known for his color woodcuts, lithographs, and abstract 
+		paintings.  Born in Latvia, he studied in Europe, established a workshop in Stockholm, and eventually emigrated 
+		to the United States in 1946, where he was awarded a Guggenheim Fellowship.  He taught at the Cooper Union Art 
+		School and the New School for Social Research.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Adja Yunkers Papers</emph> contains biographical material, correspondence, and 
+			printed material.</p>
+			<p><emph render="bold">Biographical material</emph> consists of a bibliography of Junkers' publications, including essays, introductions and so on.</p>
+			<p><emph render="bold">Correspondence</emph> consists of letters between the Yunkers and Richard and Ellen Vowles and a few incoming telegrams from museums related to exhibits.</p>
+			<p><emph render="bold">Printed material</emph> contains scrapbooks of clippings and miscellaneous printed material, including programs, reviews, and so on in English and other languages.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Material is arranged alphabetically.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has many manuscript collections of artists, including painters, illustrators, cartoonists, and 
+			sculptors.  Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Art -- Painters</subject>
+			<persname encodinganalog="600" source="lcnaf">Yunkers, Adja, 1900-1983.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Lithography -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Painters -- United States -- 20th century.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+			
+			<genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Painters.</occupation>
+			<occupation encodinganalog="656" source="lcsh">Lithographers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+		 <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Many of the clippings are VERY fragile and care should be taken in handling them.  Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.  </p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Adja Yunkers Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Adja Yunkers</persname>, 1964.</p>
+      <p>Vowles letters, gift of  <persname role="donor">Liz Vowles</persname>, 2014.</p></acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+   <head>Inventory</head>
+   
+      <c01 level="series"><did><unittitle>Biographical material</unittitle></did>
+         <c02><did><unittitle>Bibliography</unittitle><unitdate normal="1941/1959" type="inclusive">undated</unitdate><container type="Oversize">1</container></did></c02>
+         <c02><did><unittitle>Chronology</unittitle><unitdate normal="1941/1959" type="inclusive">undated</unitdate><container type="Oversize">1</container></did></c02>
+         <c02><did><unittitle>Statement on art</unittitle><unitdate normal="1959" type="inclusive">1959</unitdate><container type="Oversize">1</container></did></c02>
+      </c01>
+      <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+         <c02><did><unittitle>Museums</unittitle><unitdate normal="1946" type="inclusive">1946</unitdate><container type="Oversize">1</container></did></c02>
+         <c02><did><unittitle>Vowles, Richard and Ellen</unittitle><unitdate normal="1945/1958" type="inclusive">1945-1958, </unitdate><unitdate normal="1941/1959" type="inclusive">undated</unitdate><container type="Oversize">1</container></did></c02>
+         
+      </c01>
+      <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+         <userestrict><p>Many of the clippings are VERY fragile and care should be taken in handling them.</p></userestrict><c02><did><unittitle>Scrapbook I</unittitle><abstract>programs, reviews, clippings, etc.</abstract><unitdate normal="1941/1946" type="inclusive">1941-1946</unitdate><container type="Oversize">1</container></did></c02>
+         <c02><did><unittitle>Scrapbook II</unittitle><abstract>programs, reviews, clippings, etc.</abstract><unitdate normal="1943/1946" type="inclusive">1943-1946</unitdate><container type="Oversize">1</container></did></c02>
+         <c02><did><unittitle>Miscellaneous</unittitle><abstract>programs, reviews, clippings, etc.</abstract><unitdate normal="1946/1952" type="inclusive">1946-1952, </unitdate><unitdate normal="1941/1959" type="inclusive">undated</unitdate><container type="Oversize">1</container></did></c02>
+      </c01>
+	</dsc>
+   </archdesc>
+</ead>

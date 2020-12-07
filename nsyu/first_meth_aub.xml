@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.8, 7/18/2007--><!-- Added comment about use of archref element, removed copyright statement -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="first_meth_aub" mainagencycode="NSyU">first_meth_aub</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">First Methodist Church (Auburn, N.Y.) Records</titleproper>
+        <subtitle>An inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2010-09-10">10 Sep 2010</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        
+        
+        <date normal="2010-09-10">10 Sep 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <corpname>
+        </corpname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">First Methodist Church (Auburn, N.Y.) Records</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1833/1969" type="inclusive">1833-1969</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>3 reels microfilm.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Microfilm of 18 bound volumes and two folders of  loose papers.  Financial records, minutes, church history, record books, registers, and other church documents.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">3166082</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>The First Methodist Church in Auburn, New York was organized in 1819.   The church had several locations in Auburn: its first home was a wooden structure on Chapel Street in 1821, followed by a stone church in 1833 and a brick church on Exchange Street in 1869.  The present (2010) location is the corner of South Street and Fitch Avenue, consecrated in 1957.</p>
+      <p>In 2008 the congregations of First Methodist and of Trinity United Methodist voted to merge the two bodies into the Auburn Methodist Church.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        
+        
+        <emph render="bold">First Methodist Church (Auburn, N.Y.) Records</emph> consists of three reels of microfilm representing 18 bound volumes and two folders of  loose papers.  The collection includes financial records, minutes, church history, record books, registers, and other church documents.  The original material was in .  </p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Bound volumes are in chronological order.  Two folders of loose papers appear at the end of Reel 3.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has a number of collections relating to a number of churches in and around Central New York.  Please refer to the &subjindex; for a complete listing.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">Church and clergy</subject>
+      <subject encodinganalog="650" source="local">New York State</subject>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+         <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">First Methodist Church (Auburn, N.Y.)</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Church records and registers.</subject>
+      <subject encodinganalog="650" source="lcsh">Churches -- New York (State) -- Syracuse.</subject>
+      <subject encodinganalog="650" source="lcsh"> Methodist Church -- New York (State) -- History.</subject>
+      <geogname encodinganalog="651" source="lcsh"> New York (State) -- Church history.</geogname>
+      <genreform encodinganalog="655" source="aat">Church records.</genreform>
+      <genreform encodinganalog="655" source="aat">Microfilms.</genreform>
+    
+    
+      <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>-->
+  </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>First Methodist Church (Auburn, N.Y.) Records,  
+        
+        
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Unspecified, circa 1970.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Church records</unittitle>
+        </did>
+<c02><did><unittitle>Volume 1</unittitle><unitdate type="inclusive" normal="1844/1869">1844-1869</unitdate><container type="Reel">1</container></did></c02>
+<c02><did><unittitle>Volume 2</unittitle><unitdate type="inclusive" normal="1872/1885">1872-1885</unitdate><container type="Reel">1</container></did></c02>
+<c02><did><unittitle>Volume 3</unittitle><unitdate type="inclusive" normal="1885/1906">1885-1906</unitdate><container type="Reel">1</container></did></c02>
+<c02><did><unittitle>Volume 4</unittitle><unitdate type="inclusive" normal="1906/1935">1906-1935</unitdate><container type="Reel">1</container></did></c02>
+<c02><did><unittitle>Volume 5</unittitle><unitdate type="inclusive" normal="1832/1866">1832-1866</unitdate><container type="Reel">1</container></did></c02>
+<c02><did><unittitle>Volume 6</unittitle><unitdate type="inclusive" normal="1868/1901">1868-1901</unitdate><container type="Reel">2</container></did></c02>
+<c02><did><unittitle>Volume 7</unittitle><unitdate type="inclusive" normal="1908">1908, </unitdate><unitdate type="inclusive" normal="1850/1928">1850-1938</unitdate><container type="Reel">2</container></did></c02>
+<c02><did><unittitle>Volume 8</unittitle><unitdate type="inclusive" normal="1909/1919">1909-1919</unitdate><container type="Reel">2</container></did></c02>
+<c02><did><unittitle>Volume 9</unittitle><unitdate type="inclusive" normal="1819/1873">1819-1873</unitdate><container type="Reel">2</container></did></c02>
+<c02><did><unittitle>Volume 10</unittitle><unitdate type="inclusive" normal="1855/1877">1855-1877</unitdate><container type="Reel">2</container></did></c02>
+<c02><did><unittitle>Volume 11</unittitle><unitdate type="inclusive" normal="1887/1908">1887-1908</unitdate><container type="Reel">2</container></did></c02>
+<c02><did><unittitle>Volume 12</unittitle><unitdate type="inclusive" normal="1927/1940">1927-1940</unitdate><container type="Reel">3</container></did></c02>
+<c02><did><unittitle>Volume 13</unittitle><unitdate type="inclusive" normal="1940/1949">1940-1949</unitdate><container type="Reel">3</container></did></c02>
+<c02><did><unittitle>Volume 14</unittitle><unitdate type="inclusive" normal="1892/1903">1892-1903</unitdate><container type="Reel">3</container></did></c02>
+<c02><did><unittitle>Volume 15</unittitle><unitdate type="inclusive" normal="1903/1910">1903-1910</unitdate><container type="Reel">3</container></did></c02>
+<c02><did><unittitle>Volume 16</unittitle><unitdate type="inclusive" normal="1914/1927">1914-1927</unitdate><container type="Reel">3</container></did></c02>
+<c02><did><unittitle>Volume 17</unittitle><unitdate type="inclusive" normal="1927/1940">1927-1940</unitdate><container type="Reel">3</container></did></c02>
+<c02><did><unittitle>Volume 18</unittitle><unitdate type="inclusive" normal="1889/1908">1889-1908</unitdate><container type="Reel">3</container></did></c02>
+<c02><did><unittitle>Folders 1 and 2</unittitle><unitdate normal="1833/1969" type="inclusive">1833-1969</unitdate><container type="Reel">3</container></did>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <scopecontent><p>
+
+            <lb/>Item 1: No. 42, History of First Methodist Church, Rev. John Alabaster, pastor
+            1879, 1879
+          
+        
+        
+          
+            <lb/>Item 2: No. 36, History of First United Methodist, Ralph C. Paul
+            1969-02-21, 21 Feb 1969
+          
+        
+        
+          
+            <lb/>Item 3: No. 35, Bank note of $8000, to be paid to James Hall
+            1839-01-22, 22 Jan 1839
+          
+        
+        
+          
+            <lb/>Item 4: No. 2, Indenture of the First Society of Methodist Episcopal Church, Talmadge Cherry, clerk
+            1833-02, Feb 1833
+          
+        
+        
+          
+            <lb/>Item 5: No. 23, Yesterday and Today church history, Harold George Stearns, pastor
+            1939-03-01, 1 Mar 1939
+          
+        
+        
+          
+            <lb/>Item 6: No. 44, An Historical and Pictorial Souvenir and History of the First Methodist
+            1911-05, May 1911
+          
+        
+        
+          
+            <lb/>Item 7: No. 139, The King's Daughters of the First Methodist Church constitution and minutes
+            1889-10-17, 17 Oct 1889
+          
+        
+        
+          
+            <lb/>Item 8: No. 123, Record of Women's Foreign Missionary Society of Auburn
+            1914/1927, 1914-1927
+          
+        
+        
+          
+            <lb/>Item 9: No. 134, Epworth League minutes of meetings and membership lists
+            1903-05-15/1910-10-14, 15 May 1903-14 oct 1910
+          
+        
+        
+          
+            <lb/>Item 10: No. 122, Offical Board of 1st M.E. Church record of meetings, Dr. Purington, Sec'y
+            1909/1919, 1909-1919
+          
+        
+        
+          
+            <lb/>Item 11: No. 130, Minutes of Sunday School board
+            1940-10-15/1948-09-26, 15 Oct 1940-26 Sep 1948
+          
+        
+        
+          
+            <lb/>Item 12: No. 129, Minutes of Sunday School board
+            1927-12-07/1940-09-17, 7 Dec 1927-17 Sep 1940
+          
+        
+        
+          
+            <lb/>Item 13: No. 196, Record book of first M.E. Church
+            1868/1899, 1868-1899
+          
+        
+        
+          
+            <lb/>Item 14: No. 197, General alphabetical register, marriages and baptisms
+            1861/1868, 1861-1868
+          
+        
+        
+          
+            <lb/>Item 15: No. 120, Minutes of Women's Missionary Society
+            1927-09/1940-06-12, Sep 1927-12 Jun 1940
+          
+        
+        
+          
+            <lb/>Item 16: No. 3, Record of stewards of the First Society of M.E. Church
+            1832-11-03/1866-09-17, 3 Nov 1832-17 Sep 1866
+          
+        
+        
+          
+            <lb/>Item 17: No. 119, Minutes of the North St. M.E. Sunday School
+            1855/1877, 1855-1877
+          
+        
+        
+          
+            <lb/>Item 18: No. 135, Board meeting minutes
+            1908/1938, 1908-1938
+          
+        
+        
+          
+            <lb/>Item 19: No. 121, Secretary's record book of Y.P.S.C.E.
+            1892-09-08/1902-09-17, 8 Sep 1892-17 Sep 1902
+          
+        
+        
+          
+            <lb/>Item 20: No. 205, Comprehensive Church Record of M.E., John C. Nichols, Pastor
+            1906-06-18, 18 Jun 1906
+          
+        
+        
+          
+            <lb/>Item 21: No. 198, Comprehensive Church Record
+            1885, 1885
+          
+        
+        
+          
+            <lb/>Item 22: No. 206, Church Record
+            1885/1906, 1885-1906
+		  </p></scopecontent>
+      </c02>
+
+  
+        </c01>
+    </dsc>
+  </archdesc>
+</ead>

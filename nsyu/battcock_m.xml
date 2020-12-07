@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="battcock_m">battcock_m</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Marjorie Battcock Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-04-14" encodinganalog="Date">14 Apr 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-04-14">14 Apr 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Battcock, Marjorie</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Marjorie Battcock Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1952/1960" type="inclusive" label="Inclusive Dates: ">1952-1960</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>3 folders (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Papers of the British poet.  Collection includes correspondence, 
+		 published material and photographs.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2745144</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Marjorie Battcock was a British poet.  Her work appeared in periodicals and literary magazines, and she published 
+	  at least two collections of poetry.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Marjorie Battcock Collection</emph> consists of correspondence, 
+		 published material and photographs.  <emph render="bold">Correspondence</emph> includes <emph render="italic">Dublin Magazine</emph>, Irish poet C. Day Lewis and British 
+		 author J. C. Trewin.  <emph render="bold">Published material</emph> contains copies of <emph render="italic">Filigree Bridge</emph>, <emph render="italic">Fortress and Ease</emph> and 
+		 <emph render="italic">Chiaroscuro</emph>, all by Battcock.  One <emph render="bold">Photograph</emph> of Battcock completes the collection.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>No particular order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Literature -- British</subject>
+			<persname encodinganalog="600" source="lcnaf">Battcock, Marjorie.</persname>
+			<persname encodinganalog="600" source="lcnaf">Day Lewis, C. (Cecil), 1904-1972.</persname>
+			<persname encodinganalog="600" source="lcnaf">Trewin, J. C. (John Courtenay), 1908-1990.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Authors, English. </subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <!--<genreform encodinganalog="655" source="aat">##</genreform>-->
+         <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Marjorie Battcock Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname>Marjorie Battcock</persname>, 1964.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><unitdate normal="1952" type="inclusive">1952, </unitdate><unitdate normal="1954" type="inclusive">1954, </unitdate><unitdate normal="1958" type="inclusive">1958, </unitdate><unitdate normal="1952/1960" type="inclusive">undated</unitdate><container type="SC">454</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Photographs</unittitle></did>
+            <c02><did><unittitle>of Battcock</unittitle><abstract>inscribed to SU librarian Martin Bush</abstract><unitdate normal="1952/1960" type="inclusive">undated</unitdate><container type="SC">454</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Published material</unittitle></did>
+            <c02><did><unittitle>Poetry collections</unittitle><abstract>inscribed to SU librarian Martin Bush</abstract><unitdate normal="1956" type="inclusive">1956, </unitdate><unitdate normal="1958" type="inclusive">1958, </unitdate><unitdate normal="1960" type="inclusive">1960</unitdate><container type="SC">454</container></did><scopecontent><p>Chiaroscuro (1960)<lb/>The Filigree Bridge (1956)<lb/>Fortress and Ease  (1958)</p></scopecontent></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

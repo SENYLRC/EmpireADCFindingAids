@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.9, 7/18/2007-->
+<!-- Changed entity files to txt rather than xml, don't suppose it matters which they are (?) -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="jacobs_ra">jacobs_ra</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Robert A. Jacobs Photographs</titleproper>
+            <subtitle>An inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">DMB</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1978-07-07" encodinganalog="Date">7 Jul 1978</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2006-03-08">19 Feb 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>19 Feb 2008 - converted to EAD (MRC)</item><item>14 Oct 2009 - corrections to OS1/A6, added index (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Jacobs, Robert Allan.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Robert A. Jacobs Photographs</unittitle>
+         <unitdate encodinganalog="245$f" normal="1918/1949" type="inclusive" label="Inclusive Dates: ">1918-1949</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the American architect, partner in New York City architectural firm, Kahn and Jacobs. Photograph folios of architectural projects; preliminary sketches.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149077</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Robert A. Jacobs (1905-1993) was an American architect.   Jacobs graduated from Amherst College and Columbia University's School of Architecture and spent his early years working for Le Corbusier in Paris and Wallace K. Harrison in New York. In 1940, he partnered with Ely Jacques Kahn to form  Kahn &amp; Jacobs (later in 1972 the firm merged with Hellmuth, Obata &amp; Kassabaum).  For forty years the firm designed and built numerous structures in New York City, including  the American Airlines terminal at Kennedy International Airport, the office building One Astor Plaza, and the Municipal Asphalt Plant at 90th Street and East River Drive, named by the Museum of Modern Art as one of the best designs of the 1930s and 1940s.</p><p>Jacobs was a fellow of the American Institute of Architects and a member of the Architectural League of New York.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Robert A. Jacobs Photographs</emph> consist of photographs of Jacobs' architectural projects.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Photographs are in no particular order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; holds the papers of many notable architects.  Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess><head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Architects</subject><persname encodinganalog="600" source="lcnaf">Jacobs, Robert Allan.</persname><corpname encodinganalog="610" source="lcnaf">Kahn and Jacobs (New York, N.Y.)</corpname><subject encodinganalog="650" source="lcsh">Architects -- United States.</subject><subject encodinganalog="650" source="lcsh">Architectural drawing.</subject><subject encodinganalog="650" source="lcsh">Architecture -- United States.</subject><subject encodinganalog="650" source="lcsh">Architecture, American.</subject><subject encodinganalog="650" source="lcsh">Architecture, Domestic.</subject><subject encodinganalog="650" source="lcsh">Architecture, Industrial.</subject><subject encodinganalog="650" source="lcsh">Architecture -- United States -- 20th century.</subject><subject encodinganalog="650" source="lcsh">Photography, Architectural.</subject><genreform encodinganalog="655" source="aat">Photographs.</genreform><occupation encodinganalog="656" source="lcsh">Sketches.</occupation><occupation encodinganalog="656" source="lcsh">Architects.</occupation></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Robert A. Jacobs Photographs, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <!--<acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>### (MARC 541 and/or  561)</p>
+      </acqinfo>-->
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+            <did>
+               <unittitle>Photographs</unittitle>
+            </did>
+<c02 id="Ave7-550"><did><unittitle>550 7th Ave</unittitle><unitdate normal="1925" type="inclusive">1925</unitdate><container type="Oversize">1</container><container type="Folder">A2</container></did></c02>
+<c02 id="NYFurn"><did><unittitle>N.Y. Furniture Exchange</unittitle><unitdate normal="1926" type="inclusive">1926</unitdate><container type="Oversize">1</container><container type="Folder">A2</container></did></c02>
+<c02 id="LefcMad"><did><unittitle>Lefcourt Madison Building</unittitle><unitdate normal="1925" type="inclusive">1925</unitdate><container type="Oversize">1</container><container type="Folder">A2</container></did></c02>
+<c02 id="LefcEmp"><did><unittitle>Lefcourt Empire Building</unittitle><unitdate normal="1925/1926" type="inclusive">1925-1926</unitdate><container type="Oversize">1</container><container type="Folder">A2</container></did></c02>
+<c02 id="Mad79"><did><unittitle>79 Madison Ave.</unittitle><unitdate type="inclusive" normal="1925">1925</unitdate><container type="Oversize">1</container><container type="Folder">A3</container></did></c02>
+<c02 id="W40-2426"><did><unittitle>24-26 W. 40th St</unittitle><unitdate type="inclusive" normal="1924/1925">1924-1925</unitdate><container type="Oversize">1</container><container type="Folder">A3</container></did></c02>
+<c02 id="W35-247"><did><unittitle>247-251 W. 35th St.</unittitle><unitdate type="inclusive" normal="1924/1925">1924-1925</unitdate><container type="Oversize">1</container><container type="Folder">A3</container></did></c02>
+<c02 id="E42-30"><did><unittitle>30 E. 42nd St</unittitle><container type="Oversize">1</container><container type="Folder">A3</container></did></c02>
+<c02 id="Rube"><did><unittitle>Ruben building</unittitle><container type="Oversize">1</container><container type="Folder">A3</container></did></c02>
+<c02 id="Cusa"><did><unittitle>Cusack building</unittitle><unitdate type="inclusive" normal="1918">1918</unitdate><container type="Oversize">1</container><container type="Folder">A3</container></did></c02>
+<c02 id="Armi"><did><unittitle>Armion building</unittitle><unitdate type="inclusive" normal="1921">1921</unitdate><container type="Oversize">1</container><container type="Folder">A4</container></did></c02>
+<c02 id="Banc"><did><unittitle>Banco Construction Corp. building</unittitle><unitdate type="inclusive" normal="1925">1925</unitdate><container type="Oversize">1</container><container type="Folder">A4</container></did></c02>
+<c02 id="Bomz"><did><unittitle>Bomzon building</unittitle><unitdate type="inclusive" normal="1925">1925</unitdate><container type="Oversize">1</container><container type="Folder">A4</container></did></c02>
+<c02 id="Bord"><did><unittitle>Borden building</unittitle><unitdate type="inclusive" normal="1923">1923</unitdate><container type="Oversize">1</container><container type="Folder">A4</container></did></c02>
+<c02 id="Fede"><did><unittitle>Federation building</unittitle><unitdate type="inclusive" normal="1927/1930">1927-1930</unitdate><container type="Oversize">1</container><container type="Folder">A4</container></did></c02>
+<c02 id="W39-1519"><did><unittitle>15-19 W. 39th St. building</unittitle><unitdate type="inclusive" normal="1925/1926">1925-1926</unitdate><container type="Oversize">1</container><container type="Folder">A4</container></did></c02>
+<c02 id="Mad269"><did><unittitle>269 Madison Ave</unittitle><unitdate type="inclusive" normal="1926/1927">1926-1927</unitdate><container type="Oversize">1</container><container type="Folder">A4</container></did></c02>
+<c02 id="Park2"><did><unittitle>2 Park Ave. building</unittitle><unitdate type="inclusive" normal="1926/1931">1926-1931</unitdate><container type="Oversize">1</container><container type="Folder">A4a</container></did></c02>
+<c02 id="Jay"><did><unittitle>Jay-Thorpe, Inc.</unittitle><unitdate type="inclusive" normal="1919/1935">1919-1935</unitdate><container type="Oversize">1</container><container type="Folder">A5</container></did></c02>
+<c02 id="Coll"><did><unittitle>Collins Oppenheim and Co.</unittitle><unitdate type="inclusive" normal="1921/1924">1921-1924</unitdate><container type="Oversize">1</container><container type="Folder">A5</container></did></c02>
+<c02 id="Simo"><did><unittitle>A. Simonson, Inc.</unittitle><container type="Oversize">1</container><container type="Folder">A5</container></did></c02>
+<c02 id="Stei"><did><unittitle>Steiger-Vedder Co,</unittitle><container type="Oversize">1</container><container type="Folder">A5</container></did></c02>
+<c02 id="Shop"><did><unittitle>Shop of Hazel Kolman, Inc.</unittitle><unitdate type="inclusive" normal="1926">1926</unitdate><container type="Oversize">1</container><container type="Folder">A5</container></did></c02>
+<c02 id="Eagl"><did><unittitle>Eagle Pencil Co.</unittitle><unitdate type="inclusive" normal="1923/1934">1923-1934</unitdate><container type="Oversize">1</container><container type="Folder">A6</container></did></c02>
+<c02 id="Kahn"><did><unittitle>Kahn and Feldman</unittitle><unitdate type="inclusive" normal="1919/1921">1919-1921</unitdate><container type="Oversize">1</container><container type="Folder">A6</container></did></c02>
+<c02 id="Lehn"><did><unittitle>Lehn and Fink</unittitle><unitdate type="inclusive" normal="1918">1918</unitdate><container type="Oversize">1</container><container type="Folder">A6</container></did></c02>
+
+<c02 id="Pina"><did><unittitle>Pinaud building</unittitle><unitdate type="inclusive" normal="1926/1930">1926-1930</unitdate><container type="Oversize">1</container><container type="Folder">A6</container></did></c02>
+<c02 id="Meri"><did><unittitle>Merit Hosiery Co.</unittitle><unitdate type="inclusive" normal="1926/1929">1926-1929</unitdate><container type="Oversize">1</container><container type="Folder">A6</container></did></c02>
+<c02 id="Insu"><did><unittitle>Insurance Center building</unittitle><unitdate type="inclusive" normal="1926/1927">1926-1927</unitdate><container type="Oversize">2</container><container type="Folder">A7</container></did></c02>
+<c02 id="NW37-6"><did><unittitle>Northwest corner of 37th St. and 6th Ave</unittitle><unitdate type="inclusive" normal="1925/1926">1925-1926</unitdate><container type="Oversize">2</container><container type="Folder">A7</container></did></c02>
+<c02 id="Cour"><did><unittitle>Court Square building</unittitle><unitdate type="inclusive" normal="1926/1927">1926-1927</unitdate><container type="Oversize">2</container><container type="Folder">A7</container></did></c02>
+<c02 id="W39-4244"><did><unittitle>42-44 W. 39th St.</unittitle><unitdate type="inclusive" normal="1937">1937</unitdate><container type="Oversize">2</container><container type="Folder">A7</container></did></c02>
+<c02 id="SWMad-49"><did><unittitle>Southwest corner of Madison Ave. and 49th St</unittitle><unitdate type="inclusive" normal="1925/1926">1925-1926</unitdate><container type="Oversize">2</container><container type="Folder">A8</container></did></c02>
+<c02 id="W57-1"><did><unittitle>1 W. 57th St (Bergdorf-Goodman building)</unittitle><unitdate type="inclusive" normal="1927/1928">1927-1928</unitdate><container type="Oversize">2</container><container type="Folder">A8</container></did></c02>
+<c02 id="Appr"><did><unittitle>U.S. Appraisers Stores</unittitle><unitdate type="inclusive" normal="1927/1929">1927-1929</unitdate><container type="Oversize">2</container><container type="Folder">A8</container></did></c02>
+<c02 id="Inte"><did><unittitle>International Telephone building (Broad and Beaver Streets)</unittitle><unitdate type="inclusive" normal="1928">1928</unitdate><container type="Oversize">2</container><container type="Folder">A8</container></did></c02>
+<c02 id="Lefc"><did><unittitle>Lefcourt State building</unittitle><unitdate type="inclusive" normal="1927">1927</unitdate><container type="Oversize">2</container><container type="Folder">A8</container></did></c02>
+<c02 id="Ave7-334"><did><unittitle>334-336 7th Ave</unittitle><unitdate type="inclusive" normal="1927/1930">1927-1930</unitdate><container type="Oversize">2</container><container type="Folder">A9</container></did></c02>
+<c02 id="LefcClo"><did><unittitle>Lefcourt Clothing Center</unittitle><unitdate type="inclusive" normal="1928">1928</unitdate><container type="Oversize">2</container><container type="Folder">A9</container></did></c02>
+<c02 id="SE29-5"><did><unittitle>Southeast corner of 29th St. and 5th Ave.</unittitle><unitdate type="inclusive" normal="1928/1930">1928-1930</unitdate><container type="Oversize">2</container><container type="Folder">A9</container></did></c02>
+<c02 id="Film"><did><unittitle>Film center</unittitle><unitdate type="inclusive" normal="1928/1930">1928-1930</unitdate><container type="Oversize">2</container><container type="Folder">A9</container></did></c02>
+<c02 id="W45-23"><did><unittitle>23 W. 45th St.</unittitle><unitdate type="inclusive" normal="1928">1928</unitdate><container type="Oversize">2</container><container type="Folder">A9</container></did></c02>
+<c02 id="Eisi"><did><unittitle>Eisig residence (Tuckahoe, NY)</unittitle><container type="Oversize">2</container><container type="Folder">C4</container></did></c02>
+<c02 id="Karp"><did><unittitle>Karpen residence (New Rochelle, NY)</unittitle><unitdate type="inclusive" normal="1925">1925</unitdate><container type="Oversize">2</container><container type="Folder">C4</container></did></c02>
+<c02 id="Plau"><did><unittitle>Plaut residence (Elmsford, NY)</unittitle><container type="Oversize">2</container><container type="Folder">C4</container></did></c02>
+<c02 id="Tish"><did><unittitle>Tishman residence</unittitle><unitdate type="inclusive" normal="1927">1927</unitdate><container type="Oversize">2</container><container type="Folder">C6</container></did></c02>
+<c02 id="Lieb"><did><unittitle>Liebman residence</unittitle><unitdate type="inclusive" normal="1927">1927</unitdate><container type="Oversize">2</container><container type="Folder">C6</container></did></c02>
+<c02 id="Benj"><did><unittitle>Benjamin residence (New York, NY)</unittitle><unitdate type="inclusive" normal="1930">1930</unitdate><container type="Oversize">2</container><container type="Folder">C7</container></did></c02>
+<c02 id="Equi"><did><unittitle>Equitable Trust Co.</unittitle><unitdate type="inclusive" normal="1929/1931">1929-1931</unitdate><container type="Oversize">2</container><container type="Folder">C7</container></did></c02>
+<c02 id="Kolm"><did><unittitle>Kolman residence (New York, NY)</unittitle><container type="Oversize">2</container><container type="Folder">C7</container></did></c02>
+<c02 id="Roth"><did><unittitle>Dr. Marcus A. Rothschild office</unittitle><container type="Oversize">2</container><container type="Folder">C7</container></did></c02>
+<c02 id="Andr"><did><unittitle>Andrews residence (Connecticut)</unittitle><unitdate type="inclusive" normal="1940">1940</unitdate><container type="Oversize">3</container><container type="Folder">C12</container></did></c02>
+<c02 id="Coig"><did><unittitle>Coigne log cabin (New Jersey)</unittitle><unitdate type="inclusive" normal="1941">1941</unitdate><container type="Oversize">3</container><container type="Folder">C12</container></did></c02>
+<c02 id="Etti"><did><unittitle>Ettinger residence (Connecticut)</unittitle><unitdate type="inclusive" normal="1942">1942</unitdate><container type="Oversize">3</container><container type="Folder">C12</container></did></c02>
+<c02 id="Club"><did><unittitle>Club house, Smullens, New Jersey</unittitle><unitdate type="inclusive" normal="1941">1941</unitdate><container type="Oversize">3</container><container type="Folder">C12</container></did></c02>
+<c02 id="Garf"><did><unittitle>Garfunkel residence (New York)</unittitle><container type="Oversize">3</container><container type="Folder">C12</container></did></c02>
+<c02 id="Rose"><did><unittitle>Rose residence (New York)</unittitle><unitdate type="inclusive" normal="1947">1947</unitdate><container type="Oversize">3</container><container type="Folder">C12</container></did></c02>
+<c02 id="GeneTrans"><did><unittitle>General Transportation Casualty and Surety Co.</unittitle><container type="Oversize">3</container><container type="Folder">C12</container></did></c02>
+<c02 id="Hosp"><did><unittitle>Hospital for Joint Diseases</unittitle><unitdate type="inclusive" normal="1922/1928">1922-1928</unitdate><container type="Oversize">3</container><container type="Folder">D1</container></did></c02>
+<c02 id="UGSP"><did><unittitle>U.G.S. Project</unittitle><container type="Oversize">3</container><container type="Folder">D1</container></did></c02>
+<c02 id="New"><did><unittitle>New York City Garage and Air Raid Shelter</unittitle><unitdate type="inclusive" normal="1941">1941</unitdate><container type="Oversize">3</container><container type="Folder">D1</container></did></c02>
+<c02 id="Nati"><did><unittitle>National Urban League</unittitle><container type="Oversize">3</container><container type="Folder">D1</container></did></c02>
+<c02 id="USO"><did><unittitle>USO buildings</unittitle><unitdate type="inclusive" normal="1941">1941</unitdate><container type="Oversize">3</container><container type="Folder">D1</container></did></c02>
+<c02 id="Schi"><did><unittitle>Schiff Pavilion, Montefiore home</unittitle><unitdate type="inclusive" normal="1925">1925</unitdate><container type="Oversize">3</container><container type="Folder">D1</container></did></c02>
+<c02 id="Mont"><did><unittitle>Montefiore home</unittitle><unitdate type="inclusive" normal="1925">1925</unitdate><container type="Oversize">3</container><container type="Folder">D1</container></did></c02>
+<c02 id="Davi"><did><unittitle>Davidow residence (New York)</unittitle><unitdate type="inclusive" normal="1927">1927</unitdate><container type="Oversize">3</container><container type="Folder">E1</container></did></c02>
+<c02 id="Harr"><did><unittitle>Harris residence (New York)</unittitle><unitdate type="inclusive" normal="1924/1925">1924-1925</unitdate><container type="Oversize">3</container><container type="Folder">E1</container></did></c02>
+<c02 id="KahnNY"><did><unittitle>Kahn residence (New York)</unittitle><unitdate type="inclusive" normal="1919/1931">1919-1931</unitdate><container type="Oversize">3</container><container type="Folder">E1</container></did></c02>
+<c02 id="KahnElm"><did><unittitle>Kahn residence (Elmsford, NY)</unittitle><unitdate type="inclusive" normal="1919/1931">1919-1931</unitdate><container type="Oversize">3</container><container type="Folder">E1</container></did></c02>
+<c02 id="Herm"><did><unittitle>Herman Younker residence (Elmsford, NY)</unittitle><container type="Oversize">3</container><container type="Folder">E1</container></did></c02>
+<c02 id="Ira"><did><unittitle>Ira Younker residence (Elmsford, NY)</unittitle><container type="Oversize">3</container><container type="Folder">E1</container></did></c02>
+<c02 id="Schwe"><did><unittitle>A. Schweizer residence (New York)</unittitle><unitdate type="inclusive" normal="1923">1923</unitdate><container type="Oversize">3</container><container type="Folder">E1</container></did></c02>
+<c02 id="Ries"><did><unittitle>Riesenfeld residence (New York)</unittitle><unitdate type="inclusive" normal="1923">1923</unitdate><container type="Oversize">3</container><container type="Folder">E1</container></did></c02>
+<c02 id="Mail"><did><unittitle>Maillard's (Chicago)</unittitle><unitdate type="inclusive" normal="1924/1925">1924-1925</unitdate><container type="Oversize">3</container><container type="Folder">E2</container></did></c02>
+<c02 id="Cinc"><did><unittitle>Cincinnati Mayflower Shop</unittitle><unitdate type="inclusive" normal="1941">1941</unitdate><container type="Oversize">3</container><container type="Folder">E2</container></did></c02>
+<c02 id="Krid"><did><unittitle>Kridel residence (New York)</unittitle><container type="Oversize">4</container><container type="Folder">E3</container></did></c02>
+<c02 id="Hell"><did><unittitle>Hellman residence (New York)</unittitle><container type="Oversize">4</container><container type="Folder">E3</container></did></c02>
+<c02 id="Van"><did><unittitle>Van Cleef and Arpels, Inc.</unittitle><unitdate type="inclusive" normal="1929/1931">1929-1931</unitdate><container type="Oversize">4</container><container type="Folder">E4</container></did></c02>
+<c02 id="Lero"><did><unittitle>Leron, Inc.</unittitle><unitdate type="inclusive" normal="1931">1931</unitdate><container type="Oversize">4</container><container type="Folder">E4</container></did></c02>
+<c02 id="Voic"><did><unittitle>Voice of America building</unittitle><container type="Oversize">4</container><container type="Folder">E4</container></did></c02>
+<c02 id="Wall120"><did><unittitle>120 Wall St.</unittitle><unitdate type="inclusive" normal="1930">1930</unitdate><container type="Oversize">4</container><container type="Folder">E4</container></did></c02>
+<c02 id="Glen"><did><unittitle>Glen Oaks Golf and Country Club</unittitle><unitdate type="inclusive" normal="1929">1929</unitdate><container type="Oversize">4</container><container type="Folder">E4</container></did></c02>
+<c02 id="Bric"><did><unittitle>Bricken building</unittitle><unitdate type="inclusive" normal="1929/1930">1929-1930</unitdate><container type="Oversize">4</container><container type="Folder">E4</container></did></c02>
+<c02 id="Bonw"><did><unittitle>Bonwit Teller</unittitle><unitdate type="inclusive" normal="1940">1940</unitdate><container type="Oversize">4</container><container type="Folder">E5</container></did></c02>
+<c02 id="Quak"><did><unittitle>Quaker Ridge Golf Club</unittitle><unitdate type="inclusive" normal="1926">1926</unitdate><container type="Oversize">4</container><container type="Folder">E5</container></did></c02>
+<c02 id="Fair"><did><unittitle>Fairview Country Club</unittitle><unitdate type="inclusive" normal="1925/1926">1925-1926</unitdate><container type="Oversize">4</container><container type="Folder">E5</container></did></c02>
+<c02 id="Broa"><did><unittitle>Broadmoor Country Club</unittitle><unitdate type="inclusive" normal="1925/1926">1925-1926</unitdate><container type="Oversize">4</container><container type="Folder">E5</container></did></c02>
+<c02 id="Calu"><did><unittitle>Calumet Club</unittitle><unitdate type="inclusive" normal="1925">1925</unitdate><container type="Oversize">4</container><container type="Folder">E5</container></did></c02>
+<c02 id="Scho"><did><unittitle>Scholle residence</unittitle><unitdate type="inclusive" normal="1948">1948</unitdate><container type="Oversize">4</container><container type="Folder">E5</container></did></c02>
+<c02 id="Reyn"><did><unittitle>Reynolds Bar (Georgia)</unittitle><unitdate type="inclusive" normal="1948">1948</unitdate><container type="Oversize">4</container><container type="Folder">E5</container></did></c02>
+<c02 id="Rich"><did><unittitle>Richard Hudnut</unittitle><unitdate type="inclusive" normal="1930/1935">1930-1935</unitdate><container type="Oversize">4</container><container type="Folder">E6</container></did></c02>
+<c02 id="HuylChi"><did><unittitle>Huyler's (Chicago)</unittitle><unitdate type="inclusive" normal="1936">1936</unitdate><container type="Oversize">4</container><container type="Folder">E6</container></did></c02>
+<c02 id="HuylBuf"><did><unittitle>Huyler's (Buffalo)</unittitle><unitdate type="inclusive" normal="1937">1937</unitdate><container type="Oversize">4</container><container type="Folder">E6</container></did></c02>
+<c02 id="Burl"><did><unittitle>Burlington Mills Hosiery Factory</unittitle><container type="Oversize">4</container><container type="Folder">E6</container></did></c02>
+<c02 id="Shea"><did><unittitle>Shearith-Israel Synagogue</unittitle><container type="Oversize">4</container><container type="Folder">E6</container></did></c02>
+<c02 id="Carn"><did><unittitle>Carnegie Hall</unittitle><container type="Oversize">4</container><container type="Folder">E6</container></did></c02>
+<c02 id="Cont"><did><unittitle>Continental building</unittitle><container type="Oversize">4</container><container type="Folder">E6</container></did></c02>
+<c02 id="Ave7-530"><did><unittitle>530 7th Ave.</unittitle><container type="Oversize">4</container><container type="Folder">E6</container></did></c02>
+<c02 id="Holl"><did><unittitle>Holland Plaza building</unittitle><unitdate type="inclusive" normal="1929/1930">1929-1930</unitdate><container type="Oversize">4</container><container type="Folder">E6</container></did></c02>
+<c02 id="John111"><did><unittitle>111 John St. building</unittitle><unitdate type="inclusive" normal="1929">1929</unitdate><container type="Oversize">4</container><container type="Folder">E6</container></did></c02>
+<c02 id="Alli"><did><unittitle>Allied Arts building</unittitle><unitdate type="inclusive" normal="1929">1929</unitdate><container type="Oversize">4</container><container type="Folder">E6</container></did></c02>
+<c02 id="Gree"><did><unittitle>Greenebaum apartment (New York)</unittitle><container type="Oversize">5</container><container type="Folder">E7</container></did></c02>
+<c02 id="JacoRup"><did><unittitle>Jacob Ruppert Distributing Plant</unittitle><unitdate type="inclusive" normal="1942">1942</unitdate><container type="Oversize">5</container><container type="Folder">E7</container></did></c02>
+<c02 id="JacoRes"><did><unittitle>Jacobs residence</unittitle><unitdate type="inclusive" normal="1940">1940</unitdate><container type="Oversize">5</container><container type="Folder">E7</container></did></c02>
+<c02 id="SEB-39"><did><unittitle>Southeast corner of Broadway and 39th St.</unittitle><unitdate type="inclusive" normal="1930/1931">1930-1931</unitdate><container type="Oversize">5</container><container type="Folder">E7</container></did></c02>
+<c02 id="NEB-38"><did><unittitle>Northeast corner of Broadway and 38th St.</unittitle><unitdate type="inclusive" normal="1930/1931">1930-1931</unitdate><container type="Oversize">5</container><container type="Folder">E7</container></did></c02>
+<c02 id="Sate"><did><unittitle>Satenstein residence (New York)</unittitle><unitdate type="inclusive" normal="1946">1946</unitdate><container type="Oversize">5</container><container type="Folder">E7</container></did></c02>
+<c02 id="Fort"><did><unittitle>Fort Greene houses (Brooklyn, NY)</unittitle><container type="Oversize">5</container><container type="Folder">E7</container></did></c02>
+<c02 id="War"><did><unittitle>War housing project (Rome, NY)</unittitle><container type="Oversize">5</container><container type="Folder">E7</container></did></c02>
+<c02 id="Hous"><did><unittitle>Housing projet (Mineville, NY)</unittitle><container type="Oversize">5</container><container type="Folder">E7</container></did></c02>
+<c02 id="Lexi"><did><unittitle>Lexington Park Project</unittitle><unitdate type="inclusive" normal="1942">1942</unitdate><container type="Oversize">5</container><container type="Folder">E7</container></did></c02>
+<c02 id="Gowa"><did><unittitle>Gowanus houses</unittitle><container type="Oversize">5</container><container type="Folder">E7</container></did></c02>
+<c02 id="Carv"><did><unittitle>Carver houses</unittitle><container type="Oversize">5</container><container type="Folder">E7</container></did></c02>
+<c02 id="Arse"><did><unittitle>Arsenal building (New York)</unittitle><unitdate type="inclusive" normal="1925">1925</unitdate><container type="Oversize">5</container><container type="Folder">E9</container></did></c02>
+<c02 id="Mill"><did><unittitle>Millinery Center building (New York)</unittitle><unitdate type="inclusive" normal="1925">1925</unitdate><container type="Oversize">5</container><container type="Folder">E9</container></did></c02>
+<c02 id="Park"><did><unittitle>Park-Murray Corporation</unittitle><container type="Oversize">5</container><container type="Folder">E9</container></did></c02>
+<c02 id="Pare"><did><unittitle>Parents' Magazine office</unittitle><unitdate type="inclusive" normal="1940">1940</unitdate><container type="Oversize">5</container><container type="Folder">E9</container></did></c02>
+<c02 id="Amer"><did><unittitle>American Iron and Steel Exhibit</unittitle><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="E42-30b"><did><unittitle>30 E. 42nd St.</unittitle><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Maus"><did><unittitle>Mausoleums</unittitle><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Morg"><did><unittitle>Morgenthau residence (New Jersey)</unittitle><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="NE5-31"><did><unittitle>Northeast corner of 5th Ave. and 31st St.</unittitle><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="MorgNY"><did><unittitle>Morgenthau residence (New York)</unittitle><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Char"><did><unittitle>Charles Kaye buildings</unittitle><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Holl"><did><unittitle>L. P. Hollander and Co.</unittitle><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Long"><did><unittitle>Longchamps Restaurant</unittitle><unitdate type="inclusive" normal="1949">1949</unitdate><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Ave7-498"><did><unittitle>498 7th Ave. (before alteration)</unittitle><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Ave7-500"><did><unittitle>500 7th Ave. (before alteration)</unittitle><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Pix"><did><unittitle>Pix Theatre (Longchamps)</unittitle><unitdate type="inclusive" normal="1939">1939</unitdate><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Stau"><did><unittitle>Stauffer Chemical</unittitle><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="SELex-57"><did><unittitle>Southeast corner of Lexington Ave. and 57th St.</unittitle><unitdate type="inclusive" normal="1930">1930</unitdate><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Para"><did><unittitle>Paramount Annex</unittitle><unitdate type="inclusive" normal="1930">1930</unitdate><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="NE3-44"><did><unittitle>Northwest corner of 3rd Ave. and 44th St.</unittitle><unitdate type="inclusive" normal="1930">1930</unitdate><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Desb16"><did><unittitle>16 Desbrosses St.</unittitle><unitdate type="inclusive" normal="1938">1938</unitdate><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Watts119"><did><unittitle>119-121 Watts St.</unittitle><unitdate type="inclusive" normal="1938">1938</unitdate><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Cull"><did><unittitle>Cullman residence (New York)</unittitle><unitdate type="inclusive" normal="1941">1941</unitdate><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Hoff"><did><unittitle>Hoffman residence (New York)</unittitle><unitdate type="inclusive" normal="1942">1942</unitdate><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Mars"><did><unittitle>Marshall residence (New York)</unittitle><unitdate type="inclusive" normal="1941">1941</unitdate><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="Spie"><did><unittitle>Spiegelberg residence (New York)</unittitle><container type="Oversize">5</container><container type="Folder">E10</container></did></c02>
+<c02 id="AIAE"><did><unittitle>American Institute of Architects Exhibition</unittitle><unitdate type="inclusive" normal="1936">1936</unitdate><container type="Oversize">6</container><container type="Folder">F2</container></did></c02>
+<c02 id="GeneCig"><did><unittitle>General Cigar building, New York World's Fair</unittitle><unitdate type="inclusive" normal="1939">1939</unitdate><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="ServSta"><did><unittitle>Design for service station</unittitle><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="Dept"><did><unittitle>Design for department store</unittitle><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="Shel"><did><unittitle>Shelton Looms showroom</unittitle><unitdate type="inclusive" normal="1928/1929">1928-1929</unitdate><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="Yard"><did><unittitle>Yardley and Co., Ltd. showroom</unittitle><unitdate type="inclusive" normal="1933/1934">1933-1934</unitdate><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="SquiExe"><did><unittitle>E. R. Squibb and Sons executive offices</unittitle><unitdate type="inclusive" normal="1929/1933">1929-1933</unitdate><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="SquiSal"><did><unittitle>E. R. Squibb and Sons sales office</unittitle><unitdate type="inclusive" normal="1929/1933">1929-1933</unitdate><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="Kohl"><did><unittitle>Kohler Company building</unittitle><unitdate type="inclusive" normal="1932/1933">1932-1933</unitdate><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="John"><did><unittitle>Johns-Manville building</unittitle><unitdate type="inclusive" normal="1933">1933</unitdate><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="Sidn"><did><unittitle>Sidney Blumenthal and Company</unittitle><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="Stra"><did><unittitle>Strauss Mausoleum</unittitle><unitdate type="inclusive" normal="1929/1930">1929-1930</unitdate><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="BordExe"><did><unittitle>Borden building executive offices</unittitle><unitdate type="inclusive" normal="1920/1923">1920-1923</unitdate><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="Sani"><did><unittitle>New York City Department of Sanitation</unittitle><unitdate type="inclusive" normal="1937">1937</unitdate><container type="Oversize">6</container><container type="Folder">F3</container></did></c02>
+<c02 id="Prel"><did><unittitle>Preliminary sketches</unittitle><physdesc><extent>3 folios</extent></physdesc><container type="Oversize">7</container></did></c02>
+
+         </c01>
+
+<index id="index"><head>Alphabetical index of projects</head>
+
+<indexentry><name>1 W. 57th St (Bergdorf-Goodman building)</name><ref target="W57-1">OS 2-A8</ref></indexentry>
+<indexentry><name>2 Park Ave. building</name><ref target="Park2">OS 1-A4a</ref></indexentry>
+<indexentry><name>15-19 W. 39th St. building</name><ref target="W39-1519">OS 1-A4</ref></indexentry>
+<indexentry><name>16 Desbrosses St.</name><ref target="Desb16">OS 5-E10</ref></indexentry>
+<indexentry><name>23 W. 45th St.</name><ref target="W45-23">OS 2-A9</ref></indexentry>
+<indexentry><name>24-26 W. 40th St</name><ref target="W40-2426">OS 1-A3</ref></indexentry>
+<indexentry><name>30 E. 42nd St</name><ptrgrp><ref target="E42-30">OS 1-A3</ref><ref target="E42-30b">OS 5-E10</ref></ptrgrp></indexentry>
+<indexentry><name>42-44 W. 39th St.</name><ref target="W39-4244">OS 2-A7</ref></indexentry>
+<indexentry><name>79 Madison Ave.</name><ref target="Mad79">OS 1-A3</ref></indexentry>
+<indexentry><name>111 John St. building</name><ref target="John111">OS 4-E6</ref></indexentry>
+<indexentry><name>119-121 Watts St.</name><ref target="Watts119">OS 5-E10</ref></indexentry>
+<indexentry><name>120 Wall St.</name><ref target="Wall120">OS 4-E4</ref></indexentry>
+<indexentry><name>247-251 W. 35th St.</name><ref target="W35-247">OS 1-A3</ref></indexentry>
+<indexentry><name>269 Madison Ave</name><ref target="Mad269">OS 1-A4</ref></indexentry>
+<indexentry><name>334-336 7th Ave</name><ref target="Ave7-334">OS 2-A9</ref></indexentry>
+<indexentry><name>498 7th Ave. (before alteration)</name><ref target="Ave7-498">OS 5-E10</ref></indexentry>
+<indexentry><name>500 7th Ave. (before alteration)</name><ref target="Ave7-500">OS 5-E10</ref></indexentry>
+<indexentry><name>530 7th Ave.</name><ref target="Ave7-530">OS 4-E6</ref></indexentry>
+<indexentry><name>550 7th Ave</name><ref target="Ave7-550">OS 1-A2</ref></indexentry>
+<indexentry><name>29th St. and 5th Ave., southeast corner</name><ref target="SE29-5">OS 2-A9</ref></indexentry>
+<indexentry><name>37th St. and 6th Ave, northwest corner</name><ref target="NW37-6">OS 2-A7</ref></indexentry>
+<indexentry><name>3rd Ave. and 44th St., northwest corner</name><ref target="NE3-44">OS 5-E10</ref></indexentry>
+<indexentry><name>5th Ave. and 31st St., northeast corner</name><ref target="NE5-31">OS 5-E10</ref></indexentry>
+<indexentry><name>A. Simonson, Inc.</name><ref target="Simo">OS 1-A5</ref></indexentry>
+<indexentry><name>Allied Arts building</name><ref target="Alli">OS 4-E6</ref></indexentry>
+<indexentry><name>American Institute of Architects Exhibition</name><ref target="AIAE">OS 6-F2</ref></indexentry>
+<indexentry><name>American Iron and Steel Exhibit</name><ref target="Amer">OS 5-E10</ref></indexentry>
+<indexentry><name>Andrews residence (Connecticut)</name><ref target="Andr">OS 3-C12</ref></indexentry>
+<indexentry><name>Armion building</name><ref target="Armi">OS 1-A4</ref></indexentry>
+<indexentry><name>Arsenal building (New York)</name><ref target="Arse">OS 5-E9</ref></indexentry>
+<indexentry><name>Banco Construction Corp. building</name><ref target="Banc">OS 1-A4</ref></indexentry>
+<indexentry><name>Benjamin residence (New York, NY)</name><ref target="Benj">OS 2-C7</ref></indexentry>
+<indexentry><name>Bomzon building</name><ref target="Bomz">OS 1-A4</ref></indexentry>
+<indexentry><name>Bonwit Teller</name><ref target="Bonw">OS 4-E5</ref></indexentry>
+<indexentry><name>Borden building</name><ref target="Bord">OS 1-A4</ref></indexentry>
+<indexentry><name>Borden building executive offices</name><ref target="BordExe">OS 6-F3</ref></indexentry>
+<indexentry><name>Bricken building</name><ref target="Bric">OS 4-E4</ref></indexentry>
+<indexentry><name>Broadmoor Country Club</name><ref target="Broa">OS 4-E5</ref></indexentry>
+<indexentry><name>Broadway and 38th St., northeast corner</name><ref target="NEB-38">OS 5-E7</ref></indexentry>
+<indexentry><name>Broadway and 39th St., southeast corner</name><ref target="SEB-39">OS 5-E7</ref></indexentry>
+<indexentry><name>Burlington Mills Hosiery Factory</name><ref target="Burl">OS 4-E6</ref></indexentry>
+<indexentry><name>Calumet Club</name><ref target="Calu">OS 4-E5</ref></indexentry>
+<indexentry><name>Carnegie Hall</name><ref target="Carn">OS 4-E6</ref></indexentry>
+<indexentry><name>Carver houses</name><ref target="Carv">OS 5-E7</ref></indexentry>
+<indexentry><name>Charles Kaye buildings</name><ref target="Char">OS 5-E10</ref></indexentry>
+<indexentry><name>Cincinnati Mayflower Shop</name><ref target="Cinc">OS 3-E2</ref></indexentry>
+<indexentry><name>Club house, Smullens, New Jersey</name><ref target="Club">OS 3-C12</ref></indexentry>
+<indexentry><name>Coigne log cabin (New Jersey)</name><ref target="Coig">OS 3-C12</ref></indexentry>
+<indexentry><name>Collins Oppenheim and Co.</name><ref target="Coll">OS 1-A5</ref></indexentry>
+<indexentry><name>Continental building</name><ref target="Cont">OS 4-E6</ref></indexentry>
+<indexentry><name>Court Square building</name><ref target="Cour">OS 2-A7</ref></indexentry>
+<indexentry><name>Cullman residence (New York)</name><ref target="Cull">OS 5-E10</ref></indexentry>
+<indexentry><name>Cusack building</name><ref target="Cusa">OS 1-A3</ref></indexentry>
+<indexentry><name>Davidow residence (New York)</name><ref target="Davi">OS 3-E1</ref></indexentry>
+<indexentry><name>Department store design</name><ref target="Dept">OS 6-F3</ref></indexentry>
+<indexentry><name>Service station design</name><ref target="ServSta">OS 6-F3</ref></indexentry>
+<indexentry><name>E. R. Squibb and Sons executive offices</name><ref target="SquiExe">OS 6-F3</ref></indexentry>
+<indexentry><name>E. R. Squibb and Sons sales office</name><ref target="SquiSal">OS 6-F3</ref></indexentry>
+<indexentry><name>Eagle Pencil Co.</name><ref target="Eagl">OS 1-A6</ref></indexentry>
+<indexentry><name>Eisig residence (Tuckahoe, NY)</name><ref target="Eisi">OS 2-C4</ref></indexentry>
+<indexentry><name>Equitable Trust Co.</name><ref target="Equi">OS 2-C7</ref></indexentry>
+<indexentry><name>Ettinger residence (Connecticut)</name><ref target="Etti">OS 3-C12</ref></indexentry>
+<indexentry><name>Fairview Country Club</name><ref target="Fair">OS 4-E5</ref></indexentry>
+<indexentry><name>Federation building</name><ref target="Fede">OS 1-A4</ref></indexentry>
+<indexentry><name>Film center</name><ref target="Film">OS 2-A9</ref></indexentry>
+<indexentry><name>Fort Greene houses (Brooklyn, NY)</name><ref target="Fort">OS 5-E7</ref></indexentry>
+<indexentry><name>Garfunkel residence (New York)</name><ref target="Garf">OS 3-C12</ref></indexentry>
+<indexentry><name>General Cigar building, New York World's Fair</name><ref target="GeneCig">OS 6-F3</ref></indexentry>
+<indexentry><name>General Transportation Casualty and Surety Co.</name><ref target="GeneTrans">OS 3-C12</ref></indexentry>
+<indexentry><name>Glen Oaks Golf and Country Club</name><ref target="Glen">OS 4-E4</ref></indexentry>
+<indexentry><name>Gowanus houses</name><ref target="Gowa">OS 5-E7</ref></indexentry>
+<indexentry><name>Greenebaum apartment (New York)</name><ref target="Gree">OS 5-E7</ref></indexentry>
+<indexentry><name>Harris residence (New York)</name><ref target="Harr">OS 3-E1</ref></indexentry>
+<indexentry><name>Hellman residence (New York)</name><ref target="Hell">OS 4-E3</ref></indexentry>
+<indexentry><name>Hoffman residence (New York)</name><ref target="Hoff">OS 5-E10</ref></indexentry>
+<indexentry><name>Holland Plaza building</name><ref target="Holl">OS 4-E6</ref></indexentry>
+<indexentry><name>Hospital for Joint Diseases</name><ref target="Hosp">OS 3-D1</ref></indexentry>
+<indexentry><name>Housing projet (Mineville, NY)</name><ref target="Hous">OS 5-E7</ref></indexentry>
+<indexentry><name>Huyler's (Buffalo)</name><ref target="HuylBuf">OS 4-E6</ref></indexentry>
+<indexentry><name>Huyler's (Chicago)</name><ref target="HuylChi">OS 4-E6</ref></indexentry>
+<indexentry><name>Insurance Center building</name><ref target="Insu">OS 2-A7</ref></indexentry>
+<indexentry><name>International Telephone building (Broad and Beaver Streets)</name><ref target="Inte">OS 2-A8</ref></indexentry>
+<indexentry><name>Jacob Ruppert Distributing Plant</name><ref target="JacoRup">OS 5-E7</ref></indexentry>
+<indexentry><name>Jacobs residence</name><ref target="JacoRes">OS 5-E7</ref></indexentry>
+<indexentry><name>Jay-Thorpe, Inc.</name><ref target="Jay">OS 1-A5</ref></indexentry>
+<indexentry><name>Johns-Manville building</name><ref target="John">OS 6-F3</ref></indexentry>
+<indexentry><name>Kahn and Feldman</name><ref target="Kahn">OS 1-A6</ref></indexentry>
+<indexentry><name>Kahn residence (Elmsford, NY)</name><ref target="KahnElm">OS 3-E1</ref></indexentry>
+<indexentry><name>Kahn residence (New York)</name><ref target="KahnNY">OS 3-E1</ref></indexentry>
+<indexentry><name>Karpen residence (New Rochelle, NY)</name><ref target="Karp">OS 2-C4</ref></indexentry>
+<indexentry><name>Kohler Company building</name><ref target="Kohl">OS 6-F3</ref></indexentry>
+<indexentry><name>Kolman residence (New York, NY)</name><ref target="Kolm">OS 2-C7</ref></indexentry>
+<indexentry><name>Kridel residence (New York)</name><ref target="Krid">OS 4-E3</ref></indexentry>
+<indexentry><name>L. P. Hollander and Co.</name><ref target="Holl">OS 5-E10</ref></indexentry>
+<indexentry><name>Lefcourt Clothing Center</name><ref target="LefcClo">OS 2-A9</ref></indexentry>
+<indexentry><name>Lefcourt Empire Building</name><ref target="LefcEmp">OS 1-A2</ref></indexentry>
+<indexentry><name>Lefcourt Madison Building</name><ref target="LefcMad">OS 1-A2</ref></indexentry>
+<indexentry><name>Lefcourt State building</name><ref target="Lefc">OS 2-A8</ref></indexentry>
+<indexentry><name>Lehn and Fink</name><ref target="Lehn">OS 1-A6</ref></indexentry>
+<indexentry><name>Leron, Inc.</name><ref target="Lero">OS 4-E4</ref></indexentry>
+<indexentry><name>Lexington Ave. and 57th St., southeast corner</name><ref target="SELex-57">OS 5-E10</ref></indexentry>
+<indexentry><name>Lexington Park Project</name><ref target="Lexi">OS 5-E7</ref></indexentry>
+<indexentry><name>Liebman residence</name><ref target="Lieb">OS 2-C6</ref></indexentry>
+<indexentry><name>Longchamps Restaurant</name><ref target="Long">OS 5-E10</ref></indexentry>
+<indexentry><name>Madison Ave. and 49th St, southwest corner</name><ref target="SWMad-49">OS 2-A8</ref></indexentry>
+<indexentry><name>Maillard's (Chicago)</name><ref target="Mail">OS 3-E2</ref></indexentry>
+<indexentry><name>Marshall residence (New York)</name><ref target="Mars">OS 5-E10</ref></indexentry>
+<indexentry><name>Mausoleums</name><ref target="Maus">OS 5-E10</ref></indexentry>
+<indexentry><name>Merit Hosiery Co.</name><ref target="Meri">OS 1-A6</ref></indexentry>
+<indexentry><name>Millinery Center building (New York)</name><ref target="Mill">OS 5-E9</ref></indexentry>
+<indexentry><name>Montefiore home</name><ref target="Mont">OS 3-D1</ref></indexentry>
+<indexentry><name>Morgenthau residence (New Jersey)</name><ref target="Morg">OS 5-E10</ref></indexentry>
+<indexentry><name>Morgenthau residence (New York)</name><ref target="MorgNY">OS 5-E10</ref></indexentry>
+<indexentry><name>N.Y. Furniture Exchange</name><ref target="NYFurn">OS 1-A2</ref></indexentry>
+<indexentry><name>National Urban League</name><ref target="Nati">OS 3-D1</ref></indexentry>
+<indexentry><name>New York City Department of Sanitation</name><ref target="Sani">OS 6-F3</ref></indexentry>
+<indexentry><name>New York City Garage and Air Raid Shelter</name><ref target="New">OS 3-D1</ref></indexentry>
+<indexentry><name>Paramount Annex</name><ref target="Para">OS 5-E10</ref></indexentry>
+<indexentry><name>Parents' Magazine office</name><ref target="Pare">OS 5-E9</ref></indexentry>
+<indexentry><name>Park-Murray Corporation</name><ref target="Park">OS 5-E9</ref></indexentry>
+<indexentry><name>Pinaud building</name><ref target="Pina">OS 1-A6</ref></indexentry>
+<indexentry><name>Pix Theatre (Longchamps)</name><ref target="Pix">OS 5-E10</ref></indexentry>
+<indexentry><name>Plaut residence (Elmsford, NY)</name><ref target="Plau">OS 2-C4</ref></indexentry>
+<indexentry><name>Preliminary sketches</name><ref target="Prel">OS 7</ref></indexentry>
+<indexentry><name>Quaker Ridge Golf Club</name><ref target="Quak">OS 4-E5</ref></indexentry>
+<indexentry><name>Reynolds Bar (Georgia)</name><ref target="Reyn">OS 4-E5</ref></indexentry>
+<indexentry><name>Richard Hudnut</name><ref target="Rich">OS 4-E6</ref></indexentry>
+<indexentry><name>Riesenfeld residence (New York)</name><ref target="Ries">OS 3-E1</ref></indexentry>
+<indexentry><name>Rose residence (New York)</name><ref target="Rose">OS 3-C12</ref></indexentry>
+<indexentry><name>Rothschild, Dr. Marcus A.  office</name><ref target="Roth">OS 2-C7</ref></indexentry>
+<indexentry><name>Ruben building</name><ref target="Rube">OS 1-A3</ref></indexentry>
+<indexentry><name>Satenstein residence (New York)</name><ref target="Sate">OS 5-E7</ref></indexentry>
+<indexentry><name>Schiff Pavilion, Montefiore home</name><ref target="Schi">OS 3-D1</ref></indexentry>
+<indexentry><name>Scholle residence</name><ref target="Scho">OS 4-E5</ref></indexentry>
+<indexentry><name>Schweizer residence (New York)</name><ref target="Schwe">OS 3-E1</ref></indexentry>
+<indexentry><name>Shearith-Israel Synagogue</name><ref target="Shea">OS 4-E6</ref></indexentry>
+<indexentry><name>Shelton Looms showroom</name><ref target="Shel">OS 6-F3</ref></indexentry>
+<indexentry><name>Shop of Hazel Kolman, Inc.</name><ref target="Shop">OS 1-A5</ref></indexentry>
+<indexentry><name>Sidney Blumenthal and Company</name><ref target="Sidn">OS 6-F3</ref></indexentry>
+<indexentry><name>Spiegelberg residence (New York)</name><ref target="Spie">OS 5-E10</ref></indexentry>
+<indexentry><name>Stauffer Chemical</name><ref target="Stau">OS 5-E10</ref></indexentry>
+<indexentry><name>Steiger-Vedder Co,</name><ref target="Stei">OS 1-A5</ref></indexentry>
+<indexentry><name>Strauss Mausoleum</name><ref target="Stra">OS 6-F3</ref></indexentry>
+<indexentry><name>Tishman residence</name><ref target="Tish">OS 2-C6</ref></indexentry>
+<indexentry><name>U.G.S. Project</name><ref target="UGSP">OS 3-D1</ref></indexentry>
+<indexentry><name>U.S. Appraisers Stores</name><ref target="Appr">OS 2-A8</ref></indexentry>
+<indexentry><name>USO buildings</name><ref target="USO">OS 3-D1</ref></indexentry>
+<indexentry><name>Van Cleef and Arpels, Inc.</name><ref target="Van">OS 4-E4</ref></indexentry>
+<indexentry><name>Voice of America building</name><ref target="Voic">OS 4-E4</ref></indexentry>
+<indexentry><name>War housing project (Rome, NY)</name><ref target="War">OS 5-E7</ref></indexentry>
+<indexentry><name>Yardley and Co., Ltd. showroom</name><ref target="Yard">OS 6-F3</ref></indexentry>
+<indexentry><name>Younker, Herman residence (Elmsford, NY)</name><ref target="Herm">OS 3-E1</ref></indexentry>
+<indexentry><name>Younker, Ira residence (Elmsford, NY)</name><ref target="Ira">OS 3-E1</ref></indexentry>
+
+</index>
+      </dsc>
+   </archdesc>
+</ead>

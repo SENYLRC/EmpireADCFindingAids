@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.9, 7/18/2007--><!-- Changed entity files to txt rather than xml, don't suppose it matters which they are (?) -->
+
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="clemens_c" mainagencycode="NSyU">clemens_c</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Cyril Clemens Papers</titleproper>
+        <subtitle>An  inventory of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">KL</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2002-02">Feb 2002</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+            
+        
+        <date normal="2007-12">4 Dec 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>18 Jun 2012 - LCSH updates (MRC)</item>
+        <item>13 Nov 2017 - Adds incorporated (PRB)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Clemens, Cyril, 1902-1999.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Cyril Clemens Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1927/1982" type="inclusive">1927-1982</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>1.75 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, writings and memorabilia of the American author and Twain biographer.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2578779</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Cyril Coniston Clemens was born in in St. Louis, Missouri, on July 14, 1902.  After attending Canterbury School in New Milford, Connecticut, he continued his education at St. Louis University High School, attended Georgetown University, and received his B.A.. and M.A. degrees from Washington University (St. Louis). He married Nan B. Shallcross on October 8, 1933.  He was a distant cousin of  Samuel Langhorn Clemens and spent his life researching, writing about, and otherwise promoting his famous cousin. A family inheritance enabled him to devote time to these pursuits, including offering a life membership in the International Mark Twain Society, which he founded in 1930, to hundreds of important individuals. He also founded and edited the Mark Twain Quarterly, 1936-1982. His writing include biographies of Twain and Truman and short sketches of famous authors and politicians, including George Bernard Shaw, A.E. Housman, Mussolini, Sir Robert Walpole, and John Galsworthy.  He died May 16, 1999.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Cyril Clemens Papers</emph> contain correspondence, writings, and
+        memorabila. </p>
+      <p><emph render="bold">Correspondence</emph> includes incoming and outgoing; correspondents
+        include authors (Willa Cather, Will Cuppy, George Bernard Shaw), governors (J.P. Coleman of
+        Mississippi, Orval E. Faubus of Arkansas, Luther H. Hodges of North Carolina, William G.
+        Stratton of Illinois), congressmen (Harry Byrd, Thomas J. Dodd, Jacob Javits, John F.
+        Kennedy, Herman Talmadge), and foreign dignitaries (David Ben Gurion, Francisco Franco,
+        Feldmarschall Erich von Manstein, Austrian Chancellor Julius Raab, Prime Minister of
+        Southern Rhodesia Sir Edgar Whitehead). An <ref target="aic">alphabetical list of
+          correspondents (incoming only) </ref>may be found at the end of this finding aid. </p>
+      <p><emph render="bold">Writings</emph> includes typescript manuscripts of articles, books, and
+        essays, many on Mark Twain, as well as diaries and commonplace books covering more than ten
+        years, printed material, and production records for three Twain projects.</p>
+      <p>
+        <emph render="bold">Memorabilia</emph> contains miscellaneous materials about, Printed
+        material, Scrapbook of newspaper reviews, and Miscellany (Box 4, 4 Folders)</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Correspondence is divided into incoming and outgoing; incoming correspondence is arranged alphabetically by correspondent (Box 1, Folders 1-4) while outgoing correspondence is arranged alphabetically by recipient (Box 1, Folder 5).  Writings: Manuscripts are arranged alphabetically by title   Writings: Diaries/Commonplace Books are arranged chronologically.  Writings: Printed Materials and Writings: Production Records are arranged alphabetically by title.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+<subject encodinganalog="650" source="local">Literature -- American Poetry</subject><persname encodinganalog="600" source="lcnaf">Clemens, Cyril, 1902-1999.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh"> Authors, American -- 19th century.</subject>
+      <subject encodinganalog="650" source="lcsh"> Authors, American -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh"> Authors, British -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Biographers -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Biography -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh"> Twain, Mark, 1835-1910 -- Family.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Articles.</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Diaries.</genreform>
+      <genreform encodinganalog="655" source="aat">Essays.</genreform>
+      <genreform encodinganalog="655" source="aat">Galley proofs.</genreform>
+      <genreform encodinganalog="655" source="aat">Manuscripts (document genre)</genreform>
+      <genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+      <persname>Housman, Laurence, 1865-1959.</persname>
+      <persname>Cather, Willa, 1873-1947.</persname>
+      <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Biographers.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Cyril Clemens Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <!--<acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>### (MARC 541 and/or  561)</p>
+    </acqinfo>-->
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Incoming</unittitle>
+          </did>
+          <c03 level="subseries">
+            <did>
+              <unittitle>A-C</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <unittitle>D-H</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <unittitle>J-P</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <unittitle>R-Y</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Outgoing</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Bush, — ; Porter, Katherine Anne; Williams, Florence</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Writings</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Manuscripts</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>A-D</unittitle>
+              <container type="Box">1</container>
+            </did>
+            <scopecontent>
+              <p>"Albert Einstein and Some Letters," 6p.  Typescript
+
+                
+                <lb/>"An American Philosopher in Exile: George Santayana,"  9p.  Typescript
+
+                
+                <lb/>"Chapter [?]:  The Name and Nature of Poetry,"11p.  Typescript
+
+                
+                <lb/>"Chapter Nine: Housman and Fellow Authors," 12p.  Typescript (incomplete)
+
+                
+                <lb/>"Charles Waterton, Neglected Catholic," 8p. Typescript
+
+                
+                <lb/>"A Chat with Sir Hugh Walpole," 9p.  Typescript (carbon)
+
+                
+                <lb/>"Colonel Charles Erskine Scott Wood," 6p.  Typescript
+
+                
+                <lb/>"Cordell Hull, Great Statesman,"  7p.
+
+                
+                <lb/>"Cyril Joad: Wisecracking Philosopher,"  7p
+
+                
+                <lb/>"David R. Atchison: President of the United States,"  3p.  Typescript
+</p>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>E-L</unittitle>
+              <container type="Box">1</container>
+            </did>
+            <scopecontent>
+              <p>"Fanny Hurst,"  8p.  Typescript
+
+                
+                <lb/>"George Bernard Shaw,"  [6]p.  Typescript and ms.
+
+                
+                <lb/>"George Washington as a Sitter,"  5p.   Typescript
+
+                
+                <lb/>"Granite or Putty: Coolidge's 'I do not choose to run . . .' ", 20p.  Typescript.  With Athern P. Daggett.
+
+                
+                <lb/>"A Half Hour with Giovanni Papini,"  9p.  Typescript
+
+                
+                <lb/>"History of American Literature"  73p.  ms
+
+                
+                <lb/>"Housman and Fellow Authors."  12p.  Typescript (incomplete)
+
+                
+                <lb/>"How Mussolini Made His First 'Y',"  5p.  Typescript
+
+                
+                <lb/>"Impressions of Sinclair Lewis with Some Letters,"  5p.  Typescript
+
+                
+                <lb/>"Letters from Humorists Will Cuppy and Opie Read,'  12p.  Typescript (carbon)
+
+                
+                <lb/>"Lord Aston's American Visit: June-August, 1853,"  7p.  Typescript
+</p>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>M</unittitle>
+              <container type="Box">1</container>
+            </did>
+            <scopecontent>
+              <p>"Mark Twain and Bernard Shaw,"  4p.  Typescript (carbon)
+
+                
+                <lb/>"Mark Twain and His Favorite Authors,"  8p.  Typescript
+                
+                <lb/>
+                <emph render="italic">Mark Twain for Young People</emph>, "Chapter Six," 6p.  Typescript
+
+                
+                <lb/>
+                <emph render="italic">Mark Twain for Young People</emph>, "Chapter Seven,"  6p.   Typescript
+ 
+                
+                <lb/>"Mark Twain's Private Audience with the Emperor of Austria," 2p.  Typescript (carbon)
+
+                
+                <lb/>"My Friend Ben Ames Williams," 6p.  Typescript, with corrections by Mrs Williams.
+
+                
+                <lb/>"My Visit to the Noted Novelist John Galsworthy at Hampstead,"  8p.  Typescript
+
+                
+                <lb/>"My Visit with G.K. Chesterton," 10p.  Typescript
+
+                
+                <lb/>"My Visit with H.G. Wells,"  8p.  Typescript
+</p>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>N-S</unittitle>
+              <container type="Box">1</container>
+            </did>
+            <scopecontent>
+              <p>"Name and Nature of Poetry."  11p.  Typescript
+
+                
+                <lb/>"The New Shakespeare Discovery,"4p.  Typescript
+
+                
+                <lb/>"The Prince of French Biographers: Andre Maurois,"   8p.
+                
+                <lb/>Typescript
+Quotation from Twain's  
+                
+                <emph render="italic">Mark Twain Wit and Wisdom</emph>.  1p.  Typescript
+
+                
+                <lb/>"Raphael Sabatini,"  9p.  Typescript, with emendations by Sabatini.
+
+                
+                <lb/>"Senator's Job Was not for Mark Twain,"  3p.  Typescript (carbon)
+
+                
+                <lb/>"Sir Anthony Hope Hawkins,"  7p.  Typescript
+
+                
+                <lb/>"Some Sigrid Undset Letters,"   8p.  Typescript (carbon)
+</p>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>T-Z</unittitle>
+              <container type="Box">1</container>
+            </did>
+            <scopecontent>
+              <p>"Tea with John Drinkwater," 5p. Typesecript
+
+                
+                <lb/>"Thomas James Wise; Master Literary Forger,"  7p.  Typescript
+
+                
+                <lb/>"A Visit to Augustine Birrell," 9p.  Tyepscript
+
+                
+                <lb/>"A Visit to E.F. Benson at Rye,"  8p.  Typescript
+
+                
+                <lb/>"A Visit to Sir Anthony Hope Hawkins," 7p.  Typescript
+
+                
+                <lb/>"Was Mark Twain a Dramatists?"  9p.  Typescript
+
+                
+                <lb/>"Young Mark Twain"  pp.1-132, 142-144.  Typescript
+</p>
+            </scopecontent>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Diaries/commonplace books</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" normal="1925-09/1926-06">2 September 1925 to 2 June 1926
+</unitdate>
+              </unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" normal="1927-11/1939-08">8 November 1927 to 19 August 1939?</unitdate>
+              </unittitle>
+              <physdesc>
+                <extent>7 folders</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" normal="1952-12/1959-08">8 December 1952 – 28 August 1959, </unitdate>
+                <unitdate type="inclusive" normal="1962-07-05">5 July 1962
+</unitdate>
+              </unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Printed material</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Articles from 
+                
+                <emph render="italic">Hobbies</emph> magazine</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Articles from newspapers and miscellaneous magazines</unittitle>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Production records </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Mark Twain Jest Book</emph>
+              </unittitle>
+              <abstract>32p.,  proofs?</abstract>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Mark Twain, the Letter Writer</emph>
+              </unittitle>
+              <abstract>galley proofs</abstract>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Young Sam Clemens"</unittitle>
+              <abstract>partial proofs with corrections</abstract>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Memorabilia</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Printed material</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle><emph render="italic">Mark Twain Journal</emph></unittitle>
+              <unitdate normal="1954">1954,</unitdate>
+              <unitdate normal="1958">1958</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle><emph render="italic">Mark Twain Quarterly</emph></unittitle>
+              <unitdate normal="1949">1949</unitdate>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous materials about</unittitle>
+              <unitdate normal="1936/1979" type="inclusive">1936-1979, </unitdate>
+              <unitdate normal="1927/1982" type="inclusive">undated</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Scrapbook of newspaper reviews</unittitle>
+              <unitdate normal="1933/1937" type="inclusive">1933-1937</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellany</unittitle>
+          <container type="Box">4</container></did>
+        </c02>
+      </c01>
+      <c01 id="aic">
+        <did>
+          <unittitle>Alphabetical list of correspondents (incoming only)</unittitle>
+        </did>
+        <odd>
+          <p>* preceding name = respondent is not addressee</p><p>Anonymous. Note and poem about Twain’s trip to Australia. <lb/> Anslinger, H.J. <lb/> Armstrong,
+            Terence Ian Fytton - see Gawsworth, John. <lb/> Aronson, James <lb/> Badt, Milton B. [3]
+            <lb/> *Balaguer, Joaquín [President, Dominican Republic] <lb/> Barclay, Julius P.
+            [Stanford University Libraries] <lb/> Barr, Stringfellow <lb/> Batson, Eric J. <lb/>
+            Beebe, Lucius <lb/> Bell, Neil <lb/> Bello, Francisco R. [Argentine Embassy minister]
+            <lb/> *Ben Gurion, David. [Office of the Prime Minister, Michael Nir, secretary] <lb/>
+            Benson, George S. <lb/> Bishop, Jim <lb/> Blomberg, Louise Martha von, Baroness <lb/>
+            Boyden, Frank L. <lb/> Branch, E.M. <lb/> Briggs, Frank J. <lb/> Brown, Rollo Walter
+            <lb/> Brummall, H.H. [partial] <lb/> Bullitt, William C. <lb/> Bunche, J. Ralph <lb/>
+            Byrd, Harry Flood [Senator, VA] <lb/> Castro, Adolphe de [2] <lb/> Cather, Willa. 8
+            letters <lb/> Chennault, Anna <lb/> Chevillou, André <lb/> *Chile. Office of the
+            President. <lb/> Christopher, George H. <lb/> Clemens, Erwin <lb/> Clemens, Henry <lb/>
+            Clemens, P.L. <lb/> Coleman, J.P. [Governor of Mississippi] <lb/> Cornish, Dudley T.
+            <lb/> Cramer, H. Leslie <lb/> Cuppy, Will <lb/> Curtis, Carl T. [Senator, NE] <lb/>
+            Dahl, Walter M <lb/> *DeGaulle, Charles <lb/> Delaplaine, Edward S. <lb/> Dodd, Thomas
+            J. [Senator, CT] <lb/> Duke of Somerset <lb/> Earl of Woolton <lb/> Faubus, Orval E.
+            [Governor, AK] <lb/> *Franco, Generalísimo of Spain <lb/> Fulbright, J.W. [Senator, AK]
+            <lb/> Garcia, Carlos [President of the Philippines] <lb/> Gawsworth, John [pseud. of
+            Terence Ian Fytton Armstrong] <lb/> Gewelt, Oskar <lb/> Gibbs, Philip <lb/> Glenn, Frank
+            <lb/> Green, Howard [Sec. of State for External Affairs, Canada] <lb/> Gregory, Ralph
+            <lb/> Hagedorn, Hermann <lb/> Halleck, Charles A. [Rep., IN] <lb/> Halliburton, Maurine
+            <lb/> Handley-Taylor, Geoffrey <lb/> Harlan, John M. [Supreme Court Justice] <lb/>
+            Harnsberger, Caroline Thomas <lb/>Hand, Norma [6]<lb/> Hazen, David W. <lb/> Hersey,
+            John [copy] <lb/> Hill, Mrs. Edith F. [Louisiana State University Library] <lb/> Hodges,
+            Luther H. [Governor, North Carolina] <lb/> Housman, Laurence. 23 letters <lb/> Hummel,
+            Don [Mayor of Tucson] <lb/> Huxley, Sir Julian <lb/> Javits, Jacob K. [Senator, NY]
+            <lb/> Jenkins, Walter <lb/> Johnson, Edgar <lb/> Johnson, Lady Bird <lb/> Johnson,
+            Lyndon B. [Incl. photograph] <lb/> Kennedy, John F. [While a senator from MA] <lb/>
+            Kerner, Otto [Governor, IL] <lb/> Knapp, Paul C. <lb/> Knecht, Karl Kae. <lb/> Krauss,
+            Bernard <lb/> LaFarge, John <lb/> Lewis, John L. <lb/> *Lloyd, Selwyn [Chancellor of the
+            Exchequer, UK] <lb/> Mansfield, Mike [Senator, MT] <lb/> Manstein, Erich von
+            [Feldmarschall] <lb/> Marshall, Bruce <lb/> Martin Luther Universität, Halle <lb/>
+            Maugham, Robin <lb/> McAnney, B.O. <lb/> Melton, John L. <lb/> Metalious, George <lb/>
+            Miller, J. Gordon <lb/> Miller, Paul <lb/> Moss, John E. [Rep., CA] <lb/> Mottram, Ralph
+            <lb/> Murdock, Marcellus M. <lb/> Newman, Robert P. <lb/> O’Connor, Richard <lb/>
+            Paderevski, Serge <lb/> Paul, W.S. <lb/> Perrett, C.J. <lb/> *Portugal. Presidencia do
+            Conselho [2] <lb/> Purdom, C.B. <lb/> *Raab, Julius [Chancellor of Austria] <lb/> Read,
+            Opie - see Cuppy, Will <lb/> Rogers, Will, Jr. <lb/> Romulo, Carlos Peña <lb/> Ross,
+            Isabel. <lb/> Royce, William Hobart <lb/> Russell, Walter <lb/> Sawyer, Grant [Governor,
+            NV] <lb/> Schaefer, Victor A. [University of Notre Dame] <lb/> Schock, Mrs. William W.
+            <lb/> Schwengel, Fred [Rep., IA] <lb/> Shaw, George Bernard <lb/> Spaatz, Carl <lb/>
+            Sparkman, John [Senator, AK] <lb/> Stratton, Leslie C. <lb/> Stratton, William G.
+            [Governor, IL] <lb/> Strauss, Lewis L. [2] <lb/> Strickler, Davis <lb/> Stritar, Joze
+            <lb/> Talmadge, Herman E. [Senator, GA] <lb/> Teele, Stanley F. <lb/> Thomas, Lowell
+            <lb/> Trohan, Walter <lb/> Uphaus, Willard <lb/> Welch, Helen M. [University of
+            Illinois] <lb/> Wendt, Lloyd <lb/> *Whitehead, Sir Edgar [Prime Minister of Southern
+            Rhodesia] <lb/> Williams, Ethel Carleton <lb/> Young, Robert H. </p>
+        </odd>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

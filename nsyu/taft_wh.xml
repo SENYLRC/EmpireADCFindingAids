@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+
+<ead relatedencoding="MARC21">
+<eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="taft_wh" mainagencycode="NSyU">taft_wh</eadid>
+
+   <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">William Howard Taft Letters</titleproper>
+        <subtitle>An inventory of his
+ letters at Syracuse University</subtitle>
+        <author encodinganalog="Creator">KM</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date calendar="gregorian" era="ce" encodinganalog="Date" normal="1987-10">Oct 1987</date></publicationstmt>
+    </filedesc>
+
+    <profiledesc>
+      <creation>[Derived from Summit]
+       <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+
+    <revisiondesc>
+      <list>
+        <item>
+	  11 Feb 2009 - converted to EAD (LDC)
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Taft, William H. (William Howard), 1857-1930.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">William Howard Taft Letters</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " type="inclusive" normal="1891/1929">1891-1929</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">6 items (SC)</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Papers of the U. S. President. Outgoing correspondence concerning recommendations for appointments; the raising of a native militia and the use of American engineers in the Philippines; and devising a plan for a government in Manila.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">149283</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>William Howard Taft (1857-1930) was an American politician who served as U.S. President (1908-1912) and Chief Justitce of the Supreme Court (1921-1930).</p>
+<chronlist>
+<chronitem><date>1857</date><event>Born in Cincinnati, Ohio on September 15th</event></chronitem>
+<chronitem><date>1878</date><event>Graduated from Yale University</event></chronitem>
+<chronitem><date>1880</date><event>Graduated from Cincinnati Law School</event></chronitem>
+<chronitem><date>1880-1892</date><event>Solicitor General under President Benjamin Harrison</event></chronitem>
+<chronitem><date>1886</date><event>Married Helen Herron on June 19th</event></chronitem>
+<chronitem><date>1892-1900</date><event>Judge for the Sixth Circuit Court of Appeals</event></chronitem>
+<chronitem><date>1900-1904</date><event>Chief Administrator of the Philippines</event></chronitem>
+<chronitem><date>1904-1908</date><event>Secretary of War under President Theodore Roosevelt</event></chronitem>
+<chronitem><date>1908-1912</date><event>President of the United States</event></chronitem>
+<chronitem><date>1921-1930</date><event>Chief Justice of the Supreme Court (nominated by President Warren G. Harding)</event></chronitem>
+<chronitem><date>1930</date><event>Died on March 8th; first U.S. President to be buried in Arlington National Cemetary</event></chronitem>
+</chronlist>
+    </bioghist>
+
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">William Howard Taft Letters</emph> consist of six outgoing items of Correspondence written between 1891 and 1929.  The three items to John Proctor Clarke concern recommendations for appointments.  There are also two letters to Lyman Kennon relating to issues concerning the Philippines, including the raising of a native militia and the use of American engineers for construction purposes.  In addition is a letter to Henry MacFarland discussing a plan for the government of Manila:
+<blockquote><p>The city is surrounded with such peculiar conditions that we are convinced that we must make it a city of the Archipelago and treat it as Washington has been treated and not as part of a province.  In the government of such a city as this the natural tendency to corruption of the Tagalog and Filipino politician would make a popular government here result in a terrible condition of things.</p></blockquote></p>
+    </scopecontent>
+
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The collection contains one series, Correspondence, which is arranged alphabetically by recipient.</p>
+    </arrangement>
+
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+        <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+          <persname encodinganalog="600" source="lcnaf">Taft, William H. (William Howard), 1857-1930 -- Correspondence.</persname>
+         <subject encodinganalog="650" source="lcsh">Presidents -- United States.</subject>         <subject encodinganalog="650" source="lcsh">United States -- Politicians and government -- 1865-1933.</subject>
+         <geogname encodinganalog="651" source="lcsh">United States -- Foreign relations -- Philippines.</geogname>
+         <genreform encodinganalog="655" source="aat">Letters (correspondence)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Politicians.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Presidents.</occupation>
+    </controlaccess>
+
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>William Howard Taft Letters,<lb/>&su_name;</p>
+    </prefercite>
+
+<dsc type="combined">
+<head>Inventory</head>
+
+<c01 level="series">
+<did><unittitle>Correspondence</unittitle></did>
+
+  <c02><did><unittitle>Clarke, John Proctor</unittitle></did>
+
+    <c03><did><container type="SC">52</container><unittitle><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1891-11-12">12 Nov 1891</unitdate></unittitle></did>
+    </c03>
+    <c03><did><container type="SC">52</container><unittitle><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1904-05-10">10 May 1904</unitdate></unittitle></did>
+    </c03>
+    <c03><did><container type="SC">52</container><unittitle><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1929-11-23">23 Feb 1929</unitdate></unittitle></did>
+    </c03>
+  </c02>
+
+  <c02><did><unittitle>Kennon, Lyman Walter Vere</unittitle></did>
+
+    <c03><did><container type="SC">52</container><unittitle><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1900">1900</unitdate></unittitle></did>
+    </c03>
+    <c03><did><container type="SC">52</container><unittitle><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1902">1902</unitdate></unittitle></did>
+    </c03>
+  </c02>
+
+  <c02><did><unittitle>MacFarland, Henry Brown Floyd</unittitle></did>
+
+    <c03><did><container type="SC">52</container><unittitle><unitdate type="inclusive" calendar="gregorian" era="ce" normal="1901-05-19">19 May 1901</unitdate></unittitle></did>
+    </c03>
+  </c02>
+
+</c01>
+
+</dsc>
+
+  </archdesc>
+</ead>

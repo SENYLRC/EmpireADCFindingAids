@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="morton_fam">morton_fam</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Morton Family Papers</titleproper>
+            <subtitle>A description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-11-17" encodinganalog="Date">17 Nov 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-11-17">17 Nov 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>15 Sep 2020 - processed (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <famname encodinganalog="100">Morton family.</famname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Morton Family Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1828/1909" type="inclusive" label="Inclusive Dates: ">1828-1909</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, financial papers.  Entire 
+		 collection is photocopies, no originals.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3178219</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Based on information in the collection and a moderate amount of online research, 
+	  this material appears to be connected with the family of Gavin  (1771-1830) and Janet 
+	  (1780-1863) Morton of Darvel in Ayrshire, Scotland.   Gavin was a weaver, and the 
+	  Morton family in general appears to have been in that trade for many years, as the name 
+	  of Morton appears in the history of textiles in Darvel and nearby Kilmarnock (see for 
+	  example the records of <extref href="https://archiveshub.jisc.ac.uk/search/archives/d7af3384-8448-3021-9dcb-9cbc7e523669">Blackwood, Morton &amp; Sons</extref>).</p>
+	  
+	  <p>Gavin and Janet had eight children: William, John, James, Gavin, Thomas, Robert, 
+	  Marion, and Janet.  The five youngest Mortons emigrated to the United States during 
+	  the mid-1800s and at least three of them settled in the Central New York region.  
+	  Gavin (wife Janet) and Marion (husband John Findlay) settled in Skaneateles, New York.   
+	  Thomas and his wife Margaret (Mitchell) settled in Mottville, New York; he eventually 
+	  became the owner of at least two woollen mills.</p>
+	  
+	  <p>Agnes Mitchell Armitage Thompson (1822-1893) was also from Darvel.  She marrried 
+	  twice and had six children. the first two of whom were born in Mexico where her first 
+	  husband, David Armitage, was involved in a woollen mill venture and later in silver 
+	  mining.  Her connection with the Morton family cannot be established for certain; a 
+	  reasonable guess is that she was the sister of Margaret Mitchell, Thomas Morton's wife.</p>
+	  
+	  <p>[Sources: <extref href="https://www.geni.com/people/Gavin-MORTON/6000000040117700032">Gavin Morton</extref> on geni.com; 
+	  <extref href="https://www.findagrave.com/memorial/82892369/agnes-armitage">Agnes Mitchell Armitage</extref>, Find A Grave; 
+	  <extref href="https://archiveshub.jisc.ac.uk/search/archives/d7af3384-8448-3021-9dcb-9cbc7e523669">Records of Blackwood, Morton &amp; Sons Ltd (BMK), carpet manufacturers, Kilmarnock, Scotland</extref>, 
+	  University of Glasgow; "<extref href="https://kihm6.wordpress.com/2020/09/01/the-muddle-of-mills/">The Muddle of Mills</extref>", Kihm Winship]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Morton Family Papers</emph> consists of personal and business material.  The entire collection consists of photocopies.  There are no originals.</p>
+			
+			<p><emph render="bold">Personal material</emph> contains a few pages of genealogical material and several folders of correspondence amongst members of the Morton family in Scotland and America, including siblings William, John, James, Gavin, Thomas, Robert, Marion, and Janet Morton; their parents Gavin and Janet; and their children.  There are also letters from friends and relatives, including Agnes Mitchell Armitage, her father John Mitchell, her second husband Jared Thompson, and her children Albert and Jennie.</p><p>The letters are chatty, consisting mostly of family news, inquiries,  and gossip.      In a letter dated 16 May 1847 from Darvel, John Morton writes: "Dear Brother Robert, our Brother Gaven his wife and family and our sister Janet all sailed for amaruca on the first of april the should be landed with you by this time if all have gone well with them our mother laments there loss veray much as shee is left alone."        In another letter to "Dear Mr. Morton" dated 1 Jan 1853, Cordelia (surname unknown) writes: "I stopt in Oriskany on my way down George was well said he would give me a loom any time that I wanted to go to work but I had rather go back to Skaneateles that is if every thing was right" and later she inquires "How does Martha get along? Has she left her Husband yet?"</p><p>The bulk of the letters are dated from locations in New York, including Mottville,  Throopsville, Whitney's Point, Cazenovia, Ithaca, Utica, and Syracuse.  Outside of New York, there is correspondence from Plattsville and Milwaukee, Wisconsin, and from Kansas City, Missouri.</p><p><emph render="bold">Business records</emph> appear to relate mostly to Thomas Mott's textile businesses, including the Aberdeen Woollen Mills.  It contains accounts payable, accounts receivable, insurance and tax paperwork, and 
+			a small amount of correspondence.</p>
+			
+			
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Both personal and business material are arranged alphabetically by type and, within that, chronologically.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+		<subject encodinganalog="650" source="local">Business and Industry</subject>
+		<subject encodinganalog="650" source="local">New York State</subject>
+		
+		<!-- <persname encodinganalog="600" source="lcnaf">##</persname> -->
+		 <famname encodinganalog="600" source="lcnaf">Morton family.</famname>
+         <!-- <corpname encodinganalog="610" source="lcnaf">##</corpname> -->
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+          <subject encodinganalog="650" source="lcsh">Business enterprises -- New York (State)</subject>
+			 <subject encodinganalog="650" source="lcsh">Scottish Americans.</subject>
+			 <subject encodinganalog="650" source="lcsh">Textiles -- New York (State)</subject> 
+			 <geogname encodinganalog="651" source="lcsh">Scotland -- Emigration and immigration.</geogname>
+			 <geogname encodinganalog="651" source="lcsh">Skaneateles (N.Y.)</geogname> 
+			<genreform encodinganalog="655" source="aat">Accounts.</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>         
+			<genreform encodinganalog="655" source="aat">Financial records.</genreform>
+			<genreform encodinganalog="655" source="aat">Genealogies (histories)</genreform>
+         <!-- <occupation encodinganalog="656" source="lcsh">##</occupation> -->
+         <!--<function encodinganalog="657">##</function>-->
+		 </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Morton Family Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unspecified, 1964.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Personal material</unittitle></did>
+            <c02><did><unittitle>Biographical material</unittitle><abstract>genealogical tables and a tentative family tree, compiled by &scrc_name; staff; in addition to Morton, family names appearing are Benedict, Chapell, Cook, Dyke, England, Fisher, Greene, Horne, Mitchell, Powers, Rhoades, Roberts, Russell, Thomas, Waite, and Walker</abstract><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Correspondence</unittitle><unitdate normal="1828/1901" type="inclusive">1828-1901, </unitdate><unitdate normal="1828/1909" type="inclusive">undated</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            
+         </c01>
+         <c01 level="series"><did><unittitle>Business records</unittitle></did>
+            <c02><did><unittitle>Accounts payable</unittitle><unitdate normal="1850/1901" type="inclusive">1850-1901</unitdate><physdesc><extent>4 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Accounts receivable</unittitle><unitdate normal="1842/1890" type="inclusive">1842-1890, </unitdate><unitdate normal="1828/1909" type="inclusive">undated</unitdate><physdesc><extent>4 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Correspondence</unittitle><unitdate normal="1846/1909" type="inclusive">1846-1909, </unitdate><unitdate normal="1828/1909" type="inclusive">undated</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Insurance (Aetna)</unittitle><unitdate normal="1875/1876" type="inclusive">1875-1876, </unitdate><unitdate normal="1883" type="inclusive">1883</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Taxes</unittitle><unitdate normal="1863/1865" type="inclusive">1863-1865, </unitdate><unitdate normal="1872/1873" type="inclusive">1872-1873</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

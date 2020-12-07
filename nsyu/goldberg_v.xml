@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 --><!-- Added Belfer as container type -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="goldberg_v" mainagencycode="NSyU">goldberg_v</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Vicki Goldberg Research Files</titleproper>
+        <subtitle>A description of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2010-05-03">3 May 2010</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+        
+        <date normal="2010-05-03">3 May 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>11 Sep 2015 - audiorecordings added (MRC)</item><item>24 Sep 2019  - index added (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Goldberg, Vicki.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Vicki Goldberg Research Files</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1970/1992" type="inclusive">before 1992</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>24 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Research files on American photography and photographers, including Margaret Bourke-White.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2750916</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Vicki Goldberg is an American photography critic and author.  Among her works is a biography of noted American photographer Margaret Bourke-White.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Vicki Goldberg Research Files</emph> consist of Goldberg's research files on American photography and photographers.  Included in the collection are several boxes relating to noted photographer Margaret Bourke-White and a number of audiorecordings of interviews.  An <ref target="alpha-index">alphabetic index</ref> to the tapes is provided at the end of this finding aid.  </p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The collection is unprocessed and remains in original order.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Biography</subject>
+      <subject encodinganalog="650" source="local">Photography</subject>
+      <persname encodinganalog="600" source="lcnaf">Bourke-White, Margaret, 1904-1971 -- Biography.</persname>
+      <persname encodinganalog="600" source="lcnaf">Goldberg, Vicki.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Photographers -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Photographic critics -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Photography -- United States.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Audiocassettes.</genreform>
+      <genreform encodinganalog="655" source="aat">Research notes.</genreform>
+      <genreform encodinganalog="655" source="aat">Sound recordings.</genreform><occupation encodinganalog="656" source="lcsh">Biographers.</occupation>
+      
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+	  <p>Access to recordings requires advance notice to produce a use copy.</p>
+      
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Vicki Goldberg Research Files, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Vicki Goldberg</persname>, 2000.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+<c01 level="series"><did><unittitle>Interviews</unittitle></did><scopecontent><p>All interviews are audiorecordings, on cassette.  Interviews are listed in order by Ms Goldberg's original identification number, starting with VG 001.  An <ref target="alpha-index">alphabetic index</ref> is provided at the end of this finding aid.  Identification numbers assigned by &scrc_name; are given in parentheses, e.g. "(ID# goldberg_v_001)".</p></scopecontent><accessrestrict><p>Access to recordings requires advance notice to produce a use copy.</p></accessrestrict>
+   <c02 id="vg001"><did><unittitle>VG 001 Ansel Adams 1 of 1</unittitle><unitid>goldberg_v_001</unitid><unitdate normal="1982-09-02" type="inclusive">09/02/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg002"><did><unittitle>VG 002 Michael J. Arlen 2 of 2</unittitle><unitid>goldberg_v_002</unitid><unitdate normal="1982-03-03" type="inclusive">03/03/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg003"><did><unittitle>VG 003 Eve Arnold  2 of 2</unittitle><unitid>goldberg_v_003</unitid><abstract>mostly MBW</abstract><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg004"><did><unittitle>VG 004 Hugo Block 2 Sides</unittitle><unitid>goldberg_v_004</unitid><unitdate normal="1982-05-14" type="inclusive">05/14/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg005"><did><unittitle>VG 005 Sylvia Bothe 1 of 1</unittitle><unitid>goldberg_v_005</unitid><abstract>phone interview</abstract><unitdate normal="1984-02-06" type="inclusive">02/06/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg006"><did><unittitle>VG 006 Margaret Bourke-White Interview</unittitle><unitid>goldberg_v_006</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg007"><did><unittitle>VG 007 MBW Town Hall Interview</unittitle><unitid>goldberg_v_007</unitid><unitdate normal="1953-01-23" type="inclusive">01/23/1953</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg008"><did><unittitle>VG 008 Bourke-White Talk</unittitle><unitid>goldberg_v_008</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg009"><did><unittitle>VG 009 Francis (Hank) Brennan 1 of 1</unittitle><unitid>goldberg_v_009</unitid><unitdate normal="1982-07-26" type="inclusive">07/26/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg010"><did><unittitle>VG 010 John Bryson 2 of 2</unittitle><unitid>goldberg_v_010</unitid><unitdate normal="1983-06-24" type="inclusive">06/24/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg011"><did><unittitle>VG 011 Erskine Caldwell 1 of 1</unittitle><unitid>goldberg_v_011</unitid><unitdate normal="1982-12-02" type="inclusive">12/02/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg011a"><did><unittitle>VG 011a Erskine Caldwell</unittitle><unitid>goldberg_v_012</unitid><unitdate normal="1983-01-20" type="inclusive">01/20/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg012"><did><unittitle>VG 012 Cornell Capa (and also Ruth Lester)</unittitle><unitid>goldberg_v_013</unitid><unitdate normal="1982-02-04" type="inclusive">02/04/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg013"><did><unittitle>VG 013 Henry Cassidy 2 of 2</unittitle><unitid>goldberg_v_014</unitid><unitdate normal="1983-01-10" type="inclusive">01/10/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg014"><did><unittitle>VG 014 John Chanberlain</unittitle><unitid>goldberg_v_015</unitid><unitdate normal="1983-01" type="inclusive">01/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg015"><did><unittitle>VG 015 Noel Clark 1 of 1</unittitle><unitid>goldberg_v_016</unitid><unitdate normal="1982-08-19" type="inclusive">08/19/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg016"><did><unittitle>VG 016 Dabney Caldwell Side 1 of 1</unittitle><unitid>goldberg_v_017</unitid><unitdate normal="1982-05-14" type="inclusive">05/14/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg017"><did><unittitle>VG 017 Side 1 R. H. Connolly interview Florence and Joe C. Re: Goldberg letter</unittitle><unitid>goldberg_v_018</unitid><unitdate normal="1982-01-23" type="inclusive">01/23/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg018"><did><unittitle>VG 018 David Cort 2 of 2</unittitle><unitid>goldberg_v_019</unitid><unitdate normal="1982-10-26" type="inclusive">10/26/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg019"><did><unittitle>VG 019 Harold Costain 1 of 1</unittitle><unitid>goldberg_v_020</unitid><abstract>phone interview</abstract><unitdate normal="1984-02-06" type="inclusive">02/06/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg020"><did><unittitle>VG 020 Norman Cousins 1 and 2 of 3</unittitle><unitid>goldberg_v_021</unitid><unitdate normal="1982-04-16" type="inclusive">04/16/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg021"><did><unittitle>VG 021 Norman Cousins and Ellen Cousins Side 3 of 3</unittitle><unitid>goldberg_v_022</unitid><unitdate normal="1982-04-17" type="inclusive">04/17/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg022"><did><unittitle>VG 022 Kathryn Cravens 1 of 1</unittitle><unitid>goldberg_v_023</unitid><abstract>phone interview</abstract><unitdate normal="1983-12-07" type="inclusive">12/07/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg023"><did><unittitle>VG 023 Betty Cronander Tape 1 of 3</unittitle><unitid>goldberg_v_024</unitid><unitdate normal="1980-01-17" type="inclusive">01/17/1980</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg024"><did><unittitle>VG 024 Betty Cronander 2nd Tape</unittitle><unitid>goldberg_v_025</unitid><unitdate normal="1983-01-17" type="inclusive">01/17/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg025"><did><unittitle>VG 025 Betty Cronander 3rd of tape 3</unittitle><unitid>goldberg_v_026</unitid><unitdate normal="1983-01-17" type="inclusive">01/17/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg026"><did><unittitle>VG 026 Edward P. Curtis 1 of 1</unittitle><unitid>goldberg_v_027</unitid><unitdate normal="1984-05-11" type="inclusive">05/11/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg028a"><did><unittitle>VG 028 Helen Caldwell Cushman 1st of 2 tapes</unittitle><unitid>goldberg_v_028</unitid><unitdate normal="1983-01-20" type="inclusive">01/20/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg028b"><did><unittitle>VG 028 Helen Cushman 2nd tape</unittitle><unitid>goldberg_v_029</unitid><unitdate normal="1983-01-20" type="inclusive">01/20/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg029"><did><unittitle>VG 029 Roselle Davis</unittitle><unitid>goldberg_v_030</unitid><unitdate normal="1983-02-28" type="inclusive">02/28/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg030"><did><unittitle>VG 030 Max Desfers 1 of 1</unittitle><unitid>goldberg_v_031</unitid><unitdate normal="1983-07-25" type="inclusive">07/25/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg031"><did><unittitle>VG 031 Maitland Edey 2 of 2</unittitle><unitid>goldberg_v_032</unitid><unitdate normal="1982-12-31" type="inclusive">12/31/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg032"><did><unittitle>VG 032 Eisenstadt</unittitle><unitid>goldberg_v_033</unitid><unitdate normal="1982-01-22" type="inclusive">01/22/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg033"><did><unittitle>VG 033 Robert Elson 2 of 2</unittitle><unitid>goldberg_v_034</unitid><unitdate normal="1982-08-02" type="inclusive">08/02/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg034"><did><unittitle>VG 034 Walter Engel 1 of 1</unittitle><unitid>goldberg_v_035</unitid><unitdate normal="1983-08-22" type="inclusive">08/22/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg035"><did><unittitle>VG 035 JR Eyerman</unittitle><unitid>goldberg_v_036</unitid><unitdate normal="1983-01-21" type="inclusive">01/21/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg035a"><did><unittitle>VG 035a JR Eyerman 2nd tape of 2</unittitle><unitid>goldberg_v_037</unitid><unitdate normal="1983-01-21" type="inclusive">01/21/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg036"><did><unittitle>VG 036 Eyes on Russia MBW Audio of Film Side 1 of 1</unittitle><unitid>goldberg_v_038</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg037"><did><unittitle>VG 037 Richard Fatherley 1 of 1</unittitle><unitid>goldberg_v_039</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg038"><did><unittitle>VG 038 Robert E. Fatherley and Wife 2 of 2</unittitle><unitid>goldberg_v_040</unitid><unitdate normal="1982-12-13" type="inclusive">12/13/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg039"><did><unittitle>VG 039 Bob Fatherley 1 of 1</unittitle><unitid>goldberg_v_041</unitid><unitdate normal="1983-05-03" type="inclusive">05/03/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02 id="vg040"><did><unittitle>VG 040 Clay Felker</unittitle><unitid>goldberg_v_042</unitid><unitdate normal="1982-02-07" type="inclusive">02/07/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg041"><did><unittitle>VG 041 Pel Pollard Finn side 1 of 2</unittitle><unitid>goldberg_v_043</unitid><unitdate normal="1982-05-31" type="inclusive">05/31/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg042"><did><unittitle>VG 042 Alan Fisher 1 of 1</unittitle><unitid>goldberg_v_044</unitid><abstract>phone interview</abstract><unitdate normal="1983-08-22" type="inclusive">08/22/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg043"><did><unittitle>VG 043 Harvey V. Fondiller</unittitle><unitid>goldberg_v_045</unitid><unitdate normal="1983-04-06" type="inclusive">04/06/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg044"><did><unittitle>VG 044 For Women Only Part 1 WSTC Lillian Orman</unittitle><unitid>goldberg_v_046</unitid><unitdate normal="1963-05-10" type="inclusive">05/10/1963</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg045"><did><unittitle>VG 045 Barrett Gallagher</unittitle><unitid>goldberg_v_047</unitid><unitdate normal="1982-09-13" type="inclusive">09/13/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg046"><did><unittitle>VG 046 Violette Gilfillian</unittitle><unitid>goldberg_v_048</unitid><unitdate normal="1983-04-27" type="inclusive">04/27/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg047"><did><unittitle>VG 047 Jean Snow Gold</unittitle><unitid>goldberg_v_049</unitid><unitdate normal="1982-08-28" type="inclusive">08/28/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg048"><did><unittitle>VG 048 Janet Gooding</unittitle><unitid>goldberg_v_050</unitid><unitdate normal="1983-05-19" type="inclusive">05/19/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg049"><did><unittitle>VG 049 Ed. White; Felicia Gossman; Muriel White</unittitle><unitid>goldberg_v_051</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg050"><did><unittitle>VG 050 Ed. White; Felicia Gossman; Muriel White</unittitle><unitid>goldberg_v_052</unitid><unitdate normal="1983-01-20" type="inclusive">01/20/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg051"><did><unittitle>VG 051 Edw. White, Felicia Gossman, Muriel White</unittitle><unitid>goldberg_v_053</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg052"><did><unittitle>VG 052 Manfred Gottfried</unittitle><unitid>goldberg_v_054</unitid><unitdate normal="1982-08-16" type="inclusive">08/16/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg053"><did><unittitle>VG 053 Kenneth Gouldthorpe</unittitle><unitid>goldberg_v_055</unitid><unitdate normal="1982-11-23" type="inclusive">11/23/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg054"><did><unittitle>VG 054 Mrs. Oscar Granbner</unittitle><unitid>goldberg_v_056</unitid><unitdate normal="1982-05-13" type="inclusive">05/13/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg055"><did><unittitle>VG 055 Ralph Graves</unittitle><unitid>goldberg_v_057</unitid><unitdate normal="1982-02-24" type="inclusive">02/24/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg056"><did><unittitle>VG 056 Allen Grover Sides 1 and 2 of 2</unittitle><unitid>goldberg_v_058</unitid><unitdate normal="1982-05-04" type="inclusive">05/04/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg057"><did><unittitle>VG 057 Irving Haberman</unittitle><unitid>goldberg_v_059</unitid><unitdate normal="1983-05-26" type="inclusive">05/26/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg058"><did><unittitle>VG 058 Jerry Hannafin</unittitle><unitid>goldberg_v_060</unitid><unitdate normal="1982-12-21" type="inclusive">12/21/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg059"><did><unittitle>VG 059 Richards Eads Harrison</unittitle><unitid>goldberg_v_061</unitid><unitdate normal="1982-05-07" type="inclusive">05/07/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg061"><did><unittitle>VG 061 Bernard Hayden</unittitle><unitid>goldberg_v_062</unitid><unitdate normal="1982-06-29" type="inclusive">06/29/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg062"><did><unittitle>VG 062 Andrew Heiskell</unittitle><unitid>goldberg_v_063</unitid><unitdate normal="1982-06-23" type="inclusive">06/23/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg063"><did><unittitle>VG 063 Don Hershey</unittitle><unitid>goldberg_v_064</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg064"><did><unittitle>VG 064 Eleanor Tracy Hodgins</unittitle><unitid>goldberg_v_065</unitid><unitdate normal="1982-05-13" type="inclusive">05/13/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg065"><did><unittitle>VG 065 Ralph Ingersoll Side 4</unittitle><unitid>goldberg_v_066</unitid><unitdate normal="1982-05-17" type="inclusive">05/17/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg066"><did><unittitle>VG 066 Ralph Ingersoll Sides 2 and 3</unittitle><unitid>goldberg_v_067</unitid><unitdate normal="1982-05-17" type="inclusive">05/17/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg067"><did><unittitle>VG 067 Ralph Ingersoll Side 1</unittitle><unitid>goldberg_v_068</unitid><unitdate normal="1982-05-17" type="inclusive">05/17/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg068"><did><unittitle>VG 068 Mrs. Charles Jacobson</unittitle><unitid>goldberg_v_069</unitid><unitdate normal="1982-03-01" type="inclusive">03/01/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg069"><did><unittitle>VG 069 Sid James</unittitle><unitid>goldberg_v_070</unitid><unitdate normal="1982-10-15" type="inclusive">10/15/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg070"><did><unittitle>VG 070 Dr. Edgar Kahn</unittitle><unitid>goldberg_v_071</unitid><unitdate normal="1982-07-29" type="inclusive">07/29/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg071"><did><unittitle>VG 071 George Karas</unittitle><unitid>goldberg_v_072</unitid><unitdate normal="1982-01-21" type="inclusive">01/21/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg072"><did><unittitle>VG 072 Joe Kaster Sides 1 and 2 of 3</unittitle><unitid>goldberg_v_073</unitid><unitdate normal="1982-02-23" type="inclusive">02/23/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg073"><did><unittitle>VG 073 Joe Kaster Side 3 of 3</unittitle><unitid>goldberg_v_074</unitid><unitdate normal="1982-02-23" type="inclusive">02/23/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg074"><did><unittitle>VG 074 Peter Keane Sides 1 and 2</unittitle><unitid>goldberg_v_075</unitid><unitdate normal="1982-04-16" type="inclusive">04/16/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg075"><did><unittitle>VG 075 Percy Knauth Sides 1 and 2 of 6</unittitle><unitid>goldberg_v_076</unitid><unitdate normal="1982-04-14" type="inclusive">04/14/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg076"><did><unittitle>VG 076 Percy Knauth Sides 3 and 4</unittitle><unitid>goldberg_v_077</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg077"><did><unittitle>VG 077 Percy Knauth Sides 5 and 6 of 6</unittitle><unitid>goldberg_v_078</unitid><unitdate normal="1982-04-14" type="inclusive">04/14/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg078"><did><unittitle>VG 078 Dr. Arthur Korf</unittitle><unitid>goldberg_v_079</unitid><unitdate normal="1982-10-18" type="inclusive">10/18/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg078a"><did><unittitle>VG 078a Dr. Arthur Korf</unittitle><unitid>goldberg_v_080</unitid><unitdate normal="1982-11-02" type="inclusive">11/02/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg079"><did><unittitle>VG 079 Syracuse AV Lab MBW Korea notebooks</unittitle><unitid>goldberg_v_081</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg080"><did><unittitle>VG 080 LA Fri mng</unittitle><unitid>goldberg_v_082</unitid><unitdate normal="1943-05-14" type="inclusive">05/14/1943</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg081"><did><unittitle>VG 081 John La Montaine</unittitle><unitid>goldberg_v_083</unitid><unitdate normal="1982-11-23" type="inclusive">11/23/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02 id="vg082"><did><unittitle>VG 082 Clare Leighton</unittitle><unitid>goldberg_v_084</unitid><unitdate normal="1983-11-29" type="inclusive">11/29/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg083"><did><unittitle>VG 083 Bill Leonard</unittitle><unitid>goldberg_v_085</unitid><unitdate normal="1984-04-05" type="inclusive">04/05/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg084"><did><unittitle>VG 084 Max Lemer and Edna Lemer</unittitle><unitid>goldberg_v_086</unitid><unitdate normal="1984-03-04" type="inclusive">03/04/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg086"><did><unittitle>VG 086 Alfred de Liagre Jr.</unittitle><unitid>goldberg_v_087</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg087"><did><unittitle>VG 087 Maxim Lieber</unittitle><unitid>goldberg_v_088</unitid><unitdate normal="1982-03-31" type="inclusive">03/31/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg088"><did><unittitle>VG 088 Joseph Liss</unittitle><unitid>goldberg_v_089</unitid><unitdate normal="1982-08-08" type="inclusive">08/08/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg089"><did><unittitle>VG 089 Joseph Liss; Magaret Bourke-White Interview</unittitle><unitid>goldberg_v_090</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg090"><did><unittitle>VG 090 John Loengard</unittitle><unitid>goldberg_v_091</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg091"><did><unittitle>VG 091 Stefan Lorant</unittitle><unitid>goldberg_v_092</unitid><unitdate normal="1983-07-26" type="inclusive">07/26/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg092"><did><unittitle>VG 092 Dwight Macdonald</unittitle><unitid>goldberg_v_093</unitid><unitdate normal="1982-02" type="inclusive">03/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg093"><did><unittitle>VG 093 Elizabeth Magnuson</unittitle><unitid>goldberg_v_094</unitid><unitdate normal="1982-10-17" type="inclusive">10/17/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg094"><did><unittitle>VG 094 Interview was This is NY w. Mrs. Magnuson</unittitle><unitid>goldberg_v_095</unitid><unitdate normal="1957-08-26" type="inclusive">08/26/1957</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg095"><did><unittitle>VG 095 Tom Maloney</unittitle><unitid>goldberg_v_096</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg096"><did><unittitle>VG 096 Tom Maloney Side 3</unittitle><unitid>goldberg_v_097</unitid><unitdate normal="1982-03-30" type="inclusive">03/30/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg097"><did><unittitle>VG 097 Dr. Morton Marks</unittitle><unitid>goldberg_v_098</unitid><unitdate normal="1982-11-18" type="inclusive">11/18/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg098"><did><unittitle>VG 098 Tex McCrary</unittitle><unitid>goldberg_v_099</unitid><unitdate normal="1982-05-10" type="inclusive">05/10/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg099"><did><unittitle>VG 099 Herb Mitang</unittitle><unitid>goldberg_v_100</unitid><unitdate normal="1982-08-11" type="inclusive">08/11/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg100"><did><unittitle>VG 100 Hugh Moffett Side 1 and 2</unittitle><unitid>goldberg_v_101</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg101"><did><unittitle>VG 101 Hugh Moffett Side 3 and 4</unittitle><unitid>goldberg_v_102</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg102"><did><unittitle>VG 102 Interview w/ Mom and Dad </unittitle><unitid>goldberg_v_103</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg103"><did><unittitle>VG 103 AD and Jo Moore</unittitle><unitid>goldberg_v_104</unitid><unitdate normal="1983-08-24" type="inclusive">08/24/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg105"><did><unittitle>VG 105 Myrle Morgan Side 1 and 2</unittitle><unitid>goldberg_v_105</unitid><unitdate normal="1982-04-19" type="inclusive">04/19/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg105a"><did><unittitle>VG 105a Myrle Morgan Side 3</unittitle><unitid>goldberg_v_106</unitid><unitdate normal="1982-04-19" type="inclusive">04/19/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg106"><did><unittitle>VG 106 Barbara Morgan</unittitle><unitid>goldberg_v_107</unitid><unitdate normal="1982-07-22" type="inclusive">07/22/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg107"><did><unittitle>VG 107 Mary Morris (Lawrence)</unittitle><unitid>goldberg_v_108</unitid><unitdate normal="1984-03-04" type="inclusive">03/04/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg108"><did><unittitle>VG 108 John Morris Side 1 and 2</unittitle><unitid>goldberg_v_109</unitid><unitdate normal="1982-07-12" type="inclusive">07/12/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg109"><did><unittitle>VG 109 John Morris Side 3</unittitle><unitid>goldberg_v_110</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg110"><did><unittitle>VG 110 Ralph Morse</unittitle><unitid>goldberg_v_111</unitid><unitdate normal="1982-02-15" type="inclusive">02/15/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg111"><did><unittitle>VG 111 Duplicate Ed Murrow Show 1955</unittitle><unitid>goldberg_v_112</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg112"><did><unittitle>VG 112 Ed Murrow Interview</unittitle><unitid>goldberg_v_113</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg113"><did><unittitle>VG 113 Janet Murrow</unittitle><unitid>goldberg_v_114</unitid><unitdate normal="1982-09-26" type="inclusive">09/26/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg114"><did><unittitle>VG 114 Shelley Mydans and Frank White</unittitle><unitid>goldberg_v_115</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg115"><did><unittitle>VG 115 Carl Mydans Side 1 and 2</unittitle><unitid>goldberg_v_116</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg115a"><did><unittitle>VG 115a Carl Mydans Side 3 and 4</unittitle><unitid>goldberg_v_117</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg116"><did><unittitle>VG 116 Beaumont Newhall</unittitle><unitid>goldberg_v_118</unitid><unitdate normal="1982-09-11" type="inclusive">09/11/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg117"><did><unittitle>VG 117 Clara Nicolai</unittitle><unitid>goldberg_v_119</unitid><unitdate normal="1984-05-29" type="inclusive">05/29/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg118"><did><unittitle>VG 118 Doris O’Weil</unittitle><unitid>goldberg_v_120</unitid><unitdate normal="1982-02-24" type="inclusive">02/24/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg119"><did><unittitle>VG 119 Evelyn Openhym Side 1 of 2</unittitle><unitid>goldberg_v_121</unitid><unitdate normal="1982-03-15" type="inclusive">03/15/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg120"><did><unittitle>VG 120 Herb Orth, George Karas</unittitle><unitid>goldberg_v_122</unitid><unitdate normal="1982-01-21" type="inclusive">01/21/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg121"><did><unittitle>VG 121 George Karas, Herb Orth</unittitle><unitid>goldberg_v_123</unitid><unitdate normal="1982-01-28" type="inclusive">01/28/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg122"><did><unittitle>VG 122 Myrna Papurt Weibel</unittitle><unitid>goldberg_v_124</unitid><unitdate normal="1983-04-14" type="inclusive">04/14/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg123"><did><unittitle>VG 123 Gordon Parks</unittitle><unitid>goldberg_v_125</unitid><unitdate normal="1982-03-25" type="inclusive">03/25/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02 id="vg124"><did><unittitle>VG 124 Col. Roswell Perry</unittitle><unitid>goldberg_v_126</unitid><unitdate normal="1983-08-02" type="inclusive">08/02/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg125"><did><unittitle>VG 125 John Phillips (1 and 2 of 4)</unittitle><unitid>goldberg_v_127</unitid><unitdate normal="1982-02-25" type="inclusive">02/25/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg126"><did><unittitle>VG 126 John Phillips (3 and 4 of 4)</unittitle><unitid>goldberg_v_128</unitid><unitdate normal="1982-02-25" type="inclusive">02/25/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg127"><did><unittitle>VG 127 Gerard Piel</unittitle><unitid>goldberg_v_129</unitid><unitdate normal="1983-07-06" type="inclusive">07/06/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg128"><did><unittitle>VG 128 Harriet Pilpel</unittitle><unitid>goldberg_v_130</unitid><unitdate normal="1982-05-18" type="inclusive">05/18/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg129"><did><unittitle>VG 129 David Richardson</unittitle><unitid>goldberg_v_131</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg130"><did><unittitle>VG 130 Robert Yarnall Richie</unittitle><unitid>goldberg_v_132</unitid><unitdate normal="1983-01-03" type="inclusive">01/03/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg131"><did><unittitle>VG 131 Roger</unittitle><unitid>goldberg_v_133</unitid><unitdate normal="1981-12-06" type="inclusive">12/06/1981</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg132"><did><unittitle>VG 132 Roger</unittitle><unitid>goldberg_v_134</unitid><unitdate normal="1981-12-07" type="inclusive">12/07/1981</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg133"><did><unittitle>VG 133 Roger Side 3</unittitle><unitid>goldberg_v_135</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg134"><did><unittitle>VG 134 Arthur Rothstein</unittitle><unitid>goldberg_v_136</unitid><unitdate normal="1983-05-04" type="inclusive">05/04/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg135"><did><unittitle>VG 135 Roy Rowan</unittitle><unitid>goldberg_v_137</unitid><unitdate normal="1983-06-16" type="inclusive">06/16/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg136"><did><unittitle>VG 136 Dr. Howard Rusk</unittitle><unitid>goldberg_v_138</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg137"><did><unittitle>VG 137 Libby Sachar</unittitle><unitid>goldberg_v_139</unitid><unitdate normal="1982-05-11" type="inclusive">05/11/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg138"><did><unittitle>VG 138 Eleanor and Daniel Saidenberg</unittitle><unitid>goldberg_v_140</unitid><unitdate normal="1984-04-02" type="inclusive">04/02/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg139"><did><unittitle>VG 139 George Sambrus</unittitle><unitid>goldberg_v_141</unitid><unitdate normal="1984-04-08" type="inclusive">04/08/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg140"><did><unittitle>VG 140 Margaret Smith Sargent Sides 1 and 2 out of 5</unittitle><unitid>goldberg_v_142</unitid><unitdate normal="1982-02-10" type="inclusive">02/10/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg141"><did><unittitle>VG 141 Margaret Smith Sargent Sides 3 and 4</unittitle><unitid>goldberg_v_143</unitid><unitdate normal="1982-02-10" type="inclusive">02/10/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg142"><did><unittitle>VG 142 Margaret Smith Sargent Side 5</unittitle><unitid>goldberg_v_144</unitid><unitdate normal="1982-02-10" type="inclusive">02/10/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg143"><did><unittitle>VG 143 Shigero Sasamori</unittitle><unitid>goldberg_v_145</unitid><unitdate normal="1983-01-21" type="inclusive">01/21/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg144"><did><unittitle>VG 144 David Scherman</unittitle><unitid>goldberg_v_146</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg145"><did><unittitle>VG 145 [No Title]</unittitle><unitid>goldberg_v_147</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg146"><did><unittitle>VG 146 Max Robert Schrayer</unittitle><unitid>goldberg_v_148</unitid><unitdate normal="1982-04-22" type="inclusive">04/22/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg147"><did><unittitle>VG 147 Lee Scott</unittitle><unitid>goldberg_v_149</unitid><unitdate normal="1982-07-29" type="inclusive">07/29/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg148"><did><unittitle>VG 148 Sean Side 1 and 2 of 4</unittitle><unitid>goldberg_v_150</unitid><unitdate normal="1982-01-14" type="inclusive">01/14/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg148a"><did><unittitle>VG 148a Sean Side 3</unittitle><unitid>goldberg_v_151</unitid><unitdate normal="1982-01-15" type="inclusive">01/15/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg149"><did><unittitle>VG 149 Dottie Seiberling</unittitle><unitid>goldberg_v_152</unitid><unitdate normal="1982-01-25" type="inclusive">01/25/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg150"><did><unittitle>VG 150 Robert Sherrod</unittitle><unitid>goldberg_v_153</unitid><unitdate normal="1982-09-17" type="inclusive">09/17/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg151"><did><unittitle>VG 151 Andrea Simon</unittitle><unitid>goldberg_v_154</unitid><unitdate normal="1982-08-26" type="inclusive">08/26/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg152"><did><unittitle>VG 152 Father Daniel Shehan</unittitle><unitid>goldberg_v_155</unitid><unitdate normal="1983-06-07" type="inclusive">06/07/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg153"><did><unittitle>VG 153 Father Shehan and Father Linehan</unittitle><unitid>goldberg_v_156</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg154"><did><unittitle>VG 154 Father Shehan (James) and Father Daniel Linehan </unittitle><unitid>goldberg_v_157</unitid><unitdate normal="1983-06-07" type="inclusive">06/07/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg155"><did><unittitle>VG 155 Bradley Smith</unittitle><unitid>goldberg_v_158</unitid><unitdate normal="1984-09-07" type="inclusive">09/07/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg156"><did><unittitle>VG 156 Wilma Smitheland</unittitle><unitid>goldberg_v_159</unitid><unitdate normal="1984-03-11" type="inclusive">03/11/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg157"><did><unittitle>VG 157 Col. Craig Smyser</unittitle><unitid>goldberg_v_160</unitid><unitdate normal="1985-08-30" type="inclusive">08/30/1985</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg158"><did><unittitle>VG 158 Howard Sochurek</unittitle><unitid>goldberg_v_161</unitid><unitdate normal="1984-06-25" type="inclusive">06/25/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg159"><did><unittitle>VG 159 Edward Stanley 1 of 4</unittitle><unitid>goldberg_v_162</unitid><unitdate normal="1982-03-08" type="inclusive">03/08/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg160"><did><unittitle>VG 160 Edward Stanley 2nd tape</unittitle><unitid>goldberg_v_163</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg161"><did><unittitle>VG 161 Ralph Steiner</unittitle><unitid>goldberg_v_164</unitid><unitdate normal="1982-04-28" type="inclusive">04/28/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg162"><did><unittitle>VG 162 Ralph Steiner duplicate</unittitle><unitid>goldberg_v_165</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg163"><did><unittitle>VG 163 Hedda Steme</unittitle><unitid>goldberg_v_166</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg164"><did><unittitle>VG 164 Michael J. Strok</unittitle><unitid>goldberg_v_167</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">4</container></did></c02>
+   <c02 id="vg165"><did><unittitle>VG 165 William Sumits</unittitle><unitid>goldberg_v_168</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg166"><did><unittitle>VG 166 Tape 1</unittitle><unitid>goldberg_v_169</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg167"><did><unittitle>VG 167 Tape 2 Side 1</unittitle><unitid>goldberg_v_170</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg168"><did><unittitle>VG 168 Tape 3</unittitle><unitid>goldberg_v_171</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg169"><did><unittitle>VG 169 Tape 4</unittitle><unitid>goldberg_v_172</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg170"><did><unittitle>VG 170 Tape 5</unittitle><unitid>goldberg_v_173</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg171"><did><unittitle>VG 171 Joseph Thorndike</unittitle><unitid>goldberg_v_174</unitid><unitdate normal="1982-08-03" type="inclusive">08/03/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg172"><did><unittitle>VG 172 Joseph Thorndike 2 of 2</unittitle><unitid>goldberg_v_175</unitid><unitdate normal="1982-12-10" type="inclusive">12/10/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg173"><did><unittitle>VG 173 Joan Tower</unittitle><unitid>goldberg_v_176</unitid><unitdate normal="1984-03-26" type="inclusive">03/26/1984</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg194"><did><unittitle>VG 194 Teresa Wright</unittitle><unitid>goldberg_v_177</unitid><unitdate normal="1983-05-19" type="inclusive">05/19/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg175"><did><unittitle>VG 175 Karen Tuttle</unittitle><unitid>goldberg_v_178</unitid><unitdate normal="1982-12-20" type="inclusive">12/20/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg176"><did><unittitle>VG 176 John Vance</unittitle><unitid>goldberg_v_179</unitid><unitdate normal="1982-07-15" type="inclusive">07/15/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg177"><did><unittitle>VG 177 John Vassos</unittitle><unitid>goldberg_v_180</unitid><unitdate normal="1982-03-06" type="inclusive">03/06/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg178"><did><unittitle>VG 178 Eli Wallach</unittitle><unitid>goldberg_v_181</unitid><unitdate normal="1983-04-29" type="inclusive">04/29/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg179"><did><unittitle>VG 179 William Walton</unittitle><unitid>goldberg_v_182</unitid><unitdate normal="1982-11-11" type="inclusive">11/11/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg180"><did><unittitle>VG 180 Don Weadon</unittitle><unitid>goldberg_v_183</unitid><unitdate normal="1983-11-16" type="inclusive">11/16/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg181"><did><unittitle>VG 181 Robert Weinstein 2 of 3 Sides</unittitle><unitid>goldberg_v_184</unitid><unitdate normal="1983-01-19" type="inclusive">01/19/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg182"><did><unittitle>VG 182 Robert Weinstein</unittitle><unitid>goldberg_v_185</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg183"><did><unittitle>VG 183 Julius Weiss</unittitle><unitid>goldberg_v_186</unitid><unitdate normal="1982-08-12" type="inclusive">08/12/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg184"><did><unittitle>VG 184 Joe Wershbar</unittitle><unitid>goldberg_v_187</unitid><unitdate normal="1982-08-24" type="inclusive">08/24/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg185"><did><unittitle>VG 185 Lael Wertenbaker</unittitle><unitid>goldberg_v_188</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg187"><did><unittitle>VG 187 Mike White</unittitle><unitid>goldberg_v_189</unitid><unitdate normal="1981-12-08" type="inclusive">12/08/1981</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg188"><did><unittitle>VG 188 Mike White 3rd side</unittitle><unitid>goldberg_v_190</unitid><unitdate normal="1981-12-08" type="inclusive">12/08/1981</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg189"><did><unittitle>VG 189 Mike White Side 5</unittitle><unitid>goldberg_v_191</unitid><unitdate normal="1981-12-08" type="inclusive">12/08/1981</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg190"><did><unittitle>VG 190 Mike White Side 7</unittitle><unitid>goldberg_v_192</unitid><unitdate normal="1981-12-08" type="inclusive">12/08/1981</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg191"><did><unittitle>VG 191 Barbara Wild</unittitle><unitid>goldberg_v_193</unitid><unitdate normal="1982-05-11" type="inclusive">05/11/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg192"><did><unittitle>VG 192 Lee Witkin</unittitle><unitid>goldberg_v_194</unitid><unitdate normal="1982-12-22" type="inclusive">12/22/1982</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg193"><did><unittitle>VG 193 Interview at WOW Omaha WBC Ref Recording</unittitle><unitid>goldberg_v_195</unitid><unitdate normal="1954-02-22" type="inclusive">02/22/1954</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg195"><did><unittitle>VG 195 Yale Joel</unittitle><unitid>goldberg_v_196</unitid><unitdate normal="1983-07-07" type="inclusive">07/07/1983</unitdate><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg196"><did><unittitle>VG 196 B[o]urke-White</unittitle><unitid>goldberg_v_197</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg197"><did><unittitle>VG 197 Betty Cronander 2 of 2</unittitle><unitid>goldberg_v_198</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02 id="vg198"><did><unittitle>VG 198 Charles Rotkin</unittitle><unitid>goldberg_v_199</unitid><physdesc><extent>1 audio cassette</extent></physdesc><container type="Box">5</container></did></c02></c01>
+
+      
+      <c01 level="series">
+        <did>
+          <unittitle>Research files</unittitle>
+        </did>
+        <accessrestrict>
+          <p>This part of the collection  is unprocessed and is not accessible at this time.</p>
+        </accessrestrict>
+      </c01>
+    </dsc>
+  <index id="alpha-index"><head>Alphabetical index to tapes</head>
+<indexentry><name>"LA Fri mng"</name><ref target="vg080">VG 080</ref></indexentry>
+<indexentry><name>"Mom and Dad"</name><ref target="vg102">VG 102</ref></indexentry>
+<indexentry><name>----, Roger</name><ptrgrp><ref target="vg131">VG 131</ref>
+<ref target="vg132">VG 132</ref>
+<ref target="vg133">VG 133</ref></ptrgrp></indexentry>
+<indexentry><name>----, Sean</name><ptrgrp><ref target="vg148">VG 148</ref>
+<ref target="vg148a">VG 148a</ref></ptrgrp></indexentry>
+<indexentry><name>[unidentified interview], WOW Omaha</name><ref target="vg193">VG 193</ref></indexentry>
+<indexentry><name>[untitled]</name><ref target="vg145">VG 145</ref></indexentry>
+<indexentry><name>[untitled] Tape 1</name><ref target="vg166">VG 166</ref></indexentry>
+<indexentry><name>[untitled] Tape 2</name><ref target="vg167">VG 167</ref></indexentry>
+<indexentry><name>[untitled] Tape 3</name><ref target="vg168">VG 168</ref></indexentry>
+<indexentry><name>[untitled] Tape 4</name><ref target="vg169">VG 169</ref></indexentry>
+<indexentry><name>[untitled] Tape 5</name><ref target="vg170">VG 170</ref></indexentry>
+<indexentry><name>Adams, Ansel</name><ref target="vg001">VG 001</ref></indexentry>
+<indexentry><name>Arlen, Michael J.</name><ref target="vg002">VG 002</ref></indexentry>
+<indexentry><name>Arnold, Eve</name><ref target="vg003">VG 003</ref></indexentry>
+<indexentry><name>Block, Hugo</name><ref target="vg004">VG 004</ref></indexentry>
+<indexentry><name>Bothe, Sylvia</name><ref target="vg005">VG 005</ref></indexentry>
+<indexentry><name>Bourke-White, Margaret</name><ptrgrp><ref target="vg006">VG 006</ref>
+<ref target="vg007">VG 007</ref><ref target="vg008">VG 008</ref>
+<ref target="vg036">VG 036</ref>
+<ref target="vg079">VG 079</ref>
+<ref target="vg089">VG 089</ref>
+<ref target="vg196">VG 196</ref></ptrgrp></indexentry>
+<indexentry><name>Brennan, Francis (Hank)</name><ref target="vg009">VG 009</ref></indexentry>
+<indexentry><name>Bryson, John</name><ref target="vg010">VG 010</ref></indexentry>
+<indexentry><name>C---, Florence and Joe</name><ref target="vg017">VG 017</ref></indexentry>
+<indexentry><name>Caldwell, Dabney</name><ref target="vg016">VG 016</ref></indexentry>
+<indexentry><name>Caldwell, Erskine</name><ptrgrp><ref target="vg011">VG 011</ref>
+<ref target="vg011a">VG 011a</ref></ptrgrp></indexentry>
+<indexentry><name>Caldwell, Helen Cushman</name><ref target="vg028a">VG 028</ref></indexentry>
+<indexentry><name>Capa, Cornell</name><ref target="vg012">VG 012</ref></indexentry>
+<indexentry><name>Cassidy, Henry</name><ref target="vg013">VG 013</ref></indexentry>
+<indexentry><name>Chanberlain, John</name><ref target="vg014">VG 014</ref></indexentry>
+<indexentry><name>Clark, Noel</name><ref target="vg015">VG 015</ref></indexentry>
+<indexentry><name>Connolly, R. H.</name><ref target="vg017">VG 017</ref></indexentry>
+<indexentry><name>Cort, David</name><ref target="vg018">VG 018</ref></indexentry>
+<indexentry><name>Costain, Harold</name><ref target="vg019">VG 019</ref></indexentry>
+<indexentry><name>Cousins, Ellen</name><ref target="vg021">VG 021</ref></indexentry>
+<indexentry><name>Cousins, Norman</name><ptrgrp><ref target="vg020">VG 020</ref>
+<ref target="vg021">VG 021</ref></ptrgrp></indexentry>
+<indexentry><name>Cravens, Kathryn</name><ref target="vg022">VG 022</ref></indexentry>
+<indexentry><name>Cronander, Betty</name><ptrgrp><ref target="vg023">VG 023</ref>
+<ref target="vg024">VG 024</ref>
+<ref target="vg025">VG 025</ref>
+<ref target="vg197">VG 197</ref></ptrgrp></indexentry>
+<indexentry><name>Curtis, Edward P.</name><ref target="vg026">VG 026</ref></indexentry>
+<indexentry><name>Cushman, Helen</name><ref target="vg028b">VG 028</ref></indexentry>
+<indexentry><name>Davis, Roselle</name><ref target="vg029">VG 029</ref></indexentry>
+<indexentry><name>de Liagre, Alfred Jr.</name><ref target="vg086">VG 086</ref></indexentry>
+<indexentry><name>Desfers, Max</name><ref target="vg030">VG 030</ref></indexentry>
+<indexentry><name>Eads, Richard Harrison</name><ref target="vg059">VG 059</ref></indexentry>
+<indexentry><name>Edey, Maitland</name><ref target="vg031">VG 031</ref></indexentry>
+<indexentry><name>Eisenstadt, Sergei</name><ref target="vg032">VG 032</ref></indexentry>
+<indexentry><name>Elson, Robert</name><ref target="vg033">VG 033</ref></indexentry>
+<indexentry><name>Engel, Walter</name><ref target="vg034">VG 034</ref></indexentry>
+<indexentry><name>Eyerman, J. R.</name><ptrgrp><ref target="vg035">VG 035</ref>
+<ref target="vg035a">VG 035a</ref></ptrgrp></indexentry>
+<indexentry><name><emph render="italic">Eyes on Russia</emph></name><ref target="vg036">VG 036</ref></indexentry>
+<indexentry><name>Fatherley, Bob</name><ref target="vg039">VG 039</ref></indexentry>
+<indexentry><name>Fatherley, Richard</name><ref target="vg037">VG 037</ref></indexentry>
+<indexentry><name>Fatherley, Robert E. and Mrs.</name><ref target="vg038">VG 038</ref></indexentry>
+<indexentry><name>Felker, Clay</name><ref target="vg040">VG 040</ref></indexentry>
+<indexentry><name>Finn, Pel Pollard</name><ref target="vg041">VG 041</ref></indexentry><indexentry><name>Fisher, Alan</name><ref target="vg042">VG 042</ref></indexentry>
+<indexentry><name>Fondiller, Harvey V.</name><ref target="vg043">VG 043</ref></indexentry>
+<indexentry><name>For Women Only (Lillian Orman)</name><ref target="vg044">VG 044</ref></indexentry>
+<indexentry><name>Gallagher, Barrett</name><ref target="vg045">VG 045</ref></indexentry>
+<indexentry><name>Gilfillian, Violette</name><ref target="vg046">VG 046</ref></indexentry>
+<indexentry><name>Gooding, Janet</name><ref target="vg048">VG 048</ref></indexentry>
+<indexentry><name>Gossman, Felicia</name><ptrgrp><ref target="vg049">VG 049</ref>
+<ref target="vg050">VG 050</ref>
+<ref target="vg051">VG 051</ref></ptrgrp></indexentry>
+<indexentry><name>Gottfried, Manfred</name><ref target="vg052">VG 052</ref></indexentry>
+<indexentry><name>Gouldthorpe, Kenneth</name><ref target="vg053">VG 053</ref></indexentry>
+<indexentry><name>Granbner, Mrs. Oscar</name><ref target="vg054">VG 054</ref></indexentry>
+<indexentry><name>Graves, Ralph</name><ref target="vg055">VG 055</ref></indexentry>
+<indexentry><name>Grover, Allen</name><ref target="vg056">VG 056</ref></indexentry>
+<indexentry><name>Haberman, Irving</name><ref target="vg057">VG 057</ref></indexentry>
+<indexentry><name>Hannafin, Jerry</name><ref target="vg058">VG 058</ref></indexentry>
+<indexentry><name>Hayden, Bernard</name><ref target="vg061">VG 061</ref></indexentry>
+<indexentry><name>Heiskell, Andrew</name><ref target="vg062">VG 062</ref></indexentry>
+<indexentry><name>Hershey, Don</name><ref target="vg063">VG 063</ref></indexentry>
+<indexentry><name>Ingersoll, Ralph</name><ptrgrp><ref target="vg065">VG 065</ref>
+<ref target="vg066">VG 066</ref>
+<ref target="vg067">VG 067</ref></ptrgrp></indexentry>
+<indexentry><name>Jacobson, Mrs. Charles</name><ref target="vg068">VG 068</ref></indexentry>
+<indexentry><name>James, Sid</name><ref target="vg069">VG 069</ref></indexentry>
+<indexentry><name>Joel, Yale</name><ref target="vg195">VG 195</ref></indexentry>
+<indexentry><name>Kahn, Edgar (Dr.)</name><ref target="vg070">VG 070</ref></indexentry>
+<indexentry><name>Karas, George</name><ptrgrp><ref target="vg071">VG 071</ref>
+<ref target="vg120">VG 120</ref>
+<ref target="vg121">VG 121</ref></ptrgrp></indexentry>
+<indexentry><name>Kaster, Joe</name><ptrgrp><ref target="vg072">VG 072</ref>
+<ref target="vg073">VG 073</ref></ptrgrp></indexentry>
+<indexentry><name>Keane, Peter</name><ref target="vg074">VG 074</ref></indexentry>
+<indexentry><name>Knauth, Percy</name><ptrgrp><ref target="vg075">VG 075</ref>
+<ref target="vg076">VG 076</ref>
+<ref target="vg077">VG 077</ref></ptrgrp></indexentry>
+<indexentry><name>Korf, Arthur (Dr.)</name><ptrgrp><ref target="vg078">VG 078</ref>
+<ref target="vg078a">VG 078a</ref></ptrgrp></indexentry>
+<indexentry><name>La Montaine, John</name><ref target="vg081">VG 081</ref></indexentry>
+<indexentry><name>Leighton, Clare</name><ref target="vg082">VG 082</ref></indexentry>
+<indexentry><name>Leonard, Bill</name><ref target="vg083">VG 083</ref></indexentry>
+<indexentry><name>Lerner, Max and Edna</name><ref target="vg084">VG 084</ref></indexentry>
+<indexentry><name>Lester, Ruth</name><ref target="vg012">VG 012</ref></indexentry>
+<indexentry><name>Lieber, Maxim</name><ref target="vg087">VG 087</ref></indexentry>
+<indexentry><name>Linehan, Father Daniel</name><ptrgrp><ref target="vg153">VG 153</ref>
+<ref target="vg153">VG 153</ref>
+<ref target="vg154">VG 154</ref></ptrgrp></indexentry>
+<indexentry><name>Liss, Joseph</name><ptrgrp><ref target="vg088">VG 088</ref>
+<ref target="vg089">VG 089</ref></ptrgrp></indexentry>
+<indexentry><name>Loengard, John</name><ref target="vg090">VG 090</ref></indexentry>
+<indexentry><name>Lorant, Stefan</name><ref target="vg091">VG 091</ref></indexentry>
+<indexentry><name>Macdonald, Dwight</name><ref target="vg092">VG 092</ref></indexentry>
+<indexentry><name>Magnuson, Elizabeth</name><ptrgrp><ref target="vg093">VG 093</ref>
+<ref target="vg094">VG 094</ref></ptrgrp></indexentry>
+<indexentry><name>Maloney, Tom</name><ptrgrp><ref target="vg095">VG 095</ref>
+<ref target="vg096">VG 096</ref></ptrgrp></indexentry>
+<indexentry><name>Marks, Morton (Dr.)</name><ref target="vg097">VG 097</ref></indexentry>
+
+<indexentry><name>McCrary, Tex</name><ref target="vg098">VG 098</ref></indexentry>
+<indexentry><name>Mitang, Herb</name><ref target="vg099">VG 099</ref></indexentry>
+<indexentry><name>Moffett, Hugh</name><ptrgrp><ref target="vg100">VG 100</ref>
+<ref target="vg101">VG 101</ref></ptrgrp></indexentry>
+<indexentry><name>Moore, A. D. and Jo</name><ref target="vg103">VG 103</ref></indexentry>
+<indexentry><name>Morgan, Barbara</name><ref target="vg106">VG 106</ref></indexentry>
+<indexentry><name>Morgan, Myrle</name><ptrgrp><ref target="vg105">VG 105</ref>
+<ref target="vg105a">VG 105a</ref></ptrgrp></indexentry>
+<indexentry><name>Morris, John</name><ptrgrp><ref target="vg108">VG 108</ref>
+<ref target="vg109">VG 109</ref></ptrgrp></indexentry>
+<indexentry><name>Morris, Mary (Lawrence)</name><ref target="vg107">VG 107</ref></indexentry>
+<indexentry><name>Morse, Ralph</name><ref target="vg110">VG 110</ref></indexentry>
+<indexentry><name>Murrow, Ed</name><ptrgrp><ref target="vg111">VG 111</ref>
+<ref target="vg112">VG 112</ref></ptrgrp></indexentry>
+<indexentry><name>Murrow, Janet</name><ref target="vg113">VG 113</ref></indexentry>
+<indexentry><name>Mydans, Carl</name><ptrgrp><ref target="vg115">VG 115</ref>
+<ref target="vg115a">VG 115a</ref></ptrgrp></indexentry>
+<indexentry><name>Mydans, Shelley</name><ref target="vg114">VG 114</ref></indexentry>
+<indexentry><name>Newhall, Beaumont</name><ref target="vg116">VG 116</ref></indexentry>
+<indexentry><name>Nicolai, Clara</name><ref target="vg117">VG 117</ref></indexentry>
+<indexentry><name>O’Weil, Doris</name><ref target="vg118">VG 118</ref></indexentry>
+<indexentry><name>Openhym, Evelyn</name><ref target="vg119">VG 119</ref></indexentry>
+<indexentry><name>Orman, Lillian</name><ref target="vg044">VG 044</ref></indexentry>
+<indexentry><name>Orth, Herb</name><ptrgrp><ref target="vg120">VG 120</ref>
+<ref target="vg121">VG 121</ref></ptrgrp></indexentry>
+<indexentry><name>Papurt, Myrna Weibel</name><ref target="vg122">VG 122</ref></indexentry>
+<indexentry><name>Parks, Gordon</name><ref target="vg123">VG 123</ref></indexentry>
+<indexentry><name>Perry, Roswell (Col.)</name><ref target="vg124">VG 124</ref></indexentry>
+<indexentry><name>Phillips, John</name><ptrgrp><ref target="vg125">VG 125</ref>
+<ref target="vg126">VG 126</ref></ptrgrp></indexentry>
+<indexentry><name>Piel, Gerard</name><ref target="vg127">VG 127</ref></indexentry>
+<indexentry><name>Pilpel, Harriet</name><ref target="vg128">VG 128</ref></indexentry>
+
+<indexentry><name>Richardson, David</name><ref target="vg129">VG 129</ref></indexentry>
+<indexentry><name>Robert, Max Schrayer</name><ref target="vg146">VG 146</ref></indexentry>
+<indexentry><name>Rothstein, Arthur</name><ref target="vg134">VG 134</ref></indexentry>
+<indexentry><name>Rotkin, Charles</name><ref target="vg198">VG 198</ref></indexentry>
+<indexentry><name>Rowan, Roy</name><ref target="vg135">VG 135</ref></indexentry>
+<indexentry><name>Rusk, Howard (Dr.)</name><ref target="vg136">VG 136</ref></indexentry>
+<indexentry><name>Sachar, Libby</name><ref target="vg137">VG 137</ref></indexentry>
+<indexentry><name>Saidenberg, Eleanor and Daniel</name><ref target="vg138">VG 138</ref></indexentry>
+<indexentry><name>Sambrus, George</name><ref target="vg139">VG 139</ref></indexentry>
+<indexentry><name>Sasamori, Shigero</name><ref target="vg143">VG 143</ref></indexentry>
+<indexentry><name>Scherman, David</name><ref target="vg144">VG 144</ref></indexentry>
+<indexentry><name>Scott, Lee</name><ref target="vg147">VG 147</ref></indexentry>
+<indexentry><name>Seiberling, Dottie</name><ref target="vg149">VG 149</ref></indexentry>
+<indexentry><name>Shehan, Father James</name><ptrgrp><ref target="vg152">VG 152</ref>
+<ref target="vg154">VG 154</ref></ptrgrp></indexentry>
+<indexentry><name>Sherrod, Robert</name><ref target="vg150">VG 150</ref></indexentry>
+<indexentry><name>Simon, Andrea</name><ref target="vg151">VG 151</ref></indexentry>
+<indexentry><name>Smith, Bradley</name><ref target="vg155">VG 155</ref></indexentry>
+<indexentry><name>Smith, Margaret Sargent</name><ptrgrp><ref target="vg140">VG 140</ref>
+<ref target="vg141">VG 141</ref>
+<ref target="vg142">VG 142</ref></ptrgrp></indexentry>
+<indexentry><name>Smitheland, Wilma</name><ref target="vg156">VG 156</ref></indexentry>
+<indexentry><name>Smyser, Craig (Col.)</name><ref target="vg157">VG 157</ref></indexentry>
+<indexentry><name>Snow, Jean Gold</name><ref target="vg047">VG 047</ref></indexentry>
+<indexentry><name>Sochurek, Howard</name><ref target="vg158">VG 158</ref></indexentry>
+<indexentry><name>Stanley, Edward</name><ptrgrp><ref target="vg159">VG 159</ref>
+<ref target="vg160">VG 160</ref></ptrgrp></indexentry>
+<indexentry><name>Steiner, Ralph</name><ptrgrp><ref target="vg161">VG 161</ref>
+<ref target="vg162">VG 162</ref></ptrgrp></indexentry>
+<indexentry><name>Steme, Hedda</name><ref target="vg163">VG 163</ref></indexentry>
+<indexentry><name>Strok, Michael J.</name><ref target="vg164">VG 164</ref></indexentry>
+<indexentry><name>Sumits, William</name><ref target="vg165">VG 165</ref></indexentry>
+<indexentry><name>Syracuse AV Lab (MBW Korea notebooks)</name><ref target="vg079">VG 079</ref></indexentry>
+<indexentry><name>This is New York (Elizabeth Magnuson)</name><ref target="vg094">VG 094</ref></indexentry>
+<indexentry><name>Thorndike, Joseph</name><ptrgrp><ref target="vg171">VG 171</ref>
+<ref target="vg172">VG 172</ref></ptrgrp></indexentry>
+<indexentry><name>Tower, Joan</name><ref target="vg173">VG 173</ref></indexentry>
+<indexentry><name>Tracy, Eleanor Hodgins</name><ref target="vg064">VG 064</ref></indexentry>
+<indexentry><name>Tuttle, Karen</name><ref target="vg175">VG 175</ref></indexentry>
+<indexentry><name>Vance, John</name><ref target="vg176">VG 176</ref></indexentry>
+<indexentry><name>Vassos, John</name><ref target="vg177">VG 177</ref></indexentry>
+<indexentry><name>Wallach, Eli</name><ref target="vg178">VG 178</ref></indexentry>
+<indexentry><name>Walton, William</name><ref target="vg179">VG 179</ref></indexentry>
+<indexentry><name>Weadon, Don</name><ref target="vg180">VG 180</ref></indexentry>
+<indexentry><name>Weinstein, Robert</name><ptrgrp><ref target="vg181">VG 181</ref>
+<ref target="vg182">VG 182</ref></ptrgrp></indexentry>
+<indexentry><name>Weiss, Julius</name><ref target="vg183">VG 183</ref></indexentry>
+<indexentry><name>Wershbar, Joe</name><ref target="vg184">VG 184</ref></indexentry>
+<indexentry><name>Wertenbaker, Lael</name><ref target="vg185">VG 185</ref></indexentry>
+<indexentry><name>White, Ed</name><ptrgrp><ref target="vg049">VG 049</ref>
+<ref target="vg050">VG 050</ref>
+<ref target="vg051">VG 051</ref></ptrgrp></indexentry>
+<indexentry><name>White, Frank</name><ref target="vg114">VG 114</ref></indexentry>
+<indexentry><name>White, Mike</name><ptrgrp><ref target="vg187">VG 187</ref>
+<ref target="vg188">VG 188</ref>
+<ref target="vg189">VG 189</ref>
+<ref target="vg190">VG 190</ref></ptrgrp></indexentry>
+<indexentry><name>White, Muriel</name><ptrgrp><ref target="vg049">VG 049</ref>
+<ref target="vg050">VG 050</ref>
+<ref target="vg051">VG 051</ref></ptrgrp></indexentry>
+<indexentry><name>Wild, Barbara</name><ref target="vg191">VG 191</ref></indexentry>
+<indexentry><name>Witkin, Lee</name><ref target="vg192">VG 192</ref></indexentry>
+<indexentry><name>Wright, Teresa</name><ref target="vg194">VG 194</ref></indexentry>
+<indexentry><name>Yarnall, Robert Richie</name><ref target="vg130">VG 130</ref></indexentry>
+  
+  </index></archdesc>
+</ead>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="blackwell_hg">blackwell_hg</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Harriet Gray Blackwell Papers</titleproper>
+            <subtitle>An inventory of her papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">CAM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1987-09" encodinganalog="Date">Sep 1987</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2009-11-03">3 Nov 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Blackwell, Harriet (Gray)</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Harriet Gray Blackwell Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1919/1983" type="inclusive" label="Inclusive Dates: ">1919-1983</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>3.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Papers of the American author and poet.  Collection 
+		 includes biographical material, correspondence, writings, and memorabilia.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">148852</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Harriet Gray Blackwell was an American author and poet.  She wrote several novels, and her work appeared in 
+	  many national magazines including <emph render="italic">Good Housekeeping</emph>, 
+	  <emph render="italic">Saturday Evening Post</emph>, and others.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Harriet Gray Blackwell Papers</emph> consist of biographical material, 
+		 correspondence, writings, and memorabilia.</p>
+		 <p><emph render="bold">Subject files</emph> contain biographical material and a few photographs.</p>
+		 <p><emph render="bold">Correspondence</emph> spans fifty years and includes individuals, academic institutions, and publishing 
+		 companies.</p>
+		 <p><emph render="bold">Writings</emph> contains typescripts, manuscripts, galleys and other formats for articles, books, poetry, and 
+		 short stories.</p>
+		 <p><emph render="bold">Memorabilia</emph> includes awards, clippings, class notes, financial and legal papers, reviews, and a speech 
+		 given at Columbia College Commencement in 1961.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>All material is arranged in alphabetical order by name, title or subject.</p>
+      </arrangement>
+      
+      <!-- <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial> -->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!-- For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+<subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+<subject encodinganalog="650" source="local">Literature -- American Poetry</subject>
+<subject encodinganalog="650" source="local">Women Authors</subject>
+         <persname encodinganalog="600" source="lcnaf">Blackwell, Harriet (Gray)</persname>
+          <!--<famname encodinganalog="600" source="lcnaf">##</famname>--> 
+          <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>--> 
+          <!--<title encodinganalog="630" source="lcnaf">##</title>--> 
+         <subject encodinganalog="650" source="lcsh">Poets, American.</subject>
+         <subject encodinganalog="650" source="lcsh">American poetry -- Women authors.</subject>
+         <subject encodinganalog="650" source="lcsh">Women poets, American.</subject>
+         <subject encodinganalog="650" source="lcsh">American poetry -- 20th century.</subject>
+         <subject encodinganalog="650" source="lcsh">Women authors, American.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>--> 
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">Speeches (documents)</genreform>
+         <genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+         <genreform encodinganalog="655" source="aat">Galley proofs.</genreform>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Poets.</occupation>
+         <!-- <function encodinganalog="657">##</function> -->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Harriet Gray Blackwell Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Harriet Gray Blackwell</persname>, 1970-1986.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Subject files</unittitle></did>
+            <c02><did><unittitle>Biographical material</unittitle><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Photographs</unittitle><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Bogan, Louise</unittitle><unitdate normal="1954" type="inclusive">1954</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Columbia College</unittitle><unitdate normal="1961/1970" type="inclusive">1961-1970</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Cousins, Margaret</unittitle><unitdate normal="1945/1972" type="inclusive">1945-1972, </unitdate><unitdate normal="1919/1983" type="inclusive">undated</unitdate> <physdesc><extent>4 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Dietz Press Inc.</unittitle><unitdate normal="1954/1976" type="inclusive">1954-1976, </unitdate><unitdate normal="1919/1983" type="inclusive">undated</unitdate><physdesc><extent>3 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>General</unittitle><unitdate normal="1938/1982" type="inclusive">1938-1982, </unitdate><unitdate normal="1919/1983" type="inclusive">undated</unitdate><physdesc><extent>14 folders</extent></physdesc><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02 level="subseries"><did><unittitle>Articles</unittitle></did>
+               <c03><did><unittitle>Typescripts, A-Z, untitled</unittitle><physdesc><extent>27 folders</extent></physdesc><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>Printed material, A-Z</unittitle><physdesc><extent>4 folders</extent></physdesc><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>Miscellaneous articles</unittitle><container type="Oversize">1</container></did><scopecontent><p>Archibald Rutledge and his home; Green gold of Redlands building new colony; My place in the sun; Southern personalities (Wil Lou Gray)</p></scopecontent></c03>
+            </c02>
+            <c02 level="subseries"><did><unittitle>Books</unittitle></did>
+               <c03><did><unittitle>The Book of Trees</unittitle><abstract>manuscript</abstract><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>A Candle for All Time</unittitle><abstract>manuscript</abstract><physdesc><extent>8 folders</extent></physdesc><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>The Leaf -- Green Fire</unittitle><abstract>manuscript</abstract><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>The Redoubtable Lucy</unittitle><abstract>manuscript</abstract><physdesc><extent>5 folders</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>The Trees of Heaven</unittitle><abstract>manuscript, galleys, published material</abstract><physdesc><extent>4 folders</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>The Winter Tree</unittitle><abstract>manuscript, galleys, published material</abstract><physdesc><extent>4 folders</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>The Word, the Flowers and the Silver Pear</unittitle><abstract>manuscript</abstract><container type="Box">2</container></did></c03>
+            </c02>
+            <c02 level="subseries"><did><unittitle>Poetry</unittitle></did>
+               <c03><did><unittitle>Notes, A-Z, untitled</unittitle><physdesc><extent>5 folders</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>Notebook</unittitle><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>Typescripts, A-Z, untitled</unittitle><physdesc><extent>8 folders</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>Notebook I-IV</unittitle><physdesc><extent>4 folders</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>Published material, A-Z, untitled</unittitle><physdesc><extent>5 folders</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>Miscellaneous poetry</unittitle><container type="Oversize">1</container></did></c03>
+            </c02>
+            <c02 level="subseries"><did><unittitle>Stories</unittitle></did>
+               <c03><did><unittitle>A-G</unittitle><physdesc><extent>11 folders</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>H-W</unittitle><physdesc><extent>20 folders</extent></physdesc><container type="Box">3</container></did></c03>
+               <c03><did><unittitle>Anecdotes</unittitle><container type="Box">3</container></did></c03>
+               <c03><did><unittitle>Bibliography</unittitle><container type="Box">3</container></did></c03>
+               <c03><did><unittitle>Notes A-Z, untitled</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">3</container></did></c03>
+               <c03><did><unittitle>Notebook</unittitle><container type="Box">3</container></did></c03>
+               <c03><did><unittitle>Outlines, A-Z, untitled</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">3</container></did></c03>
+               <c03><did><unittitle>Research material</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">3</container></did></c03>
+               <c03><did><unittitle>Rough drafts, A-Z, untitled</unittitle><physdesc><extent>4 folders</extent></physdesc><container type="Box">3</container></did></c03>
+            </c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Acceptance/rejection memoranda</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Acceptance/rejection memoranda, file cards</unittitle><container type="Box">4</container></did></c02>
+            <c02><did><unittitle>Awards</unittitle><unitdate normal="1943/1982" type="inclusive">1943-1982, </unitdate><unitdate normal="1919/1983" type="inclusive">undated</unitdate><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Clippings</unittitle><unitdate normal="1936/1975" type="inclusive">1936-1975, </unitdate><unitdate normal="1919/1983" type="inclusive">undated</unitdate><physdesc><extent>5 folders</extent></physdesc><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Course notes</unittitle><physdesc><extent>14 folders</extent></physdesc><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Financial</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Legal</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Printed material</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Reviews</unittitle><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Speech, Columbia College Commencement</unittitle><unitdate normal="1961" type="inclusive">1961</unitdate><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Miscellaneous</unittitle><container type="Oversize">1</container></did></c02>
+         </c01>
+	  </dsc>
+   </archdesc>
+</ead>

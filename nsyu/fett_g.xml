@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="fett_g">fett_g</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">George Fett Cartoons</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2012-02-14" encodinganalog="Date">14 Feb 2012</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2012-02-14">14 Feb 2012</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>22 May 2018 - items from 1973-1975 added (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Fett, George Leonard.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">George Fett Cartoons</unittitle>
+         <unitdate encodinganalog="245$f" normal="1973/1981" type="inclusive" label="Inclusive Dates: ">1973-1981</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1.25 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Original cartoons from Norbert comic strip</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3906871</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>George Leonard Fett (1920-1989) was an American cartoonist best known worldwide for his Sniffy and Norbert comic strips, both of which featured dogs as main characters.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">George Fett Cartoons</emph> consists of more than 60 pieces of original artwork for the <emph render="italic">Norbert</emph> comic strip (earlier titled <emph render="italic">Little No-No and Sniffy</emph>).  The strips are ink and blue pencil on artboard.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Chronological.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has the papers of more than 150 editorial and strip cartoonists.  Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>A detailed listing of the dates of all strips is available in pdf form <extref href="fett_g_inv.pdf">here</extref> (if viewing online) or at the end of this inventory (if viewing hard copy).</p>
+      </otherfindaid>
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Art -- Cartoonists</subject><persname encodinganalog="600" source="lcnaf">Fett, George Leonard.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">United Feature Syndicate.</corpname>
+         <title encodinganalog="630" source="lcnaf">Norbert (comic strip)</title>
+         <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject>
+         
+      <subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States.</subject>
+      
+      <subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Dogs -- Comic books, strips, etc.</subject>
+      <subject encodinganalog="650" source="lcsh">Comic books, strips, 
+
+etc. -- United States.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Artwork.</genreform><genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+      
+      <genreform encodinganalog="655" source="aat">Comic strips.</genreform>
+      
+         <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> George Fett Cartoons, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">William Janocha</persname>, 2011, 2017.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Cartoons</unittitle></did>
+               
+               
+            <c02><did><unittitle><emph render="italic">Norbert</emph> (earlier title: <emph render="italic">Little No-No and Sniffy</emph>)</unittitle><unitdate normal="1973/1976" type="inclusive">1973-1976, </unitdate><unitdate normal="1978/1981" type="inclusive">1978-1981</unitdate><physdesc><dimensions>roughly 17.5" x 5"</dimensions></physdesc><container type="Oversize">1</container></did><note>
+            <p>Click 
+              
+              
+              
+              
+              
+              
+              
+              <extref href="fett_g_inv.pdf">here</extref> for a detailed inventory.</p>
+          </note></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

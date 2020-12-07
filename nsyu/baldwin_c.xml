@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="baldwin_c">baldwin_c</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Charles Baldwin Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-03-27" encodinganalog="Date">18 Sep 2015</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2015-09-18">18 Sep 2015</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Baldwin, Charles, fl. 1814.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Charles Baldwin Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1814/1815" type="inclusive" label="Inclusive Dates: ">1814-1815</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Small collection of documents relating to Charles Baldwin of Onondaga County.  Most pertain to his military service.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4600959</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Nothing is known of Charles Baldwin other than what can be gleaned from the collection.  He was a resident of Onondaga County, served in the United States Army in several capacities including as aide-de-camp to General John Ellis of the 5th New York Division, 27th Brigade, and was a Master of the Court of Chancery of the State of New York.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Charles Baldwin Collection</emph> is a small collection of documents relating to Charles Baldwin of Onondaga County.  Most pertain to his military service.  The documents include regimental orders.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Chronological.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <subject encodinganalog="650" source="local">Military history</subject>
+
+<subject encodinganalog="650" source="local">New York State</subject><!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Baldwin, Charles, fl. 1814.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Military service, Voluntary.</subject>
+         <geogname encodinganalog="651" source="lcsh">New York (State). -- Court of Chancery.</geogname><geogname encodinganalog="651" source="lcsh">Onondaga County (N.Y.)</geogname>
+         <genreform encodinganalog="655" source="aat">Military commissions.</genreform><genreform encodinganalog="655" source="aat">Military records.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Soldiers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Charles Baldwin Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Miscellaneous</unittitle></did>
+               
+               
+            <c02><did><unittitle>Orders and appointments</unittitle><unitdate normal="1814/1815" type="inclusive">1814-1815</unitdate><physdesc><extent>4 items</extent></physdesc><container type="Map-Case"></container></did><scopecontent><list type="simple"><item>a regimental order dated 28 October 1814 specifying that the quartermaster of Colonel Clark's regiment (Charles Baldwin is the paymaster) should procure four baggage wagons for their march</item><item>a regimental order dated 28 October 1814 specifying that Charles Baldwin, paymaster of the regiment, assemble several equipped companies and have them march to Lieutenant Colonel Christopher Clark's house in Manlius by 30 October</item><item>a brigade order dated 4 November 1814 specifying that Lieutenant Charles Baldwin be aide-de-camp to Brigadier General John Ellis, 27th New York</item><item>a partially printed certificate dated 27 March 1815 appointing Charles Baldwin a master of the Court of Chancery of the State of New York</item></list></scopecontent></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

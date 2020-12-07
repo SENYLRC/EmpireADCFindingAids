@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+]>
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.--><eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="us" mainagencycode="NSyU" identifier="brown_l">brown_l</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Leonard Brown Papers</titleproper>
+				<subtitle>An inventory of his papers at Syracuse University</subtitle>
+			<author encodinganalog="Creator">KM</author></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="1997-09" encodinganalog="Date">Sep 1997</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2005-11-07">7 Nov 2005</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<revisiondesc>
+			<list>
+				<item>7 Nov 2005 - EAD file created (MRR)</item>
+			<item>19 Jul 2006 - minor changes to subject headings (MRR)</item></list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<persname encodinganalog="100">Brown, Leonard Stanley</persname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Leonard Brown Papers</unittitle>
+			<unitdate encodinganalog="245$f" normal="1924/1974" type="inclusive" label="Inclusive Dates: ">1924-1974</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>.75 linear ft.</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">Writings and memorabilia of Syracuse University English professor and critical theorist Leonard Brown (1904-1960). </abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="us" repositorycode="NSyU">2458302</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+			</langmaterial>
+		</did>
+				
+		<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>Spanning 1924 to 1974, the Leonard Brown Papers encompasses writings and memorabilia of the Syracuse University professor of English and literary critical theorist.  Arriving at Syracuse in the mid-twenties, Brown led students in the exploration of the implications of Freudian theory and Marxist philosophy as applied to literary criticism.  In the mid-thirties Brown was dismissed from the University for introducing dialiectical materialism to his class; however, when the local newspapers reported Brown's discharge, he was re-instated the next day.  In a tribute to Brown, Malcolm Cowley wrote:</p><blockquote><p>There are many surviving tokens of what he might have done; there are fine short stories, essays, anthologies, critical commentaries.  Indeed, they cover so much ground that they are like the ruins of some ancient city as photographed from the air.  They are, however, the ruins of a city that was never built.</p><p>That was Leonard's tragedy, and there is no use hiding it, but there is another side of his career that was a brilliant success.  He was among the best teachers of writing that this country has known...every writer of the past thirty years who attended Syracuse -- there are many -- and hundreds who were simply interested in writing without wishing to turn professional, owe a personal debt to Leonard Brown.</p></blockquote></bioghist>
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p><emph render="bold">Writings</emph> includes course notes and plans, essays, fiction, and poetry.  Among the course materials for Brown's 1940 Ernest Hemingway seminar is a student paper submitted by Shirley Jackson.  Critical essays on literary theory, drafts and notes for novellas and short stories, and manuscript poems constitute the remainder of Brown's writings.  A single issue of <emph render="italic">Avenue</emph> (Vol. 1, no. 2, Jan. 22, 1934), a periodical published in Syracuse and edited in part by Leonard Brown, has been catalogued for the Library's rare book collections.</p><p><emph render="bold">Memorabilia</emph> comprises diplomas, photographs, college transcripts, and tributes.</p>
+		</scopecontent>
+		
+		<!--<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>## OPT (MARC 351$a)</p>
+		</arrangement>-->
+		
+		<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>Additional material relating to Leonard Brown may be found among the Library's papers of his former student, Albion College professor emeritus <extref href="../h/hart_je.htm">John E. Hart</extref>.</p>
+		</relatedmaterial>
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+			<subject encodinganalog="650" source="local">Radicalism</subject><persname encodinganalog="600" source="local">Brown, Leonard Stanley.</persname>
+			
+			<title encodinganalog="630" source="local">Avenue.</title><subject encodinganalog="650" source="lcsh">Literature -- History and criticism.</subject><subject encodinganalog="650" source="lcsh">American literature -- 20th century.</subject>
+			
+			<genreform encodinganalog="655" source="aat">Lecture notes.</genreform><genreform encodinganalog="655" source="aat">Essays.</genreform><genreform encodinganalog="655" source="aat">Poems.</genreform><genreform encodinganalog="655" source="aat">Manuscripts (document genre)</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+			
+			<occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+		</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p>Leonard Brown Papers, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<!--<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>### (MARC 541 and/or  561) </p>
+		</acqinfo>-->
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Writings</unittitle>
+				<!--C01 @LEVEL must be set to 'series' to show up in TOC.--></did>
+				<c02 level="subseries">
+					<did>
+						<unittitle>Course notes/plans</unittitle>
+						
+						
+						
+						
+						
+					</did>
+				<c03><did><unittitle>Hemingway Seminar</unittitle><physdesc><extent>3 folders</extent></physdesc><unitdate normal="1940" type="inclusive">1940</unitdate><container type="Box">1</container></did></c03></c02><c02><did><unittitle>History of criticism</unittitle><physdesc><extent>4 folders</extent></physdesc><container type="Box">1</container></did></c02>
+			<c02 level="subseries">
+					<did>
+						<unittitle>Notes</unittitle>
+						
+						
+						
+						
+						
+					<abstract>miscellaneous, with printed material</abstract></did>
+				<c03><did><unittitle>Dialectic of poetry</unittitle><container type="Box">1</container></did></c03><c03><did><unittitle>Dostoevsky</unittitle><container type="Box">1</container></did></c03><c03><did><unittitle>Frost</unittitle><container type="Box">1</container></did></c03><c03><did><unittitle>Story-writing</unittitle><container type="Box">1</container></did></c03></c02><c02 level="subseries">
+					<did>
+						<unittitle>Essays</unittitle>
+						
+						
+						
+						
+						
+					</did>
+				<c03><did><unittitle>"The Approach to Literature"</unittitle><container type="Box">1</container></did></c03><c03><did><unittitle>"Criticism of Structuralism" (notes and drafts)</unittitle><container type="Box">1</container></did></c03><c03><did><unittitle>"Dialectical Materialism and Proletarian Literature</unittitle><container type="Box">1</container></did></c03><c03><did><unittitle>"The Drama of Frost's Eden"</unittitle><container type="Box">1</container></did></c03><c03><did><unittitle>"The Logic of Poetry" (notes and drafts)</unittitle><container type="Box">1</container></did></c03><c03><did><unittitle>"Myth, Time and Tragedy"</unittitle><container type="Box">1</container></did></c03><c03><did><unittitle>"The Psychoanalytic Canon: a Plea for Integration"</unittitle><container type="Box">1</container></did></c03></c02><c02 level="subseries"><did><unittitle>Fiction</unittitle></did><c03><did><unittitle>Notes and drafts</unittitle><unitdate normal="1924/1974" type="inclusive">undated</unitdate><container type="Box">1</container></did></c03></c02><c02><did><unittitle>Poetry</unittitle><unitdate normal="1924/1974" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02><c02><did><unittitle>Miscellaneous</unittitle><container type="Box">1</container></did></c02></c01><c01 level="series"><did><unittitle>Memorabilia</unittitle></did><c02><did><unittitle>Diplomas (2)</unittitle><unitdate normal="1924/1925" type="inclusive">1924-1925</unitdate><container type="Box">2</container></did></c02><c02><did><unittitle>Photographs</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container></did></c02><c02><did><unittitle>Printed material</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">2</container></did></c02><c02><did><unittitle>Transcripts (college)</unittitle><unitdate normal="1924/1929" type="inclusive">1924-1929</unitdate><container type="Box">2</container></did></c02><c02><did><unittitle>Tributes to Leonard Brown</unittitle><unitdate normal="1960/1974" type="inclusive">1960-1974</unitdate><container type="Box">2</container></did></c02></c01>
+		</dsc>
+	</archdesc>
+</ead>

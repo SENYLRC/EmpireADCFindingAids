@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.8, 7/18/2007-->
+<!-- Added comment about use of archref element, removed copyright statement -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="cutler_r">cutler_r</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Robert Cutler Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2007-09-05" encodinganalog="Date">5 Sep 2007</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Rothenberger
+            <date normal="2007-09-05">5 Sep 2007</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>3 Jan 2017 - photographs added (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <!--<origination label="Creator: ">
+            <persname encodinganalog="100">Cutler, Robert W.</persname>
+         </origination>-->
+         <unittitle encodinganalog="245$a" label="Title: ">Robert Cutler Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1946/1971" type="inclusive" label="Inclusive Dates: ">1946-1971</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Two volumes of lectures, speeches and remarks by Robert Cutler, American architect, along with a considerable number of photographs.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2559904</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Robert W. Cutler (1905-1993) was an American architect and graduate of Syracuse University (1928).  He practiced architecture in Manhattan for more than 40 years and was a partner in the well-known firm of Skidmore, Owings &amp; Merrill. [Information taken from Cutler's obituary, New York Times, 12/19/1993.]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Robert W. Cutler Collection</emph> consists of lectures/speeches and photographs.</p>
+			
+			<p><emph render="bold">Lectures and speeches</emph> contains two volumes of lectures, speeches, and 
+			remarks by Cutler.  Subjects range over many aspects of architecture and  include 
+			titles such as "Fitting Solar Orientation into an Economical Layout Without Involving Operating Extravagance" (1947), 
+			"Tomorrow's Hospital" (1948), "Weather and the Building Industry" (1949), "Modern Hospital Architecture" (1953), 
+			"Aluminum in Architecture" (1957), and "Blackouts of 1965, or, Niagara Fails" (1965).</p>
+			
+			<p><emph render="bold">Photographs</emph> contains more than 100 photographs of Cutler at various events, including speeches, 
+			lectures, dinners, awards ceremonies, and groundbreakings.  Almost all of the photographs are undated; 
+			some have desriptive information handwritten or typed on the back.  Other persons of note appearing 
+			in the photographs include architects Max Abramovitz, Julian Levi, Louis Skidmore ("Skid"), Slocum 
+			Kingsbury, Leon Chatelain, and Simon Breines, New York City Mayor Robert Wagner, and hotelier Conrad Hilton.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Lectures and speeches are arranged chronologically.  Photographs, most of 
+			which are undated, remain in original order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has the papers of a number of American architects.  Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Architects</subject>
+         <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Abramovitz, Max, 1908-2004.</persname>
+				<persname encodinganalog="600" source="lcnaf">Cutler, Robert W., 1905-1993.</persname>
+				<persname encodinganalog="600" source="lcnaf">Skidmore, Louis, 1897-1962.</persname>
+				<persname encodinganalog="600" source="lcnaf">Wagner, Robert F. (Robert Ferdinand), 1910-1991.</persname>
+            <subject encodinganalog="650" source="lcsh">Architects and builders -- United States.</subject><subject encodinganalog="650" source="lcsh">Architecture -- United States -- 20th century.</subject>
+            <genreform encodinganalog="655" source="aat">Lectures.</genreform>
+				<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+				<genreform encodinganalog="655" source="aat">Remarks.</genreform>
+				<genreform encodinganalog="655" source="aat">Speeches (documents)</genreform>
+            <occupation encodinganalog="656" source="lcsh">Architects.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Robert Cutler Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Nicholas Adams</persname>, Vassar College Department of Art, 2006, 2016.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Lectures and speeches</unittitle></did>
+            <c02><did><unittitle>[Volume 1]</unittitle><unitdate normal="1946/1959" type="inclusive">1946-1959</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>[Volume 2]</unittitle><unitdate normal="1960/1971" type="inclusive">1960-1971</unitdate><container type="Box">1</container></did></c02>
+			</c01>
+         <c01 level="series"><did><unittitle>Photographs</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><abstract>luncheons, dinners, groundbreaking ceremonies, awards ceremonies, etc.</abstract><physdesc><extent>5 folders</extent></physdesc><container type="Box">2</container></did></c02>
+			</c01>			
+      </dsc>
+   </archdesc>
+</ead>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="harlow_wb">harlow_wb</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">William Burt Harlow Papers</titleproper>
+            <subtitle>An  inventoryof the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2011-10-27" encodinganalog="Date">27 Oct 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2011-10-27">27 Oct 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Harlow, William Burt, 1856-</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">William Burt Harlow Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1832/1923" type="inclusive" label="Inclusive Dates: ">1832-1923</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Writings and memorabilia of the Harvard-educated teacher, writer and poet from Syracuse, New York.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3546766</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>William Burt Harlow (b. 1856) was an American poet and writer.  Born in Portland, Maine, his family moved to Syracuse, 
+		New York in 1877.  Harlow graduated from Harvard University in 1879 and returned to Syracuse as Professor of English 
+		Literature, Composition and Rhetoric at Syracuse High School.  He published a book of poems 
+		(<emph render="italic">Songs of Syracuse</emph>) and a textbook on early English literature which was used by Syracuse 
+		University.  He traveled in Europe a good deal and wrote accounts of his travels for the Syracuse Post-Standard.  In 
+		addition to the local newspaper, many of his articles and poems appeared in the <emph render="italic">New York Tribune</emph>, 
+		<emph render="italic">Christian Register</emph>, <emph render="italic">New England Journal of Education</emph>, and other 
+		publications.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">William Burt Harlow Papers</emph> consists of memorabilia and writings of the American teacher, 
+			writer and poet from Syracuse, New York.</p>
+			<p><emph render="bold">Memorabilia</emph> contains clippings on various subjects that caught Harlow's interest, in both 
+			loose and scrapbook form, and 13 small softcover notebooks used for practicing penmanship.  The clippings in the scrapbook are an interesting assortment, ranging from accounts of murders, suicides and tragic accidents to comic poems and from essays to advertisements for various patent remedies.</p>
+			<p><emph render="bold">Writings</emph> includes books, clippings and manuscript material.  Books contains two copies of 
+			<emph render="italic">Songs of Syracuse</emph>, both signed and inscribed by Harlow and both with clippings of additional 
+			poems pasted in.  Clippings consists of poems, letters to the editor, articles and other published items by Harlow.  Sets 
+			of clippings on Bermuda and other travel destinations have been pasted into bound volumes, presumably by Harlow.  
+			Manuscript material contains the text of two poems and a small notebook with handwritten essays and observations on 
+			various topics.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by type of material.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+		<!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Literature -- American Poetry</subject><subject encodinganalog="650" source="local">New York State</subject><persname encodinganalog="600" source="lcnaf">Harlow, William Burt, 1856-</persname>
+         <persname encodinganalog="600" source="lcnaf">Harlow, William Burt, 1856- -- Songs of Syracuse.</persname><!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <corpname encodinganalog="610" source="lcnaf">Syracuse High School (Syracuse, N.Y.)</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Poets, American -- 19th century.</subject>
+         <subject encodinganalog="650" source="lcsh">Travel -- Europe -- Personal narratives.</subject>
+         <subject encodinganalog="650" source="lcsh">English teachers -- New York (State)</subject>
+         <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.)</geogname>
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">Manuscripts (document genre)</genreform>
+         <genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Poets.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Travel writers.</occupation>
+         
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>William Burt Harlow Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Unknown.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Clippings</unittitle><abstract>several concern the trial of Edward Mylius, a French journalist jailed for criminal libel for publishing a report that King George V of England was a bigamist</abstract><unitdate normal="1907" type="inclusive">1907, </unitdate><unitdate normal="1911" type="inclusive">1911, </unitdate><unitdate normal="1914" type="inclusive">1914, </unitdate><unitdate normal="1887/1923" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Penmanship booklets</unittitle><abstract>one is inscribed, "Presented by his teachers, for excellent in penmanship"</abstract><unitdate normal="1832/1835" type="inclusive">1832-1835</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Scrapbook</unittitle><abstract>poems, essays, advertisements, articles, jokes, pictures, anecdotes etc., clipped from various newspapers</abstract><unitdate normal="1880/1900" type="inclusive">circa 1880-1900</unitdate><container type="Box">1</container></did></c02>
+            
+         </c01>
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02><did><unittitle>Book, <emph render="italic">Songs of Syracuse</emph></unittitle><unitdate normal="1890" type="inclusive">1890</unitdate><physdesc><extent>2 copies</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Clippings</unittitle><unitdate normal="1887" type="inclusive">1887, </unitdate><unitdate normal="1917" type="inclusive">1917, </unitdate><unitdate normal="1920" type="inclusive">1920, </unitdate><unitdate normal="1923" type="inclusive">1923, </unitdate><unitdate normal="1887/1923" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Clippings</unittitle><abstract>pasted into bound volumes</abstract><unitdate normal="1914/1922" type="inclusive">1914-1922</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Manuscripts</unittitle><unitdate normal="1887/1923" type="inclusive">undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

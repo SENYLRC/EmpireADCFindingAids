@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="folio_society">folio_society</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Folio Society Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">unknown</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2017-07-14" encodinganalog="Date">14 Jul 2017</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2017-07-14">14 Jul 2017</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>2 Aug 2017 - missing oversize items located (MRC)</item>
+            <item>9 Jan 2020 - acquisition information updated (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">Folio Society (London, England)</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Folio Society Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1895/1968" type="inclusive" label="Inclusive Dates: ">1895-1968</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>3 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence with authors, editors, and artists; original artwork; unbound galleys for <emph render="italic">FOLIO 21: A bibliography of The Folio Society 1947-1967</emph></abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4945457</unitid>
+         <langmaterial label="Language: " encodinganalog="546">Most in 
+            <language langcode="eng">English</language>, a few items in <language langcode="fra">French</language>.</langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The Folio Society is a privately owned London-based publisher, founded by Charles Ede, Christopher Sandford, and Alan Bott in 1947. It produces illustrated hardback editions of classic fiction and non-fiction books, poetry and children's titles.  For many years the Society also operated a bookstore in the Holborn area of London, but it closed in 2016. </p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Folio Society Collection</emph> consists of correspondence with authors, editors, and illustrators, as well as numerous pieces of original art including wood block prints, lithographs, and sketches.  Notable correspondents include Cecil Beaton, Walter de la Mare, Daphne du Maurier, Derrick Harris, Joan Hassall, Gerard Hopkins, B.H. Liddell Hart, Harold Nicolson, Laurence Olivier, Herbert Beerbohm Tree, and Cicely Veronica Wedgwood.</p><p>The material is arranged by Folio Society publication number, although not all Folio Society publications are represented, and in some cases correspondence or artwork pertaining to one publication may be filed under another title due to context.  The Society's own bibliography, a copy of which is in the collection, was used to determine dates.  Under each publication are listed the names of the correspondents and/or artists represented in that folder.  In addition, a complete <ref target="index">Index</ref> to the collection is provided at the end of this finding aid.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>-->
+	  
+      <!--<originalsloc encodinganalog="535">
+	     <head>Location of Originals</head>
+		 <p>Originals are here and here and here.</p>
+      </originalsloc>--> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>By Folio Society publication number (FS 1, FS 2, etc.), according to  the Society's bibliography.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; also has a large collection of more than 350 Folio Society editions.  Please refer to &summitref; to locate these items.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Publishing, printing and book arts</subject>
+			<subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+			<subject encodinganalog="650" source="local">Literature -- American Poetry</subject>
+			<subject encodinganalog="650" source="local">Literature -- British</subject>
+			<subject encodinganalog="650" source="local">Literature -- French</subject>
+			<persname encodinganalog="600" source="lcnaf">Beaton, Cecil, 1904-1980.</persname>
+			<persname encodinganalog="600" source="lcnaf">Birkett, Norman Birkett, Baron, 1883-1962.</persname>
+			<persname encodinganalog="600" source="lcnaf">Bonfils, Robert, 1886-1972.</persname>
+			<persname encodinganalog="600" source="lcnaf">Boullaire, Jacques, 1893-1976.</persname>
+			<persname encodinganalog="600" source="lcnaf">Buckland Wright, John, 1897-1954.</persname>
+			<persname encodinganalog="600" source="lcnaf">Ede, Charles.</persname>
+			<persname encodinganalog="600" source="lcnaf">Einzig, Susan.</persname>
+			<persname encodinganalog="600" source="lcnaf">Gibbings, Robert, 1889-1958.</persname>
+			<persname encodinganalog="600" source="lcnaf">Goor, G. (Gaston), 1902-1977.</persname>
+			<persname encodinganalog="600" source="lcnaf">Harris, Derrick, 1919-1960.</persname>
+			<persname encodinganalog="600" source="lcnaf">Hassall, Joan.</persname>
+			<persname encodinganalog="600" source="lcnaf">Hopkins, Gerard, 1892-1961.</persname>
+			<persname encodinganalog="600" source="lcnaf">Le Campion, Valentin.</persname>
+			<persname encodinganalog="600" source="lcnaf">Martin, Frank, 1921-2005.</persname><persname encodinganalog="600" source="lcnaf">Olivier, Laurence, 1907-1989.</persname>
+			<persname encodinganalog="600" source="lcnaf">Palmer, Garrick.</persname>
+			<persname encodinganalog="600" source="lcnaf">Peake, Mervyn, 1911-1968.</persname>
+			<persname encodinganalog="600" source="lcnaf">Read, Harold Hope.</persname>
+			<persname encodinganalog="600" source="lcnaf">Rossem, Ru van.</persname>
+			<persname encodinganalog="600" source="lcnaf">Sala Grau, Joan, 1938-</persname>
+			<persname encodinganalog="600" source="lcnaf">Stone, Reynolds.</persname>
+			<persname encodinganalog="600" source="lcnaf">Svolinský, Karel, 1896-1986.</persname>
+			<persname encodinganalog="600" source="lcnaf">Whyte, Edna.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Folio Society (London, England)</corpname>
+         <title encodinganalog="630" source="lcnaf">FOLIO 21: A bibliography of The Folio Society 1947-1967.</title>
+         <subject encodinganalog="650" source="lcsh">Authors, English.</subject>
+			<subject encodinganalog="650" source="lcsh">Authors, American.</subject>
+			<subject encodinganalog="650" source="lcsh">Authors, French.</subject>
+			<subject encodinganalog="650" source="lcsh">Classical literature -- Publishing.</subject>
+			<subject encodinganalog="650" source="lcsh">Literature publishing -- Great Britain -- History -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Private presses -- England.</subject>
+			<subject encodinganalog="650" source="lcsh">Publishers and publishing -- Great Britain.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Engravings (prints)</genreform>
+			<genreform encodinganalog="655" source="aat">Lithographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Sketches.</genreform>
+			<genreform encodinganalog="655" source="aat">Woodcuts (prints)</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Folio Society Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 1969.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+<c01 level="series"><did><unittitle>Bibliographies and lists</unittitle></did>
+   <c02><did><unittitle><emph render="italic">FOLIO 21: A bibliography of The Folio Society 1947-1967</emph></unittitle><unitdate type="inclusive" normal="1968">1968</unitdate><abstract>unbound proof with handwritten annotations by unknown person</abstract><container type="Box">1</container></did></c02>
+</c01>		
+<c01 level="series"><did><unittitle>1947 publications</unittitle></did>
+   
+   <c02 id="fs2"><did><unittitle>FS 2 Trilby / George du Maurier</unittitle><unitdate type="inclusive" normal="1895">1895, </unitdate><unitdate type="inclusive" normal="1947/1948">1947-1948</unitdate><container type="Box">1</container></did><scopecontent><p>du Maurier, Daphne, 9 Feb 1947<lb/>Sadleir, Michael, 29 Apr 1947<lb/>Sadleir, Michael, 2 Jun 1947<lb/>Sadleir, Michael, 11 Feb 1948<lb/>Tree, Herbert Beerbohm, [1895?], theatre program for Trilby</p></scopecontent></c02>
+   <c02 id="fs4"><did><unittitle>FS 4 The Sonnets / William Shakespeare</unittitle><unitdate type="inclusive" normal="1948">1948</unitdate><container type="Box">1</container></did><scopecontent><p>Stone, Reynolds, 20 May 1948</p></scopecontent></c02>
+   <c02 id="fs6"><did><unittitle>FS 6 Confessions of an English Opium-Eater / Thomas de Quincey</unittitle><unitdate type="inclusive" normal="1963">1963</unitdate><container type="Box">1</container></did><scopecontent><p>Hughes-Stanton, Blair, 20 Jan 1963</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1948 publications</unittitle></did>
+   <c02 id="fs8"><did><unittitle>FS 8 The Voyages of Lemuel Gulliver / Jonathan Swift</unittitle><unitdate type="inclusive" normal="1947">1947</unitdate><container type="Box">1</container></did><scopecontent><p>Bawden, Edward, 17 Jul 1947<lb/>Bawden, Edward, 30 Oct 1947</p></scopecontent></c02>
+   <c02 id="fs10"><did><unittitle>FS 10 The Crime of Sylvestre Bonnard / Anatole France</unittitle><unitdate type="inclusive" normal="1943/1948">undated</unitdate><container type="Box">1</container></did><scopecontent><p>Read, H. Hope, 14 lithographs for Crime of Sylvestre Bonnard<lb/>Read, H. Hope, Oct 12</p></scopecontent></c02>
+   <c02 id="fs11"><did><unittitle>FS 11 The Odyssey / Homer</unittitle><unitdate type="inclusive" normal="1947/1948">1947-1948</unitdate><container type="Box">1</container></did><scopecontent><p>Buckland-Wright, John, 10 Nov 1948<lb/>Buckland-Wright, John, 16 engravings (artist's proofs) and one drawing (pencil and pen) for The Odyssey<lb/>Lucas, F.L., 23 Jun 1947<lb/>Lucas, F.L., 13 Mar 1948</p></scopecontent></c02>
+   <c02 id="fs12"><did><unittitle>FS 12 Dr Jekyll and Mr Hyde / Robert Louis Stevenson</unittitle><unitdate type="inclusive" normal="1949">1949</unitdate><container type="Box">1</container></did><scopecontent><p>Peake, Mervyn, 22 Feb 1949</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1949 publications</unittitle></did>
+   <c02 id="fs13"><did><unittitle>FS 13 The School for Scandal / Richard Sheridan</unittitle><unitdate type="inclusive" normal="1948/1949">1948-1949</unitdate><container type="Box">1</container></did><scopecontent><p>Beaton, Cecil, rough sketch for School for Scandal<lb/>Beaton, Cecil, 1948<lb/>Beaton, Cecil, 20 Aug 1948<lb/>Olivier, Sir Laurence, 25 Jan 1949</p></scopecontent></c02>
+   <c02 id="fs15"><did><unittitle>FS 15 The Compleat Angler / Izaak Walton</unittitle><unitdate type="inclusive" normal="1948/1949">1948-1949</unitdate><container type="Box">1</container></did><scopecontent><p>Lamb, Lynton, 14 Sep 1948<lb/>Lamb, Lynton, 4 Jan 1949</p></scopecontent></c02>
+   <c02 id="fs17"><did><unittitle>FS 17 The Parson's Daughter and Other Stories / Anthony Trollope</unittitle><unitdate type="inclusive" normal="1948">1948, </unitdate><unitdate type="inclusive" normal="1944/1949">undated</unitdate><container type="Box">1</container></did><scopecontent><p>Hassall, Joan, 27 Jul 1948<lb/>Hassall, Joan, 22 Dec 1948<lb/>Hassall, Joan, sketch and woodcut for Parson's Daughter (in book itself, which has been sent to cataloging; please refer to &summitref; to locate this item)</p></scopecontent></c02>
+   <c02 id="fs19"><did><unittitle>FS 19 Poems / Percy Bysshe Shelley</unittitle><unitdate type="inclusive" normal="1949">1949, </unitdate><unitdate type="inclusive" normal="1944/1949">undated</unitdate><container type="Box">1</container></did><scopecontent><p>Buckland-Wright, John, 28 wood engravings on one sheet for Shelley<lb/>Church, Richard, 1 Mar 1949</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1950 publications</unittitle></did>
+   <c02 id="fs22"><did><unittitle>FS 22 The History of Henry Esmond / William Makepeace Thackeray</unittitle><unitdate type="inclusive" normal="1945/1950">undated</unitdate><container type="Box">1</container></did><scopecontent><p>Clarke Hutton, Thomas, one drawing and two lithographs for Henry Esmond</p></scopecontent></c02>
+   <c02 id="fs24"><did><unittitle>FS 24 Salambo / Gustave Flaubert</unittitle><unitdate type="inclusive" normal="1949/1950">1949-1950</unitdate><container type="Box">1</container></did><scopecontent><p>Rossem, Ru van, 17 Mar 1949<lb/>Rossem, Ru van, 4 Apr 1950<lb/>Rossem, Ru van, pen sketch and ten engravings for Salambo</p></scopecontent></c02>
+   <c02 id="fs26"><did><unittitle>FS 26 The Iliad / Homer</unittitle><unitdate type="inclusive" normal="1950">1950</unitdate><container type="Box">1</container></did><scopecontent><p>Buckland-Wright, John, 9 engravings (artist's proofs) for The Iliad<lb/>Lucas, F.L., 5 Jul 1950</p></scopecontent></c02>
+   <c02 id="fs27"><did><unittitle>FS 27 The Tragedy of Romeo and Juliet / William Shakespeare</unittitle><unitdate type="inclusive" normal="1949/1950">1949-1950</unitdate><container type="Box">1</container></did><scopecontent><p>Coghill, Nevill, [1950s?]<lb/>Hugo, Jean, 21 Apr 1949</p></scopecontent></c02>
+   <c02 id="fs29"><did><unittitle>FS 29 Manon Lescaut / Antoine-Francois Prevost</unittitle><unitdate type="inclusive" normal="1950">1950, </unitdate><unitdate type="inclusive" normal="1945/1950">undated</unitdate><container type="Box">1</container></did><scopecontent><p>Le Campion, Valentin, 28 Feb 1950<lb/>Le Campion, Valentin, 21 Nov 1950<lb/>Le Campion, Valentin, 23 wood engravings for Manon<lb/>Sackville-West, Edward, 28 Jan 1950</p></scopecontent></c02>
+   <c02 id="fs30"><did><unittitle>FS 30 Typee / Herman Melville</unittitle><unitdate type="inclusive" normal="1948/1951">1948-1951</unitdate><container type="Box">1</container></did><scopecontent><p>Boullaire, Jacques, 6 Oct 1948<lb/>Boullaire, Jacques, 27 Oct 1948<lb/>Boullaire, Jacques, 5 Aug 1950<lb/>Boullaire, Jacques, 1 Jun 1951<lb/>Boullaire, Jacques, one etching for Typee<lb/>Gibbings, Robert, 24 Feb 1950<lb/>Gibbings, Robert, 20 Mar 1950<lb/>Gibbings, Robert, 2 Dec 1950</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1951 publications</unittitle></did>
+   <c02 id="fs31"><did><unittitle>FS 31 Incognita / William Congreve</unittitle><unitdate type="inclusive" normal="1950">[1950]</unitdate><container type="Box">1</container></did><scopecontent><p>Rossem, Ru van, [1950]</p></scopecontent></c02>
+   <c02 id="fs33"><did><unittitle>FS 33 The Tragedy of Macbeth / William Shakespeare</unittitle><unitdate type="inclusive" normal="1949/1951">1949-1951, </unitdate><unitdate type="inclusive" normal="1964">1964</unitdate><container type="Box">1</container></did><scopecontent><p>Ayrton, Michael, 14 Nov 1949<lb/>Ayrton, Michael, 14 Aug 1964<lb/>Casson, Sir Lewis, 13 Dec 1950<lb/>Casson, Sir Lewis, 4 Apr 1951</p></scopecontent></c02>
+   <c02 id="fs35"><did><unittitle>FS 35 Letters / Horace Walpole</unittitle><unitdate type="inclusive" normal="1951">1951</unitdate><container type="Box">1</container></did><scopecontent><p>Ketton-Cremer, R.W., 10 Jun 1951<lb/>Lewis, Wilmarth S., 27 Jun 1951</p></scopecontent></c02>
+   <c02 id="fs36"><did><unittitle>FS 36 Some People / Sir Harold Nicolson</unittitle><unitdate type="inclusive" normal="1949/1950">1949-1950</unitdate><container type="Box">1</container></did><scopecontent><p>Nicolson, Harold, 5 Feb 1949<lb/>Nicolson, Harold, 21 Apr 1950<lb/>Nicolson, Harold, 26 May 1950<lb/>Nicolson, Harold, [1950], pen sketch</p></scopecontent></c02>
+   <c02 id="fs37"><did><unittitle>FS 37 Mary Gresley and Other Stories / Anthony Trollope</unittitle><unitdate type="inclusive" normal="1951">1951</unitdate><container type="Box">1</container></did><scopecontent><p>Hassall, Joan, 30 Mar 1951<lb/>Hassall, Joan, 3 Aug 1951</p></scopecontent></c02>
+   <c02 id="fs40"><did><unittitle>FS 40 The Newgate Calendar / Sir Norman Birkett (ed.)</unittitle><unitdate type="inclusive" normal="1950/1951">1950-1951</unitdate><container type="Box">1</container></did><scopecontent><p>Birkett, Sir Norman, 14 Nov 1950<lb/>Birkett, Sir Norman, 3 Mar 1951<lb/>Birkett, Sir Norman, 16 Apr 1951<lb/>Birkett, Sir Norman, 27 May 1951</p></scopecontent></c02>
+   <c02 id="fs41"><did><unittitle>FS 41 The Sofa / Claude-Prosper Jolyot de Crebillon</unittitle><unitdate type="inclusive" normal="1950">1950</unitdate><container type="Box">1</container></did><scopecontent><p>Bonfils, Robert, 9 Oct 1950<lb/>Bonfils, Robert, one drawing and seven engravings for The Sofa</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1952 publications</unittitle></did>
+   <c02 id="fs43"><did><unittitle>FS 43 The Vicar of Wakefield / Oliver Goldsmith</unittitle><unitdate type="inclusive" normal="1948/1952">undated</unitdate><container type="Box">1</container></did><scopecontent><p>Wetherbee, Margaret, drawing for Vicar of Wakefield</p></scopecontent></c02>
+   <c02 id="fs44"><did><unittitle>FS 44 Madame Bovary / Gustave Flaubert</unittitle><unitdate type="inclusive" normal="1951">1951</unitdate><container type="Box">1</container></did><scopecontent><p>Sala Grau, Joan, 4 Sep 1951<lb/>Sala Grau, Joan, 28 Oct 1951<lb/>Sala Grau, Joan, 12 engravings for Madame Bovary</p></scopecontent></c02>
+   <c02 id="fs45"><did><unittitle>FS 45 Memoirs of Prince Alexy Haimatoff / Thomas Jefferson Hogg</unittitle><unitdate type="inclusive" normal="1952">1952</unitdate><container type="Box">1</container></did><scopecontent><p>Bliss, Douglas Percy, 15 Apr 1952<lb/>Bliss, Douglas Percy, 29 Oct 1952<lb/>Scott, W. Sidney, 10 Apr 1952</p></scopecontent></c02>
+   <c02 id="fs46"><did><unittitle>FS 46 The Tragedy of Antony and Cleopatra / William Shakespeare</unittitle><unitdate type="inclusive" normal="1951/1952">1951-1952</unitdate><container type="Box">1</container></did><scopecontent><p>Olivier, Sir Laurence, 2 Jun 1951<lb/>Olivier, Sir Laurence, 31 Jul 1951<lb/>Olivier, Sir Laurence, 15 Jan 1952</p></scopecontent></c02>
+   <c02 id="fs47"><did><unittitle>FS 47 The Quest for Corvo / A.J.A. Symons</unittitle><unitdate type="inclusive" normal="1947/1952">undated</unitdate><container type="Box">1</container></did><scopecontent><p>Hartz, Sam, engraving for Quest for Corvo</p></scopecontent></c02>
+   <c02 id="fs50"><did><unittitle>FS 50 Two Tales of the Congo / Joseph Conrad</unittitle><unitdate type="inclusive" normal="1951">1951</unitdate><container type="Box">1</container></did><scopecontent><p>Rieser, Dolf, 14 Sep 1951</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1953 publications</unittitle></did>
+   <c02 id="fs56"><did><unittitle>FS 56 Joseph Andrews / Henry Fielding</unittitle><unitdate type="inclusive" normal="1952">1952</unitdate><container type="Box">1</container></did><scopecontent><p>Harris, Derrick, 30 Mar 1952<lb/>Harris, Derrick, 1 Oct 1952</p></scopecontent></c02>
+   <c02 id="fs57"><did><unittitle>FS 57 Eastern Love Poems / Powys Mathers (trans.)</unittitle><unitdate type="inclusive" normal="1952">1952</unitdate><container type="Box">1</container></did><scopecontent><p>Rossem, Ru van, 14 Dec 1952</p></scopecontent></c02>
+   <c02 id="fs58"><did><unittitle>FS 58 In the Beginning / Norman Douglas</unittitle><unitdate type="inclusive" normal="1948/1953">undated</unitdate><container type="Box">1</container></did><scopecontent><p>Sharp, Richard, pen sketch</p></scopecontent></c02>
+   <c02 id="fs61"><did><unittitle>FS 61 Louis XIV at Versailles / Louis de Rouvroy</unittitle><unitdate type="inclusive" normal="1952">1952</unitdate><container type="Box">1</container></did><scopecontent><p>Goor, 21 Aug 1952<lb/>Goor, color sketch for Louis XIV</p></scopecontent></c02>
+   <c02 id="fs62"><did><unittitle>FS 62 Readings from Dickens / Emyln Williams</unittitle><unitdate type="inclusive" normal="1953">1953</unitdate><container type="Box">1</container></did><scopecontent><p>Darwin, Bernard, 4 Apr 1953<lb/>Williams, Emlyn, 13 Oct 1953</p></scopecontent></c02>
+   <c02 id="fs63"><did><unittitle>FS 63 The Young King and Other Stories / Oscar Wilde</unittitle><unitdate type="inclusive" normal="1951">1951</unitdate><container type="Box">1</container></did><scopecontent><p>Gaastra, John, color sketch for Young King<lb/>Holland, Vyvyan, 16 Mar 1951</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1954 publications</unittitle></did>
+   <c02 id="fs64"><did><unittitle>FS 64 Drake's Raid on the Treasure Trains / John and Janet Hampden (eds.)</unittitle><unitdate type="inclusive" normal="1953">1953</unitdate><container type="Box">1</container></did><scopecontent><p>Wales, Geoffrey, 4 Mar 1953</p></scopecontent></c02>
+   <c02 id="fs65"><did><unittitle>FS 65 Moll Flanders / Daniel Defoe</unittitle><unitdate type="inclusive" normal="1953">1953</unitdate><container type="Box">1</container></did><scopecontent><p>Lambourne, Nigel, 7 Feb 1953<lb/>Lambourne, Nigel, 20 Jun 1953<lb/>Lambourne, Nigel, 20 Jun 1953, with sketch<lb/>Lambourne, Nigel, sketch with notes for Moll Flanders</p></scopecontent></c02>
+   <c02 id="fs71"><did><unittitle>FS 71 The Tragedy of Hamlet, Prince of Denmark / William Shakespeare</unittitle></did>
+	   <c03><did><unittitle>Correspondence</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><container type="Box">1</container></did><scopecontent><p>Burton, Richard, 27 Mar 1954</p></scopecontent></c03>
+	   <c03><did><unittitle>Artwork</unittitle><container type="Oversize">1</container></did><scopecontent><p>Roger Furse, oversize drawing of Laurence Olivier as Hamlet</p></scopecontent></c03>
+	</c02>
+   <c02 id="fs72"><did><unittitle>FS 72 Sappho / Alphonse Daudet</unittitle><unitdate type="inclusive" normal="1949/1954">undated</unitdate><container type="Box">1</container></did><scopecontent><p>Einzig, Susan, 8 engravings for Sappho</p></scopecontent></c02>
+   <c02 id="fs74-76"><did><unittitle>FS 74, 76 The Decameron: The First Five Days &amp; The Second Five Days / Giovanni Boccaccio</unittitle><unitdate type="inclusive" normal="1953/1954">1953-1954</unitdate><container type="Box">1</container></did><scopecontent><p>Buckland-Wright, John, 19 Dec 1953<lb/>Buckland-Wright, John, 10 May 1954<lb/>Buckland-Wright, John, 20 engravings for The Decameron</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1955 publications</unittitle></did>
+   <c02 id="fs75"><did><unittitle>FS 75 The Discovery of Tahiti / George Robertson</unittitle><unitdate type="inclusive" normal="1953">1953</unitdate><container type="Box">1</container></did><scopecontent><p>Gibbings, Robert, 4 Dec 1953<lb/>Gibbings, Robert, ten wood engravings</p></scopecontent></c02>
+   <c02 id="fs76"><did><unittitle>FS 76 The Decameron: The The Second Five Days / Giovanni Boccaccio</unittitle><note><p>See <ref target="fs74-76">1954 publications : FS 74, 76 The Decameron: The First Five Days &amp; The Second Five Days</ref>.</p></note></did></c02>
+   <c02 id="fs78"><did><unittitle>FS 78 Humphry Clinker / Tobias Smollett</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><container type="Box">1</container></did><scopecontent><p>Harris, Derrick, 11 Jul 1954<lb/>Harris, Derrick, drawing for Humphrey Clinker</p></scopecontent></c02>
+   <c02 id="fs80"><did><unittitle>FS 80 Bel-Ami / Guy de Maupassant</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><container type="Box">1</container></did><scopecontent><p>Grant, Alistair, 30 Nov 1954</p></scopecontent></c02>
+   <c02 id="fs81"><did><unittitle>FS 81 Othello / William Shakespeare</unittitle><unitdate type="inclusive" normal="1952">1952, </unitdate><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">1</container></did><scopecontent><p>Moiseiwitsch, Tanya, 25 Jul 1955<lb/>Welles, Orson, 23 Jan 1952</p></scopecontent></c02>
+   <c02 id="fs84"><did><unittitle>FS 84 The Virgin and the Gypsy / David Herbert Lawrence</unittitle><unitdate type="inclusive" normal="1950/1955">undated</unitdate><container type="Box">1</container></did><scopecontent><p>Masterman, Dodie, 5 engravings for Virgin and the Gypsy (not used)</p></scopecontent></c02>
+   <c02 id="fs86"><did><unittitle>FS 86 The Semi-Attached Couple / Emily Eden</unittitle><unitdate type="inclusive" normal="1954">1954</unitdate><container type="Box">1</container></did><scopecontent><p>Braby, Dorothea, 18 Mar 1954</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1956 publications</unittitle></did>
+   <c02 id="fs87"><did><unittitle>FS 87 Memoirs of Madame du Barry / Mathieu-Francois Pidansat de Mairobert</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">1</container></did><scopecontent><p>Flint, Sir William Russell, 19 Mar 1955</p></scopecontent></c02>
+   <c02 id="fs88"><did><unittitle>FS 88 The Woman in White / Wilkie Collins</unittitle><unitdate type="inclusive" normal="1961">1961</unitdate><container type="Box">1</container></did><scopecontent><p>Lamb, Lynton, 26 Jan 1961</p></scopecontent></c02>
+   <c02 id="fs89"><did><unittitle>FS 89 The Bridge of San Luis Rey / Thornton Wilder</unittitle><unitdate type="inclusive" normal="1951/1956">undated</unitdate><container type="Box">1</container></did><scopecontent><p>Martin, Frank, wood engravings for Bridge of San Luis Rey</p></scopecontent></c02>
+   <c02 id="fs91"><did><unittitle>FS 91 The Confessional of the Black Penitents / Ann Radcliffe</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">1</container></did><scopecontent><p>Ross, Philip E., 21 Feb 1955</p></scopecontent></c02>
+   <c02 id="fs92"><did><unittitle>FS 92 The Young Visiters [sic], or, Mr Salteena's Plan / Daisy Ashford</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">1</container></did><scopecontent><p>Brough, Diana, 14 Feb 1955</p></scopecontent></c02>
+   <c02 id="fs93"><did><unittitle>FS 93 The Tragedy of King Lear / William Shakespeare</unittitle><unitdate type="inclusive" normal="1953">1953, </unitdate><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">1</container></did><scopecontent><p>Wolfit, Donald, 9 Dec 1953<lb/>Wolfit, Donald, 12 Mar 1956<lb/>Wolfit, Donald, 16 Mar 1956</p></scopecontent></c02>
+   <c02 id="fs96"><did><unittitle>FS 96 Nana / Emile Zola</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">1</container></did><scopecontent><p>Vertes, Marcel, 22 Jan 1955<lb/>Vertes, Marcel, 28 Mar 1955<lb/>Vertes, Marcel, engraving for Nana</p></scopecontent></c02>
+   <c02 id="fs97"><did><unittitle>FS 97 Ghost Stories / Walter de la Mare</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">1</container></did><scopecontent><p>de la Mare, Walter, 7 Feb 1955<lb/>de la Mare, Walter, 8 Jun 1955<lb/>Freedman, Barnett, 4 Jun 1955<lb/>Freedman, Barnett, 13 Nov 1955<lb/>Freedman, Barnett, 19 Aug 1956<lb/>Freedman, Barnett, 16 Sep 1956</p></scopecontent></c02>
+   <c02 id="fs98-100"><did><unittitle>FS 98, 100 The Canterbury Tales, Volume I and II / Geoffrey Chaucer</unittitle><unitdate type="inclusive" normal="1955/1956">1955-1956, </unitdate><unitdate type="inclusive" normal="1950/1956">undated</unitdate><container type="Box">2</container></did><scopecontent><p>Coghill, Nevill, 10 Jan 1955<lb/>Coghill, Nevill, 15 May 1955<lb/>Coghill, Nevill, 12 Jan 1956<lb/>Coghill, Nevill, 26 Aug 1956<lb/>Coghill, Nevill, 14 Nov 1956<lb/>Whyte, Edna, 30 woodcuts for Canterbury Tales</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1957 publications</unittitle></did>
+   <c02 id="fs99"><did><unittitle>FS 99 Salome / Oscar Wilde</unittitle><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">2</container></did><scopecontent><p>Ayrton, Michael, 25 Aug 1956</p></scopecontent></c02>
+   <c02 id="fs100"><did><unittitle>FS 100 The Canterbury Tales, Volume II / Geoffrey Chaucer</unittitle><note><p>See <ref>1956 publications : FS 98, 100 The Canterbury Tales, Volume I and II</ref>.</p></note></did></c02>
+   <c02 id="fs101"><did><unittitle>FS 101 Crime and Punishment / Fyodor Dostoyevsky</unittitle><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">2</container></did><scopecontent><p>Rossem, Ru van, 6 Oct 1956</p></scopecontent></c02>
+   <c02 id="fs103"><did><unittitle>FS 103 The History of Mr Polly / H. G. Wells</unittitle><unitdate type="inclusive" normal="1955">1955</unitdate><container type="Box">2</container></did><scopecontent><p>Ribbons, Ian, 27 Sep 1955</p></scopecontent></c02>
+   <c02 id="fs104"><did><unittitle>FS 104 The Waterloo Campaign / Napoleon Bonaparte</unittitle><unitdate type="inclusive" normal="1956/1957">1956-1957</unitdate><container type="Box">2</container></did><scopecontent><p>De Chair, Somerset, 24 Jun 1957<lb/>Lachouque, Henry, 11 Nov 1956</p></scopecontent></c02>
+   <c02 id="fs105"><did><unittitle>FS 105 A Midsummer Night's Dream / William Shakespeare</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">2</container></did><scopecontent><p>Richardson, Sir Ralph, 10 Feb 1957</p></scopecontent></c02>
+   <c02 id="fs106"><did><unittitle>FS 106 Tales of Mystery and Imagination / Edgar Allen Poe</unittitle><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">2</container></did><scopecontent><p>Ayrton, Michael, 2 Aug 1956</p></scopecontent></c02>
+   <c02 id="fs109"><did><unittitle>FS 109 Galley Slave / Jean Marteilhe</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">2</container></did><scopecontent><p>Fenwick, Kenneth, 18 Feb 1957</p></scopecontent></c02>
+   <c02 id="fs110"><did><unittitle>FS 110 Pride and Prejudice / Jane Austen</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">2</container></did><scopecontent><p>Church, Richard, 5 Apr 1957</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1958 publications</unittitle></did>
+   <c02 id="fs113"><did><unittitle>FS 113 Vathek / William Beckford</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">2</container></did><scopecontent><p>Bawden, Edward, 27 Apr 1957<lb/>Grimsditch, Herbert B., 27 Oct 1957</p></scopecontent></c02>
+   <c02 id="fs115"><did><unittitle>FS 115 The Adventures of Sherlock Holmes / Sir Arthur Conan Doyle</unittitle><unitdate type="inclusive" normal="1957">1957, </unitdate><unitdate type="inclusive" normal="1964">1964</unitdate><container type="Box">2</container></did><scopecontent><p>Conan Doyle, Adrian, 10 Mar 1964<lb/>Hogarth, Paul, 24 May 1957</p></scopecontent></c02>
+   <c02 id="fs116"><did><unittitle>FS 116 The Third Crusade / Kennth Fenwick (ed.)</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">2</container></did><scopecontent><p>Fenwick, Kenneth, 21 Jan 1957<lb/>Hawthorn, Raymond, 19 Feb 1957</p></scopecontent></c02>
+   <c02 id="fs117"><did><unittitle>FS 117 Five Japanese Love Stories / Ihara Saikaku</unittitle><unitdate type="inclusive" normal="1957">1957</unitdate><container type="Box">2</container></did><scopecontent><p>De Bary, William Theodore, 8 Mar 1957<lb/>Severin, Mark, 24 Apr 1957</p></scopecontent></c02>
+   <c02 id="fs118"><did><unittitle>FS 118 King Richard II / William Shakespeare</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">2</container></did><scopecontent><p>Scofield, Paul, 2 Feb 1958</p></scopecontent></c02>
+   <c02 id="fs119"><did><unittitle>FS 119 Pount Counter Point / Aldous Huxley</unittitle><unitdate type="inclusive" normal="1953/1963">[1958?]</unitdate><container type="Box">2</container></did><scopecontent><p>Roseman, Leonard, [1958?]</p></scopecontent></c02>
+   <c02 id="fs120"><did><unittitle>FS 120 The Remarkable Life of Don Diego / Diego de Torres Villaroel</unittitle><unitdate type="inclusive" normal="1957/1958">1957-1958</unitdate><container type="Box">2</container></did><scopecontent><p>Atkinson, William C., 7 Apr 1957<lb/>Bennett, Harold J., 23 May 1958<lb/>Bennett, Harold J., one wood engraving for Remarkable Life of Don Diego</p></scopecontent></c02>
+   <c02 id="fs122"><did><unittitle>FS 122 Sense and Sensibility / Jane Austen</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">2</container></did><scopecontent><p>Hassall, Joan, 6 Oct 1958</p></scopecontent></c02>
+   <c02 id="fs124"><did><unittitle>FS 124 The Book of the Thousand Nights and One Night / Powys Mathers (trans.)</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">2</container></did><scopecontent><p>Martin, Frank, 20 Jul 1958<lb/>Martin, Frank, 26 wood engravings for 1001 Nights</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1959 publications</unittitle></did>
+   <c02 id="fs125"><did><unittitle>FS 125 The Trial of Charles I / Sir Thomas Herbert</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">2</container></did><scopecontent><p>Lockyer, Roger, 20 May 1958<lb/>Wedgwood, Cicely Veronica, [1958]</p></scopecontent></c02>
+   <c02 id="fs126"><did><unittitle>FS 126 The Beach of Falesa / Robert Louis Stevenson</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">2</container></did><scopecontent><p>Bates, H.E., 9 Jul 1958<lb/>Clarke Hutton, Thomas, 8 Apr 1958<lb/>Clarke Hutton, Thomas, 9 Oct 1958</p></scopecontent></c02>
+   <c02 id="fs127"><did><unittitle>FS 127 The Struggle for Greece / Herodotus</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">2</container></did><scopecontent><p>Cavander, Kenneth, 16 Jan 1958<lb/>Hawthorn, Raymond, 24 Apr 1958<lb/>Meiggs, Russell, 31 Aug 1958</p></scopecontent></c02>
+   <c02 id="fs128"><did><unittitle>FS 128 The History of Tom Jones / Henry Fielding</unittitle><unitdate type="inclusive" normal="1955/1959">undated</unitdate><container type="Box">2</container></did><scopecontent><p>Harris, Derrick, 30 wood engravings for Tom Jones, bound as booklet</p></scopecontent></c02>
+   <c02 id="fs129"><did><unittitle>FS 129 Love's Labours Lost / William Shakespeare</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">2</container></did><scopecontent><p>Rogers, Paul, 5 Jul 1958<lb/>Sutcliffe, Berkeley, 1 Mar 1958</p></scopecontent></c02>
+   <c02 id="fs130"><did><unittitle>FS 130 Short Stories / Guy de Maupassant</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">2</container></did><scopecontent><p>Hopkins, Gerard, 21 Aug 1958<lb/>Lambourne, Nigel, 28 Feb 1958<lb/>Lambourne, Nigel, 3 drawings for Maupassant Short Stories</p></scopecontent></c02>
+   <c02 id="fs132"><did><unittitle>FS 132 Father Brown Stories / G.K. Chesterton</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">2</container></did><scopecontent><p>Ardizzone, Edward, 28 Apr 1958</p></scopecontent></c02>
+   <c02 id="fs133"><did><unittitle>FS 133 The Gold Rush / Edward Gould Buffum</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">2</container></did><scopecontent><p>Lewis, Oscar, 3 Jun 1958</p></scopecontent></c02>
+   <c02 id="fs135"><did><unittitle>FS 135 Mansfield Park / Jane Austen</unittitle><unitdate type="inclusive" normal="1958">[1958?], </unitdate><unitdate type="inclusive" normal="1964">1964</unitdate><container type="Box">2</container></did><scopecontent><p>Church, Richard, 21 Sep 1964<lb/>Hassall, Joan, [1958?]<lb/>Hassall, Joan, woodcut for Mansfield Park</p></scopecontent></c02>
+   <c02 id="fs136"><did><unittitle>FS 136 Astrophel and Stella / Sir Philip Sidney</unittitle><unitdate type="inclusive" normal="1955/1959">[1959?]</unitdate><container type="Box">2</container></did><scopecontent><p>Hart, Kingsley, [1959?]</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1960 publications</unittitle></did>
+   <c02 id="fs137"><did><unittitle>FS 137 The Golden Ass / Apuleius</unittitle><unitdate type="inclusive" normal="1958">1958</unitdate><container type="Box">2</container></did><scopecontent><p>Ayrton, Michael, 29 Nov 1958</p></scopecontent></c02>
+   <c02 id="fs138"><did><unittitle>FS 138 The New Newgate Calendar / Sir Norman Birkett (ed.)</unittitle><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">2</container></did><scopecontent><p>Birkett, Sir Norman, 3 May 1959</p></scopecontent></c02>
+   <c02 id="fs142"><did><unittitle>FS 142 The Taming of the Shrew / William Shakespeare</unittitle><unitdate type="inclusive" normal="1958/1959">1958-1959</unitdate><container type="Box">2</container></did><scopecontent><p>Atkins, Robert, 20 Apr 1959<lb/>Neama, May, 20 Jun 1958</p></scopecontent></c02>
+   <c02 id="fs143"><did><unittitle>FS 143 Hermsprong, or Man As He Is Not / Robert Bage</unittitle><unitdate type="inclusive" normal="1958/1959">1958-1959</unitdate><container type="Box">2</container></did><scopecontent><p>Keeling, Cecil, 6 Oct 1958<lb/>Keeling, Cecil, 14 Sep 1959</p></scopecontent></c02>
+   <c02 id="fs144"><did><unittitle>FS 144 Short Stories / O. Henry</unittitle><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">2</container></did><scopecontent><p>Hogarth, Paul, 30 Apr 1959</p></scopecontent></c02>
+   <c02 id="fs147"><did><unittitle>FS 147 Northanger Abbey / Jane Austen</unittitle><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">2</container></did><scopecontent><p>Hassall, Joan, 10 Jun 1959</p></scopecontent></c02>
+   <c02 id="fs148"><did><unittitle>FS 148 The Importance of Being Earnest / Oscar Wilde</unittitle><unitdate type="inclusive" normal="1959">1959</unitdate><container type="Box">2</container></did><scopecontent><p>Beaton, Cecil, 16 Dec 1959</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1961 publications</unittitle></did>
+   <c02 id="fs150"><did><unittitle>FS 150 The Conquest of New Granada / Juan Rodriguez Freile</unittitle><unitdate type="inclusive" normal="1960">1960</unitdate><container type="Box">2</container></did><scopecontent><p>Atkinson, William C., 7 Apr 1960</p></scopecontent></c02>
+   <c02 id="fs151"><did><unittitle>FS 151 The Prisoner of Zenda / Anthony Hope Hawkins</unittitle><unitdate type="inclusive" normal="1960">1960</unitdate><container type="Box">2</container></did><scopecontent><p>Biro, B.S., 27 Mar 1960</p></scopecontent></c02>
+   <c02 id="fs152"><did><unittitle>FS 152 The Life and Death of Thomas Becket / George Greenaway (ed., trans.)</unittitle><unitdate type="inclusive" normal="1960">1960</unitdate><container type="Box">2</container></did><scopecontent><p>Greenaway, George W., 7 Mar 1960</p></scopecontent></c02>
+   <c02 id="fs153"><did><unittitle>FS 153 The Adventures of Roderick Random / Tobias Smollett</unittitle><unitdate type="inclusive" normal="1960">1960</unitdate><container type="Box">2</container></did><scopecontent><p>Martin, Frank, 10 Apr 1960<lb/>Martin, Frank, 39 wood engravings for Roderick Random</p></scopecontent></c02>
+   <c02 id="fs154"><did><unittitle>FS 154 King Richard III / William Shakespeare</unittitle><unitdate type="inclusive" normal="1950">1950, </unitdate><unitdate type="inclusive" normal="1959">1959, </unitdate><unitdate type="inclusive" normal="1961">1961</unitdate><container type="Box">2</container></did><scopecontent><p>Hurry, Leslie, 5 Oct 1959<lb/>Hurry, Leslie, 21 Aug 1950<lb/>Seale, Douglas, 7 Apr 1961</p></scopecontent></c02>
+   <c02 id="fs155"><did><unittitle>FS 155 The Informer / Liam O'Flaherty</unittitle><unitdate type="inclusive" normal="1960">1960, </unitdate><unitdate type="inclusive" normal="1955/1960">undated</unitdate><container type="Box">2</container></did><scopecontent><p>Ede, Charles, [1960?], draft of letter<lb/>Lambourne, Nigel, 5 Jan 1960</p></scopecontent></c02>
+   <c02 id="fs156"><did><unittitle>FS 156 From Atlanta to the Sea / William Tecumseh Sherman</unittitle><unitdate type="inclusive" normal="1960">1960</unitdate><container type="Box">2</container></did><scopecontent><p>Jordan, K.C., 14 Mar 1960<lb/>Liddell Hart, B.H., 11 Feb 1960</p></scopecontent></c02>
+   <c02 id="fs157"><did><unittitle>FS 157 Persuasion / Jane Austen</unittitle><unitdate type="inclusive" normal="1960/1961">1960-1961</unitdate><container type="Box">2</container></did><scopecontent><p>Church, Richard, 21 Oct 1960<lb/>Hassall, Joan, 18 Oct 1960<lb/>Hassall, Joan, 17 Sep 1961</p></scopecontent></c02>
+   <c02 id="fs160"><did><unittitle>FS 160 The Sonnets of Michelangelo / Elizabeth Jennings (trans.)</unittitle><unitdate type="inclusive" normal="1960/1961">[1960 or 1961]</unitdate><container type="Box">2</container></did><scopecontent><p>Jennings, Elizabeth, [1960 or 1961]</p></scopecontent></c02>
+   <c02 id="fs161"><did><unittitle>FS 161 Fanny Burney's Diary / John Wain (ed.)</unittitle><unitdate type="inclusive" normal="1961">1961</unitdate><container type="Box">2</container></did><scopecontent><p>Wain, John, 27 Dec 1961</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1962 publications</unittitle></did>
+   <c02 id="fs164"><did><unittitle>FS 164 Les Liaisons Dangereuses / Pierre Choderlos de Laclos</unittitle><unitdate type="inclusive" normal="1961">1961</unitdate><container type="Box">2</container></did><scopecontent><p>Hawthorn, Raymond, 20 Feb 1961</p></scopecontent></c02>
+   <c02 id="fs165"><did><unittitle>FS 165 Lives of the Most Notorious Pirates / Charles Johnson</unittitle><unitdate type="inclusive" normal="1961">1961</unitdate><container type="Box">2</container></did><scopecontent><p>Lloyd, Christopher, 15 Oct 1961</p></scopecontent></c02>
+   <c02 id="fs167"><did><unittitle>FS 167 Almayer's Folly / Joseph Conrad</unittitle><unitdate type="inclusive" normal="1961">1961</unitdate><container type="Box">2</container></did><scopecontent><p>Clarke Hutton, Thomas, 29 Mar 1961</p></scopecontent></c02>
+   <c02 id="fs169"><did><unittitle>FS 169 Sonnets from the Portuguese / Elizabeth Barrett Browning</unittitle><unitdate type="inclusive" normal="1961/1962">1961-1962</unitdate><container type="Box">2</container></did><scopecontent><p>Stone, Reynolds, 21 Apr 1961<lb/>Stone, Reynolds, 30 May 1961, includes wood engraving affixed to letter<lb/>Stone, Reynolds, wood engraving affixed to printed sonnet</p></scopecontent></c02>
+   <c02 id="fs170"><did><unittitle>FS 170 Tales from Two Pockets / Karel Capek</unittitle><unitdate type="inclusive" normal="1961/1962">1961-1962</unitdate><container type="Box">2</container></did><scopecontent><p>Selver, Paul, 3 Sep 1962<lb/>Svolinsky, Karel, 19 Aug 1961<lb/>Svolinsky, Karel, drawing for Tales from Two Pockets</p></scopecontent></c02>
+   <c02 id="fs171"><did><unittitle>FS 171 A Short History of English Literature / Gilbert Phelps</unittitle><unitdate type="inclusive" normal="1962">1962</unitdate><container type="Box">2</container></did><scopecontent><p>Phelps, Gilbert, 27 Apr 1962</p></scopecontent></c02>
+   <c02 id="fs172"><did><unittitle>FS 172 The Natural History of Selborne</unittitle></did>
+	   <c03><did><unittitle>Correspondence</unittitle><unitdate type="inclusive" normal="1949">1949, </unitdate><unitdate type="inclusive" normal="1961/1962">1961-1962</unitdate><container type="Box">2</container></did><scopecontent><p>Piper, John, 5 May 1949<lb/>Piper, John, 13 Sep 1962<lb/>Scott, W. Sidney, 10 Feb 1961</p></scopecontent></c03>
+      <c03><did><unittitle>Artwork</unittitle><unitdate type="inclusive" normal="1949/1962">undated</unitdate><container type="Oversize">1</container></did><scopecontent><p>John Piper, oversize drawing for Selborne</p></scopecontent></c03>
+	</c02>
+   <c02 id="fs173"><did><unittitle>FS 173 Julius Caesar / William Shakespeare</unittitle><unitdate type="inclusive" normal="1961/1962">1961-1962</unitdate><container type="Box">2</container></did><scopecontent><p>Harris, Margaret, 28 Oct 1962<lb/>Shaw, Glen Byam, 19 Aug 1961</p></scopecontent></c02>
+   <c02 id="fs175"><did><unittitle>FS 175 Emma / Jane Austen</unittitle><unitdate type="inclusive" normal="1961/1962">1961-1962</unitdate><container type="Box">2</container></did><scopecontent><p>Church, Richard, 6 Nov 1961<lb/>Hassall, Joan, 18 May 1962</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1963 publications</unittitle></did>
+   <c02 id="fs178"><did><unittitle>FS 178 At the Court of the Borgia / Johann Burechard</unittitle><unitdate type="inclusive" normal="1962">1962</unitdate><container type="Box">2</container></did><scopecontent><p>Parker, Geoffrey H.W., 13 Sep 1962</p></scopecontent></c02>
+   <c02 id="fs180"><did><unittitle>FS 180 Cheri / Colette</unittitle><unitdate type="inclusive" normal="1963">1963, </unitdate><unitdate type="inclusive" normal="1958/1963">undated</unitdate><container type="Box">2</container></did><scopecontent><p>Jullian, Philippe, 10 Jun 1963<lb/>Jullian, Philippe, seven engravings for Cheri</p></scopecontent></c02>
+   <c02 id="fs182"><did><unittitle>FS 182 Washington Square / Henry James</unittitle><unitdate type="inclusive" normal="1961">1961</unitdate><container type="Box">2</container></did><scopecontent><p>Lamb, Lynton, 13 May 1961</p></scopecontent></c02>
+   <c02 id="fs184"><did><unittitle>FS 184 Poems / Samuel Taylor Coleridge</unittitle><unitdate type="inclusive" normal="1963">1963</unitdate><container type="Box">2</container></did><scopecontent><p>Hough, Graham, 16 Mar 1963</p></scopecontent></c02>
+   <c02 id="fs188"><did><unittitle>FS 188 Julius Caesar / William Shakespeare</unittitle><unitdate type="inclusive" normal="1962">1962</unitdate><container type="Box">2</container></did><scopecontent><p>Lancaster, Osbert, 23 Aug 1962</p></scopecontent></c02>
+   <c02 id="fs189"><did><unittitle>FS 189 Shorter Works / Jane Austen</unittitle><unitdate type="inclusive" normal="1962/1963">1962-1963, </unitdate><unitdate type="inclusive" normal="1958/1963">undated</unitdate><container type="Box">2</container></did><scopecontent><p>Church, Richard, 8 Jun 1962<lb/>Hassall, Joan, 26 Sep 1963<lb/>Hassall, Joan, 5 Dec 1963<lb/>Hassall, Joan, ten wood engravings for Jane Austen's Shorter Works</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1964 publications</unittitle></did>
+   <c02 id="fs192"><did><unittitle>FS 192 The Twelve Caesars / Gaius Suetonius Tranquillus</unittitle><unitdate type="inclusive" normal="1959/1964">undated</unitdate><container type="Box">2</container></did><scopecontent><p>Hawthorn, Raymond, drawing for Twelve Caesars</p></scopecontent></c02>
+   <c02 id="fs193"><did><unittitle>FS 193 Essays / William Hazlitt</unittitle><unitdate type="inclusive" normal="1963">1963</unitdate><container type="Box">2</container></did><scopecontent><p>Hampden, John, 28 Mar 1963</p></scopecontent></c02>
+   <c02 id="fs194"><did><unittitle>FS 194 The Brothers Karamazov / Feodor Dostoyevsky</unittitle><unitdate type="inclusive" normal="1962/1964">1962-1964</unitdate><container type="Box">2</container></did><scopecontent><p>Hampden, John, 21 Aug 1963<lb/>Lambourne, Nigel, 7 Oct 1962<lb/>Lambourne, Nigel, pencil drawing for Karamazov<lb/>Magarshack, David, 29 Apr 1964</p></scopecontent></c02>
+   <c02 id="fs195"><did><unittitle>FS 195 Poems / Andrew Marvell</unittitle><unitdate type="inclusive" normal="1963">1963</unitdate><container type="Box">2</container></did><scopecontent><p>Wedgwood, Cicely Veronica, 9 Jun 1963</p></scopecontent></c02>
+   <c02 id="fs197"><did><unittitle>FS 197 Crotchet Castle / Thomas Love Peacock</unittitle><unitdate type="inclusive" normal="1962/1963">1962-1963</unitdate><container type="Box">2</container></did><scopecontent><p>Hopkins, Kenneth, 17 Oct 1962<lb/>Reddick, Peter, 10 Dec 1963<lb/>Reddick, Peter, 8 wood engravings for Crochet Castel</p></scopecontent></c02>
+   <c02 id="fs198"><did><unittitle>FS 198 Scott's Last Expedition / Captain R. F. Scott</unittitle><unitdate type="inclusive" normal="1963">1963</unitdate><container type="Box">2</container></did><scopecontent><p>Fuchs, Sir Vivian E., 16 Aug 1963</p></scopecontent></c02>
+   <c02 id="fs199"><did><unittitle>FS 199 Measure for Measure / William Shakespeare</unittitle><unitdate type="inclusive" normal="1964">1964</unitdate><container type="Box">2</container></did><scopecontent><p>Stone, Alix, 10 Apr 1964</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1965 publications</unittitle></did>
+   <c02 id="fs203"><did><unittitle>FS 203 Jane Eyre / Charlotte Bronte</unittitle><unitdate type="inclusive" normal="1964">1964</unitdate><container type="Box">2</container></did><scopecontent><p>Colbert, Anthony, 10 Mar 1964</p></scopecontent></c02>
+   <c02 id="fs205"><did><unittitle>FS 205 Gulliver's Travels / Jonathan Swift</unittitle><unitdate type="inclusive" normal="1964">1964</unitdate><container type="Box">2</container></did><scopecontent><p>Bawden, Edward, 12 Nov 1964<lb/>Bawden, Edward, 22 Nov 1964</p></scopecontent></c02><c02 id="fs207"><did><unittitle>FS 207 Scarlet and Black / Stendhal</unittitle><unitdate type="inclusive" normal="1959/1964">undated</unitdate><container type="Box">2</container></did><scopecontent><p>Frank Martin, 13 wood engravings for Scarlet and Black</p></scopecontent></c02>
+   <c02 id="fs209"><did><unittitle>FS 209 Lives of the English Poets / Samuel Johnson</unittitle><unitdate type="inclusive" normal="1965">1965</unitdate><container type="Box">2</container></did><scopecontent><p>Hampden, John, 13 Mar 1965</p></scopecontent></c02>
+   <c02 id="fs213"><did><unittitle>FS 213 Portrait of the Artist as a Young Man / James Joyce</unittitle><unitdate type="inclusive" normal="1965">1965</unitdate><container type="Box">2</container></did><scopecontent><p>Masterman, Dodie, 11 Mar 1965</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>1967 publications</unittitle></did>
+   <c02 id="fs232"><did><unittitle>FS 232 Three Stories / Herman Melville</unittitle><unitdate type="inclusive" normal="1962/1967">undated</unitdate><container type="Box">2</container></did><scopecontent><p>Palmer, Garrick, 8 wood engravings for Three Stories</p></scopecontent></c02>
+   <c02 id="fs236"><did><unittitle>FS 236 Colonel Jack / Daniel Defoe</unittitle><unitdate type="inclusive" normal="1962/1967">undated</unitdate><container type="Box">2</container></did><scopecontent><p>Lawrence, John, 12 woodcutes for Colonel Jack</p></scopecontent></c02></c01>
+<c01 level="series"><did><unittitle>Unidentified publications</unittitle></did>
+   <c02 id="fs0"><did><unittitle>[unnumbered] Tristram Shandy / Laurence Sterne</unittitle><unitdate type="inclusive" normal="1953">1953, </unitdate><unitdate type="inclusive" normal="1956">1956</unitdate><container type="Box">2</container></did><scopecontent><p>Harris, Derrick, 25 Sep 1956<lb/>Harris, Derrick, drawings and layout for Tristram Shandy<lb/>Stone, Reynolds, 7 Aug 1953</p></scopecontent></c02>
+</c01>
+     </dsc>
+   <index id="index"><head>Index to correspondents and graphic materials</head>
+<indexentry><name>Ardizzone, Edward</name><ptrgrp><ref target="fs132">FS 132</ref></ptrgrp></indexentry>
+<indexentry><name>Atkins, Robert</name><ptrgrp><ref target="fs142">FS 142</ref></ptrgrp></indexentry>
+<indexentry><name>Atkinson, William C.</name><ptrgrp><ref target="fs120">FS 120</ref><ref target="fs150">FS 150</ref></ptrgrp></indexentry>
+<indexentry><name>Ayrton, Michael</name><ptrgrp><ref target="fs33">FS 33</ref><ref target="fs99">FS 99</ref><ref target="fs106">FS 106</ref><ref target="fs137">FS 137</ref></ptrgrp></indexentry>
+<indexentry><name>Bates, H.E.</name><ptrgrp><ref target="fs126">FS 126</ref></ptrgrp></indexentry>
+<indexentry><name>Bawden, Edward</name><ptrgrp><ref target="fs8">FS 8</ref><ref target="fs113">FS 113</ref><ref target="fs205">FS 205</ref></ptrgrp></indexentry>
+<indexentry><name>Beaton, Cecil</name><ptrgrp><ref target="fs13">FS 13</ref><ref target="fs148">FS 148</ref></ptrgrp></indexentry>
+<indexentry><name>Bennett, Harold J.</name><ptrgrp><ref target="fs120">FS 120</ref></ptrgrp></indexentry>
+<indexentry><name>Birkett, Sir Norman</name><ptrgrp><ref target="fs40">FS 40</ref><ref target="fs138">FS 138</ref></ptrgrp></indexentry>
+<indexentry><name>Biro, B.S.</name><ptrgrp><ref target="fs151">FS 151</ref></ptrgrp></indexentry>
+<indexentry><name>Bliss, Douglas Percy</name><ptrgrp><ref target="fs45">FS 45</ref></ptrgrp></indexentry>
+<indexentry><name>Bonfils, Robert</name><ptrgrp><ref target="fs41">FS 41</ref></ptrgrp></indexentry>
+<indexentry><name>Boullaire, Jacques</name><ptrgrp><ref target="fs30">FS 30</ref></ptrgrp></indexentry>
+<indexentry><name>Braby, Dorothea</name><ptrgrp><ref target="fs86">FS 86</ref></ptrgrp></indexentry>
+<indexentry><name>Brough, Diana</name><ptrgrp><ref target="fs92">FS 92</ref></ptrgrp></indexentry>
+<indexentry><name>Buckland-Wright, John</name><ptrgrp><ref target="fs11">FS 11</ref><ref target="fs19">FS 19</ref><ref target="fs26">FS 26</ref><ref target="fs74-76">FS 74, 76</ref></ptrgrp></indexentry>
+<indexentry><name>Burton, Richard</name><ptrgrp><ref target="fs71">FS 71</ref></ptrgrp></indexentry>
+<indexentry><name>Casson, Sir Lewis</name><ptrgrp><ref target="fs33">FS 33</ref></ptrgrp></indexentry>
+<indexentry><name>Cavander, Kenneth</name><ptrgrp><ref target="fs127">FS 127</ref></ptrgrp></indexentry>
+<indexentry><name>Church, Richard</name><ptrgrp><ref target="fs19">FS 19</ref><ref target="fs110">FS 110</ref><ref target="fs135">FS 135</ref><ref target="fs157">FS 157</ref><ref target="fs175">FS 175</ref><ref target="fs189">FS 189</ref></ptrgrp></indexentry>
+<indexentry><name>Clarke Hutton, Thomas</name><ptrgrp><ref target="fs22">FS 22</ref><ref target="fs167">FS 167</ref><ref target="fs126">FS 126</ref></ptrgrp></indexentry>
+<indexentry><name>Coghill, Nevill</name><ptrgrp><ref target="fs98-100">FS 98, 100</ref><ref target="fs27">FS 27</ref></ptrgrp></indexentry>
+<indexentry><name>Colbert, Anthony</name><ptrgrp><ref target="fs203">FS 203</ref></ptrgrp></indexentry>
+<indexentry><name>Conan Doyle, Adrian</name><ptrgrp><ref target="fs115">FS 115</ref></ptrgrp></indexentry>
+<indexentry><name>Darwin, Bernard</name><ptrgrp><ref target="fs62">FS 62</ref></ptrgrp></indexentry>
+<indexentry><name>De Bary, William Theodore</name><ptrgrp><ref target="fs117">FS 117</ref></ptrgrp></indexentry>
+<indexentry><name>De Chair, Somerset</name><ptrgrp><ref target="fs104">FS 104</ref></ptrgrp></indexentry>
+<indexentry><name>de la Mare, Walter</name><ptrgrp><ref target="fs97">FS 97</ref></ptrgrp></indexentry>
+<indexentry><name>du Maurier, Daphne</name><ptrgrp><ref target="fs2">FS 2</ref></ptrgrp></indexentry>
+<indexentry><name>Ede, Charles</name><ptrgrp><ref target="fs155">FS 155</ref></ptrgrp></indexentry>
+<indexentry><name>Einzig, Susan</name><ptrgrp><ref target="fs72">FS 72</ref></ptrgrp></indexentry>
+<indexentry><name>Fenwick, Kenneth</name><ptrgrp><ref target="fs109">FS 109</ref><ref target="fs116">FS 116</ref></ptrgrp></indexentry>
+<indexentry><name>Flint, Sir William Russell</name><ptrgrp><ref target="fs87">FS 87</ref></ptrgrp></indexentry>
+<indexentry><name>Freedman, Barnett</name><ptrgrp><ref target="fs97">FS 97</ref></ptrgrp></indexentry>
+<indexentry><name>Fuchs, Sir Vivian E.</name><ptrgrp><ref target="fs198">FS 198</ref></ptrgrp></indexentry>
+<indexentry><name>Furse, Roger</name><ptrgrp><ref target="fs46">FS 71</ref></ptrgrp></indexentry>
+<indexentry><name>Gaastra, John</name><ptrgrp><ref target="fs63">FS 63</ref></ptrgrp></indexentry>
+<indexentry><name>Gibbings, Robert</name><ptrgrp><ref target="fs30">FS 30</ref><ref target="fs75">FS 75</ref></ptrgrp></indexentry>
+<indexentry><name>Goor</name><ptrgrp><ref target="fs61">FS 61</ref></ptrgrp></indexentry>
+<indexentry><name>Grant, Alistair</name><ptrgrp><ref target="fs80">FS 80</ref></ptrgrp></indexentry>
+<indexentry><name>Greenaway, George W.</name><ptrgrp><ref target="fs152">FS 152</ref></ptrgrp></indexentry>
+<indexentry><name>Grimsditch, Herbert B.</name><ptrgrp><ref target="fs113">FS 113</ref></ptrgrp></indexentry>
+<indexentry><name>Hampden, John</name><ptrgrp><ref target="fs193">FS 193</ref><ref target="fs194">FS 194</ref><ref target="fs209">FS 209</ref></ptrgrp></indexentry>
+<indexentry><name>Harris, Derrick</name><ptrgrp><ref target="fs56">FS 56</ref><ref target="fs78">FS 78</ref><ref target="fs128">FS 128</ref><ref target="fs0">FS 0</ref></ptrgrp></indexentry>
+<indexentry><name>Harris, Margaret</name><ptrgrp><ref target="fs173">FS 173</ref></ptrgrp></indexentry>
+<indexentry><name>Hart, Kingsley</name><ptrgrp><ref target="fs136">FS 136</ref></ptrgrp></indexentry>
+<indexentry><name>Hartz, Sam</name><ptrgrp><ref target="fs47">FS 47</ref></ptrgrp></indexentry>
+<indexentry><name>Hassall, Joan</name><ptrgrp><ref target="fs17">FS 17</ref><ref target="fs37">FS 37</ref><ref target="fs122">FS 122</ref><ref target="fs135">FS 135</ref><ref target="fs147">FS 147</ref><ref target="fs157">FS 157</ref><ref target="fs175">FS 175</ref><ref target="fs189">FS 189</ref></ptrgrp></indexentry>
+<indexentry><name>Hawthorn, Raymond</name><ptrgrp><ref target="fs116">FS 116</ref><ref target="fs127">FS 127</ref><ref target="fs164">FS 164</ref><ref target="fs192">FS 192</ref></ptrgrp></indexentry>
+<indexentry><name>Hogarth, Paul</name><ptrgrp><ref target="fs115">FS 115</ref><ref target="fs144">FS 144</ref></ptrgrp></indexentry>
+<indexentry><name>Holland, Vyvyan</name><ptrgrp><ref target="fs63">FS 63</ref></ptrgrp></indexentry>
+<indexentry><name>Hopkins, Gerard</name><ptrgrp><ref target="fs130">FS 130</ref></ptrgrp></indexentry>
+<indexentry><name>Hopkins, Kenneth</name><ptrgrp><ref target="fs197">FS 197</ref></ptrgrp></indexentry>
+<indexentry><name>Hough, Graham</name><ptrgrp><ref target="fs184">FS 184</ref></ptrgrp></indexentry>
+<indexentry><name>Hughes-Stanton, Blair</name><ptrgrp><ref target="fs6">FS 6</ref></ptrgrp></indexentry>
+<indexentry><name>Hugo, Jean</name><ptrgrp><ref target="fs27">FS 27</ref></ptrgrp></indexentry>
+<indexentry><name>Hurry, Leslie</name><ptrgrp><ref target="fs154">FS 154</ref></ptrgrp></indexentry>
+<indexentry><name>Jennings, Elizabeth</name><ptrgrp><ref target="fs160">FS 160</ref></ptrgrp></indexentry>
+<indexentry><name>Jordan, K.C.</name><ptrgrp><ref target="fs156">FS 156</ref></ptrgrp></indexentry>
+<indexentry><name>Jullian, Philippe</name><ptrgrp><ref target="fs180">FS 180</ref></ptrgrp></indexentry>
+<indexentry><name>Keeling, Cecil</name><ptrgrp><ref target="fs143">FS 143</ref></ptrgrp></indexentry>
+<indexentry><name>Ketton-Cremer, R.W.</name><ptrgrp><ref target="fs35">FS 35</ref></ptrgrp></indexentry>
+<indexentry><name>Lachouque, Henry</name><ptrgrp><ref target="fs104">FS 104</ref></ptrgrp></indexentry>
+<indexentry><name>Lamb, Lynton</name><ptrgrp><ref target="fs15">FS 15</ref><ref target="fs88">FS 88</ref><ref target="fs182">FS 182</ref></ptrgrp></indexentry>
+<indexentry><name>Lambourne, Nigel</name><ptrgrp><ref target="fs65">FS 65</ref><ref target="fs130">FS 130</ref><ref target="fs155">FS 155</ref><ref target="fs194">FS 194</ref></ptrgrp></indexentry>
+<indexentry><name>Lancaster, Osbert</name><ptrgrp><ref target="fs188">FS 188</ref></ptrgrp></indexentry>
+<indexentry><name>Lawrence, John</name><ptrgrp><ref target="fs236">FS 236</ref></ptrgrp></indexentry>
+<indexentry><name>Le Campion, Valentin</name><ptrgrp><ref target="fs29">FS 29</ref></ptrgrp></indexentry>
+<indexentry><name>Lewis, Oscar</name><ptrgrp><ref target="fs133">FS 133</ref></ptrgrp></indexentry>
+<indexentry><name>Lewis, Wilmarth S.</name><ptrgrp><ref target="fs35">FS 35</ref></ptrgrp></indexentry>
+<indexentry><name>Liddell Hart, B.H.</name><ptrgrp><ref target="fs156">FS 156</ref></ptrgrp></indexentry>
+<indexentry><name>Lloyd, Christopher</name><ptrgrp><ref target="fs165">FS 165</ref></ptrgrp></indexentry>
+<indexentry><name>Lockyer, Roger</name><ptrgrp><ref target="fs125">FS 125</ref></ptrgrp></indexentry>
+<indexentry><name>Lucas, F.L.</name><ptrgrp><ref target="fs11">FS 11</ref><ref target="fs26">FS 26</ref></ptrgrp></indexentry>
+<indexentry><name>Martin, Frank</name><ptrgrp><ref target="fs89">FS 89</ref><ref target="fs124">FS 124</ref><ref target="fs153">FS 153</ref><ref target="fs207">FS 207</ref></ptrgrp></indexentry>
+<indexentry><name>Magarshack, David</name><ptrgrp><ref target="fs194">FS 194</ref></ptrgrp></indexentry>
+<indexentry><name>Masterman, Dodie</name><ptrgrp><ref target="fs84">FS 84</ref><ref target="fs213">FS 213</ref></ptrgrp></indexentry>
+<indexentry><name>Meiggs, Russell</name><ptrgrp><ref target="fs127">FS 127</ref></ptrgrp></indexentry>
+<indexentry><name>Moiseiwitsch, Tanya</name><ptrgrp><ref target="fs81">FS 81</ref></ptrgrp></indexentry>
+<indexentry><name>Neama, May</name><ptrgrp><ref target="fs142">FS 142</ref></ptrgrp></indexentry>
+<indexentry><name>Nicolson, Harold</name><ptrgrp><ref target="fs36">FS 36</ref></ptrgrp></indexentry>
+<indexentry><name>Olivier, Sir Laurence</name><ptrgrp><ref target="fs13">FS 13</ref><ref target="fs46">FS 46</ref><ref target="fs71">FS 71</ref></ptrgrp></indexentry>
+<indexentry><name>Palmer, Garrick</name><ptrgrp><ref target="fs232">FS 232</ref></ptrgrp></indexentry>
+<indexentry><name>Parker, Geoffrey H.W.</name><ptrgrp><ref target="fs178">FS 178</ref></ptrgrp></indexentry>
+<indexentry><name>Peake, Mervyn</name><ptrgrp><ref target="fs12">FS 12</ref></ptrgrp></indexentry>
+<indexentry><name>Phelps, Gilbert</name><ptrgrp><ref target="fs171">FS 171</ref></ptrgrp></indexentry>
+<indexentry><name>Piper, John</name><ptrgrp><ref target="fs172">FS 172</ref></ptrgrp></indexentry>
+<indexentry><name>Read, H. Hope</name><ptrgrp><ref target="fs10">FS 10</ref></ptrgrp></indexentry>
+<indexentry><name>Reddick, Peter</name><ptrgrp><ref target="fs197">FS 197</ref></ptrgrp></indexentry>
+<indexentry><name>Ribbons, Ian</name><ptrgrp><ref target="fs103">FS 103</ref></ptrgrp></indexentry>
+<indexentry><name>Richardson, Sir Ralph</name><ptrgrp><ref target="fs105">FS 105</ref></ptrgrp></indexentry>
+<indexentry><name>Rieser, Dolf</name><ptrgrp><ref target="fs50">FS 50</ref></ptrgrp></indexentry>
+<indexentry><name>Rogers, Paul</name><ptrgrp><ref target="fs129">FS 129</ref></ptrgrp></indexentry>
+<indexentry><name>Roseman, Leonard</name><ptrgrp><ref target="fs119">FS 119</ref></ptrgrp></indexentry>
+<indexentry><name>Ross, Philip E.</name><ptrgrp><ref target="fs91">FS 91</ref></ptrgrp></indexentry>
+<indexentry><name>Rossem, Ru van</name><ptrgrp><ref target="fs24">FS 24</ref><ref target="fs31">FS 31</ref><ref target="fs57">FS 57</ref><ref target="fs101">FS 101</ref></ptrgrp></indexentry>
+<indexentry><name>Sackville-West, Edward</name><ptrgrp><ref target="fs29">FS 29</ref></ptrgrp></indexentry>
+<indexentry><name>Sadleir, Michael</name><ptrgrp><ref target="fs2">FS 2</ref></ptrgrp></indexentry>
+<indexentry><name>Sala Grau, Joan</name><ptrgrp><ref target="fs44">FS 44</ref></ptrgrp></indexentry>
+<indexentry><name>Scofield, Paul</name><ptrgrp><ref target="fs118">FS 118</ref></ptrgrp></indexentry>
+<indexentry><name>Scott, W. Sidney</name><ptrgrp><ref target="fs45">FS 45</ref><ref target="fs172">FS 172</ref></ptrgrp></indexentry>
+<indexentry><name>Seale, Douglas</name><ptrgrp><ref target="fs154">FS 154</ref></ptrgrp></indexentry>
+<indexentry><name>Selver, Paul</name><ptrgrp><ref target="fs170">FS 170</ref></ptrgrp></indexentry>
+<indexentry><name>Severin, Mark</name><ptrgrp><ref target="fs117">FS 117</ref></ptrgrp></indexentry>
+<indexentry><name>Sharp, Richard</name><ptrgrp><ref target="fs58">FS 58</ref></ptrgrp></indexentry>
+<indexentry><name>Shaw, Glen Byam</name><ptrgrp><ref target="fs173">FS 173</ref></ptrgrp></indexentry>
+<indexentry><name>Stone, Alix</name><ptrgrp><ref target="fs199">FS 199</ref></ptrgrp></indexentry>
+<indexentry><name>Stone, Reynolds</name><ptrgrp><ref target="fs4">FS 4</ref><ref target="fs169">FS 169</ref><ref target="fs0">FS 0</ref></ptrgrp></indexentry>
+<indexentry><name>Sutcliffe, Berkeley</name><ptrgrp><ref target="fs129">FS 129</ref></ptrgrp></indexentry>
+<indexentry><name>Svolinsky, Karel</name><ptrgrp><ref target="fs170">FS 170</ref></ptrgrp></indexentry>
+<indexentry><name>Tree, Herbert Beerbohm</name><ptrgrp><ref target="fs2">FS 2</ref></ptrgrp></indexentry>
+<indexentry><name>Vertes, Marcel</name><ptrgrp><ref target="fs96">FS 96</ref></ptrgrp></indexentry>
+<indexentry><name>Wain, John</name><ptrgrp><ref target="fs161">FS 161</ref></ptrgrp></indexentry>
+<indexentry><name>Wales, Geoffrey</name><ptrgrp><ref target="fs64">FS 64</ref></ptrgrp></indexentry>
+<indexentry><name>Wedgwood, Cicely Veronica</name><ptrgrp><ref target="fs125">FS 125</ref><ref target="fs195">FS 195</ref></ptrgrp></indexentry>
+<indexentry><name>Welles, Orson</name><ptrgrp><ref target="fs81">FS 81</ref></ptrgrp></indexentry>
+<indexentry><name>Wetherbee, Margaret</name><ptrgrp><ref target="fs43">FS 43</ref></ptrgrp></indexentry>
+<indexentry><name>Whyte, Edna</name><ptrgrp><ref target="fs98-100">FS 98, 100</ref></ptrgrp></indexentry>
+<indexentry><name>Williams, Emlyn</name><ptrgrp><ref target="fs62">FS 62</ref></ptrgrp></indexentry>
+<indexentry><name>Wolfit, Donald</name><ptrgrp><ref target="fs93">FS 93</ref></ptrgrp></indexentry>
+
+	
+	</index></archdesc>
+</ead>

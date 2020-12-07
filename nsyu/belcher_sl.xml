@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="belcher_sl">belcher_sl</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Samuel L. Belcher Collection</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">SDG</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2006-03-08" encodinganalog=".">9 Nov 2011</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Samuel Gruber<date normal="2006-03-08">9 Nov 2011</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Belcher, Samuel L.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Samuel L. Belcher Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1991/2008" type="inclusive" label="Inclusive Dates: ">1991-2008</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>.75 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Biographical material, patent information, and product data related to Samuel Belcher's innovations in blow molding.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3647874</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Samuel L. Belcher (1933-2009) was an American plastics inventor and entrepreneur, especially noted for his many innovations in plastic blow-molded packaging.  </p><p>He began his career with Rubbermaid, Inc. and later worked for Owens-Illinois and Wheaton Industries. He was Product Manager of Container Machinery for the U.S. Plastics Machinery Division of Cincinnati Milicron.   He was president of his consulting firm, Sabel Plastechs of Moscow, Ohio, from 1987 until 2009  </p><p>Among his technical achievements are the first PET bottle with an integrated handle, which he patented and licensed to Mitsubishi of Japan; the first flip-top, living-hinge closure for liquid detergent bottles, patented at Owens-Illinois;  the McDonald's foam clamshell package, patented at Owens-Illinois in 1974; the first injection blow molding machine for PET bottles, developed while Director of Research at Wheaton; and the plastic spice turntable, the largest volume single item ever produced by Rubbermaid.  </p><p> In all he developed 54 patents.  Belcher edited the volume <emph render="italic">Practical Extrusion Blow Molding</emph>  (New York: Marcel Dekker, 1999) and authored <emph render="italic">Practical Guide To Injection Blow Molding</emph> (CRC Press, 2007). Belcher was inducted into the Plastics Hall of Fame in 2003.   </p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p> The <emph render="bold">Samuel L. Belcher Collection</emph> consists of biographical material, subject files, videotapes and writings. </p><p><emph render="bold">Biographical material</emph> contains information about Samuel Belcher’s career and awards he received.
+</p><p><emph render="bold">Subject files</emph>  contains one blueprint drawing of a Beta II Process machine, patent  information on the PET bottle with handle, and photographs of various machines and products.
+</p><p><emph render="bold">Videotapes</emph> contains tapes from various companies about machines and processes.
+</p>
+      <p><emph render="bold">Writings</emph> contains texts and illustrations of presentations given at ABC conferences in 2007, 2008 and 2009.</p></scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection is arranged alphabetically by topic.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has made a concerted effort over the 
+years to ensure that its manuscript and rare books holdings complement each other.  
+As a result, many of our manuscript collections are supported by books, pamphlets, 
+serials and other items which are cataloged in the Rare Books Collection.  Please be 
+sure to search &summitref; for these related materials.</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>Twelve plastics artifacts donated with the collection have been transferred to the <archref href="plastics_art.htm">Plastics Artifacts Collection</archref>.</p>
+      <p>One book by Belcher has been transferred to general collections for cataloging.  Issues of the  <emph render="italic">Society of Plastics Engineers Blow Molding Division Newsletter</emph> from 1983-2004 (incomplete run) were transferred to Rare Books for cataloging.   Please refer to &summitref; to locate these items.</p></separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Plastics</subject><subject encodinganalog="650" source="local">Business and Industry</subject><persname encodinganalog="600" source="lcnaf">Belcher, Samuel L., 1933-</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Automa s.p.a.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Cincinnati Milacron, Inc.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">FGH Systems, Inc.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Graham Engineering Corporation.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Jackson Machinery, Inc.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Mag-Plastic.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Owens-Illinois, inc.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Plastics Hall of Fame.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Rubbermaid Incorporated.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Sabel Plastechs, Inc.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Society of Plastics Engineers.</corpname>
+         <corpname encodinganalog="610" source="lcnaf">Society of Plastics Engineers -- Blow Molding Division.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Engineers -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Blow Molding.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics in packaging. </subject>
+         <subject encodinganalog="650" source="lcsh">Plastics industry and trade -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics machinery industry -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics machinery.</subject>
+         <subject encodinganalog="650" source="lcsh">Plastics industry and trade -- Equipment and supplies.</subject>
+         <subject encodinganalog="650" source="lcsh">Polyethylene terephthalate. </subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Articles.</genreform>
+         <genreform encodinganalog="655" source="aat">Brochures.</genreform>
+         <genreform encodinganalog="655" source="aat">CD-ROMs.</genreform>
+		 <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         
+         <genreform encodinganalog="655" source="aat">Design patents.</genreform>
+         <genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform>
+         <genreform encodinganalog="655" source="aat">DVDs.</genreform>
+		 <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+		 <genreform encodinganalog="655" source="aat">Videotapes.</genreform>
+		 <occupation encodinganalog="656" source="lcsh">Engineers.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Entrepreneurs.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Inventors.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Samuel L. Belcher  Papers. <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of Donna Belcher, 2011.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Biographical material</unittitle></did>
+               
+               
+            <c02><did><unittitle>Awards</unittitle><abstract>certificates and information regarding Belcher's receipt of various industry awards</abstract><unitdate normal="1995/2008" type="inclusive">1995-2008</unitdate><container type="Box">1</container></did></c02>
+         <c02><did><unittitle>Plastics Hall of Fame</unittitle><abstract> papers and articles about Belcher's induction into Plastics Hall of Fame</abstract><unitdate normal="2003" type="inclusive">2003</unitdate><container type="Box">1</container></did></c02>
+         <c02><did><unittitle>Miscellaneous</unittitle><unitdate normal="2006" type="inclusive">2006</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      <c01 level="series"><did><unittitle>Subject files</unittitle></did>
+               
+               
+            <c02><did><unittitle>Blow molding calculator</unittitle><abstract>calculator and trouble shooting guide from Quantum Chemical Company 1995</abstract><container type="Box">1</container></did></c02>
+         <c02><did><unittitle>Drawing: beta II process</unittitle><container type="Box">1</container></did></c02>
+         <c02><did><unittitle>Patent for PET bottle with handle</unittitle><unitdate normal="1991" type="inclusive">1991</unitdate><container type="Box">1</container></did></c02>
+         <c02><did><unittitle>Photographs of machinery and products</unittitle><container type="Box">1</container></did></c02>
+         </c01>
+      <c01 level="series"><did><unittitle>Videotapes</unittitle><note><p>Titles and information about videotapes is copied verbatim  from printed and handwritten labels on the items.</p></note></did>
+               
+               
+            <c02><did><unittitle>Automa s.p.a. fully automatic blow molding machines</unittitle><abstract>Plus at 0.7D – plus at 2D – Plus at 2DD – plus at 5 – plus at 5D – plus at 2D co-optionals</abstract><physdesc></physdesc><container type="Box">2</container></did></c02>
+         <c02><did><unittitle>Automa s.p.a. fully automatic blow molding machines</unittitle><abstract>Injection stretch-blow moulding machines – model: NSB 20</abstract><physdesc></physdesc><container type="Box">2</container></did></c02>
+         <c02><did><unittitle>Cincinnati Milacron, cyclone accumulator head; rapid color change </unittitle><physdesc></physdesc><unitdate normal="1997" type="inclusive">1997</unitdate><container type="Box">2</container></did></c02>
+         <c02><did><unittitle>Cincinnati Milacron, eclipses E-75 polycarbonate production, VT 6300-099 </unittitle><physdesc></physdesc><unitdate normal="1993" type="inclusive">1993</unitdate><container type="Box">2</container></did></c02>
+         <c02><did><unittitle>Cincinnati Milacron, tracker “keeping your process on track, VT 6300-157 </unittitle><physdesc></physdesc><container type="Box">2</container></did></c02>
+         <c02><did><unittitle>Cincinnati Milacron, T-series large part appls. </unittitle><abstract>Combo tape of: T-1100 vertical clamp/35lb. accumulator head (55 gallon drum production), includes VT-6300-165 T-series flat, VT-6300-170</abstract><physdesc></physdesc><unitdate normal="1997" type="inclusive">1997</unitdate><container type="Box">2</container></did></c02>
+         <c02><did><unittitle>FGH Systems, Inc.,</unittitle><abstract>b&amp;w 40, b&amp;w 6000DE, b&amp;w 8000DE </abstract><physdesc></physdesc><container type="Box">2</container></did></c02>
+		 <c02><did><unittitle>Graham Engineering Corporation: accumulator dead update, blow molding machines </unittitle><physdesc></physdesc><container type="Box">2</container></did></c02>
+		 <c02><did><unittitle>Jackson Machinery, Inc. fleximatic trimming wheels</unittitle><physdesc></physdesc><container type="Box">2</container></did></c02>
+		 <c02><did><unittitle>Jackson Machinery, Inc. fleximatic toner bottles</unittitle><physdesc></physdesc><container type="Box">2</container></did></c02>
+		 <c02><did><unittitle>Mag-Plastic: 2 stage process</unittitle><physdesc></physdesc><container type="Box">2</container></did></c02>
+		 <c02><did><unittitle>Sabel hand over hand PET bottle machine	</unittitle><physdesc></physdesc><container type="Box">2</container><unitdate normal="1997">1997</unitdate></did></c02></c01>
+      <c01 level="series"><did><unittitle>Writings</unittitle></did><c02><did><unittitle>Conference presentations</unittitle><abstract>includes CD-Rs of powerpoints "Where are we going? up or down," (2007)  and "What can we do to cut costs and improve the bottom line?" (2008).</abstract><unitdate normal="2007/2009" type="inclusive">2007-2009</unitdate><container type="Box">1</container></did></c02>
+         </c01></dsc>
+   </archdesc>
+</ead>

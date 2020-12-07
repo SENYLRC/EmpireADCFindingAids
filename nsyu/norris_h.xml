@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="norris_h">norris_h</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Howes Norris, Jr. Cartoon Autograph Collection</titleproper>
+            <subtitle>A description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-01-06" encodinganalog="Date">6 Jan 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-01-06">6 Jan 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Norris, Howes, b. 1867?</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Howes Norris, Jr. Cartoon Autograph Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1886/1958" type="inclusive" label="Inclusive Dates: ">1886-1958</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection of original sketches and drawings, signed, by cartoonists and illustrators.  Collected by Howes Norris, Jr.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2727988</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Howes Norris Jr. (1867?- ) of Vineyard Haven, Massachusetts, was an avid collector of autographs from an early age; an 
+	  article in the <emph render="italic">St. Petersburg Times</emph> (17 April 1946, p. 26) called him the "Granddaddy of all  
+	  the autograph fiends."   Norris even had a specific letterhead, "The Howes Norris, Jr. Autograph Collection," for use in 
+	  soliciting items.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Howes Norris, Jr. Cartoon Autograph Collection</emph> consists of sketches and cartoons from 
+		 notable cartoonists, signed and sent to Norris at his request.      Nearly all are original art, though there are a few 
+		 printed items; many are drawn on Norris' letterhead which he apparently sent along with his request.  Some are inscribed 
+		 to Norris, but a few are inscribed "To Adelaide L. Robb."</p>
+		 
+		 <p>Cartoonists of particular interest include  J. P. Alley (Hambone drawing), C. D. Batchelor, Frank Bellew, Jim Berryman, 
+		 E. S. Bisbee, Daniel  Bishop, Bodfish, Douglas Borgstedt, E. A. Bushnell, Jack Callahan, G. E. Ciani (illustrator for 
+		 <emph render="italic">Puck</emph>), Sheffield Clarke, Nate Collier, Margot Cook, John T. Coulthard, Palmer Cox, Walt Disney 
+		 (Mickey Mouse drawing), H. C. Fisher, Rube Goldberg, Chester Gould (Dick Tracy drawing), Harold Gray (Little Orphan Annie 
+		 drawing), Frederick Burr Opper (Happy Hooligan sketch), Frank Willard (Moon Mullins drawing), and many more.</p>
+		 
+		 <p>There are also two proof sheets of the comics page for an unnamed Cleveland newspaper for September 15 and 16; there do 
+		 not appear to be any signatures on it.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Items are in alphabetical order by cartoonist.</p>
+      </arrangement>
+      
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; has several other collections of autographs.  See for example the following:</p>
+      <p>
+        <archref href="argosy_auto.htm">Argosy Autograph Collection</archref>
+        <lb/>
+        <archref href="harrington_fw.htm">Frances Ward Harrington Autograph Collection</archref>
+        <lb/>
+        <archref href="ogeran_g.htm">Graeme O'Geran Presidential Autograph Collection</archref>
+        <lb/>		
+        <archref href="ray_gn.htm">Gordon N. Ray Collection of Victorian Autographs</archref>
+        <lb/>
+        <archref href="rider_f.htm">Fremont Rider Autograph Collection</archref>
+      </p><p>Additional autographs collected by Norris are held by the Helen Farr Sloan Library (Delaware Art Museum) in its <archref href="http://www.delart.org/collections/HFS_library/finding_aids/howes_norris_autoclln.htm">Howes Norris, Jr. autograph collection</archref>.</p>
+    </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="local">Art -- Cartoonists</subject>
+		 <subject encodinganalog="650" source="lcsh">Autographs -- Collections.</subject>
+			<subject encodinganalog="650" source="lcsh">Cartoonists -- Autographs.</subject>
+         <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+         <genreform encodinganalog="655" source="aat">Autographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+			<genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform>
+         <genreform encodinganalog="655" source="aat">Sketches.</genreform><!-- <occupation encodinganalog="656" source="lcsh">##</occupation> -->
+         <!-- <function encodinganalog="657">##</function> -->
+      </controlaccess>
+		
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Howes Norris, Jr. Cartoon Autograph Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 1969.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+<dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Autographs</unittitle></did>
+               <c02><did><unittitle>Cartoonists, A-Z</unittitle><unitdate normal="1886/1958" type="inclusive">1886-1958, </unitdate><unitdate normal="1886/1958" type="inclusive">undated</unitdate><container type="SC">364</container></did></c02>
+         </c01>
+      </dsc>
+</archdesc></ead>

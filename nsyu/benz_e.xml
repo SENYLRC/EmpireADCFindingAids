@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 --><!-- Added Belfer as container type -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="benz_e" mainagencycode="NSyU">benz_e</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Ernst Benz Papers</titleproper>
+        <subtitle>A description of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2010-05-03">3 May 2010</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+        
+        <date normal="2010-05-03">3 May 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>20 Nov 2013 - processed (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Benz, Ernst, 1907-1978.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Ernst Benz Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1929/1978" type="inclusive">1929-1978</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>1.75 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">German theologian.    Collection consists primarily of published writings, also a small amount of of manuscripts and memorabilia.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2750908</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+            Primarily 
+        
+        <language langcode="ger">German</language>, with a few items in 
+        
+        <language langcode="eng">English</language>, 
+        
+        <language langcode="fre">French</language>, <language langcode="jap">Japanese</language> and 
+        
+        <language langcode="ita">Italian</language></langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Ernst Benz (1907-1978) was an important contemporary German theologian and a leading Western authority on Eastern Orthodoxy. He studied classical philology and archaeology at Tübingen, earning his doctorate in 1929, and later expanded his studies to Protestant theology and various esoteric forms of Christianity.  He became professor of ecclesiastical and dogmatic history at the University of Marburg in 1935 and in 1946 was appointed director of its Ecumenical Seminary; he retired as Professor Emeritus in 1973. He wrote more than 50 books and 500 articles on topics ranging from Buddhism to Stoicism to the Rosicrucians, including the well-known 
+        
+        <emph render="italic">Beschreibung des Christentums</emph> (<emph render="italic">Description of Christianity</emph>), published in 1975.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Ernst Benz Papers</emph> consists of manuscripts, memorabilia and writings.</p><p><emph render="bold">Manuscripts</emph> contains heavily annotated typescripts for two of Benz's books on Christian theology published in the early 1970s.</p><p><emph render="bold">Memorabilia</emph> consists of photographs of Benz, both candid and posed, in various locations; an article about Benz; and a flyer announcing Benz's thesis defense at Friedrich-Wilhelms-Universität.</p><p><emph render="bold">Writings</emph> consists entirely of published material.  The vast majority are in German and are offprints or reprints of articles and essays published in scholarly journals such as  <emph render="italic">Zeitschrift für Religions- und Gesitesgeschichte</emph> or <emph render="italic">Kairos</emph>.   Topics are primarily religious or theological, ranging from mysticism to early Christian theology to the religious situation in the Ukraine; there are also a small number of essays on secular topics.</p><p>In many cases, the item's cover bears the title of the journal rather than the title of the article; however, the inventory below gives the title of Benz's article or essay which may or may not appear on the cover of the item.  Where an entire issue of a journal is present, rather than only one article, the inventory gives the full volume and issue information.There are also several books by Benz, or to which he contributed a chapter.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Alphabetical by type or title.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+      <subject encodinganalog="650" source="local">Historians</subject>
+      <subject encodinganalog="650" source="local">Religion and philosophy</subject>
+      <persname encodinganalog="600" source="lcnaf">Benz, Ernst, 1907-1978.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Church history -- Historiography.</subject>
+      <subject encodinganalog="650" source="lcsh">Hinduism -- Study and teaching.</subject>
+      <subject encodinganalog="650" source="lcsh">Mysticism -- Germany.</subject>
+      <subject encodinganalog="650" source="lcsh">Philosophy, German -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Religions.</subject>
+      <subject encodinganalog="650" source="lcsh">Religion -- 20th century.</subject><subject encodinganalog="650" source="lcsh">Religion -- Historiography.</subject>
+      <subject encodinganalog="650" source="lcsh">Religion -- Study and teaching.</subject>
+      <subject encodinganalog="650" source="lcsh">Theology -- 20th century.</subject><subject encodinganalog="650" source="lcsh">Theology -- Historiography.</subject>
+      <subject encodinganalog="650" source="lcsh">Theology -- Study and teaching.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Books.</genreform>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+      <genreform encodinganalog="655" source="aat">Offprints.</genreform><genreform encodinganalog="655" source="aat">Reprints.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Church historians.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Historians.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Theologians.</occupation>
+    
+    
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Ernst Benz Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Ernst Benz</persname>, 1969-1978.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Manuscripts</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle><emph render="italic">Die heilige geist in Amerika</emph> [<emph render="italic">The Holy Ghost in America</emph>], Eugen Diederichs Verlag</unittitle>
+            <abstract>typescript with extensive corrections, emendations, annotations, additions, etc.</abstract>
+            <unitdate normal="1929/1970" type="inclusive">before 1970</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle><emph render="italic">Neue Religionen</emph> [<emph render="italic">New Religions</emph>], Taschenbuch Ausgabe</unittitle>
+            <abstract>typescript with extensive corrections, emendations, annotations, additions, etc.</abstract>
+            <unitdate normal="1929/1971" type="inclusive">before 1971</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Memorabilia</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Ernst Benz: Wie ich ihn sehe und verstehe [Ernst Benz: As I see and understand him], by F. W. Kantzenbach</unittitle>
+            <unitdate normal="1977" type="inclusive">1977</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs</unittitle>
+            <abstract>candid photos of Benz in Japan, India; portrait photos from Marburg</abstract>
+            <unitdate normal="1957" type="inclusive">1957, </unitdate>
+            <unitdate normal="1963" type="inclusive">1963, </unitdate>
+            <unitdate normal="1964" type="inclusive">1964, </unitdate>
+            <unitdate normal="1967" type="inclusive">1967</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Thesis defense announcement, Friedrich-Wilhelms-Universität</unittitle>
+            <unitdate normal="1931" type="inclusive">1931</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Writings</unittitle>
+        </did>
+        <note>
+          <p>A majority of the items in this series are offprints or reprints of articles or essays that appeared in scholarly journals.  In many cases, the item's cover bears the title of the journal (for example, 
+            
+            <emph render="italic">Zeitschrift für Religions- und Gesitesgeschichte</emph>) rather than the title of the article; note that the inventory below gives the title of Benz's article or essay which may or may not appear on the cover of the item.  Where an entire issue of a journal is present, rather than only one article, the inventory gives the full volume and issue information.</p>
+        </note>
+        <c02 level="subseries">
+          <did>
+            <unittitle>About Benz and his work</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Bibliographie Ernst Benz 1928-1966 [Bibliography of Ernst Benz 1928-1966], excerpted from 
+                
+                <emph render="italic">Glaube, Geist, Geschichte: Festschrift für Ernst Benz zum 60. geburtstage am 17. November 1967</emph> by Gerhard Müller and Winfried Zeller</unittitle>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Book reviews and publicity</unittitle>
+              <unitdate normal="1969/1971" type="inclusive">1969-1971, </unitdate>
+              <unitdate normal="1929/1978" type="inclusive">undated</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Christian theology</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Christian theology</unittitle>
+              <abstract>offprints, reprints, booklets, etc.</abstract>
+              <unitdate normal="1942/1959" type="inclusive">1942-1959</unitdate>
+              <container type="Box">2</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>
+                  <emph render="italic">Die religiöse Lage in der Ukraine: Erlebnisbericht eines Divisionspfarrers</emph>, 1942</item>
+                <item>"Weltgeschichte, Kirchengeschichte und Missiongeschichte," 1952</item>
+                <item>"Manilal Parekh: Christian Gandhi," 1957</item>
+                <item>"Kirchenbau im Fernen Osten" in 
+                  
+                  <emph render="italic">Die Problematik des modernen Kirchenbaues</emph>, 1960</item>
+                <item>"Manilal Parekh, der Christliche Gandhi: Eine Autobiographie," 1959</item>
+                <item>"An introduction to Meister Eckhart," in 
+                  
+                  <emph render="italic">The Otani Gakuho</emph>, Vol. XXXVIII, No. 4, 1959</item>
+                <item>"Die Wiederentdeckung der Meditation in der Modernen Religionswissenschaft und Theologie, Aus einem Brief" in 
+                  
+                  <emph render="italic">Zeitschrift für Religions- und Gesitesgeschichte</emph>, Band XI, Heft 3, 1959</item>
+                <item>"Die Veränderung in der religiösen Weltlage," in 
+                  
+                  <emph render="italic">Offene Tore: Beitrage zu einem neuen Christlichen Zeitalter</emph>, No. 5, 1959</item>
+              </list>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christian theology</unittitle>
+              <abstract>book chapter</abstract>
+              <unitdate normal="1965" type="inclusive">1965</unitdate>
+              <container type="Box">2</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"Ideas for a theology of the history of religion," in 
+                  
+                  <emph render="italic">The Theology of the Christian Mission</emph>, edited by Gerald Anderson, McGraw-Hill, 1965, pp. 135-147</item>
+              </list>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christian theology</unittitle>
+              <abstract>book</abstract>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+              <container type="Box">2</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>
+                  <emph render="italic">Evolution and Christian Hope: Man's Concept of the Future, from the Early Fathers to Teilhard de Chardin</emph>, Gollancz, 1967</item>
+              </list>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christian theology</unittitle>
+              <abstract>offprints, reprints, booklets, etc.</abstract>
+              <unitdate normal="1967/1971" type="inclusive">1967-1971</unitdate>
+              <container type="Box">2</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"Il cristianesimo nella Societá di Domani," 1967</item>
+                <item>"Die stellung des Modernismus zur päpstlichen Autorität," [1969?]</item>
+                <item>"Der Mensch als Imago Dei," 1971 (2 copies)</item>
+                <item>"Die klause Egg und das Ende des Eremitentums," 1971</item>
+                <item>"Rudolf Otto als Theologe und Persönlichkeit," 1971</item>
+              </list>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christian theology</unittitle>
+              <abstract>offprints, reprints, booklets, etc.</abstract>
+              <unitdate normal="1973/1975" type="inclusive">1973-1975</unitdate>
+              <container type="Box">2</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"Sophia -- Visionen des Westens," 1973</item>
+                <item>"Christlicher Glaube und Parapsychologie," 1973</item>
+                <item>"Theologie der Evolution in 19. Jahrhundert," 1973 (2 copies)</item>
+                <item>"Die Farbe im Erlebnisbereich der christlichen Vision," 1974 (2 copies)</item>
+                <item>"David Friedrich Strauẞ," 1975</item>
+                <item>"Swedenborgs Lehre von der Pluralität der Welten," 1975</item>
+                <item>"The Contribution of Origen of Alexandria to an African theology," 1975</item>
+              </list>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christian theology</unittitle>
+              <abstract>offprints, reprints, booklets, etc.</abstract>
+              <unitdate normal="1977/1978" type="inclusive">1977-1978, </unitdate>
+              <unitdate normal="1929/1978" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"Norm und heiliger Geist in der Geschichte des Christentums," 1977</item>
+                <item>"La littérature du Désert chez les Évangéliques allemands et les Piétistes de Pennsylvanie," 1978</item>
+                <item>"Protestantische Theologie und ökumenische Bewegung," undated</item>
+                <item>"Der Wandel in Christentum und Kirche," undated</item>
+                <item>"Das Verlorene und Wiederersehnte Paradies," undated</item>
+                <item>"Rufer zur Versöhnung und Einheit," undated</item>
+                <item>"Symbole der Unio Mystica in der Barock-Mystick," undated (3 copies)</item>
+              </list>
+            </scopecontent>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Comparative religion, Eastern and Western</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Comparative religion, Eastern and Western</unittitle>
+              <abstract>offprints, reprints, booklets, etc.</abstract>
+              <unitdate normal="1951/1959" type="inclusive">1951-1959</unitdate>
+              <container type="Box">3</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"Indische Einflüsse auf die frühchristliche Theologie," 1951</item>
+                <item>"Jenseits von Ost und West?", 1957</item>
+                <item>"The present meeting between Christianity and the Oriental religions," in 
+                  
+                  <emph render="italic">East and West</emph>, Year VIII, Number 1, 1957</item>
+                <item>"Buddhismus und Christentum: Begegnung und Auseinandersetzung in Ceylon, Burma, Thailand und Japan heute," 1958</item>
+                <item>"Asiatische Jugend zwischen Christentum, Buddhismus und Kommunismus," 1959</item>
+              </list>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Comparative religion, Eastern and Western</unittitle>
+              <abstract>offprints, reprints, booklets, etc.</abstract>
+              <unitdate normal="1966" type="inclusive">1966, </unitdate>
+              <unitdate normal="1929/1978" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"Teilhard de Chardin und Sri Aurobindo," 1966</item>
+                <item>"Meditation in östlichen Religionen und im Christentum," undated</item>
+                <item>"Parallel Entwicklungen im religiösen und geistigen Leben Japans und Deutschlands seit 1945," undated</item>
+              </list>
+            </scopecontent>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Eastern religions</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Eastern religions</unittitle>
+              <abstract>offprints, reprints, booklets, etc.</abstract>
+              <unitdate normal="1958/1969" type="inclusive">1958-1969, </unitdate>
+              <unitdate normal="1929/1978" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"Vorwort," in 
+                  
+                  <emph render="italic">Zeitschrift für Religions- und Gesitesgeschichte</emph>, Band X, Heft 4, 1958</item>
+                <item>"Die Diktatur des Harmoniums" / "Das Harmonium: Erfahrungen einer fernöstlichen Studienreise," 1959</item>
+                <item>"Nembutsu und Herzensgebet," 1960 (appeared in a dedicatory volume to Daisetsu Teitaro Suzuki)</item>
+                <item>"Meine Buddhistischen Nachbarn: In Memoriam Fritz Mauthner und Leopold Ziegler," 1962</item>
+                <item>"Esoterisches Christentum," 1965</item>
+                <item>"Dialog mit dem Hinduismus," 1966</item>
+                <item>"In Memoriam" [Daisetsu Teitaro Suzuki], 1967</item>
+                <item>"Buddhismus in der westlichen Welt," 1969</item>
+                <item>"Buddhismus der Gegenwart: Literaturverzeichnis," 1969</item>
+                <item>"Buddhistische Universitäten," undated</item>
+              </list>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Eastern religions</unittitle>
+              <abstract>book chapter</abstract>
+              <unitdate normal="1962" type="inclusive">1962</unitdate>
+              <unitdate normal="1929/1978" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"Zen-Klöster," in 
+                  
+                  <emph render="italic">Höhlen - Klöster - Ashrams: Religiöse Gemeinschaften in Indien und Japan</emph>, Otto Wilhelm Barth Verlag, 1962, pp. 137-175</item>
+              </list>
+            </scopecontent>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>History of religion</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>History of religion</unittitle>
+              <abstract>offprints, reprints, booklets, etc.</abstract>
+              <unitdate normal="1956/1961" type="inclusive">1956-1961</unitdate>
+              <container type="Box">4</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"Ideen zu einer theologischen Sicht der Religionsgeschichte," 1956</item>
+                <item>"Ideen zu einer theologischen Sicht der Religionsgeschichte," 1960</item>
+                <item>"The theological meaning of the history of religions," 1961</item>
+              </list>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>History of religion</unittitle>
+              <abstract>book chapter</abstract>
+              <unitdate normal="1959" type="inclusive">1959</unitdate>
+              <container type="Box">4</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"On understanding non-Christian religions," in 
+                  
+                  <emph render="italic">The History of Religions: Essays in Methodology</emph>, edited by Mircea Eliade, University of Chicago Press, 1959, pp. 115-131</item>
+              </list>
+            </scopecontent>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Pagan and classical religions</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Pagan and classical religions</unittitle>
+              <abstract>offprints, reprints, booklets, etc.</abstract>
+              <unitdate normal="1929/1961" type="inclusive">1929-1961</unitdate>
+              <container type="Box">4</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"Das Todesproblem in der stoischen Philosophie", 1929</item>
+                <item>"Westlicher und östlicher Nihilismus," [1948?]</item>
+                <item>"Kann Europa ser westlichen und östlichen Nihilismus überwinden?" in 
+                  
+                  <emph render="italic">Europäische Zukunft</emph>, No. 1, 1949</item>
+                <item>"The Islamic culture as mediator of the Greek philosophy to Europe," in 
+                  
+                  <emph render="italic">Islamic Culture: An English Quarterly</emph>, Vol. XXXV, No. 3, 1961</item>
+              </list>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Pagan and classical religions</unittitle>
+              <abstract>offprints, reprints, booklets, etc.</abstract>
+              <unitdate normal="1973/1978" type="inclusive">1973-1978</unitdate>
+              <container type="Box">4</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"The road of life: Report of a visit by a Navaho seer," 1973</item>
+                <item>"Des Recht auf Faulheit," 1975</item>
+                <item>
+                  <emph render="italic">Kosmische Bruderschaft: Die pluralität der Welten</emph>, Aurum Verlag, 1978</item>
+                <item>"La questione dell'influsso del pensiero Indiano sulla filosofia della religione della tarda antichita," undated</item>
+              </list>
+            </scopecontent>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Religion, general</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Religion, general</unittitle>
+              <abstract>offprints, reprints, booklets, etc.</abstract>
+              <unitdate normal="1952/1967" type="inclusive">1952-1967</unitdate>
+              <container type="Box">4</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"Ökumene der Weltreligionen?", 1952</item>
+                <item>"Über die Schwierigkeit des Verstehens fremder Religionen: Erfahrungen und Betrachtungen," 1958</item>
+                <item>"Kirch und Kunst: Die Ökumene des Harmoniums," in 
+                  
+                  <emph render="italic">Evangelische Welt</emph>, Jg. 13, Nr. 2, 1959</item>
+                <item>"Die Angst in der Religion," 1959</item>
+                <item>"Das Anliegen der Menschheit und die Religionen," 1962</item>
+                <item>"Obstacles to understanding other religions," in 
+                  
+                  <emph render="italic">Relations Among Religions Today: A Handbook of Policies and Principles</emph>, pp. 101-104, 1963</item>
+                <item>"Offenbarung, Tanz und Nächstenliebe," 1965 (newspaper column, appeared in 
+                  
+                  <emph render="italic">Sonntagsblatt</emph> as  part IV of a series entitled "Eine Welt — Eine Religion?")</item>
+                <item>"Die Bedeutung der Religionswissenschaft für die Koexistenz der Weltreligionen heute," 1966</item>
+                <item>"Religionsgeschichte im Telefonbuch," 1966</item>
+                <item>"Perspektiven der religiösen Weltlage," in 
+                  
+                  <emph render="italic">Evangelische Welt</emph>, Jg. 21, Nr. 12, 1967</item>
+              </list>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Religion, general</unittitle>
+              <unitdate normal="1971/1974" type="inclusive">1971-1974</unitdate>
+              <container type="Box">4</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>"Mensch und Mystik," 1971</item>
+                <item>"Die Säkularisierung des Christentums und die neuen Religionen," 1971</item>
+                <item>"Ergriffenheit und Besessenheit als Grundformen religiöser Erfahrung," 1972</item>
+                <item>"Über die Zukunft der Religion," 1972</item>
+                <item>"Die Bedeutung der Religionswissenschaft für die Koexistenz der Weltreligionen heute," 1974</item>
+              </list>
+            </scopecontent>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Secular topics</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Secular topics</unittitle>
+              <unitdate normal="1961/1978" type="inclusive">1961-1978</unitdate>
+              <container type="Box">4</container>
+            </did>
+            <scopecontent>
+              <list>
+                <item>[Address honoring Sir S. Radhakrishnan, in German], 1961</item>
+                <item>"Address honoring Sir S. Radhakrishnan,"  1962</item>
+                <item>"Einige Erinnerungen an Ernesto Buonaiuti," in 
+                  
+                  <emph render="italic">Ricordi su Ernesto Buonaiuti</emph>, pp. 9-22, 1968</item>
+                <item>"Ordeal by Fire," 1969</item>
+                <item>"Drogen und übersinnliche Erfahrung," 1972</item>
+                <item>"Werden und Wandel des Kaisertums in Europa zwischen den Revolutionen 1789 und 1848," [1978?]</item>
+                <item>"Vision un Ekstase bei Dante," undated</item>
+              </list>
+            </scopecontent>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

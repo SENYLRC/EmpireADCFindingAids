@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 2.0, 20 Oct 2017 -->
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="gentieu_lane">gentieu_lane</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Norman Gentieu Collection Relating to Eastwood
+               Lane</titleproper>
+            <subtitle>An inventory of his collection at Syracuse University</subtitle>
+            <author encodinganalog="Creator">(PRB)</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-03-27" encodinganalog="Date">27 Mar 2013</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>PRB <date normal="2013-03-27">27 Mar 2013</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item> 27 Apr 2018 - Processed (PRB)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+            &su_name;
+            <lb/>
+            &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Gentieu, Norman, 1914-2009.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Norman Gentieu Collection Relating to
+            Eastwood Lane</unittitle>
+         <unitdate encodinganalog="245$f" normal="1913/1981" type="inclusive" label="Inclusive Dates: ">1913-1981</unitdate>
+         <physdesc encodinganalog="300$a" label="Quantity: "><extent>.5 linear
+            ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection of the American author and
+            historian related to his interest in the composer Eastwood Lane. The collection includes
+            copies of correspondence with Modena Scovill Lane (Eastwood Lane's widow), published
+            copies of several Eastwood Lane compositions for piano and research material used by
+            Gentieu to write about Eastwood Lane.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">5061266</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English </language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Norman Gentieu (1914-2009) was an American author and historian from Philadelphia whose
+            interest in twentieth century jazz led him to research and publish articles on Eastwood
+            Lane. </p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p><emph render="bold">The Norman Gentieu Collection Relating to Eastwood Lane</emph>
+            consists of Correspondence-subject files, Printed material and Research material.</p>
+         <p><emph render="bold">Correspondence-subject files</emph> include letters to Norman
+            Gentieu from Modena Scovill Lane, the widow of Eastwood Lane, and a small number of
+            letters from Eastwood Lane.</p>
+         <p><emph render="bold">Printed material</emph> consists of one piece of artwork, two books,
+            one by Modena Scovill, a concert program and several copies of published sheet music by
+            Eastwood Lane.</p>
+         <p><emph render="bold">Research material</emph> consists of photocopies of correspondence
+            from the originals which are in the Eastwood Lane Papers. </p>
+      </scopecontent>
+      <!--<altformavail encodinganalog="530"><head>Other Formats Available</head><p>## Use MARC 530 or comment out if not applicable</p></altformavail>-->
+      <originalsloc encodinganalog="535">
+         <head>Location of Originals</head>
+         <p>Originals of the photocopied correspondence may be found in the Eastwood Lane
+            Papers.Originals are here and here and here.</p>
+      </originalsloc> 
+	  
+	  <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>All material is arranged alphabetically.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also  the <archref href="lane_e.htm">Eastwood Lane Papers</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+      <!--<separatedmaterial encodinganalog="544 0"><head>Separated Material</head><p>## OPT (MARC 544 0)</p></separatedmaterial>-->
+      <!--<otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Music</subject>
+         <subject encodinganalog="650" source="local">New York State</subject>
+         <persname encodinganalog="600" source="lcnaf">Lane, Eastwood, 1879-1951.</persname>
+         <persname encodinganalog="600" source="lcnaf">Gentieu, Norman, 1914-2009.</persname>
+         <persname encodinganalog="600" source="lcnaf">Scovill, Modena.</persname>
+         <genreform encodinganalog="655" source="aat">Books.</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Sheet music.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Author</occupation></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require
+            advanced notice for retrieval. Researchers are encouraged to contact us in advance
+            concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p> Written permission must be obtained from SCRC and all relevant rights holders before
+            publishing quotations, excerpts or images from any materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>
+            <lb/>
+            &su_name;
+         </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Originally accessioned as part of the Eastwood lane Papers, gift of Mary Meloscia and
+            Thomas S. Pletcher, 2013.</p>
+      </acqinfo>
+      <!--<appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>-->
+      <!--<accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Correspondence-subject files</unittitle></did>
+               <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+               <!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+            <c02>
+               <did>
+                  <unittitle>Belwyn Mills Publishing Corp.</unittitle>
+                  <unitdate normal="1976" type="inclusive">1976</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Cranberry Lake</unittitle>
+                  <unitdate normal="1913/1981" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Lane, Modena Scovill</unittitle>
+                  <unitdate normal="1951" type="inclusive">1951,</unitdate>
+                  <unitdate normal="1952" type="inclusive">1952,</unitdate>
+                  <unitdate normal="1967" type="inclusive">1967,</unitdate>
+                  <unitdate normal="1973/1976" type="inclusive">1973-1976,</unitdate>
+                  <unitdate normal="1977/1981" type="inclusive">1977-1981</unitdate>
+                  <container type="Box">1</container>
+                  <physdesc><extent>2 folders</extent></physdesc>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Lane, Sidney Eastwood</unittitle>
+                  <unitdate normal="1950" type="inclusive">1950</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>New York University</unittitle>
+                  <unitdate normal="1976" type="inclusive">1976</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Unidentified</unittitle>
+                  <unitdate normal="1977" type="inclusive">1977</unitdate>
+                  <container type="Box">1</container>
+                  
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Printed material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Artwork</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Crapsody by Willy Pogany</unittitle>
+                     <unitdate normal="1921" type="inclusive">1921</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Books</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Keyboard Harmony Book II by Modena Scovill</unittitle>
+                     <unitdate normal="1950" type="inclusive">1950</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Two Centuries of American Musical Composition</unittitle>
+                     <unitdate normal="1926" type="inclusive">1926</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Concert programs</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Carnegie Hall Reinald Werrenrath song recital</unittitle>
+                     <unitdate normal="1925" type="inclusive">1925</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Sheet music</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Abélard and Héloise for piano solo by Eastwood Lane</unittitle>
+                     <unitdate normal="1933" type="inclusive">1933</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle> Adirondack Sketches: A suite for piano by Eastwood Lane</unittitle>
+                     <unitdate normal="1922" type="inclusive">1922</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Caravan from China for piano solo by Eastwood Lane</unittitle>
+                     <unitdate normal="1933" type="inclusive">1933</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle> Five American Dances for piano by Eastwood Lane</unittitle>
+                     <unitdate normal="1919" type="inclusive">1919</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Fourth of July by Eastwood Lane</unittitle>
+                     <unitdate normal="1935" type="inclusive">1935</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle> Girl on Tiptoe for piano solo by Eastwood Lane</unittitle>
+                     <unitdate normal="1933" type="inclusive">1933</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Here are ladies five piano pieces by Eastwood Lane</unittitle>
+                     <unitdate normal="1944" type="inclusive">1944</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>In Sleepy Hollow for piano by Eastwood Lane</unittitle>
+                     <unitdate normal="1913" type="inclusive">1913</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>The Little Fisherman words by Dana Burnet, music by Eastwood
+                        Lane</unittitle>
+                     <unitdate type="inclusive" normal="1918">1918</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Persimmon Pucker for piano solo by Eastwood Lane</unittitle>
+                     <unitdate normal="1926" type="inclusive">1926</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Sea Burial for piano solo by Eastwood Lane</unittitle>
+                     <unitdate normal="1925" type="inclusive">1925</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Sold Down the River by Eastwood Lane</unittitle>
+                     <unitdate normal="1928" type="inclusive">1928</unitdate>
+                     <container type="Box">1</container>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Research material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Photocopies of correspondence between Eastwood Lane and Modena Scovill </unittitle>
+                  <abstract>originals are in the Eastwood Lane Papers.</abstract>
+                  <unitdate normal="1913/1981" type="inclusive">undated</unitdate>
+                  <container type="Box">1</container>
+                  <physdesc><extent>2 folders</extent></physdesc>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

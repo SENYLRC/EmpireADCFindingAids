@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="laneandbond">laneandbond</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Lane &amp; Bond Cartoons</titleproper>
+            <subtitle>An inventory of the cartoons at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MD</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2008-12-10" encodinganalog="Date">10 Dec 2008</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>MD<date normal="2008-12-10">10 Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>10 Dec 2008 - converted to EAD (MD)</item><item>12 Mar 2009 - revised (MD)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Lane, John</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Lane &amp; Bond Cartoons</unittitle>
+         <unitdate encodinganalog="245$f" normal="1966" type="inclusive" label="Inclusive Dates: ">1966</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">41 original Sunday cartoons from the comic strip <emph render="italic">The Good Guys</emph>.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2653489</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Artist John Lane and writer J. Harvey Bond worked on <emph render="italic">The Good Guys</emph>, a revamped version of the <emph render="italic">Vic Flint</emph> detective strip, from 1965 to 1967. </p><p>Originally a run-of-the-mill detective strip, <emph render="italic">Vic Flint</emph> first appeared in 1946 with art by Ralph Lane (John Lane's father) and stories by a host of writers working under the pseudonym Michael O'Malley.  Ralph Lane left the strip in 1950 and was succeeded by various artists including Dean Miller and Art Sansom.  In an effort to combat flagging sales, the NEA vastly revamped the strip, transforming it into a gag strip and renaming it <emph render="italic">The Good Guys</emph> in 1965. The strip ceased publication in 1967.  </p><p>J. Harvey Bond (1904-1971), a pseudonym for writer Russ Winterbotham, penned a number of pulp crime novels in the 1950s and 1960s, including <emph render="italic">Murder Isn't Funny</emph> (1958), <emph render="italic">Kill Me With Kindness</emph> (1959) and <emph render="italic">If Wishes Were Hearses</emph> (1961).  Winterbotham also published many western and science fiction titles under his own name.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Lane &amp; Bond Cartoons</emph> collection contains 41 original Sunday cartoons from the comic strip <emph render="italic">The Good Guys</emph> (1966). Sunday cartoon: traces of graphite, opaque white, brush, pen and ink on illustration board, approx. 19 x 25 in.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Cartoons are in chronological order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has collections of over one hundred cartoonists. Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Lane, John.</persname><persname encodinganalog="600" source="lcnaf">Bond, J. Harvey, 1904-1971.</persname><persname encodinganalog="600" source="lcnaf">Winterbotham, R. R. (Russell Robert), 1904-1971.</persname>
+         
+         <corpname encodinganalog="610" source="lcnaf">Newspaper Enterprise Association.</corpname>
+         <title encodinganalog="630" source="local" rules="aacr2">Good Guys (comic strip)</title><title encodinganalog="630" source="local" rules="aacr2">Vic Flint (comic strip)</title>	
+			<subject encodinganalog="650" source="local">Art -- Cartoonists</subject>							
+         <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject><subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- United States.</subject><subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject><subject encodinganalog="650" source="lcsh">Comic books, strips, 
+
+etc. -- United States.</subject>
+         
+         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
+         </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p> Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Lane &amp; Bond Cartoons, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <!--<acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p></p>
+      </acqinfo>-->
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+					
+        		<c01 level="series"><did><unittitle><emph render="italic">The Good Guys</emph> comic strip</unittitle><physdesc><extent>41</extent></physdesc></did><note><p>Click <extref href="laneandbond_inv.pdf">here</extref> for detailed inventory.</p></note>               
+            <c02><did><unittitle>1966 Sunday cartoons</unittitle><unitdate normal="1966" type="inclusive"></unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

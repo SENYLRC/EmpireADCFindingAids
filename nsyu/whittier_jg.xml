@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+    <eadid countrycode="US" mainagencycode="NSyU" identifier="whittier_jg">whittier_jg</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">John Greenleaf Whittier Letters</titleproper>
+        <subtitle>An inventory of 
+                        
+                        his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">[Summit record]</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>&su_address;
+                           <date normal="1988-07-19" encodinganalog="Date" type="inclusive">1988-07-19</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           <date era="ce" calendar="gregorian" normal="2007-03-12" type="inclusive">12 Mar 2007</date></creation>
+      <langusage>
+        <language langcode="eng" encodinganalog="Language">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>16 Apr 2009 - converted to EAD (AM)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name; <lb/>&su_address;
+               </repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Whittier, John Greenleaf, 1807-1892.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">John Greenleaf Whittier Letters</unittitle>
+      <unitdate encodinganalog="245$f" type="inclusive" label="Inclusive Dates: " normal="1859/1888">1859-1888</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">7 items (SC).</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the American poet.  Outgoing correspondence.</abstract>
+      <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149327</unitid>
+      <langmaterial label="Language: " encodinganalog="546">
+        <language langcode="eng">
+                          English
+                       </language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>John Greenleaf Whitter (1807-1892) was an American poet, editor  and abolitionist.   Born in Massachusetts, Whittaker spent his youth on a Quaker farm.  His discovery of Robert Burns led to his career as a poet.  His major works include: <emph render="italic">Snow-bound, The Pennsylvania Pilgrim and Other Poems, </emph>and <emph render="italic">The Tent on the Beach and Other Poems.</emph>  Among his patrons was William Lloyd Garrison, who gave Whittier his first editorial job at a Boston newspaper and published some of Whittier's poems in <emph render="italic">The Liberator.</emph>  Whittier was also active in politics and worked to help form the  Republican party.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">John Greenleaf Whittier Papers</emph> consists of seven items of outgoing correspondence.  One of the fragments, possibly an enclosure intended for publication, reads: "For myself I shall esteem it a privilege as well as duty to cast my vote for the Republican candidates.  I regret the action of the Independents.  I would ask no man to vote against his conscience however mistaken I might regard it, but I see no reason why my Independent friends should give aid and comfort to a party whose principles and practice they have always condemned.  Why for fear of violating their consciences in one direction, should they deliberately violate them in another?  They might simply withold [sic] their votes, or cast them for some other representative of their views and principles than the Democratic candidate."</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The collection is arranged chronologically.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial>-->
+    <!--<separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial>--><!--
+            <otherfindaid encodinganalog="555"><head>Other Related Finding Aids</head><p>## OPT (MARC 555)</p></otherfindaid>
+            --><controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Literature -- American Poetry</subject><persname encodinganalog="600" source="lcnaf">Whittier, John Greenleaf, 1807-1892.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">American poetry -- 19th century.</subject>
+         <subject encodinganalog="650" source="lcsh">Poets, American.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Letters (correspondence)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Poets.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess><accessrestrict encodinganalog="506"><head>Access Restrictions</head><p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p></accessrestrict><userestrict encodinganalog="540"><head>Use Restrictions</head><p>Written permission must be obtained from SCRC and 
+                       all relevant rights holders before publishing quotations, excerpts or images from any 
+                       materials in this collection. </p></userestrict><prefercite encodinganalog="524"><head>Preferred Citation</head><p>Preferred citation for this material is as follows:</p><p> John Greenleaf Whittier Letters, <lb/>&su_name;
+                  </p></prefercite><!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       --><!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       --><dsc type="combined"><head>Inventory</head><c01 level="series"><did><unittitle>Correspondence</unittitle></did><c02><did><unittitle><unitdate type="inclusive" normal="1859-04-25">25 Apr 1859</unitdate></unittitle><abstract>"My dear fds."</abstract><physdesc><extent>1 page</extent></physdesc><container type="SC">48</container><container type="Folder">1</container></did></c02><c02><did><unittitle><unitdate type="inclusive" normal="1870-04-16">16 Apr 1870</unitdate></unittitle><abstract>"My dear friend, Grace Greenwood."</abstract><physdesc><extent>3 pages</extent></physdesc><container type="SC">48</container><container type="Folder">1</container></did></c02><c02><did><unittitle><unitdate type="inclusive" normal="1881-09-20">20 Sep 1881</unitdate></unittitle><abstract>"Dear Friend ------"</abstract><physdesc><extent>3 pages</extent></physdesc><container type="SC">48</container><container type="Folder">1</container></did></c02><c02><did><unittitle><unitdate type="inclusive" normal="1888-07-07">7 Jul 1888</unitdate></unittitle><abstract>"Dear Friend"</abstract><physdesc><extent>2 pages</extent></physdesc><container type="SC">48</container><container type="Folder">1</container></did></c02><c02><did><unittitle><unitdate type="inclusive" normal="1859/1888">30 Sept [no year]</unitdate></unittitle><abstract>"My Dear Friend"</abstract><physdesc><extent>3 pages</extent></physdesc><container type="SC">48</container><container type="Folder">1</container></did></c02><c02><did><unittitle><unitdate type="inclusive" normal="1859/1888">undated</unitdate></unittitle><physdesc><extent>2 items</extent></physdesc><container type="SC">48</container><container type="Folder">2</container></did></c02></c01></dsc></archdesc>
+</ead>

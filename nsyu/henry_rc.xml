@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="henry_rc">henry_rc</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Ralph Coolidge Henry Papers</titleproper>
+            <subtitle>An inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">DRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1993-02" encodinganalog="Date">Feb 1993</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2006-03-08">Feb 2009</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>Feb 2009 - converted to EAD (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Henry, Ralph Coolidge</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Ralph Coolidge Henry Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1940/1952" type="inclusive" label="Inclusive Dates: ">1940-1952</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>18 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, subject files and 
+			architectural plans for Henry projects and clients, such as Colby Junior College, 
+			Pine Manor, Boston, Philips Andover Academy, and the Nevada St. School in Newton, 
+			Massachusetts. Henry worked with landscape architect Guy Lowell.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2664850</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Ralph Coolidge Henry was an American architect who worked primarily in New England.  Henry worked with landscape architect Guy Lowell.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Ralph Coolidge Henry Papers</emph> consist of correspondence, subject files and 
+			architectural plans for Henry projects and clients, such as Colby Junior College, 
+			Pine Manor, Boston, Philips Andover Academy, and the Nevada St. School in Newton, 
+			Massachusetts.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Collection remains in original order; inventory is a simple box list supplemented by an alphabetical list of projects created by &scrc_name; staff.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has the collections of a number of notable architects.  Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Architects</subject><persname encodinganalog="600" source="lcnaf">Henry, Ralph Coolidge -- Archives.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Architectural contracts.</subject>
+			<subject encodinganalog="650" source="lcsh">Architecture -- Specifications.</subject>
+			<subject encodinganalog="650" source="lcsh">Architecture -- United States -- History -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Architectural drawing -- United States -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Dwellings -- Design and construction.</subject>
+			<subject encodinganalog="650" source="lcsh">Housing -- Design and construction.</subject>
+			<subject encodinganalog="650" source="lcsh">Schools -- Design and construction.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Blueprints (reprographic copies)</genreform>
+			<genreform encodinganalog="655" source="aat">Contracts.</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+			<genreform encodinganalog="655" source="aat">Sketches.</genreform>
+			<genreform encodinganalog="655" source="aat">Tracings.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Architects.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Ralph Coolidge Henry Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <!--<acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>### (MARC 541 and/or  561)</p>
+      </acqinfo>-->
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Correspondence-subject files</unittitle></did>
+   <c02><did><unittitle>Office of Price Administration</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Office of Price Administration</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Personal</unittitle></did>
+      <c03><did><unittitle>Pangburn Report, Henry, R.C.</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>200 Church Street, Henry, R.C.</unittitle><container type="Box">1</container></did></c03>
+   </c02>
+   <c02><did><unittitle>New England Trust Company</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Newspaper Clipping on Traffic Problems</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Newton National Bank</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Framing (Pencil Drawing and Measurements)</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Fiberglass</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Aerial Photos, New Hampshire</unittitle><unitdate normal="1946-11" type="inclusive">November 1946</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>G.I. Data</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>M.I.T. (Massachusetts Institute of Technology, "Levenburg" Model Tenement, Lower East Side, New York City (Reports)</unittitle><unitdate type="inclusive" normal="1938">1938</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>General Correspondence (Business)</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Correspondence (Outgoing)</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Cost Data</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Current</unittitle><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Colby Junior College</unittitle></did>
+      <c03><did><unittitle>Heating Ventilation and Air Conditioners</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Wheeler. W.K. **** School Equipment</unittitle><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Correspondence, Drawings, Pamphlets, Clippings</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Specs</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>H. Leslie Sawyer </unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Various Buildings</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Correspondence</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Garage Dormitory Bids and Tabulation</unittitle><container type="Box">2</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Concrete and Monolithic Construction</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Bradford, Robert F.</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Traffic, Boston (see also Harvey, C.W.)</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Swimming Pool, Babson Institute</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Addresses, Profession List</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Architects</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Architect's Fees</unittitle><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Miscellaneous</unittitle></did>
+      <c03><did><unittitle><unitdate normal="1942/1945" type="inclusive">1942-1945</unitdate></unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle><unitdate normal="1946" type="inclusive">1946</unitdate></unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle>Small Drawings</unittitle><container type="Box">2</container></did></c03>
+      <c03><did><unittitle><unitdate normal="1952" type="inclusive">1952</unitdate></unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle>Programs (Church, Drama, Art)</unittitle><container type="Box">3</container></did></c03>
+      <c03><did><unittitle><unitdate type="inclusive" normal="1947">1947</unitdate></unittitle><container type="Box">3</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Rawson, George E.</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Recreation</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Photos, Aerials (St. Paul, Minnesota)</unittitle><unitdate normal="1946-10" type="inclusive">1946 October</unitdate><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Room of the Month Ideas, American Standard</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>State Service Build Commission, St. Paul Minnesota</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Specification for Alteration, 277 Mass. Ave, Cambridge, Mass.</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Specification for Plumbing, Library, Babson Park Mass.</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Specification, fragments undated</unittitle><unitdate type="inclusive" normal="1940/1952">undated</unitdate><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Mt. Auburn Cemetery, Cambridge, Mass., Addenda to General Specs, Alteration to Story Chapel</unittitle><container type="Box">3</container></did></c02>
+   <c02><did><unittitle>Shawmut Bank</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Spear, Abbott</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Shurbert, Fred</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Specification</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Checking List</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Specification Notes</unittitle></did>
+      <c03><did><unittitle>8. Stone Work</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>25. Asphalt Tile</unittitle><container type="Box">4</container></did></c03>
+      <c03><did><unittitle>29 Painting</unittitle><container type="Box">4</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Memorabilia</unittitle></did>
+      <c03><did><unittitle>Large Post Cards, White Mountain, N.H.</unittitle><container type="Box">4</container></did></c03>
+   </c02>
+   <c02><did><unittitle>U.S. Trust Company</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Waterproofing</unittitle><container type="Box">4</container></did></c02>
+   <c02 id="with"><did><unittitle>Thayer, William G. Jr.</unittitle><container type="Box">4</container></did><note><p>See also <ref target="unna">United Nations</ref>.</p></note></c02>
+   <c02><did><unittitle>Time Schedules</unittitle><container type="Box">4</container></did></c02>
+   <c02 id="unna"><did><unittitle>United Nations</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Walton's Restaurant, School St., Boston, Mass.</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Walton's, Tony Malfa's Notes</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Walton, Paul</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>Nazarene College, Dr. Samuel Young</unittitle><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>War Vets Memorial, news clippings</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Receipts, Financial Accounts</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Statements of Financial Condition</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Professional Statements</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Pine Manor, Port of Boston</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Office </unittitle><unitdate normal="1946" type="inclusive">1946</unitdate><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Office </unittitle><unitdate normal="1947" type="inclusive">1947</unitdate><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Office Miscellaneous</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Correspondence and Miscellaneous Subject Material</unittitle><unitdate normal="1952" type="inclusive">1952</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Photographs, New York County Courthouse Foley Square, New York, New York; architect Guy Lowell</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Photographs, Grosse Pointe Yacht Club, 	Grosse Pointe, Mich.; architects Lowell and/or Henry</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Photographs, Plant, Morton, F., Groton, Conn.; architects Guy Lowell &amp; R.C. Henry</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Photographs, Nevada Street School, Newtonville, Mass.; architects Ralph Coolidge Henry  </unittitle><unitdate normal="1934/1935" type="inclusive">1934-1935</unitdate><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Photographs, Miscellaneous</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Magazine clippings</unittitle><container type="Box">5</container></did></c02>
+   <c02><did><unittitle>Architect contract</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Massachusetts State Association of Architects</unittitle><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Forms</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Daily Planner/ Calendar</unittitle><unitdate type="inclusive" normal="1946">1946, </unitdate><unitdate type="inclusive" normal="1947">1947</unitdate><physdesc><extent>3 items</extent></physdesc><container type="Box">6</container></did></c02>
+   <c02><did><unittitle>Personal Notebook</unittitle><unitdate normal="1946" type="inclusive">1946</unitdate><container type="Box">6</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Books and Pamphlets</unittitle></did>
+   <c02><did><unittitle>Bethlehem Manual of Steel Construction / Bethlehem Steel Co., Bethlehem, Pa. </unittitle><unitdate normal="1934" type="inclusive">1934</unitdate><container type="Box">7</container></did></c02>
+   <c02><did><unittitle>War Emergency Powers of Massachusetts / Emergency Public Works Commission, The Commonwealth of Massachusetts</unittitle><unitdate normal="1945-01" type="inclusive">January, 1945 </unitdate><container type="Box">7</container></did></c02>
+   <c02><did><unittitle>Specifications for the Alteration to Munro Hall / Eastern Nazarene College, Wallaston Park Quincy, Mass</unittitle><container type="Box">7</container></did></c02>
+   <c02><did><unittitle>Preliminary Data, Inscriptions and Tests - Sect. 1-0 / Stevens Master Specifications for Architects and Builders, Stevens, Frank B. Jr.</unittitle><unitdate normal="1932" type="inclusive">1932</unitdate><container type="Box">7</container></did></c02>
+   <c02><did><unittitle>Construction of the Court House Invitation to Bid, Form of Bid, Contract and Specification and Form of Bond / The Court House Board, New York County</unittitle><unitdate normal="1917-05" type="inclusive">May 1917</unitdate><container type="Box">7</container></did></c02>
+   <c02><did><unittitle>Specifications for the Construction of the U.S.H.A.-Aided Housing Project MASS 2-2 in the South Boston District of the City of Boston, Massachusetts, Henry and Richmond, architects / Boston Housing Authority </unittitle><unitdate normal="1939-09-25" type="inclusive">Sept 25, 1939</unitdate><container type="Box">8</container></did></c02>
+   <c02><did><unittitle>Some Statues of Boston (463)/ Forbes, Allan and Eastman, Ralph M., State Street Trust Co. </unittitle><unitdate normal="1946" type="inclusive">1946</unitdate><container type="Box">8</container></did></c02>
+   <c02><did><unittitle>Catalogue of the Christian Science Publishing Society / The Christian Science Publishing Society</unittitle><unitdate normal="1952-02" type="inclusive">Feb. 1952</unitdate><container type="Box">8</container></did></c02>
+   <c02><did><unittitle>Alderman (Mayor) City of Newton / Mayor, Aldermen and Departments and Boards</unittitle><unitdate normal="1944/1945" type="inclusive">1944-1945</unitdate><container type="Box">8</container></did></c02>
+   <c02><did><unittitle>Lakes Region of New Hampshire / The Lakes Region Association, Laconia, N.H.</unittitle><unitdate normal="1940/1952" type="inclusive">undated</unitdate><container type="Box">8</container></did></c02>
+   <c02><did><unittitle>Year Book and By-Laws of the Parish of the Grace Church in the City of Newton, Diocese of Massachusetts -458 / Grace Church, Newton 1935-1936</unittitle><unitdate normal="1940/1952" type="inclusive">undated</unitdate><container type="Box">8</container></did></c02>
+   <c02><did><unittitle>Catalogue of Works on Christian Science / Eddy, Mary Baker</unittitle><container type="Box">9</container></did></c02>
+   <c02><did><unittitle>Babson Park, Babson Institute of Business Administration</unittitle><unitdate normal="1952/1953" type="inclusive">1952-1953</unitdate><container type="Box">9</container></did></c02>
+   <c02><did><unittitle>Some Examples from the Work of the Office of R. Clipston Sturgis, Architect 120 Boylston Street, Boston, Mass.</unittitle><container type="Box">9</container></did></c02>
+   <c02><did><unittitle>Solar Ephemeris and Polaris Tables / C.L. Berger &amp; Sons, Inc., Roxbury, Boston, Mass. </unittitle><unitdate normal="1950" type="inclusive">1950</unitdate><container type="Box">9</container></did></c02>
+   <c02><did><unittitle>Course catalog, Boston University Evening Division / Boston Real Estate Board and the Massachusetts Board of Real Estate Appraisers </unittitle><unitdate normal="1951-08" type="inclusive">August 1951</unitdate><container type="Box">9</container></did></c02>
+   <c02><did><unittitle>Minimum Construction Requirements for New Dwellings Located in State of New Hampshire / Federal Housing Administration Concord, N.H. </unittitle><unitdate normal="1938-05-15" type="inclusive">May 15, 1938</unitdate><container type="Box">9</container></did></c02>
+   <c02><did><unittitle>The Bay State Builder / Associated General Contractors of Massachusetts </unittitle><unitdate normal="1947-09" type="inclusive">September, 1947</unitdate><container type="Box">9</container></did></c02>
+   <c02><did><unittitle>Presidents' Report: The War Record of the Massachusetts Institute of Technology - 461, Cambridge, Massachusetts </unittitle><unitdate normal="1945" type="inclusive">1945</unitdate><container type="Box">9</container></did></c02>
+   <c02><did><unittitle>Laws Relating to the Erection, Alteration , Inspection and use of Buildings / Dept. of Public Safety, The Commonwealth of Massachusetts</unittitle><physdesc><extent>2 copies</extent></physdesc><container type="Box">9</container></did></c02>
+   <c02><did><unittitle>Board of Registration of Architects / Commonwealth of Massachusetts </unittitle><unitdate normal="1943" type="inclusive">1943, </unitdate><unitdate normal="1946" type="inclusive">1946</unitdate><container type="Box">9</container></did></c02>
+   <c02><did><unittitle>The New Hampshire Historical Society, Concord, New Hampshire  </unittitle><unitdate normal="1940" type="inclusive">1940</unitdate><container type="Box">9</container></did></c02>
+   <c02><did><unittitle>"News"</unittitle></did></c02>
+   <c02><did><unittitle>Eastman Kodak Company, <emph render="italic">Architectural Record</emph> </unittitle><unitdate normal="1945-09" type="inclusive">Sept. 1945, </unitdate><unitdate normal="1946-02" type="inclusive">Feb. 1946</unitdate><container type="Box">9</container></did></c02>
+   <c02><did><unittitle><emph render="italic">Bay State Architect</emph> </unittitle><unitdate normal="1952-02" type="inclusive">Feb. 1952</unitdate><container type="Box">9</container></did></c02>
+   <c02><did><unittitle><emph render="italic">A Guide Trip Through the Minnesota State Capitol</emph></unittitle><container type="Box">9</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Specifications</unittitle></did>
+   <c02><did><unittitle>Henry and Richmond</unittitle></did>
+      <c03><did><unittitle>Plumbing Specifications for a House for Mrs. Randolph Frothingham, Brookline, Mass</unittitle><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Heating Specifications, Frothingham House</unittitle><container type="Box">9</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Henry  &amp; Richmond Architexts; Barber Company Engineers</unittitle></did>
+      <c03><did><unittitle>Specification for Heating and Ventilating Apparatus for Bank and Building 99-101 Newbury Street Boston, MA for New England Trust Company</unittitle><container type="Box">9</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Henry &amp; Richmond</unittitle></did>
+      <c03><did><unittitle>Electric Specifications for the Back Bay Branch Offices of the New England Trust Company at Nos. 99-101 Newbury Street, Boston MA</unittitle><physdesc><extent>2 copies</extent></physdesc><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>City of Newton, MA Public Buildings Dept. Invitation to Contractors for Bids for the Erection of a New Schoolhouse, etc</unittitle><physdesc><extent>2 copies</extent></physdesc><container type="Box">9</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Henry, Ralph Coolidge</unittitle></did>
+      <c03><did><unittitle>Specifications for a House for Mrs. Warren S. Kilburn at W. Newton, MA</unittitle><container type="Box">9</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Schwamb, Theodore</unittitle></did>
+      <c03><did><unittitle>Specification for Erection and Completion of "Thesco" Homes from the Drawings and Details</unittitle><container type="Box">9</container></did></c03>
+   </c02>
+   <c02><did><unittitle>Ralph Coolidge Henry</unittitle></did>
+      <c03><did><unittitle>Specification for Benvenue Street Residence for Tenacre at Wellesley, Massachusetts</unittitle><container type="Box">9</container></did></c03>
+      <c03><did><unittitle>Fragments of table of Table of Contents [no building name]</unittitle><container type="Box">9</container></did></c03>
+   </c02>
+</c01>
+<c01 level="series"><did><unittitle>Miscellaneous</unittitle></did>
+   <c02><did><unittitle>Map, Port of Boston, Boston, Mass. </unittitle><unitdate normal="1940/1952" type="inclusive">undated</unitdate><container type="Box">9</container></did></c02>
+</c01>
+<c01 level="series"><did><unittitle>Index by project</unittitle></did><odd><list>   <item>Albiani Building, Massachusetts Ave. and Pearl St. Cambridge, MA; Architect: Henry<list><item>1 drawing</item><item>13 photos of drawings</item></list></item>
+   <item>Ahlers Association Club House, Andover MA; Architect: Lowell (1921)<list><item>38 tracings and blueprints</item></list></item>
+   <item>Babson Institute, Library Building; Architect: G. Marlowe (1924, 1936)<list><item>7 linens</item><item>22 blueprints</item><item>1 tracing</item></list></item>
+   <item>Babson Institute, Map Room (1940)<list><item>7 blueprints</item><item>4 linens</item><item>1 tracing</item></list></item>
+   <item>Babson Institute, Swimming Pool Building; Architect: Henry (1947)<list><item>1 blueprint</item><item>3 tracings</item></list></item>
+   <item>Baker, William B. Esq. house, West Newton, MA; Architect: Henry and Richmond<list><item>19 tracings</item></list></item>
+   <item>Boston Housing Authority, housing project, Charlestown, MA; Architect: John M. Gray (1939)<list><item>3 blueprints</item></list></item>
+   <item>Boston Housing Authority, housing project, South Boston, MA<list><item>26 blueprints</item><item>24 linens</item><item>42 tracings</item><item>54 "Daily Report" sketches</item><item>10 photos of blueprints</item><item>1 sketch</item></list></item>
+   <item>Bullock, Hugh, house Andover MA; Architect: Lowell (1924)<list><item>22 tracings</item></list></item>
+   <item>Chilton Club, Boston, MA<list><item>72 blueprints</item></list></item>
+   <item>Coe, W.R., alterations of barn planting fields, Long Island, NY; Architect: Lowell (1917)<list><item>2 blueprints, poor condition</item></list></item>
+   <item>Colby Junior College, dorms and garage, New London, NH; Architect: Henry (1947)<list><item>3 layout sketches</item><item>1 negative of layout sketch</item><item>69 blueprints</item><item>21 linens</item><item>5 tracings</item><item>11 photo Reproductions of sketches</item></list></item>
+   <item>Conant, H.N., house and garden plans, Dedham, MA; Architect: Henry in association with William G. Thayer (1947)<list><item>15 tracings and blueprints</item></list></item>
+   <item>Crowninshield, Francis B., Marblehead, MA; Architect: Lowell<list><item>29 blueprints</item><item>6 tracings</item><item>14 linens</item></list></item>
+   <item>Dana Hall School, Pine Manor and Westlea Hall Wellesley, MA; Architect: Lowell and Henry<list><item>83 blueprints</item><item>17 linens</item><item>66 tracings</item></list></item>
+   <item>Dana Hall School, Play House Wellesley, MA<list><item>48 blueprints</item><item>1 linen</item></list></item>
+   <item>Eastern Nazarene College, Munro Hall Wollaston, MA; Architect: Henry and Richmond<list><item>2 blueprints</item><item>3 tracings</item></list></item>
+   <item>Eliot Congregational Church, Newton, MA; Architect: Henry and Richmond (1941)<list><item>11 blueprints</item><item>5 photos of blueprints</item><item>11 tracings</item></list></item>
+   <item>Far Horizon, house and garden <list><item>1 tracing</item><item>1 linen</item></list></item>
+   <item>Frothingham, Ralph, Brookline, MA; Architect: Henry and Richmond (1959)<list><item>33 blueprints</item><item>7 tracings</item><item>5 linens</item></list></item>
+   <item>Grace Church, Reredos Newton, MA; Architect: Henry (1935)<list><item>3 blueprints</item></list></item>
+   <item>Grosse Pointe Yacht Club, Grosse Pointe Shores, MI; Architect: Henry and Richmond<list><item>Roll 1: 52 blueprints</item><item>Roll 2: 37 blueprints</item></list></item>
+   <item>Henry, Richard Esq., house, Wellesley, MA; Architect: Henry<list><item>2 linens</item></list></item>
+   <item>HUB Motor Car Co. (George Kulassian, owner), 1283 Washington St., Boston, MA<list><item>22 blueprints</item><item>4 linens</item></list></item>
+   <item>Jewell, Theodore E. Esq., house Newton, MA; Architect: Henry<list><item>4 linens</item></list></item>
+   <item>Kennedy, Mrs. William J., Brookline, MA<list><item>23 blueprints</item><item>6 tracings</item><item>7 sketches</item></list></item>
+   <item>Mantles, misc.; Architect: Henry and Lowell <list><item>26 linens</item></list></item>
+   <item>Martin, Gustav, garage, Waban, MA; Architect: Henry (1921)<list><item>8 tracings</item><item>2 blueprints</item><item>7 linens</item></list></item>
+   <item>Massachusetts School of Art; Architect: Henry and Richmond<list><item>Roll 1: 12 blueprints of heating and vents, plumbing, and electrical</item><item>Roll 2: 25 tracings and blueprints, Misc.</item><item>Roll 3: 30+ misc. blueprints, tracings, linens; poor condition</item></list></item>
+   <item>McLanathan, Frank W., house and gardens, Andover, MA; Architect: Lowell (1924)<list><item>16 linens</item><item>5 blueprints</item><item>9 tracings</item></list></item>
+   <item>Mid-Manhattan Engineering Corp., House B; Architect: Richmond <list><item>3 linens</item></list></item>
+   <item>Misc. pictorial<list><item>Watercolors of light fixtures; sketch of Back Bay Station, Boston MA; John W. Weeks Junior High School; more</item></list></item>
+   <item>Museum of Fine Arts, Boston, MA; Architect: Henry and Richmond (1946)<list><item>1 blueprint</item><item>1 tracing</item></list></item>
+   <item>Nevada Street School, Newton, MA; Architect: Henry (1934)<list><item>55 linens</item><item>1 tracing</item></list></item>
+   <item>New England Trust Co. branch offices, Newberry Street, Boston, MA<list><item>22 linens</item><item>12 small blueprints of furniture</item><item>1 tracing</item></list></item>
+   <item>Oak Hill Trust, house, Newton MA, Richmond<list><item>2 blueprints</item><item>6 linens</item></list></item>
+   <item>Old Harbor Village, housing project; Architect: Henry and Richmond (1937)<list><item>2 blueprints</item><item>1 tracing</item></list></item>
+   <item>Phillips Andover Academy, Andover Memorial Tower; Architect: Lowell (1922)<list><item>43 tracings</item><item>5 linens</item></list></item>
+   <item>Phillips Andover Academy, Samuel F. B. Morse Hall; Architect: Lowell (1927)<list><item>Roll 1: 58 blueprints</item><item>Roll 2: 19 linens and 32 tracings</item><item>Roll 3: 8 linens, 83 tracings, 5 blueprints</item></list></item>
+   <item>Piping Rock Club, Locust Valley, Long Island, NY; Architect: Lowell<list><item>3 tracings</item></list></item>
+   <item>Plant, Morton F., garden, Groton, CT; Architect: Lowell (1915)<list><item>14 linens</item><item>6 tracings</item><item>8 drawings</item><item>26 reproductions of negatives and sketches</item></list></item>
+   <item>Red Hook, houses Brooklyn, NY<list><item>2 blueprints</item></list></item>
+   <item>Sargent, Miss Alice, alterations to "Holm Lea," Brooklyn, NY<list><item>3 blueprints</item><item>1 linen</item><item>56 tracings</item><item>1 Letter</item></list></item>
+   <item>Sargent Estate, Brookline, MA; Architect: Henry and Richmond<list><item>Roll 1: "House C" 7 blueprints, 16 tracings</item><item>Roll 2: "House H" 8 linens, 5 blueprints, 30 tracings</item><item>Roll 3: "General" 30 tracings, 11 blueprints, 1 moldy linen</item></list></item>
+   <item>Scottish Rite Temple, Valley of Boston, MA; Architect: Lawson W. Oakes (1947)<list><item>8 tracings</item></list></item>
+   <item>Sewage Pumping Station, Wakefield, MA; Architect: Lowell (1926)<list><item>9 tracings</item><item>3 blueprints</item></list></item>
+   <item>South Side Junior High School, Newton, MA; Architect: Henry and Richmond (1930)<list><item>Roll 1: 17 blueprints</item><item>Roll 2: 24 linens and 1 tracing</item><item>Roll 3: 23 blueprints</item></list></item>
+   <item>State Normal School, dormitory and refectory, Framingham, MA; Architect: Lowell (1914)<list><item>38 linens</item><item>6 tracings (many in poor condition)</item></list></item>
+   <item>State Normal School, power plant, Bridgewater, MA; Architect: Henry and Richmond (1927)<list><item>18 linens</item><item>18 blueprints</item><item>9 tracings</item><item>1 sketch</item></list></item>
+   <item>Sullivan, J.H., house, Brighton, MA; Architect: Henry (1935)<list><item>26 linens</item></list></item>
+   <item>Thesco House<list><item>12 blueprints</item><item>3 linens</item><item>1 tracing</item></list></item>
+   <item>Troglon, Lincoln, MA<list><item>5 blueprints</item><item>1 tracing</item><item>1 linen</item></list></item>
+   <item>Unidentified house/cabin (1941)<list><item>6 linens</item></list></item>
+   <item>Veterans Service Building, Minnesota Competition<list><item>5 drawings</item></list></item>
+   <item>Walton Lunch Co., School Street, Boston, MA<list><item>9 blueprints</item><item>12 tracings</item><item>4 sketches</item></list></item>
+   <item>Washington Memorial, Fall River, MA; Architect: Henry and Richmond, with sculptor Frederick Wallen <list><item>3 tracings</item><item>5 blueprints</item></list></item>
+
+</list></odd>
+
+</c01>
+      </dsc>
+   </archdesc>
+</ead>

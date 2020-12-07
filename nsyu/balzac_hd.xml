@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.6, 9/12/2006 -->
+<!-- Fixed countrycode case -->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="US" mainagencycode="NSyU" identifier="balzac_hd">balzac_hd</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Honoré de Balzac Letters</titleproper>
+				<subtitle>An  inventory of his letters at Syracuse University</subtitle>
+			<author encodinganalog="Creator">MRR</author></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="2006-10" encodinganalog="Date">Oct 2006</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2006-10-30">30 Oct 2006</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+			<list>
+				<item></item>
+			</list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<persname encodinganalog="100">Balzac, Honoré de, 1799-1850</persname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Honoré de Balzac Letters</unittitle>
+			<unitdate encodinganalog="245$f" normal="1832/1844" type="inclusive" label="Inclusive Dates: ">1832-1844</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC 177)</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">Four letters from the French  novelist</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149169</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="fre">French</language>
+			</langmaterial>
+		</did>
+				
+		<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>Honeré de Balzac was a French novelist.  Along with Flaubert, he is generally regarded as a founding father of realism in European literature. His work, the bulk of which is collectively entitled <emph render="italic">La Comédie humaine</emph>, is a broad panorama of French society in the period of the Restoration (1815-1830) and the July Monarchy (1830-1848).</p></bioghist>
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>The Honoré de Balzac Letters consists of four outgoing letters, handwritten, in French, with typed English translations.</p>
+		</scopecontent>
+		
+		<!--<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>## OPT (MARC 351$a)</p>
+		</arrangement>-->
+		
+		<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>The library's Rare Books department has an extensive amount of Balzac-related material (books, serials, essays, etc).  Please contact the repository listed above for further information.</p>
+		</relatedmaterial>
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head>
+			<subject encodinganalog="650" source="local">Literature -- French</subject><!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Balzac, Honoré de,  1799-1850.</persname>
+			
+            
+            
+            <subject encodinganalog="650" source="lcsh">Authors, French.</subject><subject encodinganalog="650" source="lcsh">French literature -- 19th century.</subject><subject encodinganalog="650" source="lcsh">Novelists, French.</subject>
+			
+            <genreform encodinganalog="655" source="aat">Letters (correspondence)</genreform>
+			<occupation encodinganalog="656" source="lcsh">Authors.</occupation><occupation encodinganalog="656" source="lcsh">Novelists.</occupation>
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p>Honoré de Balzac Letters, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>Purchase [?]</p>
+		</acqinfo>
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Correspondence</unittitle>
+				<!--C01 @LEVEL must be set to 'series' to show up in TOC.--></did>
+				<c02>
+					<did>
+						<unittitle>Outgoing letters</unittitle>
+						
+						<physdesc><extent>4 letters</extent></physdesc><unitdate normal="1832" type="inclusive">1832, </unitdate><unitdate normal="1839" type="inclusive">1839, </unitdate><unitdate normal="1844" type="inclusive">1844</unitdate><container type="SC">177</container>
+						
+						
+						
+					</did>
+				</c02>
+			</c01>
+		</dsc>
+	</archdesc>
+</ead>

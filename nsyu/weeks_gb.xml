@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="weeks_gb">weeks_gb</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Gardner B. Weeks Scrapbook</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-10-24" encodinganalog="Date">24 Oct 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-10-24">24 Oct 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Weeks, Gardner B.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Gardner B. Weeks Scrapbook</unittitle>
+         <unitdate encodinganalog="245$f" normal="1881/1886" type="inclusive" label="Inclusive Dates: ">1881-1886</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 volume (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Syracuse (New York)  businessman.   Scrapbook (news clippings,  letters, programs, brochures, prospectuses, circulars, more) relating to Weeks' business and to the Weeks family in general.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3174722</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Gardner B. Weeks (d. 1886) was an American businessman.  He was intensely active in 
+		agricultural matters in Central New York, including serving as Secretary of the American 
+		Dairymen's Association.  He was involved in mining and smelting businesses and was apparently 
+		the owner of a Syracuse, New York company that manufactured hay forks, railway conveyors and 
+		other items.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Gardner B. Weeks Scrapbook</emph> consists of a large scrapbook 
+			containing prospectuses, circulars, trade catalogs, broadsides, samples of printed ephemera, 
+			and news clippings.  There are also foreign queries, testimonials, and two letters from W.E. 
+			Dodge and Russell Sturgis.  Interspersed are personal items such as concert programs, a 
+			Central City bank note, letters and drawings from family and friends, and more.</p>
+			
+			<p>Companies with which Weeks was involved, and which are represented in the scrapbook, 
+			include the Pendery Mining Co. of Syracuse and Little Falls, the Syracuse &amp; Dumont 
+			Consolidated Mining Company, Fisher &amp; Millis Hills Mining &amp; Smelting Co. (with mine 
+			in North Carolina), Grappling Hay Forks and Railway Conveyors, and Weeks, Thompson &amp; Co. 
+			Road Carts.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Single item.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+			<subject encodinganalog="650" source="local">New York State</subject>
+			<persname encodinganalog="600" source="lcnaf">Weeks, Gardner B.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="local">Fisher &amp; Millis Hills Mining &amp; Smelting Co.</corpname>
+			<corpname encodinganalog="610" source="local">Pendery Mining Co.</corpname>
+         <corpname encodinganalog="610" source="local">Syracuse &amp; Dumont Consolidated Mining Co.</corpname>
+			<!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Agricultural machinery.</subject>
+			<subject encodinganalog="650" source="lcsh">Dairy plants -- Equipment and supplies.</subject>
+			<subject encodinganalog="650" source="lcsh">Haying equipment.</subject>
+			<subject encodinganalog="650" source="lcsh">Mining corporations.</subject>
+         <geogname encodinganalog="651" source="lcsh">New York (State) -- History.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- History.</geogname>
+			<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Memorabilia.</genreform>
+			<genreform encodinganalog="655" source="aat">Programs (documents)</genreform>
+			<genreform encodinganalog="655" source="aat">Prospectuses.</genreform>
+			<genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+			<genreform encodinganalog="655" source="aat">Trade catalogs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Businessmen.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Gardner B. Weeks Scrapbook, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from Rare Books, 1984.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Scrapbook</unittitle><unitdate normal="1881/1886" type="inclusive">1881-1886</unitdate><container type="SC">640</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

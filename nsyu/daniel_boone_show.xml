@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.6, 9/12/2006 -->
+<!-- Fixed countrycode case -->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="US" mainagencycode="NSyU" identifier="daniel_boone_show">daniel_boone_show</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Daniel Boone Show Scripts</titleproper>
+				<subtitle>A description of its papers at Syracuse University</subtitle>
+			<author encodinganalog="Creator">-</author></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="1978-01-12" encodinganalog="Date">12 Jan 1978</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Kristen Blake
+				<date normal="2007-01-17">17 Jan 2007</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language>
+			</langusage>
+		</profiledesc>
+		<revisiondesc>
+			<list>
+				<item>17 Jan 2007 - EAD file created (KMB)</item>
+			</list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<corpname encodinganalog="110">Twentieth Century-Fox Film Corporation</corpname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Daniel Boone Show Scripts</unittitle>
+			<unitdate encodinganalog="245$f" normal="1964/1970" type="inclusive" label="Inclusive Dates: ">1964-1970</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>4 boxes</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">Scripts of the television series, including season schedules listing airing dates, re-runs, and pre-emptions.</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">148926</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English </language>
+			</langmaterial>
+		</did>
+				
+		<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>The television series <emph render="italic">Daniel Boone</emph> ran from 1964 to 1970 on NBC for a total of 165 episodes, and was produced by Twentieth Century-Fox Film Corporation. The series starred Fess Parker as Boone, as well as singer Ed Ames as native guide Mingo, Patricia Blair as Boone’s wife Rebecca, and Darby Hinton as their son Israel. Set in Boonesborough, Kentucky, in the 1770s, many episodes featured adventures related to the events of the Revolutionary War. </p></bioghist>
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>The <emph render="bold">Daniel Boone Show Scripts</emph> consists of one series, Scripts. The collection includes scripts of the television series, including season schedules listing airing dates, re-runs, and pre-emptions.</p>
+		</scopecontent>
+		
+		<!--<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>## OPT (MARC 351$a)</p>
+		</arrangement>-->
+		
+		<!--<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>## (MARC 544 1)</p>
+		</relatedmaterial>-->
+		
+		<!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>
+		
+		--><controlaccess>
+			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Radio, television, film</subject><subject encodinganalog="650" source="local">Popular culture</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="local">Boone, Daniel -- Fiction.</persname><corpname encodinganalog="610" source="lcnaf">Twentieth Century-Fox Film Corporation.</corpname>
+            <title encodinganalog="630" source="lcnaf">Daniel Boone (Television program)</title>
+            <subject encodinganalog="650" source="lcsh">Television scripts.</subject>
+			<subject source="lcsh" encodinganalog="650">Television programs.</subject><subject source="lcsh" encodinganalog="650">Historical television programs.</subject><subject source="lcsh" encodinganalog="650">Adventure television programs.</subject><genreform encodinganalog="655" source="aat">Television scripts.</genreform>
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p> Daniel Boone Show Scripts, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>Gift, <persname role="donor">Will Fowler</persname> of 20th Century Fox, 1970.</p>
+		</acqinfo>
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>
+		
+		<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Television Scripts</unittitle>
+				<!--C01 @LEVEL must be set to 'series' to show up in TOC.--></did>
+				<c02><did><unittitle><unitdate normal="1964/1965" type="inclusive">1964-1965</unitdate> season</unittitle>
+						
+						<container type="Box">1</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle><unitdate normal="1965/1966" type="inclusive">1965-1966</unitdate>  season</unittitle>
+						
+						<container type="Box">1</container></did></c02><c02><did>
+						
+						
+						
+					<unittitle><unitdate normal="1965/1966" type="inclusive">1965-1966</unitdate> season (cont.)</unittitle>
+						
+						<container type="Box">2</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle><unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate> season</unittitle>
+						
+						<container type="Box">2</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle><unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate> season</unittitle>
+						
+						<container type="Box">3</container>
+						
+						
+						
+					</did></c02><c02><did><unittitle><unitdate normal="1968/1969" type="inclusive">1968-1969</unitdate> season</unittitle>
+						
+						<container type="Box">3</container>
+						
+						
+						
+					
+						
+						
+						
+					</did></c02><c02><did><unittitle><unitdate normal="1968/1969" type="inclusive">1968-1969</unitdate> season (cont.)</unittitle>
+						
+						<container type="Box">4</container></did></c02><c02><did><unittitle><unitdate normal="1969/1970" type="inclusive">1969-1970</unitdate> season</unittitle>
+						
+						<container type="Box">4</container>
+						
+						
+						
+					</did></c02>
+			</c01>
+		</dsc>
+	</archdesc>
+</ead>

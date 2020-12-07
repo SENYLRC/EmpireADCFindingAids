@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="jla_foundation">jla_foundation</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">James Luther Adams Foundation Collection</titleproper>
+            <subtitle>An inventory description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2014-02-04" encodinganalog="Date">4 Feb 2014</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2014-02-04">4 Feb 2014</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>8 Sep 2014 - added 2013 lecture (MRC)</item>
+            <item>24 May 2016 - additions 2014 and 2015 (SM)</item><item>22 mar 2017 - added 2016 forum (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <corpname encodinganalog="110">James Luther Adams Foundation.</corpname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">James Luther Adams Foundation Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1976/2016" type="inclusive" label="Inclusive Dates: ">1976-2016</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2.5 linear
+            ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Material from their lecture series, JLA Forum on Religion and Society (brochures, texts of lectures, etc.) as well as audiorecordings and videorecordings of or by Adams.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4124027</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>James Luther Adams (1901-1994) was a Unitarian parish minister, social activist, journal editor, distinguished scholar, translator and editor of major German theologians, prolific author, and highly respected divinity school professor for more than forty years.  Adams played a pivotal role in the shaping of the discipline of social ethics in the United States. </p><p>The James Luther Adams Foundation is devoted to the promulgation of Adams' work and ideas.  Its two primary projects are the preservation and distribution of <emph render="italic">The Adams Tapes</emph>, a series of films about the church and Nazism, and the maintenance of Adams' intellectual heritage through the James Luther Adams Forum on Religion and Society.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">James Luther Adams Foundation Collection</emph> consists
+            primarily of material from the James Luther Adams <emph render="bold">Forum on Religion
+               and Society</emph>, including lectures and other material. Material from each forum
+            is filed separately. There is also material on <emph render="bold">Other Events</emph>,
+            copies of some <emph render="bold">Recordings</emph> made or re-recorded by the
+            Foundation and <emph render="bold">Miscellaneous</emph> material related to James Luther
+            Adams. </p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Chronological.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="adams_jl.htm">James Luther Adams Papers</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Activism and social reform</subject><subject encodinganalog="650" source="local">Church and clergy</subject><subject encodinganalog="650" source="local">Religion and Philosophy</subject>
+	
+	<persname encodinganalog="600" source="lcnaf">Adams, James Luther, 1901-1994.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">James Luther Adams Foundation.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Church and state -- Germany.</subject><subject encodinganalog="650" source="lcsh">Church and state -- United States.</subject><subject encodinganalog="650" source="lcsh">Religion and ethics.</subject><subject encodinganalog="650" source="lcsh">Religion and state -- Germany.</subject><subject encodinganalog="650" source="lcsh">Religion and state -- United States.</subject><subject encodinganalog="650" source="lcsh">Theology -- Study and teaching.</subject><subject encodinganalog="650" source="lcsh">World War, 1939-1945 -- Religious aspects.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat"> Digital Betacam (TM)</genreform><genreform encodinganalog="655" source="aat">Documentary film.</genreform><genreform encodinganalog="655" source="aat">DVDs.</genreform><genreform encodinganalog="655" source="aat">Home movies.</genreform><genreform encodinganalog="655" source="aat">Lectures.</genreform><genreform encodinganalog="655" source="aat">Sound recordings.</genreform><genreform encodinganalog="655" source="aat">VHS.</genreform>
+         <genreform encodinganalog="655" source="aat">Video recordings.</genreform><occupation encodinganalog="656" source="lcsh">Theologians.</occupation><occupation encodinganalog="656" source="lcsh">Ethicists.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>James Luther Adams Foundation Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of Stephen Mott and others,  on behalf of the James Luther Adams Foundation.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>Approximately annual.</p>
+      </accruals>
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <!--<c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>[TBD]</unittitle><container type="Box">1</container></did></c02>
+         </c01>-->
+         <c01 level="series"><did><unittitle>James Luther Adams Forum on Religion and Society </unittitle></did><c02>
+               <did>
+                  <unittitle>List of forums, to 2016</unittitle>
+                  
+                  
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>1st</unittitle>
+                  <abstract>program; lecture by Max L. Stackhouse; contributors list; song
+                     book</abstract>
+                  <unitdate normal="1996" type="inclusive">Nov 1996</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02><did><unittitle>4th</unittitle><abstract>program; lecture by George Pickering</abstract><unitdate normal="2000-04" type="inclusive">Apr 2000</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unitid>jlaf_036, jlaf_037</unitid><unittitle>7th</unittitle><abstract>program; lecture by David Little; two CDs with audiorecordings of speakers</abstract><unitdate normal="2003" type="inclusive">2003</unitdate><container type="Box">1</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>8th</unittitle>
+                  <abstract>lecture by Robin W. Lovin</abstract>
+                  <unitdate normal="2004" type="inclusive">2004</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>10th</unittitle>
+                  <abstract>lecture by Rosemary Radford Ruether</abstract>
+                  <unitdate normal="2006" type="inclusive">Apr 2006</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02><did><unittitle>11th</unittitle><abstract>program; lecture by Harvey Cox</abstract><unitdate normal="2007" type="inclusive">2007</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>12th</unittitle><abstract>introductory remarks, opening remarks, papers, etc.; includes expansion of one paper as published in <emph render="italic">Crosscurrents</emph></abstract><unitdate normal="2008" type="inclusive">2008</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>13th</unittitle><abstract>program; lecture by Patrick D. Miller</abstract><unitdate normal="2009-01" type="inclusive">Jan 2009</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>14th</unittitle><abstract>lecture by Don Brown, including published version in <emph render="italic">Criterion</emph>, Vol. 47, No. 3</abstract><unitdate normal="2009-10" type="inclusive">Oct 2009</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>15th</unittitle><abstract>lecture by John R. Wilcox</abstract><unitdate normal="2011-03" type="inclusive">Mar 2011</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>16th</unittitle><abstract>lecture by George Kimmich Beach</abstract><unitdate normal="2011-11" type="inclusive">Nov 2011</unitdate><container type="Box">1</container></did></c02>
+         <c02><did><unittitle>18th</unittitle><abstract>lecture by Michael S. Hogue</abstract><unitdate normal="2014-03" type="inclusive">Mar 2014</unitdate><container type="Box">1</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>19th</unittitle>
+                  <abstract>lectures by Virgil Stucker and Brian Snyder</abstract>
+                  <unitdate normal="2014-08" type="inclusive">Aug 2014</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>20th</unittitle>
+                  <unitid>jlaf_038</unitid><abstract>program flyer with sponsor list; lecture by Gary Dorrien; DVD</abstract>
+                  <unitdate normal="2015-11" type="inclusive">Nov 2015</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle>21st</unittitle>
+                  <abstract>lecture by Chris hedges</abstract>
+                  <unitdate normal="2016-02" type="inclusive">Feb 2016</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02></c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Other Events</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Colloquia, Conferences</unittitle>
+                  <abstract>papers by Nathaniel Lauriat and Norm Faramelli</abstract>
+                  <unitdate type="inclusive" normal="1999-10">Oct 1999</unitdate>
+                  <unitdate type="inclusive" normal="2006-04">Apr 2006</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Essay Contest</unittitle>
+                  <abstract>essay by Florence Caplow</abstract>
+                  <unitdate type="inclusive" normal="2013-04">Apr 2013</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>JLA Birthday, 80th</unittitle>
+                  <abstract>Publication in the Union Seminary Quarterly Review of papers given at
+                     the James Luther Adams Festival with contributions by Donald W. Shriver, Jr,
+                     Max L. Stackhouse, David Little, M. Gregor Goethals, Theodore M.
+                     Steerman</abstract>
+                  <unitdate type="inclusive" normal="1981">1981</unitdate>
+                  <unitdate type="inclusive" normal="1982">1982</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>JLA Birthday, 85th</unittitle>
+                  <abstract>programs; with contributions by George K. Beach, Michelle Bouvier
+                     Campagnolo, Judy Deutsch, Hubert Jessup, Jim Hunt, Doris Hunter, David B.
+                     Parke, Marion Pauck, William F. Schulz, Max L. Stackhouse, Garrick Utley,
+                     George Huntston Williams, Loretta J. Williams, Conrad Wright</abstract>
+                  <unitdate type="inclusive" normal="1986-11">Nov 1986</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Recordings</unittitle></did>
+            <c02><did><unitid>jlaf_001, jlaf_002</unitid><unittitle>The Adams Tapes</unittitle><abstract> Volume I: No Authority But From God; Volume II: Religion Under Hitler; Volume III: Liberalism and the Barmen Declaration in Nazi Germany</abstract><unitdate normal="1991/1992" type="inclusive">1991-1992</unitdate><physdesc><extent>2 DVDs</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unitid>jlaf_005</unitid><unittitle>The Adams Tapes</unittitle><abstract> Volume I: No Authority But From God; Volume II: Religion Under Hitler; Volume III: Liberalism and the Barmen Declaration in Nazi Germany</abstract><unitdate normal="1991/1992" type="inclusive">1991-1992</unitdate><physdesc><extent>3 VHS tapes</extent></physdesc><container type="Oversize">1</container></did></c02>
+            <c02><did><unitid>jlaf_006</unitid><unittitle>Christian Leaders of Nazi Germany</unittitle><abstract>according to donor, these are "8mm home movies that JLA took in 1935-36 Germany"; film-to-tape transfer of 8mm black-and-white reversal</abstract><physdesc><extent>1 digital Betacam tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+            <c02><did><unitid>jlaf_007, jlaf_008</unitid><unittitle>Christian Leaders of Nazi Germany, copies</unittitle><abstract>copies of the above</abstract><physdesc><extent>2 DVDs</extent></physdesc><container type="Oversize">1</container></did></c02>
+            <c02><did><unitid>jlaf_009</unitid><unittitle>James Luther Adams, 1936 Christian Leaders</unittitle><abstract>according to donor, these are "8mm home movies that JLA took in 1935-36 Germany"; film-to-tape transfer of 8mm black-and-white reversal</abstract><physdesc><extent>1 digital Betacam tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+            <c02><did><unitid>jlaf_010, jlaf_011</unitid><unittitle>James Luther Adams, 1936 Christian Leaders, copies</unittitle><abstract>copies of the above</abstract><physdesc><extent>2 DVDs</extent></physdesc><container type="Oversize">1</container></did></c02>
+            <c02><did><unitid>jlaf_012 through jlaf_029</unitid><unittitle>James Luther Adams and George Hunston Williams discuss Christian leaders of Nazi Germany</unittitle><unitdate normal="1901/1994" type="inclusive">undated</unitdate><physdesc><extent>18 VHS tapes</extent></physdesc><container type="Oversize">1</container></did></c02>
+            <c02><did><unitid>jlaf_030</unitid><unittitle>James Luther Adams at home</unittitle><abstract> home movies?</abstract><unitdate normal="1901/1994" type="inclusive">undated</unitdate><container type="Oversize">1</container></did></c02>
+            <c02><did><unitid>jlaf_031</unitid><unittitle>Storm Troopers of Christ: Baptism and the  Jews in the Third Reich</unittitle><abstract> commercial DVD, possibly produced by Vital Visuals; no author or company name appears on the case</abstract><unitdate normal="1901/1994" type="inclusive">undated</unitdate><physdesc><extent>1 DVD</extent></physdesc><container type="Box">2</container></did></c02>
+            <c02><did><unitid>jlaf_032</unitid><unittitle>Strasburg</unittitle><abstract>according to donor, these are "8mm home movies that JLA took in 1935-36 Germany"; film-to-tape transfer of 8mm black-and-white reversal</abstract><physdesc><extent>1 digital Betacam tape</extent></physdesc><container type="Oversize">1</container></did></c02>
+            <c02><did><unitid>jlaf_033, jlaf_034</unitid><unittitle>Strasburg, copies</unittitle><abstract>copies of the above</abstract><physdesc><extent>2 DVDs</extent></physdesc><container type="Oversize">1</container></did></c02>
+				<c02><did><unitid>jlaf_035</unitid><unittitle>Unity</unittitle><unitdate normal="1901/1994" type="inclusive">undated</unitdate><physdesc><extent>1 VHS tape</extent></physdesc><container type="Box">2</container></did></c02>
+         </c01>
+      <c01 level="series"><did><unittitle>Miscellany</unittitle></did>
+            <c02><did><unittitle>Clippings</unittitle><abstract>about JLA</abstract><unitdate type="inclusive" normal="1994">1994, </unitdate>
+                  <unitdate type="inclusive" normal="1996">1996, </unitdate>
+                  <unitdate type="inclusive" normal="2000">2000, </unitdate>
+                  <unitdate type="inclusive" normal="2003">2003</unitdate><container type="Box">2</container></did></c02>
+            <c02>
+               <did>
+                  <unittitle>JLA Foundation, about etc.</unittitle>
+                  <abstract>about JLA Foundation</abstract>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Memorabilia</unittitle>
+                  <abstract>about JLA</abstract>
+                  <unitdate type="inclusive" normal="1976">1976, </unitdate>
+                  <unitdate type="inclusive" normal="1982">1982</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+         </c01></dsc>
+   </archdesc>
+</ead>

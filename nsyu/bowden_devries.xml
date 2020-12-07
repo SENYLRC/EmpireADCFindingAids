@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.9, 7/18/2007-->
+<!-- Changed entity files to txt rather than xml, don't suppose it matters which they are (?) -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="bowden_devries">bowden_devries</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Edwin T. Bowden Collection Relating to Peter De Vries</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">KM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1996-11" encodinganalog="Date">Nov 1996</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-03-14">14 Mar 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>14 Mar 2008 - converted to EAD (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Bowden, Edwin T.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Edwin T. Bowden Collection Relating to Peter De Vries</unittitle>
+         <unitdate encodinganalog="245$f" normal="1936/1990" type="inclusive" label="Inclusive Dates: ">1936-1990</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>.25 linear ft. (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Bowden, American literary historian and biographer.  Correspondence, a small amount of writing and memorabilia relating to his bibliography of De Vries, the comic novelist and <emph render="italic">New Yorker</emph> editor.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2600128</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Edwin T. Bowden (1924-2006) was an American literary historian and biographer.  Following his B.A. from Harvard University in 1948, Bowden received a Fulbright Fellowship at Cambridge University, where he studied with F.R. Leavis, and then a Ph.D. from Yale University in 1952.  Bowden taught briefly at Yale (1952-1956) but spent the majority of his career at the University of Texas (1956-1994).    His area of concentration was 18th and 19th century American literature and poetry, and he wrote several scholarly biographies on American writers, including James Thurber, Peter DeVries, and Washington Irving.</p><p>Peter De Vries (1910-1993) was an American comic novelist and editor.  Born in Chicago, Illinois, he studied at Calvin College and Northwestern University.   He was editor for <emph render="italic">Poetry</emph> magazine from 1938 to 1944 and then joined the staff of <emph render="italic">The New Yorker</emph> magazine, where he worked for more than forty years (1944 to 1987).   Notable works by him include Comfort Me With Apples (1956), The Blood of the Lamb (1961), and Cat's Pyjamas (1968).</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>Spanning 1936 to 1990, the <emph render="bold">Edwin T. Bowden Collection Relating to Peter De Vries</emph> 
+comprises correspondence, writings, and memorabilia assembled by the American 
+literary historian and bibliographer. The material documents Bowden's work an 
+his bibliography of Peter De Vries while also illuminating the role of 
+the comic novelist and <emph render="italic">New Yorker</emph> editor in its creation.</p><p><emph render="bold">Correspondence</emph> includes 61 De Vries letters and postcards generated between 
+1963 and 1990. Published essays, poems, and stories from <emph render="italic">Esquire</emph>, <emph render="italic">The New 
+Yorker</emph>, <emph render="italic">Saturday Review</emph>, and <emph render="italic">The Saturday Evening Post</emph> constitute De Vries' 
+<emph render="bold">Writings</emph>. <emph render="bold">Memorabilia</emph> contains a 1974 critical essay and newspaper reviews of De 
+Vries' novels.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Correspondence and writings are arranged chronologically.  Memorabilia is arranged alphabetically by type.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>In addition to the manscript material, the Library also houses a comprehensive 
+selection of various editions of Peter De Vries' books from Edwin T. Bowden's 
+library.  Please refer to &summitref; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <subject encodinganalog="650" source="local">Biography</subject><subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+         <persname encodinganalog="600" source="lcnaf">De Vries, Peter, 1910-1993.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">American fiction.</subject><subject encodinganalog="650" source="lcsh">American wit and humor.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Essays.</genreform><genreform encodinganalog="655" source="aat">Poems.</genreform><genreform encodinganalog="655" source="aat">Printed materials (object genre)</genreform><genreform encodinganalog="655" source="aat">Dust jackets.</genreform><genreform encodinganalog="655" source="aat">Reviews (documents)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Biographers.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Edwin T. Bowden Collection Relating to Peter De Vries, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchased with funds from the Adah C. Blackman Fund, 1996.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+         
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle><unitdate normal="1963/1990" type="inclusive">1963-1990</unitdate></unittitle>
+                  
+                  <physdesc><extent>2 folders, 61 items</extent></physdesc><container type="SC">126</container>
+                  
+                  
+               </did>
+            </c02>
+         </c01>
+      <c01 level="series">
+         
+            <did>
+               <unittitle>Writings</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle><unitdate normal="1936/1979 " type="inclusive">1936-1979 </unitdate></unittitle>
+                  
+                  <abstract>printed material</abstract><container type="SC">126</container>
+                  
+                  
+               </did>
+            </c02>
+         </c01><c01 level="series">
+         
+            <did>
+               <unittitle>Memorabilia (printed material)</unittitle>
+            </did><c02>
+               <did>
+                  <unittitle>Criticism/reviews</unittitle>
+                  
+                  
+                  
+                  
+               <unitdate normal="1965/1983" type="inclusive">1965-1983, </unitdate><unitdate normal="1936/1990" type="inclusive">undated</unitdate><container type="SC">126</container></did>
+            </c02><c02>
+               <did>
+                  <unittitle>Dust jackets and dust jacket proofs </unittitle>
+                  
+                  
+                  
+                  
+               <container type="SC">126</container></did>
+            </c02><c02>
+               <did>
+                  <unittitle>Mentions</unittitle>
+                  
+                  
+                  
+                  
+               <unitdate normal="1968" type="inclusive">1968, </unitdate><unitdate normal="1972/1973" type="inclusive">1972-1973 </unitdate><container type="SC">126</container></did>
+            </c02><c02>
+               <did>
+                  <unittitle>Publicity</unittitle>
+                  
+                  
+                  
+                  
+               <physdesc><extent>2 items</extent></physdesc><container type="SC">126</container></did>
+            </c02>
+         </c01></dsc>
+   </archdesc>
+</ead>

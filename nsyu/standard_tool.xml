@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+<?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen.css"?>
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="standard_tool">standard_tool</eadid>
+      <filedesc>
+         <titlestmt>
+                     <titleproper encodinganalog="Title">Standard Tool Records</titleproper>
+         <subtitle>A description of the collection at Syracuse University</subtitle>
+<author encodinganalog="Creator">DGI/MM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+               <date normal="2006" encodinganalog="Date">2006</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-12">Dec 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>Feb 2009 - converted to EAD</item>
+            <item>20 April 2011 - added material and updated finding aid (CEG)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+               <corpname encodinganalog="110">Standard Tool (Leominster, Mass.)</corpname></origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Standard Tool Records</unittitle>
+         <unitdate encodinganalog="245$f" normal="1940/1969" type="inclusive" label="Inclusive Dates: ">1940-1969</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>5.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">This collection contains drawings of comb designs 
+created for different companies; publications; and photographic prints and negatives of molds, machinery, 
+factory interiors and building exteriors.</abstract>
+
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2651159</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Lionel B. Kavanaugh 
+(1889-1991) and Robert Stowell founded Standard Tool in Leominster, Mass, in 1911. The company 
+made molds and presses for injection molding.</p>
+</bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Standard Tool Records</emph> contains drawings of comb designs 
+created for different companies; publications; and photographic prints and negatives of molds, machinery, 
+factory interiors and building exteriors.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Arranged into series by format and chronologically within. The photographs and negatives are arranged numerically by the numbers appearing on them.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous holdings in the areas of plastics and industrial design. Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+<subject encodinganalog="650" source="local">Plastics</subject>
+         <persname encodinganalog="600" source="lcnaf">Kavanaugh, Lionel B.</persname><!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">Standard Tool (Leominster, Mass.) -- Archives.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Plastics industry and trade.</subject>
+         
+<subject encodinganalog="650" source="lcsh">Plastics -- Molds.</subject>
+<subject encodinganalog="650" source="lcsh">Combs.</subject>
+
+<!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Drawings (visual works)</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Publications.</genreform><genreform encodinganalog="655" source="aat">Negatives (photographs)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Manufacturing.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Standard Tool Records, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Transfer from National Plastics Center and Museum, 11/06/2008.  Originally, photographs and publications gift of <persname role="donor">Abraham Brangrazi</persname>, 1989; remainder from unknown source.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      
+   <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Drawings</unittitle></did>
+            <c02><did><unittitle>Comb</unittitle><abstract>bound volume of technical drawings of comb molds for different molding
+companies</abstract><unitdate normal="1940/1950" type="inclusive">1940-1950</unitdate><physdesc><extent>1 volume</extent></physdesc><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Photographs</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Machinery</unittitle>
+                  <physdesc><extent>5 folders</extent></physdesc>
+                  <unitdate type="inclusive" normal="1940/1969">undated</unitdate>
+                  <container type="Box">2</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>People</unittitle>
+                  <unitdate normal="1981" type="inclusive">1981</unitdate>
+                  <container type="Box">2</container>
+                  <abstract>photo of Lionel Kavanaugh</abstract>
+               </did>
+            </c02>
+            <c02 level="subseries">
+               <did>
+                  <unittitle>Prints of machinary and equipment</unittitle>
+                  <unitdate normal="1945/1969" type="inclusive">1945-1969</unitdate>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>Unnumbered</unittitle>
+                     <container type="Box">3</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>#61-157</unittitle>
+                     <container type="Box">3</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>#158-307</unittitle>
+                     <container type="Box">4</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>#309-428</unittitle>
+                     <container type="Box">5</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Unnumbered</unittitle>
+                     <container type="Box">6</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>#71-436</unittitle>
+                     <container type="Box">7</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="subseries">
+               <did>
+                  <unittitle>Negatives of machinary and equipment</unittitle>
+                  <unitdate normal="1945/1969" type="inclusive">1945-1969</unitdate>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>#61-152</unittitle>
+                     <container type="Box">8</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>#153-245</unittitle>
+                     <container type="Box">9</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>#246-313</unittitle>
+                     <container type="Box">10</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>#314-380</unittitle>
+                     <container type="Box">11</container>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Publications</unittitle></did>
+            <c02><did><unittitle>Company </unittitle><abstract>employee newsletters, brochures and technical booklets related to Standard Tool, Detroit
+                     Mold Engineering Co., and Guy Harvey; Industry magazine</abstract><unitdate normal="1955/1956" type="inclusive">1955-1956,</unitdate>
+                  <unitdate normal="1959" type="inclusive">1959,</unitdate>
+                  <unitdate normal="1940/1969" type="inclusive">undated</unitdate><container type="Box">2</container></did></c02>
+         </c01>
+      </dsc>
+	</archdesc>
+</ead>

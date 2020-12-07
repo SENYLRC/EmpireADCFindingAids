@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="mcmahon_jd">mcmahon_jd</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">John Daniel McMahon Papers</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2013-03-04" encodinganalog="Date">4 Mar 2013</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2013-03-04">4 Mar 2013</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>26 Sep 2013 - adds, P-13-061; </item>
+            <item>01 Sept 2014 - additions processed (SM)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">McMahon, John Daniel.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">John Daniel McMahon Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1880/1934" type="inclusive"
+            label="Inclusive Dates: ">1880-1934</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Incoming and outgoing correspondence
+            with New York State lawyer, politican and legislator John Daniel McMahon. Much of it
+            concerns Democratic Party politics and activities.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4041746</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>John Daniel McMahon (1859-1923) was an American lawyer,  politican and legislator.  Born in Toronto, Canada, 
+		his family relocated to Annsville, New York in 1861.    He attended the Rome Free Academy, read law in the offices 
+		of Johnson &amp; Prescott in Rome, and was admitted to the bar in October 1882.  In addition to a long and 
+		respected legal career, McMahon also for "a period of forty years...held his hand steadily on the democratic party 
+		organization of Oneida County, and there was no man in Rome, Utica or elsewhere in the county who...occupied a 
+		more commanding position in part affairs."  He served as city attorney, city judge and deputy attorney-general; 
+		was a delegate to all but two state conventions after 1888 and in frequent demand as an orator on behalf of 
+		candidates and the party; and ran for Congress.  According to contemporary reports he was popular and widely 
+		respected politically, professionally and personally.</p>
+		
+		<p>[Biographical sketch adapted from <emph render="italic">Mohawk Valley: Gateway to the West</emph> (1925), Nelson Greene, ed., pp.184-189.]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">John Daniel McMahon Papers</emph> consists primarily of correspondence, with a small 
+			amount of printed material.</p>
+			
+			<p><emph render="bold">Correspondence</emph> consists primarily of incoming correspondence (there
+            are a few items of outgoing) with New York State lawyer, politican and legislator John
+            Daniel McMahon. Much of it concerns Democratic Party politics and activities.
+            Correspondents include Samuel A. Beardsley, democratic leader in Utica; John Carlisle,
+            member of the party's Executive Committee; John Dunham, Utica State Hospital (McMahon
+            was on the Board of Managers); James H. Flanagan, Oneida County politician and
+            businessman; J. F. Gaffney, a fellow judge; James (Jim) Hagarty, New York State Office
+            of Factory Inspectors; D. E. Powers, another attorney; and others.</p>
+         <p><emph render="bold">Financial material</emph> contains miscellaneous invoices, etc.</p>
+         <p><emph render="bold">Legal papers</emph> contains miscellaneous mortages, rent
+            agreements, depositions, etc.</p>
+			
+			<p><emph render="bold">Printed material</emph> contains several items from the Democratic National Convention of 1892, including "A 
+			Message From The South!" from the state of Alabama asking Grover Cleveland to decline the nomination, and a 
+			large poster announcing the Memorial Day festivities for the town or Oriskany Falls, including the fact that 
+			"Hon. J. D. McMahon of Rome, N.Y., will deliver the memorial address."</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Alphabetical by correspondent.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="flanagan_jh.htm">James H. Flanagan Papers</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">New York State</subject>
+         <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+<persname encodinganalog="600" source="lcnaf">Beardsley, Samuel, 1790-1860.</persname><persname encodinganalog="600" source="lcnaf">Flanagan, James H., Jr.</persname><persname encodinganalog="600" source="lcnaf">McMahon, John Daniel.</persname>
+         <persname encodinganalog="600" source="lcnaf">Wiggins, Howard C.</persname>
+         <persname encodinganalog="600" source="lcnaf">Williams, E. Stuart.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Democratic Party (N.Y.)</subject>
+         
+         <geogname encodinganalog="651" source="lcsh">New York (State) -- Politics and government -- 1865-1950.</geogname><geogname encodinganalog="651" source="lcsh">Utica (N.Y.) -- Politics and government -- 1865-1950.</geogname>
+         <genreform encodinganalog="655" source="aat">Broadsides (notices)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Legal documents.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Lawyers.</occupation><occupation encodinganalog="656" source="lcsh">Politicians.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>John Daniel McMahon Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2013, 2015.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>A, miscellaneous</unittitle><unitdate normal="1891/1893" type="inclusive">1891-1893</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Barnum, D. A.</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Beardsley, Samuel A.</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>B, miscellaneous</unittitle><unitdate normal="1887/1912" type="inclusive">1887-1912 (gaps)</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Carlisle, John N.</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>C, miscellaneous</unittitle><unitdate normal="1883" type="inclusive">1883, </unitdate>
+                  <unitdate normal="1889/1900" type="inclusive">1889-1900</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>DeFreest, Charles L.</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Dempsey, James L.</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Dunham, George E.</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>D, miscellaneous</unittitle><unitdate normal="1891/1893" type="inclusive">1891-1893</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>E-F, miscellaneous</unittitle><unitdate normal="1887" type="inclusive">1887, </unitdate>
+                  <unitdate normal="1891" type="inclusive">1891, </unitdate>
+                  <unitdate normal="1913" type="inclusive">1913</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Flanagan, James H.</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Gaffney, J. F.</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>G, miscellaneous</unittitle><unitdate normal="1889" type="inclusive">1889, </unitdate><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Hagarty [Heagarty], James</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Hill, David B.</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>H, miscellaneous</unittitle><abstract>one item appears to be dated 1881, but it may be an error</abstract><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>J-K-L, miscellaneous</unittitle><unitdate normal="1891/1893" type="inclusive">1891-1893</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Mason, John E.</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>McMahon, Mrs. J. D.</unittitle><unitdate normal="1891" type="inclusive">1891, </unitdate>
+                  <unitdate normal="1900/1903" type="inclusive">1900-1903</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>M, miscellaneous</unittitle><unitdate normal="1884" type="inclusive">1884, </unitdate>
+                  <unitdate normal="1891/1893" type="inclusive">1891-1893</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>N-O, miscellaneous</unittitle><unitdate normal="1890/1891" type="inclusive">1890-1891, </unitdate>
+                  <unitdate normal="1893" type="inclusive">1893</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Patten, Harry S.</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Powers, D. E.</unittitle><unitdate normal="1891" type="inclusive">1891</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>P, miscellaneous</unittitle><unitdate normal="1888" type="inclusive">1888, </unitdate>
+                  <unitdate normal="1891" type="inclusive">1891, </unitdate>
+                  <unitdate normal="1893" type="inclusive">1893</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>R, misc</unittitle><unitdate normal="1887" type="inclusive">1887, </unitdate>
+                  <unitdate normal="1893" type="inclusive">1893, </unitdate>
+                  <unitdate normal="1900" type="inclusive">1900, </unitdate>
+                  <unitdate normal="1902" type="inclusive">1902</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>S-V</unittitle><unitdate normal="1891" type="inclusive">1891, </unitdate>
+                  <unitdate normal="1893" type="inclusive">1893</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Wiggins, Howard C.</unittitle><unitdate normal="1893" type="inclusive">1893</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Williams, E. Stuart</unittitle><unitdate normal="1891/1893" type="inclusive">1891-1893</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>W, misc</unittitle>
+                  <unitdate normal="1891" type="inclusive">1891, </unitdate>
+                  <unitdate normal="1893" type="inclusive">1893, </unitdate>
+                  <unitdate normal="1898" type="inclusive">1898, </unitdate>
+                  <unitdate normal="1899" type="inclusive">1899</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Unidentified</unittitle><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Financial material</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Invoices</unittitle>
+                  <unitdate normal="1880/1934" type="inclusive">1880-1934 (with gaps)</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Legal papers</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate normal="1880" type="inclusive">1880, </unitdate>
+                  <unitdate normal="1885" type="inclusive">1885, </unitdate>
+                  <unitdate normal="1887" type="inclusive">1887, </unitdate>
+                  <unitdate normal="1894" type="inclusive">1894</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Printed material</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><abstract>Democratic National Convention items; Memorial Day poster</abstract><unitdate normal="1891/1892" type="inclusive">1891-1892</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

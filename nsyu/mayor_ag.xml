@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.9, 7/18/2007-->
+<!-- Changed entity files to txt rather than xml, don't suppose it matters which they are (?) -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="mayor_ag">mayor_ag</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Alfred Goldsborough Mayor Papers</titleproper>
+            <subtitle>An Inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">--</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1966-11" encodinganalog="Date">Nov. 1966</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Lara Chmela
+            <date normal="2008-02-07">07 Feb. 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>20 Mar 2008 - converted to EAD (LDC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Mayor, Alfred Goldsborough, 1868-1922.</persname><!--<corpname encodinganalog="110">or 110</corpname>-->
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Alfred Goldsborough Mayor Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1878/1926" type="inclusive" label="Inclusive Dates: ">1878-1926</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>6.0 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence (1881-1926); typescript manuscripts, notebooks, photographs, sketchbooks, and printed material, including articles by and about Mayor, and newspaper clippings.  Correspondence includes that of Anna Hyatt Huntington, Audella Beebe Hyatt, A. Hyatt Mayor, and Harriet Randolph Hyatt Mayor.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149456</unitid>
+         <langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Alfred G. Mayor was born in Frederick County, Maryland in 1868, the son of Alfred M. Mayor, noted physicist. At his father's wishes, he obtained a degree in mechanical engineering from the Stevens Institute of Technology in 1889. After graduation, he became an assistant in physics, first at Clark University and then at the University of Kansas. But his real love was natural history and so after three years he entered Harvard to pursue his doctorate. He became associated with Alpheus Hyatt II and Alexander Agassiz, serving as Agassiz's assistant. He was also given charge of the collection of radiates in the Museum of Comparative Zoology, a post he held for eight years. He accompanied Agassiz on several expeditions to tropical seas, gaining first-hand experience. Through his friendship with Alpheus Hyatt the noted paleontologist, he met the professor's daughter, Harriet Hyatt, whom he married in 1900.</p><p>That same year Dr. Mayor became chief curator of the Brooklyn Institute and four years later rose to the post of director of marine zoology studies for the Carnegie Institution. He became most interested in marine biology and soon established an experimental station off Key West, Florida on an inlet called Dry Tortugas. Here he spent much time in his later years studying the area with a group of assistants. He also led expeditions to the coral reefs of Samoa, Fiji and other South Pacific islands.</p><p>His scientific papers include works on the evolution of snails, the coloration of insects, the nature of the nervous impulse and the formation and rate of growth of coral reefs.</p><p>He developed tuberculosis, and finally succumbed in 1922. He was survived by his wife and four children, Alpheus Hyatt Mayor, Katharine Mayor Cook Townsend, Brantz Mayor, and Barbara Mayor Money.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Alfred G. Mayor Papers </emph>include biographical material, correspondence, an address book, bills, and receipts, legal papers, books and articles as well as expedition journals, 1893 and 1896-1897, extensive notebooks, sketches, and sketchbooks, and published materials consisting of articles and newspaper clippings about Dr. Mayor and others and articles about others.</p><p><emph render="bold">Correspondence</emph>, includes incoming and outgoing correspondence, as well as letters to and from others. <emph render="bold">Subject File</emph>, contains an address book, awards, bills and receipts, lists, legal papers, maps, notes and cards, and a scrapbook. <emph render="bold">Photographs</emph>, includes pictures of Dry Tortugas, Florida, family and friends, other people and places, Samoa coral (1919-1920) and the South Seas. <emph render="bold">Manuscripts</emph>, consists of books and articles by Dr. Mayor, expedition journals, notebooks, sketches and sketchbooks. <emph render="bold">Published Material</emph>, contains articles about and by Dr. Mayor, articles about others and newspaper clippings about Dr. Mayor and others.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The incoming letters are arranged alphabetically by author and the outgoing letters are arranged chronologically.  Letters to an from others are arranged alphabetically by author.  Photographs are arranged alphabetically by subject with negatives, both in film and glass, at the end.  Subject File, Manuscripts, and Published Material are arranged alphabetically by type.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>The &scrc_name; has numerous collections for the Hyatt-Mayor families.  For information on members of the Hyatt, Mayor, Beebe, and Huntington families see &subjindex; for the finding aids of individual family members.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Huntington, Anna Hyatt, 1876-1973.</persname>
+         <persname encodinganalog="600" source="lcnaf">Hyatt, Audella Beebe, 1840-1932.</persname><persname encodinganalog="600" source="lcnaf">Mayor, A. Hyatt |q (Alpheus Hyatt), 1901-</persname><persname encodinganalog="600" source="lcnaf">Mayor, Harriet Randolph Hyatt, 1868-1960.</persname><persname encodinganalog="600" source="lcnaf">Mayor, Alfred Goldsborough, 1868-1922 -- Archives.</persname><famname encodinganalog="600" source="lcnaf">Hyatt family.</famname>
+         <famname encodinganalog="600" source="lcnaf">Mayor family.</famname><!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Naturalists -- United States.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Articles.</genreform>
+         <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform><genreform encodinganalog="655" source="aat">Notebooks.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Sketchbooks.</genreform><occupation encodinganalog="656" source="lcsh">Naturalists.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Scientists.</occupation><!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p> Alfred Goldsborough Mayor Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <!--<acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>### (MARC 541 and/or  561)</p>
+      </acqinfo>-->
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         
+<c01><did><unittitle>Biographical Material</unittitle></did></c01>
+<c01 level="series">
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did>
+            
+<c02>
+               <did>
+                  <unittitle>Incoming Correspondence</unittitle>
+                  
+                  
+                  <!--Permissible values for @TYPE for first CONTAINER are 'Box' 'Oversize' 'Volume' 'Carton' or 'Map-Case'.-->
+                  <!--Permissible values for @TYPE for second CONTAINER are 'Folder' 'Frame' 'Page'  or 'Reel'.-->
+               </did>
+            
+<c03><did><unittitle>A</unittitle><container type="Box">1</container></did></c03>
+<c03><did><unittitle>B</unittitle><container type="Box">1</container></did></c03>
+<c03 id="cchc"><did><unittitle>C</unittitle><container type="Box">1</container></did></c03>
+<c03><did><unittitle>D</unittitle><container type="Box">1</container></did></c03>
+<c03><did><unittitle>E - F</unittitle><container type="Box">1</container></did></c03>
+<c03><did><unittitle>Ga - Goodyear, William</unittitle><container type="Box">1</container></did></c03>
+<c03><did><unittitle>Goto, Seitaro - Gunther, R. J.</unittitle><container type="Box">1</container></did></c03>
+<c03><did><unittitle>H</unittitle><container type="Box">1</container></did></c03>
+<c03 id="avhh"><did><unittitle>Huntington, Anna V. Hyatt</unittitle><container type="Box">1</container></did></c03>
+<c03><did><unittitle>Hyatt, Alpheus II</unittitle><container type="Box">1</container></did></c03>
+<c03><did><unittitle>Hyatt, Anna Vaughn</unittitle><note><p>See <ref target="avhh">Huntington, Anna V. Hyatt</ref></p></note></did></c03>
+<c03><did><unittitle>Hyatt, Audella Beebe</unittitle></did>
+<c04><did><unittitle><unitdate type="inclusive" normal="1895/1922">1895-1922</unitdate></unittitle><container type="Box">1</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1878/1926">Undated</unitdate></unittitle><container type="Box">1</container></did></c04></c03>
+<c03><did><unittitle>Hyatt, Clara Carter</unittitle><note><p>See <ref target="cchc">Coad, Clara Carter Hyatt</ref></p></note></did></c03>
+<c03><did><unittitle>Hyatt, Harriet</unittitle><note><p>See <ref target="hhm">Mayor, Harriet Hyatt</ref></p></note></did></c03>
+<c03><did><unittitle>K</unittitle><container type="Box">1</container></did></c03>
+<c03><did><unittitle>L</unittitle><container type="Box">1</container></did></c03>
+<c03><did><unittitle>M</unittitle><container type="Box">1</container></did></c03>
+<c03><did><unittitle>Mayor, Alpheus Hyatt</unittitle></did>
+<c04><did><unittitle><unitdate normal="1905/1920" type="inclusive">1905-1920</unitdate></unittitle><container type="Box">2</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1878/1926">Undated</unitdate></unittitle><container type="Box">2</container></did></c04></c03>
+<c03><did><unittitle>Mayor, Barbara (later became Money, Barbara M.)</unittitle><container type="Box">2</container></did></c03>
+<c03><did><unittitle>Mayor, Brantz (son)</unittitle><container type="Box">2</container></did></c03>
+<c03><did><unittitle>Mayor, Brantz (uncle)</unittitle><container type="Box">2</container></did></c03>
+<c03><did><unittitle>Mayor, Frank B.</unittitle><container type="Box">2</container></did></c03>
+<c03 id="hhm"><did><unittitle>Mayor, Harriet Hyatt</unittitle></did>
+<c04><did><unittitle><unitdate type="inclusive" normal="1897-01/1897-09">Jan.-Sept. 1897</unitdate></unittitle><container type="Box">2</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1897-10/1897-12">Oct.-Dec. 1897</unitdate></unittitle><container type="Box">2</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1898-01/1898-02">Jan.-Feb., </unitdate><unitdate normal="1898-06/1898-07" type="inclusive">Jun.-Jul. 1898</unitdate></unittitle><container type="Box">2</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1899">1899</unitdate></unittitle><container type="Box">3</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1900">1900</unitdate></unittitle><container type="Box">3</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1901">1901</unitdate></unittitle><container type="Box">3</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1902-01/1902-03">Jan.-Mar. 1902</unitdate></unittitle><container type="Box">3</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1902-05/1902-09">May-Sept. 1902</unitdate></unittitle><container type="Box">3</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1903-05/1903-07">May-Jul. 1903</unitdate></unittitle><container type="Box">3</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1903-09/1903-11">Sept.-Nov. 1903</unitdate></unittitle><container type="Box">3</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1904">1904</unitdate></unittitle><container type="Box">3</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1905">1905</unitdate></unittitle><container type="Box">3</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1906">1906</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1907">1907</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1908">1908</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1909">1909</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1910">1910</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1911">1911</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1912-02/1912-06">Feb.-Jun. 1912</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1912-07/1912-12">Jul.-Dec. 1912</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1913-01/1913-07">Jan.-Jul. 1913</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1913-08/1913-10">Aug.-Oct. 1913</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1914-03/1914-06">Mar.-Jun. 1914</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1914-07/1914-09">Jul.-Sept. 1914</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1915">1915</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1916">1916, </unitdate><unitdate normal="1917" type="inclusive">1917, </unitdate><unitdate normal="1919" type="inclusive">1919</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1920/1922">1920-1922</unitdate></unittitle><container type="Box">4</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1878/1926">Undated</unitdate></unittitle><container type="Box">5</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1878/1926">Undated</unitdate></unittitle><container type="Box">5</container></did></c04>
+<c04><did><unittitle>Unidentified</unittitle><container type="Box">5</container></did></c04></c03>
+<c03><did><unittitle>Mayor, Katherine (later became Townsend, Katherine Mayor Cook)</unittitle><container type="Box">5</container></did></c03>
+<c03><did><unittitle>Mayor, Maria (Mrs. Alfred M.)</unittitle><container type="Box">5</container></did></c03>
+<c03><did><unittitle>N</unittitle><container type="Box">5</container></did></c03>
+<c03><did><unittitle>O</unittitle><container type="Box">5</container></did></c03>
+<c03><did><unittitle>P</unittitle><container type="Box">5</container></did></c03>
+<c03><did><unittitle>R</unittitle><container type="Box">5</container></did></c03>
+<c03><did><unittitle>S</unittitle><container type="Box">5</container></did></c03>
+<c03><did><unittitle>T</unittitle><container type="Box">5</container></did></c03>
+<c03><did><unittitle>V</unittitle><container type="Box">5</container></did></c03>
+<c03><did><unittitle>W</unittitle><container type="Box">5</container></did></c03>
+<c03><did><unittitle>Unidentified</unittitle><container type="Box">5</container></did></c03></c02>
+         
+<c02><did><unittitle>Outgoing Correspondence</unittitle></did>
+<c03><did><unittitle><unitdate type="inclusive" normal="1891/1922">1891-1922 </unitdate><unitdate type="inclusive" normal="1878/1926">     and undated</unitdate></unittitle><container type="Box">5</container></did></c03></c02>
+<c02><did><unittitle>Correspondence To &amp; From Others</unittitle><container type="Box">5</container></did></c02></c01>
+      
+<c01 level="series"><did><unittitle>Subject File</unittitle></did>
+<c02><did><unittitle>Address Book</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Awards</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Bills &amp; Receipts</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Children's Hair</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Codification Regulations &amp; Orders</unittitle><abstract>American Samoa</abstract><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Diploma</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>"Hyatt's Weekly Illustrated Magazine"</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Lists</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Legal Material</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Maps</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Notes &amp; Cards</unittitle><container type="Box">6</container></did></c02>
+<c02><did><unittitle>Scrapbook</unittitle><container type="Box">6</container></did></c02></c01>
+<c01 level="series"><did><unittitle>Photographs</unittitle></did>
+<c02><did><unittitle>Dry Tortugas, Fla.</unittitle><physdesc><extent>3 folders</extent></physdesc><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Family &amp; Friends</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">7</container></did></c02>
+<c02><did><unittitle>People &amp; Places</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Samoan Coral</unittitle><unitdate normal="1919/1920" type="inclusive">1919-1920</unitdate><container type="Box">7</container></did></c02>
+<c02><did><unittitle>South Seas</unittitle><physdesc><extent>2 folders</extent></physdesc><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Negatives</unittitle><container type="Box">7</container></did></c02>
+<c02><did><unittitle>Glass Negatives</unittitle><container type="Box">7</container></did></c02></c01>
+<c01 level="series"><did><unittitle>Manuscripts</unittitle></did>
+<c02><did><unittitle>Books &amp; Articles</unittitle></did>
+<c03><did><unittitle>"Pacific Island Reveries" typescript</unittitle><container type="Box">8</container></did></c03>
+<c03><did><unittitle>"Pacific Island Reveries" duplicated and bound</unittitle><container type="Box">8</container></did></c03>
+<c03><did><unittitle>"Structure &amp; Ecology of Samoan Reefs"</unittitle><container type="Box">8</container></did></c03></c02>
+<c02><did><unittitle>Expedition Journals</unittitle></did>
+<c03><did><unittitle>"Agassiz Expedition to the Bahamas"</unittitle><unitdate type="inclusive" normal="1893">1893</unitdate><container type="Box">8</container></did></c03>
+<c03><did><unittitle>"Around the World - 1896"</unittitle></did>
+<c04><did><unittitle><unitdate type="inclusive" normal="1896-02-27/1896-04-05">Feb. 27 - Apr. 15</unitdate></unittitle><container type="Box">8</container></did></c04>
+<c04><did><unittitle><unitdate type="inclusive" normal="1896-04-14/1896-07-08">Apr. 14 -Jul. 8</unitdate></unittitle><container type="Box">8</container></did></c04></c03>
+<c03><did><unittitle>The Fiji Islands &amp; Hawaii</unittitle><unitdate normal="1897" type="inclusive">1897</unitdate><container type="Box">8</container></did></c03></c02>
+<c02><did><unittitle>Fragments of Studies</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Notebook of Drafts and Printed Books and Articles by Dr. Mayor</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Notebooks</unittitle><container type="Box">9</container></did></c02>
+<c02><did><unittitle>Notebooks</unittitle><physdesc><extent>4</extent></physdesc><container type="Box">10</container></did></c02>
+<c02><did><unittitle>Notebooks</unittitle><abstract>"Studies at Tortugas, Fla. 1917"</abstract><container type="Box">11</container></did></c02>
+<c02><did><unittitle>Notebooks with sketches</unittitle><container type="Box">11</container></did></c02>
+<c02><did><unittitle>Notebooks with sketches</unittitle><abstract>"Lepidopteria"</abstract><container type="Box">11</container></did></c02>
+<c02><did><unittitle>Sketches</unittitle><container type="Box">11</container></did></c02>
+<c02><did><unittitle>Sketchbooks</unittitle><physdesc><extent>2</extent></physdesc><container type="Box">11</container></did></c02>
+<c02><did><unittitle>Sketchbooks</unittitle><physdesc><extent>1</extent></physdesc><container type="Box">12</container></did></c02>
+<c02><did><unittitle>Sketchbooks</unittitle><abstract>"After Breakfast Hours"</abstract><container type="Box">12</container></did></c02></c01>
+<c01 level="series"><did><unittitle>Published Material</unittitle></did>
+<c02><did><unittitle>Articles about Mayor</unittitle><container type="Box">12</container></did></c02>
+<c02><did><unittitle>Articles by Mayor</unittitle><container type="Box">12</container></did></c02>
+<c02><did><unittitle>Articles about Others</unittitle><container type="Box">12</container></did></c02>
+<c02><did><unittitle>Newspaper clippings about Mayor</unittitle><container type="Box">12</container></did></c02>
+<c02><did><unittitle>Newspaper clippings about Others</unittitle><container type="Box">12</container></did></c02></c01></dsc>
+   </archdesc>
+</ead>

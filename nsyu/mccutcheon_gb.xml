@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="mccutcheon_gb" mainagencycode="NSyU">mccutcheon_gb</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">George Barr McCutcheon Collection</titleproper>
+        <subtitle>An inventory of his
+ collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">KM</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date calendar="gregorian" encodinganalog="Date" era="ce" normal="1989-05">May 1989</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+
+
+
+
+        <date calendar="gregorian" era="ce" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>
+	  04 Dec 2008 - converted to EAD (LDC)
+        </item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/>&su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">McCutcheon, George Barr, 1866-1928.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">George Barr McCutcheon Collection</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1903/1930" type="inclusive">1903-1930</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">5 items (SC)</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Papers of the American novelist. Three outgoing letters and a holograph poem, "Your Humble Victim."</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">149241</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">
+                          English
+                       </language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>George Barr McCutcheon (1866-1928) was an American novelist best known for his fictional works such as
+
+
+
+        <emph render="italic">Graustark</emph> (1901).</p>
+      <p>McCutcheon was born on July 26, 1866 to John Barr and Clara (Glick) McCutcheon in Tippecanoe County, Indiana.  As a boy, McCutcheon taught his brother John how to draw.  John went on to become a successful American cartoonist.  George McCutcheon attended Purdue University at Lafayette from 1882-1883 before leaving to work as a reporter at the
+
+
+
+        <emph render="italic">Lafayette Journal</emph>.  "The Ante-Mortem Condition of George Ramor," printed in the
+
+
+
+        <emph render="italic">National Magazine</emph> in 1896, was McCutcheon's first published short story.
+
+
+
+        <emph render="italic">Graustark</emph>, written in 1901, established McCutcheon as a writer. The novel was written in a single draft at about a thousand words a day.  McCutcheon married Marie Van Antwerp Fay on September 26, 1904.  He died suddenly on October 23, 1928 while at a luncheon at the Hotel Martinique.</p>
+      <chronlist>
+        <head>Selected Works</head>
+        <chronitem>
+          <date normal="1901">1901</date>
+          <event>
+            <emph render="italic">Graustark</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date normal="1902">1902</date>
+          <eventgrp>
+            <event>
+              <emph render="italic">Brewster's Millions</emph>
+            </event>
+            <event>
+              <emph render="italic">Castle Craneycrow</emph>
+            </event>
+          </eventgrp>
+        </chronitem>
+        <chronitem>
+          <date normal="1903">1903</date>
+          <event>
+            <emph render="italic">The Sherrods</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date normal="1904">1904</date>
+          <eventgrp>
+            <event>
+              <emph render="italic">Beverly of Graustark</emph>
+            </event>
+            <event>
+              <emph render="italic">The Day of the Dog</emph>
+            </event>
+          </eventgrp>
+        </chronitem>
+        <chronitem>
+          <date normal="1906">1906</date>
+          <event>
+            <emph render="italic">Jane Cable</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date normal="1907">1907</date>
+          <event>
+            <emph render="italic">The Daughter of Anderson Crow</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date normal="1911">1911</date>
+          <event>
+            <emph render="italic">Mary Midthorne</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date normal="1912">1912</date>
+          <event>
+            <emph render="italic">The Hollow of Her Hand</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date normal="1913">1913</date>
+          <event>
+            <emph render="italic">A Fool and His Money</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date normal="1914">1914</date>
+          <event>
+            <emph render="italic">The Prince of Graustark</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date normal="1919">1919</date>
+          <event>
+            <emph render="italic">Sherry</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date normal="1920">1920</date>
+          <eventgrp>
+            <event>
+              <emph render="italic">Anderson Crow, Detective</emph>
+            </event>
+            <event>
+              <emph render="italic">West Wind Drift</emph>
+            </event>
+          </eventgrp>
+        </chronitem>
+        <chronitem>
+          <date normal="1924">1924</date>
+          <event>
+            <emph render="italic">East of the Setting Sun</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date normal="1927">1927</date>
+          <event>
+            <emph render="italic">The Inn of the Hawk and Raven</emph>
+          </event>
+        </chronitem>
+        <chronitem>
+          <date normal="1929">1929</date>
+          <event>
+            <emph render="italic">The Merivales</emph>
+          </event>
+        </chronitem>
+      </chronlist>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The
+
+
+
+        <emph render="bold">George Barr McCutcheon Collection</emph> consists of three outgoing items of correspondence, one holograph poem, and a single item of miscellany.</p>
+      <p>The
+
+
+
+        <emph render="bold">Correspondence</emph>, written between 1903 and 1925, includes a letter in which McCutcheon declines an invitation to write an article under the title "Love Me and the World is Mine" (06 Mar 1922), and a discussion of his satirical play about the American legal system (14 Jan 1925). The remainder of the items in the collection relate to McCutcheon's response to an appeal from Mrs. Harry S. New to contribute a poem for inclusion in a small literary magazine, the proceeds of which were to fund a local charity.  Also included in the letter is a discussion of McCutcheon's novel,
+
+
+
+        <emph render="italic">The Sherrods</emph>:
+
+
+
+
+        <blockquote>
+          <p>You don't believe a man can love two women at once? I've loved a half a dozen at a time. Man is a polygamist by nature, I'm afraid, and he always tries to justify himself if he is caught. The man who loves two women loves himself much the best of the three, but he believes in himself all the time. I am not excusing Jud Sherrod. He was a disgrace and I so intended him to be. The critics are calling him the most contemptible man in fiction of this day. He was weak with a selfishness that he concealed with love. There are a good many men, my dear Mrs. New, who are confident they love two women and I think you usually find them false to both - which was more that Jud was in heart, at least.</p>
+          <p>But it is a perilous discussion. We can't think alike, you know, so it's best for me to stop my side of it. I'd like to hear more from you, however. Of one thing let me remind you: love is very frequently something else with man.</p>
+        </blockquote></p>
+      <p>Also in the collection is a poem, "Your Humble Victim," included in the
+
+
+
+        <emph render="bold">Writings</emph> series.  The poem was originally enclosed in the letter to Mrs. Harry S. New in which McCutcheon writes (14 Dec 1903):
+
+
+
+
+        <blockquote>
+          <p>I am sending some awful rot for the Katherine Home. Perhaps, if the old ladies had their choice, they'd sooner be homeless.  You know I am awful at jingles, or what you like to call them. Rhyme is an abomination with me and I think my scant reputation goes glimmering with this.</p>
+        </blockquote></p>
+      <p>The collection also includes an item of
+
+
+
+        <emph render="bold">Miscellany</emph>, a 1930 signed statement by Harry S. New in which he explains the relationship between McCutcheon's letter to Mrs. New and the poem, "Your Humble Victim."</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>The collection contains three series: Correspondence, which is arranged chronologically, Miscellany, and Writings.</p>
+    </arrangement>
+
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>The &scrc_name; also has a collection of papers from George Barr McCutcheon's brother, <extref href="../m/mccutcheon_jt.htm">John T. McCutcheon</extref>.</p>
+    </relatedmaterial>
+
+
+
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">Literature -- American Poetry</subject>
+      <subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+      <persname encodinganalog="600" source="lcnaf">McCutcheon, George Barr, 1866-1928.</persname>
+      <persname encodinganalog="600" source="lcnaf">New, Harry S.</persname>
+      <subject encodinganalog="650" source="lcsh">American literature -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Novelists, American.</subject>
+      <genreform encodinganalog="655" source="aat">Letters (correspondence)</genreform>
+      <occupation encodinganalog="656" source="lcsh">Novelists.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>George Barr McCutcheon Collection
+
+
+
+        <lb/>&su_name;</p>
+    </prefercite>
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            
+            <unittitle>
+               New, Harry S. (Mrs.)</unittitle>
+          <unitdate calendar="gregorian" era="ce" normal="1903-12-14" type="inclusive">14 Dec 1903</unitdate><container type="SC">100</container></did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>
+               Samuels (?), Carl</unittitle>
+          <unitdate calendar="gregorian" era="ce" normal="1922-03-06" type="inclusive">06 Mar 1922</unitdate><container type="SC">100</container></did>
+        </c02>
+        <c02>
+          <did>
+            
+            <unittitle>
+               Melville (?)</unittitle>
+          <unitdate calendar="gregorian" era="ce" normal="1925-01-14" type="inclusive">14 Jan 1925</unitdate><container type="SC">100</container></did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Miscellany</unittitle>
+        </did>
+        <c02>
+          <did>
+            
+            <unittitle>Explanation of relationship between the 1903 McCutcheon letter to Mrs. Harry S. New and the poem, "Your Humble Victim"</unittitle>
+            <abstract>typescript</abstract><unitdate calendar="gregorian" era="ce" normal="1930" type="inclusive">1930</unitdate>
+            <abstract>by Harry S. New
+              
+            </abstract>
+          <container type="SC">100</container></did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Writings</unittitle>
+        </did>
+        <c02>
+          <did>
+            
+            <unittitle>"Your Humble Victim"</unittitle>
+            <abstract>holograph poem</abstract><unitdate calendar="gregorian" era="ce" normal="1903" type="inclusive">1903
+              
+            </unitdate>
+          <container type="SC">100</container></did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

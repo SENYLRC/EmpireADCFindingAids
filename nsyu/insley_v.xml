@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="insley_v">insley_v</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Virginia Insley Papers</titleproper>
+            <subtitle>A description of her papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-10-12" encodinganalog="Date">12 Oct 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-10-12">12 Oct 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>11 Aug 2011 - updated separated material</item><item>29 Jun 2012 - processed (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Insley, Virginia.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Virginia Insley Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1949/1998" type="inclusive" label="Inclusive Dates: ">1949-1998</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">American social worker, child and maternal health advocate.  
+		 Extensive published and printed material has been cataloged.  Manuscript collection contains correspondence-subject files, most relating to a decade-long grant-funded project, and writings of both Insley and her colleague Kazuye Kumabe.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3173967</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Virginia Insley (1912-2003) was an American social worker known for her steadfast promotion of high standards in 
+	  social work education and practice in maternal and child health programs. She worked for the U.S. Children's Bureau as 
+	  chief of the medical social services section, Division of Maternal and Child Health Services, a position she held for 
+	  more than 20 years.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Virginia Insley Papers</emph> consists of correspondence-subject files and writings.  </p><p>The majority of the <emph render="bold">Correspondence-subject files</emph> deal with a decade-long grant-funded project ("Project #267"), the purpose of which was to "develop a social work student training program to prepare social workers in health settings providign health services for mothers and children particularly handicapped children."  This material includes grant applications, correspondence, budgets, resumes and progress reports.  Other subject files deal with joint departmental work at the University of Hawaii's schools of public health and social work, correspondence regarding several publications on the subjects of maternal and child health, student practicums, and other related topics.  Insley was closely involved with the project for many years, along with her colleague at the University of Hawaii, Kazuye Kumabe.</p><p><emph render="bold">Writings</emph> are evenly divided between those by Insley and those by Kumabe, and include both published and manuscript items.  Kumabi's autobiography, <emph render="italic">Rainbow on the Horizon : A Personal and Professional Journey</emph>.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Correspondence-subject files are arranged alphabetically by topic.  Writings are subdivided by author and within that are arranged alphabetically by title.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="../s/spock_b.htm">Benjamin Spock Papers</archref> and related collections.</p>
+	  </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+	  <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>The vast majority of the printed and published items have been removed from the collection and transferred to Rare Books for cataloging.  Please refer to &summitref; and search on "Gift of Virginia Insley" to locate these items.</p>
+      </separatedmaterial>
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+		 <subject encodinganalog="650" source="local">Science and medicine</subject>
+		 <subject encodinganalog="650" source="local">Women Authors</subject>
+		 <persname encodinganalog="600" source="lcnaf">Insley, Virginia .</persname>
+         
+         <famname encodinganalog="600" source="lcnaf">Baker, Edith M., 1885-1978.</famname><famname encodinganalog="600" source="lcnaf">Kumabe, Kazuye, 1922-</famname><corpname encodinganalog="610" source="lcnaf">United States. -- Children's Bureau -- History.</corpname>
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="lcsh">Child welfare -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Children -- Health and hygiene.</subject>
+         <subject encodinganalog="650" source="lcsh">Maternal and infant welfare.</subject><subject encodinganalog="650" source="lcsh">Women -- Health and hygiene.</subject>
+         <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <genreform encodinganalog="655" source="aat">Books.</genreform>
+         <genreform encodinganalog="655" source="aat">Reports.</genreform>
+         <genreform encodinganalog="655" source="aat">Pamphlets.</genreform>
+         <genreform encodinganalog="655" source="aat">Speeches (documents)</genreform>
+         <genreform encodinganalog="655" source="aat">Proceedings.</genreform>
+         <!-- <occupation encodinganalog="656" source="lcsh">##</occupation> -->
+         <!-- <function encodinganalog="657">##</function> -->
+	  </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Virginia Insley Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+       <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Virginia Insley</persname>.</p>
+      </acqinfo> 
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+   <head>Inventory</head>
+   <c01 level="series"><did><unittitle>Correspondence-subject files</unittitle></did>
+      <c02><did><unittitle>Bridging ethnocultural diversities in social work and health (book)</unittitle><abstract>publisher correspondence; requests for copies</abstract><unitdate normal="1985/1987" type="inclusive">1985-1987</unitdate><container type="Box">1</container></did></c02>
+      <c02><did><unittitle>Epidemiological approach (workshop)</unittitle><unitdate normal="1986" type="inclusive">1986</unitdate><container type="Box">1</container></did></c02>
+      <c02><did><unittitle>Ethnocultural factors in social work and health care: An annotated bibliograpy (book)</unittitle><abstract>publisher correspondence; requests for copies</abstract><container type="Box">1</container></did></c02>
+      <c02><did><unittitle>Fundraising for maternal and child health (workshop)</unittitle><unitdate normal="1996" type="inclusive">1996</unitdate><container type="Box">1</container></did></c02>
+      <c02><did><unittitle>Handbook for social work education and practice in community health settings (book)</unittitle><abstract>publisher correspondence; requests for copies</abstract><unitdate normal="1976/1986" type="inclusive">1976-1986</unitdate><container type="Box">1</container></did></c02>
+      <c02><did><unittitle>Health specialization</unittitle><unitdate normal="1976" type="inclusive">1976</unitdate><container type="Box">1</container></did></c02>
+      <c02><did><unittitle>Joint SPH/SSW planning</unittitle><abstract>joint departmental efforts between the School of Public Health and School of Social Welfare at the University of Hawaii</abstract><unitdate normal="1971/1985" type="inclusive">1971-1985</unitdate><container type="Box">1</container></did></c02>
+      <c02><did><unittitle>Project #267</unittitle></did>
+         <c03><did><unittitle>About</unittitle><abstract>objectives, summary, miscellaneous</abstract><container type="Box">1</container></did></c03>
+         <c03><did><unittitle>Correspondence</unittitle><unitdate normal="1962" type="inclusive">1962, </unitdate><unitdate normal="1964" type="inclusive">1964, </unitdate><unitdate normal="1969/1987" type="inclusive">1969-1987</unitdate><physdesc><extent>6 folders</extent></physdesc><container type="Box">1</container></did></c03>
+         <c03><did><unittitle>Progress reports</unittitle><unitdate normal="1964/1989" type="inclusive">1964-1989</unitdate><container type="Box">1</container></did></c03>
+         <c03><did><unittitle>Progress reports</unittitle><abstract>bound volume</abstract><unitdate normal="1969/1985" type="inclusive">1969-1985</unitdate><physdesc><extent>6 folders</extent></physdesc><container type="Box">2</container></did></c03>
+         <c03><did><unittitle>Miscellaneous</unittitle><container type="Box">2</container></did></c03>
+         
+      </c02>
+      <c02><did><unittitle>Student practicum</unittitle><unitdate normal="1982/1985" type="inclusive">1982-1985</unitdate><container type="Box">2</container></did></c02>
+      <c02><did><unittitle>Miscellaneous</unittitle><container type="Box">2</container></did></c02>
+   </c01>
+   <c01 level="series"><did><unittitle>Writings</unittitle></did>
+      <c02 level="subseries"><did><unittitle>Insley, Virginia</unittitle></did>
+         <c03><did><unittitle>Contributions of social case workers to the teaching of interns</unittitle><abstract>Insley's master's thesis, University of Washington - Seattle</abstract><unitdate normal="1949" type="inclusive">1949</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Current status of state-wide social services: Issues and strategies</unittitle><unitdate normal="1981" type="inclusive">1981</unitdate><note><p>See <ref target="wri-ins-misc">Miscellaneous collected writings</ref>, below</p></note></did></c03>
+         <c03><did><unittitle>Health services: Maternal and child health</unittitle><abstract>published in <emph render="italic">National Encyclopedia of Social Work</emph></abstract><unitdate normal="1977" type="inclusive">1977</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>A home care medical program to meet the needs of individuals and families</unittitle><abstract>published in <emph render="italic">Selected Papers: National Council of Social Work</emph></abstract><unitdate normal="1951" type="inclusive">1951</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Maternal and child health</unittitle><abstract>speech to National Association of Social Workers at the 100th anniversary of the social work profession</abstract><unitdate normal="1998" type="inclusive">1998</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Prevention and publich health social work</unittitle><unitdate normal="1950/1980" type="inclusive">undated</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Program consultation</unittitle><abstract>presented at Institute of Training Workshop Leaders, University of Pittsburgh School of Social Work; republished later</abstract><unitdate normal="1956" type="inclusive">1956</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Program planning</unittitle><unitdate normal="1982" type="inclusive">1982</unitdate><note><p>See <ref target="wri-ins-misc">Miscellaneous collected writings</ref>, below</p></note></did></c03>
+         <c03><did><unittitle>Public health social work: Our heritage</unittitle><abstract>presented at Fourth Annual Public Health Social Work Conference, North Carolina State University</abstract><unitdate normal="1998" type="inclusive">1998</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Research in maternal and child health care: A historical perspective</unittitle><unitdate normal="1981" type="inclusive">1981</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>The roots of public health social work</unittitle><abstract>presented at the 50th anniversary of social service, South Carolina Dept. of Health and Environmental Control</abstract><unitdate normal="1994" type="inclusive">1994</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Sick children benefit from a city's home-care program</unittitle><abstract>published in <emph render="italic">The Child</emph>, Vol. 17, No. 5; a handwritten annotation by Insley states that the paper "was butchered by the editor and illustrated unsuitably"</abstract><unitdate normal="1953" type="inclusive">1953</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Social work consultation in public health</unittitle><unitdate normal="1965/1975" type="inclusive">[1970?]</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Social work practice in service delivery to children with handicapping conditions: Historical overview, current and future needs</unittitle><unitdate normal="1981" type="inclusive">1981</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Some implications of recent legislation for social work</unittitle><abstract>published in <emph render="italic">Mothers at Risk</emph>, Florence Haselkron, ed.</abstract><unitdate normal="1964" type="inclusive">1964</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Some observations on social work in health programs for families, mothers, and children</unittitle><unitdate normal="1945/1985" type="inclusive">undated</unitdate><container type="Box">3</container></did></c03>
+         <c03 id="wri-ins-misc"><did><unittitle>Miscellaneous collected writings</unittitle><abstract>plastic comb-bound volume; all but two appear elsewhere in the collection</abstract><container type="Box">3</container></did></c03>
+      </c02>
+      <c02 level="subseries"><did><unittitle>Kumabe, Kazuye</unittitle></did>
+         <c03><did><unittitle>Autboiography, <emph render="italic">Rainbow on the Horizon</emph></unittitle><unitdate normal="1997" type="inclusive">1997</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Cultural values affecting the fertility behavior of Hawaiians and part-Hawaiians</unittitle><unitdate normal="1970" type="inclusive">1970</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>An example of program consultation</unittitle><abstract>presented at working conference on evaluating the impact of social work consultation, Case Wester Reserve University</abstract><unitdate normal="1974" type="inclusive">1974</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Psychological aspects of contraceptive practice</unittitle><abstract>presented at Philippine Public Health Association meeting, Manila, P.I.</abstract><unitdate normal="1973" type="inclusive">1973</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Relationship between female labor force participation and fertility</unittitle><abstract>research proposal to the East-West Center Population Initiative</abstract><unitdate normal="1976" type="inclusive">1976</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Report of sabbatical leave</unittitle><abstract>summary of Kumabe's activities during sabbatical semester, July - Dec.</abstract><unitdate normal="1985" type="inclusive">1985</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Seminar in counseling in family planning as family life planning</unittitle><abstract>presented to faculty and students at the School of Applied Sciences, Case Western Reserve University</abstract><unitdate normal="1974" type="inclusive">1974</unitdate><container type="Box">3</container></did></c03>
+         <c03><did><unittitle>Sex-role attitudes in the social work profession: Implications for social work education</unittitle><unitdate normal="1980" type="inclusive">1980</unitdate><container type="Box">3</container></did></c03>
+      </c02>
+      <c02 level="subseries"><did><unittitle>Other or unknown authors</unittitle></did>
+         <c03><did><unittitle>Miscellaneous</unittitle><abstract>book chapter; paper on program guidance material, possibly by Insley; unidentified reference lists; paper on block grants; list of social work institute topics; article on yin-yang way to health by Wu; case study, "The transfer of the children's bureau," by E. Drexel Godfrey</abstract><container type="Box">3</container></did></c03>
+      </c02>
+   </c01>
+</dsc>
+   </archdesc>
+</ead>

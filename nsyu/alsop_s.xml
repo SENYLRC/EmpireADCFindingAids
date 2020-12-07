@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
+<!-- Added Tube as container type -->
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="alsop_s">alsop_s</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Stewart Alsop Papers</titleproper>
+            <subtitle>A description of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">DL</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2015-06-09" encodinganalog="Date">9 Jun 2015</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Drew Lewis<date normal="2015-06-09">9 Jun 2015</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>9 Jun 2015 - processed (DL)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Alsop, Stewart</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Stewart Alsop Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1945/1967" type="inclusive" label="Inclusive Dates: ">1945-1967</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1.25 linear
+            ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, notes, manuscripts,
+            speeches and published and unpublished material of Stewart Alsop. Includes interviews
+            with John F. Kennedy, Lyndon B. Johnson and others.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2738240</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Stewart Johonnot Oliver Alsop (1914-1974) was an American newspaper columnist and political
+            analyst. A graduate of Yale University (1936), he was an editor at Doubleday. After the
+            United States entered World War II, Alsop joined the British Army, because his high
+            blood pressure precluded his joining the United States Army. Later, Alsop was allowed to
+            transfer to the U.S. Army and went to work for the Office of Strategic Services. For his
+            work with the French Resistance, he was awarded the Croix de Guerre with Palm. </p>
+         <p>From 1945 to 1958, Stewart Alsop was co-writer, with his elder brother Joseph Alsop, of
+            the "Matter of Fact" column for the <emph render="italic">New York Herald
+            Tribune</emph>. Alsop went on to write articles and a regular column for the <emph render="italic">Saturday Evening Post</emph> until 1968, then a weekly column for
+               <emph render="italic">Newsweek</emph> from 1968 to 1974. During this time period, he
+            also wrote a regular column for the <emph render="italic">New York Times</emph>. </p>
+         <p>In addition to his work as a journalist, he is also the author of several books on
+            politics and journalism.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Stewart Alsop Papers</emph> consists of correspondence, printed
+            material, writings and miscellanea. Included in the collection is material related to
+            Alsop's interviews with John F. Kennedy, Lyndon B. Johnson, Dean Rusk and others.</p>
+         <p><emph render="bold">Correspondence</emph> consists of correspondence from and to Stewart Alsop.</p>
+         <p><emph render="bold">Printed material</emph> contains a clipping of one of Alsop's articles.</p>
+         <p><emph render="bold">Writings</emph> consists of notes and drafts, speeches and unpublished manuscripts. Notes and
+            drafts contains Alsop's notes and drafts for a number of his articles, as well as
+            transcripts of interviews he conducted with John F. Kennedy, Lyndon B. Johnson and
+            various others. Also contained are Alsop's notes and briefing information for his trip
+            to Vietnam during the earlier stages of American involvement there.</p>
+         <p><emph render="bold">Miscellaneous</emph> contains a press statement from Gordon Dean, a copy of Alsop's passport
+            application and a copy of a Paris directory (undated).</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection is arranged alphabetically by format (correspondence, printed material,
+            writings, miscellaneous); correspondence is further arranged chronologically while
+            writings is further arranged alphabetically.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has the papers of a number of journalists.  Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Journalism</subject>
+			
+			<subject encodinganalog="650" source="local">Military history</subject><persname encodinganalog="600" source="lcnaf">Alsop, Stewart.</persname>
+         <persname encodinganalog="600" source="lcnaf">Johnson, Lyndon B. (Lyndon Baines), 1908-1973 </persname>
+         <persname encodinganalog="600" source="lcnaf">Kennedy, John F. (John Fitzgerald), 1917-1963 </persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Cuban Missile Crisis, 1962--In mass media --
+            History -- 20th century.</subject>
+         <subject encodinganalog="650" source="lcsh">Journalists -- United States.</subject>
+         <subject encodinganalog="650" source="lcsh">Nuclear weapons -- Political aspects.</subject>
+         <subject encodinganalog="650" source="lcsh">Nuclear weapons -- Press coverage -- United
+            States -- History.</subject>
+			<subject encodinganalog="650" source="lcsh">Press and politics -- United States -- History -- 20th century.</subject>
+         <subject encodinganalog="650" source="lcsh">Vietnam War, 1961-1975 -- Interviews.</subject>
+         <subject encodinganalog="650" source="lcsh">Vietnam War, 1961-1975 -- Press coverage --
+            United States.</subject>
+         <geogname encodinganalog="651" source="lcsh">United States -- History --
+            1945-1953.</geogname>
+         <geogname encodinganalog="651" source="lcsh">United States -- History --
+            1953-1961.</geogname>
+         <geogname encodinganalog="651" source="lcsh">United States -- History --
+            1961-1969.</geogname>
+         <genreform encodinganalog="655" source="aat">Articles.</genreform>
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Interviews.</genreform>
+			<genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+			<genreform encodinganalog="655" source="aat">Research notes.</genreform>
+         <genreform encodinganalog="655" source="aat"> Speeches (documents)</genreform>
+         <occupation encodinganalog="656" source="lcsh">Journalists.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Stewart Alsop Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Stewart Alsop</persname>, 1966, 1968.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      
+   <dsc type="combined">
+   <head>Inventory</head>
+         <c01 level="series">
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did>
+            
+            
+            <c02>
+               <did>
+                  <unittitle>
+                     
+                  [General]</unittitle>
+                  <unitdate normal="1945/1958" type="inclusive">1945-1958</unitdate><physdesc><extent>9 folders</extent></physdesc>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>
+                     
+                  [General]</unittitle>
+                  <unitdate type="inclusive" normal="1945/1967">Undated</unitdate><container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Printed materials</unittitle>
+            </did>
+            
+            
+            <c02>
+               <did>
+                  <unittitle>Revolution on Main Street</unittitle>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Writings</unittitle>
+            </did>
+            
+            
+            <c02>
+               <did>
+                  <unittitle>Notes and drafts</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>The collapse of Kennedy's grand design</unittitle>
+                     <container type="Box">1</container>
+                     <unitdate normal="1963-04-06" type="inclusive">6 Apr 1963</unitdate>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Cuba - In time of crisis</unittitle>
+                     <container type="Box">1</container>
+                     <unitdate normal="1962-12-08" type="inclusive">8 Dec 1962</unitdate>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>The great transition</unittitle>
+                     <container type="Box">2</container>
+                     <unitdate normal="1964-02-15" type="inclusive">15 Feb 1964</unitdate>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>President Kennedy's grand strategy</unittitle>
+                     <container type="Box">2</container>
+                     <unitdate normal="1962-03-31" type="inclusive">31 Mar 1962</unitdate>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>The president's next big decision</unittitle>
+                     <physdesc><extent>2 folders</extent></physdesc>
+                     <container type="Box">2</container>
+                     <unitdate normal="1967-03-25" type="inclusive">25 Mar 1967</unitdate>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>The trouble with the State Department</unittitle>
+                     <container type="Box">2</container>
+                     <unitdate normal="1962-03-03" type="inclusive">3 Mar 1962</unitdate>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>The White House insiders</unittitle>
+                     <container type="Box">2</container>
+                     <unitdate normal="1961-06-10" type="inclusive">10 Jun 1961</unitdate>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle>Miscellaneous</unittitle>
+                     <container type="Box">2</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Speeches</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>
+                        
+                     <unitdate normal="1953" type="inclusive">1953</unitdate></unittitle>
+                     <container type="Box">2</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle><unitdate normal="1956" type="inclusive">1956</unitdate>, <unitdate normal="1960" type="inclusive">1960</unitdate>, <unitdate normal="1963" type="inclusive">1963</unitdate></unittitle>
+                     <physdesc><extent>3 folders</extent></physdesc>
+                     <container type="Box">3</container>
+                  </did>
+               </c03>
+               <c03>
+                  <did>
+                     <unittitle><unitdate normal="1945/1967" type="inclusive">Undated</unitdate></unittitle>
+                     <container type="Box">3</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02>
+               <did>
+                  <unittitle>Unpublished manuscript</unittitle>
+               </did>
+               <c03>
+                  <did>
+                     <unittitle>[Untitled]</unittitle>
+                     <abstract>on hydrogen bomb development</abstract><container type="Box">3</container>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <did>
+               <unittitle>Miscellaneous</unittitle>
+            </did>
+            
+            
+            <c02>
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <container type="Box">3</container>
+               </did>
+            </c02>
+         </c01>
+</dsc></archdesc>
+</ead>

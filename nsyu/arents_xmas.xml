@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="arents_xmas">arents_xmas</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Arents Christmas Card Collection</titleproper>
+            <subtitle>A description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-11-08" encodinganalog="Date">8 Nov 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-11-08">8 Nov 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>30 Jan 2017 - minor corrections to box numbers and quantities (MRC)</item><item>10 Jan 2019 - added related material links (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Arents, George, 1875-1960.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Arents Christmas Card Collection</unittitle>
+         <unitdate encodinganalog="245$f" normal="1891/1974" type="inclusive" label="Inclusive Dates: ">1891-1974</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2.25 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Collection of Christmas cards accumulated by George and Lena Arents, featuring notable figures from American arts and letters.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3178208</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>George Arents, Jr. (1875-1960) was an American businessman.  He studied at Columbia University and received his master's degree from 
+		Syracuse University at the age of 57.   His father and great-uncle were founders of the Allen &amp; Ginter Tobacco Company, which later 
+		became the American Tobacco Company.  In 1922 Arents became a director of the American Tobacco Company and from 1924 he was  the treasurer 
+		of both the American Machine and Foundry and International Cigar Machinery.  He was also a collector of books and other published material 
+		relating to tobacco.   He and his wife Lena made substantial gifts to Syracuse University; in recognition of their generosity, the 
+		department of rare books and special collections at Bird Library was for many years known as the George Arents Research Library.</p>
+		</bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Arents Christmas Card Collection</emph> consists of an extensive collection of Christmas cards, most 
+			featuring important figures from American letters, sent by and to George and Lena Arents.  Subjects include Elizabeth Barrett Browning, Henry Wadsworth Longfellow, Algernon 
+			Swinburne, Gertrude Stein, Charles Dickens, and Henry David Thoreau.  In some cases, the designer, typographer, and/or printer are given.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Subdivided into those sent by the Arentses and those sent to them.  Within each series, items are arranged chronologically.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>See also the <archref href="arents_tour.htm">Arents Grand Tour Collection</archref> and the <archref href="arents_postcards.htm">Arents Postcard Collection</archref>.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.-->
+		<!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+			<subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+			<subject encodinganalog="650" source="local">Literature -- American Poetry</subject>
+			<subject encodinganalog="650" source="local">Publishing, printing and book arts</subject><subject encodinganalog="650" source="local">Art -- Illustrators</subject><persname encodinganalog="600" source="lcnaf">Arents, George, 1875-1960.</persname>
+			<persname encodinganalog="600" source="lcnaf">Arents, Lena.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Authors, American.</subject>
+			<subject encodinganalog="650" source="lcsh">Christmas cards -- Collectors and collecting.</subject><subject encodinganalog="650" source="lcsh">Christmas cards -- Specimens.</subject>
+			<subject encodinganalog="650" source="lcsh">Poets, American.</subject>
+			<!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+			<genreform encodinganalog="655" source="aat">Christmas cards.</genreform>
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>-->
+	   </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Arents Christmas Card Collection, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">George and Lena Arents</persname>.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+   <head>Inventory</head>
+   <c01 level="series"><did><unittitle>Sent by the Arentses</unittitle></did>
+   <c02><did><unittitle>E. B. Browning, letter to Napoleon III re. Victor Hugo</unittitle><physdesc><extent>2 copies</extent></physdesc><unitdate type="inclusive">1932</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Edward Fitzgerald, "A Country Carol"</unittitle><unitdate type="inclusive">1937</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Dickens, Three Passages</unittitle><physdesc><extent>5 copies</extent></physdesc><unitdate type="inclusive">1938?</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Longfellow, "The Arrow and the Song"</unittitle><physdesc><extent>2 copies</extent></physdesc><unitdate type="inclusive">1939?</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Oliver Wendell Holmes, "Army Hymn"</unittitle><physdesc><extent>5 copies</extent></physdesc><unitdate type="inclusive">1940</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Story of the Hymn "America"</unittitle><physdesc><extent>6 copies</extent></physdesc><unitdate type="inclusive">1941</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Gibbons, "We Are Coming Father Abraham"</unittitle><physdesc><extent>6 copies</extent></physdesc><unitdate type="inclusive">1942</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Field, "How the Good Knight Attended upon...</unittitle><physdesc><extent>5 copies</extent></physdesc><unitdate type="inclusive">1943</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Samuel Fillmore Bennett, "The Sweet By and By"</unittitle><physdesc><extent>6 copies</extent></physdesc><unitdate type="inclusive">1944</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Field, "A Song of the Christmas Wind"</unittitle><physdesc><extent>7 copies</extent></physdesc><unitdate type="inclusive">1945</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Swinburne, "A New Year's Message to Joseph Mazziki"</unittitle><unitdate type="inclusive">1946</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Chesterton, "A Christmas Song for Three Guilds"</unittitle><physdesc><extent>5 copies</extent></physdesc><unitdate type="inclusive">1947</unitdate><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Charles Norman, "A Season's Garland"</unittitle><physdesc><extent>6 copies</extent></physdesc><unitdate type="inclusive">1948</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Southwell, "The Nativity of Christ"</unittitle><physdesc><extent>4 copies</extent></physdesc><unitdate type="inclusive">1949</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Swinburne, "In Church"</unittitle><physdesc><extent>2 copies</extent></physdesc><unitdate type="inclusive">1950</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Swinburne "Beyond Church"</unittitle><unitdate type="inclusive">1951</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Jones, "From Saint Nicholas to Santa Claus"</unittitle><physdesc><extent>5 copies</extent></physdesc><unitdate type="inclusive">1952</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Henry van Dyke, "The Christmas Angel"</unittitle><physdesc><extent>5 copies</extent></physdesc><unitdate type="inclusive">1953</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Greenaway, A Christmas Letter</unittitle><physdesc><extent>4 copies</extent></physdesc><unitdate type="inclusive">1954</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Ben Buckhurst Chronicle, 1865</unittitle><physdesc><extent>6 copies</extent></physdesc><unitdate type="inclusive">1955</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Robert Cruikshank, Scenes from the Bible</unittitle><unitdate type="inclusive">1956</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Samuel McChord Crothers, "Miss Muffet's Christmas Party"</unittitle><physdesc><extent>3 copies</extent></physdesc><unitdate type="inclusive">1957</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Phillips Brooks, "A Christmas Carol"</unittitle><physdesc><extent>7 copies</extent></physdesc><unitdate type="inclusive">1958</unitdate><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Christmas in the Days of Good Queen Bess</unittitle><physdesc><extent>4 copies</extent></physdesc><unitdate type="inclusive">1959</unitdate><container type="Box">2</container></did></c02></c01>
+<c01 level="series"><did><unittitle>Sent by others</unittitle>
+   </did><c02><did><unittitle>Crothers, S.M. Miss Muffett's Christmas Party</unittitle><unitdate type="inclusive">1891</unitdate><container type="Box">3</container></did><scopecontent><p>printed by Banning Press (St. Paul)</p>
+   </scopecontent></c02><c02><did><unittitle>Richmond, Grace. On Christmas Day in the Morning</unittitle><unitdate type="inclusive">1908</unitdate><container type="Box">3</container></did><scopecontent><p>printed by Doubleday, Paige</p>
+   </scopecontent></c02><c02><did><unittitle>Calkins. E.  On the Technique of Being Deaf.</unittitle><unitdate type="inclusive">1923</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Calkins, E.; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>"The Oriental and Captain Palmer"</unittitle><unitdate type="inclusive">1925</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Budd, Ralph; printed by McGill-Warner (St .Paul)</p></scopecontent></c02>
+   <c02><did><unittitle>Christmas Has Come Back Again</unittitle><unitdate type="inclusive">1925</unitdate><physdesc><extent>2 copies</extent></physdesc><container type="Box">3</container></did><scopecontent><p>sent by Marchbanks; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>Wells, Gabriel, "Life Eternal"</unittitle><unitdate type="inclusive">1925</unitdate><container type="Box">2</container></did><scopecontent><p>sent by Weiss, J.; designer/typographer Rogers, Bruce; printed by Rudge, William Edwin</p></scopecontent></c02>
+   <c02><did><unittitle>Morris, C, "The Toper's Apology"</unittitle><unitdate type="inclusive">1926</unitdate><physdesc><extent>2 copies</extent></physdesc><container type="Box">3</container></did><scopecontent><p>sent by Marchbanks; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>Broun, Heywood, "A Shepherd"</unittitle><unitdate type="inclusive">1926</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Nelson, G.</p></scopecontent></c02>
+   <c02><did><unittitle>Wells, Gabriel, "Life Temporal"</unittitle><unitdate type="inclusive">1926</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Weiss, J.; designer/typographer Rogers, Bruce; printed by Rudge, William Edwin</p></scopecontent></c02>
+   <c02><did><unittitle>Holiday Greetings and Good Wishes</unittitle><unitdate type="inclusive">1927</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Marchbanks; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>Klitgaard, Kaj.  Map of the Holy Land</unittitle><unitdate type="inclusive">1927</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Rudge, E; printed by Rudge, William Edwin</p></scopecontent></c02>
+   <c02><did><unittitle>Wells, Gabriel, "These Three,"</unittitle><unitdate type="inclusive">1927</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Weiss, J.; designer/typographer Rogers, Bruce; printed by Rudge, William Edwin</p></scopecontent></c02>
+   <c02><did><unittitle>Merry Christmas and Happy New Year</unittitle><unitdate type="inclusive">1930</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Marchbanks; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>"The Christmas Spirit"</unittitle><unitdate type="inclusive">1930</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Newton, A.E.; printed by Newton</p></scopecontent></c02>
+   <c02><did><unittitle>Hal Marchbanks Wishes You Chreeful Holidays</unittitle><unitdate type="inclusive">1931</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Marchbanks; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>"A Thomas Hardy Memorial"</unittitle><unitdate type="inclusive">1931</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Newton, A.E.; printed by Newton</p></scopecontent></c02>
+   <c02><did><unittitle>Ascot.</unittitle><unitdate type="inclusive">1933</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Newton, A.E.; printed by Newton</p></scopecontent></c02>
+   <c02><did><unittitle>Staffordshire</unittitle><unitdate type="inclusive">1935</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Newton, A.E.; printed by Newton</p></scopecontent></c02>
+   <c02><did><unittitle>"My Library"</unittitle><unitdate type="inclusive">1936</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Cheever, L; designer/typographer Rogers, Bruce; printed by Prairie Press</p></scopecontent></c02>
+   <c02><did><unittitle>"Pope, Poetry and Portrait"</unittitle><unitdate type="inclusive">1936</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Newton, A.E.; printed by Newton</p></scopecontent></c02>
+   <c02><did><unittitle>"A Book Collector?  How Come?</unittitle><unitdate type="inclusive">1937</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Cheever, L; printed by Prairie Press</p></scopecontent></c02>
+   <c02><did><unittitle>De La Mare, W, "A Poem"</unittitle><unitdate type="inclusive">1937</unitdate><container type="Box">3</container></did><scopecontent><p>sent by J, N?</p></scopecontent></c02>
+   <c02><did><unittitle>Moore, C, "Twas the Night Before Christmas"</unittitle><unitdate type="inclusive">1937</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Rendel, W; designer/typographer Gentry, Helen; printed by Rudge, William Edwin</p></scopecontent></c02>
+   <c02><did><unittitle>Warde,B.L, "The Shelter in Bedlam"</unittitle><unitdate type="inclusive">1937</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Warde, B.L.; printed by Clark, R.&amp; R. Edinburgh</p></scopecontent></c02>
+   <c02><did><unittitle>"Schnitzelbank . . . Sketches by Fritz Kredel"</unittitle><unitdate type="inclusive">1938</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Cary, Melbert; designer/typographer Van Vechten, George; printed by Wooly Whale</p></scopecontent></c02>
+   <c02><did><unittitle>Baring-Gould, S, "Three Kings Rode from the Orient Land"</unittitle><unitdate type="inclusive">1938</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Drake, James; printed by Rudge, William E. Sons</p></scopecontent></c02>
+   <c02><did><unittitle>Jones, Dan Burne, "The Least of These," "The Eerie Incident"</unittitle><unitdate type="inclusive">1938</unitdate><container type="Box">3</container></did><scopecontent><p>sent by Jones, Dan; designer/typographer Forgue, Norman W.; printed by Black Cat</p></scopecontent></c02>
+   <c02><did><unittitle>"George Dyer"</unittitle><unitdate type="inclusive">1938</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Newton, A.E.; printed by Newton</p></scopecontent></c02>
+   <c02><did><unittitle>"Like Unto . . "</unittitle><unitdate type="inclusive">1939</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Kraft, James L.</p></scopecontent></c02>
+   <c02><did><unittitle>"An Eighteenth Century Greeting . . . Thomas Bewick</unittitle><unitdate type="inclusive">1940</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Diamond, E; designer/typographer Diamond, Edouard; printed by Hyacinth Press</p></scopecontent></c02>
+   <c02><did><unittitle>Horace, "'The Country, That's the Place to Live!'"</unittitle><unitdate type="inclusive">1940</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Macy, George; designer/typographer Macy, Helen; printed by Walpole Printing</p></scopecontent></c02>
+   <c02><did><unittitle>Shapiro, "Christmas Tree"</unittitle><unitdate type="inclusive">1940</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Shapiro, Karl; printed by Hallmark</p></scopecontent></c02>
+   <c02><did><unittitle>Roosevelt, Eleanor, "Christmas, "  Illus. Fritz Kredel.</unittitle><unitdate type="inclusive">1940</unitdate><container type="Box">4</container></did></c02>
+   <c02><did><unittitle>"Allegory"</unittitle><unitdate type="inclusive">1941</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Vander Poel</p></scopecontent></c02>
+   <c02><did><unittitle>Winterich, John T, "Clio and My Aunt Bertha"</unittitle><unitdate type="inclusive">1942</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Marchbanks; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>"A Christmas Letter: Witches and Warlocks"</unittitle><unitdate type="inclusive">1943</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Biddle, Moncure; designer/typographer Gutekunst, Joseph; printed by Buchanan, George H.</p></scopecontent></c02>
+   <c02><did><unittitle>"Four Connecticut Wood Engravings"</unittitle><unitdate type="inclusive">1943</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Diamond, E; designer/typographer Diamond, Edouard; printed by Hyacinth Press</p></scopecontent></c02>
+   <c02><did><unittitle>Glover, Florida, "The First Christmas, " Illus. Susanne Suba</unittitle><unitdate type="inclusive">1943</unitdate><container type="Box">4</container></did><scopecontent><p>designer/typographer Suba, Susanne; printed by Dutton</p>
+   </scopecontent></c02><c02><did><unittitle>"A Chrismas Letter: Jacques Callot</unittitle><unitdate type="inclusive">1944</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Biddle, Moncure; designer/typographer Gutekunst, Joseph; printed by Buchanan, George H.</p></scopecontent></c02>
+   <c02><did><unittitle>Moore, C. "The Night Before Christmas and The Night After Christmas" </unittitle><unitdate type="inclusive">1944</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Diamond, E.; designer/typographer Diamond, Edouard; printed by Hyacinth Press</p></scopecontent></c02>
+   <c02><did><unittitle>Christmas Greetings ("Collection of Other Men's Christmases")</unittitle><unitdate type="inclusive">1944</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Richey, F.O.</p></scopecontent></c02>
+   <c02><did><unittitle>Thoreau, "A Pig Tale"</unittitle><unitdate type="inclusive">1947</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Rogers, Bruce; designer/typographer Rogers, Bruce; printed by Rogers, Bruce</p></scopecontent></c02>
+   <c02><did><unittitle>Longfellow, "The Building of the Ship, " Engrv.  Will Simmons</unittitle><unitdate type="inclusive">1948</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Diamond, E</p></scopecontent></c02>
+   <c02><did><unittitle>"Our Lady's Juggler, "  Illus. Raymond Lufkin.</unittitle><unitdate type="inclusive">1951</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Lufkin, Raymond</p></scopecontent></c02>
+   <c02><did><unittitle>"Is There a Santa Claus?"</unittitle><unitdate type="inclusive">1952</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Diamond, E; designer/typographer Diamond, Edouard; printed by Hyacinth Press</p></scopecontent></c02>
+   <c02><did><unittitle>"Casey at the Bat"</unittitle><unitdate type="inclusive">1955</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Meyers, Eddie; designer/typographer Weiler, Joseph Francis; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>"Christmas Is Coming, "  Illus. Lucina Wakefield.</unittitle><unitdate type="inclusive">1955</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Weiler, Betty; designer/typographer Weiler, Joseph Francis; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>Slaughter, L, "The New Northwest, "  Orig. 1874.</unittitle><unitdate type="inclusive">1956</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Beineke, F.; printed by Yale University Press</p></scopecontent></c02>
+   <c02><did><unittitle>Van Dyke, Henry, "Who Owns the Mountains?"</unittitle><unitdate type="inclusive">1956</unitdate><physdesc><extent>4 copies</extent></physdesc><container type="Box">4</container></did><scopecontent><p>sent by Wylie, Porter; designer/typographer Weiler, Joseph Francis; printed by Marchbanks Press</p></scopecontent></c02>
+   
+   <c02><did><unittitle>"Wonderful Narrative of Lieutenant Harrison"</unittitle><unitdate type="inclusive">1957</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Beineke, F.; printed by Yale University Press?</p></scopecontent></c02>
+   <c02><did><unittitle>Grayson, David, "A Day of Pleasant Bread"</unittitle><unitdate type="inclusive">1957</unitdate><physdesc><extent>2 copies</extent></physdesc><container type="Box">4</container></did><scopecontent><p>sent by Weiler, Joseph; designer/typographer Weiler, Joseph Francis; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>"The 51st Chaper of Genesis: A Parable against Persecution" </unittitle><unitdate type="inclusive">1958</unitdate><physdesc><extent>2 copies</extent></physdesc><container type="Box">5</container></did><scopecontent><p>sent by Duschnes, Phil</p></scopecontent></c02>
+   <c02><did><unittitle>"Th: Nast: The Man Who Made Santa Claus"</unittitle><unitdate type="inclusive">1958</unitdate><physdesc><extent>2 copies</extent></physdesc><container type="Box">5</container></did><scopecontent><p>sent by Weiler, Joseph; designer/typographer Weiler, Joseph Francis; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>"Father Balthasar Visits the Sinaloa Missions, 1744-1745"</unittitle><unitdate type="inclusive">1959</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Beineke, F.</p></scopecontent></c02>
+   <c02><did><unittitle>Gould, John, "Ye Olde Fashioned Yule . . "</unittitle><unitdate type="inclusive">1959</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Wylie, Porter; designer/typographer Weiler, Joseph Francis; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>"'Old Rough and Ready' Speaks His Mind"</unittitle><unitdate type="inclusive">1960</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Beineke, F.; designer/typographer Rollins, Carl Purington; printed by Yale University Press</p></scopecontent></c02>
+   <c02><did><unittitle>Anthony, Edward, "A Firm Stand on Santa Claus"</unittitle><unitdate type="inclusive">1960</unitdate><physdesc><extent>2 copies</extent></physdesc><container type="Box">5</container></did><scopecontent><p>sent by Marchbanks; designer/typographer Bernfried, Joseph; printed by Marchbanks Press</p></scopecontent></c02>
+   <c02><did><unittitle>Jefferson, Thomas, "The Education of an Explorer . . "</unittitle><unitdate type="inclusive">1961</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Beineke, F.; designer/typographer Rollins, Carl Purington; printed by Yale University Press</p></scopecontent></c02>
+   <c02><did><unittitle>Sandoz, Mari, "The Far Looker"</unittitle><unitdate type="inclusive">1962</unitdate><physdesc><extent>2 copies</extent></physdesc><container type="Box">5</container></did><scopecontent><p>designer/typographer Sindin, Nedda; printed by Buffalo Head Press/James Carr</p>
+   </scopecontent></c02><c02><did><unittitle>"I Hear the Hogs in My Kitchen"</unittitle><unitdate type="inclusive">1962</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Beineke, F.; designer/typographer Rollins, Carl Purington; printed by Yale University Press </p></scopecontent></c02>
+   
+   <c02><did><unittitle>Rand, Christopher, "The Holy Land at Christmastime"</unittitle><unitdate type="inclusive">1963</unitdate><container type="Box">5</container></did><scopecontent><p>designer/typographer Begg, John; printed by Oxford UP/ Marbridge Printing</p>
+   </scopecontent></c02><c02><did><unittitle>Noel 1963 (to Wayne Yenawine)</unittitle><unitdate type="inclusive">1963</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Charlots, The</p></scopecontent></c02>
+   <c02><did><unittitle>Painting/print collage; poem by St. Francis</unittitle><unitdate type="inclusive">1963</unitdate><container type="Box">4</container></did><scopecontent><p>sent by Neagoe, Anna; designer/typographer Neagoe, Anna</p></scopecontent></c02>
+   <c02><did><unittitle>Kennedy, J.F, "The Place of the Artist in Society"</unittitle><unitdate type="inclusive">1964</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Blumenthal, J.; printed by Spiral Press</p></scopecontent></c02>
+   <c02><did><unittitle>Shillito, Charles, "The Country Book-Club. A Poem"</unittitle><unitdate type="inclusive">1964</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Hall, G.K. ; printed by Stinehour Press/Meriden</p></scopecontent></c02>
+   <c02><did><unittitle>Heckscher, August, "A Plea for Books"</unittitle><unitdate type="inclusive">1966</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Blumenthal, J.; printed by Spiral Press</p></scopecontent></c02>
+   <c02><did><unittitle>Decker, Peter, "Westering into Ireland"</unittitle><unitdate type="inclusive">1967</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Patterson, Jerry</p></scopecontent></c02>
+   <c02><did><unittitle>Decker, Peter, "Westering into Scotland"</unittitle><unitdate type="inclusive">1968</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Patterson, Jerry</p></scopecontent></c02>
+   <c02><did><unittitle>Anonymous Greek fragment.</unittitle><unitdate type="inclusive">1970</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Walker, Ralph</p></scopecontent></c02>
+   <c02><did><unittitle>"Person &amp; Place: A Canadian Garland"</unittitle><unitdate type="inclusive">1974</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Hall, G.K. ; printed by Stinehour Press/Meriden</p></scopecontent></c02><c02><did><unittitle>The Season's Greetings</unittitle><unitdate type="inclusive">undated</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Angelo, Valenti; designer/typographer Angelo, Valenti</p></scopecontent></c02>
+   <c02><did><unittitle>Stein, Gertrud, "A Christmas Greeting"</unittitle><unitdate type="inclusive">undated</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Sans Souci Pr; designer/typographer Ferguson, William; printed by Sans Souci/Willliam Young</p></scopecontent></c02>
+   <c02><did><unittitle>Season's Greetings  "Little Iddens"</unittitle><unitdate type="inclusive">undated</unitdate><container type="Box">5</container></did><scopecontent><p>sent by Cohn, Marguerite</p></scopecontent></c02>
+   </c01>
+
+</dsc>
+   </archdesc>
+</ead>

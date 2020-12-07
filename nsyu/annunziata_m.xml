@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.6, 9/12/2006 -->
+<!-- Fixed countrycode case -->
+
+<ead relatedencoding="MARC21">
+	<!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+		<eadid countrycode="US" mainagencycode="NSyU" identifier="annunziata_m">annunziata_m</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="Title">Michael Annunziata Papers</titleproper>
+				<subtitle>An inventory of his papers at Syracuse University</subtitle>
+			<author encodinganalog="Creator">MRC</author></titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+				&su_address;
+				<date normal="2007-01-11" encodinganalog="Date">11 Jan 2007</date>
+			</publicationstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Michele Rothenberger
+				<date normal="2007-01-11">11 Jan 2007</date>
+			</creation>
+			<langusage>
+				<language langcode="eng" encodinganalog="Language">English</language></langusage>
+		</profiledesc>
+		<!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+			<list>
+				<item>6 Jul 2012 - inventory updated (MBD)</item>
+			</list>
+		</revisiondesc>
+	</eadheader>
+	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
+		<did>
+			<head>Overview of the Collection</head>
+			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
+			&su_name; <lb/> &su_address;
+			</repository>
+			<origination label="Creator: ">
+				<persname encodinganalog="100">Annunziata, Michael R.</persname>
+			</origination>
+			<unittitle encodinganalog="245$a" label="Title: ">Michael Annunziata Papers</unittitle>
+			<unitdate encodinganalog="245$f" normal="1921/1969" type="inclusive" label="Inclusive Dates: ">1921-1969</unitdate>
+			  <physdesc encodinganalog="300$a" label="Quantity: "><extent>6 linear ft.</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">Annunziata was an Italian violinist, pianist, composer and music instructor.  Correspondence, clippings, writings, published music, mostly from his time in Utica, New York where he lived and worked for most of his life.  He was a student of Syracuse University music professor William Berwald.</abstract>
+			<unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2495015</unitid>
+			<langmaterial label="Language: " encodinganalog="546"><language langcode="eng">English, </language>
+			<language langcode="ita">Italian </language></langmaterial>
+		</did>
+				
+		<bioghist encodinganalog="545">
+			<head>Biographical History</head>
+			
+		<p>Michael (Michele) Raffaelle Annunziata (1897-1968) was an Italian (later American) violinist, pianist, composer and music instructor who spent much of his life in Utica, New York.</p><p>Born Michele Annunziata in Ottaviano near Naples, Italy, Annunziata and his family came to the United States in 1908.  After a short residence in Baltimore, Maryland his family settled in Utica, New York where Annunziata attended a local Catholic school.  He went to Italy for college, graduating from the University dei Terroni in Taranto, and then returned to Utica where he remained for the rest of his life, composing and teaching music.   At some point, possibly when he became an American citizen in 1944, his name was Americanized to "Michael."</p><p>Originally a violinist, he later came to concentrate on the piano.  He studied with Syracuse University music professor William Berwald.  His works included chamber music, music for voice and piano, music for violin and piano, solo piano, string ensembles, orchestral suites and symphonies, two masses and several operas.</p><p>Annunziata was a member of  the Italian Actors' Union, the American Federation of Labor, and the American Society of Composers, Authors and Publishers.  He died in Utica in 1968.</p></bioghist>
+		
+		<scopecontent encodinganalog="520">
+			<head>Scope and Contents of the Collection</head>
+			<p>The <emph render="bold">Michael Annunziata Papers</emph> are divided into Biographical material, Correspondence, and Writings.  <emph render="bold">Biographical material</emph> includes identification and membership papers (naturalization certificate, draft card, Italian Actors' Union membership) and memorabilia (newspaper clippings, concert programs, obituary).  <emph render="bold">Correspondence</emph> comprises letters from fellow musicians (including William Berwald) as well as music organizations and music publishers, in both English and Italian.  <emph render="bold">Writings</emph> includes poems (possibly intended as lyrics), libretti, and manuscript scores of many of Annunziata's works including his operas.  Also included are a few of Annunziata's published pieces.  Most of the material in the Writings series is in Italian.</p>
+		</scopecontent>
+		
+		<!--<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>## OPT (MARC 351$a)</p>
+		</arrangement>-->
+		
+		<relatedmaterial encodinganalog="544 1">
+			<head>Related Material</head>
+			<p>The papers of Syracuse University music professor William Berwald, with whom Annunziata studied,  are held by the <extref href="http://archives.syr.edu/">Syracuse University Archives</extref>.</p>
+		</relatedmaterial>
+		
+		<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>The collection originally included 19 record albums.  These have been transferred to Belfer Audio Archive.  One of the albums was a recording of Annunziata's work, sung by Daniel Monti.  The remainder were well-known classical composers such as Verdi and Beethoven, and singers such as Enrico Caruso.  For a complete list, please inquire.</p>
+		</separatedmaterial>
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+		
+		<controlaccess>
+			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">New York State</subject>
+			<subject encodinganalog="650" source="local">Music</subject>
+			<!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+            <persname encodinganalog="600" source="lcnaf">Annunziata, Michael R.</persname>
+			<title encodinganalog="630" source="local">L'idre dell' egeo.</title>
+			<title encodinganalog="630" source="local">Mysterious Island, for orchestra (op. 43)</title>
+			<title encodinganalog="630" source="local">Piece Exotique.</title>
+			<title encodinganalog="630" source="local">Pompei, a symphonic suite (op. 35)</title>
+			<title encodinganalog="630" source="local">T'enebre e luce.</title>
+			<title encodinganalog="630" source="local">Urania, poeme mystique for orchestra and piano (op. 55)</title>
+			<title encodinganalog="630" source="local">The Witch (La strega di Salem)</title>
+            
+			<subject encodinganalog="650" source="lcsh">Chamber music -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Italian Americans -- New York (State) -- Utica.</subject>
+			<subject encodinganalog="650" source="lcsh">Masses -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Music -- Manuscripts.</subject>
+			<subject encodinganalog="650" source="lcsh">Operas -- 20th century.</subject>
+			
+            <geogname encodinganalog="651" source="lcsh">New York (State), Utica.</geogname>
+			<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Librettos (documents for music)</genreform>
+			<genreform encodinganalog="655" source="aat">Manuscripts (document genre)</genreform>
+			<genreform encodinganalog="655" source="aat">Scores.</genreform>
+			<occupation encodinganalog="656" source="lcsh">Composers.</occupation>
+			<occupation encodinganalog="656" source="lcsh">Musicians.</occupation>
+			
+            
+			
+			</controlaccess>
+		
+		<accessrestrict encodinganalog="506">
+			<head>Access Restrictions</head>
+			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+		</accessrestrict>
+		
+		<userestrict encodinganalog="540">
+			<head>Use Restrictions</head>
+			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+		</userestrict>
+		
+		<prefercite encodinganalog="524">
+			<head>Preferred Citation</head>
+			<p>Preferred citation for this material is as follows:</p>
+			<p>Michael Annunziata Papers, <lb/> &su_name; </p>
+		</prefercite>
+		
+		<acqinfo encodinganalog="541">
+			<head>Acquisition Information</head>
+			<p>Transferred from Setnor School of Music</p>
+		</acqinfo>
+		
+		<!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+		
+		<dsc type="combined">
+			<head>Inventory</head>
+			<c01 level="series">
+				<did>
+					<unittitle>Biographical material</unittitle>
+				<!--C01 @LEVEL must be set to 'series' to show up in TOC.--></did>
+				<c02>
+					<did>
+						<unittitle>Identification and membership papers</unittitle>
+						
+						<abstract>selective service card, naturalization certificate, diploma from Universiti dei Terroni, Rosicrucian membership card; few papers bear the name "Aniello Annunziata"</abstract><unitdate normal="1951" type="inclusive">1951, </unitdate><unitdate normal="1963" type="inclusive">1963, </unitdate><unitdate normal="1944" type="inclusive">1944, </unitdate><unitdate normal="1965" type="inclusive">1965, </unitdate><unitdate normal="1921/1969" type="inclusive">undated</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Memorabilia</unittitle>
+						
+						<abstract>clippings, photographs, concert programs, obituary</abstract><unitdate normal="1921" type="inclusive">1921, </unitdate><unitdate normal="1937" type="inclusive">1937, </unitdate><unitdate normal="1964/1965" type="inclusive">1964-1965, </unitdate><unitdate normal="1968" type="inclusive">1968, </unitdate><unitdate normal="1969" type="inclusive">1969, </unitdate><unitdate normal="1921/1969" type="inclusive">undated</unitdate><container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02>
+			<c02>
+					<did>
+						<unittitle>Memorabilia (oversize)</unittitle>
+						
+						<abstract>Italian Actors' Union membership certificate; first piece of music, ca. 1920; photo on metal plate</abstract><container type="Box">3</container>
+						
+						
+						
+					</did>
+				</c02></c01><c01 level="series"><did><unittitle>Correspondence</unittitle></did><c02>
+					<did>
+						<unittitle>General correspondence, <unitdate normal="1922/1968" type="inclusive">1922-1968 (with gaps)</unitdate></unittitle>
+						
+						<container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02></c01>
+		<c01 level="series"><did><unittitle>Writings</unittitle></did><c02>
+					<did>
+						<unittitle>List of compositions</unittitle>
+						
+						<container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Libretti</unittitle>
+						
+						<container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Poetry/lyrics</unittitle>
+						
+						<container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02>
+					<did>
+						<unittitle>Published music</unittitle>
+						
+						<container type="Box">1</container>
+						
+						
+						
+					</did>
+				</c02><c02 level="subseries">
+					<did>
+						<unittitle>Scores</unittitle>
+						
+						
+						
+						
+						
+					</did>
+					<c03>
+						<did>
+							<unittitle>Chamber music for violin and piano</unittitle>
+							<container type="Box">3</container>
+						</did>
+					</c03>
+					<c03>
+						<did>
+							<unittitle>Chamber music for wind instruments</unittitle>
+							<container type="Box">5</container>
+						</did>
+					</c03>
+				<c03><did><unittitle>Concerto in F</unittitle><container type="Box">3</container></did></c03>
+					<c03>
+						<did>
+							<unittitle>L’Idre Dell’egeo, opera in quarto atti sul poema <emph render="doublequote">The Cosair</emph> di Byron</unittitle>
+							<container type="Oversize">3</container>
+						</did>
+					</c03>
+					<c03>
+						<did>
+							<unittitle>Music for piano and voice</unittitle>
+							<container type="Box">3</container>
+						</did>
+					</c03>
+					<c03>
+						<did>
+							<unittitle>Mysterious Island, for orchestra (op. 43)</unittitle>
+							<container type="Oversize">2</container>
+						</did>
+					</c03>
+					<c03>
+						<did>
+							<unittitle>Operatic works (various)</unittitle>
+							<container type="Box">2</container>
+						</did>
+					</c03>
+					<c03>
+						<did>
+							<unittitle>Orchestral works</unittitle>
+							<container type="Box">4</container>
+						</did>
+					</c03>
+					<c03>
+						<did>
+							<unittitle>Piano solo music</unittitle>
+							<container type="Box">5</container>
+						</did>
+					</c03>
+					<c03>
+						<did>
+							<unittitle>Piece Exotique</unittitle>
+							<container type="Oversize">2</container>
+						</did>
+					</c03>
+					<c03>
+						<did>
+							<unittitle>Pompei, a symphonic suite (op. 35)</unittitle>
+							<container type="Oversize">2</container>
+						</did>
+					</c03><c03><did><unittitle>String orchestra (ensemble) works</unittitle><container type="Box">3</container></did></c03>
+					<c03>
+						<did>
+							<unittitle>T’enebre e Luce, melodrama in due atti ed un Episodio by
+								Antonio Perrotta</unittitle>
+							<container type="Oversize">1</container>
+						</did>
+					</c03>
+					<c03>
+						<did>
+							<unittitle>Urania, poeme mystique for orchestra and piano (op.
+								55)</unittitle>
+							<container type="Oversize">2</container>
+						</did>
+					</c03><c03><did><unittitle>The Witch (La Strega di Salem), a melodrama in one act by Antonio Perrotta; Music by
+								Michael Annunziata</unittitle> <container type="Oversize">3</container></did></c03><c03><did><unittitle>Miscellaneous parts and unrelated bits</unittitle><container type="Box">5</container></did></c03></c02></c01></dsc>
+	</archdesc>
+</ead>

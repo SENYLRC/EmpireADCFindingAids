@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Derived from Summit record.  Matches template version 1.7.-->
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+<ead relatedencoding="MARC21">
+  <eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+    <eadid countrycode="US" mainagencycode="NSyU" identifier="petrow_r">petrow_r</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Richard Petrow Papers</titleproper>
+        <subtitle>An inventory of 
+                        his papers 
+                        at Syracuse University</subtitle>
+        <author encodinganalog="Creator">DB</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>&su_address;
+                           <date normal="1978-03-09" encodinganalog="Date">Mar 1978</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>[Derived from Summit]
+                           <date era="ce" calendar="gregorian" normal="2007-03-12">12 Mar 2007</date></creation>
+      <langusage>
+        <language langcode="eng" encodinganalog="Language">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>5 Aug 2008 - converted to EAD (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name; <lb/>&su_address;
+               </repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100" source="lcnaf">Petrow, Richard.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Richard Petrow Papers</unittitle>
+      <unitdate encodinganalog="245$f" type="inclusive" label="Inclusive Dates: " normal="1963/1969">1963-1969</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent encodinganalog="300$a">2.0 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">
+                    Papers of the American author.  Collection includes correspondence, notes, 
+						  galley proofs, and research material relating to his books <emph render="italic">Across the Top of Russia</emph> and <emph render="italic">The Black Tide</emph>.</abstract>
+      <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">149470</unitid>
+      <langmaterial label="Language: " encodinganalog="546">
+        <language langcode="eng">
+                          English
+                       </language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Richard Petrow was an American author.  Much of his writing focused on some aspect of marine stewardship, including shrimping, boating, arctic seas, and oil spills.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The <emph render="bold">Richard Petrow Papers</emph> consists of correspondence and 
+		writings.  The majority of the collection is research notes for his book 
+		<emph render="italic">The Black Tide</emph>, which deals with the 1967 wreck of the 
+		tanker <emph render="italic">Torrey Canyon</emph> and the ensuing oil spill on the 
+		coasts of Cornwall (England) and Brittany (France).  </p>
+		
+		<p>The collection begins with a small amount of <emph render="bold">Correspondence</emph>.  
+		<emph render="bold">Writings</emph> includes notes, galleys, proofs, and research material 
+		relating to articles, books, and scripts written by Petrow.  The majority concerns <emph render="italic">The Black Tide</emph>, but there is also material from his book <emph render="italic">Across the Top of Russia</emph>, about the cruise of the U.S. Coast Guard ship <emph render="italic">Northwind</emph> into the polar seas north of Siberia.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Correspondence is arranged alphabetically by correspondent.   Writings are arranged alphabetically by type and within that by title of work.</p>
+    </arrangement>
+    <!-- <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>## OPT (MARC 544 1)</p>
+    </relatedmaterial> -->
+    <!-- <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>## OPT (MARC 544 0)</p>
+    </separatedmaterial> -->
+	 <!--
+            <otherfindaid encodinganalog="555">
+				<head>Other Related Finding Aids</head>
+				<p>## OPT (MARC 555)</p></otherfindaid>
+    -->
+	<controlaccess>
+	<head>Subject and Genre Headings</head>
+	<subject encodinganalog="650" source="local">Science and medicine</subject>
+	<subject encodinganalog="650" source="local">Activism and social reform</subject>
+	<persname encodinganalog="600" source="lcnaf">Petrow, Richard -- Archives.</persname>
+	<persname encodinganalog="600" source="lcnaf">Petrow, Richard. Across the top of Russia.</persname>
+	<persname encodinganalog="600" source="lcnaf">Petrow, Richard. Black tide.</persname>
+	<corpname encodinganalog="610" source="lcnaf">Torrey Canyon (Ship)</corpname>
+	<subject encodinganalog="650" source="lcsh">Authors, American.</subject>
+	<subject encodinganalog="650" source="lcsh">Oil spills, Environmental aspects.</subject>
+	<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+	<genreform encodinganalog="655" source="aat">Galley proofs.</genreform>
+	<occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+	</controlaccess>
+	
+	<accessrestrict encodinganalog="506">
+	<head>Access Restrictions</head>
+	<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p></accessrestrict>
+	
+	<userestrict encodinganalog="540">
+	<head>Use Restrictions</head>
+	<p>Written permission must be obtained from SCRC and 
+ all relevant rights holders before publishing quotations, excerpts or images from any 
+ materials in this collection. </p>
+	</userestrict><prefercite encodinganalog="524">
+	<head>Preferred Citation</head>
+	<p>Preferred citation for this material is as follows:</p>
+	<p>Richard Petrow Papers,<lb/>&su_name;
+                  </p>
+	</prefercite>
+	<!--
+            <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
+       -->
+	<!--
+            <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
+       -->
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did><c02>
+               <did>
+                  <unittitle>David McKay Company, Inc.</unittitle>
+                  <unitdate normal="1967/1969" type="inclusive">1967-1969</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">Northwind</emph> [Coast Guard ship]</unittitle>
+                  <unitdate normal="1965" type="inclusive">1965</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02><c02>
+               <did>
+                  <unittitle><emph render="italic">Reader's Digest</emph></unittitle>
+                  <unitdate normal="1967/1969" type="inclusive">1967-1969</unitdate>
+                  <container type="Box">1</container>
+               </did>
+            </c02>
+         </c01>
+      <c01 level="series">
+            <did>
+               <unittitle>Writings</unittitle>
+            </did>
+            <c02 level="subseries">
+               <did>
+                  <unittitle>Articles</unittitle>
+                  </did>
+            <c03><did><unittitle>"Eight boating crises"</unittitle><unitdate normal="1964/1965" type="inclusive">1964-1965</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did><unittitle>"Florida's newest boom industry: cattle rustling"</unittitle><unitdate normal="1967/1969" type="inclusive">1967-1969</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did><unittitle>"Government scientists keep shrimp hopping"</unittitle><unitdate normal="1963/1968" type="inclusive">1963-1968</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did><unittitle>"Those wonderful fish that no one wants"</unittitle><unitdate normal="1968" type="inclusive">1968</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did><unittitle>"Unraveling secret signals of the animal world"</unittitle><unitdate normal="1968" type="inclusive">1968</unitdate>
+                  <container type="Box">1</container>
+               </did></c03><c03><did><unittitle>"The <emph render="italic">World Glory</emph> disaster"</unittitle><unitdate normal="1968" type="inclusive">1968</unitdate>
+                  <container type="Box">1</container>
+               </did></c03></c02><c02 level="subseries">
+               <did>
+                  <unittitle>Books</unittitle>
+                  
+                  
+               </did>
+            <c03><did><unittitle><emph render="italic">Across the top of Russia</emph></unittitle></did><c04><did><unittitle>Editing material</unittitle><unitdate normal="1966" type="inclusive">1966</unitdate>
+                  <container type="Box">1</container>
+               </did></c04><c04><did><unittitle>Galleys</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c04><c04><did><unittitle>Page proofs</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c04><c04><did><unittitle>Research material</unittitle></did><c05><did><unittitle>Biographies</unittitle><unitdate normal="1965" type="inclusive">1965</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>Notes</unittitle><unitdate normal="1965" type="inclusive">1965</unitdate>
+                  <container type="Box">1</container>
+               </did></c05></c04></c03><c03><did><unittitle><emph render="italic">The Black Tide</emph></unittitle></did><c04><did><unittitle>Research material</unittitle></did><c05><did><unittitle>Birds</unittitle><physdesc><extent>2 folders</extent></physdesc><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>Bombing</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>British government (official)</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>British Petroleum</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>Coast guard</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>Cornwall (character)</unittitle><unitdate normal="1962/1972" type="inclusive">circa 1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>Correspondence</unittitle><unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>Cost</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>Detergents and booms</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>Effect of oil outside of Cornwall (in England)</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>Effect on other countries</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>First sighting</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>Flags of convenience</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>France</unittitle></did><c06><did><unittitle>Miscellaneous</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c06><c06><did><unittitle>General articles</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c06><c06><did><unittitle>News clippings and chronological messages</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c06><c06><did><unittitle>Scientific</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c06><c06><did><unittitle>Tourism</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c06></c05><c05><did><unittitle>French beaches</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>French crabbers</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>French fish and birds</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>General articles</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>Grounding</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">1</container>
+               </did></c05><c05><did><unittitle>Insurance</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Intergovernmental Maritime Consultative Organization (IMCO)</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Italian crew</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Lawsuit</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Liberian inquiry</unittitle><unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Local authorities</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Marine life</unittitle><unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Military operations</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Miscellaneous</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Navy</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Oil pollution</unittitle></did><c06><did><unittitle>General</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c06><c06><did><unittitle>Before <emph render="italic">Torrey Canyon</emph></unittitle><unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c06><c06><did><unittitle>Early days</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c06><c06><did><unittitle>Middle</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c06><c06><did><unittitle>Aftermath</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c06><c06><did><unittitle>Tankers other than <emph render="italic">Torrey Canyon</emph></unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c06><c06><did><unittitle>World War II tankers</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c06><c06><did><unittitle>Profit from</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c06></c05><c05><did><unittitle>Oil slick</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Photographs</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Political implications</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Porthleven</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Press comments, cartoons</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Preventative action (future)</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Rescue</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>Rugiati, Captain Pastrengo</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">2</container>
+               </did></c05><c05><did><unittitle>St. Ives</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">3</container>
+               </did></c05><c05><did><unittitle>Salvage</unittitle><unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate>
+                  <container type="Box">3</container>
+               </did></c05><c05><did><unittitle>Scientific aspects</unittitle>
+                  <unitdate normal="1963/1968" type="inclusive">1963-1968</unitdate><container type="Box">3</container>
+               </did></c05><c05><did><unittitle>Tankers</unittitle>
+                  <unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">3</container>
+               </did></c05><c05><did><unittitle>Testimonies</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">3</container>
+               </did></c05><c05><did><unittitle><emph render="italic">Torrey Canyon</emph></unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">3</container>
+               </did></c05><c05><did><unittitle>Tourist problem</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">3</container>
+               </did></c05><c05><did><unittitle>Typescript notes</unittitle><unitdate normal="1963/1969" type="inclusive">undated</unitdate>
+                  <physdesc><extent>3 folders</extent></physdesc><container type="Box">3</container>
+               </did></c05><c05><did><unittitle>United States reaction to <emph render="italic">Torrey Canyon</emph></unittitle><unitdate normal="1967" type="inclusive">1967</unitdate>
+                  <container type="Box">3</container>
+               </did></c05></c04><c04><did><unittitle>Uncorrected proof</unittitle><unitdate normal="1967" type="inclusive">1967</unitdate><container type="Box">3</container></did></c04></c03></c02><c02 level="subseries">
+               <did>
+                  <unittitle>Scripts</unittitle>
+                  
+                  
+               </did>
+            <c03><did><unittitle>CBS Radio</unittitle><unitdate normal="1963/1964" type="inclusive">1963-1964</unitdate>
+                  <container type="Box">3</container>
+               </did></c03><c03><did><unittitle>CBS Television, "One of a kind: the reconstruction"</unittitle><unitdate normal="1964" type="inclusive">1964</unitdate>
+                  <container type="Box">3</container>
+               </did></c03></c02>
+         </c01></dsc>
+   </archdesc>
+</ead>

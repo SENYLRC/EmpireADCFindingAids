@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
+<!-- added altformavail section -->
+
+
+
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="jackson_wh">jackson_wh</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">William Henry Jackson Photochroms</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2015-09-09" encodinganalog="Date">9 Sep 2015</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2015-09-09">9 Sep 2015</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Jackson, William Henry, 1843-1942</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">William Henry Jackson Photochroms</unittitle>
+         <unitdate encodinganalog="245$f" normal="1890/1913" type="inclusive" label="Inclusive Dates: ">circa 1895-1908</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.25 linear ft. (88 items)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Photographs taken by the American landscape photographer, of various locations in the American West and Southwest.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4595760</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>William Henry Jackson (1843-1942) was an American painter, photographer and explorer.  Although he ran a portrait studio for a time, he was more interested in the natural landscape, and became known for his photographs of the American West.  His photographs were the first ever published of the Yellowstone area, and contributed to its recognition as a national park. [Adapted from J. Paul Getty Museum's page on Jackson.]</p><p>The Photochrom process, a type of chromolithography developed in Switzerland, was a labor-intensive method of turning black-and-white photographs in to color prints, notable for their depth and richness.  It was licensed in America by the Detroit Photographic Company in the 1890s, of which company Jackson became a partner.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">William Henry Jackson Photochroms</emph> consists of eighty-eight Photochroms (chromolithographs) taken by American landscape photographer William Henry Jackson.   Many are of areas in Colorado, including Cheyenne Mountain and Mount Manitou; others are of California, New Mexico, the Niagara Falls/Thousand Islands area, and Mexico.  </p><p>The inventory below was provided by the donor, and for the most part reproduces information appearing on the item itself.    Information in square brackets was added by &scrc_name; staff during processing.  "Birth of a Century" plate numbers  refer to <emph render="italic">The Birth of a Century: Early Color Photographs of America</emph>, a collection of Jackson's images published in 1999 by  I. B. Tauris &amp; Company.  Images are listed in the inventory by topic, but are arranged in the box first by size and within that by image number.</p>
+      </scopecontent>
+      
+      <!--<altformavail encodinganalog="530">
+         <head>Other Formats Available</head>
+         <p>## Use MARC 530 or comment out if not applicable</p>
+      </altformavail>--><arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Although listed in the inventory by topic, the items are arranged in the box first by size and within that by image number.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>A copy of <emph render="italic">The Birth of a Century: Early Color Photographs of America</emph>, a collection of Jackson's images published in 1999 by  I. B. Tauris &amp; Company, is available in general collections; please refer to &summitref; to locate this item.</p>
+      </relatedmaterial>
+      
+      <!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <subject encodinganalog="650" source="local">Photography</subject><!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <persname encodinganalog="600" source="lcnaf">Jackson, William Henry, 1843-1942.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Landscape photography -- West (U.S.)</subject><subject encodinganalog="650" source="lcsh">Outdoor photography.</subject><subject encodinganalog="650" source="lcsh">Photographers  -- 19th century -- United States.</subject>
+         <geogname encodinganalog="651" source="lcsh">California -- Pictorial works.</geogname><geogname encodinganalog="651" source="lcsh">Colorado -- Pictorial works.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Mexico -- Pictorial works.</geogname><geogname encodinganalog="651" source="lcsh">New Mexico -- Pictorial works.</geogname><geogname encodinganalog="651" source="lcsh">West (U.S.) -- Pictorial works.</geogname><genreform encodinganalog="655" source="aat">Photochroms.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Photographer.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>		 
+         <p>Gloves must be work when working with the photographs.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>William Henry Jackson Photochroms, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Caroline M. Baillon</persname>, 2015.</p>
+      </acqinfo>
+      
+      <appraisal encodinganalog="583$a">
+         <head>Appraisal Information</head>
+         <p>See files.</p>
+      </appraisal>
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         
+<c01 level="series"><did><unittitle>Photographs</unittitle></did>
+   <c02 level="subseries"><did><unittitle>Colorado</unittitle></did>
+      <c03><did><unittitle>Image #2 Rios los Animos Cañon [Colorado?]</unittitle><physdesc><dimensions>4.5x6.5</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #6 Cheyenne Mountain [Colorado]</unittitle><physdesc><dimensions>4.5x6.5</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #10 Balanced Rock, Garden of the Gods, <unitdate normal="1908" type="inclusive">1908</unitdate> [Colorado]</unittitle><physdesc><dimensions>4.5x6.5</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #14 Lake San Cristobal, <unitdate normal="1898" type="inclusive">1898</unitdate> [Colorado]</unittitle><physdesc><dimensions>4.5x6.5</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #16 Birth of a century: Plate 34 Mount of the Holy Cross [Colorado]</unittitle><physdesc><dimensions>4.5x6.5</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #23 Ute Pass [Colorado]</unittitle><physdesc><dimensions>4.5x6.5</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #30 The Old Roadmaster, Clear Creek Cañon [Colorado]</unittitle><physdesc><dimensions>4.5x6.5</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51001 Cheyenne Mountain, Colorado</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51002 Pike's Peak from near Colorado City</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51007 Manitou, Colorado</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51017 Ouray [Colorado]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51018 Ouray and Silverton toll road [Colorado]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51019 Rockie Mountain "Canaries" [Colorado]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51023 Currecanti Needle, Black Cañon, Colorado</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51025 Needle Mountains, Colorado</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51027 Dome Rock, Platte Cañon, Colorado</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51028 Snowy Range from Bellevue, Colorado</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51042 Birth of a century: Plate 58a, Colorado, Aspen silver mines</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51043 Colorado, "American-Netti" mine, Ouray</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51044 Colorado, placer mining</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51047 Colorado, miner's cabin in winter</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51049 Birth of a century: Plate 60 Colorado, dug out cabins</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51050 Colorado, a pioneer merchant</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51051 Colorado, burros at silver mine</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51054 Colorado, pack train on mountain road</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51055 Birth of a century: Plate 59a Colorado, burros loaded with lumber</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51061 Colorado, The roundup, roping a steer</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51063 Colorado, Mt. Sopris from Spring Gulch Mine</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51073 Fishing on Williams Fork, Middle Fork, Colorado</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #53103 Royal Gorge, Colorado</unittitle><physdesc><dimensions>7x9</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #53130 Colorado, the Sangre de Cristo from Poncha Pass, <unitdate normal="1898" type="inclusive">1898</unitdate></unittitle><physdesc><dimensions>7x9</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #53136 Mount of the Holy Cross [Colorado]</unittitle><physdesc><dimensions>7x9</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #53151 Birth of a century: Plate 22 Silverton &amp; Sultan Mountain, Colorado</unittitle><physdesc><dimensions>7x9</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #53153 Long's Peak from Mont Alto, Colorado <unitdate normal="1901" type="inclusive">1901</unitdate></unittitle><physdesc><dimensions>7x9</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #53205 Bluffs of the Green River, <unitdate normal="1898" type="inclusive">1898</unitdate> [Colorado]</unittitle><physdesc><dimensions>7x9</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #[none; donor lists as 14142] Mount of the Holy Cross in the clouds [Colorado]</unittitle><physdesc><dimensions>7x9</dimensions></physdesc><container type="Box">1</container></did></c03></c02>
+<c02 level="subseries"><did><unittitle>New York</unittitle></did>
+      <c03><did><unittitle>Image #41 American Fall from Goat Island, Niagara [New York]</unittitle><physdesc><dimensions>4.5x6.5</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #45 Horseshoe Fall, Niagara [New York]</unittitle><physdesc><dimensions>4.5x6.5</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #49 Whirlpool Rapids, Niagara [New York]</unittitle><physdesc><dimensions>4.5x6.5</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51104 The rapids above the falls, Niagara [New York]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51109 The Horseshoe Fall, Niagara [New York]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51356 Palisades Rift, Thousand Islands, <unitdate normal="1901" type="inclusive">1901</unitdate> [New York]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03></c02>
+<c02 level="subseries"><did><unittitle>California</unittitle></did>
+      <c03><did><unittitle>Image #51144 California, Mirror Lake, Yosemite Valley</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51170 California, palms at Glen Annie</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51202 West Side Park, Los Angeles [California]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51221 Yucca cactus at Hesperia, California</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51265 Ramona's Marriage Place, San Diego Cal [California]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51266 The Lodge, Golden Gate Park, San Francisco, Cal [California]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51312 Lake Merritt, Oakland, California</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51313 Alligator Head, La Jolla [California]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51316 The Country Club, Pasadena [California]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51335 Main entrance &amp; driveway, Leland Stanford Junior University [California]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51337 Western entrance to inner quadrangle, Leland Stanford Junior University [California]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51338 Encina Hall, Leland Stanford Junior University [California]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51370 Grape fruit <unitdate normal="1902" type="inclusive">1902</unitdate> [California]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51398 The Golden Gate, San Francisco <unitdate normal="1901" type="inclusive">1901</unitdate> [California]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51399 Seal Rocks, <unitdate normal="1901" type="inclusive">1901</unitdate> [California]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #53006 Lick Observatory, Mt. Hamilton, Cal. <unitdate normal="1902" type="inclusive">1902</unitdate> [California]</unittitle><physdesc><dimensions>7x9</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #53026 Mission Santa Inez 1898 [California]</unittitle><physdesc><dimensions>7x9</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #53074 Birth of a century: Plate 105, Castle Crags from near Castella, California</unittitle><physdesc><dimensions>7x9</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #53077 Birth of a century: Plate 98b Farnsworth's Loop, Santa Catalina Island [California]</unittitle><physdesc><dimensions>7x9</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #53089 California poppies, <unitdate normal="1899" type="inclusive">1899</unitdate></unittitle><physdesc><dimensions>7x9</dimensions></physdesc><container type="Box">1</container></did></c03></c02>
+   <c02 level="subseries"><did><unittitle>Mexico</unittitle></did>
+      <c03><did><unittitle>Image #51147 The altar, Church of Guadelupe, City of Mexico</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51148 Lavanderas, City of Mexico</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51149 Canal de la Viga, City of Mexico</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51150 Aztec calendar stone, City of Mexico</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51151 Aztec sacrifical stone, City of Mexico</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51152 Mexico, an Aztec idol, Teoyaomiqui</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51154 Mexican carrete, Chihuahua</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51155 Mexico portales of market, Aguas Calientes</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51162 Mexico, a pulque shop, Tacubaya</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51165 A Mexican hacienda</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51166 Mexico, Falls of Juanacatlan</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03></c02>
+   <c02 level="subseries"><did><unittitle>New Mexico</unittitle></did>
+      <c03><did><unittitle>Image #51236 Relics of an ancient race, Pueblo of San Juan, N.M. [New Mexico]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51285 Going to the spring, Pueblo of San Juan, N.M. [New Mexico]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51286 An "estufa", Pueblo of Taos, N.M. [New Mexico]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51287 Packing wood, Santa Fe, N.M. [New Mexico]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03></c02>
+   <c02 level="subseries"><did><unittitle>Canada</unittitle></did>
+      <c03><did><unittitle>Image #51348 Champlain statue, Quebec <unitdate normal="1901" type="inclusive">1901</unitdate> [Canada]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51349 Wolfe and Montcalm Monument, Quebec <unitdate normal="1901" type="inclusive">1901</unitdate> [Canada]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51358 Str. Toronto, St. Lawrence River, <unitdate normal="1901" type="inclusive">1901</unitdate> [Canada]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51368 Champlain Street, Quebec [Canada]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03></c02>
+   <c02 level="subseries"><did><unittitle>Miscellaneous/unidentified</unittitle></did>
+      <c03><did><unittitle>Image #1 Alpine Pass</unittitle><physdesc><dimensions>4.5x6.5</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51128 Michigan, the lighthouse, Palmer Peak, Detroit</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51206 Birth of a century: Plate 85, Woman at the matate, Moki Pueblos, <unitdate normal="1895" type="inclusive">1895</unitdate></unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51210 Bringing in the harvest, Moki Pueblos, <unitdate normal="1897/1907" type="inclusive">ca. 1902</unitdate></unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51211 A Chinese maiden</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51228 Dogwood blossoms</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03>
+      <c03><did><unittitle>Image #51271 Old house at Far Hills, N.J. [New Jersey]</unittitle><physdesc><dimensions>3.5x7</dimensions></physdesc><container type="Box">1</container></did></c03></c02>
+</c01>
+      </dsc>
+</archdesc>
+</ead>

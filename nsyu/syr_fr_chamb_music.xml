@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.6, 9/12/2006 --><!-- Fixed countrycode case -->
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="syr_fr_chamb_music" mainagencycode="NSyU">syr_fr_chamb_music</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Syracuse Friends of Chamber Music Records</titleproper>
+        <subtitle>An inventory of its records at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRR</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2006-10-11">11 Oct 2006</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Rothenberger
+				
+        
+        <date normal="2006-10-11">11 Oct 2006</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>24 Oct 2006 - revised funder/founder information (MRR)</item>
+        <item>13 Oct 2016 - audiorecording inventory added (PJM)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <corpname encodinganalog="110">Syracuse Friends of Chamber Music</corpname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Syracuse Friends of Chamber Music Records</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1950/2004" type="inclusive">1950-2004</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>3 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Records from the Syracuse (New York) music society.   Clippings, constitution and bylaws, correspondence, financial records, fundraising material, grant applications, minutes, printed material, programs.  Includes material related to the organization's 40th anniversary celebration.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2475028</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>The Syracuse Friends of Chamber Music, founded by Syracuse professor of music and violinist Louis Krasner, has been in operation since 1950.  The SFCM brings acclaimed chamber musicians to the H.W. Smith Concert Hall in Jamesville for a series of six concerts each year from October through April.  Past performers include the Ying Quartet, Gryphon Trio, Tokyo String Quartet, and Concertante.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Syracuse Friends of Chamber Music Records</emph> comprises the files
+				of the Syracuse (New York) music society. It includes clippings, constitution and
+				bylaws, correspondence, financial records, fundraising information, grant
+				applications, minutes, printed material, programs, and audio recordings as well as
+				material related to the organization's 40th anniversary celebration.</p>
+    </scopecontent>
+    <!--<arrangement encodinganalog="351$a">
+			<head>Arrangement of the Collection</head>
+			<p>## OPT (MARC 351$a)</p>
+		</arrangement>-->
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>&scrc_name; also has the records of the Syracuse 
+        
+        <extref href="../s/society_new_music.htm">Society for New Music</extref> as well as the records of  
+        
+        <extref href="../c/clark_music.htm">Clark Music Company</extref>, a local manufacturer of pianos and organs, and 
+        
+        <extref href="../k/krasner_l.htm">Professor Louis Krasner's Collection of Bookplates and Ephemera</extref>.</p>
+    </relatedmaterial>
+    <!--<separatedmaterial encodinganalog="544 0">
+			<head>Separated Material</head>
+			<p>## OPT (MARC 544 0)</p>
+		</separatedmaterial>-->
+		
+		<!--<otherfindaid encodinganalog="555">
+			<head>Other Related Finding Aids</head>
+			<p>## OPT (MARC 555)</p>
+		</otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">New York State</subject>
+      <subject encodinganalog="650" source="local">Music</subject>
+      <!--For each, include source if possible (aat, lcsh, local, etc).  
+Some have defaults set in the template.-->
+      <corpname encodinganalog="610" source="local">Syracuse Friends of Chamber Music</corpname>
+      <subject encodinganalog="650" source="lcsh">Chamber music</subject>
+      <subject encodinganalog="650" source="lcsh">Concert programs</subject>
+      <subject encodinganalog="650" source="lcsh">Music -- Societies, etc.</subject>
+      <subject encodinganalog="650" source="lcsh">Music -- Performance -- New York (State) -- Syracuse</subject>
+      <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- Social life and customs</geogname>
+      <geogname encodinganalog="651" source="lcsh">Syracuse (N.Y.) -- Intellectual life</geogname>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Financial records.</genreform>
+      <genreform encodinganalog="655" source="aat">Programs (documents)</genreform>
+      <genreform encodinganalog="655" source="aat">Minutes (administrative records)</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Audiotapes.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Musicians.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p> Syracuse Friends of Chamber Music Records, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of Dorothea P. Nelson and Fritz Rohrlich, Syracuse Friends of Chamber Music board members</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
+			<head>Appraisal Information</head>
+			<p>## OPT (MARC 583)</p>
+		</appraisal>-->
+		
+		<!--<accruals encodinganalog="584">
+			<head>Accruals</head>
+			<p>## OPT (MARC 584)</p>
+		</accruals>-->
+    <dsc type="combined">
+      <head>Inventory</head>
+      <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+      <c01 level="series">
+        <did>
+          <unittitle>Audio Recordings</unittitle>
+        </did>
+        <!--Permissible values for @TYPE for first CONTAINER are: Box, Belfer, Package, SC, Oversize, Volume, Carton, Map-Case, Cabinet, or Tube.-->
+				<!--Permissible values for @TYPE for second CONTAINER are: Folder, Frame, Tape, Page, Drawer, or Reel-->
+        <c02>
+          <did>
+            <unitid> sfcm_001 </unitid>
+            <unittitle> Munson-Williams-Proctor Institute: Michala/Hanne Petri </unittitle>
+            <unitdate normal="1985-04-28"> 04/28/1985 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 1 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_002 </unitid>
+            <unittitle> Ars Musica: The Baroque Orchestra [Pieces 1 and 2] </unittitle>
+            <unitdate normal="1986-02-11"> 02/11/1986 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 1 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_003 </unitid>
+            <unittitle> Ars Musica: The Baroque Orchestra [Piece 3] </unittitle>
+            <unitdate normal="1985-04-14"> 04/14/1985 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 1 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_004 </unitid>
+            <unittitle> Ars Musica: The Baroque Orchestra [Piece 4] </unittitle>
+            <unitdate normal="1985-04-14"> 04/14/1985 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 1 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_005 </unitid>
+            <unittitle> Ars Musica: The Baroque Orchestra [Piece 5 and 6] </unittitle>
+            <unitdate normal="1985-04-14"> 04/14/1985 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 1 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_006 </unitid>
+            <unittitle> Emerson String Quartet - Piece #3 </unittitle>
+            <unitdate normal="1985-11-02"> 11/02/1985 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 1 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_007 </unitid>
+            <unittitle> Emerson Quartet Piece #3 </unittitle>
+            <unitdate normal="1985-11-02"> 11/02/1985 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 1 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_008 </unitid>
+            <unittitle> Cascade Soloists Piece #10 </unittitle>
+            <unitdate normal="1985-11-16"> 11/16/1985 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 1 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_009 </unitid>
+            <unittitle> Cascade Soloists Piece #4 </unittitle>
+            <unitdate normal="1985-11-16"> 11/16/1985 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 1 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_010 </unitid>
+            <unittitle> Juilliard String Quartet - “old” Piece #1 and #2 </unittitle>
+            <unitdate normal="1986-04-26"> 04/26/1986 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 1 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_011 </unitid>
+            <unittitle> Juilliard String Quartet - Piece #2 - Beethoven </unittitle>
+            <unitdate normal="1986-04-26"> 04/26/1986 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 1 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_012 </unitid>
+            <unittitle> Michala Petri Duo - Pieces #1-3 </unittitle>
+            <unitdate normal="1987-03-07"> 03/07/1987 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 1 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_013 </unitid>
+            <unittitle> The Petri Duo - Pieces #1-4 </unittitle>
+            <unitdate normal="1987-03-07"> 03/07/1987 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 2 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_014 </unitid>
+            <unittitle> Los Angeles Piano Quartet </unittitle>
+            <unitdate normal="1987-03-21"> 03/21/1987 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 2 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_015 </unitid>
+            <unittitle> Los Angeles Piano Quartet - Piece #3 Brahms </unittitle>
+            <unitdate normal="1950/2004"> </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 2 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_016 </unitid>
+            <unittitle> Tokyo String Quartet - Part 2 - Pieces #3 and 4 </unittitle>
+            <unitdate normal="1987-04-11"> 04/11/1987 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 2 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_017 </unitid>
+            <unittitle> Tokyo String Quartet - Part 1 - Pieces #1 and 2 </unittitle>
+            <unitdate normal="1987-04-11"> 04/11/1987 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 2 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_018 </unitid>
+            <unittitle> Concerto Soloists: Chamber Orchestra of Philadelphia - Pieces #4
+							and 5 </unittitle>
+            <unitdate normal="1987-10-17"> 10/17/1987 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 2 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_019 </unitid>
+            <unittitle> Concerto Soloists: Chamber Orchestra of Philadelphia - Pieces
+							#1-3 </unittitle>
+            <unitdate normal="1987-10-17"> 10/17/1987 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 2 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_020 </unitid>
+            <unittitle> Boston Chamber Music Society - Piece #2 </unittitle>
+            <unitdate normal="1987-11-14"> 11/14/1987 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 2 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_021 </unitid>
+            <unittitle> Boston Chamber Music Society - Piece #2 </unittitle>
+            <unitdate normal="1987-11-14"> 11/14/1987 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 2 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_022 </unitid>
+            <unittitle> Mendelssohn String Quartet - Piece #2 </unittitle>
+            <unitdate normal="1987-12-05"> 12/05/1987 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 2 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_023 </unitid>
+            <unittitle> Mendelssohn String Quartet - Piece #1 </unittitle>
+            <unitdate normal="1987-12-05"> 12/05/1987 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 2 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_024 </unitid>
+            <unittitle> Vermeer Quartet - Pieces #1-2 </unittitle>
+            <unitdate normal="1988-02-06"> 02/06/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 2 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_025 </unitid>
+            <unittitle> Vermeer Quartet - Piece #3 </unittitle>
+            <unitdate normal="1988-02-06"> 02/06/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 3 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_026 </unitid>
+            <unittitle> The Painter’s Music, The Musician’s Art, An die Musik [Part 1
+							and 2] </unittitle>
+            <unitdate normal="1988-03-19"> 03/19/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 3 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_027 </unitid>
+            <unittitle> The Painter’s Music, The Musician’s Art, An die Musik [Part 3
+							and 4] </unittitle>
+            <unitdate normal="1988-03-19"> 03/19/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 3 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_028 </unitid>
+            <unittitle> Tokyo String Quartet [Pieces #1 and 2] </unittitle>
+            <unitdate normal="1988-04-16"> 04/16/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 3 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_029 </unitid>
+            <unittitle> Tokyo String Quartet [Piece #3] </unittitle>
+            <unitdate normal="1988-04-16"> 04/16/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 3 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_030 </unitid>
+            <unittitle> Takacs String Quartet - Pieces #1-2 [Haydn and Bartok] </unittitle>
+            <unitdate normal="1988-03-12"> 03/12/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 3 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_031 </unitid>
+            <unittitle> Takacs String Quartet - Pieces #2-3 [Bartok and Brahms] </unittitle>
+            <unitdate normal="1988-03-12"> 03/12/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 3 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_032 </unitid>
+            <unittitle> Members of the Juilliard String Quartet with Gilbert Kalish
+							[Piece #1-5] </unittitle>
+            <unitdate normal="1988-10-15"> 10/15/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 3 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_033 </unitid>
+            <unittitle> Members of the Juilliard String Quartet with Gilbert Kalish
+							[Piece #2] </unittitle>
+            <unitdate normal="1988-10-15"> 10/15/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 3 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_034 </unitid>
+            <unittitle> Los Angeles Piano Quartet [Piece #6] </unittitle>
+            <unitdate normal="1989-10-21"> 10/21/1989 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 3 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_035 </unitid>
+            <unittitle> Music Antiqua Koln - Pieces #8-10 [Purcell, Biber, Pachelbel] </unittitle>
+            <unitdate normal="1988-10-29"> 10/29/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 3 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_036 </unitid>
+            <unittitle> Music Antiqua Koln - Pieces #11-14 [Telemann, Bach, Biber] </unittitle>
+            <unitdate normal="1988-10-29"> 10/29/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 3 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_037 </unitid>
+            <unittitle> Musicians from Marlboro - Pieces #4-5 [Beethoven and
+							Shostakovich] </unittitle>
+            <unitdate normal="1988-11-12"> 11/12/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_038 </unitid>
+            <unittitle> Musicians from Marlboro - Piece #3 [Dvorak] </unittitle>
+            <unitdate normal="1988-11-12"> 11/12/1988 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_039 </unitid>
+            <unittitle> Buswell-Parnas-Luvisi Trio [Haydn, Zaninelli and Brahms] </unittitle>
+            <unitdate normal="1989-01-21"> 01/21/1989 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_040 </unitid>
+            <unittitle> Emerson String Quartet - Pieces #1-2 [Schubert and Shostakovich] </unittitle>
+            <unitdate normal="1989-09-23"> 09/23/1989 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_041 </unitid>
+            <unittitle> Emerson String Quartet - Pieces #4-5 [Beethoven and Haydn
+							encore] </unittitle>
+            <unitdate normal="1989-09-23"> 09/23/1989 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_042 </unitid>
+            <unittitle> Los Angeles Piano Quartet - Piece #7 [Dvorak] </unittitle>
+            <unitdate normal="1989-10-21"> 10/21/1989 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_043 </unitid>
+            <unittitle> Buswell-Parnas-Luvisi Trio </unittitle>
+            <unitdate normal="1989-01-21"> 01/21/1989 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_044 </unitid>
+            <unittitle> [untitled Syracuse Friends of Chamber Music Tape #1] </unittitle>
+            <unitdate normal="1950/2004"> </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_045 </unitid>
+            <unittitle> [untitled Syracuse Friends of Chamber Music Tape #2] </unittitle>
+            <unitdate normal="1950/2004"> </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_046 </unitid>
+            <unittitle> Tokyo String Quartet </unittitle>
+            <unitdate normal="1984-10-27"> 10/27/1984 </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_047 </unitid>
+            <unittitle> [Tokyo String Quartet] </unittitle>
+            <unitdate normal="1950/2004"> </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_048 </unitid>
+            <unittitle> [Tokyo String Quartet] </unittitle>
+            <unitdate normal="1950/2004"> </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unitid> sfcm_049 </unitid>
+            <unittitle> Emerson Quartet - Musica Viva </unittitle>
+            <unitdate normal="1950/2004"> </unitdate>
+            <physdesc> 1/4 inch audio tape </physdesc>
+            <container type="Oversize"> 4 </container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.11, 17 Oct 2008-->
+<!--Revised standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="osheel_s">osheel_s</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Shaemas O'Sheel Letters</titleproper>
+            <subtitle>An  inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2008-11-26" encodinganalog="Date">26 Nov 2008</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-11-26">26 Nov 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">O'Sheel, Shaemas, 1886-1954.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Shaemas O'Sheel Letters</unittitle>
+         <unitdate encodinganalog="245$f" normal="1938/1941" type="inclusive" label="Inclusive Dates: ">1938-1941</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 folder (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Letters from the Irish-American poet and critic to artist and illustrator Art Young.  Mentions O'Sheel's relationship to the Communist Party, including his falling out and subsequent exile from the pages of <emph render="italic">New Masses</emph>.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2649913</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Shaemas O'Sheel (1886–1954) was an Irish-American poet and critic.    Born Shaemas Shields, he changed his surname to the more Gaelic "O'Sheel" soon after high school.  He worked for the United States Senate (1913-1916) followed by employment with various newspapers, did  publicity and advertising work, and was active in the Irish independence movement.  He was "a very ardent Communist and a staunch supporter of the Soviet Union" (letter, O'Sheel to Young, April 17, 1938), though he disagreed vigorously with their foreign policy; as a result many of the usual Communist and radical outlets such as <emph render="italic">New Masses</emph> were closed to him.   He published four books of poetry, and his work appeared in the <emph render="italic">New York Times</emph>, the <emph render="italic">New York Times Book Review</emph>, <emph render="italic">Harper's</emph>, and other national publications.</p><p>[Portions of this biographical sketch adapted from O'Sheel's obituary in the <emph render="italic">New York Times</emph>, April 4, 1954.]</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Shaemas O'Sheel Letters</emph> consist of two letters from Shaemas O'Sheel to artist Art Young regarding possible collaboration on a book.  "A kind of book of indignation, as one might say...grand drawings from your pen, putting some of the evils and some of the villains of this age on the spit, turning them over a slow fire, to the accompaniment of "poems" in which I would strive to echo...the Olympian force of your pen."  O'Sheel speaks, half-jokingly, of his desire "to begin the rehabilitation of my name, and even introduce it for the first time to the cruel generations of the youthful who know me not."</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Letters are in chronological order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has extensive collections relating to American radical writers and artists.  Please refer to &subjindex; for a complete listing.</p>
+      </relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Literature -- American Poetry</subject><subject encodinganalog="650" source="local">Radicalism</subject><persname encodinganalog="600" source="lcnaf">O'Sheel, Shaemas, 1886-1954 -- Archives.</persname><persname encodinganalog="600" source="lcnaf">Young, Art, 1866-1943.</persname>
+         <persname encodinganalog="700" source="lcnaf">Young, Art, 1866-1943 -- recipient.</persname><!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         
+         <subject encodinganalog="650" source="lcsh"> Communists -- United States.</subject><subject encodinganalog="650" source="lcsh">Poets, American -- 20th century -- Biography.</subject><subject encodinganalog="650" source="lcsh">Radicals -- United States.</subject><subject encodinganalog="650" source="lcsh">Radicalism in literature.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Poets.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Shaemas O'Sheel Letters, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Purchase, 2008.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+               
+               
+            <c02><did><unittitle>Young, Art</unittitle><unitdate normal="1938" type="inclusive">1938, </unitdate><unitdate normal="1941" type="inclusive">1941</unitdate><container type="SC">270</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

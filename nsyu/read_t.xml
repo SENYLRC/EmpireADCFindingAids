@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.10, 22 May 2008-->
+<!-- Added standard blurb for related material -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="read_t">read_t</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Thomas Read Commonplace Book</titleproper>
+            <subtitle>A description of the item at Syracuse University</subtitle>
+         <author encodinganalog="Creator">KM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="1997-01" encodinganalog="Date">Jan 1997</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2008-09-02">2 Sep 2008</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Read, Thomas (fl. 1624)</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Thomas Read Commonplace Book</unittitle>
+         <unitdate encodinganalog="245$f" normal="1624" type="inclusive" label="Inclusive Dates: ">1624</unitdate>
+           <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 volume (SC)</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Compiled ca. 1624 by Thomas Read, a student at Oxford 
+University's Magdalen College.  Entitled "a not-booke of divinity and honor military and civill."  The author may have been 
+that Thomas Read (1606-1669) who was Latin secretary to the crown for King Charles II.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2631161</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Thomas Read was a student at Oxford University's Magdalen College in 1624.  He may have been 
+that Thomas Read (1606-1669) who was appointed Latin secretary to the crown in 1620; he was later (1649) 
+ordained a Catholic priest and allowed to return to London following the Restoration of King Charles II 
+in 1660.  However, this cannot be established for certain.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>Compiled ca. 1624 by a young Oxford student at Magdalen College, the <emph render="bold">Thomas Read Commonplace Book</emph> bears the 
+characterization, "a not-booke of divinity and honor military and civill."  Among other selections, the notebook contains 
+37 poems by Jesuit priest Robert Southwell (1561-1595), martyred during the reign of Queen Elizabeth and later (1970) 
+elevated to sainthood.  Read's notebook includes three Southwell poems which apparently had not been published before donors 
+George and Lena Arents incorporated them into their 1949 holiday greeting card.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Single volume, 186 leaves.</p>
+      </arrangement>
+      
+      <!-- <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p><p>&scrc_name; has made a concerted effort over the 
+years to ensure that its manuscript and rare books holdings complement each other.  
+As a result, many of our manuscript collections are supported by books, pamphlets, 
+serials and other items which are cataloged in the Rare Books Collection.  Please be 
+sure to search &summitref; for these related materials.</p>
+      </relatedmaterial> -->
+      
+      <!--Use archref, not extref, to link to related collections.-->
+      <!-- <separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial> -->
+      
+      <!-- <otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid> -->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Literature -- British</subject>			
+         <persname encodinganalog="600" source="lcnaf">Read, Thomas (fl. 1624)</persname>
+         <persname encodinganalog="600" source="lcnaf">Southwell, Robert, Saint, 1561?-1595.</persname>
+         <!-- <famname encodinganalog="600" source="lcnaf">##</famname> -->
+         <!-- <corpname encodinganalog="610" source="lcnaf">##</corpname> -->
+         <!-- <title encodinganalog="630" source="lcnaf">##</title> -->
+         <subject encodinganalog="650" source="lcsh">English poetry -- Early modern, 1500-1700.</subject>
+         <subject encodinganalog="650" source="lcsh">Honor -- Quotations, maxims, etc.</subject>
+         <subject encodinganalog="650" source="lcsh">Religion -- Quotations, maxims, etc.</subject>
+         <!-- <geogname encodinganalog="651" source="lcsh">##</geogname> -->
+         <genreform encodinganalog="655" source="aat">Commonplace books.</genreform>
+         <genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Scholars -- England.</occupation>
+         <occupation encodinganalog="656" source="lcsh">Students -- England.</occupation>
+         <!-- <function encodinganalog="657">##</function></controlaccess> -->
+      </controlaccess>
+		
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Thomas Read Commonplace Book, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">George and Lena Arents</persname>.</p>
+      </acqinfo>
+      
+      <!-- <appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal> -->
+      
+      <!-- <accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals> -->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <c01 level="series">
+            <did>
+               <unittitle>Memorabilia</unittitle>
+            </did>
+            <c02>
+               <did>
+                  <unittitle>Commonplace book</unittitle>
+                  <unitdate normal="1619/1929" type="inclusive">ca. 1624</unitdate>
+                  <container type="SC">149</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

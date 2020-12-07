@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="haraldson_wc">haraldson_wc</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Wesley C. Haraldson Papers</titleproper>
+            <subtitle>An inventory of his papers at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-03-27" encodinganalog="Date">27 Mar 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs
+            <date normal="2010-03-27">27 Mar 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>3 Jan 2017 - processed (MRC)</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Haraldson, Wesley C.</persname>
+         </origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Wesley C. Haraldson Papers</unittitle>
+         <unitdate encodinganalog="245$f" normal="1940/1967" type="inclusive" label="Inclusive Dates: ">1966-1967</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Audiorecordings, memorabilia, speeches/remarks, all relating to Haraldson's work as 
+			director of the United States Agency for International Development (USAID). </abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2741965</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Wesley C. Haraldson (1909 or 1910-1996) graduated from Jamestown College in 1935.  An economist by training, Haraldson worked first for the Federal Reserve but spent most of his career as a Foreign Service Officer, including work with Taiwan, China, Vietnam, and the Philippines,  and served as director of the Agency for International Development (USAID).</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Wesley C. Haraldson Papers</emph> consist of audiorecordings, memorabilia, and 
+			speeches/remarks.</p>
+			<p><emph render="bold">Audiorecordings</emph> includes interviews, speeches, and coverage of one of 
+			Haraldson's reports.</p>
+			<p><emph render="bold">Memorabilia</emph> contains photographs, clippings, a c.v., and a few items of 
+			printed material.  Some of this material was acquired separately; see <ref target="acqinfo">Acquisition Information</ref> below 
+			for details.</p>
+			<p><emph render="bold">Speeches/remarks</emph> by Haraldson includes commencement addresses, conference addresses, and a 
+			statement given to the House Foreign Affairs Committee.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Audiorecordings and speeches/remarks are arranged in chronological order.  Memorabilia is in alphabetical order by type.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p>
+      </relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+		 <subject encodinganalog="650" source="local">Politics, government and public administration</subject>
+		 <persname encodinganalog="600" source="lcnaf">Haraldson, Wesley C.</persname>
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">United States. -- Agency for International Development.</corpname>
+		 <corpname encodinganalog="610" source="lcnaf">USAID/Philippines.</corpname>
+		 <corpname encodinganalog="610" source="lcnaf">USOM to the Philippines.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Community development -- Philippines.</subject>
+         <subject encodinganalog="650" source="lcsh">Economic development -- Philippines.</subject>
+         <subject encodinganalog="650" source="lcsh">Rural development -- Philippines.</subject>
+         <geogname encodinganalog="651" source="lcsh">Philippines -- Politics and government.</geogname>
+         <geogname encodinganalog="651" source="lcsh">Philippines. -- Presidential Arm on Community Development.</geogname><geogname encodinganalog="651" source="lcsh">Philippines -- Rural conditions.</geogname>
+         <genreform encodinganalog="655" source="aat">Sound recordings.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+		 <genreform encodinganalog="655" source="aat">Interviews.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
+		 
+		 
+         <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+         <!--<function encodinganalog="657">##</function>-->
+		 </controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p><p>Access to audiorecordings requires advance notice to produce a working copy.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Wesley C. Haraldson Papers, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541" id="acqinfo">
+         <head>Acquisition Information</head>
+         <p>Bulk of material, gift of <persname role="donor">Wesley C. Haraldson</persname>, 1967.</p>
+         <p>Items in Memorabilia : Miscellaneous folder were acquired separately in 2014. 
+		 They were among some of Mrs. Ada Haraldson's papers that were given to a genealogical society 
+		 in Phoenix, Arizona, and later transferred to &scrc_name;.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>## OPT (MARC 583)</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Audiorecordings</unittitle></did>
+            <c02><did><unittitle>Mr. Wesley Haraldson 10th Anniversary of the Presidential Arm on Community Development P.A.C.D.</unittitle><unitid>haraldson_w_001</unitid><unitdate normal="##" type="inclusive">1965</unitdate><physdesc>1/4 inch audio tape</physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>[Haraldson at opening ceremonies; awards ceremony]</unittitle><unitid>haraldson_w_002</unitid><unitdate normal="##" type="inclusive">19 Oct 1966; </unitdate><unitdate normal="##" type="inclusive">3 Apr 1967</unitdate><physdesc>1/4 inch audio tape</physdesc><container type="Box">1</container></did><scopecontent><p>1. Mr. Haraldson at the opening ceremonies of first in-service training course for Facoma [?] managers April 3, 1967 /  2. Mr. Haraldson receives award for international understanding from Manila Kiwanis Club Oct 19, 1966</p></scopecontent></c02>
+            <c02><did><unittitle>[Report on Haraldson’s speech; press interview of Haraldson]</unittitle><unitid>haraldson_w_003</unitid><unitdate normal="##" type="inclusive">11 May 1967; </unitdate><unitdate normal="##" type="inclusive">undated</unitdate><physdesc>1/4 inch audio tape</physdesc><container type="Box">1</container></did><scopecontent><p>1. A report on Mr. Wesley Haraldson’s speech before the Kiwanis Club of Manila / 2. Press interview of Mr. Wesley Haraldson on his “Corruption of R. P. Officials,” a statement made at a U.S. Congress inquiry May 11, 1967</p></scopecontent></c02>
+            <c02><did><unittitle>Mr. Wesley Haraldson at the 2nd FOA Fellow Conference</unittitle><unitid>haraldson_w_004</unitid><unitdate normal="##" type="inclusive">Aug. 9. 1967</unitdate><physdesc>1/4 inch audio tape</physdesc><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Biographical material</unittitle><abstract>photograph, curriculum vitae</abstract><unitdate normal="##" type="inclusive"></unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Clippings</unittitle><abstract></abstract><unitdate normal="##" type="inclusive"></unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Miscellaneous</unittitle><unitdate normal="##" type="inclusive"></unitdate><container type="Box">1</container></did><acqinfo><p>This folder of material was acquired separately; see <ref target="acqinfo">Acquisition Information</ref> above for details.</p></acqinfo></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Speeches and remarks</unittitle></did>
+            <c02><did><unittitle>First National Conference of Technical Assistance Participants, Manila</unittitle><unitdate normal="##" type="inclusive">11-13 Aug, 1965</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>University of the Philippines</unittitle><unitdate normal="##" type="inclusive">9 Sep 1965</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>National Science and Technology Week</unittitle><unitdate normal="##" type="inclusive">6 Dec 1965</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Let's Talk Business (television show)</unittitle><unitdate normal="##" type="inclusive">7 Jan 1966</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>USAID Textbook Project</unittitle><abstract>on occasion of 20 millionth textbook</abstract><unitdate normal="##" type="inclusive">5 Apr 1966</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Commencement exercises</unittitle><abstract>Xavier University; Mindanao Institute of Technology</abstract><unitdate normal="##" type="inclusive">May 1966</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Regional Seminar on Public Administration, Davao City</unittitle><unitdate normal="##" type="inclusive">12 May 1966</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>United States Congress Committee on Foreign Affairs</unittitle><unitdate normal="##" type="inclusive">Apr 1967</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>2nd National Conference, Philippine FAO Fellows</unittitle><abstract>"Must the Philippines Go Hungry?"</abstract><unitdate normal="##" type="inclusive">9 Aug 1967</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

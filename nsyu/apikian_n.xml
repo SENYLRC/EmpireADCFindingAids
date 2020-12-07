@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
+<!ENTITY su_address SYSTEM "su_address.txt">
+<!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
+<!-- added entity for linking to collection search. -->
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="apikian_n">apikian_n</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">Nevart Apikian Entertainment Audio Interviews</titleproper>
+            <subtitle>An inventory of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">PJM</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2014-05-01" encodinganalog="Date">01 May 2014</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Patrick J. Midtlyng<date normal="2014-05-01">01 May 2014</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item>28 Mar 2018 - recordings, LC names added; description expanded (MRC/IRP)</item><item>15 Jun 2018 - id no. 070 updated</item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: ">
+            <persname encodinganalog="100">Apikian, Nevart.</persname>
+        <!-- <corpname encodinganalog="110">##</corpname>--></origination>
+         <unittitle encodinganalog="245$a" label="Title: ">Nevart Apikian Entertainment Audio Interviews</unittitle>
+         <unitdate encodinganalog="245$f" normal="1971/1985" type="inclusive" label="Inclusive Dates: ">1971-1985</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1.0 linear feet</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Armenian-American Entertainment
+            Reporter. Syracuse University Graduate. Collection contains audio interviews and press
+            conferences Apikian conducted for the Syracuse Post Standard</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4145805</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>Nevart Apikian received a degree in journalism from Syracuse University in 1940. She began
+            working at The Syracuse Post-Standard in 1942 as a news reporter. Eventually she became
+            the theater and movie critic, a position she held for 25 years until her retirement in
+            1998.</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">Nevart Apikian Entertainment Audio Interviews</emph> consists of
+            82 audio cassette tapes. The tapes contain recordings of interviews of musicians,
+            performers, film stars, film producers and film directors conducted by Ms. Apikian as
+            well as recordings of press conferences.  For each cassette, the name of the movie mentioned or discussed is given, if known.  Movies referenced include <emph render="italic">Alien</emph> (1979), <emph render="italic">The Big Fix</emph> (1978), <emph render="italic">The Boys from Brazil</emph> (1978), <emph render="italic">China Syndrome</emph> (1979), <emph render="italic">The Fury</emph> (1978), <emph render="italic">The Great Train Robbery</emph> (1978), <emph render="italic">Moonraker</emph> (1979), <emph render="italic">Norma Rae</emph> (1979), and many more.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>Items are arranged in order by ID number, but are listed in the inventory below in alphabetical order.</p>
+      </arrangement>
+      
+      <relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>&scrc_name; has numerous collections pertaining to television and film entertainment, including the <archref href="../h/harvith_int.htm">John and Susan Edwards Harvith Interview Collection</archref> and the <archref href="../s/scheuer_sh_int.htm">Steven H. Scheuer Television History Interviews</archref>.  See &subjindex; for a complete listing, or &searchcoll;.</p></relatedmaterial>
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         
+			
+			<subject encodinganalog="650" source="local">Radio, television, film</subject>
+         <subject encodinganalog="650" source="local">Journalism</subject>
+         
+         <subject encodinganalog="650" source="local">Popular culture</subject>
+
+<persname encodinganalog="600" source="lcnaf">Aldrich, Robert, 1918-1983.</persname>
+<persname encodinganalog="600" source="lcnaf">Altman, Robert, 1925-2006.</persname>
+<persname encodinganalog="600" source="lcnaf">Andrews, Julie.</persname>
+
+<persname encodinganalog="600" source="lcnaf">Arkin, Alan.</persname>
+<persname encodinganalog="600" source="lcnaf">Arnaz, Desi, Jr., 1953-</persname>
+<persname encodinganalog="600" source="lcnaf">Ashby, Hal.</persname>
+<persname encodinganalog="600" source="lcnaf">Bakshi, Ralph.</persname>
+<persname encodinganalog="600" source="lcnaf">Bates, Alan, 1934-2003.</persname>
+<persname encodinganalog="600" source="lcnaf">Bridges, Beau.</persname>
+<persname encodinganalog="600" source="lcnaf">Bridges, James.</persname>
+<persname encodinganalog="600" source="lcnaf">Broccoli, Albert R., 1909-1996.</persname>
+<persname encodinganalog="600" source="lcnaf">Burnett, Carol.</persname>
+<persname encodinganalog="600" source="lcnaf">Caesar, Sid, 1922-</persname>
+<persname encodinganalog="600" source="lcnaf">Carroll, Gordon, 1928-2005.</persname>
+<persname encodinganalog="600" source="lcnaf">Cassavetes, John, 1929-1989.</persname>
+<persname encodinganalog="600" source="lcnaf">Cecconi-Bates, A. (Augusta), 1933-</persname>
+<persname encodinganalog="600" source="lcnaf">Chayefsky, Paddy, 1923-1981.</persname>
+<persname encodinganalog="600" source="lcnaf">Connery, Sean.</persname>
+<persname encodinganalog="600" source="lcnaf">Coppola, Francis Ford, 1939-</persname>
+<persname encodinganalog="600" source="lcnaf">Cox, Patricia Nixon, 1946-</persname>
+<persname encodinganalog="600" source="lcnaf">Crichton, Michael, 1942-2008.</persname>
+<persname encodinganalog="600" source="lcnaf">Curtis, Tony, 1925-2010.</persname>
+<persname encodinganalog="600" source="lcnaf">De Havilland, Olivia.</persname>
+<persname encodinganalog="600" source="lcnaf">De Niro, Robert.</persname>
+<persname encodinganalog="600" source="lcnaf">De Palma, Brian.</persname>
+<persname encodinganalog="600" source="lcnaf">Dern, Bruce.</persname>
+<persname encodinganalog="600" source="lcnaf">Douglas, Kirk, 1916-</persname>
+<persname encodinganalog="600" source="lcnaf">Douglas, Michael.</persname>
+<persname encodinganalog="600" source="lcnaf">Douglas, Sarah, 1952-</persname>
+<persname encodinganalog="600" source="lcnaf">Down, Lesley-Anne.</persname>
+<persname encodinganalog="600" source="lcnaf">Dreyfuss, Richard.</persname>
+<persname encodinganalog="600" source="lcnaf">Duff, Howard, 1913-1990.</persname>
+<persname encodinganalog="600" source="lcnaf">Dunaway, Faye.</persname>
+<persname encodinganalog="600" source="lcnaf">Durning, Charles, 1923-2012.</persname>
+<persname encodinganalog="600" source="lcnaf">Duvall, Robert.</persname>
+<persname encodinganalog="600" source="lcnaf">Falk, Peter, 1927-2011.</persname>
+<persname encodinganalog="600" source="lcnaf">Field, Sally.</persname>
+<persname encodinganalog="600" source="lcnaf">Finch, Peter, 1916-1977.</persname>
+<persname encodinganalog="600" source="lcnaf">Fisher, Carrie.</persname>
+<persname encodinganalog="600" source="lcnaf">Foldi, Erzsebet.</persname>
+<persname encodinganalog="600" source="lcnaf">Fonda, Henry, 1905-1982.</persname>
+<persname encodinganalog="600" source="lcnaf">Fonda, Jane, 1937-</persname>
+<persname encodinganalog="600" source="lcnaf">Ford, Harrison, 1942-</persname>
+<persname encodinganalog="600" source="lcnaf">Fosse, Bob, 1927-1987.</persname>
+<persname encodinganalog="600" source="lcnaf">Gassman, Vittorio.</persname>
+<persname encodinganalog="600" source="lcnaf">Gish, Lillian, 1893-1993.</persname>
+<persname encodinganalog="600" source="lcnaf">Gleason, Jackie, 1916-1987.</persname>
+<persname encodinganalog="600" source="lcnaf">Grant, Lee, 1927-</persname>
+<persname encodinganalog="600" source="lcnaf">Grey, Joel, 1932-</persname>
+<persname encodinganalog="600" source="lcnaf">Hackman, Gene.</persname>
+<persname encodinganalog="600" source="lcnaf">Hamill, Mark.</persname>
+<persname encodinganalog="600" source="lcnaf">Hassett, Marilyn.</persname>
+<persname encodinganalog="600" source="lcnaf">Hellman, Jerome.</persname>
+<persname encodinganalog="600" source="lcnaf">Heston, Charlton.</persname>
+<persname encodinganalog="600" source="lcnaf">Hill, George Roy, 1921-2002.</persname>
+<persname encodinganalog="600" source="lcnaf">Holden, William, 1918-1981.</persname>
+<persname encodinganalog="600" source="lcnaf">Hope, Bob, 1903-2003.</persname>
+<persname encodinganalog="600" source="lcnaf">Hudson, Rock, 1925-1985.</persname>
+<persname encodinganalog="600" source="lcnaf">Hutton, Lauren.</persname>
+<persname encodinganalog="600" source="lcnaf">Jarrott, Charles, 1927-2011.</persname>
+<persname encodinganalog="600" source="lcnaf">Jones, Tommy Lee, 1946-</persname>
+<persname encodinganalog="600" source="lcnaf">Kagan, Jeremy Paul.</persname>
+<persname encodinganalog="600" source="lcnaf">Kazanjian, Howard.</persname>
+<persname encodinganalog="600" source="lcnaf">Kershner, Irvin.</persname>
+<persname encodinganalog="600" source="lcnaf">Kiel, Richard, 1939-2014.</persname>
+<persname encodinganalog="600" source="lcnaf">Lansbury, Angela, 1925-</persname>
+<persname encodinganalog="600" source="lcnaf">Lee, Christopher, 1922-2015.</persname>
+<persname encodinganalog="600" source="lcnaf">Lemmon, Jack.</persname>
+<persname encodinganalog="600" source="lcnaf">Lennon, John, 1940-1980.</persname>
+<persname encodinganalog="600" source="lcnaf">Lester, Richard, 1932-</persname>
+<persname encodinganalog="600" source="lcnaf">Lumet, Sidney, 1924-2011.</persname>
+<persname encodinganalog="600" source="lcnaf">Mason, James, 1909-1984.</persname>
+<persname encodinganalog="600" source="lcnaf">Mazursky, Paul.</persname>
+<persname encodinganalog="600" source="lcnaf">McCormick, Pat, 1927-2005.</persname>
+<persname encodinganalog="600" source="lcnaf">Merrick, David, 1911-2000.</persname>
+<persname encodinganalog="600" source="lcnaf">Merrill, Dina.</persname>
+<persname encodinganalog="600" source="lcnaf">Murphy, Michael, 1938-</persname>
+<persname encodinganalog="600" source="lcnaf">Newman, Paul, 1925-2008.</persname>
+<persname encodinganalog="600" source="lcnaf">Novak, Kim.</persname>
+<persname encodinganalog="600" source="lcnaf">O'Halloran, Jack, 1943-</persname>
+<persname encodinganalog="600" source="lcnaf">Ono, Yōko.</persname>
+<persname encodinganalog="600" source="lcnaf">Palance, Jack, 1919-2006.</persname>
+<persname encodinganalog="600" source="lcnaf">Peck, Gregory, 1916-2003.</persname>
+<persname encodinganalog="600" source="lcnaf">Peerce, Larry.</persname>
+<persname encodinganalog="600" source="lcnaf">Porter, Don, 1912-1997.</persname>
+<persname encodinganalog="600" source="lcnaf">Reynolds, Burt.</persname>
+<persname encodinganalog="600" source="lcnaf">Ritt, Martin, 1914-1990.</persname>
+<persname encodinganalog="600" source="lcnaf">Rivers, Joan.</persname>
+<persname encodinganalog="600" source="lcnaf">Rosen, Martin.</persname>
+<persname encodinganalog="600" source="lcnaf">Rowlands, Gena.</persname>
+<persname encodinganalog="600" source="lcnaf">Sarandon, Susan, 1946-</persname>
+<persname encodinganalog="600" source="lcnaf">Schaffner, Franklin J.</persname>
+<persname encodinganalog="600" source="lcnaf">Scheider, Roy.</persname>
+<persname encodinganalog="600" source="lcnaf">Scott, Ridley.</persname>
+<persname encodinganalog="600" source="lcnaf">Simon, Roger L. (Roger Lichtenberg), 1943-</persname>
+<persname encodinganalog="600" source="lcnaf">Snodgress, Carrie.</persname>
+<persname encodinganalog="600" source="lcnaf">Spacek, Sissy.</persname>
+<persname encodinganalog="600" source="lcnaf">Stamp, Terence.</persname>
+<persname encodinganalog="600" source="lcnaf">Taylor, Elizabeth, 1932-2011.</persname>
+<persname encodinganalog="600" source="lcnaf">Tocco, James.</persname>
+<persname encodinganalog="600" source="lcnaf">Tomlin, Lily.</persname>
+<persname encodinganalog="600" source="lcnaf">Travolta, John, 1954-</persname>
+<persname encodinganalog="600" source="lcnaf">Voight, Jon, 1938-</persname>
+<persname encodinganalog="600" source="lcnaf">Warren, Jennifer, 1941-</persname>
+<persname encodinganalog="600" source="lcnaf">Weaver, Sigourney, 1949-</persname>
+<persname encodinganalog="600" source="lcnaf">Wilder, Gene, 1933-2016.</persname>
+<persname encodinganalog="600" source="lcnaf">Williams, Billy Dee, 1937-</persname>
+<persname encodinganalog="600" source="lcnaf">Winfield, Paul.</persname>
+<persname encodinganalog="600" source="lcnaf">Winkler, Henry, 1945-</persname>
+<persname encodinganalog="600" source="lcnaf">Yablans, Frank.</persname>
+
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
+        <!-- <title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Actors -- United States --
+            Interviews.</subject>
+         <subject encodinganalog="650" source="lcsh">Actresses -- United States --
+            Interviews.</subject>
+         <subject encodinganalog="650" source="lcsh">Dancers -- United States --
+            Interviews.</subject>
+         <subject encodinganalog="650" source="lcsh">Motion picture producers and
+            directors.</subject> 
+         <subject encodinganalog="650" source="lcsh">Motion pictures -- United States.</subject>
+         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+			<genreform encodinganalog="655" source="aat">Audiocassettes.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Film critics.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      <p>Access to the tapes requires advance notice for production of a listening copy.</p>
+    </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>Nevart Apikian Entertainment Audio Interviews,<lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Donna M. Coyle</persname>, 2014.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="combined">
+         <head>Inventory</head>
+         <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+         <c01 level="series"><did><unittitle>Recordings</unittitle></did>
+   <c02><did><unittitle>Albert Broccoli; Kiel (Jaws), James [?]</unittitle><unitid>apikian_n_024</unitid><unitdate type="inclusive" normal="1979-06-21">June 21-79</unitdate><abstract>audio recording of Albert Broccoli and Richard Kiel, both starred in the 1979 movie Moonraker</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Alien I: S. Weaver; Arthur Cyger [?], Ridley Scott, director</unittitle><unitid>apikian_n_041</unitid><abstract>interview with Sigourney Weaver, Arthur Cyger [?], and Ridley Scott, director of "Alien I". More illegible notes</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Augusta Cecconi-Bates (works) (North/South Consonance' Concert, New York City)</unittitle><unitid>apikian_n_032</unitid><unitdate type="inclusive" normal="1982-10-17">Oct 17/82</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>The Big Fix - Press Conference (1 of 6)</unittitle><unitid>apikian_n_077</unitid><abstract>audio recording of the press conference for "The Big Fix" (1978 Film)</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>The Big Fix - Press Conference (2 of 6)</unittitle><unitid>apikian_n_078</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>The Big Fix - Press Conference (3 of 6)</unittitle><unitid>apikian_n_079</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>The Big Fix - Press Conference (4 of 6)</unittitle><unitid>apikian_n_080</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>The Big Fix - Press Conference (5 of 6)</unittitle><unitid>apikian_n_081</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>The Big Fix - Press Conference (6 of 6)</unittitle><unitid>apikian_n_082</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Billy Dee Williams, Mark Hamill and director [Irvin] Kershner</unittitle><unitid>apikian_n_073</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Bob Fosse; Roy Scheider</unittitle><unitid>apikian_n_056</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Bob Hope; Nevart</unittitle><unitid>apikian_n_031</unitid><unitdate type="inclusive" normal="1982-09-29">Sept 29-1982</unitdate><abstract>on post-it note reads: "Nevart interviews, phone interview 16:25 minutes"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Bridge too far (I and II)</unittitle><unitid>apikian_n_058</unitid><unitdate type="inclusive" normal="1977-05-21">May 21 '77</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Bridge too far (III)</unittitle><unitid>apikian_n_059</unitid><unitdate type="inclusive" normal="1977-05-21">May 21 '77</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Bruce Dern (Chicago)</unittitle><unitid>apikian_n_011</unitid><unitdate type="inclusive" normal="1978-03-18">03/18/1978</unitdate><abstract>written on post-it note: "On movie UA - "Coming Home", apologies"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>C3PO - by [?] Darth Vader; Darth Vader and Billy Dee Williams</unittitle><unitid>apikian_n_072</unitid><abstract>written on post-it note: "28:35m" (side 1); "box 3" (other side)</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Carrie Fisher, Harrison Ford; Carrie Fisher</unittitle><unitid>apikian_n_071</unitid><abstract>written on post-it note: "25:16m" (side 1); "box 3" (other side)</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>[Carroll ?] producing "Alien"</unittitle><unitid>apikian_n_042</unitid><abstract>illegible handwriting, title might be different</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>China Syndrome: Michael Duglas, [James] Bridges; [James] Bridges star, Jack Lemmon</unittitle><unitid>apikian_n_022</unitid><unitdate type="inclusive" normal="1979-03">March 1979</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Coppola Press Conference (1)</unittitle><unitid>apikian_n_060</unitid><abstract>audio recording of Francis Ford Coppola Press Conference; written on post-it note: "on Apocalypse Now"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Coppola Press Conference (2)</unittitle><unitid>apikian_n_061</unitid><abstract>audio recording of Francis Ford Coppola Press Conference; written on post-it note: "on Apocalypse Now"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Damien: Don Porter; Bill Holn [sic]</unittitle><unitid>apikian_n_052</unitid><abstract>audio recording of  Don Porter; William Holden, starred in the 1978 movie Damien: Omen II; more illegible notes on the cassette</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Desi Arnaz and Amy Stryker</unittitle><unitid>apikian_n_067</unitid><abstract>Desi Arnaz Jr. and Amy Stryker both starred in the 1978 movie A Wedding; written on post-it note: "many voices"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Dina Merrill, Pat McCormick, Viven John [?]</unittitle><unitid>apikian_n_017</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>The Fonz: Henry Winkler</unittitle><unitid>apikian_n_008</unitid><unitdate type="inclusive" normal="1977-10-27">Oct. 27 '77</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Gene Hackman; Ric Lester</unittitle><unitid>apikian_n_063</unitid><abstract>audio recording of Gene Hackman and Richard Lester, referencing the 1980 movie Superman II</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Gene Wilder - The World's Greatest Lover (New York City Restaurant)</unittitle><unitid>apikian_n_009</unitid><unitdate type="inclusive" normal="1977-12-08">Dec. 8, 1977</unitdate><abstract>Gene Wilder starred in the 1977 movie The World's Greatest Lover</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>The Great Train Robbery: Sean Connery, Lesley-Ann Down, Michael Crichton (New Orleans)</unittitle><unitid>apikian_n_021</unitid><unitdate type="inclusive" normal="1979-02-03">Feb. 03-1979</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Gregory Peck (II) on Boys From Brazil</unittitle><unitid>apikian_n_014</unitid><unitdate type="inclusive" normal="1978-09-21">Sept. 21, '78</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Gregory Peck, Jam. Mason; Mason, Schaffner, Director</unittitle><unitid>apikian_n_013</unitid><abstract>audio recording of Gregory Peck, James Mason, and Franklin Schaffner, referencing the 1978 movie The Boys from Brazil</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Howard Duff, Nina [?]; Carol Burnett, Lauren Hutton (Chicago)</unittitle><unitid>apikian_n_019</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Howard Kazanjian, Director, Associate Producer "Rollercoaster"; Howard and Carol Kazanjian (Richmond, Virginia)</unittitle><unitid>apikian_n_005</unitid><unitdate type="inclusive" normal="1976-10-10">10/10/1976</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Jackie Gleason; Satellite TV Interview; Universal; Sheraton[?]; [illegible]</unittitle><unitid>apikian_n_002</unitid><unitdate type="inclusive" normal="1975">1975</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Jane Fonda, Jack Lemmon</unittitle><unitid>apikian_n_023</unitid><abstract>Jane Fonda and Jack Lemmon starred in the 1979 movie China Syndrome</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Joel Grey [5 min], Terence Stamp; Syracuse Stage</unittitle><unitid>apikian_n_069</unitid><abstract>written on post-it note: "Syracuse with Nevart"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>John Cassavetes and Gena Rowlands (2); Dana Cyrch [?] Cinderella [?] Oct [?] Universal</unittitle><unitid>apikian_n_064</unitid><abstract>audio recording of John Cassavetes, Gena Rowlands, and others. Illegible handwritten notes on side 2</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Jon Voight (Chicago)</unittitle><unitid>apikian_n_012</unitid><unitdate type="inclusive" normal="1978-06-18">June 18, '78</unitdate><abstract>written on post-it note: "Coming Home"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Julie Andrews in London; Jackie Gleason in London</unittitle><unitid>apikian_n_057</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Kirk Douglass in "The Fury"</unittitle><unitid>apikian_n_046</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Liz Foldi</unittitle><unitid>apikian_n_047</unitid><abstract>on post-it note reads: "Liz Foldi, dance actress"; Erzsebet Foldi starred in the 1979 movie All that Jazz</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Lord of the Rings: Ralph Bakshi (LA) (I and II)</unittitle><unitid>apikian_n_016</unitid><unitdate type="inclusive" normal="1978-11-04">Nov. 04, '78</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Martin Rosen, director "Watership Down"; Larry Peerce, Marilyn Hassett</unittitle><unitid>apikian_n_054</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Mazursky, Murphy; Alan Bates</unittitle><unitid>apikian_n_040</unitid><abstract>audio recording of Paul Mazursky, director of the 1977 movie An Unmarried Woman; Michael Murphy and Alan Bates both starred in the movie</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Midway: Henry Fonda (New York City); Charlton Heston</unittitle><unitid>apikian_n_003</unitid><unitdate type="inclusive" normal="1976">1976</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Mirror Crack'd: Eliz Taylor (New York City); Super: Jack O'Halloran and Sarah Douglas</unittitle><unitid>apikian_n_028</unitid><unitdate type="inclusive" normal="1980-12-16">Dec 16, 1980</unitdate><abstract>Elizabeth Taylor starred in the 1980 movie The Mirror Crack'd. Jack O'Halloran and Sarah Douglas, starred in the 1980 movie Superman. On post-it note reads: "12:01"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Mirror Crack'd: R. H. [Rock Hudson], Angela [Lansbury], T. C. [Tony Curtis] and El. T. [Elizabeth Taylor]; Kim Novak</unittitle><unitid>apikian_n_029</unitid><unitdate type="inclusive" normal="1980-12-17">Dec 17,1980</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Network: Holden; Faye Dunaway, Paddy Chayefsky, Finch, Sidney Lumet (New York City Shepherds)</unittitle><unitid>apikian_n_007</unitid><unitdate type="inclusive" normal="1976-11">Nov 1976</unitdate><abstract>audio recording of William Holden, Faye Dunaway, Paddy Chayefsky, Peter Finch, and Sidney Lumet who all starred in the 1976 movie Network</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>New Orleans: David Merrick, director of "Semi-Tough" and Burt Reynolds</unittitle><unitid>apikian_n_039</unitid><unitdate type="inclusive" normal="1977">1977</unitdate><abstract>note on cassette cover reads: "Slap Shot", Jennifer Warren</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>New York City - Apocalypse Now: Coppola; Robert Duvall, etc.</unittitle><unitid>apikian_n_062</unitid><unitdate type="inclusive" normal="1979-08-11">Aug, 11 '79</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>New York City University - Slap Shot: Travanton Ne Green [?] and Jennifer Warren</unittitle><unitid>apikian_n_038</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Norma Rae: Director Martin Ritt</unittitle><unitid>apikian_n_026</unitid><abstract>On post-it note reads: "on Sally Field"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Norma Ray [sic]: Sally Field; Beau Bridges</unittitle><unitid>apikian_n_025</unitid><unitdate type="inclusive" normal="1979-02">Feb 1979</unitdate><abstract>audio recording of Sally Field and Beau Bridges, referencing the 1979 movie Norma Rae</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Part I: Lily Tomlin, John Travolta interview (New York City)</unittitle><unitid>apikian_n_015</unitid><unitdate type="inclusive" normal="1978-01-15/1978-12-15">Jan. 15-1978; Dec. 15-1978</unitdate><abstract>Lily Tomlin and John Travolta starred in the 1978 movie Moment by Moment</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Peter Falk; DeLuca [?]</unittitle><unitid>apikian_n_048</unitid><abstract>in the 1978 TV Series "Murder Under Glass", Mario DeLuca is a character played by Antony Alda where he partners with Peter Falk</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Phone interview with Jack Palance; Int. Pianist James Tocco</unittitle><unitid>apikian_n_033</unitid><unitdate type="inclusive" normal="1983-02-02/1983-02-07">Feb 2,1983; Feb 7-1983</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Producer [?] "Omen II"</unittitle><unitid>apikian_n_053</unitid><abstract>illegible handwriting; not clear if the recording is with Harvey Bernhard, producer of the 1978 movie Damien: Omen II</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Producer of Coming Home: Jerome Hellman; Hal Ashby</unittitle><unitid>apikian_n_065</unitid><abstract>audio recording of Jerome Hellman, producer of  the 1978 movie Coming Home, and Hal Ashby, director of the film</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Richard Dreyfuss, [Roger L.] Simon, [Jeremy] Kagan, director; The Big Fix (2)</unittitle><unitid>apikian_n_076</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Robert Altman; Carol Burnett (Chicago)</unittitle><unitid>apikian_n_020</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>[Robert] De Niro</unittitle><unitid>apikian_n_074</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Screen R[?] Times; [written on post-it note: a woman's voice 1st then] Gregory Peck [into tape] - The Car II; Mirisch, Satellite Beau Geste</unittitle><unitid>apikian_n_055</unitid><abstract>Illegible handwritten notes on the cassette</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Sid Caesar, Alan Arkin (Mane, France)</unittitle><unitid>apikian_n_050</unitid><abstract>audio recording of Sid Caesar and Alan Arkin, referencing the 1977 movie Fire Sale</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Sissy Spacek; Loretta Rigt [?]</unittitle><unitid>apikian_n_027</unitid><unitdate type="inclusive" normal="1980-02-08">Feb 8-980</unitdate><abstract>on post-it note reads: "22:54"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Susan Sarandon, (LA) and director Charles Jarrott [?]</unittitle><unitid>apikian_n_066</unitid><abstract>Charles Jarrott is a director of  the 1977 movie The other side of midnight, in which Susan Sarandon starred</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Tomy Lee Jones - direct [?]</unittitle><unitid>apikian_n_049</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Tribute: Jack Lemmon (Essex House, New York City)</unittitle><unitid>apikian_n_030</unitid><unitdate type="inclusive" normal="1980-12-17">Dec 17-1980</unitdate><abstract>written on post-it note is: "Schotty? Judd movie"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Tricia Nixon's wedding night (18.5 minutes), recorded by Rosemary Woods; A personal message to you (insert your name) from Joan Rivers</unittitle><unitid>apikian_n_043</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>TV: Duff Howard [sic], Flamingo Road, Sheriff [?]</unittitle><unitid>apikian_n_070</unitid><abstract>American TV movie and prime time television soap opera starring Howard Duff as the local county sheriff; some handwritten notes are illegible</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Twilight's Last Gleaming: Aldrich, Winfield, Durning</unittitle><unitid>apikian_n_004</unitid><unitdate type="inclusive" normal="1977-01-20">01/20/1977</unitdate><abstract>audio recording of Robert Aldrich, Paul Winfield, Charles Durning, who all starred in the 1977 movie Twilight's Last Gleaming; note on the label reads: "Inauguration Day"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Universal Pictures - "Slap Shot": interview with Paul Newman (1 of 2)</unittitle><unitid>apikian_n_036</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did><scopecontent><p>Side A and B</p></scopecontent></c02>
+   <c02><did><unittitle>Universal Pictures - "Slap Shot": interview with Paul Newman (2 of 2)</unittitle><unitid>apikian_n_037</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did><scopecontent><p>Side C</p></scopecontent></c02>
+   <c02><did><unittitle>Universal Pictures: G[eorge] R[oy] Hill, director of "Slap Shot" (1 of 2)</unittitle><unitid>apikian_n_034</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did><scopecontent><p>Side A and B</p></scopecontent></c02>
+   <c02><did><unittitle>Universal Pictures: G[eorge] R[oy] Hill, director of "Slap Shot" (2 of 2)</unittitle><unitid>apikian_n_035</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did><scopecontent><p>Side C and D</p></scopecontent></c02>
+   <c02><did><unittitle>Universal: Christopher Lee; Lee Grant; Olivia de Havilland; Hollywood: 1. Olivia de Havilland - Airport 77; Universal lot: 2. Alan Arkin - Sherlock H, Freud</unittitle><unitid>apikian_n_006</unitid><unitdate type="inclusive" normal="1976-10-12">Oct. 12 '76</unitdate><abstract>audio recording of Christopher Lee, Lee Grant, Olivia de Havilland, who all starred in the 1977 movie Airport 77, and Alan Arkin, who starred in the 1976 movie The Seven-Per-Cent Solution</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Unmarried woman: Michael Murphy</unittitle><unitid>apikian_n_051</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Velvet</unittitle><unitid>apikian_n_045</unitid><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>Vittorio Gassman and Desi Arnaz; Desi Arnaz and Lillian Gish</unittitle><unitid>apikian_n_068</unitid><abstract>Vittorio Gassman, Desi Arnaz Jr. and Lillian Gish all starred in the 1978 movie A Wedding. </abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>A Wedding: Howard Duff, Nina Merrill [?]; Carol B., Bob Altman</unittitle><unitid>apikian_n_018</unitid><unitdate type="inclusive" normal="1978">1978</unitdate><abstract>audio recording of  Howard Duff, Dina Merrill; Carol Burnett, Robert Altman, referencing the 1978 movie A Wedding; written on post-in note: "NYC"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Yablans, Carrie Snodgress; Carrie Snodgress, Brian De Palma</unittitle><unitid>apikian_n_010</unitid><unitdate type="inclusive" normal="1978-03-16">03/16/1978</unitdate><abstract>audio recording of Frank Yablans, Carrie Snodgress, and Brian De Palma, referencing the 1978 movie The Fury</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>Yoko Ono and John Lennon</unittitle><unitid>apikian_n_001</unitid><unitdate type="inclusive" normal="1971-10-05">10/05/1971</unitdate><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">1</container></did></c02>
+   <c02><did><unittitle>[blank ?]</unittitle><unitid>apikian_n_075</unitid><abstract>written on post-it note: "blank"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+   <c02><did><unittitle>[blank ?]</unittitle><unitid>apikian_n_083</unitid><abstract>written on post-it note: "Blank"</abstract><physdesc><extent>1/8 inch audio cassette</extent></physdesc><container type="Box">2</container></did></c02>
+
+
+    </c01>
+      </dsc>
+   </archdesc>
+</ead>
