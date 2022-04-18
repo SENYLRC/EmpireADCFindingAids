@@ -1,124 +1,266 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
 <!ENTITY su_address SYSTEM "su_address.txt">
 <!ENTITY su_name SYSTEM "su_name.txt">
 <!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
 ]>
-<ead relatedencoding="MARC21">
-	<!--All items are required unless marked OPT.  Any optional items 
-not used should be commented out so that they don't appear in the viewable
- document.--><eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
-		<eadid countrycode="us" mainagencycode="NSyU" identifier="wilson_r">wilson_r</eadid>
-		<filedesc>
-			<titlestmt>
-				<titleproper encodinganalog="Title">Richard Wilson Papers</titleproper>
-				<subtitle>A description of his papers at Syracuse University</subtitle>
-			<author encodinganalog="Creator">-</author>
 
-</titlestmt>
-			<publicationstmt>
-				<publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
-				&su_address;
-				<date encodinganalog="Date" normal="1968/1970">1968; additions 1969, 1970</date>
-			</publicationstmt>
-		</filedesc>
-		<profiledesc>
-			<creation>Michele Rothenberger
-				<date normal="2005-08-31">31 Aug 2005</date>
-			</creation>
-			<langusage>
-				<language langcode="eng" encodinganalog="Language">English</language>
-			</langusage>
-		</profiledesc>
-		<revisiondesc>
-			<list>
-				<item>31 Aug 2005 - EAD file created (MRR)</item>
-			</list>
-		</revisiondesc>
-	</eadheader>
-	<archdesc level="collection" type="inventory" relatedencoding="MARC21">
-		<did>
-			<head>Overview of the Collection</head>
-			<repository id="scrc" encodinganalog="852$a" label="Repository: ">
-			&su_name; <lb/> &su_address;
-			</repository>
-			<origination label="Creator: ">
-				<persname encodinganalog="100">Wilson, Richard, 1920-1987</persname>
-			</origination>
-			<unittitle encodinganalog="245$a" label="Title: ">Richard Wilson Papers</unittitle>
-			<unitdate encodinganalog="245$f" normal="1940/1987" type="inclusive" label="Inclusive Dates: ">1940-1987</unitdate>
-			<physdesc encodinganalog="300$a" label="Quantity: "><extent> 20.0 linear ft.</extent></physdesc>
-			<abstract encodinganalog="520$a" label="Abstract: ">Correspondence, press releases and documents (1940-1945); typescript draft and manuscript short stories, plays, and novels; photographs; and published material.</abstract>
-			<unitid encodinganalog="099" label="Identification: " countrycode="us" repositorycode="NSyU">148760</unitid>
-			<langmaterial label="Language: " encodinganalog="546">
-				<language langcode="eng">English</language>
-			</langmaterial>
-		</did>
+<ead relatedencoding="MARC21">
+  <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="us" identifier="wilson_r" mainagencycode="NSyU">wilson_r</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Richard Wilson Papers</titleproper>
+        <subtitle>A description of his papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">-</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="1968">1968</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Rothenberger
 				
-		<bioghist encodinganalog="545">
-			<head>Biographical History</head>
-			<p> American author, science fiction short story writer, novelist, and playwright.</p>
-		</bioghist>
-		
-		<scopecontent encodinganalog="520">
-			<head>Scope and Contents of the Collection</head>
-			<p>Correspondence (1940-1969); Army Air Force press releases and documents (1940-1945); typescript draft and manuscript short stories, plays, and novels; photographs; and published material, including a large collection of science fiction books and periodicals.</p><p>Correspondents include Poul Anderson, Virginia Kidd, Damon Knight, Judith Merril, Sam Moskowitz, Frederik Pohl, Kurt Vonnegut, Jack Williamson, and Donald A. Wollheim.</p>
-		</scopecontent>
-		
-		<!--<arrangement encodinganalog="351$a">
-			<head>Arrangement of the Collection</head>
-			<p>## OPT</p>
-		</arrangement>
-		
-		--><relatedmaterial encodinganalog="544 1">
-			<head>Related Material</head>
-			<p>Our holdings include papers from a number of well-known science fiction  authors.  Please refer to &subjindex; for more information.</p>
-		</relatedmaterial>
-		
-		<!--<separatedmaterial encodinganalog="544 0">
-			<head>Separated Material</head>
-			<p>## OPT</p>
-		</separatedmaterial>
-		
-		<otherfindaid encodinganalog="555">
+        
+        <date normal="2005-08-31">31 Aug 2005</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <list>
+        <item>31 Aug 2005 - EAD file created (MRR)</item>
+        <item>11 Nov 2021 - additions processed (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository encodinganalog="852$a" id="scrc" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Wilson, Richard, 1920-1987</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Richard Wilson Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1870/1987" type="inclusive">1870-1987</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>15.5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, financial and legal material, memorabilia, fanzines, and writings including short stories, plays, novels, novellas, and miscellaneous items.</abstract>
+      <unitid countrycode="us" encodinganalog="099" label="Identification: " repositorycode="NSyU">148760</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+				Bulk of collection is in 
+        
+        <language langcode="eng">English</language>, with a few items in 
+        
+        <language langcode="ger">German</language> and 
+        
+        <language langcode="jap">Japanese</language>.</langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Richard "Dick" Wilson (1920-1987) was an American journalist and science fiction author.  His 
+			"Mother to the World" won the 1968 Nebula Award for best novelette.</p>
+      <p>Wilson graduated from high school at 15.  He served in the U.S. Army Signal Corps during World 
+			War II, stationed in the South Pacific with the 339th Fighter Squadron/347th Fighter Group of the 
+			XIII AAF (now the Thirteenth Air Force).  Following the war he worked for Transradio Press (1946-1951) 
+			and then for Reuter's (1951-1964).  Later, he was director of the News Bureau at Syracuse University 
+			in Syracuse, New York.</p>
+      <p>Wilson's involvement with science fiction spanned most of his life.  He was an early member 
+			of the Futurian Society, the influential New York City-based fan club founded in 1938, edited or 
+			co-edited seven fanzines in the late 1930s, published his first professional story in 1940, won a Nebula 
+			Award in 1968, and was instrumental in helping Syracuse University Libraries acquire the papers of 
+			many important science fiction authors and publishers in the 1970s.</p>
+      <p>Wilson was married twice: to Jessica Gould (1941-1944) and to Leslie Perri (1950-1967).  Both 
+			were among the first female members of The Futurians and active in science fiction circles. Perri, 
+			born Doris Baumgardt, had previously been married to Frederik Pohl; she was also an author and artist,
+			and a founding member of the Fantasy Amateur Press Association (FAPA).  She and Wilson had one son, 
+			Richard David Wilson.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Richard Wilson Papers</emph> consists of correspondence, financial and 
+			legal material, memorabilia, printed material, subject files, and writings of the American science 
+			fiction author and journalist.</p>
+      <p>
+        <emph render="bold">Correspondence</emph> contains incoming and outgoing correspondence, almost 
+			all of which pertains to some aspect of science fiction.  Notable names represented in the collection
+			include author and editor Frederik Pohl; author, agent, 
+			and "superfan" Forrest J Ackerman; author, editor, and publisher Don Wollheim; editor and agent 
+			E.J. Carnell; author and editor Tony Boucher; author, editor, critic, and writer's workshop creator 
+			Damon Knight; editor and publisher Leo Margulies and wife Cylvia; author and editor Robert A.W. 
+			Lowndes; authors Cyril Kornbluth, David Kyle, and Wilson "Bob" Tucker, among others.  There is also 
+			a sizable amount of correspondence with publishers (Ace Books, Ballantine Books) and science fiction 
+			magazines (Amazing, Analog, Galaxy).</p>
+      <p>
+        <emph render="bold">Financial and legal material</emph> consists of royalty statements from several 
+			publishers, and a few author's contracts.  There is also a partnership agreement pertaining to the 
+			research and writing of a history of the 339th Fighter Squadron/347th Fighter Group.</p>
+      <p>
+        <emph render="bold">Memorabilia</emph> includes awards, clippings about Wilson and about Syracuse 
+			University's science fiction collections, convention material (including eleven WorldCons), family papers and photographs, and 
+			scrapbooks.  There is also a substantial amount of material relating to Wilson's service during World 
+			War II, including ship and squadron newspapers, photographs, and Japanese-issued scrip for several 
+			occupied regions.  There is also a special issue of James V. Taurasi's fanzine "Fantasy Times" entitled 
+			"Fantasy Times in France" (Taurasi served in the U.S. Army, 1942-1946).   There are also two toy ray-guns and a tiny plastic toy missile mounted on a ring.</p>
+      <p>
+        <emph render="bold">Printed material</emph> consists primarily of fanzines, in most cases only a 
+			few issues of any given title.  Titles represented include Algol, Lobster Tails, and the fanzines 
+			of Mae Strelkov (Tink, Tong, and The Tunkunaku Event).</p>
+      <p>
+        <emph render="bold">Subject files</emph> relate primarily to potential or actual writing projects, such as the 347th/339th Fighter Group of the XIII Army Air Force and flying saucers/UFOs.  There is also some Reuter's material and a folder of material about Frederik Pohl.</p>
+      <p>
+        <emph render="bold">Writings</emph>, which makes up almost half the collection, contains articles, 
+			books (both novels and novellas), plays, reviews (film and theater), and short stories by Wilson.  
+			Formats for a given title may include notes, research material, early drafts, later drafts, final 
+			drafts, galleys, and published versions.  In many cases there is a typed note from Wilson giving the 
+			dates during which a piece was written and worked on.  Miscellaneous items include one issue of 
+			Wilson's own fanzine, "Escape", and notes from several trials that he covered while working for 
+			Transradio Press, including that of Mildred Gillars, known as "Axis Sally."   At the end of this series are a few items by others, including the final 
+			manuscripts for two novels by Ken Bulmer and a typed draft of a piece by H.P. Lovecraft.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Correspondence is arranged alphabetically by correspondent, and within that chronologically.  
+			Writings are subdivided by type (articles, books, reviews, etc.) and within that are arranged 
+			alphabetically by title.  Within each title, material is roughly in the order it would have 
+			been produced -- i.e., notes and research material, followed by earlier drafts, later drafts, 
+			galleys, and published version.  All other series are arranged alphabetically by type or topic.</p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>Our holdings include papers from a number of well-known science fiction  authors.  Please refer to &subjindex; for more information.</p>
+    </relatedmaterial>
+    <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>A few published books and magazines have been transferred to Rare Books for cataloging.  Please refer to &summitref; to locate these items.</p>
+    </separatedmaterial>
+    <!--<otherfindaid encodinganalog="555">
 			<head>Other Related Finding Aids</head>
 			<p>## OPT</p>
-		</otherfindaid>
+		</otherfindaid>-->
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">Science fiction</subject>
+      <subject encodinganalog="650" source="local">Journalism</subject>
+      <subject encodinganalog="650" source="local">Military history</subject>
+      <subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
 		
-		--><controlaccess>
-			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Science fiction</subject><subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
-			<persname encodinganalog="600" source="lcnaf">Anderson, Poul, 1926-
-</persname><persname encodinganalog="600" source="lcnaf">Kidd, Virginia.</persname><persname encodinganalog="600" source="lcnaf">Knight, Damon Francis,  1922-</persname><persname encodinganalog="600" source="lcnaf">Merril, Judith,  1923-</persname><persname encodinganalog="600" source="lcnaf">Moskowitz, Sam.</persname><persname encodinganalog="600" source="lcnaf">Pohl, Frederik.</persname><persname encodinganalog="600" source="lcnaf">Vonnegut, Kurt.</persname><persname encodinganalog="600" source="lcnaf">Williamson, Jack, 1924-</persname><persname encodinganalog="600" source="lcnaf">Wilson, Richard,  1920-1987.</persname><persname encodinganalog="600" source="lcnaf">Wollheim, Donald A.</persname>
-			
-			<subject encodinganalog="650" source="lcsh">American literature -- 20th century.</subject><subject encodinganalog="650" source="lcsh">Authors, American.</subject><subject encodinganalog="650" source="lcsh">Dramatists, American.</subject><subject encodinganalog="650" source="lcsh">Novelists, American.</subject><subject encodinganalog="650" source="lcsh">Science fiction -- Periodicals.</subject><subject encodinganalog="650" source="lcsh">Science fiction, American.</subject>
-			
-			<genreform encodinganalog="655" source="aat">Books.</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform><genreform encodinganalog="655" source="aat">Periodicals.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Press releases.</genreform>
-			
-			<occupation encodinganalog="656" source="lcsh">Authors.</occupation><occupation encodinganalog="656" source="lcsh">Novelists.</occupation><occupation encodinganalog="656" source="lcsh">Playwrights.</occupation>
-		</controlaccess>
-		
-		<accessrestrict encodinganalog="506">
-			<head>Access Restrictions</head>
-			<p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
-		</accessrestrict>
-		
-		<userestrict encodinganalog="540">
-			<head>Use Restrictions</head>
-			<p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
-		</userestrict>
-		
-		<prefercite encodinganalog="524">
-			<head>Preferred Citation</head>
-			<p>Preferred citation for this material is as follows:</p>
-			<p>Richard Wilson Papers, <lb/> &su_name; </p>
-		</prefercite>
-		
-		<acqinfo encodinganalog="541">
-			<head>Acquisition Information</head>
-			<p>Gift of <persname role="donor">Richard Wilson</persname>.</p>
-		</acqinfo>
-		
-		<!--<appraisal encodinganalog="583">
+      <persname encodinganalog="600" source="lcnaf">Ackerman, Forrest J.</persname>
+      <persname encodinganalog="600" source="lcnaf">Anderson, Poul, 1926-2001.</persname>
+      <persname encodinganalog="600" source="lcnaf">Blish, James.</persname>
+      <persname encodinganalog="600" source="lcnaf">Boucher, Anthony, 1911-1968.</persname>
+      <persname encodinganalog="600" source="lcnaf">Bulmer, Kenneth, 1921-2005.</persname>
+      <persname encodinganalog="600" source="lcnaf">Burbee, Charles.</persname>
+      <persname encodinganalog="600" source="lcnaf">Cannon, Thurlow O.</persname>
+      <persname encodinganalog="600" source="lcnaf">Carnell, John, 1912-1972.</persname>
+      <persname encodinganalog="600" source="lcnaf">Cogswell, Theodore R.</persname>
+      <persname encodinganalog="600" source="lcnaf">Gillars, Mildred, 1900-1988.</persname>
+      <persname encodinganalog="600" source="lcnaf">Greenberg, Martin Harry.</persname>
+      <persname encodinganalog="600" source="lcnaf">Gunn, James E., 1923-2020.</persname>
+      <persname encodinganalog="600" source="lcnaf">Harrison, Harry, 1925-2012.</persname>
+      <persname encodinganalog="600" source="lcnaf">Kidd, Virginia.</persname>
+      <persname encodinganalog="600" source="lcnaf">Knight, Damon Francis, 1922-2002.</persname>
+      <persname encodinganalog="600" source="lcnaf">Kornbluth, C. M. (Cyril M.), 1923-1958.</persname>
+      <persname encodinganalog="600" source="lcnaf">Krause, Julius.</persname>
+      <persname encodinganalog="600" source="lcnaf">Kyle, David A.</persname>
+      <persname encodinganalog="600" source="lcnaf">Lovecraft, H. P. (Howard Phillips), 1890-1937.</persname>
+      <persname encodinganalog="600" source="lcnaf">Lowndes, Robert A. W. (Robert Augustine Ward), 1916-1998.</persname>
+      <persname encodinganalog="600" source="lcnaf">Margulies, Leo, 1900-1975.</persname>
+      <persname encodinganalog="600" source="lcnaf">Merril, Judith, 1923-1997.</persname>
+      <persname encodinganalog="600" source="lcnaf">Moskowitz, Sam.</persname>
+      <persname encodinganalog="600" source="lcnaf">Pohl, Frederik.</persname>
+      <persname encodinganalog="600" source="lcnaf">Santessen, Hans.</persname>
+      <persname encodinganalog="600" source="lcnaf">Strelkov, Mae.</persname>
+      <persname encodinganalog="600" source="lcnaf">Tucker, Wilson, 1914-2006.</persname>
+      <persname encodinganalog="600" source="lcnaf">Vonnegut, Kurt.</persname>
+      <persname encodinganalog="600" source="lcnaf">Williamson, Jack, 1908-2006.</persname>
+      <persname encodinganalog="600" source="lcnaf">Wilson, Felicitas K.</persname>
+      <persname encodinganalog="600" source="lcnaf">Wilson, Richard, 1920-1987.</persname>
+      <persname encodinganalog="600" source="lcnaf">Wollheim, Donald A.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">Ace Books.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Ballantine Books (Firm)</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Eastern Science Fiction Association.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">First Fandom.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Reuters Limited.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Science Fiction Writers of America.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Syracuse University. -- Libraries.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Transradio Press.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">United States. -- Army Air Forces. -- Air Force, 13th. -- Fighter Squadron, 339th.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">World Science Fiction Convention.</corpname>
+      <title encodinganalog="630" source="lcnaf">Magazine of fantasy and science fiction (Cornwall, Conn.)</title>
+      <title encodinganalog="630" source="lcnaf">Galaxy.</title>
+      <title encodinganalog="630" source="lcnaf">Schlaraffia Zeyttungen.</title>
+      <subject encodinganalog="650" source="lcsh">American literature -- 20th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Authors, American.</subject>
+      <subject encodinganalog="650" source="lcsh">Novelists, American.</subject>
+      <subject encodinganalog="650" source="lcsh">Playwrights, American.</subject>
+      <subject encodinganalog="650" source="lcsh">Science fiction -- Periodicals.</subject>
+      <subject encodinganalog="650" source="lcsh">Science fiction conventions.</subject>
+      <subject encodinganalog="650" source="lcsh">Science fiction films.</subject>
+      <subject encodinganalog="650" source="lcsh">Science fiction, American.</subject>
+      <subject encodinganalog="650" source="lcsh">Ship newspapers.</subject>
+      <subject encodinganalog="650" source="lcsh">Unidentified flying objects.</subject>
+      <subject encodinganalog="650" source="lcsh">World War, 1939-1945 -- Aerial operations.</subject>
+      <subject encodinganalog="650" source="lcsh">World War, 1914-1918 -- Campaigns -- Pacific Ocean.</subject>
+      <genreform encodinganalog="655" source="aat">Articles.</genreform>
+      <genreform encodinganalog="655" source="aat">Books.</genreform>
+      <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Contracts.</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Drafts (documents)</genreform>
+      <genreform encodinganalog="655" source="aat">Fanzines.</genreform>
+      <genreform encodinganalog="655" source="aat">Galley proofs.</genreform>
+      <genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+      <genreform encodinganalog="655" source="aat">Military maps.</genreform>
+      <genreform encodinganalog="655" source="aat">Military records.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Press releases.</genreform>
+      <genreform encodinganalog="655" source="aat">Reviews (documents)</genreform>
+      <genreform encodinganalog="655" source="aat">Royalty statements.</genreform>
+      <genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+      <genreform encodinganalog="655" source="aat">Scrip (paper money)</genreform>
+      <genreform encodinganalog="655" source="aat">Short stories.</genreform>
+      <genreform encodinganalog="655" source="aat">Toys (recreational artifacts)</genreform>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Journalists.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Novelists.</occupation>
+    </controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+      <p>Folders in boxes 13 and 14 pertaining to the 339th Fighter Squadron/347th Fighter Group are closed to researchers pending review.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and all relevant rights holders before publishing quotations, excerpts or images from any materials in this collection.</p>
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Richard Wilson Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Richard Wilson</persname>, 1967-1987.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
 			<head>Appraisal Information</head>
 			<p>## OPT</p>
 		</appraisal>
@@ -127,18 +269,3559 @@ not used should be commented out so that they don't appear in the viewable
 			<head>Accruals</head>
 			<p>## OPT</p>
 		</accruals>-->
-		
-		<dsc type="othertype">
-   <head>Inventory</head>
-   <note><p>The inventory has not yet been 
-     converted to electronic format.  Please contact the Repository listed 
-     above for more information.</p>
-     <p></p></note>
-<c01 level="series"><did><unittitle>Trial notes (M17-148)</unittitle></did>
-            <c02><did><unittitle>Coplon, Judith</unittitle><unitdate normal="1949/1950" type="inclusive">1949-1950</unitdate><container type="Box">1</container></did></c02>
-            <c02><did><unittitle>Gillars, Mildred ("Axis Sally")</unittitle><unitdate normal="1949" type="inclusive">1949</unitdate><container type="Box">1</container></did></c02>
-            <c02><did><unittitle>Klock, Bernard</unittitle><unitdate normal="1951/1952" type="inclusive">1951-1952</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c02>
-            <c02><did><unittitle>Unidentified</unittitle><container type="Box">1</container></did></c02>
-         </c01></dsc>	
-	</archdesc>
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02 id="corr-acbo">
+          <did>
+            <unittitle>Ace Books</unittitle>
+            <abstract>Don Wollheim, Jim Baen</abstract>
+            <unitdate normal="1956/1957" type="inclusive">1956-1957, </unitdate>
+            <unitdate normal="1965" type="inclusive">1965, </unitdate>
+            <unitdate normal="1970" type="inclusive">1970, </unitdate>
+            <unitdate normal="1978/1979" type="inclusive">1978-1979</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ackerman, Forrest</unittitle>
+            <unitdate normal="1958/1960" type="inclusive">1958-1960, </unitdate>
+            <unitdate normal="1965/1977" type="inclusive">1965-1977, </unitdate>
+            <unitdate normal="1981/1982" type="inclusive">1981-1982</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Amazing</unittitle>
+            <abstract>Howard Browne, Cale Goldsmith</abstract>
+            <unitdate normal="1953" type="inclusive">1953, </unitdate>
+            <unitdate normal="1961" type="inclusive">1961</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Amazing-Fantastic Publications</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="corr-bama">Malzberg, Barry</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02 id="corr-amip">
+          <did>
+            <unittitle>American-International Pictures</unittitle>
+            <abstract>regarding movie adaptation of Girls from Planet 5; includes Wilson's comments on screenplay</abstract>
+            <unitdate normal="1960/1961" type="inclusive">1960-1961</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02 id="corr-anal">
+          <did>
+            <unittitle>Analog</unittitle>
+            <abstract>John Campbell, Ben Bova</abstract>
+            <unitdate normal="1961" type="inclusive">1961, </unitdate>
+            <unitdate normal="1966" type="inclusive">1966, </unitdate>
+            <unitdate normal="1972/1973" type="inclusive">1972-1973</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Anderson, Poul</unittitle>
+            <abstract>includes photo of Anderson taken by Jay Kay Klein</abstract>
+            <unitdate normal="1969" type="inclusive">1969</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ann Elmo (literary agency)</unittitle>
+            <unitdate normal="1955" type="inclusive">1955</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Arkoff, Samuel Z.</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="corr-amip">American-International Pictures</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Arney, J. Ward</unittitle>
+            <unitdate normal="1943/1945" type="inclusive">1943-1945</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Asimov, Isaac</unittitle>
+            <unitdate normal="1953/1954" type="inclusive">1953-1954, </unitdate>
+            <unitdate normal="1960" type="inclusive">1960, </unitdate>
+            <unitdate normal="1966/1975" type="inclusive">1966-1975</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02 id="corr-asto">
+          <did>
+            <unittitle>Astounding</unittitle>
+            <abstract>John Campbell</abstract>
+            <unitdate normal="1953" type="inclusive">1953, </unitdate>
+            <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Authentic Science Fiction Monthly</unittitle>
+            <abstract>H.J. Campbell</abstract>
+            <unitdate normal="1953/1955" type="inclusive">1953-1955</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>A, misc</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ballantine Books</unittitle>
+            <unitdate normal="1953/1965" type="inclusive">1953-1965, </unitdate>
+            <unitdate normal="1968" type="inclusive">1968, </unitdate>
+            <unitdate normal="1975" type="inclusive">1975, </unitdate>
+            <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Benton &amp; Bowles, Inc.</unittitle>
+            <abstract>about film rights to "Mother to the world"</abstract>
+            <unitdate normal="1969" type="inclusive">1969</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Biggle, Lloyd</unittitle>
+            <unitdate normal="1967/1970" type="inclusive">1967-1970</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Blish, James</unittitle>
+            <unitdate normal="1957/1958" type="inclusive">1957-1958, </unitdate>
+            <unitdate normal="1968" type="inclusive">1968</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Blish, Virginia Kidd</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="corr-viki">Kidd, Virginia</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Boucher, Anthony</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="corr-mepu">Mercury Publications</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bova, Ben</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="corr-omni">OMNI</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bruck, Arline S.</unittitle>
+            <unitdate normal="1944/1945" type="inclusive">1944-1945</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bulmer, Ken</unittitle>
+            <unitdate normal="1956" type="inclusive">1956</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Burbee, Charles</unittitle>
+            <unitdate normal="1945" type="inclusive">1945</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>B, misc</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Campbell, John</unittitle>
+            <note>
+              <p>See 
+                
+                <ref href="corr-asto">Astounding</ref>, 
+                
+                <ref target="corr-anal">Analog</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cannon, Thurlow</unittitle>
+            <unitdate normal="1967" type="inclusive">1967, </unitdate>
+            <unitdate normal="1970" type="inclusive">1970</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Capitol Records</unittitle>
+            <unitdate normal="1951" type="inclusive">1951</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Carnell, E.J.</unittitle>
+            <unitdate normal="1955/1957" type="inclusive">1955-1957</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Carnell, E.J.</unittitle>
+            <unitdate normal="1958/1972" type="inclusive">1958-1972</unitdate>
+            <physdesc>
+              <extent>4 folders</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Carr, Terry</unittitle>
+            <abstract>most relates to him as editor of 
+              
+              <emph render="italic">Universe</emph></abstract>
+            <unitdate normal="1971" type="inclusive">1971, </unitdate>
+            <unitdate normal="1979/1980" type="inclusive">1979-1980</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cogswell, Theodore</unittitle>
+            <unitdate normal="1960" type="inclusive">1960, </unitdate>
+            <unitdate normal="1963" type="inclusive">1963, </unitdate>
+            <unitdate normal="1967" type="inclusive">1967, </unitdate>
+            <unitdate normal="1970/1971" type="inclusive">1970-1971</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Collier's</unittitle>
+            <unitdate normal="1953/1955" type="inclusive">1953-1955, </unitdate>
+            <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Collins, Christine H.</unittitle>
+            <unitdate normal="1944/1945" type="inclusive">1944-1945</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Columbia Records</unittitle>
+            <unitdate normal="1951" type="inclusive">1951</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>C, misc</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dale Books</unittitle>
+            <unitdate normal="1977" type="inclusive">1977</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Day, Donald</unittitle>
+            <abstract>Perri Press</abstract>
+            <unitdate normal="1952" type="inclusive">1952</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dollens, Morris Scott</unittitle>
+            <abstract>includes some printed material with Dollens' art</abstract>
+            <unitdate normal="1970/1971" type="inclusive">1970-1971</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Doubleday</unittitle>
+            <abstract>Larry Ashmead, others</abstract>
+            <unitdate normal="1955" type="inclusive">1955, </unitdate>
+            <unitdate normal="1965/1967" type="inclusive">1965-1967, </unitdate>
+            <unitdate normal="1969" type="inclusive">1969, </unitdate>
+            <unitdate normal="1972" type="inclusive">1972</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dowling, Eddie</unittitle>
+            <unitdate normal="1958" type="inclusive">1958, </unitdate>
+            <unitdate normal="1965" type="inclusive">1965</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dunkelbarger, Janet</unittitle>
+            <unitdate normal="1970/1983" type="inclusive">1970-1983</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>D, misc</unittitle>
+            <unitdate normal="1953" type="inclusive">1953</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Eastern Science Fiction Association</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Elliott, George P.</unittitle>
+            <unitdate normal="1970/1971" type="inclusive">1970-1971</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>E, misc</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02 id="corr-fasf">
+          <did>
+            <unittitle>Fantasy &amp; Science Fiction</unittitle>
+            <abstract>includes editor Anthony (Tony) Boucher</abstract>
+            <unitdate normal="1952/1979" type="inclusive">1952-1979</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fass, Martin</unittitle>
+            <unitdate normal="1952" type="inclusive">1952, </unitdate>
+            <unitdate normal="1955" type="inclusive">1955, </unitdate>
+            <unitdate normal="1965" type="inclusive">1965, </unitdate>
+            <unitdate normal="1967" type="inclusive">1967, </unitdate>
+            <unitdate normal="1981" type="inclusive">1981, </unitdate>
+            <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>First Fandom</unittitle>
+            <unitdate normal="1982" type="inclusive">1982</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>F, misc</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02 id="corr-gala">
+          <did>
+            <unittitle>Galaxy</unittitle>
+            <unitdate normal="1953/1972" type="inclusive">1953-1972, </unitdate>
+            <unitdate normal="1978" type="inclusive">1978, </unitdate>
+            <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>4 folders</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="corr-frpo">Pohl, Frederik</ref>, above.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Geis, Richard E.</unittitle>
+            <unitdate normal="1970/1974" type="inclusive">1970-1974, </unitdate>
+            <unitdate normal="1977" type="inclusive">1977</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gold, Horace</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="corr-gala">Galaxy</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Goulart, Ron</unittitle>
+            <unitdate normal="1969" type="inclusive">1969</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gray, James</unittitle>
+            <unitdate normal="1955" type="inclusive">1955</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02 id="corr-magr">
+          <did>
+            <unittitle>Greenberg, Martin</unittitle>
+            <unitdate normal="1977/1981" type="inclusive">1977-1981</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Grennell, Dean A.</unittitle>
+            <abstract>editor of 
+              
+              <emph render="italic">Grue</emph></abstract>
+            <unitdate normal="1955" type="inclusive">1955</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gunn, James</unittitle>
+            <unitdate normal="1972" type="inclusive">1972, </unitdate>
+            <unitdate normal="1977" type="inclusive">1977</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G, misc</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Hamilton, Edmond</unittitle>
+            <unitdate normal="1967" type="inclusive">1967</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Harbottle, Philip</unittitle>
+            <unitdate normal="1970" type="inclusive">1970, </unitdate>
+            <unitdate normal="1973" type="inclusive">1973, </unitdate>
+            <unitdate normal="1975" type="inclusive">1975</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Harrison, Harry</unittitle>
+            <unitdate normal="1953/1954" type="inclusive">1953-1954, </unitdate>
+            <unitdate normal="1966/1967" type="inclusive">1966-1967, </unitdate>
+            <unitdate normal="1969" type="inclusive">1969, </unitdate>
+            <unitdate normal="1972" type="inclusive">1972</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Horwitz, Howie</unittitle>
+            <unitdate normal="1966" type="inclusive">1966</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02 id="corr-hydr">
+          <did>
+            <unittitle>Hydra Club</unittitle>
+            <abstract>New York City fan club</abstract>
+            <unitdate normal="1949" type="inclusive">1949</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>H, misc</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Iadeluca, Robert</unittitle>
+            <unitdate normal="1975/1981" type="inclusive">1975-1981, </unitdate>
+            <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Institute of Twenty First Century Studies</unittitle>
+            <unitdate normal="1960" type="inclusive">1960</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Isaac Asimov's Science Fiction Magazine</unittitle>
+            <abstract>George Scithers, Jack Gaughan</abstract>
+            <unitdate normal="1977/1981" type="inclusive">1977-1981</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>I, misc</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Jakes, John</unittitle>
+            <unitdate normal="1982" type="inclusive">1982</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02 id="corr-viki">
+          <did>
+            <unittitle>Kidd, Virginia</unittitle>
+            <unitdate normal="1965/1966" type="inclusive">1965-1966</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>King, Harold</unittitle>
+            <unitdate normal="1956/1957" type="inclusive">1956-1957</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>The Kirmess [journal]</unittitle>
+            <unitdate normal="1962" type="inclusive">1962</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Knight, Damon</unittitle>
+            <unitdate normal="1956/1977" type="inclusive">1956-1977</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kornbluth, Cyril</unittitle>
+            <abstract>includes handwritten notes by Wilson on his memories of Kornbluth</abstract>
+            <unitdate normal="1943/1945" type="inclusive">1943-1945, </unitdate>
+            <unitdate normal="1949/1954" type="inclusive">1949-1954, </unitdate>
+            <unitdate normal="1958" type="inclusive">1958, </unitdate>
+            <unitdate normal="1966" type="inclusive">1966, </unitdate>
+            <unitdate normal="1968" type="inclusive">1968</unitdate>
+            <container type="Box">4</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="corr-trpr">Transradio Press</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kyle, David</unittitle>
+            <unitdate normal="1942/1951" type="inclusive">1942-1951, </unitdate>
+            <unitdate normal="1955" type="inclusive">1955, </unitdate>
+            <unitdate normal="1960" type="inclusive">1960, </unitdate>
+            <unitdate normal="1963/1973" type="inclusive">1963-1973</unitdate>
+            <physdesc>
+              <extent>5 folders</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kyle, David</unittitle>
+            <unitdate normal="1973/1981" type="inclusive">1973-1981, </unitdate>
+            <unitdate normal="1919/1987" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>K, misc</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lang, Fritz</unittitle>
+            <unitdate normal="1971" type="inclusive">1971</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lewis, Jack</unittitle>
+            <abstract>regarding his "Who's Who in Science Fiction"</abstract>
+            <unitdate normal="1957/1958" type="inclusive">1957-1958</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Linard, Jean and Anie</unittitle>
+            <unitdate normal="1958" type="inclusive">1958, </unitdate>
+            <unitdate normal="1948/1968" type="inclusive">undated</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lowndes, Robert A.W. </unittitle>
+            <unitdate normal="1938" type="inclusive">1938, </unitdate>
+            <unitdate normal="1950/1959" type="inclusive">1950-1959, </unitdate>
+            <unitdate normal="1968/1969" type="inclusive">1968-1969</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>L, misc</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mahaffey, Bea</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="corr-rapa">Palmer, Ray</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02 id="corr-bama">
+          <did>
+            <unittitle>Malzberg, Barry</unittitle>
+            <abstract>editor, Amazing-Fantastic Publications</abstract>
+            <unitdate normal="1968" type="inclusive">1968, </unitdate>
+            <unitdate normal="1978" type="inclusive">1978</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mangan, James T.</unittitle>
+            <unitdate normal="1956/1957" type="inclusive">1956-1957</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Margulies, Leo and Cylvia</unittitle>
+            <abstract>owners/editors of King-Size Publications, Renown Publications</abstract>
+            <unitdate normal="1941" type="inclusive">1941, </unitdate>
+            <unitdate normal="1954/1958" type="inclusive">1954-1958</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>McCaffrey, Anne</unittitle>
+            <unitdate normal="1969" type="inclusive">1969</unitdate>
+            <container type="Box">5</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="corr-sfwa">Science Fiction Writers of America</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>McComas, J. Francis</unittitle>
+            <unitdate normal="1968/1969" type="inclusive">1968-1969, </unitdate>
+            <unitdate normal="1975/1976" type="inclusive">1975-1976</unitdate>
+            <container type="Box">5</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="corr-fasf">Fantasy &amp; Science Fiction</ref>.</p>
+          </note>
+        </c02>
+        <c02 id="corr-mepu">
+          <did>
+            <unittitle>Mercury Publications</unittitle>
+            <abstract>titles mentioned include 
+              
+              <emph render="italic">Ellery Queen Mystery Magazine</emph>, 
+              
+              <emph render="italic">Venture Science Fiction</emph></abstract>
+            <unitdate normal="1946" type="inclusive">1946, </unitdate>
+            <unitdate normal="1953/1958" type="inclusive">1953-1958</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Merril, Judy</unittitle>
+            <unitdate normal="1950" type="inclusive">1950, </unitdate>
+            <unitdate normal="1960/1969" type="inclusive">1960-1969, </unitdate>
+            <unitdate normal="1971" type="inclusive">1971</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02 id="corr-jdmi">
+          <did>
+            <unittitle>Miley, James D.</unittitle>
+            <unitdate normal="1973" type="inclusive">1973</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miller, P. Schuyler</unittitle>
+            <unitdate normal="1967" type="inclusive">1967</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Moore, Roz and Bill</unittitle>
+            <unitdate normal="1968/1975" type="inclusive">1968-1975</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Moskowitz, Sam</unittitle>
+            <unitdate normal="1966" type="inclusive">1966</unitdate>
+            <container type="Box">5</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="corr-scfp">Science Fiction Plus</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>M, misc</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>N, misc</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Olander, Joseph</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="corr-magr">Greenberg, Martin</ref></p>
+            </note>
+          </did>
+        </c02>
+        <c02 id="corr-omni">
+          <did>
+            <unittitle>OMNI magazine</unittitle>
+            <abstract>Ben Bova, Robert Sheckley</abstract>
+            <unitdate normal="1979" type="inclusive">1979</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>O, misc</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pace, Mary</unittitle>
+            <unitdate normal="1946" type="inclusive">1946</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02 id="corr-rapa">
+          <did>
+            <unittitle>Palmer, Ray</unittitle>
+            <abstract>Palmer Publications; titles mentioned include 
+              
+              <emph render="italic">Mystic</emph>, 
+              
+              <emph render="italic">Universe</emph>, 
+              
+              <emph render="italic">Science Stories</emph>.</abstract>
+            <unitdate normal="1953/1957" type="inclusive">1953-1957</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Peters, George R.</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="corr-jdmi">Miley, James D.</ref></p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Playboy</unittitle>
+            <unitdate normal="1955/1957" type="inclusive">1955-1957, </unitdate>
+            <unitdate normal="1969" type="inclusive">1969, </unitdate>
+            <unitdate normal="1982" type="inclusive">1982, </unitdate>
+            <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02 id="corr-frpo">
+          <did>
+            <unittitle>Pohl, Frederik</unittitle>
+            <abstract>wife Dorothy; sometimes addressed to/signed by Pohl as "Ø" (phi, for Fred); includes remarks by Wilson about Pohl</abstract>
+            <unitdate normal="1940" type="inclusive">1940, </unitdate>
+            <unitdate normal="1944/1954" type="inclusive">1944-1954</unitdate>
+            <physdesc>
+              <extent>4 folders</extent>
+            </physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pohl, Frederik</unittitle>
+            <unitdate normal="1955/1957" type="inclusive">1955-1957, </unitdate>
+            <unitdate normal="1966/1977" type="inclusive">1966-1977, </unitdate>
+            <unitdate normal="1980/1981" type="inclusive">1980-1981, </unitdate>
+            <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>P, misc</unittitle>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>QM Productions</unittitle>
+            <unitdate normal="1967" type="inclusive">1967</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Quinn, James L.</unittitle>
+            <abstract>Quinn Publishing, publisher of 
+              
+              <emph render="italic">If</emph></abstract>
+            <unitdate normal="1953" type="inclusive">1953, </unitdate>
+            <unitdate normal="1956" type="inclusive">1956</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rappoport, Jack (Jacob L.)</unittitle>
+            <unitdate normal="1946/1949" type="inclusive">1946-1949</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Regan, Michael Vincent</unittitle>
+            <abstract>relates to Delphi Method project with SF authors; includes Jack Dann, Greg Benford</abstract>
+            <unitdate normal="1970" type="inclusive">1970</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Reuters</unittitle>
+            <unitdate normal="1952" type="inclusive">1952, </unitdate>
+            <unitdate normal="1954" type="inclusive">1954, </unitdate>
+            <unitdate normal="1964" type="inclusive">1964</unitdate>
+            <container type="Box">6</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="subj-reut">Subject files : Reuters</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rubin, Arthur</unittitle>
+            <unitdate normal="1944/1945" type="inclusive">1944-1945</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>R, misc</unittitle>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Salinger, Pierre</unittitle>
+            <unitdate normal="1961" type="inclusive">1961</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Santessen, Hans</unittitle>
+            <unitdate normal="1956/1957" type="inclusive">1956-1957, </unitdate>
+            <unitdate normal="1960" type="inclusive">1960, </unitdate>
+            <unitdate normal="1967" type="inclusive">1967, </unitdate>
+            <unitdate normal="1969/1970" type="inclusive">1969-1970</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02 id="corr-scfp">
+          <did>
+            <unittitle>Science Fiction Plus</unittitle>
+            <abstract>Gernsback Publications; Sam Moskowitz</abstract>
+            <unitdate normal="1953/1954" type="inclusive">1953-1954</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02 id="corr-sfwa">
+          <did>
+            <unittitle>Science Fiction Writers of America (SFWA)</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Correspondence</unittitle>
+              <unitdate normal="1965/1978" type="inclusive">1965-1978, </unitdate>
+              <unitdate normal="1981/1982" type="inclusive">1981-1982</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Directories</unittitle>
+              <unitdate normal="1973/1978" type="inclusive">1973-1978, </unitdate>
+              <unitdate normal="1981" type="inclusive">1981</unitdate>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>SFWA Bulletin</unittitle>
+              <unitdate normal="1977/1978" type="inclusive">1977-1978</unitdate>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>SFWA Forum</unittitle>
+              <unitdate normal="1967/1971" type="inclusive">1967-1971</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>SFWA Forum</unittitle>
+              <unitdate normal="1974" type="inclusive">1974, </unitdate>
+              <unitdate normal="1976/1977" type="inclusive">1976-1977, </unitdate>
+              <unitdate normal="1981/1982" type="inclusive">1981-1982</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Scithers, George</unittitle>
+            <unitdate normal="1958" type="inclusive">1958</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Shaw, Larry</unittitle>
+            <abstract>Quinn Publishing; Royal Publications</abstract>
+            <unitdate normal="1950/1958" type="inclusive">1950-1958, </unitdate>
+            <unitdate normal="1963/1970" type="inclusive">1963-1970, </unitdate>
+            <unitdate normal="1940/1980" type="inclusive">undated</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Skelton, Frank</unittitle>
+            <unitdate normal="1958" type="inclusive">1958</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Smith, E.E. ("Doc"), Mrs.</unittitle>
+            <abstract>his widow</abstract>
+            <unitdate normal="1966" type="inclusive">1966</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Speer, Jack (Juffus)</unittitle>
+            <unitdate normal="1944/1945" type="inclusive">1944-1945, </unitdate>
+            <unitdate normal="1969/1971" type="inclusive">1969-1971</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Standard Magazines</unittitle>
+            <abstract>T.W. Raines</abstract>
+            <unitdate normal="1940/1941" type="inclusive">1940-1941, </unitdate>
+            <unitdate normal="1954" type="inclusive">1954</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stern, George</unittitle>
+            <unitdate normal="1943/1945" type="inclusive">1943-1945, </unitdate>
+            <unitdate normal="1954" type="inclusive">1954, </unitdate>
+            <unitdate normal="1964/1965" type="inclusive">1964-1965</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Strelkov, Mae</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="prmat-fanz">Printed material : Fanzines</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sykora, Will</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="corr-hydr">Hydra Club</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse University Libraries, Manuscript Division</unittitle>
+            <abstract>includes one folder of published material (booklets, etc.)</abstract>
+            <unitdate normal="1964/1970" type="inclusive">1964-1970, </unitdate>
+            <unitdate normal="1976" type="inclusive">1976, </unitdate>
+            <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Szarat, Henry T. (Hank)</unittitle>
+            <unitdate normal="1944/1945" type="inclusive">1944-1945</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>S, misc</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Tappan Zee National Bank</unittitle>
+            <abstract>relates to exhibit of local authors; includes copy of 
+              
+              <emph render="italic">Authors of Rockland County</emph></abstract>
+            <unitdate normal="1958/1960" type="inclusive">1958-1960</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Timewell, Vin and Anne</unittitle>
+            <unitdate normal="1971/1973" type="inclusive">1971-1973</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02 id="corr-trpr">
+          <did>
+            <unittitle>Transradio Press</unittitle>
+            <abstract>includes sheet with list of personnel</abstract>
+            <unitdate normal="1948/1952" type="inclusive">1948-1952</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Tsunoda, Waka</unittitle>
+            <unitdate normal="1968" type="inclusive">1968</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Tucker, Bob (Wilson)</unittitle>
+            <abstract>includes amusing floor plan for Tucker Fan Hotel and reprint of Tau Ceti newsletter from ChiCon I (1940 WorldCon)</abstract>
+            <unitdate normal="1945/1949" type="inclusive">1945-1949, </unitdate>
+            <unitdate normal="1952/1955" type="inclusive">1952-1955, </unitdate>
+            <unitdate normal="1960" type="inclusive">1960, </unitdate>
+            <unitdate normal="1964/1965" type="inclusive">1964-1965</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>T-U, misc</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Van Houten, Ray</unittitle>
+            <unitdate normal="1955" type="inclusive">1955</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Veteran (magazine)</unittitle>
+            <unitdate normal="1946" type="inclusive">1946</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Vonnegut, Kurt</unittitle>
+            <unitdate normal="1966" type="inclusive">1966</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Walker, Dale</unittitle>
+            <unitdate normal="1967/1969" type="inclusive">1967-1969, </unitdate>
+            <unitdate normal="1973" type="inclusive">1973, </unitdate>
+            <unitdate normal="1978" type="inclusive">1978</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Williamson, Jack</unittitle>
+            <unitdate normal="1965/1966" type="inclusive">1965-1966</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wilson, Jessica E.</unittitle>
+            <unitdate normal="1944/1945" type="inclusive">1944-1945</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wollheim, Donald A.</unittitle>
+            <unitdate normal="1967" type="inclusive">1967, </unitdate>
+            <unitdate normal="1971/1973" type="inclusive">1971-1973</unitdate>
+            <container type="Box">8</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="corr-acbo">Ace Books</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>WorldCon invitations</unittitle>
+            <abstract>invitations to participate in 17th and 27th WorldCons</abstract>
+            <unitdate normal="1959" type="inclusive">1959, </unitdate>
+            <unitdate normal="1969" type="inclusive">1969</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>WQED</unittitle>
+            <unitdate normal="1955" type="inclusive">1955</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wylie, Dirk</unittitle>
+            <abstract>literary agent</abstract>
+            <unitdate normal="1944/1945" type="inclusive">1944-1945</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>W, Y, misc</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Zelazny, Roger</unittitle>
+            <unitdate normal="1966" type="inclusive">1966</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ziff-Davis</unittitle>
+            <unitdate normal="1953/1957" type="inclusive">1953-1957, </unitdate>
+            <unitdate normal="1961" type="inclusive">1961, </unitdate>
+            <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>First name only and unidentified</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Financial and legal material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Ace Books</unittitle>
+            <abstract>royalty reports</abstract>
+            <unitdate normal="1960" type="inclusive">1960, </unitdate>
+            <unitdate normal="1964" type="inclusive">1964, </unitdate>
+            <unitdate normal="1966" type="inclusive">1966</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>AMCO Films</unittitle>
+            <abstract>contract for 
+              
+              <emph render="italic">The girls from Planet 5</emph></abstract>
+            <unitdate normal="1959" type="inclusive">1959</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ballantine Books</unittitle>
+            <abstract>royalty reports, contracts</abstract>
+            <unitdate normal="1953/1957" type="inclusive">1953-1957, </unitdate>
+            <unitdate normal="1962" type="inclusive">1962</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Copyright Office</unittitle>
+            <unitdate normal="1969" type="inclusive">1969</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>E.J. Carnell</unittitle>
+            <abstract>royalty reports, Wilson's summary of income</abstract>
+            <unitdate normal="1954/1978" type="inclusive">1954-1978, </unitdate>
+            <unitdate normal="1944/1987" type="inclusive">undated</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Doubleday</unittitle>
+            <abstract>royalty reports, copies returned, etc.</abstract>
+            <unitdate normal="1978/1979" type="inclusive">1978-1979</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lancer Books</unittitle>
+            <abstract>royalty reports</abstract>
+            <unitdate normal="1967/1969" type="inclusive">1967-1969</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lightning Publications</unittitle>
+            <abstract>partnership agreement with other AAF members about writing history of 339th Fighter Squadron/347th Fighter Group</abstract>
+            <unitdate normal="1946/1947" type="inclusive">1946-1947</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Memorabilia</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Awards</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Nebula for Best Novelette</unittitle>
+              <abstract>photograph of Wilson, program, clippings, etc.</abstract>
+              <unitdate normal="1969" type="inclusive">1969</unitdate>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Palawan Poetry-Prose award</unittitle>
+              <abstract>photos, letters, copy of magazine</abstract>
+              <unitdate normal="1945" type="inclusive">1945, </unitdate>
+              <unitdate normal="1969" type="inclusive">1969</unitdate>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Clippings</unittitle>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="memo-wwii-clip">World War II : Clippings</ref> and 
+              
+              <ref target="memo-scra">Scrapbooks</ref>,  below.</p>
+          </note>
+          <c03>
+            <did>
+              <unittitle>About Wilson</unittitle>
+              <unitdate normal="1926" type="inclusive">[1926?], </unitdate>
+              <unitdate normal="1944/1945" type="inclusive">1944-1945, </unitdate>
+              <unitdate normal="1955/1958" type="inclusive">1955-1958, </unitdate>
+              <unitdate normal="1961/1962" type="inclusive">1961-1962, </unitdate>
+              <unitdate normal="1965/1970" type="inclusive">1965-1970, </unitdate>
+              <unitdate normal="1984" type="inclusive">1984 </unitdate>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>About Syracuse University's science fiction collections</unittitle>
+              <unitdate normal="1967" type="inclusive">1967, </unitdate>
+              <unitdate normal="1970" type="inclusive">1970, </unitdate>
+              <unitdate normal="1973" type="inclusive">1973, </unitdate>
+              <unitdate normal="1975" type="inclusive">1975</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <unitdate normal="1955" type="inclusive">1955, </unitdate>
+              <unitdate normal="1958" type="inclusive">1958, </unitdate>
+              <unitdate normal="1961" type="inclusive">1961, </unitdate>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Conventions</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>LunaCon</unittitle>
+              <unitdate normal="1969/1971" type="inclusive">1969-1971, </unitdate>
+              <unitdate normal="1974" type="inclusive">1974</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>SFCon V</unittitle>
+              <unitdate normal="1982" type="inclusive">1982</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Star Trek</unittitle>
+              <unitdate normal="1973" type="inclusive">1973, </unitdate>
+              <unitdate normal="1975" type="inclusive">1975</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>11th WorldCon (PhilCon II)</unittitle>
+              <unitdate normal="1953" type="inclusive">1953</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>15th WorldCon (LACon I)</unittitle>
+              <unitdate normal="1957" type="inclusive">1957</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>24th WorldCon (TriCon)</unittitle>
+              <unitdate normal="1966" type="inclusive">1966</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>25th WorldCon (NYCon III)</unittitle>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>26th WorldCon (BayCon)</unittitle>
+              <unitdate normal="1968" type="inclusive">1968</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>27th WorldCon (St. LouisCon)</unittitle>
+              <unitdate normal="1969" type="inclusive">1969</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>28th WorldCon (HeiCon)</unittitle>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>31st WorldCon (TorCon II)</unittitle>
+              <unitdate normal="1973" type="inclusive">1973</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>33rd WorldCon (AussieCon)</unittitle>
+              <unitdate normal="1975" type="inclusive">1975</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>36th WorldCon (IguanaCon)</unittitle>
+              <unitdate normal="1978" type="inclusive">1978</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>37th WorldCon (SeaCon)</unittitle>
+              <unitdate normal="1979" type="inclusive">1979</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <unitdate normal="1952/1955" type="inclusive">1952-1955, </unitdate>
+              <unitdate normal="1958" type="inclusive">1958, </unitdate>
+              <unitdate normal="1961" type="inclusive">1961, </unitdate>
+              <unitdate normal="1964/1970" type="inclusive">1964-1970, </unitdate>
+              <unitdate normal="1974" type="inclusive">1974, </unitdate>
+              <unitdate normal="1982" type="inclusive">1982, </unitdate>
+              <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>The Dome</unittitle>
+            <abstract>Richmond Hill High School yearbook</abstract>
+            <unitdate normal="1936" type="inclusive">1936</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Family</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Felicitas K. Wilson (mother)</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>College of Swedish Massage</unittitle>
+                <abstract>diploma, class photograph</abstract>
+                <unitdate normal="1951" type="inclusive">1951</unitdate>
+                <container type="Oversize">2</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Correspondence</unittitle>
+                <unitdate normal="1938" type="inclusive">1938, </unitdate>
+                <unitdate normal="1944/1945" type="inclusive">1944-1945, </unitdate>
+                <unitdate normal="1947" type="inclusive">1947, </unitdate>
+                <unitdate normal="1953" type="inclusive">1953, </unitdate>
+                <unitdate normal="1956" type="inclusive">1956</unitdate>
+                <container type="Box">12</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>"Notes for essays"</unittitle>
+                <abstract>typed and handwritten notes, fragments, drafts</abstract>
+                <container type="Box">12</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Photographs</unittitle>
+                <container type="Box">12</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Miscellaneous</unittitle>
+                <abstract>marriage certificate, College of Swedish Massage and other certifications, U.S. Power Squadron certificate, etc.</abstract>
+                <unitdate type="inclusive" normal="1919">1919, </unitdate>
+                <unitdate type="inclusive" normal="1944/1945">1944-1945, </unitdate>
+                <unitdate type="inclusive" normal="1950/1951">1950-1951, </unitdate>
+                <unitdate type="inclusive" normal="1955/1956">1955-1956</unitdate>
+                <container type="Box">12</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Richard Wilson (father)</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Jephtha Lodge No. 494</unittitle>
+                <abstract>photographs, Master Mason certificates (2), membership cards</abstract>
+                <unitdate normal="1918" type="inclusive">1918, </unitdate>
+                <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+                <container type="Oversize">2</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>World War I service recognition, 310th Infantry</unittitle>
+                <unitdate normal="1913/1923" type="inclusive">circa 1918</unitdate>
+                <container type="Oversize">2</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Miscellaneous</unittitle>
+                <abstract>honorable discharge from Army; membership cards; death and funeral documentation</abstract>
+                <unitdate normal="1919" type="inclusive">1919, </unitdate>
+                <unitdate normal="1942" type="inclusive">1942, </unitdate>
+                <unitdate normal="1944" type="inclusive">1944</unitdate>
+                <container type="Box">12</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Julius Krause (maternal grandfather)</unittitle>
+            </did>
+            <note>
+              <p>Much of this material is in German.</p>
+            </note>
+            <c04>
+              <did>
+                <unittitle>Manuscript, "Faith, greed, home"</unittitle>
+                <abstract>typed draft</abstract>
+                <unitdate normal="1918" type="inclusive">1918</unitdate>
+                <container type="Box">12</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Manuscript, "Gerold"</unittitle>
+                <abstract>typed draft</abstract>
+                <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+                <container type="Box">12</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Manuscript, "Stars and stripes among the Persians and Koords"</unittitle>
+                <abstract>handwritten and typed drafts</abstract>
+                <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+                <container type="Box">12</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Manuscript, "Verkauft"</unittitle>
+                <abstract>handwritten and typed drafts and notes</abstract>
+                <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+                <physdesc>
+                  <extent>2 folders</extent>
+                </physdesc>
+                <container type="Box">12</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Miscellaneous</unittitle>
+                <abstract>marriage certificate to Josephine Heller; citizenship certificate; items relating to Josephine's funeral; etc.</abstract>
+                <unitdate normal="1891" type="inclusive">1891, </unitdate>
+                <unitdate normal="1894" type="inclusive">1894, </unitdate>
+                <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+                <container type="Box">12</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Eduard Krause (maternal great-grandfather)</unittitle>
+              <abstract>almost certainly Eduard Friedrich Heinrich Krause (1816-1882), printer and co-founder of the Berlin Craftsmen's Association</abstract>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Printed material</unittitle>
+                <unitdate normal="1865/1875" type="inclusive">circa 1870-1900</unitdate>
+                <container type="Oversize">2</container>
+              </did>
+              <accessrestrict>
+                <p>Originals of newspapers are VERY fragile.  Do not handle.  Use photocopies (in box).</p>
+              </accessrestrict>
+              <scopecontent>
+                <p>Zum jubilaeum ihres hochverehrten Meisters und Freundes EDUARD KRAUSE dargebracht vom personal der druckerei (1870) - quarto-size commemorative publication, in English "For the jubilee of esteemed master and friend Eduard Krause, offered by the staff of the print shop"</p>
+                <p>
+                  <emph render="italic">Der Schlaraffia Zeyttungen</emph> no. 540 and 544 - newsletter of the Schlaraffia Society, a men's society founded in Prague in 1859 for purposes of friendship, art and humor (undated, probably circa 1890-1900; </p>
+                <p>
+                  <emph render="italic">National Zeitung</emph> No. 411 (1882)</p>
+              </scopecontent>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Unidentified</unittitle>
+              <abstract>formal portrait photographs of men and women, not identified but presumably family</abstract>
+              <container type="Oversize">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fantasy Calendar from Gnome Press</unittitle>
+            <unitdate normal="1950" type="inclusive">1950</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Jack and Jill" play</unittitle>
+            <abstract>clippings, letter, program from a performance, etc.</abstract>
+            <unitdate normal="1965" type="inclusive">1965, </unitdate>
+            <unitdate normal="1968" type="inclusive">1968, </unitdate>
+            <unitdate normal="1985" type="inclusive">1985</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Missile ring, toy</unittitle>
+            <abstract>small plastic ring with toy missile on it</abstract>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photograph of Wilson by Jay Kay Klein</unittitle>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Poster, "Spaceman Rose" by Josh Kirby</unittitle>
+            <container type="Map-case">
+            </container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ray guns, toy</unittitle>
+            <abstract>2 plastic ray guns</abstract>
+            <unitdate normal="1945/1955" type="inclusive">circa 1950</unitdate>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>World War II</unittitle>
+          </did>
+          <c03 id="memo-wwii-clip">
+            <did>
+              <unittitle>Clippings</unittitle>
+              <abstract>by Wilson, mostly letters home published in various outlets; about Wilson; miscellaneous</abstract>
+              <unitdate normal="1943/1945" type="inclusive">1943-1945</unitdate>
+              <container type="Box">12</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Currency</unittitle>
+              <abstract>scrip issued by occupying Japanese forces as replacements for local currency in Philippines, Netherlands East Indies, Sarawak, etc.</abstract>
+              <container type="Box">12</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Humor, miscellaneous</unittitle>
+              <abstract>cartoons, joke articles/essays, etc.; includes photoreproduction of several cartoons done by Milton Caniff especially for the 339th Fighter Squadron and signed/inscribed to Wilson and the men</abstract>
+              <container type="Box">12</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Maps</unittitle>
+              <abstract>printed on silk, likely used by/belonged to pilots</abstract>
+              <unitdate normal="1938/1948" type="inclusive">circa 1943</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Official communications</unittitle>
+              <abstract>Wilson's draft notice, official orders, transfer orders, etc.</abstract>
+              <unitdate normal="1942/1945" type="inclusive">1942-1945</unitdate>
+              <container type="Box">12</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Oldsmobile ad, featuring the "Gremlin" of the 339th</unittitle>
+              <container type="Oversize">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ship and squadron newspapers</unittitle>
+              <unitdate normal="1944/1945" type="inclusive">1944-1945</unitdate>
+              <container type="Box">12</container>
+            </did>
+            <scopecontent>
+              <p>"The G.I Afloat," unspecified ship
+                
+                <lb/>
+			"The Mariner", unspecified ship, vol. 1 no. 1-3, 5-8
+                
+                <lb/>
+			"The Stateside Express," USS 
+                
+                <emph render="italic">Wharton</emph>, no. 1-17
+                
+                <lb/>
+			"Sun Setter," XIII AAF Fighter Command, 5 issues, most incomplete, and packet of typescript revisions
+                
+                <lb/>
+			"Voice of A-2," Casual Squadron A-2, no. 1
+                
+                <lb/>
+			"The Tropic-Optic," 38th Air Service Squadron, vol. 2 no. 4</p>
+            </scopecontent>
+          </c03>
+          <c03 id="memo-wwii-misc">
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <abstract>photographs, cancelled checks, leaflet dropped on Japanese announcing end of war, issue of "Fantasy Times in France" by James V. Taurasi, other items</abstract>
+              <container type="Box">13</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="memo-scra">
+          <did>
+            <unittitle>Scrapbooks</unittitle>
+            <abstract>clippings, book jackets, reviews, etc., relating to science fiction books and movies</abstract>
+          </did>
+          <c03>
+            <did>
+              <unittitle>"Science fiction films and plays"</unittitle>
+              <unitdate normal="1937" type="inclusive">1937</unitdate>
+              <container type="Box">10</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Science fiction scrapbook"</unittitle>
+              <unitdate normal="1937/1938" type="inclusive">1937-1938</unitdate>
+              <container type="Box">10</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Fantasy films of 1938"</unittitle>
+              <unitdate normal="1938/1939" type="inclusive">1938-1939</unitdate>
+              <container type="Box">10</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Off-trail plays"</unittitle>
+              <unitdate normal="1938/1939" type="inclusive">1938-1939</unitdate>
+              <container type="Box">10</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Off-trail plays"</unittitle>
+              <unitdate normal="1939" type="inclusive">1939</unitdate>
+              <container type="Box">10</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Yankee Hobo in the Orient" map</unittitle>
+            <abstract>printed version of map drawn by author John Patric to go with his book; signed and inscribed</abstract>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellany</unittitle>
+            <abstract>membership cards, press pass, artwork, etc.</abstract>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Printed material</unittitle>
+        </did>
+        <c02 id="prmat-fanz">
+          <did>
+            <unittitle>Fanzines</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Algol</unittitle>
+              <abstract>no. 18</abstract>
+              <unitdate normal="1972" type="inclusive">1972</unitdate>
+              <container type="Box">10</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Chief Procurer Speaks</unittitle>
+              <abstract>vol. 3 no. 5</abstract>
+              <unitdate normal="1977" type="inclusive">1977</unitdate>
+              <container type="Box">10</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Escape</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="writ-misc-esca">Writings : Miscellaneous : Wilson fanzine, "Escape"</ref>.</p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Fantasy Times</unittitle>
+              <abstract>vol. 3 no. 4; vol. 7 no. 4, 9</abstract>
+              <unitdate normal="1952/1953" type="inclusive">1952-1953</unitdate>
+              <container type="Box">11</container>
+            </did>
+            <note>
+              <p>See also 
+                
+                <ref target="memo-wwii-misc">Memorabilia : World War II : Miscellaneous</ref>.</p>
+            </note>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Gridley Wave</unittitle>
+              <abstract>no. 17</abstract>
+              <unitdate normal="1965" type="inclusive">1965</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Hamm Court Herald</unittitle>
+              <abstract>no. 1, no. 3</abstract>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Heroine's Showcase Art Portfolio</unittitle>
+              <abstract>no. 2</abstract>
+              <unitdate normal="1979" type="inclusive">1979</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Innavigable Mouth</unittitle>
+              <abstract>no. 3, no. 4</abstract>
+              <unitdate normal="1957/1958" type="inclusive">1957-1958</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lobster Tails</unittitle>
+              <abstract>no. 8, no. 9</abstract>
+              <unitdate normal="1980" type="inclusive">[1980]</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mae Strelkov Trip Report</unittitle>
+              <unitdate normal="1976" type="inclusive">1976</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Maya</unittitle>
+              <abstract>no. 7</abstract>
+              <unitdate normal="1975" type="inclusive">1975</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Nucleus</unittitle>
+              <abstract>vol. 1 no. 1, 2, 3</abstract>
+              <unitdate normal="1977" type="inclusive">[1977?]</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Science Fiction Forum</unittitle>
+              <abstract>vol. 1 no. 1, 2</abstract>
+              <unitdate normal="1957" type="inclusive">1957</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Science Fiction Newsletter</unittitle>
+              <abstract>vol. 1 no. 1-26; vol. 2 no. 1-26</abstract>
+              <unitdate normal="1937/1938" type="inclusive">1937-1938</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Science Fiction Review</unittitle>
+              <abstract>no. 43</abstract>
+              <unitdate normal="1982" type="inclusive">1982</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Shangri L'Affaires</unittitle>
+              <abstract>no. 32, no. 35</abstract>
+              <unitdate normal="1946/1947" type="inclusive">1946-1947</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>SFS Refractions</unittitle>
+              <abstract>3 issues</abstract>
+              <unitdate normal="1982" type="inclusive">1982</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Skylee Sun</unittitle>
+              <abstract>no. 1</abstract>
+              <unitdate normal="1971" type="inclusive">1971</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Synapse</unittitle>
+              <abstract>3 issues</abstract>
+              <unitdate normal="1969/1970" type="inclusive">[1969-1970?]</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Tink; Tong; Tunkunaku Event</unittitle>
+              <abstract>three different titles, all by Mae Strelkov</abstract>
+              <unitdate normal="1973/1974" type="inclusive">1973-1974</unitdate>
+              <container type="Box">13</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Vinegar Worm</unittitle>
+              <abstract>vol. 2 no. 10 (reprint)</abstract>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Vombus [?]</unittitle>
+              <abstract>incomplete; editors listed as James V. Taurasi and Richard Wilson; possibly related to 
+                
+                <emph render="italic">Voice of the Imagination</emph>, known as VOM</abstract>
+              <unitdate normal="1937" type="inclusive">1937</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Newsletters</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>First Fandom</unittitle>
+              <abstract>published by First Fandom; no. 1, 2, 5; also includes First Fandom Magazine no. 15</abstract>
+              <unitdate normal="1968" type="inclusive">1968, </unitdate>
+              <unitdate normal="1971" type="inclusive">1971</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Realist</unittitle>
+              <abstract>published by The Realist Association; no. 44-46, 50, 54, 60, 63, 64, 73, 86</abstract>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <unitdate normal="1963/1966" type="inclusive">1963-1966</unitdate>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Renaissance</unittitle>
+              <abstract>published by the Second Foundation; vol. 2 no. 4</abstract>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+              <container type="Box">13</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Publishers</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <abstract>Borgo Press, Gregg Science Fiction, Hyperion, Pocket, Pulp Press, more</abstract>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">11</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Subject files</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>339th Fighter Squadron/347th Fighter Group</unittitle>
+            <abstract>miscellaneous material</abstract>
+            <unitdate normal="1944/1945" type="inclusive">1944-1945</unitdate>
+            <container type="Box">13</container>
+          </did>
+          <accessrestrict>
+            <p>This material is closed to researchers pending review.</p>
+          </accessrestrict>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>347th Fighter Group</unittitle>
+            <abstract>lists of achievements; AR 345-105 reports; award recommendations, narrative history, press releases, roster and casualty lists, </abstract>
+            <unitdate normal="1943/1945" type="inclusive">1943-1945</unitdate>
+            <physdesc>
+              <extent>7 folders</extent>
+            </physdesc>
+            <container type="Box">13</container>
+          </did>
+          <accessrestrict>
+            <p>This material is closed to researchers pending review.</p>
+          </accessrestrict>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>347th Fighter Group</unittitle>
+            <abstract>miscellaneous official documents; personal accounts</abstract>
+            <unitdate normal="1943/1945" type="inclusive">1943-1945</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">14</container>
+          </did>
+          <accessrestrict>
+            <p>This material is closed to researchers pending review.</p>
+          </accessrestrict>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>FBI</unittitle>
+            <unitdate normal="1949/1950" type="inclusive">1949-1950</unitdate>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Flying saucers / UFOs</unittitle>
+            <abstract>clippings</abstract>
+            <unitdate normal="1947/1973" type="inclusive">1947-1973, </unitdate>
+            <unitdate normal="1870/1987" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>5 folders</extent>
+            </physdesc>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Flying saucers / UFOs</unittitle>
+            <abstract>magazines, including a comic book</abstract>
+            <unitdate normal="1947" type="inclusive">1947, </unitdate>
+            <unitdate normal="1950" type="inclusive">1950, </unitdate>
+            <unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pohl, Frederik</unittitle>
+            <abstract>clippings, correspondence about, etc.</abstract>
+            <unitdate normal="1945" type="inclusive">1945, </unitdate>
+            <unitdate normal="1966/1968" type="inclusive">1966-1968</unitdate>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02 id="subj-reut">
+          <did>
+            <unittitle>Reuter's</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Commemorative items</unittitle>
+              <unitdate normal="1950" type="inclusive">1950, </unitdate>
+              <unitdate normal="1962" type="inclusive">1962</unitdate>
+              <container type="Box">14</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Official communications</unittitle>
+              <unitdate normal="1953/1956" type="inclusive">1953-1956</unitdate>
+              <container type="Box">14</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Style notes</unittitle>
+              <unitdate normal="1951" type="inclusive">1951</unitdate>
+              <container type="Box">14</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Writings</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Articles</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Aunt Fritzi</unittitle>
+              <abstract>clipping of published article about Fritzi Kelly, Wilson's aunt</abstract>
+              <unitdate normal="1986" type="inclusive">1986</unitdate>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Albert Finney</unittitle>
+              <abstract>drafts, letter to 
+                
+                <emph render="italic">Movie Times</emph> accompanying submission</abstract>
+              <unitdate normal="1964" type="inclusive">1964</unitdate>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03 id="writ-arti-flsa">
+            <did>
+              <unittitle>Flying saucer series</unittitle>
+              <abstract>drafts; first article is by Wilson, others are by Douglas Grahame, Dan Edelstein, Cyril Kornbluth, Wallace R. Fanning; includes a few items of correspondence with Fanning</abstract>
+              <unitdate normal="1950" type="inclusive">1950</unitdate>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Invasion of the Beatles</unittitle>
+              <abstract>notes, drafts, research material</abstract>
+              <unitdate normal="1964" type="inclusive">1964</unitdate>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Military, miscellaneous</unittitle>
+              <abstract>drafts and clippings of published items, including some in Wilson's high school magazine 
+                
+                <emph render="italic">The Dome</emph></abstract>
+              <unitdate normal="1944/1946" type="inclusive">1944-1946</unitdate>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Reuters, miscellaneous</unittitle>
+              <abstract>drafts, final submitted copy</abstract>
+              <unitdate normal="1943" type="inclusive">1943, </unitdate>
+              <unitdate normal="1952" type="inclusive">1952, </unitdate>
+              <unitdate normal="1958/1961" type="inclusive">1958-1961</unitdate>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Tops in Pops column</unittitle>
+              <abstract>written while Wilson was at Transradio Press; drafts and tear-sheets or clippings of published columns from The Daily Gazette</abstract>
+              <unitdate normal="1951" type="inclusive">1951</unitdate>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <unitdate normal="1948" type="inclusive">1948, </unitdate>
+              <unitdate normal="1953" type="inclusive">1953, </unitdate>
+              <unitdate normal="1983" type="inclusive">1983</unitdate>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Books</unittitle>
+          </did>
+          <scopecontent>
+            <p>Both novels and novellas are filed here, including seven folders of material for Wilson's Nebula Award-winning novelette "Mother to the World."</p>
+          </scopecontent>
+          <c03>
+            <did>
+              <unittitle>At the sign of the Boar's Head Nebula [working title: Saffron]</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Notes, foldered</unittitle>
+                <physdesc>
+                  <extent>4 folders</extent>
+                </physdesc>
+                <container type="Box">15</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Notes, miscellaneous</unittitle>
+                <physdesc>
+                  <extent>2 folders</extent>
+                </physdesc>
+                <container type="Box">15</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>"Old carbons, early drafts, shorter version"</unittitle>
+                <container type="Box">16</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Early drafts</unittitle>
+                <physdesc>
+                  <extent>6 folders</extent>
+                </physdesc>
+                <container type="Box">16</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Draft</unittitle>
+                <unitdate normal="1966" type="inclusive">1966</unitdate>
+                <container type="Box">16</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>"30,000 word version"</unittitle>
+                <physdesc>
+                  <extent>3 folders</extent>
+                </physdesc>
+                <unitdate normal="1969" type="inclusive">1969</unitdate>
+                <container type="Box">16</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>"Original copy"</unittitle>
+                <physdesc>
+                  <extent>2 folders</extent>
+                </physdesc>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Final[?] draft</unittitle>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>"Finished copy"</unittitle>
+                <abstract>appears to actually be partial drafts</abstract>
+                <physdesc>
+                  <extent>2 folders</extent>
+                </physdesc>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The far king</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>"Working folder"</unittitle>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Early draft, handwritten</unittitle>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>"Pre-July 1976 ms"</unittitle>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Typescript</unittitle>
+                <container type="Box">17</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>"Penultimate draft"</unittitle>
+                <container type="Box">18</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Final draft</unittitle>
+                <container type="Box">18</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Setting copy</unittitle>
+                <container type="Box">18</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Proofs / galleys</unittitle>
+                <container type="Box">18</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The girls from Planet 5</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Final, incomplete</unittitle>
+                <abstract>contains pp. 65-251</abstract>
+                <physdesc>
+                  <extent>2 folders</extent>
+                </physdesc>
+                <container type="Box">18</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Published editions</unittitle>
+                <abstract>Ballantine hardcover, 1955, signed; Ballantine paperback, 1957, signed; Hachette, 1962 (Le Rayon Fantastique 92), signed </abstract>
+                <unitdate normal="1955" type="inclusive">1955, </unitdate>
+                <unitdate normal="1957" type="inclusive">1957, </unitdate>
+                <unitdate normal="1962" type="inclusive">1962</unitdate>
+                <container type="Box">18</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Musical comedy version outline</unittitle>
+                <container type="Box">18</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>I thought I heard him play</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Synopsis</unittitle>
+                <container type="Box">18</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Notes</unittitle>
+                <physdesc>
+                  <extent>3 folders</extent>
+                </physdesc>
+                <container type="Box">18</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Draft</unittitle>
+                <physdesc>
+                  <extent>4 folders</extent>
+                </physdesc>
+                <container type="Box">19</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The kid from Ozone Park</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Published edition, Drumm booklet #27</unittitle>
+                <unitdate normal="1987" type="inclusive">1987</unitdate>
+                <container type="Box">19</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The 19th century spaceship</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Drafts and notes</unittitle>
+                <physdesc>
+                  <extent>3 folders</extent>
+                </physdesc>
+                <container type="Box">19</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Final draft</unittitle>
+                <physdesc>
+                  <extent>2 folders</extent>
+                </physdesc>
+                <container type="Box">19</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Super city</unittitle>
+            </did>
+            <note>
+              <p>See also 
+                
+                <ref target="writ-misc-fdpw">Miscellaneous : "First drafts incorporated in published works"</ref>.</p>
+            </note>
+            <c04>
+              <did>
+                <unittitle>Notes, miscellaneous pages, corrections</unittitle>
+                <container type="Box">19</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Draft, pp. 1-75</unittitle>
+                <container type="Box">19</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Draft, pp. 76-149</unittitle>
+                <container type="Box">20</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>30 day wonder</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Notes</unittitle>
+                <container type="Box">20</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Quotes for chapter headings</unittitle>
+                <container type="Box">20</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Draft, mostly handwritten</unittitle>
+                <physdesc>
+                  <extent>7 folders</extent>
+                </physdesc>
+                <container type="Box">20</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Final manuscript, pp. 1-150</unittitle>
+                <physdesc>
+                  <extent>2 folders</extent>
+                </physdesc>
+                <container type="Box">20</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Final manuscript, pp. 151-233</unittitle>
+                <container type="Box">21</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Printer's copy</unittitle>
+                <physdesc>
+                  <extent>3 folders</extent>
+                </physdesc>
+                <container type="Box">21</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>German edition, Utopia zukunfts roman #373</unittitle>
+                <container type="Box">21</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Those idiots from Earth</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Published edition, Ballantine paperback</unittitle>
+                <unitdate normal="1957" type="inclusive">1957</unitdate>
+                <container type="Box">21</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Time out for tomorrow [collection]</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Published edition, Ballantine</unittitle>
+                <unitdate normal="1962" type="inclusive">1962</unitdate>
+                <container type="Box">21</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Plays</unittitle>
+          </did>
+          <c03 id="writ-play-anti">
+            <did>
+              <unittitle>Another time</unittitle>
+              <abstract>based on short story "Voice of the diaphragm"</abstract>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Drafts</unittitle>
+                <abstract>handwritten and typed</abstract>
+                <container type="Box">21</container>
+              </did>
+            </c04>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Jack and Jill</unittitle>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Course notes, Drama 135</unittitle>
+                <unitdate normal="1964" type="inclusive">1964</unitdate>
+                <container type="Box">21</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Outlines</unittitle>
+                <container type="Box">21</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Drafts A-D</unittitle>
+                <physdesc>
+                  <extent>4 folders</extent>
+                </physdesc>
+                <container type="Box">21</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Notes, fragments, miscellaneous revisions</unittitle>
+                <container type="Box">21</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Final</unittitle>
+                <container type="Box">22</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Submitted to WCAU "Repertoire Workshop"</unittitle>
+                <unitdate normal="1967" type="inclusive">1967</unitdate>
+                <container type="Box">22</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Reviews</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>"Fantasy Stage and Screen" columns</unittitle>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Film, miscellaneous</unittitle>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Theater, miscellaneous</unittitle>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Stories</unittitle>
+          </did>
+          <scopecontent>
+            <p>Unless otherwise noted, material for a given story consists of handwritten and/or typed drafts.</p>
+          </scopecontent>
+          <c03>
+            <did>
+              <unittitle>An abundance of good things</unittitle>
+              <unitdate normal="1953" type="inclusive">1953</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The archetype</unittitle>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The best possible world</unittitle>
+              <unitdate normal="1959" type="inclusive">1959</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Beyond duty</unittitle>
+              <unitdate normal="1930/1944" type="inclusive">pre-1944</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The big fix</unittitle>
+              <unitdate normal="1953/1955" type="inclusive">1953-1955</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Box</unittitle>
+              <unitdate normal="1956/1963" type="inclusive">1956-1963</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Boy</unittitle>
+              <unitdate normal="1956" type="inclusive">1956</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The care and feeding of vampires</unittitle>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Carson effect</unittitle>
+              <unitdate normal="1959/1963" type="inclusive">1959-1963</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Christmas party [alt title: Time out for tomorrow]</unittitle>
+              <unitdate normal="1953" type="inclusive">1953</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The day they had the war</unittitle>
+              <unitdate normal="1965/1970" type="inclusive">1965-1970</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Deny the slake</unittitle>
+              <abstract>notes, drafts, published version in 
+                
+                <emph render="italic">Special Wonder Volume 2</emph></abstract>
+              <unitdate normal="1953/1956" type="inclusive">1953-1956, </unitdate>
+              <unitdate normal="1970" type="inclusive">1970</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Deserter</unittitle>
+              <unitdate normal="1955" type="inclusive">1955</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Don't fence me in</unittitle>
+              <unitdate normal="1953" type="inclusive">1953, </unitdate>
+              <unitdate normal="1955" type="inclusive">1955</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The eight billion</unittitle>
+              <abstract>notes, research material, drafts, published version in 
+                
+                <emph render="italic">Fantasy &amp; Science Fiction</emph></abstract>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <unitdate normal="1956/1965" type="inclusive">1956-1965</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>88 beats 266</unittitle>
+              <unitdate normal="1952" type="inclusive">1952</unitdate>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The evil ones</unittitle>
+              <abstract>notes, draft</abstract>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Four star planet</unittitle>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Friend of the family</unittitle>
+              <unitdate normal="1953" type="inclusive">1953</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Frostbite</unittitle>
+              <unitdate normal="1951" type="inclusive">1951, </unitdate>
+              <unitdate normal="1956" type="inclusive">1956</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Gone past [alt title: Back from 1984]</unittitle>
+              <abstract>notes, drafts, editor's manuscript</abstract>
+              <unitdate normal="1979/1980" type="inclusive">1979-1980</unitdate>
+              <physdesc>
+                <extent>4 folders</extent>
+              </physdesc>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Grand prize</unittitle>
+              <unitdate normal="1956" type="inclusive">1956</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Green eyes</unittitle>
+              <unitdate normal="1957" type="inclusive">1957, </unitdate>
+              <unitdate normal="1969" type="inclusive">1969</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The hoaxters</unittitle>
+              <unitdate normal="1952" type="inclusive">1952</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Honor</unittitle>
+              <unitdate normal="1953" type="inclusive">1953</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The inhabited</unittitle>
+              <unitdate normal="1952" type="inclusive">1952</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Inside story</unittitle>
+              <unitdate normal="1953/1954" type="inclusive">1953-1954</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>It's cold outside</unittitle>
+              <abstract>includes list of submissions</abstract>
+              <unitdate normal="1953" type="inclusive">1953</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Just call me Irish</unittitle>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The largess in Manrun 2 [published as Kill me with kindness]</unittitle>
+              <unitdate normal="1957/1958" type="inclusive">1957-1958</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lonely road</unittitle>
+              <unitdate normal="1953" type="inclusive">[1953?]</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Love</unittitle>
+              <unitdate normal="1951" type="inclusive">1951</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>A man spekith [working title: Space disc jockey]</unittitle>
+              <abstract>notes, research material, drafts</abstract>
+              <unitdate normal="1967/1969" type="inclusive">1967-1969</unitdate>
+              <physdesc>
+                <extent>6 folders</extent>
+              </physdesc>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Man without a planet [alt. title: Willie]</unittitle>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Man working</unittitle>
+              <unitdate normal="1957/1958" type="inclusive">1957-1958</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Martian princess</unittitle>
+              <unitdate normal="1951" type="inclusive">1951</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The message</unittitle>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mother to the world</unittitle>
+              <abstract>notes, miscellaneous pages, drafts</abstract>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Mother to the world</unittitle>
+              <abstract>drafts, published version in 
+                
+                <emph render="italic">Orbit</emph></abstract>
+              <physdesc>
+                <extent>4 folders</extent>
+              </physdesc>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>9-9-99</unittitle>
+              <unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Outside Earth</unittitle>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Press conference</unittitle>
+              <unitdate normal="1952" type="inclusive">1952</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The purple boat [working title: The scientists' daughter]</unittitle>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>QRM</unittitle>
+              <unitdate normal="1956" type="inclusive">1956</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Revolt of the masses [alt title: The locus focus]</unittitle>
+              <unitdate normal="1956" type="inclusive">1956</unitdate>
+              <container type="Box">25</container>
+            </did>
+            <note>
+              <p>See also 
+                
+                <ref target="writ-misc-fdpw">Miscellaneous : "First drafts incorporated in published works"</ref>.</p>
+            </note>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The rhyming invader</unittitle>
+              <abstract>published version, in 
+                
+                <emph render="italic">Kirmess</emph></abstract>
+              <unitdate normal="1962" type="inclusive">1962</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>See me not</unittitle>
+              <unitdate normal="1957" type="inclusive">1957</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Soft hands</unittitle>
+              <unitdate normal="1945" type="inclusive">1945</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The sons of Japheth</unittitle>
+              <unitdate normal="1956" type="inclusive">1956</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The South Waterford Rumple Club</unittitle>
+              <abstract>notes, research material, drafts</abstract>
+              <unitdate normal="1957/1968" type="inclusive">1957-1968</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The story writer</unittitle>
+              <abstract>notes, research material, drafts, typescript and cover letter submitted to Ace Books</abstract>
+              <unitdate normal="1971/1972" type="inclusive">1971-1972, </unitdate>
+              <unitdate normal="1978" type="inclusive">1978</unitdate>
+              <physdesc>
+                <extent>9 folders</extent>
+              </physdesc>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Those idiots from Earth</unittitle>
+              <unitdate normal="1957" type="inclusive">1957</unitdate>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Transitory island</unittitle>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Tug hill</unittitle>
+              <abstract>notes, research material</abstract>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Tug hill</unittitle>
+              <abstract>drafts</abstract>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+              <physdesc>
+                <extent>4 folders</extent>
+              </physdesc>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Tunnel under the world</unittitle>
+              <unitdate normal="1951/1953" type="inclusive">1951-1953</unitdate>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Two very nice people</unittitle>
+              <unitdate normal="1945" type="inclusive">1945</unitdate>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The ubiquitous you [alt title: The in-betweens]</unittitle>
+              <unitdate normal="1952/1956" type="inclusive">1952-1956</unitdate>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Venus papers</unittitle>
+              <unitdate normal="1956/1957" type="inclusive">1956-1957</unitdate>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The voice of the diaphragm</unittitle>
+              <unitdate normal="1956" type="inclusive">1956</unitdate>
+              <container type="Box">27</container>
+            </did>
+            <note>
+              <p>See also 
+                
+                <ref target="writ-play-anti">Plays : Another time</ref>.</p>
+            </note>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Wasp</unittitle>
+              <unitdate normal="1953/1954" type="inclusive">1953-1954</unitdate>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The watchers in the glade</unittitle>
+              <abstract>notes, research material, drafts, published version in 
+                
+                <emph render="italic">9th Galaxy Reader</emph></abstract>
+              <unitdate normal="1960/1963" type="inclusive">1960-1963, </unitdate>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+              <physdesc>
+                <extent>4 folders</extent>
+              </physdesc>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Wide open ship</unittitle>
+              <abstract>galleys</abstract>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>You and eye</unittitle>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+          </did>
+          <c03 id="writ-misc-fdpw">
+            <did>
+              <unittitle>"First drafts incorporated in published works"</unittitle>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>George Pal interview</unittitle>
+              <abstract>notes, research material, drafts</abstract>
+              <unitdate normal="1980" type="inclusive">1980</unitdate>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The singing handout, in College and University Journal</unittitle>
+              <unitdate normal="1965" type="inclusive">1965</unitdate>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Syracuse University's science fiction collections</unittitle>
+              <abstract>notes, drafts, etc.; includes galleys for published version in 
+                
+                <emph render="italic">Worlds of Tomorrow</emph></abstract>
+              <unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate>
+              <container type="Box">27</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Trial notes</unittitle>
+              <abstract>trials Wilson covered for Transradio Press</abstract>
+            </did>
+            <c04>
+              <did>
+                <unittitle>Coplon, Judith</unittitle>
+                <unitdate normal="1949" type="inclusive">1949</unitdate>
+                <container type="Box">28</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Gillars, Mildred (aka "Axis Sally")</unittitle>
+                <unitdate normal="1949" type="inclusive">1949</unitdate>
+                <container type="Box">28</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Klock, Bernard</unittitle>
+                <unitdate normal="1952" type="inclusive">1952</unitdate>
+                <physdesc>
+                  <extent>2 folders</extent>
+                </physdesc>
+                <container type="Box">28</container>
+              </did>
+            </c04>
+            <c04>
+              <did>
+                <unittitle>Unidentified</unittitle>
+                <container type="Box">28</container>
+              </did>
+            </c04>
+          </c03>
+          <c03 id="writ-misc-esca">
+            <did>
+              <unittitle>Wilson fanzine, "Escape"</unittitle>
+              <abstract>vol. 1, no's 3, 6, and 7</abstract>
+              <unitdate normal="1939/1940" type="inclusive">1939-1940</unitdate>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>By others</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Blish, James, et al. / Criticism: Who needs it?</unittitle>
+              <abstract>published by SFWA</abstract>
+              <unitdate normal="1968" type="inclusive">1968</unitdate>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Blish, James, et al. / Paranoia and science fiction</unittitle>
+              <abstract>published by SFWA</abstract>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Bloch, Robert / An index to Unknown and Unknown Worlds</unittitle>
+              <abstract>published by Sirius Press</abstract>
+              <unitdate normal="1955" type="inclusive">1955</unitdate>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Bulmer, Kenneth / Dacre's last battle</unittitle>
+              <abstract>writing as Nelson Sherwood; typescript draft with corrections</abstract>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Bulmer, Kenneth / The fatal fire</unittitle>
+              <abstract>typescript draft</abstract>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Edelstein, Dan</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="writ-arti-flsa">Articles : Flying saucer series</ref>.</p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Fanning, Wallace B.</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="writ-arti-flsa">Articles : Flying saucer series</ref>.</p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Grahame, Douglas</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="writ-arti-flsa">Articles : Flying saucer series</ref>.</p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Kornbluth, Cyril</unittitle>
+              <note>
+                <p>See 
+                  
+                  <ref target="writ-arti-flsa">Articles : Flying saucer series</ref>.</p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lovecraft, H.P. / Notes on writing weird fiction</unittitle>
+              <abstract>typescript draft</abstract>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Pohl, Frederik</unittitle>
+              <note>
+                <p>See also 
+                  
+                  <ref target="writ-arti-flsa">Articles : Flying saucer series</ref>.</p>
+              </note>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Strauss, Erwin S. / The index to the S-F magazines</unittitle>
+              <abstract>self-published</abstract>
+              <unitdate normal="1966/1967" type="inclusive">1966-1967</unitdate>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Williamson, Jack / Science fiction comes to college</unittitle>
+              <abstract>raw material for report on college courses on SF</abstract>
+              <unitdate normal="1970/1971" type="inclusive">1970-1971</unitdate>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Unidentified</unittitle>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

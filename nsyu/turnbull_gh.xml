@@ -7,6 +7,7 @@
 <!ENTITY subjindex SYSTEM "subjindex.txt">
 <!ENTITY summitref SYSTEM "summit_ref.txt">
 ]>
+<?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen_rev.css"?>
 <ead relatedencoding="MARC21">
   <eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
     <eadid countrycode="US" mainagencycode="NSyU" identifier="turnbull_gh">turnbull_gh</eadid>
@@ -31,7 +32,9 @@
     </profiledesc>
     <revisiondesc>
       <list>
-        <item>12 Mar 2007 - converted to EAD (MRC)</item><item>4 Aug 2010 - adds M71-6 (MRC)</item>
+        <item>12 Mar 2007 - converted to EAD (MRC)</item>
+		<item>4 Aug 2010 - adds M71-6 (MRC)</item>
+        <item>21 Jul 2021 - Tyson letter added (RMH)</item>
       </list>
     </revisiondesc>
   </eadheader>
@@ -41,7 +44,7 @@
       <repository id="scrc" encodinganalog="852$a" label="Repository: ">&su_name; <lb/>&su_address;
                </repository>
       <origination label="Creator: ">
-        <persname encodinganalog="100" source="lcnaf">Turnbull, Grace Hill, 1880-</persname>
+        <persname encodinganalog="100" source="lcnaf">Turnbull, Grace Hill, 1880-1976.</persname>
       </origination>
       <unittitle encodinganalog="245$a" label="Title: ">Grace Hill Turnbull Papers</unittitle>
       <unitdate encodinganalog="245$f" type="inclusive" label="Inclusive Dates: " normal="1914/1960">1914-1960</unitdate>
@@ -89,7 +92,7 @@
     <arrangement encodinganalog="351$a">
       <head>Arrangement of the Collection</head>
       <p>Correspondence is subdivided into incoming (arranged alphabetically) and outgoing 
-		(arranged chronologically).  All other material is arranged alphabetically.</p>
+		(arranged chronologically). Added correspondence arranged alphabetically.  All other material is arranged alphabetically.</p>
     </arrangement>
     <!--<relatedmaterial encodinganalog="544 1">
       <head>Related Material</head>
@@ -105,15 +108,12 @@
 <subject encodinganalog="650" source="local">Art -- Painters</subject>
 <subject encodinganalog="650" source="local">Art -- Sculptors</subject>
 <subject encodinganalog="650" source="local">Women Authors</subject>
-<persname encodinganalog="600" source="lcnaf">Turnbull, Grace Hill, 1880-1960</persname>
+<persname encodinganalog="600" source="lcnaf">Turnbull, Grace Hill, 1880-1976.</persname>
 <subject encodinganalog="650" source="lcsh">Animal sculpture -- United States.</subject>
-<subject encodinganalog="650" source="lcsh">Art, American.</subject>
 <subject encodinganalog="650" source="lcsh">Art, American -- 20th century.</subject>
 <subject encodinganalog="650" source="lcsh">Painters -- United States.</subject>
-<subject encodinganalog="650" source="lcsh">Painting, American.</subject>
 <subject encodinganalog="650" source="lcsh">Painting, American -- 20th century.</subject>
 <subject encodinganalog="650" source="lcsh">Sculptors -- United States.</subject>
-<subject encodinganalog="650" source="lcsh">Sculpture, American.</subject>
 <subject encodinganalog="650" source="lcsh">Sculpture, American -- 20th century.</subject>
 <subject encodinganalog="650" source="lcsh">Women authors, American.</subject>
 <subject encodinganalog="650" source="lcsh">Women painters -- United States.</subject>
@@ -133,19 +133,34 @@
 <accessrestrict encodinganalog="506"><head>Access Restrictions</head><p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p></accessrestrict><userestrict encodinganalog="540"><head>Use Restrictions</head><p>Written permission must be obtained from SCRC and 
                        all relevant rights holders before publishing quotations, excerpts or images from any 
                        materials in this collection. </p></userestrict><prefercite encodinganalog="524"><head>Preferred Citation</head><p>Preferred citation for this material is as follows:</p><p>Grace Hill Turnbull Papers,<lb/>&su_name;
-                  </p></prefercite><!--<acqinfo encodinganalog="541">
+                  </p></prefercite><acqinfo encodinganalog="541">
          <head>Acquisition Information</head>
-         <p>### (MARC 541 and/or  561)</p>
-      </acqinfo>--><!--
+         <p>Tyson letter, gift of <persname role="donor">Chris Sosnowski</persname>, 2021.</p>
+      </acqinfo><!--
             <appraisal encodinganalog="583"><head>Appraisal Information</head><p>## OPT (MARC 583)</p></appraisal>
        --><!--
             <accruals encodinganalog="584"><head>Accruals</head><p>## OPT (MARC 584)</p></accruals>
        --><dsc type="combined">
          <head>Inventory</head>
-         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+        <c01 level="series">
+          <did><unittitle>Biographical material</unittitle></did>
+          <c02>
+            <did><unittitle>Essay</unittitle>
+            <abstract>author unknown</abstract>
+            <container type="Box">1</container></did>
+          </c02>
+        </c01>
+      <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
             <c02><did><unittitle>Incoming, B-W</unittitle><container type="Box">1</container></did></c02>
             <c02><did><unittitle>Outgoing</unittitle><unitdate normal="1938-10-10/1943-09-22" type="inclusive">10 Oct 1938 - 22 Sep 1943</unitdate><container type="Box">1</container></did></c02>
-         </c01>
+            <c02>
+              <did><unittitle>Tyson, Harriet Berry (Patricia)</unittitle> 
+              <container type="Box">1</container></did>
+          <acqinfo>
+            <p>Gift of Chris Sosnowski, 2021</p>
+          </acqinfo>
+            </c02> 
+      </c01>
          <c01 level="series"><did><unittitle>Subject files</unittitle></did>
             <c02><did><unittitle>Business transactions</unittitle><container type="Box">1</container></did></c02>
             <c02><did><unittitle>Miscellaneous</unittitle><container type="Box">1</container></did></c02>

@@ -41,6 +41,7 @@ not used should be commented out so that they don't appear in the viewable
          <list>
             <item>15 Dec 2008 - converted to EAD (MD)</item>
             <item>23 Jun 2011 - updated and expanded bio and related material (AM)</item>
+            <item>21 Jul 2021 - postcards added (RMH)</item>
          </list>
       </revisiondesc>
    </eadheader>
@@ -54,9 +55,9 @@ not used should be commented out so that they don't appear in the viewable
             <persname encodinganalog="100">Doyle, Jerry Aloysius, 1898-</persname>
          </origination>
          <unittitle encodinganalog="245$a" label="Title: ">Jerry Doyle Cartoons</unittitle>
-         <unitdate encodinganalog="245$f" normal="1930/1940" type="inclusive" label="Inclusive Dates: ">1930-1940</unitdate>
-            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 items</extent></physdesc>
-         <abstract encodinganalog="520$a" label="Abstract: ">2 original editorial cartoons.</abstract>
+         <unitdate encodinganalog="245$f" normal="1930/1940" type="inclusive" label="Inclusive Dates: ">1930-1983</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>10 items</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">2 original editorial cartoons and 8 original illustration postcards.</abstract>
          <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2653480</unitid>
          <langmaterial label="Language: " encodinganalog="546">
             <language langcode="eng">English</language>
@@ -74,7 +75,9 @@ not used should be commented out so that they don't appear in the viewable
       
       <scopecontent encodinganalog="520">
          <head>Scope and Contents of the Collection</head>
-         <p>The <emph render="bold">Jerry Doyle Cartoons</emph> contains two original editorial cartoons composed for the <emph render="italic">Philadelphia Record</emph> sometime during the late 1930s or early 1940s.</p>
+         <p>The <emph render="bold">Jerry Doyle Cartoons</emph> contains two original editorial cartoons composed for the 
+            <emph render="italic">Philadelphia Record</emph> sometime during the late 1930s or early 1940s. Also, 
+         eight postcards of original illustration and hand-colored by Doyle addressed to Jack Stein and Stein's wife Phyllis.</p>
       </scopecontent>
       
       <arrangement encodinganalog="351$a">
@@ -102,18 +105,20 @@ not used should be commented out so that they don't appear in the viewable
          <head>Subject and Genre Headings</head>
          <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
 defaults set in the template.-->
-         <persname encodinganalog="600" source="lcnaf">Doyle, Jerry Aloysius, 1898-</persname>
+         <subject encodinganalog="650" source="local">Art -- Cartoonists</subject><persname encodinganalog="600" source="lcnaf">Doyle, Jerry Aloysius, 1898-</persname>
          
          
          <title encodinganalog="630" source="lctaf">Philadelphia record (Philadelphia, Pa. : 1879) </title>
-			<subject encodinganalog="650" source="local">Art -- Cartoonists</subject>			
+						
          <subject encodinganalog="650" source="lcsh">American wit and humor, Pictorial.</subject><subject encodinganalog="650" source="lcsh">Caricatures and cartoons -- 
 
 United States.</subject><subject encodinganalog="650" source="lcsh">Cartoonists -- United States.</subject><subject encodinganalog="650" source="lcsh">Editorial cartoons -- 
 
 United States.</subject><subject encodinganalog="650" source="lcsh">World politics -- Caricatures and cartoons.</subject>
          <geogname encodinganalog="651" source="lcsh">United States -- Politics and government --1933-1945 -- Caricatures and cartoons.</geogname>
-         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform><genreform encodinganalog="655" source="aat">Editorial cartoons.</genreform>
+         <genreform encodinganalog="655" source="aat">Cartoons (humorous images)</genreform>
+         <genreform encodinganalog="655" source="aat">Editorial cartoons.</genreform>
+         <genreform encodinganalog="655" source="aat">Postcards.</genreform>
          <occupation encodinganalog="656" source="lcsh">Cartoonists.</occupation>
          </controlaccess>
       
@@ -138,6 +143,7 @@ materials in this collection.</p>
       <acqinfo encodinganalog="541">
          <head>Acquisition Information</head>
          <p>One item transferred from Goodspeed Cartoon Collection, 2008.</p>
+         <p>Illustrated postcards, gift of <persname role="donor">Gail Stein</persname>, 2019</p>
       </acqinfo>
       
       <!--<appraisal encodinganalog="583">
@@ -155,8 +161,14 @@ materials in this collection.</p>
          <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
 		<c01 level="series"><did><unittitle>Cartoons</unittitle></did>             
             <c02><did><unittitle>"Careful Now, Mister—One Step At A Time"</unittitle><abstract>inscribed to Chester H. McCall</abstract><unitdate normal="1930/1939" type="inclusive">1930s</unitdate><container type="Box">1</container></did></c02>
-				<c02><did><unittitle>"In Back of It All"</unittitle><abstract>inscribed to Mrs. Gladys T. Clements</abstract><unitdate normal="1935/1945" type="inclusive">circa 1940</unitdate><container type="Box">1</container></did></c02>				
-				</c01>
+				<c02><did><unittitle>"In Back of It All"</unittitle><abstract>inscribed to Mrs. Gladys T. Clements</abstract><unitdate normal="1935/1945" type="inclusive">circa 1940</unitdate><container type="Box">1</container></did></c02>
+		      <c02>
+		         <did><unittitle>Postcards</unittitle>
+		            <unitdate normal="1980/1983" type="inclusive">1980-1983</unitdate>
+		            <abstract>illustrated and hand-colored by Doyle; addressed to Jack Stein and his wife Phyllis.</abstract>
+		            <container type="Box">1</container></did><acqinfo><p>Gift of Gail Stein, 2019</p></acqinfo>
+		      </c02>
+		</c01>
       </dsc>
    </archdesc>
 </ead>      

@@ -7,75 +7,121 @@
 <!ENTITY summitref SYSTEM "summit_ref.txt">
 ]>
 
-<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
-<!-- Added Belfer as container type -->
-
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 --><!-- Added Belfer as container type --><?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen_rev.css"?>
 <ead relatedencoding="MARC21">
-   <!--All items are required unless marked OPT.  Any optional items 
+  <!--All items are required unless marked OPT.  Any optional items 
 not used should be commented out so that they don't appear in the viewable
  document.-->
-
-<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
-      <eadid countrycode="US" mainagencycode="NSyU" identifier="volodine_g">volodine_g</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper encodinganalog="Title">George Volodine Papers</titleproper>
-            <subtitle>A description of the collection at Syracuse University</subtitle>
-         <author encodinganalog="Creator">MRC</author></titlestmt>
-         <publicationstmt>
-            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
-            &su_address;
-            <date normal="2010-11-22" encodinganalog="Date">22 Nov 2010</date>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Michele Combs<date normal="2010-11-22">22 Nov 2010</date>
-         </creation>
-         <langusage>
-            <language langcode="eng" encodinganalog="Language">English</language>
-         </langusage>
-      </profiledesc>
-      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
-         <list>
-            <item></item>
-         </list>
-      </revisiondesc>
-   </eadheader>
-   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
-      <did>
-         <head>Overview of the Collection</head>
-         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
-         &su_name; <lb/> &su_address;
-         </repository>
-         <origination label="Creator: ">
-            <persname encodinganalog="100">Volodine, George.</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title: ">George Volodine Papers</unittitle>
-         <unitdate encodinganalog="245$f" normal="1882/1982" type="inclusive" label="Inclusive Dates: ">before 1982</unitdate>
-            <physdesc encodinganalog="300$a" label="Quantity: "><extent>5 linear ft.</extent></physdesc>
-         <abstract encodinganalog="520$a" label="Abstract: ">Russian dancer and ballet master.  Collection includes correspondence, photographs, scrapbooks, clippings, periodicals, more.</abstract>
-         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3181640</unitid>
-         <langmaterial label="Language: " encodinganalog="546">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="volodine_g" mainagencycode="NSyU">volodine_g</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">George Volodine Papers</titleproper>
+        <subtitle>An inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2010-11-22">22 Nov 2010</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+        
+        <date normal="2010-11-22">22 Nov 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language> 
+               and some 
+        
+        <language encodinganalog="Language" langcode="rus">Russian</language></langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>31 Aug 2021 - process complete (RMH)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository encodinganalog="852$a" id="scrc" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Volodine, George.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">George Volodine Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1910/1982" type="inclusive">1910-1982</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>9 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, prints, and memorabilia (photographs, scrapbooks, theatre programs, etc.) pertaining to the Russian-American dancer and ballet
+            master. </abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">3181640</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">Majority in 
             
-      <bioghist encodinganalog="545">
-         <head>Biographical History</head>
-         
-      <p>George Volodine (dates unknown) was a Russian dancer and ballet master.  He was a friend of George Balanchine, and his students included Marsha Ismailoff Mark and Patricia H. (Lee) Zeitlin.</p></bioghist>
-      
-      <scopecontent encodinganalog="520">
-         <head>Scope and Contents of the Collection</head>
-         <p>The <emph render="bold">George Volodine Papers</emph> includes correspondence, photographs, scrapbooks, clippings, periodicals, more.</p>
-      </scopecontent>
-      
-      <arrangement encodinganalog="351$a">
-         <head>Arrangement of the Collection</head>
-         <p>The collection is unprocessed and remains in original order.</p>
-      </arrangement>
-      
-      <!--<relatedmaterial encodinganalog="544 1">
+        
+        <language langcode="eng">English</language>, a few items in 
+        
+        <language langcode="rus">Russian</language>, 
+        
+        <language langcode="ita">Italian</language>,  and 
+        
+        <language langcode="ger">German</language> </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>George Volodine (d. 1982) was a Russian-American ballet dancer, choreographer, and dance teacher.</p>
+      <p>Volodine began his career with a ballet troupe in Germany, then
+            moved on to New York where he became the maître-de-ballet of the Metropolitan Opera
+            Association. During his time as a dancer, Volodine created long lasting friendships with
+            fellow dancers, including George Balanchine, Maria Tallchief, Tanaquil LeClercq, and
+            others. After his time as maître-de-ballet he moved to Westport, Connecticut and
+            opened the George Volodine School of Ballet. Here, he taught a multitude of ballet
+            dancers including Marsha Ismailoff Mark and Patricia H. (Lee) Zeitlin. </p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">George Volodine Papers</emph> includes correspondence-subject
+            files, engravings, George Volodine School of Ballet, photographs, printed material,
+            scrapbooks, and writings by others.</p>
+      <p>
+        <emph render="bold">Correspondence-subject files</emph> contain personal correspondence
+            from Volodine's friends, such as George Balanchine and his wives Maria (Tallchief) and Tanaquil (Le Clerq), Leon Kelly, and Michael Mordkin.
+            There is a miscellaneous folder of Russian letters, mainly handwritten, from unknown individuals.</p>
+      <p>
+        <emph render="bold">Engravings</emph> consists of two booklets with engravings of
+            various scenes for the Kaiserliches und Königliches Hoftheater zu Wien (Imperial and Royal Court Theatre of Vienna).</p>
+      <p>
+        <emph render="bold">George Volodine School of Ballet</emph> contains material relating to Volodine's ballet school in Westport, Connecticut. Volodine kept many photographs and
+            newspaper clippings about his school and students; the material in this series includes correspondence, photographs, printed material, and scrapbooks.</p>
+      <p>
+        <emph render="bold">Photographs</emph> includes personal
+            and professional photos of Volodine, candid and professional photos of fellow dancers
+            and friends (many of which are signed), and a large number of candid photos of soldiers and civilians during the Spanish Civil War. Within
+            Volodine's personal photographs are images from his birthday party in 1968, three
+            photo albums, and two photos of Mourka the dancing cat portrayed as performing in ballet
+            productions.</p>
+      <p>
+        <emph render="bold">Printed material</emph> relates to colleagues such as George Balanchine, Mikhail Baryshnikov, 
+		Rudolf Nureyev, and Maria Tallchief, and dance companies such as Ballet Russe de Monte
+            Carlo, Ballet Folklorico, and New York City Ballet. Formats include magazine and newspaper clippings as well 
+			as souvenir programs for single performances and entire seasons.  There are also issues of a number of 
+			dance-related publications such as <emph render="italic">Dance Index</emph> and 
+        <emph render="italic">Dance Magazine</emph> and some miscellaneous items.</p>
+      <p>
+        <emph render="bold">Miscellaneous</emph> material consists of  two scrapbooks and a few pieces of writing by 
+		others.  One of the scrapbooks is of dancers and dance companies; the other contains newspaper clippings from the 
+		end of the first World War, gathered by an unidentified individual living in Los Angeles, California.  The writings 
+		by others, all typescripts, include essays about Volodine by Leon Kelly and Jacques de Wolfe.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Arranged alphabetically by topic, title, or type, then chronologically.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
          <head>Related Material</head>
          <p>## (MARC 544 1)</p></relatedmaterial>-->
       
@@ -88,48 +134,76 @@ not used should be commented out so that they don't appear in the viewable
          <head>Other Related Finding Aids</head>
          <p>## OPT (MARC 555)</p>
       </otherfindaid>-->
-      
-      <controlaccess>
-         <head>Subject and Genre Headings</head>
-         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
 defaults set in the template.-->
-         
-			
-			<subject encodinganalog="650" source="local">Dance and theatre</subject><persname encodinganalog="600" source="lcnaf">Volodine, George.</persname>
-         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
-         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
-         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
-         <subject encodinganalog="650" source="lcsh">Ballet dancers -- Soviet Union.</subject>
-			<subject encodinganalog="650" source="lcsh">Ballet dancers -- United States.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
-         
-			<genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
-         <occupation encodinganalog="656" source="lcsh">Dancers.</occupation><occupation encodinganalog="656" source="lcsh">Dance teachers.</occupation>
+      <subject encodinganalog="650" source="local">Dance and theatre</subject>
+      <persname encodinganalog="600" source="lcnaf">Volodine, George.</persname>
+      <persname encodinganalog="600" source="lcnaf">Balanchine, George.</persname>
+      <persname encodinganalog="600" source="lcnaf">Braggiotti, Francesca, 1902-1998.</persname>
+      <persname encodinganalog="600" source="lcnaf">Le Clercq, Tanaquil.</persname>
+      <persname encodinganalog="600" source="lcnaf">Kelly, Leon, 1901-1982.</persname>
+      <persname encodinganalog="600" source="lcnaf">Nureyev, Rudolf, 1938-1993.</persname>
+      <persname encodinganalog="600" source="lcnaf">Stravinsky, Igor, 1882-1971.</persname>
+      <persname encodinganalog="600" source="lcnaf">Tallchief, Maria.</persname>
+      <persname encodinganalog="600" source="lcnaf">Tchelitchew, Pavel, 1898-1957.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">American Ballet Theatre.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Ballet Russe de Monte Carlo.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Ballet Theatre (New York, N.Y.)</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Bolshoi Ballet Company.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Mordkin Ballet Company.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">New York City Ballet.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Opéra de Paris.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Royal Ballet.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Sadler's Wells Ballet.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">School of American Ballet.</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Ballet dancers -- Soviet Union.</subject>
+      <subject encodinganalog="650" source="lcsh">Ballet dancers -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">World War, 1914-1918.</subject>
+      <geogname encodinganalog="651" source="lcsh">Spain -- History -- Civil War, 1936-1939.</geogname>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Scrapbooks.</genreform>
+      <genreform encodinganalog="655" source="aat">Engravings (prints)</genreform>
+      <genreform encodinganalog="655" source="aat">Photograph albums.</genreform>
+      <genreform encodinganalog="655" source="aat">Souvenir programs.</genreform>
+      <genreform encodinganalog="655" source="aat">Theater programs.</genreform>
+      <genreform encodinganalog="655" source="aat">Concert programs.</genreform>
+      <genreform encodinganalog="655" source="aat">Magazines (periodicals)</genreform>
+      <genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Dancers.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Dance teachers.</occupation>
+    
+    
          <!--<function encodinganalog="657">##</function>--></controlaccess>
-      
-      <accessrestrict encodinganalog="506">
-         <head>Access Restrictions</head>
-         <p>The collection is currently unprocessed and not available for research. Please contact &scrc_name; for more information.</p>
-      </accessrestrict>
-      
-      <userestrict encodinganalog="540">
-         <head>Use Restrictions</head>
-         <p>Written permission must be obtained from SCRC and 
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advance notice 
+            for retrieval. Researchers are encouraged to contact us in advance concerning the collection material 
+            they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
 all relevant rights holders before publishing quotations, excerpts or images from any 
 materials in this collection.</p>
-      </userestrict>
-      
-      <prefercite encodinganalog="524">
-         <head>Preferred Citation</head>
-         <p>Preferred citation for this material is as follows:</p>
-         <p>George Volodine Papers, <lb/> &su_name; </p>
-      </prefercite>
-      
-      <acqinfo encodinganalog="541">
-         <head>Acquisition Information</head>
-         <p>Unspecified, 1967 and 1982.</p>
-      </acqinfo>
-      
-      <!--<appraisal encodinganalog="583">
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>George Volodine Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Unspecified, 1967 and 1982.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
          <head>Appraisal Information</head>
          <p>##</p>
       </appraisal>-->
@@ -138,11 +212,938 @@ materials in this collection.</p>
          <head>Accruals</head>
          <p>## OPT (MARC 584)</p>
       </accruals>-->
-      
-      <dsc type="othertype">
-   <head>Inventory</head>
-   <note><p>An inventory has not yet been created for this collection.  
-Please contact the Repository listed above for more information.</p><p></p></note>
-</dsc>
-   </archdesc>
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence-subject files</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Balanchine, George</unittitle>
+            <unitdate type="inclusive" normal="1937/1938">1937-1938, </unitdate>
+            <unitdate type="inclusive" normal="1954">1954</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02 id="corr-maba">
+          <did>
+            <unittitle>Balanchine, Maria (Tallchief)</unittitle>
+            <unitdate type="inclusive" normal="1950">1950</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02 id="corr-taba">
+          <did>
+            <unittitle>Balanchine, Tanaquil (Le Clerq)</unittitle>
+            <unitdate type="inclusive" normal="1967/1968">1967-1968</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fairfield University</unittitle>
+            <unitdate type="inclusive" normal="1966/1967">1966-1967</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Hugo Gallery</unittitle>
+            <unitdate type="inclusive" normal="1950">1950</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kelly, Leon</unittitle>
+            <unitdate type="inclusive" normal="1950/1951">1950-1951, </unitdate>
+            <unitdate type="inclusive" normal="1967">1967</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lodge, John Davis, Mrs. (Francesca Braggiotti)</unittitle>
+            <unitdate type="inclusive" normal="1952/1955">1952-1955, </unitdate>
+            <unitdate type="inclusive" normal="1961">1961, </unitdate>
+            <unitdate type="inclusive" normal="1971/1973">1971-1973</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mark, Marsha Ismailoff</unittitle>
+            <unitdate type="inclusive" normal="1973/1975">1973-1975</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mordkin, Michael Jr.</unittitle>
+            <unitdate normal="1947" type="inclusive">1947</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Petchkovsky, Michael</unittitle>
+            <unitdate normal="1964" type="inclusive">1964</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse University</unittitle>
+            <unitdate normal="1967" type="inclusive">1967, </unitdate>
+            <unitdate normal="1970/1971" type="inclusive">1970-1971, </unitdate>
+            <unitdate normal="1982" type="inclusive">1982</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>de Wolfe, Jacques</unittitle>
+            <unitdate normal="1962" type="inclusive">1962</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous, English</unittitle>
+            <unitdate normal="1945" type="inclusive">1945, </unitdate>
+            <unitdate normal="1948" type="inclusive">1948, </unitdate>
+            <unitdate normal="1952/1956" type="inclusive">1952-1956, </unitdate>
+            <unitdate normal="1971" type="inclusive">1971, </unitdate>
+            <unitdate normal="1978" type="inclusive">1978</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous, Russian</unittitle>
+            <unitdate normal="1910" type="inclusive">1910, </unitdate>
+            <unitdate normal="1940" type="inclusive">1940, </unitdate>
+            <unitdate normal="1946/1947" type="inclusive">1946-1947, </unitdate>
+            <unitdate normal="1978" type="inclusive">1978</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Engravings</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Theater-Vorhang von Carl Rahl</emph>
+            </unittitle>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Orpheus-fabel von Eduard Engerth</emph>
+            </unittitle>
+            <container type="Oversize">2</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>George Volodine School of Ballet</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Correspondence-subject files</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Building permit court case</unittitle>
+              <unitdate normal="1947/1949" type="inclusive">1947-1949</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Financial payments</unittitle>
+              <unitdate normal="1947/1953" type="inclusive">1947-1953, </unitdate>
+              <unitdate normal="1959" type="inclusive">1959</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Long Lots Junior High School</unittitle>
+              <unitdate normal="1956" type="inclusive">1956, </unitdate>
+              <unitdate normal="1959" type="inclusive">1959</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Waterburg Women's Club, Inc.</unittitle>
+              <unitdate normal="1958" type="inclusive">1958</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Celebrations</unittitle>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Photograph album</unittitle>
+              <container type="Oversize">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Students</unittitle>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Students</unittitle>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Printed material</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Clippings</unittitle>
+              <unitdate normal="1942/1954" type="inclusive">1942-1954, </unitdate>
+              <unitdate normal="1959" type="inclusive">1959, </unitdate>
+              <unitdate normal="1963/1965" type="inclusive">1963-1965, </unitdate>
+              <unitdate normal="1971" type="inclusive">1971</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Programs</unittitle>
+              <unitdate normal="1944/1949" type="inclusive">1944-1949, </unitdate>
+              <unitdate normal="1950/1953" type="inclusive">1950-1953, </unitdate>
+              <unitdate normal="1956" type="inclusive">1956, </unitdate>
+              <unitdate normal="1959" type="inclusive">1959, </unitdate>
+              <unitdate normal="1910/1982" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Silver celebration party</unittitle>
+              <unitdate normal="1963" type="inclusive">1963</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Scrapbook [unbound]</unittitle>
+            <container type="Oversize">4</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Photographs</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Artwork reproductions</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>George Volodine</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Personal</unittitle>
+              <abstract>birthday party</abstract>
+              <unitdate normal="1968-04-27" type="inclusive">27 Apr 1968</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Personal</unittitle>
+              <abstract>Buenos Aires, Argentina</abstract>
+              <unitdate normal="1972" type="inclusive">1972</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Personal</unittitle>
+              <abstract>miscellaneous candid photos</abstract>
+              <unitdate normal="1916/1918" type="inclusive">1916-1918, </unitdate>
+              <unitdate normal="1936" type="inclusive">1936, </unitdate>
+              <unitdate normal="1947" type="inclusive">1947, </unitdate>
+              <unitdate normal="1959" type="inclusive">1959, </unitdate>
+              <unitdate normal="1962/1968" type="inclusive">1962-1968, </unitdate>
+              <unitdate normal="1973/1975" type="inclusive">1973-1975</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Personal</unittitle>
+              <abstract>miscellaneous candid photos</abstract>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Personal</unittitle>
+              <abstract>negatives</abstract>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Personal photo album</unittitle>
+              <container type="Oversize">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Personal photo album</unittitle>
+              <container type="Oversize">5</container>
+            </did>
+            <userestrict>
+              <p>Album is fragile.  Excercise care in handling.</p>
+            </userestrict>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Personal photo album</unittitle>
+              <container type="Oversize">8</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Professional</unittitle>
+              <unitdate normal="1917/1918" type="inclusive">1917-1918, </unitdate>
+              <unitdate normal="1923" type="inclusive">1923, </unitdate>
+              <unitdate normal="1937" type="inclusive">1937, </unitdate>
+              <unitdate normal="1946" type="inclusive">1946</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Professional</unittitle>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Other dancers</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Candids</unittitle>
+              <unitdate normal="1952" type="inclusive">1952, </unitdate>
+              <unitdate normal="1962" type="inclusive">1962</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Professional</unittitle>
+              <unitdate normal="1925/1926" type="inclusive">1925-1926, </unitdate>
+              <unitdate normal="1929/1931" type="inclusive">1929-1931, </unitdate>
+              <unitdate normal="1934/1936" type="inclusive">1934-1936, </unitdate>
+              <unitdate normal="1943/1944" type="inclusive">1943-1944, </unitdate>
+              <unitdate normal="1950" type="inclusive">1950</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Professional</unittitle>
+              <unitdate normal="1937" type="inclusive">1937</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Spanish Civil War</unittitle>
+            <abstract>street scenes, soldiers, civilians</abstract>
+            <unitdate normal="1936/1939" type="inclusive">1936-1939</unitdate>
+            <physdesc>
+              <extent>6 folders</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Spanish Civil War</unittitle>
+            <unitdate normal="1939" type="inclusive">1939</unitdate>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Printed material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Individuals</unittitle>
+            <abstract>clippings, mostly from newspapers</abstract>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Balanchine, George</unittitle>
+              <abstract>includes 2 folders of material rehoused from scrapbook and left in original order</abstract>
+              <unitdate normal="1943/1944" type="inclusive">1943-1944, </unitdate>
+              <unitdate normal="1954/1976" type="inclusive">1954-1976</unitdate>
+              <physdesc>
+                <extent>4 folders</extent>
+              </physdesc>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Baryshnikov, Mikhail</unittitle>
+              <unitdate normal="xxx" type="inclusive">1974, 1977</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Le Clercq, Tanaquil</unittitle>
+              <unitdate normal="1969" type="inclusive">1969</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lodge, John Davis, Mrs. (Francesca Braggiotti)</unittitle>
+              <unitdate normal="1961/1964" type="inclusive">1961-1964</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Nureyev, Rudolf</unittitle>
+              <unitdate normal="1965" type="inclusive">1965, </unitdate>
+              <unitdate normal="1970" type="inclusive">1970, </unitdate>
+              <unitdate normal="1974" type="inclusive">1974</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stravinsky, Igor</unittitle>
+              <unitdate normal="1929" type="inclusive">1929, </unitdate>
+              <unitdate normal="1954" type="inclusive">1954, </unitdate>
+              <unitdate normal="1962" type="inclusive">1962, </unitdate>
+              <unitdate normal="1971/1972" type="inclusive">1971-1972</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Tallchief, Maria</unittitle>
+              <unitdate normal="1951" type="inclusive">1951, </unitdate>
+              <unitdate normal="1954" type="inclusive">1954, </unitdate>
+              <unitdate normal="1963/1965" type="inclusive">1963-1965</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Tchelitchew, Pavel</unittitle>
+              <unitdate normal="1945" type="inclusive">1945, </unitdate>
+              <unitdate normal="1952" type="inclusive">1952, </unitdate>
+              <unitdate normal="1964" type="inclusive">1964, </unitdate>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Volodine, George</unittitle>
+              <unitdate normal="1934" type="inclusive">1934, </unitdate>
+              <unitdate normal="1947/1952" type="inclusive">1947-1952, </unitdate>
+              <unitdate normal="1962" type="inclusive">1962, </unitdate>
+              <unitdate normal="1966" type="inclusive">1966, </unitdate>
+              <unitdate normal="1973/1975" type="inclusive">1973-1975</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <abstract>mostly (but not all) dancers</abstract>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Companies</unittitle>
+            <abstract>programs and clippings</abstract>
+          </did>
+          <c03>
+            <did>
+              <unittitle>American Ballet Theatre</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1941" type="inclusive">1941, </unitdate>
+              <unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Azuma Kabuki</unittitle>
+              <abstract>program</abstract>
+              <unitdate normal="1954/1955" type="inclusive">1954 or 1955</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ballet Caravan</unittitle>
+              <abstract>program</abstract>
+              <unitdate normal="1910/1982" type="inclusive">undated</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ballet Folklorico</unittitle>
+              <abstract>program</abstract>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ballet de Paris (Roland Petit)</unittitle>
+              <abstract>program</abstract>
+              <unitdate normal="1948" type="inclusive">1948</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ballet Russe de Monte Carlo</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1936/1947" type="inclusive">1936-1947</unitdate>
+              <physdesc>
+                <extent>7 folders</extent>
+              </physdesc>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Ballet Russe de Monte Carlo</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1950/1951" type="inclusive">1950-1951, </unitdate>
+              <unitdate normal="1954" type="inclusive">1954, </unitdate>
+              <unitdate normal="1910/1982" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Ballet Theatre</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1942/1945" type="inclusive">1942-1945, </unitdate>
+              <unitdate normal="1950/1951" type="inclusive">1950-1951</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Bolshoi Ballet</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1959" type="inclusive">1959, </unitdate>
+              <unitdate normal="1962/1963" type="inclusive">1962-1963, </unitdate>
+              <unitdate normal="1966" type="inclusive">1966, </unitdate>
+              <unitdate normal="1910/1982" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Fokine Ballet</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1927" type="inclusive">1927, </unitdate>
+              <unitdate normal="1910/1982" type="inclusive">undated</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Georgian State Dance Company</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1960/1961" type="inclusive">1960 or 1961</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Gran Ballet del Marques de Cuevas</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1956" type="inclusive">1956</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Leningrad-Kirov Ballet</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1965/1966" type="inclusive">1965-1966</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Moiseyev Dance Company</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1958" type="inclusive">1958, </unitdate>
+              <unitdate normal="1961" type="inclusive">1961</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Mordkin Ballet</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1937/1939" type="inclusive">1937-1939, </unitdate>
+              <unitdate normal="1910/1982" type="inclusive">undated</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>New York City Ballet</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1948" type="inclusive">1948, </unitdate>
+              <unitdate normal="1950/1951" type="inclusive">1950-1951, </unitdate>
+              <unitdate normal="1956" type="inclusive">1956, </unitdate>
+              <unitdate normal="1965/1967" type="inclusive">1965-1967, </unitdate>
+              <unitdate normal="1975" type="inclusive">1975, </unitdate>
+              <unitdate normal="1910/1982" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>New York City Ballet</unittitle>
+              <abstract>clippings</abstract>
+              <unitdate normal="1950" type="inclusive">1950, </unitdate>
+              <unitdate normal="1960/1961" type="inclusive">1960-1961</unitdate>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>New York City Ballet</unittitle>
+              <unitdate normal="1965" type="inclusive">1965</unitdate>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>L'Opera de Paris</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1948" type="inclusive">1948, </unitdate>
+              <unitdate normal="1951/1952" type="inclusive">1951-1952</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Royal Ballet</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1949" type="inclusive">1949, </unitdate>
+              <unitdate normal="1953" type="inclusive">1953, </unitdate>
+              <unitdate normal="1960" type="inclusive">1960, </unitdate>
+              <unitdate normal="1967" type="inclusive">1967</unitdate>
+              <container type="Box">6</container>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Royal Ballet</unittitle>
+              <abstract>clippings</abstract>
+              <unitdate normal="1965" type="inclusive">1965, </unitdate>
+              <unitdate normal="1975" type="inclusive">1975</unitdate>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sadler's Wells</unittitle>
+              <unitdate normal="1947/1948" type="inclusive">1947-1948</unitdate>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>School of American Ballet</unittitle>
+              <abstract>programs</abstract>
+              <unitdate normal="1944/1947" type="inclusive">1944-1947, </unitdate>
+              <unitdate normal="1954" type="inclusive">1954, </unitdate>
+              <unitdate normal="1959" type="inclusive">1959</unitdate>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <abstract>programs, clippings</abstract>
+              <container type="Box">6</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Magazines</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Center</unittitle>
+              <unitdate normal="1954" type="inclusive">1954</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Center</unittitle>
+              <unitdate normal="1955/1956" type="inclusive">1955-1956</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Dance Index</unittitle>
+              <unitdate normal="1946/1949" type="inclusive">1946-1949</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Dance Magazine</unittitle>
+              <unitdate normal="1945" type="inclusive">1945, </unitdate>
+              <unitdate normal="1950" type="inclusive">1950, </unitdate>
+              <unitdate normal="1957" type="inclusive">1957, </unitdate>
+              <unitdate normal="1960/1962" type="inclusive">1960-1962. </unitdate>
+              <unitdate normal="1964" type="inclusive">1964</unitdate>
+              <physdesc>
+                <extent>7 folders</extent>
+              </physdesc>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Dance in the Spotlight</unittitle>
+              <unitdate normal="1964" type="inclusive">1964</unitdate>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Photography</unittitle>
+              <unitdate normal="1954-06" type="inclusive">Jun 1954</unitdate>
+              <container type="Box">7</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Playbill</unittitle>
+              <unitdate normal="1960/1961" type="inclusive">1960-1961</unitdate>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>View</unittitle>
+              <unitdate normal="1942/1943" type="inclusive">1942-1943, </unitdate>
+              <unitdate normal="1946" type="inclusive">1946</unitdate>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous clippings</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Flooding in Fairfield County, Connecticut</unittitle>
+              <unitdate normal="1955" type="inclusive">1955</unitdate>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <unitdate normal="1935" type="inclusive">1935, </unitdate>
+              <unitdate normal="1948/1949" type="inclusive">1948-1949, </unitdate>
+              <unitdate normal="1955/1957" type="inclusive">1955-1957, </unitdate>
+              <unitdate normal="1960/1961" type="inclusive">1960-1961, </unitdate>
+              <unitdate normal="1964/1971" type="inclusive">1964-1971, </unitdate>
+              <unitdate normal="1975" type="inclusive">1975, </unitdate>
+              <unitdate normal="1977" type="inclusive">1977, </unitdate>
+              <unitdate normal="1910/1982" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous programs</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>A-F</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lincoln Center for the Performing Arts</unittitle>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>M-V</unittitle>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Westport Country Playhouse</unittitle>
+              <container type="Box">8</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous items</unittitle>
+            <abstract>book on Romanian folk art, issue of South African Archaeological Bulletin, small book of adages or proverbs, exhibit catalog of Venetian festival items at Ca'Rezzonico (1937), sales catalog from record company, etc.</abstract>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Miscellaneous</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Scrapbook</unittitle>
+            <abstract>various ballet individuals and dance companies</abstract>
+            <container type="Oversize">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"War Book"</unittitle>
+            <unitdate normal="1917/1918" type="inclusive">1917-1918</unitdate>
+            <abstract>scrapbook of clippings from Los Angeles newspapers, about the end of World War I</abstract>
+            <container type="Oversize">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Writings by others</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

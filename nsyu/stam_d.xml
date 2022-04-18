@@ -9,133 +9,233 @@
 <!ENTITY summitref SYSTEM "summit_ref.txt">
 ]>
 
-<!-- TEMPLATE VERSION 1.15, 25 May 2011 -->
-<!-- added entity for linking to collection search. -->
-
-<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
-<!-- Added Belfer as container type -->
-
+<!-- TEMPLATE VERSION 1.15, 25 May 2011 --><!-- added entity for linking to collection search. --><!-- TEMPLATE VERSION 1.14, 12 Mar 2010 --><!-- Added Belfer as container type -->
 <ead relatedencoding="MARC21">
-   <!--All items are required unless marked OPT.  Any optional items 
+  <!--All items are required unless marked OPT.  Any optional items 
 not used should be commented out so that they don't appear in the viewable
  document.-->
-
-<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
-      <eadid countrycode="US" mainagencycode="NSyU" identifier="stam_d">stam_d</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper encodinganalog="Title">David Stam Papers</titleproper>
-            <subtitle>A description of the collection at Syracuse University</subtitle>
-         <author encodinganalog="Creator">MRC</author></titlestmt>
-         <publicationstmt>
-            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
-            &su_address;
-            <date normal="2013-03-27" encodinganalog="Date">27 Mar 2013</date>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Michele Combs
-			<date normal="2013-03-27">27 Mar 2013</date>
-         </creation>
-         <langusage>
-            <language langcode="eng" encodinganalog="Language">English</language>
-         </langusage>
-      </profiledesc>
-      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
-         <list>
-            <item></item>
-         </list>
-      </revisiondesc>
-   </eadheader>
-   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
-      <did>
-         <head>Overview of the Collection</head>
-         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
-         &su_name; <lb/> &su_address;
-         </repository>
-         <origination label="Creator: ">
-            <persname encodinganalog="100">Stam, David.</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title: ">David Stam Papers</unittitle>
-         <unitdate encodinganalog="245$f" normal="1955/2014" type="inclusive" label="Inclusive Dates: ">circa 1955-2014</unitdate>
-            <physdesc encodinganalog="300$a" label="Quantity: "><extent>15 linear ft.</extent></physdesc>
-         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, manuscripts, published material and memorabilia of the American librarian, scholar and author.</abstract>
-         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">4125800</unitid>
-         <langmaterial label="Language: " encodinganalog="546">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="stam_d" mainagencycode="NSyU">stam_d</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">David Stam Papers</titleproper>
+        <subtitle>An inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2014-03-27">27 Mar 2014</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+			
+        
+        <date normal="2014-03-27">27 Mar 2014</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>7 Apr 2021 - processed (MRC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository encodinganalog="852$a" id="scrc" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Stam, David.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">David Stam Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1854/2016" type="inclusive">1854-2016</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>17 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, manuscripts, published material and memorabilia of the American librarian, scholar and author.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">4125800</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">Majority in 
             
-      <bioghist encodinganalog="545">
-         <head>Biographical History</head>
-         
-      <p>David Stam is an American librarian, scholar and author specializing in polar exploration and book history.  He was University Librarian at Syracuse University for twelve years (1986-1998); prior to that he held positions at the New York Public Library (1959-1964 and 1978-1986), Marlboro College (1964-1967), the Newberry Library in Chicago (1967-1973) and Johns Hopkins University (1973-1978).  He has published numerous monographs on various aspects of library development and management.</p></bioghist>
-      
-      <scopecontent encodinganalog="520">
-         <head>Scope and Contents of the Collection</head>
-         <p>The <emph render="bold">David Stam Papers</emph> contains correspondence, manuscripts, published material and memorabilia spanning Stam's life and career.</p>
-      </scopecontent>
-      
-      <arrangement encodinganalog="351$a">
-         <head>Arrangement of the Collection</head>
-         <p>The collection is unprocessed and remains in original order.</p>
-      </arrangement>
-      
-      <!--<relatedmaterial encodinganalog="544 1">
+        
+        <language langcode="eng">English</language>; a few items in 
+        
+        <language langcode="spa">Spanish</language> and 
+        
+        <language langcode="jap">Japanese</language>.
+         </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>David Stam (1935- ) is an American librarian, scholar and author specializing in book history and polar 
+		exploration, whose service to the library profession spans more than fifty years.</p>
+      <p>Stam was one of seven children (brothers Paul, John, James, and Robert, and sisters Ruth and Mary). 
+		He attended Wheaton College (1951-1955) where he was for a time the editor of the college paper, the 
+		
+        
+        <emph render="italic">Wheaton Record</emph>, whose journalistic independence he fiercely defended.  
+		On his father's side Stam came from a tradition of missionary work and active church involvement, 
+		and following graduation he took several courses at the University of Edinburgh's Divinity School but 
+		did not earn a degree.  He served a tour in the United States Navy (1956-1958) as a Journalist 2d Class, which took 
+		him to (among other places) Antarctica and thereby launched a lifelong fascination with polar exploration.</p>
+      <p>Upon leaving the Navy Stam went to work for the New York Public Library (1959-1964) as a clerical assistant, later becoming assistant editor 
+		for library publications, reference librarian, and Manuscript Cataloger.  While at NYPL he earned his 
+		Master's in Library Science from Rutgers University (1962).  In 1964 he accepted a position as Librarian at Marlboro 
+		College in Marlboro, Vermont (1964-1967), where he served as Librarian and taught courses in English literature
+		and printing history.  He served as Head of Technical Services and then Associate Librarian at the Newberry Library in 
+		Chicago (1967-1973), and as University Librarian for Johns Hopkins University (1973-1978), during which period he earned his PhD in History 
+		from Northwestern University.  He returned to the New York Public Library as Andrew W. Mellon Director of the 
+		Research Libraries (1978-1986), and then served as University Librarian for Syracuse University (1986-1998).  After his retirement he was awarded the rank of Librarian Emeritus, and continuesdto write and teach.</p>
+      <p>Stam has served on numerous boards and committees over the course of his career, including leadership roles with 
+		the Research Libraries Group (Board of Governors, 1978-1986; Board of Directors, 1992-1998), the Independent Research 
+		Libraries Association (Chairman, 1981-1986), the Associatin of Research Libraries' Preservation of Library 
+		Materials (Chairman, 1975-1985), and Syracuse University Press (Board of Directors, 1992-1998).  His scholarship spanned topics as various as research library management and frostbite; his book 
+		
+        
+        <emph render="italic">Adventures in Polar Reading: The Book Cultures of High Latitudes</emph> (Oak Knoll, 2019) 
+		draws together his two lifelong passions.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">David Stam Papers</emph> contains biographical material, correspondence, memorabilia, 
+			printed material, subject files, and writings by Stam and others.</p>
+      <p>
+        <emph render="bold">Biographical material</emph> includes assorted items from Stam's childhood, his c.v., a history 
+			of the Stam family, and some personal files of his father Jacob Stam.</p>
+      <p>
+        <emph render="bold">Correspondence</emph> contains incoming correspondence from family members, friends, and colleagues. 
+			The latter includes coworkers from the Newberry Library, New York Public Library, Marlboro College, and Johns Hopkins.  Also 
+			represented are professional friends and colleagues from other institutions, such as the Morgan Library, the Bodleian, 
+			the British Library, and the National Libraries of Ireland and Scotland.</p>
+      <p>
+        <emph render="bold">Memorabilia</emph> covers most of Stam's personal life and career, including his time in the 
+			United States Navy, his numerous awards and recognitions, clippings about him and his work, events wherein he was the 
+			featured guest or honoree, and so on.</p>
+      <p>Most of the 
+        
+        <emph render="bold">Printed material</emph> is either by or about the various institutions where Stam 
+			worked, including Johns Hopkins University, Marlboro College, the New York Public Library, and Syracuse University.  
+			These include reports, informational brochures, invitations to special events, and clippings about the institutions.</p>
+      <p>
+        <emph render="bold">Subject files</emph> reflect Stam's personal and professional research interests, such as 
+			libraries and librarianship, preservation, and polar/arctic exploration.  Included here is research material for the 
+			2006 Grolier Club exhibit, "Books on Ice."</p>
+      <p>
+        <emph render="bold">Writings</emph> contains a range of scholarly and professional work, beginning with Stam's academic 
+			work as an undergraduate, library school, and PhD student, including his dissertation entitled "England's Calvin: A study of the publication of John Calvin's works in Tudor England."  There are articles, book reviews, books, course material from his teaching at Syracuse University, course notes 
+			taken as a student in Edinburgh and elsewhere, encyclopedia entries, letters to the editor, library evaluation reports, speeches, and miscellany.  
+			Also included here are several works (articles, lectures, etc.) on the subject of polar exploration, including case and 
+			item labels and the catalog for Stam's 2006 Grolier Club exhibit, "Books on Ice."</p>
+      <p>A small amount of 
+        
+        <emph render="bold">Writings by others</emph>, 
+			many of which are signed and/or inscribed to Stam, concludes the collection.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Correspondence is arranged with family first, followed by others.  Writings are subdivided by type (articles, book reviews, etc.) and within that are alphabetical by title.  All other material is alphabetical by type or topic.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
          <head>Related Material</head>
          <p>## (MARC 544 1)</p></relatedmaterial>-->
       
-      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
-         <head>Separated Material</head>
-         <p>## OPT (MARC 544 0)</p>
-      </separatedmaterial>-->
-      
-      <!--<otherfindaid encodinganalog="555">
+      <!--Use archref, not extref, to link to related collections.-->
+    <separatedmaterial encodinganalog="544 0">
+      <head>Separated Material</head>
+      <p>Four published items were removed from the collection and transferred to Rare Books for cataloging.  
+			To locate these items, please refer to &summitref;.
+        
+        <list>
+          <item>
+            <emph render="italic">International Dictionary of Library Histories</emph>, edited by David Stam (Fitzroy Dearborn Publishers, 2001, two volumes)</item>
+          <item>
+            <emph render="italic">Grolier 2000</emph>, includes an article by Stam (Grolier Club, 2000)</item>
+          <item>
+            <emph render="italic">Dictionary of American library biography, Second Supplement</emph>, includes an article by Stam (Libraries Unlimited, 2003)</item>
+          <item>
+            <emph render="italic">Famous, infamous, and forgotten: Political cartoons from the collection of Anthony J. Mourek</emph> (Grolier Club, 2013)</item>
+        </list></p>
+    </separatedmaterial>
+    <!--<otherfindaid encodinganalog="555">
          <head>Other Related Finding Aids</head>
          <p>## OPT (MARC 555)</p>
       </otherfindaid>-->
-      
-      <controlaccess>
-         <head>Subject and Genre Headings</head>
-         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <subject encodinganalog="650" source="local">Publishing, printing and book arts</subject>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
 defaults set in the template.-->
-         
-			
-			<subject encodinganalog="650" source="local">Publishing, printing and book arts</subject><persname encodinganalog="600" source="lcnaf">Stam, David.</persname>
-         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
-         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
-         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
-         <subject encodinganalog="650" source="lcsh">Library science.</subject>
-			<!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
-         
-			<genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform><genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform><genreform encodinganalog="655" source="aat">Memorabilia.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform>
-         <occupation encodinganalog="656" source="lcsh">Authors.</occupation><occupation encodinganalog="656" source="lcsh">Bibliographers.</occupation>
-         <occupation encodinganalog="656" source="lcsh">Librarians.</occupation><!--<function encodinganalog="657">##</function>--></controlaccess>
-      
-      <accessrestrict encodinganalog="506">
-         <head>Access Restrictions</head>
-         <p>The collection is currently unprocessed and not available for research. Please contact &scrc_name; for more information.</p>
-      </accessrestrict>
-      
-      <userestrict encodinganalog="540">
-         <head>Use Restrictions</head>
-         <p>Written permission must be obtained from SCRC and 
+      <persname encodinganalog="600" source="lcnaf">Belanger, Terry.</persname>
+      <persname encodinganalog="600" source="lcnaf">Calvin, Jean, 1509-1564.</persname>
+      <persname encodinganalog="600" source="lcnaf">Gregorian, Vartan.</persname>
+      <persname encodinganalog="600" source="lcnaf">Ragle, Thomas B.</persname>
+      <persname encodinganalog="600" source="lcnaf">Stam, David.</persname>
+      <persname encodinganalog="600" source="lcnaf">Wallis, Victor, 1938-</persname>
+      <persname encodinganalog="600" source="lcnaf">Wynne, Marjorie G.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">Johns Hopkins University.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Marlboro College.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">New York Public Library.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Syracuse University.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Wheaton College (Ill.)</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Explorers -- Books and reading.</subject>
+      <subject encodinganalog="650" source="lcsh">Librarians -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Library administration -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Library science -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Polar regions -- Discovery and exploration.</subject>
+      <subject encodinganalog="650" source="lcsh">Research libraries -- United States.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Appointment books.</genreform>
+      <genreform encodinganalog="655" source="aat">Compact discs.</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Curricula.</genreform>
+      <genreform encodinganalog="655" source="aat">Diaries.</genreform>
+      <genreform encodinganalog="655" source="aat">DVDs.</genreform>
+      <genreform encodinganalog="655" source="aat">Exhibit scripts.</genreform>
+      <genreform encodinganalog="655" source="aat">Floppy disks.</genreform>
+      <genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+      <genreform encodinganalog="655" source="aat">Memorabilia.</genreform>
+      <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+      <genreform encodinganalog="655" source="aat">Reprints.</genreform>
+      <genreform encodinganalog="655" source="aat">Research notes.</genreform>
+      <genreform encodinganalog="655" source="aat">Speeches (documents)</genreform>
+      <occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Bibliographers.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Librarians.</occupation>
+    
+    
+			<!--<function encodinganalog="657">##</function>--></controlaccess>
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advance notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
 all relevant rights holders before publishing quotations, excerpts or images from any 
 materials in this collection.</p>
-      </userestrict>
-      
-      <prefercite encodinganalog="524">
-         <head>Preferred Citation</head>
-         <p>Preferred citation for this material is as follows:</p>
-         <p>David Stam Papers, <lb/> &su_name; </p>
-      </prefercite>
-      
-      <acqinfo encodinganalog="541">
-         <head>Acquisition Information</head>
-         <p>Gift of <persname role="donor">David Stam</persname>, 2014.</p>
-      </acqinfo>
-      
-      <!--<appraisal encodinganalog="583">
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>David Stam Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">David Stam</persname>, 2014. 2017.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
          <head>Appraisal Information</head>
          <p>##</p>
       </appraisal>-->
@@ -144,11 +244,3088 @@ materials in this collection.</p>
          <head>Accruals</head>
          <p>## OPT (MARC 584)</p>
       </accruals>-->
-      
-      <dsc type="othertype">
-   <head>Inventory</head>
-   <note><p>An inventory has not yet been created for this collection.  
-Please contact the Repository listed above for more information.</p><p></p></note>
-</dsc>
-   </archdesc>
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Biographical material</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Childhood</unittitle>
+            <unitdate normal="1935/1951" type="inclusive">1935-1951</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Curriculum vitae</unittitle>
+            <abstract>several versions, going back to late 1960s</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stam family history</unittitle>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stam, Jacob, personal files</unittitle>
+            <abstract>includes copies of his will and a few pages of financial notes</abstract>
+            <container type="Box">28</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Family</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>"Love letters"</unittitle>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stam, Deirdre (wife)</unittitle>
+              <unitdate normal="1975" type="inclusive">1975, </unitdate>
+              <unitdate normal="2005" type="inclusive">2005, </unitdate>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stam, Jacob and Deana B. (parents)</unittitle>
+              <unitdate normal="1935" type="inclusive">1935, </unitdate>
+              <unitdate normal="1943/1957" type="inclusive">1943-1957, </unitdate>
+              <unitdate normal="1965" type="inclusive">1965, </unitdate>
+              <unitdate normal="1970/1972" type="inclusive">1970-1972, </unitdate>
+              <unitdate normal="1979" type="inclusive">1979, </unitdate>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stam, Jacob, to/from others</unittitle>
+              <unitdate normal="1931/1937" type="inclusive">1931-1937, </unitdate>
+              <unitdate normal="1940/1941" type="inclusive">1940-1941, </unitdate>
+              <unitdate normal="1954/1955" type="inclusive">1954-1955, </unitdate>
+              <unitdate normal="1958" type="inclusive">1958, </unitdate>
+              <unitdate normal="1961" type="inclusive">1961, </unitdate>
+              <unitdate normal="1963" type="inclusive">1963, </unitdate>
+              <unitdate normal="1972" type="inclusive">1972</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stam, Jim (brother)</unittitle>
+              <abstract>vast majority undated; includes two pieces of writing by James and a few letters from his wife Liga</abstract>
+              <unitdate normal="1951/1961" type="inclusive">circa 1956-1962, </unitdate>
+              <unitdate normal="1975" type="inclusive">1975, </unitdate>
+              <unitdate normal="1981" type="inclusive">1981, </unitdate>
+              <unitdate normal="2000" type="inclusive">2000</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stam, John (brother)</unittitle>
+              <abstract>includes several articles by John, some in Spanish and a few letters from his wife Doris</abstract>
+              <unitdate normal="1985" type="inclusive">1985, </unitdate>
+              <unitdate normal="1989/1998" type="inclusive">1989-1998</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stam, Paul (brother)</unittitle>
+              <abstract>includes some from his wife Jane</abstract>
+              <unitdate normal="1943" type="inclusive">1943, </unitdate>
+              <unitdate normal="1972/1975" type="inclusive">1972-1975, </unitdate>
+              <unitdate normal="1978" type="inclusive">1978, </unitdate>
+              <unitdate normal="1984/1985" type="inclusive">1984-1985, </unitdate>
+              <unitdate normal="1989" type="inclusive">1989, </unitdate>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stam, Robert (brother)</unittitle>
+              <unitdate normal="1959/1960" type="inclusive">1959-1960, </unitdate>
+              <unitdate normal="1969" type="inclusive">1969</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stevens, Ruth (sister) and Steve</unittitle>
+              <unitdate normal="1984" type="inclusive">1984, </unitdate>
+              <unitdate normal="1990" type="inclusive">1990, </unitdate>
+              <unitdate normal="1995/1998" type="inclusive">1995-1998, </unitdate>
+              <unitdate normal="2009" type="inclusive">2009</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Stam family, miscellaneous</unittitle>
+              <unitdate normal="1935" type="inclusive">1935, </unitdate>
+              <unitdate normal="1955" type="inclusive">1955, </unitdate>
+              <unitdate normal="1985" type="inclusive">1985, </unitdate>
+              <unitdate normal="1987" type="inclusive">1987, </unitdate>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Albion</unittitle>
+            <abstract>North American Conference on British Studies (NACBS); Stam was on the Publications Committee</abstract>
+            <unitdate normal="1979" type="inclusive">1979, </unitdate>
+            <unitdate normal="1982" type="inclusive">1982, </unitdate>
+            <unitdate normal="1985/1986" type="inclusive">1985-1986</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Allen, Robert</unittitle>
+            <unitdate normal="1962/1964" type="inclusive">1962-1964</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>American Academy in Rome</unittitle>
+            <unitdate normal="1994/1997" type="inclusive">1994-1997</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>American Historical Association</unittitle>
+            <abstract>includes notes for a letter to the editor from Stam</abstract>
+            <unitdate normal="1992" type="inclusive">1992</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Association of Research Libraries (ARL)</unittitle>
+            <unitdate normal="1973" type="inclusive">1973, </unitdate>
+            <unitdate normal="1998" type="inclusive">1998, </unitdate>
+            <unitdate normal="2001" type="inclusive">2001</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>A, misc</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Baker, Phil</unittitle>
+            <unitdate normal="1972" type="inclusive">1972, </unitdate>
+            <unitdate normal="2002" type="inclusive">2002</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Banks, Paul</unittitle>
+            <unitdate normal="1974" type="inclusive">1974, </unitdate>
+            <unitdate normal="1978" type="inclusive">1978</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Barber, Nicholas</unittitle>
+            <unitdate normal="1972" type="inclusive">1972, </unitdate>
+            <unitdate normal="1975" type="inclusive">1975, </unitdate>
+            <unitdate normal="1977" type="inclusive">1977, </unitdate>
+            <unitdate normal="1988" type="inclusive">1988, </unitdate>
+            <unitdate normal="1998" type="inclusive">1998, </unitdate>
+            <unitdate normal="2000" type="inclusive">2000, </unitdate>
+            <unitdate normal="2004" type="inclusive">2004</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Baur, Siegfried</unittitle>
+            <unitdate normal="1998" type="inclusive">1998, </unitdate>
+            <unitdate normal="2007" type="inclusive">2007</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02 id="teba">
+          <did>
+            <unittitle>Belanger, Terry</unittitle>
+            <unitdate normal="2001" type="inclusive">2001, </unitdate>
+            <unitdate normal="2013/2014" type="inclusive">2013-2014</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Berger, Tom</unittitle>
+            <unitdate normal="1977" type="inclusive">1977, </unitdate>
+            <unitdate normal="1992" type="inclusive">1992, </unitdate>
+            <unitdate normal="1994" type="inclusive">1994</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02 id="jobi">
+          <did>
+            <unittitle>Bidwell, John</unittitle>
+            <unitdate normal="2014" type="inclusive">2014</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02 id="bodl">
+          <did>
+            <unittitle>Bodleian Library</unittitle>
+            <unitdate normal="1970/1975" type="inclusive">1970-1975, </unitdate>
+            <unitdate normal="1978" type="inclusive">1978, </unitdate>
+            <unitdate normal="1998" type="inclusive">1998, </unitdate>
+            <unitdate normal="2002" type="inclusive">2002</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>British Library</unittitle>
+            <unitdate normal="1986/1996" type="inclusive">1986-1996, </unitdate>
+            <unitdate normal="2007" type="inclusive">2007</unitdate>
+            <container type="Box">2</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="alwi">Wilson, Alex</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Brown University Library</unittitle>
+            <unitdate normal="1988/1995" type="inclusive">1988-1995</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Buffalo and Erie County Public Library</unittitle>
+            <unitdate normal="1986/1988" type="inclusive">1986-1988</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>B, misc</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Commission on Preservation and Access</unittitle>
+            <unitdate normal="1990/1994" type="inclusive">1990-1994</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Council on Library Resources</unittitle>
+            <abstract>related to their Task Force on Preservation</abstract>
+            <unitdate normal="1983" type="inclusive">1983, </unitdate>
+            <unitdate normal="1991" type="inclusive">1991</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Couper, Richard</unittitle>
+            <abstract>includes background material for and draft of memorial article by Stam for American Antiquarian Society</abstract>
+            <unitdate normal="1977/1981" type="inclusive">1977-1981, </unitdate>
+            <unitdate normal="1985" type="inclusive">1985, </unitdate>
+            <unitdate normal="1990" type="inclusive">1990, </unitdate>
+            <unitdate normal="1993" type="inclusive">1993, </unitdate>
+            <unitdate normal="1998/2006" type="inclusive">1998-2006</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Crook, Arthur</unittitle>
+            <unitdate normal="1972" type="inclusive">1972</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Cropp, Martin</unittitle>
+            <unitdate normal="1973" type="inclusive">1973, </unitdate>
+            <unitdate normal="1986" type="inclusive">1986</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Curley, Arthur</unittitle>
+            <abstract>includes obituary, "in memoriam" article by Daniel Ring</abstract>
+            <unitdate normal="1986" type="inclusive">1986, </unitdate>
+            <unitdate normal="1992" type="inclusive">1992, </unitdate>
+            <unitdate normal="1994" type="inclusive">1994, </unitdate>
+            <unitdate normal="1998" type="inclusive">1998</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>C, misc</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Davisson, William Porter (Bill)</unittitle>
+            <unitdate normal="1968" type="inclusive">1968, </unitdate>
+            <unitdate normal="1986" type="inclusive">1986, </unitdate>
+            <unitdate normal="1996" type="inclusive">1996, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Dean, John</unittitle>
+            <unitdate normal="1973" type="inclusive">1973, </unitdate>
+            <unitdate normal="1976" type="inclusive">1976, </unitdate>
+            <unitdate normal="1990" type="inclusive">1990, </unitdate>
+            <unitdate normal="2007" type="inclusive">2007</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>D, misc</unittitle>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Edinburgh University Library</unittitle>
+            <unitdate normal="2002" type="inclusive">2002</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Edwards, George</unittitle>
+            <unitdate normal="1993" type="inclusive">1993, </unitdate>
+            <unitdate normal="2000" type="inclusive">2000, </unitdate>
+            <unitdate normal="2003" type="inclusive">2003, </unitdate>
+            <unitdate normal="2005" type="inclusive">2005</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Erdman, David</unittitle>
+            <abstract>includes Stam's remarks at memorial service</abstract>
+            <unitdate normal="1960" type="inclusive">1960, </unitdate>
+            <unitdate normal="1963" type="inclusive">1963, </unitdate>
+            <unitdate normal="1971" type="inclusive">1971, </unitdate>
+            <unitdate normal="1973" type="inclusive">1973, </unitdate>
+            <unitdate normal="2001" type="inclusive">2001, </unitdate>
+            <unitdate normal="2003" type="inclusive">2003, </unitdate>
+            <unitdate normal="2008" type="inclusive">2008</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>E, misc</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fallows, Geoffrey</unittitle>
+            <unitdate normal="1972/1973" type="inclusive">1972-1973, </unitdate>
+            <unitdate normal="1986/1989" type="inclusive">1986-1989, </unitdate>
+            <unitdate normal="1999/2007" type="inclusive">1999-2007, </unitdate>
+            <unitdate normal="2010" type="inclusive">2010, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Federal Bureau of Investigation (FBI)</unittitle>
+            <unitdate normal="1960" type="inclusive">1960</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fern, Alan</unittitle>
+            <unitdate normal="1989/1990" type="inclusive">1989-1990</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ferriero, David</unittitle>
+            <unitdate normal="2007" type="inclusive">2007, </unitdate>
+            <unitdate normal="2009" type="inclusive">2009</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Floyd, Carlisle</unittitle>
+            <unitdate normal="1997" type="inclusive">1997, </unitdate>
+            <unitdate normal="2005" type="inclusive">2005</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Fussell, Charles</unittitle>
+            <unitdate normal="2002/2004" type="inclusive">2002-2004</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>F, misc</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gallup, Donald</unittitle>
+            <unitdate normal="1998/1999" type="inclusive">1998-1999</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gardner, Philip</unittitle>
+            <unitdate normal="1958/1961" type="inclusive">1958-1961, </unitdate>
+            <unitdate normal="1967/1968" type="inclusive">1967-1968</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gregorian, Vartan</unittitle>
+            <unitdate normal="1987/1994" type="inclusive">1987-1994, </unitdate>
+            <unitdate normal="2001" type="inclusive">2001</unitdate>
+            <container type="Box">3</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="nypl">New York Public Library</ref> and 
+              
+              <ref target="pm-vagr">Printed material : Gregorian, Vartan</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Gugolz, Alfred</unittitle>
+            <unitdate normal="1956/1962" type="inclusive">1956-1962, </unitdate>
+            <unitdate normal="1986/1987" type="inclusive">1986-1987</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>G, misc</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Harvard University</unittitle>
+            <unitdate normal="1972/1977" type="inclusive">1972-1977, </unitdate>
+            <unitdate normal="1987" type="inclusive">1987, </unitdate>
+            <unitdate normal="1989" type="inclusive">1989</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Herzog August Bibliothek</unittitle>
+            <unitdate normal="1986/1988" type="inclusive">1986-1988, </unitdate>
+            <unitdate normal="1997" type="inclusive">1997</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Huntington Library</unittitle>
+            <unitdate normal="1977" type="inclusive">1977, </unitdate>
+            <unitdate normal="1989" type="inclusive">1989</unitdate>
+            <container type="Box">3</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="wimo">Moffett, William (Bill)</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>H, misc</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Institute for Museum and Library Services (IMLS)</unittitle>
+            <abstract>relating to Stam's service on grant evaluation committee</abstract>
+            <unitdate normal="2003/2004" type="inclusive">2003-2004</unitdate>
+            <physdesc>
+              <extent>4 folders</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>I, misc</unittitle>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02 id="jhun">
+          <did>
+            <unittitle>Johns Hopkins University</unittitle>
+            <abstract>includes photographs</abstract>
+            <unitdate normal="1973/1978" type="inclusive">1973-1978, </unitdate>
+            <unitdate normal="1988/1992" type="inclusive">1988-1992, </unitdate>
+            <unitdate normal="1998" type="inclusive">1998, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>4 folders</extent>
+            </physdesc>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Johns Hopkins University Librarian's Reports</unittitle>
+            <abstract>bound volume</abstract>
+            <unitdate normal="1974/1976" type="inclusive">1974-1976</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Johns Hopkins University Management Report</unittitle>
+            <abstract>bound volume</abstract>
+            <unitdate normal="1976" type="inclusive">1976</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02 id="bijo">
+          <did>
+            <unittitle>Joyce, Bill</unittitle>
+            <unitdate normal="1986/1998" type="inclusive">1986-1998, </unitdate>
+            <unitdate normal="2014" type="inclusive">2014</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kanazawa Institute of Technology</unittitle>
+            <abstract>mostly corporate Christmas cards</abstract>
+            <unitdate normal="1985/1992" type="inclusive">1985-1992</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kaufman, Annette</unittitle>
+            <unitdate normal="1990" type="inclusive">1990, </unitdate>
+            <unitdate normal="1997/2006" type="inclusive">1997-2006, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kjaer, Kjell-G.</unittitle>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Koizumi, Toru</unittitle>
+            <unitdate normal="1986/1987" type="inclusive">1986-1987, </unitdate>
+            <unitdate normal="1995/1996" type="inclusive">1995-1996, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kossow, Richard</unittitle>
+            <unitdate normal="2001/2006" type="inclusive">2001-2006</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Krummel, D.W.</unittitle>
+            <abstract>includes reprint of article by him, signed and inscribed to Stam</abstract>
+            <unitdate normal="1966/1967" type="inclusive">1966-1967, </unitdate>
+            <unitdate normal="1997" type="inclusive">1997, </unitdate>
+            <unitdate normal="2003/2004" type="inclusive">2003-2004</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>K, misc</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>LaBalme. Patricia</unittitle>
+            <abstract>most concerns Sanudo translation project; includes reprint of article by her, signed and inscribed to Stam</abstract>
+            <unitdate normal="1993" type="inclusive">1993, </unitdate>
+            <unitdate normal="1998/2002" type="inclusive">1998-2002</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Le Roy Ladurie, Emmanuel</unittitle>
+            <unitdate normal="1994" type="inclusive">1994</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lemke, Antje</unittitle>
+            <abstract>includes several pieces of writing by Lemke</abstract>
+            <unitdate normal="1956" type="inclusive">1956, </unitdate>
+            <unitdate normal="1986" type="inclusive">1986, </unitdate>
+            <unitdate normal="1988" type="inclusive">1988, </unitdate>
+            <unitdate normal="1991" type="inclusive">1991, </unitdate>
+            <unitdate normal="1993" type="inclusive">1993</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Library of Congress</unittitle>
+            <abstract>most relates to their "history of libraries" project</abstract>
+            <unitdate normal="1997" type="inclusive">1997</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Linda Hall Library</unittitle>
+            <unitdate normal="1994/1995" type="inclusive">1994-1995, </unitdate>
+            <unitdate normal="2008" type="inclusive">2008</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lombardi, Tarky</unittitle>
+            <unitdate normal="1986" type="inclusive">1986</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>London Library</unittitle>
+            <unitdate normal="1996/1998" type="inclusive">1996-1998</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lowman, Matt</unittitle>
+            <abstract>owner of Brick Row Bookshop; includes essay, "My life with rare books"</abstract>
+            <unitdate normal="1973" type="inclusive">1973, </unitdate>
+            <unitdate normal="1992" type="inclusive">1992</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>L, misc</unittitle>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02 id="maco">
+          <did>
+            <unittitle>Marlboro College</unittitle>
+            <unitdate normal="1963/1980" type="inclusive">1963-1980, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">4</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="tora">Ragle, Tom</ref>; 
+              
+              <ref target="mem-eavo">Memorabilia : "Early Voices: An Oral History of Marlboro College"</ref>; 
+              
+              <ref target="pm-maco">Printed material : Marlboro College</ref></p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Meiggs, Russell</unittitle>
+            <unitdate normal="1969" type="inclusive">1969</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mills, William, Scott Polar Research Institute</unittitle>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <container type="Box">4</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Milton S. Eisenhower Library</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="jhun">Johns Hopkins University</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02 id="wimo">
+          <did>
+            <unittitle>Moffett, William A. (Bill)</unittitle>
+            <abstract>includes remarks to ACRL</abstract>
+            <unitdate normal="1984/1985" type="inclusive">1984-1985, </unitdate>
+            <unitdate normal="1993/1994" type="inclusive">1993-1994</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Morgan Library</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="jobi">Bidwell, John</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Mosher, Paul H.</unittitle>
+            <unitdate normal="1985" type="inclusive">1985, </unitdate>
+            <unitdate normal="2003/2006" type="inclusive">2003-2006, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <container type="Box">5</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="nypl">New York Public Library</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>M, misc</unittitle>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>National Library of Ireland</unittitle>
+            <unitdate normal="1992/1993" type="inclusive">1992-1993</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>National Library of Scotland</unittitle>
+            <unitdate normal="1986/1988" type="inclusive">1986-1988</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02 id="nypl">
+          <did>
+            <unittitle>New York Public Library</unittitle>
+            <unitdate normal="1960" type="inclusive">1960, </unitdate>
+            <unitdate normal="1975/1992" type="inclusive">1975-1992, </unitdate>
+            <unitdate normal="2004" type="inclusive">2004, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>4 folders</extent>
+            </physdesc>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New York Public Library Center for Scholars and Writers</unittitle>
+            <abstract>application for fellowship</abstract>
+            <unitdate normal="2004" type="inclusive">2004</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New York Society Library</unittitle>
+            <unitdate normal="1994" type="inclusive">1994</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New York Times</unittitle>
+            <unitdate normal="2005" type="inclusive">2005, </unitdate>
+            <unitdate normal="2009" type="inclusive">2009</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02 id="newb">
+          <did>
+            <unittitle>Newberry Library</unittitle>
+            <unitdate normal="1970/1978" type="inclusive">1970-1978</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">5</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="bito">Towner, Bill</ref>.</p>
+          </note>
+        </c02>
+        <c02 id="nwun">
+          <did>
+            <unittitle>Northwestern University</unittitle>
+            <unitdate normal="1964/1972" type="inclusive">1964-1972, </unitdate>
+            <unitdate normal="1978" type="inclusive">1978</unitdate>
+            <container type="Box">5</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>N, misc</unittitle>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>O, misc</unittitle>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Pearson, Lennart (Len)</unittitle>
+            <unitdate normal="1942" type="inclusive">1942, </unitdate>
+            <unitdate normal="1956/1963" type="inclusive">1956-1963, </unitdate>
+            <unitdate normal="1973" type="inclusive">1973, </unitdate>
+            <unitdate normal="2002" type="inclusive">2002</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Phelan, Bill</unittitle>
+            <unitdate normal="2000/2002" type="inclusive">2000-2002, </unitdate>
+            <unitdate normal="2007/2011" type="inclusive">2007-2011</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Phillips, Robert (Bob)</unittitle>
+            <unitdate normal="2000" type="inclusive">2000, </unitdate>
+            <unitdate normal="2004" type="inclusive">2004, </unitdate>
+            <unitdate normal="2006" type="inclusive">2006</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Prochaska, Alice</unittitle>
+            <unitdate normal="1972/1976" type="inclusive">1972-1976, </unitdate>
+            <unitdate normal="1984/1987" type="inclusive">1984-1987, </unitdate>
+            <unitdate normal="1998/1999" type="inclusive">1998-1999, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>P, misc</unittitle>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Quarrie, Paul</unittitle>
+            <abstract>Eton College, England</abstract>
+            <unitdate normal="1987" type="inclusive">1987</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02 id="tora">
+          <did>
+            <unittitle>Ragle, Tom</unittitle>
+            <unitdate normal="1995" type="inclusive">1995, </unitdate>
+            <unitdate normal="2001" type="inclusive">2001, </unitdate>
+            <unitdate normal="2006/2007" type="inclusive">2006-2007</unitdate>
+            <container type="Box">6</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="maco">Marlboro College</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rare Book School</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="teba">Belanger, Terry</ref>; 
+                
+                <ref target="writ-rbs">Writings : Miscellaneous : Consultant's report on the Book Arts Press and Rare Book School</ref></p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Resnik, Regina</unittitle>
+            <unitdate normal="2000" type="inclusive">2000</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rio de Janeiro police department</unittitle>
+            <unitdate normal="1952/1962" type="inclusive">circa 1957</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>R, misc</unittitle>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Safire, William</unittitle>
+            <unitdate normal="2002" type="inclusive">2002</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>St. Lawrence University</unittitle>
+            <unitdate normal="1986" type="inclusive">1986, </unitdate>
+            <unitdate normal="1989" type="inclusive">1989, </unitdate>
+            <unitdate normal="1992" type="inclusive">1992</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Seward House</unittitle>
+            <abstract>includes certificate of appreciation</abstract>
+            <unitdate normal="2009" type="inclusive">2009</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Shackleton, Robert</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="bodl">Bodleian Library</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>SHARP Conference</unittitle>
+            <abstract>includes abstract of Stam's presentation</abstract>
+            <unitdate normal="1996/1997" type="inclusive">1996-1997</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Skeel Fund</unittitle>
+            <abstract>application for funds to develop woodwind bibliography</abstract>
+            <unitdate normal="1963" type="inclusive">1963</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Smith, Lacy Baldwin</unittitle>
+            <note>
+              <p>See 
+                
+                <ref target="nwun">Northwestern University</ref>.</p>
+            </note>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sollish, George</unittitle>
+            <unitdate normal="1999" type="inclusive">1999</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stanford University Libraries</unittitle>
+            <unitdate normal="1987/1993" type="inclusive">1987-1993</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Stoppard, Tom</unittitle>
+            <unitdate normal="2008" type="inclusive">[2008]</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse University</unittitle>
+            <unitdate normal="1982/2009" type="inclusive">1982-2009, </unitdate>
+            <unitdate normal="2013" type="inclusive">2013</unitdate>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse University annual reports</unittitle>
+            <abstract>bound</abstract>
+            <unitdate normal="1986/1998" type="inclusive">1986-1998</unitdate>
+            <container type="Box">6</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse University annual reports</unittitle>
+            <unitdate normal="1986" type="inclusive">1986, </unitdate>
+            <unitdate normal="1995" type="inclusive">1995, </unitdate>
+            <unitdate normal="1998" type="inclusive">1998</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>S, misc</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Taylor, Paul</unittitle>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Thieme, Paul H.</unittitle>
+            <unitdate normal="1956/1959" type="inclusive">1956-1959</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02 id="bito">
+          <did>
+            <unittitle>Towner, Bill</unittitle>
+            <unitdate normal="1966/1979" type="inclusive">1966-1979, </unitdate>
+            <unitdate normal="1984/1989" type="inclusive">1984-1989, </unitdate>
+            <unitdate normal="1992" type="inclusive">1992, </unitdate>
+            <unitdate normal="2001" type="inclusive">2001</unitdate>
+            <container type="Box">7</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="newb">Newberry Library</ref>.</p>
+          </note>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Tremper, Allan</unittitle>
+            <abstract>includes paper on Edward Gibbon</abstract>
+            <unitdate normal="1974/1975" type="inclusive">1974-1975, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Truesdell, Clifford</unittitle>
+            <unitdate normal="1974/1978" type="inclusive">1974-1978</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>T, misc</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Ugawa, K.</unittitle>
+            <unitdate normal="1985/1986" type="inclusive">1985-1986, </unitdate>
+            <unitdate normal="1993" type="inclusive">1993</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>United States Department of Education</unittitle>
+            <abstract>invitation to serve on grants committee</abstract>
+            <unitdate normal="1992" type="inclusive">1992</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>U, misc</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>V, misc</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wallis, Victor and Inez</unittitle>
+            <abstract>includes a number of articles and other pieces by Victor</abstract>
+            <unitdate normal="1962" type="inclusive">1962, </unitdate>
+            <unitdate normal="1985" type="inclusive">1985, </unitdate>
+            <unitdate normal="1989" type="inclusive">1989, </unitdate>
+            <unitdate normal="1994" type="inclusive">1994, </unitdate>
+            <unitdate normal="1997" type="inclusive">1997, </unitdate>
+            <unitdate normal="1999" type="inclusive">1999, </unitdate>
+            <unitdate normal="2005" type="inclusive">2005, </unitdate>
+            <unitdate normal="2011" type="inclusive">2011, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wendell, Edward E.</unittitle>
+            <unitdate normal="1973" type="inclusive">1973, </unitdate>
+            <unitdate normal="2014" type="inclusive">2014</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02 id="whco">
+          <did>
+            <unittitle>Wheaton College</unittitle>
+            <abstract>includes some from Stam's time as student and editor of Wheaton Record</abstract>
+            <unitdate normal="1953/1954" type="inclusive">1953-1954, </unitdate>
+            <unitdate normal="1965" type="inclusive">1965</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Whitehill, Walter Muir</unittitle>
+            <abstract>includes reprint of tribute to him</abstract>
+            <unitdate normal="1961/1964" type="inclusive">1961-1964</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Williams, John A.</unittitle>
+            <abstract>includes photocopy of libretto for opera, 
+              
+              <emph render="italic">Vanqui</emph></abstract>
+            <unitdate normal="1997" type="inclusive">1997, </unitdate>
+            <unitdate normal="2001/2002" type="inclusive">2001-2002</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02 id="alwi">
+          <did>
+            <unittitle>Wilson, Alex</unittitle>
+            <unitdate normal="1986/1991" type="inclusive">1986-1991, </unitdate>
+            <unitdate normal="1995" type="inclusive">1995, </unitdate>
+            <unitdate normal="1998" type="inclusive">1998, </unitdate>
+            <unitdate normal="2000" type="inclusive">2000</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Woodward, David</unittitle>
+            <abstract>includes broadsides and other items from the "History of Cartography" project</abstract>
+            <unitdate normal="1974" type="inclusive">1974, </unitdate>
+            <unitdate normal="1976" type="inclusive">1976, </unitdate>
+            <unitdate normal="1985/1988" type="inclusive">1985-1988, </unitdate>
+            <unitdate normal="2004" type="inclusive">2004, </unitdate>
+            <unitdate normal="2008/2012" type="inclusive">2008-2012, </unitdate>
+            <unitdate normal="2015" type="inclusive">2015</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Wynne, Marjorie</unittitle>
+            <unitdate normal="1998/2001" type="inclusive">1998-2001, </unitdate>
+            <unitdate normal="2004" type="inclusive">2004</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>W, misc</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Yale University</unittitle>
+            <abstract>"Global Record" conference</abstract>
+            <unitdate normal="2005" type="inclusive">2005</unitdate>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Z, misc</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>First name only, A-D</unittitle>
+            <container type="Box">7</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>First name only, E-W</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Unidentified or multiple</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Memorabilia</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Address lists</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>American Academy in Rome</unittitle>
+            <unitdate normal="1994" type="inclusive">1994</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Appointment books</unittitle>
+            <unitdate normal="1998/2003" type="inclusive">1998-2003, </unitdate>
+            <unitdate normal="2005/2007" type="inclusive">2005-2007</unitdate>
+            <physdesc>
+              <extent>4 folders</extent>
+            </physdesc>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Awards</unittitle>
+            <abstract>includes degrees, certificates of appreciation, academic honors, etc.</abstract>
+            <unitdate normal="1956" type="inclusive">1956, </unitdate>
+            <unitdate normal="1962" type="inclusive">1962, </unitdate>
+            <unitdate normal="1964" type="inclusive">1964, </unitdate>
+            <unitdate normal="1972" type="inclusive">1972, </unitdate>
+            <unitdate normal="1985/1986" type="inclusive">1985-1986, </unitdate>
+            <unitdate normal="2005" type="inclusive">2005, </unitdate>
+            <unitdate normal="2012/2013" type="inclusive">2012-2013, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Books on Ice" exhibit, Grolier Club</unittitle>
+            <abstract>invitations, reviews, letters of congratulation, etc.; includes remarks from exhibit reception and opening</abstract>
+            <unitdate normal="2006" type="inclusive">2006</unitdate>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Caricatures and cartoons of Stam</unittitle>
+            <container type="Box">8</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Clippings about Stam</unittitle>
+            <unitdate normal="1968" type="inclusive">1968, </unitdate>
+            <unitdate normal="1978" type="inclusive">1978, </unitdate>
+            <unitdate normal="1981" type="inclusive">1981, </unitdate>
+            <unitdate normal="1983" type="inclusive">1983, </unitdate>
+            <unitdate normal="1987/1991" type="inclusive">1987-1991, </unitdate>
+            <unitdate normal="1996/1998" type="inclusive">1996-1998, </unitdate>
+            <unitdate normal="2003" type="inclusive">2003, </unitdate>
+            <unitdate normal="2006" type="inclusive">2006, </unitdate>
+            <unitdate normal="2012/2015" type="inclusive">2012-2015, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">9</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Diaries</unittitle>
+            <abstract>Edinburgh student years</abstract>
+            <unitdate normal="1955/1956" type="inclusive">1955-1956</unitdate>
+            <container type="Box">9</container>
+          </did>
+          <note>
+            <p>See also 
+              
+              <ref target="mem-usnd">United States Navy : Diary</ref> below.</p>
+          </note>
+        </c02>
+        <c02 id="mem-eavo">
+          <did>
+            <unittitle>"Early Voices: An Oral HIstory of Marlboro College"</unittitle>
+            <unitid>stam_d_001</unitid>
+            <unitdate normal="2008" type="inclusive">2008</unitdate>
+            <physdesc>
+              <extent>DVD</extent>
+            </physdesc>
+          <container type="Box">9</container></did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Events</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Stam as featured guest</unittitle>
+              <abstract>speaker, presenter, performer, honoree, etc.</abstract>
+              <unitdate normal="1963" type="inclusive">1963, </unitdate>
+              <unitdate normal="1980" type="inclusive">1980, </unitdate>
+              <unitdate normal="1992/2009" type="inclusive">1992-2009, </unitdate>
+              <unitdate normal="2015" type="inclusive">2015, </unitdate>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Hosted by Stams</unittitle>
+              <abstract>parties, fundraisers, etc.</abstract>
+              <unitdate normal="1988" type="inclusive">1988, </unitdate>
+              <unitdate normal="1994/1997" type="inclusive">1994-1997, </unitdate>
+              <unitdate normal="2000/2001" type="inclusive">2000-2001, </unitdate>
+              <unitdate normal="2006" type="inclusive">2006, </unitdate>
+              <unitdate normal="2015" type="inclusive">2015, </unitdate>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Memorial services</unittitle>
+              <unitdate normal="1980" type="inclusive">1980, </unitdate>
+              <unitdate normal="1983" type="inclusive">1983, </unitdate>
+              <unitdate normal="1988/1989" type="inclusive">1988-1989, </unitdate>
+              <unitdate normal="1992/1997" type="inclusive">1992-1997, </unitdate>
+              <unitdate normal="2000" type="inclusive">2000, </unitdate>
+              <unitdate normal="2004" type="inclusive">2004, </unitdate>
+              <unitdate normal="2008/2013" type="inclusive">2008-2013</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Weddings, anniversaries, birth announcements</unittitle>
+              <unitdate normal="1996" type="inclusive">1996, </unitdate>
+              <unitdate normal="2000" type="inclusive">2000, </unitdate>
+              <unitdate normal="2010" type="inclusive">2010</unitdate>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <unitdate normal="1975/1994" type="inclusive">1975-1994, </unitdate>
+              <unitdate normal="2001/2002" type="inclusive">2001-2002, </unitdate>
+              <unitdate normal="2006/2007" type="inclusive">2006-2007, </unitdate>
+              <unitdate normal="2013" type="inclusive">2013</unitdate>
+              <physdesc>
+                <extent>4 folders</extent>
+              </physdesc>
+              <container type="Box">9</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New York Public Library album</unittitle>
+            <abstract>presented to Stam on his departure, with farewell notes and well-wishes</abstract>
+            <unitdate normal="1986" type="inclusive">1986</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Poems</unittitle>
+            <abstract>some in Spanish</abstract>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Posters for Syracuse Symposium, theme "Journeys"</unittitle>
+            <unitdate normal="2003" type="inclusive">2003</unitdate>
+            <physdesc>
+              <extent>2 items</extent>
+            </physdesc>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+		  <c02><did><unittitle> Poster, Syracuse University</unittitle><abstract>aerial view, overprinted with SU mission and vision; signed and inscribed to Stam from Chancellor Kenneth Shaw</abstract><unitdate normal="1997" type="inclusive">1997</unitdate><container type="Oversize">2</container></did></c02>
+        <c02>
+          <did>
+            <unittitle>Postcards</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Thoughts on reaching an only 21st birthday"</unittitle>
+            <abstract>Stam's thoughts, handwritten</abstract>
+            <unitdate normal="1956-07-11" type="inclusive">11 Jul 1956</unitdate>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>United States Navy</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Deck logs, USS Wyandot</unittitle>
+              <abstract>photocopies, with letter from National Archives</abstract>
+              <unitdate normal="1957/1958" type="inclusive">1957-1958</unitdate>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+          <c03 id="mem-usnd">
+            <did>
+              <unittitle>Diary</unittitle>
+              <abstract>ports of call mentioned include Spain and Greece</abstract>
+              <unitdate normal="1957" type="inclusive">1957</unitdate>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <container type="Box">28</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Type specimens</unittitle>
+            <abstract>three broadsides printed with specimens of two fonts, Gothic Tuscan Italian and Tusk</abstract><unitdate normal="2009" type="inclusive">2009</unitdate><container type="Oversize">2</container>
+          </did>
+        </c02><c02>
+          <did>
+            <unittitle>Wheaton College yearbook, 
+              
+              <emph render="italic">The Tower</emph></unittitle>
+            <unitdate normal="1955" type="inclusive">1955</unitdate>
+            <container type="Box">28</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Printed material</unittitle>
+        </did>
+        <scopecontent>
+          <p>Types of material include  pamphlets, publicity, informational brochures, catalogs, clippings (original and photocopies), and so on.</p>
+        </scopecontent>
+        <c02>
+          <did>
+            <unittitle>Balanchine, George</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02 id="pm-vagr">
+          <did>
+            <unittitle>Gregorian, Vartan</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Johns Hopkins University</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02 id="pm-maco">
+          <did>
+            <unittitle>Marlboro College</unittitle>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Marlboro College catalogs</unittitle>
+            <abstract>large bound volume</abstract>
+            <unitdate normal="1963/1969" type="inclusive">1963-1969</unitdate>
+            <container type="Box">27</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New York Public Library, by</unittitle>
+            <abstract>informational brochures, special event announcements, etc.</abstract>
+            <unitdate normal="1911" type="inclusive">1911, </unitdate>
+            <unitdate normal="1955" type="inclusive">1955, </unitdate>
+            <unitdate normal="1966" type="inclusive">1966, </unitdate>
+            <unitdate normal="1978" type="inclusive">1978, </unitdate>
+            <unitdate normal="1983/1989" type="inclusive">1983-1989, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">10</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>New York Public Library, about</unittitle>
+            <abstract>clippings</abstract>
+            <unitdate normal="1854" type="inclusive">1854, </unitdate>
+            <unitdate normal="1979/1980" type="inclusive">1979-1980, </unitdate>
+            <unitdate normal="1984/1985" type="inclusive">1984-1985, </unitdate>
+            <unitdate normal="1990" type="inclusive">1990, </unitdate>
+            <unitdate normal="2012/2013" type="inclusive">2012-2013</unitdate>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Newberry Library</unittitle>
+            <unitdate normal="1891" type="inclusive">1891, </unitdate>
+            <unitdate normal="1940" type="inclusive">1940, </unitdate>
+            <unitdate normal="1978/1979" type="inclusive">1978-1979, </unitdate>
+            <unitdate normal="1995" type="inclusive">1995</unitdate>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Syracuse University</unittitle>
+            <unitdate normal="1990/1993" type="inclusive">1990-1993, </unitdate>
+            <unitdate normal="1997" type="inclusive">1997, </unitdate>
+            <unitdate normal="2010" type="inclusive">2010</unitdate>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <abstract>clippings, reprints, other assorted miscellany</abstract>
+            <unitdate normal="1952/2015" type="inclusive">1952-2015, </unitdate>
+            <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Subject files</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>American Seaman's Friend Society</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Archives</unittitle>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Baker, Nicholson</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">11</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bassoons</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Books on Ice" exhibit, Grolier Club</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Funding solicitations</unittitle>
+              <container type="Box">12</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Item loans</unittitle>
+              <abstract>pick lists, loan forms, correspondence, etc., foldered by lending institution</abstract>
+              <physdesc>
+                <extent>17 folders</extent>
+              </physdesc>
+              <container type="Box">12</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Items doubtful or rejected</unittitle>
+              <container type="Box">12</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <container type="Box">12</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Burleigh church history</unittitle>
+            <container type="Box">12</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Conspectus approach</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Deaccessioning</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Historiography</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Jones, Bassett</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kyd, Thomas</unittitle>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Lehigh University Libraries</unittitle>
+            <abstract>includes report on their rare book collection by Daniel Traister</abstract>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Levine, Joseph M.</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Librarianship</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">13</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Library of Congress security</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Library history</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Psychohistory</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rare books librarianship</unittitle>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rare Books and Manuscripts Section (RBMS)</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Rochberg, George</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Romantics</unittitle>
+            <container type="Box">14</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Sassoon, Siegfried</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Special collections speech"</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Towner, Bill</unittitle>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <abstract>clippings, photocopied chapters, etc. on various topics</abstract>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">15</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Writings</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Academic work</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Undergraduate, Wheaton College</unittitle>
+              <unitdate normal="1951/1955" type="inclusive">1951-1955</unitdate>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Library school, Rutgers University</unittitle>
+              <unitdate normal="1959/1962" type="inclusive">1959-1962</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>PhD, Northwestern University</unittitle>
+              <unitdate normal="1968" type="inclusive">1968</unitdate>
+              <container type="Box">15</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>PhD, Northwestern University</unittitle>
+              <unitdate normal="1969/1972" type="inclusive">1969-1972</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">16</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>PhD dissertation</unittitle>
+              <abstract>notes and typescript draft</abstract>
+              <unitdate normal="1978" type="inclusive">1978</unitdate>
+              <physdesc>
+                <extent>5 folders</extent>
+              </physdesc>
+              <container type="Box">16</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>PhD dissertation</unittitle>
+              <abstract>bound copy</abstract>
+              <unitdate normal="1978" type="inclusive">1978</unitdate>
+              <container type="Box">16</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>PhD dissertation</unittitle>
+              <abstract>bound annotated bibliography</abstract>
+              <unitdate normal="1978" type="inclusive">1978</unitdate>
+              <container type="Box">17</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Articles</unittitle>
+            <abstract>material for a given article may include notes, research material, drafts, reprints, and published versions</abstract>
+          </did>
+          <c03>
+            <did>
+              <unittitle>British studies at the Newberry Library</unittitle>
+              <unitdate normal="1974" type="inclusive">1974</unitdate>
+              <container type="Box">17</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Donald G. Wing, in 
+                
+                <emph render="italic">Grolier 2000</emph></unittitle>
+              <unitdate normal="2000" type="inclusive">2000</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">17</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Wing 10/99 Allworth</unittitle>
+              <unitid>stam_d_002</unitid>
+              <abstract>files not viewed, but almost certainly connected with entry on Wing for 
+                
+                <emph render="italic">Grolier 2000</emph></abstract>
+              <physdesc>
+                <extent>Floppy disk: 3 1/2 inch</extent>
+              </physdesc>
+              <container type="Box">17</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Elitism and the common cause</unittitle>
+              <unitdate normal="1979" type="inclusive">1979</unitdate>
+              <container type="Box">17</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Footnotes to the history of classification</unittitle>
+              <unitdate normal="1979" type="inclusive">1979</unitdate>
+              <container type="Box">17</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>A Glutton for books: Leigh Hunt and the London Library</unittitle>
+              <unitdate normal="1998" type="inclusive">1998</unitdate>
+              <container type="Box">17</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Leigh Hunt and the 
+                
+                <emph render="italic">True Sun</emph>: A list of reviews</unittitle>
+              <unitdate normal="1974" type="inclusive">1974</unitdate>
+              <container type="Box">17</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>A Modest case against faculty selection</unittitle>
+              <unitdate normal="1981" type="inclusive">1981</unitdate>
+              <container type="Box">17</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Peaks of joy, valleys of despair: The history of the Syracuse University Library from 1871 to 1907</unittitle>
+              <unitdate normal="1995" type="inclusive">1995</unitdate>
+              <container type="Box">17</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Prove all things: Hold fast that which is good": Deaccessioning and research libraries</unittitle>
+              <abstract>revised version of speech (see below)</abstract>
+              <unitdate normal="1982" type="inclusive">1982</unitdate>
+              <container type="Box">17</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Think globally but act locally: Collection development and resource sharing</unittitle>
+              <unitdate normal="1982/1983" type="inclusive">1982-1983</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">17</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Think globally but act locally: Collection development and resource sharing</unittitle>
+              <abstract>in 
+                
+                <emph render="italic">Library Lit. 15 - The Best of 1984</emph></abstract>
+              <unitdate normal="1985" type="inclusive">1985</unitdate>
+              <container type="Box">18</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Wheaton Record, miscellaneous</unittitle>
+              <unitdate normal="1952/1953" type="inclusive">1952-1953</unitdate>
+              <container type="Box">18</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Book reviews</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous, A-Z by author</unittitle>
+              <unitdate normal="1963" type="inclusive">1963, </unitdate>
+              <unitdate normal="1980/1984" type="inclusive">1980-1984, </unitdate>
+              <unitdate normal="1988/1992" type="inclusive">1988-1992, </unitdate>
+              <unitdate normal="1998/1999" type="inclusive">1998-1999, </unitdate>
+              <unitdate normal="2001" type="inclusive">2001</unitdate>
+              <container type="Box">18</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Books</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>International Directory of Library Histories, David Stam, ed.</unittitle>
+              <abstract>correspondence with contributors, notes, reviews, etc.; for the book itself, please see &summitref;</abstract>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">18</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>What happened to me: My life with books, research libraries, and performing arts</unittitle>
+              <abstract>blurb by Stam and reviews only; for the book itself, please see &summitref;</abstract>
+              <unitdate normal="2014" type="inclusive">2014</unitdate>
+              <container type="Box">18</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="teac">
+          <did>
+            <unittitle>Course materials</unittitle>
+            <abstract>material relating to courses taught by Stam at Syracuse University;  may include bibliographies, notes, assignments, quizzes, syllabi, etc.</abstract>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Polar film course</unittitle>
+              <unitdate normal="2009" type="inclusive">2009</unitdate>
+              <container type="Box">18</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Polar heroes</unittitle>
+              <unitdate normal="2007" type="inclusive">2007</unitdate>
+              <container type="Box">18</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Polar heroes</unittitle>
+              <unitdate normal="2008" type="inclusive">2008</unitdate>
+              <container type="Box">18</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Polar journeys</unittitle>
+              <abstract>taught in conjunction with Syracuse Symposium, theme "Journeys"</abstract>
+              <unitdate normal="2003" type="inclusive">2003</unitdate>
+              <container type="Box">18</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Course notes</unittitle>
+            <abstract>notes taken by Stam when he was a student at various institutions, as well as in some cases course related material such as syllabi or reading lists</abstract>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Baillie, Divinity</unittitle>
+              <abstract>photocopy of typed notes; probably from University of Edinburgh</abstract>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">19</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Edinburgh course notes</unittitle>
+              <abstract>typed</abstract>
+              <unitdate normal="1955" type="inclusive">1955, </unitdate>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">19</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Edinburgh lecture notes</unittitle>
+              <abstract>typed</abstract>
+              <unitdate normal="1950/1960" type="inclusive">circa 1955</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">19</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Rutgers library school</unittitle>
+              <container type="Box">19</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Torrance, Dogmatics</unittitle>
+              <abstract>possibly from University of Edinburgh</abstract>
+              <unitdate normal="1955" type="inclusive">1955</unitdate>
+              <container type="Box">19</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>U.S.</unittitle>
+              <abstract>political philosophy, Western Civ, ethics, etc.; likely from either Wheaton or Northwestern</abstract>
+              <unitdate normal="1969" type="inclusive">1969, </unitdate>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">19</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Encyclopedia entries</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>"Library", for Funk and Wagnalls New Encyclopedia</unittitle>
+              <unitdate normal="1981" type="inclusive">1981</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Montaigne, Michel Eyquem de" for unidentified publication</unittitle>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Nicholas of Cusa," for unidentified publication</unittitle>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Scholarly and Research Services," for the ALA Encyclopedia</unittitle>
+              <unitdate normal="1979" type="inclusive">1979</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Towner, Lawrence," for the Dictionary of American Library Biography</unittitle>
+              <unitdate normal="2000" type="inclusive">2000</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Letters to the editor</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Miscellaneous</unittitle>
+              <unitdate normal="1973" type="inclusive">1973, </unitdate>
+              <unitdate normal="1978/1984" type="inclusive">1978-1984, </unitdate>
+              <unitdate normal="2012/2016" type="inclusive">2012-2016, </unitdate>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Library evaluations</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Beineke Library, Yale</unittitle>
+              <unitdate normal="2002" type="inclusive">2002</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>City University of New York</unittitle>
+              <unitdate normal="1977" type="inclusive">1977</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>George Washington University</unittitle>
+              <abstract>Gelman Library</abstract>
+              <unitdate normal="1993" type="inclusive">1993</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Institute of Fine Arts Library, NYU</unittitle>
+              <unitdate normal="1987" type="inclusive">1987</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Rutgers University, New Brunswick campus</unittitle>
+              <unitdate normal="1978" type="inclusive">1978</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>St. Louis Mercantile Library</unittitle>
+              <unitdate normal="1985" type="inclusive">1985</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Polar research</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Arctic survivals: The restoration of records recovered from lost polar expeditions (with John F. Dean)</unittitle>
+              <abstract>in Proceedings of the 20th Polar Libraries Colloquy</abstract>
+              <unitdate normal="2004" type="inclusive">2004</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Bending time: The function of periodicals in nineteenth-centiry polar naval expeditions (with Deirdre Stam)</unittitle>
+              <abstract>Victorian Periodicals Review</abstract>
+              <unitdate normal="2008" type="inclusive">2008</unitdate>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Books on Ice" Grolier exhibit catalog</unittitle>
+              <abstract>typescript with text, case and item labels, illustrations, captions, etc.</abstract>
+              <physdesc>
+                <extent>3 folders</extent>
+              </physdesc>
+              <container type="Box">20</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Books on Ice" Grolier exhibit catalog</unittitle>
+              <abstract>illustration index cards</abstract>
+              <container type="Box">21</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Books on ice" Grolier exhibit case labels</unittitle>
+              <abstract>as used in the exhibit</abstract>
+              <container type="Oversize">1</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Books on ice" Grolier exhibit item labels</unittitle>
+              <abstract>as used in the exhibit; cases 1-5</abstract>
+              <physdesc>
+                <extent>5 folders</extent>
+              </physdesc>
+              <container type="Box">21</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Books on ice" Grolier exhibit item labels</unittitle>
+              <abstract>as used in the exhibit; cases 6-10 and unidenfied</abstract>
+              <physdesc>
+                <extent>6 folders</extent>
+              </physdesc>
+              <container type="Box">22</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Books on Ice" talk, Dartmouth</unittitle>
+              <unitdate normal="2006-10" type="inclusive">Oct 2006</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>By sledge, ski and ship: Early information networking in the cold regions</unittitle>
+              <abstract>in Proceedings of the 21st Polar Libraries Colloquy</abstract>
+              <unitdate normal="2005" type="inclusive">2005</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Congering" the past: The books of the Lady Franklin Bay Expedition (1881-84), before and after</unittitle>
+              <abstract>reprint from unidentified publication</abstract>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Explorer's Choice" reading list</unittitle>
+              <abstract>additional recommended reading, to accompany the "Books on Ice" Grolier Club exhibit</abstract>
+              <unitdate normal="2005" type="inclusive">2005</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Innocents on the ice: The evolution of an exhibition</unittitle>
+              <abstract>Grolier Club</abstract>
+              <unitdate normal="2006" type="inclusive">2006</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Innocents on the ice, or, The joys of (book) collecting</unittitle>
+              <unitdate normal="2015" type="inclusive">2015</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Polar show, New York Library Club</unittitle>
+              <unitdate normal="2005-11" type="inclusive">Nov 2005</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Polar show, St. Louis</unittitle>
+              <unitdate normal="2006-06" type="inclusive">Jun 2006</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Speeches</unittitle>
+            <abstract>material for a given speech may include notes, drafts, and original/reprint published versions</abstract>
+          </did>
+          <c03>
+            <did>
+              <unittitle>After the ball is hiked: Creativity and conformity in academic libraries</unittitle>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Anticipating the past, retrospecting the future</unittitle>
+              <abstract>"The Global Record" symposium, Yale University</abstract>
+              <unitdate normal="2005" type="inclusive">2005</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"An army without ammunition": Books and the college library</unittitle>
+              <abstract>Couper Phi Beta Kappa lecture, Hamilton College</abstract>
+              <unitdate normal="2005-09-09" type="inclusive">9 Sep 2005</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Bibliography of modern American literature</unittitle>
+              <abstract>Kommission für Germanistische Forschung</abstract>
+              <unitdate normal="1985" type="inclusive">1985, </unitdate>
+              <unitdate normal="1987" type="inclusive">1987</unitdate>
+              <physdesc>
+                <extent>2 folders</extent>
+              </physdesc>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Bibliomania: Disease or destiny?</unittitle>
+              <abstract>Wells College</abstract>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Bibliotheca Universalis: Some common themes in library history</unittitle>
+              <abstract>Grolier Club</abstract>
+              <unitdate normal="2001-04-04" type="inclusive">4 Apr 2001</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Book longevity and the librarian</unittitle>
+              <unitdate normal="1981-02-26" type="inclusive">26 Feb 1981</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Business of libraries</unittitle>
+              <abstract>Luncheon Club</abstract>
+              <unitdate normal="1997" type="inclusive">1997</unitdate>
+              <container type="Box">23</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Can the research library teach? A North American perspective on the teaching library</unittitle>
+              <abstract>LIBER annual conference; includes published version in issue of LIBER Quarterly, Vol 7 (1997)</abstract>
+              <unitdate normal="1997-07-01" type="inclusive">1 Jul 1997</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Canon-fodder: The colon's clout</unittitle>
+              <abstract>RBMS pre-conference</abstract>
+              <unitdate normal="1987-06-31" type="inclusive">31 Jun 1987</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Carnegie Library centennial</unittitle>
+              <abstract>Syracuse University</abstract>
+              <unitdate normal="2007-10-04" type="inclusive">4 Oct 2007</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Caxton Club, untitled</unittitle>
+              <unitdate normal="1980-01-23" type="inclusive">23 Jan 1980</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Caxton Club, untitled</unittitle>
+              <unitdate normal="1986-01-15" type="inclusive">15 Jan 1986</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Collaborative collection development and preservation: Progress, problems and potential</unittitle>
+              <abstract>includes versions delivered at Colorado State University and at the IFLA conference, and several published versions</abstract>
+              <unitdate normal="1985" type="inclusive">1985</unitdate>
+              <physdesc>
+                <extent>4 folders</extent>
+              </physdesc>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Creating the archival future</unittitle>
+              <abstract>Emory University</abstract>
+              <unitdate normal="2008-02-01" type="inclusive">1 Feb 2008</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Doors and windows of the university: Leigh Hunt and special collections</unittitle>
+              <abstract>Leigh Hunt Symposium, University of Iowa</abstract>
+              <unitdate normal="1984-04-13" type="inclusive">13 Apr 1984</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Finding funds to support preservation</unittitle>
+              <abstract>ALA/LoC conference</abstract>
+              <unitdate normal="1983-04-29" type="inclusive">29 Apr 1983</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>An Informal secret history of the conspectus</unittitle>
+              <abstract>ARL conference</abstract>
+              <unitdate normal="1986-10" type="inclusive">Oct 1986</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>[Interlibrary loan workshop]</unittitle>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>International programmes in preservation</unittitle>
+              <abstract>Library Association conference</abstract>
+              <unitdate normal="1986-09" type="inclusive">Sep 1986</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Issues of library access to independent scholars</unittitle>
+              <abstract>American Historical Association</abstract>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>[Janus Conference speech]</unittitle>
+              <abstract>Cornell University; notes</abstract>
+              <unitdate normal="2005-9-11" type="inclusive">9-11 Oct 2005</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Janus Conference on Research Library Collections [disc 1 of 2]</unittitle>
+              <unitid>stam_d_003</unitid>
+              <unitdate normal="2005-10-09/2005-10-11" type="inclusive">October 9-11, 2005</unitdate>
+              <physdesc>
+                <extent>DVD; running time 300</extent>
+              </physdesc>
+              <container type="Box">24</container>
+            </did>
+            <scopecontent>
+              <p>Full conference proceedings on two discs, with main menu and credits.  This disc: (1) Thomas, Stam, Block, Edelman; (2) Saylor, Reagan, Dimunation; (3) Hirtle, Sandler; (4) Walker, Guedon.  Each panel is followed by a question-and-answer session.  Videos are VOB (with BUP and IFO).</p>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Janus Conference on Research Library Collections [disc 2 of 2]</unittitle>
+              <unitid>stam_d_004</unitid>
+              <unitdate normal="2005-10-09/2005-10-11" type="inclusive">October 9-11, 2005</unitdate>
+              <physdesc>
+                <extent>DVD; running time 90</extent>
+              </physdesc>
+              <container type="Box">24</container>
+            </did>
+            <scopecontent>
+              <p>Full conference proceedings on two discs, with main menu and credits.  This disc: (1) Atkinson; (2) Schottlaender; (3) Resources, including list of registrants, handouts, breakout group, and a fully-functional static copy of the complete Janus Conference website.  Videos are VOB (with BUP and IFO).  Resources formats are  PDF, HTML, TXT, GIF, CSS, JS. </p>
+            </scopecontent>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Leigh Hunt and the London Library 1844-46</unittitle>
+              <abstract>SHARP conference</abstract>
+              <unitdate normal="1997-07-06" type="inclusive">6 Jul 1997</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Library in the academic community</unittitle>
+              <abstract>University of Evansville</abstract>
+              <unitdate normal="1976-02-16" type="inclusive">16 Feb 1976</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>[Library Associates luncheon]</unittitle>
+              <unitdate normal="1997" type="inclusive">1997</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"The Many and the one": Implications of conspectus building</unittitle>
+              <abstract>IFLA conference</abstract>
+              <unitdate normal="1987" type="inclusive">1987</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Millionth volume celebration</unittitle>
+              <abstract>Northern Illinois University</abstract>
+              <unitdate normal="1980-09-09" type="inclusive">9 Sep 1980</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>My life with books, and yours</unittitle>
+              <unitdate normal="1999-05-06" type="inclusive">6 May 1999</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>[NEH 20th anniversary]</unittitle>
+              <abstract>Independent Research Libraries Association</abstract>
+              <unitdate normal="1985-11-06" type="inclusive">6 Nov 1985</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>A New Jersey boyhood</unittitle>
+              <abstract>New Jersey Library Association</abstract>
+              <unitdate normal="1990" type="inclusive">1990</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>On my mind</unittitle>
+              <abstract>New York Three R's Organization (NYTRO)</abstract>
+              <unitdate normal="1991-04-22" type="inclusive">22 Apr 1991</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Plus ca change: Sixty years of ARL</unittitle>
+              <abstract>includes published version</abstract>
+              <unitdate normal="1992-10-22" type="inclusive">22 Oct 1992</unitdate>
+              <container type="Box">24</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Plus ca change: Sixty years of ARL</unittitle>
+              <unitdate normal="1992-10-22" type="inclusive">22 Oct 1992</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>[on preservation]</unittitle>
+              <abstract>LC/RTSD Preservation Conference</abstract>
+              <unitdate normal="1983-04-29" type="inclusive">29 Apr 1983</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>[on preservation]</unittitle>
+              <abstract>RLG conference</abstract>
+              <unitdate normal="1984-10-03" type="inclusive">3 Oct 1984</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>[on preservation]</unittitle>
+              <abstract>RLG conference</abstract>
+              <unitdate normal="1993-06-07" type="inclusive">7 Jun 1993</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Preservation, and all the blessings of this life"</unittitle>
+              <abstract>NYLA/SLA conference</abstract>
+              <unitdate normal="1980-05-09" type="inclusive">9 May 1980</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Preservation of the human record in a democratic society: Who is responsible?</unittitle>
+              <abstract>NYLA conference; includes copy of NYLA Bulletin with printed excerpt</abstract>
+              <unitdate normal="1978-11-05" type="inclusive">5 Nov 1978</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Prove all things: Hold fast that which is good": Deaccessioning and research libraries</unittitle>
+              <abstract>Deaccession Symposium, Brown University; includes proceedings, with all papers read</abstract>
+              <unitdate normal="1981-06" type="inclusive">Jun 1981</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>The Questions of preservation</unittitle>
+              <abstract>Kanazawa Institute</abstract>
+              <unitdate normal="1984-06" type="inclusive">Jun 1984</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Reflections on selectivity from a non-technical perspective</unittitle>
+              <abstract>Rockefeller Foundation Symposium on Scientific Information Systems; includes volume of published proceedings</abstract>
+              <unitdate normal="1982-10-26/1982-10-27" type="inclusive">26-27 Oct 1982</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>[Retirement from Syracuse]</unittitle>
+              <unitdate normal="1998" type="inclusive">1998</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>RLG and preservation: An approach to a national problem</unittitle>
+              <abstract>Colloquium on Technology and African Studies, British Library</abstract>
+              <unitdate normal="1985-9-11" type="inclusive">9-11 Jan 1985</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Sharing resources: Do we have valid models?</unittitle>
+              <unitdate normal="1988-09-01" type="inclusive">1 Sep 1988</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>So, what's so special?</unittitle>
+              <abstract>Keynote address, ARL conference</abstract>
+              <unitdate normal="2001-06-28" type="inclusive">28 Jun 2001</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Special collections: An administrative view</unittitle>
+              <abstract>ACRL RBMS pre-conference</abstract>
+              <unitdate normal="1982-07-07" type="inclusive">7 Jul 1982</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>What does two million books mean?</unittitle>
+              <abstract>University of Oklahoma</abstract>
+              <unitdate normal="1983-11-11" type="inclusive">11 Nov 1983</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Why do we still buy books?</unittitle>
+              <abstract>Charleston Acquisition Conference</abstract>
+              <unitdate normal="1999-11-04" type="inclusive">4 Nov 1999</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Why libraries matter</unittitle>
+              <abstract>Linda Hall Library Friends</abstract>
+              <unitdate normal="1994-12-02" type="inclusive">2 Dec 1994</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Brittle Books: Reports of the Committee on Preservation and Access</unittitle>
+              <unitdate normal="1986" type="inclusive">1986</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03 id="writ-rbs">
+            <did>
+              <unittitle>Consultant's report on the Book Arts Press and Rare Book School</unittitle>
+              <unitdate normal="2000" type="inclusive">2000</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>[Elizabethan copyright law]</unittitle>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">25</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Further reflections on What happened to me and a diary of further happenings</unittitle>
+              <unitdate normal="2014/2015" type="inclusive">2014-2015</unitdate>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Lists of articles, speeches, reviews</unittitle>
+              <unitdate normal="1854/2016" type="inclusive">undated</unitdate>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Marjorie Wynne memorial</unittitle>
+              <unitdate normal="2009-10-30" type="inclusive">30 Oct 2009</unitdate>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>National preservation planning in the United Kingdom: An American perspective</unittitle>
+              <abstract>report to the British Library Research and Development Department</abstract>
+              <unitdate normal="1983-03-31" type="inclusive">31 Mar 1983</unitdate>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Nine Decades of Scholarship: A Bibliography of the Writings of the Staff of the Schomburg Center for Research in Black Culture</unittitle>
+              <abstract>full volume, for which Stam wrote a brief preface</abstract>
+              <unitdate normal="1986" type="inclusive">1986</unitdate>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Statement before Congress on NEH grants</unittitle>
+              <unitdate normal="1994-05" type="inclusive">May 1994</unitdate>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Statement at NYC budget hearing</unittitle>
+              <unitdate normal="1979-05-17" type="inclusive">17 May 1979</unitdate>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Statement before Joint Committee on the Library</unittitle>
+              <abstract>on security at the Library of Congress</abstract>
+              <unitdate normal="1993-06-15" type="inclusive">15 Jun 1993</unitdate>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Turgenev in English, with Rissa Yachnin</unittitle>
+              <abstract>bibliography</abstract>
+              <unitdate normal="1961" type="inclusive">1961</unitdate>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Wordsworthian Criticism, with Elton F. Henley</unittitle>
+              <abstract>annotated bibliography</abstract>
+              <unitdate normal="1960" type="inclusive">1960, </unitdate>
+              <unitdate normal="1965" type="inclusive">1965, </unitdate>
+              <unitdate normal="1974" type="inclusive">1974</unitdate>
+              <physdesc>
+                <extent>4 volumes</extent>
+              </physdesc>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Notes, fragments, unidentified</unittitle>
+              <container type="Box">26</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Writings by others</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Battin, Patricia, "Librarianship in the Twenty-First Century"</unittitle>
+            <abstract>typescript of lecture delivered at Syracuse University</abstract>
+            <unitdate normal="2000" type="inclusive">2000</unitdate>
+            <container type="Box">26</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Bell, William, "Signs taken for wonders: An anecdote taken from history"</unittitle>
+            <abstract>typescript of essay</abstract>
+            <unitdate normal="2005/2015" type="inclusive">circa 2010</unitdate>
+            <container type="Box">26</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Henderson, James W., "Going back: A memoir of my years at the New York Public Library"</unittitle>
+            <abstract>typescript of memoir, with letter to Stam</abstract>
+            <unitdate normal="1998/1999" type="inclusive">1998-1999</unitdate>
+            <container type="Box">26</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Kermode, Frank</unittitle>
+            <abstract>photocopied corrected typescript of lecture; copy of invitation</abstract>
+            <unitdate normal="1983" type="inclusive">1983</unitdate>
+            <container type="Box">26</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Middlekauff, Robert et al.</unittitle>
+            <abstract>report of evaluation committee, with list of committee members and brief note from a George Edwards</abstract>
+            <unitdate normal="1980" type="inclusive">1980, </unitdate>
+            <unitdate normal="2000" type="inclusive">2000</unitdate>
+            <container type="Box">26</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Seibert, Don, "Music, sex, dance, and friendship"</unittitle>
+            <abstract>memoir, signed and inscribed to Stam</abstract>
+            
+            <unitdate normal="2000/2010" type="inclusive">circa 2005</unitdate>
+            <container type="Box">26</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Williams, James, G., "The innocent victim: Rene Girard on violence, sacrifice, and the sacred"</unittitle>
+            <abstract>printout of essay, with brief note from Williams</abstract>
+            <unitdate normal="1987" type="inclusive">1987</unitdate>
+            <container type="Box">26</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous published items, signed and/or inscribed to Stam</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">27</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous published items, not signed or inscribed to Stam</unittitle>
+            <physdesc>
+              <extent>3 folders</extent>
+            </physdesc>
+            <container type="Box">27</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

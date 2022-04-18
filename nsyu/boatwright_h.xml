@@ -11,6 +11,7 @@
 
 <!-- TEMPLATE VERSION 1.16, 28 Feb 2012-->
 <!-- added altformavail section -->
+<?xml-stylesheet type="text/css" href="../ead_dtd/ead_oxygen_rev.css"?>
 
 
 
@@ -42,7 +43,7 @@ not used should be commented out so that they don't appear in the viewable
       </profiledesc>
       <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
          <list>
-            <item></item>
+            <item>21 Jul 2021 - add 9 scores (RMH)</item>
          </list>
       </revisiondesc>
    </eadheader>
@@ -68,7 +69,14 @@ not used should be commented out so that they don't appear in the viewable
       <bioghist encodinganalog="545">
          <head>Biographical History</head>
          
-      <p>Howard Boatwright (1918-1999) was an American composer, violinist and musicologist.  He served as Dean of the school of music at Syracuse University, and taught composition and theory.  Under his leadership the music school became an important center for composition and the performance of new music, introduced non-Western music to the curriculum, and expanded its early music programs by acquiring collections of antique instruments.  He was a Fulbright lecturer in India (1959-1960) and received a Fulbright grant to study in Romania (1971-1972).  He also wrote extensively on music theory, ethnomusicology, Charles Ives, and Paul Hindemith.</p></bioghist>
+      <p>Howard Boatwright (1918-1999) was an American composer, violinist and musicologist.  
+	  He served as Dean of the school of music at Syracuse University, and taught composition 
+	  and theory.  Under his leadership the music school became an important center for 
+	  composition and the performance of new music, introduced non-Western music to the 
+	  curriculum, and expanded its early music programs by acquiring collections of antique 
+	  instruments.  He was a Fulbright lecturer in India (1959-1960) and received a Fulbright 
+	  grant to study in Romania (1971-1972).  He also wrote extensively on music theory, 
+	  ethnomusicology, Charles Ives, and Paul Hindemith.</p></bioghist>
       
       <scopecontent encodinganalog="520">
          <head>Scope and Contents of the Collection</head>
@@ -110,13 +118,15 @@ not used should be commented out so that they don't appear in the viewable
          <head>Subject and Genre Headings</head>
          <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
 defaults set in the template.-->
-         <subject encodinganalog="650" source="local">Music</subject><persname encodinganalog="600" source="lcnaf">Boatwright, Howard.</persname>
+         <subject encodinganalog="650" source="local">Music</subject>
+		 <persname encodinganalog="600" source="lcnaf">Boatwright, Howard.</persname>
          <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
          <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
          <!--<title encodinganalog="630" source="lcnaf">##</title>-->
          <subject encodinganalog="650" source="lcsh">Composers -- United States.</subject>
          <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
-         <genreform encodinganalog="655" source="aat">Sound recordings.</genreform><genreform encodinganalog="655" source="aat">Musical scores.</genreform>
+         <genreform encodinganalog="655" source="aat">Sound recordings.</genreform>
+		 <genreform encodinganalog="655" source="aat">Musical scores.</genreform>
          <!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
          <!--<function encodinganalog="657">##</function>--></controlaccess>
       
@@ -140,7 +150,8 @@ materials in this collection.</p>
       
       <acqinfo encodinganalog="541">
          <head>Acquisition Information</head>
-         <p>"Ship of Death" copies, unknown, 2004; remainder, gift of <persname role="donor">Thomas Baker</persname>, 2017.</p>
+         <p>"Ship of Death" copies, unknown, 2004; remainder, gift of 
+		 <persname role="donor">Thomas Baker</persname>, 2017, 2018.</p>
       </acqinfo>
       
       <!--<appraisal encodinganalog="583">
@@ -158,10 +169,43 @@ materials in this collection.</p>
          <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
          <c01 level="series"><did><unittitle>Scores</unittitle></did>
             <c02><did><unittitle>The armadillo and the acorn</unittitle><abstract>possibly incomplete</abstract><container type="Oversize">1</container></did></c02>
+            <c02>
+               <did><unittitle>The false knight upon the road</unittitle>
+                  <unitdate normal="1971" type="inclusive">1971</unitdate>
+                  <container type="Oversize">1</container></did>
+               <acqinfo><p>Gift of Thomas Baker, 2018</p></acqinfo>
+            </c02>
             <c02><did><unittitle>On hearing the birds sing</unittitle><container type="Oversize">1</container></did></c02>
             <c02><did><unittitle>O waly, waly!</unittitle><container type="Oversize">1</container></did></c02>
+            <c02>
+               <did><unittitle>O waly, waly!</unittitle>
+                  <container type="Oversize">1</container>
+                  <abstract>lowkey: F</abstract></did>
+               <acqinfo><p>Gift of Thomas Baker, 2018</p></acqinfo>
+            </c02>
             <c02><did><unittitle>The ship of death set for soprano, alto, tenor and bass (baritone) and string quartet</unittitle><abstract>one copy appears to be voice only</abstract><physdesc><extent>5 copies</extent></physdesc><container type="Oversize">1</container></did></c02>
             <c02><did><unittitle>Six prayers of Kierkegaard set for soprano and piano</unittitle><unitdate normal="1983" type="inclusive">1978</unitdate><container type="Oversize">1</container></did></c02>
+            <c02>
+               <did><unittitle>Sweeter than roses</unittitle>
+                  <unitdate normal="1982" type="inclusive">1982</unitdate>
+                  <container type="Oversize">1</container>
+                  <abstract>piano realization by Boatwright, lyrics by Henry Purcell</abstract>
+               <physdesc><extent>3 copies</extent></physdesc></did>
+               <acqinfo><p>Gift of Thomas Baker, 2018</p></acqinfo>
+            </c02>
+            <c02>
+               <did><unittitle>Three french songs</unittitle>
+                  <container type="Oversize">1</container></did>
+               <acqinfo><p>Gift of Thomas Baker, 2018</p></acqinfo>
+            </c02>
+            <c02>
+               <did><unittitle>With sick and famished eyes</unittitle>
+                  <unitdate normal="1982" type="inclusive">1982</unitdate>
+                  <container type="Oversize">1</container>
+                  <abstract>piano realization by Boatwright, lyrics by Henry Purcell</abstract>
+                  <physdesc><extent>3 copies</extent></physdesc></did>
+               <acqinfo><p>Gift of Thomas Baker, 2018</p></acqinfo>
+            </c02>
          </c01>
          <c01 level="series"><did><unittitle>Recordings</unittitle></did>
          <note><p>Commercial recordings have been cataloged.  Please use &summitref; to locate these items.</p></note></c01>

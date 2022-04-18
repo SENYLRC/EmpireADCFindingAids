@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name SYSTEM "scrc_name.txt">
+<!ENTITY scrconline SYSTEM "scrconline.txt">
+<!ENTITY searchcoll SYSTEM "searchcoll.txt">
 <!ENTITY su_address SYSTEM "su_address.txt">
 <!ENTITY su_name SYSTEM "su_name.txt">
+<!ENTITY subjindex SYSTEM "subjindex.txt">
+<!ENTITY summitref SYSTEM "summit_ref.txt">
 ]>
+
+
 <ead relatedencoding="MARC21">
 	<!--All items are required unless marked OPT.  Any optional items 
 not used should be commented out so that they don't appear in the viewable
@@ -11,7 +18,7 @@ not used should be commented out so that they don't appear in the viewable
 		<filedesc>
 			<titlestmt>
 				<titleproper encodinganalog="Title">David A. Kyle Papers</titleproper>
-				<subtitle>A description of his papers at Syracuse University</subtitle>
+				<subtitle>An inventory of his papers at Syracuse University</subtitle>
 			<author encodinganalog="Creator">-</author>
 
 </titlestmt>
@@ -31,7 +38,9 @@ not used should be commented out so that they don't appear in the viewable
 		</profiledesc>
 		<revisiondesc>
 			<list>
-				<item>17 Aug 2005 - EAD file created (MRR)</item><item>29 Sep 2006 - inventory updated (MRR)</item>
+				<item>17 Aug 2005 - EAD file created (MRR)</item>
+				<item>29 Sep 2006 - inventory updated (MRR)</item>
+				<item>14 Oct 2021 - additions processed (MRC)</item>
 			</list>
 		</revisiondesc>
 	</eadheader>
@@ -45,9 +54,9 @@ not used should be commented out so that they don't appear in the viewable
 				<persname encodinganalog="100">Kyle, David A.</persname>
 			</origination>
 			<unittitle encodinganalog="245$a" label="Title: ">David A. Kyle Papers</unittitle>
-			<unitdate encodinganalog="245$f" type="inclusive" label="Inclusive Dates: " normal="1969/1974">circa 1969-1974</unitdate>
-			<physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
-			<abstract encodinganalog="520$a" label="Abstract: ">Typescript manuscript short stories.</abstract>
+			<unitdate encodinganalog="245$f" type="inclusive" label="Inclusive Dates: " normal="1947/1974">1947-1974</unitdate>
+			<physdesc encodinganalog="300$a" label="Quantity: "><extent>1.5  linear ft.</extent></physdesc>
+			<abstract encodinganalog="520$a" label="Abstract: ">Memorabilia, subject files, and writings of the American science fiction fan, author, publisher, and co-founder of Gnome Press</abstract>
 			<unitid encodinganalog="099" label="Identification: " countrycode="us" repositorycode="NSyU">149117</unitid>
 			<langmaterial label="Language: " encodinganalog="546">
 				<language langcode="eng">English</language>
@@ -56,23 +65,63 @@ not used should be commented out so that they don't appear in the viewable
 				
 		<bioghist encodinganalog="545">
 			<head>Biographical History</head>
-			<p>David Kyle  was an American author, science fiction short story writer, publisher and co-founder of Gnome Press. He also wrote under the name Kyle Ackerman.</p><p>His professional career in the field spans six decades; beginning as a writer and illustrator for pulp magazines, then as publisher, anthologist, illustrator, book designer, editor, and literary agent. In 1947 he and Martin Greenberg co-founded Gnome Press, the imprint that pioneered the first hardcover editions of works by such authors as Isaac Asimov, Sir Arthur C. Clarke, and Robert Howard.  Kyle's own works include the award-winning <emph render="italic">A Pictorial History of Science Fiction</emph> and <emph render="italic">The Illustrated Book of Science Fiction Ideas and Dreams</emph> as well as  three novels set in the Lensman universe (originated by E.E. "Doc" Smith in 1934) and many articles for various fanzines.</p><p>He has received several honors, among them First Fandom’s Science Fiction Hall of Fame; a special award from the British Science Fiction Association; and an award for Outstanding Achievement from The International Society of Science Fiction, Horror and Fantasy. He was included in <emph render="italic">Starlog</emph>'s list of the "100 Most Important People in Science Fiction and Fantasy."</p>
+			<p>David A. Kyle  (1919-2016) was an American author, science fiction short story writer, 
+			publisher and co-founder of Gnome Press. He also wrote under the name Kyle Ackerman (Ackerman 
+			was his middle name).</p>
+			
+			<p>Born in Monticello, New York, Kyle's lifelong involvement with science fiction spans more 
+			than seven decades.   Beginning as a fan in the early 1930s, he became a writer and illustrator 
+			for pulp magazines.  Later he worked as publisher, anthologist, illustrator, book designer, 
+			editor, and literary agent. In 1947 he and Martin Greenberg co-founded Gnome Press, the imprint 
+			that pioneered the first hardcover editions of works by such authors as Isaac Asimov, Sir Arthur 
+			C. Clarke, and Robert Howard.  Kyle's own works include the award-winning 
+			<emph render="italic">A Pictorial History of Science Fiction</emph> and 
+			<emph render="italic">The Illustrated Book of Science Fiction Ideas and Dreams</emph> as well 
+			as  three novels set in the Lensman universe (originated by E.E. "Doc" Smith in 1934) and many 
+			articles for various fanzines.  Kyle was also an Air Force Reserve officer (Lt. Col.), working 
+			as a reporter and writer on civil defense topics, and founded radio station WPDM in Potsdam, 
+			New York in 1955.</p>
+			
+			<p>At the 1955 WorldCon he met Ruth Evalin Landis, another science fiction fan; the two 
+			married in 1957 and had a son and daughter.</p>
+			
+			<p>He has received several honors, among them First Fandom's Science Fiction Hall of Fame; 
+			a special award from the British Science Fiction Association; and an award for Outstanding 
+			Achievement from The International Society of Science Fiction, Horror and Fantasy. He was 
+			included in <emph render="italic">Starlog</emph>'s list of the "100 Most Important People 
+			in Science Fiction and Fantasy."  Kyle chaired NyCon II,  the 1956 WorldCon, and was the 
+			Guest of Honor at  CONstellation, the 1983 WorldCon.</p>
 		</bioghist>
 		
 		<scopecontent encodinganalog="520">
 			<head>Scope and Contents of the Collection</head>
-			<p>The <emph render="bold">David A. Kyle Papers</emph> consists of manuscripts of short stories and essays.</p>
+			<p>The <emph render="bold">David A. Kyle Papers</emph> consists of correspondence, memorabilia, subject files, and writings.</p>
+			
+			<p><emph render="bold">Correspondence</emph> consists of a single folder with a few postcards and brief notes.  
+			Correspondents include Keith Laumer and Jim Warren.</p>
+			<p><emph render="bold">Memorabilia</emph> is also a single folder with just a few items.  These include a brochure put out by 
+			Isaac Asimov's publisher regarding his first visit to England in 1974, and a clipping of a newspaper article on the movie 2001, 
+			in which Kyle is quoted.</p>
+			<p><emph render="bold">Subject files</emph> are as arranged and labeled by Kyle.  Much of it relates to his work as a reporter and 
+			public information officer for the U.S. Air Force Reserves; topics include psychological warfare, television, and the Apollo 16 
+			mission, which launch Kyle attended.  Also in this series are several folders of material related to Gnome Press, of which Kyle 
+			was a co-founder.  This includes business items (e.g., brochures and catalogs), manuscripts (drafts of blurbs, book summaries, 
+			and so on), and production material (printer's proofs, etc.).</p>
+			<p><emph render="bold">Writings</emph> contains some Air Force material, but mostly consists of drafts of short stories by Kyle. 
+			Almost all are heavily revised and edited; some include Kyle's own later opinions ("Not much worthwhile here").  There are also a 
+			few items by others, filed at the end.  Many of the stories are numbered; this, with the last folder of "working papers #59 and #60",
+			suggests that Kyle sequentially numbered all his writing projects.</p>
 		</scopecontent>
 		
-		<!--<arrangement encodinganalog="351$a">
+		<arrangement encodinganalog="351$a">
 			<head>Arrangement of the Collection</head>
-			<p>## OPT</p>
-		</arrangement>-->
+			<p>Series are arranged in alphabetical order.  Within each series, material is alphabetical by title or topic.</p>
+		</arrangement>
 		
-		<!--<relatedmaterial encodinganalog="544 1">
+		<relatedmaterial encodinganalog="544 1">
 			<head>Related Material</head>
-			<p>??</p>
-		</relatedmaterial>-->
+			<p></p>
+		</relatedmaterial>
 		
 		<!--<separatedmaterial encodinganalog="544 0">
 			<head>Separated Material</head>
@@ -85,14 +134,33 @@ not used should be commented out so that they don't appear in the viewable
 		</otherfindaid>
 		
 		--><controlaccess>
-			<head>Subject and Genre Headings</head><subject encodinganalog="650" source="local">Science fiction</subject><subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+			<head>Subject and Genre Headings</head>
+			<subject encodinganalog="650" source="local">Science fiction</subject>
+			<subject encodinganalog="650" source="local">Literature -- American Fiction</subject>
+
 			<persname encodinganalog="600" source="lcnaf">Kyle, David A.</persname>
-			
-			<corpname encodinganalog="610" source="local">Gnome Press.</corpname><subject encodinganalog="650" source="lcsh">American literature -- 20th century.</subject><subject encodinganalog="650" source="lcsh">Authors, American.</subject><subject encodinganalog="650" source="lcsh">Novelists, American.</subject><subject encodinganalog="650" source="lcsh">Publishers and publishing -- United States.</subject><subject encodinganalog="650" source="lcsh">Science fiction, American.</subject>
-			
+			<persname encodinganalog="600" source="lcnaf">Pohl, Frederik.</persname>
+			<corpname encodinganalog="610" source="local">Apollo 11 (Spacecraft)</corpname>
+			<corpname encodinganalog="610" source="local">Apollo 16 (Spacecraft)</corpname>
+			<corpname encodinganalog="610" source="local">Gnome Press.</corpname>
+			<corpname encodinganalog="610" source="local">United States. -- Air Force -- Public relations.</corpname>
+			<corpname encodinganalog="610" source="local">United States. -- Air Force Reserve.</corpname>
+			<corpname encodinganalog="610" source="local">WPDM (Radio station : Potsdam, N.Y.) </corpname>
+			<subject encodinganalog="650" source="lcsh">American literature -- 20th century.</subject>
+			<subject encodinganalog="650" source="lcsh">Authors, American.</subject>
+			<subject encodinganalog="650" source="lcsh">Civil defense -- New York (State)</subject>
+			<subject encodinganalog="650" source="lcsh">Novelists, American.</subject>
+			<subject encodinganalog="650" source="lcsh">Publishers and publishing -- United States.</subject>
+			<subject encodinganalog="650" source="lcsh">Science fiction, American.</subject>
+			<subject encodinganalog="650" source="lcsh">Science fiction fans.</subject>
+			<genreform encodinganalog="655" source="aat">Book jackets.</genreform>
+			<genreform encodinganalog="655" source="aat">Brochures.</genreform>
+			<genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+			<genreform encodinganalog="655" source="aat">Illustrations (layout features)</genreform>
 			<genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
-			
-			<occupation encodinganalog="656" source="lcsh">Authors.</occupation><occupation encodinganalog="656" source="lcsh">Publishers.</occupation>
+			<genreform encodinganalog="655" source="aat">Printers' proofs.</genreform>
+			<occupation encodinganalog="656" source="lcsh">Authors.</occupation>
+			<occupation encodinganalog="656" source="lcsh">Publishers.</occupation>
 		</controlaccess>
 		
 		<accessrestrict encodinganalog="506">
@@ -126,180 +194,62 @@ not used should be commented out so that they don't appear in the viewable
 			<p>## OPT</p>
 		</accruals>
 		
-		--><dsc type="combined">
-			<head>Inventory</head>
-			<c01 level="series">
-				<did>
-					<unittitle>Biographical material</unittitle>
-				</did>
-				<c02>
-					<did>
-						<unittitle>"Who's Who in the East"</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
+		--><dsc type="combined"><head>Inventory</head>
+         <c01 level="series"><did><unittitle>Correspondence</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><abstract>includes postcard from Keith Laumer, note from Jim Warren, form letter from Shasta Press</abstract><unitdate>1962, </unitdate><unitdate>undated</unitdate><container type="Box">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Memorabilia</unittitle></did>
+            <c02><did><unittitle>Miscellaneous</unittitle><abstract>DD Form 93 (emergency contact information), "Who's Who" entry, publisher's brochure for Asimov's first visit to Britain, clipping</abstract><unitdate type="inclusive" normal="1953">1953, </unitdate><unitdate type="inclusive" normal="1966">1966, </unitdate><unitdate type="inclusive" normal="1969">1969, </unitdate><unitdate type="inclusive" normal="1974">1974</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Flight: From the Pages of Encyclopedia Britannica 1768-1968 / R.R. Donnelley and Sons</unittitle><abstract>photo-book, on the occasion of EB's 200th anniversary</abstract><unitdate type="inclusive" normal="1968-01">Jan 1968</unitdate><container type="Oversize">1</container></did></c02>
+            <c02><did><unittitle>A Footprint on the Moon /  R.R. Donnelley and Sons</unittitle><abstract>Apollo 11 commemorative photo-book, oversize</abstract><unitdate type="inclusive" normal="1969">1969</unitdate><container type="Oversize">1</container></did></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Subject files</unittitle></did>
+            <c02><did><unittitle>Air reserve reporter</unittitle><abstract>topics include civil defense, home fallout shelters, recruitment, aeronautics, role of public information officer; formats include press releases from Air Force News Service, program bulletins, radio spots, fact sheets, transcription of speech by Major General William Yarborough, etc.</abstract><unitdate type="inclusive" normal="1961/1964">1961-1964</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Apollo 16 project</unittitle><abstract>Kyle attended the launch; material includes official flight plan, press kit, clippings, press releases, etc.</abstract><unitdate type="inclusive" normal="1972">1972</unitdate><physdesc><extent>4 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Armed Forces Day</unittitle><abstract>Kyle was involved in planning local events</abstract><unitdate type="inclusive" normal="1956">1956</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Community relations of Air Force bases</unittitle><abstract>includes Air Force guidelines as well as several drafts of a report, possibly by Kyle</abstract><unitdate type="inclusive" normal="1948/1950">1948-1950</unitdate><container type="Box">1</container></did></c02>
+            <c02><did><unittitle>Gnome Press</unittitle></did>
+               <c03><did><unittitle>Business records</unittitle><abstract>publicity (brochures, letters, blurbs); correspondence with printers; etc.</abstract><container type="Box">1</container></did></c03>
+               <c03><did><unittitle>Manuscripts </unittitle><abstract>drafts for blurbs, jacket copy, book summaries, etc.</abstract><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>Production material</unittitle><abstract>includes printer's proofs of title and half-title pages,  a few illustrations, book jacket for C.L. Moore book, etc.</abstract><physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container></did></c03>
+               <c03><did><unittitle>Production material</unittitle><abstract>printer's proofs of title pages, half-titles</abstract><container type="Oversize">1</container></did></c03>
+            </c02>
+				<c02><did><unittitle>Psychological warfare</unittitle><abstract>Naval Reserve seminar; notes and draft of paper, possibly by Kyle, which may have been presented at the seminar</abstract><unitdate type="inclusive" normal="1953">1953</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Television project</unittitle><abstract>notes, drafts, etc. relating to Air Force project on the uses of television in connection with national defense</abstract><unitdate type="inclusive" normal="1950/1960">circa 1955</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container></did><note><p>See also <ref target="writ-usaf-tesu">Writings : Air Force : Television survey</ref>.</p></note></c02>
+         </c01>
+         <c01 level="series"><did><unittitle>Writings</unittitle></did>
+            <c02><did><unittitle>Air Force work</unittitle></did>
+				   <c03><did><unittitle>Air Force Reserve radio spots</unittitle><abstract>includes letters to various stations soliciting their participation</abstract><unitdate type="inclusive" normal="1953">1953</unitdate><container type="Box">2</container></did></c03>
+				   <c03><did><unittitle>Handbook for Air Force public information officers in the field of television</unittitle><unitdate type="inclusive" normal="1950/1960">circa 1955</unitdate><container type="Box">2</container></did></c03>
+				   <c03 id="writ-usaf-tesu"><did><unittitle>Television survey</unittitle><unitdate type="inclusive" normal="1950/1960">circa 1955</unitdate><physdesc><extent>2 folders</extent></physdesc><container type="Box">2</container></did></c03>
 				</c02>
-			</c01><c01 level="series">
-				<did>
-					<unittitle>Manuscripts</unittitle>
-				</did>
-				<c02>
-					<did>
-						<unittitle>Base Ten</unittitle>
-						
-						
-						
-						
-						
-					<abstract>original</abstract><container type="Box">1</container></did>
-				</c02><c02><did><unittitle>Base Ten</unittitle><abstract>revised</abstract><container type="Box">1</container></did></c02><c02>
-					<did>
-						<unittitle>Be It Ever So Humble</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>Beanball Bugaboo</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>Blood Relations</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>Corpse for Sale</unittitle>
-						
-						
-						
-						
-						
-					<abstract>draft</abstract><container type="Box">1</container></did>
-				</c02><c02>
-					<did>
-						<unittitle>Corpse for Sale</unittitle>
-						
-						
-						
-						
-						
-					<container type="Box">1</container></did>
-				</c02><c02>
-					<did>
-						<unittitle>Count Ten</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>Cupid Wore a Mustache</unittitle>
-						
-						<physdesc><extent>2 copies</extent></physdesc><container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>Damn You, Max</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>Death Thumbs a Ride</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>Dictionary of Science Fiction: Introduction</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>Dictionary of Science Fiction</unittitle>
-						
-						<abstract>draft</abstract><container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>My Love is Blind</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>Ten-Pin Tycoon</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>Three to Get Buried</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>Too Many Heroes</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02><c02>
-					<did>
-						<unittitle>Touchdown Tyrant</unittitle>
-						
-						<container type="Box">1</container>
-						
-						
-						
-					</did>
-				</c02></c01>
-		</dsc>	
+            <c02><did><unittitle>Base ten</unittitle><abstract>drafts</abstract><unitdate type="inclusive" normal="1966/1967">1966-1967</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Be it ever so humble</unittitle><abstract>draft</abstract><unitdate type="inclusive" normal="1950">1950</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Beanball bugaboo</unittitle><abstract>draft</abstract><unitdate type="inclusive" normal="1949">1949</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Blood relations</unittitle><abstract>draft</abstract><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Corpse for sale</unittitle><abstract>drafts</abstract><unitdate normal="1948" type="inclusive">1948, </unitdate><unitdate normal="1951" type="inclusive">1951</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Count ten</unittitle><abstract>drafts</abstract><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Cupid wore a mustache</unittitle><abstract>drafts</abstract><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Damn you, Max (alt title: My love is blind)</unittitle><abstract>drafts</abstract><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Death thumbs a ride</unittitle><abstract>drafts</abstract><unitdate type="inclusive" normal="1948">1948</unitdate><container type="Box">2</container></did></c02>
+            <c02><did><unittitle>Devil planet jailbreak</unittitle><abstract>draft, noted as "an early story"</abstract><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>The ferryman on the river</unittitle><abstract>drafts</abstract><unitdate type="inclusive" normal="1966/1967">1966-1967</unitdate><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Observation tower</unittitle><abstract>drafts and two critiques by author Dorothy McCleary, for whose class the story was written</abstract><unitdate type="inclusive" normal="1949">1949</unitdate><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>A pictorial history of science fiction</unittitle><abstract>jacket for British edition</abstract><container type="Oversize">1</container></did></c02>
+            <c02><did><unittitle>Some dreams come in packages</unittitle><abstract>drafts</abstract><unitdate type="inclusive" normal="1967/1970">1967-1970[?]</unitdate><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Ten-pin tycoon (alt title: Keyman Kegler)</unittitle><abstract>co-written with James MacCreigh (pen name for Frederik Pohl); drafts</abstract><unitdate type="inclusive" normal="1947/1948">1947 or 1948</unitdate><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>The tender trap</unittitle><abstract>"working papers"; includes notes, clippings, outlines, charts, several drafts</abstract><unitdate type="inclusive" normal="1947/1948">1947 or 1948</unitdate><container type="Box">3</container></did></c02>
+				<c02><did><unittitle>The third moon of Mars</unittitle><abstract>drafts, related clipping</abstract><unitdate type="inclusive" normal="1967/1968">1967-1968</unitdate><container type="Box">3</container></did></c02>
+				<c02><did><unittitle>Three to get buried</unittitle><abstract>drafts</abstract><unitdate type="inclusive" normal="1966">1966</unitdate><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Too many heroes</unittitle><abstract>draft</abstract><unitdate type="inclusive" normal="1948/1949">1948 or 1949</unitdate><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Touchdown tyrant</unittitle><abstract>drafts</abstract><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Miscellaneous</unittitle><abstract>"working papers #59 and #60"; fragment of essay about science fiction publishing</abstract><container type="Box">3</container></did></c02>
+            <c02><did><unittitle>Writings by others</unittitle></did>
+               <c03><did><unittitle>Greenberg, Martin / Dictionary of Science Fiction</unittitle><abstract>compiled by Greenberg, edited by Kyle; original first draft manuscript, with words and definitions stapled to pages</abstract><container type="Box">3</container></did></c03>
+               <c03><did><unittitle>Peeples, Samuel / Introduction to Dictionary of Science Fiction</unittitle><abstract>draft</abstract><container type="Box">3</container></did></c03>
+               <c03><did><unittitle>Pohl, Frederik / Keynote speech from Discon II</unittitle><abstract>carbon typescript</abstract><unitdate type="inclusive" normal="1974-08">Aug 1974</unitdate><container type="Box">3</container></did></c03>
+				</c02>
+         </c01>
+		</dsc>
 	</archdesc>
 </ead>

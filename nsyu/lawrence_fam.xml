@@ -7,75 +7,141 @@
 <!ENTITY summitref SYSTEM "summit_ref.txt">
 ]>
 
-<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
-<!-- Added Belfer as container type -->
-
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 --><!-- Added Belfer as container type -->
 <ead relatedencoding="MARC21">
-   <!--All items are required unless marked OPT.  Any optional items 
+  <!--All items are required unless marked OPT.  Any optional items 
 not used should be commented out so that they don't appear in the viewable
  document.-->
-
-<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
-      <eadid countrycode="US" mainagencycode="NSyU" identifier="lawrence_fam">lawrence_fam</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper encodinganalog="Title">Lawrence Family Papers</titleproper>
-            <subtitle>A description of the collection at Syracuse University</subtitle>
-         <author encodinganalog="Creator">MRC</author></titlestmt>
-         <publicationstmt>
-            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
-            &su_address;
-            <date normal="2010-09-03" encodinganalog="Date">3 Sep 2010</date>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Michele Combs<date normal="2010-09-03">3 Sep 2010</date>
-         </creation>
-         <langusage>
-            <language langcode="eng" encodinganalog="Language">English</language>
-         </langusage>
-      </profiledesc>
-      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
-         <list>
-            <item></item>
-         </list>
-      </revisiondesc>
-   </eadheader>
-   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
-      <did>
-         <head>Overview of the Collection</head>
-         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
-         &su_name; <lb/> &su_address;
-         </repository>
-         <origination label="Creator: ">
-            
-         <famname encodinganalog="100">Lawrence family.</famname></origination>
-         <unittitle encodinganalog="245$a" label="Title: ">Lawrence Family Papers</unittitle>
-         <unitdate encodinganalog="245$f" normal="1738/1850" type="inclusive" label="Inclusive Dates: ">1738-1850</unitdate>
-            <physdesc encodinganalog="300$a" label="Quantity: "><extent>0.5 linear ft.</extent></physdesc>
-         <abstract encodinganalog="520$a" label="Abstract: ">Correspondence, legal papers, financial records.</abstract>
-         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">3164202</unitid>
-         <langmaterial label="Language: " encodinganalog="546">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
-            
-      <bioghist encodinganalog="545">
-         <head>Biographical History</head>
-         
-      <p>Pending processing.</p></bioghist>
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="lawrence_fam" mainagencycode="NSyU">lawrence_fam</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Lawrence Family Papers</titleproper>
+        <subtitle>An inventory of the collection at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2010-09-03">3 Sep 2010</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+        
+        <date normal="2010-09-03">3 Sep 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>24 Nov 2020 - processed (JC)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository encodinganalog="852$a" id="scrc" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <famname encodinganalog="100">Lawrence family.</famname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Lawrence Family Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1738/1876" type="inclusive">1738-1876</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>0.5 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">aCorrespondence, legal papers, financial records of the Lawrence family, relating to their involvement in New York business, politics and law.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">3164202</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">Majority in 
+        <language langcode="eng">English</language>, a few items in <language langcode="fra">French</language>.
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>The earliest item in the Lawrence Family Papers is dated 1738, which makes the first 
+		 Lawrence generation represented in this collection that of brothers Thomas, John, and Nathaniel Lawrence, 
+		 whose parents were John Lawrence and his wife Deborah Woodhull. The family papers in this collection begin with 
+		 the middle son, John (1695-1765),  born September 9 in the Newtown Colony, which at the time was part of the 
+		 British province of New York. John established himself in Newtown as a wealthy 
+		 farmer and worked in the magistracy. John married Patience Sackett (1701-1772), on December 8, 1720; 
+		 the couple had seven sons and one daughter.</p>
+      <p>John and Patience Lawrence's youngest child, Jonathan (1737-1812), 
+		 was born October 4 at the Newtown Colony. Jonathan got into the mercantile 
+		 business early and traveled to Europe and the West 
+		 Indies working for his eldest brother, John.  John was a successful merchant in New 
+		 York, and through him Jonathan became business partners with the house of Watson, Murray, 
+		 &amp; Lawrence. During the American Revolution, Jonathan established himself 
+		 as a key political and military figure. He passed laws during the war and in its immediate aftermath 
+		 pertaining to New York State's constitution and helped divert supplies from Long Island during 
+		 the war effort.  He  represented the Southern District of New York at the Convention that developed the 
+		 United States Constitution in 1788.</p>
+      <p>Jonathan returned home from the war to find all of his property, including his home, destroyed in the British 
+		 occupation of Newton. As a result of losing his properties, belongings, and savings, 
+		 while also accruing a considerable amount of debt during the war, Jonathan's plans to retire with 
+		 his large family were dashed and he returned to his mercantile business, which proved not as successful. 
+		 However, Jonathan was able to gradually improve his family's financial situation and was able to 
+		 distribute his estate to his children before his death in 1812.</p>
+      <p>Jonathan Lawrence married twice. His first wife was Judith, daughter of Nathaniel Fish; they 
+		 had one child, also named Jonathan (1767-1850). His second wife was Ruth, daughter 
+		 of Andrew Riker (of Riker's Island fame); the two of them had nine children, five of whom feature in 
+		 the Lawrence Family Papers as writers or recipients. These five are Samuel, Richard M., Abraham R., 
+		 John L., and William Thomas.</p>
+      <p>Samuel Lawrence (1773-1837) studied law and became a court judge. He served one year in the New 
+		 York State Assembly (1811) and two years in the United States House of Representatives  (1823-1825). He 
+		 was one of the electors of President James Madison in 1816.  He and his wife Elizabeth had at least one son, Jonathan S. Lawrence (1808-1884), who apparently went into business with his father and uncles.</p><p>Little is known of Richard M. Lawrence (1778-1856) and Abraham R. Lawrence (1780-1863) other than what can be gleaned from the collection.  They were both apparently members of the Saint Nicholas Society of New York, as were several other Lawrence men.</p><p>John L. Lawrence (1785-1849) studied law and worked as a lawyer before 
+		 getting into politics. He served as a state senator from 1847 to 1849.    John L. married Sarah Augusta Smith in 1816, with whom he had eleven children.  The papers of Sarah Augusta's father General John Smith and 
+		 some of his relations are also present in the collection. General John Smith (175?-1816) was born on February 12 but sources disagree as to the year, variously giving it as 1752, 1755 or 1756.  His father was William Smith, a judge and New York State senator.   John L. Smith was a member of the New York State Assembly, serving three terms between 
+		 1784 and 1800, and was elected as a U.S. Representative (1800-1804) and Senator (1804-1813).   He was elected the marshal of New York in 1814 and held that position until his death in 1816. 
+		 Smith had five children, one from his first marriage to Lydia Fanning and four (including Sarah Augusta) from his second marriage to Elizabeth Woodhull, whose father was General Nathaniel Woodhull.</p>
       
-      <scopecontent encodinganalog="520">
-         <head>Scope and Contents of the Collection</head>
-         <p>The <emph render="bold">Lawrence Family Papers</emph> contains correspondence, legal papers, and financial records.</p>
-      </scopecontent>
-      
-      <arrangement encodinganalog="351$a">
-         <head>Arrangement of the Collection</head>
-         <p>The collection is unprocessed and remains in original order.</p>
-      </arrangement>
-      
-      <!--<relatedmaterial encodinganalog="544 1">
+    <p>William Thomas Lawrence (1788-1859) worked 
+		 in the mercantile business like his father, and served one term in the United States House of 
+		 Representatives (1847-1849).</p><p>[Some information drawn from the <extref href="https://books.google.com/books?id=CJM-AAAAYAAJ">The Saint Nicholas Society of the City of New York: History, Customs, Record of Events, Constitution, Certain Genealogies, and Other Matters of Interest</extref>, Volume 1.]</p></bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p>The 
+        
+        <emph render="bold">Lawrence Family Papers</emph> is made up of correspondence, 
+						financial records, legal papers, and printed materials.  Represented in the collection 
+						are family members, friends, coworkers, business partners, supervisors, and clients.  
+						Because the family was so intertwined, not just personally but professionally, no effort 
+						has been made to separate out the papers of individual members.  A file card index may be found in Box 2.</p>
+      <p>
+        <emph render="bold">Correspondence</emph> primarily relates to various 
+		 family members' legal and political 
+		 careers, politics in general, real estate holdings, and investments.  The bulk of the material is between William Thomas Lawrence and Abraham R. Lawrence (1840-1850); between John L. Lawrence and his wife Sarah Augusta Lawrence (1816-1822); and between John L. Lawrence and William Maxwell (1844-1848).  The correspondence of Jonathan 
+		 Lawrence, John L. 
+		 Lawrence, Jonathan S. Lawrence, William Maxwell, and Franklin Thompson is mostly 
+		 about business and their careers in law and politics. Letters between Abraham R. Lawrence and his brother William Thomas 
+		 Lawrence are mostly about politics in general. The correspondence between Jonathan L. 
+		 Lawrence and his wife Sarah Augusta (Smith) Lawrence centers on family matters, as does the correspondence 
+		 involving John Smith.    </p>
+      <p>
+        <emph render="bold">Financial records</emph>, a relatively small amount, consist mostly 
+		 of papers of Jonathan Lawrence and Jonathan L. Lawrence. Jonathan Lawrence's financial records involve the 
+		 period of financial stress he faced following the American Revolution and Jonathan L. Lawrence's 
+		 financial records relate to his career in real-estate law.</p>
+      <p>
+        <emph render="bold">Legal papers</emph> make up the second greatest majority of this collection. 
+		 All the male members of the Lawrence family represented in the collection had careers in law and 
+		 politics. The papers here relate to legal work they engaged in as lawyers, judges, and politicians.</p>
+      <p>
+        <emph render="bold">Printed materials</emph> consist of clippings, primarily  from the Weekly 
+		 Intelligence, about various members of 
+		 the Lawrence family and their careers in law and politics.</p>
+      <p>
+        <emph render="bold">Smith family papers</emph> contains miscellaneous material relating to the 
+		 family of Sarah Augustus (Smith) Lawrence's father, General John Smith.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Material has been subdivided by general type (legal, financial, etc.) and within each series 
+						arranged chronologically.</p>
+    </arrangement>
+    <!--<relatedmaterial encodinganalog="544 1">
          <head>Related Material</head>
          <p>## (MARC 544 1)</p></relatedmaterial>-->
       
@@ -88,44 +154,73 @@ not used should be commented out so that they don't appear in the viewable
          <head>Other Related Finding Aids</head>
          <p>## OPT (MARC 555)</p>
       </otherfindaid>-->
-      
-      <controlaccess>
-         <head>Subject and Genre Headings</head>
-         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
 defaults set in the template.-->
-         <!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
-         <famname encodinganalog="600" source="lcnaf">Lawrence family.</famname>
-         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
-         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
-         <!--<subject encodinganalog="650" source="lcsh">##</subject>--><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
-         <genreform encodinganalog="655" source="aat">Correspondence.</genreform><genreform encodinganalog="655" source="aat">Financial records.</genreform>
-         <genreform encodinganalog="655" source="aat">Legal documents.</genreform><!--<occupation encodinganalog="656" source="lcsh">##</occupation>-->
+      
+      
+      <persname authfilenumber="nr2002024123" encodinganalog="600" source="lcnaf">Lawrence, Abraham R., 1780-1863.</persname><persname authfilenumber="nr2002024123" encodinganalog="600" source="lcnaf">Lawrence, Jonathan S., 1808-1884.</persname>
+      <persname authfilenumber="n88277186" encodinganalog="600" source="lcnaf">Lawrence, John L., 1785-1849.</persname>
+      
+      
+      <persname encodinganalog="600" source="local">Lawrence, Sarah Augusta, 1794-1877.</persname>
+      <persname encodinganalog="600" source="lcnaf">Lawrence, Samuel, 1773-1837.</persname>
+      
+      <persname authfilenumber="no2008079807" encodinganalog="600" source="lcnaf">Lawrence, William T. (William Thomas), 1788-1859.</persname>
+      <persname encodinganalog="600" source="local">Maxwell, William.</persname>
+      <persname encodinganalog="600" source="lcnaf">Thompson, Benjamin Franklin.</persname>
+      <famname encodinganalog="600" source="lcnaf">Lawrence family.</famname>
+      <famname encodinganalog="600" source="local">Smith family.</famname>
+      <corpname encodinganalog="610" source="lcnaf">New York (State). -- Legislature. -- Assembly.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Watson, Murray &amp; Lawrence.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">United States. -- Congress. -- Senate.</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Commercial law.</subject>
+      <subject encodinganalog="650" source="lcsh">Courts -- United States.</subject>
+      <subject encodinganalog="650" source="lcsh">Judge advocates.</subject>
+      <subject encodinganalog="650" source="lcsh">Law -- Political aspects.</subject>
+      <subject encodinganalog="650" source="lcsh">Politics and government.</subject>
+      <subject encodinganalog="650" source="lcsh">Politics and war.</subject>
+      <subject encodinganalog="650" source="lcsh">Real estate business.</subject>
+      <subject encodinganalog="650" source="lcsh">Real estate investments.</subject>
+      <geogname encodinganalog="651" source="lcsh">New York (State) -- Commerce.</geogname>
+      <geogname encodinganalog="651" source="lcsh">New York (State) -- History.</geogname>
+      <geogname encodinganalog="651" source="lcsh">United States -- History -- Revolution, 1775-1783.</geogname>
+      <geogname encodinganalog="651" source="lcsh">Washington (D.C.)</geogname>
+      <genreform encodinganalog="655" source="aat">Clippings (information artifacts)</genreform>
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Financial records.</genreform>
+      <genreform encodinganalog="655" source="aat">Legal documents.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Judges.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Legislators.</occupation>
+      <occupation encodinganalog="656" source="lcsh">Real estate lawyers.</occupation>
+    
+    
+			
          <!--<function encodinganalog="657">##</function>--></controlaccess>
-      
-      <accessrestrict encodinganalog="506">
-         <head>Access Restrictions</head>
-         <p>The collection is currently unprocessed and not available for research. Please contact &scrc_name; for more information.</p>
-      </accessrestrict>
-      
-      <userestrict encodinganalog="540">
-         <head>Use Restrictions</head>
-         <p>Written permission must be obtained from SCRC and 
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of archival and manuscript collections are house offsite and require advanced notice for retrieval. Researchers are encouraged to contact the SCRC in advance concerning the collection material for access in research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
 all relevant rights holders before publishing quotations, excerpts or images from any 
 materials in this collection.</p>
-      </userestrict>
-      
-      <prefercite encodinganalog="524">
-         <head>Preferred Citation</head>
-         <p>Preferred citation for this material is as follows:</p>
-         <p>Lawrence Family Papers, <lb/> &su_name; </p>
-      </prefercite>
-      
-      <acqinfo encodinganalog="541">
-         <head>Acquisition Information</head>
-         <p>Purchase, 1965; transfer from Rare Books 1969, 1971</p>
-      </acqinfo>
-      
-      <!--<appraisal encodinganalog="583">
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Lawrence Family Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Purchase, 1965; transfer from Rare Books 1969, 1971</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
          <head>Appraisal Information</head>
          <p>##</p>
       </appraisal>-->
@@ -134,11 +229,90 @@ materials in this collection.</p>
          <head>Accruals</head>
          <p>## OPT (MARC 584)</p>
       </accruals>-->
-      
-      <dsc type="othertype">
-   <head>Inventory</head>
-   <note><p>An inventory has not yet been created for this collection.  
-Please contact the Repository listed above for more information.</p><p></p></note>
-</dsc>
-   </archdesc>
+    <dsc type="combined">
+      <head>Inventory</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <abstract>primarily relates to business, legal, and political 
+		 endeavours/careers</abstract>
+            <unitdate normal="1816/1867" type="inclusive">1816-1867</unitdate>
+            <physdesc>
+              <extent>5 folders</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <unitdate normal="1738/1876" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      <c02>
+          <did>
+            <unittitle>Index to correspondence</unittitle>
+            
+            <abstract>3x5 file cards with name, date, and topic; letters are double-indexed under both sender and recipient</abstract><container type="Box">2</container>
+          </did>
+        </c02></c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Financial records</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <abstract>includes shipping receipts and ledgers; mostly 
+		 Jonathan Lawrence and Johnathan L. Lawrence</abstract>
+            <unitdate normal="1784/1868" type="inclusive">1784-1868</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Legal papers</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <abstract>relates to members of Lawrence family engaged in work as lawyers, judges, and politicians; includes indentures, citizenship decrees, court summons, mortgages, numerous items of correspondence with the U.S. Treasury Dept (Aug-Sep 1848), and John S. Lawrence's commission into and honorable discharge  from the New York Regiment Artillery (10 Nov 1804)</abstract>
+            <unitdate normal="1738/1876" type="inclusive">1738-1876</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Printed materials</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Connecticut Courant and Weekly Intelligencer</unittitle>
+            <abstract>4 issues: no's 901, 902, 913, and 940; contents include excerpts of speeches from the British House of Commons, news items, extracts from letters, and advertisements</abstract>
+            <unitdate normal="1782/1783" type="inclusive">1782-1783</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Smith family papers</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <abstract>includes letter to General Smith from Whitehead Cornwell, inventory of William Smith's estate, list of vacancies in General Smith's regiment, etc,</abstract><unitdate normal="1784/1812" type="inclusive">1784-1812</unitdate>
+            <container type="Box">1</container>
+          </did>
+        <userestrict><p>Many of these items are extremely fragile.   Great care should be exercised in handling them.</p></userestrict></c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

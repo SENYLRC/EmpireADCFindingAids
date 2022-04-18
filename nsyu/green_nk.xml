@@ -1,86 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
-<!ENTITY scrc_name SYSTEM "scrc_name.txt">
-<!ENTITY su_address SYSTEM "su_address.txt">
-<!ENTITY su_name SYSTEM "su_name.txt">
-<!ENTITY subjindex SYSTEM "subjindex.txt">
-<!ENTITY summitref SYSTEM "summit_ref.txt">
+<!ENTITY scrc_name SYSTEM "scrc_name.txt"><!ENTITY su_address SYSTEM "su_address.txt"><!ENTITY su_name SYSTEM "su_name.txt"><!ENTITY subjindex SYSTEM "subjindex.txt"><!ENTITY summitref SYSTEM "summit_ref.txt">
 ]>
 
-<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 -->
-<!-- Added Tube as container type -->
-
+<!-- TEMPLATE VERSION 1.13, 22 Jun 2009 --><!-- Added Tube as container type -->
 <ead relatedencoding="MARC21">
-   <!--All items are required unless marked OPT.  Any optional items 
+  <!--All items are required unless marked OPT.  Any optional items 
 not used should be commented out so that they don't appear in the viewable
  document.-->
-
-<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
-      <eadid countrycode="US" mainagencycode="NSyU" identifier="green_nk">green_nk</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper encodinganalog="Title">Norma Kidd Green Papers</titleproper>
-            <subtitle>A description of the collection at Syracuse University</subtitle>
-         <author encodinganalog="Creator">MRC</author></titlestmt>
-         <publicationstmt>
-            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
-            &su_address;
-            <date normal="2010-01-22" encodinganalog="Date">11 Jan 2010</date>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Michele Combs<date normal="2010-01-22">11 Jan 2010</date>
-         </creation>
-         <langusage>
-            <language langcode="eng" encodinganalog="Language">English</language>
-         </langusage>
-      </profiledesc>
-      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
-         <list>
-            <item></item>
-         </list>
-      </revisiondesc>
-   </eadheader>
-   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
-      <did>
-         <head>Overview of the Collection</head>
-         <repository id="scrc" encodinganalog="852$a" label="Repository: ">
-         &su_name; <lb/> &su_address;
-         </repository>
-         <origination label="Creator: ">
-            <persname encodinganalog="100">Green, Norma Kidd.</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title: ">Norma Kidd Green Papers</unittitle>
-         <unitdate encodinganalog="245$f" normal="1850/1960" type="inclusive" label="Inclusive Dates: ">pre-1960</unitdate>
-            <physdesc encodinganalog="300$a" label="Quantity: "><extent>2 linear ft.</extent></physdesc>
-         <abstract encodinganalog="520$a" label="Abstract: ">Journals, manuscripts, correspondence, publications, and other material of the American author.</abstract>
-         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2728917</unitid>
-         <langmaterial label="Language: " encodinganalog="546">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
-            
-      <bioghist encodinganalog="545">
-         <head>Biographical History</head>
-         
-      <p>Norma Kidd Green (fl. 1920-1970) was an American author.   Among her publications are a biography of early American educator Jane Andrews and <emph render="italic">Iron Eye's Family</emph>, about the children of Omaha chief Iron Eye (Joseph LaFlesche).</p></bioghist>
-      
-      <scopecontent encodinganalog="520">
-         <head>Scope and Contents of the Collection</head>
-         <p>The <emph render="bold">Norma Kidd Green Papers</emph> consist of personal journals, correspondence, manuscripts, and other material of the American author.  The collection includes copies of Green's books on Jane Andrews and Iron Eye (Joseph LaFlesche).</p>
-      </scopecontent>
-      
-      <arrangement encodinganalog="351$a">
-         <head>Arrangement of the Collection</head>
-         <p>The collection is unprocessed and remains in original condition.</p>
-      </arrangement>
-      
-      <relatedmaterial encodinganalog="544 1">
-         <head>Related Material</head>
-         <p>Additional Norma Kidd Green material is available at the Nebraska State Historical Society, as are the LaFlesche Family Papers collected by Green.</p>
-      </relatedmaterial>
-      
-      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="green_nk" mainagencycode="NSyU">green_nk</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper encodinganalog="Title">Norma Kidd Green Papers</titleproper>
+        <subtitle>An inventory of her papers at Syracuse University</subtitle>
+        <author encodinganalog="Creator">MRC</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher encodinganalog="Publisher">&su_name;
+          <lb/></publisher>&su_address;
+        <date encodinganalog="Date" normal="2010-01-22">11 Jan 2010</date></publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Michele Combs
+        
+        <date normal="2010-01-22">11 Jan 2010</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+    <!--Enter revisions in the format "## date - ## change (## initials)"-->
+    <revisiondesc>
+      <list>
+        <item>24 Nov 2020 - processed (NR)</item>
+      </list>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="collection" relatedencoding="MARC21" type="inventory">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository encodinganalog="852$a" id="scrc" label="Repository: ">&su_name;
+        <lb/> &su_address;</repository>
+      <origination label="Creator: ">
+        <persname encodinganalog="100">Green, Norma Kidd.</persname>
+      </origination>
+      <unittitle encodinganalog="245$a" label="Title: ">Norma Kidd Green Papers</unittitle>
+      <unitdate encodinganalog="245$f" label="Inclusive Dates: " normal="1844/2016" type="inclusive">1844-2016</unitdate>
+      <unitdate encodinganalog="245$g" label="Bulk Dates: " normal="1950/1980" type="bulk">1950-1980</unitdate>
+      <physdesc encodinganalog="300$a" label="Quantity: ">
+        <extent>4 linear ft.</extent>
+      </physdesc>
+      <abstract encodinganalog="520$a" label="Abstract: ">Collection includes correspondence and writings of the American author, including 
+        
+        <emph render="italic"> Iron Eye's Family</emph> and 
+        
+        <emph render="italic">A Forgotten Chapter in American Education</emph>, as well as her childhood books and books by early American educator Jane Andrews.</abstract>
+      <unitid countrycode="US" encodinganalog="099" label="Identification: " repositorycode="NSyU">2728917</unitid>
+      <langmaterial encodinganalog="546" label="Language: ">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <bioghist encodinganalog="545">
+      <head>Biographical History</head>
+      <p>Norma Kidd Green (1893-1975) was an American author. </p>
+      <p>A  graduate of Beatrice High School in 1911 and the University of Nebraska in 1915, Green 
+					was an accomplished writer. Among her publications are a biography of early American educator 
+					Jane Andrews and 
+        
+        <emph render="italic">Iron Eye's Family</emph>, about the children of Omaha 
+					chief Iron Eye (Joseph LaFlesche).  Kidd married Roy Melvin Green in 1919 and had four children: 
+					Mary Elizabeth (Betty), Nancy Josephine (Nan), William Earl (Bill) and Thomas Franklin (Tom). </p>
+      <p>Green was deeply interested in the education of women, the lives of Native Americans, and in 
+					promoting the habits of life-long learning. She is well known for her 
+					
+        
+        <emph render="italic">Biography by Books</emph> in which she set out to portray her own life as 
+					a narrative informed by books, particularly those works that were important in her childhood; 
+					many of these books are included in the collection. In 1952, Green gave a copy of her story to 
+					each of her three living children, and it  has since been revised and passed down along the 
+					"Green-Genes." This book provides a narrative of Norma Green's life, including the death of her 
+					son Bill  in World War II and her focus on foreign affairs, activism, and her renewed efforts 
+					on becoming a teacher.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents of the Collection</head>
+      <p> The 
+        
+        <emph render="bold">Norma Kidd Green Papers</emph> consist of correspondence, memorabilia, printed materials, and writings.</p>
+      <p>
+        <emph render="bold">Correspondence</emph> contains incoming and outgoing correspondence with the American 
+			Foundation for the Blind, Nebraska City School for the Blind, and the Nebraska State Historical Society.</p>
+      <p>
+        <emph render="bold">Memorabilia</emph> includes diaries, journals, photographs, scrapbooks and other items. 
+			Of interest is Green's commencement program from Beatrice High School. </p>
+      <p>
+        <emph render="bold">Printed materials</emph> is subdivided into writings by Green, by others, and by unknown authors. The majority of these   are books that were important in Green's childhood, which she 
+			describes in her 
+        
+        <emph render="italic">Biography by Books</emph>. While some of the books predate Green's 
+			lifetime, these are books that have been passed down through her family and are relevant to her work 
+			and character.</p>
+      <p>
+        <emph render="bold"> Writings</emph> comprises typed and handwritten manuscripts of various articles, essays, etc written by 
+			Green. Of special interest are three editions of her 
+        
+        <emph render="italic">Biography by Books</emph>, 
+			research for her book 
+        
+        <emph render="italic">Iron Eye's Family</emph>, and manuscripts for a history of the Young Women's Christian Association of the University of Nebraska, Green's alma mater.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Correspondence is arranged alphabetically by correspondent. Memorabilia is sorted first alphabetically by type or topic. then chronologically. Printed materials are subdivided into writings by Green, by others, and by unknown authors. Within these sections, items are sorted alphabetically by author and title. Writings are sorted alphabetically by title. </p>
+    </arrangement>
+    <relatedmaterial encodinganalog="544 1">
+      <head>Related Material</head>
+      <p>Additional Norma Kidd Green material is available at the Nebraska State Historical Society, including the 
+        
+        <extref href="https://history.nebraska.gov/collections/laflesche-family-rg2026am">LaFlesche Family Papers</extref> collected by Green.  See also the 
+        
+        <extref href="https://findingaids.smith.edu/repositories/2/resources/1051">Norma Kidd Green Papers</extref> at the Smith College Special Collections.</p>
+    </relatedmaterial>
+    <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
          <head>Separated Material</head>
          <p>## OPT (MARC 544 0)</p>
       </separatedmaterial>-->
@@ -89,49 +130,59 @@ not used should be commented out so that they don't appear in the viewable
          <head>Other Related Finding Aids</head>
          <p>## OPT (MARC 555)</p>
       </otherfindaid>-->
-      
-      <controlaccess>
-         <head>Subject and Genre Headings</head>
-         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
 defaults set in the template.-->
-         <subject encodinganalog="650" source="local">Biography</subject>
-			<subject encodinganalog="650" source="local">Women Authors</subject>
-			<persname encodinganalog="600" source="lcnaf">Green, Norma Kidd.</persname>
-         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
-         <!--<corpname encodinganalog="610" source="lcnaf">##</corpname>-->
-         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
-         <subject encodinganalog="650" source="lcsh">Women authors, American.</subject>
-         <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
-         <genreform encodinganalog="655" source="aat"> Correspondence.</genreform>
-			<genreform encodinganalog="655" source="aat">Diaries.</genreform>
-			<genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform><genreform encodinganalog="655" source="aat">Research notes.</genreform>
-         <occupation encodinganalog="656" source="lcsh">Biographers.</occupation>
+      <subject encodinganalog="650" source="local">Biography</subject>
+      <subject encodinganalog="650" source="local">Women Authors</subject>
+      <persname encodinganalog="600" source="lcnaf">Alcott, Louisa May, 1832-1888.</persname>
+      <persname encodinganalog="600" source="lcnaf">Andrews, Jane, 1833-1887.</persname>
+      <persname encodinganalog="600" source="lcnaf">Arnold, Sarah Louise, 1859-1943.</persname>
+      <persname encodinganalog="600" source="lcnaf">Gilbert, Charles B. (Charles Benajah), 1855-1913.</persname>
+      <persname encodinganalog="600" source="lcnaf">Green, Norma Kidd.</persname>
+      <persname encodinganalog="600" source="lcnaf">LaFlesche, Joseph, 1822-1889.</persname>
+      <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+      <corpname encodinganalog="610" source="lcnaf">American Foundation for the Blind.</corpname>
+      <corpname encodinganalog="610" source="lcnaf">Nebraska State Historical Society.</corpname>
+      <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+      <subject encodinganalog="650" source="lcsh">Children's literature -- 19th century.</subject>
+      <subject encodinganalog="650" source="lcsh">Children's literature, American -- Bio-bibliography.</subject>
+      <subject encodinganalog="650" source="lcsh">Women authors, American.</subject>
+      <!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+      <genreform encodinganalog="655" source="aat">Correspondence.</genreform>
+      <genreform encodinganalog="655" source="aat">Diaries.</genreform>
+      <genreform encodinganalog="655" source="aat">Manuscripts for publication.</genreform>
+      <genreform encodinganalog="655" source="aat">Memorabilia.</genreform>
+      <genreform encodinganalog="655" source="aat">Research notes.</genreform>
+      <occupation encodinganalog="656" source="lcsh">Biographers.</occupation>
+    
+    
          <!--<function encodinganalog="657">##</function>--></controlaccess>
-      
-      <accessrestrict encodinganalog="506">
-         <head>Access Restrictions</head>
-         <p>The collection is currently unprocessed and not available for research. Please contact &scrc_name; for more information.</p>
-      </accessrestrict>
-      
-      <userestrict encodinganalog="540">
-         <head>Use Restrictions</head>
-         <p>Written permission must be obtained from SCRC and 
+    <accessrestrict encodinganalog="506">
+      <head>Access Restrictions</head>
+      <p>The majority of our archival and manuscript collections are housed offsite and require advanced notice for retrieval. Researchers are encouraged to contact us in advance concerning the collection material they wish to access for their research.</p>
+    </accessrestrict>
+    <userestrict encodinganalog="540">
+      <head>Use Restrictions</head>
+      <p>Written permission must be obtained from SCRC and 
 all relevant rights holders before publishing quotations, excerpts or images from any 
 materials in this collection.</p>
-      </userestrict>
-      
-      <prefercite encodinganalog="524">
-         <head>Preferred Citation</head>
-         <p>Preferred citation for this material is as follows:</p>
-         <p> Norma Kidd Green Papers, <lb/> &su_name; </p>
-      </prefercite>
-      
-      <acqinfo encodinganalog="541">
-         <head>Acquisition Information</head>
-         <p>Gift of <persname role="donor">Thomas F. Green</persname>, 2000.</p>
-      </acqinfo>
-      
-      <!--<appraisal encodinganalog="583">
+    </userestrict>
+    <prefercite encodinganalog="524">
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p> Norma Kidd Green Papers, 
+        
+        <lb/> &su_name; </p>
+    </prefercite>
+    <acqinfo encodinganalog="541">
+      <head>Acquisition Information</head>
+      <p>Gift of 
+        
+        <persname role="donor">Thomas F. Green</persname>, 2000.</p>
+    </acqinfo>
+    <!--<appraisal encodinganalog="583">
          <head>Appraisal Information</head>
          <p>## OPT (MARC 583)</p>
       </appraisal>-->
@@ -140,11 +191,557 @@ materials in this collection.</p>
          <head>Accruals</head>
          <p>## OPT (MARC 584)</p>
       </accruals>-->
-      
-      <dsc type="othertype">
-   <head>Inventory</head>
-   <note><p>An inventory has not yet been created for this collection.  
-Please contact the Repository listed above for more information.</p><p></p></note>
-</dsc>
-   </archdesc>
+    <dsc type="combined">
+      <head>Inventory</head>
+      <!--C01 @LEVEL must be set to 'series' to show up in TOC.-->
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>American Foundation for the Blind</unittitle>
+            <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Nebraska City School for the Blind</unittitle>
+            <unitdate normal="1940" type="inclusive">1940</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Nebraska State Historical Society</unittitle>
+            <unitdate normal="1976" type="inclusive">1976</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Opocensky, Virginia</unittitle>
+            <unitdate normal="2016" type="inclusive">2016</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Town Journal</unittitle>
+            <abstract>includes typescript of article submitted by Green</abstract>
+            <unitdate normal="1956" type="inclusive">1956</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Memorabilia</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Beatrice High School Commencement Program</unittitle>
+            <unitdate normal="1911" type="inclusive">1911</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>BIOG.NKG.WPD</unittitle>
+            <unitid>green_nk_001</unitid>
+            <abstract>most likely Green's biography; WordPerfect format (files not viewed)</abstract>
+            <physdesc>
+              <extent>Floppy disk: 3 1/2 inch</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Clippings</unittitle>
+            <unitdate normal="1941" type="inclusive">1941, </unitdate>
+            <unitdate normal="1958" type="inclusive">1958</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Cuttings from Diaries of Norma Kidd (Green)"</unittitle>
+            <abstract>handwritten excerpts from from 1911-1971</abstract>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Funeral guest book, Norma Kidd Green</unittitle>
+            <unitdate normal="1975" type="inclusive">1975</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Funeral guest book, Roy M. Green</unittitle>
+            <abstract>includes program from memorial service</abstract>
+            <unitdate normal="1976" type="inclusive">1976</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Guest book</unittitle>
+            <unitdate normal="1927/1952" type="inclusive">1927-1952</unitdate>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Journals</unittitle>
+            <unitdate normal="1957/1959" type="inclusive">1957-1959</unitdate>
+            <physdesc>
+              <extent>2 folders</extent>
+            </physdesc>
+            <container type="Box">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Journal</unittitle>
+            <abstract>scattered notes, many blank pages</abstract>
+            <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photograph album</unittitle>
+            <abstract>candid shots of cabin in woods, people</abstract>
+            <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+            <container type="Oversize">1</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Photographs</unittitle>
+            <abstract>includes clipping of article by Green, which uses one of the photos</abstract>
+            <unitdate normal="1942" type="inclusive">1942, </unitdate>
+            <unitdate normal="1961" type="inclusive">1961, </unitdate>
+            <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>"Reading Record"</unittitle>
+            <unitdate normal="1957/1968" type="inclusive">1957-1968</unitdate>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Scrapbooks</unittitle>
+            <abstract>clippings, notes, copies of quotes and poems, etc.</abstract>
+            <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+            <physdesc>
+              <extent>2 volumes</extent>
+            </physdesc>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Printed materials</unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>By Green</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Articles, miscellaneous</unittitle>
+              <unitdate normal="1930/1931" type="inclusive">1930-1931, </unitdate>
+              <unitdate normal="1942" type="inclusive">1942, </unitdate>
+              <unitdate normal="1955" type="inclusive">1955, </unitdate>
+              <unitdate normal="1957" type="inclusive">1957</unitdate>
+              <container type="Box">2</container>
+            </did>
+            <note>
+              <p>See also 
+                
+                <ref target="writ-art">Writings: Articles, miscellaneous</ref> below.</p>
+            </note>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">A Forgotten Chapter in American Education: Jane Andrews of Newburyport</emph>
+              </unittitle>
+              <abstract>signed and inscribed to Rose Riddell</abstract>
+              <unitdate normal="1961" type="inclusive">1961</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Books And You</emph>
+              </unittitle>
+              <unitdate normal="1956" type="inclusive">1956</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>By others</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Alcott, Louisa M. 
+                
+                <emph render="italic">Eight Cousins or, the Aunt Hill</emph></unittitle>
+              <unitdate normal="1895" type="inclusive">1895</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Alcott, Louisa M. 
+                
+                <emph render="italic">Rose in Bloom</emph></unittitle>
+              <unitdate normal="1886" type="inclusive">1886</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Andrews, Jane 
+                
+                <emph render="italic">Each and All :The Seven Little Sisters Prove their Sisterhood</emph></unittitle>
+              <unitdate normal="1905" type="inclusive">1905</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Andrews, Jane 
+                
+                <emph render="italic">Geographical Plays</emph></unittitle>
+              <unitdate normal="1880" type="inclusive">1880</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Andrews, Jane 
+                
+                <emph render="italic">The Rational Spelling Book</emph></unittitle>
+              <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Andrews, Jane 
+                
+                <emph render="italic">Seven Little Sisters</emph></unittitle>
+              <unitdate normal="1895" type="inclusive">1895</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Andrews, Jane 
+                
+                <emph render="italic">The Stories of My Four Friends</emph></unittitle>
+              <unitdate normal="1900" type="inclusive">1900</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Andrews, Jane 
+                
+                <emph render="italic">The Stories Mother Nature Told Her Children</emph></unittitle>
+              <unitdate normal="1895" type="inclusive">1895</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Andrews, Jane 
+                
+                <emph render="italic">Ten Boys Who Lived on the Road from long ago to now</emph></unittitle>
+              <unitdate normal="1885" type="inclusive">1885</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Arnold, Sarah Louise and Gilbert, Charles B. 
+                
+                <emph render="italic">Stepping Stones to Literature: A First Reader</emph></unittitle>
+              <unitdate normal="1902" type="inclusive">1902</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Arnold, Sarah Louise and Gilbert, Charles B. 
+                
+                <emph render="italic">Stepping Stones to Literature: A Second Reader</emph></unittitle>
+              <unitdate normal="1902" type="inclusive">1902</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Arnold, Sarah Louise and Gilbert, Charles B. 
+                
+                <emph render="italic">Stepping Stones to Literature: A Third Reader</emph></unittitle>
+              <unitdate normal="1897" type="inclusive">1897</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Arnold, Sarah Louise and Gilbert, Charles B. 
+                
+                <emph render="italic">Stepping Stones to Literature: A Reader for Sixth Grades</emph></unittitle>
+              <unitdate normal="1897" type="inclusive">1897</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Arnold, Sarah Louise and Gilbert, Charles B. 
+                
+                <emph render="italic">Stepping Stones to Literature: A Reader for Seventh Grades</emph></unittitle>
+              <unitdate normal="1898" type="inclusive">1898</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Arnold, Sarah Louise and Gilbert, Charles B. 
+                
+                <emph render="italic">Stepping Stones to Literature: A Reader for Higher Grades</emph></unittitle>
+              <unitdate normal="1898" type="inclusive">1898</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Crabtree, J. W. 
+                
+                <emph render="italic">The Roll of Honor Word Book</emph></unittitle>
+              <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Goddard, Julia 
+                
+                <emph render="italic">Fairy Tales in Other Lands</emph></unittitle>
+              <unitdate normal="1892" type="inclusive">1892</unitdate>
+              <container type="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>No author or unknown</unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Jingles and Chimes</emph>
+              </unittitle>
+              <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Picture Lessons in English Part 1</emph>
+              </unittitle>
+              <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">Tip Toe Days</emph>
+              </unittitle>
+              <unitdate normal="1893" type="inclusive">1893</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">The Twentieth Century New Testament</emph>
+              </unittitle>
+              <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>
+                <emph render="italic">The Youth's Keepsake</emph>
+              </unittitle>
+              <unitdate normal="1844" type="inclusive">1844</unitdate>
+              <container type="Box">4</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Writings</unittitle>
+        </did>
+        <c02 id="writ-art">
+          <did>
+            <unittitle>Articles, miscellaneous</unittitle>
+            <abstract>typescript, some with corrections, some annotated with publication date and venue</abstract>
+            <container type="Box">2</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Biography By Books</emph>
+            </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>First edition</unittitle>
+              <abstract>typescript</abstract>
+              <unitdate normal="1952" type="inclusive">1952</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Second edition</unittitle>
+              <abstract>typescript</abstract>
+              <unitdate normal="1977" type="inclusive">1977</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Third edition</unittitle>
+              <abstract>typescript, multiple copies; a few pages of handwritten notes</abstract>
+              <unitdate normal="2000" type="inclusive">2000</unitdate>
+              <container type="Box">2</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Typescript, third edition</unittitle>
+              <abstract>typescript, multiple copies, one in red cover</abstract>
+              <unitdate certainty="2000" normal="2000" type="inclusive">2000</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Typescript of addendum, "Tuesday Morning Study Club"</unittitle>
+              <unitdate normal="2000" type="inclusive">2000</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">The First Seventy-Five Years of the Young Women's Christian Association of the University of Nebraska</emph>
+            </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>"Good Copy"</unittitle>
+              <abstract>typescript</abstract>
+              <unitdate normal="1915" type="inclusive">1915</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>"Irregular Copy"</unittitle>
+              <abstract>typescript with handwritten notes</abstract>
+              <unitdate normal="1915" type="inclusive">1915</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>
+              <emph render="italic">Iron Eye's Family: the Children of Joseph LaFlesche</emph>
+            </unittitle>
+          </did>
+          <c03>
+            <did>
+              <unittitle>Clippings</unittitle>
+              <unitdate normal="1961" type="inclusive">1961,</unitdate>
+              <unitdate normal="1981" type="inclusive">1981</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Research notes</unittitle>
+              <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+          <c03>
+            <did>
+              <unittitle>Writings</unittitle>
+              <unitdate normal="1961/1975" type="inclusive">1961-1975</unitdate>
+              <container type="Box">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Notes, miscellaneous</unittitle>
+            <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Poetry</unittitle>
+            <abstract>handwritten scraps</abstract>
+            <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Toast. Mother-Daughter Banquet</unittitle>
+            <abstract>includes handwritten notes</abstract>
+            <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+        <c02>
+          <did>
+            <unittitle>Unknown</unittitle>
+            <abstract>copies of poems; typescript fragment</abstract>
+            <unitdate normal="1950/1980" type="inclusive">undated</unitdate>
+            <container type="Box">3</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>
